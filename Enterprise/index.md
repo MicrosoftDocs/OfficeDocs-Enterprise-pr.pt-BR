@@ -1,8 +1,8 @@
 ---
-redirect_url: /office365/enterprise/cloud-adoption-and-hybrid-solutions
+redirect_url: cloud-adoption-and-hybrid-solutions
 redirect_document_id: True
-ms.openlocfilehash: 7d0bc417289cf6f518665d1bb263e950156624e9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2eaaedc393a047216db6fc9888fd9b8bee0a7cf2
+ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
