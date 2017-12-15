@@ -23,61 +23,61 @@ ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
+# <a name="office-365-devtest-environment"></a><span data-ttu-id="fc887-103">Ambiente de desenvolvimento/teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-103">Office 365 dev/test environment</span></span>
 
- **Resumo:** Use este guia de laboratório de teste para criar uma assinatura de avaliação do Office 365 para avaliação ou desenvolvimento e teste.
+ <span data-ttu-id="fc887-104">**Resumo:** Use este guia de laboratório de teste para criar uma assinatura de avaliação do Office 365 para avaliação ou desenvolvimento e teste.</span><span class="sxs-lookup"><span data-stu-id="fc887-104">**Summary:** Use this Test Lab Guide to create an Office 365 trial subscription for evaluation or dev/test.</span></span>
   
-Você pode usar uma assinatura de avaliação do Office 365 e criar um ambiente de desenvolvimento e teste do Office 365 para aplicativos ou para demonstrar os recursos e capacidades do Office 365. Existem duas versões:
+<span data-ttu-id="fc887-p101">Você pode usar uma assinatura de avaliação do Office 365 e criar um ambiente de desenvolvimento e teste do Office 365 para aplicativos ou para demonstrar os recursos e capacidades do Office 365. Existem duas versões:</span><span class="sxs-lookup"><span data-stu-id="fc887-p101">You can use an Office 365 trial subscription and create an Office 365 dev/test environment for applications or to demonstrate features and capabilities of Office 365. There are two versions:</span></span>
   
-- O ambiente de desenvolvimento e teste do Office 365 lightweight consiste em uma assinatura de avaliação do Office 365 que você pode acessar do computador principal.
+- <span data-ttu-id="fc887-107">O ambiente de desenvolvimento e teste do Office 365 lightweight consiste em uma assinatura de avaliação do Office 365 que você pode acessar do computador principal.</span><span class="sxs-lookup"><span data-stu-id="fc887-107">The lightweight Office 365 dev/test environment consists of an Office 365 trial subscription that you access from your main computer.</span></span>
     
-    Use esse ambiente quando quiser demonstrar rapidamente um recurso. Para o ambiente de desenvolvimento e teste do Office 365 leve, conclua as etapas 2 e 3 deste artigo.
+    <span data-ttu-id="fc887-p102">Use esse ambiente quando quiser demonstrar rapidamente um recurso. Para o ambiente de desenvolvimento e teste do Office 365 leve, conclua as etapas 2 e 3 deste artigo.</span><span class="sxs-lookup"><span data-stu-id="fc887-p102">Use this environment when you want to quickly demonstrate a feature. For the lightweight Office 365 dev/test environment, complete phases 2 and 3 of this article.</span></span>
     
-- Ambiente de desenvolvimento e teste do Office 365 enterprise simulado consiste em uma assinatura de avaliação do Office 365 e uma intranet da organização simplificado conectado à Internet, que é hospedada no serviços de infraestrutura do Microsoft Azure. Você pode construir essa configuração completamente na nuvem da Microsoft.
+- <span data-ttu-id="fc887-p103">Ambiente de desenvolvimento e teste do Office 365 enterprise simulado consiste em uma assinatura de avaliação do Office 365 e uma intranet da organização simplificado conectado à Internet, que é hospedada no serviços de infraestrutura do Microsoft Azure. Você pode construir essa configuração completamente na nuvem da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="fc887-p103">The simulated enterprise Office 365 dev/test environment consists of an Office 365 trial subscription and a simplified organization intranet connected to the Internet, which is hosted in Microsoft Azure infrastructure services. You can build this configuration completely in the Microsoft cloud.</span></span>
     
-    Use esse ambiente quando quiser demonstrar um recurso ou um aplicativo em um ambiente que se parece com uma rede de organização típica conectada à Internet ou para recursos que exigem esse tipo de ambiente. Para o ambiente de desenvolvimento e teste de enterprise simulado Office 365, conclua as fases 1, 2 e 3 deste artigo.
+    <span data-ttu-id="fc887-p104">Use esse ambiente quando quiser demonstrar um recurso ou um aplicativo em um ambiente que se parece com uma rede de organização típica conectada à Internet ou para recursos que exigem esse tipo de ambiente. Para o ambiente de desenvolvimento e teste de enterprise simulado Office 365, conclua as fases 1, 2 e 3 deste artigo.</span><span class="sxs-lookup"><span data-stu-id="fc887-p104">Use this environment when you want to demonstrate a feature or an app in an environment that resembles a typical organization network connected to the Internet, or for features that require this type of environment. For the simulated enterprise Office 365 dev/test environment, complete phases 1, 2, and 3 of this article.</span></span>
     
 > [!NOTE]
-> Convém imprimir este artigo para registrar os valores específicos que você precisará desse ambiente nos 30 dias da assinatura de avaliação do Office 365. Você pode estender facilmente a assinatura de trilha para outro 30 dias. Para um ambiente de desenvolvimento e teste permanente, crie uma nova assinatura com um pequeno número de licenças paga. 
+> <span data-ttu-id="fc887-p105">Convém imprimir este artigo para registrar os valores específicos que você precisará desse ambiente nos 30 dias da assinatura de avaliação do Office 365. Você pode estender facilmente a assinatura de trilha para outro 30 dias. Para um ambiente de desenvolvimento e teste permanente, crie uma nova assinatura com um pequeno número de licenças paga.</span><span class="sxs-lookup"><span data-stu-id="fc887-p105">You might want to print this article to record the specific values that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a small number of licenses.</span></span> 
   
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> <span data-ttu-id="fc887-118">Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.</span><span class="sxs-lookup"><span data-stu-id="fc887-118">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-the-base-configuration-in-azure"></a>Fase 1: Criar a configuração base no Windows Azure
+## <a name="phase-1-create-the-base-configuration-in-azure"></a><span data-ttu-id="fc887-119">Fase 1: Criar a configuração base no Windows Azure</span><span class="sxs-lookup"><span data-stu-id="fc887-119">Phase 1: Create the base configuration in Azure</span></span>
 
-Siga as instruções no [ambiente de desenvolvimento e teste de configuração básica](base-configuration-dev-test-environment.md).
+<span data-ttu-id="fc887-120">Siga as instruções no [ambiente de desenvolvimento e teste de configuração básica](base-configuration-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="fc887-120">Follow the instructions in [Base Configuration dev/test environment](base-configuration-dev-test-environment.md).</span></span>
   
-Você precisará de uma assinatura do Windows Azure. Você pode usar a [Versão de avaliação gratuita do Windows Azure](https://azure.microsoft.com/pricing/free-trial/) para esta configuração. Se você tiver uma assinatura do MSDN ou o Visual Studio, consulte [crédito Azure mensal para assinantes do Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
+<span data-ttu-id="fc887-p106">Você precisará de uma assinatura do Windows Azure. Você pode usar a [Versão de avaliação gratuita do Windows Azure](https://azure.microsoft.com/pricing/free-trial/) para esta configuração. Se você tiver uma assinatura do MSDN ou o Visual Studio, consulte [crédito Azure mensal para assinantes do Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).</span><span class="sxs-lookup"><span data-stu-id="fc887-p106">You will need an Azure subscription. You can use the [Azure Free Trial](https://azure.microsoft.com/pricing/free-trial/) for this configuration. If you have an MSDN or Visual Studio subscription, see [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).</span></span>
   
-Aqui está a configuração resultante.
+<span data-ttu-id="fc887-124">Aqui está a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="fc887-124">Here is the resulting configuration.</span></span>
   
 ![O ambiente de desenvolvimento e teste de Configuração de Base no Azure](images/63108214-f716-46ae-9974-072ff15b44a2.png)
   
-Essa configuração consiste das máquinas virtuais DC1, APP1 e CLIENT1 em uma sub-rede de uma rede virtual do Azure.
+<span data-ttu-id="fc887-126">Essa configuração consiste das máquinas virtuais DC1, APP1 e CLIENT1 em uma sub-rede de uma rede virtual do Azure.</span><span class="sxs-lookup"><span data-stu-id="fc887-126">This configuration consists of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
   
-## <a name="phase-2-create-an-office-365-trial-subscription"></a>Fase 2: Criar uma assinatura de avaliação do Office 365
+## <a name="phase-2-create-an-office-365-trial-subscription"></a><span data-ttu-id="fc887-127">Fase 2: Criar uma assinatura de avaliação do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-127">Phase 2: Create an Office 365 trial subscription</span></span>
 
-Para iniciar a sua assinatura de avaliação do Office 365 E5, primeiro é necessário um nome de empresa fictícia e uma nova conta da Microsoft.
+<span data-ttu-id="fc887-128">Para iniciar a sua assinatura de avaliação do Office 365 E5, primeiro é necessário um nome de empresa fictícia e uma nova conta da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="fc887-128">To start your Office 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.</span></span>
   
-1. É recomendável que você usar uma variant do nome da empresa Contoso para o nome da sua empresa, que é uma empresa fictícia usada no conteúdo de exemplo da Microsoft, mas isso não é obrigatório. Registrar seu nome de empresa fictícia aqui: _
+1. <span data-ttu-id="fc887-p107">É recomendável que você usar uma variant do nome da empresa Contoso para o nome da sua empresa, que é uma empresa fictícia usada no conteúdo de exemplo da Microsoft, mas isso não é obrigatório. Registrar seu nome de empresa fictícia aqui: _</span><span class="sxs-lookup"><span data-stu-id="fc887-p107">We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: _____________________________________</span></span>
     
-2. Para se inscrever para uma nova conta da Microsoft, vá para [https://outlook.com](https://outlook.com) e crie uma conta com uma nova conta de email e o endereço. Você usará essa conta para inscrever-se no Office 365.
+2. <span data-ttu-id="fc887-p108">Para se inscrever para uma nova conta da Microsoft, vá para [https://outlook.com](https://outlook.com) e crie uma conta com uma nova conta de email e o endereço. Você usará essa conta para inscrever-se no Office 365.</span><span class="sxs-lookup"><span data-stu-id="fc887-p108">To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.</span></span>
     
-  - Registre o nome e sobrenome de sua nova conta: _
+  - <span data-ttu-id="fc887-133">Registre o nome e sobrenome de sua nova conta: _</span><span class="sxs-lookup"><span data-stu-id="fc887-133">Record the first and last name of your new account here: _______________________________</span></span>
     
-  - Registrar o nova conta endereço de email aqui: ___@outlook.com
+  - <span data-ttu-id="fc887-134">Registrar o nova conta endereço de email aqui: ___@outlook.com</span><span class="sxs-lookup"><span data-stu-id="fc887-134">Record the new email account address here: _____________________________@outlook.com</span></span>
     
-### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Inscreva-se para uma assinatura de avaliação do Office 365 E5
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a><span data-ttu-id="fc887-135">Inscreva-se para uma assinatura de avaliação do Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="fc887-135">Sign up for an Office 365 E5 trial subscription</span></span>
 
-1. Para o ambiente de desenvolvimento e teste do Office 365 leve, abra o navegador de Internet no seu computador e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial). 
+1. <span data-ttu-id="fc887-136">Para o ambiente de desenvolvimento e teste do Office 365 leve, abra o navegador de Internet no seu computador e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial).</span><span class="sxs-lookup"><span data-stu-id="fc887-136">For the lightweight Office 365 dev/test environment, open the Internet browser on your computer and go to [https://aka.ms/e5trial](https://aka.ms/e5trial).</span></span> 
     
-    Para o ambiente de desenvolvimento e teste de enterprise simulado Office 365:
+    <span data-ttu-id="fc887-137">Para o ambiente de desenvolvimento e teste de enterprise simulado Office 365:</span><span class="sxs-lookup"><span data-stu-id="fc887-137">For the simulated enterprise Office 365 dev/test environment:</span></span>
     
-  - Do [portal do Azure](https://portal.azure.com), conecte-se ao CLIENT1 com CORP\\conta User1.
+  - <span data-ttu-id="fc887-138">Do [portal do Azure](https://portal.azure.com), conecte-se ao CLIENT1 com CORP\\conta User1.</span><span class="sxs-lookup"><span data-stu-id="fc887-138">From the [Azure portal](https://portal.azure.com), connect to CLIENT1 with the CORP\\User1 account.</span></span>
     
-  - Abra um prompt de comando do Windows PowerShell de nível de administrador e, em seguida, execute estes comandos:
+  - <span data-ttu-id="fc887-139">Abra um prompt de comando do Windows PowerShell de nível de administrador e, em seguida, execute estes comandos:</span><span class="sxs-lookup"><span data-stu-id="fc887-139">Open an administrator-level Windows PowerShell command prompt, and then run these commands:</span></span>
     
   ```
   Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -86,75 +86,75 @@ Stop-Process -Name Explorer -Force
   ```
 
     > [!TIP]
-    > Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) para obter um arquivo de texto que contém todos os comandos do PowerShell neste artigo.
+    > <span data-ttu-id="fc887-140">Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) para obter um arquivo de texto que contém todos os comandos do PowerShell neste artigo.</span><span class="sxs-lookup"><span data-stu-id="fc887-140">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) to get a text file that contains all the PowerShell commands in this article.</span></span>
   
-  - Na tela Iniciar, clique em **Internet Explorer** e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial).
+  - <span data-ttu-id="fc887-141">Na tela Iniciar, clique em **Internet Explorer** e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial).</span><span class="sxs-lookup"><span data-stu-id="fc887-141">From the Start screen, click **Internet Explorer** and go to [https://aka.ms/e5trial](https://aka.ms/e5trial).</span></span>
     
-2. Na página de **boas-vindas, vamos fazer conhecê-lo** , especifique:
+2. <span data-ttu-id="fc887-142">Na página de **boas-vindas, vamos fazer conhecê-lo** , especifique:</span><span class="sxs-lookup"><span data-stu-id="fc887-142">On the **Welcome, let's get to know you** page, specify:</span></span>
     
-  - Seu local físico
+  - <span data-ttu-id="fc887-143">Seu local físico</span><span class="sxs-lookup"><span data-stu-id="fc887-143">Your physical location</span></span>
     
-  - O nome e sobrenome de sua nova conta da Microsoft
+  - <span data-ttu-id="fc887-144">O nome e sobrenome de sua nova conta da Microsoft</span><span class="sxs-lookup"><span data-stu-id="fc887-144">The first and last name of your new Microsoft account</span></span>
     
-  - Seu novo endereço de conta de email
+  - <span data-ttu-id="fc887-145">Seu novo endereço de conta de email</span><span class="sxs-lookup"><span data-stu-id="fc887-145">Your new email account address</span></span>
     
-  - Um número de telefone comercial
+  - <span data-ttu-id="fc887-146">Um número de telefone comercial</span><span class="sxs-lookup"><span data-stu-id="fc887-146">A business phone number</span></span>
     
-  - Nome da sua empresa fictícia
+  - <span data-ttu-id="fc887-147">Nome da sua empresa fictícia</span><span class="sxs-lookup"><span data-stu-id="fc887-147">Your fictional company name</span></span>
     
-  - Um tamanho de organização de 250-999 pessoas
+  - <span data-ttu-id="fc887-148">Um tamanho de organização de 250-999 pessoas</span><span class="sxs-lookup"><span data-stu-id="fc887-148">An organization size of 250-999 people</span></span>
     
-3. Clique em **apenas um deles mais etapa**.
+3. <span data-ttu-id="fc887-149">Clique em **apenas um deles mais etapa**.</span><span class="sxs-lookup"><span data-stu-id="fc887-149">Click **Just one more step**.</span></span>
     
-4. Na página **criar sua ID de usuário** , digite um nome de usuário com base em seu novo endereço de email, sua empresa fictícia após o sinal (remover todos os espaços no nome de usuário), @ e uma senha (duas vezes) para este novo Office 365 da conta.
+4. <span data-ttu-id="fc887-150">Na página **criar sua ID de usuário** , digite um nome de usuário com base em seu novo endereço de email, sua empresa fictícia após o sinal (remover todos os espaços no nome de usuário), @ e uma senha (duas vezes) para este novo Office 365 da conta.</span><span class="sxs-lookup"><span data-stu-id="fc887-150">On the **Create your user ID** page, type a user name based on your new email address, your fictional company after the @ sign (remove all spaces in the name), then a password (twice) for this new Office 365 account.</span></span>
     
-    Registre a senha que você digitou em um local seguro.
+    <span data-ttu-id="fc887-151">Registre a senha que você digitou em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-151">Record the password that you typed in a secure location.</span></span>
     
-    Registrar seu nome de empresa fictícia, para ser referida como o **nome da organização**, aqui: _
+    <span data-ttu-id="fc887-152">Registrar seu nome de empresa fictícia, para ser referida como o **nome da organização**, aqui: _</span><span class="sxs-lookup"><span data-stu-id="fc887-152">Record your fictional company name, to be referred to as the **organization name**, here: ________________________________________</span></span>
     
-5. Clique em **Criar minha conta**.
+5. <span data-ttu-id="fc887-153">Clique em **Criar minha conta**.</span><span class="sxs-lookup"><span data-stu-id="fc887-153">Click **Create my account**.</span></span>
     
-6. Sobre o **Prove. Você está. Não. R. robô.** página, digite o número de telefone do seu telefone capaz de texto e, em seguida, clique em **texto-me**.
+6. <span data-ttu-id="fc887-p109">Sobre o **Prove. Você está. Não. R. robô.** página, digite o número de telefone do seu telefone capaz de texto e, em seguida, clique em **texto-me**.</span><span class="sxs-lookup"><span data-stu-id="fc887-p109">On the **Prove. You're. Not. A. Robot.** page, type the phone number of your text-capable phone, and then click **Text me**.</span></span>
     
-7. Digite o código de verificação da mensagem de texto recebido e clique em **Avançar**.
+7. <span data-ttu-id="fc887-156">Digite o código de verificação da mensagem de texto recebido e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="fc887-156">Type the verification code from the received text message, and then click **Next**.</span></span>
     
-8. Registre a URL de página de entrada aqui (select e cópia): _
+8. <span data-ttu-id="fc887-157">Registre a URL de página de entrada aqui (select e cópia): _</span><span class="sxs-lookup"><span data-stu-id="fc887-157">Record the sign-in page URL here (select and copy): ___________________________________________</span></span>
     
-9. Registre a ID de usuário aqui (select e cópia): ___.onmicrosoft.com
+9. <span data-ttu-id="fc887-158">Registre a ID de usuário aqui (select e cópia): ___.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="fc887-158">Record the user ID here (select and copy): __________________________________.onmicrosoft.com</span></span>
     
-    Esse valor será chamado como o **nome de administrador global do Office 365**.
+    <span data-ttu-id="fc887-159">Esse valor será chamado como o **nome de administrador global do Office 365**.</span><span class="sxs-lookup"><span data-stu-id="fc887-159">This value will be referred to as the **Office 365 global administrator name**.</span></span>
     
-10. Quando você vê que **você está pronto para ir**, clique nele.
+10. <span data-ttu-id="fc887-160">Quando você vê que **você está pronto para ir**, clique nele.</span><span class="sxs-lookup"><span data-stu-id="fc887-160">When you see **You're ready to go**, click it.</span></span>
     
-11. Na próxima página, aguarde até que o Office 365 for concluído a configuração de backup e todos os blocos estão disponíveis.
+11. <span data-ttu-id="fc887-161">Na próxima página, aguarde até que o Office 365 for concluído a configuração de backup e todos os blocos estão disponíveis.</span><span class="sxs-lookup"><span data-stu-id="fc887-161">On the next page, wait until Office 365 completes setting up and all the tiles are available.</span></span>
     
-Você deverá ver a página portal principal do Office 365 no qual você pode acessar os Serviços Online do Office e o Centro de administração do Office 365.
+<span data-ttu-id="fc887-162">Você deverá ver a página portal principal do Office 365 no qual você pode acessar os Serviços Online do Office e o Centro de administração do Office 365.</span><span class="sxs-lookup"><span data-stu-id="fc887-162">You should see main Office 365 portal page from which you can access Office Online services and the Office 365 Admin center.</span></span>
   
-Para o ambiente de desenvolvimento e teste do Office 365 enterprise simulado, aqui está a configuração resultante.
+<span data-ttu-id="fc887-163">Para o ambiente de desenvolvimento e teste do Office 365 enterprise simulado, aqui está a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="fc887-163">For the simulated enterprise Office 365 dev/test environment, here is your resulting configuration.</span></span>
   
 ![O ambiente de desenvolvimento e teste do Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
-Esta configuração consiste em: 
+<span data-ttu-id="fc887-165">Esta configuração consiste em:</span><span class="sxs-lookup"><span data-stu-id="fc887-165">This configuration consists of:</span></span> 
   
-- Os virtual DC1, APP1 e CLIENT1 máquinas em uma sub-rede de uma rede virtual do Azure.
+- <span data-ttu-id="fc887-166">Os virtual DC1, APP1 e CLIENT1 máquinas em uma sub-rede de uma rede virtual do Azure.</span><span class="sxs-lookup"><span data-stu-id="fc887-166">The DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
     
-- Uma assinatura de avaliação do E5 do Office 365.
+- <span data-ttu-id="fc887-167">Uma assinatura de avaliação do E5 do Office 365.</span><span class="sxs-lookup"><span data-stu-id="fc887-167">An Office 365 E5 Trial Subscription.</span></span>
     
-## <a name="phase-3-configure-your-office-365-trial-subscription"></a>Fase 3: Configurar sua assinatura de avaliação do Office 365
+## <a name="phase-3-configure-your-office-365-trial-subscription"></a><span data-ttu-id="fc887-168">Fase 3: Configurar sua assinatura de avaliação do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-168">Phase 3: Configure your Office 365 trial subscription</span></span>
 
-Nesta fase, você pode configurar sua assinatura do Office 365 com outros usuários e sites de equipe do SharePoint Online.
+<span data-ttu-id="fc887-169">Nesta fase, você pode configurar sua assinatura do Office 365 com outros usuários e sites de equipe do SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="fc887-169">In this phase, you configure your Office 365 subscription with additional users and SharePoint Online team sites.</span></span>
   
-Primeiro, você pode adicionar quatro novos usuários e atribuir-lhes licenças E5.
+<span data-ttu-id="fc887-170">Primeiro, você pode adicionar quatro novos usuários e atribuir-lhes licenças E5.</span><span class="sxs-lookup"><span data-stu-id="fc887-170">First, you add four new users and assign them E5 licenses.</span></span>
   
-Use as instruções em [conectar-se ao Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) para instalar os módulos do PowerShell e se conectar à sua nova assinatura do Office 365 de:
+<span data-ttu-id="fc887-171">Use as instruções em [conectar-se ao Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) para instalar os módulos do PowerShell e se conectar à sua nova assinatura do Office 365 de:</span><span class="sxs-lookup"><span data-stu-id="fc887-171">Use the instructions in [Connect to Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) to install the PowerShell modules and connect to your new Office 365 subscription from:</span></span>
   
-- Seu computador (para o ambiente leve de desenvolvimento/teste do Office 365).
+- <span data-ttu-id="fc887-172">Seu computador (para o ambiente leve de desenvolvimento/teste do Office 365).</span><span class="sxs-lookup"><span data-stu-id="fc887-172">Your computer (for the lightweight Office 365 dev/test environment).</span></span>
     
-- A máquina virtual CLIENT1 (para o ambiente de desenvolvimento e teste de enterprise simulado Office 365).
+- <span data-ttu-id="fc887-173">A máquina virtual CLIENT1 (para o ambiente de desenvolvimento e teste de enterprise simulado Office 365).</span><span class="sxs-lookup"><span data-stu-id="fc887-173">The CLIENT1 virtual machine (for the simulated enterprise Office 365 dev/test environment).</span></span>
     
- Na caixa de diálogo solicitação de credencial do Windows PowerShell, digite o nome de administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e a senha.
+ <span data-ttu-id="fc887-174">Na caixa de diálogo solicitação de credencial do Windows PowerShell, digite o nome de administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e a senha.</span><span class="sxs-lookup"><span data-stu-id="fc887-174">In the Windows PowerShell Credential Request dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.</span></span>
   
-Preencha o nome de sua organização (exemplo: contosotoycompany), o código de país com dois caracteres de seu local e execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:
+<span data-ttu-id="fc887-175">Preencha o nome de sua organização (exemplo: contosotoycompany), o código de país com dois caracteres de seu local e execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="fc887-175">Fill in your organization name (example: contosotoycompany), the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $orgName="<organization name>"
@@ -164,53 +164,53 @@ $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 2 e registre-a em um local seguro.
+<span data-ttu-id="fc887-176">Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 2 e registre-a em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-176">From the display of the **New-MsolUser** command, note the generated password for the User 2 account and record it in a safe location.</span></span>
   
-Execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:
+<span data-ttu-id="fc887-177">Execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="fc887-177">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $userName= "user3@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 3" -FirstName User -LastName 3 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 3 e registre-a em um local seguro.
+<span data-ttu-id="fc887-178">Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 3 e registre-a em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-178">From the display of the **New-MsolUser** command, note the generated password for the User 3 account and record it in a safe location.</span></span>
   
-Execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:
+<span data-ttu-id="fc887-179">Execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="fc887-179">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $userName= "user4@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 4 e registre-a em um local seguro.
+<span data-ttu-id="fc887-180">Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 4 e registre-a em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-180">From the display of the **New-MsolUser** command, note the generated password for the User 4 account and record it in a safe location.</span></span>
   
-Execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:
+<span data-ttu-id="fc887-181">Execute os seguintes comandos no prompt do Módulo do Windows Azure Active Directory para Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="fc887-181">Run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
 ```
 $userName= "user5@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 5" -FirstName User -LastName 5 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
 
-Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 5 e registre-a em um local seguro.
+<span data-ttu-id="fc887-182">Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 5 e registre-a em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-182">From the display of the **New-MsolUser** command, note the generated password for the User 5 account and record it in a safe location.</span></span>
   
-Em seguida, você pode cria três novos sites de equipe do SharePoint Online para as vendas, produção e departamentos de suporte.
+<span data-ttu-id="fc887-183">Em seguida, você pode cria três novos sites de equipe do SharePoint Online para as vendas, produção e departamentos de suporte.</span><span class="sxs-lookup"><span data-stu-id="fc887-183">Next, you create three new SharePoint Online team sites for the Sales, Production, and Support departments.</span></span>
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>Crie três novos sites de equipe do SharePoint Online
+### <a name="create-three-new-sharepoint-online-team-sites"></a><span data-ttu-id="fc887-184">Crie três novos sites de equipe do SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="fc887-184">Create three new SharePoint Online team sites</span></span>
 
-1. Instalar o [Shell de gerenciamento do SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251) (o x64 versão).
+1. <span data-ttu-id="fc887-185">Instalar o [Shell de gerenciamento do SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251) (o x64 versão).</span><span class="sxs-lookup"><span data-stu-id="fc887-185">Install the [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251) (the x64 version).</span></span>
     
-2. Clique em **Iniciar**, digite **sharepoint**e clique em **Shell de gerenciamento do SharePoint Online**.
+2. <span data-ttu-id="fc887-186">Clique em **Iniciar**, digite **sharepoint**e clique em **Shell de gerenciamento do SharePoint Online**.</span><span class="sxs-lookup"><span data-stu-id="fc887-186">Click **Start**, type **sharepoint**, and then click **SharePoint Online Management Shell**.</span></span>
     
-3. Preencha o nome da sua organização (exemplo: contosotoycompany), e, em seguida, execute os seguintes comandos no prompt de Shell de gerenciamento do SharePoint Online para se conectar ao serviço do SharePoint Online
+3. <span data-ttu-id="fc887-187">Preencha o nome da sua organização (exemplo: contosotoycompany), e, em seguida, execute os seguintes comandos no prompt de Shell de gerenciamento do SharePoint Online para se conectar ao serviço do SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="fc887-187">Fill in your organization name (example: contosotoycompany), and then run the following commands from the SharePoint Online Management Shell prompt to connect to the SharePoint Online service</span></span>
 ```
 $orgName="<organization name>"
 $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. Na caixa de diálogo do **Microsoft SharePoint Online Management Shell** , digite o nome de administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e uma senha e clique em **entrar**.
+4. <span data-ttu-id="fc887-188">Na caixa de diálogo do **Microsoft SharePoint Online Management Shell** , digite o nome de administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e uma senha e clique em **entrar**.</span><span class="sxs-lookup"><span data-stu-id="fc887-188">In the **Microsoft SharePoint Online Management Shell** dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password, and then click **Sign in**.</span></span>
     
-5. Para criar três novos sites de equipe (vendas, produção e suporte), preencham o nome de administrador global do Office 365 em, em seguida, execute os seguintes comandos no prompt de Shell de gerenciamento do SharePoint Online:
+5. <span data-ttu-id="fc887-189">Para criar três novos sites de equipe (vendas, produção e suporte), preencham o nome de administrador global do Office 365 em, em seguida, execute os seguintes comandos no prompt de Shell de gerenciamento do SharePoint Online:</span><span class="sxs-lookup"><span data-stu-id="fc887-189">To create three new team sites (Sales, Production, and Support), fill in the Office 365 global administrator name, and then run the following commands from the SharePoint Online Management Shell prompt:</span></span>
     
   ```
   $owner = "<global administrator account name>"
@@ -222,88 +222,88 @@ $siteURL = "https://" + $orgName + ".sharepoint.com/sites/support"
 New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site collection" -Template "STS#0"
   ```
 
-6. Execute este comando para listar as URLs desses sites novos:
+6. <span data-ttu-id="fc887-190">Execute este comando para listar as URLs desses sites novos:</span><span class="sxs-lookup"><span data-stu-id="fc887-190">Run this command to list the URLs of these new sites:</span></span>
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-7. No Internet Explorer, digite a URL do site de produção para ver o site de equipe do SharePoint Online padrão para o departamento de produção.
+7. <span data-ttu-id="fc887-191">No Internet Explorer, digite a URL do site de produção para ver o site de equipe do SharePoint Online padrão para o departamento de produção.</span><span class="sxs-lookup"><span data-stu-id="fc887-191">In Internet Explorer, enter the URL of the Production site to see the default SharePoint Online team site for the Production department.</span></span>
     
-## <a name="record-values-for-future-reference"></a>Valores do registro para referência futura
+## <a name="record-values-for-future-reference"></a><span data-ttu-id="fc887-192">Valores do registro para referência futura</span><span class="sxs-lookup"><span data-stu-id="fc887-192">Record values for future reference</span></span>
 
-Registre esses valores para trabalhar com ou implantando guias de laboratório de teste adicionais neste ambiente de teste:
+<span data-ttu-id="fc887-193">Registre esses valores para trabalhar com ou implantando guias de laboratório de teste adicionais neste ambiente de teste:</span><span class="sxs-lookup"><span data-stu-id="fc887-193">Record these values for working with or deploying additional Test Lab Guides in this test environment:</span></span>
   
-- Nome de administrador global do Office 365: ___.onmicrosoft.com (da etapa 9 da fase 2)
+- <span data-ttu-id="fc887-194">Nome de administrador global do Office 365: ___.onmicrosoft.com (da etapa 9 da fase 2)</span><span class="sxs-lookup"><span data-stu-id="fc887-194">Office 365 global administrator name: ____________________________________.onmicrosoft.com (from step 9 of Phase 2)</span></span>
     
-    Além disso, registre a senha dessa conta em um local seguro.
+    <span data-ttu-id="fc887-195">Além disso, registre a senha dessa conta em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-195">Also record the password for this account in a secure location.</span></span>
     
-- O nome da sua organização de assinatura de avaliação: _ (da etapa 4 da fase 2)
+- <span data-ttu-id="fc887-196">O nome da sua organização de assinatura de avaliação: _ (da etapa 4 da fase 2)</span><span class="sxs-lookup"><span data-stu-id="fc887-196">Your trial subscription organization name: _______________________________________________ (from step 4 of Phase 2)</span></span>
     
-- Para listar as contas de usuário 2, 3 do usuário, usuário 4 e 5 do usuário, execute o seguinte comando a partir do prompt do Windows Azure Active Directory módulo para Windows PowerShell:
+- <span data-ttu-id="fc887-197">Para listar as contas de usuário 2, 3 do usuário, usuário 4 e 5 do usuário, execute o seguinte comando a partir do prompt do Windows Azure Active Directory módulo para Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="fc887-197">To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
     
   ```
   Get-MSolUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
-    Registre os nomes de conta:
+    <span data-ttu-id="fc887-198">Registre os nomes de conta:</span><span class="sxs-lookup"><span data-stu-id="fc887-198">Record the account names here:</span></span>
     
-  - Nome da conta de usuário 2: user2@___.onmicrosoft.com
+  - <span data-ttu-id="fc887-199">Nome da conta de usuário 2: user2@___.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="fc887-199">User 2 account name: user2@_______________________________________________.onmicrosoft.com</span></span>
     
-  - Nome da conta de usuário 3: user3@___.onmicrosoft.com
+  - <span data-ttu-id="fc887-200">Nome da conta de usuário 3: user3@___.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="fc887-200">User 3 account name: user3@_______________________________________________.onmicrosoft.com</span></span>
     
-  - Nome da conta de usuário 4: user4@___.onmicrosoft.com
+  - <span data-ttu-id="fc887-201">Nome da conta de usuário 4: user4@___.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="fc887-201">User 4 account name: user4@_______________________________________________.onmicrosoft.com</span></span>
     
-  - Nome da conta de usuário 5: user5@___.onmicrosoft.com
+  - <span data-ttu-id="fc887-202">Nome da conta de usuário 5: user5@___.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="fc887-202">User 5 account name: user5@_______________________________________________.onmicrosoft.com</span></span>
     
-    Registre também as senhas para essas contas em um local seguro.
+    <span data-ttu-id="fc887-203">Registre também as senhas para essas contas em um local seguro.</span><span class="sxs-lookup"><span data-stu-id="fc887-203">Also record the passwords for these accounts in a secure location.</span></span>
     
-- Para listar as URLs de vendas, produção e oferecer suporte aos sites de equipe, execute o seguinte comando no prompt de Shell de gerenciamento do SharePoint Online:
+- <span data-ttu-id="fc887-204">Para listar as URLs de vendas, produção e oferecer suporte aos sites de equipe, execute o seguinte comando no prompt de Shell de gerenciamento do SharePoint Online:</span><span class="sxs-lookup"><span data-stu-id="fc887-204">To list the URLs for the Sales, Production, and Support team sites, run the following command from the SharePoint Online Management Shell prompt:</span></span>
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL do site de produção: https://___.sharepoint.com/sites/production
+  - <span data-ttu-id="fc887-205">URL do site de produção: https://___.sharepoint.com/sites/production</span><span class="sxs-lookup"><span data-stu-id="fc887-205">Production site URL: https://______________________________________________.sharepoint.com/sites/production</span></span>
     
-  - URL do site de vendas: https://___.sharepoint.com/sites/sales
+  - <span data-ttu-id="fc887-206">URL do site de vendas: https://___.sharepoint.com/sites/sales</span><span class="sxs-lookup"><span data-stu-id="fc887-206">Sales site URL: https://______________________________________________.sharepoint.com/sites/sales</span></span>
     
-  - URL do site de suporte: https://___.sharepoint.com/sites/support
+  - <span data-ttu-id="fc887-207">URL do site de suporte: https://___.sharepoint.com/sites/support</span><span class="sxs-lookup"><span data-stu-id="fc887-207">Support site URL: https://______________________________________________.sharepoint.com/sites/support</span></span>
     
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a><span data-ttu-id="fc887-208">Próximas etapas</span><span class="sxs-lookup"><span data-stu-id="fc887-208">Next steps</span></span>
 
-Use estes artigos adicionais em seu ambiente de desenvolvimento e teste do Office 365:
+<span data-ttu-id="fc887-209">Use estes artigos adicionais em seu ambiente de desenvolvimento e teste do Office 365:</span><span class="sxs-lookup"><span data-stu-id="fc887-209">Use these additional articles in your Office 365 dev/test environment:</span></span>
   
-- [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-210">DirSync para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-210">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-211">A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-211">Multi-factor authentication for your Office 365 dev/test environment</span></span>](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
-- [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-212">Identidade federada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-212">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-213">Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-213">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-214">Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-214">Advanced Threat Protection for your Office 365 dev/test environment</span></span>](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [EDiscovery avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-215">EDiscovery avançada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-215">Advanced eDiscovery for your Office 365 dev/test environment</span></span>](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-216">Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-216">Sensitive file protection in the Office 365 dev/test environment</span></span>](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [Isolado ambiente de desenvolvimento e teste de site equipe do SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [<span data-ttu-id="fc887-217">Isolado ambiente de desenvolvimento e teste de site equipe do SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="fc887-217">Isolated SharePoint Online team site dev/test environment</span></span>](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-218">Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365</span><span class="sxs-lookup"><span data-stu-id="fc887-218">Data classification and labeling in the Office 365 dev/test environment</span></span>](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-Estenda seu ambiente de desenvolvimento e teste do Office 365 para incluir adicionais ofertas de nuvem da Microsoft:
+<span data-ttu-id="fc887-219">Estenda seu ambiente de desenvolvimento e teste do Office 365 para incluir adicionais ofertas de nuvem da Microsoft:</span><span class="sxs-lookup"><span data-stu-id="fc887-219">Extend your Office 365 dev/test environment to include additional Microsoft cloud offerings:</span></span>
   
-- [O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
+- [<span data-ttu-id="fc887-220">O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="fc887-220">The Microsoft 365 Enterprise dev/test environment</span></span>](the-microsoft-365-enterprise-dev-test-environment.md)
     
-- [Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [<span data-ttu-id="fc887-221">Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="fc887-221">Office 365 and Dynamics 365 dev/test environment</span></span>](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="fc887-222">See Also</span><span class="sxs-lookup"><span data-stu-id="fc887-222">See Also</span></span>
 
-[Adoção de nuvem Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="fc887-223">Adoção de nuvem Test Lab Guides (TLGs)</span><span class="sxs-lookup"><span data-stu-id="fc887-223">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+[<span data-ttu-id="fc887-224">Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="fc887-224">Office 365 and Dynamics 365 dev/test environment</span></span>](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="fc887-225">Adoção da nuvem e soluções híbridas</span><span class="sxs-lookup"><span data-stu-id="fc887-225">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 

@@ -24,156 +24,156 @@ ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guias do Laboratório de Teste (TLGs) para adoção de nuvem
+# <a name="cloud-adoption-test-lab-guides-tlgs"></a><span data-ttu-id="d7502-103">Guias do Laboratório de Teste (TLGs) para adoção de nuvem</span><span class="sxs-lookup"><span data-stu-id="d7502-103">Cloud adoption Test Lab Guides (TLGs)</span></span>
 
- **Resumo:** Use essas adoção de nuvem Test Lab Guides (TLGs) para configurar a demonstração, prova de conceito ou ambientes de desenvolvimento e teste para o Office 365, Enterprise mobilidade + segurança (EMS), Dynamics 365 e produtos de servidor do Office.
+ <span data-ttu-id="d7502-104">**Resumo:** Use essas adoção de nuvem Test Lab Guides (TLGs) para configurar a demonstração, prova de conceito ou ambientes de desenvolvimento e teste para o Office 365, Enterprise mobilidade + segurança (EMS), Dynamics 365 e produtos de servidor do Office.</span><span class="sxs-lookup"><span data-stu-id="d7502-104">**Summary:** Use these cloud adoption Test Lab Guides (TLGs) to set up demonstration, proof of concept, or dev/test environments for Office 365, Enterprise Mobility + Security (EMS), Dynamics 365, and Office Server products.</span></span>
   
-TLGs ajudarão você a aprender rapidamente sobre produtos da Microsoft. Eles são ótimos para situações em que você precise avaliar uma tecnologia ou configuração antes de decidir se ele é ideal para você, ou antes de concretizá-lo aos usuários. A experiência prática "criaram check-out irei e funciona" ajuda você a entender os requisitos de implantação de um novo produto ou a solução para que possa planejar melhor para hospedagem-lo em produção.
+<span data-ttu-id="d7502-p101">TLGs ajudarão você a aprender rapidamente sobre produtos da Microsoft. Eles são ótimos para situações em que você precise avaliar uma tecnologia ou configuração antes de decidir se ele é ideal para você, ou antes de concretizá-lo aos usuários. A experiência prática "criaram check-out irei e funciona" ajuda você a entender os requisitos de implantação de um novo produto ou a solução para que possa planejar melhor para hospedagem-lo em produção.</span><span class="sxs-lookup"><span data-stu-id="d7502-p101">TLGs help you quickly learn about Microsoft products. They're great for situations where you need to evaluate a technology or configuration before you decide whether it's right for you or before you roll it out to users. The "I built it out myself and it works" hands-on experience helps you understand the deployment requirements of a new product or solution so you can better plan for hosting it in production.</span></span>
   
-Os TLGs também criam ambientes representativos de desenvolvimento/teste de aplicativos, também conhecidos como ambientes de desenvolvimento/teste.
+<span data-ttu-id="d7502-108">Os TLGs também criam ambientes representativos de desenvolvimento/teste de aplicativos, também conhecidos como ambientes de desenvolvimento/teste.</span><span class="sxs-lookup"><span data-stu-id="d7502-108">TLGs also create representative environments for development and testing of applications, also known as dev/test environments.</span></span>
   
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-Consulte estes recursos adicionais antes de começar:
+<span data-ttu-id="d7502-110">Consulte estes recursos adicionais antes de começar:</span><span class="sxs-lookup"><span data-stu-id="d7502-110">See these additional resources before diving in:</span></span>
   
-- Exiba a sessão do Microsoft Virtual Academy [experiência de nuvem da Microsoft com guias de laboratório de teste de adoção de nuvem](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) (somente 22 minutos).
+- <span data-ttu-id="d7502-111">Exiba a sessão do Microsoft Virtual Academy [experiência de nuvem da Microsoft com guias de laboratório de teste de adoção de nuvem](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) (somente 22 minutos).</span><span class="sxs-lookup"><span data-stu-id="d7502-111">View the [Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) Microsoft Virtual Academy session (only 22 minutes).</span></span>
     
-- Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+- <span data-ttu-id="d7502-112">Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.</span><span class="sxs-lookup"><span data-stu-id="d7502-112">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
     
-## <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
-<a name="O365"> </a>
+## <a name="office-365-devtest-environment"></a><span data-ttu-id="d7502-113">Ambiente de desenvolvimento/teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-113">Office 365 dev/test environment</span></span>
+<span data-ttu-id="d7502-114"><a name="O365"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-114"></span></span>
 
-Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 365:
+<span data-ttu-id="d7502-115">Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 365:</span><span class="sxs-lookup"><span data-stu-id="d7502-115">Use these articles to build your Office 365 dev/test environment:</span></span>
   
-- [Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+- [<span data-ttu-id="d7502-116">Ambiente de desenvolvimento e teste de configuração de base</span><span class="sxs-lookup"><span data-stu-id="d7502-116">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
     
-    Crie uma intranet simplificada em execução nos serviços de infraestrutura do Microsoft Azure. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.
+    <span data-ttu-id="d7502-p102">Crie uma intranet simplificada em execução nos serviços de infraestrutura do Microsoft Azure. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.</span><span class="sxs-lookup"><span data-stu-id="d7502-p102">Create a simplified intranet running in Microsoft Azure infrastructure services. This is an optional step if you want to build a simulated enterprise configuration.</span></span>
     
-- [Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-119">Ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-119">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
     
-    Crie uma assinatura de avaliação do Office 365 Enterprise E5, que pode ser feito a partir de seu computador ou de uma intranet simplificada em execução nos serviços de infraestrutura do Windows Azure.
+    <span data-ttu-id="d7502-120">Crie uma assinatura de avaliação do Office 365 Enterprise E5, que pode ser feito a partir de seu computador ou de uma intranet simplificada em execução nos serviços de infraestrutura do Windows Azure.</span><span class="sxs-lookup"><span data-stu-id="d7502-120">Create an Office 365 Enterprise E5 trial subscription, which you can do from your computer or from a simplified intranet running in Azure infrastructure services.</span></span>
     
-- [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-121">DirSync para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-121">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
     
-    Instale e configure o Azure AD Connect para a sincronização de diretório com a sincronização de senha. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.
+    <span data-ttu-id="d7502-p103">Instale e configure o Azure AD Connect para a sincronização de diretório com a sincronização de senha. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.</span><span class="sxs-lookup"><span data-stu-id="d7502-p103">Install and configure Azure AD Connect for directory synchronization with password synchronization. This is an optional step if you want to build a simulated enterprise configuration.</span></span>
     
-Para seu ambiente de desenvolvimento e teste do Office 365, use estes artigos para demonstrar os recursos do enterprise do Office 365:
+<span data-ttu-id="d7502-124">Para seu ambiente de desenvolvimento e teste do Office 365, use estes artigos para demonstrar os recursos do enterprise do Office 365:</span><span class="sxs-lookup"><span data-stu-id="d7502-124">For your Office 365 dev/test environment, use these articles to demonstrate enterprise features of Office 365:</span></span>
   
-- [A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-125">A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-125">Multi-factor authentication for your Office 365 dev/test environment</span></span>](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
-    Configure e teste a autenticação secundária para uma conta em sua assinatura do Office 365 usando uma mensagem de texto enviada ao seu smartphone.
+    <span data-ttu-id="d7502-126">Configure e teste a autenticação secundária para uma conta em sua assinatura do Office 365 usando uma mensagem de texto enviada ao seu smartphone.</span><span class="sxs-lookup"><span data-stu-id="d7502-126">Configure and test secondary authentication using a text message sent to your smart phone for an account in your Office 365 subscription.</span></span>
     
-- [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-127">Identidade federada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-127">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
     
-    Configure e demonstre a autenticação federada com as contas de um domínio do Windows Server Active Directory.
+    <span data-ttu-id="d7502-128">Configure e demonstre a autenticação federada com as contas de um domínio do Windows Server Active Directory.</span><span class="sxs-lookup"><span data-stu-id="d7502-128">Configure and demonstrate federated authentication with the accounts of a Windows Server Active Directory domain.</span></span>
     
-- [Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-129">Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-129">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-    Configurar e demonstrar o Office 365 nuvem App segurança, que permite que você crie diretivas que monitoram e informam atividades suspeitas na sua assinatura do Office 365.
+    <span data-ttu-id="d7502-130">Configurar e demonstrar o Office 365 nuvem App segurança, que permite que você crie diretivas que monitoram e informam atividades suspeitas na sua assinatura do Office 365.</span><span class="sxs-lookup"><span data-stu-id="d7502-130">Configure and demonstrate Office 365 Cloud App Security, which allows you to create policies that monitor for and inform you of suspicious activities in your Office 365 subscription.</span></span>
     
-- [Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-131">Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-131">Advanced Threat Protection for your Office 365 dev/test environment</span></span>](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-    Configure e demonstre a Proteção Avançada contra Ameaças, que é um recurso da Proteção do Exchange Online (EOP) que ajuda a evitar malware em emails.
+    <span data-ttu-id="d7502-132">Configure e demonstre a Proteção Avançada contra Ameaças, que é um recurso da Proteção do Exchange Online (EOP) que ajuda a evitar malware em emails.</span><span class="sxs-lookup"><span data-stu-id="d7502-132">Configure and demonstrate Advanced Threat Protection, which is a feature of Exchange Online Protection (EOP) that helps keep malware out of your email.</span></span>
     
-- [EDiscovery avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-133">EDiscovery avançada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-133">Advanced eDiscovery for your Office 365 dev/test environment</span></span>](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-    Adicione dados de exemplo e demonstre a Descoberta Eletrônica Avançada, que permite que você localize e analise rapidamente os dados armazenados no Office 365, incluindo emails e documentos.
+    <span data-ttu-id="d7502-134">Adicione dados de exemplo e demonstre a Descoberta Eletrônica Avançada, que permite que você localize e analise rapidamente os dados armazenados no Office 365, incluindo emails e documentos.</span><span class="sxs-lookup"><span data-stu-id="d7502-134">Add example data and demonstrate Advanced eDiscovery, which allows you to quickly find and analyze the data that is stored in Office 365, including email and documents.</span></span>
     
-- [Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-135">Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-135">Sensitive file protection in the Office 365 dev/test environment</span></span>](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-    Demonstre como você pode usar o Gerenciamento de Direitos de Informação do Office 365 para proteger os dados em documentos confidenciais, mesmo quando são postados acidentalmente nas pastas de documento erradas.
+    <span data-ttu-id="d7502-136">Demonstre como você pode usar o Gerenciamento de Direitos de Informação do Office 365 para proteger os dados em documentos confidenciais, mesmo quando são postados acidentalmente nas pastas de documento erradas.</span><span class="sxs-lookup"><span data-stu-id="d7502-136">Demonstrate how you can use Office 365 Information Rights Management to protect the data in sensitive documents, even when they are accidentally posted in the wrong document folders.</span></span>
     
-- [Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-137">Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365</span><span class="sxs-lookup"><span data-stu-id="d7502-137">Data classification and labeling in the Office 365 dev/test environment</span></span>](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-    Demonstre como o cliente de proteção de informações do Windows Azure (AIP) pode ser usado para classificar os documentos com diversos níveis de segurança.
+    <span data-ttu-id="d7502-138">Demonstre como o cliente de proteção de informações do Windows Azure (AIP) pode ser usado para classificar os documentos com diversos níveis de segurança.</span><span class="sxs-lookup"><span data-stu-id="d7502-138">Demonstrate how the Azure Information Protection (AIP) client can be used to classify documents with various levels of security.</span></span>
     
-- [Isolado ambiente de desenvolvimento e teste de site equipe do SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [<span data-ttu-id="d7502-139">Isolado ambiente de desenvolvimento e teste de site equipe do SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="d7502-139">Isolated SharePoint Online team site dev/test environment</span></span>](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-    Demonstre como criar um site de equipe do SharePoint Online que é isolado do resto da organização para recursos altamente confidenciais.
+    <span data-ttu-id="d7502-140">Demonstre como criar um site de equipe do SharePoint Online que é isolado do resto da organização para recursos altamente confidenciais.</span><span class="sxs-lookup"><span data-stu-id="d7502-140">Demonstrate how to create a SharePoint Online team site that is isolated from the rest of the organization for sensitive or highly confidential resources.</span></span>
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
-<a name="O365"> </a>
+## <a name="the-microsoft-365-enterprise-devtest-environment"></a><span data-ttu-id="d7502-141">O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d7502-141">The Microsoft 365 Enterprise dev/test environment</span></span>
+<span data-ttu-id="d7502-142"><a name="O365"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-142"></span></span>
 
-Crie um ambiente de desenvolvimento e teste para cenários de [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) com estes artigos:
+<span data-ttu-id="d7502-143">Crie um ambiente de desenvolvimento e teste para cenários de [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) com estes artigos:</span><span class="sxs-lookup"><span data-stu-id="d7502-143">Create a dev/test environment for [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) scenarios with these articles:</span></span>
   
-- [O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
+- [<span data-ttu-id="d7502-144">O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d7502-144">The Microsoft 365 Enterprise dev/test environment</span></span>](the-microsoft-365-enterprise-dev-test-environment.md)
     
-    Crie o ambiente inicial que inclui o Office 365 E5, EMS E5 e um computador que executa o Windows 10 Enterprise.
+    <span data-ttu-id="d7502-145">Crie o ambiente inicial que inclui o Office 365 E5, EMS E5 e um computador que executa o Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="d7502-145">Create the initial environment that includes Office 365 E5, EMS E5, and a computer running Windows 10 Enterprise.</span></span>
     
-- [Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
+- [<span data-ttu-id="d7502-146">Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="d7502-146">MAM policies for your Microsoft 365 Enterprise dev/test environment</span></span>](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
     
-    Crie grupos de usuários e políticas de MAM (gerenciamento de aplicativo móvel) para dispositivos iOS e Android.
+    <span data-ttu-id="d7502-147">Crie grupos de usuários e políticas de MAM (gerenciamento de aplicativo móvel) para dispositivos iOS e Android.</span><span class="sxs-lookup"><span data-stu-id="d7502-147">Create user groups and mobile application management (MAM) policies for ioS and Android devices.</span></span>
     
-- [Registrar o iOS e Android dispositivos em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [<span data-ttu-id="d7502-148">Registrar o iOS e Android dispositivos em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365</span><span class="sxs-lookup"><span data-stu-id="d7502-148">Enroll iOS and Android devices in your Microsoft Enterprise 365 dev/test environment</span></span>](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
-    Registre os dispositivos iOS ou Android e gerencie-os remotamente.
+    <span data-ttu-id="d7502-149">Registre os dispositivos iOS ou Android e gerencie-os remotamente.</span><span class="sxs-lookup"><span data-stu-id="d7502-149">Enroll iOS or Android devices and manage them remotely.</span></span>
     
-## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365
-<a name="O365_D365"> </a>
+## <a name="office-365-and-dynamics-365-devtest-environment"></a><span data-ttu-id="d7502-150">Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d7502-150">Office 365 and Dynamics 365 dev/test environment</span></span>
+<span data-ttu-id="d7502-151"><a name="O365_D365"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-151"></span></span>
 
-Adicione uma assinatura de avaliação do Dynamics 365 e teste os recursos e cenários integrados do Office 365 e do Dynamics 365 com estes artigos:
+<span data-ttu-id="d7502-152">Adicione uma assinatura de avaliação do Dynamics 365 e teste os recursos e cenários integrados do Office 365 e do Dynamics 365 com estes artigos:</span><span class="sxs-lookup"><span data-stu-id="d7502-152">Add a Dynamics 365 trial subscription and test Office 365 and Dynamics 365 integrated features and scenarios with these articles:</span></span>
   
-- [Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [<span data-ttu-id="d7502-153">Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d7502-153">Office 365 and Dynamics 365 dev/test environment</span></span>](office-365-and-dynamics-365-dev-test-environment.md)
     
-    Adicione uma assinatura de avaliação do Dynamics 365 e licenças e as permissões do Dynamics 365 às suas contas de usuário.
+    <span data-ttu-id="d7502-154">Adicione uma assinatura de avaliação do Dynamics 365 e licenças e as permissões do Dynamics 365 às suas contas de usuário.</span><span class="sxs-lookup"><span data-stu-id="d7502-154">Add a Dynamics 365 trial subscription and Dynamics 365 licences and permissions to your user accounts.</span></span>
     
-- [Integração do Exchange Online para seu ambiente de desenvolvimento e teste do Office 365 e Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
+- [<span data-ttu-id="d7502-155">Integração do Exchange Online para seu ambiente de desenvolvimento e teste do Office 365 e Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="d7502-155">Exchange Online integration for your Office 365 and Dynamics 365 dev/test environment</span></span>](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)
     
-    Configurar e, em seguida, demonstre como Office 365 e Dynamics 365 trabalham juntos caixas de correio no Exchange Online.
+    <span data-ttu-id="d7502-156">Configurar e, em seguida, demonstre como Office 365 e Dynamics 365 trabalham juntos caixas de correio no Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="d7502-156">Configure and then demonstrate how Office 365 and Dynamics 365 work together in Exchange Online mailboxes.</span></span>
     
-## <a name="the-one-microsoft-cloud-devtest-environment"></a>O ambiente de desenvolvimento e teste de um Microsoft Cloud
-<a name="O365_D365"> </a>
+## <a name="the-one-microsoft-cloud-devtest-environment"></a><span data-ttu-id="d7502-157">O ambiente de desenvolvimento e teste de um Microsoft Cloud</span><span class="sxs-lookup"><span data-stu-id="d7502-157">The One Microsoft Cloud dev/test environment</span></span>
+<span data-ttu-id="d7502-158"><a name="O365_D365"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-158"></span></span>
 
-Criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft: Office 365, Windows Azure, EMS e Dynamics 365. Consulte [o Microsoft Cloud um ambiente de desenvolvimento e teste](the-one-microsoft-cloud-dev-test-environment.md) para ver as instruções passo a passo.
+<span data-ttu-id="d7502-p104">Criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft: Office 365, Windows Azure, EMS e Dynamics 365. Consulte [o Microsoft Cloud um ambiente de desenvolvimento e teste](the-one-microsoft-cloud-dev-test-environment.md) para ver as instruções passo a passo.</span><span class="sxs-lookup"><span data-stu-id="d7502-p104">Create a dev/test environment that includes all of Microsoft's cloud offerings: Office 365, Azure, EMS, and Dynamics 365. See [The One Microsoft Cloud dev/test environment](the-one-microsoft-cloud-dev-test-environment.md) for the step-by-step instructions.</span></span>
   
-## <a name="simulated-cross-premises-devtest-environments"></a>Ambientes simulados de desenvolvimento/teste entre instalações
-<a name="O365_D365"> </a>
+## <a name="simulated-cross-premises-devtest-environments"></a><span data-ttu-id="d7502-161">Ambientes simulados de desenvolvimento/teste entre instalações</span><span class="sxs-lookup"><span data-stu-id="d7502-161">Simulated cross-premises dev/test environments</span></span>
+<span data-ttu-id="d7502-162"><a name="O365_D365"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-162"></span></span>
 
-Você pode criar um ambiente de desenvolvimento/teste entre instalações, o que inclui uma rede virtual do Azure e uma rede local simulada, com estes artigos:
+<span data-ttu-id="d7502-163">Você pode criar um ambiente de desenvolvimento/teste entre instalações, o que inclui uma rede virtual do Azure e uma rede local simulada, com estes artigos:</span><span class="sxs-lookup"><span data-stu-id="d7502-163">You can create a cross-premises dev/test environment, which includes an Azure virtual network and a simulated on-premises network, with these articles:</span></span>
   
-- [Rede virtual simulado entre locais no Windows Azure](simulated-cross-premises-virtual-network-in-azure.md)
+- [<span data-ttu-id="d7502-164">Rede virtual simulado entre locais no Windows Azure</span><span class="sxs-lookup"><span data-stu-id="d7502-164">Simulated cross-premises virtual network in Azure</span></span>](simulated-cross-premises-virtual-network-in-azure.md)
     
-    Crie uma intranet simulada conectada a uma rede virtual do Azure em uma configuração de nuvem híbrida.
+    <span data-ttu-id="d7502-165">Crie uma intranet simulada conectada a uma rede virtual do Azure em uma configuração de nuvem híbrida.</span><span class="sxs-lookup"><span data-stu-id="d7502-165">Create a simulated intranet connected to an Azure virtual network in a hybrid cloud configuration.</span></span>
     
-- [Intranet do SharePoint Server 2016 no ambiente de desenvolvimento e teste do Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
+- [<span data-ttu-id="d7502-166">Intranet do SharePoint Server 2016 no ambiente de desenvolvimento e teste do Azure</span><span class="sxs-lookup"><span data-stu-id="d7502-166">Intranet SharePoint Server 2016 in Azure dev/test environment</span></span>](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx)
     
-    Crie um farm do SharePoint Server 2016 com um único servidor na rede virtual do Azure e teste a conectividade e administração da rede local simulada.
+    <span data-ttu-id="d7502-167">Crie um farm do SharePoint Server 2016 com um único servidor na rede virtual do Azure e teste a conectividade e administração da rede local simulada.</span><span class="sxs-lookup"><span data-stu-id="d7502-167">Create a single-server SharePoint Server 2016 farm in the Azure virtual network and test connectivity and administration from the simulated on-premises network.</span></span>
     
-## <a name="additional-cloud-based-devtest-environments"></a>Ambientes adicionais de desenvolvimento/teste baseados em nuvem
-<a name="ADD_TLGs"> </a>
+## <a name="additional-cloud-based-devtest-environments"></a><span data-ttu-id="d7502-168">Ambientes adicionais de desenvolvimento/teste baseados em nuvem</span><span class="sxs-lookup"><span data-stu-id="d7502-168">Additional cloud-based dev/test environments</span></span>
+<span data-ttu-id="d7502-169"><a name="ADD_TLGs"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-169"></span></span>
 
-Aqui estão ambientes adicionais de desenvolvimento/teste baseados em nuvem que você pode criar nos serviços de infraestrutura do Azure:
+<span data-ttu-id="d7502-170">Aqui estão ambientes adicionais de desenvolvimento/teste baseados em nuvem que você pode criar nos serviços de infraestrutura do Azure:</span><span class="sxs-lookup"><span data-stu-id="d7502-170">Here are additional cloud-based dev/test environments that you can create in Azure infrastructure services:</span></span>
   
-- [Ambiente de desenvolvimento e teste do SharePoint Server 2016 no Windows Azure](https://technet.microsoft.com/library/mt723354.aspx)
+- [<span data-ttu-id="d7502-171">Ambiente de desenvolvimento e teste do SharePoint Server 2016 no Windows Azure</span><span class="sxs-lookup"><span data-stu-id="d7502-171">SharePoint Server 2016 dev/test environment in Azure</span></span>](https://technet.microsoft.com/library/mt723354.aspx)
     
-    Crie um farm do SharePoint Server 2016 com um único servidor nos serviços de infraestrutura do Azure.
+    <span data-ttu-id="d7502-172">Crie um farm do SharePoint Server 2016 com um único servidor nos serviços de infraestrutura do Azure.</span><span class="sxs-lookup"><span data-stu-id="d7502-172">Build a single-server SharePoint Server 2016 farm in Azure infrastructure services.</span></span>
     
-- [Ambiente de desenvolvimento e teste de 2016 do Exchange no Windows Azure](https://technet.microsoft.com/library/mt733070%28v=exchg.160%29.aspx)
+- [<span data-ttu-id="d7502-173">Ambiente de desenvolvimento e teste de 2016 do Exchange no Windows Azure</span><span class="sxs-lookup"><span data-stu-id="d7502-173">Exchange 2016 dev/test environment in Azure</span></span>](https://technet.microsoft.com/library/mt733070%28v=exchg.160%29.aspx)
     
-    Crie um único servidor do Exchange 2016 nos serviços de infraestrutura do Azure.
+    <span data-ttu-id="d7502-174">Crie um único servidor do Exchange 2016 nos serviços de infraestrutura do Azure.</span><span class="sxs-lookup"><span data-stu-id="d7502-174">Build a single Exchange 2016 server in Azure infrastructure services.</span></span>
     
-- [Ambientes de desenvolvimento e teste do SharePoint Server 2013 no Windows Azure](http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx)
+- [<span data-ttu-id="d7502-175">Ambientes de desenvolvimento e teste do SharePoint Server 2013 no Windows Azure</span><span class="sxs-lookup"><span data-stu-id="d7502-175">SharePoint Server 2013 dev/test environments in Azure</span></span>](http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx)
     
-    Crie farms do SharePoint Server 2013 básicos e de alta disponibilidade nos serviços de infraestrutura do Azure.
+    <span data-ttu-id="d7502-176">Crie farms do SharePoint Server 2013 básicos e de alta disponibilidade nos serviços de infraestrutura do Azure.</span><span class="sxs-lookup"><span data-stu-id="d7502-176">Build basic and high-availability SharePoint Server 2013 farms in Azure infrastructure services.</span></span>
     
-**Participe da discussão**
+<span data-ttu-id="d7502-177">**Participe da discussão**</span><span class="sxs-lookup"><span data-stu-id="d7502-177">**Join the discussion**</span></span>
 
-|**Entre em contato conosco**|**Descrição**|
+|<span data-ttu-id="d7502-178">**Entre em contato conosco**</span><span class="sxs-lookup"><span data-stu-id="d7502-178">**Contact us**</span></span>|<span data-ttu-id="d7502-179">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="d7502-179">**Description**</span></span>|
 |:-----|:-----|
-|**Qual conteúdo de adoção de nuvem faça você precisa?** <br/> |Estamos criando conteúdo para a adoção de nuvem que abrange várias plataformas de nuvem da Microsoft e serviços. Fale conosco pensar em nosso conteúdo de adoção de nuvem ou pedir enviando e-mails para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)conteúdo específico.<br/> |
-|**Participe da discussão de adoção de nuvem** <br/> |Se você estiver entusiasmados pela sobre soluções baseadas em nuvem, considere ingressando a nuvem adoção consultoria placa (CAAB) para se conectar com uma comunidade amplos, vibrante de desenvolvedores de conteúdo Microsoft, profissionais do setor e clientes de todo o mundo. Para ingressar, adicione si mesmo como um membro do [espaço CAAB (placa de consultoria da adoção nuvem)](https://aka.ms/caab) da Microsoft Tech comunidade e envie-em um email rápido em [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros CAAB obtém convites para seminários na Web privados que descrevem os novos recursos de adoção de nuvem e soluções.<br/> |
-|**Obtenha a arte que aparece aqui** <br/> |Se você quiser uma cópia editável da arte que você vê neste artigo, voltaremos felizes em enviá-lo. Envie sua solicitação, incluindo a URL e o título da arte, como [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|<span data-ttu-id="d7502-180">**Qual conteúdo de adoção de nuvem faça você precisa?**</span><span class="sxs-lookup"><span data-stu-id="d7502-180">**What cloud adoption content do you need?**</span></span> <br/> |<span data-ttu-id="d7502-p105">Estamos criando conteúdo para a adoção de nuvem que abrange várias plataformas de nuvem da Microsoft e serviços. Fale conosco pensar em nosso conteúdo de adoção de nuvem ou pedir enviando e-mails para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)conteúdo específico.</span><span class="sxs-lookup"><span data-stu-id="d7502-p105">We are creating content for cloud adoption that spans multiple Microsoft cloud platforms and services. Let us know what you think about our cloud adoption content, or ask for specific content by sending email to [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).  </span></span><br/> |
+|<span data-ttu-id="d7502-183">**Participe da discussão de adoção de nuvem**</span><span class="sxs-lookup"><span data-stu-id="d7502-183">**Join the cloud adoption discussion**</span></span> <br/> |<span data-ttu-id="d7502-p106">Se você estiver entusiasmados pela sobre soluções baseadas em nuvem, considere ingressando a nuvem adoção consultoria placa (CAAB) para se conectar com uma comunidade amplos, vibrante de desenvolvedores de conteúdo Microsoft, profissionais do setor e clientes de todo o mundo. Para ingressar, adicione si mesmo como um membro do [espaço CAAB (placa de consultoria da adoção nuvem)](https://aka.ms/caab) da Microsoft Tech comunidade e envie-em um email rápido em [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros CAAB obtém convites para seminários na Web privados que descrevem os novos recursos de adoção de nuvem e soluções.</span><span class="sxs-lookup"><span data-stu-id="d7502-p106">If you are passionate about cloud-based solutions, consider joining the Cloud Adoption Advisory Board (CAAB) to connect with a larger, vibrant community of Microsoft content developers, industry professionals, and customers from around the globe. To join, add yourself as a member of the [CAAB (Cloud Adoption Advisory Board) space](https://aka.ms/caab) of the Microsoft Tech Community and send us a quick email at [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Anyone can read community-related content on the [CAAB blog](https://blogs.technet.com/b/solutions_advisory_board/). However, CAAB members get invitations to private webinars that describe new cloud adoption resources and solutions.  </span></span><br/> |
+|<span data-ttu-id="d7502-187">**Obtenha a arte que aparece aqui**</span><span class="sxs-lookup"><span data-stu-id="d7502-187">**Get the art you see here**</span></span> <br/> |<span data-ttu-id="d7502-p107">Se você quiser uma cópia editável da arte que você vê neste artigo, voltaremos felizes em enviá-lo. Envie sua solicitação, incluindo a URL e o título da arte, como [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).</span><span class="sxs-lookup"><span data-stu-id="d7502-p107">If you want an editable copy of the art you see in this article, we'll be glad to send it to you. Email your request, including the URL and title of the art, to [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  </span></span><br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="d7502-190">See Also</span><span class="sxs-lookup"><span data-stu-id="d7502-190">See Also</span></span>
 
-<a name="ADD_TLGs"> </a>
+<span data-ttu-id="d7502-191"><a name="ADD_TLGs"> </a></span><span class="sxs-lookup"><span data-stu-id="d7502-191"></span></span>
 
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="d7502-192">Adoção da nuvem e soluções híbridas</span><span class="sxs-lookup"><span data-stu-id="d7502-192">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="d7502-193">Recursos de arquitetura de TI do Microsoft</span><span class="sxs-lookup"><span data-stu-id="d7502-193">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[<span data-ttu-id="d7502-194">Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync</span><span class="sxs-lookup"><span data-stu-id="d7502-194">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
-[Soluções híbridas](hybrid-solutions.md)
+[<span data-ttu-id="d7502-195">Soluções híbridas</span><span class="sxs-lookup"><span data-stu-id="d7502-195">Hybrid solutions</span></span>](hybrid-solutions.md)
 
 

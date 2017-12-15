@@ -22,55 +22,55 @@ ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura dos cenários de nuvem Microsoft híbridos
+# <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a><span data-ttu-id="c0129-103">Arquitetura dos cenários de nuvem Microsoft híbridos</span><span class="sxs-lookup"><span data-stu-id="c0129-103">Architecture of Microsoft hybrid cloud scenarios</span></span>
 
- **Resumo:** Entenda a arquitetura de ofertas de nuvem da Microsoft híbrida.
+ <span data-ttu-id="c0129-104">**Resumo:** Entenda a arquitetura de ofertas de nuvem da Microsoft híbrida.</span><span class="sxs-lookup"><span data-stu-id="c0129-104">**Summary:** Understand the architecture of Microsoft's hybrid cloud offerings.</span></span>
   
-Use uma abordagem de arquitetura para planejar e implementar os cenários de nuvem híbrida com os serviços de nuvem da Microsoft e plataformas.
+<span data-ttu-id="c0129-105">Use uma abordagem de arquitetura para planejar e implementar os cenários de nuvem híbrida com os serviços de nuvem da Microsoft e plataformas.</span><span class="sxs-lookup"><span data-stu-id="c0129-105">Use an architectural approach to plan and implement hybrid cloud scenarios with Microsoft cloud services and platforms.</span></span>
   
-**Figura 1: Microsoft híbrida pilha da nuvem**
+<span data-ttu-id="c0129-106">**Figura 1: Microsoft híbrida pilha da nuvem**</span><span class="sxs-lookup"><span data-stu-id="c0129-106">**Figure 1: The Microsoft hybrid cloud stack**</span></span>
 
 ![A pilha de nuvem híbrida da Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
   
-A Figura 1 mostra a pilha de nuvem híbrida Microsoft e sua camada, que incluem o local, rede, identidade, aplicativos e cenários e categoria do serviço na nuvem (SaaS Microsoft Azure PaaS e Azure PaaS).
+<span data-ttu-id="c0129-108">A Figura 1 mostra a pilha de nuvem híbrida Microsoft e sua camada, que incluem o local, rede, identidade, aplicativos e cenários e categoria do serviço na nuvem (SaaS Microsoft Azure PaaS e Azure PaaS).</span><span class="sxs-lookup"><span data-stu-id="c0129-108">Figure 1 shows the Microsoft hybrid cloud stack and its layer, which include on-premises, network, Identity, apps and scenarios, and the category of cloud service (Microsoft SaaS, Azure PaaS, and Azure PaaS).</span></span>
   
-A camada de aplicativos e cenários contém os cenários de nuvem híbrida específica que são detalhados nos artigos adicionais desse modelo. A identidade, rede e locais camadas podem ser comuns para as categorias de serviço na nuvem (SaaS, PaaS ou PaaS).
+<span data-ttu-id="c0129-p101">A camada de aplicativos e cenários contém os cenários de nuvem híbrida específica que são detalhados nos artigos adicionais desse modelo. A identidade, rede e locais camadas podem ser comuns para as categorias de serviço na nuvem (SaaS, PaaS ou PaaS).</span><span class="sxs-lookup"><span data-stu-id="c0129-p101">The Apps and scenarios layer contains the specific hybrid cloud scenarios that are detailed in the additional articles of this model. The Identity, Network, and On-premises layers can be common to the categories of cloud service (SaaS, PaaS, or PaaS).</span></span>
   
-- Local
+- <span data-ttu-id="c0129-111">Local</span><span class="sxs-lookup"><span data-stu-id="c0129-111">On-premises</span></span>
     
-    Infraestrutura do local para cenários híbridos pode incluir servidores para SharePoint, Exchange, Skype para aplicativos linha de negócios e de negócios. Ele também pode incluir os repositórios de dados (bancos de dados, listas, arquivos). Sem conexões ExpressRoute, acesso para os repositórios de dados de locais deve ser permitido por meio de um proxy reverso ou tornando o servidor ou os dados acessíveis em sua DMZ ou extranet.
+    <span data-ttu-id="c0129-p102">Infraestrutura do local para cenários híbridos pode incluir servidores para SharePoint, Exchange, Skype para aplicativos linha de negócios e de negócios. Ele também pode incluir os repositórios de dados (bancos de dados, listas, arquivos). Sem conexões ExpressRoute, acesso para os repositórios de dados de locais deve ser permitido por meio de um proxy reverso ou tornando o servidor ou os dados acessíveis em sua DMZ ou extranet.</span><span class="sxs-lookup"><span data-stu-id="c0129-p102">On-premises infrastructure for hybrid scenarios can include servers for SharePoint, Exchange, Skype for Business, and line of business applications. It can also include data stores (databases, lists, files). Without ExpressRoute connections, access to the on-premises data stores must be allowed through a reverse proxy or by making the server or data accessible on your DMZ or extranet.</span></span>
     
-- Rede
+- <span data-ttu-id="c0129-115">Rede</span><span class="sxs-lookup"><span data-stu-id="c0129-115">Network</span></span>
     
-    Há duas opções para conectividade com plataformas de nuvem da Microsoft e serviços: seu pipe existente da Internet e ExpressRoute. Use uma conexão ExpressRoute se desempenho previsível é importante. Você pode usar uma conexão de ExpressRoute para conectar-se diretamente para os serviços Microsoft SaaS (Office 365 e Dynamics 365), serviços do Azure PaaS e serviços do Azure PaaS.
+    <span data-ttu-id="c0129-p103">Há duas opções para conectividade com plataformas de nuvem da Microsoft e serviços: seu pipe existente da Internet e ExpressRoute. Use uma conexão ExpressRoute se desempenho previsível é importante. Você pode usar uma conexão de ExpressRoute para conectar-se diretamente para os serviços Microsoft SaaS (Office 365 e Dynamics 365), serviços do Azure PaaS e serviços do Azure PaaS.</span><span class="sxs-lookup"><span data-stu-id="c0129-p103">There are two choices for connectivity to Microsoft cloud platforms and services: your existing Internet pipe and ExpressRoute. Use an ExpressRoute connection if predictable performance is important. You can use one ExpressRoute connection to connect directly to Microsoft SaaS services (Office 365 and Dynamics 365), Azure PaaS services, and Azure PaaS services.</span></span>
     
-- Identidade
+- <span data-ttu-id="c0129-119">Identidade</span><span class="sxs-lookup"><span data-stu-id="c0129-119">Identity</span></span>
     
-    Para infraestrutura de identidade de nuvem, há duas maneiras de ir, dependendo da plataforma de nuvem da Microsoft. Para SaaS e PaaS do Azure, integrar sua infraestrutura de identidade no local com o Azure AD ou estabelecer uma federação com provedores de identidade seu local identidade infraestrutura ou de terceiros. Para VMs em execução no Windows Azure, você pode estender sua infraestrutura de identidade de local, como o Windows Server AD, para as redes virtuais (VNets) onde residem os suas VMs.
+    <span data-ttu-id="c0129-p104">Para infraestrutura de identidade de nuvem, há duas maneiras de ir, dependendo da plataforma de nuvem da Microsoft. Para SaaS e PaaS do Azure, integrar sua infraestrutura de identidade no local com o Azure AD ou estabelecer uma federação com provedores de identidade seu local identidade infraestrutura ou de terceiros. Para VMs em execução no Windows Azure, você pode estender sua infraestrutura de identidade de local, como o Windows Server AD, para as redes virtuais (VNets) onde residem os suas VMs.</span><span class="sxs-lookup"><span data-stu-id="c0129-p104">For cloud identity infrastructure, there are two ways to go, depending on the Microsoft cloud platform. For SaaS and Azure PaaS, integrate your on-premises identity infrastructure with Azure AD or federate with your on-premises identity infrastructure or third-party identity providers. For VMs running in Azure, you can extend your on-premises identity infrastructure, such as Windows Server AD, to the virtual networks (VNets) where your VMs reside.</span></span>
     
-## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Cenários de nuvem híbrida para o processo de adoção de nuvem de três fases
+## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a><span data-ttu-id="c0129-123">Cenários de nuvem híbrida para o processo de adoção de nuvem de três fases</span><span class="sxs-lookup"><span data-stu-id="c0129-123">Hybrid cloud scenarios for the three-phase cloud adoption process</span></span>
 
-Muitas empresas, incluindo Microsoft, usam uma abordagem de três fases para adotar a nuvem. Cenários de nuvem híbrida podem reproduzir uma função em cada fase.
+<span data-ttu-id="c0129-p105">Muitas empresas, incluindo Microsoft, usam uma abordagem de três fases para adotar a nuvem. Cenários de nuvem híbrida podem reproduzir uma função em cada fase.</span><span class="sxs-lookup"><span data-stu-id="c0129-p105">Many enterprises, including Microsoft's, use a three-phase approach to adopting the cloud. Hybrid cloud scenarios can play a role in each phase.</span></span>
   
-1. Mover cargas de trabalho de produtividade para SaaS
+1. <span data-ttu-id="c0129-126">Mover cargas de trabalho de produtividade para SaaS</span><span class="sxs-lookup"><span data-stu-id="c0129-126">Move productivity workloads to SaaS</span></span>
     
-    Para produtividade cargas de trabalho que atualmente estão ou devem permanecer no local, cenários híbridos permitir que eles sejam integrados com os representantes de nuvem.
+    <span data-ttu-id="c0129-127">Para produtividade cargas de trabalho que atualmente estão ou devem permanecer no local, cenários híbridos permitir que eles sejam integrados com os representantes de nuvem.</span><span class="sxs-lookup"><span data-stu-id="c0129-127">For productivity workloads that currently are or must stay on-premises, hybrid scenarios allow them to be integrated with their cloud counterparts.</span></span>
     
-2. Desenvolva aplicativos novos e modernos no Azure PaaS
+2. <span data-ttu-id="c0129-128">Desenvolva aplicativos novos e modernos no Azure PaaS</span><span class="sxs-lookup"><span data-stu-id="c0129-128">Develop new and modern applications in Azure PaaS</span></span>
     
-    Aplicativos do Azure PaaS híbrida com segurança podem aproveitar os recursos de servidor ou armazenamento local.
+    <span data-ttu-id="c0129-129">Aplicativos do Azure PaaS híbrida com segurança podem aproveitar os recursos de servidor ou armazenamento local.</span><span class="sxs-lookup"><span data-stu-id="c0129-129">Azure PaaS hybrid applications can securely leverage on-premises server or storage resources.</span></span>
     
-3. Mover aplicativos existentes para o Windows Azure IaaS
+3. <span data-ttu-id="c0129-130">Mover aplicativos existentes para o Windows Azure IaaS</span><span class="sxs-lookup"><span data-stu-id="c0129-130">Move existing applications to Azure IaaS</span></span>
     
-    Para cenários de shift e levantar e compilação na nuvem, aplicativos de servidor em execução no Azure VMs fornecem fácil provisionamento e dimensionamento.
+    <span data-ttu-id="c0129-131">Para cenários de shift e levantar e compilação na nuvem, aplicativos de servidor em execução no Azure VMs fornecem fácil provisionamento e dimensionamento.</span><span class="sxs-lookup"><span data-stu-id="c0129-131">For lift-and-shift and build-in-the-cloud scenarios, server-based applications running on Azure VMs provide easy provisioning and scaling.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="c0129-132">See Also</span><span class="sxs-lookup"><span data-stu-id="c0129-132">See Also</span></span>
 
-[Nuvem híbrida da Microsoft para arquitetos da empresa](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[<span data-ttu-id="c0129-133">Nuvem híbrida da Microsoft para arquitetos da empresa</span><span class="sxs-lookup"><span data-stu-id="c0129-133">Microsoft Hybrid Cloud for Enterprise Architects</span></span>](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="c0129-134">Recursos de arquitetura de TI do Microsoft</span><span class="sxs-lookup"><span data-stu-id="c0129-134">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="c0129-135">Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI</span><span class="sxs-lookup"><span data-stu-id="c0129-135">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

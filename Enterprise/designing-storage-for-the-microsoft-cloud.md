@@ -22,148 +22,148 @@ ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Projetar o armazenamento para a nuvem da Microsoft
+# <a name="designing-storage-for-the-microsoft-cloud"></a><span data-ttu-id="64ef6-103">Projetar o armazenamento para a nuvem da Microsoft</span><span class="sxs-lookup"><span data-stu-id="64ef6-103">Designing storage for the Microsoft cloud</span></span>
 
- **Resumo:** Entender por que você precisa de armazenamento na nuvem e examine a lista de opções de armazenamento de nuvem da Microsoft e os cenários de armazenamento de chave.
+ <span data-ttu-id="64ef6-104">**Resumo:** Entender por que você precisa de armazenamento na nuvem e examine a lista de opções de armazenamento de nuvem da Microsoft e os cenários de armazenamento de chave.</span><span class="sxs-lookup"><span data-stu-id="64ef6-104">**Summary:** Understand why you need cloud storage and review the list of Microsoft's cloud storage options and the key storage scenarios.</span></span>
   
-Integrar o armazenamento com serviços de nuvem da Microsoft oferece acesso a uma ampla gama de opções de plataforma de serviços e a nuvem.
+<span data-ttu-id="64ef6-105">Integrar o armazenamento com serviços de nuvem da Microsoft oferece acesso a uma ampla gama de opções de plataforma de serviços e a nuvem.</span><span class="sxs-lookup"><span data-stu-id="64ef6-105">Integrating your storage with Microsoft cloud services gives you access to a broad range of services and cloud platform options.</span></span>
   
-## <a name="why-cloud-storage"></a>Por que armazenamento na nuvem?
+## <a name="why-cloud-storage"></a><span data-ttu-id="64ef6-106">Por que armazenamento na nuvem?</span><span class="sxs-lookup"><span data-stu-id="64ef6-106">Why cloud storage?</span></span>
 
-Há dois motivos principais para usar o armazenamento em nuvem.
+<span data-ttu-id="64ef6-107">Há dois motivos principais para usar o armazenamento em nuvem.</span><span class="sxs-lookup"><span data-stu-id="64ef6-107">There are two key reasons to use cloud storage.</span></span>
   
-1. Velocidade do mercado:
+1. <span data-ttu-id="64ef6-108">Velocidade do mercado:</span><span class="sxs-lookup"><span data-stu-id="64ef6-108">Speed to market:</span></span>
     
-  - Configuração mais rápida para alta disponibilidade e recuperação de desastres
+  - <span data-ttu-id="64ef6-109">Configuração mais rápida para alta disponibilidade e recuperação de desastres</span><span class="sxs-lookup"><span data-stu-id="64ef6-109">Faster configuration for high availability and disaster recovery</span></span>
     
-  - Nenhum hardware de armazenamento adquirir
+  - <span data-ttu-id="64ef6-110">Nenhum hardware de armazenamento adquirir</span><span class="sxs-lookup"><span data-stu-id="64ef6-110">No storage hardware to purchase</span></span>
     
-  - Direcionamento interno fornecido pelo ofertas de nuvem da Microsoft
+  - <span data-ttu-id="64ef6-111">Direcionamento interno fornecido pelo ofertas de nuvem da Microsoft</span><span class="sxs-lookup"><span data-stu-id="64ef6-111">Built-in plumbing provided by Microsoft's cloud offerings</span></span>
     
-  - Disponível em qualquer lugar no mundo
+  - <span data-ttu-id="64ef6-112">Disponível em qualquer lugar no mundo</span><span class="sxs-lookup"><span data-stu-id="64ef6-112">Available from anywhere in the world</span></span>
     
-2. Reduzir os custos para manter:
+2. <span data-ttu-id="64ef6-113">Reduzir os custos para manter:</span><span class="sxs-lookup"><span data-stu-id="64ef6-113">Lower costs to maintain:</span></span>
     
-  - Elasticidade dimensionar acima e abaixo suas demandas de armazenamento
+  - <span data-ttu-id="64ef6-114">Elasticidade dimensionar acima e abaixo suas demandas de armazenamento</span><span class="sxs-lookup"><span data-stu-id="64ef6-114">Elasticity to scale up and down your storage demands</span></span>
     
-  - Nenhum hardware de armazenamento para manter ou migrar
+  - <span data-ttu-id="64ef6-115">Nenhum hardware de armazenamento para manter ou migrar</span><span class="sxs-lookup"><span data-stu-id="64ef6-115">No storage hardware to maintain or migrate</span></span>
     
-  - A Microsoft tem o seu técnico interno para manter e aprimorar a infra-estrutura
+  - <span data-ttu-id="64ef6-116">A Microsoft tem o seu técnico interno para manter e aprimorar a infra-estrutura</span><span class="sxs-lookup"><span data-stu-id="64ef6-116">Microsoft is your built-in plumber to maintain and improve infrastructure</span></span>
     
-  - Melhor segurança de armazenamento no mercado com melhorias em andamento
+  - <span data-ttu-id="64ef6-117">Melhor segurança de armazenamento no mercado com melhorias em andamento</span><span class="sxs-lookup"><span data-stu-id="64ef6-117">Best storage security in the marketplace with ongoing improvements</span></span>
     
-## <a name="microsoft-cloud-storage-options"></a>Opções de armazenamento do Microsoft cloud
+## <a name="microsoft-cloud-storage-options"></a><span data-ttu-id="64ef6-118">Opções de armazenamento do Microsoft cloud</span><span class="sxs-lookup"><span data-stu-id="64ef6-118">Microsoft cloud storage options</span></span>
 
-Para ajudá-lo a entender a ampla variedade de opções de armazenamento de nuvem, usamos uma analogia de construção.
+<span data-ttu-id="64ef6-119">Para ajudá-lo a entender a ampla variedade de opções de armazenamento de nuvem, usamos uma analogia de construção.</span><span class="sxs-lookup"><span data-stu-id="64ef6-119">To help you understand the wide variety of cloud storage options, we use a construction analogy.</span></span>
   
-### <a name="move-in-ready"></a>Move-in pronto
+### <a name="move-in-ready"></a><span data-ttu-id="64ef6-120">Move-in pronto</span><span class="sxs-lookup"><span data-stu-id="64ef6-120">Move-in ready</span></span>
 
-Use essas soluções pré-empacotados que estão incluídas com serviços existentes. Use imediatamente e com a configuração mínima.
+<span data-ttu-id="64ef6-p101">Use essas soluções pré-empacotados que estão incluídas com serviços existentes. Use imediatamente e com a configuração mínima.</span><span class="sxs-lookup"><span data-stu-id="64ef6-p101">Use these prepackaged solutions that are bundled with existing services. Use immediately and with minimal configuration.</span></span>
   
-- Office 365
+- <span data-ttu-id="64ef6-123">Office 365</span><span class="sxs-lookup"><span data-stu-id="64ef6-123">Office 365</span></span>
     
-- Microsoft Intune
+- <span data-ttu-id="64ef6-124">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="64ef6-124">Microsoft Intune</span></span>
     
-- OneDrive for Business
+- <span data-ttu-id="64ef6-125">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="64ef6-125">OneDrive for Business</span></span>
     
-- Dynamics 365
+- <span data-ttu-id="64ef6-126">Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="64ef6-126">Dynamics 365</span></span>
     
-- Visual Studio Team Services
+- <span data-ttu-id="64ef6-127">Visual Studio Team Services</span><span class="sxs-lookup"><span data-stu-id="64ef6-127">Visual Studio Team Services</span></span>
     
-- Recuperação de sites do Windows Azure
+- <span data-ttu-id="64ef6-128">Recuperação de sites do Windows Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-128">Azure Site Recovery</span></span>
     
-- Compartilhamento de sites do Yammer
+- <span data-ttu-id="64ef6-129">Compartilhamento de sites do Yammer</span><span class="sxs-lookup"><span data-stu-id="64ef6-129">Yammer Site Sharing</span></span>
     
-- Backup do Windows Azure
+- <span data-ttu-id="64ef6-130">Backup do Windows Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-130">Azure Backup</span></span>
     
-Para obter os detalhes de cada uma dessas opções de armazenamento em nuvem, consulte [Move-in pronto](move-in-ready.md).
+<span data-ttu-id="64ef6-131">Para obter os detalhes de cada uma dessas opções de armazenamento em nuvem, consulte [Move-in pronto](move-in-ready.md).</span><span class="sxs-lookup"><span data-stu-id="64ef6-131">For the details of each of these cloud storage options, see [Move-in ready](move-in-ready.md).</span></span>
   
-### <a name="some-assembly-required"></a>Alguns assembly necessário
+### <a name="some-assembly-required"></a><span data-ttu-id="64ef6-132">Alguns assembly necessário</span><span class="sxs-lookup"><span data-stu-id="64ef6-132">Some assembly required</span></span>
 
-Use esses serviços existentes como um ponto de partida para sua solução de armazenamento com uma configuração adicional ou codificação para um ajuste personalizado.
+<span data-ttu-id="64ef6-133">Use esses serviços existentes como um ponto de partida para sua solução de armazenamento com uma configuração adicional ou codificação para um ajuste personalizado.</span><span class="sxs-lookup"><span data-stu-id="64ef6-133">Use these existing services as a starting point for your storage solution with additional configuration or coding for a custom fit.</span></span>
   
-- Rede de fornecimento de conteúdo do Azure
+- <span data-ttu-id="64ef6-134">Rede de fornecimento de conteúdo do Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-134">Azure Content Delivery Network</span></span>
     
-- Azure Media Services
+- <span data-ttu-id="64ef6-135">Azure Media Services</span><span class="sxs-lookup"><span data-stu-id="64ef6-135">Azure Media Services</span></span>
     
-- HdInsight
+- <span data-ttu-id="64ef6-136">HdInsight</span><span class="sxs-lookup"><span data-stu-id="64ef6-136">HdInsight</span></span>
     
-- Cache do Azure relacionada
+- <span data-ttu-id="64ef6-137">Cache do Azure relacionada</span><span class="sxs-lookup"><span data-stu-id="64ef6-137">Azure Redis Cache</span></span>
     
-- Banco de Dados SQL Azure
+- <span data-ttu-id="64ef6-138">Banco de Dados SQL Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-138">Azure SQL Database</span></span>
     
-- SQL Server em uma VM Azure
+- <span data-ttu-id="64ef6-139">SQL Server em uma VM Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-139">SQL Server on an Azure VM</span></span>
     
-- Azure Cosmos DB
+- <span data-ttu-id="64ef6-140">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="64ef6-140">Azure Cosmos DB</span></span>
     
-- Desempenho do StorSimple
+- <span data-ttu-id="64ef6-141">Desempenho do StorSimple</span><span class="sxs-lookup"><span data-stu-id="64ef6-141">StorSimple</span></span>
     
-- Armazém de dados do SQL Azure
+- <span data-ttu-id="64ef6-142">Armazém de dados do SQL Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-142">Azure SQL Data Warehouse</span></span>
     
-- Repositório de Lake de dados do Windows Azure
+- <span data-ttu-id="64ef6-143">Repositório de Lake de dados do Windows Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-143">Azure Data Lake Store</span></span>
     
-Para obter os detalhes de cada uma dessas opções de armazenamento de nuvem, consulte [alguns assembly necessários](some-assembly-required.md).
+<span data-ttu-id="64ef6-144">Para obter os detalhes de cada uma dessas opções de armazenamento de nuvem, consulte [alguns assembly necessários](some-assembly-required.md).</span><span class="sxs-lookup"><span data-stu-id="64ef6-144">For the details of each of these cloud storage options, see [Some assembly required](some-assembly-required.md).</span></span>
   
-### <a name="build-from-the-ground-up"></a>Criação de ponta a ponta para cima
+### <a name="build-from-the-ground-up"></a><span data-ttu-id="64ef6-145">Criação de ponta a ponta para cima</span><span class="sxs-lookup"><span data-stu-id="64ef6-145">Build from the ground up</span></span>
 
-Use esses blocos de construção de armazenamento, juntamente com a codificação, para criar sua própria solução de armazenamento ou aplicativos a partir do zero.
+<span data-ttu-id="64ef6-146">Use esses blocos de construção de armazenamento, juntamente com a codificação, para criar sua própria solução de armazenamento ou aplicativos a partir do zero.</span><span class="sxs-lookup"><span data-stu-id="64ef6-146">Use these storage building blocks, along with coding, to create your own storage solution or apps from scratch.</span></span>
   
-- Armazenamento do Azure (arquivos)
+- <span data-ttu-id="64ef6-147">Armazenamento do Azure (arquivos)</span><span class="sxs-lookup"><span data-stu-id="64ef6-147">Azure Storage (files)</span></span>
     
-- Armazenamento (blobs) do Azure
+- <span data-ttu-id="64ef6-148">Armazenamento (blobs) do Azure</span><span class="sxs-lookup"><span data-stu-id="64ef6-148">Azure Storage (blobs)</span></span>
     
-- Armazenamento do Azure (filas)
+- <span data-ttu-id="64ef6-149">Armazenamento do Azure (filas)</span><span class="sxs-lookup"><span data-stu-id="64ef6-149">Azure Storage (queues)</span></span>
     
-- Armazenamento do Azure (tabelas)
+- <span data-ttu-id="64ef6-150">Armazenamento do Azure (tabelas)</span><span class="sxs-lookup"><span data-stu-id="64ef6-150">Azure Storage (tables)</span></span>
     
-Para obter os detalhes de cada uma dessas opções de armazenamento de nuvem, consulte [construir a partir do zero](build-from-the-ground-up.md).
+<span data-ttu-id="64ef6-151">Para obter os detalhes de cada uma dessas opções de armazenamento de nuvem, consulte [construir a partir do zero](build-from-the-ground-up.md).</span><span class="sxs-lookup"><span data-stu-id="64ef6-151">For the details of each of these cloud storage options, see [Build from the ground up](build-from-the-ground-up.md).</span></span>
   
-## <a name="key-storage-scenarios"></a>Cenários de armazenamento de chave
+## <a name="key-storage-scenarios"></a><span data-ttu-id="64ef6-152">Cenários de armazenamento de chave</span><span class="sxs-lookup"><span data-stu-id="64ef6-152">Key storage scenarios</span></span>
 
-Aqui estão os principais cenários que exigem o armazenamento baseado em nuvem:
+<span data-ttu-id="64ef6-153">Aqui estão os principais cenários que exigem o armazenamento baseado em nuvem:</span><span class="sxs-lookup"><span data-stu-id="64ef6-153">Here are the key scenarios that require cloud-based storage:</span></span>
   
-- Cache de dados
+- <span data-ttu-id="64ef6-154">Cache de dados</span><span class="sxs-lookup"><span data-stu-id="64ef6-154">Cache data</span></span>
     
-    Acelere o acesso aos dados comumente usados, armazenando-o em um cache de alta velocidade.
+    <span data-ttu-id="64ef6-155">Acelere o acesso aos dados comumente usados, armazenando-o em um cache de alta velocidade.</span><span class="sxs-lookup"><span data-stu-id="64ef6-155">Accelerate access to commonly used data by storing it in a high-speed cache.</span></span>
     
-- Colaborar com membros da equipe
+- <span data-ttu-id="64ef6-156">Colaborar com membros da equipe</span><span class="sxs-lookup"><span data-stu-id="64ef6-156">Collaborate with team members</span></span>
     
-    Conceder permissão a vários usuários para permitir o acesso aos dados no armazenamento na nuvem.
+    <span data-ttu-id="64ef6-157">Conceder permissão a vários usuários para permitir o acesso aos dados no armazenamento na nuvem.</span><span class="sxs-lookup"><span data-stu-id="64ef6-157">Grant permission to multiple users to allow access to data in cloud storage.</span></span>
     
-- Gerenciar dados
+- <span data-ttu-id="64ef6-158">Gerenciar dados</span><span class="sxs-lookup"><span data-stu-id="64ef6-158">Manage data</span></span>
     
-    Armazenar, mover ou excluir dados em massa internos ou externos.
+    <span data-ttu-id="64ef6-159">Armazenar, mover ou excluir dados em massa internos ou externos.</span><span class="sxs-lookup"><span data-stu-id="64ef6-159">Store, move, or delete internal or external bulk data.</span></span>
     
-- Gerenciar o código-fonte
+- <span data-ttu-id="64ef6-160">Gerenciar o código-fonte</span><span class="sxs-lookup"><span data-stu-id="64ef6-160">Manage source code</span></span>
     
-    Carregar, colaborar e executar arquivos de código do aplicativo na nuvem.
+    <span data-ttu-id="64ef6-161">Carregar, colaborar e executar arquivos de código do aplicativo na nuvem.</span><span class="sxs-lookup"><span data-stu-id="64ef6-161">Upload, collaborate, and run application code files in the cloud.</span></span>
     
-- Arquivos de backup
+- <span data-ttu-id="64ef6-162">Arquivos de backup</span><span class="sxs-lookup"><span data-stu-id="64ef6-162">Backup files</span></span>
     
-    Armazene cópias de dados internos ou externos externos em vários locais em nuvem.
+    <span data-ttu-id="64ef6-163">Armazene cópias de dados internos ou externos externos em vários locais em nuvem.</span><span class="sxs-lookup"><span data-stu-id="64ef6-163">Store copies of internal or external data offsite in multiple cloud locations.</span></span>
     
-- Publicar comunicações da empresa
+- <span data-ttu-id="64ef6-164">Publicar comunicações da empresa</span><span class="sxs-lookup"><span data-stu-id="64ef6-164">Publish company communications</span></span>
     
-    Crie um ponto único de publicação para mensagens internas ou externas.
+    <span data-ttu-id="64ef6-165">Crie um ponto único de publicação para mensagens internas ou externas.</span><span class="sxs-lookup"><span data-stu-id="64ef6-165">Create a single point of publication for internal or external messages.</span></span>
     
-- Distribuir milhões de eventos
+- <span data-ttu-id="64ef6-166">Distribuir milhões de eventos</span><span class="sxs-lookup"><span data-stu-id="64ef6-166">Distribute millions of events</span></span>
     
-    Crie o armazenamento para inclusão de telemetria em sites, aplicativos e dispositivos.
+    <span data-ttu-id="64ef6-167">Crie o armazenamento para inclusão de telemetria em sites, aplicativos e dispositivos.</span><span class="sxs-lookup"><span data-stu-id="64ef6-167">Create storage for telemetry ingestion from websites, apps, and devices.</span></span>
     
-- Gerenciar/servem vídeos
+- <span data-ttu-id="64ef6-168">Gerenciar/servem vídeos</span><span class="sxs-lookup"><span data-stu-id="64ef6-168">Manage/serve videos</span></span>
     
-    Armazenar e forneça conteúdo de vídeo aos clientes ou usuários da organização.
+    <span data-ttu-id="64ef6-169">Armazenar e forneça conteúdo de vídeo aos clientes ou usuários da organização.</span><span class="sxs-lookup"><span data-stu-id="64ef6-169">Store and serve video content to customers or organization users.</span></span>
     
-## <a name="next-step"></a>Próxima etapa
+## <a name="next-step"></a><span data-ttu-id="64ef6-170">Próxima etapa</span><span class="sxs-lookup"><span data-stu-id="64ef6-170">Next step</span></span>
 
-Examine as opções de armazenamento [pronto Move na](move-in-ready.md) nuvem.
+<span data-ttu-id="64ef6-171">Examine as opções de armazenamento [pronto Move na](move-in-ready.md) nuvem.</span><span class="sxs-lookup"><span data-stu-id="64ef6-171">Review the [Move-in ready](move-in-ready.md) cloud storage options.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="64ef6-172">See Also</span><span class="sxs-lookup"><span data-stu-id="64ef6-172">See Also</span></span>
 
-[Armazenamento em nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-storage-for-enterprise-architects.md)
+[<span data-ttu-id="64ef6-173">Armazenamento em nuvem da Microsoft para arquitetos da empresa</span><span class="sxs-lookup"><span data-stu-id="64ef6-173">Microsoft Cloud Storage for Enterprise Architects</span></span>](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="64ef6-174">Recursos de arquitetura de TI do Microsoft</span><span class="sxs-lookup"><span data-stu-id="64ef6-174">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="64ef6-175">Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI</span><span class="sxs-lookup"><span data-stu-id="64ef6-175">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

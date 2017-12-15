@@ -22,185 +22,185 @@ ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="build-from-the-ground-up"></a>Criação de ponta a ponta para cima
+# <a name="build-from-the-ground-up"></a><span data-ttu-id="5e72a-103">Criação de ponta a ponta para cima</span><span class="sxs-lookup"><span data-stu-id="5e72a-103">Build from the ground up</span></span>
 
- **Resumo:** Obtenha os detalhes sobre o conjunto de nuvem blocos de construção de armazenamento que você pode usar para criar seu próprio serviço de armazenamento ou a solução.
+ <span data-ttu-id="5e72a-104">**Resumo:** Obtenha os detalhes sobre o conjunto de nuvem blocos de construção de armazenamento que você pode usar para criar seu próprio serviço de armazenamento ou a solução.</span><span class="sxs-lookup"><span data-stu-id="5e72a-104">**Summary:** Get the details on the set of cloud storage building blocks that you can use to create your own storage service or solution.</span></span>
   
-Soluções de armazenamento "Build de ponta a ponta para cima":
+<span data-ttu-id="5e72a-105">Soluções de armazenamento "Build de ponta a ponta para cima":</span><span class="sxs-lookup"><span data-stu-id="5e72a-105">"Build from the ground up" storage solutions:</span></span>
   
-- Permitem que você criar sua própria solução de armazenamento a partir do zero. 
+- <span data-ttu-id="5e72a-106">Permitem que você criar sua própria solução de armazenamento a partir do zero.</span><span class="sxs-lookup"><span data-stu-id="5e72a-106">Allow you to create your own storage solution from scratch.</span></span> 
     
-- Requer programação usando as APIs REST.
+- <span data-ttu-id="5e72a-107">Requer programação usando as APIs REST.</span><span class="sxs-lookup"><span data-stu-id="5e72a-107">Requires programming using the REST APIs.</span></span>
     
-- Forneça o máximo em flexibilidade e personalização.
+- <span data-ttu-id="5e72a-108">Forneça o máximo em flexibilidade e personalização.</span><span class="sxs-lookup"><span data-stu-id="5e72a-108">Provide the ultimate in customization and flexibility.</span></span>
     
-As seções a seguir descrevem os detalhes de cada opção de armazenamento "Build de ponta a ponta para cima".
+<span data-ttu-id="5e72a-109">As seções a seguir descrevem os detalhes de cada opção de armazenamento "Build de ponta a ponta para cima".</span><span class="sxs-lookup"><span data-stu-id="5e72a-109">The following sections describe the details of each "Build from the ground up" storage option.</span></span>
   
-## <a name="azure-storage-files"></a>Armazenamento do Azure (arquivos)
+## <a name="azure-storage-files"></a><span data-ttu-id="5e72a-110">Armazenamento do Azure (arquivos)</span><span class="sxs-lookup"><span data-stu-id="5e72a-110">Azure Storage (files)</span></span>
 
-### <a name="features"></a>Recursos
+### <a name="features"></a><span data-ttu-id="5e72a-111">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-111">Features</span></span>
 
-- Torna mais fácil mover aplicativos herdados para a nuvem
+- <span data-ttu-id="5e72a-112">Torna mais fácil mover aplicativos herdados para a nuvem</span><span class="sxs-lookup"><span data-stu-id="5e72a-112">Makes it easier to move legacy applications to the cloud</span></span>
     
-- Armazenamento de blob preferido para novos aplicativos
+- <span data-ttu-id="5e72a-113">Armazenamento de blob preferido para novos aplicativos</span><span class="sxs-lookup"><span data-stu-id="5e72a-113">Blob storage preferred for new applications</span></span>
     
-- Pode montar a partir de uma máquina virtual do Azure
+- <span data-ttu-id="5e72a-114">Pode montar a partir de uma máquina virtual do Azure</span><span class="sxs-lookup"><span data-stu-id="5e72a-114">Can mount from an Azure virtual machine</span></span>
     
-- Pode montar local com SMB 3.0
+- <span data-ttu-id="5e72a-115">Pode montar local com SMB 3.0</span><span class="sxs-lookup"><span data-stu-id="5e72a-115">Can mount on-premises with SMB 3.0</span></span>
     
-- Funciona com Linux e Windows
+- <span data-ttu-id="5e72a-116">Funciona com Linux e Windows</span><span class="sxs-lookup"><span data-stu-id="5e72a-116">Works with Linux and Windows</span></span>
     
-- Não oferece suporte a autenticação baseada em AD Azure ou ACLs (chaves de conta de armazenamento do Azure fornecem autenticação e acesso autorizado para o compartilhamento de arquivos)
+- <span data-ttu-id="5e72a-117">Não oferece suporte a autenticação baseada em AD Azure ou ACLs (chaves de conta de armazenamento do Azure fornecem autenticação e acesso autorizado para o compartilhamento de arquivos)</span><span class="sxs-lookup"><span data-stu-id="5e72a-117">Doesn't support Azure AD-based authentication or ACLs (Azure Storage account keys provide authentication and authorized access to the file share)</span></span>
     
-### <a name="common-uses"></a>Usos comuns
+### <a name="common-uses"></a><span data-ttu-id="5e72a-118">Usos comuns</span><span class="sxs-lookup"><span data-stu-id="5e72a-118">Common uses</span></span>
 
-- Migrando aplicativos herdados para a nuvem que se baseiam nos compartilhamentos de arquivos
+- <span data-ttu-id="5e72a-119">Migrando aplicativos herdados para a nuvem que se baseiam nos compartilhamentos de arquivos</span><span class="sxs-lookup"><span data-stu-id="5e72a-119">Migrating legacy applications to the cloud that rely on file shares</span></span>
     
-- Compartilhar ferramentas de desenvolvimento e testes
+- <span data-ttu-id="5e72a-120">Compartilhar ferramentas de desenvolvimento e testes</span><span class="sxs-lookup"><span data-stu-id="5e72a-120">Share development and testing tools</span></span>
     
-- Aplicativos distribuídos podem armazenar logs, dados de diagnóstico e despejos
+- <span data-ttu-id="5e72a-121">Aplicativos distribuídos podem armazenar logs, dados de diagnóstico e despejos</span><span class="sxs-lookup"><span data-stu-id="5e72a-121">Distributed apps can store logs, diagnostic data, and crash dumps</span></span>
     
-### <a name="key-storage-scenarios"></a>Cenários de armazenamento de chave
+### <a name="key-storage-scenarios"></a><span data-ttu-id="5e72a-122">Cenários de armazenamento de chave</span><span class="sxs-lookup"><span data-stu-id="5e72a-122">Key storage scenarios</span></span>
 
-- Arquivos de backup
+- <span data-ttu-id="5e72a-123">Arquivos de backup</span><span class="sxs-lookup"><span data-stu-id="5e72a-123">Backup files</span></span>
     
-### <a name="resources"></a>Recursos
+### <a name="resources"></a><span data-ttu-id="5e72a-124">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-124">Resources</span></span>
 
-Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dn166972.aspx).
+<span data-ttu-id="5e72a-125">Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dn166972.aspx).</span><span class="sxs-lookup"><span data-stu-id="5e72a-125">For additional information, click [here](https://msdn.microsoft.com/library/azure/dn166972.aspx).</span></span>
   
-Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).
+<span data-ttu-id="5e72a-126">Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).</span><span class="sxs-lookup"><span data-stu-id="5e72a-126">For cost information, click [here](http://azure.microsoft.com/pricing/details/storage/).</span></span>
   
-## <a name="azure-storage-blobs"></a>Armazenamento (blobs) do Azure
+## <a name="azure-storage-blobs"></a><span data-ttu-id="5e72a-127">Armazenamento (blobs) do Azure</span><span class="sxs-lookup"><span data-stu-id="5e72a-127">Azure Storage (blobs)</span></span>
 
-### <a name="features"></a>Recursos
+### <a name="features"></a><span data-ttu-id="5e72a-128">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-128">Features</span></span>
 
-- Cada conta de armazenamento pode conter até 500 TB (uma assinatura pode ter várias contas de armazenamento)
+- <span data-ttu-id="5e72a-129">Cada conta de armazenamento pode conter até 500 TB (uma assinatura pode ter várias contas de armazenamento)</span><span class="sxs-lookup"><span data-stu-id="5e72a-129">Each storage account can hold up to 500 TB (one subscription can have multiple storage accounts)</span></span>
     
-- Contas de armazenamento são organizadas em recipientes, que podem ter segurança aplicada aos mesmos e podem conter blobs
+- <span data-ttu-id="5e72a-130">Contas de armazenamento são organizadas em recipientes, que podem ter segurança aplicada aos mesmos e podem conter blobs</span><span class="sxs-lookup"><span data-stu-id="5e72a-130">Storage accounts are organized into containers, which can have security applied to them and can contain blobs</span></span>
     
-- Bloquear blobs otimizados para o streaming e armazenando nuvem objetos, em tamanho até 200 GB
+- <span data-ttu-id="5e72a-131">Bloquear blobs otimizados para o streaming e armazenando nuvem objetos, em tamanho até 200 GB</span><span class="sxs-lookup"><span data-stu-id="5e72a-131">Block blobs are optimized for streaming and storing cloud objects, up to 200 GB in size</span></span>
     
-- Página blobs otimizados para representar PaaS discos e suporte aleatório grava, até 1 TB em tamanho
+- <span data-ttu-id="5e72a-132">Página blobs otimizados para representar PaaS discos e suporte aleatório grava, até 1 TB em tamanho</span><span class="sxs-lookup"><span data-stu-id="5e72a-132">Page blobs are optimized for representing PaaS disks and supporting random writes, up to 1 TB in size</span></span>
     
-- Acrescentar blobs otimizados para acrescentar operações, até 195 GB
+- <span data-ttu-id="5e72a-133">Acrescentar blobs otimizados para acrescentar operações, até 195 GB</span><span class="sxs-lookup"><span data-stu-id="5e72a-133">Append blobs are optimized for append operations, up to 195 GB</span></span>
     
-- Armazenamento Premium fornece mais rápidos IOPS por meio do armazenamento SSD
+- <span data-ttu-id="5e72a-134">Armazenamento Premium fornece mais rápidos IOPS por meio do armazenamento SSD</span><span class="sxs-lookup"><span data-stu-id="5e72a-134">Premium Storage provides faster IOPS through SSD storage</span></span>
     
-### <a name="common-uses"></a>Usos comuns
+### <a name="common-uses"></a><span data-ttu-id="5e72a-135">Usos comuns</span><span class="sxs-lookup"><span data-stu-id="5e72a-135">Common uses</span></span>
 
-- Backups dos dispositivos, computadores, bancos de dados e arquivos de imagens e texto para aplicativos web
+- <span data-ttu-id="5e72a-136">Backups dos dispositivos, computadores, bancos de dados e arquivos de imagens e texto para aplicativos web</span><span class="sxs-lookup"><span data-stu-id="5e72a-136">Backups of files, computers, databases, and devices Images and text for web applications</span></span>
     
-- Dados de configuração para aplicativos em nuvem
+- <span data-ttu-id="5e72a-137">Dados de configuração para aplicativos em nuvem</span><span class="sxs-lookup"><span data-stu-id="5e72a-137">Configuration data for cloud applications</span></span>
     
-- Dados grandes, como logs e outros conjuntos de dados grandes
+- <span data-ttu-id="5e72a-138">Dados grandes, como logs e outros conjuntos de dados grandes</span><span class="sxs-lookup"><span data-stu-id="5e72a-138">Big data, such as logs and other large datasets</span></span>
     
-- Armazenamento para seus próprios serviços, como discos HDInsight e máquina virtual de blob de usos do Azure
+- <span data-ttu-id="5e72a-139">Armazenamento para seus próprios serviços, como discos HDInsight e máquina virtual de blob de usos do Azure</span><span class="sxs-lookup"><span data-stu-id="5e72a-139">Azure uses blob storage for its own services, such as HDInsight and virtual machine disks</span></span>
     
-### <a name="key-storage-scenarios"></a>Cenários de armazenamento de chave
+### <a name="key-storage-scenarios"></a><span data-ttu-id="5e72a-140">Cenários de armazenamento de chave</span><span class="sxs-lookup"><span data-stu-id="5e72a-140">Key storage scenarios</span></span>
 
-- Gerenciar dados
+- <span data-ttu-id="5e72a-141">Gerenciar dados</span><span class="sxs-lookup"><span data-stu-id="5e72a-141">Manage data</span></span>
     
-### <a name="resources"></a>Recursos
+### <a name="resources"></a><span data-ttu-id="5e72a-142">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-142">Resources</span></span>
 
-Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dd179376.aspx).
+<span data-ttu-id="5e72a-143">Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dd179376.aspx).</span><span class="sxs-lookup"><span data-stu-id="5e72a-143">For additional information, click [here](https://msdn.microsoft.com/library/azure/dd179376.aspx).</span></span>
   
-Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).
+<span data-ttu-id="5e72a-144">Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).</span><span class="sxs-lookup"><span data-stu-id="5e72a-144">For cost information, click [here](http://azure.microsoft.com/pricing/details/storage/).</span></span>
   
-## <a name="azure-storage-queues"></a>Armazenamento do Azure (filas)
+## <a name="azure-storage-queues"></a><span data-ttu-id="5e72a-145">Armazenamento do Azure (filas)</span><span class="sxs-lookup"><span data-stu-id="5e72a-145">Azure Storage (queues)</span></span>
 
-### <a name="features"></a>Recursos
+### <a name="features"></a><span data-ttu-id="5e72a-146">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-146">Features</span></span>
 
-- Conta de armazenamento pode conter qualquer número de filas
+- <span data-ttu-id="5e72a-147">Conta de armazenamento pode conter qualquer número de filas</span><span class="sxs-lookup"><span data-stu-id="5e72a-147">Storage account can contain any number of queues</span></span>
     
-- Fila pode conter qualquer número de mensagens (até que a conta de armazenamento está cheio)
+- <span data-ttu-id="5e72a-148">Fila pode conter qualquer número de mensagens (até que a conta de armazenamento está cheio)</span><span class="sxs-lookup"><span data-stu-id="5e72a-148">Queue can contain any number of messages (until the storage account is full)</span></span>
     
-- Mensagens da fila são automaticamente excluídas após sete dias se não recuperadas e excluídas por um aplicativo
+- <span data-ttu-id="5e72a-149">Mensagens da fila são automaticamente excluídas após sete dias se não recuperadas e excluídas por um aplicativo</span><span class="sxs-lookup"><span data-stu-id="5e72a-149">Queue messages are automatically deleted after seven days if not retrieved and deleted by an application</span></span>
     
-- As mensagens podem ter até 64 KB em tamanho
+- <span data-ttu-id="5e72a-150">As mensagens podem ter até 64 KB em tamanho</span><span class="sxs-lookup"><span data-stu-id="5e72a-150">Messages may be up to 64 KB in size</span></span>
     
-- Protegido no nível da conta de armazenamento
+- <span data-ttu-id="5e72a-151">Protegido no nível da conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="5e72a-151">Secured at storage account level</span></span>
     
-- Filas servem para passar o controle de mensagens, dados não processados
+- <span data-ttu-id="5e72a-152">Filas servem para passar o controle de mensagens, dados não processados</span><span class="sxs-lookup"><span data-stu-id="5e72a-152">Queues are intended to pass control messages, not raw data</span></span>
     
-### <a name="common-uses"></a>Usos comuns
+### <a name="common-uses"></a><span data-ttu-id="5e72a-153">Usos comuns</span><span class="sxs-lookup"><span data-stu-id="5e72a-153">Common uses</span></span>
 
-- Criar um registro posterior de trabalho para processar de forma assíncrona
+- <span data-ttu-id="5e72a-154">Criar um registro posterior de trabalho para processar de forma assíncrona</span><span class="sxs-lookup"><span data-stu-id="5e72a-154">Create a backlog of work to process asynchronously</span></span>
     
-- Processamento de mensagens de log
+- <span data-ttu-id="5e72a-155">Processamento de mensagens de log</span><span class="sxs-lookup"><span data-stu-id="5e72a-155">Processing log messages</span></span>
     
-- Desassociar aplicativos
+- <span data-ttu-id="5e72a-156">Desassociar aplicativos</span><span class="sxs-lookup"><span data-stu-id="5e72a-156">Decouple applications</span></span>
     
-### <a name="key-storage-scenarios"></a>Cenários de armazenamento de chave
+### <a name="key-storage-scenarios"></a><span data-ttu-id="5e72a-157">Cenários de armazenamento de chave</span><span class="sxs-lookup"><span data-stu-id="5e72a-157">Key storage scenarios</span></span>
 
-- Distribuir eventos
+- <span data-ttu-id="5e72a-158">Distribuir eventos</span><span class="sxs-lookup"><span data-stu-id="5e72a-158">Distribute events</span></span>
     
-### <a name="resources"></a>Recursos
+### <a name="resources"></a><span data-ttu-id="5e72a-159">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-159">Resources</span></span>
 
-Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dd179353.aspx).
+<span data-ttu-id="5e72a-160">Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dd179353.aspx).</span><span class="sxs-lookup"><span data-stu-id="5e72a-160">For additional information, click [here](https://msdn.microsoft.com/library/azure/dd179353.aspx).</span></span>
   
-Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).
+<span data-ttu-id="5e72a-161">Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).</span><span class="sxs-lookup"><span data-stu-id="5e72a-161">For cost information, click [here](http://azure.microsoft.com/pricing/details/storage/).</span></span>
   
-## <a name="azure-storage-tables"></a>Armazenamento do Azure (tabelas)
+## <a name="azure-storage-tables"></a><span data-ttu-id="5e72a-162">Armazenamento do Azure (tabelas)</span><span class="sxs-lookup"><span data-stu-id="5e72a-162">Azure Storage (tables)</span></span>
 
-### <a name="features"></a>Recursos
+### <a name="features"></a><span data-ttu-id="5e72a-163">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-163">Features</span></span>
 
-- Melhor para conjuntos de dados semi-estruturados
+- <span data-ttu-id="5e72a-164">Melhor para conjuntos de dados semi-estruturados</span><span class="sxs-lookup"><span data-stu-id="5e72a-164">Best for semi-structured datasets</span></span>
     
-- Geralmente custo menor do que o SQL tradicional
+- <span data-ttu-id="5e72a-165">Geralmente custo menor do que o SQL tradicional</span><span class="sxs-lookup"><span data-stu-id="5e72a-165">Typically lower cost than traditional SQL</span></span>
     
-- Muito rápido se consultando para chave, lento se consultando o valor
+- <span data-ttu-id="5e72a-166">Muito rápido se consultando para chave, lento se consultando o valor</span><span class="sxs-lookup"><span data-stu-id="5e72a-166">Very fast if querying for key, slow if querying for value</span></span>
     
-- Amplamente dimensionável; qualquer quantidade de tabelas até os limites da conta de armazenamento
+- <span data-ttu-id="5e72a-167">Amplamente dimensionável; qualquer quantidade de tabelas até os limites da conta de armazenamento</span><span class="sxs-lookup"><span data-stu-id="5e72a-167">Massively scalable; any amount of tables up to the limits of the storage account</span></span>
     
-- Acessível através da API REST, o protocolo oData limitado, .NET
+- <span data-ttu-id="5e72a-168">Acessível através da API REST, o protocolo oData limitado, .NET</span><span class="sxs-lookup"><span data-stu-id="5e72a-168">Accessible through REST API, limited oData protocol, .NET</span></span>
     
-- Os valores devem ser serializados
+- <span data-ttu-id="5e72a-169">Os valores devem ser serializados</span><span class="sxs-lookup"><span data-stu-id="5e72a-169">Values must be serialized</span></span>
     
-### <a name="common-uses"></a>Usos comuns
+### <a name="common-uses"></a><span data-ttu-id="5e72a-170">Usos comuns</span><span class="sxs-lookup"><span data-stu-id="5e72a-170">Common uses</span></span>
 
-- Dados de usuário para aplicativos web
+- <span data-ttu-id="5e72a-171">Dados de usuário para aplicativos web</span><span class="sxs-lookup"><span data-stu-id="5e72a-171">User data for web applications</span></span>
     
-- Catálogos de endereços
+- <span data-ttu-id="5e72a-172">Catálogos de endereços</span><span class="sxs-lookup"><span data-stu-id="5e72a-172">Address books</span></span>
     
-- Informações do dispositivo
+- <span data-ttu-id="5e72a-173">Informações do dispositivo</span><span class="sxs-lookup"><span data-stu-id="5e72a-173">Device information</span></span>
     
-### <a name="key-storage-scenarios"></a>Cenários de armazenamento de chave
+### <a name="key-storage-scenarios"></a><span data-ttu-id="5e72a-174">Cenários de armazenamento de chave</span><span class="sxs-lookup"><span data-stu-id="5e72a-174">Key storage scenarios</span></span>
 
-- Gerenciar dados
+- <span data-ttu-id="5e72a-175">Gerenciar dados</span><span class="sxs-lookup"><span data-stu-id="5e72a-175">Manage data</span></span>
     
-### <a name="resources"></a>Recursos
+### <a name="resources"></a><span data-ttu-id="5e72a-176">Recursos</span><span class="sxs-lookup"><span data-stu-id="5e72a-176">Resources</span></span>
 
-Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dd179463.aspx).
+<span data-ttu-id="5e72a-177">Para obter informações adicionais, clique [aqui](https://msdn.microsoft.com/library/azure/dd179463.aspx).</span><span class="sxs-lookup"><span data-stu-id="5e72a-177">For additional information, click [here](https://msdn.microsoft.com/library/azure/dd179463.aspx).</span></span>
   
-Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).
+<span data-ttu-id="5e72a-178">Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pricing/details/storage/).</span><span class="sxs-lookup"><span data-stu-id="5e72a-178">For cost information, click [here](http://azure.microsoft.com/pricing/details/storage/).</span></span>
   
-## <a name="microsoft-azure-storage-recommendations"></a>Recomendações de armazenamento do Microsoft Azure
+## <a name="microsoft-azure-storage-recommendations"></a><span data-ttu-id="5e72a-179">Recomendações de armazenamento do Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="5e72a-179">Microsoft Azure Storage recommendations</span></span>
 
-Ao projetar sua solução de armazenamento personalizada com o armazenamento do Windows Azure, lembre-se do seguinte:
+<span data-ttu-id="5e72a-180">Ao projetar sua solução de armazenamento personalizada com o armazenamento do Windows Azure, lembre-se do seguinte:</span><span class="sxs-lookup"><span data-stu-id="5e72a-180">When designing your custom storage solution with Azure Storage, keep the following in mind:</span></span>
   
-- Aproveite as várias contas de armazenamento maior escalabilidade, para maior tamanho (> 100 TB) ou para taxa de transferência mais (> 5.000 operações por segundo).
+- <span data-ttu-id="5e72a-181">Aproveite as várias contas de armazenamento maior escalabilidade, para maior tamanho (> 100 TB) ou para taxa de transferência mais (> 5.000 operações por segundo).</span><span class="sxs-lookup"><span data-stu-id="5e72a-181">Leverage multiple storage accounts for greater scalability, either for increased size (> 100 TB) or for more throughput (> 5,000 operations per second).</span></span>
     
-- Projete a capacidade para adicionar contas de armazenamento adicional, como uma alteração de configuração, e não como uma alteração de código.
+- <span data-ttu-id="5e72a-182">Projete a capacidade para adicionar contas de armazenamento adicional, como uma alteração de configuração, e não como uma alteração de código.</span><span class="sxs-lookup"><span data-stu-id="5e72a-182">Design the ability for adding additional storage accounts as a configuration change, not as a code change.</span></span>
     
-- Selecione cuidadosamente o particionamento de funções para o armazenamento de tabela habilitar a escala desejada em termos de desempenho de inserção e de consulta.
+- <span data-ttu-id="5e72a-183">Selecione cuidadosamente o particionamento de funções para o armazenamento de tabela habilitar a escala desejada em termos de desempenho de inserção e de consulta.</span><span class="sxs-lookup"><span data-stu-id="5e72a-183">Carefully select partitioning functions for table storage to enable the desired scale in terms of insert and query performance.</span></span>
     
-- Escolha nomes de coluna curta para propriedades de tabela como os metadados (nomes de propriedade) são armazenados em banda (os nomes de coluna também é levada em contagem o tamanho máximo de linha de 1 MB).
+- <span data-ttu-id="5e72a-184">Escolha nomes de coluna curta para propriedades de tabela como os metadados (nomes de propriedade) são armazenados em banda (os nomes de coluna também é levada em contagem o tamanho máximo de linha de 1 MB).</span><span class="sxs-lookup"><span data-stu-id="5e72a-184">Choose short column names for table properties as the metadata (property names) are stored in-band (the column names also count towards the maximum row size of 1 MB).</span></span>
     
-- Quando possível, operações em armazenamento em lotes.
+- <span data-ttu-id="5e72a-185">Quando possível, operações em armazenamento em lotes.</span><span class="sxs-lookup"><span data-stu-id="5e72a-185">When possible, batch operations into storage.</span></span>
     
-- Cache agressivamente informações do banco de dados de configuração em um cache distribuído.
+- <span data-ttu-id="5e72a-186">Cache agressivamente informações do banco de dados de configuração em um cache distribuído.</span><span class="sxs-lookup"><span data-stu-id="5e72a-186">Aggressively cache information in the configuration database into a distributed cache.</span></span>
     
-- Se o desempenho de aplicativos ou confiabilidade depender tendo um determinado segmento de dados disponíveis no cache, seu aplicativo deve recusar solicitações de entrada até que o cache tenha sido previamente definido.
+- <span data-ttu-id="5e72a-187">Se o desempenho de aplicativos ou confiabilidade depender tendo um determinado segmento de dados disponíveis no cache, seu aplicativo deve recusar solicitações de entrada até que o cache tenha sido previamente definido.</span><span class="sxs-lookup"><span data-stu-id="5e72a-187">If application performance or reliability is dependent on having a certain segment of data available in the cache, your application should refuse incoming requests until the cache has been pre-populated.</span></span>
     
-- Particione os dados em um verticalmente (pela tabela) ou horizontalmente (tabela de segmento entre vários fragmentos) para distribuir a carga em vários bancos de dados.
+- <span data-ttu-id="5e72a-188">Particione os dados em um verticalmente (pela tabela) ou horizontalmente (tabela de segmento entre vários fragmentos) para distribuir a carga em vários bancos de dados.</span><span class="sxs-lookup"><span data-stu-id="5e72a-188">Partition the data in either vertically (by table) or horizontally (segment table across multiple shards) to spread the load across multiple databases.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="5e72a-189">See Also</span><span class="sxs-lookup"><span data-stu-id="5e72a-189">See Also</span></span>
 
-[Armazenamento em nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-storage-for-enterprise-architects.md)
+[<span data-ttu-id="5e72a-190">Armazenamento em nuvem da Microsoft para arquitetos da empresa</span><span class="sxs-lookup"><span data-stu-id="5e72a-190">Microsoft Cloud Storage for Enterprise Architects</span></span>](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="5e72a-191">Recursos de arquitetura de TI do Microsoft</span><span class="sxs-lookup"><span data-stu-id="5e72a-191">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="5e72a-192">Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI</span><span class="sxs-lookup"><span data-stu-id="5e72a-192">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -23,45 +23,46 @@ ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Armazenamento em Nuvem da Microsoft para Arquitetos Corporativos
+# <a name="microsoft-cloud-storage-for-enterprise-architects"></a><span data-ttu-id="9778f-103">Armazenamento em Nuvem da Microsoft para Arquitetos Corporativos</span><span class="sxs-lookup"><span data-stu-id="9778f-103">Microsoft Cloud Storage for Enterprise Architects</span></span>
 
- **Resumo:** Projete seu armazenamento de serviços de nuvem da Microsoft e plataformas.
+ <span data-ttu-id="9778f-104">**Resumo:** Projete seu armazenamento de serviços de nuvem da Microsoft e plataformas.</span><span class="sxs-lookup"><span data-stu-id="9778f-104">**Summary:** Design your storage for Microsoft cloud services and platforms.</span></span>
   
-Este artigo o vincula a um conjunto de artigos que descrevem quais IT arquitetos precisam saber sobre o design de armazenamento para organizações que usam plataformas e serviços de nuvem da Microsoft. Você também pode exibir essas informações como um pôster de página de 6 e imprimi-lo no formato Tabloide (também conhecido como razão, 11x17 ou A3).
+<span data-ttu-id="9778f-p101">Este artigo o vincula a um conjunto de artigos que descrevem quais IT arquitetos precisam saber sobre o design de armazenamento para organizações que usam plataformas e serviços de nuvem da Microsoft. Você também pode exibir essas informações como um pôster de página de 6 e imprimi-lo no formato Tabloide (também conhecido como razão, 11x17 ou A3).</span><span class="sxs-lookup"><span data-stu-id="9778f-p101">This article links you to a set of articles that describe what IT architects need to know about designing storage for organizations using Microsoft cloud services and platforms. You can also view this information as a 6-page poster and print it in tabloid format (also known as ledger, 11 x 17, or A3).</span></span>
   
-[![Imagem de Thumb para o modelo de armazenamento em nuvem Microsoft](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
-](https://www.microsoft.com/download/details.aspx?id=49552)
+<span data-ttu-id="9778f-107">[![Imagem de Thumb para o modelo de armazenamento em nuvem Microsoft](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="9778f-107">[![Thumb image for Microsoft cloud storage model](images/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)  
+](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=49552)
+<span data-ttu-id="9778f-108">![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=49552)</span><span class="sxs-lookup"><span data-stu-id="9778f-108">![PDF file](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842079) | ![Visio file](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842080) | ![See a page with versions in additional languages](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[More languages](https://www.microsoft.com/download/details.aspx?id=49552)</span></span>
   
-Você também pode ver todos os modelos nos [recursos de arquitetura de TI de nuvem da Microsoft](microsoft-cloud-it-architecture-resources.md) e passe por meio [mapa de nuvem empresarial da Microsoft: recursos para os tomadores de decisão de TI](https://aka.ms/cloudarchitecture).
+<span data-ttu-id="9778f-109">Você também pode ver todos os modelos nos [recursos de arquitetura de TI de nuvem da Microsoft](microsoft-cloud-it-architecture-resources.md) e passe por meio [mapa de nuvem empresarial da Microsoft: recursos para os tomadores de decisão de TI](https://aka.ms/cloudarchitecture).</span><span class="sxs-lookup"><span data-stu-id="9778f-109">You can also see all of the models in the [Microsoft Cloud IT architecture resources](microsoft-cloud-it-architecture-resources.md) and swipe through [Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture).</span></span>
   
-Confira as seguintes seções:
+<span data-ttu-id="9778f-110">Confira as seguintes seções:</span><span class="sxs-lookup"><span data-stu-id="9778f-110">See the following sections:</span></span>
   
-- [Projetar o armazenamento para a nuvem da Microsoft](designing-storage-for-the-microsoft-cloud.md)
+- [<span data-ttu-id="9778f-111">Projetar o armazenamento para a nuvem da Microsoft</span><span class="sxs-lookup"><span data-stu-id="9778f-111">Designing storage for the Microsoft cloud</span></span>](designing-storage-for-the-microsoft-cloud.md)
     
-    Entenda por que você deve usar o armazenamento em nuvem e os cenários de armazenamento de chave de nuvem e, em seguida, examinam a lista as diferentes opções de armazenamento de nuvem do Microsoft.
+    <span data-ttu-id="9778f-112">Entenda por que você deve usar o armazenamento em nuvem e os cenários de armazenamento de chave de nuvem e, em seguida, examinam a lista as diferentes opções de armazenamento de nuvem do Microsoft.</span><span class="sxs-lookup"><span data-stu-id="9778f-112">Understand why you should use cloud storage and the key cloud storage scenarios, and then scan the list of the different Microsoft cloud storage options.</span></span>
     
-- [Move-in pronto](move-in-ready.md)
+- [<span data-ttu-id="9778f-113">Move-in pronto</span><span class="sxs-lookup"><span data-stu-id="9778f-113">Move-in ready</span></span>](move-in-ready.md)
     
-    Usando uma analogia de construção para organizar a ampla variedade de opções de armazenamento de nuvem, esses são internos para outras ofertas de nuvem da Microsoft e estão prontos para uso imediatamente.
+    <span data-ttu-id="9778f-114">Usando uma analogia de construção para organizar a ampla variedade de opções de armazenamento de nuvem, esses são internos para outras ofertas de nuvem da Microsoft e estão prontos para uso imediatamente.</span><span class="sxs-lookup"><span data-stu-id="9778f-114">Using a construction analogy to organize the wide variety of cloud storage options, these are built-in to other Microsoft cloud offerings and are ready to use immediately.</span></span>
     
-- [Alguns assembly necessário](some-assembly-required.md)
+- [<span data-ttu-id="9778f-115">Alguns assembly necessário</span><span class="sxs-lookup"><span data-stu-id="9778f-115">Some assembly required</span></span>](some-assembly-required.md)
     
-    Essas opções de armazenamento de nuvem são um ponto de partida para sua solução de armazenamento, que exigem configuração adicional ou codificação para um sinalizador caber.
+    <span data-ttu-id="9778f-116">Essas opções de armazenamento de nuvem são um ponto de partida para sua solução de armazenamento, que exigem configuração adicional ou codificação para um sinalizador caber.</span><span class="sxs-lookup"><span data-stu-id="9778f-116">These cloud storage options are a starting point for your storage solution, requiring additional configuration or coding for a custom fit.</span></span>
     
-- [Criação de ponta a ponta para cima](build-from-the-ground-up.md)
+- [<span data-ttu-id="9778f-117">Criação de ponta a ponta para cima</span><span class="sxs-lookup"><span data-stu-id="9778f-117">Build from the ground up</span></span>](build-from-the-ground-up.md)
     
-    Essas opções de armazenamento de nuvem são os blocos de construção do armazenamento fundamentais, você pode usar para criar sua própria solução de armazenamento ou aplicativos a partir do zero.
+    <span data-ttu-id="9778f-118">Essas opções de armazenamento de nuvem são os blocos de construção do armazenamento fundamentais, você pode usar para criar sua própria solução de armazenamento ou aplicativos a partir do zero.</span><span class="sxs-lookup"><span data-stu-id="9778f-118">These cloud storage options are the fundamental storage building blocks, which you can use to create your own storage solution or apps from scratch.</span></span>
     
 > [!NOTE]
-> Estes artigos refletem a versão de **setembro 2017** do Microsoft Cloud armazenamento para cartaz arquitetos da empresa.
+> <span data-ttu-id="9778f-119">Estes artigos refletem a versão de **setembro 2017** do Microsoft Cloud armazenamento para cartaz arquitetos da empresa.</span><span class="sxs-lookup"><span data-stu-id="9778f-119">These articles reflect the **September 2017** release of the Microsoft Cloud Storage for Enterprise Architects poster.</span></span>
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="9778f-120">See Also</span><span class="sxs-lookup"><span data-stu-id="9778f-120">See Also</span></span>
 
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="9778f-121">Recursos de arquitetura de TI do Microsoft</span><span class="sxs-lookup"><span data-stu-id="9778f-121">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="9778f-122">Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI</span><span class="sxs-lookup"><span data-stu-id="9778f-122">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
