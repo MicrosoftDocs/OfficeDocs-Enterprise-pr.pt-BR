@@ -1,7 +1,7 @@
 ---
 title: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução."
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 
@@ -360,7 +360,7 @@ A tabela a seguir fornece links para artigos de referência DFSR e postagens de 
   
 **Tabela: Artigos de referência para DFSR**
 
-|**Cargo**|**Descrição**|
+|**Título**|**Descrição**|
 |:-----|:-----|
 |[Replicação](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |Tópico do TechNet do Gerenciamento DFS com links para replicação  <br/> |
 |[Replicação do DFS: Guia de sobrevivência](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki com links para informações do DFS  <br/> |
