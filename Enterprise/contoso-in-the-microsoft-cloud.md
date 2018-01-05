@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Resumo: como uma organização global fictícia, mas representativa, está adotando uma infraestrutura de TI inclusiva em nuvem com as ofertas de nuvem da Microsoft."
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 Este artigo oferece links para um conjunto de artigos que descrevem como a Contoso Corporation, um conglomerado global de fabricação com sede em Paris, está adotando uma infraestrutura de TI com serviços de nuvem e tratou das principais decisões de design relacionadas a rede, identidade e segurança, e como ela está implementando cenários na nuvem corporativa para tratar dos problemas da empresa. Você pode também visualizar essas informações como um cartaz de 11 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11 x 17 ou A3).
   
-[![Imagem de miniatura da Contoso em pôster do Microsoft Cloud.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Imagem em miniatura do cartaz Contoso na Microsoft Cloud](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 ![Arquivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Arquivo do Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Ver uma página com as versões em outros idiomas](images/Common_Images/GlobeIcon.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
   
@@ -67,11 +67,11 @@ Confira as seguintes seções:
 > [!NOTE]
 > Estes artigos refletem a versão de **setembro de 2017** do cartaz Contoso no Microsoft Cloud.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

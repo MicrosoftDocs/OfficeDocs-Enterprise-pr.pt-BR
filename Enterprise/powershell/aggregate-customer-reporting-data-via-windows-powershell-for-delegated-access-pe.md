@@ -14,13 +14,13 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "Resumo: Use o Windows PowerShell para Office 365 para recuperar relatórios de todas as locações do cliente e agregar os dados em um único local."
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Agregar dados de relatório do cliente por meio do Windows PowerShell para parceiros com permissão de acesso delegado (DAP)
 
- **Resumo:** Use o Windows PowerShell para Office 365 para recuperar relatórios em todos os aluguéis são de cliente e agregar os dados em um único local.
+ **Resumo:** use o Windows PowerShell para Office 365 para recuperar relatórios de todos os locatários do cliente e agregar os dados em um único local.
   
 Por padrão, o Windows PowerShell para Office 365 não tem uma agregação interna de dados de relatório de várias locações do cliente. No entanto, você pode usar este script de exemplo do Windows PowerShell para Office 365 para repetir todas as locações do cliente, de modo a recuperar um único relatório para seus clientes individuais e, em seguida, agregar os dados de relatórios em um único local. Como resultado, você terá um único relatório para todos os locatários do cliente. 
   
@@ -137,7 +137,7 @@ foreach ($c in $contracts) {
 
 Este script de exemplo coloca o relatório agregado no arquivo ReportOutput.csv.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

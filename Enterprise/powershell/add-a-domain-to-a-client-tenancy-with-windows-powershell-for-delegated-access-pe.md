@@ -14,13 +14,13 @@ ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Resumo: Use o Windows PowerShell para o Office 365 para adicionar um nome de domínio alternativo a um locatário existente do cliente."
 ms.openlocfilehash: 182750a5706dbb23c6207c6bd63334cbf2a2a795
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Adicionar um domínio a uma locação do cliente com o Windows PowerShell para parceiros com permissão de acesso delegado (DAP)
 
- **Resumo:** Use o Windows PowerShell para Office 365 para adicionar um nome de domínio alternativo para um locatário de cliente existente.
+ **Resumo:** use o Windows PowerShell para o Office 365 para adicionar um nome de domínio alternativo a um locatário existente do cliente.
   
 Você pode criar e associar novos domínios à locação do cliente com o Windows PowerShell para o Office 365 mais rápido do que usar o Centro de administração do Office 365.
   
@@ -112,7 +112,7 @@ Isso retornará algo parecido com o seguinte
 | `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
 | `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

@@ -1,5 +1,5 @@
 ---
-title: Identidade da Microsoft Cloud para arquitetos corporativos
+title: Identidade no Microsoft Cloud para arquitetos corporativos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,25 +20,25 @@ ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Resumo: Criar sua solução de identidade para plataformas e serviços em nuvem da Microsoft."
 ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidade da Microsoft Cloud para arquitetos corporativos
+# <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidade no Microsoft Cloud para arquitetos corporativos
 
  **Resumo:** Criar sua solução de identidade para plataformas e serviços em nuvem da Microsoft.
   
 Este artigo descreve o que os arquitetos de TI precisam saber sobre a criação de identidade para organizações que usam plataformas e serviços em nuvem da Microsoft. Você também pode visualizar este artigo como um cartaz de 5 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11x17 ou A3).
   
-[![Imagem de miniatura para o modelo de identidade de nuvem do Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+[![Imagem em miniatura do modelo de identidade de nuvem da Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54431)
+![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54431)
   
-Você também pode ver todos os modelos nos [recursos de arquitetura de TI de nuvem da Microsoft](microsoft-cloud-it-architecture-resources.md) e passe por meio [mapa de nuvem empresarial da Microsoft: recursos para os tomadores de decisão de TI](https://aka.ms/cloudarchitecture).
+Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) e deslizar o dedo pelo [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://aka.ms/cloudarchitecture)).
   
 > [!NOTE]
-> Este artigo reflete a versão de janeiro de 2016 do pôster de **identidade de nuvem da Microsoft para arquitetos da empresa** . Ele não contém as alterações para o de 2016 abril ou versões posteriores do pôster.
+> Este artigo reflete a versão de janeiro de 2016 do cartaz **Identidade de nuvem da Microsoft para arquitetos corporativos**. Ele não contém as alterações da versão de abril de 2016 ou posteriores do cartaz.
   
 ## <a name="designing-identity-for-the-microsoft-cloud"></a>Criação de identidade para a nuvem da Microsoft
 
@@ -65,8 +65,8 @@ Há três edições do Azure AD: Grátis, Básico e Premium.
   
 ||||
 |:-----|:-----|:-----|
-|**Gratuito** <br/> |**Básica** <br/> |**Premium** <br/> |
-| Gerenciar contas de usuário <br/>  Sincronizar com diretórios locais <br/>  Logon único entre Azure, Office 365 e milhares de outros aplicativos de SaaS populares, como Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox e mais <br/> | Inclui todas as capacidades na edição livre, além de: <br/>  Marca da empresa <br/>  Acesso a aplicativos baseados em grupo <br/>  Redefinição de senha de autoatendimento <br/>  SLA corporativo de 99,9% <br/> | Inclui todos os recursos das edições Free e Basic, além de: <br/>  Gerenciamento de grupo de autoatendimento <br/>  Relatórios e alertas avançados de segurança <br/>  Multi-factor Authentication <br/>  Redefinição de senha com write-back para AD DS local <br/>  Sincronização bidirecional da ferramenta Azure AD Connect <br/>  Proxy do Aplicativo Azure AD <br/>  Microsoft Forefront Identity Manager (MIM) <br/> |
+|**Grátis** <br/> |**Básica** <br/> |**Premium** <br/> |
+| 	Gerenciar contas de usuário <br/>  Sincronizar com diretórios locais <br/>  Logon único entre Azure, Office 365 e milhares de outros aplicativos de SaaS populares, como Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox e mais <br/> | Inclui todas as capacidades na edição livre, além de: <br/>  Marca da empresa <br/>  Acesso a aplicativos baseados em grupo <br/>  Redefinição de senha de autoatendimento <br/>  SLA corporativo de 99,9% <br/> | Inclui todos os recursos das edições Free e Basic, além de: <br/>  Gerenciamento de grupo de autoatendimento <br/>  Relatórios e alertas avançados de segurança <br/>  Multi-factor Authentication <br/>  Redefinição de senha com write-back para AD DS local <br/>  Sincronização bidirecional da ferramenta Azure AD Connect <br/>  Proxy do Aplicativo Azure AD <br/>  	Microsoft Forefront Identity Manager (MIM) <br/> |
    
 Para mais informações sobre versões, confira [Edições do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524280).
   
@@ -153,7 +153,7 @@ Com MFA (Autenticação Multifator):
     
 - Os desenvolvedores de aplicativos de PaaS do Azure podem aproveitar o Serviço de Autenticação Multifator do Azure.
     
-A sincronização de diretórios não oferece integração com as soluções de MFA locais.
+ A sincronização de diretórios não oferece integração com as soluções de MFA locais.
   
 ### <a name="federation-and-single-sign-on"></a>Federação e logon único
 
@@ -227,7 +227,7 @@ A Figura 6 mostra um datacenter local ou de nuvem privada com o AD DS conectado 
   
 - Uma rede virtual do Azure.
     
-- Uma conexão entre um dispositivo ou roteador de rede virtual privada (VPN) local ou um gateway de VPN Azure.
+- Uma conexão entre um dispositivo ou roteador de rede virtual privada (VPN) local ou um gateway VPN Azure.
     
 - Usando uma parte do seu espaço de endereço IP local para máquinas virtuais da rede virtual.
     
@@ -287,7 +287,7 @@ Você pode implantar componentes de diretório, como servidores, para sincroniza
   
 Aqui estão os componentes de diretório que podem ser colocados em uma rede virtual do Azure:
   
-- Ferramenta Azure AD Connect
+- 	Ferramenta Azure AD Connect
     
 - Componentes de autenticação federada
     
@@ -363,11 +363,11 @@ A Figura 10 mostra uma rede virtual do Azure que hospeda um conjunto de servidor
     
 Para mais informações, confira [Integrar suas identidades locais ao Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "Resumo: Localize tópicos de referência do cmdlet Office 365 PowerShell para o Azure Active Directory, Exchange Online, SharePoint Online e Skype for Business online."
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Referências de cmdlet para serviços do Office 365
 
- **Resumo:** Encontre os tópicos de referência de cmdlet do PowerShell do Office 365 para o Windows Azure Active Directory, o Exchange Online, SharePoint Online e Skype para Business Online.
+ **Resumo:** localize tópicos de referência do cmdlet Office 365 PowerShell para o Azure Active Directory, Exchange Online, SharePoint Online e Skype for Business online.
   
-Os tópicos de referência de cmdlet para os diversos serviços do Office 365 fornecem informações detalhadas e instruções sobre como usar cada cmdlet. Addiitonally, cada serviço que tem o PowerShell suporte do Office 365 exige instruções de conexão diferentes.
+Os tópicos de referência do cmdlet para vários serviços do Office 365 fornecem informações e instruções detalhadas sobre como usar cada cmdlet. Além disso, cada serviço do Office 365 com suporte ao PowerShell requer instruções de conexão diferentes.
   
 > [!NOTE]
 > Para se conectar a todos os serviços de uma só vez, confira [Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md). 
@@ -37,9 +37,9 @@ Para obter instruções de conexão do Office 365 PowerShell, confira [Conectar-
   
 ## <a name="security-amp-compliance-center-powershell-cmdlets"></a>Cmdlets do PowerShell do Centro de Conformidade e Segurança
 
-Segurança do Office 365 &amp; tópicos de referência de cmdlet do Centro de conformidade estão localizados na segurança &amp; área do PowerShell do Centro de conformidade da Biblioteca TechNet. Para ir para lá, clique em [a segurança do Office 365 &amp; cmdlets do Centro de conformidade](https://go.microsoft.com/fwlink/p/?LinkId=627085).
+Os tópicos de referência do cmdlet do Centro de Conformidade e Segurança do Office 365 estão localizados na área do PowerShell do Centro de Conformidade e Segurança da Biblioteca TechNet. Para chegar lá, clique em [Cmdlets do Centro de Conformidade e Segurança do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=627085).
   
-Para obter instruções de conexão para segurança &amp; PowerShell do Centro de conformidade, clique em [Conectar para a segurança do Office 365 &amp; usando o PowerShell remoto do Centro de conformidade](https://go.microsoft.com/fwlink/p/?LinkId=627084).
+Para ver instruções de conexão para o PowerShell do Centro de Conformidade e Segurança, clique em [Conectar ao Centro de Conformidade e Segurança do Office 365 usando o PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=627084).
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Cmdlets do PowerShell do Exchange Online
 
@@ -62,7 +62,7 @@ Os tópicos de referência de cmdlet do Skype for Business online estão localiz
   
 Para obter instruções de conexão para o PowerShell do Skype for Business Online, clique em [Conectando ao Lync Online Usando o Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=691607).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

@@ -14,13 +14,13 @@ ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Resumo: Saiba como usar o Windows PowerShell para executar uma migração IMAP para o Office 365."
 ms.openlocfilehash: 6187207d57723c9c69fa6fdc7885c91de6d5080f
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração IMAP para o Office 365
 
- **Resumo:** Aprenda a usar o Windows PowerShell para realizar uma migração de IMAP para o Office 365.
+ **Resumo:** saiba como usar o Windows PowerShell para executar uma migração IMAP para o Office 365.
   
 Como parte do processo de implantação do Office 365, você pode optar por migrar o conteúdo de caixas de correio de usuário de um serviço de email de IMAP (Internet Mail Access Protocol) para o Office 365. Este artigo apresenta as tarefas para uma migração IMAP de email usando o PowerShell do Exchange Online. 
   
@@ -43,7 +43,7 @@ As seguintes restrições se aplicam às migrações IMAP:
     
 - No máximo 500.000 itens podem ser migrados de uma caixa de correio de usuário.
     
-- O tamanho máximo da mensagem que pode ser migrada é de 35 MB.
+- O tamanho máximo da mensagem que pode ser migrada é de 35 MB.
     
 ## <a name="migration-steps"></a>Etapas da migração
 
@@ -77,7 +77,7 @@ As seguintes restrições se aplicam às migrações IMAP:
 
 Identifique o grupo de usuários cujas caixas de correio você deseja migrar em um lote de migração IMAP. Cada linha no arquivo CSV contém as informações necessárias para se conectar a uma caixa de correio no sistema de mensagens IMAP.
   
-Atributos necessários para cada usuário: 
+Veja a seguir os atributos necessários para cada usuário: 
   
 - **EmailAddress** especifica a ID de usuário da caixa de correio do Office 365 do usuário.
     
@@ -109,7 +109,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-Para servidores IMAP que suportam o Simple Authentication e Security Layer (SASL), como um servidor IMAP Dovecot, usam o formato * *User_UserName*Admin_UserName**, onde o asterisco (*) é um caractere separador configurável. Vamos supor que você está migrando email esses mesmos usuários de um servidor IMAP Dovecot usando as credenciais de administrador **mailadmin** e **P@ssw0rd**. Aqui está a aparência seu arquivo CSV:
+Para servidores IMAP que dão suporte a SASL (Simple Authentication and Security Layer), como um servidor Dovecot IMAP, use o formato **User_UserName*Admin_UserName**, em que o asterisco ( * ) é um caractere separador configurável. Suponha que você esteja migrando emails desses mesmos usuários de um servidor Dovecot IMAP usando as credenciais de administrador **mailadmin** e **P@ssw0rd**. Esta seria a aparência do seu arquivo CSV:
   
 ```
 EmailAddress,UserName,Password
@@ -238,7 +238,7 @@ O comando retornará o lote de migração com um status de **Removing** ou retor
   
 Para saber mais sobre o cmdlet **Get-MigrationBatch**, confira[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

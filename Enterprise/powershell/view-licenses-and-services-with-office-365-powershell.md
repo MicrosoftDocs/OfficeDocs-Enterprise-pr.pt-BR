@@ -16,16 +16,16 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: "Explica como usar o Office 365 PowerShell para exibir informações sobre o licenciamento planos, serviços e licenças que estão disponíveis em sua organização do Office 365."
+description: "Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365."
 ms.openlocfilehash: dc9ea5ad5077062a05c0070ffecbf580d3aacc49
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
-**Resumo:** Explica como usar o Office 365 PowerShell para exibir informações sobre o licenciamento planos, serviços e licenças que estão disponíveis em sua organização do Office 365.
+**Resumo:** explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
   
 Todas as assinaturas do Office 365 consistem nos seguintes elementos:
 - **Planos de licenciamento** Também são conhecidos comoplanos de licença ou planos do Office 365. Os planos de licenciamento determinam os serviços do Office 365 que estão disponíveis para os usuários. A assinatura do Office 365 pode conter vários planos de licenciamento. Um exemplo de plano seria o Office 365 Enterprise E3.
@@ -53,13 +53,13 @@ Get-MsolAccountSku
 
 Os resultados contêm as seguintes informações:
   
-- **AccountSkuId:** Mostrar os planos de licenciamento disponíveis para sua organização usando a sintaxe `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ é o valor que você forneceu ao registrado no Office 365 e é exclusivo para a sua organização. O _<LicensingPlan>_ valor é o mesmo para todos. Por exemplo, no valor de `litwareinc:ENTERPRISEPACK`, é o nome da empresa `litwareinc`e o nome do plano de licenciamento `ENTERPRISEPACK`, que é o nome do sistema para Office 365 Enterprise E3.
+- **AccountSkuId** Mostre os planos de licenciamento disponíveis para a sua organização usando a sintaxe `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ é o valor que você forneceu ao se inscrever no Office 365 e é exclusivo da sua organização. O valor do _<LicensingPlan>_ é o mesmo para todos. Por exemplo, no valor `litwareinc:ENTERPRISEPACK`, o nome da empresa é  `litwareinc` e o nome do plano de licenciamento `ENTERPRISEPACK`, que é o nome do sistema para o Office 365 Enterprise E3.
     
-- **ActiveUnits:** Número de licenças que você esteve compras para um plano de licenciamento específico.
+- **ActiveUnits:** número de licenças que você comprou para um plano de licenciamento específico.
     
-- **WarningUnits:** Número de licenças em um plano de licenciamento que você ainda não renovado e que irá expirar após o período de carência de 30 dias.
+- **WarningUnits:** número de licenças em um plano de licenciamento que você não renovou e que expirará após um período de carência de 30 dias.
     
-- **ConsumedUnits:** Número de licenças que você atribuiu a usuários de um plano de licenciamento específico.
+- **ConsumedUnits:** número de licenças que você atribuiu aos usuários de um plano de licenciamento específico.
     
 Para exibir detalhes sobre os serviços do Office 365 disponíveis em todos os planos de licenciamento, execute o seguinte comando:
   
@@ -67,7 +67,7 @@ Para exibir detalhes sobre os serviços do Office 365 disponíveis em todos os p
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigáveis para os serviços mais comuns. Sua lista de planos de serviço pode ser diferente. Peça ao [Suporte do Office](https://support.office.com/home/contact) a lista completa de planos de serviço e seus nomes amigáveis.
+A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigáveis para os serviços mais comuns. Sua lista de planos de serviço pode ser diferente. Peça ao [Suporte do Office]((https://support.office.com/home/contact)) a lista completa de planos de serviço e seus nomes amigáveis.
   
 |****Plano de serviço****|****Descrição****|
 |:-----|:-----|
@@ -81,13 +81,13 @@ A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigá
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plano 2 do Exchange Online  <br/> |
    
-Para exibir detalhes sobre os serviços do Office 365 disponíveis em um plano de licenciamento específico, use a seguinte sintaxe.
+Para exibir detalhes sobre os serviços do Office 365 disponíveis em um plano de licenciamento específico, use a sintaxe a seguir.
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq " <AccountSkuId>"}).ServiceStatus
 ```
 
-Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano de licenciamento de litwareinc: enterprisepack (Office 365 Enterprise E3).
+Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano de licenciamento litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3).
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
@@ -98,9 +98,9 @@ Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano 
 
 ||
 |:-----|
-|![O ícone pequeno do LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Começando a usar o Office 365?**         Descubra cursos em vídeo gratuitos para [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), oferecidos pelo LinkedIn Learning. |
+|![O ícone pequeno do LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Começando a usar o Office 365?**         Descubra cursos em vídeo gratuitos para [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)), oferecidos pelo LinkedIn Learning. |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 <a name="ShortVersion"> </a>
 
 #### 

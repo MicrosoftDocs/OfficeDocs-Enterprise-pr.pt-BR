@@ -1,5 +1,5 @@
 ---
-title: Rede Microsoft Cloud para arquitetos corporativos
+title: Microsoft Cloud Networking para arquitetos corporativos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,22 +19,22 @@ ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Resumo: Projete sua rede para plataformas e serviços da nuvem da Microsoft."
 ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rede Microsoft Cloud para arquitetos corporativos
+# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking para arquitetos corporativos
 
  **Resumo:** Projete sua rede para plataformas e serviços da nuvem da Microsoft.
   
 Este artigo conecta você a um conjunto de outros artigos que descrevem o que os arquitetos de TI precisam saber sobre como projetar uma rede, em organizações, usando a plataforma e os serviços de nuvem da Microsoft. Você também pode visualizar estas informações como um cartaz de 12 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11x17 ou A3).
   
-[![Thumb imagem para modelo de rede do Microsoft cloud](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Você também pode ver todos os modelos nos [recursos de arquitetura de TI de nuvem da Microsoft](microsoft-cloud-it-architecture-resources.md) e passe por meio [mapa de nuvem empresarial da Microsoft: recursos para os tomadores de decisão de TI](https://aka.ms/cloudarchitecture).
+Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) e deslizar o dedo pelo [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://aka.ms/cloudarchitecture)).
   
 Confira as seguintes seções:
   
@@ -62,16 +62,16 @@ Confira as seguintes seções:
     
     Percorra o processo de design para criar uma rede Azure virtual (VNet) ideal para hospedar cargas de trabalho de TI baseadas em servidor, incluindo sub-redes, espaços de endereço, roteamento, DNS, balanceamento de carga e conectividade com a rede local, com outras VNets e com a Internet.
     
-Para ver um resumo de 30 minutos dos principais pontos deste cartaz, consulte o curso de Microsoft Virtual Academy [Otimizar sua rede para ofertas de nuvem da Microsoft](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) .
+Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud]((https://mva.microsoft.com/pt-BR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) da Microsoft Virtual Academy.
   
 > [!NOTE]
-> Estes artigos refletem a versão de **junho de 2017** do cartaz Rede Microsoft Cloud Networking para arquitetos corporativos.
+> Estes artigos refletem a versão de **junho de 2017** do cartaz Microsoft Cloud Networking para arquitetos corporativos.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

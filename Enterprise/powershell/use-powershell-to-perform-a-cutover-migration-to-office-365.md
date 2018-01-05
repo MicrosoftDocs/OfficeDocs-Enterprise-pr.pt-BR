@@ -14,13 +14,13 @@ ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "Resumo: Saiba como usar o Windows PowerShell para executar uma migração de substituição para o Office 365."
 ms.openlocfilehash: be5a3587538c32589c20fe6d27d69a84e0b8e7db
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração de substituição para o Office 365
 
- **Resumo:** Aprenda a usar o Windows PowerShell para realizar uma migração de substituição para o Office 365.
+ **Resumo:** saiba como usar o Windows PowerShell para executar uma migração de substituição para o Office 365.
   
 Você pode migrar o conteúdo de caixas de correio de um sistema de email de origem para o Office 365 de uma só vez usando uma migração de substituição. Este artigo apresenta as tarefas para uma migração de substituição de email usando o PowerShell do Exchange Online. 
   
@@ -63,7 +63,7 @@ Para obter uma lista completa dos comandos de migração, confira [Cmdlets de mo
     
   - Use o Microsoft Outlook de fora da rede corporativa para se conectar à sua caixa de correio do Exchange no local.
     
-  - Use o [Analisador de Conectividade Remota do Microsoft Exchange](https://www.testexchangeconnectivity.com/) para testar suas configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou testes de descoberta automática do Outlook.
+  - Use o [Analisador de Conectividade Remota do Microsoft Exchange]((https://www.testexchangeconnectivity.com/)) para testar suas configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou testes de descoberta automática do Outlook.
     
   - Execute os comandos a seguir no PowerShell do Exchange Online.
     
@@ -168,7 +168,7 @@ Se um lote de migração for iniciado com êxito, seu status no painel de migra�
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>Etapa 5: rotear o email para o Office 365
+### <a name="step-5-route-your-email-to-office-365"></a>Etapa 5: Rotear o email para o Office 365
 <a name="BK_Step5"> </a>
 
 Os sistemas de email usam um registro DNS chamado de registro MX para descobrir onde entregar os emails. Durante o processo de migração de email, seu registro MX estava apontando para o sistema de email de origem. Agora que a migração de email para o Office 365 foi concluída, é hora de apontar seu registro MX para o Office 365. Isso ajuda a garantir que o email seja entregue a suas caixas de correio do Office 365. Movendo o registro MX, você também poderá desativar seu sistema de email antigo quando estiver pronto. 
@@ -217,7 +217,7 @@ Remove-MigrationBatch -Identity CutoverBatch
     
 - **Desativar servidores locais do Exchange.** Depois de verificar se todos os emails estão sendo roteados diretamente para as caixas de correio do Office 365 e quando você não precisar mais manter sua organização de email local ou não planejar implementar uma solução de SSO (logon único), você poderá desinstalar o Exchange de seus servidores e remover sua organização local do Exchange.
     
-    Para saber mais, confira os seguintes tópicos:
+    Para obter mais informações, confira o seguinte:
     
   - [Modificar ou remover o Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

@@ -17,13 +17,13 @@ ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Resumo: compreenda a importância do Office 365 PowerShell, conecte-se aos seus locatários do Office 365 e receba ajuda."
 ms.openlocfilehash: 16df86ef7f2fe75fd6bc3e384d01329de545ae11
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Introdução ao Office 365 PowerShell
 
- **Resumo:** Entender a importância do Office 365 PowerShell, obtenha conectada ao seu locatário do Office 365 e obter ajuda.
+ **Resumo:** compreenda a importância do Office 365 PowerShell, conecte-se aos seus locatários do Office 365 e receba ajuda.
   
 Com o Office 365 PowerShell, você pode gerenciar o Office 365 com scripts e comandos para simplificar seu trabalho diário. Saiba porque os recursos do Office 365 PowerShell são cruciais para o gerenciamento do Office 365, como se conectar com sua assinatura do Office 365, criar relatórios e obter informações adicionais e de ajuda na comunidade do Office 365.
   
@@ -53,7 +53,7 @@ Selecione o artigo de acordo com suas necessidades:
     
     Comece aqui para conectar-se aos locais da comunidade do PowerShell e receber ajuda ou informações contínuas sobre como usar o Office 365 PowerShell.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

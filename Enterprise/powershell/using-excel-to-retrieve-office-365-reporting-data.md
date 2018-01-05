@@ -17,17 +17,17 @@ ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Resumo: Use o recurso oData no Microsoft Excel para recuperar informações detalhadas de relatórios para sua implantação do Office 365"
 ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Usar o Excel para Recuperar Dados de Relatório do Office 365
 
- **Resumo:** Usar o recurso de oData no Microsoft Excel para recuperar informações detalhadas de relatórios para sua implantação do Office 365
+ **Resumo:** use o recurso oData no Microsoft Excel para recuperar informações detalhadas de relatórios para sua implantação do Office 365
   
 Os relatórios são uma parte importante da administração do sistema. O Centro de administração do Office 365 inclui vários relatórios predefinidos, que você pode acessar na seção **Relatórios** da navegação à esquerda. Há relatórios de uso e segurança e de conformidade.
   
-Os relatórios disponíveis para você dependem da versão do Office 365 que está sendo usada e de quais serviços do Office 365 foram habilitados. Para obter mais informações, consulte a [Página de relatórios](https://technet.microsoft.com/en-us/library/office-365-reports.aspx).
+Os relatórios disponíveis para você dependem da versão do Office 365 que está sendo usada e de quais serviços do Office 365 foram habilitados. Para obter mais informações, consulte a [Página de relatórios]((https://technet.microsoft.com/pt-BR/library/office-365-reports.aspx)).
   
 Os relatórios predefinidos do Centro de administração são um excelente recurso. Eles facilitam a verificação de alguns itens, como o uso de caixa de correio ou o número de minutos que os usuários estão gastando em conferências online. Entretanto, quando se trata de análises detalhadas do seu domínio do Office 365, os relatórios têm suas limitações.
   
@@ -87,7 +87,7 @@ Nesse momento, o Excel faz a conexão para você e recupera os dados.
     
 Observe que esses arquivos .ODC são arquivos XML de texto sem formatação. Incluídos neles estão seu nome de usuário e senha do Office 365:
     
-\<odc: ConnectionString > Data Source = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/; Namespaces para incluir = *; Max recebeu o tamanho da mensagem = 4398046511104; Integrated Security = Basic; **Usuário ID=admin@litwareinc.onmicrosoft.com; Senha = MYpassw0rd!**; Informações de segurança de persistência = false; Url do serviço de documento = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString >
+\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString>
     
 Se você não gosta da ideia de salvar seu nome de usuário e senha em um arquivo de texto sem formatação, não marque a caixa rotulada **Salvar senha em arquivo**. Entretanto, lembre-se que se fizer isso não poderá reutilizar estas conexões de dados. Isso acontece porque, sem o nome de usuário e a senha, o Office 365 não pode autenticar a sua tentativa de logon no serviço.
     
@@ -101,7 +101,7 @@ Se você não gosta da ideia de salvar seu nome de usuário e senha em um arquiv
   
 O que fazer com esses dados é escolha sua. Para obter sugestões, confira [Crie um painel nos Serviços do Excel usando o feed de dados oData](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx). Ainda que este artigo não use o serviço de relatório do Office 365, ele fornece algumas dicas úteis de como realizar ações como adicionar filtros e segmentações ao seu novo painel.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

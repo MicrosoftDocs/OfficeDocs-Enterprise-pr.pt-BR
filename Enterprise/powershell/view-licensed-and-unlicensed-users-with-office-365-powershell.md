@@ -18,13 +18,13 @@ ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Explica como usar o Office 365 PowerShell para exibir as contas de usuário licenciado e não licenciado."
 ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Exibir usuários licenciados e não licenciados com o PowerShell do Office 365
 
-**Resumo:** Explica como usar o Office 365 PowerShell para exibir as contas de usuário licenciado e não licenciado.
+**Resumo:** explica como usar o Office 365 PowerShell para exibir as contas de usuário licenciado e não licenciado.
   
 As contas de usuário em sua organização do Office 365 podem ter algumas, todas ou nenhuma das licenças disponíveis atribuídas a elas em planos de licenciamento que estão disponíveis em sua organização. Você pode usar o Office 365 PowerShell para localizar rapidamente os usuários licenciados e não licenciados em sua organização.
   
@@ -32,7 +32,7 @@ As contas de usuário em sua organização do Office 365 podem ter algumas, toda
 
 - Os procedimentos deste tópico exigem que você se conecte ao Office 365 PowerShell. Para obter instruções, confira [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).
     
-- Se você usar o cmdlet **Get-MsolUser** sem usar o _-todos os_ parâmetro, apenas as primeiro 500 contas são retornadas.
+- Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _-All_, somente as primeiras 500 contas serão retornadas.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>A versão curta (instruções sem explicações)
 
@@ -58,7 +58,7 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>A versão longa (instruções com explicações detalhadas)
 
-Contas de usuário do Office 365 e licenças do Office 365 não precisam ter uma correspondência direta: é possível para que os usuários do Office 365 que não têm uma licença do Office 365 e é possível ter licenças do Office 365 que não foram atribuídas a um usuário. (Na verdade, uma única conta de usuário ainda pode ter *vários* Office 365 licenças.) Quando você cria um novo usuário do Office 365 conta (veja o artigo [usuários de licença Office 365 com o Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) para obter mais informações você) não é necessário atribuir uma licença de usuário: o novo usuário terá uma conta válida, mas ele não será possível entrar no Offi CE 365. Se eles tentarem entrar, eles verão algo semelhante a esta:
+As contas de usuário do Office 365 e as licenças do Office 365 não precisam ter uma correspondência direta: é possível ter os usuários do Office 365 que não têm uma licença do Office 365 e é possível ter licenças do Office 365 que ainda não foram atribuídas a um usuário. (Na verdade, uma única conta de usuário pode até ter  *várias*  licenças do Office 365.) Quando você cria uma nova conta de usuário do Office 365 (confira o artigo[Licenciar usuários do Office 365 com o Windows PowerShell]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)) para obter mais informações), não precisa atribuir uma licença ao usuário: o novo usuário terá uma conta válida, mas ele não poderá entrar no Office 365. Se tentar entrar, verá algo parecido com isto:
   
 ![Usuário sem uma licença válida do Office 365.](images/o365_powershell_no_license.png)
   

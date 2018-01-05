@@ -19,13 +19,13 @@ ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Saiba como usar o Office 365 PowerShell para criar contas de usuários no Office 365."
 ms.openlocfilehash: 9f6eb4cafa82ae511e806b7e32f2ed98a065d52e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Criar contas de usuários usando o Office 365 PowerShell
 
-**Resumo:** Saiba como usar o Office 365 PowerShell para criar contas de usuário no Office 365.
+**Resumo:** saiba como usar o Office 365 PowerShell para criar contas de usuários no Office 365.
   
 Você pode usar o Office 365 PowerShell para criar contas de usuários de forma eficiente, especialmente para várias contas de usuários. Quando você cria contas de usuários no Office 365 PowerShell, determinadas propriedades de conta são sempre obrigatórias. Outras propriedades, embora sejam importantes, não são obrigatórias para a criação de contas. Essas propriedades estão descritas na tabela a seguir:
   
@@ -37,7 +37,7 @@ Você pode usar o Office 365 PowerShell para criar contas de usuários de forma 
 |**UserPrincipalName** <br/> |Sim  <br/> |Esse é o nome da conta usado para entrar nos serviços do Office 365. Por exemplo, carlosl@contoso.onmicrosoft.com.  <br/> |
 |**FirstName** <br/> |Não  <br/> ||
 |**LastName** <br/> |Não  <br/> ||
-|**LicenseAssignment** <br/> |Não  <br/> |Esse é o plano de licenciamento (também conhecido como plano de licença, plano do Office 365 ou SKU) do qual uma licença disponível será atribuída à conta do usuário. A licença determina os serviços do Office 365 que estão disponíveis para a conta. Não é necessário atribuir uma licença a um usuário ao criar a conta, mas a conta requer uma licença para acessar os serviços do Office 365. Você tem 30 dias para licenciar a conta de usuário depois de criá-la.<br/> Use o cmdlet **Get-MsolAccountSku** para exibir os planos de licenciamento ( **AccountSkuId** ) e licenças disponíveis em sua organização. Para obter mais informações, consulte [Exibir as licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).<br/> |
+|**LicenseAssignment** <br/> |Não  <br/> |Esse é o plano de licenciamento (também conhecido como plano de licença, plano do Office 365 ou SKU) do qual uma licença disponível será atribuída à conta do usuário. A licença determina os serviços do Office 365 que estão disponíveis para a conta. Não é necessário atribuir uma licença a um usuário ao criar a conta, mas a conta requer uma licença para acessar os serviços do Office 365. Você tem 30 dias para licenciar a conta de usuário depois de criá-la.<br/> Use o cmdlet **Get-MsolAccountSku** para exibir os planos de licenciamento ( **AccountSkuId** ) e as licenças disponíveis na organização. Para saber mais, confira o artigo [Exibir licenças e serviços com o PowerShell do Office 365](view-licenses-and-services-with-office-365-powershell.md).  <br/> |
 |**Password** <br/> |Não  <br/> | Caso não especifique uma senha, nosso sistema atribuirá uma senha aleatória para a conta do usuário e a senha ficará visível nos resultados do comando. Se você especificar uma senha, ela deverá atender aos seguintes requisitos de complexidade: <br/>  Ter de 8 a 16 caracteres de texto ASCII. <br/>  Incluir caracteres dos três tipos a seguir: letras maiúsculas, letras minúsculas, números e símbolos. <br/> |
 |**UsageLocation** <br/> |Não  <br/> |Esse é um código de país ISO 3166-1 alpha 2 válido. Por exemplo, FR para França e BR para Brasil. É importante fornecer esse valor, pois alguns serviços do Office 365 não estão disponíveis em certos países/regiões. Portanto, apenas será possível atribuir uma licença a uma conta de usuário depois de configurar esse valor na conta. Para saber mais, confira o artigo [Sobre restrições de licença](https://go.microsoft.com/fwlink/p/?LinkId=691730).<br/> |
    
@@ -71,7 +71,7 @@ ShawnM@contoso.onmicrosoft.com,Shawn,Melendez,Shawn Melendez,US,contoso:ENTERPRI
   ```
 
  > [!NOTE]
->Os nomes de coluna e sua ordem da primeira linha do arquivo CSV são arbitrários, mas certificar-se de que os dados no restante do arquivo correspondem a ordem dos nomes de coluna e usam os nomes de coluna para os valores de parâmetro no comando PowerShell do Office 365.
+>Os nomes de coluna e a respectiva ordem na primeira linha do arquivo CSV são arbitrários, mas você pode verificar se os dados no restante do arquivo correspondem à ordem dos nomes e usar esses nomes para os valores de parâmetro, no comando do Office 365 PowerShell.
     
 2. Use a sintaxe a seguir:
     
@@ -89,7 +89,7 @@ Nesse exemplo, criamos as contas de usuários do arquivo C:\Meus Documentos\NewA
     
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-create-individual-user-accounts"></a>Use o módulo PowerShell do Azure Active Directory V2 para criar contas de usuários individuais.
 
-Para usar o cmdlet **New-AzureADUser** do módulo Azure Active Directory PowerShell V2, primeiro conecte-se à sua assinatura. Para ver as instruções, consulte [Connect com o módulo do Azure Active Directory V2 PowerShell](https://go.microsoft.com/fwlink/?linkid=842218).
+Para usar o cmdlet **New-AzureADUser** no módulo do PowerShell Azure Active Directory V2, conecte-se primeiro à sua assinatura. Para conhecer as instruções, confira [Conectar-se com o módulo do PowerShell Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
   
 Depois de se conectar, use a seguinte sintaxe para criar uma conta de individual:
   
@@ -107,9 +107,9 @@ $PasswordProfile.Password="3Rv0y1q39/chsy"
 New-AzureADUser -DisplayName "Caleb Sills" -GivenName "Caleb" -SurName "Sills" -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -MailNickName calebs -PasswordProfile $PasswordProfile -AccountEnabled $true
 ```
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
-Consulte estes tópicos adicionais sobre como gerenciar usuários com o Office 365 PowerShell:
+Confira estes tópicos adicionais sobre como gerenciar usuários com o Office 365 PowerShell:
   
 - [Excluir e restaurar contas de usuários usando o Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
@@ -123,11 +123,11 @@ Para saber mais sobre os cmdlets usados nestes procedimentos, confira os seguint
   
 - [Export-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)
+- [Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))
     
-- [MsolUser-nova](https://go.microsoft.com/fwlink/p/?LinkId=691547)
+- [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     
-- [ForEach-Object.](https://go.microsoft.com/fwlink/p/?LinkId=113300)
+- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
     
 - [New-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
     

@@ -14,21 +14,21 @@ ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: "Resumo: Use o Office 365 PowerShell para gerenciar as políticas do Skype for Business online, políticas por usuário e configurações da reunião."
 ms.openlocfilehash: 66a3cdd90f1c0c205ddf5cab52597e32a638688d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gerenciar o Skype for Business Online com o Office 365 PowerShell
 
- **Resumo:** Use o Office 365 PowerShell para gerenciar Skype para configurações de reunião, políticas por usuário e políticas de negócios Online.
+ **Resumo:** use o Office 365 PowerShell para gerenciar as políticas do Skype for Business Online, políticas por usuário e configurações de reunião.
   
-Uma das tarefas de qualquer Skype para Business Online administrador primárias está gerenciando políticas. Embora você possa realizar algumas dessas tarefas no Centro de administração do Office 365, outras tarefas são muito mais rápido e fácil no Office 365 PowerShell. Para obter mais informações, consulte os tópicos a seguir:
+Uma das principais tarefas de qualquer administrador do Skype for Business Online é gerenciar políticas. Embora você possa executar algumas dessas tarefas no Centro de administração do Office 365, outras tarefas são muito mais rápidas e fáceis no Office 365 PowerShell. Para saber mais, confira os tópicos a seguir:
   
 - [Gerenciar Skype para políticas Business Online com o Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
 - [Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

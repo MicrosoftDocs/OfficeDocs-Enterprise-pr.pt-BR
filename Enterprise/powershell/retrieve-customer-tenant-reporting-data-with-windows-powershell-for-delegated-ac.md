@@ -14,13 +14,13 @@ ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: "Resumo: Use o Windows PowerShell remoto para Microsoft Exchange Online para recuperar os relatórios de locatários individuais do cliente."
 ms.openlocfilehash: 40c1dedd8fb223ea6fa478b3a5c3e716fe07dd93
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Recuperar dados de relatório do locatário do cliente com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
- **Resumo:** Use remotos com Windows PowerShell para o Microsoft Exchange Online para recuperar relatórios de Inquilinos do cliente individual.
+ **Resumo:** use o Windows PowerShell remoto para Microsoft Exchange Online para recuperar os relatórios de locatários individuais do cliente.
   
 Os Parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). podem acessar os dados que compõem os relatórios de locatários do cliente diretamente por meio do Windows PowerShell remoto para o PowerShell do Exchange Online. Isso permite aos parceiros coletar e salvar os dados dos relatórios e, em seguida, realizar outras operações neles. Depois de abrir uma conexão remota, recuperar dados de relatório de uma locação é o mesmo que executar qualquer cmdlet em uma locação do cliente.
   
@@ -42,7 +42,7 @@ Get-StaleMailboxReport -StartDate 03/25/2015 -EndDate 03/31/2015
 
 Há vários outros cmdlets de relatório disponíveis para o Exchange Online, para o Lync Online e para o SharePoint Online, dentre outros, que você pode usar para rastreamento de mensagens. Para saber mais sobre os cmdlets de relatórios disponíveis e sobre o Serviço Web de Relatório do Office 365, confira os tópicos da seção a seguir.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

@@ -14,13 +14,13 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: "Resumo: Use o Windows PowerShell para o Office 365 para gerenciar as locações do cliente."
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gerenciar locatários do Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
- **Resumo:** Use o Windows PowerShell para Office 365 para gerenciar sua aluguéis são de cliente.
+ **Resumo:** use o Windows PowerShell para o Office 365 para gerenciar os locatários do cliente.
   
 O Windows PowerShell permite aos Parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). administrar e gerar relatórios facilmente das configurações de locação do cliente, que não estão disponíveis no Centro de administração do Office 365. Observe que as permissões "Administrar em Nome de" (AOBO) são necessárias para a conta de administrador do parceiro para se conectar às locações dos clientes.
   
@@ -82,7 +82,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Obter todos os detalhes sobre um usuário
 
-Se você quiser ver todas as propriedades de um usuário específico, execute este comando. Substituir _<customer TenantId value>_ e _<user principal name value>_ com os valores reais.
+Caso pretenda conferir todas as propriedades de um usuário específico, execute este comando. Substitua _<customer TenantId value>_ e _<user principal name value>_ pelos valores reais.
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -98,7 +98,7 @@ Crie um arquivo CSV usando este formato:
   
 -  `UserPrincipalName,FirstName,LastName,DisplayName,Password,TenantId,UsageLocation,LicenseAssignment`
     
-onde:
+em que:
   
 - **UsageLocation**: O valor para isso é o código de país/região ISO de duas letras do usuário. Os códigos de país/região podem ser visualizados na[Plataforma de Navegação Online ISO](https://go.microsoft.com/fwlink/p/?LinkId=532703). Por exemplo, o código para os Estados Unidos é US e o código para o Brasil é BR. 
     
@@ -112,7 +112,7 @@ Depois de criar o arquivo CSV, execute este comando para criar contas de usuári
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

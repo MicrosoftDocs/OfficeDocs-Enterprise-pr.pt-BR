@@ -14,13 +14,13 @@ ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365."
 ms.openlocfilehash: 6c3ed6c0e37f7b99d3f26056dfe1b9d989388ff3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração em estágios para o Office 365
 
- **Resumo:** Aprenda a usar o Windows PowerShell para realizar uma migração em estágios para o Office 365.
+ **Resumo:** saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365.
   
 Você pode migrar o conteúdo de caixas de correio de usuários de um sistema de email de origem para o Office 365 ao longo do tempo usando uma migração em estágios.
   
@@ -58,7 +58,7 @@ Antes de migrar as caixas de correio para o Office 365 usando uma migração em 
   
 - Use o Outlook fora de sua rede corporativa para se conectar a sua caixa de correio local do Exchange.
     
-- Use o [Analisador de Conectividade Remota do Microsoft Exchange](https://www.testexchangeconnectivity.com/) para testar as configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou os testes de descoberta automática do Outlook.
+- Use o [Analisador de Conectividade Remota do Microsoft Exchange]((https://www.testexchangeconnectivity.com/)) para testar as configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou os testes de descoberta automática do Outlook.
     
 - Execute os seguintes comandos no PowerShell do Exchange Online:
     
@@ -108,7 +108,7 @@ O arquivo CSV para uma migração em estágios dá suporte aos três atributos a
 |**Atributo**|**Descrição**|**Obrigatório?**|
 |:-----|:-----|:-----|
 |EmailAddress  <br/> |Especifica o endereço de email SMTP principal, por exemplo, laurac@contoso.com, para caixas de correio locais.  <br/> Use o endereço SMTP principal para caixas de correio locais, e não IDs de usuário do Office 365. Por exemplo, se o domínio local se chamar contoso.com, mas o domínio de email do Office 365 se chamar service.contoso.com, você usará o nome de domínio contoso.com para endereços de email no arquivo CSV.  <br/> |Obrigatório  <br/> |
-|Password  <br/> |A senha a ser definida para a nova caixa de correio do Office 365. As restrições de senha aplicadas à sua organização do Office 365 também são aplicáveis às senhas incluídas no arquivo CSV.  <br/> |Opcional  <br/> |
+|Senha  <br/> |A senha a ser definida para a nova caixa de correio do Office 365. As restrições de senha aplicadas à sua organização do Office 365 também são aplicáveis às senhas incluídas no arquivo CSV.  <br/> |Opcional  <br/> |
 |ForceChangePassword  <br/> |Especifica se um usuário deve alterar a senha na primeira vez que entrar em sua nova caixa de correio do Office 365. Use **True** ou **False** para o valor desse parâmetro. <br/> > [!NOTE]> Se você implementou uma solução de SSO (Logon Único) com a implantação do AD FS (Serviços de Federação do Active Directory) em sua organização local, deve usar **False** para o valor do atributo **ForceChangePassword**.          |Opcional  <br/> |
    
  **Formato de arquivo CSV**
@@ -252,7 +252,7 @@ Ative as contas de usuário do Office 365 para as contas migradas atribuindo lic
     
 - **Desativar servidores locais do Exchange.** Depois de verificar se todos os emails estão sendo roteados diretamente para as caixas de correio do Office 365 e quando você não precisar mais manter sua organização de email local ou não planejar implementar uma solução SSO, você poderá desinstalar o Exchange de seus servidores e remover sua organização local do Exchange.
     
-    Para saber mais, confira os seguintes tópicos:
+    Para obter mais informações, confira o seguinte:
     
   - [Modificar ou remover o Exchange 2010](https://go.microsoft.com/fwlink/?LinkId=217936)
     

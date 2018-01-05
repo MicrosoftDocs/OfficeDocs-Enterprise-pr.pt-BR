@@ -14,13 +14,13 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: "Resumo: Use o Windows PowerShell remoto para se conectar ao Exchange Online utilizando o parâmetro DelegatedOrg."
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Conectar-se aos locatários do Exchange Online com o Windows PowerShell remoto para parceiros com permissões de acesso delegado (DAP)
 
- **Resumo:** Use o Windows PowerShell remoto para se conectar ao Exchange Online usando o parâmetro _DelegatedOrg_ .
+ **Resumo:** use o Windows PowerShell remoto para se conectar ao Exchange Online utilizando o parâmetro _DelegatedOrg_.
   
 O Windows PowerShell remoto permite gerenciar as configurações do Exchange Online a partir da linha de comando. Use o Windows PowerShell em um computador local para criar uma sessão remota do Exchange Online. É um processo simples de três etapas em que você insere suas credenciais do Exchange Online, fornece as configurações de conexão necessárias e, em seguida, importa os cmdlets do Exchange Online para sua sessão local do Windows PowerShell de forma que possa usá-los.
   
@@ -57,7 +57,7 @@ Os parceiros DAP são parceiros de agregação e Provedores de Soluções na Nuv
   
 ## <a name="connect-to-exchange-online"></a>Conectar-se ao Exchange Online
 
-1. Abra o Windows PowerShell no computador local e execute o seguinte comando.
+1. Em seu computador local, abra o Windows PowerShell e execute o comando a seguir.
     
   ```
   $UserCredential = Get-Credential
@@ -65,7 +65,7 @@ Os parceiros DAP são parceiros de agregação e Provedores de Soluções na Nuv
 
     Na caixa de diálogo **Solicitação de Credenciais do Windows PowerShell**, digite seu nome de usuário e senha do administrador DAP e clique em **OK**.
     
-2. Execute o seguinte comando, substituindo _<customer tenant domain name>_ com o nome do domínio locatário que você deseja se conectar.
+2. Execute o comando a seguir, substituindo o _<customer tenant domain name>_ pelo nome de domínio do locatário ao qual você deseja se conectar.
     
   ```
   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid?DelegatedOrg=<customer tenant domain name>-Credential $UserCredential -Authentication Basic -AllowRedirection
@@ -73,7 +73,7 @@ Os parceiros DAP são parceiros de agregação e Provedores de Soluções na Nuv
 
     A etapa principal deste comando especifica qual cliente acessar para obter as informações do relatório. Faça isso no parâmetro  _ConnectionURI_, no qual você fornece o FQDN do nome de domínio inicial como o valor para o parâmetro  _DelegatedOrg_. Isso informa ao Windows PowerShell remoto para o PowerShell remoto do Exchange OnlineWindows PowerShell o ponto de extremidade ao qual se conectar. O Windows PowerShell remoto deve se conectar ao relatório do Office 365 no contexto de um cliente específico, sempre que um relatório for executado. Depois de especificar esse cliente, todos os comandos a seguir serão executados no contexto desse cliente. Isso permite ao parceiro acessar os relatórios disponíveis para esse cliente.
     
-3. execute o seguinte comando.
+3. Execute o seguinte comando.
     
   ```
   Import-PSSession $Session

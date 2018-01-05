@@ -14,13 +14,13 @@ ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 'Resumo: saiba como migrar emails para o Office 365 usando o Windows PowerShell.'
 ms.openlocfilehash: 520f2b78a32e6393a6999c208017f6752cf4ab50
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Usar o PowerShell para a migração de email para o Office 365
 
- **Resumo:** Saiba como migrar o email para o Office 365 usando o Windows PowerShell.
+ **Resumo:** saiba como migrar emails para o Office 365 usando o Windows PowerShell.
   
 Quando os administradores configuram pela primeira vez o Office 365, muitos deles migram emails de sistemas existentes. Você também pode fazer isso usando a interface do usuário de administração do Office 365. Você também pode usar o Windows PowerShell para migrar emails.
   
@@ -34,7 +34,7 @@ Use o Windows PowerShell para migrar emails para o Office 365.
     
 - [Usar o PowerShell para realizar uma migração em estágios para o Office 365](use-powershell-to-perform-a-staged-migration-to-office-365.md)
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 
@@ -47,9 +47,9 @@ Use o Windows PowerShell para migrar emails para o Office 365.
 [Use o Windows PowerShell para criar relatórios no Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Vantagens de usar o Windows PowerShell para gerenciar o Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
+[Vantagens de usar o Windows PowerShell para gerenciar o Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))
   
-[Referência técnica do Windows PowerShell no Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
+[Referência técnica do Windows PowerShell no Office 365]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))
   
-[Licenciamento do Office 365 e Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
+[Licenciamento do Office 365 e Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))
 
