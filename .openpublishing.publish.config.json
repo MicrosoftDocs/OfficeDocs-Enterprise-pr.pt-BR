@@ -6,6 +6,7 @@
       "build_output_subfolder": "OfficeDocs-Enterprise",
       "locale": "pt-BR",
       "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -18,7 +19,7 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
+    "live",
     "master-sxs"
   ],
   "continue_with_document_error": true,
