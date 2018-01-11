@@ -10,16 +10,15 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Resumo: Use o recurso oData no Microsoft Excel para recuperar informações detalhadas de relatórios para sua implantação do Office 365"
-ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a4245029c337450f5f5ac3655e0b60a301ea80ec
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Usar o Excel para Recuperar Dados de Relatório do Office 365
 

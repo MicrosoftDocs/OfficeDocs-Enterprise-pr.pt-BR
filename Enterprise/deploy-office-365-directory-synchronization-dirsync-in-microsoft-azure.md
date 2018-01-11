@@ -5,23 +5,20 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: "Resumo: implante o Azure AD Connect (DirSync) em uma máquina virtual no Azure para sincronizar as contas entre o diretório local e o locatário do Azure AD da sua assinatura do Office 365."
-ms.openlocfilehash: c6ee337c49092ac5d2b3d30a54fc33b3f3e2bb58
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4160c8b0f1d38c53fdbc1052cc0bc30793cc8ba2
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Implantar a DirSync (sincronização de diretórios) do Office 365 no Microsoft Azure
 

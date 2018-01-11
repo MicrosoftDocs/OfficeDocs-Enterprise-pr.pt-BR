@@ -9,16 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- DecEntMigration
+ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Resumo: use o Office 365 PowerShell para criar relatórios que você não pode produzir no Centro de administração do Office 365."
-ms.openlocfilehash: b1cbbbef73a266a62a417d2714fefcd630c604c4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 0a524ca2a11bdea156ad684ab3f4936d423a4b21
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Use o Windows PowerShell para criar relatórios no Office 365
 

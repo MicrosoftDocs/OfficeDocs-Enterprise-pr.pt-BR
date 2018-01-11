@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Resumo: compreenda a importância do Office 365 PowerShell, conecte-se aos seus locatários do Office 365 e receba ajuda."
-ms.openlocfilehash: 16df86ef7f2fe75fd6bc3e384d01329de545ae11
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4e416914703016a6b33c12779eff0c080ae0552f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Introdução ao Office 365 PowerShell
 

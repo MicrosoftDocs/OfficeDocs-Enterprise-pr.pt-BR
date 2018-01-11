@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Resumo: o que os arquitetos de TI precisam saber sobre cenários híbridos usando plataformas e serviços em nuvem da Microsoft."
-ms.openlocfilehash: 46e9a6cead44f5392d3ae228dbb5e7f9285bf891
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 0a2d9e097d976a729492748aa2672146cb8681a7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 
@@ -66,7 +63,7 @@ Confira as seguintes seções:
 
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

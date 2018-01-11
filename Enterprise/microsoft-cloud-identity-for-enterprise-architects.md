@@ -8,21 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - O365ITProTrain
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Resumo: Criar sua solução de identidade para plataformas e serviços em nuvem da Microsoft."
-ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 601d449937d0b21299f4653aa872e0a3d4bc5337
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidade no Microsoft Cloud para arquitetos corporativos
 

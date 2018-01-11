@@ -12,15 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
-- DecEntMigration
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Explica como usar o Office 365 PowerShell para exibir as contas de usuário licenciado e não licenciado."
-ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: fe4f75d9d8dbc85efbc71856192dbaece3e84fbc
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Exibir usuários licenciados e não licenciados com o PowerShell do Office 365
 

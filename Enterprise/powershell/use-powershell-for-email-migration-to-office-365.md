@@ -9,14 +9,14 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 'Resumo: saiba como migrar emails para o Office 365 usando o Windows PowerShell.'
-ms.openlocfilehash: 520f2b78a32e6393a6999c208017f6752cf4ab50
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Usar o PowerShell para a migração de email para o Office 365
 

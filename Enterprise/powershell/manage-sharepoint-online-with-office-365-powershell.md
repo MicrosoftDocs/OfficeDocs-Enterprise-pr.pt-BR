@@ -12,14 +12,13 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: "Resumo: Use o Office 365 PowerShell para gerenciar usuários, grupos e grupos de sites do SharePoint Online."
-ms.openlocfilehash: 7f59081161b083a6447fbfba2652674f0592f634
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2caef048196a2ffdf1d481f728dae05c0c9b3ae9
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gerenciar o SharePoint Online com o Office 365 PowerShell
 
