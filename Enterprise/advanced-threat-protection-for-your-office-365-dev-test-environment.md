@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "Resumo: Configurar e demonstrar a proteção de ameaça avançadas do Office 365 em seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 00b1fc8fea930346f082d3d2302a14dea7ad4309
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365
 
@@ -158,9 +155,9 @@ Agora, você pode usar esse ambiente para criar novas políticas e fazer testes 
 > [!TIP]
 > Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Adoção de nuvem Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
   
