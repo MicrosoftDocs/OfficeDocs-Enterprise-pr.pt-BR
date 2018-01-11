@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: a6375c60ff6c216f34e2f78850e1afd5ed0c8c80
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 2cbfb3e963927f18d2ee46ed1f5076b274a99154
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>O ambiente de desenvolvimento e teste de um Microsoft Cloud
 
@@ -185,9 +182,9 @@ Agora, você pode experimentar seu ambiente de desenvolvimento e teste de um Mic
     
 - [Criar uma rede de locais cruzados simulado nos serviços de infraestrutura do Windows Azure para hospedar as cargas de trabalho baseado em servidor](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Adoção de nuvem Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
   

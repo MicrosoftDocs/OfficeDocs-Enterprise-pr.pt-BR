@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
 description: "Resumo: Compreenda a estrutura de locatários, contas de usuário, licenças e assinaturas de nuvem da Contoso."
-ms.openlocfilehash: 6bc90d7b166d5e0983eac8ed47ba16bede57426d
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 0fdd72a697edb312be13c9794e543a81bf9a8e54
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Contas de usuário para a Contoso Corporation, licenças e assinaturas
 
@@ -94,13 +92,13 @@ A Figura 2 mostra o design hierárquico de assinaturas do Azure da Contoso:
     
 Cada assinatura Azure pode ser associada um único locatário do Azure AD que contém as contas de usuário e grupos para autenticação e autorização aos serviços do Azure. Inscrições de produção usam locatário da Contoso Azure AD comuns.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Contoso em nuvem da Microsoft](contoso-in-the-microsoft-cloud.md)
+[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

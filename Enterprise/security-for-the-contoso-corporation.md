@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "Resumo: Entenda como Contoso mapeadas seus requisitos de segurança para recursos no ofertas de nuvem da Microsoft e determinado um caminho para a preparação de segurança na nuvem."
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Segurança para a Contoso Corporation
 
@@ -120,7 +118,7 @@ De acordo com o Office 365 práticas recomendadas de segurança, os administrado
     
     Especialistas em segurança de Contoso estão usando o Exchange Online Protection e proteção de ameaça avançadas (ATP) para proteger contra malware desconhecido, vírus e URLs mal-intencionadas transmitidos por meio de emails. A Contoso também tem para determinar que entrou no caixas de correio do usuário, mensagens, enviadas e outras atividades realizadas pelo proprietário da caixa de correio, um usuário delegado ou administrador do log de auditoria de caixa de correio habilitada.
     
-    Saiba mais em: 
+    Para obter mais informações, consulte: 
     
   - [Proteção de Anti-Spam de Email do Office 365](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     
@@ -134,13 +132,13 @@ De acordo com o Office 365 práticas recomendadas de segurança, os administrado
     
     Para obter mais informações, consulte [Visão geral das políticas de prevenção de perda de dados](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Contoso em nuvem da Microsoft](contoso-in-the-microsoft-cloud.md)
+[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
   
 [Práticas recomendadas de segurança para o Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 

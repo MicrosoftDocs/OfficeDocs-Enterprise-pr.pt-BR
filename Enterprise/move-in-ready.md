@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "Resumo: Conheça os detalhes sobre o conjunto de nuvem opções de armazenamento que integram as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: 341b530f3b4348a4111cdd8e9741d0e5696e652e
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="move-in-ready"></a>Move-in pronto
 
@@ -276,13 +272,13 @@ Para obter informações de custo, clique [aqui](http://azure.microsoft.com/pric
 
 Examine as opções de armazenamento de nuvem [necessárias algumas assembly](some-assembly-required.md) .
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Armazenamento em nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-storage-for-enterprise-architects.md)
+[Armazenamento do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

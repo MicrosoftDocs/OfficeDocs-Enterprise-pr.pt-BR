@@ -1,25 +1,24 @@
 ---
-title: "Soluções de nuvem da empresa"
-description: "Resolve problemas de negócios usando o Microsoft Cloud. Encontre informações sobre a mais recente híbrida e soluções de nuvem de segurança, adoção da nuvem e mais."
-services: o365-solutions
+title: "Soluções de nuvem empresarial"
+description: "Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais."
 author: JoeDavies-MSFT
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
 ms.service: o365-solutions
-ms.tgt_pltfrm: na
-ms.devlang: na
 ms.topic: landing-page
+localization_priority: Normal
+ms.collection: Ent_O365
 ms.date: 12/13/2017
 ms.author: JoeDavies-MSFT
-ms.openlocfilehash: c9717be6f881968af0cc8ef66dfae54f4a6e7298
-ms.sourcegitcommit: d61cf5f3cd127dc0d446c5e78402aa8913041d06
+ms.openlocfilehash: 396d61debdd3f0cb222e9627b74a7baaa287c4c3
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
-<h1>Soluções de nuvem da empresa</h1>
-<p>Resolve problemas de negócios usando o Microsoft Cloud. Encontre informações sobre a mais recente híbrida e soluções de nuvem de segurança, adoção da nuvem e mais.</p>
+<h1>Soluções de nuvem empresarial</h1>
+<p>Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais.</p>
 <p>As soluções técnicas para problemas de negócios atuais frequentemente envolvem vários produtos e plataformas. Você pode aproveitar sua infraestrutura local existente sem deixar de aproveitar a flexibilidade e economia oferecidos pelas plataformas e serviços na nuvem da Microsoft. Nosso objetivo é fornecer as informações necessárias para ajudá-lo a atingir suas metas de negócios usando os serviços e produtos da Microsoft. </p>
 <ul class="cardsF panelContent">
     <li>

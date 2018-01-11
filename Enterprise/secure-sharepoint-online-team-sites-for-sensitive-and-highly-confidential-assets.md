@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Resumo: Como Contoso implementou proteção confidencial e altamente confidenciais sites de equipe do SharePoint Online para mais fácil, ainda segura, colaboração para executivos e seus centros de pesquisa."
-ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Proteger sites de equipe do SharePoint Online para os ativos altamente confidenciais
 
@@ -60,17 +56,17 @@ Para obter mais informações, consulte [arquivos e sites seguro do SharePoint O
   
  Para definir isso para esse demonstração, prova de conceito ou desenvolvimento e teste, consulte [sites seguro do SharePoint Online em um ambiente de desenvolvimento e teste](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Cenários empresariais para a Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Contoso em nuvem da Microsoft](contoso-in-the-microsoft-cloud.md)
+[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 [Alongar para o banco de dados](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

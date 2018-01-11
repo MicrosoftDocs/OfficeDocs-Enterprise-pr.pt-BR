@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução."
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 
@@ -185,7 +181,7 @@ A figura a seguir ilustra uma solução de recuperação de desastre de um farm 
   
 **Figura: Topologia e principais elementos de um farm de produção e um farm de recuperação de espera passiva**
 
-![Mostra a topologia e os elementos-chave de um farm de produção do SharePoint e um farm de recuperação de espera ativa.](images/AZarch_TopWarmStndby.gif)
+![Mostra a topologia e os elementos-chave de um farm de produção do SharePoint e um farm de recuperação de espera ativa.](images/AZarchWarmStndby.gif)
   
 Neste diagrama:
   
@@ -688,7 +684,7 @@ Ipconfig /flushdns
   
 [Configurar grupos de disponibilidade do AlwaysOn do SQL Server 2012 para o SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 <a name="Troubleshooting"> </a>
 

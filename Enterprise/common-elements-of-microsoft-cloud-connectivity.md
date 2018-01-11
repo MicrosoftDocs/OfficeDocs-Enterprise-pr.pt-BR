@@ -9,16 +9,14 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumo: Entenda os elementos comuns da infraestrutura de rede e como preparar sua rede.'
-ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 9dffcae28283c9f8b8c219284554225645435e0a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comuns da conectividade de nuvem da Microsoft
 
@@ -78,14 +76,14 @@ Você precisa considerar nessas áreas de rede quando a adoção de qualquer um 
     
 - **Internet DNS:** A, AAAA, CNAME, MX, PTR e outros registros para localizar nuvem da Microsoft ou seus serviços hospedados na nuvem. Por exemplo, talvez seja necessário um registro CNAME para seu aplicativo hospedado no Windows Azure PaaS.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 <a name="steps"> </a>
 
-[Microsoft Cloud Networking para arquitetos da empresa](microsoft-cloud-networking-for-enterprise-architects.md)
+[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

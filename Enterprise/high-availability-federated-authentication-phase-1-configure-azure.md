@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Resumo: Configure a infraestrutura do Microsoft Azure para alta disponibilidade do host autenticação federada para o Office 365."
-ms.openlocfilehash: fed6b24af2ba54bef95be22641fd140f7c1be717
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f74e91930f5aef8f10986dcf51db6066c953014d
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: Configurar o Azure
 
@@ -65,7 +60,7 @@ Consulte [Calculadora de espaço de endereço para sub-redes do Azure gateway](h
   
 Trabalhe com seu departamento de TI para determinar esses espaços de endereço a partir do espaço de endereço da rede virtual.
   
-|**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Finalidade**|
+|**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Objetivo**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |_______________________________  <br/> |A sub-rede usada pelo controlador de domínio e as máquinas virtuais (VMs) DirSync do Windows Server Active Directory (AD).  <br/> |
 |2.  <br/> |_______________________________  <br/> |_______________________________  <br/> |A sub-rede usada pelos VMs do AD FS.  <br/> |
@@ -151,7 +146,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Preencha a tabela a seguir para o conjunto de nomes de grupos de recursos exclusivos.
   
-|**Item**|**Nome do grupo de recursos**|**Finalidade**|
+|**Item**|**Nome do grupo de recursos**|**Objetivo**|
 |:-----|:-----|:-----|
 |1.  <br/> |_______________________________  <br/> |Controladores de domínio:  <br/> |
 |2.  <br/> |_______________________________  <br/> |Servidores do AD FS  <br/> |
@@ -311,7 +306,7 @@ Esta é a configuração resultante da conclusão bem-sucedida dessa fase.
 
 Uso [alta disponibilidade federado autenticação fase 2: Configure os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar com a configuração dessa carga de trabalho.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Windows Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

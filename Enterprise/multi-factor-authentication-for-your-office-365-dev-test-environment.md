@@ -8,22 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- mar17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: "Resumo: Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 87fdcc2ccd910e8da399e14d37fe3d0d1f0a66d4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 66b0fadd097e6df940754c28cd7b95549eb3a761
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365
 
@@ -105,9 +100,9 @@ Conclua a configuração da conta do usuário 2 a usar uma mensagem de texto par
     
     Você deverá ver o portal do Office 365 para o usuário 2.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Adoção de nuvem Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
   

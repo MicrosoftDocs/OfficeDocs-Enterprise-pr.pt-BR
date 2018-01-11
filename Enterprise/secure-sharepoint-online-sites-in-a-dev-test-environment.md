@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: "Resumo: Crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento e teste."
-ms.openlocfilehash: 17abee7a293996194a097693607b4b4d9c117046
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4878eb201fa32fbeb34be755a22e329fe45d5885
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger sites do SharePoint Online em um ambiente de desenvolvimento e teste
 
@@ -590,7 +588,7 @@ Aqui está a configuração geral para todos os quatro sites de equipe do ShareP
 
 Quando estiver pronto para a implantação de produção de sites do SharePoint Online seguros, consulte [arquivos e sites do SharePoint Online segura](secure-sharepoint-online-sites-and-files.md) para obter informações detalhadas e links para artigos passo a passo de implantação.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Proteja arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

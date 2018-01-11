@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: "Resumo: Usar o PowerShell do Office 365 para atribuir configurações de comunicação com Skype para políticas de negócios Online de por usuário."
-ms.openlocfilehash: 91916b41ba420a204ecabb27eea2e451a91f6f25
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7f819b619c5b3607c98c10791fe30c3944e862a4
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
 
@@ -106,7 +106,7 @@ Esse comando define o nome da política de acesso externo atribuída à Alex par
   
 Para desabilitar uma conta de usuário usando o Windows PowerShell, use os cmdlets do Windows Azure Active Directory para remover Skype de Alex licença Business Online. Para obter mais informações, consulte [Desabilitar o acesso aos serviços do Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

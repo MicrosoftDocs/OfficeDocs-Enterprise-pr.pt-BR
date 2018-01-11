@@ -5,23 +5,20 @@ author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "Resumo: Configuração as recomendações para proteger arquivos no SharePoint Online e Office 365."
-ms.openlocfilehash: 336dd4114e7853319fede88f9f3ea5aa613b2081
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: a8ba632d9bc24e272a649f5790824323f889bdc0
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteja arquivos e sites do SharePoint Online
 
@@ -39,9 +36,9 @@ As configurações neste artigo se alinhem à recomendadas pela Microsoft para t
     
 Para obter mais informações sobre esses recursos recomendados para cada camada e as camadas, consulte os recursos a seguir. 
   
-- [Identidade e a proteção de dispositivo para o Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
+- [Proteção de identidade e dispositivo para o Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
-- [Soluções de proteção de arquivo no Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
+- [Soluções para proteção de arquivos do Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     
 ## <a name="capability-overview"></a>Visão geral do recurso
 
@@ -185,7 +182,7 @@ Existem duas maneiras que você pode conceder a usuários externos acessem arqui
 
 Para conhecer as etapas configurar o Azure Information Protection nesta solução, consulte [proteger o SharePoint Online arquivos com proteção de informações do Windows Azure](protect-sharepoint-online-files-with-azure-information-protection.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Orientação de segurança da Microsoft para campanhas políticas, organizações sem fins lucrativos e outras organizações ágil](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: 'Resumo: Como Contoso implementou o SQL Server Alongar banco de dados para reduzir as suas necessidades de armazenamento de dados no local e diariamente executando os custos.'
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Mover dados de histórico de transação para a nuvem
 
@@ -42,7 +40,7 @@ Contoso usado estas etapas para mover seus dados históricos para a nuvem:
     
     Realizou uma análise das tabelas nos bancos de dados que eles foi projetado para mover para a nuvem e corrigido quaisquer problemas. Supervisor de banco de dados do novo Alongar deu-las uma visão geral do que eles podem esperar de todos os recursos no SQL Server 2016, incluindo quais tabelas tenham dados frio que poderiam ser alongados.
     
-2. Atualização
+2. Atualizar
     
     Atualizado servidores SQL existentes no datacenter Paris matrizes para 2016 do SQL Server.
     
@@ -69,17 +67,17 @@ Depois da implementação do banco de dados de alongar, Contoso:
     
 - Reduziu os seus custos de execução diários significativamente.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Cenários empresariais para a Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Contoso em nuvem da Microsoft](contoso-in-the-microsoft-cloud.md)
+[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 [Alongar para o banco de dados](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

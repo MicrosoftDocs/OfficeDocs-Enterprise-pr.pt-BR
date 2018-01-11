@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: DecEntMigration
+ms.custom: 
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Resumo: Usar o PowerShell do Office 365 para gerenciar sua Skype para Business Online propriedades de conta de usuário com políticas."
-ms.openlocfilehash: 9b3877d2680b2b36d155cb5dd2a69fa21c972fe3
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 6698bd43b2a55e1c98fbe8e536a46e2de604b4d2
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gerenciar Skype para políticas Business Online com o Office 365 PowerShell
 
@@ -120,7 +120,7 @@ Com Skype para Business Online, os usuários devem ser gerenciados por uma polí
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Veja também
 
 #### 
 

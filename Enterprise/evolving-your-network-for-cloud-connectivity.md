@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Resumo: Entenda como a adoção de nuvem requer uma nova abordagem sobre investimentos em infraestrutura de rede."
-ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Evolução da sua rede para conectividade de nuvem
 
@@ -83,15 +81,15 @@ O escopo de investimentos de rede dependem da categoria do serviço na nuvem. In
 |Projetar e implementar o balanceamento de carga para cargas de trabalho IT internas e voltados para a Internet  <br/> |||Aplica-se  <br/> |
 |Solucionar problemas de conectividade e taxa de transferência da máquina virtual  <br/> |||Aplica-se  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Microsoft Cloud Networking para arquitetos da empresa](microsoft-cloud-networking-for-enterprise-architects.md)
+[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [ExpressRoute para conectividade de nuvem da Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

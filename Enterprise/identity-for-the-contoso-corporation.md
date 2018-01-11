@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Resumo: Entenda como Contoso aproveita IDaaS e fornece geograficamente distribuída e autenticação redundante para seus usuários."
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidade para a Contoso Corporation
 
@@ -120,17 +118,17 @@ Para alternar e voltar, Contoso atualizações o perfil do Gerenciador de tráfe
     
 - Quando os servidores de autenticação DMZ não estão disponíveis, use os endereços IP dos servidores no Azure IaaS.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
-[Contoso em nuvem da Microsoft](contoso-in-the-microsoft-cloud.md)
+[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Identidade de nuvem da Microsoft para arquitetos da empresa](http://aka.ms/cloudarchidentity)
+[Identidade da Microsoft Cloud para arquitetos corporativos](http://aka.ms/cloudarchidentity)
   
-[Identidade e a proteção de dispositivo para o Office 365](http://aka.ms/o365protect_device)
+[Proteção de identidade e dispositivo para o Office 365](http://aka.ms/o365protect_device)
   
-[Mapa da nuvem corporativa da Microsoft Recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

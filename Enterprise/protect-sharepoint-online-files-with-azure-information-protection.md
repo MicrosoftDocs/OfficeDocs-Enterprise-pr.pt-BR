@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "Resumo: Aplica proteção de informações do Windows Azure para proteger os arquivos em um site de equipe do SharePoint Online altamente confidencial."
-ms.openlocfilehash: bc2c7dbbcc254270cf2c7db3d3eed98b3f7872f6
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 03a10c5d856c4c5518f18b9d02ffe76f2c8d2e7a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Proteger os arquivos do SharePoint Online com proteção de informações do Windows Azure
 
@@ -95,7 +92,7 @@ Depois de instalado, seus usuários execute e, em seguida, login em um aplicativ
 > [!NOTE]
 > Se você tiver vários sites de equipe do SharePoint Online altamente confidenciais, você deve criar várias políticas de proteção de informações do Windows Azure com escopo com rótulos sub-recurso com as configurações acima, com as permissões para cada etiqueta sub definido como o grupo de acesso de membros do site de um sites de equipe do SharePoint Online específico. 
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Veja também
 
 [Proteja arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
