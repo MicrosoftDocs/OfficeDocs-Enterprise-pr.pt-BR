@@ -31,7 +31,7 @@ Este artigo conecta você a um conjunto de outros artigos que descrevem o que os
   
 ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) e deslizar o dedo pelo [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://aka.ms/cloudarchitecture)).
+Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) e deslizar o dedo pelo [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://aka.ms/cloudarchitecture).
   
 Confira as seguintes seções:
   
@@ -59,7 +59,7 @@ Confira as seguintes seções:
     
     Percorra o processo de design para criar uma rede Azure virtual (VNet) ideal para hospedar cargas de trabalho de TI baseadas em servidor, incluindo sub-redes, espaços de endereço, roteamento, DNS, balanceamento de carga e conectividade com a rede local, com outras VNets e com a Internet.
     
-Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud]((https://mva.microsoft.com/pt-BR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)) da Microsoft Virtual Academy.
+Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud](https://mva.microsoft.com/pt-BR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) da Microsoft Virtual Academy.
   
 > [!NOTE]
 > Estes artigos refletem a versão de **junho de 2017** do cartaz Microsoft Cloud Networking para arquitetos corporativos.
@@ -68,7 +68,7 @@ Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça 
 
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
