@@ -16,11 +16,11 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365."
-ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7564da2093bdc9de45e239be8196a626214871ba
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
@@ -66,7 +66,7 @@ Para exibir detalhes sobre os serviços do Office 365 disponíveis em todos os p
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigáveis para os serviços mais comuns. Sua lista de planos de serviço pode ser diferente. Peça ao [Suporte do Office]((https://support.office.com/home/contact)) a lista completa de planos de serviço e seus nomes amigáveis.
+A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigáveis para os serviços mais comuns. Sua lista de planos de serviço pode ser diferente. Peça ao [Suporte do Office](https://support.office.com/home/contact) a lista completa de planos de serviço e seus nomes amigáveis.
   
 |****Plano de serviço****|****Descrição****|
 |:-----|:-----|
@@ -95,11 +95,9 @@ Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano 
 ## <a name="new-to-office-365"></a>Começando a usar o Office 365?
 <a name="ShortVersion"> </a>
 
-||
-|:-----|
-|![O ícone pequeno do LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **Começando a usar o Office 365?**         Descubra cursos em vídeo gratuitos para [Office 365 admins and IT pros]((https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5)), oferecidos pelo LinkedIn Learning. |
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 <a name="ShortVersion"> </a>
 
 #### 
