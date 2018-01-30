@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: "Resumo: Use estes artigos para implantar soluções de segurança com as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: 48ff69c7ae90ab429c11bfcc4407d2fcf267fc37
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 6ba8b623d4073b611a5123e01e7cf5819bd34e4a
+ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="security-solutions"></a>Soluções de segurança
 
@@ -31,7 +31,7 @@ Estas são as soluções para acesso seguro, colaboração e dados com o Microso
 - [Proteja arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
     
 - [Isolado sites de equipe do SharePoint Online](isolated-sharepoint-online-team-sites.md)
-<br/>
+<br/><br/>
     
 **Participe da discussão**
 
@@ -41,7 +41,7 @@ Estas são as soluções para acesso seguro, colaboração e dados com o Microso
 |**Participe da discussão de adoção de nuvem** <br/> |Se você estiver entusiasmados pela sobre soluções baseadas em nuvem, considere ingressando a nuvem adoção consultoria placa (CAAB) para se conectar com uma comunidade amplos, vibrante de desenvolvedores de conteúdo Microsoft, profissionais do setor e clientes de todo o mundo. Para ingressar, adicione si mesmo como um membro do [espaço CAAB (placa de consultoria da adoção nuvem)](https://aka.ms/caab) da Microsoft Tech comunidade e envie-em um email rápido em [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros CAAB obtém convites para seminários na Web privados que descrevem os novos recursos de adoção de nuvem e soluções.<br/> |
 |**Obtenha a arte que aparece aqui** <br/> |Se você quiser uma cópia editável da arte que você vê neste artigo, voltaremos felizes em enviá-lo. Envie sua solicitação, incluindo a URL e o título da arte, como [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução."
-ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
+ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 
@@ -106,7 +106,7 @@ A figura a seguir ilustra esses três elementos.
   
 **Figura: Elementos de uma solução em espera passiva no Azure**
 
-![Elementos de uma solução de espera ativa do SharePoint no Azure](images/AZarch_AZWarmStndby.png)
+![Elementos de uma solução de espera ativa do SharePoint no Azure](images/AZarch_AZWarmStndby.gif)
   
 Envio com distribuído arquivo sistema replicação (DFSR) de log do SQL Server é usado para copiar backups de banco de dados e logs de transação para o farm de recuperação no Windows Azure: 
   
@@ -506,7 +506,7 @@ A tabela a seguir descreve as máquinas virtuais do Hyper-V que podemos criada e
   
 **Tabela: teste de máquinas virtuais para o local**
 
-|**Nome do servidor**|**Função**|**Configuração**|
+|**Nome do servidor**|**Role**|**Configuração**|
 |:-----|:-----|:-----|
 |DC1  <br/> |Controlador de domínio com o Active Directory.  <br/> |Dois processadores  <br/> De 512 MB por meio de 4 GB de RAM  <br/> 1 x 127 GB de disco rígido  <br/> |
 |RRAS  <br/> |Servidor configurado com a função de roteamento e acesso remoto (RRAS).  <br/> |Dois processadores  <br/> 2-8 GB de RAM  <br/> 1 x 127 GB de disco rígido  <br/> |
@@ -519,7 +519,7 @@ A tabela a seguir descreve as configurações de unidade para as máquinas virtu
   
 **Tabela: requisitos de unidade de máquina Virtual para Web Front End e servidores de aplicativos para o local de teste**
 
-|**Letra de unidade**|**Tamanho**|**Nome do diretório**|**Caminho**|
+|**Letra de unidade**|**Tamanho**|**Nome do diretório**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |Unidade do sistema  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\  <br/> |
 |J  <br/> |80  <br/> |Unidade de log (40 GB)  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dados  <br/> |
@@ -529,7 +529,7 @@ A tabela a seguir descreve as configurações de unidade para as máquinas virtu
   
 **Tabela: requisitos de unidade de máquina Virtual para o servidor de banco de dados para o local de teste**
 
-|**Letra de unidade**|**Tamanho**|**Nome do diretório**|**Caminho**|
+|**Letra de unidade**|**Tamanho**|**Nome do diretório**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |Diretório raiz de dados  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\  <br/> |
 |J  <br/> |500  <br/> |Diretório de banco de dados do usuário  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dados  <br/> |
@@ -594,7 +594,7 @@ A tabela a seguir descreve as máquinas virtuais, sub-redes e conjuntos de dispo
   
 **Tabela: Infraestrutura de farm de recuperação**
 
-|**Nome do servidor**|**Função**|**Configuração**|**Subrede**|**Conjunto de disponibilidade**|
+|**Nome do servidor**|**Role**|**Configuração**|**Subrede**|**Conjunto de disponibilidade**|
 |:-----|:-----|:-----|:-----|:-----|
 |spDRAD  <br/> |Controlador de domínio com o Active Directory  <br/> |Dois processadores  <br/> De 512 MB por meio de 4 GB de RAM  <br/> 1 x 127 GB de disco rígido  <br/> |SP-ADservers  <br/> ||
 |AZ-SP-FS  <br/> |Servidor de arquivos com compartilhamentos para fazer backups e um ponto de extremidade para DFSR  <br/> | Configuração de a5: <br/>  Dois processadores <br/>  14 GB de RAM <br/>  1 x 127 GB de disco rígido <br/>  1 x 135 GB de disco rígido <br/>  1 x 127 GB de disco rígido <br/>  1 x 150 GB de disco rígido <br/> |SP-databaseservers  <br/> |DATA_SET  <br/> |
@@ -684,7 +684,7 @@ Ipconfig /flushdns
   
 [Configurar grupos de disponibilidade do AlwaysOn do SQL Server 2012 para o SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <a name="Troubleshooting"> </a>
 
