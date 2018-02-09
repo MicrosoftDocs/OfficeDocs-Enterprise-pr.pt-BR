@@ -1,8 +1,8 @@
 ---
 title: "Usar o PowerShell para realizar uma migração em estágios para o Office 365"
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: "Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365."
-ms.openlocfilehash: 5143b039937389d965386de0e09f4f59db071c86
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração em estágios para o Office 365
 
@@ -58,7 +58,7 @@ Antes de migrar as caixas de correio para o Office 365 usando uma migração em 
   
 - Use o Outlook fora de sua rede corporativa para se conectar a sua caixa de correio local do Exchange.
     
-- Use o [Analisador de Conectividade Remota do Microsoft Exchange]((https://www.testexchangeconnectivity.com/)) para testar as configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou os testes de descoberta automática do Outlook.
+- Use o [Analisador de Conectividade Remota do Microsoft Exchange](https://www.testexchangeconnectivity.com/) para testar as configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou os testes de descoberta automática do Outlook.
     
 - Execute os seguintes comandos no PowerShell do Exchange Online:
     

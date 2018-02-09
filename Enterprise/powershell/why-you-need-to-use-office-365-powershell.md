@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Resumo: você deve ser capaz de usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e em outros casos por necessidade."
-ms.openlocfilehash: 22410e167baf94f5f965fcdab060235f09fe7194
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: b3715da44c1509ea46e7bb939b5ca0be8b2b9671
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por que você precisa usar o Office 365 PowerShell
 
@@ -92,7 +92,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> Este comando requer a instalação do [módulo do Microsoft Azure Active Directory]((https://technet.microsoft.com/pt-BR/library/jj151815.aspx)). 
+> Este comando requer a instalação do [módulo do Microsoft Azure Active Directory](https://technet.microsoft.com/pt-BR/library/jj151815.aspx). 
   
 Este é um exemplo de exibição:
   
@@ -241,7 +241,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> Este comando requer que você instale o [Conectar ao PowerShell do SharePoint Online]((https://technet.microsoft.com/library/fp161372.aspx)). 
+> Este comando requer que você instale o [Conectar ao PowerShell do SharePoint Online](https://technet.microsoft.com/library/fp161372.aspx). 
   
 > [!TIP]
 >  A interpretação deste comando do Office 365 PowerShell é: obtenha todos os sites do SharePoint na assinatura atual do Office 365 ( **Get-SPOSite** ) e, em cada site, remova Paulo Araújo da lista de usuários que podem acessá-los ( **ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}** ).

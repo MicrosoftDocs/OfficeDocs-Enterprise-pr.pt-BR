@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "Resumo: Localize tópicos de referência do cmdlet Office 365 PowerShell para o Azure Active Directory, Exchange Online, SharePoint Online e Skype for Business online."
-ms.openlocfilehash: 1f1c779ee41490aeb48ed2f9d0437574d0e788f3
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 249b3ea41ae9f6b7a42504264c79e3bbfd54de78
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Referências de cmdlet para serviços do Office 365
 
