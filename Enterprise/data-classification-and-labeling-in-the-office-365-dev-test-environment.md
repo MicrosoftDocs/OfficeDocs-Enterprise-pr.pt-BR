@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: "Resumo: Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: a2db6817bea879caeb52ed9b11b40c6c317ea171
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 06f7ebefad8b4d622ab225298155b4f117ff2b75
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365
 

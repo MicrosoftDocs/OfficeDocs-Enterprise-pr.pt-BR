@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Resumo: Entenda como otimizar sua rede para o acesso ao Microsoft Azure PaaS.'
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Projetando a rede para o Microsoft Azure PaaS
 
@@ -26,8 +26,6 @@ Otimizar a rede para os aplicativos PaaS do Azure exige uma largura de banda de 
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Etapas de planejamento para hospedar aplicativos PaaS de organização no Windows Azure
 
-Insira o corpo da seção aqui.
-  
 1. Percorra a seção de **etapas para preparar sua rede para serviços de nuvem da Microsoft** em [elementos comuns da conectividade de nuvem da Microsoft](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Otimize sua largura de banda da Internet usando as etapas 2 a 4 da seção **etapas para preparar a sua rede de serviços Microsoft SaaS** em [projetar a rede para o Microsoft SaaS](designing-networking-for-microsoft-saas.md).
@@ -97,14 +95,18 @@ A Figura 3 mostra o processo básico que o Gerenciador de tráfego usa para rote
 2. O usuário inicia o tráfego com o aplicativo web regionais na Europa.
     
 Para obter mais informações, consulte [Gerenciador de tráfego](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
-  
-## <a name="see-also"></a>Veja também
+
+## <a name="next-step"></a>Próxima etapa
+
+[Projetando a rede para o Microsoft Azure IaaS](designing-networking-for-microsoft-azure-iaas.md)
+ 
+## <a name="see-also"></a>Confira também
 
 [Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

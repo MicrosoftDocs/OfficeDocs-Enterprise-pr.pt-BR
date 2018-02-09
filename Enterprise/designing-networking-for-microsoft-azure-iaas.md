@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Resumo: Entenda como projetar rede otimizada para cargas de trabalho no Microsoft Azure IaaS.'
-ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Projetando a rede para o Microsoft Azure IaaS
 
@@ -196,8 +196,7 @@ Tabela 5 lista os métodos de filtragem ou inspecionando o tráfego de entrada n
 |1. ACLs configuradas em serviços em nuvem e pontos de extremidade  <br/> |Clássico  <br/> |
 |2. grupos de segurança de rede de  <br/> |Gerenciador de recursos e clássico  <br/> |
 |3. balanceador de carga de voltado à Internet com as regras de entrada NAT  <br/> |Gerente de Recursos  <br/> |
-|4. rede security appliances o Azure 
- Marketplace (não mostrada)  <br/> |Gerenciador de recursos e clássico  <br/> |
+|4. rede aparelhos de segurança no Azure Marketplace (não mostrada)  <br/> |Gerenciador de recursos e clássico  <br/> |
    
  **Tabela 5: Métodos para máquinas virtuais e seus modelos de implantação Azure correspondentes conectar**
   
@@ -379,10 +378,8 @@ A tabela 7 mostra as etapas e os prefixos resultantes que definem o espaço de e
 |**Etapa**|**Resultados**|
 |:-----|:-----|
 |1. listam os prefixos que não sejam o espaço de raiz para o espaço de endereçamento VNet.  <br/> |172.16.0.0/12 e 192.168.0.0/16  <br/> |
-|2. listar os prefixos não sobrepostos para octetos variáveis até, mas não incluindo o último usado 
- octeto no espaço de endereçamento VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefixos, ignorando 10.100.0.0/16)  <br/> |
-|3. lista o não sobrepostos prefixos dentro do 
- usado pela última octeto do espaço de endereço VNet.  <br/> | 10.100.0.0/24, 10.100.1.0/24 … 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefixos, ignorando 10.100.100.0/24)  <br/> |
+|2. listam os prefixos não sobrepostos para variáveis octetos até, mas não incluindo o último octeto usado no espaço de endereçamento VNet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 prefixos, ignorando 10.100.0.0/16)  <br/> |
+|3. listam os prefixos não sobrepostos dentro o último octeto usado do espaço de endereço VNet.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 prefixos, ignorando 10.100.100.0/24)  <br/> |
    
  **Tabela 7: Espaço de endereço do Local de exemplo de rede**
   
@@ -413,7 +410,7 @@ Figura 18 mostra uma VNet entre locais com uma rota definida pelo usuário para 
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>Farm do SharePoint Server 2016 no Windows Azure
 <a name="cross_prem"> </a>
 
-Um exemplo de uma carga de trabalho de TI hospedado no Windows Azure IaaS intranet é a um farm do SharePoint Server 2016 altamente disponível e de várias camado, conforme mostrado na Figura 19.
+Um exemplo de uma carga de trabalho de TI hospedado no Windows Azure IaaS intranet é um farm do SharePoint Server 2016 altamente disponível e de várias camado.
   
 **Figura 19: Um farm de SharePoint Server 2016 de intranet altamente disponível no Azure IaaS**
 
@@ -426,7 +423,7 @@ Figura 19 mostra os nove servidores de um farm do SharePoint Server 2016 implant
   
 Para obter exemplos adicionais de cargas de trabalho do IT implantados nas máquinas virtuais em um virtual de Azure entre locais de rede, consulte [os cenários de nuvem híbrida para o Windows Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <a name="cross_prem"> </a>
 
@@ -434,7 +431,7 @@ Para obter exemplos adicionais de cargas de trabalho do IT implantados nas máqu
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

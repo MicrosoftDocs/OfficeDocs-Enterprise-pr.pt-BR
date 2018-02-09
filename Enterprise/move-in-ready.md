@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "Resumo: Conheça os detalhes sobre o conjunto de nuvem opções de armazenamento que integram as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 174e5a5a9827a1f8a7f8f1640e1987ceaa965968
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="move-in-ready"></a>Move-in pronto
 
@@ -278,7 +278,7 @@ Examine as opções de armazenamento de nuvem [necessárias algumas assembly](so
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

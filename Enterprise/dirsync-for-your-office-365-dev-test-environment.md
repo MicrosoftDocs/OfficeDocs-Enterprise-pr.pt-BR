@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "Resumo: Configure a sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: d8a663367e61ac3f01e67f4d3731a0dccdd5a222
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 32b9be8bb82d0efec2549dcacb5706c5e3dbc6f3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync para seu ambiente de desenvolvimento e teste do Office 365
 

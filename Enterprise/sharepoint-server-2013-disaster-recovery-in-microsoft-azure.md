@@ -3,7 +3,7 @@ title: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/5/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução."
-ms.openlocfilehash: e949d2cc88e576993a357007c2a600b55c259009
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 4c1a5d92445dfa89dce4c87216922282d29f075c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 
@@ -89,7 +89,7 @@ Há menos complexas opções para as organizações apenas introdução com recu
   
 As diretrizes deste artigo descrevem como implementar um ambiente em espera passiva. Você também pode adaptá-lo em um ambiente em espera a frio, embora precisam ser seguidas procedimentos adicionais para dar suporte a esse tipo de ambiente. Este artigo não descreve como implementar um ambiente em espera ativa.
   
-Para obter mais informações sobre as soluções de recuperação de desastres, consulte [alta disponibilidade e conceitos de recuperação de desastres no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) e[Escolha uma estratégia de recuperação de desastres para o SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
+Para obter mais informações sobre as soluções de recuperação de desastres, consulte [alta disponibilidade e conceitos de recuperação de desastres no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) e [Escolha uma estratégia de recuperação de desastres para o SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
   
 ## <a name="solution-description"></a>Descrição da solução
 <a name="SOL"> </a>
@@ -106,7 +106,7 @@ A figura a seguir ilustra esses três elementos.
   
 **Figura: Elementos de uma solução em espera passiva no Azure**
 
-![Elementos de uma solução de espera ativa do SharePoint no Azure](images/AZarch_AZWarmStndby.gif)
+![Elementos de uma solução de espera ativa do SharePoint no Azure](images/AZarch_AZWarmStndby.png)
   
 Envio com distribuído arquivo sistema replicação (DFSR) de log do SQL Server é usado para copiar backups de banco de dados e logs de transação para o farm de recuperação no Windows Azure: 
   
@@ -181,7 +181,7 @@ A figura a seguir ilustra uma solução de recuperação de desastre de um farm 
   
 **Figura: Topologia e principais elementos de um farm de produção e um farm de recuperação de espera passiva**
 
-![Mostra a topologia e os elementos-chave de um farm de produção do SharePoint e um farm de recuperação de espera ativa.](images/AZarchWarmStndby.gif)
+![Topologia de um farm do SharePoint e um farm de recuperação de espera passiva](images/AZarch_AZWarmStndby.png)
   
 Neste diagrama:
   
@@ -684,7 +684,7 @@ Ipconfig /flushdns
   
 [Configurar grupos de disponibilidade do AlwaysOn do SQL Server 2012 para o SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 <a name="Troubleshooting"> </a>
 

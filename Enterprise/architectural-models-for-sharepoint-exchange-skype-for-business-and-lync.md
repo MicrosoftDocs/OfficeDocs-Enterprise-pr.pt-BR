@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: "Resumo: Obtenha cartazes IT que descrevem os modelos de arquitetura, implantação e opções de plataforma para SharePoint, Exchange, Skype para Lync e de negócios."
-ms.openlocfilehash: c2d1e5d921409554a326d900afe3368aa9717eaf
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c751e4375b18067a4834787c3ee8f0a5f28480d7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -97,7 +97,7 @@ Esses novos cartazes de TI para o SharePoint 2016 e o Skype for Business 2015 of
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![OneDrive multi-Geo no modelo do Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | Este modelo é uma visão geral de uma página do OneDrive Multi-Geo no Office 365, que está atualmente no modo de visualização particular. Este modelo inclui:<br/><br/> -Benefícios <br/> -Etapas de implantação <br/> -Um exemplo de configuração <br/><br/>  Para obter mais informações sobre a visualização de Multi-Geo onedrive no Office 365, clique [aqui](https://aka.ms/onedrivemultigeo).  <br/> |
+|[![OneDrive multi-Geo no modelo do Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | Este modelo é uma visão geral de uma página do OneDrive Multi-Geo no Office 365, que está atualmente no modo de visualização particular. Este modelo inclui:<br/><br/> -Benefícios <br/> -Etapas de implantação <br/> -Um exemplo de configuração <br/><br/>  Para obter mais informações sobre a visualização de Multi-Geo onedrive no Office 365, clique [aqui](https://aka.ms/onedrivemultigeo).  <br/> |
    
 ### <a name="sharepoint-server-2016-databases"></a>Bancos de dados do SharePoint Server 2016
 <a name="SP2016_Databases"> </a>

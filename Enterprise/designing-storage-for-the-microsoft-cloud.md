@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Resumo: Entenda por que você precisa de armazenamento na nuvem e examine a lista de opções de armazenamento de nuvem da Microsoft e os cenários de armazenamento de chave."
-ms.openlocfilehash: 199e385ea0238e8fb27c04153faf177df07e1025
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-storage-for-the-microsoft-cloud"></a>Projetar o armazenamento para a nuvem da Microsoft
 
@@ -160,6 +160,6 @@ Examine as opções de armazenamento [pronto Move na](move-in-ready.md) nuvem.
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 

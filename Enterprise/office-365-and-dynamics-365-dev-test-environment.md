@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: "Resumo: Use este guia de laboratório de teste para adicionar Dynamics 365 ao seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: a61e831eeabc159da4774cfe730c694c383e6801
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d903d9ba268eca27baaaf12a003896990447a620
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365
 

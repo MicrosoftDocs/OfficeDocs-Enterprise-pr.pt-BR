@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: "Resumo: Configure um site de equipe do SharePoint Online que é isolado do resto da organização em seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: e54edb0111fd3285030a3074b5ec66a0c9224d29
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 997c5cf236a795f4846718cc8864997799a1d966
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolado ambiente de desenvolvimento e teste de site equipe do SharePoint Online
 

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Resumo: Use esses adoção de nuvem Test Lab Guides (TLGs) para configurar a demonstração, prova de conceito ou ambientes de desenvolvimento e teste para o Office 365, Enterprise mobilidade + segurança (EMS), Dynamics 365 e produtos de servidor do Office."
-ms.openlocfilehash: 2c533129b88783d8ff39dbc5753bdeb26eeafe81
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d13012ebbee05eea903d3ae2d6198b503ad2bf39
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guias do Laboratório de Teste (TLGs) para adoção de nuvem
 

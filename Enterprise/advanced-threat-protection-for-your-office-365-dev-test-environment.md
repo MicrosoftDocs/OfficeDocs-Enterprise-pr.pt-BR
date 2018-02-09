@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: "Resumo: Configurar e demonstrar a proteção de ameaça avançadas do Office 365 em seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: bc703bd01f3430a01810795b9d2ccea9e4ac9bc0
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365
 

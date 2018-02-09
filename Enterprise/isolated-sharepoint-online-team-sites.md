@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Resumo: Saiba mais sobre os usos para sites de equipe do SharePoint Online isolados.'
-ms.openlocfilehash: d4fe03c8e95b78bbd9454bbbd23f6fa27ba39f06
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 907959e1ad693e710a2a84d0bd0ffd0804ac3ddf
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Isolado sites de equipe do SharePoint Online
 

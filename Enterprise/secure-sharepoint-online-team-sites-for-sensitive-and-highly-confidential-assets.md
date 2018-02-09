@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Resumo: Como Contoso implementou proteção confidencial e altamente confidenciais sites de equipe do SharePoint Online para mais fácil, ainda segura, colaboração para executivos e seus centros de pesquisa."
-ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Proteger sites de equipe do SharePoint Online para os ativos altamente confidenciais
 
@@ -66,7 +66,7 @@ Para obter mais informações, consulte [arquivos e sites seguro do SharePoint O
 
 [Alongar para o banco de dados](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

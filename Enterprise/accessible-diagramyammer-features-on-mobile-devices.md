@@ -6,15 +6,16 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b18f4ae4-cd83-4a66-8e33-a7d5a4c06659
 description: "Este artigo é uma versão de texto acessível do diagrama denominado recursos do Yammer em dispositivos móveis."
-ms.openlocfilehash: 82b73d245264018cd4d0ce17075930682ca2effa
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 5ac2eaba0924a0a2b9ff0438f05cbe4c710f6bf8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---yammer-features-on-mobile-devices"></a>Diagrama acessível - recursos do Yammer em dispositivos móveis
 

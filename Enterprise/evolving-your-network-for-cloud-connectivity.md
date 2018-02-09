@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Resumo: Entenda como a adoção de nuvem requer uma nova abordagem sobre investimentos em infraestrutura de rede."
-ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Evolução da sua rede para conectividade de nuvem
 
@@ -81,15 +81,15 @@ O escopo de investimentos de rede dependem da categoria do serviço na nuvem. In
 |Projetar e implementar o balanceamento de carga para cargas de trabalho IT internas e voltados para a Internet  <br/> |||Aplica-se  <br/> |
 |Solucionar problemas de conectividade e taxa de transferência da máquina virtual  <br/> |||Aplica-se  <br/> |
    
-## <a name="see-also"></a>Veja também
+## <a name="next-step"></a>Próxima etapa
+
+[Elementos comuns da conectividade de nuvem da Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
+
+## <a name="see-also"></a>Confira também
 
 [Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[ExpressRoute para conectividade de nuvem da Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
-  
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

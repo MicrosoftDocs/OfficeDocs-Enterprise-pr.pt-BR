@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
 description: "Resumo: Como uma organização global da empresa fictícia, mas representativa está lidando com seus negócios necessidades com cenários de nuvem da empresa."
-ms.openlocfilehash: e63e5cdcece24cbffa7a0d6027c7bc28dbff4c7e
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 3964ed03e8437ce50aab10f1209a7afb6e06bc8b
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Cenários empresariais para a Contoso Corporation
 
@@ -38,7 +38,7 @@ Com a rede, identidade e a infraestrutura de segurança no lugar, a Contoso impl
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Roteiro do Enterprise Cloud da Microsoft: recursos para responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
+[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

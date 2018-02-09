@@ -5,15 +5,16 @@ author: JoeDavies-MSFT
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: "Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Lync 2013, que está disponível em diagramas técnicos."
-ms.openlocfilehash: 79342a30a0391980cf16304f3615f6a7e64d51ff
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagrama acessível - opções de plataforma do Microsoft Lync 2013
 
