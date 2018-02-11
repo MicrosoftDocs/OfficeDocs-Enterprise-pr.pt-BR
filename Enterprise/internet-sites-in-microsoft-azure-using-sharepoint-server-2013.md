@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: "Resumo: Sites de Internet que usam o SharePoint Server 2013 se beneficiar sendo hospedado nos serviços de infraestrutura do Windows Azure. Este artigo fornece recursos para projetar e implementar esta solução."
-ms.openlocfilehash: 44bf53477c502c89dfae32abf59e1ac0c3120f8e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 52af2dfe250007156848d1892fbee6bca89ab708
+ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sites da Internet no Microsoft Azure using SharePoint Server 2013
 
@@ -45,7 +45,7 @@ Os artigos e ilustrações técnicas a seguir fornecem informações sobre como 
 |**Sites do SharePoint Server 2013 na Internet no Windows Azure** <br/> [![Imagem de sites da Internet no Windows Azure usando o SharePoint](images/MS_AZ_SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [ ![arquivo Visio](images/ITPro_Other_VisioIcon.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392551)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |Este modelo de arquitetura, descrevemos atividades de design principal e recomendado escolhas de arquitetura para sites da Internet no Windows Azure.  <br/> |
 |**Amostra de design: Sites da Internet no Windows Azure para SharePoint Server 2013** <br/> [![Imagem da amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use essa amostra de design como ponto de partida para sua própria arquitetura.  <br/> |
 |**[Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)** <br/> |Este artigo descreve como projetar arquiteturas Azure com as soluções do SharePoint de host.  <br/> |
-|**[Usando o Microsoft Azure Active Directory para autenticação do SharePoint 2013](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)** <br/> |Instruções passo a passo para configurar o Azure AD com um farm do SharePoint 2013.  <br/> |
+
    
 **Participe da discussão**
 
