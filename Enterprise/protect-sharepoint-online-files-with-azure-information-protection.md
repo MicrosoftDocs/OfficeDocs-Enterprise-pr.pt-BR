@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "Resumo: Aplica proteção de informações do Windows Azure para proteger os arquivos em um site de equipe do SharePoint Online altamente confidencial."
-ms.openlocfilehash: 5beba188cadc88c15ec75ed2adb4899d9b41b8ec
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: f1a063f07b6e7488cf7512472631d0d2cae09733
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Proteger os arquivos do SharePoint Online com proteção de informações do Windows Azure
 

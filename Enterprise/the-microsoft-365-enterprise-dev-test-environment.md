@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Ent_TLGs
-- Strat_O365_Enterprise
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Ent_TLGs, Strat_O365_Enterprise
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: "Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui o Office 365 E5, Enterprise mobilidade + E5 de segurança (EMS) e um computador que executa o Windows 10 Enterprise."
-ms.openlocfilehash: 3996035bf954b9e6e8ee1f6157c875a041fc3f90
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 7eb776e485ec7f63ba9d401f0a25f64ba8a1314c
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
 

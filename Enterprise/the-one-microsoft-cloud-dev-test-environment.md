@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: "Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: 486aabd769461a7e743ac390d633913053b467a8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 8bd3f92abd3752555443534bbe81330727ed3eb5
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>O ambiente de desenvolvimento e teste de um Microsoft Cloud
 

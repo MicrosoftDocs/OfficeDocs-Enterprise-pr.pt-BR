@@ -8,18 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- TLG
-- Ent_TLGs
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, TLG, Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: "Resumo: Configure a sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 32b9be8bb82d0efec2549dcacb5706c5e3dbc6f3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: fc3a28d52781ba5a541d223c9f8bc081251a2b07
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync para seu ambiente de desenvolvimento e teste do Office 365
 
