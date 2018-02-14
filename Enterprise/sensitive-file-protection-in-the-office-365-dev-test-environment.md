@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG
+- Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "Resumo: Configurar e demonstrar como o Office 365 Information Rights Management protege arquivos confidenciais, mesmo quando eles são lançados ao conjunto de sites do SharePoint Online errado."
-ms.openlocfilehash: 22f12143dc7cb50c19a135f51c08cb4b9bf02f38
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 236272a90bb6ff7f310c95f1494b68750e363f40
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365
 

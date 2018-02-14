@@ -8,15 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, TLG, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- TLG
+- Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: "Resumo: Configure a autenticação federada para seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 590eda07b8147234432a171058e9996f7ba514f5
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidade federada para seu ambiente de desenvolvimento e teste do Office 365
 

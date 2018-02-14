@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Architecture
 ms.assetid: c37a4365-b350-4856-a0a8-ff5dfe005af1
 description: "Resumo: Crie seu armazenamento de serviços de nuvem da Microsoft e plataformas."
-ms.openlocfilehash: 98da5eed1bd14e65175a260bf129d4d29df28be7
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 4bfa848912685aad6fcb6965ed3d7a50226e0dd4
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Armazenamento do Microsoft Cloud para arquitetos corporativos
 

@@ -6,17 +6,19 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Resumo: Crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em seu ambiente de desenvolvimento e teste de campanha política."
-ms.openlocfilehash: d1515d2534713de41c16640d0008b1f8146ab300
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 3a2e507d17a558452fe0c2f0a062098e7c9c6407
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Criar sites de equipe em um ambiente de desenvolvimento e teste de campanha política
 

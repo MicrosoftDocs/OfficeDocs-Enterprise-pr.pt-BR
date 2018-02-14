@@ -6,17 +6,19 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Resumo: Crie assinaturas de avaliação de segurança (EMS) + Office 365 e mobilidade da empresa com usuários e grupos para um ambiente de desenvolvimento e teste de campanha política."
-ms.openlocfilehash: d079c3acec588be865f55a864bb1d81d1e84842e
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 25d03e0aa521c8fdbf20c2dc3ff2fc46e1aabe2f
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos e usuários para um ambiente de desenvolvimento e teste de campanha política
 

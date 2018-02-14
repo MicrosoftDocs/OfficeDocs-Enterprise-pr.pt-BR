@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Solutions
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Resumo: Saiba mais sobre os usos para sites de equipe do SharePoint Online isolados.'
-ms.openlocfilehash: 0ce446860becb7a9dced91e26b6da55ed5fab1c9
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 7798a1aa7bdf39783c3d83bc11fba03f3a3f711e
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Isolado sites de equipe do SharePoint Online
 

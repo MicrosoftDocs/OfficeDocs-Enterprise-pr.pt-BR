@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG-
+- Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: "Resumo: Configurar e demonstrar o eDiscovery avançadas do Office 365 com dados de exemplo no seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 6c0c28ced9d267ea2ecc353af8f1453c4dce7f8e
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365
 

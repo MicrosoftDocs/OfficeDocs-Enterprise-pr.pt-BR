@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: O365ITProTrain, PowerShell, Ent_Office_Other
+ms.custom:
+- O365ITProTrain
+- PowerShell
+- Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: "Resumo: Use o Office 365 PowerShell e o cmdlet Add-MsolRoleMember para atribuir funções a contas de usuário."
-ms.openlocfilehash: 68e8be24f1581aa3430bca95206ecc1b2512f09a
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
 

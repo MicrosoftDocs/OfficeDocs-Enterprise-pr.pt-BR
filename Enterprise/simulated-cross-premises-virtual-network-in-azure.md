@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: Crie uma rede virtual de locais cruzados simulado in Microsoft Azure como um ambiente de desenvolvimento e teste.'
-ms.openlocfilehash: 83374738e97dde73ebfd26d9be29177658a6c2ea
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 0889d0c70b6ffb93fc0ebf9c989b68e8a4766126
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulado entre locais no Windows Azure
 

@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Solutions
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: "Resumo: Aplica Office 365 rótulos e dados perda prevention (DLP) políticas para sites de equipe do SharePoint Online com vários níveis de proteção das informações."
-ms.openlocfilehash: f289e2c210f6c55b1adab3a556edb92f97083003
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 808c884818a15dbc4feb8d2e3b0249926bf90b52
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger os arquivos do SharePoint Online com o Office 365 rótulos e DLP
 
