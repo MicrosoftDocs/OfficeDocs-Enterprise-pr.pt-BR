@@ -8,24 +8,21 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- O365ITProTrain
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: O365ITProTrain, Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Resumo: Criar sua solução de identidade para plataformas e serviços em nuvem da Microsoft."
-ms.openlocfilehash: 78a975a9d4f22ce6e624983db21dae1a762a3c09
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 08dfb843128839fc6f8b70373335f64b44133ff1
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Identidade no Microsoft Cloud para arquitetos corporativos
 
  **Resumo:** Criar sua solução de identidade para plataformas e serviços em nuvem da Microsoft.
   
-Este artigo descreve o que os arquitetos de TI precisam saber sobre a criação de identidade para organizações que usam plataformas e serviços em nuvem da Microsoft. Você também pode visualizar este artigo como um cartaz de 5 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11x17 ou A3).
+Este artigo descreve o que os arquitetos de TI precisam saber sobre a criação de identidade para organizações que usam plataformas e serviços da nuvem da Microsoft. Você também pode visualizar este artigo como um cartaz de 5 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11x17 ou A3).
   
 [![Imagem em miniatura do modelo de identidade de nuvem da Microsoft](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
@@ -39,7 +36,7 @@ Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da 
   
 ## <a name="designing-identity-for-the-microsoft-cloud"></a>Criação de identidade para a nuvem da Microsoft
 
-A integração das suas identidades com a nuvem da Microsoft oferece acesso a uma ampla gama de opções de serviços e plataformas em nuvem. Há duas opções principais:
+A integração das suas identidades com a nuvem da Microsoft oferece acesso a uma ampla gama de opções de serviços e plataformas da nuvem. Há duas opções principais:
   
 - Você pode integrar ao Microsoft Azure AD (Active Directory). Isso envolve a sincronização das suas contas no local com o Azure AD, o provedor de identidade para a nuvem da Microsoft.
     
@@ -53,7 +50,7 @@ A Figura 1 mostra como o Azure AD é o provedor de identidade dos serviços de S
   
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-O Microsoft Azure AD é o serviço de gerenciamento de acesso e identidade hospedado em nuvem da Microsoft. Ele está no centro dos serviços e das plataformas em nuvem da Microsoft. A integração com o Azure AD oferece acesso a todos os serviços de SaaS da Microsoft que usam seu conjunto atual de contas e senhas. Essa integração também oferece identidade baseada em nuvem para aplicativos de PaaS do Azure. 
+O Microsoft Azure AD é o serviço de gerenciamento de acesso e identidade hospedado em nuvem da Microsoft. Ele está no centro dos serviços e das plataformas da nuvem da Microsoft. A integração com o Azure AD oferece acesso a todos os serviços de SaaS da Microsoft que usam seu conjunto atual de contas e senhas. Essa integração também oferece identidade baseada em nuvem para aplicativos de PaaS do Azure. 
   
 > [!NOTE]
 > O Azure AD não substitui a necessidade do AD DS local para organizações empresariais ou de máquinas virtuais com base em Windows em execução no Azure Infraestrutura como serviço (IaaS). 
@@ -260,7 +257,7 @@ A Figura 7 mostra três opções para integrar seu aplicativo com identidades de
   
 1. Registre seus aplicativos hospedados na nuvem com o Azure AD.
     
-    Confira o artigo da MSDN [Integração de aplicativos com o Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). Isso permite que você use o Azure AD para autenticar o acesso ao seu aplicativo de PaaS, bem como permite que usuários ou administradores concedam direitos ao seu aplicativo para acessar o conteúdo em seu nome de outros serviços de nuvem, como o Office 365. Mais detalhes e amostras de código podem ser encontrados no artigo da MSDN [Cenários de autenticação do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524304). 
+    Confira o artigo da MSDN [Integração de aplicativos com o Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524303). Isso permite que você use o Azure AD para autenticar o acesso ao seu aplicativo de PaaS, bem como permite que usuários ou administradores concedam direitos ao seu aplicativo para acessar o conteúdo em seu nome de outros serviços da nuvem, como o Office 365. Mais detalhes e amostras de código podem ser encontrados no artigo da MSDN [Cenários de autenticação do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524304). 
     
 2. Aplicativos que exigem autenticação programática para obter acesso a um aplicativo protegido por AD SD, AD FS no Windows Server 2012 R2 ou Azure AD podem usar:
     

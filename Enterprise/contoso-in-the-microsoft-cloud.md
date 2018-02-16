@@ -8,23 +8,21 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Architecture
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Resumo: como uma organização global fictícia, mas representativa, está adotando uma infraestrutura de TI inclusiva em nuvem com as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: d1d17a307f7f13668897343b69dcaebbedb4a7a4
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 6357338705a1ae8aa987981b680cbcd02560041f
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso no Microsoft Cloud
 
  **Resumo:** como uma organização global fictícia, mas representativa, está adotando uma infraestrutura de TI inclusiva em nuvem com as ofertas de nuvem da Microsoft.
   
-Este artigo oferece links para um conjunto de artigos que descrevem como a Contoso Corporation, um conglomerado global de fabricação com sede em Paris, está adotando uma infraestrutura de TI com serviços de nuvem e tratou das principais decisões de design relacionadas a rede, identidade e segurança, e como ela está implementando cenários na nuvem corporativa para tratar dos problemas da empresa. Você pode também visualizar essas informações como um cartaz de 11 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11 x 17 ou A3).
+Este artigo conecta você a um conjunto de artigos que descrevem como a Contoso Corporation, um conglomerado global de fabricação com sede em Paris, está adotando uma infraestrutura de TI com serviços de nuvem e tratou das principais decisões de design relacionadas a rede, identidade e segurança, e como ela está implementando cenários na nuvem corporativa para tratar dos problemas da empresa. Você pode também visualizar essas informações em forma de um cartaz de 11 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11 x 17 ou A3).
   
 [![Imagem em miniatura do cartaz Contoso na Microsoft Cloud](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
