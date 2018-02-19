@@ -8,21 +8,25 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
-description: "Resumo: saiba mais sobre as plataformas e serviços da nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais."
-ms.openlocfilehash: 202e7f837275474694a37060803a272c9aa5bdc4
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: "Resumo: Saiba mais sobre as plataformas e serviços em nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais."
+ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
- **Resumo:** saiba mais sobre as plataformas e serviços da nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais.
+ **Resumo:** Saiba mais sobre as plataformas e serviços em nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais.
   
-Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os serviços e plataformas da nuvem da Microsoft, como o Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, datacenter da nuvem privada e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
+Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os serviços e plataformas de nuvem da Microsoft, como o Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics 365, datacenter da nuvem privada e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
   
 - **[Roteiro do Enterprise Cloud da Microsoft](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway)
     
@@ -61,12 +65,12 @@ Confira cartazes, conjuntos de ícones, locais de comunidade e outros recursos q
 <a name="cloudarch"> </a>
 ## <a name="microsoft-cloud-for-enterprise-architects-series"></a>Série Microsoft Cloud para arquitetos corporativos
 
-Esses cartazes de arquitetura em nuvem fornecem informações sobre os serviços e as plataformas da nuvem da Microsoft, incluindo o Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, datacenter da nuvem privada e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança.
+Esses cartazes de arquitetura em nuvem fornecem informações sobre os serviços e as plataformas do Microsoft Cloud, incluindo o Office 365, Microsoft Azure, Microsoft Intune, Microsoft Dynamics CRM Online, datacenter da nuvem privada e soluções híbridas no local e na nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança.
   
 <a name="platformoptions"> </a>
 ### <a name="microsoft-cloud-services-and-platform-options"></a>Opções de plataforma e serviços do Microsoft Cloud
 
-Aprenda as principais diferenças entre as ofertas de plataforma e serviços da nuvem da Microsoft. Encontre o melhor ajuste para sua solução.
+Aprenda as principais diferenças entre as ofertas de plataforma e serviços em nuvem da Microsoft. Encontre o melhor ajuste para sua solução.
   
 |**Item**|**Descrição**|
 |:-----|:-----|
