@@ -1,5 +1,5 @@
 ---
-title: Rede do Microsoft Cloud para arquitetos corporativos
+title: Microsoft Cloud Networking para arquitetos corporativos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,21 +8,25 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Resumo: Projete sua rede para plataformas e serviços da nuvem da Microsoft."
-ms.openlocfilehash: 4ed2b0482801447227c50a8c515288a621d15f44
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 3ad510ff63ec861976804ab62c85213652415bee
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rede do Microsoft Cloud para arquitetos corporativos
+# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking para arquitetos corporativos
 
  **Resumo:** Projete sua rede para plataformas e serviços da nuvem da Microsoft.
   
-Este artigo conecta você a um conjunto de outros artigos que descrevem o que os arquitetos de TI precisam saber sobre como projetar uma rede, em organizações, usando a plataforma e os serviços da nuvem da Microsoft. Você também pode visualizar essas informações em forma de um cartaz de 12 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11x17 ou A3).
+Este artigo conecta você a um conjunto de outros artigos que descrevem o que os arquitetos de TI precisam saber sobre como projetar uma rede, em organizações, usando a plataforma e os serviços de nuvem da Microsoft. Você também pode visualizar estas informações como um cartaz de 12 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11x17 ou A3).
   
 [![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
@@ -57,10 +61,10 @@ Confira as seguintes seções:
     
     Percorra o processo de design para criar uma rede Azure virtual (VNet) ideal para hospedar cargas de trabalho de TI baseadas em servidor, incluindo sub-redes, espaços de endereço, roteamento, DNS, balanceamento de carga e conectividade com a rede local, com outras VNets e com a Internet.
     
-Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud](https://mva.microsoft.com/pt-BR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) da Microsoft Virtual Academy.
+Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) da Microsoft Virtual Academy.
   
 > [!NOTE]
-> Estes artigos refletem a versão de **junho de 2017** do cartaz Rede do Microsoft Cloud para arquitetos corporativos.
+> Estes artigos refletem a versão de **junho de 2017** do cartaz Microsoft Cloud Networking para arquitetos corporativos.
   
 ## <a name="see-also"></a>Veja também
 
