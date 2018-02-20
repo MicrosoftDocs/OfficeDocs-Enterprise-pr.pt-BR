@@ -48,7 +48,7 @@
             {
       "path_to_root": "enterprise/common",
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr.pt-br",
-      "branch": "live",
+      "branch": "live-sxs",
       "branch_mapping": {}
     },
     {
