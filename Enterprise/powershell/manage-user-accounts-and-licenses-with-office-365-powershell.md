@@ -9,22 +9,24 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: "Resumo: saiba como gerenciar contas e licenças de usuários usando o Office 365 PowerShell."
-ms.openlocfilehash: 6a8403c03733a5b604a8da1503ed98537bc15edb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 27bf709fc0daca5c56d9a1c57d3723a09ff49fdc
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Gerenciar contas de usuário e licenças usando o Office 365 PowerShell
 
  **Resumo:**: saiba como gerenciar contas e licenças de usuários usando o Office 365 PowerShell.
   
-Uma das principais tarefas de qualquer administrador do Office 365 é gerenciar contas e licenças de usuários. Embora você consiga realizar algumas dessas tarefas no Centro de administração do Office 365, outras serão muito mais rápidas e fáceis com o Office 365 PowerShell. Saiba mais nos tópicos a seguir:
+Uma das principais tarefas de qualquer administrador do Office 365 é gerenciar contas e licenças de usuários. Embora você possa executar algumas dessas tarefas no Centro de administração do Office 365, outras tarefas são muito mais rápidas e fáceis com o Office 365 PowerShell. Para saber mais, confira os tópicos a seguir:
   
-- [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md)
+- [Exibir licenças e serviços com o PowerShell do Office 365](view-licenses-and-services-with-office-365-powershell.md)
     
 - [Exibir usuários licenciados e não licenciados com o Office 365 PowerShell](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
     
