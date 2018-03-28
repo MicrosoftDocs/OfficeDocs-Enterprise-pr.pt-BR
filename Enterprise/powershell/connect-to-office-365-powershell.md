@@ -14,12 +14,12 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: "Resumo: conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas do Centro de administração do Office 365 a partir da linha de comando."
-ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+description: 'Resumo: conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas do Centro de administração do Office 365 a partir da linha de comando.'
+ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
+ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -30,7 +30,7 @@ O Office 365 PowerShell permite gerenciar as configurações do Office 365 na li
 Essas instruções de conexão são as mesmas do tópico [Azure Active Directory (MSOnline)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
-> **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](http://technet.microsoft.com/library/https://support.office.com/pt-BR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
+> **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/pt-BR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
