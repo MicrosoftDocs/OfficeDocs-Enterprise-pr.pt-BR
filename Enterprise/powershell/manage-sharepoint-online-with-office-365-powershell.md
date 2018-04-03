@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: "Resumo: use o Office 365 PowerShell para gerenciar usuários, grupos e grupos de sites do SharePoint Online."
+description: 'Resumo: use o Office 365 PowerShell para gerenciar usuários, grupos e grupos de sites do SharePoint Online.'
 ms.openlocfilehash: d92ddfa82c0d21b9de16439ef1d0108eed6ab63f
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

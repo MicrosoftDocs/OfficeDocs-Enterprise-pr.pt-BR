@@ -1,5 +1,5 @@
 ---
-title: "Introdução ao Office 365 PowerShell"
+title: Introdução ao Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "Resumo: compreenda a importância do Office 365 PowerShell, conecte-se aos seus locatários do Office 365 e receba ajuda."
+description: 'Resumo: compreenda a importância do Office 365 PowerShell, conecte-se aos seus locatários do Office 365 e receba ajuda.'
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

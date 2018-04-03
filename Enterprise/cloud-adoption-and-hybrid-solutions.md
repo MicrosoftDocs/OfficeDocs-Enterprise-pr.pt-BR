@@ -1,11 +1,11 @@
 ---
-title: "Soluções de nuvem empresarial"
-description: "Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais."
+title: Soluções de nuvem empresarial
+description: Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais.
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal
