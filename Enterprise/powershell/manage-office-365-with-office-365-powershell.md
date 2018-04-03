@@ -14,7 +14,7 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: "Resumo: saiba como usar o Office 365 PowerShell com as licenças e usuários do Office 365, Skype for Business online, SharePoint Online e Microsoft Exchange Online."
+description: 'Resumo: saiba como usar o Office 365 PowerShell com as licenças e usuários do Office 365, Skype for Business online, SharePoint Online e Microsoft Exchange Online.'
 ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

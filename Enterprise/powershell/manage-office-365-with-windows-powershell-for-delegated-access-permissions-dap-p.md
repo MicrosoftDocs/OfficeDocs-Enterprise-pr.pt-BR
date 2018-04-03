@@ -1,5 +1,5 @@
 ---
-title: "Gerenciar o Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)"
+title: Gerenciar o Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,9 +9,9 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: "Resumo: Os Parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). podem usar o Windows PowerShell para gerenciar Office 365 os locatários do cliente."
+description: 'Resumo: Os Parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). podem usar o Windows PowerShell para gerenciar Office 365 os locatários do cliente.'
 ms.openlocfilehash: 7920680f390b8a38f53386bd4af1efff895e4d6e
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
