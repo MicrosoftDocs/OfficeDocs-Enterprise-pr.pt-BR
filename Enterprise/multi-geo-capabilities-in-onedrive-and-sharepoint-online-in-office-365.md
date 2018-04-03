@@ -3,18 +3,18 @@ title: Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 1/24/2018
+ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: "Com os recursos de multi-geo no OneDrive e SharePoint Online, sua organização pode expandir sua presença do Office 365 para várias regiões geográficas e/ou países dentro de seu locatário existente."
-ms.openlocfilehash: d53da13d5a6a6d5add9da69a3bca9fcdfa39bbd0
-ms.sourcegitcommit: 38d43444cf5e03527aa75f670efb2de0f48f847d
+description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no OneDrive e SharePoint Online.
+ms.openlocfilehash: 7387b267cbc925916b600a112d6911c97a971c36
+ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365
 
@@ -40,9 +40,7 @@ Aqui está como recursos de multi-geo podem beneficiar sua organização:
     
 - Consolide seus dados de locais regionais em seu locatário do Office 365 multi-geo.
     
-Para obter mais informações e para ver uma demonstração, consulte [Introdução ao Multi-Geo recursos no Office 365 e como configurá-los](https://youtu.be/3d9-Vt2fArk) e o[cartaz da visão geral de Multi-Geo](https://technet.microsoft.com/library/dn782272.aspx).
-  
-Em uma configuração de multi-geo, seu locatário do Office 365 consiste em um local central (também conhecido como um local padrão) e um ou mais locais de geo satélite. O conceito de chave de multi-geo é que um único locatário ocupará entre um vários locais geo. Em um locatário multi-geo, as informações sobre locais geo, grupos e informações do usuário, são administradas no Windows Azure Active Directory (AAD). Como suas informações de Inquilino são administradas centralmente e sincronizadas em cada local geo, compartilhamento e experiências envolvendo qualquer pessoa da sua empresa contêm divulgação global.
+Em uma configuração de multi-geo, seu locatário do Office 365 consiste em um local central (também conhecido como o local padrão) e um ou mais locais de geo satélite. O conceito de chave de multi-geo é que um único locatário ocupará entre um vários locais geo. Em um locatário multi-geo, as informações sobre locais geo, grupos e informações do usuário, são administradas no Windows Azure Active Directory (AAD). Como suas informações de Inquilino são administradas centralmente e sincronizadas em cada local geo, compartilhamento e experiências envolvendo qualquer pessoa da sua empresa contêm divulgação global.
   
 ## <a name="sample-multi-geo-tenant-configuration"></a>Configuração do inquilino de multi-geo de amostra
 
@@ -54,7 +52,7 @@ Usando um locatário multi-geo, Contoso, com um local central da América do Nor
 
 Configurar o multi-geo é fácil:
   
-1. Habilite o locatário do Office 365 para multi-geo.
+1. Trabalhar com sua equipe de conta para adicionar o plano de serviço _Multi-Geo recursos no Office 365_ . Eles vão orientá-lo para adicionar o número de licenças necessárias.
     
 2. Adicione seus locais de satélite.
     
@@ -72,29 +70,19 @@ OneDrive Multi-Geo no momento é oferecido nessas regiões e países:
     
 - União Europeia (EMEA)
     
-- Índia
-    
 - Japão
     
 - Reino Unido
     
 - Estados Unidos (América do Norte)
     
-- Coreia do Sul
-    
-> [!NOTE]
-> Índia e Coreia do Sul atualmente só estarão disponíveis para clientes com licenças e nos endereços de cobrança nesses locais geo. 
-  
+- Coreia
+      
 Próximos geo locais:
   
 - França
+- Índia
     
-Serviços disponíveis:
-  
-- Exchange Online - a no modo de visualização
-    
-- OneDrive for Business - no modo de visualização
-    
-- SharePoint Online - em desenvolvimento
-    
+## <a name="getting-started"></a>Introdução
 
+Para começar com o OneDrive for Business Multi-Geo, a primeira etapa é [Planejar o OneDrive for Business Multi-Geo ambiente](plan-for-multi-geo.md). Avançar, [Saiba mais sobre como administrar um ambiente multi-geo](administering-a-multi-geo-environment.md) e [como os usuários observarão um ambiente multi-geo](multi-geo-user-experience.md). Quando você estiver pronto para configurar o OneDrive for Business Multi-Geo, [configure seu locatário do multi-geo](multi-geo-tenant-configuration.md), [mover todos os sites existentes OneDrive para as localizações de geo novos](move-onedrive-between-geo-locations.md) e [Configurar a pesquisa](configure-search-for-multi-geo.md).
