@@ -1,9 +1,9 @@
 ---
-title: DirSync para seu ambiente de desenvolvimento e teste do Office 365
+title: Sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,31 +16,29 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
-description: "Resumo: Configure a sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 8a656ea742af642a8b4dc3e096764f0e8cbde074
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Configure a sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365.'
+ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="dirsync-for-your-office-365-devtest-environment"></a>DirSync para seu ambiente de desenvolvimento e teste do Office 365
+# <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365
 
  **Resumo:** Configure a sincronização de diretório para o seu ambiente de desenvolvimento e teste do Office 365.
   
-Muitas organizações uso Connect do Azure AD e sincronização de diretório (DirSync) para sincronizar o conjunto de contas em sua floresta do Windows Server Active Directory (AD) de local para o conjunto de contas no Office 365. Este artigo descreve como você pode adicionar DirSync com sincronização de senha para o ambiente de desenvolvimento e teste do Office 365, resultando na configuração a seguir.
+Muitas organizações uso Connect do Azure AD e sincronização de diretórios para sincronizar o conjunto de contas em sua floresta do Windows Server Active Directory (AD) de local para o conjunto de contas no Office 365. Este artigo descreve como você pode adicionar sincronização de diretórios com a sincronização de hash de senha para o ambiente de desenvolvimento e teste do Office 365, resultando na configuração a seguir.
   
-![O ambiente de desenvolvimento e teste do Office 365 com o DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente de desenvolvimento e teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuração consiste em: 
   
 - Um Office 365 E5 avaliação assinatura, que expira 30 dias a partir de quando você criá-lo.
-    
 - Uma intranet da organização simplificado conectado à Internet, consistindo em três máquinas virtuais em uma sub-rede de uma rede virtual do Azure (DC1, APP1 e CLIENT1). Conectar do Azure AD executa no APP1 para sincronizar o domínio do Windows Server AD para o Office 365.
     
 Há duas fases para configurar esse ambiente de desenvolvimento e teste:
   
 1. Crie o ambiente de desenvolvimento e teste do Office 365 (os DC1, APP1 e CLIENT1 máquinas virtuais em uma rede virtual do Azure com uma assinatura de avaliação do Office 365 E5).
-    
 2. Instalar e configurar o Azure Connect do AD no APP1.
     
 > [!TIP]
@@ -55,7 +53,6 @@ Siga as instruções em fases 1, 2 e 3 do artigo [ambiente de desenvolvimento e 
 Esta configuração consiste em: 
   
 - Uma assinatura de avaliação do E5 do Office 365.
-    
 - Uma intranet da organização simplificado conectado à Internet, consistindo das máquinas virtuais DC1, APP1 e CLIENT1 em uma sub-rede de uma rede virtual do Azure.
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Fase 2: Instalar o Azure AD conectar no APP1
@@ -93,13 +90,13 @@ Stop-Process -Name Explorer -Force
     
 11. Na página **configuração concluída** , clique em **Sair**.
     
-12. No Internet Explorer, vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entrar em sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+12. No Internet Explorer, vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e se conectar à sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
 13. Na página principal do portal, clique em **Admin**.
     
 14. Na navegação à esquerda, clique em **Usuários > Usuários ativos**.
     
-    Observe a conta denominada **User1**. Esta conta é do domínio CORP Windows Server AD e prova DirSync funcionou.
+    Observe a conta denominada **User1**. Esta conta é do domínio CORP Windows Server AD e à prova de que a sincronização de diretórios tem funcionado.
     
 15. Clique na conta **User1** . Para licenças de produto, clique em **Editar**.
     
@@ -107,31 +104,25 @@ Stop-Process -Name Explorer -Force
     
 Essa é a configuração resultante.
   
-![O ambiente de desenvolvimento e teste do Office 365 com o DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente de desenvolvimento e teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuração consiste em: 
   
 - Uma assinatura de avaliação do E5 do Office 365.
-    
 - Uma intranet da organização simplificado conectado à Internet, consistindo das máquinas virtuais DC1, APP1 e CLIENT1 em uma sub-rede de uma rede virtual do Azure. Conectar do Azure AD executa no APP1 para sincronizar o domínio CORP Windows Server AD para o Office 365 a cada 30 minutos.
     
 ## <a name="next-step"></a>Próxima etapa
 
-Quando estiver pronto para implantar o DirSync para sua organização, consulte [Implantar o Office 365 sincronização de diretórios (DirSync) no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Quando estiver pronto para implantar a sincronização de diretórios para a sua organização, consulte [implantar o Office 365 directory synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>Veja também
 
-[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
-  
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
-  
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
-  
-[Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-  
-[Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-  
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Nuvem adoção Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
+[ambiente de desenvolvimento e teste de configuração básica](base-configuration-dev-test-environment.md)
+[o ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md) 
+ [ Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 
