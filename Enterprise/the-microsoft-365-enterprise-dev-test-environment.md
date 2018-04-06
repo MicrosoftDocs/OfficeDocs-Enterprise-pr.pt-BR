@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: "Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui o Office 365 E5, Enterprise mobilidade + E5 de segurança (EMS) e um computador que executa o Windows 10 Enterprise."
-ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui o Office 365 E5, Enterprise mobilidade + E5 de segurança (EMS) e um computador que executa o Windows 10 Enterprise.'
+ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
 
@@ -44,17 +44,17 @@ Primeiro, adicione a assinatura de avaliação do EMS E5 e atribuir uma licença
   
 1. Com uma instância particular de um navegador da Internet, entre no portal do Office 365 com suas credenciais de conta de administrador global. Para obter ajuda, consulte [Where entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Clique no lado do **Admin** .
+2. Clique no bloco de **Administração**.
     
-3. Na guia do **Centro de administração do Office** em seu navegador, no painel de navegação esquerdo, clique em **faturamento > Serviços de compra**.
+3. Na guia **Centro de Administração do Office** no navegador, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
     
 4. Na página **Serviços de compra** , localize o item de **mobilidade corporativos + E5 de segurança** . Passe o ponteiro do mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
     
-5. Na página **confirmar seu pedido** , clique em **tente agora**.
+5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
-6. Na página **confirmação de ordem** , clique em **continuar**.
+6. Na página **Recibo do pedido**, clique em **Continuar**.
     
-7. Na guia do **Centro de administração do Office 365** em seu navegador, no painel de navegação esquerdo, clique em **usuários > usuários ativos**.
+7. Na guia **Centro de Administração do Office 365** no navegador, no painel de navegação esquerdo, clique em **Usuários > Usuários ativos**.
     
 8. Clique em sua conta de administrador global e, em seguida, clique em **Editar** para **licenças de produto**.
     
@@ -63,12 +63,11 @@ Primeiro, adicione a assinatura de avaliação do EMS E5 e atribuir uma licença
 > [!NOTE]
 > A assinatura de avaliação do Enterprise Mobility + Security E5 dura 90 dias. Para um ambiente de desenvolvimento/teste permanente, crie uma nova assinatura paga com uma pequena quantidade de licenças. 
   
- ***Se você concluiu a fase 3 do*** [Ambiente de desenvolvimento e teste do office 365](office-365-dev-test-environment.md) , repita as etapas 8 e 9 do procedimento anterior para todas as suas contas (usuário 2, 3 do usuário, usuário 4 e 5 do usuário).
+ ***Se você concluiu a fase 3 do*** [Ambiente de desenvolvimento e teste do office 365](office-365-dev-test-environment.md), repita as etapas 8 e 9 do procedimento anterior para todas as suas contas (usuário 2, 3 do usuário, usuário 4 e 5 do usuário).
   
 Seu ambiente de desenvolvimento e teste agora tem:
   
 - Assinaturas de avaliação do Office 365 Enterprise E5 e do EMS que compartilham a mesma organização e o mesmo locatário do Azure AD com sua lista de contas de usuário.
-    
 - Todas as suas contas de usuário apropriada (administrador global ou todas as contas de usuário de cinco) estão habilitadas para usar o Office 365 E5 e EMS E5.
     
 A Figura 2 mostra a configuração resultante, que adiciona EMS.
@@ -91,7 +90,7 @@ Crie uma máquina virtual usando o hipervisor de sua escolha e instale o Windows
   
 ### <a name="virtual-machine-in-azure"></a>Máquina virtual no Windows Azure
 
-Para criar uma máquina virtual de Windows 10 in Microsoft Azure, ***você deve ter uma assinatura com base no Visual Studio***, que tem acesso à imagem para Windows 10 Enterprise. Outros tipos de assinaturas do Azure, como assinaturas de avaliação e pagas, não têm acesso a essa imagem.
+Crie uma máquina virtual de Windows 10 in Microsoft Azure usando a imagem da Galeria do Azure.
   
 > [!NOTE]
 > O comando a seguir define use a versão mais recente de te do Azure PowerShell. Consulte a [Introdução ao cmdlets do PowerShell do Windows Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Esses conjuntos de comando compilação uma máquina virtual de Windows 10 Enterprise denominado WIN10 e todas as sua infra-estrutura necessária, incluindo um grupo de recursos, uma conta de armazenamento e uma rede virtual. Se você já estiver familiarizado com os serviços de infraestrutura do Windows Azure, se adapte essas instruções de acordo com sua infraestrutura implantada no momento. 
@@ -131,27 +130,6 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-Máquinas virtuais baseadas em Gerenciador de recursos exigem uma conta de armazenamento baseado em Gerenciador de recursos. Você deve escolher um nome globalmente exclusivo para a sua conta de armazenamento *que contém apenas números e letras minúsculas* . Você pode usar esse comando para listar as contas de armazenamento existente.
-  
-```
-Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
-```
-
-Use este comando para testar se o nome proposto para a conta de armazenamento é exclusivo.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-Crie uma nova conta de armazenamento para o novo ambiente de teste com estes comandos.
-  
-```
-$rgName="<your new resource group name>"
-$saName="<storage account name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 Em seguida, você cria uma nova rede virtual e a máquina virtual WIN10 com esses comandos. Quando solicitado, forneça o nome e a senha da conta de administrador local para WIN10 e armazená-los em um local seguro.
   
 ```
@@ -165,19 +143,17 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 $pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
-$storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftVisualStudio -Offer Windows -Skus Windows-10-N-x64 -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + "vhds/WIN10-TestLab-OSDisk.vhd"
-$vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -CreateOption fromImage
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>Fase 4: Ingressar seu computador 10 do Windows Azure AD
 
-Após o física ou máquina virtual é criada, configurados com Windows 10 Enterprise e está em execução, entre com uma conta de administrador local.
+Depois que o física ou máquina virtual com Windows 10 Enterprise é criada, entre com uma conta de administrador local.
   
 > [!NOTE]
 > Para uma máquina virtual no Windows Azure, conecte-se a ela usando [estas instruções](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Entrar com as credenciais da conta de administrador local. 
@@ -196,7 +172,7 @@ Em seguida, ingresse o computador WIN10 locatário do Azure AD de suas assinatur
     
 6. Feche a janela configurações.
     
-Em seguida, instale o Office 2016 no computador WIN10
+Em seguida, instale o Office 2016 no computador WIN10.
   
 1. Abra o navegador Microsoft Edge e entrar no portal do Office 365 com suas credenciais de conta de administrador global. Para obter ajuda, consulte [Where entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -226,12 +202,10 @@ Use estes artigos adicionais para explorar os recursos do Microsoft 365 Enterpri
     
 - [Configurar e testar a proteção de ameaça avançadas](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[O ambiente de desenvolvimento e teste de um Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md)
+- [Documentação do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 
-[Documentação do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+ - [Implantar o Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 
-
-
-
+- [O ambiente de desenvolvimento e teste de um Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md)
