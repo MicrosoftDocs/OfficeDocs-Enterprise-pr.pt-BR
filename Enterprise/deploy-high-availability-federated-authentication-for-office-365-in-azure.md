@@ -1,9 +1,9 @@
 ---
-title: "Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure"
+title: Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: "Resumo: configurar a autenticação federada de alta disponibilidade para sua assinatura do Office 365 no Microsoft Azure."
-ms.openlocfilehash: e76ead1683448883961e6cb8316946a594fd7ee0
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+description: 'Resumo: configurar a autenticação federada de alta disponibilidade para sua assinatura do Office 365 no Microsoft Azure.'
+ms.openlocfilehash: b18290f7f8e6e25dae72c0d2c8f51a001c3af8e7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure
 
