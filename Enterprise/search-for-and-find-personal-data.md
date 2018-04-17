@@ -9,213 +9,211 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 description: Saiba como pesquisar e localizar dados pessoais no Office 365.
-ms.openlocfilehash: f19aed534fe2bb4154edc31f0d1b0c82afcc1f04
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: c536686b25d94403e29b2f706d21a54e9f1cf9b3
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="search-for-and-find-personal-data"></a><span data-ttu-id="5c652-103">Pesquisar e localizar dados pessoais</span><span class="sxs-lookup"><span data-stu-id="5c652-103">Search for and find personal data</span></span>
+# <a name="search-for-and-find-personal-data"></a><span data-ttu-id="4b643-103">Pesquisar e localizar dados pessoais</span><span class="sxs-lookup"><span data-stu-id="4b643-103">Search for and find personal data</span></span>
 
-<span data-ttu-id="5c652-104">A grosso modo, o RGPD define dados pessoais como qualquer dado relativo a uma pessoa física identificada ou identificável que seja residente da União Europeia (UE).</span><span class="sxs-lookup"><span data-stu-id="5c652-104">Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person that is a resident of the European Union (EU).</span></span>
+<span data-ttu-id="4b643-104">A grosso modo, o RGPD define dados pessoais como qualquer dado relativo a uma pessoa física identificada ou identificável que seja residente da União Europeia (UE).</span><span class="sxs-lookup"><span data-stu-id="4b643-104">Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person that is a resident of the European Union (EU).</span></span>
 
-<span data-ttu-id="5c652-105">Artigo 4 – Definições</span><span class="sxs-lookup"><span data-stu-id="5c652-105">Article 4 – Definitions</span></span>
+<span data-ttu-id="4b643-105">Artigo 4 – Definições</span><span class="sxs-lookup"><span data-stu-id="4b643-105">Article 4 – Definitions</span></span>
 
-> <span data-ttu-id="5c652-106">"dados pessoais" são todas as informações relativas a uma pessoa física identificada ou identificável ("titular dos dados"); uma pessoa física identificável é alguém que pode ser identificado, direta ou indiretamente, em especial por referência a um identificador como um nome, um número de identificação, dados de localização, um identificador online ou por um ou mais elementos específicos da identidade física, fisiológica, genética, mental, econômica, cultural ou social dessa pessoa física;</span><span class="sxs-lookup"><span data-stu-id="5c652-106">‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;</span></span>
+> <span data-ttu-id="4b643-106">"dados pessoais" são todas as informações relativas a uma pessoa física identificada ou identificável ("titular dos dados"); uma pessoa física identificável é alguém que pode ser identificado, direta ou indiretamente, em especial por referência a um identificador como um nome, um número de identificação, dados de localização, um identificador online ou por um ou mais elementos específicos da identidade física, fisiológica, genética, mental, econômica, cultural ou social dessa pessoa física;</span><span class="sxs-lookup"><span data-stu-id="4b643-106">‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;</span></span>
 
-<span data-ttu-id="5c652-107">Este artigo demonstra como localizar dados pessoais armazenados no SharePoint Online e no OneDrive for Business (que inclui os sites de todos os grupos do Office 365 e Microsoft Teams).</span><span class="sxs-lookup"><span data-stu-id="5c652-107">This article demonstrates how to find personal data stored in SharePoint Online and OneDrive for Business (which includes the sites for all Office 365 groups and Microsoft Teams).</span></span>
+<span data-ttu-id="4b643-107">Este artigo demonstra como localizar dados pessoais armazenados no SharePoint Online e no OneDrive for Business (que inclui os sites de todos os grupos do Office 365 e Microsoft Teams).</span><span class="sxs-lookup"><span data-stu-id="4b643-107">This article demonstrates how to find personal data stored in SharePoint Online and OneDrive for Business (which includes the sites for all Office 365 groups and Microsoft Teams).</span></span>
 
-<span data-ttu-id="5c652-p101">A localização dos dados pessoais sujeitos ao RGPD depende do uso dos tipos de informações confidenciais no Office 365. Eles definem como o processo automatizado reconhecerá os tipos de informações específicas, como números de serviço de saúde e de cartões de crédito. No momento, não é possível usá-los para localizar dados em repouso nas caixas de correio do Exchange. Porém, os tipos de informações confidenciais podem ser usados com as políticas de prevenção contra perda de dados para localizar dados pessoais no email em trânsito.</span><span class="sxs-lookup"><span data-stu-id="5c652-p101">Finding personal data subject to GDPR relies on using sensitive information types in Office 365. These define how the automated process recognizes specific information types such as health service numbers and credit card numbers. At this time these cannot be used to find data in Exchange mailboxes at rest. However, sensitive information types can be used with data loss prevention policies to find personal data in mail while in transit.</span></span>
+<span data-ttu-id="4b643-p101">A localização dos dados pessoais sujeitos ao RGPD depende do uso dos tipos de informações confidenciais no Office 365. Eles definem como o processo automatizado reconhecerá os tipos de informações específicas, como números de serviço de saúde e de cartões de crédito. No momento, não é possível usá-los para localizar dados em repouso nas caixas de correio do Exchange. Porém, os tipos de informações confidenciais podem ser usados com as políticas de prevenção contra perda de dados para localizar dados pessoais no email em trânsito.</span><span class="sxs-lookup"><span data-stu-id="4b643-p101">Finding personal data subject to GDPR relies on using sensitive information types in Office 365. These define how the automated process recognizes specific information types such as health service numbers and credit card numbers. At this time these cannot be used to find data in Exchange mailboxes at rest. However, sensitive information types can be used with data loss prevention policies to find personal data in mail while in transit.</span></span>
 
-<span data-ttu-id="5c652-112">Portanto, mesmo que ainda não seja possível usar a Pesquisa de Conteúdo para localizar dados pessoais em repouso nas caixas de correio do Exchange Online, você pode usar os tipos de informações confidenciais que selecionar para o RGPD e localizar e proteger informações pessoais ao serem enviadas por email.</span><span class="sxs-lookup"><span data-stu-id="5c652-112">So, while you can’t currently use Content Search to find personal data at rest in Exchange Online mailboxes, you can use the sensitive information types you curate for GDPR to find and protect personal information as it is sent through email.</span></span>
+<span data-ttu-id="4b643-112">Portanto, mesmo que ainda não seja possível usar a Pesquisa de Conteúdo para localizar dados pessoais em repouso nas caixas de correio do Exchange Online, você pode usar os tipos de informações confidenciais que selecionar para o RGPD e localizar e proteger informações pessoais ao serem enviadas por email.</span><span class="sxs-lookup"><span data-stu-id="4b643-112">So, while you can’t currently use Content Search to find personal data at rest in Exchange Online mailboxes, you can use the sensitive information types you curate for GDPR to find and protect personal information as it is sent through email.</span></span>
 
-## <a name="use-content-search-to-find-personal-data"></a><span data-ttu-id="5c652-113">Usar a Pesquisa de Conteúdo para localizar dados pessoais</span><span class="sxs-lookup"><span data-stu-id="5c652-113">Use Content Search to find personal data</span></span>
+## <a name="use-content-search-to-find-personal-data"></a><span data-ttu-id="4b643-113">Usar a Pesquisa de Conteúdo para localizar dados pessoais</span><span class="sxs-lookup"><span data-stu-id="4b643-113">Use Content Search to find personal data</span></span>
 
-<span data-ttu-id="5c652-p102">A Microsoft recomenda uma abordagem em três etapas para localizar dados pessoais no Office 365. O restante deste tópico orienta sobre cada uma dessas etapas.</span><span class="sxs-lookup"><span data-stu-id="5c652-p102">Microsoft recommends a three-stage approach to finding personal data in Office 365. The rest of this topic provides guidance for each of these stages.</span></span>
-
-<table>
-<thead>
-<tr class="header">
-<th align="left"><span data-ttu-id="5c652-116"><strong>Etapa</strong></span><span class="sxs-lookup"><span data-stu-id="5c652-116"><strong>Step</strong></span></span></th>
-<th align="left"><span data-ttu-id="5c652-117"><strong>Descrição</strong></span><span class="sxs-lookup"><span data-stu-id="5c652-117"><strong>Description</strong></span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><span data-ttu-id="5c652-118">1. Pesquisar tipos de informações confidenciais</span><span class="sxs-lookup"><span data-stu-id="5c652-118">1. Search for sensitive information types</span></span></p></td>
-<td align="left"><p><span data-ttu-id="5c652-p103">Inicie usando os tipos de informações confidenciais para localizar dados pessoais. Crie uma consulta de Pesquisa de Conteúdo para cada tipo de informação confidencial. Execute a consulta e analise os resultados.</span><span class="sxs-lookup"><span data-stu-id="5c652-p103">Start by using sensitive information types to find personal data. Create a Content Search query for each sensitive information type. Run the query and analyze the results.</span></span></p>
-<span data-ttu-id="5c652-122">Se necessário, adicione parâmetros às consultas para reduzir os falsos positivos:</span><span class="sxs-lookup"><span data-stu-id="5c652-122">If needed, add parameters to the query to reduce false positives:</span></span> <li><span data-ttu-id="5c652-123">Intervalo de contagem</span><span class="sxs-lookup"><span data-stu-id="5c652-123">Count range</span></span></li>
-    <li><span data-ttu-id="5c652-124">Intervalo de confiança</span><span class="sxs-lookup"><span data-stu-id="5c652-124">Confidence range</span></span></li>
-    <li><span data-ttu-id="5c652-125">Outras propriedades ou operadores para consultas mais complexas</span><span class="sxs-lookup"><span data-stu-id="5c652-125">Other properties or operators for more complex queries</span></span></li>
-<p><span data-ttu-id="5c652-126">Se necessário, modifique um tipo de informação confidencial para aprimorar o refinamento para a sua organização:</span><span class="sxs-lookup"><span data-stu-id="5c652-126">If necessary, modify a sensitive information type to improve accuracy for your organization:</span></span></p>
-<p><li><span data-ttu-id="5c652-127">Ajuste o nível de confiança diretamente no XML.</span><span class="sxs-lookup"><span data-stu-id="5c652-127">Adjust the confidence level directly in the XML.</span></span></li></p>
-<p><li><span data-ttu-id="5c652-128">Adicione palavras-chave.</span><span class="sxs-lookup"><span data-stu-id="5c652-128">Add key words.</span></span></li></p>
-<p><li><span data-ttu-id="5c652-129">Ajuste os requisitos de proximidade das palavras-chave.</span><span class="sxs-lookup"><span data-stu-id="5c652-129">Adjust the proximity requirements for keywords.</span></span></li></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><span data-ttu-id="5c652-130">2. Usar a Keyword Query Language (KQL) para localizar dados pessoais adicionais em seu ambiente</span><span class="sxs-lookup"><span data-stu-id="5c652-130">2. Use Keyword Query Language (KQL) to find additional personal data in your environment</span></span></p></td>
-<td align="left"><p><span data-ttu-id="5c652-131">Para localizar dados não incluídos nos tipos de informações confidenciais, use a linguagem de consulta KQL para desenvolver consultas personalizadas.</span><span class="sxs-lookup"><span data-stu-id="5c652-131">To find data not included in sensitive information types, use the KQL query language to develop custom queries.</span></span></p>
-<p><span data-ttu-id="5c652-132">Teste os resultados da pesquisa e ajuste a cadeia de caracteres de consulta da KQL até atingir o resultado esperado.</span><span class="sxs-lookup"><span data-stu-id="5c652-132">Test the results of these searches and adjust the KQL query string until you achieve the expected result.</span></span></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><span data-ttu-id="5c652-133">3. Criar novos tipos de informações confidenciais personalizados usando consultas KQL</span><span class="sxs-lookup"><span data-stu-id="5c652-133">3. Create new custom sensitive information types using the KQL queries</span></span></p></td>
-<td align="left"><span data-ttu-id="5c652-p104">Após otimizar as consultas KQL para localizar os dados de destino, crie novos tipos de informações confidenciais personalizados usando essas consultas. Em seguida, você pode usar esses tipos de informações confidenciais personalizados com a Pesquisa de Conteúdo, com as políticas DLP e outras ferramentas e em outras consultas KQL.</span><span class="sxs-lookup"><span data-stu-id="5c652-p104">After optimizing KQL queries to find target data, create new custom sensitive information types using these queries. You can then use these custom sensitive information types with Content Search, in DLP policies and other tools, and within other KQL queries.</span></span></td>
-</tr>
-</tbody>
-</table>
-
-<span data-ttu-id="5c652-p105">Em breve será possível criar e modificar os tipos de informações confidenciais em uma nova interface do usuário no Centro de Conformidade e Segurança. Veja resultados correspondentes dinamicamente e ajuste os tipos de informações confidenciais para atender às suas necessidades.</span><span class="sxs-lookup"><span data-stu-id="5c652-p105">Coming soon — You'll be able to create and modify sensitive information types in a new user interface in the Security and Compliance Center. You can dynamically see matching results and tune sensitive information types to meet your needs.</span></span>
-
-## <a name="search-for-sensitive-information-types-using-content-search"></a><span data-ttu-id="5c652-138">Buscar tipos de informações confidenciais usando a Pesquisa de Conteúdo</span><span class="sxs-lookup"><span data-stu-id="5c652-138">Search for sensitive information types using Content Search</span></span>
-
-<span data-ttu-id="5c652-p106">Comece a pesquisa de dados pessoais usando os tipos de informações confidenciais incluídos no Office 365. Eles estão relacionados no Centro de Conformidade e Segurança, em Classificação.</span><span class="sxs-lookup"><span data-stu-id="5c652-p106">Begin searching for personal data by using the sensitive information types that are included with Office 365. These are listed in the Security and Compliance Center under Classification.</span></span>
-
-<span data-ttu-id="5c652-p107">Este tópico inclui uma lista atual dos tipos de informações confidenciais que se aplicam a cidadãos da União Europeia. Use-os como ponto de partida. Consulte regularmente o Centro de Conformidade e Segurança para ver as novas inclusões que podem ajudar a ficar em conformidade com o RGPD.</span><span class="sxs-lookup"><span data-stu-id="5c652-p107">This topic includes a list of current sensitive information types that apply to citizens in the European Union. Use these as a starting point. Check Security and Compliance Center frequently for new additions that can help with GDPR compliance.</span></span>
-
-<span data-ttu-id="5c652-144">Veja também este artigo: [Lista de tipos de informações confidenciais e para que serve cada um](https://support.office.com/pt-BR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).</span><span class="sxs-lookup"><span data-stu-id="5c652-144">Also see this article: [List of sensitive information types and what each one looks for](https://support.office.com/pt-BR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).</span></span>
-
-<span data-ttu-id="5c652-p108">Os tipos de informações confidenciais definem como o processo automatizado reconhecerá tipos específicos de informação, como números de contas bancárias, números de serviços de saúde e de cartões de crédito. Os tipos de informações confidenciais também são conhecidos como condições. Um tipo de informação confidencial se define por um padrão que pode ser identificado por uma expressão regular ou uma função. Além disso, podem-se usar evidências de comprovação como palavras-chave e somas de verificação para identificar um tipo de informação confidencial. Também se usa o nível de confiança e de proximidade no processo de avaliação.</span><span class="sxs-lookup"><span data-stu-id="5c652-p108">Sensitive information types define how the automated process recognizes specific information types such as bank account numbers, health service numbers, and credit card numbers. Sensitive information types are also referred to as conditions. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.</span></span>
-
-<span data-ttu-id="5c652-150">No momento, os tipos de informações confidenciais não podem ser usados para localizar dados em repouso nas caixas de correio.</span><span class="sxs-lookup"><span data-stu-id="5c652-150">At this time sensitive information types cannot be used to find data at rest in mailboxes.</span></span>
-
-### <a name="using-content-search-with-sensitive-information-types"></a><span data-ttu-id="5c652-151">Usar a Pesquisa de Conteúdo com os tipos de informações confidenciais</span><span class="sxs-lookup"><span data-stu-id="5c652-151">Using Content Search with sensitive information types</span></span>
+<span data-ttu-id="4b643-p102">A Microsoft recomenda uma abordagem em três etapas para localizar dados pessoais no Office 365. O restante deste tópico orienta sobre cada uma dessas etapas.</span><span class="sxs-lookup"><span data-stu-id="4b643-p102">Microsoft recommends a three-stage approach to finding personal data in Office 365. The rest of this topic provides guidance for each of these stages.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><span data-ttu-id="5c652-152"><strong>Etapa</strong></span><span class="sxs-lookup"><span data-stu-id="5c652-152"><strong>Step</strong></span></span></th>
-<th align="left"><span data-ttu-id="5c652-153"><strong>Mais informações</strong></span><span class="sxs-lookup"><span data-stu-id="5c652-153"><strong>More Information</strong></span></span></th>
+<th align="left"><span data-ttu-id="4b643-116"><strong>Etapa</strong></span><span class="sxs-lookup"><span data-stu-id="4b643-116"><strong>Step</strong></span></span></th>
+<th align="left"><span data-ttu-id="4b643-117"><strong>Descrição</strong></span><span class="sxs-lookup"><span data-stu-id="4b643-117"><strong>Description</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd"><td align="left"><p><span data-ttu-id="5c652-154">Acessar a Pesquisa de Conteúdo no Centro de Conformidade e Segurança</span><span class="sxs-lookup"><span data-stu-id="5c652-154">Go to Content Search in the Security and Compliance Center</span></span></p></td>
-<td align="left"><p><span data-ttu-id="5c652-155">No painel esquerdo do Centro de Conformidade e Segurança, clique em **Pesquisa&amp; investigação** &gt; **Pesquisa de Conteúdo**.</span><span class="sxs-lookup"><span data-stu-id="5c652-155">In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** &gt; **Content search**.</span></span></p>
-<p><span data-ttu-id="5c652-156">Confira <a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Executar uma Pesquisa de Conteúdo no Centro de Conformidade e Segurança do Office 365</a>.</span><span class="sxs-lookup"><span data-stu-id="5c652-156">Run a Content Search in the Office 365 Security & Compliance Center</span></span></p></td>
+<tr class="odd">
+<td align="left"><p><span data-ttu-id="4b643-118">1. Pesquisar tipos de informações confidenciais</span><span class="sxs-lookup"><span data-stu-id="4b643-118">1. Search for sensitive information types</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-p103">Inicie usando os tipos de informações confidenciais para localizar dados pessoais. Crie uma consulta de Pesquisa de Conteúdo para cada tipo de informação confidencial. Execute a consulta e analise os resultados.</span><span class="sxs-lookup"><span data-stu-id="4b643-p103">Start by using sensitive information types to find personal data. Create a Content Search query for each sensitive information type. Run the query and analyze the results.</span></span></p>
+<span data-ttu-id="4b643-122">Se necessário, adicione parâmetros às consultas para reduzir os falsos positivos:</span><span class="sxs-lookup"><span data-stu-id="4b643-122">If needed, add parameters to the query to reduce false positives:</span></span> <li><span data-ttu-id="4b643-123">Intervalo de contagem</span><span class="sxs-lookup"><span data-stu-id="4b643-123">Count range</span></span></li>
+    <li><span data-ttu-id="4b643-124">Intervalo de confiança</span><span class="sxs-lookup"><span data-stu-id="4b643-124">Confidence range</span></span></li>
+    <li><span data-ttu-id="4b643-125">Outras propriedades ou operadores para consultas mais complexas</span><span class="sxs-lookup"><span data-stu-id="4b643-125">Other properties or operators for more complex queries</span></span></li>
+<p><span data-ttu-id="4b643-126">Se necessário, modifique um tipo de informação confidencial para aprimorar o refinamento para a sua organização:</span><span class="sxs-lookup"><span data-stu-id="4b643-126">If necessary, modify a sensitive information type to improve accuracy for your organization:</span></span></p>
+<p><li><span data-ttu-id="4b643-127">Ajuste o nível de confiança diretamente no XML.</span><span class="sxs-lookup"><span data-stu-id="4b643-127">Adjust the confidence level directly in the XML.</span></span></li></p>
+<p><li><span data-ttu-id="4b643-128">Adicione palavras-chave.</span><span class="sxs-lookup"><span data-stu-id="4b643-128">Add key words.</span></span></li></p>
+<p><li><span data-ttu-id="4b643-129">Ajuste os requisitos de proximidade das palavras-chave.</span><span class="sxs-lookup"><span data-stu-id="4b643-129">Adjust the proximity requirements for keywords.</span></span></li></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span data-ttu-id="5c652-157">Criar um novo item de pesquisa para cada tipo de informação confidencial</span><span class="sxs-lookup"><span data-stu-id="5c652-157">Create a new search item for each sensitive information type</span></span></p></td>
-<td align="left"><p><span data-ttu-id="5c652-158">Use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="5c652-158">Use the following syntax:</span></span></p>
-<blockquote>
-<p><span data-ttu-id="5c652-159">SensitiveType:"&lt;type&gt;"</span><span class="sxs-lookup"><span data-stu-id="5c652-159">SensitiveType:”&lt;type&gt;”</span></span></p>
-</blockquote>
-<p><span data-ttu-id="5c652-160">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="5c652-160">For example:</span></span></p>
-<blockquote>
-<p><span data-ttu-id="5c652-161">SensitiveType:&quot;Número de passaporte francês&quot;</span><span class="sxs-lookup"><span data-stu-id="5c652-161">France Passport Number</span></span></p>
-</blockquote>
-<p><span data-ttu-id="5c652-p109">Amplie a pesquisa para o SharePoint (inclui o OneDrive for Business). A sintaxe deve ser exata e não deve haver erros de digitação ou espaços extras.</span><span class="sxs-lookup"><span data-stu-id="5c652-p109">Scope the search to SharePoint (includes OneDrive for Business). Make sure the syntax is exact and there are no extra spaces or typos.</span></span></p>
-<p><span data-ttu-id="5c652-164">Confira <a href="https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">Criar uma consulta para localizar dados confidenciais armazenados em sites</a>.</span><span class="sxs-lookup"><span data-stu-id="5c652-164">Form a query to find sensitive data stored on sites</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-130">2. Usar a Keyword Query Language (KQL) para localizar dados pessoais adicionais em seu ambiente</span><span class="sxs-lookup"><span data-stu-id="4b643-130">2. Use Keyword Query Language (KQL) to find additional personal data in your environment</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-131">Para localizar dados não incluídos nos tipos de informações confidenciais, use a linguagem de consulta KQL para desenvolver consultas personalizadas.</span><span class="sxs-lookup"><span data-stu-id="4b643-131">To find data not included in sensitive information types, use the KQL query language to develop custom queries.</span></span></p>
+<p><span data-ttu-id="4b643-132">Teste os resultados da pesquisa e ajuste a cadeia de caracteres de consulta da KQL até atingir o resultado esperado.</span><span class="sxs-lookup"><span data-stu-id="4b643-132">Test the results of these searches and adjust the KQL query string until you achieve the expected result.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><span data-ttu-id="5c652-165">Examinar os resultados de cada pesquisa</span><span class="sxs-lookup"><span data-stu-id="5c652-165">Review the results for each search</span></span></p></td>
-<td align="left"><p><span data-ttu-id="5c652-166">Identifique esses tipos de problemas para determinar se a precisão da consulta está adequada:</span><span class="sxs-lookup"><span data-stu-id="5c652-166">Look for these types of issues to determine if the query accuracy is on target:</span></span></p>
-<p><li><span data-ttu-id="5c652-167">Muitos falsos positivos</span><span class="sxs-lookup"><span data-stu-id="5c652-167">Many false positives</span></span></li></p>
-<p><li><span data-ttu-id="5c652-168">Falta de instâncias de dados conhecidos</span><span class="sxs-lookup"><span data-stu-id="5c652-168">Missing known instances of data</span></span></li></p>
-<p><span data-ttu-id="5c652-169">Confira <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportar os resultados da Pesquisa de Conteúdo do Centro de Conformidade e Segurança do Office 365</a>.</span><span class="sxs-lookup"><span data-stu-id="5c652-169">Export search results from the Office 365 Security & Compliance Center</span></span></p>
-<p><span data-ttu-id="5c652-170">Observação: se estiver usando o Mozilla Firefox ou o Chrome, pode ser preciso baixar antes os relatórios usando o Internet Explorer ou o Edge para instalar o suplemento necessário.</span><span class="sxs-lookup"><span data-stu-id="5c652-170">Note: if you’re using Mozilla Firefox or Chrome, you might need to first download reports using Internet Explorer or Edge in order to install the required add-in.</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-133">3. Criar novos tipos de informações confidenciais personalizados usando consultas KQL</span><span class="sxs-lookup"><span data-stu-id="4b643-133">3. Create new custom sensitive information types using the KQL queries</span></span></p></td>
+<td align="left"><span data-ttu-id="4b643-p104">Após otimizar as consultas KQL para localizar os dados de destino, crie novos tipos de informações confidenciais personalizados usando essas consultas. Em seguida, você pode usar esses tipos de informações confidenciais personalizados com a Pesquisa de Conteúdo, com as políticas DLP e outras ferramentas e em outras consultas KQL.</span><span class="sxs-lookup"><span data-stu-id="4b643-p104">After optimizing KQL queries to find target data, create new custom sensitive information types using these queries. You can then use these custom sensitive information types with Content Search, in DLP policies and other tools, and within other KQL queries.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="sensitive-information-types-for-eu-citizen-data"></a><span data-ttu-id="5c652-171">Tipos de informações confidenciais para os dados de cidadãos da União Europeia</span><span class="sxs-lookup"><span data-stu-id="5c652-171">Sensitive information types for EU citizen data</span></span>
+<span data-ttu-id="4b643-p105">Em breve será possível criar e modificar os tipos de informações confidenciais em uma nova interface do usuário no Centro de Conformidade e Segurança. Veja resultados correspondentes dinamicamente e ajuste os tipos de informações confidenciais para atender às suas necessidades.</span><span class="sxs-lookup"><span data-stu-id="4b643-p105">Coming soon — You'll be able to create and modify sensitive information types in a new user interface in the Security and Compliance Center. You can dynamically see matching results and tune sensitive information types to meet your needs.</span></span>
 
-<span data-ttu-id="5c652-p110">Comece com esses tipos de informações confidenciais, muitos outros chegarão em breve para os dados pessoais na União Europeia.</span><span class="sxs-lookup"><span data-stu-id="5c652-p110">Start with these sensitive information types. Many more sensitive information types are coming soon for personal data in EU countries.</span></span>
+## <a name="search-for-sensitive-information-types-using-content-search"></a><span data-ttu-id="4b643-138">Buscar tipos de informações confidenciais usando a Pesquisa de Conteúdo</span><span class="sxs-lookup"><span data-stu-id="4b643-138">Search for sensitive information types using Content Search</span></span>
 
-> <span data-ttu-id="5c652-174">Número nacional belga</span><span class="sxs-lookup"><span data-stu-id="5c652-174">Belgium National Number</span></span>
->
-> <span data-ttu-id="5c652-175">Número de cartão de crédito</span><span class="sxs-lookup"><span data-stu-id="5c652-175">Credit Card Number</span></span>
->
-> <span data-ttu-id="5c652-176">Número da carteira de identidade croata</span><span class="sxs-lookup"><span data-stu-id="5c652-176">Croatia Identity Card Number</span></span>
->
-> <span data-ttu-id="5c652-177">Número de identificação pessoal (NIB) croata</span><span class="sxs-lookup"><span data-stu-id="5c652-177">Croatia Personal Identification (OIB) Number</span></span>
->
-> <span data-ttu-id="5c652-178">Número da carteira nacional de identidade tcheca</span><span class="sxs-lookup"><span data-stu-id="5c652-178">Czech National Identity Card Number</span></span>
->
-> <span data-ttu-id="5c652-179">Número de identificação pessoal dinamarquês</span><span class="sxs-lookup"><span data-stu-id="5c652-179">Denmark Personal Identification Number</span></span>
->
-> <span data-ttu-id="5c652-180">Número de cartão de débito da UE</span><span class="sxs-lookup"><span data-stu-id="5c652-180">EU Debit Card Number</span></span>
->
-> <span data-ttu-id="5c652-181">RG nacional finlandês</span><span class="sxs-lookup"><span data-stu-id="5c652-181">Finland National ID</span></span>
->
-> <span data-ttu-id="5c652-182">Número de passaporte finlandês</span><span class="sxs-lookup"><span data-stu-id="5c652-182">Finland Passport Number</span></span>
->
-> <span data-ttu-id="5c652-183">Número da carteira de motorista francesa</span><span class="sxs-lookup"><span data-stu-id="5c652-183">France Driver's License Number</span></span>
->
-> <span data-ttu-id="5c652-184">Carteira nacional de identidade francesa (CNI)</span><span class="sxs-lookup"><span data-stu-id="5c652-184">France National ID Card (CNI)</span></span>
->
-> <span data-ttu-id="5c652-185">Número de passaporte francês</span><span class="sxs-lookup"><span data-stu-id="5c652-185">France Passport Number</span></span>
->
-> <span data-ttu-id="5c652-186">Número da segurança social francesa (INSEE)</span><span class="sxs-lookup"><span data-stu-id="5c652-186">France Social Security Number (INSEE)</span></span>
->
-> <span data-ttu-id="5c652-187">Número da carteira de motorista alemã</span><span class="sxs-lookup"><span data-stu-id="5c652-187">German Driver's License Number</span></span>
->
-> <span data-ttu-id="5c652-188">Número da carteira de identidade alemã</span><span class="sxs-lookup"><span data-stu-id="5c652-188">Identity Card Number
-</span></span>
->
-> <span data-ttu-id="5c652-189">Número de passaporte alemão</span><span class="sxs-lookup"><span data-stu-id="5c652-189">German Passport Number</span></span>
->
-> <span data-ttu-id="5c652-190">Carteira nacional de identidade grega</span><span class="sxs-lookup"><span data-stu-id="5c652-190">Greece National ID Card</span></span>
->
-> <span data-ttu-id="5c652-191">Número internacional de conta bancária (IBAN)</span><span class="sxs-lookup"><span data-stu-id="5c652-191">International Banking Account Number (IBAN)</span></span>
->
-> <span data-ttu-id="5c652-192">Endereço IP</span><span class="sxs-lookup"><span data-stu-id="5c652-192">IP Address</span></span>
->
-> <span data-ttu-id="5c652-193">Número de serviço público pessoal (PPS) irlandês</span><span class="sxs-lookup"><span data-stu-id="5c652-193">Ireland Personal Public Service (PPS) Number</span></span>
->
-> <span data-ttu-id="5c652-194">Número de carteira de motorista italiana</span><span class="sxs-lookup"><span data-stu-id="5c652-194">Italy’s Driver’s License Number</span></span>
->
-> <span data-ttu-id="5c652-195">Número do serviço do cidadão (BSN) holandês</span><span class="sxs-lookup"><span data-stu-id="5c652-195">Netherlands Citizen's Service (BSN) Number</span></span>
->
-> <span data-ttu-id="5c652-196">Número de identidade norueguesa</span><span class="sxs-lookup"><span data-stu-id="5c652-196">Norway Identity Number</span></span>
->
-> <span data-ttu-id="5c652-197">Carteira de identidade polonesa</span><span class="sxs-lookup"><span data-stu-id="5c652-197">Poland Identity Card</span></span>
->
-> <span data-ttu-id="5c652-198">RG nacional polonês (PESEL)</span><span class="sxs-lookup"><span data-stu-id="5c652-198">Poland National ID (PESEL)</span></span>
->
-> <span data-ttu-id="5c652-199">Passaporte polonês</span><span class="sxs-lookup"><span data-stu-id="5c652-199">Poland Passport</span></span>
->
-> <span data-ttu-id="5c652-200">Número do cartão do cidadão português</span><span class="sxs-lookup"><span data-stu-id="5c652-200">Portugal Citizen Card Number</span></span>
->
-> <span data-ttu-id="5c652-201">Número da segurança social espanhola (SSN)</span><span class="sxs-lookup"><span data-stu-id="5c652-201">Spain Social Security Number (SSN)</span></span>
->
-> <span data-ttu-id="5c652-202">RG nacional sueco</span><span class="sxs-lookup"><span data-stu-id="5c652-202">Sweden National ID</span></span>
->
-> <span data-ttu-id="5c652-203">Número de passaporte sueco</span><span class="sxs-lookup"><span data-stu-id="5c652-203">Sweden Passport Number</span></span>
->
-> <span data-ttu-id="5c652-p111">Número da carteira de motorista britânica</span><span class="sxs-lookup"><span data-stu-id="5c652-p111">U.K. Driver's License Number</span></span>
->
-> <span data-ttu-id="5c652-p112">Número do título de eleitor britânico</span><span class="sxs-lookup"><span data-stu-id="5c652-p112">U.K. Electoral Roll Number</span></span>
->
-> <span data-ttu-id="5c652-p113">Número do serviço nacional de saúde britânico</span><span class="sxs-lookup"><span data-stu-id="5c652-p113">U.K. National Health Service Number</span></span>
->
-> <span data-ttu-id="5c652-p114">Número do seguro nacional britânico (NINO)</span><span class="sxs-lookup"><span data-stu-id="5c652-p114">U.K. National Insurance Number (NINO)</span></span>
->
-> <span data-ttu-id="5c652-p115">Número de passaporte americano/britânico</span><span class="sxs-lookup"><span data-stu-id="5c652-p115">U.S. / U.K. Passport Number</span></span>
+<span data-ttu-id="4b643-p106">Comece a pesquisa de dados pessoais usando os tipos de informações confidenciais incluídos no Office 365. Eles estão relacionados no Centro de Conformidade e Segurança, em Classificação.</span><span class="sxs-lookup"><span data-stu-id="4b643-p106">Begin searching for personal data by using the sensitive information types that are included with Office 365. These are listed in the Security and Compliance Center under Classification.</span></span>
 
-## <a name="add-parameters-to-a-sensitive-information-type-query-to-hone-the-results"></a><span data-ttu-id="5c652-214">Adicionar parâmetros a uma consulta de tipo de informação confidencial para refinar os resultados</span><span class="sxs-lookup"><span data-stu-id="5c652-214">Add parameters to a sensitive information type query to hone the results</span></span>
+<span data-ttu-id="4b643-p107">Este tópico inclui uma lista atual dos tipos de informações confidenciais que se aplicam a cidadãos da União Europeia. Use-os como ponto de partida. Consulte regularmente o Centro de Conformidade e Segurança para ver as novas inclusões que podem ajudar a ficar em conformidade com o RGPD.</span><span class="sxs-lookup"><span data-stu-id="4b643-p107">This topic includes a list of current sensitive information types that apply to citizens in the European Union. Use these as a starting point. Check Security and Compliance Center frequently for new additions that can help with GDPR compliance.</span></span>
 
-<span data-ttu-id="5c652-215">É possível adicionar esses parâmetros a uma consulta de tipo de informação confidencial:</span><span class="sxs-lookup"><span data-stu-id="5c652-215">You can add these parameters to a sensitive information type query:</span></span>
+<span data-ttu-id="4b643-144">Veja também este artigo: [Lista de tipos de informações confidenciais e para que serve cada um](https://support.office.com/pt-BR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).</span><span class="sxs-lookup"><span data-stu-id="4b643-144">Also see this article: [List of sensitive information types and what each one looks for](https://support.office.com/pt-BR/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).</span></span>
 
--   <span data-ttu-id="5c652-216">Intervalo de contagem: define o número de ocorrências de informações confidenciais que um documento precisa conter para ser incluído nos resultados da consulta.</span><span class="sxs-lookup"><span data-stu-id="5c652-216">Count range — define the number of occurrences of sensitive information a document needs to contain before it’s included in the query results.</span></span>
+<span data-ttu-id="4b643-p108">Os tipos de informações confidenciais definem como o processo automatizado reconhecerá tipos específicos de informação, como números de contas bancárias, números de serviços de saúde e de cartões de crédito. Os tipos de informações confidenciais também são conhecidos como condições. Um tipo de informação confidencial se define por um padrão que pode ser identificado por uma expressão regular ou uma função. Além disso, podem-se usar evidências de comprovação como palavras-chave e somas de verificação para identificar um tipo de informação confidencial. Também se usa o nível de confiança e de proximidade no processo de avaliação.</span><span class="sxs-lookup"><span data-stu-id="4b643-p108">Sensitive information types define how the automated process recognizes specific information types such as bank account numbers, health service numbers, and credit card numbers. Sensitive information types are also referred to as conditions. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.</span></span>
 
--   <span data-ttu-id="5c652-217">Intervalo de confiança: o nível de confiança a que o tipo confidencial detectado realmente corresponde, como 85% (85%).</span><span class="sxs-lookup"><span data-stu-id="5c652-217">Confidence range — the level of confidence that the detected sensitive type is actually a match, such as 85 (85%).</span></span>
+<span data-ttu-id="4b643-150">No momento, os tipos de informações confidenciais não podem ser usados para localizar dados em repouso nas caixas de correio.</span><span class="sxs-lookup"><span data-stu-id="4b643-150">At this time sensitive information types cannot be used to find data at rest in mailboxes.</span></span>
 
-<span data-ttu-id="5c652-218">Sintaxe:</span><span class="sxs-lookup"><span data-stu-id="5c652-218">Syntax</span></span>
+### <a name="using-content-search-with-sensitive-information-types"></a><span data-ttu-id="4b643-151">Usar a Pesquisa de Conteúdo com os tipos de informações confidenciais</span><span class="sxs-lookup"><span data-stu-id="4b643-151">Using Content Search with sensitive information types</span></span>
 
--   <span data-ttu-id="5c652-219">SensitiveType:"\<tipo\>|\<intervalo de contagem\>|\<intervalo de confiança\>"</span><span class="sxs-lookup"><span data-stu-id="5c652-219">SensitiveType:”\<type\>|\<count range\>|\<confidence range\>”</span></span>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><span data-ttu-id="4b643-152"><strong>Etapa</strong></span><span class="sxs-lookup"><span data-stu-id="4b643-152"><strong>Step</strong></span></span></th>
+<th align="left"><span data-ttu-id="4b643-153"><strong>Mais informações</strong></span><span class="sxs-lookup"><span data-stu-id="4b643-153"><strong>More information</strong></span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd"><td align="left"><p><span data-ttu-id="4b643-154">Acessar a Pesquisa de Conteúdo no Centro de Conformidade e Segurança</span><span class="sxs-lookup"><span data-stu-id="4b643-154">Go to Content Search in the Security and Compliance Center</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-155">No painel esquerdo do Centro de Conformidade e Segurança, clique em **Pesquisa&amp; investigação** &gt; **Pesquisa de Conteúdo**.</span><span class="sxs-lookup"><span data-stu-id="4b643-155">In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** &gt; **Content search**.</span></span></p>
+<p><span data-ttu-id="4b643-156">Confira <a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Executar uma Pesquisa de Conteúdo no Centro de Conformidade e Segurança do Office 365</a>.</span><span class="sxs-lookup"><span data-stu-id="4b643-156">See <a href="https://support.office.com/en-us/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Run a Content Search in the Office 365 Security &amp; Compliance Center</a>.</span></span></p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><span data-ttu-id="4b643-157">Criar um novo item de pesquisa para cada tipo de informação confidencial</span><span class="sxs-lookup"><span data-stu-id="4b643-157">Create a new search item for each sensitive information type</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-158">Use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="4b643-158">Use the following syntax:</span></span></p>
+<blockquote>
+<p><span data-ttu-id="4b643-159">SensitiveType:"&lt;type&gt;"</span><span class="sxs-lookup"><span data-stu-id="4b643-159">SensitiveType:”&lt;type&gt;”</span></span></p>
+</blockquote>
+<p><span data-ttu-id="4b643-160">Por exemplo:</span><span class="sxs-lookup"><span data-stu-id="4b643-160">For example:</span></span></p>
+<blockquote>
+<p><span data-ttu-id="4b643-161">SensitiveType:&quot;Número de passaporte francês&quot;</span><span class="sxs-lookup"><span data-stu-id="4b643-161">SensitiveType:&quot;France Passport Number&quot;</span></span></p>
+</blockquote>
+<p><span data-ttu-id="4b643-p109">Amplie a pesquisa para o SharePoint (inclui o OneDrive for Business). A sintaxe deve ser exata e não deve haver erros de digitação ou espaços extras.</span><span class="sxs-lookup"><span data-stu-id="4b643-p109">Scope the search to SharePoint (includes OneDrive for Business). Make sure the syntax is exact and there are no extra spaces or typos.</span></span></p>
+<p><span data-ttu-id="4b643-164">Confira <a href="https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">Criar uma consulta para localizar dados confidenciais armazenados em sites</a>.</span><span class="sxs-lookup"><span data-stu-id="4b643-164">See <a href="https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">Form a query to find sensitive data stored on sites</a>.</span></span></p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><span data-ttu-id="4b643-165">Examinar os resultados de cada pesquisa</span><span class="sxs-lookup"><span data-stu-id="4b643-165">Review the results for each search</span></span></p></td>
+<td align="left"><p><span data-ttu-id="4b643-166">Identifique esses tipos de problemas para determinar se a precisão da consulta está adequada:</span><span class="sxs-lookup"><span data-stu-id="4b643-166">Look for these types of issues to determine if the query accuracy is on target:</span></span></p>
+<p><li><span data-ttu-id="4b643-167">Muitos falsos positivos</span><span class="sxs-lookup"><span data-stu-id="4b643-167">Many false positives</span></span></li></p>
+<p><li><span data-ttu-id="4b643-168">Falta de instâncias de dados conhecidos</span><span class="sxs-lookup"><span data-stu-id="4b643-168">Missing known instances of data</span></span></li></p>
+<p><span data-ttu-id="4b643-169">Confira <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportar os resultados da Pesquisa de Conteúdo do Centro de Conformidade e Segurança do Office 365</a>.</span><span class="sxs-lookup"><span data-stu-id="4b643-169">See <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Export Content Search results from the Office 365 Security &amp; Compliance Center</a>.</span></span></p>
+<p><span data-ttu-id="4b643-170">Observação: se estiver usando o Mozilla Firefox ou o Chrome, pode ser preciso baixar antes os relatórios usando o Internet Explorer ou o Edge para instalar o suplemento necessário.</span><span class="sxs-lookup"><span data-stu-id="4b643-170">Note: if you’re using Mozilla Firefox or Chrome, you might need to first download reports using Internet Explorer or Edge in order to install the required add-in.</span></span></p></td>
+</tr>
+</tbody>
+</table>
 
-<span data-ttu-id="5c652-220">Exemplos:</span><span class="sxs-lookup"><span data-stu-id="5c652-220">Examples:</span></span>
+## <a name="sensitive-information-types-for-eu-citizen-data"></a><span data-ttu-id="4b643-171">Tipos de informações confidenciais para os dados de cidadãos da União Europeia</span><span class="sxs-lookup"><span data-stu-id="4b643-171">Sensitive information types for EU citizen data</span></span>
 
--   <span data-ttu-id="5c652-221">SensitiveType:"Número de cartão de crédito|5" (retornará apenas os documentos que contenham exatamente cinco números de cartão de crédito)</span><span class="sxs-lookup"><span data-stu-id="5c652-221">SensitiveType:“Credit Card Number|5” (return only documents that contain exactly five credit card numbers)</span></span>
+<span data-ttu-id="4b643-p110">Comece com esses tipos de informações confidenciais, muitos outros chegarão em breve para os dados pessoais na União Europeia.</span><span class="sxs-lookup"><span data-stu-id="4b643-p110">Start with these sensitive information types. Many more sensitive information types are coming soon for personal data in EU countries.</span></span>
 
--   <span data-ttu-id="5c652-p116">SensitiveType:"Número de cartão de crédito|\*|85.." (o intervalo de confiança é 85% ou mais)</span><span class="sxs-lookup"><span data-stu-id="5c652-p116">SensitiveType:“Credit Card Number|\*|85..” (confidence range is 85 percent or higher)</span></span>
+> <span data-ttu-id="4b643-174">Número nacional belga</span><span class="sxs-lookup"><span data-stu-id="4b643-174">Belgium National Number</span></span>
+>
+> <span data-ttu-id="4b643-175">Número de Cartão de Crédito</span><span class="sxs-lookup"><span data-stu-id="4b643-175">Credit Card Number</span></span>
+>
+> <span data-ttu-id="4b643-176">Número da carteira de identidade croata</span><span class="sxs-lookup"><span data-stu-id="4b643-176">Croatia Identity Card Number</span></span>
+>
+> <span data-ttu-id="4b643-177">Número de identificação pessoal (NIB) croata</span><span class="sxs-lookup"><span data-stu-id="4b643-177">Croatia Personal Identification (OIB) Number</span></span>
+>
+> <span data-ttu-id="4b643-178">Número da carteira nacional de identidade tcheca</span><span class="sxs-lookup"><span data-stu-id="4b643-178">Czech National Identity Card Number</span></span>
+>
+> <span data-ttu-id="4b643-179">Número de identificação pessoal dinamarquês</span><span class="sxs-lookup"><span data-stu-id="4b643-179">Denmark Personal Identification Number</span></span>
+>
+> <span data-ttu-id="4b643-180">Número de cartão de débito da UE</span><span class="sxs-lookup"><span data-stu-id="4b643-180">EU Debit Card Number</span></span>
+>
+> <span data-ttu-id="4b643-181">RG nacional finlandês</span><span class="sxs-lookup"><span data-stu-id="4b643-181">Finland National ID</span></span>
+>
+> <span data-ttu-id="4b643-182">Número de passaporte finlandês</span><span class="sxs-lookup"><span data-stu-id="4b643-182">Finland Passport Number</span></span>
+>
+> <span data-ttu-id="4b643-183">Número da carteira de motorista francesa</span><span class="sxs-lookup"><span data-stu-id="4b643-183">France Driver's License Number</span></span>
+>
+> <span data-ttu-id="4b643-184">Carteira nacional de identidade francesa (CNI)</span><span class="sxs-lookup"><span data-stu-id="4b643-184">France National ID Card (CNI)</span></span>
+>
+> <span data-ttu-id="4b643-185">Número de passaporte francês</span><span class="sxs-lookup"><span data-stu-id="4b643-185">France Passport Number</span></span>
+>
+> <span data-ttu-id="4b643-186">Número da segurança social francesa (INSEE)</span><span class="sxs-lookup"><span data-stu-id="4b643-186">France Social Security Number (INSEE)</span></span>
+>
+> <span data-ttu-id="4b643-187">Número da carteira de motorista alemã</span><span class="sxs-lookup"><span data-stu-id="4b643-187">German Driver’s License Number</span></span>
+>
+> <span data-ttu-id="4b643-188">Número da carteira de identidade alemã</span><span class="sxs-lookup"><span data-stu-id="4b643-188">Germany Identity Card Number</span></span>
+>
+> <span data-ttu-id="4b643-189">Número de passaporte alemão</span><span class="sxs-lookup"><span data-stu-id="4b643-189">German Passport Number</span></span>
+>
+> <span data-ttu-id="4b643-190">Carteira nacional de identidade grega</span><span class="sxs-lookup"><span data-stu-id="4b643-190">Greece National ID Card</span></span>
+>
+> <span data-ttu-id="4b643-191">Número internacional de conta bancária (IBAN)</span><span class="sxs-lookup"><span data-stu-id="4b643-191">International Banking Account Number (IBAN)</span></span>
+>
+> <span data-ttu-id="4b643-192">Endereço IP</span><span class="sxs-lookup"><span data-stu-id="4b643-192">IP Address</span></span>
+>
+> <span data-ttu-id="4b643-193">Número de serviço público pessoal (PPS) irlandês</span><span class="sxs-lookup"><span data-stu-id="4b643-193">Ireland Personal Public Service (PPS) Number</span></span>
+>
+> <span data-ttu-id="4b643-194">Número de carteira de motorista italiana</span><span class="sxs-lookup"><span data-stu-id="4b643-194">Italy’s Driver’s License Number</span></span>
+>
+> <span data-ttu-id="4b643-195">Número do serviço do cidadão (BSN) holandês</span><span class="sxs-lookup"><span data-stu-id="4b643-195">Netherlands Citizen’s Service (BSN) Number</span></span>
+>
+> <span data-ttu-id="4b643-196">Número de identidade norueguesa</span><span class="sxs-lookup"><span data-stu-id="4b643-196">Norway Identity Number</span></span>
+>
+> <span data-ttu-id="4b643-197">Carteira de identidade polonesa</span><span class="sxs-lookup"><span data-stu-id="4b643-197">Poland Identity Card</span></span>
+>
+> <span data-ttu-id="4b643-198">RG nacional polonês (PESEL)</span><span class="sxs-lookup"><span data-stu-id="4b643-198">Poland National ID (PESEL)</span></span>
+>
+> <span data-ttu-id="4b643-199">Passaporte polonês</span><span class="sxs-lookup"><span data-stu-id="4b643-199">Poland Passport</span></span>
+>
+> <span data-ttu-id="4b643-200">Número do cartão do cidadão português</span><span class="sxs-lookup"><span data-stu-id="4b643-200">Portugal Citizen Card Number</span></span>
+>
+> <span data-ttu-id="4b643-201">Número da segurança social espanhola (SSN)</span><span class="sxs-lookup"><span data-stu-id="4b643-201">Spain Social Security Number (SSN)</span></span>
+>
+> <span data-ttu-id="4b643-202">RG nacional sueco</span><span class="sxs-lookup"><span data-stu-id="4b643-202">Sweden National ID</span></span>
+>
+> <span data-ttu-id="4b643-203">Número de passaporte sueco</span><span class="sxs-lookup"><span data-stu-id="4b643-203">Sweden Passport Number</span></span>
+>
+> <span data-ttu-id="4b643-p111">Número da carteira de motorista britânica</span><span class="sxs-lookup"><span data-stu-id="4b643-p111">U.K. Driver’s License Number</span></span>
+>
+> <span data-ttu-id="4b643-p112">Número do título de eleitor britânico</span><span class="sxs-lookup"><span data-stu-id="4b643-p112">U.K. Electoral Roll Number</span></span>
+>
+> <span data-ttu-id="4b643-p113">Número do serviço nacional de saúde britânico</span><span class="sxs-lookup"><span data-stu-id="4b643-p113">U.K. National Health Service Number</span></span>
+>
+> <span data-ttu-id="4b643-p114">Número do seguro nacional britânico (NINO)</span><span class="sxs-lookup"><span data-stu-id="4b643-p114">U.K. National Insurance Number (NINO)</span></span>
+>
+> <span data-ttu-id="4b643-p115">Número de passaporte americano/britânico</span><span class="sxs-lookup"><span data-stu-id="4b643-p115">U.S./U.K. Passport Number</span></span>
 
-<span data-ttu-id="5c652-224">Observação: "SensitiveType" diferencia maiúsculas e minúsculas, mas o restante da consulta não.</span><span class="sxs-lookup"><span data-stu-id="5c652-224">Note: “SensitiveType” is case sensitive, but the rest of the query is not.</span></span>
+## <a name="add-parameters-to-a-sensitive-information-type-query-to-hone-the-results"></a><span data-ttu-id="4b643-214">Adicionar parâmetros a uma consulta de tipo de informação confidencial para refinar os resultados</span><span class="sxs-lookup"><span data-stu-id="4b643-214">Add parameters to a sensitive information type query to hone the results</span></span>
 
-<span data-ttu-id="5c652-p117">Também é possível usar operadores e propriedades para ilustrar como você pode refinar suas consultas. Para obter mais informações e exemplos, confira [Criar uma consulta para localizar dados confidenciais armazenados em sites](https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).</span><span class="sxs-lookup"><span data-stu-id="5c652-p117">You can also use properties, and operators to illustrate how you can refine your queries. For more information and examples, see [Form a query to find sensitive data stored on sites](https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).</span></span>
+<span data-ttu-id="4b643-215">É possível adicionar esses parâmetros a uma consulta de tipo de informação confidencial:</span><span class="sxs-lookup"><span data-stu-id="4b643-215">You can add these parameters to a sensitive information type query:</span></span>
+
+-   <span data-ttu-id="4b643-216">Intervalo de contagem: define o número de ocorrências de informações confidenciais que um documento precisa conter para ser incluído nos resultados da consulta.</span><span class="sxs-lookup"><span data-stu-id="4b643-216">Count range — define the number of occurrences of sensitive information a document needs to contain before it’s included in the query results.</span></span>
+
+-   <span data-ttu-id="4b643-217">Intervalo de confiança: o nível de confiança a que o tipo confidencial detectado realmente corresponde, como 85% (85%).</span><span class="sxs-lookup"><span data-stu-id="4b643-217">Confidence range — the level of confidence that the detected sensitive type is actually a match, such as 85 (85%).</span></span>
+
+<span data-ttu-id="4b643-218">Sintaxe:</span><span class="sxs-lookup"><span data-stu-id="4b643-218">Syntax:</span></span>
+
+-   <span data-ttu-id="4b643-219">SensitiveType:"\<tipo\>|\<intervalo de contagem\>|\<intervalo de confiança\>"</span><span class="sxs-lookup"><span data-stu-id="4b643-219">SensitiveType:”\<type\>|\<count range\>|\<confidence range\>”</span></span>
+
+<span data-ttu-id="4b643-220">Exemplos:</span><span class="sxs-lookup"><span data-stu-id="4b643-220">Examples:</span></span>
+
+-   <span data-ttu-id="4b643-221">SensitiveType:"Número de cartão de crédito|5" (retornará apenas os documentos que contenham exatamente cinco números de cartão de crédito)</span><span class="sxs-lookup"><span data-stu-id="4b643-221">SensitiveType:“Credit Card Number|5” (return only documents that contain exactly five credit card numbers)</span></span>
+
+-   <span data-ttu-id="4b643-p116">SensitiveType:"Número de cartão de crédito|\*|85.." (o intervalo de confiança é 85% ou mais)</span><span class="sxs-lookup"><span data-stu-id="4b643-p116">SensitiveType:“Credit Card Number|\*|85..” (confidence range is 85 percent or higher)</span></span>
+
+<span data-ttu-id="4b643-224">Observação: "SensitiveType" diferencia maiúsculas e minúsculas, mas o restante da consulta não.</span><span class="sxs-lookup"><span data-stu-id="4b643-224">Note: “SensitiveType” is case sensitive, but the rest of the query is not.</span></span>
+
+<span data-ttu-id="4b643-p117">Também é possível usar operadores e propriedades para ilustrar como você pode refinar suas consultas. Para obter mais informações e exemplos, confira [Criar uma consulta para localizar dados confidenciais armazenados em sites](https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).</span><span class="sxs-lookup"><span data-stu-id="4b643-p117">You can also use properties, and operators to illustrate how you can refine your queries. For more information and examples, see [Form a query to find sensitive data stored on sites](https://support.office.com/pt-BR/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).</span></span>
