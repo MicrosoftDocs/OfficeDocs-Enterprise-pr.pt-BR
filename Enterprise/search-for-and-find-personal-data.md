@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 description: Saiba como pesquisar e localizar dados pessoais no Office 365.
-ms.openlocfilehash: f19aed534fe2bb4154edc31f0d1b0c82afcc1f04
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: c536686b25d94403e29b2f706d21a54e9f1cf9b3
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="search-for-and-find-personal-data"></a>Pesquisar e localizar dados pessoais
 
@@ -129,7 +128,7 @@ Comece com esses tipos de informações confidenciais, muitos outros chegarão e
 
 > Número nacional belga
 >
-> Número de cartão de crédito
+> Número de Cartão de Crédito
 >
 > Número da carteira de identidade croata
 >

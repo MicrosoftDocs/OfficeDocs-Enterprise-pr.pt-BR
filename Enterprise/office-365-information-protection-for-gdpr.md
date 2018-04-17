@@ -1,22 +1,24 @@
 ---
-title: "Proteção de Informações do Office 365 para GDPR"
+title: Proteção de Informações do Office 365 para GDPR
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
-ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom: Strat_O365_Enterprise
-ms.assetid: 
-description: "Esta solução demonstra como proteger dados confidenciais armazenados nos serviços do Office 365."
-ms.openlocfilehash: 235ff945fbc3f58c8bf102d41d89795ff4e1b64d
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.custom: ''
+ms.assetid: ''
+description: Esta solução demonstra como proteger dados confidenciais armazenados nos serviços do Office 365.
+ms.openlocfilehash: 276a7659d2bb23cf10099c0dbd3dd388f9b2442a
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Proteção de Informações do Office 365 para GDPR
 

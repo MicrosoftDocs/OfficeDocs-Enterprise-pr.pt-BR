@@ -1,5 +1,5 @@
 ---
-title: Microsoft Cloud Networking para arquitetos corporativos
+title: Rede do Microsoft Cloud para arquitetos corporativos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,17 +12,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
-description: "Resumo: Projete sua rede para plataformas e serviços da nuvem da Microsoft."
-ms.openlocfilehash: 3ad510ff63ec861976804ab62c85213652415bee
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Projete sua rede para plataformas e serviços da nuvem da Microsoft.'
+ms.openlocfilehash: 8b4a31c782abb359f521eb86fae211239bbb80d0
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft Cloud Networking para arquitetos corporativos
+# <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rede do Microsoft Cloud para arquitetos corporativos
 
  **Resumo:** Projete sua rede para plataformas e serviços da nuvem da Microsoft.
   
@@ -61,10 +60,10 @@ Confira as seguintes seções:
     
     Percorra o processo de design para criar uma rede Azure virtual (VNet) ideal para hospedar cargas de trabalho de TI baseadas em servidor, incluindo sub-redes, espaços de endereço, roteamento, DNS, balanceamento de carga e conectividade com a rede local, com outras VNets e com a Internet.
     
-Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) da Microsoft Virtual Academy.
+Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça o curso [Otimizar a rede para ofertas da Microsoft Cloud](https://mva.microsoft.com/pt-BR/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) da Microsoft Virtual Academy.
   
 > [!NOTE]
-> Estes artigos refletem a versão de **junho de 2017** do cartaz Microsoft Cloud Networking para arquitetos corporativos.
+> Estes artigos refletem a versão de **junho de 2017** do cartaz Rede do Microsoft Cloud para arquitetos corporativos.
   
 ## <a name="see-also"></a>Veja também
 
