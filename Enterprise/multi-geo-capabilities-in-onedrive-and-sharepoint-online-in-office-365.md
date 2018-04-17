@@ -3,7 +3,7 @@ title: Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
+ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,15 +11,15 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no OneDrive e SharePoint Online.
-ms.openlocfilehash: 2c5de533aaaace68e51b747cd62a53b9572bcaec
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
+ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365
 
-Com os recursos de multi-geo no OneDrive e SharePoint Online, sua organização pode expandir sua presença do Office 365 para várias regiões geográficas e/ou países dentro de seu locatário existente. Este recurso está atualmente no modo de visualização. Chegar aos sua equipe de conta da Microsoft para sua empresa multinacionais para a avaliação do OneDrive Multi-Geo se inscrever.
+Com os recursos de multi-geo no OneDrive e SharePoint Online, sua organização pode expandir sua presença do Office 365 para várias regiões geográficas e/ou países dentro de seu locatário existente. Chegar aos sua equipe de conta da Microsoft para inscrever-se a sua empresa multinacionais onedrive para negócios Multi-Geo.
   
 Com o OneDrive Multi-Geo, você pode provisionar e armazenar os dados em repouso nos locais geo escolhida para atender aos requisitos de residência de dados e ao mesmo tempo desbloquear seu rolo global sem experiências de produtividade moderno para sua força de trabalho.
   
