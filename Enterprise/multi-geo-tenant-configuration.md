@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Saiba como configurar o OneDrive for Business Multi-Geo.
-ms.openlocfilehash: 4ef31df802eeaedf2eecbdd295d2e359816e4909
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive para configuração do inquilino de negócios Multi-Geo
 
@@ -23,7 +24,7 @@ Antes de configurar seu locatário do OneDrive for Business Multi-Geo, certifiqu
 
 Para usar o OneDrive for Business Multi-Geo, você precisa ter o plano de _Recursos de Multi-Geo no Office 365_ . Trabalhar com sua equipe de conta para adicionar a este plano de seu locatário. Sua equipe de conta será conectá-lo com a especialista em licenciamento apropriada e obtenha seu locatário configurado.
 
-Observe que o plano de _Recursos de Multi-Geo no Office 365_ é um plano de serviço de nível do usuário. Você precisa de uma licença para cada usuário que você deseja hospedar em um local de setellite. Você pode adicionar mais licenças ao longo do tempo à medida que você adiciona usuários nos locais de satélite.
+Observe que o plano de _Recursos de Multi-Geo no Office 365_ é um plano de serviço de nível do usuário. Você precisa de uma licença para cada usuário que você deseja hospedar em um local de satélite. Você pode adicionar mais licenças ao longo do tempo à medida que você adiciona usuários nos locais de satélite.
 
 Quando seu locatário tenha sido provisionado com o plano de _Recursos de Multi-Geo no Office 365_ , na guia **locais Geo** estará disponível no [Centro de administração do OneDrive](https://admin.onedrive.com).
 
@@ -88,7 +89,7 @@ Para adicionar um local de geo satélite
 
 6. Clique em **Fechar**.
 
-Depois de concluído o provisionamento de um local de satélite, você receberá um email de confirmação. Quando o novo local de geo aparece em azul no mapa na guia **locais Geo** no Centro de administração do OneDrive, você poderá prosseguir para definir o local dos dados preferencial dos usuários ao geo-local. 
+Provisionamento pode demorar de algumas horas 72 horas, dependendo do tamanho do seu locatário. Depois de concluído o provisionamento de um local de satélite, você receberá um email de confirmação. Quando o novo local de geo aparece em azul no mapa na guia **locais Geo** no Centro de administração do OneDrive, você poderá prosseguir para definir o local dos dados preferencial dos usuários ao geo-local. 
 
 > [!IMPORTANT]
 > Irá configurar seu novo local geo satélite com as configurações padrão. Isso permitirá que você configure esse local geo conforme apropriado para suas necessidades de conformidade de local.

@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Saiba mais sobre a administração dos serviços do SharePoint e OneDrive em um ambiente multi-geo.
-ms.openlocfilehash: f49cf35503ee6495b5982dc7d72f9b1936f564c6
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrando um ambiente multi-geo
 
@@ -27,7 +28,7 @@ O [Centro de administração do OneDrive](https://admin.onedrive.com) tem uma gu
 
 Oferecemos suporte uma unificada [taxonomia](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) para metadados corporativos gerenciados entre localidades geo, com o mestre que está sendo hospedado no local central para sua empresa. Recomendamos que você gerenciar seu taxonomia global do local central e apenas Adicione termos específicos do local para taxonomia do local geo de satélite. Termos de taxonomia global serão sincronizadas com os locais de geo satélite.
 
-#### <a name="sharing"></a>Compartilhando
+#### <a name="sharing"></a>Compartilhamento
 
 Os administradores podem definir e gerenciar políticas de compartilhamento para cada um dos seus locais. Os sites de OneDrive em cada local geo aceita somente as correspondente geo compartilhamento configurações específicas. Por exemplo, você pode permitir o [compartilhamento externo](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) de seu local central, mas não para sua satélite local ou vice-versa. Para o OneDrive Multi-Geo, você deve gerenciar suas configurações de compartilhamento em cada local geo como essas não são sincronizadas entre o inquilino.
 

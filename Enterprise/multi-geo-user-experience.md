@@ -1,5 +1,5 @@
 ---
-title: Experiência do usuário em um ambiente de multgeo
+title: User experience in a multgeo environment
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,70 +7,71 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
-description: Saiba mais sobre a experiência do usuário do SharePoint e OneDrive em um ambiente multi-geo.
-ms.openlocfilehash: 91837883ef7c970674a500afa4fda9adfafc6d5b
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+description: Learn about the SharePoint and OneDrive user experience in a multi-geo environment.
+ms.openlocfilehash: 42e384d3e93ca3f5a06a8ee07a37b10e21477038
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="user-experience-in-a-multi-geo-environment"></a>Experiência do usuário em um ambiente multi-geo
+# <a name="user-experience-in-a-multi-geo-environment"></a>User experience in a multi-geo environment
 
-Aqui está o que os usuários verão em uma configuração de OneDrive Multi-Geo:
+Here’s what your users will see in a OneDrive Multi-Geo configuration:
 
-#### <a name="users-onedrive-for-business-location"></a>OneDrive do usuário para o local da empresa
+#### <a name="users-onedrive-for-business-location"></a>User’s OneDrive for Business location
 
-Os usuários terão sua OneDrive for Business provisionado no seu local de dados preferida. Se um usuário navega até um URL de OneDrive que contém uma localização geográfica incorreta (por exemplo, um indicador de um local de geo anterior), eles serão automaticamente redirecionados para o OneDrive no geo-local apropriado.
+Users will have their OneDrive for Business provisioned in their preferred data location. If a user navigates to a OneDrive URL that contains an incorrect geo-location (such as a bookmark from a previous geo-location), they are automatically redirected to the OneDrive in the appropriate geo-location.
 
-#### <a name="sharing"></a>Compartilhando
+#### <a name="sharing"></a>Compartilhamento
 
-A experiência do People Picker mostra todos os usuários onde quer que estejam geo. Isso permite que um usuário compartilhar com outro usuário em seu geo mesmo ou em qualquer um dos outros locais de localização geográfica do seu locatário. Conteúdo de diferente geo locais serão exibidas no modo de exibição **compartilhou** no OneDrive do usuário for Business e podem ser acessados com experiência de Single-Sign-On independentemente de qual geo-local está hospedada no.
+The People Picker experience shows all users regardless of their geo location. This allows a user to share with another user in their same geo or in any other of your tenant’s geo locations. Content from different geo locations will show up in the **Shared with Me** view in the user's OneDrive for Business and can be accessed with Single-Sign-On experience regardless of which geo-location it is hosted in.
 
 #### <a name="office-applications"></a>Aplicativos do Office
 
-Aplicativos do Office como Word, Excel e PowerPoint detectará automaticamente o correto OneDrive for Business geo-local para cada usuário quando fazem logon. Os usuários não precisam digitar a URL de geo específica para sua OneDrive.
+Office applications such as Word, Excel, and PowerPoint will automatically detect the correct OneDrive for Business geo-location for each user when they log in. Users do not need to enter the geo-specific URL for their OneDrive.
 
-#### <a name="onedrive-for-business-sync-client"></a>OneDrive for Business cliente de sincronização
+#### <a name="onedrive-for-business-sync-client"></a>OneDrive for Business Sync Client
 
-O OneDrive for Business cliente de sincronização (versão 17.3.6943.0625 e posterior) detectará automaticamente o OneDrive correto para o local da empresa geo para o usuário.
+The OneDrive for Business Sync Client (version 17.3.6943.0625 and later) will automatically detect the correct OneDrive for Business geo location for the user.
 
 #### <a name="office-365-app-launcher"></a>Inicializador de aplicativos do Office 365
 
-O iniciador app está ciente Multi-Geo e direcionará cada lado a lado para o local apropriado geo da carga de trabalho. Os pontos de blocos de OneDrive para o local correto geo onde a biblioteca do OneDrive do usuário está hospedada, enquanto a lado a lado SharePoint apontará todos os usuários para o local central, como sites de equipe ainda estejam hospedados lá.
+The app launcher is Multi-Geo aware and will direct each tile to the appropriate geo location of the workload. The OneDrive tile points to the correct geo location where the user’s OneDrive library is hosted, while the SharePoint tile will point all users to the central location, as team sites are still hosted there.
 
-#### <a name="delve-user-profiles"></a>Me aprofundar perfis de usuário
+#### <a name="delve-user-profiles"></a>Delve User profiles
 
-Informações de perfil de usuário são administradas no local de geo do usuário. Ao selecionar um usuário, você será direcionado para o local de geo apropriado para o usuário, onde você verá seus detalhes de perfil completo.
+User profile information is mastered in the user's geo location. When selecting a user, you will be directed to the appropriate geo location for the user, where you will see their full profile details.
 
-Se Delve estiver desativada, você verá o perfil clássico experiência no SharePoint, que não é multi-geo ciente.
+If Delve is turned off, you will see the classic profile experience in SharePoint, which is not multi-geo aware.
 
 #### <a name="delve"></a>Delve
 
-Para usuários do Office 365 que estiverem nas instâncias de satélite, Multi-Geo me aprofundar é suportado, com a limitação que são Delve não vinculados a postagens de blog do SharePoint escritas por usuários de outras regiões, apenas aos seus sites de blog do SharePoint.
+For Office 365 users who are in the satellite instances, Delve Multi-Geo is supported, with the limitation that Delve doesn’t link to SharePoint blog posts written by users in other regions, only to their SharePoint blog sites.
 
 #### <a name="search"></a>Pesquisa
 
-Cada local geo tem seus próprios índice de pesquisa e o Centro de pesquisa. Quando um usuário procura, a consulta é enviada para todos os locais de geo e resultados retornados são mesclados e, em seguida, classificados para que o usuário obtém resultados unificados. Os usuários obtém os resultados de todos os locais de geo onde quer que estejam suas próprias geo. Consulte [Configurar a pesquisa do OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) para obter informações específicas.
+Each geo location has its own search index and Search Center. When a user searches, the query is sent to all the geo locations, and the returned results are merged and then ranked so the user gets unified results. Users get results from all geo locations regardless of their own geo location. See [Configure Search for OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) for specifics.
 
-Há suporte para os seguintes clientes de pesquisa:
+The following search clients are supported:
 
 -   OneDrive for Business
 
 -   Delve
 
--   Página inicial do SharePoint
+-   SharePoint Home
 
--   Centro de pesquisa
+-   The Search Center
 
--   Aplicativos de pesquisa personalizados que usam a API de pesquisa do SharePoint
+-   Custom search applications that use the SharePoint Search API
 
-#### <a name="onedrive-ios-and-android"></a>OneDrive iOS e Android 
+#### <a name="onedrive-ios-and-android"></a>OneDrive iOS and Android 
 
-O iOS OneDrive e aplicativos móveis Android mostrará seus arquivos de OneDrive e os arquivos compartilhados com você, independente da sua localização geográfica. Pesquisa de aplicativos móveis OneDrive mostrará resultados relevantes de todos os locais de geo. Baixe a versão mais recente desses aplicativos.
+The OneDrive iOS and Android mobile apps will show you your OneDrive files and files shared with you regardless of their geo location. Search from the OneDrive mobile apps will show relevant results from all geo locations. Please download the latest version of these apps.
 
-Para obter mais informações, consulte Use [OneDrive em iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) e [Uso do OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) .
+See Use [OneDrive on iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) and [Use OneDrive for Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36) for more information.
 
-#### <a name="teams-experience"></a>Experiência de equipes
+#### <a name="teams-experience"></a>Teams Experience
 
-As equipes é multi-geo ciente. Arquivos de OneDrive e visualizadas recentemente são mostrados, independentemente da localização do geo do usuário. @ menções o trabalho com usuários de todos os locais de geo.
+Teams is multi-geo aware. OneDrive files and recently viewed files are shown regardless of the user’s geo location. @ mentions work with users from all geo-locations.

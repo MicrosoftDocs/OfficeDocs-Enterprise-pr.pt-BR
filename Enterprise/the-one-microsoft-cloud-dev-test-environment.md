@@ -1,5 +1,5 @@
 ---
-title: O ambiente de desenvolvimento e teste de um Microsoft Cloud
+title: Ambiente de desenvolvimento e teste do One Microsoft Cloud
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,17 +12,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft."
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft.'
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-one-microsoft-cloud-devtest-environment"></a>O ambiente de desenvolvimento e teste de um Microsoft Cloud
+# <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente de desenvolvimento e teste do One Microsoft Cloud
 
  **Resumo:** Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui todas as ofertas de nuvem da Microsoft.
   
@@ -59,22 +58,22 @@ Nesta fase, inscreva-se para a assinatura de avaliação do EMS e adicione-a à 
   
 1. Com um navegador em um computador desktop ou do CLIENT1, entrar no portal do Office 365 em [https://portal.office.com](https://portal.office.com) com as credenciais da sua conta de administrador global.
     
-2. Clique no lado do **Admin** .
+2. Clique no bloco de **Administração**.
     
-3. Na guia do **Centro de administração do Office** em seu navegador, no painel de navegação esquerdo, clique em **faturamento > Serviços de compra**.
+3. Na guia **Centro de Administração do Office** no navegador, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
     
 4. Na página **Serviços de compra** , localize o item de **mobilidade corporativos + E5 de segurança** . Passe o ponteiro do mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
     
-5. Na página **confirmar seu pedido** , clique em **tente agora**.
+5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
-6. Na página **confirmação de ordem** , clique em **continuar**.
+6. Na página **Recibo do pedido**, clique em **Continuar**.
     
 > [!NOTE]
 > A assinatura de avaliação do Enterprise Mobility + Security E5 dura 90 dias. Para um ambiente de desenvolvimento/teste permanente, crie uma nova assinatura paga com uma pequena quantidade de licenças. 
   
 Em seguida, habilite a mobilidade corporativos + licença E5 de segurança para todas as contas de usuário.
   
-1. Na guia do **Centro de administração do Office 365** em seu navegador, no painel de navegação esquerdo, clique em **usuários > usuários ativos**.
+1. Na guia **Centro de Administração do Office 365** no navegador, no painel de navegação esquerdo, clique em **Usuários > Usuários ativos**.
     
 2. Clique em sua conta de administrador global e, em seguida, clique em **Editar** para **licenças de produto**.
     
@@ -102,15 +101,15 @@ Nesta fase, inscreva-se para a assinatura de avaliação do Dynamics 365 e adici
   
 1. Usando um navegador em um computador desktop ou do CLIENT1, entrar no portal do Office 365 em [https://portal.office.com](https://portal.office.com) com as credenciais da sua conta de administrador global.
     
-2. Clique no lado do **Admin** .
+2. Clique no bloco de **Administração**.
     
 3. Na guia **Centro de administração do Office** , no painel de navegação esquerdo, clique em **faturamento > Serviços de compra**.
     
 4. Na página **Serviços de compra** , encontre o item **Dynamics 365 planejar 1 Enterprise Edition** . Passe o ponteiro do mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
     
-5. Na página **confirmar seu pedido** , clique em **tente agora**.
+5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
-6. Na página **confirmação de ordem** , clique em **continuar**.
+6. Na página **Recibo do pedido**, clique em **Continuar**.
     
 > [!NOTE]
 > A assinatura de avaliação do Dynamics 365 planejar 1 Enterprise Edition é 30 dias. Você pode estender facilmente a assinatura de trilha para outro 30 dias. Para um ambiente de desenvolvimento e teste permanente, crie uma nova assinatura com um pequeno número de licenças paga. 
@@ -184,7 +183,7 @@ Agora, você pode experimentar seu ambiente de desenvolvimento e teste de um Mic
     
 - [Criar uma rede de locais cruzados simulado nos serviços de infraestrutura do Windows Azure para hospedar as cargas de trabalho baseado em servidor](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   

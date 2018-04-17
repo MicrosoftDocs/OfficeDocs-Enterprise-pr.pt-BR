@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Saiba mais sobre como configurar a pesquisa em um ambiente multi-geo.
-ms.openlocfilehash: 5aa1e9eb189e00dbed8f575e88046b661341bf52
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar a pesquisa do OneDrive para Business Multi-Geo
 

@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
-description: "Resumo: Obtenha cartazes IT que descrevem os modelos de arquitetura, implantação e opções de plataforma para SharePoint, Exchange, Skype para Lync e de negócios."
-ms.openlocfilehash: 94f33ec4460758276cfada3ef9fcc4a444e9133a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Obtenha cartazes IT que descrevem os modelos de arquitetura, implantação e opções de plataforma para SharePoint, Exchange, Skype para Lync e de negócios.'
+ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -168,7 +167,7 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem de sites da Internet no Windows Azure usando o SharePoint](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |Este cartaz descreve as atividades de design principal e recomendado escolhas de arquitetura para sites na Internet no Windows Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md).<br/><br/> Para saber mais, confira os seguintes artigos:  <br/><br/> - [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Imagem de sites da Internet no Windows Azure usando o SharePoint](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |Este cartaz descreve as atividades de design principal e recomendado escolhas de arquitetura para sites na Internet no Windows Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Exemplo de design: sites da Internet no Microsoft Azure para SharePoint 2013
 <a name="DesignSampleInternetSites"> </a>
@@ -177,7 +176,7 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem da amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Use essa amostra de design como ponto de partida para seu próprio site voltado à Internet de arquitetura no Windows Azure usando o SharePoint Server 2013. Para obter uma versão texto acessível este cartaz, consulte [diagrama acessível - exemplo de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Para saber mais, confira os seguintes artigos:  <br/><br/> - [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Imagem da amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Use essa amostra de design como ponto de partida para seu próprio site voltado à Internet de arquitetura no Windows Azure usando o SharePoint Server 2013. Para obter uma versão texto acessível este cartaz, consulte [diagrama acessível - exemplo de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Recuperação de desastre do SharePoint para o Microsoft Azure
 <a name="sharepoint_recovery_Azure"> </a>
@@ -186,9 +185,9 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Processo de recuperação de desastres do SharePoint no Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Este cartaz IT ilustra os princípios de arquitetura para um ambiente de recuperação de desastres no Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - recuperação de desastres do SharePoint para o Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Para saber mais, confira os seguintes artigos:  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Processo de recuperação de desastres do SharePoint no Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Este cartaz IT ilustra os princípios de arquitetura para um ambiente de recuperação de desastres no Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - recuperação de desastres do SharePoint para o Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <a name="Lync2013_Options"> </a>
 

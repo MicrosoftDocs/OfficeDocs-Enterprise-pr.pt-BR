@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Resumo: Saiba mais sobre os usos para sites de equipe do SharePoint Online isolados.'
-ms.openlocfilehash: 7798a1aa7bdf39783c3d83bc11fba03f3a3f711e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 358bb16c01c51a76da6557091dacca75e317bf92
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Isolado sites de equipe do SharePoint Online
 
@@ -60,7 +59,7 @@ Para testar um site de equipe do SharePoint Online isolado em uma assinatura de 
   
 Quando estiver pronto para implantar um site de equipe do SharePoint Online isolado em produção, consulte as considerações de design passo a passo em [um site de equipe do SharePoint Online isolado de Design](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Projetar um site de equipe do SharePoint Online isolado](design-an-isolated-sharepoint-online-team-site.md)
   

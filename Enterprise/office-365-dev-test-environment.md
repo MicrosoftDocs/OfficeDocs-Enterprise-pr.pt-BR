@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumo: Use este guia de laboratório de teste para criar uma assinatura de avaliação do Office 365 para avaliação ou desenvolvimento e teste.'
-ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
 
@@ -26,7 +29,7 @@ Você pode usar uma assinatura de avaliação do Office 365 e criar um ambiente 
   
 - O ambiente de desenvolvimento e teste do Office 365 lightweight consiste em uma assinatura de avaliação do Office 365 que você pode acessar do computador principal.
     
-    Use esse ambiente quando quiser demonstrar rapidamente um recurso. Para o ambiente de desenvolvimento e teste do Office 365 leve, conclua as etapas 2 e 3 deste artigo.
+    Use esse ambiente quando quiser demonstrar rapidamente um recurso. Para o ambiente de desenvolvimento e teste leve do Office 365, conclua somente as fases 2 e 3 deste artigo.
     
 - Ambiente de desenvolvimento e teste do Office 365 enterprise simulado consiste em uma assinatura de avaliação do Office 365 e uma intranet da organização simplificado conectado à Internet, que é hospedada no serviços de infraestrutura do Microsoft Azure. Você pode construir essa configuração completamente na nuvem da Microsoft.
     
@@ -38,7 +41,7 @@ Você pode usar uma assinatura de avaliação do Office 365 e criar um ambiente 
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Fase 1: Criar a configuração base no Windows Azure
 
@@ -56,13 +59,13 @@ Essa configuração consiste das máquinas virtuais DC1, APP1 e CLIENT1 em uma s
 
 Para iniciar a sua assinatura de avaliação do Office 365 E5, primeiro é necessário um nome de empresa fictícia e uma nova conta da Microsoft.
   
-1. É recomendável que você usar uma variant do nome da empresa Contoso para o nome da sua empresa, que é uma empresa fictícia usada no conteúdo de exemplo da Microsoft, mas isso não é obrigatório. Registrar seu nome de empresa fictícia aqui: _.
+1. É recomendável que você usar uma variant do nome da empresa Contoso para o nome da sua empresa, que é uma empresa fictícia usada no conteúdo de exemplo da Microsoft, mas isso não é obrigatório. Registre seu nome de empresa fictícia aqui:![](./images/Common_Images/TableLine.png)
     
 2. Para se inscrever para uma nova conta da Microsoft, vá para [https://outlook.com](https://outlook.com) e crie uma conta com uma nova conta de email e o endereço. Você usará essa conta para inscrever-se no Office 365.
     
-  - Registre o nome e sobrenome de sua nova conta: _.
+  - Registre o nome e sobrenome de sua nova conta:![](./images/Common_Images/TableLine.png)
     
-  - Registrar o nova conta endereço de email aqui: ___@outlook.com
+  - Registrar o nova conta endereço de email aqui: ![](./images/Common_Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Inscreva-se para uma assinatura de avaliação do Office 365 E5
 
@@ -105,7 +108,7 @@ Stop-Process -Name Explorer -Force
     
     Registre a senha que você digitou em um local seguro.
     
-    Registrar seu nome de empresa fictícia, para ser referida como o **nome da organização**, aqui: _.
+    Registre o nome da sua empresa fictícia, para ser referida como o **nome da organização**, aqui:![](./images/Common_Images/TableLine.png)
     
 5. Clique em **Criar minha conta**.
     
@@ -113,9 +116,9 @@ Stop-Process -Name Explorer -Force
     
 7. Digite o código de verificação da mensagem de texto recebido e clique em **Avançar**.
     
-8. Registre a URL de página de entrada aqui (select e cópia): _.
+8. Registre a URL da página de entrada aqui (select e cópia):![](./images/Common_Images/TableLine.png)
     
-9. Registre a ID de usuário aqui (select e cópia): ___.onmicrosoft.com
+9. Registre a ID de usuário aqui (select e cópia): ![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Esse valor será chamado como o **nome de administrador global do Office 365**.
     
@@ -229,11 +232,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Registre esses valores para trabalhar com ou implantando guias de laboratório de teste adicionais neste ambiente de teste:
   
-- Nome de administrador global do Office 365: ___.onmicrosoft.com (da etapa 9 da fase 2)
+- Nome de administrador global do Office 365: ![](./images/Common_Images/TableLine.png). onmicrosoft.com (da etapa 9 da fase 2)
     
     Além disso, registre a senha dessa conta em um local seguro.
     
-- O nome da sua organização de assinatura de avaliação: _ (da etapa 4 da fase 2)
+- O nome da sua organização de assinatura de avaliação: ![](./images/Common_Images/TableLine.png) (da etapa 4 da fase 2)
     
 - Para listar as contas de usuário 2, 3 do usuário, usuário 4 e 5 do usuário, execute o seguinte comando a partir do prompt do Windows Azure Active Directory módulo para Windows PowerShell:
     
@@ -243,13 +246,13 @@ Registre esses valores para trabalhar com ou implantando guias de laboratório d
 
     Registre os nomes de conta:
     
-  - Nome da conta de usuário 2: user2@___.onmicrosoft.com
+  - Nome da conta de usuário 2: Usuário2 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nome da conta de usuário 3: user3@___.onmicrosoft.com
+  - Nome da conta de usuário 3: user3 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nome da conta de usuário 4: user4@___.onmicrosoft.com
+  - Nome da conta de usuário 4: user4 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
-  - Nome da conta de usuário 5: user5@___.onmicrosoft.com
+  - Nome da conta de usuário 5: user5 @![](./images/Common_Images/TableLine.png). onmicrosoft.com
     
     Registre também as senhas para essas contas em um local seguro.
     
@@ -259,11 +262,11 @@ Registre esses valores para trabalhar com ou implantando guias de laboratório d
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL do site de produção:https://______________________________________________.sharepoint.com/sites/production
+  - URL do site de produção: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/production
     
-  - URL do site de vendas:https://______________________________________________.sharepoint.com/sites/sales
+  - URL do site de vendas: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
     
-  - URL do site de suporte:https://______________________________________________.sharepoint.com/sites/support
+  - URL do site de suporte: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -271,34 +274,34 @@ Use estes artigos adicionais em seu ambiente de desenvolvimento e teste do Offic
   
 - [Sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
-- [A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
+- [Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
 - [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
-- [Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [ Segurança no Aplicativo na Nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
-- [Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
-- [EDiscovery avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-- [Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
+- [Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
-- [Isolado ambiente de desenvolvimento e teste de site equipe do SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
-- [Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
+- [Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
 Estenda seu ambiente de desenvolvimento e teste do Office 365 para incluir adicionais ofertas de nuvem da Microsoft:
   
-- [O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
+- [Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
     
-- [Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
+- [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+- [Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+ - [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 

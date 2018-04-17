@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: "Resumo: Use este guia de laboratório de teste para adicionar Dynamics 365 ao seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Resumo: Use este guia de laboratório de teste para adicionar Dynamics 365 ao seu ambiente de desenvolvimento e teste do Office 365.'
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365
 
@@ -39,7 +41,7 @@ Você pode explorar uma ou mais das perguntas acima para sua assinatura de avali
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -56,17 +58,17 @@ Nesta fase, inscreva-se para a assinatura de avaliação do Dynamics 365 e adici
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Inscreva-se para uma assinatura de avaliação do Dynamics 365
 
-1. Usando um navegador em um computador desktop (lightweight) ou CLIENT1 (simulados enterprise), entre no portal do Office 365 em [https://portal.office.com](https://portal.office.com) com as credenciais da sua conta de administrador global.
+1. Usando um navegador em um computador desktop (lightweight) ou CLIENT1 (simulados enterprise), entrar no portal do Office 365 em [https://portal.office.com](https://portal.office.com) com as credenciais da sua conta de administrador global.
     
-2. Clique no lado do **Admin** .
+2. Clique no bloco de **Administração**.
     
 3. Na guia **Centro de administração do Office** , no painel de navegação esquerdo, clique em **faturamento > Serviços de compra**.
     
 4. Na página **Serviços de compra** , encontre o item **Dynamics 365 planejar 1 Enterprise Edition** . Passe o ponteiro do mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
     
-5. Na página **confirmar seu pedido** , clique em **tente agora**.
+5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
-6. Na página **confirmação de ordem** , clique em **continuar**.
+6. Na página **Recibo do pedido**, clique em **Continuar**.
     
 > [!NOTE]
 > A assinatura de avaliação do Dynamics 365 planejar 1 Enterprise Edition é 30 dias. Você pode estender facilmente a assinatura de trilha para outro 30 dias. Para um ambiente de desenvolvimento e teste permanente, crie uma nova assinatura com um pequeno número de licenças paga. 
@@ -130,13 +132,13 @@ Seu ambiente de desenvolvimento e teste do Office 365 e Dynamics 365 agora tem:
 
 Configurar e, em seguida, demonstre como Office 365 e Dynamics 365 trabalham juntos caixas de correio no Exchange Online com [integração com o Exchange Online para o seu ambiente de desenvolvimento e teste do Office 365 e Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) 
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
 [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 

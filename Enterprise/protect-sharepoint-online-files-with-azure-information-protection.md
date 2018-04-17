@@ -1,5 +1,5 @@
 ---
-title: "Proteger os arquivos do SharePoint Online com proteção de informações do Windows Azure"
+title: Proteger os arquivos do SharePoint Online com proteção de informações do Windows Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
-description: "Resumo: Aplica proteção de informações do Windows Azure para proteger os arquivos em um site de equipe do SharePoint Online altamente confidencial."
-ms.openlocfilehash: 0b83b3d17a9b61eac359338389051f7354fb6af4
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Aplica proteção de informações do Windows Azure para proteger os arquivos em um site de equipe do SharePoint Online altamente confidencial.'
+ms.openlocfilehash: 84bd1f48c7051f945e7b851f829421364de2a557
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Proteger os arquivos do SharePoint Online com proteção de informações do Windows Azure
 
@@ -29,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 Use as etapas neste artigo para configurar a proteção de informações do Windows Azure para fornecer criptografia e permissões para os arquivos em um site de equipe do SharePoint Online altamente confidencial. A proteção de criptografia e permissões viaja com um arquivo, mesmo quando ele é baixado do site. Para obter mais informações sobre altamente confidenciais sites de equipe do SharePoint Online, consulte [arquivos e sites seguro do SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
 > [!NOTE]
-> Quando a criptografia de proteção de informações do Windows Azure é aplicada aos arquivos armazenados no Office 365, o serviço não pode processar o conteúdo desses arquivos. Coautoria, eDiscovery, pesquisa, Delve e outros recursos colaborativos não funcionam. Políticas de Loss Prevention (DLP) de dados só podem trabalhar com os metadados (incluindo os rótulos do Office 365), mas não o conteúdo desses arquivos (por exemplo, números de cartão de crédito dentro de arquivos). 
+> Quando a criptografia da Proteção de Informações do Azure é aplicada aos arquivos armazenados no Office 365, o serviço não pode processar o conteúdo desses arquivos. Coautoria, descoberta eletrônica, pesquisa, Delve e outros recursos de colaboração não funcionam. Políticas DLP só funcionam com metadados (incluindo rótulos do Office 365), mas não com o conteúdo desses arquivos (como números de cartão de crédito em arquivos). 
   
 Primeiro, use as instruções em [Ativar o Azure RMS com o Centro de administração do Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) para sua assinatura do Office 365.
   
@@ -45,23 +44,23 @@ Em seguida, configure a proteção de informações do Windows Azure com uma nov
     
 5. No blade **proteção das informações do Azure** , clique em **escopo políticas > + Adicionar uma nova diretiva**.
     
-6. Digite um nome para a nova política no **nome da política** e uma descrição em **Descrição**.
+6. Digite um nome para a nova política no **Nome da política** e uma descrição em **Descrição**.
     
-7. Clique em **Selecione quais usuários ou grupos fazer essa política > grupos de usuários/**, e acessar os membros do site, em seguida, selecione grupo para seu site de equipe do SharePoint Online altamente confidencial. 
+7. Clique em **Selecionar quais usuários ou grupos obtêm esta política > Usuário/ Grupos**, e selecione o grupo de acesso dos membros do site para o site da equipe do SharePoint Online altamente confidencial. 
     
-8. Clique em **Selecione > Okey**.
+8. Clique em **Selecionar > OK**.
     
-9. Para o rótulo de **Altamente confidenciais** , clique nas reticências (…) e, em seguida, clique em **Adicionar um rótulo de subsites**.
+9. Para o rótulo **Altamente Confidencial**, clique nas reticências (...) e, em seguida, clique em **Adicionar um sub-rótulo**.
     
-10. Digite um nome para o rótulo de subsites em **nome** e uma descrição do rótulo em **Descrição**.
+10. Digite um nome para o subrótulo em **Nome** e uma descrição do rótulo em **Descrição**.
     
-11. Em **definir permissões para documentos e emails contendo esse rótulo**, clique em **proteger**.
+11. Em **Definir permissões para documentos e emails que contenham este rótulo**, clique em **Proteger**.
     
-12. Na seção **proteção** , clique em **Windows Azure (chave de nuvem)**.
+12. Na seção **Proteção**, clique em **Azure (chave de nuvem)**.
     
-13. No blade **proteção** , em **configurações de proteção**, clique em **+ Adicionar permissões**.
+13. Na folha **Proteção**, em **Configurações de proteção**, clique em **+ Adicionar permissões**.
     
-14. No blade **Adicionar permissões** , em **especificar usuários e grupos**, clique em **+ Procurar no diretório**.
+14. Na folha **Adicionar permissões**, em **Especificar usuários e grupos**, clique em **+ Procurar no diretório**.
     
 15. No painel **AAD usuários e grupos** , selecione o grupo de acesso de membros do site do seu site de equipe do SharePoint Online altamente confidencial e clique em **Selecionar**.
     
@@ -69,9 +68,9 @@ Em seguida, configure a proteção de informações do Windows Azure com uma nov
     
 17. Clique duas vezes em **Okey** .
     
-18. No **rótulo sub-recurso** blade, clique em **Salvar**.
+18. Na folha **Rótulo**, clique em **Salvar**.
     
-19. Fechar o novo escopo blade de política.
+19. Feche a nova folha de política em escopo.
     
 20. No blade **proteção de informações do Windows Azure - políticas com escopo** , clique em **Publicar**.
     
@@ -79,28 +78,28 @@ Isso é sua configuração resultante para seu site de equipe do SharePoint Onli
   
 ![Rótulo da Proteção de Informações do Azure de um site de equipe isolado do SharePoint Online.](images/8cc92aa4-e7bc-4c2f-a4a4-3b034b21aebf.png)
   
-Agora você está pronto para começar a criação de documentos e protegê-los com proteção de informações do Windows Azure e seu novo rótulo.
+Agora você está pronto para começar a criar documentos e protegê-los com a Proteção de Informações do Azure e seu novo rótulo.
   
 Você deve [instalar o cliente de proteção de informações do Windows Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) no seu dispositivo ou computador baseado no Windows. Você pode criar script e automatizar a instalação ou os usuários podem instalar manualmente o cliente. Consulte os seguintes recursos:
   
-- [O lado cliente de proteção de informações do Windows Azure](https://docs.microsoft.com/information-protection/rms-client/use-client)
+- [O lado do cliente da Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/use-client)
     
-- [Instalando o cliente de proteção de informações do Windows Azure](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
+- [Instalando o cliente da Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
     
-- [Faça o download de página para a instalação manual](https://www.microsoft.com/download/details.aspx?id=53018)
+- [Página de download para a instalação manual](https://www.microsoft.com/download/details.aspx?id=53018)
     
 Depois de instalado, seus usuários execute e, em seguida, login em um aplicativo do Office (por exemplo, o Microsoft Word) com sua conta do Office 365. Uma nova barra de **Proteção de informações** permite que os usuários selecionem o novo rótulo. Certifique-se de que os usuários saibam o site da equipe do SharePoint Online e que identificam os usar para proteger seus arquivos altamente confidenciais.
   
 > [!NOTE]
-> Se você tiver vários sites de equipe do SharePoint Online altamente confidenciais, você deve criar várias políticas de proteção de informações do Windows Azure com escopo com rótulos sub-recurso com as configurações acima, com as permissões para cada etiqueta sub definido como o grupo de acesso de membros do site de um sites de equipe do SharePoint Online específico. 
+> Se houver vários sites de equipe do SharePoint Online altamente confidenciais, crie várias políticas de escopo de Proteção de Informações do Azure com sub-rótulos com as configurações acima, com as permissões para cada sub-rótulo definidas para o grupo de acesso de membros do site, de um site específico de equipe do SharePoint Online. 
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Proteja arquivos e sites do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
+[Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Proteger sites do SharePoint Online em um ambiente de desenvolvimento e teste](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
+[Proteger os sites do SharePoint Online em um ambiente de desenvolvimento/teste](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
   
-[Orientação de segurança da Microsoft para campanhas políticas, organizações sem fins lucrativos e outras organizações ágil](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 

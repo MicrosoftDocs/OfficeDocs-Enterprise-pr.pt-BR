@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Saiba como excluir um local de geo no OneDrive para Business Multi-Geo.
-ms.openlocfilehash: 93d1a7c976af4581c9d4ed3ebec4f613234f5b1f
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: c9cce9e8bc42debb741953ce47daf7f700c5dab3
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delete-a-geo-location-in-onedrive-for-business-multi-geo"></a>Excluir um local de geo no OneDrive para Business Multi-Geo
 

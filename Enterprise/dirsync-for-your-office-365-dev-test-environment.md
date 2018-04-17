@@ -12,16 +12,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - TLG
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumo: Configure a sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 1363e7fd6a3afdbec85fd08790268ab186badbc8
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 2fd4a9e6ea009e28ce95ff69e5ab03043ed18706
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronização de diretórios para o seu ambiente de desenvolvimento e teste do Office 365
 
@@ -42,7 +41,7 @@ Há duas fases para configurar esse ambiente de desenvolvimento e teste:
 2. Instalar e configurar o Azure Connect do AD no APP1.
     
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Fase 1: Criar um ambiente de desenvolvimento e teste do Office 365
 
@@ -115,7 +114,7 @@ Esta configuração consiste em:
 
 Quando estiver pronto para implantar a sincronização de diretórios para a sua organização, consulte [implantar o Office 365 directory synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Nuvem adoção Test Lab Guides (TLGs)](cloud-adoption-test-lab-guides-tlgs.md)
 [ambiente de desenvolvimento e teste de configuração básica](base-configuration-dev-test-environment.md)

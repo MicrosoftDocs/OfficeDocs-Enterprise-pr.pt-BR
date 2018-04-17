@@ -1,5 +1,5 @@
 ---
-title: "Nuvem híbrida da Microsoft para arquitetos corporativos"
+title: Nuvem híbrida da Microsoft para arquitetos corporativos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
-description: "Resumo: o que os arquitetos de TI precisam saber sobre cenários híbridos usando plataformas e serviços em nuvem da Microsoft."
-ms.openlocfilehash: d6bb757ff18bd8251e660fbd76afa71893c9bc77
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: 'Resumo: o que os arquitetos de TI precisam saber sobre cenários híbridos usando plataformas e serviços em nuvem da Microsoft.'
+ms.openlocfilehash: 491e445f197e0f499f2762adc20b696cfce9c20a
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 

@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Aprenda a mover um site de OneDrive para uma localização geográfica diferente.
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site de OneDrive para um local diferente de geo 
 
@@ -76,9 +77,9 @@ Por exemplo, para mover o OneDrive de matt@contosoenergy.onmicrosoft.com de EUR 
 
 Para agendar uma movimentação geo por um tempo posterior, use um dos parâmetros a seguir:
 
--   _PreferredMoveBeginDate_ – a movimentação provavelmente começar neste momento especificado.
+-   _PreferredMoveBeginDate_ – a movimentação provavelmente começar neste momento especificado. Tempo deve ser especificado no tempo Universal Coordenado (UTC).
 
--   _PreferredMoveEndDate_ – a movimentação provavelmente ser concluídas por neste momento especificado, em uma base de esforço recomendada.
+-   _PreferredMoveEndDate_ – a movimentação provavelmente ser concluídas por neste momento especificado, em uma base de esforço recomendada. Tempo deve ser especificado no tempo Universal Coordenado (UTC). 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Cancelar uma movimentação de geo OneDrive 
 

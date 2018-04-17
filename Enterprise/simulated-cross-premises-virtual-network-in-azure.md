@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: Crie uma rede virtual de locais cruzados simulado in Microsoft Azure como um ambiente de desenvolvimento e teste.'
-ms.openlocfilehash: 0889d0c70b6ffb93fc0ebf9c989b68e8a4766126
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulado entre locais no Windows Azure
 
@@ -60,7 +59,7 @@ Há três fases principais para configurar esse ambiente de desenvolvimento/test
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: Configurar a rede virtual do laboratório de teste
 
@@ -207,17 +206,17 @@ Seu ambiente de nuvem híbrida Azure simulado agora está pronta para teste.
 
 Use esse ambiente de desenvolvimento e teste para simular a um [farm do SharePoint Server 2016 intranet hospedado no Windows Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) 
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
 [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[ Segurança no Aplicativo na Nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 

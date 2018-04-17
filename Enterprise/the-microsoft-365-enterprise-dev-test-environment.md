@@ -1,5 +1,5 @@
 ---
-title: O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
+title: Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,17 +12,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Resumo: Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui o Office 365 E5, Enterprise mobilidade + E5 de segurança (EMS) e um computador que executa o Windows 10 Enterprise.'
-ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-microsoft-365-enterprise-devtest-environment"></a>O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
+# <a name="the-microsoft-365-enterprise-devtest-environment"></a>Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 
  **Resumo:** Use este guia de laboratório de teste para criar um ambiente de desenvolvimento e teste que inclui o Office 365 E5, Enterprise mobilidade + E5 de segurança (EMS) e um computador que executa o Windows 10 Enterprise.
   
@@ -90,10 +89,10 @@ Crie uma máquina virtual usando o hipervisor de sua escolha e instale o Windows
   
 ### <a name="virtual-machine-in-azure"></a>Máquina virtual no Windows Azure
 
-Crie uma máquina virtual de Windows 10 in Microsoft Azure usando a imagem da Galeria do Azure.
+Para criar uma máquina virtual de Windows 10 in Microsoft Azure, ***você deve ter uma assinatura com base no Visual Studio***, que tem acesso à imagem para Windows 10 Enterprise. Outros tipos de assinaturas do Azure, como assinaturas de avaliação e pagas, não têm acesso a essa imagem.
   
 > [!NOTE]
-> O comando a seguir define use a versão mais recente de te do Azure PowerShell. Consulte a [Introdução ao cmdlets do PowerShell do Windows Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Esses conjuntos de comando compilação uma máquina virtual de Windows 10 Enterprise denominado WIN10 e todas as sua infra-estrutura necessária, incluindo um grupo de recursos, uma conta de armazenamento e uma rede virtual. Se você já estiver familiarizado com os serviços de infraestrutura do Windows Azure, se adapte essas instruções de acordo com sua infraestrutura implantada no momento. 
+> O comando a seguir define usar a versão mais recente do Azure PowerShell. Consulte a [Introdução ao cmdlets do PowerShell do Windows Azure](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Esses conjuntos de comando compilação uma máquina virtual de Windows 10 Enterprise denominado WIN10 e todas as sua infra-estrutura necessária, incluindo um grupo de recursos, uma conta de armazenamento e uma rede virtual. Se você já estiver familiarizado com os serviços de infraestrutura do Windows Azure, se adapte essas instruções de acordo com sua infraestrutura implantada no momento. 
   
 Em primeiro lugar, inicie um prompt de Microsoft PowerShell.
   
@@ -205,7 +204,5 @@ Use estes artigos adicionais para explorar os recursos do Microsoft 365 Enterpri
 ## <a name="see-also"></a>Confira também
 
 - [Documentação do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-
- - [Implantar o Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
-
+- [Implantar o Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [O ambiente de desenvolvimento e teste de um Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md)

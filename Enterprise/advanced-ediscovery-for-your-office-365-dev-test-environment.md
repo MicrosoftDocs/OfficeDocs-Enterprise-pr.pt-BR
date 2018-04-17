@@ -1,5 +1,5 @@
 ---
-title: "Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365"
+title: Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: "Resumo: Configurar e demonstrar o eDiscovery avançadas do Office 365 com dados de exemplo no seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Configurar e demonstrar o eDiscovery avançadas do Office 365 com dados de exemplo no seu ambiente de desenvolvimento e teste do Office 365.'
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365
 
@@ -29,7 +29,7 @@ Descoberta eletrônica avançada do Office 365 permite que você rapidamente enc
 Com as instruções neste artigo, você cria um pequeno conjunto de dados para uma disputa de contrato fictícia e o analisa com a Descoberta Eletrônica Avançada.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Criar seu ambiente de desenvolvimento e teste do Office 365
 
@@ -44,11 +44,11 @@ Se você quiser testar eDiscovery avançada em uma empresa simulada, siga as ins
 
 Neste procedimento, você criará mensagens de email que, mais tarde, serão analisadas em um caso de Descoberta Eletrônica Avançada.
   
-1. Abra o Internet Explorer e entrar no [https://outlook.com](https://outlook.com) para a conta do Outlook que você criou na fase 2 do[ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md).
+1. Abra o Internet Explorer e entrar no [https://outlook.com](https://outlook.com) a conta do Outlook que você criou na fase 2 do[ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md).
     
   - Se estiver usando o ambiente de desenvolvimento e teste leve, abra uma sessão particular do Internet Explorer e entre com o seu computador local.
     
-  - Se você estiver usando o ambiente de desenvolvimento e teste de enterprise simulado, use o portal Azure ([https://portal.azure.com](https://portal.azure.com)) para se conectar à máquina virtual CLIENT1 e entrar em CLIENT1.
+  - Se você estiver usando o ambiente de desenvolvimento e teste de enterprise simulado, usar o portal do Windows Azure ([https://portal.azure.com](https://portal.azure.com)) para se conectar à máquina virtual CLIENT1 e entrar em CLIENT1.
     
 2. Na guia **Email do Outlook** , clique em **novo**.
     
@@ -180,17 +180,17 @@ Neste procedimento, você criará um novo caso de Descoberta Eletrônica Avança
     
 Agora, você pode usar esse ambiente para criar novo conteúdo, novas pesquisas e casos e também para continuar os testes com a Descoberta Eletrônica Avançada no Office 365.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) 
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
 [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[ Segurança no Aplicativo na Nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 

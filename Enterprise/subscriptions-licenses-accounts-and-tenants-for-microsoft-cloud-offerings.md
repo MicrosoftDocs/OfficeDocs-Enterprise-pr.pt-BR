@@ -1,5 +1,5 @@
 ---
-title: "Inscrições, licenças, contas e inquilinos para as ofertas de nuvem da Microsoft"
+title: Inscrições, licenças, contas e inquilinos para as ofertas de nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "Resumo: Compreenda os relacionamentos de organizações, inscrições, licenças, contas de usuário e inquilinos nas ofertas de nuvem da Microsoft."
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Compreenda os relacionamentos de organizações, inscrições, licenças, contas de usuário e inquilinos nas ofertas de nuvem da Microsoft.'
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Inscrições, licenças, contas e inquilinos para as ofertas de nuvem da Microsoft
 
@@ -150,7 +149,7 @@ A tabela a seguir descreve como você pode combinar vários ofertas de nuvem da 
    
 Uma maneira fácil de adicionar assinaturas à sua organização para serviços da Microsoft baseada em SaaS é através da Central de administração do Office 365:
   
-1. Entre portal do Office 365 ([https://portal.office.com](https://portal.office.com)) com sua conta de administrador global e, em seguida, clique em **Admin**.
+1. Entrar no portal do Office 365 ([https://portal.office.com](https://portal.office.com)) com seu administrador global da conta e, em seguida, clique em **Admin**.
     
 2. Do painel de navegação esquerdo da home page do **Centro de administração** , clique em **faturamento**e, em seguida, **Serviços de compra**.
     
@@ -160,7 +159,7 @@ O Centro de administração do Office 365 atribui a organização e o locatário
   
 Para adicionar uma assinatura do Windows Azure com a mesma organização e o locatário do Azure AD como sua assinatura do Office 365:
   
-1. Inscreva-se portal do Windows Azure ([https://portal.azure.com](https://portal.azure.com)) com sua conta de administrador global do Office 365.
+1. Entrar no portal do Windows Azure ([https://portal.azure.com](https://portal.azure.com)) com sua conta de administrador global do Office 365.
     
 2. No painel de navegação esquerdo, clique em **assinaturas**e, em seguida, clique em **Adicionar**.
     

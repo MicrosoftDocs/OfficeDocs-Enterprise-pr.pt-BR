@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumo: Crie uma intranet simplificada como um ambiente de desenvolvimento e teste in Microsoft Azure.'
-ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente de desenvolvimento e teste de configuração de base
 
@@ -32,7 +31,7 @@ Este artigo fornece instruções passo a passo para criar o ambiente de desenvol
 
 ![Fase 4 da Configuração Básica no Azure com a máquina virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-O ambiente de desenvolvimento e teste de configuração básica na Figura 1 consiste de subnet Corpnet uma somente em nuvem rede virtual do Azure chamada de laboratório de teste que simule uma intranet simplificada, privada conectada à Internet. Ele contém três máquinas virtuais do Azure:
+O ambiente de desenvolvimento e teste de configuração básica na Figura 1 consiste de subnet Corpnet uma somente em nuvem rede virtual do Azure chamada de laboratório de teste que simule uma intranet simplificada, privada conectada à Internet. Ele contém três máquinas virtuais do Azure executando o WIndows Server 2016:
   
 - DC1 está configurado como um controlador de domínio da intranet e o servidor de sistema de nome de domínio (DNS)
     
@@ -70,7 +69,7 @@ Se você ainda não tiver uma assinatura do Windows Azure, você pode se inscrev
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-create-the-virtual-network"></a>Fase 1: Criar a rede virtual
 
@@ -241,7 +240,10 @@ Esta é a configuração atual.
 ## <a name="phase-3-configure-app1"></a>Fase 3: Configurar APP1
 
 App1 fornece web e serviços de compartilhamento de arquivo.
-  
+
+-> [!NOTE]  
+-> o seguinte conjunto de comandos cria CLIENT1 executando o Windows Server 2016 Datacenter, que pode ser feito para todos os tipos de inscrições do Azure. Se você tiver uma assinatura do Windows Azure baseados no Visual Studio, você pode criar CLIENT1 executando Windows 10 com o [portal do Azure](https://portal.azure.com). 
+
 Para criar uma máquina Virtual de Windows Azure para APP1, no nome de seu grupo de recursos de preenchimento e executar esses comandos no prompt de comando do PowerShell do Azure no computador local.
   
 ```
@@ -307,7 +309,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -394,8 +396,8 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 
 ## <a name="see-also"></a>Confira também
 
-- [Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+- [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
 - [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-- [Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-- [Proteção de ameaça avançada para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [ Segurança no Aplicativo na Nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 - [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
