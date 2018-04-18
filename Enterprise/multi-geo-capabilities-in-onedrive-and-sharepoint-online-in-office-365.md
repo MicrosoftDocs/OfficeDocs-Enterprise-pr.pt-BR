@@ -11,11 +11,11 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no OneDrive e SharePoint Online.
-ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
-ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
+ms.openlocfilehash: edcd8895c4a6e57ae1124ad15a9c5cc2b6bf94ca
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365
 
@@ -42,12 +42,10 @@ Aqui está como recursos de multi-geo podem beneficiar sua organização:
 - Consolide seus dados de locais regionais em seu locatário do Office 365 multi-geo.
     
 Em uma configuração de multi-geo, seu locatário do Office 365 consiste em um local central (também conhecido como o local padrão) e um ou mais locais de geo satélite. O conceito de chave de multi-geo é que um único locatário ocupará entre um vários locais geo. Em um locatário multi-geo, as informações sobre locais geo, grupos e informações do usuário, são administradas no Windows Azure Active Directory (AAD). Como suas informações de Inquilino são administradas centralmente e sincronizadas em cada local geo, compartilhamento e experiências envolvendo qualquer pessoa da sua empresa contêm divulgação global.
-  
-## <a name="sample-multi-geo-tenant-configuration"></a>Configuração do inquilino de multi-geo de amostra
 
-Usando um locatário multi-geo, Contoso, com um local central da América do Norte, pode expandir para satélite geo locais na Europa e Austrália sob a proteção de única organização de Contoso.com. Usuários com o seu local de dados preferida definido como Europa terão sua OneDrive na Europa, enquanto os usuários com o seu local de dados preferida na América do Norte terão sua OneDrive nos EUA.
-  
-![Mapa do mundo, mostrando geo locais para a Contoso e outros locais geo disponíveis](images/df317ccc-2e53-411d-9211-a5aee63ca1e5.png)
+## <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Introdução ao Office 365 Multi-Geo
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
   
 ## <a name="get-multi-geo-features-in-three-simple-steps"></a>Obter recursos de multi-geo em três etapas simples
 
