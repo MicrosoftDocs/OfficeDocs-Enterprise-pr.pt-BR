@@ -3,7 +3,7 @@ title: Ambiente de desenvolvimento/teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumo: Use este guia de laboratório de teste para criar uma assinatura de avaliação do Office 365 para avaliação ou desenvolvimento e teste.'
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
 
@@ -49,7 +49,7 @@ Siga as instruções no [ambiente de desenvolvimento e teste de configuração b
   
 Você precisará de uma assinatura do Windows Azure. Você pode usar a [Versão de avaliação gratuita do Windows Azure](https://azure.microsoft.com/pricing/free-trial/) para esta configuração. Se você tiver uma assinatura do MSDN ou o Visual Studio, consulte [crédito Azure mensal para assinantes do Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
   
-Aqui está a configuração resultante.
+Esta é a configuração resultante.
   
 ![O ambiente de desenvolvimento e teste de Configuração de Base no Azure](images/63108214-f716-46ae-9974-072ff15b44a2.png)
   
@@ -71,22 +71,9 @@ Para iniciar a sua assinatura de avaliação do Office 365 E5, primeiro é neces
 
 1. Para o ambiente de desenvolvimento e teste do Office 365 leve, abra o navegador da Internet no seu computador e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial). 
     
-    Para o ambiente de desenvolvimento e teste de enterprise simulado Office 365:
-    
-  - Do [portal do Azure](https://portal.azure.com), conecte-se ao CLIENT1 com CORP\\conta User1.
-    
-  - Abra um prompt de comando do Windows PowerShell de nível de administrador e, em seguida, execute estes comandos:
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    Para o ambiente de desenvolvimento e teste do Office 365 enterprise simulado, conecte-se ao CLIENT1 com a conta CORP\User1 do portal do Azure.
 
-    > [!TIP]
-    > Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) para obter um arquivo de texto que contém todos os comandos do PowerShell neste artigo.
-  
-  - Na tela Iniciar, clique em **Internet Explorer** e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial).
+    Na tela Iniciar, execute o Microsoft Edge e vá para [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. Na página de **boas-vindas, vamos fazer conhecê-lo** , especifique:
     
@@ -161,6 +148,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) para obter um arquivo de texto que contém todos os comandos do PowerShell neste artigo.
 
 Na exibição do comando **New-MsolUser** , observe a gerado senha para a conta de usuário 2 e registre-a em um local seguro.
   
@@ -296,12 +285,12 @@ Estenda seu ambiente de desenvolvimento e teste do Office 365 para incluir adici
     
 - [Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Conceitos
 
 - [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 - [Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+- [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 

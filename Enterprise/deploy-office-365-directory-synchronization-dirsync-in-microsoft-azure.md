@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Resumo: Implante o Azure AD conectar-se em uma máquina virtual no Windows Azure para sincronizar contas entre seu diretório local e o locatário do Azure AD de sua assinatura do Office 365.'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Implantar o Office 365 Directory Synchronization in Microsoft Azure
 
@@ -105,7 +105,7 @@ A lista a seguir descreve as opções de design feitas para essa solução.
     
 - Na rede local, existem servidores DNS e um controlador de domínio.
     
-- Conectar do Azure AD executa a sincronização de hash de senha em vez do serviço single sign-on. Você não precisará implantar uma infraestrutura de serviços de Federação do Active Directory (AD FS). Para saber mais sobre as opções de logon única e sincronização de hash de senha, consulte [Determine qual cenário de integração de diretório para usar](https://go.microsoft.com/fwlink/p/?LinkId=393094).
+- Conectar do Azure AD executa a sincronização de hash de senha em vez do serviço single sign-on. Você não precisará implantar uma infraestrutura de serviços de Federação do Active Directory (AD FS). Para saber mais sobre as opções de logon única e sincronização de hash de senha, consulte como [Escolher o método de autenticação correto para sua solução de identidade híbrida Azure Active Directory](http://aka.ms/auth-options).
     
 Há opções adicionais de design que você pode considerar ao implantar essa solução em seu ambiente. Elas incluem o seguinte:
   
