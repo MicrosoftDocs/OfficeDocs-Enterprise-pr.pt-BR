@@ -12,19 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução.'
-ms.openlocfilehash: 1e8f067954de19c374688220be439fe1a56089f7
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 Disaster Recovery in Microsoft Azure
 
  **Resumo:** Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução.
 
  **Assista o vídeo de visão geral de recuperação de desastres do SharePoint Server 2013**
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=1b73ec8f-29bd-44eb-aa3a-f7932784bfd9&AutoPlayVideo=false&height=415&width=740" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" style="width: 740px; height: 415px;"></iframe>
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
  Quando acidente seu ambiente do SharePoint local, sua prioridade mais alta é obter o sistema executando novamente rapidamente. Recuperação de desastres com o SharePoint é mais rápido e fácil quando você tiver um ambiente de backup já em execução no Microsoft Azure. Este vídeo explica os principais conceitos de um ambiente do SharePoint passiva de failover e complementa os detalhes completos disponíveis neste artigo.
   
@@ -193,9 +192,9 @@ Neste diagrama:
     
 - A camada de quarta é a camada de banco de dados. Envio de logs é usado para copiar os logs do servidor de banco de dados secundário no ambiente local para o compartilhamento de arquivos no mesmo ambiente.
     
-- DFSR copia os arquivos do compartilhamento de arquivo no ambiente local para o compartilhamento de arquivos no ambiente do Azure.
+- A DFSR copia os arquivos do compartilhamento de arquivos no ambiente local para o compartilhamento de arquivos no ambiente Azure.
     
-- Envio de logs reproduz os logs do arquivo compartilham no ambiente do Windows Azure para a réplica primária no grupo de disponibilidade AlwaysOn do SQL Server no ambiente de recuperação.
+- O envio de logs reproduz os logs do compartilhamento de arquivos no ambiente Azure para a réplica primária no grupo de disponibilidade AlwaysOn do SQL Server no ambiente secundário.
     
 ### <a name="cold-standby-environments"></a>Ambientes de espera a frio
 
@@ -460,7 +459,7 @@ A tabela a seguir mostra como recuperar serviços que tiverem enviados com logs 
 
 |**Restaurar esses serviços de bancos de dados enviados com logs**|**Esses serviços tem bancos de dados, mas é recomendável que você iniciar esses serviços sem restaurar seus bancos de dados**|**Esses serviços não armazene dados nos bancos de dados; iniciar esses serviços após o failover**|
 |:-----|:-----|:-----|
-| Machine Translation Service <br/>  Serviço de Metadados Gerenciados <br/>  Serviço de Repositório Seguro <br/>  Perfil de usuário. (Somente, os bancos de dados de perfil e marcação Social são suportados. O banco de dados de sincronização não é suportado). <br/>  Serviço de Configurações de Assinatura do Microsoft SharePoint Foundation <br/> | Coleta de Dados de Uso e Integridade <br/>  Serviço de Controle de Sessão <br/>  Automação do Word <br/> | Serviços do Excel <br/>  Serviços PerformancePoint <br/>  Conversão do PowerPoint <br/>  Serviço de Gráfico do Visio <br/>  Gerenciamento de Trabalho <br/> |
+| Serviço de Tradução Automática <br/>  Serviço de Metadados Gerenciados <br/>  Serviço de Repositório Seguro <br/>  Perfil de usuário. (Somente, os bancos de dados de perfil e marcação Social são suportados. O banco de dados de sincronização não é suportado). <br/>  Serviço de Configurações de Assinatura do Microsoft SharePoint Foundation <br/> | Coleta de Dados de Uso e Integridade <br/>  Serviço de Controle de Sessão <br/>  Automação do Word <br/> | Serviços do Excel <br/>  Serviços do PerformancePoint <br/>  Conversão do PowerPoint <br/>  Serviço de Gráficos do Visio <br/>  Gerenciamento de Trabalho <br/> |
    
 O exemplo a seguir mostra como restaurar o serviço de metadados gerenciados de um banco de dados.
   

@@ -11,11 +11,11 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Resumo: Saiba como criar um laboratório de teste integrado que contém um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.'
-ms.openlocfilehash: 636429a9cce04b982c1129dba601c6348deb9cdc
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: a15bdefe1749bca98933a8b9a4c4874130732eda
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guia de laboratório de teste: Configurar um laboratório de teste integrado do Exchange, Lync e SharePoint
 
@@ -23,8 +23,7 @@ ms.lasthandoff: 04/18/2018
  
 **Assista a integrado do Exchange, Lync e vídeo de visão geral do guia de laboratório de teste do SharePoint**
 
-<iframe src="//videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false" frameborder= "0" marginwidth= "0" marginheight= "0" scrolling= "no" allowfullscreen= "" ></iframe>
-
+> [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
 Laboratório de teste que é resultado nesta configuração, que inclui a autenticação de servidor-para-servidor entre todos os três tipos de servidores, pode ser usado para criar o e demonstrar o produtos vários cenários e soluções que usam um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.
   

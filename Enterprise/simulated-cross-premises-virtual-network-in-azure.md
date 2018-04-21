@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: Crie uma rede virtual de locais cruzados simulado in Microsoft Azure como um ambiente de desenvolvimento e teste.'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulado entre locais no Windows Azure
 
@@ -54,7 +54,7 @@ Há três fases principais para configurar esse ambiente de desenvolvimento/test
 3. Configure DC2.
     
 > [!NOTE]
-> Essa configuração requer uma assinatura paga de Azure. 
+> [!OBSERVAçãO] Essa configuração requer uma assinatura paga do Azure. 
   
 ![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
@@ -76,7 +76,7 @@ Nesta fase, você cria e configurar a rede virtual à nova XPrem e se conectar �
 Em primeiro lugar, inicie um prompt do Azure PowerShell no computador local.
   
 > [!NOTE]
-> O comando a seguir define usar a versão mais recente do Azure PowerShell. Consulte a [Introdução ao cmdlets do PowerShell do Windows Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Inscreva-se à sua conta do Windows Azure com o seguinte comando.
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) para obter um arquivo de texto que contém todos os comandos do PowerShell neste artigo.
+> [!DICA] Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) para obter um arquivo de texto que contém todos os comandos do PowerShell deste artigo.
   
 Para obter o nome de sua assinatura, use este comando.
   
@@ -173,7 +173,7 @@ Em seguida, configure DC2 como um controlador de domínio de réplica para o dom
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 Observe que você será solicitado a fornecer os dois CORP\\User1 senha e uma senha de modo de restauração de serviços de diretório (DSRM) e reiniciar DC2. 
@@ -206,7 +206,7 @@ Seu ambiente de nuvem híbrida Azure simulado agora está pronta para teste.
 
 Use esse ambiente de desenvolvimento e teste para simular a um [farm do SharePoint Server 2016 intranet hospedado no Windows Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 [O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) 
   
