@@ -1,5 +1,5 @@
 ---
-title: "Gerenciar locatários do Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)"
+title: Gerenciar locatários do Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: "Resumo: Use o Windows PowerShell para o Office 365 para gerenciar as locações do cliente."
-ms.openlocfilehash: 3f0caeaa4a4e70ddb00ece2738f3a90720b5a52f
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+description: 'Resumo: Use o Windows PowerShell para o Office 365 para gerenciar as locações do cliente.'
+ms.openlocfilehash: f4c6f1a0275e9b483a30b31564426b62241029bf
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gerenciar locatários do Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
@@ -109,7 +109,7 @@ em que:
 Depois de criar o arquivo CSV, execute este comando para criar contas de usuários com senhas que não perdem a validade. Essas senhas atribuem a licença especificada e os usuários devem alterá-la no primeiro logon. Não deixe de substituir o nome correto do arquivo CSV.
   
 ```
-Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
+Import-Csv .\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
 ## <a name="see-also"></a>Veja também

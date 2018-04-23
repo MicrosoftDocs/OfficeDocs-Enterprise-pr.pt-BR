@@ -1,5 +1,5 @@
 ---
-title: "Atribuir licenças a contas de usuários usando o PowerShell do Office 365"
+title: Atribuir licenças a contas de usuários usando o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "Explica como usar o Office 365 PowerShell para atribuir uma licença do Office 365 para usuários não licenciados."
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Explica como usar o Office 365 PowerShell para atribuir uma licença do Office 365 para usuários não licenciados.
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Atribuir licenças a contas de usuários usando o PowerShell do Office 365
 
@@ -139,7 +139,7 @@ Você terá que fazer o seguinte: chame o cmdlet **Set-MsolUserLicense**, especi
   
 Quando **Set-MsolUserLicense** terminar de ser executado, você verá algo similar a isto na tela:
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 Em outras palavras, não parecerá que algo mudou. Para verificar se a licença foi atribuída ao usuário, execute um comando como o seguinte:
   
