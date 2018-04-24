@@ -1,5 +1,5 @@
 ---
-title: "Por que você precisa usar o Office 365 PowerShell"
+title: Por que você precisa usar o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
-description: "Resumo: você deve ser capaz de usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e em outros casos por necessidade."
-ms.openlocfilehash: b3715da44c1509ea46e7bb939b5ca0be8b2b9671
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: você deve ser capaz de usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e em outros casos por necessidade.'
+ms.openlocfilehash: d4dec6a62aecf2cfafdaf52f018f34fd2c9a14d4
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por que você precisa usar o Office 365 PowerShell
 
@@ -26,7 +26,7 @@ Com o Centro de administração do Office 365, além de gerenciar suas contas de
   
 Neste artigo, mostraremos a você as seguintes maneiras em que você pode usar o Office 365 PowerShell para gerenciar o Office 365.
   
-- O Office 365 PowerShell pode revelar informações adicionais que você não consegue ver no Centro de administração do Office 365
+- O Office 365 PowerShell pode revelar informações adicionais que não é possível ver com o Centro de administração do Office 365
     
 - O Office 365 tem recursos que você pode configurar apenas usando o Office 365 PowerShell
     
@@ -38,21 +38,21 @@ Neste artigo, mostraremos a você as seguintes maneiras em que você pode usar o
     
 - O Office 365 PowerShell permite que você gerencie produtos de servidor
     
-Antes de começar, saiba que o Office 365 PowerShell é um conjunto de módulos para o Windows PowerShell, um ambiente de linha de comando para o Windows baseado em serviços e plataformas. Esse ambiente cria uma linguagem de shell de comando que pode ser estendida com módulos adicionais e fornece uma maneira de executar comandos simples ou complexos ou scripts, por exemplo, depois de instalar o módulos do Office 365 PowerShell e entrar com a sua assinatura do Office 365, você pode executar esse comando para listar todas as caixas de correio do usuário para o Microsoft Exchange Online:
+Antes de começar, saiba que o Office 365 PowerShell é um conjunto de módulos para o Windows PowerShell, um ambiente de linha de comando para plataformas e serviços baseados em Windows. Esse ambiente cria uma linguagem de shell de comando que pode ser estendida com módulos adicionais e fornece uma maneira de executar comandos simples ou complexos, ou scripts. Por exemplo, depois de instalar os módulos do Office 365 PowerShell e entrar com sua assinatura do Office 365, você poderá executar esse comando para listar todas as caixas de correio do usuário para o Microsoft Exchange Online:
   
 ```
 Get-Mailbox
 ```
 
-Você também pode executar esse comando para calcular o número de itens em todas as listas de todos os sites para todos os seus aplicativos da Web em SharePoint Online:
+Você também pode executar esse comando para calcular o número de itens em todas as listas de todos os sites para todos os seus aplicativos Web em SharePoint Online:
   
 ```
 Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Microsoft.SharePoint.SPDocumentLibrary]} | % {$total+= $_.ItemCount}; $total
 ```
 
-A lista de caixas de correio também pode ser facilmente obtida usando o Centro de administração do Office 365, mas a contagem do número de itens em todas as listas de todos os sites para todos os aplicativos da Web não pode ser feita com facilidade.
+A lista de caixas de correio também pode ser facilmente obtida usando o Centro de administração do Office 365, mas a contagem do número de itens em todas as listas de todos os sites para todos os aplicativos Web não pode ser feita com facilidade.
   
-Observe que o Office 365 PowerShell foi projetado para ampliar e aprimorar sua capacidade de gerenciar o Office 365, não para substituir o Centro de administração do Office 365. Como administrador do Office 365, você deve pelo menos se sentir confortável usando o PowerShell do Office 365 porque existem alguns procedimentos de configuração que só podem ser feitos com comandos do Office 365 PowerShell. Nesses casos, você precisará compreender como:
+Observe que o Office 365 PowerShell foi projetado para ampliar e aprimorar sua capacidade de gerenciar o Office 365, não para substituir o Centro de administração do Office 365. Como administrador do Office 365, você deve pelo menos se sentir confortável usando o Office 365 PowerShell porque existem alguns procedimentos de configuração que só podem ser feitos com comandos do Office 365 PowerShell. Nesses casos, você precisará compreender como:
   
 - Instalar os módulos do Office 365 PowerShell (feito apenas uma vez para cada computador do administrador).
     
@@ -62,7 +62,7 @@ Observe que o Office 365 PowerShell foi projetado para ampliar e aprimorar sua c
     
 - Executar os comandos do Office 365 PowerShell com êxito.
     
-Depois de aprender essas habilidades básicas, não é necessário listar os usuários de caixa de correio com o comando **Get-Mailbox**, também não é preciso entender como criar um novo comando como o anterior para contar todos os itens nas listas de todos os sites para todos os seus aplicativos da Web. A Microsoft e a comunidade de administradores do Office 365 podem ajudá-lo conforme necessário.
+Depois de aprender essas habilidades básicas, não é necessário listar os usuários de caixa de correio com o comando **Get-Mailbox**, também não é preciso entender como criar um novo comando como o anterior para contar todos os itens nas listas de todos os sites para todos os seus aplicativos Web. A Microsoft e a comunidade de administradores do Office 365 podem ajudá-lo conforme necessário.
   
 ## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>O Office 365 PowerShell pode revelar informações adicionais que não é possível ver com o Centro de administração do Office 365
 <a name="reveal"> </a>
@@ -445,7 +445,7 @@ A interpretação deste script do Office 365 PowerShell é:
 
 [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
   
-[Gerenciar contas de usuário e licenças usando o PowerShell do Office 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Use o Windows PowerShell para criar relatórios no Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 

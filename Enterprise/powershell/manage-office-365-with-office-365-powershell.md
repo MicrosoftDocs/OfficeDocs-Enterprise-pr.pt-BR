@@ -14,51 +14,53 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: 'Resumo: saiba como usar o Office 365 PowerShell com as licenças e usuários do Office 365, Skype for Business online, SharePoint Online e Microsoft Exchange Online.'
-ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business Online, SharePoint Online, Exchange Online e o Centro de Conformidade e Segurança do Office 365.'
+ms.openlocfilehash: eb5b9a91a81d03a2de14d3507ef9a9172f44ec58
+ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gerenciar o Office 365 com o Office 365 PowerShell
 
- **Resumo:** saiba como usar o Office 365 PowerShell com as licenças e usuários do Office 365, Skype for Business online, SharePoint Online e Microsoft Exchange Online.
+ **Resumo:** saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business Online, SharePoint Online, Exchange Online e o Centro de Conformidade e Segurança do Office 365.
   
-Office 365 PowerShell é uma poderosa ferramenta de gerenciamento que complementa o Centro de administração do Office 365. Por exemplo, você pode usar a automação do Office 365 PowerShell para gerenciar várias contas de usuário e licenças mais rapidamente e criar relatórios. Saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business online, SharePoint Online e do Microsoft Exchange Online. 
+O Office 365 PowerShell é uma poderosa ferramenta de gerenciamento que complementa o Centro de administração do Office 365. Por exemplo, é possível usar a automação do Office 365 PowerShell para gerenciar várias contas de usuário e licenças mais rapidamente e criar relatórios. Saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business Online, SharePoint Online, Exchange Online e o Centro de Conformidade e Segurança do Office 365.
   
 Selecione o tópico de acordo com suas necessidades:
   
 - [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-    
-    Inicie aqui se você não estiver familiarizado com o Office 365 PowerShell e deseja instalar módulos do Office 365 PowerShell e se conectar ao locatário do Office 365.
-    
-- [Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-    
-    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja saber mais sobre como usar comandos de automação para gerenciar contas de usuário e licenças.
-    
-- [Office 365 PowerShell para SharePoint Online](https://technet.microsoft.com/pt-BR/library/fp161362.aspx)
-    
-    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja usar os comandos de automação para realizar o gerenciamento do SharePoint Online.
-    
-- [Usar o PowerShell com o Exchange Online](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)
-    
-    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja usar os comandos de automação para realizar o gerenciamento do Microsoft Exchange Online.
-    
-- [Usar o PowerShell para a migração de email para o Office 365](use-powershell-for-email-migration-to-office-365.md)
-    
-    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja migrar seu email de sistemas existentes. 
-    
-- [Gerenciar o Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
-    
-    Inicie aqui se você deseja usar os parceiros de distribuição e provedor de solução da nuvem (CSP) para gerenciar seus locatários do cliente do Office 365. 
-    
-- [Gerenciar o Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
-    
-    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja usar os comandos de automação para realizar o gerenciamento do Skype for Business online.
-    
-- [Cmdlets do Skype for Business Online ](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
-    
-    Inicie aqui se você estiver muito confortável com o Office 365 PowerShell e deseja saber mais sobre comandos específicos para gerenciar as configurações de conferência discada, Cloud PBX e Chamadas PSTN para sua organização e usar os recursos de relatórios para monitorar e informar sobre o uso do Skype for Business online.
-    
 
+    Inicie aqui se você não estiver familiarizado com o Office 365 PowerShell e deseja instalar módulos do Office 365 PowerShell e se conectar ao locatário do Office 365.
+
+- [Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+
+    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja saber mais sobre como usar comandos de automação para gerenciar contas de usuário e licenças.
+
+- [Office 365 PowerShell para SharePoint Online](https://technet.microsoft.com/library/fp161362.aspx)
+
+    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja usar os comandos de automação para realizar o gerenciamento do SharePoint Online.
+
+- [PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+
+    Inicie aqui se deseja usar os comandos de automação para gerenciar o Exchange Online.
+
+- [Usar o PowerShell para a migração de email para o Office 365](use-powershell-for-email-migration-to-office-365.md)
+
+    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja migrar seu email de sistemas existentes.
+
+- [PowerShell do Centro de Conformidade e Segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+
+    Inicie aqui se deseja usar os comandos de automação para gerenciar o Centro de Conformidade e Segurança.
+
+- [Gerenciar o Office 365 com o Windows PowerShell para parceiros com DAP (permissões de acesso delegadas)](manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md)
+
+    Inicie aqui se você deseja usar os parceiros de distribuição e provedor de solução da nuvem (CSP) para gerenciar seus locatários do cliente do Office 365.
+
+- [Gerenciar o Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+
+    Inicie aqui se tiver instalado os módulos do Office 365 PowerShell e deseja realizar o gerenciamento do Skype for Business Online.
+
+- [Cmdlets do Skype for Business Online](https://technet.microsoft.com/library/mt228132.aspx)
+
+    Inicie aqui se você estiver muito confortável com o Office 365 PowerShell e deseja saber mais sobre comandos específicos para gerenciar as configurações de conferência discada, Cloud PBX e Chamadas PSTN para sua organização e usar os recursos de relatórios para monitorar e informar sobre o uso do Skype for Business online.

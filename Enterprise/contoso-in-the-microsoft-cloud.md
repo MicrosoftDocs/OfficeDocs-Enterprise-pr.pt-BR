@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 'Resumo: como uma organização global fictícia, mas representativa, está adotando uma infraestrutura de TI inclusiva em nuvem com as ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 7807a6b07179e695c28a923f744805558d83e690
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso no Microsoft Cloud
 
@@ -33,7 +33,7 @@ Este artigo oferece links para um conjunto de artigos que descrevem como a Conto
   
 Confira as seguintes seções:
   
-- [Visão geral de nuvem híbrida](hybrid-cloud-overview.md)
+- [Visão geral da Contoso Corporation](overview-of-the-contoso-corporation.md)
     
     A Contoso Corporation é um conglomerado global de fabricação, vendas e suporte com mais de 100 mil produtos.
     
@@ -66,7 +66,7 @@ Confira as seguintes seções:
   
 ## <a name="see-also"></a>Veja também
 
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
