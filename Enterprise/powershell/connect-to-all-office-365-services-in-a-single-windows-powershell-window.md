@@ -3,7 +3,7 @@ title: Conectar-se a todos os serviços do Office 365 usando uma única janela d
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2018
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumo: Conecte o Windows PowerShell para todos os serviços do Office 365 em uma única janela do Windows PowerShell.'
-ms.openlocfilehash: b48caf9ab75b775995b9839325832c798da4d331
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 7e3a3ecbb0526c88392848cf39b59b40f1f4c80c
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell
 
@@ -113,8 +113,8 @@ Aqui estão as etapas para se conectar a todos os serviços em uma única janela
 7. Execute estes comandos para se conectar à segurança &amp; Centro de conformidade.
     
   ```
-  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-  Import-PSSession $SccSession
+  $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+  Import-PSSession $SccSession -Prefix cc
   ```
 
 Aqui estão todos os comandos em um único bloco. Especifique o nome do seu host do domínio e execute todas elas ao mesmo tempo.
@@ -130,8 +130,8 @@ $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
 Import-PSSession $exchangeSession
-$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $SccSession
+$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
+Import-PSSession $SccSession -Prefix cc
 ```
 Quando você estiver pronto para fechar a janela do Windows PowerShell para baixo, execute este comando para remover as sessões ativas para Skype para Business Online, Exchange Online, SharePoint Online e a segurança &amp; Centro de conformidade:
   
@@ -158,7 +158,7 @@ Import-PSSession $sfboSession
 
 Para o Exchange Online e a segurança &amp; Centro de conformidade, consulte os tópicos a seguir para se conectar usando a autenticação multifator:
 
-- [Connect to Exchange Online PowerShell usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell).
+- [Conectar-se ao Exchange Online PowerShell, usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [Conectar-se ao PowerShell do Centro de conformidade usando a autenticação multifator & de segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 Observe que, em ambos os casos, você deve se conectar usando sessões separadas do Exchange Online Remote PowerShell módulo.
@@ -168,7 +168,7 @@ Observe que, em ambos os casos, você deve se conectar usando sessões separadas
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md)
 - [Gerenciar o SharePoint Online com o Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)

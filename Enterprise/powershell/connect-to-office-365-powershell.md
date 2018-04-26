@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Resumo: conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas do Centro de administração do Office 365 a partir da linha de comando.'
-ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+description: 'Resumo: Conecte à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de centro de administração da linha de comando.'
+ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
- **Resumo:** conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de administração do Office 365 a partir da linha de comando.
+ **Resumo:** Conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para executar tarefas de administração da linha de comando.
   
 O Office 365 PowerShell permite gerenciar as configurações do Office 365 na linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples de três etapas em que você instala e executa o software necessário e depois se conecta à sua organização do Office 365. 
 
@@ -64,8 +64,7 @@ Essas etapas precisam ser executadas apenas uma vez em seu computador e não tod
   - Se solicitado a instalar o módulo de PSGallery, digite **Y** e pressione Enter.
   - Após a instalação, feche a janela de comando do PowerShell.
     
-### <a name="step-2-connect-to-your-office-365-subscription"></a>Etapa 2: conectar-se à sua assinatura do Office 365
-<a name="step3"> </a>
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: Conectar ao Azure AD para sua assinatura do Office 365
 
 Para conectar-se apenas com *nome e senha de conta*:
   
@@ -93,7 +92,6 @@ Connect-MsolService
 4. Siga as instruções na caixa de diálogo **PowerShell do Azure Active Directory** para fornecer informações de autenticação adicionais, como o código de verificação, e clique **Entrar**.
     
 ### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
-<a name="step3"> </a>
 
 Se você não recebeu um erro, a conexão foi estabelecida. Um teste rápido é executar um cmdlet Office 365, por exemplo, **Get-MsolUser**, e ver os resultados.
   
@@ -119,10 +117,10 @@ Caso você receba erros, verifique os seguintes requisitos:
     
 - **Se você receber um erro de conexão, confira este tópico:** ["Connect-MsolService: ocorreu exceção do tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Conecte-se com o Azure Active Directory PowerShell para o módulo de gráfico
 <a name="ConnectV2"> </a>
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Conecte-se com o Azure Active Directory PowerShell para o módulo de gráfico
 
-Os comandos do Azure Active Directory PowerShell para o módulo de gráfico tem "AzureAD" em seu nome do cmdlet.
+Comandos no módulo do [Azure Active Directory PowerShell para o módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) têm "AzureAD" em seu nome do cmdlet.
 
 Para obter os procedimentos que exigem os cmdlets novos no Azure Active Directory PowerShell para o módulo de gráfico, execute estas etapas para instalar o módulo e conecte-se à sua assinatura do Office 365.
 
@@ -146,7 +144,7 @@ Essas etapas precisam ser executadas apenas uma vez em seu computador e não tod
 Se solicitado a instalar um módulo de um repositório não confiável, digite **Y** e pressione Enter.
 
 
-### <a name="step-2-connect-to-office-365"></a>Etapa 2: conectar-se ao Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: Conectar ao Azure AD para sua assinatura do Office 365
 
 Para se conectar à sua assinatura do Office 365 com um *nome de conta e senha*:
     
@@ -169,7 +167,7 @@ Siga as instruções na caixa de diálogo **PowerShell do Azure Active Directory
     
 Depois de se conectar, você pode usar os novos cmdlets para o [Windows Azure Active Directory PowerShell para o módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
