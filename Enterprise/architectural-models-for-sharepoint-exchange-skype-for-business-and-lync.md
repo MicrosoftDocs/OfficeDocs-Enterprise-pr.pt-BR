@@ -7,7 +7,7 @@ ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: 'Resumo: Obtenha cartazes IT que descrevem os modelos de arquitetura, implantação e opções de plataforma para SharePoint, Exchange, Skype para Lync e de negócios.'
-ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -187,7 +187,7 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 |:-----|:-----|
 |[![Processo de recuperação de desastres do SharePoint no Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Este cartaz IT ilustra os princípios de arquitetura para um ambiente de recuperação de desastres no Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - recuperação de desastres do SharePoint para o Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Conceitos
+## <a name="see-also"></a>Confira também
 
 <a name="Lync2013_Options"> </a>
 

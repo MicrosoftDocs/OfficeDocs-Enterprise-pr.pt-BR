@@ -7,7 +7,7 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: Crie uma rede virtual de locais cruzados simulado in Microsoft Azure como um ambiente de desenvolvimento e teste.'
-ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 4a34126bba4561da621dc3faf37dd30d4dcc9ff3
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulado entre locais no Windows Azure
 
@@ -206,7 +206,7 @@ Seu ambiente de nuvem híbrida Azure simulado agora está pronta para teste.
 
 Use esse ambiente de desenvolvimento e teste para simular a um [farm do SharePoint Server 2016 intranet hospedado no Windows Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) 
   
