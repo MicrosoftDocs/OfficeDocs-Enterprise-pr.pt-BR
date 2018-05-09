@@ -1,5 +1,5 @@
 ---
-title: "Usando o Windows Azure AD para autenticação no SharePoint Server"
+title: Usando o Windows Azure AD para autenticação no SharePoint Server
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -16,13 +16,13 @@ ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
-ms.assetid: 
-description: "Resumo: Saiba como a fim de ignorar o serviço de controle de acesso do Windows Azure e usam o SAML 1.1 para autenticar os usuários do SharePoint Server com o Windows Azure Active Directory."
-ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
-ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
+ms.assetid: ''
+description: 'Resumo: Saiba como a fim de ignorar o serviço de controle de acesso do Windows Azure e usam o SAML 1.1 para autenticar os usuários do SharePoint Server com o Windows Azure Active Directory.'
+ms.openlocfilehash: 1ab0bb3215531ca8b2d0fda8d70874f966438759
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Usando o Windows Azure AD para autenticação no SharePoint Server
 
@@ -210,6 +210,22 @@ $cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
+## <a name="configuring-one-trusted-identity-provider-for-multiple-web-applications"></a>Configurando um provedor de identidade confiável para vários aplicativos da web
+A configuração funciona para um único aplicativo web, mas precisa configuração adicional se você pretende usar o mesmo provedor de identidade confiável para vários aplicativos da web. Por exemplo, suponha que um aplicativo web para usar a URL estendida `https://portal.contoso.local` e agora deseja autenticar os usuários `https://sales.contoso.local` também. Para fazer isso, é necessário atualizar o provedor de identidade para honram o parâmetro WReply e atualizar o registro de aplicativo no Windows Azure AD para adicionar uma URL de resposta.
+
+1. No Portal do Windows Azure, abra o diretório do Windows Azure AD. Clique em **registros de aplicativo**, clique em **Exibir todos os aplicativos**. Clique no aplicativo que você criou anteriormente (integração de SAML do SharePoint).
+2. Clique em **configurações**.
+3. No blade configurações, clique em **URLs de resposta**. 
+4. Adicione a URL do aplicativo web adicionais (como `https://sales.contoso.local`) e clique em **Salvar**. 
+5. No servidor do SharePoint, abra o **Shell de gerenciamento do SharePoint 2016** e execute os seguintes comandos, usando o nome do emissor de token de identidade confiável que você usou anteriormente.
+
+```
+$t = Get-SPTrustedIdentityTokenIssuer "AzureAD"
+$t.UseWReplyParameter=$true
+$t.Update()
+```
+6. Na Administração Central, vá para o aplicativo web e habilitar o provedor de identidade confiável existente. Lembre-se também configurar a URL da página de entrada como uma página de entrada personalizada `/_trust/`.
+7. Na Administração Central, clique no aplicativo web e escolha a **Política de usuário**. Adicione um usuário com as permissões apropriadas, conforme demonstrado anteriormente neste artigo.
 
 ## <a name="fixing-people-picker"></a>Corrigindo seletor de pessoas
 Os usuários agora podem fazer logon em 2016 do SharePoint usando as identidades do Azure AD, mas ainda existem oportunidades de aprimoramento para a experiência do usuário. Por exemplo, procurando por um usuário apresenta vários resultados de pesquisa no seletor de pessoas. Não há um resultado de pesquisa para cada um dos tipos de 3 declaração que foram criados no mapeamento de declaração. Para escolher um usuário usando o seletor de pessoas, você deve digitar seu nome de usuário exatamente e escolha o **nome** do resultado de declaração.
@@ -228,10 +244,10 @@ Para auxiliar nesse cenário, há uma fonte de abrir solução chamada [AzureCP]
   
 ## <a name="join-the-discussion"></a>Ingressar na discussão
 
-|**Entre em contato conosco**|**Descrição**|
+|**Fale conosco**|**Descrição**|
 |:-----|:-----|
-|**De qual conteúdo sobre adoção da nuvem você precisa?** <br/> |Estamos criando conteúdo para a adoção de nuvem que abrange várias plataformas de nuvem da Microsoft e serviços. Fale conosco pensar em nosso conteúdo de adoção de nuvem ou pedir enviando e-mails para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)conteúdo específico.<br/> |
-|**Participe do debate sobre a adoção da nuvem** <br/> |Se você estiver entusiasmados pela sobre soluções baseadas em nuvem, considere ingressando a nuvem adoção consultoria placa (CAAB) para se conectar com uma comunidade amplos, vibrante de desenvolvedores de conteúdo Microsoft, profissionais do setor e clientes de todo o mundo. Para ingressar, adicione si mesmo como um membro do [espaço CAAB (placa de consultoria da adoção nuvem)](https://aka.ms/caab) da Microsoft Tech comunidade e envie-em um email rápido em [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros CAAB obtém convites para seminários na Web privados que descrevem os novos recursos de adoção de nuvem e soluções.<br/> |
-|**Obtenha a arte que você vê aqui** <br/> |Se você quiser uma cópia editável da arte que você vê neste artigo, voltaremos felizes em enviá-lo. Envie sua solicitação, incluindo a URL e o título da arte, como [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**De qual conteúdo sobre adoção da nuvem você precisa?** <br/> |Estamos criando conteúdo para adoção da nuvem que engloba diversas plataformas e serviços de nuvem da Microsoft. Para solicitar um conteúdo específico ou dar opiniões sobre nosso conteúdo de adoção da nuvem, envie um email para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
+|**Participe do debate sobre a adoção da nuvem** <br/> |Se você gosta de soluções em nuvem, considere ingressar no Cloud Adoption Advisory Board (CAAB) para se conectar com uma comunidade maior e vibrante de desenvolvedores de conteúdo da Microsoft, profissionais do setor e clientes de todo o mundo. Para participar, adicione-se como membro do espaço [CAAB (Cloud Adoption Advisory Board)](https://aka.ms/caab) da Microsoft Tech Community e envie um email rápido para [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog do CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros do CAAB recebem convites para webinars particulares que descrevem novas soluções e recursos de adoção da nuvem.<br/> |
+|**Obtenha a arte que você vê aqui** <br/> |Se você quiser uma cópia editável da arte vista neste artigo, teremos o maior prazer em enviá-la. Envie sua solicitação por email, incluindo a URL e o título da arte, para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
 

@@ -1,9 +1,9 @@
 ---
-title: "Desabilitar o acesso aos serviços durante a atribuição de licenças de usuário"
+title: Desabilitar o acesso aos serviços durante a atribuição de licenças de usuário
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -13,21 +13,18 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
-description: "Saiba como atribuir licenças às contas de usuário e desativar os planos de serviço específico ao mesmo tempo usando o PowerShell do Office 365."
-ms.openlocfilehash: 0ab1aea03099f6aae469699b1169af9e12b41d74
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Saiba como atribuir licenças às contas de usuário e desativar os planos de serviço específico ao mesmo tempo usando o PowerShell do Office 365.
+ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Desabilitar o acesso aos serviços durante a atribuição de licenças de usuário
 
 **Resumo:**  Saiba como atribuir licenças às contas de usuário e desativar os planos de serviço específico ao mesmo tempo usando o PowerShell do Office 365.
   
 Assinaturas do Office 365 vêm com planos de serviço para serviços individuais. Administradores do Office 365 geralmente precisam desativar os planos de determinados ao atribuir licenças aos usuários. Com as instruções deste artigo, você pode atribuir uma licença do Office 365 ao desativar os planos de serviço específico usando o PowerShell para uma conta de usuário individual ou várias contas de usuário.
-  
-> [!NOTE]
-> Este artigo se baseia no trabalho de Siddhartha Parmar, um engenheiro de escalonamento de suporte da Microsoft. 
   
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -150,15 +147,13 @@ Este bloco de comando do PowerShell:
     
 - Cria um arquivo CSV com todos os usuários que foram processados e mostra seus status de licença.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-#### 
-
-[Desabilitar o acesso aos serviços com o PowerShell do Office 365](disable-access-to-services-with-office-365-powershell.md)
+[Desabilitar o acesso aos serviços com o Office 365 PowerShell](disable-access-to-services-with-office-365-powershell.md)
   
 [Desabilitar o acesso aos Sway com o Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)
   
-[Gerenciar contas de usuário e licenças usando o PowerShell do Office 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 
