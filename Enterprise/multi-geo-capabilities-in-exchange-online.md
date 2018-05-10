@@ -11,11 +11,11 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no Exchange Online.
-ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
+ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos de multi-Geo no Exchange Online
 
@@ -65,7 +65,7 @@ O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure AD
 
 - Se nenhum Geo for especificado, a caixa de correio será colocada no Geo padrão.
 
-**Observação**: capacidades de Multi-Geo e Skype para Business Online regional hospedada reuniões usam a propriedade **PreferredDataLocation** nos objetos de usuário para localizar serviços. Se você configurar valores **PreferredDataLocation** em objetos de usuário para reuniões regional hospedadas, a caixa de correio e OneDrive para os usuários serão automaticamente movidos para o Geo especificado depois Multi-Geo está habilitado no inquilino do Office 365.
+**Observação**: capacidades de Multi-Geo e Skype para Business Online regional hospedada reuniões usam a propriedade **PreferredDataLocation** nos objetos de usuário para localizar serviços. Se você configurar valores **PreferredDataLocation** em objetos de usuário para reuniões regional hospedadas, a caixa de correio dos usuários serão automaticamente movida para o Geo especificado depois Multi-Geo está habilitado no inquilino do Office 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitações do recurso para Multi-Geo no Exchange Online
 1. Apenas caixas de correio do usuário, caixas de correio de recurso (caixas de correio de sala e equipamento) e caixas de correio compartilhadas suportam recursos de Multi-Geo. Caixas de correio de pasta pública e grupos do Office 365 só podem ser colocados em Geo de página inicial do cliente.
