@@ -1,5 +1,5 @@
 ---
-title: "Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise"
+title: Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: "Resumo: Use este guia de laboratório de teste para adicionar políticas de gerenciamento (MAM) de aplicativo móvel do EMS ao seu ambiente de desenvolvimento e teste da Microsoft 365."
-ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Use este guia de laboratório de teste para adicionar políticas de gerenciamento (MAM) de aplicativo móvel do EMS ao seu ambiente de desenvolvimento e teste da Microsoft 365.'
+ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
 
@@ -34,25 +34,25 @@ Siga as instruções no [ambiente de desenvolvimento e teste o Microsoft 365 Ent
 
 Nesta fase, você criará e implantará duas políticas de MAM diferentes: uma para dispositivos iOS e outra para dispositivos Android.
   
-1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entrar em sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e se conectar à sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
 2. Em uma nova guia do navegador, abra o portal do Windows Azure ([https://azure.portal.com](https://azure.portal.com)) e entrar usando sua conta de administrador global do Office 365.
     
-3. Na guia Azure portal no Internet Explorer, no painel de navegação, clique em **mais serviços** (ou na seta à direita), digite **Intune**e clique em **Intune**.
+3. Na guia Azure portal no Internet Explorer, no painel de navegação, clique em **todos os serviços**, digite **Intune**e, em seguida, clique em **Intune**.
     
 4. No painel de navegação à esquerda, clique em **Grupos**.
     
-5. No blade **usuários e grupos-All grupos** , clique em **Adicionar**.
+5. No blade **grupos-All grupos** , clique em **+ novo grupo**.
     
-6. No **grupo** blade, digite **gerenciados iOS usuários de dispositivo** em **nome**, selecione **atribuído** no **tipo de associação**, selecione **Sim** para **recursos do Office habilitar?**e clique em **criar**. 
+6. No **grupo** blade, selecione **Office 365** para **tipo de grupo?**, digite **gerenciados iOS usuários de dispositivo** em **nome**, selecione **atribuído** no **tipo de associação**e, em seguida, clique em **criar**. 
     
 7. Feche o blade de **grupo** .
     
-8. No blade **usuários e grupos-All grupos** , clique em **Adicionar**.
+8. No blade **grupos-All grupos** , clique em **Adicionar**.
     
-9. No **grupo** blade, digite **os usuários de dispositivos Android gerenciados** em **nome**, selecione **atribuído** no **tipo de associação**, selecione **Sim** para **recursos do Office habilitar?**e clique em **criar**.
+9. No **grupo** blade, selecione **Office 365** para **tipo de grupo?**, digite **gerenciados Android usuário de dispositivo** em **nome**, selecione **atribuído** no **tipo de associação**e, em seguida, clique em **criar**.
     
-10. Feche o blade de **usuários e grupos-All grupos** .
+10. Feche o blade **grupos grupos a todos** .
     
 11. No blade **Intune** , na lista de **Tarefas rápidas** , clique em **criar uma política de conformidade**.
     
@@ -139,11 +139,11 @@ Agora, você tem duas políticas de MAM, uma para dispositivos iOS e outra para 
 > [!TIP]
 > Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[O ambiente de desenvolvimento e teste da Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Registrar o iOS e Android dispositivos em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Registre dispositivos iOS e Android em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 

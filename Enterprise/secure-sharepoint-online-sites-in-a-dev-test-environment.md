@@ -3,7 +3,7 @@ title: Proteger os sites do SharePoint Online em um ambiente de desenvolvimento/
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,11 +14,11 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumo: Crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento e teste.'
-ms.openlocfilehash: 8c02f1416cb00150e68dcc27dc7afb41bf82ed21
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 004a1614330f220b31be640cd822d9fdcbb49b99
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger os sites do SharePoint Online em um ambiente de desenvolvimento/teste
 
@@ -66,18 +66,18 @@ Primeiro, crie um conjunto de grupos para uma organização típica com o portal
   
 1. Criar uma guia separada no seu navegador e, em seguida, vá para o portal do Windows Azure em [https://portal.azure.com](https://portal.azure.com). Se necessário, entre com as credenciais da conta de administrador global para a sua assinatura de avaliação do Office 365 E5.
     
-2. No Portal do Azure, clique em **Azure Active Directory > Usuários e grupos > Todos os grupos**.
+2. No portal do Azure, clique em **Azure Active Directory > grupos**.
     
-3. Na folha **Todos os grupos**, clique em **+ Novo grupo**.
+3. No blade **grupos - todos os grupos** , clique em **+ novo grupo**.
     
 4. Na folha **Grupo**:
     
+  - Selecione **Office 365** no **tipo de grupo**.
+    
   - Digite **Pacote C** em **Nome**.
     
-  - Selecione **Atribuído** em **Associação**.
-    
-  - Selecione **Sim** para **Habilitar recursos do Office**.
-    
+  - Selecione **atribuído** no **tipo de associação**.
+      
 5. Clique em **Criar**e, em seguida, feche a folha **Grupo**.
     
 6. Repita as etapas 3 a 5 para os seguintes nomes de grupo:
@@ -541,7 +541,7 @@ Depois, configure a Proteção de Informações do Azure com uma nova política 
     
 3. Se essa for a primeira vez que você está configurando a proteção de informações do Windows Azure, consulte estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
-4. No painel de lista, clique em **mais de serviços**, digite as **informações**e clique em **Proteção de informações do Windows Azure**.
+4. No painel de lista, clique em **todos os serviços**, digite as **informações**e, clique em **Proteção de informações do Windows Azure**.
     
 5. No blade **proteção das informações do Azure** , clique em **escopo políticas > + Adicionar uma nova diretiva**.
     
