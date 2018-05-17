@@ -3,7 +3,7 @@ title: Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Ly
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2017
+ms.date: 05/16/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: 'Resumo: Obtenha cartazes IT que descrevem os modelos de arquitetura, implantação e opções de plataforma para SharePoint, Exchange, Skype para Lync e de negócios.'
-ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: b1b7887a65bddb1f206a7bf1499659281d32d670
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -50,7 +50,7 @@ Esta página liga você aos seguintes cartazes:
     
   - [Modelos de arquitetura do Microsoft SharePoint 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
     
-  - [Visualização de multi-Geo onedrive no Office 365](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#MultiGeoO365ODB)
+  - [Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#MultiGeoO365ODB)
     
   - [Bancos de dados do SharePoint Server 2016](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_Databases)
     
@@ -86,29 +86,29 @@ Esses novos cartazes de TI para o SharePoint 2016 e o Skype for Business 2015 of
     
 - **Tarefas de profissional de TI ou responsabilidades** As responsabilidades diárias que sua equipe de TI precisa planejar.
     
-### <a name="microsoft-sharepoint-2016-architectural-models"></a>Modelos de arquiteturas para o Microsoft SharePoint 2016
 <a name="SP2016_ArchModel"> </a>
+### <a name="microsoft-sharepoint-2016-architectural-models"></a>Modelos de arquiteturas para o Microsoft SharePoint 2016
 
 |**Item**|**Descrição**|
 |:-----|:-----|
 |[![Miniatura do pôster do SharePoint 2016 arquitetônica modelos](images/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | Este cartaz de TI descreve as configurações locais do SharePoint Online, do Microsoft Azure, e do SharePoint de que os responsáveis por decisões de negócios e os arquitetos de soluções precisam saber. <br/><br/> - **SharePoint Online (SaaS)** - consumir SharePoint por meio de um Software como um modelo de assinatura do serviço (SaaS). <br/> - **SharePoint híbrido** - mover seus sites do SharePoint e aplicativos para a nuvem em seu próprio ritmo. <br/> - **SharePoint no Windows Azure (IaaS)** - você estender seu ambiente local em Microsoft Azure e implantar servidores do SharePoint 2016 lá. (Isso é recomendado para ambientes de desenvolvimento e teste e alta disponibilidade/recuperação de desastre).<br/> - **SharePoint local** - planejar, implantar, manter e personalizar o seu ambiente do SharePoint em um data center que você faz manutenção. <br/> |
    
-### <a name="multi-geo-preview-for-onedrive-in-office-365"></a>Visualização de multi-Geo onedrive no Office 365
 <a name="MultiGeoO365ODB"> </a>
+### <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Recursos de multi-Geo no OneDrive e SharePoint Online no Office 365
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![OneDrive multi-Geo no modelo do Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | Este cartaz é uma visão geral de uma página do OneDrive Multi-Geo no Office 365, que está atualmente no modo de visualização. Este modelo inclui:<br/><br/> -Benefícios <br/> -Etapas de implantação <br/> -Um exemplo de configuração <br/><br/>  Para obter mais informações sobre a visualização de Multi-Geo onedrive no Office 365, clique [aqui](https://aka.ms/onedrivemultigeo).  <br/> |
+|[![OneDrive multi-Geo no modelo do Office 365](images/c6c1b7cd-7833-46fb-9eec-c12150c260d9.png)          ](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.pdf)  \| ![arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](http://download.microsoft.com/download/0/5/9/0594634F-7893-4201-938A-C2FF2F21B655/Multi-Geo-ODB.vsdx) <br/> | Este cartaz é uma visão geral de uma página de recursos de Multi-Geo no OneDrive e SharePoint Online no Office 365. Este modelo inclui:<br/><br/> -Benefícios <br/> -Etapas de implantação <br/> -Um exemplo de configuração <br/><br/>  Para obter mais informações sobre recursos de Multi-Geo no OneDrive e no SharePoint Online no Office 365, clique [aqui](https://aka.ms/onedrivemultigeo).  <br/> |
    
-### <a name="sharepoint-server-2016-databases"></a>Bancos de dados do SharePoint Server 2016
 <a name="SP2016_Databases"> </a>
+### <a name="sharepoint-server-2016-databases"></a>Bancos de dados do SharePoint Server 2016
 
 |**Item**|**Descrição**|
 |:-----|:-----|
 |[![Miniatura do pôster bancos de dados do SharePoint Server 2016](images/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Este cartaz de TI é um guia de referência rápida para bancos de dados do SharePoint Server 2016. Cada banco de dados contém os seguintes detalhes:<br/><br/> -Size <br/> -Diretrizes de dimensionamento <br/> -Padrões de e/s <br/> -Requisitos <br/><br/>  A primeira página contém os bancos de dados de sistema do SharePoint e os aplicativos de serviço que tem vários bancos de dados. A segunda página mostra todos os aplicativos de serviço que tem bancos de dados único.<br/><br/>  Para obter mais informações sobre os bancos de dados do SharePoint Server 2016, consulte [Database types and descriptions no SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx) <br/> |
    
-### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modelos de arquitetura para o Microsoft Skype for Business 2015
 <a name="SfB2015_ArchModel"> </a>
+### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modelos de arquitetura para o Microsoft Skype for Business 2015
 
 |**Item**|**Descrição**|
 |:-----|:-----|
@@ -128,8 +128,8 @@ Estes cartazes de TI para o SharePoint 2013, o Exchange 2013 e o Lync 2013 ofere
     
 - **Tarefas de profissional de TI ou responsabilidades** As responsabilidades diárias que sua equipe de TI precisa planejar.
     
-## <a name="sharepoint-2013-platform-options"></a>Opções de Plataforma para o SharePoint 2013
 <a name="SP2013_Options"> </a>
+## <a name="sharepoint-2013-platform-options"></a>Opções de Plataforma para o SharePoint 2013
 
 ****
 
@@ -137,8 +137,8 @@ Estes cartazes de TI para o SharePoint 2013, o Exchange 2013 e o Lync 2013 ofere
 |:-----|:-----|
 |[![Imagem em miniatura das opções de plataforma do SharePoint 2013](images/SP_PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Para obter e business decision tomadores de arquitetos, este modelo ilustra as opções de plataforma para o SharePoint 2013, SharePoint no Office 365, híbrido local com o Office 365, Windows Azure e implantações apenas locais. Ela inclui uma visão geral de cada arquitetura, recomendações, requisitos de licença e listas de arquiteto e tarefas para profissionais de TI em cada plataforma. Várias soluções do SharePoint no Azure são realçadas.<br/><br/>Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - opções de plataforma do Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
-## <a name="exchange-2013-platform-options"></a>Opções de plataforma para o Exchange 2013
 <a name="Exch2013_options"> </a>
+## <a name="exchange-2013-platform-options"></a>Opções de plataforma para o Exchange 2013
 
 ****
 
@@ -146,8 +146,8 @@ Estes cartazes de TI para o SharePoint 2013, o Exchange 2013 e o Lync 2013 ofere
 |:-----|:-----|
 |[![Imagem em miniatura das opções de plataforma do Exchange](images/ITPro_Other_Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |Para arquitetos e BDMs, este modelo descreve as opções de plataforma disponíveis para o Exchange 2013. Os clientes podem escolher entre o Exchange Online com o Office 365, Exchange híbrido, Exchange Server local e Hosted Exchange. O cartaz e inclui detalhes de cada opção de arquitetura, incluindo os cenários mais ideais para cada um, os requisitos de licença e as responsabilidades profissionais de TI.<br/><br/>Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - opções de plataforma do Microsoft Exchange 2013](accessible-diagrammicrosoft-exchange-2013-platform-options.md).  <br/> |
    
-## <a name="lync-2013-platform-options"></a>Opções de plataforma para o Lync 2013
 <a name="Lync2013_Options"> </a>
+## <a name="lync-2013-platform-options"></a>Opções de plataforma para o Lync 2013
 
 ****
 
@@ -155,13 +155,13 @@ Estes cartazes de TI para o SharePoint 2013, o Exchange 2013 e o Lync 2013 ofere
 |:-----|:-----|
 |[![Imagem em miniatura das opções de plataforma do Lync](images/Lync_PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |Para os responsáveis por decisões de negócios e os arquitetos, este modelo descreve as opções de plataforma disponível para o Lync 2013. Os clientes podem escolher entre o Lync Online com o Office 365, o Lync Híbrido, o Lync Server local e o Lync Hospedado. O cartaz de TI inclui detalhes de cada opção de arquitetura, incluindo os cenários mais ideais para cada uma delas, os requisitos de licença e responsabilidades dos profissionais de TI.    <br/> |
    
-## <a name="sharepoint-in-azure-solutions-posters"></a>Cartazes com soluções do SharePoint no Azure
 <a name="Lync2013_Options"> </a>
+## <a name="sharepoint-in-azure-solutions-posters"></a>Cartazes com soluções do SharePoint no Azure
 
 Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o SharePoint Server 2013 em um formato de pôster grande.
   
-### <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sites da Internet no Microsoft Azure usando o SharePoint Server 2013
 <a name="Azure_sharepoint2013"> </a>
+### <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sites da Internet no Microsoft Azure usando o SharePoint Server 2013
 
 ****
 
@@ -169,8 +169,8 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 |:-----|:-----|
 |[![Imagem de sites da Internet no Windows Azure usando o SharePoint](images/MS_AZ_SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |Este cartaz descreve as atividades de design principal e recomendado escolhas de arquitetura para sites na Internet no Windows Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013](accessible-diagraminternet-sites-in-microsoft-azure-for-sharepoint-2013.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Exemplo de design: sites da Internet no Microsoft Azure para SharePoint 2013
 <a name="DesignSampleInternetSites"> </a>
+### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Exemplo de design: sites da Internet no Microsoft Azure para SharePoint 2013
 
 ****
 
@@ -178,8 +178,8 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 |:-----|:-----|
 |[![Imagem da amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Use essa amostra de design como ponto de partida para seu próprio site voltado à Internet de arquitetura no Windows Azure usando o SharePoint Server 2013. Para obter uma versão texto acessível este cartaz, consulte [diagrama acessível - exemplo de Design: sites da Internet no Microsoft Azure para o SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Recuperação de desastre do SharePoint para o Microsoft Azure
 <a name="sharepoint_recovery_Azure"> </a>
+### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Recuperação de desastre do SharePoint para o Microsoft Azure
 
 ****
 
@@ -187,9 +187,8 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 |:-----|:-----|
 |[![Processo de recuperação de desastres do SharePoint no Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Este cartaz IT ilustra os princípios de arquitetura para um ambiente de recuperação de desastres no Azure. Para obter uma versão texto acessível este cartaz, consulte o [diagrama acessível - recuperação de desastres do SharePoint para o Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Para obter mais informações, consulte os artigos a seguir.  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Microsoft Azure arquiteturas do SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Confira também
-
 <a name="Lync2013_Options"> </a>
+## <a name="see-also"></a>Confira também
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
@@ -198,7 +197,4 @@ Destes cartazes IT mostram as soluções baseadas no Windows Azure usando o Shar
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Soluções híbridas](hybrid-solutions.md)
-
-
-
 
