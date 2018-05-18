@@ -87,6 +87,7 @@
 #### [Aplicar proteção de dados pessoais no Office 365](apply-protection-to-personal-data-in-office-365.md)
 #### [Monitorar a existência de vazamento de dados pessoais](monitor-for-leaks-of-personal-data.md)
 ### [GDPR para servidores locais do Office](gdpr-for-office-servers.md)
+#### [GDPR para o SharePoint Server](gdpr-for-sharepoint-server.md)
 #### [GDPR para o Exchange Server](gdpr-for-exchange-server.md)
 #### [GDPR para Skype para servidor de negócio](gdpr-for-skype-for-business-server.md)
 #### [GDPR para o Project Server](gdpr-for-project-server.md)
