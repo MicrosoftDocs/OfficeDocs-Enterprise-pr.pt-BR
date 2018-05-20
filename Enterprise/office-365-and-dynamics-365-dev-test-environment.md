@@ -3,7 +3,7 @@ title: Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,17 +14,20 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Resumo: Use este guia de laboratório de teste para adicionar Dynamics 365 ao seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: ccf0615befe2ba74f85177dc252516f685655ed6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 00d5cc0fd347aff7e201056f6af9ca271008d285
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365
 
  **Resumo:** Use este guia de laboratório de teste para adicionar Dynamics 365 ao seu ambiente de desenvolvimento e teste do Office 365.
   
 Com as instruções deste artigo, você adiciona uma assinatura de avaliação do Dynamics 365 à mesma organização que seu ambiente de desenvolvimento e teste do Office 365, criação de um ambiente de desenvolvimento e teste do Office 365 e Dynamics 365.
+
+![Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](images/o365-dynamics365-dev-test.png)
+  
   
 Você pode usar uma assinatura de avaliação do Dynamics 365 para demonstrar os recursos e capacidades do Dynamics 365. As seguintes soluções estão incluídas com uma Dynamics 365 plano 1, Enterprise Edition de avaliação:
   
@@ -48,6 +51,8 @@ Você pode explorar uma ou mais das perguntas acima para sua assinatura de avali
 Se você quiser testar o Office 365 e Dynamics 365 de forma leve com os requisitos mínimos, siga as instruções em fases 2 e 3 do [ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md).
   
 Se você quiser testar o Office 365 e Dynamics 365 para uma empresa simulada, siga as instruções no [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md).
+
+![O ambiente de desenvolvimento e teste do Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 > [!NOTE]
 > A configuração neste artigo não requer que o ambiente de desenvolvimento e teste de simulado empresarial, que inclui uma intranet simulada conectada à Internet e a sincronização de diretório para uma floresta do Windows Server AD. Ele é fornecido aqui como uma opção para que você pode experimentar com o Office 365 e Dynamics 365 em um ambiente que representa uma organização típica. 
@@ -69,6 +74,8 @@ Nesta fase, inscreva-se para a assinatura de avaliação do Dynamics 365 e adici
 5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
 6. Na página **Recibo do pedido**, clique em **Continuar**.
+
+![Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](images/o365-dynamics365-dev-test.png)
     
 > [!NOTE]
 > A assinatura de avaliação do Dynamics 365 planejar 1 Enterprise Edition é 30 dias. Você pode estender facilmente a assinatura de trilha para outro 30 dias. Para um ambiente de desenvolvimento e teste permanente, crie uma nova assinatura com um pequeno número de licenças paga. 

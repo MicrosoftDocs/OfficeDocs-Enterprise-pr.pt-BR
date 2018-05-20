@@ -1,22 +1,21 @@
 ---
-title: "Usar o PowerShell para realizar uma migração de substituição para o Office 365"
+title: Usar o PowerShell para realizar uma migração de substituição para o Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: "Resumo: Saiba como usar o Windows PowerShell para executar uma migração de substituição para o Office 365."
-ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração de substituição para o Office 365.'
+ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração de substituição para o Office 365
 
@@ -75,7 +74,7 @@ Para obter uma lista completa dos comandos de migração, confira [Cmdlets de mo
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Atribua as permissões necessárias a uma conta de usuário local para acessar caixas de correio em sua organização do Exchange.** A conta de usuário local que você usa para conectar-se à organização do Exchange no local (também chamada deadministrador de migração) deve ter as permissões necessárias para acessar as caixas de correio no local que você deseja migrar para o Office 365. Essa conta de usuário é usada para criar um ponto de extremidade de migração para a sua organização local.
+- **Atribuir as permissões necessárias para acessar caixas de correio em sua organização do Exchange de uma conta de usuário local.** A conta de usuário local que você usa para se conectar à sua organização do Exchange local (também chamada de administrador de migração) deve ter as permissões necessárias para acessar as caixas de correio local que você deseja migrar para o Office 365. Esta conta de usuário é usada para criar um ponto de extremidade de migração para sua organização local.
     
     A lista a seguir mostra os privilégios administrativos necessários para migrar caixas de correio usando uma migração de transferência. Existem três opções possíveis.
     
@@ -200,7 +199,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="step-8-complete-post-migration-tasks"></a>Etapa 8: concluir tarefas pós-migração
 <a name="BK_Step8"> </a>
 
-- **Crie um registro DNS de Descoberta Automática para que os usuários possam facilmente acessar suas caixas de correio.**Após todas as caixas de correio locais serem migradas para o Office 365, você pode configurar um registro DNS de Descoberta Automática para sua organização do Office 365 e habilitar os usuários a se conectarem facilmente a suas novas caixas de correio do Office 365 com o Outlook e clientes móveis. Esse novo registro DNS de descoberta automática tem que usar o mesmo namespace que você usar para a organização do Office 365. Por exemplo, se seu namespace baseado em nuvem for cloud.contoso.com, o registro DNS de Descoberta Automática a ser criado será autodiscover.cloud.contoso.com.
+- **Crie um registro DNS de Descoberta Automática para que os usuários possam facilmente acessar suas caixas de correio.** Após todas as caixas de correio locais serem migradas para o Office 365, você pode configurar um registro DNS de Descoberta Automática para sua organização do Office 365 e habilitar os usuários a se conectarem facilmente a suas novas caixas de correio do Office 365 com o Outlook e clientes móveis. Esse novo registro DNS de descoberta automática tem que usar o mesmo namespace que você usar para a organização do Office 365. Por exemplo, se seu namespace baseado em nuvem for cloud.contoso.com, o registro DNS de Descoberta Automática a ser criado será autodiscover.cloud.contoso.com.
     
     Se mantiver seu servidor Exchange, você também deverá verificar se o registro DNS CNAME de Descoberta Automática aponta para o Office 365 no DNS interno e externo após a migração para que o cliente do Outlook se conecte à caixa de correio correta.
     

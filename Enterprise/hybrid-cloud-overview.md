@@ -1,5 +1,5 @@
 ---
-title: "Visão geral do híbrido nuvem"
+title: Visão geral da nuvem híbrida
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,14 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
-description: "Resumo: Entenda a definição e elementos de nuvem da Microsoft híbrida."
-ms.openlocfilehash: 3cf828b8411605a9d0bdd338c3b6c16a5892f6b7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda a definição e elementos de nuvem da Microsoft híbrida.'
+ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
-# <a name="hybrid-cloud-overview"></a>Visão geral do híbrido nuvem
+# <a name="hybrid-cloud-overview"></a>Visão geral da nuvem híbrida
 
  **Resumo:** Compreenda a definição e elementos de nuvem da Microsoft híbrida.
   
@@ -72,7 +72,7 @@ Você deve considerar os seguintes elementos ao planejamento e implementação d
     
 - Identidade
     
-    Identidade para os cenários híbridos SaaS e o Azure PaaS pode incluir o Azure AD como um provedor de identidade comuns, que pode ser sincronizado com o seu local Windows Server AD ou federado com o Windows Server AD ou outros provedores de identidade. Você também pode estender sua infraestrutura de identidade no local para o Windows Azure IaaS. Para obter mais informações, consulte [Identidade de nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-identity-for-enterprise-architects.md).
+    Identidade para os cenários híbridos SaaS e o Azure PaaS pode incluir o Azure AD como um provedor de identidade comuns, que pode ser sincronizado com o seu local Windows Server AD ou federado com o Windows Server AD ou outros provedores de identidade. Você também pode estender sua infraestrutura de identidade no local para o Windows Azure IaaS. Para obter mais informações, consulte [Identidade de nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Segurança
     
@@ -82,11 +82,11 @@ Você deve considerar os seguintes elementos ao planejamento e implementação d
     
     Gerenciamento para cenários de nuvem híbrida inclui a capacidade de manter configurações, dados, contas, políticas e permissões e para monitorar a integridade em andamento dos elementos do cenário e seu desempenho. Você também pode usar o mesmo conjunto de ferramentas, como o Systems Management Server, para o gerenciamento de máquinas virtuais no Windows Azure IaaS.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
  

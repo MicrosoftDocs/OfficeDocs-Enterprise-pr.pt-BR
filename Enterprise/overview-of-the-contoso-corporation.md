@@ -1,5 +1,5 @@
 ---
-title: "Visão geral da Contoso Corporation"
+title: Visão geral da Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
-description: "Resumo: Entenda a Contoso Corporation como um negócio e a estrutura hierárquica dos seus escritórios em todo o mundo."
-ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda a Contoso Corporation como um negócio e a estrutura hierárquica dos seus escritórios em todo o mundo.'
+ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Visão geral da Contoso Corporation
 
@@ -71,7 +71,7 @@ Da Contoso arquitetos de TI identificou os seguintes elementos durante o planeja
     
     A Contoso utiliza uma floresta do Windows Server AD para seu provedor de identidade interno e também agrupa com provedores de terceiros para clientes e parceiros. Contoso deve aproveitar o conjunto interno de contas para as ofertas de nuvem da Microsoft. Provedores de identidade de terceiros também deve aproveitar o acesso aos aplicativos baseados em nuvem para clientes e parceiros.
     
-    Para obter mais informações, consulte o cartaz de [Identidade de nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-identity-for-enterprise-architects.md) .
+    Para obter mais informações, consulte o cartaz de [Identidade de nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-it-architecture-resources.md#identity) .
     
 - Segurança
     
@@ -83,11 +83,11 @@ Da Contoso arquitetos de TI identificou os seguintes elementos durante o planeja
     
     Gerenciamento de aplicativos baseados em nuvem e cargas de trabalho SaaS precisará a capacidade de manter configurações, dados, contas, políticas e permissões e monitorar o desempenho e a integridade em andamento. Ferramentas de gerenciamento de servidor existente serão ser usadas para gerenciar as máquinas virtuais no Windows Azure IaaS.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
  
