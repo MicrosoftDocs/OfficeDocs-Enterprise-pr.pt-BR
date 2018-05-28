@@ -1,5 +1,5 @@
 ---
-title: Identidade federada para seu ambiente de desenvolvimento e teste do Office 365
+title: Identidade federada para seu ambiente de desenvolvimento/teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,72 +15,72 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: 'Resumo: Configure a autenticação federada para seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: e1a2e4096dc14c2853af33a36b24d7b6ac9784bd
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Resumo: configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.'
+ms.openlocfilehash: 70e5eb3561432b47921b4baba31d613e3b6135a9
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="federated-identity-for-your-office-365-devtest-environment"></a><span data-ttu-id="f04f4-103">Identidade federada para seu ambiente de desenvolvimento e teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="f04f4-103">Federated identity for your Office 365 dev/test environment</span></span>
+# <a name="federated-identity-for-your-office-365-devtest-environment"></a><span data-ttu-id="cd4ab-103">Identidade federada para seu ambiente de desenvolvimento/teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="cd4ab-103">Federated identity for your Office 365 dev/test environment</span></span>
 
- <span data-ttu-id="f04f4-104">**Resumo:** Configure autenticação federada para seu ambiente de desenvolvimento e teste do Office 365.</span><span class="sxs-lookup"><span data-stu-id="f04f4-104">**Summary:** Configure federated authentication for your Office 365 dev/test environment.</span></span>
+ <span data-ttu-id="cd4ab-104">**Resumo:** configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-104">**Summary:** Configure federated authentication for your Office 365 dev/test environment.</span></span>
   
-<span data-ttu-id="f04f4-p101">Office 365 oferece suporte a identidade federada. Isso significa que em vez de executar a validação de credenciais em si, Office 365 se refere ao usuário se conectando a um servidor de autenticação federada relações de confiança do Office 365. Se as credenciais do usuário estão corretas, o servidor de autenticação federada emite um token de segurança que envia o cliente para o Office 365 como prova de autenticação. Identidade federada permite o descarregamento e expansão de autenticação para uma assinatura do Office 365 e cenários de autenticação e segurança avançada.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p101">Office 365 supports federated identity. This means that instead of performing the validation of credentials itself, Office 365 refers the connecting user to a federated authentication server that Office 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Office 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for an Office 365 subscription and advanced authentication and security scenarios.</span></span>
+<span data-ttu-id="cd4ab-p101">O Office 365 dá suporte à identidade federada, ou seja, em vez de executar a validação de credenciais em si, o Office 365 refere-se a conectar o usuário a um servidor de autenticação federada em que o Office 365 confia. Se as credenciais do usuário estiverem corretas, o servidor de autenticação federada emite um token de segurança que o cliente envia ao Office 365 como prova de autenticação. A identidade federada permite a liberação e a ampliação da autenticação para uma assinatura do Office 365 e cenários avançados de autenticação e segurança.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p101">Office 365 supports federated identity. This means that instead of performing the validation of credentials itself, Office 365 refers the connecting user to a federated authentication server that Office 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Office 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for an Office 365 subscription and advanced authentication and security scenarios.</span></span>
   
-<span data-ttu-id="f04f4-109">Este artigo descreve como você pode configurar a autenticação federada para o ambiente de desenvolvimento e teste do Office 365, resultando no seguinte:</span><span class="sxs-lookup"><span data-stu-id="f04f4-109">This article describes how you can configure federated authentication for the Office 365 dev/test environment, resulting in the following:</span></span>
+<span data-ttu-id="cd4ab-109">Este artigo descreve como você pode configurar a autenticação federada para o ambiente de desenvolvimento/teste do Office 365, resultando no seguinte:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-109">This article describes how you can configure federated authentication for the Office 365 dev/test environment, resulting in the following:</span></span>
   
-<span data-ttu-id="f04f4-110">**Figura 1: A autenticação federada para o ambiente de desenvolvimento e teste do Office 365**</span><span class="sxs-lookup"><span data-stu-id="f04f4-110">**Figure 1: The federated authentication for Office 365 dev/test environment**</span></span>
+<span data-ttu-id="cd4ab-110">**Figura 1: A autenticação federada para o ambiente de desenvolvimento/teste do Office 365.**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-110">**Figure 1: The federated authentication for Office 365 dev/test environment**</span></span>
 
 ![O servidor proxy do aplicativo Web adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
-<span data-ttu-id="f04f4-112">A configuração mostrada na Figura 1 consiste em:</span><span class="sxs-lookup"><span data-stu-id="f04f4-112">The configuration shown in Figure 1 consists of:</span></span> 
+<span data-ttu-id="cd4ab-112">A configuração mostrada na Figura 1 consiste em:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-112">The configuration shown in Figure 1 consists of:</span></span> 
   
-- <span data-ttu-id="f04f4-113">Um Office 365 E5 avaliação assinatura, que expira 30 dias a partir de quando você criá-lo.</span><span class="sxs-lookup"><span data-stu-id="f04f4-113">An Office 365 E5 Trial Subscription, which expires 30 days from when you create it.</span></span>
+- <span data-ttu-id="cd4ab-113">Uma assinatura de avaliação do Office 365 E5, que expira 30 dias depois de você criá-la.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-113">An Office 365 E5 Trial Subscription, which expires 30 days from when you create it.</span></span>
     
-- <span data-ttu-id="f04f4-p102">Uma intranet da organização simplificado conectado à Internet, consistindo em cinco máquinas virtuais em uma sub-rede de uma rede virtual do Azure (DC1, APP1, CLIENT1, ADFS1 e PROXY1). Conectar do Azure AD executa no APP1 para sincronizar a lista de contas no domínio AD do Windows Server para o Office 365. PROXY1 recebe as solicitações de autenticação de entrada. ADFS1 valida credenciais com DC1 e emite tokens de segurança.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p102">A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Windows Server AD domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.</span></span>
+- <span data-ttu-id="cd4ab-p102">Uma intranet simplificada da organização, conectada à Internet, consistindo em cinco máquinas virtuais na sub-rede de uma rede virtual Azure (DC1, APP1, CLIENT1, ADFS1 e PROXY1). O Azure AD Connect é executado no APP1 para sincronizar a lista de contas no domínio do AD do Windows Server ao Office 365. O PROXY1 recebe as solicitações de autenticação de entrada. O ADFS1 valida as credenciais com o DC1 e emite tokens de segurança.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p102">A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Windows Server AD domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.</span></span>
     
-<span data-ttu-id="f04f4-118">Há cinco fases para configurar esse ambiente de desenvolvimento e teste:</span><span class="sxs-lookup"><span data-stu-id="f04f4-118">There are five phases to setting up this dev/test environment:</span></span>
+<span data-ttu-id="cd4ab-118">Há cinco fases para configurar esse ambiente de desenvolvimento/teste:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-118">There are three major phases to setting up this dev/test environment:</span></span>
   
-1. <span data-ttu-id="f04f4-119">Crie o ambiente de desenvolvimento e teste simulado enterprise Office 365 com o DirSync.</span><span class="sxs-lookup"><span data-stu-id="f04f4-119">Create the simulated enterprise Office 365 dev/test environment with DirSync.</span></span>
+1. <span data-ttu-id="cd4ab-119">Crie o ambiente de desenvolvimento/teste corporativo simulado do Office 365 com o DirSync.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-119">Create the simulated enterprise Office 365 dev/test environment with DirSync.</span></span>
     
-2. <span data-ttu-id="f04f4-120">Crie um servidor AD FS (ADFS1).</span><span class="sxs-lookup"><span data-stu-id="f04f4-120">Create the AD FS server (ADFS1).</span></span>
+2. <span data-ttu-id="cd4ab-120">Crie o servidor AD FS (ADFS1).</span><span class="sxs-lookup"><span data-stu-id="cd4ab-120">Create the AD FS server virtual machines in Azure</span></span>
     
-3. <span data-ttu-id="f04f4-121">Crie o servidor de proxy da web (PROXY1).</span><span class="sxs-lookup"><span data-stu-id="f04f4-121">Create the web proxy server (PROXY1).</span></span>
+3. <span data-ttu-id="cd4ab-121">Crie o servidor de proxy da web (PROXY1).</span><span class="sxs-lookup"><span data-stu-id="cd4ab-121">Create the web proxy server (PROXY1).</span></span>
     
-4. <span data-ttu-id="f04f4-122">Criar um certificado autoassinado e configure ADFS1 e PROXY1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-122">Create a self-signed certificate and configure ADFS1 and PROXY1.</span></span>
+4. <span data-ttu-id="cd4ab-122">Crie um certificado autoassinado e configure o ADFS1 e o PROXY1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-122">Create a self-signed certificate and configure ADFS1 and PROXY1.</span></span>
     
-5. <span data-ttu-id="f04f4-123">Configure o Office 365 para identidade federada.</span><span class="sxs-lookup"><span data-stu-id="f04f4-123">Configure Office 365 for federated identity.</span></span>
+5. <span data-ttu-id="cd4ab-123">Configure o Office 365 com a identidade federada.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-123">Configure Office 365 for federated identity.</span></span>
     
-<span data-ttu-id="f04f4-124">Para depurar uma implantação de produção da autenticação federada para o Office 365 no Windows Azure, consulte [Deploy autenticação federada do alta disponibilidade para o Office 365 no Windows Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="f04f4-124">To step through a production deployment of federated authentication for Office 365 in Azure, see [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span></span>
+<span data-ttu-id="cd4ab-124">Para passar pela implementação da produção da autenticação federada para o Office 365 no Azure, confira [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="cd4ab-124">To step through a production deployment of federated authentication for Office 365 in Azure, see [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f04f4-125">Você não pode configurar esse ambiente de desenvolvimento e teste com uma assinatura de avaliação do Azure.</span><span class="sxs-lookup"><span data-stu-id="f04f4-125">You cannot configure this dev/test environment with an Azure Trial subscription.</span></span> 
+> <span data-ttu-id="cd4ab-125">Você não pode configurar o ambiente de desenvolvimento/teste com uma assinatura de avaliação do Azure.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-125">You cannot configure this dev/test environment with an Azure Trial subscription.</span></span> 
   
 > [!TIP]
-> <span data-ttu-id="f04f4-126">Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="f04f4-126">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="cd4ab-126">Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-126">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a><span data-ttu-id="f04f4-127">Fase 1: Criar o ambiente de desenvolvimento e teste simulado enterprise Office 365 com DirSync</span><span class="sxs-lookup"><span data-stu-id="f04f4-127">Phase 1: Create the simulated enterprise Office 365 dev/test environment with DirSync</span></span>
+## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a><span data-ttu-id="cd4ab-127">Fase 1: Crie o ambiente de desenvolvimento/teste corporativo simulado do Office 365 com o DirSync.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-127">Phase 1: Create the simulated enterprise Office 365 dev/test environment with DirSync</span></span>
 
-<span data-ttu-id="f04f4-128">Siga as instruções na [sincronização de diretório para o seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md) para criar o ambiente de desenvolvimento e teste simulado enterprise Office 365 com APP1 como o servidor DirSync e sincronizados identidade entre o Office 365 e o Contas do Windows Server AD em DC1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-128">Follow the instructions in [Directory synchronization for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md) to create the simulated enterprise Office 365 dev/test environment with APP1 as the DirSync server and synchronized identity between Office 365 and the Windows Server AD accounts on DC1.</span></span>
+<span data-ttu-id="cd4ab-128">Siga as instruções em [Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md) para criar o ambiente de desenvolvimento/teste corporativo simulado do Office 365 com APP1 como o servidor do DirSync e identidade sincronizada entre o Office 365 e as contas do AD do Windows Server no DC1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-128">Follow the instructions in [Directory synchronization for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md) to create the simulated enterprise Office 365 dev/test environment with APP1 as the DirSync server and synchronized identity between Office 365 and the Windows Server AD accounts on DC1.</span></span>
   
-<span data-ttu-id="f04f4-p103">Em seguida, crie um novo nome de domínio público DNS com base em seu nome de domínio atual e adicioná-lo à sua assinatura do Office 365. É recomendável usar o nome **laboratório de teste.** \<seu domínio público >. Por exemplo, se seu nome de domínio público for contoso.com, adicione o testlab.contoso.com de nome de domínio público.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p103">Next, create a new public DNS domain name based on your current domain name and add it to your Office 365 subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is contoso.com, add the public domain name testlab.contoso.com.</span></span>
+<span data-ttu-id="cd4ab-p103">Em seguida, crie um novo nome de domínio público DNS com base no nome de domínio atual e adicione-o à sua assinatura do Office 365. É recomendável usar o nome **testlab.**\<seu domínio público >. Por exemplo, se o nome de domínio público for contoso.com, adicione testlab.contoso.com como o nome de domínio público.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p103">Next, create a new public DNS domain name based on your current domain name and add it to your Office 365 subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is contoso.com, add the public domain name testlab.contoso.com.</span></span>
   
-<span data-ttu-id="f04f4-132">Para obter instruções sobre como criar os registros DNS corretos no seu provedor de DNS e adicionar o domínio à sua assinatura de avaliação do Office 365, consulte [Adicionar usuários e o domínio ao Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).</span><span class="sxs-lookup"><span data-stu-id="f04f4-132">For instructions on how to create the correct DNS records in your DNS provider and add the domain to your Office 365 trial subscription, see [Add users and domain to Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).</span></span> 
+<span data-ttu-id="cd4ab-132">Para obter instruções sobre como criar os registros DNS corretos no seu provedor de DNS e adicionar o domínio à sua assinatura de avaliação do Office 365, confira [Adicionar usuários e domínios ao Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).</span><span class="sxs-lookup"><span data-stu-id="cd4ab-132">For instructions on how to create the correct DNS records in your DNS provider and add the domain to your Office 365 trial subscription, see [Add users and domain to Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).</span></span> 
   
-<span data-ttu-id="f04f4-133">Esta é a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="f04f4-133">Here is your resulting configuration.</span></span>
+<span data-ttu-id="cd4ab-133">Esta é a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-133">Here is your resulting configuration.</span></span>
   
-<span data-ttu-id="f04f4-134">**Figura 2: A sincronização de diretórios para o ambiente de desenvolvimento e teste do Office 365**</span><span class="sxs-lookup"><span data-stu-id="f04f4-134">**Figure 2: Directory synchronization for the Office 365 dev/test environment**</span></span>
+<span data-ttu-id="cd4ab-134">**Figura 2: Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-134">**Figure 2: Directory synchronization for the Office 365 dev/test environment**</span></span>
 
-![Ambiente de desenvolvimento e teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-<span data-ttu-id="f04f4-136">A Figura 2 mostra a synchronizationc de diretório para o ambiente de desenvolvimento e teste do Office 365, que inclui as máquinas virtuais do Office 365 e CLIENT1, APP1 e DC1 em uma rede virtual do Azure.</span><span class="sxs-lookup"><span data-stu-id="f04f4-136">Figure 2 shows the directory synchronizationc for Office 365 dev/test environment, which includes Office 365 and CLIENT1, APP1, and DC1 virtual machines in an Azure virtual network.</span></span>
+<span data-ttu-id="cd4ab-136">A Figura 2 mostra a sincronização de diretório do ambiente de desenvolvimento/teste do Office 365 que inclui máquinas virtuais do Office 365 e CLIENT1, APP1, e DC1 em uma rede virtual Azure.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-136">Figure 2 shows the directory synchronizationc for Office 365 dev/test environment, which includes Office 365 and CLIENT1, APP1, and DC1 virtual machines in an Azure virtual network.</span></span>
   
-## <a name="phase-2-create-the-ad-fs-server"></a><span data-ttu-id="f04f4-137">Fase 2: Criar um servidor AD FS</span><span class="sxs-lookup"><span data-stu-id="f04f4-137">Phase 2: Create the AD FS server</span></span>
+## <a name="phase-2-create-the-ad-fs-server"></a><span data-ttu-id="cd4ab-137">Fase 2: Criar o servidor AD FS</span><span class="sxs-lookup"><span data-stu-id="cd4ab-137">Phase 2: Create the AD FS server</span></span>
 
-<span data-ttu-id="f04f4-138">Um servidor AD FS fornece autenticação federada entre o Office 365 e as contas no domínio corp.contoso.com hospedado em DC1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-138">An AD FS server provides federated authentication between Office 365 and the accounts in the corp.contoso.com domain hosted on DC1.</span></span>
+<span data-ttu-id="cd4ab-138">Um servidor do AD FS fornece autenticação federada entre o Office 365 e contas do domínio corp.contoso.com hospedado no DC1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-138">An AD FS server provides federated authentication between Office 365 and the accounts in the corp.contoso.com domain hosted on DC1.</span></span>
   
-<span data-ttu-id="f04f4-139">Para criar uma máquina virtual do Azure para ADFS1, preencher no nome de sua assinatura e o grupo de recursos e o Azure local para sua configuração básica e, em seguida, execute estes comandos no prompt de comando do PowerShell do Azure no computador local.</span><span class="sxs-lookup"><span data-stu-id="f04f4-139">To create an Azure virtual machine for ADFS1, fill in the name of your subscription and the resource group and Azure location for your Base Configuration, and then run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
+<span data-ttu-id="cd4ab-139">Para criar uma máquina virtual do Azure para ADFS1, preencha o nome da assinatura e do grupo de recursos, o local do Azure para a Configuração da base e execute estes comandos no prompt de comando do Azure PowerShell no computador local.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-139">To create an Azure virtual machine for ADFS1, fill in the name of your subscription and the resource group and Azure location for your Base Configuration, and then run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $subscr="<your Azure subscription name>"
@@ -102,13 +102,13 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> <span data-ttu-id="f04f4-140">Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) para um arquivo de texto que contém todos os comandos do PowerShell neste artigo.</span><span class="sxs-lookup"><span data-stu-id="f04f4-140">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) for a text file that contains all the PowerShell commands in this article.</span></span>
+> <span data-ttu-id="cd4ab-140">Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) para obter um arquivo de texto contendo todos os comandos do Windows PowerShell neste artigo.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-140">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) to get a text file that contains all of the PowerShell commands in this article.</span></span>
   
-<span data-ttu-id="f04f4-141">Em seguida, usar o [portal do Windows Azure](http://portal.azure.com) para conectar-se à máquina virtual ADFS1 usando o nome de conta de administrador local ADFS1 e a senha e, em seguida, abra um prompt de comando do Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="f04f4-141">Next, use the [Azure portal](http://portal.azure.com) to connect to the ADFS1 virtual machine using the ADFS1 local administrator account name and password, and then open a Windows PowerShell command prompt.</span></span>
+<span data-ttu-id="cd4ab-141">Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual do ADFS1 usando o nome da conta e a senha do administrador local do ADFS1, depois abra um prompt de comando do Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-141">Next, use the [Azure portal](http://portal.azure.com) to connect to the ADFS1 virtual machine using the ADFS1 local administrator account name and password, and then open a Windows PowerShell command prompt.</span></span>
   
-<span data-ttu-id="f04f4-142">Para verificar a comunicação de rede e resolução de nome entre ADFS1 e DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.</span><span class="sxs-lookup"><span data-stu-id="f04f4-142">To check name resolution and network communication between ADFS1 and DC1, run the **ping dc1.corp.contoso.com** command and verify that there are four replies.</span></span>
+<span data-ttu-id="cd4ab-142">Para verificar a comunicação da rede e a resolução de nome entre ADFS1 e DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-142">To check name resolution and network communication between ADFS1 and DC1, run the **ping dc1.corp.contoso.com** command and verify that there are four replies.</span></span>
   
-<span data-ttu-id="f04f4-143">Em seguida, ingresse ADFS1 máquina virtual ao domínio CORP com esses comandos no prompt do Windows PowerShell no ADFS1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-143">Next, join the ADFS1 virtual machine to the CORP domain with these commands at the Windows PowerShell prompt on ADFS1.</span></span>
+<span data-ttu-id="cd4ab-143">Em seguida, associe a máquina virtual do ADFS1 ao domínio CORP com estes comandos no prompt do Windows PowerShell no ADFS1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-143">Next, join the ADFS1 virtual machine to the CORP domain with these commands at the Windows PowerShell prompt on ADFS1.</span></span>
   
 ```
 $cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
@@ -116,19 +116,19 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-<span data-ttu-id="f04f4-144">Esta é a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="f04f4-144">Here is your resulting configuration.</span></span>
+<span data-ttu-id="cd4ab-144">Esta é a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-144">Here is your resulting configuration.</span></span>
   
-<span data-ttu-id="f04f4-145">**Figura 3: Adicionar o servidor do AD FS**</span><span class="sxs-lookup"><span data-stu-id="f04f4-145">**Figure 3: Adding the AD FS server**</span></span>
+<span data-ttu-id="cd4ab-145">**Figura 3: Adicionar o servidor AD FS**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-145">**Figure 3: Adding the AD FS server**</span></span>
 
 ![O servidor AD FS adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
-<span data-ttu-id="f04f4-147">A Figura 3 mostra a adição do servidor ADFS1 para DirSync para o ambiente de desenvolvimento e teste do Office 365.</span><span class="sxs-lookup"><span data-stu-id="f04f4-147">Figure 3 shows the addition of the ADFS1 server to the DirSync for Office 365 dev/test environment.</span></span>
+<span data-ttu-id="cd4ab-147">A Figura 3 mostra a adição do servidor ADFS1 ao DirSync para o ambiente de desenvolvimento/teste do Office 365.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-147">Figure 3 shows the addition of the ADFS1 server to the DirSync for Office 365 dev/test environment.</span></span>
   
-## <a name="phase-3-create-the-web-proxy-server"></a><span data-ttu-id="f04f4-148">Fase 3: Criar o servidor de proxy da web</span><span class="sxs-lookup"><span data-stu-id="f04f4-148">Phase 3: Create the web proxy server</span></span>
+## <a name="phase-3-create-the-web-proxy-server"></a><span data-ttu-id="cd4ab-148">Fase 3: crie o servidor de proxy da web</span><span class="sxs-lookup"><span data-stu-id="cd4ab-148">Phase 3: Create the web proxy server</span></span>
 
-<span data-ttu-id="f04f4-149">PROXY1 fornece um proxy de mensagens de autenticação entre usuários tentando autenticar e ADFS1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-149">PROXY1 provides proxying of authentication messages between users attempting to authenticate and ADFS1.</span></span>
+<span data-ttu-id="cd4ab-149">O PROXY1 fornece proxy de mensagens de autenticação entre ADFS1 e os usuários que tentarem se autenticar.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-149">PROXY1 provides proxying of authentication messages between users attempting to authenticate and ADFS1.</span></span>
   
-<span data-ttu-id="f04f4-150">Para criar uma máquina virtual do Azure para PROXY1, preencher no nome de seu grupo de recursos e o Azure local e, em seguida, execute estes comandos no prompt de comando do PowerShell do Azure no computador local.</span><span class="sxs-lookup"><span data-stu-id="f04f4-150">To create an Azure virtual machine for PROXY1, fill in the name of your resource group and Azure location, and then run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
+<span data-ttu-id="cd4ab-150">Para criar uma máquina virtual do Azure para o PROXY1, preencha o nome do grupo de recursos e execute estes comandos no prompt de comando do Azure PowerShell no computador local.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-150">First, fill in the name of your resource group, Azure location, and storage account name and run these commands at the Azure PowerShell command prompt on your local computer to create an Azure virtual machine for adVM.</span></span>
   
 ```
 $rgName="<the resource group name of your Base Configuration>"
@@ -147,20 +147,20 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> <span data-ttu-id="f04f4-151">PROXY1 é atribuída a um endereço IP estático e público porque você criará um registro DNS público que aponta para ele e ele não deve alterar quando você reiniciar a máquina virtual PROXY1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-151">PROXY1 is assigned a static public IP address because you will create a public DNS record that points to it and it must not change when you restart the PROXY1 virtual machine.</span></span> 
+> <span data-ttu-id="cd4ab-151">Um endereço IP estático público é atribuído ao PROXY1 porque você cria um registro DNS público que aponta para ele e não deverá ser alterado ao reiniciar a máquina virtual do PROXY1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-151">PROXY1 is assigned a static public IP address because you will create a public DNS record that points to it and it must not change when you restart the PROXY1 virtual machine.</span></span> 
   
-<span data-ttu-id="f04f4-p104">Em seguida, adicione uma regra para o grupo de segurança de rede para a sub-rede da rede corporativa para permitir o tráfego de entrada não solicitado da Internet para o endereço IP particular do PROXY1 e a porta TCP 443. Execute estes comandos no prompt de comando do PowerShell do Azure no computador local.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p104">Next, add a rule to the network security group for the CorpNet subnet to allow unsolicited inbound traffic from the Internet to PROXY1's private IP address and TCP port 443. Run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
+<span data-ttu-id="cd4ab-p104">Em seguida, adicione uma regra ao grupo de segurança de rede para a sub-rede da CorpNet para permitir o tráfego de entrada não solicitada da Internet para o endereço IP particular do PROXY1 e da porta 443 de TCP. Execute esses comandos no prompt de comando do Azure PowerShell no computador local.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p104">Next, add a rule to the network security group for the CorpNet subnet to allow unsolicited inbound traffic from the Internet to PROXY1's private IP address and TCP port 443. Run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $rgName="<the resource group name of your Base Configuration>"
 Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-AzureRmNetworkSecurityRuleConfig -Name "HTTPS-to-PROXY1" -Description "Allow TCP 443 to PROXY1" -Access "Allow" -Protocol "Tcp" -Direction "Inbound" -Priority 101 -SourceAddressPrefix "Internet" -SourcePortRange "*" -DestinationAddressPrefix "10.0.0.101" -DestinationPortRange "443" | Set-AzureRmNetworkSecurityGroup
 ```
 
-<span data-ttu-id="f04f4-154">Em seguida, usar o [portal do Windows Azure](http://portal.azure.com) para conectar-se à máquina virtual PROXY1 usando o nome de conta de administrador local PROXY1 e a senha e, em seguida, abra um prompt de comando do Windows PowerShell em PROXY1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-154">Next, use the [Azure portal](http://portal.azure.com) to connect to the PROXY1 virtual machine using the PROXY1 local administrator account name and password, and then open a Windows PowerShell command prompt on PROXY1.</span></span>
+<span data-ttu-id="cd4ab-154">Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual do PROXY1 usando o nome e a senha da conta do administrador local do PROXY1, depois abra um prompt de comando do Windows PowerShell no PROXY1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-154">Next, use the [Azure portal](http://portal.azure.com) to connect to the PROXY1 virtual machine using the PROXY1 local administrator account name and password, and then open a Windows PowerShell command prompt on PROXY1.</span></span>
   
-<span data-ttu-id="f04f4-155">Para verificar a comunicação de rede e resolução de nome entre PROXY1 e DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.</span><span class="sxs-lookup"><span data-stu-id="f04f4-155">To check name resolution and network communication between PROXY1 and DC1, run the **ping dc1.corp.contoso.com** command and verify that there are four replies.</span></span>
+<span data-ttu-id="cd4ab-155">Para verificar a comunicação da rede e a resolução de nome entre PROXY1 e DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-155">To check name resolution and network communication between PROXY1 and DC1, run the **ping dc1.corp.contoso.com** command and verify that there are four replies.</span></span>
   
-<span data-ttu-id="f04f4-156">Em seguida, ingresse PROXY1 máquina virtual ao domínio CORP com esses comandos no prompt do Windows PowerShell no PROXY1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-156">Next, join the PROXY1 virtual machine to the CORP domain with these commands at the Windows PowerShell prompt on PROXY1.</span></span>
+<span data-ttu-id="cd4ab-156">Em seguida, associe a máquina virtual do PROXY1 ao domínio CORP com estes comandos no prompt do Windows PowerShell no PROXY1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-156">Next, join the PROXY1 virtual machine to the CORP domain with these commands at the Windows PowerShell prompt on PROXY1.</span></span>
   
 ```
 $cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
@@ -168,15 +168,15 @@ Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
 
-<span data-ttu-id="f04f4-157">Exiba o endereço IP público do PROXY1 com estes comandos do PowerShell do Windows Azure no computador local:</span><span class="sxs-lookup"><span data-stu-id="f04f4-157">Display the public IP address of PROXY1 with these Azure PowerShell commands on your local computer:</span></span>
+<span data-ttu-id="cd4ab-157">Exiba o endereço IP público do PROXY1 com estes comandos do Azure PowerShell no computador local:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-157">Display the public IP address of PROXY1 with these Azure PowerShell commands on your local computer:</span></span>
   
 ```
 Write-Host (Get-AzureRMPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-<span data-ttu-id="f04f4-p105">Em seguida, trabalhar com seu provedor de DNS público e criar um novo registro DNS A pública para **fs.testlab.** \<seu nome de domínio DNS > que se resolva como o endereço IP exibido pelo comando **Write-Host** . O **fs.testlab.** \<seu nome de domínio DNS > é citado como o *FQDN do serviço de Federação* .</span><span class="sxs-lookup"><span data-stu-id="f04f4-p105">Next, work with your public DNS provider and create a new public DNS A record for **fs.testlab.**\<your DNS domain name> that resolves to the IP address displayed by the **Write-Host** command. The **fs.testlab.**\<your DNS domain name> is hereafter referred to as the  *federation service FQDN*  .</span></span>
+<span data-ttu-id="cd4ab-p105">Em seguida, trabalhe com seu provedor de DNS público e crie um novo registro público de DNS A para **fs.testlab.** \<seu nome de domínio DNS > que resolve o endereço IP exibido pelo comando **Write-Host**. De agora em diante, **fs.testlab.** \<seu nome de domínio DNS > é conhecido como o *FQDN do serviço de federação*.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p105">Next, work with your public DNS provider and create a new public DNS A record for **fs.testlab.**\<your DNS domain name> that resolves to the IP address displayed by the **Write-Host** command. The **fs.testlab.**\<your DNS domain name> is hereafter referred to as the  *federation service FQDN*  .</span></span>
   
-<span data-ttu-id="f04f4-160">Em seguida, usar o [portal do Azure](http://portal.azure.com) para conectar-se à máquina virtual DC1 usando a CORP\\User1 credenciais e execute os seguintes comandos em um prompt de comando do Windows PowerShell de nível de administrador:</span><span class="sxs-lookup"><span data-stu-id="f04f4-160">Next, use the [Azure portal](http://portal.azure.com) to connect to the DC1 virtual machine using the CORP\\User1 credentials, and then run the following commands at an administrator-level Windows PowerShell command prompt:</span></span>
+<span data-ttu-id="cd4ab-160">Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual DC1 usando as credenciais CORP\\Usuário1 e execute este comando em um prompt de comando do Windows PowerShell de nível de administrador:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-160">Next, use the [Azure portal](http://portal.azure.com) to connect to the DC1 virtual machine using the CORP\\User1 credentials, and then run the following commands at an administrator-level Windows PowerShell command prompt:</span></span>
   
 ```
 $testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
@@ -185,31 +185,31 @@ Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
 Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
 
-<span data-ttu-id="f04f4-161">Esses comandos criam um registro DNS A para seu serviço de Federação FQDN máquinas virtuais em uma rede virtual Azure pode resolver para o endereço IP particular do ADFS1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-161">These commands create a DNS A record for your federation service FQDN that virtual machines on the Azure virtual network can resolve to ADFS1's private IP address.</span></span>
+<span data-ttu-id="cd4ab-161">Esses comandos criam um registro DNS A para o seu FQDN do serviço de federação que as máquinas virtuais da rede virtual do Azure podem resolver o endereço IP privado do ADFS1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-161">These commands create a DNS A record for your federation service FQDN that virtual machines on the Azure virtual network can resolve to ADFS1's private IP address.</span></span>
   
-<span data-ttu-id="f04f4-162">Esta é a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="f04f4-162">Here is your resulting configuration.</span></span>
+<span data-ttu-id="cd4ab-162">Esta é a configuração resultante.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-162">Here is your resulting configuration.</span></span>
   
-<span data-ttu-id="f04f4-163">**Figura 4: Adicionar o servidor de proxy de aplicativo web**</span><span class="sxs-lookup"><span data-stu-id="f04f4-163">**Figure 4: Adding the web application proxy server**</span></span>
+<span data-ttu-id="cd4ab-163">**Figura 4: Adicionar o servidor proxy de aplicativo web**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-163">**Figure 4: Adding the web application proxy server**</span></span>
 
 ![O servidor proxy do aplicativo Web adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
-<span data-ttu-id="f04f4-165">Figura 4 mostra a adição do servidor PROXY1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-165">Figure 4 shows the addition of the PROXY1 server.</span></span>
+<span data-ttu-id="cd4ab-165">A Figura 4 mostra a adição do servidor PROXY1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-165">Figure 4 shows the addition of the PROXY1 server.</span></span>
   
-## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a><span data-ttu-id="f04f4-166">Fase 4: Criar um certificado autoassinado e configurar ADFS1 e PROXY1</span><span class="sxs-lookup"><span data-stu-id="f04f4-166">Phase 4: Create a self-signed certificate and configure ADFS1 and PROXY1</span></span>
+## <a name="phase-4-create-a-self-signed-certificate-and-configure-adfs1-and-proxy1"></a><span data-ttu-id="cd4ab-166">Fase 4: crie um certificado autoassinado e configure o ADFS1 e o PROXY1</span><span class="sxs-lookup"><span data-stu-id="cd4ab-166">Phase 4: Create a self-signed certificate and configure ADFS1 and PROXY1</span></span>
 
-<span data-ttu-id="f04f4-167">Nesta fase, você cria um certificado digital autoassinado para seu serviço de Federação FQDN e configure ADFS1 e PROXY1 como um farm do AD FS.</span><span class="sxs-lookup"><span data-stu-id="f04f4-167">In this phase, you create a self-signed digital certificate for your federation service FQDN and configure ADFS1 and PROXY1 as an AD FS farm.</span></span>
+<span data-ttu-id="cd4ab-167">Nesta fase, crie um certificado digital autoassinado para o seu FQDN de serviço de federação e configure o ADFS1 e o PROXY1 como um farm do AD FS.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-167">In this phase, you create a self-signed digital certificate for your federation service FQDN and configure ADFS1 and PROXY1 as an AD FS farm.</span></span>
   
-<span data-ttu-id="f04f4-168">Primeiro, use o [portal do Windows Azure](http://portal.azure.com) para conectar-se a máquina virtual DC1 usando a CORP\\User1 credenciais e, então, abra um nível de administrador Windows PowerShell prompt de comando.</span><span class="sxs-lookup"><span data-stu-id="f04f4-168">First, use the [Azure portal](http://portal.azure.com) to connect to the DC1 virtual machine using the CORP\\User1 credentials, and then open an administrator-level Windows PowerShell command prompt.</span></span>
+<span data-ttu-id="cd4ab-168">Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual DC1 usando as credenciais CORP\\Usuário1 e abra um prompt de comando de nível de administrador do Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-168">First, use the [Azure portal](http://portal.azure.com) to connect to the DC1 virtual machine using the CORP\\User1 credentials, and then open an administrator-level Windows PowerShell command prompt.</span></span>
   
-<span data-ttu-id="f04f4-169">Em seguida, crie a conta de serviço do AD FS com este comando no prompt de comando do Windows PowerShell no DC1:</span><span class="sxs-lookup"><span data-stu-id="f04f4-169">Next, create AD FS service account with this command at the Windows PowerShell command prompt on DC1:</span></span>
+<span data-ttu-id="cd4ab-169">Depois crie a conta de serviço do AD FS usando esse comando no prompt de comando do Windows PowerShell em DC1:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-169">Next, create AD FS service account with this command at the Windows PowerShell command prompt on DC1:</span></span>
   
 ```
 New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user password" -assecurestring) -name "ADFS-Service" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
-<span data-ttu-id="f04f4-p106">Observe que este comando solicitará que você forneça a senha da conta. Escolha uma senha forte e registre-a em um local seguro. Você precisará dele para esta fase e a fase 5.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p106">Note that this command prompts you to supply the account password. Choose a strong password and record it in a secured location. You will need it for this phase and Phase 5.</span></span>
+<span data-ttu-id="cd4ab-p106">Observe que esse comando solicita que você forneça a senha da conta. Escolha uma senha forte e anote-a em um local seguro. Você precisará dela neste fase e na fase 5.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p106">Note that this command prompts you to supply the account password. Choose a strong password and record it in a secured location. You will need it for this phase and Phase 5.</span></span>
   
-<span data-ttu-id="f04f4-p107">Usar o [portal do Windows Azure](http://portal.azure.com) para conectar-se à máquina virtual ADFS1 usando CORP\\User1 credenciais. Abra um prompt de comando do Windows PowerShell de nível de administrador em ADFS1, preencha o FQDN do serviço de Federação e, em seguida, execute estes comandos para criar um certificado autoassinado:</span><span class="sxs-lookup"><span data-stu-id="f04f4-p107">Use the [Azure portal](http://portal.azure.com) to connect to the ADFS1 virtual machine using the CORP\\User1 credentials. Open an administrator-level Windows PowerShell command prompt on ADFS1, fill in your federation service FQDN, and then run these commands to create a self-signed certificate:</span></span>
+<span data-ttu-id="cd4ab-p107">Use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual ADFS1 usando as credenciais CORP\\Usuário1. Abra um prompt de comando do Windows PowerShell de nível de administrador no ADFS1, preencha o FQDN de serviço de Federação e execute estes comandos para criar um certificado autoassinado:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p107">Use the [Azure portal](http://portal.azure.com) to connect to the ADFS1 virtual machine using the CORP\\User1 credentials. Open an administrator-level Windows PowerShell command prompt on ADFS1, fill in your federation service FQDN, and then run these commands to create a self-signed certificate:</span></span>
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
@@ -218,236 +218,236 @@ New-Item -path c:\Certs -type directory
 New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
-<span data-ttu-id="f04f4-175">Em seguida, execute estas etapas para salvar o novo certificado autoassinado como um arquivo.</span><span class="sxs-lookup"><span data-stu-id="f04f4-175">Next, use these steps to save the new self-signed certificate as a file.</span></span>
+<span data-ttu-id="cd4ab-175">Em seguida, use estas etapas para salvar o novo certificado autoassinado como um arquivo.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-175">Next, use these steps to save the new self-signed certificate as a file.</span></span>
   
-1. <span data-ttu-id="f04f4-176">Clique em **Iniciar**, digite **mmc.exe**e pressione **Enter**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-176">Click **Start**, type **mmc.exe**, and then press **Enter**.</span></span>
+1. <span data-ttu-id="cd4ab-176">Clique em **Iniciar**, digite **mmc.exe** e pressione **Enter**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-176">Click **Start**, type **mmc.exe**, and then press **Enter**.</span></span>
     
-2. <span data-ttu-id="f04f4-177">Clique em **arquivo > Adicionar/Remover Snap-in**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-177">Click **File > Add/Remove Snap-in**.</span></span>
+2. <span data-ttu-id="cd4ab-177">Clique em **Arquivo > Adicionar/Remover Snap-in**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-177">Click **File > Add/Remove Snap-in**.</span></span>
     
-3. <span data-ttu-id="f04f4-178">Em **Adicionar ou Remover Snap-ins**, clique duas vezes em **certificados** na lista de snap-ins disponíveis, clique em **conta de computador**e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-178">In **Add or Remove Snap-ins**, double-click **Certificates** in the list of available snap-ins, click **Computer account**, and then click **Next**.</span></span>
+3. <span data-ttu-id="cd4ab-178">Em **Adicionar/Remover Snap-in**, clique duas vezes em **Certificados** na lista de snap-ins disponíveis, clique em **Conta do computador** e em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-178">In **Add or Remove Snap-ins**, double-click **Certificates** in the list of available snap-ins, click **Computer account**, and then click **Next**.</span></span>
     
-4. <span data-ttu-id="f04f4-179">Em **Selecionar computador**, clique em **Concluir**e clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-179">In **Select Computer**, click **Finish**, and then click **OK**.</span></span>
+4. <span data-ttu-id="cd4ab-179">Em **Selecionar Computador**, clique em **Concluir** e em **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-179">In **Select Computer**, click **Finish**, and then click **OK**.</span></span>
     
-5. <span data-ttu-id="f04f4-180">No painel de árvore, abra **certificados (computador Local) > pessoal > certificados**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-180">In the tree pane, open **Certificates (Local Computer) > Personal > Certificates**.</span></span>
+5. <span data-ttu-id="cd4ab-180">No painel da árvore, abra **Certificados (Computador Local) > Pessoal > Certificados**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-180">In the tree pane, open **Certificates (Local Computer) > Personal > Certificates**.</span></span>
     
-6. <span data-ttu-id="f04f4-181">Com o botão direito o certificado com seu FQDN do serviço de federação, clique em **All tasks**e clique em **Exportar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-181">Right-click the certificate with your federation service FQDN, click **All tasks**, and then click **Export**.</span></span>
+6. <span data-ttu-id="cd4ab-181">Clique com o botão direito do mouse no certificado com FQDN de serviço de federação, clique em **Todas as Tarefas** e em **Exportar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-181">Right-click the certificate with your federation service FQDN, click **All tasks**, and then click **Export**.</span></span>
     
-7. <span data-ttu-id="f04f4-182">Na página de **boas-vindas** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-182">On the **Welcome** page, click **Next**.</span></span>
+7. <span data-ttu-id="cd4ab-182">Na página **Bem-vindo**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-182">On the Welcome page, click **Next**.</span></span>
     
-8. <span data-ttu-id="f04f4-183">Na página **Exportar chave particular** , clique em **Sim**e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-183">On the **Export Private Key** page, click **Yes**, and then click **Next**.</span></span>
+8. <span data-ttu-id="cd4ab-183">Na página **Exportar Chave Privada**, clique em **Sim** e em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-183">On the **Export Private Key** page, click **Yes**, and then click **Next**.</span></span>
     
-9. <span data-ttu-id="f04f4-184">Na página **Exportar formato de arquivo** , clique em **Exportar todas as propriedades estendidas**e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-184">On the **Export File Format** page, click **Export all extended properties**, and then click **Next**.</span></span>
+9. <span data-ttu-id="cd4ab-184">Na página **Formato de Arquivo de Exportação**, clique em **Exportar Todas as Propriedades Estendidas** e em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-184">On the **Export File Format** page, click **Export all extended properties**, and then click **Next**.</span></span>
     
-10. <span data-ttu-id="f04f4-185">Na página **segurança** , clique em **senha** e digite uma senha na **senha** e **Confirmar senha.**</span><span class="sxs-lookup"><span data-stu-id="f04f4-185">On the **Security** page, click **Password** and type a password in **Password** and **Confirm password.**</span></span>
+10. <span data-ttu-id="cd4ab-185">Na pagina **Segurança**, clique em **Senha**, digite uma senha em **Senha** e clique em **Confirmar Senha.**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-185">On the **Security** page, click **Password** and type a password in **Password** and **Confirm password.**</span></span>
     
-11. <span data-ttu-id="f04f4-186">Na página **arquivo a ser exportado** , clique em **Procurar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-186">On the **File to Export** page, click **Browse**.</span></span>
+11. <span data-ttu-id="cd4ab-186">Na página **Arquivo a Ser Exportado**, clique em **Procurar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-186">On the **File to Export** page, click **Browse**.</span></span>
     
-12. <span data-ttu-id="f04f4-187">Navegue até o **c:\\certificados** pasta, digite **SSL** em **nome do arquivo**e, em seguida, clique em **Salvar.**</span><span class="sxs-lookup"><span data-stu-id="f04f4-187">Browse to the **C:\\Certs** folder, type **SSL** in **File name**, and then click **Save.**</span></span>
+12. <span data-ttu-id="cd4ab-187">Navegue até a pasta **C:\\Certs**, digite **SSL** em **Nome do Arquivo** e clique em **Salvar.**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-187">Browse to the **C:\\Certs** folder, type **SSL** in **File name**, and then click **Save.**</span></span>
     
-13. <span data-ttu-id="f04f4-188">Na página **arquivo a ser exportado** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-188">On the **File to Export** page, click **Next**.</span></span>
+13. <span data-ttu-id="cd4ab-188">Na página **Arquivo a Ser Exportado**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-188">On the **File to Export** page, click **Next**.</span></span>
     
-14. <span data-ttu-id="f04f4-p108">Na página **Concluindo o Assistente para exportação de certificados** , clique em **Concluir**. Quando solicitado, clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p108">On the **Completing the Certificate Export Wizard** page, click **Finish**. When prompted, click **OK**.</span></span>
+14. <span data-ttu-id="cd4ab-p108">Na página **Concluindo o Assistente para Exportação de Certificados**, clique em **Concluir** e, quando solicitado, clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p108">On the **Completing the Certificate Export Wizard** page, click **Finish**. When prompted, click **OK**.</span></span>
     
-<span data-ttu-id="f04f4-191">Em seguida, instale o serviço AD FS com este comando no prompt de comando do Windows PowerShell em ADFS1:</span><span class="sxs-lookup"><span data-stu-id="f04f4-191">Next, install the AD FS service with this command at the Windows PowerShell command prompt on ADFS1:</span></span>
+<span data-ttu-id="cd4ab-191">Depois instale o serviço do AD FS usando esse comando no prompt de comando do Windows PowerShell em ADFS1:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-191">Next, install the AD FS service with this command at the Windows PowerShell command prompt on ADFS1:</span></span>
   
 ```
 Install-WindowsFeature ADFS-Federation -IncludeManagementTools
 ```
 
-<span data-ttu-id="f04f4-192">Aguarde a conclusão da instalação.</span><span class="sxs-lookup"><span data-stu-id="f04f4-192">Wait for the installation to complete.</span></span>
+<span data-ttu-id="cd4ab-192">Aguarde a instalação ser concluída.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-192">Wait for the connection to complete.</span></span>
   
-<span data-ttu-id="f04f4-193">Em seguida, configure o serviço AD FS com estas etapas:</span><span class="sxs-lookup"><span data-stu-id="f04f4-193">Next, configure the AD FS service with these steps:</span></span>
+<span data-ttu-id="cd4ab-193">Em seguida, configure o serviço do AD FS com estas etapas:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-193">Next, configure the AD FS service with these steps:</span></span>
   
-1. <span data-ttu-id="f04f4-194">Clique em **Iniciar**e, em seguida, clique no ícone do **Gerenciador de servidores** .</span><span class="sxs-lookup"><span data-stu-id="f04f4-194">Click **Start**, and then click the **Server Manager** icon.</span></span>
+1. <span data-ttu-id="cd4ab-194">Clique em **Iniciar** e no ícone **Gerenciador do Servidor**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-194">Click **Start**, and then click the **Server Manager** icon.</span></span>
     
-2. <span data-ttu-id="f04f4-195">No painel da árvore do Gerenciador de servidores, clique em **AD FS**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-195">In the tree pane of Server Manager, click **AD FS**.</span></span>
+2. <span data-ttu-id="cd4ab-195">No painel da árvore do Gerenciador de Servidores, clique em **AD FS**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-195">In the tree pane of Server Manager, click **AD FS**.</span></span>
     
-3. <span data-ttu-id="f04f4-196">Na barra de ferramentas na parte superior, clique no símbolo de cuidado laranja e, em seguida, clique em **Configurar o serviço de Federação nesse servidor**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-196">In the tool bar at the top, click the orange caution symbol, and then click **Configure the federation service on this server**.</span></span>
+3. <span data-ttu-id="cd4ab-196">Na barra de ferramentas, na parte superior, clique no símbolo de cuidado laranja e, em seguida, clique em **Configurar o Serviço de Federação neste Servidor**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-196">In the tool bar at the top, click the orange caution symbol, and then click **Configure the federation service on this server**.</span></span>
     
-4. <span data-ttu-id="f04f4-197">Na página de **boas-vindas** do Assistente de configuração de serviços de Federação Active Directory, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-197">On the **Welcome** page of the Active Directory Federation Services Configuration Wizard, click **Next**.</span></span>
+4. <span data-ttu-id="cd4ab-197">Na página **Bem-vindo** do Assistente de Configuração de Serviços de Federação do Active Directory (AD FS), clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-197">On the **Welcome** page of the Active Directory Federation Services Configuration Wizard, click **Next**.</span></span>
     
-5. <span data-ttu-id="f04f4-198">Na página **conectar ao AD DS** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-198">On the **Connect to AD DS** page, click **Next**.</span></span>
+5. <span data-ttu-id="cd4ab-198">Na página **Conectar aos AD DS**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-198">On the **Connect to AD DS** page, click **Next**.</span></span>
     
-6. <span data-ttu-id="f04f4-199">Na página **Especificar propriedades do serviço** :</span><span class="sxs-lookup"><span data-stu-id="f04f4-199">On the **Specify Service Properties** page:</span></span>
+6. <span data-ttu-id="cd4ab-199">Na página **Especificar Propriedades do Serviço**:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-199">On the **Specify Service Properties** page:</span></span>
     
-  - <span data-ttu-id="f04f4-200">Para o **Certificado SSL**, clique na seta para baixo e, em seguida, clique no certificado com o nome do seu serviço de Federação FQDN.</span><span class="sxs-lookup"><span data-stu-id="f04f4-200">For **SSL Certificate**, click the down arrow, and then click the certificate with the name of your federation service FQDN.</span></span>
+  - <span data-ttu-id="cd4ab-200">Para o **Certificado SSL**, clique na seta para baixo e, em seguida, clique no certificado com o nome do seu FQDN de serviço de federação.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-200">For **SSL Certificate**, click the down arrow, and then click the certificate with the name of your federation service FQDN.</span></span>
     
-  - <span data-ttu-id="f04f4-201">Em **Nome de exibição do serviço de Federação**, digite o nome da sua organização a empresa fictícia.</span><span class="sxs-lookup"><span data-stu-id="f04f4-201">In **Federation Service Display Name**, type the name of your fictional organization.</span></span>
+  - <span data-ttu-id="cd4ab-201">No **Nome de Exibição de Serviços de Federação**, digite o nome da sua organização fictícia.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-201">In **Federation Service Display Name**, type the name of your fictional organization.</span></span>
     
-  - <span data-ttu-id="f04f4-202">Clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-202">Click **Next**.</span></span>
+  - <span data-ttu-id="cd4ab-202">Clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-202">Click **Next**.</span></span>
     
-7. <span data-ttu-id="f04f4-203">Na página **Especificar a conta de serviço** , clique em **Selecionar** para o **nome da conta**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-203">On the **Specify Service Account** page, click **Select** for **Account name**.</span></span>
+7. <span data-ttu-id="cd4ab-203">Na página **Especificar Conta de Serviço**, clique em **Selecionar** para **Nome da Conta**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-203">On the **Specify Service Account** page, click **Select** for **Account name**.</span></span>
     
-8. <span data-ttu-id="f04f4-204">Em **Selecionar usuário ou conta de serviço**, digite **Serviço ADFS**, clique em **Verificar nomes**e, em seguida, clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-204">In **Select User or Service Account**, type **ADFS-Service**, click **Check Names**, and then click **OK**.</span></span>
+8. <span data-ttu-id="cd4ab-204">Em **Selecionar Usuário ou Conta de Serviço**, digite **Serviço ADFS**, clique em **Verificar Nomes** e em **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-204">In **Select User or Service Account**, type **ADFS-Service**, click **Check Names**, and then click **OK**.</span></span>
     
-9. <span data-ttu-id="f04f4-205">Em **Senha da conta**, digite a senha da conta de serviço do ADFS e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-205">In **Account Password**, type the password for the ADFS-Service account, and then click **Next**.</span></span>
+9. <span data-ttu-id="cd4ab-205">Em **Senha da Conta**, digite a senha da conta de serviço do ADFS e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-205">In **Account Password**, type the password for the ADFS-Service account, and then click **Next**.</span></span>
     
-10. <span data-ttu-id="f04f4-206">Na página **Especificar banco de dados de configuração** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-206">On the **Specify Configuration Database** page, click **Next**.</span></span>
+10. <span data-ttu-id="cd4ab-206">Na página **Especificar Banco de Dados de Configurações**, clique em **Avançar**:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-206">On the **Specify Configuration Database** page, click **Next**.</span></span>
     
-11. <span data-ttu-id="f04f4-207">Na página **Opções de revisão** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-207">On the **Review Options** page, click **Next**.</span></span>
+11. <span data-ttu-id="cd4ab-207">Na página **Opções de Revisão**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-207">On the **Validation** page, click **Next**.</span></span>
     
-12. <span data-ttu-id="f04f4-208">Na página **Verificações de pré-requisito** , clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-208">On the **Pre-requisite Checks** page, click **Configure**.</span></span>
+12. <span data-ttu-id="cd4ab-208">Na página **Verificações de Pré-requisitos**, clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-208">On the **Pre-requisite Checks** page, click **Configure**.</span></span>
     
-13. <span data-ttu-id="f04f4-209">Na página de **resultados** , clique em **Fechar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-209">On the **Results** page, click **Close**.</span></span>
+13. <span data-ttu-id="cd4ab-209">Na página **Resultados**, clique em **Fechar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-209">On the **Results** page, click **Close**.</span></span>
     
-14. <span data-ttu-id="f04f4-210">Clique em **Iniciar**, clique no ícone de energia, clique em **Reiniciar**e, em seguida, clique em **continuar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-210">Click **Start**, click the power icon, click **Restart**, and then click **Continue**.</span></span>
+14. <span data-ttu-id="cd4ab-210">Clique em **Iniciar**, clique no ícone de Energia, clique em **Reiniciar** e, em seguida, em **Continuar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-210">Click **Start**, click the power icon, click **Restart**, and then click **Continue**.</span></span>
     
-<span data-ttu-id="f04f4-211">No [portal do Azure](http://portal.azure.com), se conectar ao PROXY1 com CORP\\credenciais de conta User1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-211">From the [Azure portal](http://portal.azure.com), connect to PROXY1 with the CORP\\User1 account credentials.</span></span>
+<span data-ttu-id="cd4ab-211">No [portal do Azure](http://portal.azure.com), conecte-se ao PROXY1 com as credenciais da conta CORP\\Usuário1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-211">From the [Azure portal](http://portal.azure.com), connect to PROXY1 with the CORP\\User1 account credentials.</span></span>
   
-<span data-ttu-id="f04f4-212">Em seguida, execute estas etapas para instalar o certificado autoassinado e configurar PROXY1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-212">Next, use these steps to install the self-signed certificate and configure PROXY1.</span></span>
+<span data-ttu-id="cd4ab-212">Em seguida, use estas etapas para instalar o certificado autoassinado e configurar o PROXY1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-212">Next, use these steps to install the self-signed certificate and configure PROXY1.</span></span>
   
-1. <span data-ttu-id="f04f4-213">Clique em **Iniciar**, digite **mmc.exe**e pressione **Enter**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-213">Click **Start**, type **mmc.exe**, and then press **Enter**.</span></span>
+1. <span data-ttu-id="cd4ab-213">Clique em **Iniciar**, digite **mmc.exe** e pressione **Enter**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-213">Click **Start**, type **mmc.exe**, and then press **Enter**.</span></span>
     
-2. <span data-ttu-id="f04f4-214">Clique em **arquivo > Adicionar/Remover Snap-in**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-214">Click **File > Add/Remove Snap-in**.</span></span>
+2. <span data-ttu-id="cd4ab-214">Clique em **Arquivo > Adicionar/Remover Snap-in**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-214">Click **File > Add/Remove Snap-in**.</span></span>
     
-3. <span data-ttu-id="f04f4-215">Em **Adicionar ou Remover Snap-ins**, clique duas vezes em **certificados** na lista de snap-ins disponíveis, clique em **conta de computador**e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-215">In **Add or Remove Snap-ins**, double-click **Certificates** in the list of available snap-ins, click **Computer account**, and then click **Next**.</span></span>
+3. <span data-ttu-id="cd4ab-215">Em **Adicionar/Remover Snap-in**, clique duas vezes em **Certificados** na lista de snap-ins disponíveis, clique em **Conta do computador** e em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-215">In **Add or Remove Snap-ins**, double-click **Certificates** in the list of available snap-ins, click **Computer account**, and then click **Next**.</span></span>
     
-4. <span data-ttu-id="f04f4-216">Em **Selecionar computador**, clique em **Concluir**e clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-216">In **Select Computer**, click **Finish**, and then click **OK**.</span></span>
+4. <span data-ttu-id="cd4ab-216">Em **Selecionar Computador**, clique em **Concluir** e em **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-216">In **Select Computer**, click **Finish**, and then click **OK**.</span></span>
     
-5. <span data-ttu-id="f04f4-217">No painel de árvore, abra **certificados (computador Local) > pessoal > certificados**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-217">In the tree pane, open **Certificates (Local Computer) > Personal > Certificates**.</span></span>
+5. <span data-ttu-id="cd4ab-217">No painel da árvore, abra **Certificados (Computador Local) > Pessoal > Certificados**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-217">In the tree pane, open **Certificates (Local Computer) > Personal > Certificates**.</span></span>
     
-6. <span data-ttu-id="f04f4-218">Clique com o botão **pessoais**, clique em **All tasks**e, em seguida, clique em **Importar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-218">Right-click **Personal**, click **All tasks**, and then click **Import**.</span></span>
+6. <span data-ttu-id="cd4ab-218">Clique com o botão direito do mouse em **Pessoal**, selecione **Todas as Tarefas** e clique em **Importar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-218">Right-click **Personal**, click **All tasks**, and then click **Import**.</span></span>
     
-7. <span data-ttu-id="f04f4-219">Na página de **boas-vindas** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-219">On the **Welcome** page, click **Next**.</span></span>
+7. <span data-ttu-id="cd4ab-219">Na página **Bem-vindo**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-219">On the Welcome page, click **Next**.</span></span>
     
-8. <span data-ttu-id="f04f4-220">Na página **arquivo a ser importado** , digite ** \\ \\adfs1\\certificados\\ssl.pfx**e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-220">On the **File to Import** page, type **\\\\adfs1\\certs\\ssl.pfx**, and then click **Next**.</span></span>
+8. <span data-ttu-id="cd4ab-220">Na página **Arquivo a Ser Importado**, digite**\\\\adfs1\\certs\\ssl.pfx** e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-220">On the **File to Import** page, type **\\\\adfs1\\certs\\ssl.pfx**, and then click **Next**.</span></span>
     
-9. <span data-ttu-id="f04f4-221">Na página de **proteção de chave privada** , digite a senha do certificado na **senha**e, em seguida, clique em **próxima.**</span><span class="sxs-lookup"><span data-stu-id="f04f4-221">On the **Private key protection** page, type the certificate password in **Password**, and then click **Next.**</span></span>
+9. <span data-ttu-id="cd4ab-221">Na página **Proteção de Chave Privada**, digite a senha de certificado na **Senha** e, em seguida, clique em **Avançar.**</span><span class="sxs-lookup"><span data-stu-id="cd4ab-221">On the **Private key protection** page, type the certificate password in **Password**, and then click **Next.**</span></span>
     
-10. <span data-ttu-id="f04f4-222">Na página **repositório de certificado** , clique em **próxima.**</span><span class="sxs-lookup"><span data-stu-id="f04f4-222">On the **Certificate store** page, click **Next.**</span></span>
+10. <span data-ttu-id="cd4ab-222">Na página **Repositório de certificados**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-222">On the **Validation** page, click **Next**.</span></span>
     
-11. <span data-ttu-id="f04f4-223">Na página **Concluindo** , clique em **Concluir**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-223">On the **Completing** page, click **Finish**.</span></span>
+11. <span data-ttu-id="cd4ab-223">Na página **Concluindo**, clique em **Concluir**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-223">On the **Summary** page, click **Finish**.</span></span>
     
-12. <span data-ttu-id="f04f4-224">Na página **Repositório de certificados** , clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-224">On the **Certificate Store** page, click **Next**.</span></span>
+12. <span data-ttu-id="cd4ab-224">Na página **Repositório de Certificados**, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-224">On the **Validation** page, click **Next**.</span></span>
     
-13. <span data-ttu-id="f04f4-225">Quando solicitado, clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-225">When prompted, click **OK**.</span></span>
+13. <span data-ttu-id="cd4ab-225">Quando solicitado, clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-225">When prompted, click **Yes**.</span></span>
     
-14. <span data-ttu-id="f04f4-226">No painel de árvore, clique em **certificados** .</span><span class="sxs-lookup"><span data-stu-id="f04f4-226">Click **Certificates** in the tree pane.</span></span>
+14. <span data-ttu-id="cd4ab-226">Clique em **Certificados** no painel de árvore.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-226">Click **Certificates** in the tree pane.</span></span>
     
-15. <span data-ttu-id="f04f4-227">Com o botão direito no certificado e, em seguida, clique em **Copiar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-227">Right-click the certificate, and then click **Copy**.</span></span>
+15. <span data-ttu-id="cd4ab-227">Clique com o botão direito do mouse no certificado e depois em **Copiar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-227">Right-click the certificate, and then click **Copy**.</span></span>
     
-16. <span data-ttu-id="f04f4-228">No painel de árvore, abra **autoridades de certificação raiz confiáveis > certificados**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-228">In the tree pane, open **Trusted Root Certification Authorities > Certificates**.</span></span>
+16. <span data-ttu-id="cd4ab-228">No painel de árvore, abra **Autoridades de Certificação Raiz Confiáveis > Certificados**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-228">In the tree pane, open **Trusted Root Certification Authorities > Certificates**.</span></span>
     
-17. <span data-ttu-id="f04f4-229">Mover o ponteiro do mouse abaixo da lista de certificados instalados, com o botão direito e depois clique em **Colar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-229">Move your mouse pointer below the list of installed certificates, right-click, and then click **Paste**.</span></span>
+17. <span data-ttu-id="cd4ab-229">Passe o ponteiro do cursor abaixo da lista de certificados instalados, clique com o botão direito do mouse e clique em **Colar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-229">Move your mouse pointer below the list of installed certificates, right-click, and then click **Paste**.</span></span>
     
-<span data-ttu-id="f04f4-230">Abra um prompt de comando do PowerShell de nível de administrador e execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="f04f4-230">Open an administrator-level PowerShell command prompt and run the following command:</span></span>
+<span data-ttu-id="cd4ab-230">Abra um prompt de comando do Windows PowerShell de nível de administrador e execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-230">Open an administrator-level PowerShell command prompt and run the following command:</span></span>
   
 ```
 Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
 ```
 
-<span data-ttu-id="f04f4-231">Aguarde a conclusão da instalação.</span><span class="sxs-lookup"><span data-stu-id="f04f4-231">Wait for the installation to complete.</span></span>
+<span data-ttu-id="cd4ab-231">Aguarde a instalação ser concluída.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-231">Wait for the connection to complete.</span></span>
   
-<span data-ttu-id="f04f4-232">Use estas etapas para configurar o serviço de proxy de aplicativo web para usar ADFS1 como seu servidor de Federação:</span><span class="sxs-lookup"><span data-stu-id="f04f4-232">Use these steps to configure the web application proxy service to use ADFS1 as its federation server:</span></span>
+<span data-ttu-id="cd4ab-232">Use estas etapas para configurar o serviço de proxy de aplicativo web para usar o ADFS1 como seu servidor de federação:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-232">Use these steps to configure the web application proxy service to use ADFS1 as its federation server:</span></span>
   
-1. <span data-ttu-id="f04f4-233">Clique em **Iniciar**e, em seguida, clique em **Gerenciador de servidores**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-233">Click **Start**, and then click **Server Manager**.</span></span>
+1. <span data-ttu-id="cd4ab-233">Clique em **Iniciar** e em **Gerenciador do Servidor**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-233">Click **Start**, and then click **Server Manager**.</span></span>
     
-2. <span data-ttu-id="f04f4-234">No painel de árvore, clique em **Acesso remoto**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-234">In the tree pane, click **Remote Access**.</span></span>
+2. <span data-ttu-id="cd4ab-234">No painel de árvore, clique em **Acesso Remoto**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-234">In the tree pane, click **Remote Access**.</span></span>
     
-3. <span data-ttu-id="f04f4-235">Na barra de ferramentas na parte superior, clique no símbolo de cuidado laranja e clique em **Abrir o Assistente de Proxy de aplicativo Web**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-235">In the tool bar at the top, click the orange caution symbol, and then click **Open the Web Application Proxy Wizard**.</span></span>
+3. <span data-ttu-id="cd4ab-235">Na barra de ferramentas, na parte superior, clique no símbolo de cuidado laranja e, em seguida, clique em **Abrir o Assistente de Proxy de Aplicativo Web**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-235">In the tool bar at the top, click the orange caution symbol, and then click **Open the Web Application Proxy Wizard**.</span></span>
     
-4. <span data-ttu-id="f04f4-236">Na página de **boas-vindas** do Assistente de configuração de Proxy de aplicativo Web, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-236">On the **Welcome** page of the Web Application Proxy Configuration Wizard, click **Next**.</span></span>
+4. <span data-ttu-id="cd4ab-236">Na página **Bem-vindo** do Assistente de Configuração do Proxy de Aplicativo Web, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-236">On the **Welcome** page of the Web Application Proxy Configuration Wizard, click **Next**.</span></span>
     
-5. <span data-ttu-id="f04f4-237">Na página **Servidor de Federação** :</span><span class="sxs-lookup"><span data-stu-id="f04f4-237">On the **Federation Server** page:</span></span>
+5. <span data-ttu-id="cd4ab-237">Na página **Servidor de Federação**:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-237">On the **Federation Server** page:</span></span>
     
-  - <span data-ttu-id="f04f4-238">Digite o FQDN do serviço de federação no **nome do serviço de Federação**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-238">Type your federation service FQDN in **Federation service name**.</span></span>
+  - <span data-ttu-id="cd4ab-238">Digite o FQDN do serviço de federação em **Nome do Serviço de Federação**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-238">Type your federation service FQDN in **Federation service name**.</span></span>
     
-  - <span data-ttu-id="f04f4-239">Tipo **CORP\\User1** em **nome de usuário**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-239">Type **CORP\\User1** in **User name**.</span></span>
+  - <span data-ttu-id="cd4ab-239">Digite **CORP\\Usuário1** no **Nome de Usuário**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-239">Type **CORP\\User1** in **User name**.</span></span>
     
-  - <span data-ttu-id="f04f4-240">Digite a senha para a conta User1 na **senha**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-240">Type the password for the User1 account in **Password**.</span></span>
+  - <span data-ttu-id="cd4ab-240">Digite a senha da conta do Usuário1 em **Senha**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-240">Type the password for the User1 account in **Password**.</span></span>
     
-  - <span data-ttu-id="f04f4-241">Clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-241">Click **Next**.</span></span>
+  - <span data-ttu-id="cd4ab-241">Clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-241">Click **Next**.</span></span>
     
-6. <span data-ttu-id="f04f4-242">Na página **Certificado de Proxy do AD FS** , clique na seta para baixo, clique no certificado com o FQDN do serviço de Federação e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-242">On the **AD FS Proxy Certificate** page, click the down arrow, click the certificate with your federation service FQDN, and then click **Next**.</span></span>
+6. <span data-ttu-id="cd4ab-242">Na página **Certificado Proxy AD FS**, clique na seta para baixo, clique no certificado com o nome do seu FQDN de serviço de federação e depois em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-242">On the **AD FS Proxy Certificate** page, click the down arrow, click the certificate with your federation service FQDN, and then click **Next**.</span></span>
     
-7. <span data-ttu-id="f04f4-243">Na página de **confirmação** , clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-243">On the **Confirmation** page, click **Configure**.</span></span>
+7. <span data-ttu-id="cd4ab-243">Na página **Confirmação**, clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-243">On the **Confirmation** page, click **Next**.</span></span>
     
-8. <span data-ttu-id="f04f4-244">Na página de **resultados** , clique em **Fechar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-244">On the **Results** page, click **Close**.</span></span>
+8. <span data-ttu-id="cd4ab-244">Na página **Resultados**, clique em **Fechar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-244">On the **Results** page, click **Close**.</span></span>
     
-## <a name="phase-5-configure-office-365-for-federated-identity"></a><span data-ttu-id="f04f4-245">Fase 5: Configurar o Office 365 para identidades federadas</span><span class="sxs-lookup"><span data-stu-id="f04f4-245">Phase 5: Configure Office 365 for federated identity</span></span>
+## <a name="phase-5-configure-office-365-for-federated-identity"></a><span data-ttu-id="cd4ab-245">Fase 5: Configurar o Office 365 para a identidade federada</span><span class="sxs-lookup"><span data-stu-id="cd4ab-245">Phase 5: Configure Office 365 for federated identity</span></span>
 
-<span data-ttu-id="f04f4-246">Usar o [portal do Azure](http://portal.azure.com) para conectar-se a máquina virtual APP1 com CORP\\credenciais de conta User1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-246">Use the [Azure portal](http://portal.azure.com) to connect to the APP1 virtual machine with the CORP\\User1 account credentials.</span></span>
+<span data-ttu-id="cd4ab-246">Use o [portal do Azure](http://portal.azure.com) para conectar a máquina virtual APP1 com as credenciais da conta CORP\\Usuário1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-246">Use the [Azure portal](http://portal.azure.com) to connect to the APP1 virtual machine with the CORP\\User1 account credentials.</span></span>
   
-<span data-ttu-id="f04f4-247">Use estas etapas para configurar Connect do Azure AD e sua assinatura do Office 365 para autenticação federada:</span><span class="sxs-lookup"><span data-stu-id="f04f4-247">Use these steps to configure Azure AD Connect and your Office 365 subscription for federated authentication:</span></span>
+<span data-ttu-id="cd4ab-247">Use estas etapas para configurar o Azure AD Connect e sua assinatura do Office 365 para autenticação federada:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-247">Use these steps to configure Azure AD Connect and your Office 365 subscription for federated authentication:</span></span>
   
-1. <span data-ttu-id="f04f4-248">Na área de trabalho, clique duas vezes em **Connect do Azure AD**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-248">From the desktop, double-click **Azure AD Connect**.</span></span>
+1. <span data-ttu-id="cd4ab-248">Na área de trabalho, clique duas vezes em **Azure AD Connect**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-248">From the desktop, double-click **Azure AD Connect**.</span></span>
     
-2. <span data-ttu-id="f04f4-249">Na página **Bem-vindo ao conectar do Azure AD** , clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-249">On the **Welcome to Azure AD Connect** page, click **Configure**.</span></span>
+2. <span data-ttu-id="cd4ab-249">Na página **Bem-vindo ao Azure AD Connect**, clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-249">On the **Welcome to Azure AD Connect** page, click **Configure**.</span></span>
     
-3. <span data-ttu-id="f04f4-250">Na página **tarefas adicionais** , clique em **Alterar usuário entrar**e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-250">On the **Additional tasks** page, click **Change user sign-in**, and then click **Next**.</span></span>
+3. <span data-ttu-id="cd4ab-250">Na página **Tarefas Adicionais**, clique em **Alterar entrada do usuário** e em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-250">On the **Additional tasks** page, click **Change user sign-in**, and then click **Next**.</span></span>
     
-4. <span data-ttu-id="f04f4-251">Na página **conectar ao AD do Windows Azure** , digite seu nome de conta de administrador global do Office 365 e a senha e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-251">On the **Connect to Azure AD** page, type your Office 365 global administrator account name and password, and then click **Next**.</span></span>
+4. <span data-ttu-id="cd4ab-251">Na página **Conectar ao Azure AD**, digite o nome de sua conta e a senha de administrador global do Office 365 e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-251">On the **Connect to Azure AD** page, type your Office 365 global administrator account name and password, and then click **Next**.</span></span>
     
-5. <span data-ttu-id="f04f4-252">Na página de **logon do usuário** , clique em **federação com o AD FS**e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-252">On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.</span></span>
+5. <span data-ttu-id="cd4ab-252">Na página **Entrada do usuário**, clique em **Federação com AD FS** e em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-252">On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.</span></span>
     
-6. <span data-ttu-id="f04f4-253">Na página **farm AD FS** , clique em **usar um farm existente do AD FS**, digite **ADFS1** em **Nome do servidor**e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-253">On the **AD FS farm** page, click **Use an existing AD FS farm**, type **ADFS1** in **Server Name**, and then click **Next**.</span></span>
+6. <span data-ttu-id="cd4ab-253">Na página **Farm do AD FS**, clique em **Usar um farm do AD FS existente**, digite **ADFS1** no **Nome do servidor** e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-253">On the **AD FS farm** page, click **Use an existing AD FS farm**, type **ADFS1** in **Server Name**, and then click **Next**.</span></span>
     
-7. <span data-ttu-id="f04f4-254">Quando solicitado a fornecer credenciais do servidor, insira as credenciais de CORP\\User1 da conta e clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-254">When prompted for server credentials, enter the credentials of the CORP\\User1 account, and then click **OK**.</span></span>
+7. <span data-ttu-id="cd4ab-254">Nas credenciais do servidor, insira as credenciais da conta CORP\\Usuário1 e clique em **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-254">When prompted for server credentials, enter the credentials of the CORP\\User1 account, and then click **OK**.</span></span>
     
-8. <span data-ttu-id="f04f4-255">Na página credenciais de **Administrador de domínio** , digite **CORP\\User1** no **nome de usuário** e a senha da conta em **senha**e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-255">On the **Domain Administrator** credentials page, type **CORP\\User1** in **Username** and the account password in **Password**, and then click **Next**.</span></span>
+8. <span data-ttu-id="cd4ab-255">Na página de credenciais **Administrador de domínio**, digite **CORP\\Usuário1** no **Nome de usuário** e a senha da conta em **Senha** e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-255">On the **Domain Administrator** credentials page, type **CORP\\User1** in **Username** and the account password in **Password**, and then click **Next**.</span></span>
     
-9. <span data-ttu-id="f04f4-256">Na página **conta de serviço do AD FS** , digite **CORP\\serviço ADFS** no **Nome de usuário de domínio** e a senha da conta em **Senha de usuário de domínio**e, em seguida, clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-256">On the **AD FS service account** page, type **CORP\\ADFS-Service** in **Domain Username** and the account password in **Domain User Password**, and then click **Next**.</span></span>
+9. <span data-ttu-id="cd4ab-256">Na página **Conta de Serviço do AD FS**, digite **CORP\\ADFS serviço** no **Nome de Usuário de Domínio** e a senha da conta em **Senha de Usuário de Domínio** e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-256">On the **AD FS service account** page, type **CORP\\ADFS-Service** in **Domain Username** and the account password in **Domain User Password**, and then click **Next**.</span></span>
     
-10. <span data-ttu-id="f04f4-257">Na página **Domínio do Windows Azure AD** , no **domínio**, selecione o nome do domínio que você criou anteriormente e adicionado à sua assinatura do Office 365 na fase 1 e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-257">On the **Azure AD Domain** page, in **Domain**, select the name of the domain you previously created and added to your Office 365 subscription in Phase 1, and then click **Next**.</span></span>
+10. <span data-ttu-id="cd4ab-257">Na página **Domínio do Azure AD**, em **Domínio**, selecione o nome do domínio que você criou anteriormente e adicionou à sua assinatura do Office 365 na fase 1 e clique em **Avançar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-257">On the **Azure AD Domain** page, in **Domain**, select the name of the domain you previously created and added to your Office 365 subscription in Phase 1, and then click **Next**.</span></span>
     
-11. <span data-ttu-id="f04f4-258">Na página **pronto para configurar** , clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-258">On the **Ready to configure** page, click **Configure**.</span></span>
+11. <span data-ttu-id="cd4ab-258">Na página **Pronto para configurar**, clique em **Configurar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-258">On the **Ready to configure** page, click **Configure**.</span></span>
     
-12. <span data-ttu-id="f04f4-259">Na página **instalação concluída** , clique em **Verificar**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-259">On the **Installation complete** page, click **Verify**.</span></span>
+12. <span data-ttu-id="cd4ab-259">Na página **Instalação Completa**, clique em **Verificar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-259">On the **Installation complete** page, click **Verify**.</span></span>
     
-    <span data-ttu-id="f04f4-260">Você deverá ver mensagens indicando que a intranet e a Internet configuração foi verificada.</span><span class="sxs-lookup"><span data-stu-id="f04f4-260">You should see messages indicating that both the intranet and Internet configuration was verified.</span></span>
+    <span data-ttu-id="cd4ab-260">Você verá mensagens indicando que as configurações da intranet e da Internet foram verificadas.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-260">You should see messages indicating that both the intranet and Internet configuration was verified.</span></span>
     
-13. <span data-ttu-id="f04f4-261">Na página **instalação concluída** , clique em **Sair**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-261">On the **Installation complete** page, click **Exit**.</span></span>
+13. <span data-ttu-id="cd4ab-261">Na página **Instalação Completa**, clique em **Fechar**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-261">On the **Installation complete** page, click **Exit**.</span></span>
     
-<span data-ttu-id="f04f4-262">Para demonstrar que a autenticação federada está funcionando, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="f04f4-262">To demonstrate that federated authentication is working, do the following:</span></span>
+<span data-ttu-id="cd4ab-262">Para demonstrar que a autenticação federada está funcionando, faça o seguinte:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-262">To demonstrate that federated authentication is working, do the following:</span></span>
   
-1. <span data-ttu-id="f04f4-263">Abra uma nova instância particular do navegador no computador local e vá para [https://portal.office.com](https://portal.office.com).</span><span class="sxs-lookup"><span data-stu-id="f04f4-263">Open a new private instance of your browser on your local computer and go to [https://portal.office.com](https://portal.office.com).</span></span>
+1. <span data-ttu-id="cd4ab-263">Abra uma nova instância privada no navegador do computador local e acesse [https://portal.office.com](https://portal.office.com).</span><span class="sxs-lookup"><span data-stu-id="cd4ab-263">Open a new private instance of your browser on your local computer and go to [https://portal.office.com](https://portal.office.com).</span></span>
     
-2. <span data-ttu-id="f04f4-264">Para as credenciais de login, digite **Usuário1 @**\<o domínio criado na fase 1 >.</span><span class="sxs-lookup"><span data-stu-id="f04f4-264">For the sign-in credentials, type **user1@**\<the domain created in Phase 1>.</span></span> 
+2. <span data-ttu-id="cd4ab-264">Como credenciais de entrada, digite **usuário1@**\<domínio criado na Fase 1 >.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-264">For the sign-in credentials, type **user1@**\<the domain created in Phase 1>.</span></span> 
     
-    <span data-ttu-id="f04f4-265">Por exemplo, se o seu domínio de teste for **testlab.contoso.com**, você digitaria **user1@testlab.contoso.com**. Pressione a tecla TAB ou permitir que o Office 365 para redirecioná-lo automaticamente.</span><span class="sxs-lookup"><span data-stu-id="f04f4-265">For example, if your test domain is **testlab.contoso.com**, you would type **user1@testlab.contoso.com**. Press TAB or allow Office 365 to automatically redirect you.</span></span>
+    <span data-ttu-id="cd4ab-265">Por exemplo, se o domínio de teste for **testlab.contoso.com**, digite **usuário1@testlab.contoso.com**. Pressione a tecla TAB ou deixe que o Office 365 o redirecione automaticamente.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-265">For example, if your test domain is **testlab.contoso.com**, you would type **user1@testlab.contoso.com**. Press TAB or allow Office 365 to automatically redirect you.</span></span>
     
-    <span data-ttu-id="f04f4-p109">Agora, você deverá ver uma página de **sua conexão é não particular** . Você está vendo isso porque você instalou um certificado autoassinado em ADFS1 computador desktop não foi possível validar. Em uma implantação de produção da autenticação federada, você usaria um certificado de uma autoridade de certificação confiável e seus usuários não veria nesta página.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p109">You should now see a **Your connection is not private** page. You are seeing this because you installed a self-signed certificate on ADFS1 that your desktop computer cannot validate. In a production deployment of federated authentication, you would use a certificate from a trusted certification authority and your users would not see this page.</span></span>
+    <span data-ttu-id="cd4ab-p109">Agora você deverá ver a página **Sua conexão não é particular** porque você instalou o certificado autoassinado em ADFS1 que seu computador desktop não consegue validar. Em uma implantação de produção com autenticação federada, será necessário usar um certificado de autoridade de certificação confiável e os usuários não verão esta página.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p109">You should now see a **Your connection is not private** page. You are seeing this because you installed a self-signed certificate on ADFS1 that your desktop computer cannot validate. In a production deployment of federated authentication, you would use a certificate from a trusted certification authority and your users would not see this page.</span></span>
     
-3. <span data-ttu-id="f04f4-269">Na página **sua conexão é não particular** , clique em **Avançado**e, em seguida, clique em **prossiga para \<seu serviço de Federação FQDN >**.</span><span class="sxs-lookup"><span data-stu-id="f04f4-269">On the **Your connection is not private** page, click **Advanced**, and then click **Proceed to \<your federation service FQDN>**.</span></span> 
+3. <span data-ttu-id="cd4ab-269">Na página **Sua conexão não é particular**, clique em **Avançado** e em **Vá para \<FQDN do seu serviço de federação>**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-269">On the **Your connection is not private** page, click **Advanced**, and then click **Proceed to \<your federation service FQDN>**.</span></span> 
     
-4. <span data-ttu-id="f04f4-270">Na página com o nome da sua organização a empresa fictícia, entrar com o seguinte:</span><span class="sxs-lookup"><span data-stu-id="f04f4-270">On the page with the name of your fictional organization, sign in with the following:</span></span>
+4. <span data-ttu-id="cd4ab-270">Na página com o nome da sua organização fictícia, entre com o seguinte:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-270">On the page with the name of your fictional organization, sign in with the following:</span></span>
     
-  - <span data-ttu-id="f04f4-271">**CORP\\User1** para o nome</span><span class="sxs-lookup"><span data-stu-id="f04f4-271">**CORP\\User1** for the name</span></span>
+  - <span data-ttu-id="cd4ab-271">**CORP\\Usuário1** como o nome</span><span class="sxs-lookup"><span data-stu-id="cd4ab-271">**CORP\\User1** for the name</span></span>
     
-  - <span data-ttu-id="f04f4-272">A senha para a conta User1</span><span class="sxs-lookup"><span data-stu-id="f04f4-272">The password for the User1 account</span></span>
+  - <span data-ttu-id="cd4ab-272">A senha da conta Usuário1</span><span class="sxs-lookup"><span data-stu-id="cd4ab-272">The password for the User1 account</span></span>
     
-    <span data-ttu-id="f04f4-273">Você deverá ver a página do **Microsoft Office Home** .</span><span class="sxs-lookup"><span data-stu-id="f04f4-273">You should see the **Microsoft Office Home** page.</span></span>
+    <span data-ttu-id="cd4ab-273">Você verá a página **Microsoft Office Home**.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-273">You should see the **Microsoft Office Home** page.</span></span>
     
-<span data-ttu-id="f04f4-p110">Esse procedimento demonstra que sua assinatura de avaliação do Office 365 é federada com o domínio corp.contoso.com do AD do Windows Server hospedado no DC1. Aqui estão os fundamentos do processo de autenticação:</span><span class="sxs-lookup"><span data-stu-id="f04f4-p110">This procedure demonstrates that your Office 365 trial subscription is federated with the Windows Server AD corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:</span></span>
+<span data-ttu-id="cd4ab-p110">Esse procedimento demonstra que sua assinatura de avaliação do Office 365 está federada com o domínio corp.contoso.com do AD do Windows Server hospedado no DC1. Veja abaixo as noções básicas do processo de autenticação:</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p110">This procedure demonstrates that your Office 365 trial subscription is federated with the Windows Server AD corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:</span></span>
   
-1. <span data-ttu-id="f04f4-276">Quando você usa o domínio federado que você criou na fase 1 do nome de conta de entrada, o Office 365 redireciona o navegador para sua federação FQDN e PROXY1 de serviço.</span><span class="sxs-lookup"><span data-stu-id="f04f4-276">When you use the federated domain that you created in Phase 1 within the sign-in account name, Office 365 redirects your browser to your federation service FQDN and PROXY1.</span></span>
+1. <span data-ttu-id="cd4ab-276">Ao usar o domínio federado criado na Fase 1 como o nome da conta de entrada, o Office 365 redireciona o navegador para o PROXY1 e FQDN do serviço da federação.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-276">When you use the federated domain that you created in Phase 1 within the sign-in account name, Office 365 redirects your browser to your federation service FQDN and PROXY1.</span></span>
     
-2. <span data-ttu-id="f04f4-277">PROXY1 envia a página de entrada de empresa fictícia de seu computador local.</span><span class="sxs-lookup"><span data-stu-id="f04f4-277">PROXY1 sends your local computer the fictional company sign-in page.</span></span>
+2. <span data-ttu-id="cd4ab-277">PROXY1 envia a página de entrada da empresa fictícia para o seu computador local.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-277">PROXY1 sends your local computer the fictional company sign-in page.</span></span>
     
-3. <span data-ttu-id="f04f4-278">Quando você envia CORP\\User1 e a senha para PROXY1, ele encaminha para ADFS1.</span><span class="sxs-lookup"><span data-stu-id="f04f4-278">When you send CORP\\User1 and the password to PROXY1, it forwards them to ADFS1.</span></span>
+3. <span data-ttu-id="cd4ab-278">Quando você envia CORP\\Usuário1 e a senha PROXY1, ele o encaminha para o ADFS1.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-278">When you send CORP\\User1 and the password to PROXY1, it forwards them to ADFS1.</span></span>
     
-4. <span data-ttu-id="f04f4-279">ADFS1 valida CORP\\User1 e a senha com DC1 e envia um token de segurança de computador local.</span><span class="sxs-lookup"><span data-stu-id="f04f4-279">ADFS1 validates CORP\\User1 and the password with DC1 and sends your local computer a security token.</span></span>
+4. <span data-ttu-id="cd4ab-279">O ADFS1 valida CORP\\Usuário1 e a senha com o DC1 e envia um token de segurança para o seu computador local.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-279">ADFS1 validates CORP\\User1 and the password with DC1 and sends your local computer a security token.</span></span>
     
-5. <span data-ttu-id="f04f4-280">Computador local envia o token de segurança para o Office 365.</span><span class="sxs-lookup"><span data-stu-id="f04f4-280">Your local computer sends the security token to Office 365.</span></span>
+5. <span data-ttu-id="cd4ab-280">O computador local envia o token de segurança ao Office 365.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-280">Your local computer sends the security token to Office 365.</span></span>
     
-6. <span data-ttu-id="f04f4-281">O Office 365 valida que o token de segurança foi criado por ADFS1 e permite o acesso.</span><span class="sxs-lookup"><span data-stu-id="f04f4-281">Office 365 validates that the security token was created by ADFS1 and allows access.</span></span>
+6. <span data-ttu-id="cd4ab-281">O Office 365 valida o token de segurança criado por ADFS1 e permite o acesso.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-281">Office 365 validates that the security token was created by ADFS1 and allows access.</span></span>
     
-<span data-ttu-id="f04f4-p111">Agora, a sua assinatura de avaliação do Office 365 é configurada com autenticação federada. Você pode usar esse ambiente de desenvolvimento e teste para cenários de autenticação avançada.</span><span class="sxs-lookup"><span data-stu-id="f04f4-p111">Your Office 365 trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.</span></span>
+<span data-ttu-id="cd4ab-p111">Agora a assinatura de avaliação do Office 365 está configurada com a autenticação federada. Você pode usar esse ambiente de desenvolvimento/teste em cenários avançados de autenticação.</span><span class="sxs-lookup"><span data-stu-id="cd4ab-p111">Your Office 365 trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.</span></span>
   
-## <a name="next-step"></a><span data-ttu-id="f04f4-284">Próxima etapa</span><span class="sxs-lookup"><span data-stu-id="f04f4-284">Next Step</span></span>
+## <a name="next-step"></a><span data-ttu-id="cd4ab-284">Próxima etapa</span><span class="sxs-lookup"><span data-stu-id="cd4ab-284">Next step</span></span>
 
-<span data-ttu-id="f04f4-285">Quando estiver pronto para implantar pronto para produção, autenticação federada de alta disponibilidade para o Office 365 no Windows Azure, consulte [Deploy autenticação federada do alta disponibilidade para o Office 365 no Windows Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="f04f4-285">When you are ready to deploy production-ready, high availability federated authentication for Office 365 in Azure, see [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span></span>
+<span data-ttu-id="cd4ab-285">Quando estiver pronto para a implementação da autenticação federada pronta para a produção e de alta disponibilidade para o Office 365 no Azure, confira [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="cd4ab-285">When you are ready to deploy production-ready, high availability federated authentication for Office 365 in Azure, see [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="f04f4-286">Confira também</span><span class="sxs-lookup"><span data-stu-id="f04f4-286">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cd4ab-286">Veja também</span><span class="sxs-lookup"><span data-stu-id="cd4ab-286">See Also</span></span>
 
-[<span data-ttu-id="f04f4-287">Guias do Laboratório de Teste (TLGs) para adoção de nuvem</span><span class="sxs-lookup"><span data-stu-id="f04f4-287">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="cd4ab-287">Guias do Laboratório de Teste (TLGs) para adoção de nuvem</span><span class="sxs-lookup"><span data-stu-id="cd4ab-287">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-<span data-ttu-id="f04f4-288">[O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) </span><span class="sxs-lookup"><span data-stu-id="f04f4-288">[Base Configuration dev/test environment](base-configuration-dev-test-environment.md)</span></span>
+<span data-ttu-id="cd4ab-288">[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) </span><span class="sxs-lookup"><span data-stu-id="cd4ab-288">[Base Configuration dev/test environment](base-configuration-dev-test-environment.md)</span></span>
   
-[<span data-ttu-id="f04f4-289">Ambiente de desenvolvimento/teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="f04f4-289">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
+[<span data-ttu-id="cd4ab-289">Ambiente de desenvolvimento/teste do Office 365</span><span class="sxs-lookup"><span data-stu-id="cd4ab-289">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[<span data-ttu-id="f04f4-290">Adoção da nuvem e soluções híbridas</span><span class="sxs-lookup"><span data-stu-id="f04f4-290">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="cd4ab-290">Adoção da nuvem e de soluções híbridas</span><span class="sxs-lookup"><span data-stu-id="cd4ab-290">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[<span data-ttu-id="f04f4-291">Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure</span><span class="sxs-lookup"><span data-stu-id="f04f4-291">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="cd4ab-291">Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure</span><span class="sxs-lookup"><span data-stu-id="cd4ab-291">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 
 
