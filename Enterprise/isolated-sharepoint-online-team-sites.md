@@ -1,5 +1,5 @@
 ---
-title: Isolado sites de equipe do SharePoint Online
+title: Sites de equipe isolados do SharePoint Online
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,59 +7,59 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
-description: 'Resumo: Saiba mais sobre os usos para sites de equipe do SharePoint Online isolados.'
-ms.openlocfilehash: 358bb16c01c51a76da6557091dacca75e317bf92
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Resumo: conheça as utilizações dos sites de equipe do SharePoint Online isolados.'
+ms.openlocfilehash: 86aa5fb9fa4d4eb2f76e1e32a6fcd8bda7b29b76
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="isolated-sharepoint-online-team-sites"></a>Isolado sites de equipe do SharePoint Online
+# <a name="isolated-sharepoint-online-team-sites"></a>Sites de equipe isolados do SharePoint Online
 
- **Resumo:** Saiba mais sobre os usos para sites de equipe do SharePoint Online isolados.
+ **Resumo:** conheça as utilizações dos sites de equipe do SharePoint Online isolados.
   
-Sites de equipe do SharePoint Online são uma maneira fácil para criar rapidamente um espaço para colaboração de notas, documentos, artigos, um calendário e outros recursos no Microsoft Office 365. Sites de equipe do SharePoint Online baseiam-se em um grupo do Office 365 e tem um modelo de administração simplificada para permitir a colaboração aberta com um conjunto particular de membros de grupo ou de toda a organização. Um site de equipe do SharePoint Online padrão permite que os membros do grupo do Office 365 convidar outros usuários e controlar as configurações de permissões.
+Os sites de equipe do SharePoint Online são uma maneira fácil de criar rapidamente um espaço para colaboração em anotações, documentos, artigos, um calendário e outros recursos do Microsoft Office 365. Os sites de equipe do SharePoint Online são baseados em um grupo do Office 365 e possuem um modelo de administração simplificado para permitir a colaboração aberta entre um determinado conjunto de membros do grupo ou toda a organização. Um site de equipe padrão do SharePoint Online permite que os membros do grupo do Office 365 convidem outros usuários e controlem as configurações de permissões.
   
-No entanto, em alguns casos, você deseja criar um site de equipe do SharePoint Online para colaboração onde as permissões do site são mais controladas por meio de associação de grupo e níveis de permissão do SharePoint Online, que só são gerenciados pelo SharePoint Administradores. Chamamos isso um site isolado, o que é isolado para o conjunto de usuários que estão colaborando, exibindo seu conteúdo ou administrando o site. Talvez você precise um site isolado para o seguinte:
+No entanto, em alguns casos, você quer criar um site de equipe do SharePoint Online para colaboração em locais onde as permissões desse site sejam controladas com maior rigidez por meio da associação ao grupo e níveis de permissão do SharePoint Online, que são gerenciados apenas por administradores do SharePoint. Chamamos isso de um site isolado, que é isolado do conjunto de usuários que estão colaborando, visualizando seu conteúdo ou administrando o site. Um site isolado pode ser necessário para o seguinte:
   
-- Um projeto secreto dentro da sua organização.
+- Um projeto secreto em sua organização.
     
-- O local para a propriedade intelectual de altamente confidenciais ou valioso para sua organização.
+- O local da propriedade intelectual altamente confidencial ou valiosa para sua organização.
     
-- Os recursos de uma ação judicial tomadas por sua organização ou que ao qual ele está sujeito.
+- Os recursos de uma ação judicial iniciada por sua organização ou à qual a empresa está sendo submetida.
     
-- Para compartilhar uma assinatura do Office 365 entre várias organizações que têm algumas overlap, mas existir na maioria das vezes como entidades empresariais separadas.
+- Para compartilhar uma assinatura do Office 365 entre várias organizações que possuem alguma sobreposição, mas, na maioria das vezes, existem como entidades comerciais separadas.
     
-Aqui estão os requisitos de um site isolado:
+Veja os requisitos de um site isolado:
   
-- Somente os administradores do SharePoint Online podem executar a administração do site, que inclui a associação de grupo para acessar o site e como configurar permissões personalizadas.
+- Apenas os administradores do SharePoint Online podem realizar a administração de sites, o que inclui a associação ao grupo para acessar o site e a configuração de permissões personalizadas.
     
-- Membros do site não podem convidar outros membros para o site de equipe.
+- Os membros do site não podem convidar outros membros para o site de equipe.
     
-- Usuários que não são membros do site isolado não podem solicitar acesso ao site. Eles receberão um acesso negado a página da web quando eles tentam acessar qualquer URL associada ao site.
+- Os usuários que não são membros do site isolado não podem solicitar acesso ao site e verão uma página da Web de acesso negado ao tentar acessar qualquer URL associada ao site.
     
-A desvantagem da exigência de controle de acesso centralizado e permissões personalizadas pelos administradores do SharePoint Online é que o site permanece isolado ao longo do tempo. Por exemplo, atuais membros não é possível, intencionalmente ou acidentalmente, convidar ou configurar permissões personalizadas para outros usuários dentro da assinatura do Office 365, que não devem ser membros do site.
+A desvantagem de exigir controle de acesso centralizado e permissões personalizadas pelos administradores do SharePoint Online é que o site manterá-se isolado ao longo do tempo. Por exemplo, os membros atuais não poderão, intencionalmente ou acidentalmente, convidar ou configurar permissões personalizadas para outros usuários na assinatura do Office 365 que não sejam membros do site.
   
-Um site isolado pode ser usado com outros recursos, tais como:
+Um site isolado pode ser usado com outros recursos, como:
   
-- Information Rights Management para garantir que os recursos no site permaneçam criptografados, mesmo se eles são baixados localmente e carregado para outro site que está disponível para toda a organização.
+- Gerenciamento de Direitos de Informação para garantir que os recursos do site permaneçam criptografados, mesmo que eles sejam baixados localmente e carregados em outro site que esteja disponível para toda a organização.
     
-- Prevenção de perda de dados para impedir que os usuários enviem os recursos do site, como arquivos, em email.
+- Prevenção contra a perda de dados para evitar que os usuários enviem os recursos do site, como arquivos, por email.
     
 ## <a name="next-steps"></a>Próximas etapas
 
-Para testar um site de equipe do SharePoint Online isolado em uma assinatura de avaliação, consulte as instruções passo a passo no [ambiente de desenvolvimento e teste de site de equipe isolado SharePoint Online](isolated-sharepoint-online-team-site-dev-test-environment.md).
+Para experimentar um site de equipe do SharePoint Online isolado em uma assinatura de avaliação, confira as instruções passo a passo no [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](isolated-sharepoint-online-team-site-dev-test-environment.md).
   
-Quando estiver pronto para implantar um site de equipe do SharePoint Online isolado em produção, consulte as considerações de design passo a passo em [um site de equipe do SharePoint Online isolado de Design](design-an-isolated-sharepoint-online-team-site.md).
+Quando estiver pronto para implantar um site de equipe do SharePoint Online isolado na produção, confira as considerações de design passo a passo no [Projetar um site de equipe do SharePoint Online isolado](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 [Projetar um site de equipe do SharePoint Online isolado](design-an-isolated-sharepoint-online-team-site.md)
   

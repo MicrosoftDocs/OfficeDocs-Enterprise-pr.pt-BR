@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
-description: 'Resumo: Criar e configurar sites de equipe do SharePoint Online para diversos níveis de proteção de informações.'
-ms.openlocfilehash: ddeb1885cbc74be6e7098660eb1d9906d43739fd
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Resumo: Crie e configure sites de equipe do SharePoint Online para vários níveis de proteção de informações.'
+ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implantar sites do SharePoint Online para três camadas de proteção
 
- **Resumo:** Criar e configurar sites de equipe do SharePoint Online para diversos níveis de proteção de informações.
+ **Resumo:** Crie e configure sites de equipe do SharePoint Online para vários níveis de proteção de informações.
   
 Use as etapas neste artigo para projetar e implantar sites de equipe do SharePoint Online de linha de base, confidenciais e altamente confidenciais. Para obter mais informações sobre essas três camadas de proteção, consulte [Arquivos e sites do SharePoint Online seguros](secure-sharepoint-online-sites-and-files.md).
   
@@ -35,7 +35,7 @@ A proteção de linha de base inclui os sites de equipe públicos e privados. Os
 
 Para criar um site de equipe do SharePoint Online de linha de base com permissões e acesso público, faça o seguinte:
   
-1. Entrar no portal do Office 365 com uma conta que também será usada para administrar o site da equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Where entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -47,7 +47,7 @@ Para criar um site de equipe do SharePoint Online de linha de base com permissõ
     
 6. Em **Descrição do site de equipe**, digite uma descrição do objetivo do site.
     
-7. Nas **configurações de privacidade**, selecione **pública - qualquer pessoa da organização pode acessar esse site**e clique em **Avançar**.
+7. Em **Configurações de privacidade**, selecione **Público – qualquer pessoa na organização pode acessar esse site** e clique em **Avançar**.
     
 8. No painel **Quem você deseja adicionar?**, clique em **Concluir**.
     
@@ -55,11 +55,11 @@ Esta é a configuração resultante.
   
 ![Proteção de nível de linha de base para um site de equipe do SharePoint Online público.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
-### <a name="private"></a>Private
+### <a name="private"></a>Privado
 
 Para criar um site de equipe do SharePoint Online de linha de base com permissões e acesso privado, faça o seguinte:
   
-1. Entrar no portal do Office 365 com uma conta que também será usada para administrar o site da equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Where entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -71,11 +71,11 @@ Para criar um site de equipe do SharePoint Online de linha de base com permissõ
     
 6. Em **Descrição do site de equipe,** digite uma descrição do objetivo do site.
     
-7. Nas **configurações de privacidade**, selecione **privada - somente membros podem acessar esse site**e, em seguida, clique em **Avançar**.
+7. Em **Configurações de privacidade**, selecione **Privado – somente membros podem acessar esse site** e clique em **Avançar**.
     
 8. No painel **Quem você deseja adicionar?**, em **Adicionar membros**, digite os nomes das contas de usuário que têm acesso a esse site de equipe privado.
     
-9. Quando você terminar adicionando o conjunto inicial de membros para o site, clique em **Concluir**
+9. Quando você terminar de adicionar o conjunto inicial de membros ao site, clique em **Concluir**.
     
 Esta é a configuração resultante.
   
@@ -85,7 +85,7 @@ Esta é a configuração resultante.
 
 Um site de equipe do SharePoint Online confidencial é um site de equipe isolado, o que significa que as permissões são controladas por meio da associação em grupos do SharePoint, em vez de ser membro do grupo do Office 365 associado ao site de equipe.
   
-Para criar um site de equipe isolado, há duas etapas principais.
+Para criar um site de equipe isolado, siga estas duas etapas principais.
   
 ### <a name="step-1-design-your-isolated-site"></a>Etapa 1: Projetar o site isolado
 
@@ -93,9 +93,9 @@ Para projetar o site de equipe isolado, você precisa determinar:
   
 - Seus níveis de permissão e grupos do SharePoint.
     
-- O conjunto de grupos de acesso que serão membros de seus grupos do SharePoint.
+- O conjunto de grupos de acesso que serão membros dos grupos do SharePoint.
     
-     O conjunto recomendado de grupos de acesso é um para membros do site, um para os visualizadores de site e outra para os administradores de sites.
+     O conjunto de grupos de acesso recomendado é um para os membros do site, um para os visualizadores do site e um para os administradores do site.
     
 - Se você usará grupos aninhados dentro de seus grupos de acesso.
     
@@ -121,29 +121,29 @@ Para implantar seu site isolado, primeiro você precisa:
     
 Para obter as etapas detalhadas, consulte a **Fase 1** de [Implantar um site de equipe do SharePoint Online isolado](deploy-an-isolated-sharepoint-online-team-site.md).
   
-Em seguida, você cria o site da equipe do SharePoint Online com estas etapas.
+Em seguida, crie o site de equipe do SharePoint Online com estas etapas.
   
-1. Entrar no portal do Office 365 com uma conta que também será usada para administrar o site da equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Where entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Entre no Portal do Office 365 com uma conta que também será usada para administrar o site de equipe do SharePoint Online (um administrador do SharePoint Online). Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na lista de blocos, clique em **SharePoint**.
     
-3. Na guia **SharePoint** novo do seu navegador, clique em **+ Criar site**.
+3. Na nova guia **SharePoint** do navegador, clique em **+ Criar site**.
     
 4. Na página **Criar um site**, clique em **Site de equipe**.
     
 5. Em **Nome do site**, digite um nome para o site de equipe privado.
     
-6. Na **Descrição do site de equipe**, digite uma descrição opcional.
+6. Na descrição de **Site de equipe**, digite uma descrição opcional.
     
-7. Nas **configurações de privacidade**, selecione **privada - somente membros podem acessar esse site**e, em seguida, clique em **Avançar**.
+7. Em **Configurações de privacidade**, selecione **Privado – somente membros podem acessar esse site** e clique em **Avançar**.
     
 8. No painel **Quem você deseja adicionar?**, clique em **Concluir**.
     
 Em seguida, no novo site de equipe do SharePoint Online, configure as permissões com estas etapas.
   
-1. Determinar o nome Principal de usuário (UPN) do administrador de TI ou outra pessoa de quem será responsável para responder e lidando com as solicitações de acesso ao site (belindan@contoso.com é um exemplo de um UPN). Gravar esse UPN aqui: _.
+1. Determine o nome UPN do administrador de TI ou outra pessoa que será responsável por responder e resolver as solicitações de acesso ao site (elzap@contoso.com é um exemplo de um UPN). Anote esse UPN aqui: _________________________________________.
     
-2. Na barra de ferramentas, clique no ícone configurações e, em seguida, clique em **permissões do Site**.
+2. Na barra de ferramentas, clique no ícone Configurações e, em seguida, clique em **Permissões do site**.
     
 3. No painel **Permissões do site**, clique em **Configurações de permissões avançadas**.
     
@@ -159,25 +159,25 @@ Em seguida, no novo site de equipe do SharePoint Online, configure as permissõe
     
 6. Na guia **Permissões** do navegador, clique em **Membros do [nome do site]** na lista.
     
-7. Em **pessoas e grupos**, clique em **novo**.
+7. Em **Pessoas e Grupos**, clique em **Novo**.
     
-8. Na caixa de diálogo **compartilhamento** , digite o nome do seu grupo de acesso de membros do site para este site, selecioná-la e, em seguida, clique em **compartilhar**.
+8. Na caixa de diálogo **Compartilhar**, digite o nome do grupo de acesso dos membros do seu site para esse site, selecione-o e clique em **Compartilhar**.
     
-9. Clique no botão voltar de seu navegador.
+9. Clique no botão Voltar de seu navegador.
     
-10. Na lista, clique em **[nome do site] proprietários** .
+10. Clique em **Proprietários do [nome do site]** na lista.
     
-11. Em **pessoas e grupos**, clique em **novo**.
+11. Em **Pessoas e Grupos**, clique em **Novo**.
     
-12. Na caixa de diálogo **compartilhamento** , digite o nome do grupo de acesso de administradores de site para este site, selecioná-la e, em seguida, clique em **compartilhar**.
+12. Na caixa de diálogo **Compartilhar**, digite o nome do grupo de acesso dos administradores do site para esse site, selecione-o e clique em **Compartilhar**.
     
-13. Clique no botão voltar de seu navegador.
+13. Clique no botão Voltar de seu navegador.
     
-14. Clique em **visitantes do [nome do site]** na lista.
+14. Clique em **Visitantes do [nome do site]** na lista.
     
-15. Em **pessoas e grupos**, clique em **novo**.
+15. Em **Pessoas e Grupos**, clique em **Novo**.
     
-16. Na caixa de diálogo **compartilhamento** , digite o nome do grupo de acesso ao site visualizadores para esse site, selecioná-la e, em seguida, clique em **compartilhar**.
+16. Na caixa de diálogo **Compartilhar**, digite o nome do grupo de acesso dos visualizadores do site para esse site, selecione-o e clique em **Compartilhar**.
     
 17. Feche a guia **Permissões** do navegador.
     
@@ -211,9 +211,9 @@ Para projetar o site de equipe isolado, você precisa determinar:
   
 - Seus níveis de permissão e grupos do SharePoint.
     
-- O conjunto de grupos de acesso que serão membros de seus grupos do SharePoint.
+- O conjunto de grupos de acesso que serão membros dos grupos do SharePoint.
     
-     O conjunto recomendado de grupos de acesso é um para membros do site, um para os visualizadores de site e outra para os administradores de sites.
+     O conjunto de grupos de acesso recomendado é um para os membros do site, um para os visualizadores do site e um para os administradores do site.
     
 - Se você usará grupos aninhados dentro de seus grupos de acesso.
     
@@ -233,13 +233,13 @@ Para obter os detalhes do processo de design, consulte [Projetar um site de equi
 
 Para implantar seu site isolado, primeiro você precisa:
   
-- Determinar os membros de grupo e usuário de cada um dos seus grupos de acesso
+- Determinar os membros do grupo e usuário de cada um dos grupos de acesso.
     
-- Criar os grupos de acesso e adicionar os membros de grupo e usuário
+- Criar os grupos de acesso e adicionar os membros de usuário e grupo.
     
-- Criar um site de equipe isolado que usa os grupos de acesso
+- Criar um site de equipe isolado que usa os grupos de acesso.
     
-Para obter as etapas detalhadas, consulte [Implantar um site de equipe do SharePoint Online isolado](deploy-an-isolated-sharepoint-online-team-site.md).
+Para obter as etapas detalhadas, confira [Implantar um site de equipe do SharePoint Online isolado](deploy-an-isolated-sharepoint-online-team-site.md).
   
 Os resultados das configurações de permissão são:
   
@@ -253,7 +253,7 @@ Os resultados das configurações de permissão são:
     
 - A capacidade de não membros solicitarem o acesso está desabilitada.
     
-Aqui está a configuração resultante.
+Esta é a configuração resultante.
   
 ![Proteção com alto nível de confidencialidade para um site de equipe isolado do SharePoint Online.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
@@ -261,9 +261,9 @@ Os membros do site, por meio da associação de grupo em um dos grupos de acesso
   
 ## <a name="next-step"></a>Próxima etapa
 
-[Proteger os arquivos do SharePoint Online com o Office 365 rótulos e DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Veja também
 
 [Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
@@ -271,7 +271,7 @@ Os membros do site, por meio da associação de grupo em um dos grupos de acesso
   
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 
