@@ -3,7 +3,7 @@ title: Ambiente de desenvolvimento/teste para a Configuração Base
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/05/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumo: Criar uma intranet simplificada como um ambiente de desenvolvimento/teste no Microsoft Azure.'
-ms.openlocfilehash: a6c0610531482d5d264b582f7a3550b57f21841d
-ms.sourcegitcommit: ac7a37049e3c96e32ea91a4d97105028b0dbb2c5
+ms.openlocfilehash: 6d53bb61ea7d325b15590c8aabe0740df3b92750
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193751"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente de desenvolvimento/teste para a Configuração Base
 
@@ -164,7 +165,7 @@ Em seguida, conecte-se à máquina virtual DC1.
 
 1. No [Portal do Azure](https://portal.azure.com), clique em **Grupos de recursos >** [nome do novo grupo de recursos] **> DC1 > Conectar**.
     
-2. Abra o arquivo DC1.rdp que foi baixado e clique em **Conectar**.
+2. No painel aberto, clique em **Baixar o arquivo RDP**. Abra o arquivo DC1.rdp que foi baixado e clique em **Conectar**.
     
 3. Especifique o nome da conta de administrador local no DC1:
     
@@ -192,7 +193,6 @@ Depois, configure o DC1 como controlador de domínio e servidor DNS para o domí
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
-
 Será preciso especificar uma senha de administrador no modo de segurança. Armazene essa senha em um local seguro.
   
 Esses comandos podem levar alguns minutos para serem concluídos.
@@ -242,7 +242,7 @@ Esta é sua configuração atual:
 O APP1 fornece serviços de web e de compartilhamento de arquivos.
 
 -> [!NOTE]  
--> O seguinte conjunto de comandos cria o CLIENT1 executando o Windows Server 2016 Datacenter, o que pode ser feito em todos os tipos de assinaturas do Azure. Se você tem a assinatura do Azure baseada em Visual Studio, é possível criar o CLIENT1 executando o Windows 10 no [portal do Azure](https://portal.azure.com). 
+-> O seguinte conjunto de comandos cria o CLIENT1 executando o Windows Server 2016 Datacenter, o que pode ser feito em todos os tipos de assinaturas do Azure. Se você tem a assinatura do Azure baseada em Visual Studio, é possível criar o CLIENT1 executando o Windows 10 no [Portal do Azure](https://portal.azure.com). 
 
 Para criar uma Máquina Virtual para o APP1, preencha o nome do grupo de recursos e execute estes comandos no prompt de comando do Azure PowerShell no computador local.
   
@@ -257,7 +257,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName APP1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -311,7 +311,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -342,11 +342,11 @@ Após esse procedimento, verifique se que você pode acessar os recursos de comp
     
 4. Na tela Inicial, clique em **Internet Explorer** e, então, em**OK**.
     
-5. Na barra de endereços, digite **http://app1.corp.contoso.com/** e pressione ENTER. Você verá uma página padrão da web sobre Serviços de Informação de Internet para o APP1.
+5. Na barra de endereços, digite **http:\//app1.corp.contoso.com/** e pressione Enter. Você verá uma página padrão da Web sobre Serviços de Informações da Internet para APP1.
     
 6. Na barra de tarefas da área de trabalho, clique no ícone do Explorador de Arquivos.
     
-7. Na barra de endereços, digite **\\\\app1\\Files** e pressione ENTER. Você verá uma janela de pasta com o conteúdo da pasta compartilhada de arquivos.
+7. Na barra de endereços, digite **\\\\app1\\Files** e pressione Enter. Você verá uma janela de pasta com o conteúdo da pasta compartilhada de arquivos.
     
 8. Na janela da pasta compartilhada **Arquivos**, clique duas vezes no arquivo **Example.txt**. Você verá o conteúdo do arquivo Example.txt.
     
@@ -394,7 +394,7 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "APP1"
 Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
 - [DirSync para o ambiente de desenvolvimento/ teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
