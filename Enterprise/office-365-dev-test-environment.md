@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumo: Use este guia de laboratório de teste para criar uma assinatura de avaliação do Office 365 para avaliação ou desenvolvimento/ teste.'
-ms.openlocfilehash: 07922965acfbd23f0f48094fda8b18bf0b66ef38
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193541"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
 
@@ -51,7 +52,9 @@ Você precisará de uma assinatura do Azure. Você pode usar a [avaliação grat
   
 Esta é a configuração resultante.
   
-![O ambiente de desenvolvimento/teste de Configuração de Base no Azure](images/63108214-f716-46ae-9974-072ff15b44a2.png)
+![O ambiente de desenvolvimento/teste de Configuração de Base no Azure](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+
+
   
 Essa configuração consiste nas máquinas virtuais DC1, APP1 e CLIENT1 na sub-rede de uma rede virtual do Azure.
   
@@ -285,7 +288,7 @@ Estenda o seu ambiente de desenvolvimento/teste do Office 365 para incluir outra
     
 - [Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
