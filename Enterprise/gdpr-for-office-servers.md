@@ -9,15 +9,18 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre como atender aos requisitos de RGPD em servidores locais do Office.
-ms.openlocfilehash: dc1150361db6a28f011e4890a2770f4a6b607a91
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: 598d4b0c3f4b7d4281383111f0891759f81d483f
+ms.sourcegitcommit: 53a57b0617b5bb22beea766e515873d14b3a4783
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "19183590"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>RGPD para servidores locais do Office
 
 O RGPD (Regulamento Geral sobre a Proteção de Dados) apresenta os requisitos para as organizações protegerem dados pessoais adequadamente e atender adequadamente às solicitações de titulares de dados. Esta série de artigos fornece abordagens recomendadas para cargas de trabalho locais:
+
+-   [SharePoint Server](gdpr-for-sharepoint-server.md)
 
 -   [Exchange Server](gdpr-for-exchange-server.md)
 
@@ -48,4 +51,4 @@ Para aprimorar a acessibilidade, a tabela a seguir fornece os mesmos exemplos da
 |Proteger||Regras de prevenção contra perda de dados do Exchange Server; proteção de IRM para bibliotecas de permissões|Regras de prevenção contra perda de dados do Exchange Server; integração de IRM com o Exchange Server|||
 |Monitorar|Integrar logs com ferramentas SIEM|Integrar logs com ferramentas SIEM|Integrar logs com ferramentas SIEM|Integrar logs com ferramentas SIEM|Integrar logs com ferramentas SIEM|
 
-* Para RGPD, aplique rótulos que não incluam proteção. A proteção criptografa os arquivos. Consequentemente, o SharePoint Server não consegue encontrar os tipos de informações confidenciais nesses arquivos.
+*A proteção criptografa os arquivos. Consequentemente, o SharePoint Server não consegue encontrar os tipos de informações confidenciais nesses arquivos.

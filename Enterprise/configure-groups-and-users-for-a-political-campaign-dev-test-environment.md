@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumo: Crie assinaturas de teste do Office 365 e Enterprise Mobility + Security (EMS) com usuários e grupos para um ambiente de desenvolvimento/teste de campanha política.'
-ms.openlocfilehash: 8556040a648937d4c1bc338292be121e5d290dd9
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168505"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Defina grupos e usuários para um ambiente de desenvolvimento/teste de uma campanha política
 
@@ -58,7 +59,7 @@ Em seguida, habilite a licença do EMS E5 para a sua conta de administrador glob
 
 Nesta fase, você cria e configura os grupos do Azure AD para a sua empresa.
   
-Primeiro, crie um conjunto de grupos para uma campanha política com o portal do Azure.
+Primeiro, crie um conjunto de grupos para uma campanha política com o Portal do Azure.
   
 1. Em uma guia separada no navegador, vá ao Portal do Azure em [https://portal.azure.com](https://portal.azure.com). Se necessário, entre com as credenciais da conta de administrador global da sua assinatura de avaliação do Office 365 E5.
     
@@ -184,11 +185,11 @@ Use estas etapas para verificar se a associação de grupo dinâmico e o licenci
 
 Grave esses valores para trabalhar com as assinaturas de avaliação do Office 365 e do EMS para o ambiente de desenvolvimento/de teste:
   
-- Nome de sua organização de assinatura de avaliação: _______________________________________________ 
+- Nome da sua organização de assinatura de avaliação: ![](./images/Common_Images/TableLine.png) 
     
     Por exemplo, para o nome de domínio de assinatura de avaliação contoso.onmicrosoft.com, o nome da organização é "contoso".
     
-- O nome de administrador global do Office 365: ____________________________________.onmicrosoft.com
+- O nome de administrador global do Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
     
     Grave a senha dessa conta e a senha inicial comum das outras contas de usuário em um local seguro.
     
@@ -196,7 +197,7 @@ Grave esses valores para trabalhar com as assinaturas de avaliação do Office 3
 
 Criar os quatro diferentes tipos de sites de equipe do SharePoint Online neste ambiente de desenvolvimento/de teste com [Criar sites de equipe em um ambiente de desenvolvimento/de teste de campanha política](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

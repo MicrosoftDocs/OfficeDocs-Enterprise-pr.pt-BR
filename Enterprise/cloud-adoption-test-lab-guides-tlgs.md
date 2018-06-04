@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: use estes TLGs (Guias de Laboratório de Teste) para adoção da nuvem para configurar ambientes de desenvolvimento/teste ou de demonstração para produtos do Office 365, EMS (Enterprise Mobility Suite), Dynamics 365 e Office Server.'
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193671"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guias do Laboratório de Teste (TLGs) para adoção de nuvem
 
@@ -35,14 +36,13 @@ Consulte estes recursos adicionais antes de começar:
   
 - Exibir a sessão do Microsoft Virtual Academy [Guias do Laboratório de Teste da Microsoft Cloud com Adoção de Nuvem](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) (apenas 22 minutos).
     
-- Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
+- Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
     
 ## <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
-<a name="O365"> </a>
 
 Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 365:
   
-- [O ambiente de desenvolvimento e teste de configuração base](base-configuration-dev-test-environment.md) 
+- [Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
     
     Crie uma intranet simplificada em execução nos serviços de infraestrutura do Microsoft Azure. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.
     
@@ -50,7 +50,7 @@ Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 
     
     Crie uma assinatura de avaliação do Office 365 Enterprise E5, o que pode ser feito de seu computador ou de uma intranet simplificada em execução em serviços de infraestrutura do Azure.
     
-- [DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [DirSync para o ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
     Instale e configure o Azure AD Connect para a sincronização de diretório com a sincronização de senha. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.
     
@@ -60,19 +60,19 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
     
     Configure e teste a autenticação secundária para uma conta em sua assinatura do Office 365 usando uma mensagem de texto enviada ao seu smartphone.
     
-- [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Identidade federada para seu ambiente de desenvolvimento/teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a autenticação federada com as contas de um domínio do Windows Server Active Directory.
     
-- [ Segurança no Aplicativo na Nuvem para seu ambiente de desenvolvimento e teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Cloud App Security para o ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a Segurança no Aplicativo na Nuvem do Office 365, que permite a criação de políticas que monitoram e informam sobre atividades suspeitas em sua assinatura do Office 365.
     
-- [Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento/teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a Proteção Avançada contra Ameaças, que é um recurso da Proteção do Exchange Online (EOP) que ajuda a evitar malware em emails.
     
-- [Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento/teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
     Adicione dados de exemplo e demonstre a Descoberta Eletrônica Avançada, que permite que você localize e analise rapidamente os dados armazenados no Office 365, incluindo emails e documentos.
     
@@ -89,7 +89,6 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
     Demonstre como criar um site de equipe do SharePoint Online isolado do restante da organização para recursos sensíveis ou altamente confidenciais.
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
-<a name="O365"> </a>
 
 Crie um ambiente de desenvolvimento/teste para cenários do [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) com estes artigos:
   
@@ -101,12 +100,11 @@ Crie um ambiente de desenvolvimento/teste para cenários do [Microsoft 365 Enter
     
     Crie grupos de usuários e políticas de MAM (gerenciamento de aplicativo móvel) para dispositivos iOS e Android.
     
-- [Registre dispositivos iOS e Android em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
     Registre os dispositivos iOS ou Android e gerencie-os remotamente.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365
-<a name="O365_D365"> </a>
 
 Adicione uma assinatura de avaliação do Dynamics 365 e teste os recursos e cenários integrados do Office 365 e do Dynamics 365 com estes artigos:
   
@@ -118,13 +116,11 @@ Adicione uma assinatura de avaliação do Dynamics 365 e teste os recursos e cen
     
     Configure e demonstre como o Office 365 e o Dynamics 365 funcionam juntos em caixas de correio do Exchange Online.
     
-## <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente de desenvolvimento e teste do One Microsoft Cloud
-<a name="O365_D365"> </a>
+## <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente de desenvolvimento/teste do One Microsoft Cloud
 
 Crie um ambiente de desenvolvimento/teste que inclua todas as ofertas de nuvem da Microsoft: Office 365, Azure, EMS e Dynamics 365. Consulte o [ambiente de desenvolvimento/teste da One Microsoft Cloud](the-one-microsoft-cloud-dev-test-environment.md) para obter instruções passo a passo.
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>Ambientes simulados de desenvolvimento/teste entre instalações
-<a name="O365_D365"> </a>
 
 Você pode criar um ambiente de desenvolvimento/teste entre instalações, o que inclui uma rede virtual do Azure e uma rede local simulada, com estes artigos:
   
@@ -137,7 +133,6 @@ Você pode criar um ambiente de desenvolvimento/teste entre instalações, o que
     Crie um farm do SharePoint Server 2016 com um único servidor na rede virtual do Azure e teste a conectividade e administração da rede local simulada.
     
 ## <a name="additional-cloud-based-devtest-environments"></a>Ambientes adicionais de desenvolvimento/teste baseados em nuvem
-<a name="ADD_TLGs"> </a>
 
 Aqui estão ambientes adicionais de desenvolvimento/teste baseados em nuvem que você pode criar nos serviços de infraestrutura do Azure:
   

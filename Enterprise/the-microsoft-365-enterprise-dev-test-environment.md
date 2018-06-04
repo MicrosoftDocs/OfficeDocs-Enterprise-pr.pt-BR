@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Resumo: use este Guia de laboratório de teste para criar um ambiente de desenvolvimento/teste que incluir o Office 365 E5, Enterprise Mobility + Security (EMS) E5 e um computador executando o Windows 10 Enterprise.'
-ms.openlocfilehash: 5a4c23b3bde309a75a61e574e91823ecdd4629fe
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 03fa8e0a4e8d90fcb834eeb2491d3dd39b67ff05
+ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19178643"
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 
@@ -44,7 +45,7 @@ Nesta fase, inscreva-se para a assinatura de avaliação do EMS E5 e adicione-a 
   
 Primeiro adicione a assinatura de avaliação do EMS E5 e atribua uma licença EMS à sua conta de administrador global.
   
-1. Em uma instância particular do navegador da Internet, entre no portal do Office 365 com as credenciais da conta de administrador global. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Em uma instância particular do navegador da Internet, entre no Portal do Office 365 com as credenciais da conta de administrador global. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Clique no bloco de **Administração**.
     
@@ -92,7 +93,7 @@ Crie uma máquina virtual usando o hipervisor de sua escolha e instale o Windows
   
 ### <a name="virtual-machine-in-azure"></a>Máquina virtual no Azure
 
-Para criar uma máquina virtual do Windows 10 no Microsoft Azure, ***você deve ter uma assinatura baseada no Visual Studio***, que tem acesso à imagem do Windows 10 Enterprise. Outros tipos de assinaturas do Azure, como as assinaturas de avaliação e pagas, não têm acesso a esta imagem.
+Para criar uma máquina virtual do Windows 10 no Microsoft Azure, ***você deve ter uma assinatura baseada no Visual Studio***, que tem acesso à imagem do Windows 10 Enterprise. Outros tipos de assinatura do Azure, como assinaturas de avaliação e pagas, não têm acesso a esta imagem. Confira as informações mais recentes em [Usar o cliente do Windows no Azure para cenários de desenvolvimento/teste](https://docs.microsoft.com/azure/virtual-machines/windows/client-images).
   
 > [!NOTE]
 > Os conjuntos de comandos a seguir usam a versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Esses conjuntos de comandos montam uma máquina virtual do Windows 10 Enterprise chamada WIN10 e toda a infraestrutura necessária, incluindo um grupo de recursos, uma conta de armazenamento e uma rede virtual. Se você já estiver familiarizado com os serviços de infraestrutura Azure, adapte estas instruções para se ajustar à sua infraestrutura implantada no momento. 
@@ -174,9 +175,9 @@ Em seguida, adicione o computador WIN10 no locatário do Azure AD das suas assin
     
 6. Feche a janela de configurações.
     
-Em seguida, instale o Office 2016 no computador WIN10.
+Em seguida, instale o Office 365 ProPlus no computador WIN10.
   
-1. Abra o navegador do Microsoft Edge e entre no portal do Office 365 com as credenciais da conta de administrador global. Para obter ajuda, confira [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Abra o navegador do Microsoft Edge e entre no Portal do Office 365 com as credenciais da conta de administrador global. Para obter ajuda, confira [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Na guia **Microsoft Office Home**, clique em **Instalar o Office 2016**.
     
@@ -184,9 +185,13 @@ Em seguida, instale o Office 2016 no computador WIN10.
     
 4. Aguarde até concluir a instalação do Office. Quando você vir **Tudo pronto!**, clique duas vezes em **Fechar**.
     
-A Figura 3 mostra o ambiente resultante, que inclui o computador WIN10 adicionado no locatário do Azure AD das suas assinaturas do Office 365 e do EMS.
+A Figura 3 mostra o ambiente resultante, que inclui o computador do WIN10 que:
+
+- Ingressou no locatário do Azure AD das suas assinaturas do Office 365 e EMS.
+- Registrou um dispositivo do Azure AD no Intune (EMS).
+- Instalou o Office 365 ProPlus.
   
-**Figura 3: Adicionar a conta do computador WIN10 ao locatário do Azure AD**
+**Figura 3: a configuração de final de um ambiente de desenvolvimento/teste do Microsoft 365**
 
 ![Fase 4 do ambiente de desenvolvimento/teste do Microsoft 365 Enterprise](images/20680f6a-f77e-4333-aaa9-f7cf5e4b0d03.png)
   
@@ -204,7 +209,7 @@ Confira estes artigos adicionais para explorar os recursos do Microsoft 365 Ente
     
 - [Configurar e testar a Proteção Avançada contra Ameaças](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 - [Documentação do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Implantar o Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)

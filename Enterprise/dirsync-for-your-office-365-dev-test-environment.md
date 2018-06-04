@@ -3,7 +3,7 @@ title: Sincronização de diretório do ambiente de desenvolvimento/teste do Off
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,11 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumo: Configure a sincronização de diretórios do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 209b41e4d695a753867d989b8f27b96618a81303
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193531"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365
 
@@ -60,7 +61,7 @@ Depois de instalado e configurado, o Azure AD Connect sincroniza o conjunto de c
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Instalar e configurar o Azure AD Connect no APP1
 
-1. Do [portal do Azure](https://portal.azure.com), conecte-se ao APP1 com a conta CORP\\Usuário1.
+1. Do [Portal do Azure](https://portal.azure.com), conecte-se ao APP1 com a conta CORP\\Usuário1.
     
 2. Do APP1, abra um prompt de comando do nível de administrador do Windows PowerShell e execute estes comandos:
     
@@ -81,7 +82,7 @@ Stop-Process -Name Explorer -Force
     
 7. Na página **Conectar-se ao Azure AD**, digite o nome de sua conta de administrador global em **Nome de usuário**, digite a sua senha em **Senha** e clique em **Avançar**.
     
-8. Na página **Conectar-se ao AD DS**, digite **CORP\\Usuárior1** em **Nome de usuário,** digita a senha em **Senha** e clique em **Avançar**.
+8. Na página **Conectar-se ao AD DS**, digite **CORP\\Usuário1** em **Nome de usuário,** digita a senha em **Senha** e clique em **Avançar**.
     
 9. Na página **Configuração de entrada do Azure AD**, clique em **Continuar sem domínio verificado** e depois em **Avançar**.
     
@@ -89,7 +90,7 @@ Stop-Process -Name Explorer -Force
     
 11. Na página **Configuração concluída**, clique em **Sair**.
     
-12. No Internet Explorer, vá ao portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entre na sua assinatura de avaliação do Office 365 com a sua conta de administrador global.
+12. No Internet Explorer, vá ao Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entre na sua assinatura de avaliação do Office 365 com a sua conta de administrador global.
     
 13. Na página principal do portal, clique em **Admin**.
     
@@ -114,14 +115,19 @@ Esta configuração consiste em:
 
 Quando estiver pronto para implantar a sincronização de diretório da sua organização, confira [Implantar a sincronização de diretório do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Guias de laboratório de teste (TLGs) da adoção da nuvem](cloud-adoption-test-lab-guides-tlgs.md)
-[Ambiente de desenvolvimento/de teste de configuração base](base-configuration-dev-test-environment.md)
-[Ambiente de desenvolvimento/de teste do Office 365](office-365-dev-test-environment.md)
-[Cloud App Security para o seu ambiente de desenvolvimento/de teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
-[Proteção avançada contra ameaças para o seu ambiente de desenvolvimento/de teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-[Adoção da nuvem e as soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
+
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
+
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
+
+[Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+
+[Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento/teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 

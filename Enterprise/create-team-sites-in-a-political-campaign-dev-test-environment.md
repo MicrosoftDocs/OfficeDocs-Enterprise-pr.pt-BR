@@ -3,7 +3,7 @@ title: Criar sites de equipe em um ambiente de desenvolvimento/teste de campanha
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/21/2018
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -14,11 +14,12 @@ localization_priority: Priority
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste de campanha política.'
-ms.openlocfilehash: 146632ede567be4bf412304960605e6d87de7657
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 452e504a8d5fe0cb53fde2e4bb11aa8510f247fc
+ms.sourcegitcommit: 0d92efcb24a388c6fc5c3e333bc5714f43dbf4a7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "19339152"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Criar sites de equipe em um ambiente de desenvolvimento/teste de campanha política
 
@@ -82,7 +83,7 @@ Nessa fase, você cria e configura sites de equipe do SharePoint Online para a c
 
 Para criar um site de equipe do SharePoint Online público de linha de base, faça o seguinte:
   
-1. Se necessário, use um navegador no computador local e entre no portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -112,7 +113,7 @@ Em seguida, configure a pasta de documentos do site de equipe Toda a campanha co
 
 Para criar um site de equipe do SharePoint Online privado de linha de base para um projeto dentro da campanha, faça o seguinte:
   
-1. Se necessário, use um navegador no computador local e entre no portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -254,7 +255,7 @@ Em seguida, configure uma política de DLP (prevenção de perda de dados) que n
 
 Para criar um site de equipe do SharePoint Online isolado no nível altamente confidencial para recursos de estratégia de campanha, faça o seguinte:
   
-1. Se necessário, use um navegador no computador local e entre no portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
+1. Se necessário, use um navegador no computador local e entre no Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) usando sua conta de administrador global.
     
 2. Na lista de blocos, clique em **SharePoint**.
     
@@ -306,7 +307,7 @@ Aqui estão os resultados da configuração de permissões:
     
 - Outras contas de usuário não podem acessar o site ou seus recursos ou solicitar o acesso ao site. As permissões adicionais para o site devem ser feias pelo administrador global ou por um membro do grupo **Estratégia da campanha – Proprietários**.
     
-Em seguida, configure a pasta de documentos do site de equipe de estratégia da campanha com o rótulo Altamente Confidencial.
+Em seguida, configure a pasta de documentos do Site de equipe de estratégia de campanha com o rótulo Altamente Confidencial.
   
 1. Na guia **Estratégia da campanha – Página inicial** do navegador, clique em **Documentos**.
     
@@ -366,49 +367,51 @@ Depois, configure a Proteção de Informações do Azure com uma nova política 
   
 1. Entre no Portal do Office 365 com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Em uma guia separada do navegador, vá para o portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
+2. Em uma guia separada do navegador, vá para o Portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
     
-3. Se esta é a primeira vez que configura a Proteção de Informações do Azure, consulte estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
+3. Se esta é a primeira vez que configura a Proteção de Informações do Azure, confira estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
-4. No painel de lista, clique em **Mais serviços**, digite **informações** e clique em **Proteção de Informações do Azure**.
+4. No painel de lista, clique em **Todos os serviços**, digite **informações** e clique em **Proteção de Informações do Azure**.
+
+5. Clique em **Rótulos**.
     
-5. Na folha **Proteção de Informações do Azure**, clique em **Políticas no escopo > + Adicionar uma nova política**.
+6. Clique com o botão direito do mouse no rótulo **Altamente Confidencial** e clique em **Adicionar um sub-rótulo**.
     
-6. Digite **CampaignStrategy** em **Nome da política** e **Rótulo para documentos no site da equipe de estratégia da campanha** em **Descrição**.
+7. Digite **CampaignStrategy** em **Nome** e **Rótulo para documentos no Site de equipe de estratégia de campanha** em **Descrição**.
     
-7. Clique em **Selecionar usuários ou grupos que obtêm essa política > Usuário/Grupos**e selecione **Funcionários sênior e estratégicos**.
+8. Em **Definir permissões para documentos e emails que contenham este rótulo**, clique em **Proteger**.
     
-8. Clique em **Selecionar > OK**.
+9. Na seção **Proteção**, clique em **Azure (chave de nuvem)**.
     
-9. Para o rótulo **Altamente Confidencial**, clique nas reticências (...) e, em seguida, clique em **Adicionar um sub-rótulo**.
+10. Na folha **Proteção**, em **Configurações de proteção**, clique em **+ Adicionar permissões**.
     
-10. Digite um nome para o subrótulo em **Nome** e uma descrição do rótulo em **Descrição**.
+11. Na folha **Adicionar permissões**, em **Especificar usuários e grupos**, clique em **+ Procurar no diretório**.
     
-11. Em **Definir permissões para documentos e emails que contenham este rótulo**, clique em **Proteger**.
+12. No painel **Usuários e Grupos do AAD**, selecione **Funcionários sênior e estratégicos** e clique em **Selecionar**.
     
-12. Na seção **Proteção**, clique em **Azure (chave de nuvem)**.
+13. Em **Escolher permissões a partir de valores predefinidos ou definir valores personalizados**, clique em **Personalizar** e, em seguida, clique nas caixas de seleção **Exibir Direitos**, **Editar Conteúdo**, **Salvar**, **Responder** e **Responder a Todos**.
     
-13. Na folha **Proteção**, em **Configurações de proteção**, clique em **+ Adicionar permissões**.
+14. Clique em **OK** duas vezes.
     
-14. Na folha **Adicionar permissões**, em **Especificar usuários e grupos**, clique em **+ Procurar no diretório**.
+15. Na folha **Sub-rótulo**, clique em **Salvar** e em **OK**.
+
+16. Na folha **Proteção de Informações do Azure**, clique em **Políticas > + Adicionar uma nova política**.
     
-15. No painel **Usuários e Grupos do AAD**, selecione **Funcionários sênior e estratégicos** e clique em **Selecionar**.
+17. Digite **CampaignStrategy** em **Nome** e **Documentos no Site de equipe de estratégia de campanha** em **Descrição**.
     
-16. Em **Escolher permissões da predefinição**, desmarque as caixas de seleção **Imprimir**, **Copiar e extrair conteúdo** e **Encaminhar**.
+18. Clique em **Selecionar usuários ou grupos que obtêm essa política > Usuário/Grupos**e selecione **Funcionários sênior e estratégicos**.
     
-17. Clique em **OK** duas vezes.
-    
-18. Na folha **Sub-rótulo**, clique em **Salvar**.
-    
-19. Feche a nova folha de política com escopo.
-    
-20. Na folha **Proteção de Informações do Azure – Políticas em escopo**, clique em **Publicar** e depois em **Sim**.
-    
-Agora você está pronto para começar a criar documentos nestes quatro sites e testar o acesso a eles com várias contas de usuário em sua assinatura de avaliação. 
+19. Clique em **Selecionar > OK**.
+
+20. Clique em **Adicionar ou remover rótulos**. No painel **Política: adicionar ou remover rótulos**, clique em **CampaignStrategy** e em **OK**.   
+
+21. Clique em **Salvar** e em **OK**.
   
-Para proteger um documento com a Proteção de Informações do Azure e esse novo rótulo, você deve [instalar o cliente de Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) em um computador de teste, instalar o Office do portal do Office 365 e entrar no Microsoft Word com uma conta no grupo **Funcionários sênior e estratégicos** de sua assinatura de avaliação.
+Agora você está pronto para começar a criar documentos nesses quatro sites e testar o acesso a eles com várias contas de usuário. 
   
-## <a name="see-also"></a>Veja também
+Para proteger um documento com a Proteção de Informações do Azure e esse novo rótulo, você deve [instalar o cliente de Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) em um computador de teste, instalar o Office do Portal do Office 365 e entrar no Microsoft Word com uma conta no grupo **Funcionários sênior e estratégicos** de sua assinatura de avaliação.
+  
+## <a name="see-also"></a>Confira também
 
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

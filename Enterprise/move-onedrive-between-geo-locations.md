@@ -3,7 +3,6 @@ title: Mover um site do OneDrive para um local geográfico diferente
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,11 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: 6bac98cc0707f977b7b585e8ae0a570f4b9662ee
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
+ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "19174897"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -26,6 +26,18 @@ O serviço do OneDrive usa o Armazenamento de Blobs do Azure para armazenar cont
 Durante a janela de movimentação geográfica do OneDrive (cerca de duas a seis horas), o OneDrive do usuário é definido como somente leitura. O usuário ainda pode acessar os arquivos por meio do cliente de sincronização do OneDrive ou o site do OneDrive no SharePoint Online. Após a conclusão da movimentação geográfica do OneDrive, o usuário será automaticamente conectado ao OneDrive na localização geográfica destino quando navegar para o OneDrive no inicializador de aplicativos do Office 365. O cliente de sincronização começará automaticamente a sincronizar do novo local.
 
 Os procedimentos deste artigo exigem o [Módulo PowerShell do Microsoft SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588).
+
+## <a name="communicating-to-your-users"></a>Comunicação com seus usuários
+
+Ao mover os sites do OneDrive entre locais geográficos, é importante comunicar aos seus usuários o que esperar. Isso pode ajudar a reduzir a confusão do usuário e chamadas para o suporte técnico. Envie um email para seus usuários antes de mudar com as seguintes informações:
+
+- Quando a mudança deve começar e quanto tempo deve demorar
+- Para qual localização geográfica o OneDrive mudará, e qual é a URL para acessar o novo local
+- Eles devem fechar os arquivos e não fazer edições durante a mudança.
+- O compartilhamento e permissões de arquivo não mudarão devido a mudança.
+- O que esperar da [experiência do usuário em um ambiente multigeográfico](multi-geo-user-experience.md)
+
+Após a conclusão da mudança, envie um email aos seus usuários informando que eles podem continuar a trabalhar com o OneDrive.
 
 ## <a name="moving-a-onedrive-site"></a>Mover um site do OneDrive
 
@@ -147,7 +159,7 @@ Os usuários com permissões para o conteúdo do OneDrive continuarão a ter ace
 
 ### <a name="onedrive-sync-client"></a>Cliente de sincronização do OneDrive 
 
-O cliente de sincronização do OneDrive detectará automaticamente e transferirá perfeitamente a sincronização para o novo local do OneDrive após a conclusão da movimentação geográfica do OneDrive. O usuário não precisa entrar novamente nem realizar outras ações.
+O cliente de sincronização do OneDrive detectará automaticamente e transferirá perfeitamente a sincronização para o novo local do OneDrive após a conclusão da movimentação geográfica do OneDrive. O usuário não precisa entrar novamente nem realizar outras ações. (Precisa da versão 17.3.6943.0625 ou posterior do cliente de sincronização.)
 
 Se um usuário atualizar um arquivo enquanto a movimentação geográfica do OneDrive estiver em andamento, o cliente de sincronização o notificará de que uploads de arquivo estão pendentes enquanto a movimentação estiver em andamento.
 
