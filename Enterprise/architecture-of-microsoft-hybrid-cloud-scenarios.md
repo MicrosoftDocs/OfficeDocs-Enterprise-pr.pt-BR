@@ -1,5 +1,5 @@
 ---
-title: "Arquitetura dos cenários de nuvem Microsoft híbridos"
+title: Arquitetura de cenários de nuvem híbrida da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: "Resumo: Entenda a arquitetura das ofertas de nuvem da Microsoft híbrida."
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Resumo: Entenda a arquitetura das ofertas de nuvem da Microsoft híbrida.'
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631382"
 ---
-# <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura dos cenários de nuvem Microsoft híbridos
+# <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura de cenários de nuvem híbrida da Microsoft
 
  **Resumo:** Entenda a arquitetura de ofertas de nuvem da Microsoft híbrida.
   
@@ -38,7 +39,7 @@ A camada de aplicativos e cenários contém os cenários de nuvem híbrida espec
     
 - Rede
     
-    Há duas opções para conectividade com plataformas de nuvem da Microsoft e serviços: seu pipe existente da Internet e ExpressRoute. Use uma conexão ExpressRoute se desempenho previsível é importante. Você pode usar uma conexão de ExpressRoute para conectar-se diretamente para os serviços Microsoft SaaS (Office 365 e Dynamics 365), serviços do Azure PaaS e serviços do Azure PaaS.
+    Há duas opções para conectividade com plataformas de nuvem da Microsoft e serviços: seu pipe existente da Internet e ExpressRoute. Use uma conexão ExpressRoute se desempenho previsível é importante. Você pode usar uma conexão de ExpressRoute para conectar-se diretamente para os serviços Microsoft SaaS (Office 365 e Dynamics 365), serviços do Azure PaaS e serviços do Azure IaaS.
     
 - Identidade
     
@@ -60,11 +61,11 @@ Muitas empresas, incluindo Microsoft, usam uma abordagem de três fases para ado
     
     Para cenários de shift e levantar e compilação na nuvem, aplicativos de servidor em execução no Azure VMs fornecem fácil provisionamento e dimensionamento.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

@@ -17,18 +17,16 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Resumo: Saiba como a fim de ignorar o serviço de controle de acesso do Windows Azure e usam o SAML 1.1 para autenticar os usuários do SharePoint Server com o Windows Azure Active Directory.'
-ms.openlocfilehash: 8a844cf1f45f6285e676439f934b9119a757804f
-ms.sourcegitcommit: c52bd6eaa8772063f9e2bd1acf10fa23422a2b92
+ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
+ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "19702981"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Usando o Windows Azure AD para autenticação no SharePoint Server
 
- **Resumo:** Saiba como autenticar os usuários do SharePoint Server 2016 com o Windows Azure Active Directory.
-  
-> [!NOTE]
-> Este artigo se baseia no trabalho de Pedro Evans, gerente de programa do Microsoft Principal. 
+ **Resumo:** Saiba como autenticar os usuários do SharePoint Server 2016 com o Windows Azure Active Directory. 
 
 <blockquote>
 <p>Este artigo refere-se para as amostras de código para interagir com o gráfico do Azure Active Directory. Você pode baixar os exemplos de código [aqui](https://github.com/kaevans/spsaml11/tree/master/scripts).</p>
@@ -147,6 +145,9 @@ Em seguida, siga estas etapas para habilitar o provedor de identidade confiável
 
 ![Configurando o seu provedor de autenticação](images/SAML11/fig10-configauthprovider.png)
 
+> [!IMPORTANT]
+> É importante seguindo todas as etapas, incluindo a definição de entrada personalizada da página como "/_trust/", conforme mostrado. A configuração não funcionará corretamente, a menos que todas as etapas são seguidas.
+
 ## <a name="step-5-set-the-permissions"></a>Etapa 5: Definir as permissões
 
 Os usuários que irá fizer logon no Windows Azure AD e acessar o SharePoint devem ser concedidos acesso ao aplicativo. 
@@ -171,18 +172,54 @@ O usuário já tem permissão no Azure AD, mas também deve ter a permissão no 
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Etapa 6: Adicionar uma política de emissão de tokens de SAML 1.1 no Azure AD.
 
-Quando o aplicativo do Azure AD é criado no portal, o padrão é usar SAML 2.0. SharePoint Server 2016 requer o formato de token de SAML 1.1. O script a seguir removerá a política de SAML 2.0 padrão e adicionar uma nova política aos tokens de SAML 1.1 do problema. Este código requer baixando as acompanha [amostras demonstrar a interação com o Windows Azure Active Directory Graph](https://github.com/kaevans/spsaml11/tree/master/scripts). 
+Quando o aplicativo do Azure AD é criado no portal, o padrão é usar SAML 2.0. SharePoint Server 2016 requer o formato de token de SAML 1.1. O script a seguir removerá a política de SAML 2.0 padrão e adicionar uma nova política aos tokens de SAML 1.1 do problema. 
 
+> Este código requer baixando as acompanha [amostras demonstrar a interação com o Windows Azure Active Directory Graph](https://github.com/kaevans/spsaml11/tree/master/scripts). Se você baixar os scripts como um arquivo ZIP do GitHub uma área de trabalho do Windows, certifique-se desbloquear o `MSGraphTokenLifetimePolicy.psm1` arquivo de script do módulo e o `Initialize.ps1` arquivo de script (clique com o botão Propriedades, selecione Desbloquear, clique em Okey). ![Unblocking baixou os arquivos](images/SAML11/fig17-unblock.png)
+
+Depois que o script de exemplo é baixado, crie um novo script PowerShell usando o seguinte código, substituindo o espaço reservado com o caminho de arquivo do baixada `Initialize.ps1` em sua máquina local. Substitua o espaço reservado ID de objeto do aplicativo com a ID de objeto do aplicativo que você inseriu na tabela 1. Depois de criado, execute o script do PowerShell. 
 
 ```
-Import-Module <file path of Initialize.ps1> 
-$objectid = "<Application Object ID from Table 1>"
-$saml2policyid = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $objectid | ?{$_.displayName -EQ "TokenIssuancePolicy"} | select objectId
-Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $objectid
-$policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
-Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
+function AssignSaml11PolicyToAppPrincipal
+{
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$pathToInitializeScriptFile, 
+        [Parameter(Mandatory=$true)]
+        [string]$appObjectid
+    )
+
+    $folder = Split-Path $pathToInitializeScriptFile
+    Push-Location $folder
+
+    #Loads the dependent ADAL module used to acquire tokens
+    Import-Module $pathToInitializeScriptFile 
+
+    #Gets the existing token issuance policy
+    $existingTokenIssuancePolicy = Get-PoliciesAssignedToServicePrincipal -servicePrincipalId $appObjectid | ?{$_.type -EQ "TokenIssuancePolicy"} 
+    Write-Host "The following TokenIssuancePolicy policies are assigned to the service principal." -ForegroundColor Green
+    Write-Host $existingTokenIssuancePolicy -ForegroundColor White
+    $policyId = $existingTokenIssuancePolicy.objectId
+
+    #Removes existing token issuance policy
+    Write-Host "Only a single policy can be assigned to the service principal. Removing the existing policy with ID $policyId" -ForegroundColor Green
+    Remove-PolicyFromServicePrincipal -policyId $policyId -servicePrincipalId $appObjectid
+
+    #Creates a new token issuance policy and assigns to the service principal
+    Write-Host "Adding the new SAML 1.1 TokenIssuancePolicy" -ForegroundColor Green
+    $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
+    Write-Host "Assigning the new SAML 1.1 TokenIssuancePolicy $policy.objectId to the service principal $appObjectid" -ForegroundColor Green
+    Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $appObjectid
+    Pop-Location
+}
+
+#Only edit the following two variables
+$pathToInitializeScriptFile = "<file path of Initialize.ps1>"
+$appObjectid = "<Application Object ID from Table 1>"
+
+AssignSaml11PolicyToAppPrincipal $pathToInitializeScriptFile $appObjectid
 ```
-> Observe que é importante executar o `Import-Module` conforme mostrado neste exemplo de comando. Isso carregará um módulo dependente que contenha os comandos mostrados. Você pode precisar abra um prompt de comando elevado com êxito, execute estes comandos.
+> [!IMPORTANT]
+> Os scripts do PowerShell não estiver conectados e você pode ser solicitado para definir a diretiva de execução. Para obter mais informações sobre políticas de execução, consulte [Sobre políticas de execução](http://go.microsoft.com/fwlink/?LinkID=135170). Além disso, você pode precisar abra um prompt de comando elevado com êxito, execute os comandos contidos nos scripts de exemplo.
 
 Esses comandos do PowerShell de amostra são exemplos de como executar consultas em API do gráfico. Para obter mais detalhes sobre as diretivas de emissão Token com o Azure AD, consulte a [referência de API do gráfico para operações na política](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
@@ -215,7 +252,7 @@ A configuração funciona para um único aplicativo web, mas precisa configuraç
 1. No Portal do Windows Azure, abra o diretório do Windows Azure AD. Clique em **registros de aplicativo**, clique em **Exibir todos os aplicativos**. Clique no aplicativo que você criou anteriormente (integração de SAML do SharePoint).
 2. Clique em **configurações**.
 3. No blade configurações, clique em **URLs de resposta**. 
-4. Adicione a URL do aplicativo web adicionais (como `https://sales.contoso.local`) e clique em **Salvar**. 
+4. Adicione a URL para o aplicativo web adicionais com `/_trust/default.aspx` acrescentados à URL (como `https://sales.contoso.local/_trust/default.aspx`) e clique em **Salvar**. 
 5. No servidor do SharePoint, abra o **Shell de gerenciamento do SharePoint 2016** e execute os seguintes comandos, usando o nome do emissor de token de identidade confiável que você usou anteriormente.
 
 ```
@@ -239,7 +276,7 @@ Para auxiliar nesse cenário, há uma fonte de abrir solução chamada [AzureCP]
 
 [Noções básicas sobre WS-Federation](https://go.microsoft.com/fwlink/p/?linkid=188052)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
 ## <a name="join-the-discussion"></a>Ingressar na discussão
 
