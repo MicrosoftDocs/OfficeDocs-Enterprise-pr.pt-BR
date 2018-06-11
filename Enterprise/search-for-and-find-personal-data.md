@@ -20,6 +20,7 @@ ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "18539077"
 ---
 # <a name="search-for-and-find-personal-data"></a>Pesquisar e localizar dados pessoais
 
@@ -117,7 +118,7 @@ No momento, os tipos de informações confidenciais não podem ser usados para l
 <p><li>Muitos falsos positivos</li></p>
 <p><li>Falta de instâncias de dados conhecidos</li></p>
 <p>Confira <a href="https://support.office.com/en-us/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Exportar os resultados da Pesquisa de Conteúdo do Centro de Conformidade e Segurança do Office 365</a>.</p>
-<p>Observação: se estiver usando o Mozilla Firefox ou o Chrome, pode ser preciso baixar antes os relatórios usando o Internet Explorer ou o Edge para instalar o suplemento necessário.</p></td>
+<p>Observação: se estiver usando o Mozilla Firefox ou o Chrome, pode ser preciso baixar antes os relatórios usando o Internet Explorer ou o Microsoft Edge para instalar o suplemento necessário.</p></td>
 </tr>
 </tbody>
 </table>
