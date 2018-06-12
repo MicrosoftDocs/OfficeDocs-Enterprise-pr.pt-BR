@@ -3,7 +3,7 @@ title: Implantar sites do SharePoint Online para três camadas de proteção
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 06/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumo: Crie e configure sites de equipe do SharePoint Online para vários níveis de proteção de informações.'
-ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631392"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implantar sites do SharePoint Online para três camadas de proteção
 
@@ -141,7 +142,7 @@ Em seguida, crie o site de equipe do SharePoint Online com estas etapas.
     
 Em seguida, no novo site de equipe do SharePoint Online, configure as permissões com estas etapas.
   
-1. Determine o nome UPN do administrador de TI ou outra pessoa que será responsável por responder e resolver as solicitações de acesso ao site (elzap@contoso.com é um exemplo de um UPN). Anote esse UPN aqui: _________________________________________.
+1. Determine o nome UPN do administrador de TI ou outra pessoa que será responsável por responder e resolver as solicitações de acesso ao site (elzap@contoso.com é um exemplo de um UPN). Anote esse UPN aqui: ![](./images/Common_Images/TableLine.png).
     
 2. Na barra de ferramentas, clique no ícone Configurações e, em seguida, clique em **Permissões do site**.
     
@@ -263,7 +264,7 @@ Os membros do site, por meio da associação de grupo em um dos grupos de acesso
 
 [Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   

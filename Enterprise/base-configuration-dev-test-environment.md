@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumo: Criar uma intranet simplificada como um ambiente de desenvolvimento/teste no Microsoft Azure.'
-ms.openlocfilehash: 6d53bb61ea7d325b15590c8aabe0740df3b92750
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 86f2f6ec907639c9aa513c6868f6ce5ed021f3d4
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193751"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631402"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente de desenvolvimento/teste para a Configuração Base
 
@@ -241,9 +241,6 @@ Esta é sua configuração atual:
 
 O APP1 fornece serviços de web e de compartilhamento de arquivos.
 
--> [!NOTE]  
--> O seguinte conjunto de comandos cria o CLIENT1 executando o Windows Server 2016 Datacenter, o que pode ser feito em todos os tipos de assinaturas do Azure. Se você tem a assinatura do Azure baseada em Visual Studio, é possível criar o CLIENT1 executando o Windows 10 no [Portal do Azure](https://portal.azure.com). 
-
 Para criar uma Máquina Virtual para o APP1, preencha o nome do grupo de recursos e execute estes comandos no prompt de comando do Azure PowerShell no computador local.
   
 ```
@@ -297,6 +294,9 @@ Esta é sua configuração atual:
 ## <a name="phase-4-configure-client1"></a>Fase 4: Configurar o CLIENT1.
 
 O CLIENT1 atua como um típico notebook, tablet ou computador, na intranet da Contoso.
+
+> [!NOTE]  
+> O seguinte conjunto de comandos cria o CLIENT1 executando o Windows Server 2016 Datacenter, o que pode ser feito em todos os tipos de assinaturas do Azure. Se você tiver a assinatura do Azure baseada em Visual Studio, será possível criar o CLIENT1 executando o Windows 10 no [Portal do Azure](https://portal.azure.com). 
   
 Para criar uma Máquina Virtual no Azure para o CLIENT1, preencha o nome do grupo de recursos e execute estes comandos no prompt de comando do Azure PowerShell no computador local.
   
