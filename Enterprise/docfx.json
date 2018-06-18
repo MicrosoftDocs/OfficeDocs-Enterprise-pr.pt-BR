@@ -21,7 +21,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -36,7 +37,10 @@
       "breadcrumb_path": "/office365/enterprise/breadcrumb/toc.json",
       "extendBreadcrumb": "true",
       "bilingual_type": "hover over",
-      "searchScope": ["Office 365 Enterprise"]
+      "searchScope": ["Office 365 Enterprise"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/OfficeDocs-Enterprise",
+      "feedback_product_url": "https://office365.uservoice.com/forums/273493-office-365-admin" 
     },
       
     "fileMetadata": {},
