@@ -1,5 +1,5 @@
 ---
-title: Usando o Windows Azure AD para autenticação no SharePoint Server
+title: Usar o Azure AD para a autenticação do SharePoint Server
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -18,13 +18,13 @@ ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Resumo: Saiba como a fim de ignorar o serviço de controle de acesso do Windows Azure e usam o SAML 1.1 para autenticar os usuários do SharePoint Server com o Windows Azure Active Directory.'
 ms.openlocfilehash: dfaede331233444413d82b500e14fc68195eaca1
-ms.sourcegitcommit: b6c8b044963d8df24ea7d63917e0203ba40fb822
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "19702981"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "19856266"
 ---
-# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Usando o Windows Azure AD para autenticação no SharePoint Server
+# <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Usar o Azure AD para a autenticação do SharePoint Server
 
  **Resumo:** Saiba como autenticar os usuários do SharePoint Server 2016 com o Windows Azure Active Directory. 
 
@@ -94,7 +94,7 @@ Cada um dos servidores web front-end no farm do SharePoint exigirá Configurando
     - Identificador de usuário:`user.userprincipalname`</br>
     - Observação: Não se esqueça altere as URLs, substituindo *portal.contoso.local* com a URL do site do SharePoint que você deseja proteger.</br>
 3. Configure uma tabela (semelhante a tabela 1 abaixo) que inclui as seguintes linhas:</br> 
-    - Território
+    - Realm
     - Caminho completo para o arquivo de certificado de assinatura de SAML
     - SAML Single Sign-On URL do serviço (substituindo */saml2* pelo */wsfed*)
     - ID do objeto de aplicativo. </br>
@@ -109,7 +109,7 @@ Copiar o valor do *identificador* para a propriedade *Realm* em uma tabela (cons
 
 | Tabela 1: Valores capturados  |  |
 |---------|---------|
-|Território | `urn:sharepoint:portal.contoso.local` |
+|Realm | `urn:sharepoint:portal.contoso.local` |
 |Caminho completo para o arquivo de certificado de assinatura de SAML | `C:/temp/SharePoint SAML Integration.cer`  |
 |URL do serviço single sign-on SAML (substitua /saml2 /wsfed) | `https://login.microsoftonline.com/b1726649-b616-460d-8d20-defab80d476c/wsfed` |
 |ID de objeto do aplicativo | `a812f48b-d1e4-4c8e-93be-e4808c8ca3ac` |
@@ -161,9 +161,9 @@ O usuário já tem permissão no Azure AD, mas também deve ter a permissão no 
 
 1. Em Administração Central, clique em **Gerenciamento de Aplicativo**.
 2. Na página **Gerenciamento de aplicativos** , na seção **Aplicativos Web** , clique em **Gerenciar aplicativos da web**.
-3. Clique no aplicativo web apropriado e clique em **Política de usuário**.
+3. Clique no aplicativo da Web apropriado e, em seguida, clique em **Política do Usuário**.
 4. Em política para aplicativo Web, clique em **Adicionar usuários**.</br>![Procurando por um usuário por seu nome de declaração](images/SAML11/fig11-searchbynameclaim.png)</br>
-5. Na caixa de diálogo **Adicionar usuários** , clique na zona apropriada em **zonas**e clique em **Avançar**.
+5. Na caixa de diálolgo **Adicionar Usuários**, clique na zona apropriada em **Zonas**e, depois, em **Avança**.
 6. Na caixa de diálogo **política para aplicativo Web** , na seção **Escolher usuários** , clique no ícone **Procurar** .
 7. Na caixa de texto **Localizar** , digite o nome de entrada para um usuário em seu diretório e clique em **Pesquisar**. </br>Exemplo: *demouser@blueskyabove.onmicrosoft.com*.
 8. Sob o título AzureAD na exibição de lista, selecione a propriedade name e clique em **Adicionar** e clique em **Okey** para fechar a caixa de diálogo.

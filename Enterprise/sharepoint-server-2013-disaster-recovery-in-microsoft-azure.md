@@ -1,5 +1,5 @@
 ---
-title: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
+title: Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução.'
-ms.openlocfilehash: 499b296040eaf02bd679ee422429f08ed669ba85
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 553b2e6bb9d35ab3dba471b01938914a95af23d6
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161794"
 ---
-# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 Disaster Recovery in Microsoft Azure
+# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure
 
  **Resumo:** Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução.
 
@@ -29,9 +30,9 @@ ms.lasthandoff: 04/20/2018
   
 Use este artigo com o seguinte modelo de solução: **SharePoint Disaster Recovery in Microsoft Azure**.
   
-[![Processo de recuperação de desastres do SharePoint no Azure](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![Processo de recuperação de desastre do SharePoint para o Azure](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
-![Arquivo PDF](images/ITPro_Other_PDFicon.png) [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) | ![arquivo Visio](images/ITPro_Other_VisioIcon.jpg) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
+ [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
 Neste artigo:
   
@@ -518,7 +519,7 @@ A tabela a seguir descreve as configurações de unidade para as máquinas virtu
   
 **Tabela: requisitos de unidade de máquina Virtual para Web Front End e servidores de aplicativos para o local de teste**
 
-|**Letra de unidade**|**Tamanho**|**Nome do diretório**|**Path**|
+|**Letra da unidade**|**Tamanho**|**Nome do diretório**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |Unidade do sistema  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\  <br/> |
 |J  <br/> |80  <br/> |Unidade de log (40 GB)  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dados  <br/> |
@@ -528,7 +529,7 @@ A tabela a seguir descreve as configurações de unidade para as máquinas virtu
   
 **Tabela: requisitos de unidade de máquina Virtual para o servidor de banco de dados para o local de teste**
 
-|**Letra de unidade**|**Tamanho**|**Nome do diretório**|**Path**|
+|**Letra da unidade**|**Tamanho**|**Nome do diretório**|**Path**|
 |:-----|:-----|:-----|:-----|
 |C  <br/> |80  <br/> |Diretório raiz de dados  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\  <br/> |
 |J  <br/> |500  <br/> |Diretório de banco de dados do usuário  <br/> |<DriveLetter>:\\Arquivos de programa\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\dados  <br/> |
@@ -679,15 +680,15 @@ Ipconfig /flushdns
 ## <a name="additional-resources"></a>Recursos adicionais
 <a name="Troubleshooting"> </a>
 
-[Suporte para opções de recuperação de desastres e disponibilidade alta para bancos de dados do SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)
+[Suporte para as opções de alta disponibilidade e recuperação de desastres para bancos de dados do SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)
   
 [Configurar grupos de disponibilidade AlwaysOn do SQL Server 2012 no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <a name="Troubleshooting"> </a>
 
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 
