@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Resumo: o que os arquitetos de TI precisam saber sobre cenários híbridos usando plataformas e serviços em nuvem da Microsoft.'
-ms.openlocfilehash: a4d0f7d0f788a3de2c9f21f3d875395c6daab4a3
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: a729c770fee5a6484e8a8efbfe014b54fe266bc0
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161814"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 
@@ -30,7 +31,7 @@ Este artigo conecta você a um conjunto de artigos que descrevem o que os arquit
 [![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-![Arquivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Arquivo do Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Ver uma página com as versões em outros idiomas](images/Common_Images/GlobeIcon.png)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
 [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54424)
   
 Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) e deslizar o dedo pelo [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://aka.ms/cloudarchitecture).

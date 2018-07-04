@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: 'Resumo: como uma organização global fictícia, mas representativa, está adotando uma infraestrutura de TI inclusiva em nuvem com as ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 0a332883fef3291e133998ecd1bbfa53e7282ec0
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: d548301fdbd3b26d3de5ea0e279a379b7eea269f
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161774"
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso no Microsoft Cloud
 
@@ -29,7 +30,7 @@ Este artigo oferece links para um conjunto de artigos que descrevem como a Conto
   
 [![Imagem em miniatura do cartaz Contoso na Microsoft Cloud](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
-![Arquivo PDF](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Arquivo do Visio](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Ver uma página com as versões em outros idiomas](images/Common_Images/GlobeIcon.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54427)
   
 Confira as seguintes seções:
   
@@ -64,7 +65,7 @@ Confira as seguintes seções:
 > [!NOTE]
 > Estes artigos refletem a versão de **setembro de 2017** do cartaz Contoso no Microsoft Cloud.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

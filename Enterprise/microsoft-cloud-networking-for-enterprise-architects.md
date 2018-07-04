@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Resumo: Projete sua rede para plataformas e serviços da nuvem da Microsoft.'
-ms.openlocfilehash: 8b4a31c782abb359f521eb86fae211239bbb80d0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: eebfb0537ba3166ded84c899f22efcd11825601b
+ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "20161864"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rede do Microsoft Cloud para arquitetos corporativos
 
@@ -30,7 +31,7 @@ Este artigo conecta você a um conjunto de outros artigos que descrevem o que os
 [![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
-![Arquivo PDF](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Arquivo do Visio](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Ver uma página com as versões em outros idiomas](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54425)
   
 Também é possível ver todos os modelos nos [Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md) e deslizar o dedo pelo [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://aka.ms/cloudarchitecture).
   
@@ -65,9 +66,9 @@ Para ver um resumo de 30 minutos sobre os pontos principais deste cartaz, faça 
 > [!NOTE]
 > Estes artigos refletem a versão de **junho de 2017** do cartaz Rede do Microsoft Cloud para arquitetos corporativos.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
