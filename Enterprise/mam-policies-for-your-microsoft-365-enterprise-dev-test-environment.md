@@ -1,5 +1,5 @@
 ---
-title: Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
+title: Políticas MAM para o ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 'Resumo: Use este guia de laboratório de teste para adicionar políticas de gerenciamento (MAM) de aplicativo móvel do EMS ao seu ambiente de desenvolvimento e teste da Microsoft 365.'
-ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 0a5c81665edf06631b8cebc57c9e715c78d3d85e
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188149"
 ---
-# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Políticas MAM para seu ambiente de desenvolvimento e teste da Microsoft 365 Enterprise
+# <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Políticas MAM para o ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 
  **Resumo:** Use este guia de laboratório de teste para adicionar políticas de gerenciamento (MAM) de aplicativo móvel do EMS ao seu ambiente de desenvolvimento e teste da Microsoft 365.
   
@@ -46,7 +47,7 @@ Nesta fase, você criará e implantará duas políticas de MAM diferentes: uma p
     
 6. No **grupo** blade, selecione **Office 365** para **tipo de grupo?**, digite **gerenciados iOS usuários de dispositivo** em **nome**, selecione **atribuído** no **tipo de associação**e, em seguida, clique em **criar**. 
     
-7. Feche o blade de **grupo** .
+7. Feche a folha **Grupo**.
     
 8. No blade **grupos-All grupos** , clique em **Adicionar**.
     
@@ -54,41 +55,41 @@ Nesta fase, você criará e implantará duas políticas de MAM diferentes: uma p
     
 10. Feche o blade **grupos grupos a todos** .
     
-11. No blade **Intune** , na lista de **Tarefas rápidas** , clique em **criar uma política de conformidade**.
+11. Na folha **Intune**, na lista **Tarefas rápidas**, clique em **Crie uma política de conformidade**.
     
-12. No blade **Perfis de política de conformidade** , clique em **Criar diretiva**.
+12. Na folha **Perfis de Políticas de Conformidade**, clique em **Criar Política**.
     
-13. No blade **Criar política** , em **nome**, digite **iOS**. Na **plataforma**, selecione **iOS**, clique **Okey** no blade **iOS política de conformidade** e, em seguida, clique em **criar**.
+13. Na folha **Criar Política**, em **Nome**, digite **iOS**. Em **Plataforma**, selecione **iOS**, clique em **OK** na folha **Política de conformidade do iOS** e depois clique em **Criar**.
     
-14. No blade **Perfis de política de conformidade** , clique em **Criar diretiva**.
+14. Na folha **Perfis de Políticas de Conformidade**, clique em **Criar Política**.
     
-15. No blade **Criar política** , em **nome**, digite **Android**. Na **plataforma**, selecione **Android**, clique **Okey** no blade **política de conformidade Android** e, em seguida, clique em **criar**.
+15. Na folha **Criar Política**, em **Nome**, digite **Android**. Em **Plataforma**, selecione **Android**, clique em **OK** na folha **Política de conformidade do Android** e depois clique em **Criar**.
     
-16. No blade **Perfis de política de conformidade** , clique no nome de política **Android** .
+16. Na folha **Perfis de Políticas de Conformidade**, clique no nome da política **Android**.
     
-17. No painel de navegação à esquerda do blade **Android - propriedades** , clique em **atribuições**e, em seguida, clique em **Selecionar grupos**.
+17. Na navegação à esquerda da folha **Android - Propriedades**, clique em **Atribuições** e depois em **Grupos selecionados**.
     
-18. No blade **Selecionar grupos** , clique no grupo de **usuários de dispositivos Android gerenciada** e, em seguida, clique em **Selecionar**.
+18. Na folha **Grupos selecionados**, clique no grupo **Usuários de dispositivos Android gerenciados** e depois clique em **Selecionar**.
     
 19. Clique em **Salvar**e feche o blade **Android - atribuições** .
     
-20. No blade **Perfis de política de conformidade** , clique no nome de política de **iOS** .
+20. Na folha **Perfis de Políticas de Conformidade**, clique no nome da política **iOS**.
     
-21. No painel de navegação à esquerda do blade **iOS - propriedades** , clique em **atribuições**e, em seguida, clique em **Selecionar grupos**.
+21. Na navegação à esquerda da folha **iOS - Propriedades**, clique em **Atribuições** e depois em **Grupos selecionados**.
     
-22. No blade **Selecionar grupos** , clique no grupo de **usuários de dispositivos iOS Managed** e, em seguida, clique em **Selecionar**.
+22. Na folha **Grupos selecionados**, clique no grupo **Usuários de dispositivos iOS gerenciados** e depois clique em **Selecionar**.
     
 23. Clique em **Salvar**e feche o blade **iOS - atribuições** .
     
-24. Feche o blade **Perfis de política de conformidade** .
+24. Feche a folha **Perfis de Políticas de Conformidade**.
     
-25. No blade **Intune** , clique em **Gerenciar aplicativos** no painel de navegação à esquerda.
+25. Na folha **Intune**, clique em **Gerenciar aplicativos** na navegação à esquerda.
     
-26. No blade **Apps Mobile** , clique em **aplicativos**.
+26. Na folha **Aplicativos Móveis**, clique em **Aplicativos**.
     
-27. Na lista de aplicativos, clique em **PowerPoint**, 
+27. Na lista de aplicativos, clique em **PowerPoint**,  
     
-28. No blade **Visão geral do PowerPoint** , clique em **atribuições > Selecione grupos > gerenciados dispositivos iOS > selecione**. Em **tipo**, selecione **disponível**e, em seguida, clique em **Salvar**.
+28. Na folha **Visão Geral do PowerPoint**, clique em **Atribuições > Selecionar grupos > Dispositivos iOS gerenciados > Selecionar**. Em **Tipo**, selecione **Disponível** e clique em **Salvar**.
     
 29. Repita a etapa 28 para os seguintes aplicativos:
     
@@ -114,36 +115,36 @@ Nesta fase, você criará e implantará duas políticas de MAM diferentes: uma p
     
   - OneNote para iOS
     
-30. Feche o blade **Mobile Apps - Apps** .
+30. Feche a folha **Aplicativos Móveis - Aplicativos**.
     
-31. No blade **Apps Mobile** , clique em **Políticas de proteção de aplicativos**.
+31. Na folha **Aplicativos Móveis**, clique em **Políticas de Proteção de Aplicativo**.
     
-32. No blade **Políticas de proteção de aplicativos** , clique em **Adicionar uma política**.
+32. Na folha **Políticas de Proteção de Aplicativo**, clique em **Adicionar uma política**.
     
-33. No blade **Adicionar uma política** , digite **iOS**e clique em **Selecionar aplicativos necessários**.
+33. Na folha **Adicionar uma política**, digite **iOS** e clique em **Selecionar aplicativos necessários**.
     
-34. No blade **Apps** , clique o **PowerPoint**, **O Microsoft Dynamics CRM no iPhone**, **Excel**, **O Microsoft Dynamics CRM no iPhone**, **Word**, **OneNote**e **Outlook**e clique em **Selecionar**.
+34. Na folha **Aplicativos**, clique em **PowerPoint**, **Microsoft Dynamics CRM no iPhone**, **Excel**, **Microsoft Dynamics CRM no iPhone**, **Word**, **OneNote** e **Outlook** e depois clique em **Selecionar**.
     
-35. No blade **Adicionar uma política** , clique em **criar**.
+35. Na folha **Adicionar uma política**, clique em **Criar**.
     
-36. No blade **Políticas de proteção de aplicativos** , clique em **Adicionar uma política**.
+36. Na folha **Políticas de Proteção de Aplicativo**, clique em **Adicionar uma política**.
     
-37. No blade **Adicionar uma política** , digite **Android**, selecione **Android** na **plataforma**e clique em **Selecionar aplicativos necessários**.
+37. Na folha **Adicionar uma política**, digite **Android**, selecione **Android** em **Plataforma** e clique em **Selecionar aplicativos necessários**.
     
-38. No blade **Apps** , clique **Dynamics CRM para tablets**, **PowerPoint**, **Word**, **Excel**, **Outlook**e **Dynamics CRM para telefones**e, em seguida, clique em **Selecionar**.
+38. Na folha **Aplicativos**, clique em **PowerPoint**, **Dynamics CRM para tablets**, **Excel**, **Word**, **Outlook** e **Dynamics CRM para telefones**. Em seguida, clique em **Selecionar**.
     
-39. No blade **Adicionar uma política** , clique em **criar**.
+39. Na folha **Adicionar uma política**, clique em **Criar**.
     
 Agora, você tem duas políticas de MAM, uma para dispositivos iOS e outra para dispositivos Android, e está pronto para trabalhar com configurações de teste para os aplicativos selecionados.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para acessar um mapa visual de todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="see-also"></a>Confira também
 
 [Ambiente de desenvolvimento/teste do Microsoft 365 Enterprise](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Registre dispositivos iOS e Android em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 

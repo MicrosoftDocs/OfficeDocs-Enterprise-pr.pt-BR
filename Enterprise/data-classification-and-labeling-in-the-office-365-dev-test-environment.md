@@ -1,5 +1,5 @@
 ---
-title: "Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365"
+title: Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,21 +13,22 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
-description: "Resumo: Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 7243acecca0dd4c39ff6ef2aecd25091f25f2f53
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365.'
+ms.openlocfilehash: f9674f5e2bac804f5bd23b5f67e733580c50450f
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188089"
 ---
-# <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificação de dados e rótulos no ambiente de desenvolvimento e teste Office 365
+# <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365.
   
 O cliente de proteção de informações do Windows Azure permite classificar um documento antes de carregá-la para uma pasta do SharePoint Online no Office 365. Com as instruções deste artigo, você pode instala o cliente de proteção de informações do Windows Azure e demonstrar a classificação de dados. Para obter mais informações, consulte [Proteção de informações do Windows Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Criar o seu ambiente de desenvolvimento e teste do Office 365
 
@@ -41,7 +42,7 @@ Em primeiro lugar, inscreva-se para uma assinatura de avaliação de proteção 
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Inscreva-se para uma assinatura de avaliação de proteção de informações do Windows Azure
 
-1. No Internet Explorer ou seu navegador, vá para [http://portal.office.com](http://portal.office.com) e entrar com sua conta de administrador global do Office 365.
+1. No Internet Explorer ou seu navegador, vá para [http://portal.office.com](http://portal.office.com) e entre com sua conta de administrador global do Office 365.
     
 2. Na guia **Página inicial do Microsoft Office** , clique no lado do **Admin** .
     
@@ -49,9 +50,9 @@ Em primeiro lugar, inscreva-se para uma assinatura de avaliação de proteção 
     
 4. Na página **Serviços de compra** , localize o item de **P2 de Premium de proteção de informações do Azure** . Passe o mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
     
-5. Na página **confirmar seu pedido** , clique em **tente agora**.
+5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
-6. Na página **confirmação de ordem** , clique em **continuar**.
+6. Na página **Recibo do pedido**, clique em **Continuar**.
     
 Em seguida, você pode habilitar a licença de proteção de informações do Windows Azure para todas as contas de usuário.
   
@@ -79,9 +80,9 @@ Se você estiver usando o ambiente de desenvolvimento e teste do Office 365 ente
     
 2. Clique em **grupos de recursos >** [seu nome de grupo de recurso] **> CLIENT1 > conectar**.
     
-3. Em CLIENT1, execute o Internet Explorer, vá para o portal do Office em [http://portal.office.com](http://portal.office.com)e então entrar com o nome da conta de User5 e a senha.
+3. No CLIENT1, execute o Internet Explorer, vá para o portal do Office em [http://portal.office.com](http://portal.office.com)e, em seguida, entre com o nome da conta de User5 e a senha.
     
-4. Na guia **Página inicial do Microsoft Office** , clique em **instalar Office 2016**.
+4. Na guia **Microsoft Office Home**, clique em **Instalar o Office 2016**.
     
 5. Execute o download quando solicitado e clique em **Sim** quando solicitado pelo controle de conta de usuário. Aguarde do Office instalar. Quando concluir, clique em **Fechar** duas vezes.
     
@@ -137,7 +138,7 @@ Em seguida, você permitir que todos acessar a coleção de site de suporte.
     
 5. Na lista de grupos do SharePoint, clique em **conjunto de sites de suporte membros**.
     
-6. Na página **pessoas e grupos** , clique em **novo**.
+6. Na página **Pessoas e Grupos**, clique em **Novo**.
     
 7. Em **compartilhamento 'Conjunto de sites de suporte'**, digite **todos**, clique em **todos exceto os usuários externos**e, em seguida, clique em **Share.**
     
@@ -149,7 +150,7 @@ Em seguida, você pode entrar com sua conta User5 e carregar um documento proteg
     
 2. Vá para [http://portal.office.com](http://portal.office.com).
     
-3. Sobre o * * Office 365 entrar * * página, clique no nome da conta de User5 e entrar.
+3. Na página do **Office 365 entrar** , clique no nome da conta de User5 e entrar.
     
 4. Na guia **Página inicial do Microsoft Office** , clique em **SharePoint > suportam o conjunto de sites**.
     
@@ -157,12 +158,12 @@ Em seguida, você pode entrar com sua conta User5 e carregar um documento proteg
     
     Você deverá ver AfterAIP.docx na pasta documentos no conjunto de sites de suporte.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Office 365 e o ambiente de desenvolvimento e teste do EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
+[Office 365 e o ambiente de desenvolvimento/teste do EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
-[Proteção das informações do Azure](https://www.microsoft.com/cloud-platform/azure-information-protection)
+[Proteção de Informações do Azure](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 

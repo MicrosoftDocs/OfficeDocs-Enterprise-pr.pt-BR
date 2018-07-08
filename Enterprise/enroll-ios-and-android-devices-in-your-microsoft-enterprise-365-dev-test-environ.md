@@ -1,5 +1,5 @@
 ---
-title: Registrar o iOS e Android dispositivos em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365
+title: Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 'Resumo: Use este guia de laboratório de teste para registrar os dispositivos em seu ambiente de desenvolvimento e teste da Microsoft 365 e gerenciá-los remotamente.'
-ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
-ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
+ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188099"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Registrar o iOS e Android dispositivos em seu ambiente de desenvolvimento e teste do Microsoft Enterprise 365
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 
  **Resumo:** Use este guia de laboratório de teste para registrar os dispositivos em seu ambiente de desenvolvimento e teste da Microsoft 365 e gerenciá-los remotamente.
   
@@ -50,37 +51,37 @@ Para bloquear um dispositivo iOS remotamente:
 
 2.  No console de administração do Microsoft Intune do navegador, clique em **grupos** , no painel de navegação à esquerda.
 
-3. No painel **grupos** , abra **todos os dispositivos > dispositivos móveis todos > todos os dispositivos gerenciados direto**.
+3. No painel **Grupos**, abra **Todos os dispositivos > Todos os dispositivos móveis > Todos os Dispositivos Gerenciados Diretamente**.
     
-4. No painel de **Todos os dispositivos gerenciados direta** , clique na guia **dispositivos** .
+4. No painel **Todos os Dispositivos Gerenciados Diretamente**, clique na guia **Dispositivos**.
     
 5. Na lista de dispositivos, clique no seu dispositivo iOS.  
     
 6. No seu dispositivo iOS, certifique-se de que ele esteja na tela principal.  
     
-7. No seu computador de administração, na barra de tarefas, clique em **tarefas remotas > bloqueio remoto**. Assista seu dispositivo iOS conforme ele alterna para a tela de bloqueio.
+7. No computador de administração, na barra de tarefas, clique em **Tarefas Remotas > Bloqueio Remoto**. Observe seu dispositivo iOS entrando na tela de bloqueio.
     
 Para remover a senha:
   
-1. Do seu computador de administração, no painel de **Todos os dispositivos gerenciados direta** , clique na guia **dispositivos** .
+1. No computador de administração, no painel **Todos os Dispositivos Gerenciados Diretamente**, clique na guia **Dispositivos**.
     
-2. Na lista, clique em seu dispositivo iOS. Na barra de tarefas, clique em **tarefas remotas > redefinição de senha**. Aguarde um minuto.
+2. Na lista, clique no seu dispositivo iOS. Na barra de tarefas, clique em **Tarefas Remotas > Reconfiguração de Senha**. Aguarde um minuto.
     
-3. No seu dispositivo iOS, desbloqueá-lo e observe que não há uma senha. Para alterar a senha novamente, vá para **configurações**e, em seguida, a **senha**.
+3. No seu dispositivo iOS, desbloqueie-o e observe que uma senha não existe mais. Para alterar novamente a senha, vá para **Configurações** e depois para **Senha**.
     
 Para bloquear um dispositivo Android remotamente:
   
 1. No console de administração do Microsoft Intune do navegador, clique em **grupos** , no painel de navegação à esquerda.
     
-2. No painel **grupos** , abra **todos os dispositivos > dispositivos móveis todos > todos os dispositivos gerenciados direto**.
+2. No painel **Grupos**, abra **Todos os dispositivos > Todos os dispositivos móveis > Todos os Dispositivos Gerenciados Diretamente**.
     
-3. No painel de **Todos os dispositivos gerenciados direta** , clique na guia **dispositivos** .
+3. No painel **Todos os Dispositivos Gerenciados Diretamente**, clique na guia **Dispositivos**.
     
 4. Na lista de dispositivos, clique no seu dispositivo Android.  
     
 5. No seu dispositivo Android, certifique-se de que ele esteja na tela principal.  
     
-6. No seu computador de administração, na barra de tarefas, clique em **tarefas remotas > bloqueio remoto**. Quando solicitado, clique em **Sim**.
+6. No computador de administração, na barra de tarefas, clique em **Tarefas Remotas > Bloqueio Remoto**. Quando solicitado, clique em **Sim**.
     
 7. Observe seu dispositivo Android entrando na tela de bloqueio.
     
@@ -88,23 +89,23 @@ Quando você redefinir a senha para dispositivos com Android, o portal de admini
   
 Para redefinir a senha remotamente:
   
-1. Do seu computador de administração, na guia de console de administração do Microsoft Intune do navegador, no painel de **Todos os dispositivos gerenciados direta** , clique em seu dispositivo Android.
+1. No computador de administração, na guia do console de administração do Microsoft Intune do navegador, no painel **Todos os Dispositivos Gerenciados Diretamente**, clique no seu dispositivo Android.
     
-2. Na barra de tarefas, clique em **tarefas remotas > redefinição de senha**.
+2. Na barra de tarefas, clique em **Tarefas Remotas > Reconfiguração de Senha**.
     
-3. Sobre o **tarefa remota: redefinição de senha** solicitar, clique em **Sim**. Aguarde um minuto.
+3. No prompt **Tarefa Remota: Reconfiguração de Senha**, clique em **Sim**. Aguarde um minuto.
     
-4. No painel de **Todos os dispositivos gerenciados direta** , clique em **Exibir propriedades**.
+4. No painel **Todos os Dispositivos Gerenciados Diretamente**, clique em **Exibir Propriedades**.
     
-5. Em **Redefinição de senha**, observe a nova senha.
+5. Em **Reconfiguração de Senha**, anote a nova senha.
     
 6. No seu dispositivo Android, insira a nova senha na tela de bloqueio.  
     
-7. Para alterar a senha novamente, entram em **configurações**, toque em **dispositivo**, toque em **tela de bloqueio**, insira a nova senha novamente, toque em **bloqueio de tela**e sua escolha para a senha.
+7. Para alterar novamente a senha, vá para **Configurações**, toque em **Dispositivo**, toque em **Tela de bloqueio**, insira novamente a nova senha, toque em **Bloqueio da tela** e depois na sua opção de senha.
     
 
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para acessar um mapa visual de todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="see-also"></a>Confira também
 

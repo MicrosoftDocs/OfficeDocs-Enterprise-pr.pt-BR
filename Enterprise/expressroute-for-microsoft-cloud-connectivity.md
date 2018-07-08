@@ -3,7 +3,7 @@ title: ExpressRoute para conectividade de nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "Resumo: Entenda como ExpressRoute pode ajudá-lo com mais rápidas e confiáveis de conexões para os serviços de nuvem da Microsoft e plataformas."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda como ExpressRoute pode ajudá-lo com mais rápidas e confiáveis de conexões para os serviços de nuvem da Microsoft e plataformas.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188109"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para conectividade de nuvem da Microsoft
 
@@ -28,7 +29,7 @@ O ExpressRoute oferece uma conexão de rede privada, dedicada e de alta taxa de 
 
 Aqui é o caminho de rede para a nuvem da Microsoft sem uma conexão ExpressRoute.
   
-**Figura 1: O caminho de rede sem ExpressRoute**
+**Figura 1: O caminho de rede sem o ExpressRoute**
 
 ![Figura 1: O caminho de rede sem o ExpressRoute](images/Network_Poster/ExpressRoute.png)
   
@@ -42,13 +43,13 @@ Os usuários da Internet, como usuários móveis ou remotos, enviam o tráfego p
   
 Aqui estão os caminhos de redes para a nuvem da Microsoft com uma conexão ExpressRoute.
   
-**Figura 2: Os caminhos de redes com ExpressRoute**
+**Figura 2: Os caminhos de rede sem o ExpressRoute**
 
 ![Figura 2: Os caminhos de rede sem o ExpressRoute](images/Network_Poster/ExpressRoute_post.png)
   
 A Figura 2 mostra dois caminhos de redes. Tráfego para o Microsoft Intune viaja mesmo caminho de tráfego de Internet normal. Tráfego para o Office 365 e Microsoft Azure Dynamics 365 viaja entre a conexão ExpressRoute, um caminho dedicado entre a borda da rede local e a borda da nuvem da Microsoft.
   
-Com uma conexão ExpressRoute, agora você tem um controle, por meio de uma relação com seu provedor de serviços, no caminho de todo tráfego da sua borda para a Microsoft cloud borda. Essa conexão pode oferecer desempenho previsível e um SLA do tempo de atividade de 99,9%.
+Com uma conexão ExpressRoute, agora você tem um controle, por meio de uma relação com seu provedor de serviços, no caminho de todo tráfego da sua borda para a Microsoft cloud borda. Essa conexão pode oferecer desempenho previsível e um [tempo de atividade 99,95% SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/).
   
 Agora, você pode contar com previsível taxa de transferência e latência, com base na conexão do seu provedor de serviços, aos serviços do Office 365, Windows Azure e Dynamics 365. Conexões de ExpressRoute com Microsoft Intune não são suportados no momento.
   
@@ -60,7 +61,7 @@ Mesmo com uma conexão ExpressRoute, alguns tráfego ainda é enviado pela Inter
   
 Consulte estes recursos adicionais para obter mais informações:
   
-- [ExpressRoute para o Office 365](https://aka.ms/expressrouteoffice365)
+- [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
     
 - [ExpressRoute para o Windows Azure](https://azure.microsoft.com/services/expressroute/)
     
@@ -95,7 +96,7 @@ A tabela 1 mostra os três modelos de conectividade principal para conexões de 
 
 Uma conexão de ExpressRoute único oferece suporte a até três Border Gateway Protocol (BGP) aos relacionamentos diferentes para diferentes partes de nuvem da Microsoft. BPG usa relações de correspondência para estabelecer a confiança e trocar informações de roteamento.
   
-**Figura 3: Os três diferentes BGP relacionamentos em uma conexão de ExpressRoute único**
+**Figura 3: As três diferentes relações BGP em uma única conexão ExpressRoute**
 
 ![Figura 3: As três diferentes relações BGP em uma única conexão ExpressRoute](images/Network_Poster/ERPeering.png)
   
@@ -125,7 +126,7 @@ O relacionamento BGP correspondência privado:
 
 Como o tráfego viaja através de conexões de ExpressRoute e em nuvem da Microsoft é uma função das rotas em de saltos do caminho entre a origem e o comportamento de destino e o aplicativo. Aqui está um exemplo de um aplicativo executado em uma máquina virtual do Azure que acessa um farm do SharePoint no local através de uma conexão de VPN-to-site.
   
-**Figura 4: Um aplicativo em uma máquina virtual do Azure acessando um farm do SharePoint local**
+**Figure 4: Um aplicativo em uma máquina virtual Azure acessando um farm local do SharePoint**
 
 ![Figure 4: Um aplicativo em uma máquina virtual Azure acessando um farm local do SharePoint](images/Network_Poster/ER_App_Flow1.png)
 
@@ -136,7 +137,7 @@ O aplicativo localiza o endereço IP do farm do SharePoint usando o DNS local e 
   
 Esta organização migrados seu farm do SharePoint no local para o SharePoint Online no Office 365 e implantado uma conexão ExpressRoute.
   
-**Figura 5: Mover o farm do SharePoint no local para o SharePoint Online**
+**Figura 5: Movendo o farm local do SharePoint para o SharePoint Online**
 
 ![Figura 5: Movendo o farm local do SharePoint para o SharePoint Online](images/Network_Poster/Hairpin1.png)
   
@@ -154,7 +155,7 @@ Quando o aplicativo acessa as URLs do SharePoint Online, ele encaminha seu tráf
   
 Quando o servidor proxy localiza o endereço IP do SharePoint Online, ele encaminha o tráfego novamente sobre a conexão ExpressRoute. Tráfego de resposta passa o caminho reverso.
   
-**Figura 6: Fluxo de tráfego ao farm do SharePoint foi migrado para o SharePoint Online no Office 365**
+**Figura 6: Fluxo de tráfego quando o farm do SharePoint foi migrado para o SharePoint Online no Office 365**
 
 ![Figura 6: Fluxo de tráfego quando o farm do SharePoint foi migrado para o SharePoint Online no Office 365](images/Network_Poster/Hairpin2.png)
 
@@ -183,7 +184,7 @@ Quando você cria uma conexão ExpressRoute para um local de correspondência de
   
 Isso pode resultar em entrega não ideal em centros de dados Microsoft locais para o modelo de conectividade para qualquer.
   
-**Figura 7: Exemplo de uma organização geograficamente distribuídos que usa uma conexão de ExpressRoute único**
+**Figura 7: Exemplo de uma organização distribuída geograficamente que usa uma conexão ExpressRoute única**
 
 ![Figura 7: Exemplo de uma organização distribuída geograficamente que usa uma conexão ExpressRoute única](images/Network_Poster/MSNet1.png)
   
@@ -191,7 +192,7 @@ Figura 7 mostra uma organização com dois locais, 1 do local em que o Noroeste 
   
 Para entrega ideal, use várias conexões de ExpressRoute para regionais locais de correspondência nuvem da Microsoft. 
   
-**Figura 8: O uso de várias conexões de ExpressRoute para entrega ideal em datacenters regionais**
+**Figura 8: O uso de várias conexões ExpressRoute para entrega ideal para data centers regionais**
 
 ![Figura 8: O uso de várias conexões ExpressRoute para entrega ideal para data centers regionais](images/Network_Poster/MSNet2.png)
   
@@ -233,7 +234,7 @@ De um escritório regional, apropriadas tráfego do Office 365 para:
     
 - Centros de dados do Office 365 em outro continente viajam através da rede de nuvem Microsoft intercontinentais.
     
-Para obter mais informações, consulte:
+Para obter mais informações, confira:
   
 - [Azure ExpressRoute treinamento do Office 365](https://channel9.msdn.com/series/aer/)
     
@@ -255,7 +256,7 @@ As opções a seguir também podem ser incorporadas em sua implantação Express
     
 Consulte estes recursos adicionais para obter mais informações:
   
-- [ExpressRoute para o Office 365](https://aka.ms/expressrouteoffice365)
+- [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
     
 - [Azure ExpressRoute treinamento do Office 365](https://channel9.msdn.com/series/aer/)
     
@@ -267,9 +268,9 @@ Consulte estes recursos adicionais para obter mais informações:
 
 ## <a name="see-also"></a>Confira também
 
-[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
