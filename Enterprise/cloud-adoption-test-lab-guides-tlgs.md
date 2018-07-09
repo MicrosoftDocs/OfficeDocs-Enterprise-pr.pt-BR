@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: use estes TLGs (Guias de Laboratório de Teste) para adoção da nuvem para configurar ambientes de desenvolvimento/teste ou de demonstração para produtos do Office 365, EMS (Enterprise Mobility Suite), Dynamics 365 e Office Server.'
-ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193671"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188159"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Guias do Laboratório de Teste (TLGs) para adoção de nuvem
 
@@ -100,7 +100,7 @@ Crie um ambiente de desenvolvimento/teste para cenários do [Microsoft 365 Enter
     
     Crie grupos de usuários e políticas de MAM (gerenciamento de aplicativo móvel) para dispositivos iOS e Android.
     
-- [Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft Enterprise 365](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
     Registre os dispositivos iOS ou Android e gerencie-os remotamente.
     
