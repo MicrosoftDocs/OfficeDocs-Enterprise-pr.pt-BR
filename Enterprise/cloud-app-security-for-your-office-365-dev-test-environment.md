@@ -1,9 +1,9 @@
 ---
-title: "Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365"
+title: Cloud App Security para o ambiente de desenvolvimento/teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,14 +13,15 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
-description: "Resumo: Configurar e demonstrar a segurança de aplicativo de nuvem do Office 365 em seu ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: ac5f5c25ecb4d97ac1c8fe3b48096ee02da2ec3e
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Configurar e demonstrar a segurança de aplicativo de nuvem do Office 365 em seu ambiente de desenvolvimento e teste do Office 365.'
+ms.openlocfilehash: d62524b6c4373c851a67b4039146ad8b6a610790
+ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "20215873"
 ---
-# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de aplicativo de nuvem para seu ambiente de desenvolvimento e teste do Office 365
+# <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security para o ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configurar e demonstrar a segurança de aplicativo de nuvem do Office 365 em seu ambiente de desenvolvimento e teste do Office 365.
   
@@ -29,7 +30,7 @@ Segurança de aplicativo do Office 365 nuvem, anteriormente conhecido como o Off
 Com as instruções deste artigo, você pode habilitar e testar a segurança do aplicativo de nuvem em sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -46,7 +47,7 @@ Neste procedimento, você demonstrar que antes de habilitar a segurança de apli
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Testar o comportamento de notificação padrão do Office 365
 
-1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entrar em sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e se conectar à sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
   - Se você estiver usando o ambiente de desenvolvimento e teste leve do Office 365, entre usando o computador local.
     
@@ -56,13 +57,13 @@ Neste procedimento, você demonstrar que antes de habilitar a segurança de apli
     
 3. Na navegação à esquerda, clique em **Usuários > Usuários ativos**.
     
-4. Clique na conta de **usuário 4** .
+4. 	Clique na conta **Usuário 4**.
     
-5. Na página **4 de usuário** , clique em **Editar** para a linha de **funções** .
+5. Na página **Usuário 4**, clique em **Editar** para a linha **Funções**.
     
-6. Na página **Editar funções do usuário** , clique em **Administrador Global**, digite **user4@contoso.com** no **endereço de email alternativo**e, em seguida, clique em **Salvar**. Clique duas vezes em **Fechar** .
+6. Na página **Editar funções do usuário**, clique em **Administrador global**, digite **user4@contoso.com** em **Endereço de email alternativo** e clique em **Salvar**. Clique em **Fechar** duas vezes.
     
-7. Selecione o ícone do iniciador de app no canto superior esquerdo e escolha o **email**.
+7. 	Selecione o ícone do inicializador de aplicativos no canto superior esquerdo e escolha **Email**.
     
 8. Aguarde 30 minutos. Observe que não há nenhuma mensagem de email na caixa de entrada informando sobre a alteração na função do usuário 4 como um administrador global.
     
@@ -76,9 +77,9 @@ Neste procedimento, habilite a segurança de aplicativo de nuvem e criar uma nov
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Habilitar e configurar a segurança de aplicativo de nuvem
 
-1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entrar em sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e se conectar à sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
-2. Clique no **segurança &amp; conformidade** lado a lado.
+2. Clique no lado do **Admin** . Na guia do **Centro de administração do Office** , clique em **centrais de Admin > segurança e conformidade**.
     
 3. No painel de navegação à esquerda, clique em **alertas > Gerenciar avançadas alertas**.
     
@@ -90,15 +91,15 @@ Neste procedimento, habilite a segurança de aplicativo de nuvem e criar uma nov
     
 7. Em **nome da política**, digite **atividades administrativas**.
     
-8. Na **gravidade da política**, clique em **alta**.
+8. Em **Severidade da política**, clique em **Alta**.
     
 9. Em **categoria**, clique em **contas privilegiadas**.
     
 10. Em **criar filtros para a política**, em **atividades correspondência das ações a seguir**, clique em **atividades administrativas**.
     
-11. Em **alertas**, clique em **Enviar alerta como email**. Na caixa **para**, digite o endereço de email da sua conta de administrador global.
+11. Em **Alertas**, clique em **Enviar alerta como email**. Em **Para**, digite o endereço de email da conta de administrador global.
     
-12. Na parte inferior da página, clique em **criar**.
+12. Na parte inferior da página, clique em **Criar**.
     
 ## <a name="phase-4-show-cloud-app-security-in-action"></a>Fase 4: Segurança de aplicativo de nuvem Mostrar em ação
 
@@ -110,33 +111,33 @@ Neste procedimento, você demonstrar como a segurança de aplicativo de nuvem cr
     
 2. Vá para [https://portal.office.com](https://portal.office.com).
     
-3. Na página de entrada da Office 365, clique em **usar outra conta**.
+3. Na página de entrada do Office 365, clique em **Usar outra conta**.
     
-4. Digite o nome da conta de usuário 4 e sua senha e clique em **entrar**.
+4. Digite o nome da conta de Usuário 4 e sua senha e depois clique em **Entrar**.
     
-5. Se necessário, altere a senha da conta de usuário 4 e clique em **Atualizar senha e entrar**.
+5. Se necessário, altere a senha da conta do Usuário 4 e clique em **Atualizar senha e entrar**.
     
 6. Na página do portal do Office 365, clique em **Admin**.
     
-7. Se necessário, clique em **Cancelar** quando solicitado a atualizar suas informações de contato do administrador.
+7. Se necessário, clique em **cancelar** quando solicitado a atualizar suas informações de contato de administrador.
     
 8. Na página principal do portal, clique em **Admin**.
     
 9. Na navegação à esquerda, clique em **Usuários > Usuários ativos**.
     
-10. Clique na conta de **usuário 5** .
+10. Clique na conta **Usuário 5**.
     
-11. Na página de **5 de usuário** , clique em **Editar** para a linha de **funções** .
+11. Na página **Usuário 5**, clique em **Editar** para a linha **Funções**.
     
-12. Na página **Editar funções do usuário** , clique em **administrador personalizado**, clique em **administrador de senha** e o **administrador de gerenciamento de usuário**, digite **user5@contoso.com** o **endereço de email alternativo**e, em seguida, clique em **Salvar**. Clique duas vezes em **Fechar** .
+12. Na página **Editar funções de usuário**, clique em **Administrador personalizado**, em **Administrador da conta** e depois em **Administrador de gerenciamento de usuários**, digite **user5@contoso.com** em **Endereço de email alternativo** e depois clique em **Salvar**. Clique em **Fechar** duas vezes.
     
 13. Clique no ícone de usuário no canto superior direito e clique em **Sair**. 
     
 14. Vá para [https://portal.office.com](https://portal.office.com).
     
-15. Na página do **Office 365 entrar** , clique em seu nome de conta de administrador global.
+15. Na página de **entrada do Office 365**, clique no nome da conta do administrador global.
     
-16. Digite a senha e clique em **entrar**.
+16. Digite a senha e depois clique em **Entrar**.
     
 17. Na página principal do portal, clique em **Admin**.
     
@@ -154,13 +155,13 @@ Neste procedimento, você demonstrar como a segurança de aplicativo de nuvem cr
     
 Agora você pode usar esse ambiente para criar novas políticas e experimentar ainda mais a segurança de aplicativo de nuvem do Office 365. Para obter links para artigos de configuração adicionais, consulte [Prepare-se para a segurança de aplicativo de nuvem do Office 365](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) .
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 [Visão geral da segurança do aplicativo de nuvem no Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 
