@@ -15,22 +15,28 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumo: aplique a Proteção de Informações do Azure para proteger arquivos em um site de equipe altamente confidencial do SharePoint Online.'
-ms.openlocfilehash: bab799a784cac579c92fb06ea17592d85fd59af2
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168495"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319282"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure
 
  **Resumo:** aplique a Proteção de Informações do Azure para proteger arquivos em um site de equipe altamente confidencial do SharePoint Online.
   
-Use as etapas neste artigo para configurar a Proteção de Informações do Azure para fornecer criptografia e permissões para arquivos em um site de equipe altamente confidencial do SharePoint Online. A proteção de criptografia e permissões acompanha um arquivo mesmo quando ele é baixado do site. Para saber mais sobre sites de equipe altamente confidenciais do SharePoint Online, confira [Sites e arquivos seguros do SharePoint Online](secure-sharepoint-online-sites-and-files.md).
-  
-> [!NOTE]
-> Quando a criptografia da Proteção de Informações do Azure é aplicada aos arquivos armazenados no Office 365, o serviço não pode processar o conteúdo desses arquivos. Coautoria, descoberta eletrônica, pesquisa, Delve e outros recursos de colaboração não funcionam. Políticas DLP só funcionam com metadados (incluindo rótulos do Office 365), mas não com o conteúdo desses arquivos (como números de cartão de crédito em arquivos). 
-  
+Use as etapas neste artigo para configurar a Proteção de Informações do Azure para fornecer as permissões para arquivos e a criptografia. Esses arquivos podem ser adicionados a uma biblioteca do SharePoint configurada para proteção altamente confidencial. Em alternativa, você pode abrir um arquivo diretamente do site e usar o cliente da Proteção de Informações do Azure para adicionar criptografia. A proteção de criptografia e permissões acompanha um arquivo mesmo quando ele é baixado do site. 
+
+Essas etapas são parte de uma solução maior de configuração da proteção altamente confidencial para sites do SharePoint e os arquivos dentro desses sites. Para saber mais, confira [Sites e arquivos seguros do SharePoint Online](secure-sharepoint-online-sites-and-files.md). 
+
+Usar a Proteção de Informações do Azure para arquivos no SharePoint Online não é recomendável para todos os clientes, mas é uma opção para os clientes que precisam deste nível de proteção para um subconjunto de arquivos.
+
+Algumas observações importantes sobre esta solução:
+- Quando a criptografia da Proteção de Informações do Azure é aplicada aos arquivos armazenados no Office 365, o serviço não pode processar o conteúdo desses arquivos. Coautoria, descoberta eletrônica, pesquisa, Delve e outros recursos de colaboração não funcionam. Políticas DLP só funcionam com metadados (incluindo rótulos do Office 365), mas não com o conteúdo desses arquivos (como números de cartão de crédito em arquivos).
+- Esta solução exige que um usuário selecione um rótulo que se aplica à proteção da Proteção de Informações do Azure. Se precisar de criptografia automática e da capacidade do SharePoint de indexar e examinar os arquivos, considere usar o Gerenciamento de Direitos de Informação (IRM) no SharePoint Online. Quando você configura uma biblioteca do SharePoint para o IRM, os arquivos são criptografados automaticamente quando são baixados para edição. O IRM do SharePoint inclui limitações que podem influenciar a sua decisão. Para saber mais, confira [Configurar o Gerenciamento de Direitos de Informação (IRM) no Centro de administração do SharePoint](https://support.office.com/pt-BR/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
+
+##<a name="admin-setup"></a>Configuração de administrador
 Primeiro, use as instruções em [Ativar o Azure RMS com o centro de administração do Office 365 para sua assinatura do Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Em seguida, configure a Proteção de Informações do Azure com uma nova política com escopo e um sub-rótulo para proteção e permissões do seu site de equipe altamente confidencial do SharePoint Online.
@@ -39,7 +45,7 @@ Em seguida, configure a Proteção de Informações do Azure com uma nova polít
     
 2. Em uma guia separada do navegador, vá para o Portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
     
-3. Se esta é a primeira vez que configura a Proteção de Informações do Azure, confira estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
+3. Se esta é a primeira vez que você configura a Proteção de Informações do Azure, confira estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
 4. No painel de lista, clique em **Todos os serviços**, digite **informações** e clique em **Proteção de Informações do Azure**.
     
@@ -75,10 +81,8 @@ Em seguida, configure a Proteção de Informações do Azure com uma nova polít
     
 20. Na folha **Proteção de Informações do Azure – Políticas com escopo**, clique em **Publicar**.
     
-Aqui está a configuração resultante para seu site de equipe altamente confidencial do SharePoint Online.
-  
-![Rótulo da Proteção de Informações do Azure de um site de equipe isolado do SharePoint Online.](images/8cc92aa4-e7bc-4c2f-a4a4-3b034b21aebf.png)
-  
+ 
+##<a name="client-setup"></a>Configuração do cliente
 Agora você está pronto para começar a criar documentos e protegê-los com a Proteção de Informações do Azure e seu novo rótulo.
   
 Você deve [Instalar o cliente da Proteção de Informações do Azure](https://docs.microsoft.com/information-protection/rms-client/install-client-app) em seu dispositivo ou computador baseado no Windows. Você pode criar scripts e automatizar a instalação, ou os usuários podem instalar o cliente manualmente. Confira os seguintes recursos:
@@ -94,6 +98,12 @@ Depois de instalado, os usuários executam e entram em um aplicativo do Office (
 > [!NOTE]
 > Se houver vários sites de equipe do SharePoint Online altamente confidenciais, crie várias políticas de escopo de Proteção de Informações do Azure com sub-rótulos com as configurações acima, com as permissões para cada sub-rótulo definidas para o grupo de acesso de membros do site, de um site específico de equipe do SharePoint Online. 
   
+##<a name="adding-permissions-for-external-users"></a>Adicionar permissões para usuários externos
+Há duas maneiras para conceder aos usuários externos o acesso aos arquivos protegidos com a Proteção de Informações do Azure. Em ambos os casos, os usuários externos devem ter uma conta do Azure AD. Se os usuários externos não forem membros de uma organização que usa o Azure AD, eles poderão obter uma conta do Azure AD como um indivíduo usando essa página de entrada: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
+
+ - Adicione usuários externos a um grupo do Azure AD que seja usado para configurar proteção para um rótulo. Você precisará adicionar primeiro a conta como usuário B2B no diretório. Pode levar algumas horas para que seja realizado o [cache de associação de grupos pelo Azure Rights Management](https://docs.microsoft.com/pt-BR/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection).  
+ - Adicione usuários externos diretamente à proteção de rótulo. Você pode adicionar todos os usuários de uma organização (por exemplo, Fabrikam.com), um grupo do Azure AD (como um grupo de finanças dentro de uma organização) ou um usuário. Por exemplo, você pode adicionar uma equipe externa de reguladores á proteção de um rótulo.
+
 ## <a name="see-also"></a>Confira também
 
 [Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)

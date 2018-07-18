@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumo: recomendações de configuração para proteger arquivos no SharePoint Online e no Office 365.'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319222"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteger sites e arquivos do SharePoint Online
 
@@ -46,9 +47,9 @@ Para obter mais informações sobre essas camadas e recursos recomendados para c
 As recomendações para sites de equipe do SharePoint Online traçam uma variedade de recursos do Office 365. Para sites altamente confidenciais, recomenda-se a Proteção de Informações do Azure. Ela está incluída no EMS (Enterprise Mobility + Security). 
   
 A ilustração a seguir mostra as configurações recomendadas para quatro sites de equipe do SharePoint Online.
-  
-![Configuração recomendada para sites do SharePoint](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![Configuração recomendada para sites do SharePoint](Media/SharePoint-site-configuration-v2.png)
+
 Conforme ilustrado:
   
 - A proteção de linha de base inclui duas opções para sites de equipe do SharePoint Online — um site público e um site privado. Os sites públicos podem ser descobertos e acessados por qualquer pessoa na organização. Os sites privados podem ser descobertos e acessados apenas por membros do site. Essas configurações de site permitem o compartilhamento fora do grupo. 
@@ -59,9 +60,9 @@ Conforme ilustrado:
     
 - As políticas DLP (prevenção de perda de dados) são configuradas para os rótulos Confidenciais e Altamente Confidenciais do Office 365 para avisar ou impedir os usuários quando tentam enviar esses tipos de arquivos para fora da organização.
     
-- Para sites configurados com a proteção altamente confidencial, a Proteção de Informações do Azure criptografa e concede permissões aos arquivos.
+- Se necessário para sua situação, você pode usar a Proteção de Informações do Azure para criptografar e conceder permissões para arquivos que sejam altamente confidenciais. Isso não é recomendável para todos os clientes.
     
-## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configurações para todo o locatário do SharePoint Online e OneDrive para Empresas
+## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Configurações para todo o locatário do SharePoint Online e OneDrive for Business
 
 O SharePoint Online e OneDrive para Empresas incluem configurações para todo o locatário que afetam todos os sites e os usuários. Algumas dessas configurações também podem ser ajustadas no nível do site para serem mais restritivas (mas não menos). Esta seção discute as configurações para todo o locatário que afetam a segurança e a colaboração. 
   
@@ -155,7 +156,7 @@ Para as etapas de configuração de rótulos e políticas DLP do Office 365 nest
   
 ## <a name="azure-information-protection"></a>Proteção de Informações do Azure
 
-Use a Proteção de Informações do Azure para aplicar rótulos e proteções que seguem os arquivos onde quer que eles estejam. Para esta solução, recomendamos que você use uma política de Proteção de Informações do Azure e um sub-rótulo altamente confidencial para criptografar e conceder permissões a arquivos que precisam ser protegidos com o mais alto nível de segurança. 
+Caso fornecida para sua segurança, é possível usar a Proteção de Informações do Azure para aplicar rótulos e proteções que seguem os arquivos onde quer que eles estejam. Os rótulos da Proteção de Informações do Azure são diferentes de rótulos do Office 365. Para esta solução, recomendamos que você use uma política de Proteção de Informações do Azure e um sub-rótulo altamente confidencial para criptografar e conceder permissões a arquivos que precisam ser protegidos com o mais alto nível de segurança. 
   
 Lembre-se de que quando a criptografia da Proteção de Informações do Azure é aplicada aos arquivos armazenados no Office 365, o serviço não pode processar o conteúdo desses arquivos. Coautoria, descoberta eletrônica, pesquisa, Delve e outros recursos de colaboração não funcionam. Políticas de DLP só funcionam com metadados (incluindo rótulos do Office 365), mas não com o conteúdo desses arquivos (como números de cartão de crédito em arquivos).
   
@@ -183,7 +184,7 @@ Há duas maneiras para conceder aos usuários externos o acesso aos arquivos pro
 
 Para as etapas de configuração de Proteção de Informações do Azure nesta solução, consulte [Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumo: Aplique rótulos do Office 365 e políticas de DLP (prevenção de perda de dados) aos sites de equipe do SharePoint Online com vários níveis de proteção de informações.'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319262"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger arquivos do SharePoint Online com DLP e rótulos do Office 365
 
@@ -27,6 +28,13 @@ ms.lasthandoff: 04/27/2018
   
 Use as etapas neste artigo para projetar e implantar políticas de DLP e rótulos do Office 365 para sites de equipe do SharePoint Online de linha de base, confidenciais e altamente confidenciais. Para obter mais informações sobre essas três camadas de proteção, consulte [Arquivos e sites do SharePoint Online seguros](secure-sharepoint-online-sites-and-files.md).
   
+## <a name="how-this-works"></a>Como isso funciona
+1. Crie os rótulos desejados e publique-os. Pode levar até 12 horas para que eles sejam publicados.
+2. Para os sites do SharePoint desejados, edite as configurações de biblioteca de documentos para aplicar um rótulo a itens na biblioteca.
+3. Crie políticas DLP para agir com base nas etiquetas.
+
+Quando os usuários adicionam um documento à biblioteca, o documento recebe o rótulo atribuído por padrão. Os usuários podem alterar o rótulo, se necessário. Quando um usuário compartilha um documento para fora da organização, a DLP verifica se um rótulo está atribuído e toma medidas caso uma política DLP corresponda ao rótulo. A DLP também procura por outras correspondências de política, como a proteção de arquivos com números de cartão de crédito, se esse tipo de política estiver configurado. 
+
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Rótulos do Office 365 para seus sites do SharePoint Online
 
 Há três etapas para criar e atribuir rótulos do Office 365 a sites de equipe do SharePoint Online.
@@ -153,11 +161,12 @@ Use estas etapas para configurar uma política DLP que notifica os usuários qua
     
 14. No painel **Personalizar dicas de política e notificações de email**, clique em **Personalizar o texto da dica da política**.
     
-15. Na caixa de texto, digite ou cole o seguinte:
+15. Na caixa de texto, digite ou cole uma das dicas a seguir, dependendo de se você implementou a Proteção de Informações do Azure para proteger arquivos altamente confidenciais:
     
   - Para compartilhar com um usuário de fora da organização, baixe o arquivo e abra-o. Clique em Arquivo, em seguida, Proteger Documento e Criptografar com Senha e especifique uma senha forte. Envie a senha em um email separado ou outros meios de comunicação.
+  - Arquivos altamente confidenciais são protegidos com criptografia. Somente usuários externos que recebam permissões do seu departamento de TI para esses arquivos poderão lê-los.
     
-    Como alternativa, digite ou cole em sua própria dica de política que instrui os usuários sobre como compartilhar um arquivo fora da organização.
+    Como alternativa, digite ou cole uma dica de política que informe os usuários sobre como compartilhar um arquivo para fora da sua organização. Para saber mais sobre como fornecer permissões a usuários externos para arquivos protegidos com a Proteção de Informações do Azure, confira Adicionar permissões para usuários externos.
     
 16. Clique em **OK**.
     
@@ -223,7 +232,7 @@ Aqui está a configuração resultante para sites de equipe do SharePoint Online
 
 [Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Proteger sites e arquivos do SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
