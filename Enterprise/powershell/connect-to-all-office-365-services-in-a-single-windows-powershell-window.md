@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumo: Conecte o Windows PowerShell para todos os serviços do Office 365 em uma única janela do Windows PowerShell.'
-ms.openlocfilehash: ba23dde0fd79d13274244b52c5914d9249640570
-ms.sourcegitcommit: f496a401245240ec01754edcd4d44e7a0194d068
+ms.openlocfilehash: bf5e81012eaa3e7e200f9b1984b3d3fe01c30799
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "19907182"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720367"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell
 
@@ -60,8 +60,8 @@ Antes de você pode gerenciar tudo do Office 365 de uma única instância do Win
     
 - Você precisa instalar os módulos que são necessários para o Windows Azure AD, SharePoint Online e Skype para Business Online:
     
-   - [Azure Active Directory V2](connect-to-office-365-powershell.md#ConnectV2)
-   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+   - [Azure Active Directory V2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
+   - [Shell de Gerenciamento do SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype para negócios on-line, o módulo do Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
 -  Windows PowerShell deve ser configurado para executar scripts assinados Skype para Business Online, o Exchange Online e a segurança &amp; Centro de conformidade. Para fazer isso, execute o seguinte comando em uma sessão do Windows PowerShell com privilégios elevados (uma janela do Windows PowerShell para abrir, selecione **Executar como administrador**).
@@ -197,7 +197,7 @@ Import-PSSession $sfboSession
 
 Para o Exchange Online e a segurança &amp; Centro de conformidade, consulte os tópicos a seguir para se conectar usando a autenticação multifator:
 
-- [Conectar-se ao Exchange Online PowerShell, usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
+- [Conectar-se ao PowerShell do Exchange Online usando a autenticação multifator](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)
 - [Conectar-se ao PowerShell do Centro de conformidade usando a autenticação multifator & de segurança do Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps)
  
 Observe que, em ambos os casos, você deve se conectar usando sessões separadas do Exchange Online Remote PowerShell módulo.
@@ -211,5 +211,5 @@ Observe que, em ambos os casos, você deve se conectar usando sessões separadas
 
 - [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md)
 - [Gerenciar o SharePoint Online com o Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
-- [Gerenciar contas de usuário e licenças usando o PowerShell do Office 365](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Use o Windows PowerShell para criar relatórios no Office 365](use-windows-powershell-to-create-reports-in-office-365.md)

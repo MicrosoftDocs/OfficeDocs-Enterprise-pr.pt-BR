@@ -3,7 +3,7 @@ title: Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/te
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/14/2018
+ms.date: 07/20/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 'Resumo: Use este guia de laboratório de teste para registrar os dispositivos em seu ambiente de desenvolvimento e teste da Microsoft 365 e gerenciá-los remotamente.'
-ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: e4b8491a70d0d0177e0a434d228136243201e788
+ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188099"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "20720407"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>Registre dispositivos iOS e Android em seu ambiente de desenvolvimento/teste do Microsoft 365 Enterprise
 
@@ -35,73 +35,33 @@ Siga as instruções no [ambiente de desenvolvimento e teste o Microsoft 365 Ent
   
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>Fase 2: Registrar seus dispositivos com Android e iOS
 
-Primeiro, use as instruções em [instalar e acesse o aplicativo de Portal da empresa](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) para personalizar o aplicativo do Portal do Microsoft Intune empresa para seu locatário de desenvolvimento e teste.
+Primeiro, use as instruções em [instalar e acesse o aplicativo de Portal da empresa](https://docs.microsoft.com/intune-user-help/install-and-sign-in-to-the-intune-company-portal-app-ios) para personalizar o aplicativo Microsoft Intune Portal da empresa para o seu ambiente de teste.
 
 Em seguida, use as instruções em [Configurar o acesso aos seus recursos de empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) para registrar um dispositivo iOS.
 
 Em seguida, use as instruções em [registrar seu dispositivo Android no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android) para registrar um dispositivo Android.
 
-## <a name="phase-2-manage-your-ios-and-android-devices-remotely"></a>Fase 2: Gerenciar seus dispositivos com Android e iOS remotamente
+## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>Fase 3: Gerenciar seus dispositivos com Android e iOS remotamente
 
-O Microsoft Intune fornece recursos de bloqueio e redefinição de senha remotos. Se alguém perder um dispositivo, você poderá bloqueá-lo remotamente. Se alguém se esquecer da senha, você poderá removê-la remotamente.
+Microsoft Intune fornece recursos de redefinição de bloqueio remoto e uma senha. Se alguém perder seus dispositivos, você pode bloquear o dispositivo remotamente. Se alguém esquecer sua senha, é possível redefini-lo remotamente.
   
-Para bloquear um dispositivo iOS remotamente:
-  
-1.  Abra uma nova guia e vá para http://manage.microsoft.com (se necessário). 
+Para bloquear um dispositivo Android ou o iOS remotamente:
 
-2.  No console de administração do Microsoft Intune do navegador, clique em **grupos** , no painel de navegação à esquerda.
+1. Entrar no portal do Windows Azure em [https://portal.azure.com](https://portal.azure.com) com as credenciais da sua conta de administrador global.
+2. Clique em **todos os serviços**, digite **Intune**e clique em **Intune**.
+3. Clique em **dispositivos > todos os dispositivos**.
+4. Na lista de dispositivos, clique em um iOS ou um dispositivo Android e, em seguida, clique na ação de **bloqueio remoto** .
 
-3. No painel **Grupos**, abra **Todos os dispositivos > Todos os dispositivos móveis > Todos os Dispositivos Gerenciados Diretamente**.
     
-4. No painel **Todos os Dispositivos Gerenciados Diretamente**, clique na guia **Dispositivos**.
-    
-5. Na lista de dispositivos, clique no seu dispositivo iOS.  
-    
-6. No seu dispositivo iOS, certifique-se de que ele esteja na tela principal.  
-    
-7. No computador de administração, na barra de tarefas, clique em **Tarefas Remotas > Bloqueio Remoto**. Observe seu dispositivo iOS entrando na tela de bloqueio.
-    
-Para remover a senha:
-  
-1. No computador de administração, no painel **Todos os Dispositivos Gerenciados Diretamente**, clique na guia **Dispositivos**.
-    
-2. Na lista, clique no seu dispositivo iOS. Na barra de tarefas, clique em **Tarefas Remotas > Reconfiguração de Senha**. Aguarde um minuto.
-    
-3. No seu dispositivo iOS, desbloqueie-o e observe que uma senha não existe mais. Para alterar novamente a senha, vá para **Configurações** e depois para **Senha**.
-    
-Para bloquear um dispositivo Android remotamente:
-  
-1. No console de administração do Microsoft Intune do navegador, clique em **grupos** , no painel de navegação à esquerda.
-    
-2. No painel **Grupos**, abra **Todos os dispositivos > Todos os dispositivos móveis > Todos os Dispositivos Gerenciados Diretamente**.
-    
-3. No painel **Todos os Dispositivos Gerenciados Diretamente**, clique na guia **Dispositivos**.
-    
-4. Na lista de dispositivos, clique no seu dispositivo Android.  
-    
-5. No seu dispositivo Android, certifique-se de que ele esteja na tela principal.  
-    
-6. No computador de administração, na barra de tarefas, clique em **Tarefas Remotas > Bloqueio Remoto**. Quando solicitado, clique em **Sim**.
-    
-7. Observe seu dispositivo Android entrando na tela de bloqueio.
-    
-Quando você redefinir a senha para dispositivos com Android, o portal de administração Intune gera e configura uma senha forte.
-  
 Para redefinir a senha remotamente:
-  
-1. No computador de administração, na guia do console de administração do Microsoft Intune do navegador, no painel **Todos os Dispositivos Gerenciados Diretamente**, clique no seu dispositivo Android.
-    
-2. Na barra de tarefas, clique em **Tarefas Remotas > Reconfiguração de Senha**.
-    
-3. No prompt **Tarefa Remota: Reconfiguração de Senha**, clique em **Sim**. Aguarde um minuto.
-    
-4. No painel **Todos os Dispositivos Gerenciados Diretamente**, clique em **Exibir Propriedades**.
-    
-5. Em **Reconfiguração de Senha**, anote a nova senha.
-    
-6. No seu dispositivo Android, insira a nova senha na tela de bloqueio.  
-    
-7. Para alterar novamente a senha, vá para **Configurações**, toque em **Dispositivo**, toque em **Tela de bloqueio**, insira novamente a nova senha, toque em **Bloqueio da tela** e depois na sua opção de senha.
+
+1. Se necessário, entrar no portal do Windows Azure em [https://portal.azure.com](https://portal.azure.com) com as credenciais da sua conta de administrador global.
+2. Clique em **todos os serviços**, digite **Intune**e clique em **Intune**.
+3. Clique em **dispositivos > todos os dispositivos**.
+4. Da lista de dispositivos você gerenciar, clique em um iOS ou um dispositivo Android e escolha **… Mais**. Escolha a ação remota dispositivo **Remover a senha** .
+
+Experimentação adicionais, consulte [ações de dispositivo disponível](https://docs.microsoft.com/intune/device-management#available-device-actions).
+
     
 
 > [!TIP]
