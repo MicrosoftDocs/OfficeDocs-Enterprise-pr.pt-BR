@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: O suporte está terminando em breve para servidores do Office 2010 e aplicativos de cliente e contratos de suporte personalizado não estão disponíveis. Use este artigo para começar a planejar a atualização agora.
-ms.openlocfilehash: dd2d8d3a5ad629dcdbddab07cf9209a305a3024c
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: deca71195aec15370d10003b979e7222dead7418
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169773"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549972"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ajudá-lo a atualizar do Office 2010 de servidores e clientes
 
@@ -39,22 +38,21 @@ Se você estiver usando o Office 2010 de produtos e serviços, agora é um ótim
 |Office 2010 (incluindo Outlook 2010, Excel 2010, PowerPoint 2010 e Word 2010)  <br/> |[Final do Office 2010 do mapa de suporte](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Fim do Exchange 2010 do mapa de suporte](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 ou do SharePoint Server 2010  <br/> |[Atualizando do SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-   
-> [!TIP]
-> Mapas de maior o planejamento são em breve! Certifique-se de marcar essa página para referência futura. 
-  
+|Project Server 2010 </br> | [Planejamento do Project Server e Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
+|Lync Server 2010 </br> | [Planejar a atualização para Skype para Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+    
 Com os produtos do Office 2010 e serviços se aproximando seu fim do suporte, este é um ótimo momento para considerar mover para o Office 365. Obtenha os mais novos recursos, atualizações de segurança e acesso ao seu conteúdo em uma variedade de dispositivos.
 
 Escolha uma das seguintes opções:
 - **Mover para o Office 365**: para muitos clientes, isso é uma solução eficiente e econômica. Consulte [como podemos para mover para o Office 365 para empresas?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **Atualizar seus servidores locais e aplicativos.** Consulte o [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange 2010](exchange-2010-end-of-support.md)e mapas de planejamento do [SharePoint 2010](upgrade-from-sharepoint-2010.md) . 
+- **Atualizar seus servidores locais e aplicativos.** Consulte o [Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange](exchange-2010-end-of-support.md), [SharePoint](upgrade-from-sharepoint-2010.md), [Project Server e Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)e [Skype para negócios](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) conteúdo de planejamento. 
     
 - **Implementar uma solução híbrida incluindo o Office 365** e seus servidores locais e aplicativos. Consulte [Visão geral de soluções do Office 365 híbrido cloud.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
     
 **Precisa de ajuda?** Considere a possibilidade de trabalhar com um especialista de licenciamento por volume ou parceiro. **[Encontre seu parceiro do Office 365 ou um revendedor](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 > [!TIP]
-> Se sua organização comprar 50 ou mais licenças do Office 365, nossa equipe FastTrack pode ajudá-lo pelo processo de configuração de Office 365. Visite [FastTrack.Microsoft.com](https://fasttrack.microsoft.com).
+> Se sua organização comprar 50 ou mais licenças do Office 365, nossa equipe FastTrack pode ajudá-lo pelo processo de configuração de Office 365. Visite [FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365).
   
 Se sua organização compra menos de 50 licenças do Office 365, consulte [Admins: atualizar seus usuários para o cliente do Office mais recente usando o Office 365 para empresas](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx). 
   
@@ -80,11 +78,9 @@ O Office 365 é uma oferta de software-como um serviço (SaaS) que faz parte da 
   
 |**Recurso**|**Descrição**|
 |:-----|:-----|
-|**[Vídeo: O que é o Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |Assista a este vídeo para obter uma visão geral do Office 365.  <br/> |
-|**[Como podemos mover para o Office 365 para empresas?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |Leia este artigo para obter uma visão geral de como as empresas podem mover para o Office 365.  <br/> |
 |**[Selecione o plano](https://aka.ms/viirjv)** <br/> |Visite essa página para saber mais sobre os planos de negócios do Office 365  <br/> |
 |**[Requisitos do sistema para Office](https://aka.ms/o365sysrequirements)** <br/> |Exibir detalhes sobre requisitos do sistema na seção **planos do Office 365 para educação e governamentais de negócios** .  <br/> |
-|**[Opções de plataforma de nuvem da Microsoft](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Baixe este poster para saber mais sobre o Office 365 e a pilha de Microsoft Cloud. Você aprenderá sobre os principais recursos da pilha Microsoft Cloud, incluindo o Office 365 e áreas de responsabilidade para você, nosso cliente e da Microsoft. Você pode baixar o cartaz e PDF ou formatos do Visio.  <br/> |
+|**[Recursos de arquitetura de TI de nuvem da Microsoft](microsoft-cloud-it-architecture-resources.md)** <br/> |Baixe cartazes de um ou mais para saber mais sobre as opções de plataforma Microsoft Cloud e o servidor. Você pode baixar cartazes em PDF ou formatos do Visio.  <br/> |
 |**[Perguntas Frequentes do Office 365](https://aka.ms/office365faqs)** <br/> |Visite essa página para ver uma lista das perguntas frequentes sobre o Office 365, com links para informações adicionais.  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>O que é o Microsoft 365?
