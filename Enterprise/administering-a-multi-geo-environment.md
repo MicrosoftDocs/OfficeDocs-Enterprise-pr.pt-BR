@@ -10,11 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como administrar o SharePoint e os serviços do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21550054"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrar um ambiente multigeográfico
 
@@ -76,36 +77,40 @@ Quando a função de gerente ou administrador de Descoberta Eletrônica é defin
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>NAM</strong></td>
-<td align="left">Data centers nos EUA</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>EUR</strong></td>
-<td align="left">Data centers na Europa</td>
-</tr>
-<tr class="odd">
 <td align="left"><strong>APC</strong></td>
-<td align="left">Data centers no Sudeste ou Leste da Ásia</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>CAN</strong></td>
-<td align="left">Data centers nos EUA</td>
+<td align="left">Datacenters no sudeste ou leste da Ásia</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>AUS</strong></td>
-<td align="left">Data centers no Sudeste ou Leste da Ásia</td>
+<td align="left">Datacenters no sudeste ou leste da Ásia</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>KOR</strong></td>
-<td align="left">Local de dados-padrão do locatário</td>
+<td align="left"><strong>CAN</strong></td>
+<td align="left">Datacenters nos Estados Unidos</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>EUR</strong></td>
+<td align="left">Datacenters na Europa</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>FRA</strong></td>
+<td align="left">Datacenters na Europa</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
-<td align="left">Data centers na Europa</td>
+<td align="left">Datacenters na Europa</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>KOR</strong></td>
+<td align="left">Datacenters no sudeste ou leste da Ásia</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>JPN </strong></td>
-<td align="left">Data centers no Sudeste ou Leste da Ásia</td>
+<td align="left">Datacenters no sudeste ou leste da Ásia</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>NAM</strong></td>
+<td align="left">Datacenters nos Estados Unidos</td>
 </tr>
 </tbody>
 </table>
