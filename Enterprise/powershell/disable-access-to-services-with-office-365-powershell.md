@@ -1,9 +1,9 @@
 ---
-title: "Desabilitar o acesso aos serviços com o PowerShell do Office 365"
+title: Desabilitar o acesso aos serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2018
+ms.date: 08/08/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,13 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: "Explica como usar o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para usuários em sua organização."
-ms.openlocfilehash: 61d92a1a0c55a381f10fedbb43403dd099fcb69b
-ms.sourcegitcommit: 07416472be80566370c30631aff740177b37b24c
+description: Explica como usar o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para usuários em sua organização.
+ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
+ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22196818"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Desabilitar o acesso aos serviços com o PowerShell do Office 365
 
@@ -62,7 +63,7 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
-2. Use o objeto **LicenseOptions** da etapa 1 em um ou mais usuários.
+2. Use o objeto **LicenseOptions** da Etapa 1 em um ou mais usuários.
     
   - Para criar uma nova conta que tem serviços desabilitados, use a seguinte sintaxe:
     
@@ -126,7 +127,7 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
 
     Neste exemplo, o arquivo de texto é c:\\Meus documentos\\Accounts.txt.
     
-2. Execute o comando a seguir:
+2. Execute o seguinte comando:
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
@@ -151,9 +152,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 
 2. Personalize os seguintes valores para seu ambiente:
     
-  -  _<UndesirableService>_Neste exemplo, usaremos Online do Office e SharePoint Online.
+  -  _<UndesirableService>_ Neste exemplo, usaremos Online do Office e SharePoint Online.
     
-  -  _<Account>_Neste exemplo, usaremos belindan@litwareinc.com.
+  -  _<Account>_ Neste exemplo, usaremos belindan@litwareinc.com.
     
     O script personalizado tem esta aparência:
     
@@ -180,17 +181,6 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 [Voltar ao início](disable-access-to-services-with-office-365-powershell.md#RTT)
 
 
-## <a name="all-office-365-services-for-all-users-for-a-single-licensing-plan"></a>Todos os serviços do Office 365 para todos os usuários de um único plano de licenciamento
- 
-Para desabilitar todos os serviços do Office 365 para todos os usuários em um plano de licenciamento específico, especifique o nome do plano de licenciamento para $acctSKU (por exemplo, **litwareinc: enterprisepack**) e, em seguida, execute estes comandos na janela de comando do PowerShell:
-
-```
-$acctSKU="<AccountSkuId>"
-$servicesList=(Get-MsolAccountSku | Select -ExpandProperty ServiceStatus).ServicePlan.ServiceName
-$lo = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans $servicesList
-$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-$AllLicensed | ForEach {Set-MsolUserLicense -ObjectID $_.ObjectID -LicenseOptions $lo}
-```
 
 ## <a name="new-to-office-365"></a>Começando a usar o Office 365?
 <a name="LinkedIn"> </a>
@@ -208,7 +198,7 @@ Confira os seguintes tópicos adicionais sobre como gerenciar usuários com o Of
     
 - [Bloquear contas de usuários com o Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
     
-- [Atribuir licenças a contas de usuários usando o PowerShell do Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [Atribuir licenças a contas de usuários usando o Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
 - [Criar contas de usuários usando o Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
     
