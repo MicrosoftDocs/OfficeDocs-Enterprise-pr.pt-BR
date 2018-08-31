@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity e SharePoint Server 2007 alcançaram o fim do suporte. Leia este artigo para planejar uma atualização de solução de BI.
-ms.openlocfilehash: 98a02ba3945578171c97a616edd88fe0db1cc57f
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: d03da4d05240e0f80b21f7a709d97cf2e9d1fa32
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169783"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915096"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do PerformancePoint Server 2007
 
@@ -32,7 +32,7 @@ Aplicativos e servidores do office 2007 atingiu seu fim do suporte, incluindo se
 |SharePoint Server 2007 Service Pack 3  <br/> |10 de outubro de 2017  <br/> |
 |PerformancePoint Server 2007 Service Pack 3  <br/> |9 de janeiro de 2018  <br/> |
    
-Para obter mais informações sobre os servidores do Office 2007 está atingindo aposentadoria, consulte [Planejar uma atualização para servidores do Office 2007](https://support.office.com/article/4e5eab5f-05db-4627-9e17-421a6bf89606.aspx).
+Para obter mais informações, consulte [recursos para ajudar a atualizar do Office 2007 servidores e clientes](upgrade-from-office-2007-servers-and-products.md).
   
 ## <a name="what-does-end-of-support-mean"></a>Qual end faz da média de suporte?
 
@@ -73,10 +73,10 @@ Após ter explorado suas opções de atualização, sua próxima etapa é prepar
   
 |**Opção**|**Na nuvem ou no local?**|
 |:-----|:-----|
-|[Usar o Excel com o Excel Online](pps-2007-end-of-support.md#ExcelAndOnline) <br/> |Ambos  <br/> |
-|[Usar o Power BI](pps-2007-end-of-support.md#PowerBI) <br/> |Ambos  <br/> |
-|[Usar o Reporting Services](pps-2007-end-of-support.md#SSRS) <br/> |Locais somente  <br/> |
-|[Usar os Serviços PerformancePoint](pps-2007-end-of-support.md#PPS) <br/> |Locais somente  <br/> |
+|[Excel com o Excel Online](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |Ambos  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |Ambos  <br/> |
+|[Serviços de relatório](#use-reporting-services-on-premises) <br/> |Locais somente  <br/> |
+|[Serviços do PerformancePoint](#use-performancepoint-services-on-premises) <br/> |Locais somente  <br/> |
    
 ### <a name="use-excel-with-excel-online-in-the-cloud-or-on-premises"></a>Usar o Excel com o Excel Online (na nuvem ou no local)
 
@@ -84,15 +84,15 @@ Com o Excel Online — também conhecido como serviços do Excel no SharePoint S
   
 A tabela a seguir compara as principais vantagens de usar o Excel com o Office 365 para usar o Excel com o SharePoint Server, com informações adicionais abaixo.
   
-|**[Excel com o Office 365 (em nuvem)](pps-2007-end-of-support.md#ExcelO365)**|**[Excel com o SharePoint Server (no local)](pps-2007-end-of-support.md#ExcelSPS)**|
+|**[Excel com o Office 365 (em nuvem)](#excel-with-office-365-in-the-cloud)**|**[Excel com o SharePoint Server (no local)](#excel-with-sharepoint-server-on-premises)**|
 |:-----|:-----|
-|**Obter a versão mais recente, maior do Excel**. Com o Office 365, você deve obter a versão mais recente do Excel, que inclui poderosa, novos tipos de gráfico, a capacidade para criar gráficos e tabelas de modo rápido e fácil e suporte mais fontes de dados.<br/> <br/> A **instalação é muito mais simples**. Excel Online é incluído com o Office 365 para empresas, portanto, não há nenhum trabalho pesado sua parte. Inscreva-se e entrar, e você será atualizado e sendo executado mais rapidez e eficiência que atualizando seus servidores no local.<br/> <br/> **As pessoas em todos os lugares têm acesso às suas pastas de trabalho**. Pessoas com segurança podem exibir pastas de trabalho onde quer que estejam, usando seu computador, telefone inteligente e tablet.<br/> <br/> **Há mais** ! Consulte [os recursos de BI no Excel e o Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/> |**Você gerencia as configurações globais**. Como um administrador do SharePoint, você pode especificar as configurações globais, como segurança, balanceamento de carga, gerenciamento de sessão, cache de pasta de trabalho e conexões de dados externas.<br/> <br/> **Você pode usar os serviços do Excel com os Serviços PerformancePoint**. Você pode configurar os serviços do Excel e os Serviços PerformancePoint, como parte da sua instalação do SharePoint Server e incluir relatórios dos serviços do Excel em seus painéis do PerformancePoint.<br/> <br/> **Há mais** ! Consulte o [Business intelligence no Excel e Excel Services (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
+|**Obter a versão mais recente, maior do Excel**. Com o Office 365, você deve obter a versão mais recente do Excel, que inclui poderosa, novos tipos de gráfico, a capacidade para criar gráficos e tabelas de modo rápido e fácil e suporte mais fontes de dados.<br/> <br/> A **instalação é muito mais simples**. Excel Online é incluído com o Office 365 para empresas, portanto, não há nenhum trabalho pesado sua parte. Inscreva-se e entrar, e você será atualizado e sendo executado mais rapidez e eficiência que atualizando seus servidores no local.<br/> <br/> **As pessoas em todos os lugares têm acesso às suas pastas de trabalho**. Pessoas com segurança podem exibir pastas de trabalho onde quer que estejam, usando seu computador, telefone inteligente e tablet.<br/> <br/> **Há mais**! Consulte [os recursos de BI no Excel e o Office 365](https://support.office.com/article/26c0548e-124c-4fd3-aab3-5f64568cb743.aspx) <br/> |**Você gerencia as configurações globais**. Como um administrador do SharePoint, você pode especificar as configurações globais, como segurança, balanceamento de carga, gerenciamento de sessão, cache de pasta de trabalho e conexões de dados externas.<br/> <br/> **Você pode usar os serviços do Excel com os Serviços PerformancePoint**. Você pode configurar os serviços do Excel e os Serviços PerformancePoint, como parte da sua instalação do SharePoint Server e incluir relatórios dos serviços do Excel em seus painéis do PerformancePoint.<br/> <br/> **Há mais**! Consulte o [Business intelligence no Excel e Excel Services (SharePoint Server 2013)](https://support.office.com/article/2740f10c-579d-4b40-a1d9-7beb5d38547c.aspx) <br/> |
    
 #### <a name="excel-with-office-365-in-the-cloud"></a>Excel com o Office 365 (em nuvem)
 
 Se você mover para o Office 365, você terá que os serviços de informações mais atualizadas e aplicativos, incluindo 2016 do Excel e Excel Online. PerformancePoint Services não está disponível no Office 365, portanto você substituirá o conteúdo com pastas de trabalho do Excel ou outros relatórios de painel do PerformancePoint. A boa notícia é que 2016 Excel possui muitos dos novos tipos de gráfico e Criando painéis vale ressaltar no Excel é mais fácil do que nunca. E, então, novos recursos são adicionados regularmente. Para saber mais, consulte [What's New in 2016 do Excel para Windows](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx).
   
-E, quando você compra estações de 50 ou mais do Office 365, a equipe do Microsoft FastTrack pode ajudá-lo a configurar o. Para saber mais, consulte [Microsoft FastTrack](https://go.microsoft.com/fwlink/?linkid=780698).
+E, quando você compra estações de 50 ou mais do Office 365, a equipe do Microsoft FastTrack pode ajudá-lo a configurar o. Para saber mais, visite [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365).
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>Excel com o SharePoint Server (no local)
 

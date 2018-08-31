@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumo: Crie assinaturas de teste do Office 365 e Enterprise Mobility + Security (EMS) com usuários e grupos para um ambiente de desenvolvimento/teste de campanha política.'
-ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: c58782185d0638f7a6a9e14ee7e4516f1852908b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168505"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915686"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Defina grupos e usuários para um ambiente de desenvolvimento/teste de uma campanha política
 
@@ -185,11 +187,11 @@ Use estas etapas para verificar se a associação de grupo dinâmico e o licenci
 
 Grave esses valores para trabalhar com as assinaturas de avaliação do Office 365 e do EMS para o ambiente de desenvolvimento/de teste:
   
-- Nome da sua organização de assinatura de avaliação: ![](./images/Common_Images/TableLine.png) 
+- Nome da sua organização de assinatura de avaliação: ![](./media/Common-Images/TableLine.png) 
     
     Por exemplo, para o nome de domínio de assinatura de avaliação contoso.onmicrosoft.com, o nome da organização é "contoso".
     
-- O nome de administrador global do Office 365: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+- O nome de administrador global do Office 365: ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Grave a senha dessa conta e a senha inicial comum das outras contas de usuário em um local seguro.
     

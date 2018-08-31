@@ -1,5 +1,5 @@
 ---
-title: Proteger sites de equipe do SharePoint Online para os ativos altamente confidenciais
+title: Proteger os ativos altamente confidenciais dos sites de equipes no SharePoint Online
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "Resumo: Como Contoso implementou proteção confidencial e altamente confidenciais sites de equipe do SharePoint Online para mais fácil, ainda segura, colaboração para executivos e seus centros de pesquisa."
-ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Como Contoso implementou proteção confidencial e altamente confidenciais sites de equipe do SharePoint Online para mais fácil, ainda segura, colaboração para executivos e seus centros de pesquisa.'
+ms.openlocfilehash: 23511e4156bb04e8bacf970913b00ed36e8ff9c8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914856"
 ---
-# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Proteger sites de equipe do SharePoint Online para os ativos altamente confidenciais
+# <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Proteger os ativos altamente confidenciais dos sites de equipes no SharePoint Online
 
  **Resumo:** Como proteção confidencial da Contoso implementada e altamente confidenciais SharePoint Online sites de equipe para colaboração mais fácil, embora segura, para executivos e seus centros de pesquisa.
   
@@ -30,7 +33,7 @@ Os administradores de segurança e o SharePoint em Contoso do departamento de TI
   
 **Figura 1: Comparação de proteção confidencial e altamente confidenciais sites de equipe do SharePoint Online**
 
-![Proteção com alto nível de confidencialidade para sites de equipe do SharePoint Online](images/Contoso_Poster/SP_Solution.png)
+![Proteção com alto nível de confidencialidade para sites de equipe do SharePoint Online](media/Contoso-Poster/SP-Solution.png)
   
 A Contoso usou estas etapas para criar sites de equipe do SharePoint Online seguras para seus executivos e equipes de pesquisa:
   
@@ -56,13 +59,13 @@ Para obter mais informações, consulte [arquivos e sites seguro do SharePoint O
   
  Para definir isso para esse demonstração, prova de conceito ou desenvolvimento e teste, consulte [sites seguro do SharePoint Online em um ambiente de desenvolvimento e teste](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Cenários empresariais para a Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Alongar para o banco de dados](https://msdn.microsoft.com/library/dn935011.aspx)
   

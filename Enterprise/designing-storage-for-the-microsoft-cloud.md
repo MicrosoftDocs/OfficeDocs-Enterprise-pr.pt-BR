@@ -1,5 +1,5 @@
 ---
-title: Projetar o armazenamento para a nuvem da Microsoft
+title: Criação de armazenamento para a nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
-description: "Resumo: Entenda por que você precisa de armazenamento na nuvem e examine a lista de opções de armazenamento de nuvem da Microsoft e os cenários de armazenamento de chave."
-ms.openlocfilehash: ed816743e2d85a622a3fbfbb129bf90a7db93881
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda por que você precisa de armazenamento na nuvem e examine a lista de opções de armazenamento de nuvem da Microsoft e os cenários de armazenamento de chave.'
+ms.openlocfilehash: d96992d63115095dd6a1b7277886d0a4bb2bc02f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915226"
 ---
-# <a name="designing-storage-for-the-microsoft-cloud"></a>Projetar o armazenamento para a nuvem da Microsoft
+# <a name="designing-storage-for-the-microsoft-cloud"></a>Criação de armazenamento para a nuvem da Microsoft
 
  **Resumo:** Entender por que você precisa de armazenamento na nuvem e examine a lista de opções de armazenamento de nuvem da Microsoft e os cenários de armazenamento de chave.
   
@@ -52,7 +55,7 @@ Há dois motivos principais para usar o armazenamento em nuvem.
 
 Para ajudá-lo a entender a ampla variedade de opções de armazenamento de nuvem, usamos uma analogia de construção.
   
-### <a name="move-in-ready"></a>Move-in pronto
+### <a name="move-in-ready"></a>Pronto para mover
 
 Use essas soluções pré-empacotados que estão incluídas com serviços existentes. Use imediatamente e com a configuração mínima.
   
@@ -66,7 +69,7 @@ Use essas soluções pré-empacotados que estão incluídas com serviços existe
     
 - Visual Studio Team Services
     
-- Recuperação de sites do Windows Azure
+- Azure Site Recovery
     
 - Compartilhamento de sites do Yammer
     
@@ -74,7 +77,7 @@ Use essas soluções pré-empacotados que estão incluídas com serviços existe
     
 Para obter os detalhes de cada uma dessas opções de armazenamento em nuvem, consulte [Move-in pronto](move-in-ready.md).
   
-### <a name="some-assembly-required"></a>Alguns assembly necessário
+### <a name="some-assembly-required"></a>Algum assembly necessário
 
 Use esses serviços existentes como um ponto de partida para sua solução de armazenamento com uma configuração adicional ou codificação para um ajuste personalizado.
   
@@ -100,7 +103,7 @@ Use esses serviços existentes como um ponto de partida para sua solução de ar
     
 Para obter os detalhes de cada uma dessas opções de armazenamento de nuvem, consulte [alguns assembly necessários](some-assembly-required.md).
   
-### <a name="build-from-the-ground-up"></a>Criação de ponta a ponta para cima
+### <a name="build-from-the-ground-up"></a>Criar do zero
 
 Use esses blocos de construção de armazenamento, juntamente com a codificação, para criar sua própria solução de armazenamento ou aplicativos a partir do zero.
   
@@ -154,11 +157,11 @@ Aqui estão os principais cenários que exigem o armazenamento baseado em nuvem:
 
 Examine as opções de armazenamento [pronto Move na](move-in-ready.md) nuvem.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Armazenamento do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
+[Armazenamento do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

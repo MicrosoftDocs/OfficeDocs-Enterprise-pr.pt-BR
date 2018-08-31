@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumo: Criar uma intranet simplificada como um ambiente de desenvolvimento/teste no Microsoft Azure.'
-ms.openlocfilehash: 03e729e2211320cac1adc88258e59b18b3ff0719
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215843"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915276"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente de desenvolvimento/teste para a Configuração Base
 
@@ -30,7 +32,7 @@ Este artigo fornece instruções passo a passo para criar o seguinte ambiente de
   
 **Figura 1: Ambiente de desenvolvimento/teste da Configuração Base**
 
-![Fase 4 da Configuração Base no Azure com a máquina virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Fase 4 da Configuração Base no Azure com a máquina virtual CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 O ambiente de desenvolvimento/teste da Configuração Base na Figura 1 inclui a sub-rede Corpnet em uma rede virtual do Azure, somente na nuvem, chamada TestLab que simula uma intranet simplificada e privada conectada à Internet. Ele contém três máquinas virtuais do Azure em que o Windows Server 2016 é executado:
   
@@ -67,7 +69,7 @@ Se você ainda não tem a assinatura do Azure, inscreva-se para uma avaliação 
 > [!NOTE]
 > As máquinas virtuais no Azure implicam um custo monetário contínuo quando estão em execução. Esse custo é cobrado em relação à avaliação gratuita, assinatura do MSDN ou assinatura paga. Para saber mais sobre os custos de execução de máquinas virtuais do Azure, consulte os [detalhes de preços de máquinas virtuais](https://azure.microsoft.com/pricing/details/virtual-machines/) e a [calculadora de preços do Azure](https://azure.microsoft.com/pricing/calculator/). Para reduzir custos, consulte também mais informações sobre como [minimizar os custos de máquinas virtuais do ambiente de teste no Azure](base-configuration-dev-test-environment.md#mincost). 
   
-![Guias do Laboratório de Teste da Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Guias do Laboratório de Teste da Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
@@ -131,7 +133,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 Esta é sua configuração atual:
   
-![Fase 1 da Configuração Base no Azure com sub-rede e rede virtuais](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![Fase 1 da Configuração Base no Azure com sub-rede e rede virtuais](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
 ## <a name="phase-2-configure-dc1"></a>Fase 2: Configurar o DC1.
 
@@ -161,13 +163,13 @@ Será solicitado que você insira um nome de usuário e uma senha para a conta d
   
 Em seguida, conecte-se à máquina virtual DC1.
   
-### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Conectar-se ao DC1 usando as credenciais de conta de administrador local
+### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Conectar-se à DC1 usando as credenciais de conta de administrador local
 
 1. No [Portal do Azure](https://portal.azure.com), clique em **Grupos de recursos >** [nome do novo grupo de recursos] **> DC1 > Conectar**.
     
 2. No painel aberto, clique em **Baixar o arquivo RDP**. Abra o arquivo DC1.rdp que foi baixado e clique em **Conectar**.
     
-3. Especifique o nome da conta de administrador local no DC1:
+3. Especifique o nome da conta de administrador local na DC1:
     
   - No Windows 7:
     
@@ -197,9 +199,9 @@ Será preciso especificar uma senha de administrador no modo de segurança. Arma
   
 Esses comandos podem levar alguns minutos para serem concluídos.
   
-Após a reinicialização do DC1, reconecte-se à máquina virtual do DC1.
+Após a reinicialização da DC1, reconecte-se à máquina virtual DC1.
   
-### <a name="connect-to-dc1-using-domain-credentials"></a>Conectar-se ao DC1 usando credenciais de domínio
+### <a name="connect-to-dc1-using-domain-credentials"></a>Conectar-se à DC1 usando credenciais de domínio
 
 1. No [Portal do Azure](https://portal.azure.com), clique em **Grupos de recursos >** [nome do seu grupo de recursos] **> DC1 > Conectar**.
     
@@ -235,7 +237,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Esta é sua configuração atual:
   
-![Fase 2 da Configuração Base no Azure com a máquina virtual DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![Fase 2 da Configuração Base no Azure com a máquina virtual DC1](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
 ## <a name="phase-3-configure-app1"></a>Fase 3: Configurar o APP1.
 
@@ -289,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 Esta é sua configuração atual:
   
-![Fase 3 da Configuração Base no Azure com a máquina virtual do APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![Fase 3 da Configuração Base no Azure com a máquina virtual do APP1](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
 ## <a name="phase-4-configure-client1"></a>Fase 4: Configurar o CLIENT1.
 
@@ -332,7 +334,7 @@ Depois de reiniciar o CLIENT1, conecte-se a ele usando o nome e a senha da conta
   
 Após esse procedimento, verifique se que você pode acessar os recursos de compartilhamento de arquivo e da web no APP1 a partir do CLIENT1.
   
-### <a name="verify-client-access-to-app1"></a>Verificar o acesso do cliente ao APP1
+### <a name="verify-client-access-to-app1"></a>Verificar o acesso do cliente à APP1
 
 1. No Gerenciador do Servidor, na árvore do painel, clique em **Servidor Local**.
     
@@ -354,7 +356,7 @@ Após esse procedimento, verifique se que você pode acessar os recursos de comp
     
 Esta é sua configuração final:
   
-![Fase 4 da Configuração Base no Azure com a máquina virtual CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Fase 4 da Configuração Base no Azure com a máquina virtual CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 A Configuração Base no Azure agora está pronta para o desenvolvimento e os teste do aplicativo ou para criar ambientes de teste adicionais. 
   

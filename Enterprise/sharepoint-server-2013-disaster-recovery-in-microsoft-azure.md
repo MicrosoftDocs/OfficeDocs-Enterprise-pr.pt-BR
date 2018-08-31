@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumo: Usando o Windows Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como projetar e implementar esta solução.'
-ms.openlocfilehash: 553b2e6bb9d35ab3dba471b01938914a95af23d6
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: 56d9fa039bfe533afbc5ac7c1e060d43c0801aef
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161794"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915796"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure
 
@@ -30,7 +32,7 @@ ms.locfileid: "20161794"
   
 Use este artigo com o seguinte modelo de solução: **SharePoint Disaster Recovery in Microsoft Azure**.
   
-[![Processo de recuperação de desastre do SharePoint para o Azure](images/SP_DR_Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![Processo de recuperação de desastre do SharePoint para o Azure](media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -63,7 +65,6 @@ Neste artigo:
 - [Dicas de solução de problemas](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
     
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Usar os serviços de infraestrutura do Windows Azure para recuperação de desastres
-<a name="AZ"> </a>
 
 Muitas organizações não têm um ambiente de recuperação de desastres para o SharePoint, que pode ser caro construir e manter o local. Serviços do Azure infraestrutura oferece opções de atraentes para desastres ambientes de recuperação que são mais flexível e mais barata que as alternativas de local.
   
@@ -92,7 +93,6 @@ As diretrizes deste artigo descrevem como implementar um ambiente em espera pass
 Para obter mais informações sobre as soluções de recuperação de desastres, consulte [alta disponibilidade e conceitos de recuperação de desastres no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) e [Escolha uma estratégia de recuperação de desastres para o SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
   
 ## <a name="solution-description"></a>Descrição da solução
-<a name="SOL"> </a>
 
 A solução de recuperação de desastre em espera passiva requer o seguinte ambiente:
   
@@ -106,7 +106,7 @@ A figura a seguir ilustra esses três elementos.
   
 **Figura: Elementos de uma solução em espera passiva no Azure**
 
-![Elementos de uma solução de espera ativa do SharePoint no Azure](images/AZarch_AZWarmStndby.png)
+![Elementos de uma solução de espera ativa do SharePoint no Azure](media/AZarch-AZWarmStndby.png)
   
 Envio com distribuído arquivo sistema replicação (DFSR) de log do SQL Server é usado para copiar backups de banco de dados e logs de transação para o farm de recuperação no Windows Azure: 
   
@@ -157,7 +157,6 @@ Você pode trabalhar com os serviços de consultoria Microsoft (MCS) ou um parce
 As diretrizes fornecidas neste artigo pressupõe que o farm local já foi desenvolvido e implantado.
   
 ## <a name="detailed-architecture"></a>Arquitetura detalhada
-<a name="arch"> </a>
 
 Idealmente, a configuração do farm de recuperação no Windows Azure é idêntica de produção farm local, incluindo o seguinte:
   
@@ -181,7 +180,7 @@ A figura a seguir ilustra uma solução de recuperação de desastre de um farm 
   
 **Figura: Topologia e principais elementos de um farm de produção e um farm de recuperação de espera passiva**
 
-![Topologia de um farm do SharePoint e um farm de recuperação de espera passiva](images/AZarch_AZWarmStndby.png)
+![Topologia de um farm do SharePoint e um farm de recuperação de espera passiva](media/AZarch-AZWarmStndby.png)
   
 Neste diagrama:
   
@@ -211,7 +210,7 @@ A figura a seguir mostra um ambiente de failover do Windows Azure no qual a máq
   
 **Figura: Farm de recuperação de espera a frio com máquinas virtuais em execução**
 
-![Elementos de uma solução de espera inativa do SharePoint no Azure](images/AZarch_AZColdStndby.png)
+![Elementos de uma solução de espera inativa do SharePoint no Azure](media/AZarch-AZColdStndby.png)
   
 Após o failover para um ambiente em espera a frio, todas as máquinas virtuais são iniciadas e o método para alcançar a alta disponibilidade dos servidores de banco de dados deve ser configurado, como grupos de disponibilidade AlwaysOn do SQL Server.
   
@@ -238,9 +237,8 @@ Finalmente, é recomendável habilidades que você pode usar para automatizar as
 Além do Windows PowerShell, também há bibliotecas do Windows PowerShell para SQL Server, SharePoint Server e Windows Azure. Não se esqueça T-SQL, que também pode ajudar a reduzir o tempo para configurar e manter seu ambiente de recuperação de desastres.
   
 ## <a name="disaster-recovery-roadmap"></a>Mapa de recuperação de desastres
-<a name="RDmap"> </a>
 
-![Representação visual do mapa de recuperação de desastres do SharePoint.](images/Azure_DRroadmap.png)
+![Representação visual do mapa de recuperação de desastres do SharePoint.](media/Azure-DRroadmap.png)
   
 Este mapa pressupõe que você já tem um farm do SharePoint Server 2013 implantado na produção.
   
@@ -257,9 +255,8 @@ Este mapa pressupõe que você já tem um farm do SharePoint Server 2013 implant
 |Fase 7  <br/> | Valide soluções de failover e recuperação. Isso inclui os seguintes procedimentos e tecnologias: <br/>  Pare o envio de log. <br/>  Restaure os backups. <br/>  Rastrear o conteúdo. <br/>  Recupere serviços. <br/>  Gerencie registros DNS. <br/> |
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Fase 1: Criar o ambiente de recuperação de desastres
-<a name="Phase1"> </a>
 
-Use as diretrizes in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) para criar o ambiente de recuperação de desastre, incluindo o farm de recuperação do SharePoint. Você pode usar os elementos gráficos no arquivo do Visio de[Solução de recuperação de desastres do SharePoint no Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) para iniciar o processo de design. Recomendamos que você crie de todo o ambiente antes de iniciar qualquer trabalho no ambiente do Azure.
+Use as diretrizes in [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) para criar o ambiente de recuperação de desastre, incluindo o farm de recuperação do SharePoint. Você pode usar os elementos gráficos no arquivo do Visio de [Solução de recuperação de desastres do SharePoint no Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) para iniciar o processo de design. Recomendamos que você crie de todo o ambiente antes de iniciar qualquer trabalho no ambiente do Azure.
   
 Além das diretrizes fornecidas no [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) para projetar a rede virtual, conexão VPN, Active Directory e farm do SharePoint, certifique-se de adicionar uma função de compartilhamento de arquivo para o ambiente do Azure.
   
@@ -270,7 +267,7 @@ Para suportar o envio de log em uma solução de recuperação de desastre, uma 
   
 **Figura: O posicionamento de um servidor de arquivos usado para uma solução de recuperação de desastres**
 
-![Mostra uma VM de compartilhamento de arquivos adicionada ao mesmo serviço de nuvem que contém as funções de servidor de banco de dados do SharePoint.](images/AZenv_FSforDFSRandWSFC.png)
+![Mostra uma VM de compartilhamento de arquivos adicionada ao mesmo serviço de nuvem que contém as funções de servidor de banco de dados do SharePoint.](media/AZenv-FSforDFSRandWSFC.png)
   
 Neste diagrama, uma máquina de virtual de compartilhamento de arquivo é adicionada à mesma sub-rede no Azure que contém as funções de servidor de banco de dados. Não adicione a máquina virtual do compartilhamento de arquivo a uma disponibilidade definidas com outras funções de servidor, como as funções do SQL Server.
   
@@ -281,7 +278,6 @@ Ao criar o farm de recuperação, tenha em mente que um ambiente de recuperaçã
 Configure o farm de recuperação identicamente forem possíveis para o farm de produção para que ele atenda às suas necessidades de (SLA) contrato de nível de serviço e fornece a funcionalidade que você precisa oferecer suporte a sua empresa. Ao criar o ambiente de recuperação de desastres, também examine seu processo de gerenciamento de alterações para o seu ambiente de produção. Recomendamos que você estenda o processo de gerenciamento de alterações para o ambiente de recuperação, atualizando o ambiente de recuperação no mesmo intervalo como um ambiente de produção. Como parte do processo de gerenciamento de alteração, é recomendável manter um inventário detalhado de sua configuração de farm, aplicativos e usuários. 
   
 ## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>Fase 2: Criar a rede virtual do Azure e uma conexão VPN
-<a name="Phase2"> </a>
 
 [Conectar um local de rede para uma rede virtual do Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) mostra como planejar e implantar a rede virtual no Windows Azure e como criar a conexão VPN. Siga as orientações no tópico para concluir os procedimentos a seguir:
   
@@ -296,13 +292,12 @@ Configure o farm de recuperação identicamente forem possíveis para o farm de 
 - Configure o roteamento entre sua rede local e a rede Virtual.
     
 ## <a name="phase-3-deploy-active-directory-and-domain-name-services-to-the-azure-virtual-network"></a>Fase 3: Implantar o Active Directory e serviços de nome de domínio à rede virtual do Azure
-<a name="Phase3"> </a>
 
 Essa fase inclui Implantando o Windows Server Active Directory e DNS à rede Virtual em um cenário híbrido, conforme descrito em [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) e como ilustrado na figura a seguir.
   
 **Figura: Configuração de domínio do Active Directory de híbrido**
 
-![As duas máquinas virtuais implantadas na rede virtual do Azure e na sub-rede do Farm do SharePoint são réplicas de controladores de domínios e de servidores DNS](images/AZarch_HyADdomainConfig.png)
+![As duas máquinas virtuais implantadas na rede virtual do Azure e na sub-rede do Farm do SharePoint são réplicas de controladores de domínios e de servidores DNS](media/AZarch-HyADdomainConfig.png)
   
 Na ilustração, duas máquinas virtuais são implantadas para a mesma sub-rede. Essas máquinas virtuais são a cada duas funções hospedagem: Active Directory e DNS.
   
@@ -313,7 +308,6 @@ Para obter orientações detalhadas sobre como configurar um controlador de dom�
 Antes dessa fase, você não implantar máquinas virtuais para a rede Virtual. As máquinas virtuais para hospedar o Active Directory e DNS provavelmente não são as máquinas virtuais maiores, que você precisa para a solução. Antes de implantar essas máquinas virtuais, crie primeiro a máquina virtual maior que você planeja usar em sua rede Virtual. Isso ajuda a garantir que sua solução pousar em uma marca no Azure que permite que o maior tamanho que você precisa. Você não precisará configurar essa máquina virtual neste momento. Simplesmente criá-lo e defini-la à parte. Se você não fizer isso, você pode executar com uma limitação quando você tenta criar máquinas virtuais do maiores posteriormente, que era um problema no momento em que este artigo foi escrito. 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>Fase 4: Implantar o farm de recuperação do SharePoint no Windows Azure
-<a name="Phase4"> </a>
 
 Implante o farm do SharePoint em sua rede Virtual de acordo com seus planos de design. Pode ser útil analisar o [Planning for SharePoint 2013 nos serviços de infraestrutura do Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=400984) antes de implantar o SharePoint funções no Windows Azure.
   
@@ -336,7 +330,6 @@ Considere as seguintes práticas que constatamos criando nossa prova de ambiente
 - Não configure os itens no farm que será restaurado, como conjuntos de sites. 
     
 ## <a name="phase-5-set-up-dfsr-between-the-farms"></a>Fase 5: Configurar DFSR entre os farms
-<a name="Phase5"> </a>
 
 Para configurar a replicação de arquivo usando DFSR, use o snap-in de gerenciamento de DNS. No entanto, antes da instalação DFSR, faça logon no seu servidor de arquivos local e o servidor de arquivos Azure e ativar o serviço no Windows.
   
@@ -365,15 +358,13 @@ A tabela a seguir fornece links para artigos de referência DFSR e postagens de 
 |[A equipe de armazenamento da Microsoft - arquivo de gabinete de Blog](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |Blog sobre serviços de arquivo e recursos de armazenamento no Windows Server  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Fase 6: Configurar o envio de logs para o farm de recuperação
-<a name="Phase6"> </a>
 
-Envio de log é o componente crítico para configurar a recuperação de desastres nesse ambiente. Você pode usar o envio de log para enviar automaticamente os arquivos de log de transações para bancos de dados de uma instância de servidor de banco de dados primário para uma instância do servidor de banco de dados secundário. Para configurar o envio de log, consulte [Configure envio de logs no SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
+Envio de log é o componente crítico para configurar a recuperação de desastres nesse ambiente. Você pode usar o envio de log para enviar automaticamente os arquivos de log de transações para bancos de dados de uma instância de servidor de banco de dados primário para uma instância do servidor de banco de dados secundário. Para configurar o envio de log, consulte [Configure envio de logs no SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
   
 > [!IMPORTANT]
 > Suporte de envio de logs no SharePoint Server está limitado a determinados bancos de dados. Para obter mais informações, consulte [Supported alta disponibilidade e opções de recuperação de desastres para bancos de dados do SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>Fase 7: Validar o failover e recuperação
-<a name="Phase7"> </a>
 
 O objetivo dessa fase final é verificar se a solução de recuperação de desastres funciona conforme o planejado. Para fazer isso, crie um evento de failover que desliga o farm de produção e inicia o backup do farm de recuperação como uma substituição. Você pode iniciar uma situação de failover manualmente ou usando scripts.
   
@@ -449,7 +440,6 @@ Para iniciar um rastreamento completo, conclua as seguintes etapas:
 2. Na página **Administração da pesquisa** , clique em **Fontes de conteúdo**, aponte para a fonte de conteúdo que deseja, clique na seta e, em seguida, clique em **Iniciar rastreamento completo**.
     
 ### <a name="recover-farm-services"></a>Recuperar serviços de farm
-<a name="Reco"> </a>
 
 A tabela a seguir mostra como recuperar serviços que tiverem enviados com logs bancos de dados, os serviços que tem bancos de dados, mas não são recomendados para restaurar com envio de log e os serviços que não possuem bancos de dados.
   
@@ -460,7 +450,7 @@ A tabela a seguir mostra como recuperar serviços que tiverem enviados com logs 
 
 |**Restaurar esses serviços de bancos de dados enviados com logs**|**Esses serviços tem bancos de dados, mas é recomendável que você iniciar esses serviços sem restaurar seus bancos de dados**|**Esses serviços não armazene dados nos bancos de dados; iniciar esses serviços após o failover**|
 |:-----|:-----|:-----|
-| Serviço de Tradução Automática <br/>  Serviço de Metadados Gerenciados <br/>  Serviço de Repositório Seguro <br/>  Perfil de usuário. (Somente, os bancos de dados de perfil e marcação Social são suportados. O banco de dados de sincronização não é suportado). <br/>  Serviço de Configurações de Assinatura do Microsoft SharePoint Foundation <br/> | Coleta de Dados de Uso e Integridade <br/>  Serviço de Controle de Sessão <br/>  Automação do Word <br/> | Serviços do Excel <br/>  Serviços do PerformancePoint <br/>  Conversão do PowerPoint <br/>  Serviço de Gráficos do Visio <br/>  Gerenciamento de Trabalho <br/> |
+| Serviço de Tradução Automática <br/>  Serviço de Metadados Gerenciados <br/>  Serviço de Repositório Seguro <br/>  Perfil de usuário. (Somente, os bancos de dados de perfil e marcação Social são suportados. O banco de dados de sincronização não é suportado). <br/>  Serviço de Configurações de Assinatura do Microsoft SharePoint Foundation <br/> | Coleta de Dados de Uso e Integridade <br/>  Serviço de Controle de Sessão <br/>  Automação do Word <br/> | Serviços do Excel <br/>  Serviços PerformancePoint <br/>  Conversão do PowerPoint <br/>  Serviço de Gráficos do Visio <br/>  Gerenciamento de Trabalho <br/> |
    
 O exemplo a seguir mostra como restaurar o serviço de metadados gerenciados de um banco de dados.
   
@@ -479,7 +469,6 @@ Em seguida, configure o novo aplicativo de serviço de metadados gerenciados no 
 - Pool de aplicativos: aplicativos de serviço do SharePoint 
     
 ### <a name="manage-dns-records"></a>Gerenciar registros DNS
-<a name="DNS"> </a>
 
 Você deve criar manualmente registros DNS para apontar para seu farm do SharePoint.
   
@@ -487,7 +476,7 @@ Na maioria dos casos em que você tiver vários servidores web front-end, faz se
   
 Normalmente, quando você configura o balanceamento de carga de rede, o cluster é atribuído a um único endereço IP. Em seguida, crie um registro de host DNS no provedor de DNS para a sua rede que aponta para o cluster. (Para esse projeto, podemos colocar um servidor DNS no Windows Azure para resiliência em caso de uma falha de datacenter local.) Por exemplo, você pode criar um registro de DNS, em Gerenciador de DNS no Active Directory, por exemplo, chamado `http://sharepoint.contoso.com`, que aponta para o endereço IP do cluster com balanceamento de carga.
   
-Para obter acesso externo ao seu farm do SharePoint, você pode criar um registro de host em um servidor DNS externo com a mesma URL que os clientes usam na sua intranet (por exemplo, http://sharepoint.contoso.com) que aponta para um endereço IP externo em seu firewall. (É uma prática recomendada, usando neste exemplo configurar o DNS dividido para que o servidor DNS interno é autoritativo para contoso.com e rotas solicitações diretamente ao cluster de farm do SharePoint, em vez de solicitações de roteamento DNS para seu servidor DNS externo.) Em seguida, você pode mapear o endereço IP externo para o endereço IP interno do cluster local para que os clientes encontram os recursos que estão procurando.
+Para obter acesso externo ao seu farm do SharePoint, você pode criar um registro de host em um servidor DNS externo com a mesma URL que os clientes usam na sua intranet (por exemplo, `http://sharepoint.contoso.com`) que aponta para um endereço IP externo em seu firewall. (Uma prática recomendada, usando esse exemplo, é configurar o DNS dividido para que o servidor DNS interno é autoritativo para `contoso.com` e encaminha solicitações diretamente ao cluster de farm do SharePoint, em vez de solicitações de roteamento DNS para seu servidor DNS externo.) Em seguida, você pode mapear o endereço IP externo para o endereço IP interno do cluster local para que os clientes encontram os recursos que estão procurando.
   
 A partir daqui, você pode executar em alguns cenários de recuperação de desastres diferentes:
   
@@ -495,10 +484,9 @@ A partir daqui, você pode executar em alguns cenários de recuperação de desa
   
  **Cenário de exemplo: O datacenter local é completamente perdido.** Esse cenário pode ocorrer devido a um desastre natural, como um incêndio ou inundação. Nesse caso, para uma empresa, você provavelmente teria um datacenter secundário hospedado em outra região, bem como sua sub-rede Azure que tem seus próprios serviços de diretório e o DNS. Como no cenário anterior de desastre, você pode redirecionar seus registros DNS internos e externos para apontar para o farm do SharePoint do Azure. Novamente, tenha em mente que a propagação de registro de DNS pode levar algum tempo.
   
-Se você estiver usando conjuntos de sites nomeados por host, conforme recomendado na [arquitetura do conjunto de sites nomeados por Host e implantação (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393120), você pode ter vários conjuntos de sites hospedados pelo mesmo aplicativo web em seu farm do SharePoint, com exclusivo Nomes DNS (por exemplo, http://sales.contoso.com e http://marketing.contoso.com). Nesse caso, você pode criar registros DNS para cada conjunto de sites que apontam para seu endereço IP do cluster. Depois que uma solicitação chega seus servidores web front-end do SharePoint, eles lidar com o roteamento de cada solicitação para o conjunto de sites apropriado.
+Se você estiver usando conjuntos de sites nomeados por host, conforme recomendado na [arquitetura do conjunto de sites nomeados por Host e implantação (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), você pode ter vários conjuntos de sites hospedados pelo mesmo aplicativo web em seu farm do SharePoint, com exclusivo Nomes DNS (por exemplo, `http://sales.contoso.com` e `http://marketing.contoso.com`). Nesse caso, você pode criar registros DNS para cada conjunto de sites que apontam para seu endereço IP do cluster. Depois que uma solicitação chega seus servidores web front-end do SharePoint, eles lidar com o roteamento de cada solicitação para o conjunto de sites apropriado.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Ambiente de prova de conceito da Microsoft
-<a name="POC"> </a>
 
 Podemos projetado e testado um ambiente de prova de conceito para essa solução. O objetivo do design para nosso ambiente de teste foi implantar e recuperar um farm do SharePoint que podem ser encontradas no ambiente do cliente. Que fizemos suposições várias, mas sabíamos que o farm necessários para fornecer toda a funcionalidade de caixa sem quaisquer personalizações. A topologia foi projetada para alta disponibilidade usando as diretrizes de práticas recomendadas do grupo de campo e o produto.
   
@@ -576,7 +564,7 @@ Podemos criado o farm e Unido servidores adicionais na seguinte ordem:
     
 - Provisione SP-WFE1 e SP-WFE2 para hospedar o cache distribuído. 
     
-Nós usamos o parâmetro _skipRegisterAsDistributedCachehost_ quando executamos **psconfig.exe** na linha de comando. Para obter mais informações, consulte[plano para feeds e serviço de Cache distribuído no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkid=270985). 
+Nós usamos o parâmetro _skipRegisterAsDistributedCachehost_ quando executamos **psconfig.exe** na linha de comando. Para obter mais informações, consulte [plano para feeds e serviço de Cache distribuído no SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 Podemos repetido as seguintes etapas no ambiente de recuperação:
   
@@ -631,7 +619,6 @@ Nossos testes de failover envolvidos seguintes bancos de dados:
 - Hub de tipo de conteúdo (um banco de dados para um Hub de agregação de tipo de conteúdo dedicado)
     
 ## <a name="troubleshooting-tips"></a>Dicas de solução de problemas
-<a name="Troubleshooting"> </a>
 
 A seção explica os problemas encontrados durante a nossos testes e suas soluções. 
   
@@ -667,7 +654,7 @@ Isso acontece porque a preferência de backup padrão para um grupo de disponibi
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Falha ao iniciar automaticamente após a instalação o serviço de metadados gerenciados (ou outro serviço do SharePoint)
 
-Serviços podem levar alguns minutos para ser iniciados, dependendo do desempenho e a carga atual do seu servidor do SharePoint. Clique em **Iniciar** para o serviço e forneça tempo adequado para inicialização ao atualizar ocasionalmente, os serviços na tela de servidor para monitorar seu status manualmente. Caso o serviço permanecerá parado, habilitar o log de diagnóstico do SharePoint, tentar iniciar o serviço novamente e verifique o log de erros. Para obter mais informações, consulte[Configure diagnostic logging in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=510884)
+Serviços podem levar alguns minutos para ser iniciados, dependendo do desempenho e a carga atual do seu servidor do SharePoint. Clique em **Iniciar** para o serviço e forneça tempo adequado para inicialização ao atualizar ocasionalmente, os serviços na tela de servidor para monitorar seu status manualmente. Caso o serviço permanecerá parado, habilitar o log de diagnóstico do SharePoint, tentar iniciar o serviço novamente e verifique o log de erros. Para obter mais informações, consulte [Configure diagnostic logging in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Após alterar o DNS para o ambiente de failover do Windows Azure, navegadores de cliente continuam a usar o endereço IP antigo para o site do SharePoint
 
@@ -678,17 +665,14 @@ Ipconfig /flushdns
 ```
 
 ## <a name="additional-resources"></a>Recursos adicionais
-<a name="Troubleshooting"> </a>
 
-[Suporte para as opções de alta disponibilidade e recuperação de desastres para bancos de dados do SharePoint (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)
+[Suporte para as opções de alta disponibilidade e recuperação de desastres para bancos de dados do SharePoint](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
 [Configurar grupos de disponibilidade AlwaysOn do SQL Server 2012 no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
 ## <a name="see-also"></a>Confira também
 
-<a name="Troubleshooting"> </a>
-
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 

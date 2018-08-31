@@ -1,5 +1,5 @@
 ---
-title: Microsoft Azure arquiteturas do SharePoint 2013
+title: Arquiteturas do Microsoft Azure para o SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,22 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "Resumo: Soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um."
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um.'
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915376"
 ---
-# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure arquiteturas do SharePoint 2013
+# <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquiteturas do Microsoft Azure para o SharePoint 2013
 
  **Resumo:** Soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um.
   
 Windows Azure é um bom ambiente para hospedar uma solução do SharePoint Server 2013. Na maioria dos casos, é recomendável que o Office 365, mas um farm do SharePoint Server hospedado no Windows Azure pode ser uma boa opção para soluções específicas. Este artigo descreve como projetar soluções de modo que eles fiquem uma boa cabem na plataforma Windows Azure do SharePoint. As duas soluções específicas a seguintes são usadas como exemplos:
   
-- [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+- [Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [Sites da Internet no Microsoft Azure usando o SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
     
 ## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Soluções recomendadas do SharePoint para serviços de infraestrutura do Windows Azure
 
@@ -55,7 +56,7 @@ Embora este artigo usa as topologias do SharePoint de exemplo, você pode usar e
   
 - [Design de arquitetura para profissionais de TI do SharePoint 2013](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
-- [Planejar para desempenho e capacidade de gerenciamento no SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Planejar o gerenciamento de desempenho e capacidade no SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Determinar o tipo de domínio do Active Directory
 
@@ -76,7 +77,7 @@ Se você estiver estendendo sua rede local no Azure por meio de uma conexão ent
   
 **Figura 1: Ambiente de local com uma rede virtual no Windows Azure**
 
-![Design de uma rede virtual do Microsoft Azure para uma solução do SharePoint. Uma sub-rede para o gateway Azure. Uma sub-rede para as máquinas virtuais.](images/OPrrasconWA_AZarch.png)
+![Design de uma rede virtual do Microsoft Azure para uma solução do SharePoint. Uma sub-rede para o gateway Azure. Uma sub-rede para as máquinas virtuais.](media/OPrrasconWA-AZarch.png)
   
 Neste diagrama:
   
@@ -92,7 +93,7 @@ Quando você planeja uma conexão entre locais, você pode definir e cria um gat
   
 **Figura 2: Usando um gateway Azure e um dispositivo de gateway local para fornecer conectividade to-site entre o ambiente local e o Windows Azure**
 
-![Ambiente local conectado a uma rede virtual do Azure por uma conexão entre locais, que pode ser uma conexão VPN site a site ou um ExpressRoute](images/AZarch_VPNgtwyconnct.png)
+![Ambiente local conectado a uma rede virtual do Azure por uma conexão entre locais, que pode ser uma conexão VPN site a site ou um ExpressRoute](media/AZarch-VPNgtwyconnct.png)
   
 Neste diagrama:
   
@@ -110,7 +111,7 @@ Recuperação de desastres no Azure, você implanta o Windows Server AD e DNS em
   
 **Figura 3: Configuração do domínio do Active Directory de híbrido**
 
-![As duas máquinas virtuais implantadas na rede virtual do Azure e na sub-rede do Farm do SharePoint são réplicas de controladores de domínios e de servidores DNS](images/AZarch_HyADdomainConfig.png)
+![As duas máquinas virtuais implantadas na rede virtual do Azure e na sub-rede do Farm do SharePoint são réplicas de controladores de domínios e de servidores DNS](media/AZarch-HyADdomainConfig.png)
   
 Este diagrama se baseia nos diagramas anteriores, adicionando duas máquinas virtuais para um servidor AD do Windows e a sub-rede do DNS. Essas máquinas virtuais são os servidores DNS e controladores de domínio de réplica. Eles são uma extensão do ambiente do Windows Server AD local. 
   
@@ -119,7 +120,7 @@ A tabela a seguir fornece recomendações de configuração para essas máquinas
 |**Item**|**Configuração**|
 |:-----|:-----|
 |Tamanho da máquina virtual no Windows Azure  <br/> |Tamanho a1 ou A2 na camada Standard  <br/> |
-|Sistema operacional  <br/> |Windows Server 2012 R2  <br/> |
+|Sistema operacional  <br/> |Windows Server 2012 R2  <br/> |
 |Função do Active Directory  <br/> |Controlador de domínio de DS AD designado como um servidor de catálogo global. Essa configuração reduz o tráfego de saída entre a conexão entre locais.  <br/> Em um ambiente de vários domínios com altas taxas de alteração (isso não é comum), configure os controladores de domínio no local não para sincronizar com os servidores de catálogo global no Windows Azure, para reduzir o tráfego de replicação.  <br/> |
 |Função DNS  <br/> |Instalar e configurar o serviço de servidor DNS nos controladores de domínio.  <br/> |
 |Discos de dados  <br/> |Coloque o banco de dados do Active Directory, logs e SYSVOL em discos do Azure de dados adicionais. Não coloque essas do disco de sistema operacional ou os discos temporários fornecidos pelo Windows Azure.  <br/> |
@@ -134,7 +135,7 @@ Coloca as máquinas virtuais do farm do SharePoint em níveis em que as sub-rede
   
 **Figura 4: Posicionamento de máquinas virtuais do SharePoint**
 
-![Os servidores de banco de dados e as funções de servidor do SharePoint adicionados à rede virtual do Azure na sub-rede do Farm do SharePoint](images/AZarch_SPVMsinCloudSer.png)
+![Os servidores de banco de dados e as funções de servidor do SharePoint adicionados à rede virtual do Azure na sub-rede do Farm do SharePoint](media/AZarch-SPVMsinCloudSer.png)
   
 Este diagrama se baseia nos diagramas anteriores, adicionando as funções de servidor de farm do SharePoint em seus respectivas camadas.
   
@@ -150,7 +151,7 @@ Ao criar a arquitetura do Windows Azure para um farm do SharePoint, configure fu
   
 **Figura 5: Usar conjuntos de disponibilidade do Azure para fornecer alta disponibilidade para as camadas de farm do SharePoint**
 
-![Configuração de conjuntos de disponibilidade na infraestrutura do Azure para uma solução do SharePoint 2013](images/AZenv_WinAzureAvailSetsHA.png)
+![Configuração de conjuntos de disponibilidade na infraestrutura do Azure para uma solução do SharePoint 2013](media/AZenv-WinAzureAvailSetsHA.png)
   
 Este diagrama chama a configuração dos conjuntos de disponibilidade na infraestrutura do Windows Azure. Cada uma das seguintes funções compartilham um conjunto de disponibilidade separados:
   
@@ -170,7 +171,7 @@ Aqui está um exemplo que mostra uma arquitetura de Sites da Internet padrão qu
   
 **Figura 6: Exemplo de planejamento para metas de desempenho e capacidade em um farm de três camadas**
 
-![Arquitetura de Sites da Internet padrão do SharePoint 2013 com as alocações de componentes que atendem aos objetivos específicos de capacidade e de desempenho](images/AZarch_CapPerfexmpArch.png)
+![Arquitetura de Sites da Internet padrão do SharePoint 2013 com as alocações de componentes que atendem aos objetivos específicos de capacidade e de desempenho](media/AZarch-CapPerfexmpArch.png)
   
 Neste diagrama:
   
@@ -186,7 +187,7 @@ Vamos analisar mais detalhadamente a camada do servidor de aplicativo.
   
 **Figura 7: Camada do servidor de aplicativos antes de ajuste fino**
 
-![Camada de servidor de aplicativos do SharePoint Server 2013 de exemplo antes do ajuste para os conjuntos de disponibilidade do Microsoft Azure](images/AZarch_AppServtierBefore.png)
+![Camada de servidor de aplicativos do SharePoint Server 2013 de exemplo antes do ajuste para os conjuntos de disponibilidade do Microsoft Azure](media/AZarch-AppServtierBefore.png)
   
 Neste diagrama:
   
@@ -202,7 +203,7 @@ Você pode determinar o número de componentes pelas metas de desempenho e capac
   
 **Figura 8: Camada do servidor de aplicativo depois de ajuste fino**
 
-![Camada de servidor de aplicativos do SharePoint Server 2013 de exemplo após o ajuste para os conjuntos de disponibilidade do Microsoft Azure](images/AZarch_AppServtierAfter.png)
+![Camada de servidor de aplicativos do SharePoint Server 2013 de exemplo após o ajuste para os conjuntos de disponibilidade do Microsoft Azure](media/AZarch-AppServtierAfter.png)
   
 Este diagrama mostra todos os servidores de aplicativos três configurados de forma idêntica com os mesmos quatro componentes.
   
@@ -210,24 +211,24 @@ Quando adicionamos conjuntos de disponibilidade para as camadas do farm do Share
   
 **Figura 9: Concluído farm do SharePoint nos serviços de infraestrutura do Windows Azure**
 
-![Farm do SharePoint 2013 de exemplo nos serviços de infraestrutura do Azure com rede virtual, conectividade entre locais, sub-redes, VMs e conjuntos de disponibilidade](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Farm do SharePoint 2013 de exemplo nos serviços de infraestrutura do Azure com rede virtual, conectividade entre locais, sub-redes, VMs e conjuntos de disponibilidade](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 Este diagrama mostra o farm do SharePoint implementado no serviços de infraestrutura do Windows Azure, com conjuntos de disponibilidade para fornecer os domínios com falha para os servidores em cada camada.
   
 **Participe da discussão**
 
-|**Entre em contato conosco**|**Descrição**|
+|**Fale conosco**|**Descrição**|
 |:-----|:-----|
-|**Qual conteúdo de adoção de nuvem faça você precisa?** <br/> |Estamos criando conteúdo para a adoção de nuvem que abrange várias plataformas de nuvem da Microsoft e serviços. Fale conosco pensar em nosso conteúdo de adoção de nuvem ou pedir enviando e-mails para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20)conteúdo específico.<br/> |
-|**Participe da discussão de adoção de nuvem** <br/> |Se você estiver entusiasmados pela sobre soluções baseadas em nuvem, considere ingressando a nuvem adoção consultoria placa (CAAB) para se conectar com uma comunidade amplos, vibrante de desenvolvedores de conteúdo Microsoft, profissionais do setor e clientes de todo o mundo. Para ingressar, adicione si mesmo como um membro do [espaço CAAB (placa de consultoria da adoção nuvem)](https://aka.ms/caab) da Microsoft Tech comunidade e envie-em um email rápido em[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros CAAB obtém convites para seminários na Web privados que descrevem os novos recursos de adoção de nuvem e soluções.<br/> |
-|**Obtenha a arte que aparece aqui** <br/> |Se você quiser uma cópia editável da arte que você vê neste artigo, voltaremos felizes em enviá-lo. Envie sua solicitação, incluindo a URL e o título da arte, como [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
+|**De qual conteúdo sobre adoção da nuvem você precisa?** <br/> |Estamos criando conteúdo para adoção da nuvem que engloba diversas plataformas e serviços de nuvem da Microsoft. Para solicitar um conteúdo específico ou dar opiniões sobre nosso conteúdo de adoção da nuvem, envie um email para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20).<br/> |
+|**Participe do debate sobre a adoção da nuvem** <br/> |Se você estiver entusiasmados pela sobre soluções baseadas em nuvem, considere ingressando a nuvem adoção consultoria placa (CAAB) para se conectar com uma comunidade amplos, vibrante de desenvolvedores de conteúdo Microsoft, profissionais do setor e clientes de todo o mundo. Para ingressar, adicione si mesmo como um membro do [espaço CAAB (placa de consultoria da adoção nuvem)](https://aka.ms/caab) da Microsoft Tech comunidade e envie-em um email rápido em[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Qualquer pessoa pode ler o conteúdo relacionado à comunidade no [blog CAAB](https://blogs.technet.com/b/solutions_advisory_board/). No entanto, os membros CAAB obtém convites para seminários na Web privados que descrevem os novos recursos de adoção de nuvem e soluções.<br/> |
+|**Obtenha a arte que você vê aqui** <br/> |Se você quiser uma cópia editável da arte vista neste artigo, teremos o maior prazer em enviá-la. Envie sua solicitação por email, incluindo a URL e o título da arte, para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).<br/> |
    
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
-[Sites da Internet no Microsoft Azure using SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+[Sites da Internet no Microsoft Azure usando o SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
-[SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+[Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 
 

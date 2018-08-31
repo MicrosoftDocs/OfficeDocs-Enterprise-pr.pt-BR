@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Saiba como configurar o OneDrive for Business com a funcionalidade multigeográfica.
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549962"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915246"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuração de locatário multigeográfico do Onedrive for Business
 
@@ -112,7 +112,7 @@ Há dois tipos de objetos de usuário no AAD: usuários somente de nuvem e usuá
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizar o local de dados preferencial do usuário usando o AD Connect 
 
-Se os usuários da empresa são sincronizados com um sistema do AD (Active Directory) no local ao AAD (Azure Active Directory), PreferredDataLocation deve ser populado no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: fazer uma alteração na configuração padrão](https://docs.microsoft.com/pt-BR/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) para configurar a sincronização de local preferencial de dados do AD local para o AAD.
+Se os usuários da empresa são sincronizados com um sistema do AD (Active Directory) no local ao AAD (Azure Active Directory), PreferredDataLocation deve ser populado no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: fazer uma alteração na configuração padrão](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) para configurar a sincronização de local preferencial de dados do AD local para o AAD.
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
@@ -129,7 +129,7 @@ Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Direc
 
 2.  Execute o `Connect-MsolService` e insira as credenciais de administrador global do locatário.
 
-3.  Use o cmdlet [Set-MsolUser](https://docs.microsoft.com/pt-BR/powershell/msonline/v1/set-msoluser) para definir o local preferencial de dados para cada um dos usuários. Por exemplo:
+3.  Use o cmdlet [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) para definir o local preferencial de dados para cada um dos usuários. Por exemplo:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Direc
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 

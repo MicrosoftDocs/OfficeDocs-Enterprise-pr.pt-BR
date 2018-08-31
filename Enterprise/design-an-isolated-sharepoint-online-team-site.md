@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Resumo: Etapa durante o processo de design para sites de equipe do SharePoint Online isolados.'
-ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 4807b7cef0a401901eb5abec3d683ca67b2193db
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914836"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Projetar um site de equipe do SharePoint Online isolado
 
@@ -41,14 +44,14 @@ O conjunto de permissões específicas que determina o que um membro de um grupo
 |**Grupo do SharePoint**|**Nível de permissão**|
 |:-----|:-----|
 |\<nome do site > membros  <br/> |Editar  <br/> |
-|\<nome do site > visitantes  <br/> |Leitura  <br/> |
+|\<nome do site > visitantes  <br/> |Ler  <br/> |
 |\<nome do site > proprietários  <br/> |Controle total  <br/> |
    
  **Práticas recomendadas:** Você pode criar grupos adicionais do SharePoint e níveis de permissão. No entanto, é recomendável usar os grupos padrão do SharePoint e níveis de permissão para o seu site do SharePoint Online isolado.
   
 Aqui estão os níveis de permissão e grupos padrão do SharePoint.
   
-![Os grupos do SharePoint e níveis de permissão padrão de um site do SharePoint Online.](images/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Os grupos do SharePoint e níveis de permissão padrão de um site do SharePoint Online.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fase 2: Atribuir permissões aos usuários com grupos de acesso
 
@@ -81,14 +84,14 @@ Para sites de equipe do SharePoint Online isolados, a estrutura do grupo recomen
 |**Grupo do SharePoint**|**Grupo Azure de acesso baseada em AD**|**Nível de permissão**|
 |:-----|:-----|:-----|
 |\<nome do site > membros  <br/> |\<nome do site > membros  <br/> |Editar  <br/> |
-|\<nome do site > visitantes  <br/> |\<nome do site > visualizadores  <br/> |Leitura  <br/> |
+|\<nome do site > visitantes  <br/> |\<nome do site > visualizadores  <br/> |Ler  <br/> |
 |\<nome do site > proprietários  <br/> |\<nome do site > Admins  <br/> |Controle total  <br/> |
    
  **Práticas recomendadas:** Embora você possa usar o Office 365 ou Azure AD grupos como membros de grupos do SharePoint, é recomendável que você use grupos do Azure AD. Grupos do AD Azure, gerenciados através do Windows Server AD ou Office 365, proporcionam mais flexibilidade para usar grupos aninhados para atribuir permissões.
   
 Aqui está configurados para usar grupos do Azure acesso baseado em AD de grupos do SharePoint padrão.
   
-![Usando os grupos de acesso como membros de grupos de sites do SharePoint Online padrão.](images/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Usando os grupos de acesso como membros de grupos de sites do SharePoint Online padrão.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Quando estiver criando os grupos de três do access, lembre-se do seguinte:
   
@@ -98,7 +101,7 @@ Quando estiver criando os grupos de três do access, lembre-se do seguinte:
     
 Aqui está um exemplo dos grupos do SharePoint e grupos de acesso para um site isolado chamado ProjectX.
   
-![Um exemplo de como usar os grupos de acesso em um site do SharePoint Online chamado ProjectX.](images/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Um exemplo de como usar os grupos de acesso em um site do SharePoint Online chamado ProjectX.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: Usar aninhadas grupos do Azure AD.
 
@@ -121,7 +124,7 @@ Para usar grupos de Azure AD aninhados:
   
 Aqui está um exemplo do Azure AD aninhado grupos para o grupo de acesso do membro ProjectX.
   
-![Um exemplo de como usar grupos de acesso aninhados para o grupo de acesso de membros do site do ProjectX.](images/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Um exemplo de como usar grupos de acesso aninhados para o grupo de acesso de membros do site do ProjectX.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Como todas as contas de usuário na Research, engenharia e Project leads equipes destinam-se a ser membros do site, é mais fácil adicionar seus grupos do Azure AD ao grupo acesso ProjectX membros.
   
@@ -129,9 +132,9 @@ Como todas as contas de usuário na Research, engenharia e Project leads equipes
 
 Quando você estiver pronto para criar e configurar um site isolado em produção, consulte [Deploy um site de equipe do SharePoint Online isolado](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Isolado sites de equipe do SharePoint Online](isolated-sharepoint-online-team-sites.md)
+[Sites de equipe do SharePoint Online isolados](isolated-sharepoint-online-team-sites.md)
   
 [Gerenciar um site de equipe do SharePoint Online isolado](manage-an-isolated-sharepoint-online-team-site.md)
   

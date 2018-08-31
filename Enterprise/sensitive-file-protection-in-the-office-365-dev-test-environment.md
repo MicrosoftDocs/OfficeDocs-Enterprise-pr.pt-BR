@@ -1,5 +1,5 @@
 ---
-title: "Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365"
+title: Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: "Resumo: Configurar e demonstrar como o Office 365 Information Rights Management protege arquivos confidenciais, mesmo quando eles são lançados ao conjunto de sites do SharePoint Online errado."
-ms.openlocfilehash: 236272a90bb6ff7f310c95f1494b68750e363f40
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Configurar e demonstrar como o Office 365 Information Rights Management protege arquivos confidenciais, mesmo quando eles são lançados ao conjunto de sites do SharePoint Online errado.'
+ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915696"
 ---
-# <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento e teste Office 365
+# <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configurar e demonstrar como o Office 365 Information Rights Management protege arquivos confidenciais, mesmo quando eles são lançados ao conjunto de sites do SharePoint Online errado.
   
@@ -29,7 +32,7 @@ Gerenciamento de direitos de informação (IRM) no Office 365 é um conjunto de 
 Com as instruções deste artigo, você pode habilitar e testar o IRM no Office 365 para arquivos que contenham informações confidenciais possíveis em sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Criar o seu ambiente de desenvolvimento e teste do Office 365
 
@@ -50,7 +53,7 @@ Use as instruções em [conectar-se ao Office 365 PowerShell](https://technet.mi
   
 - Seu computador (para o ambiente leve de desenvolvimento/teste do Office 365).
     
-- A máquina virtual CLIENT1 (para o ambiente de desenvolvimento e teste de enterprise simulado Office 365).
+- A máquina virtual CLIENT1 (para o ambiente de desenvolvimento/teste corporativo simulado do Office 365).
     
 Na caixa de diálogo **Solicitação de credencial do Windows PowerShell** , digite o nome de administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e a senha da sua assinatura de avaliação do Office 365.
   
@@ -89,7 +92,7 @@ Na exibição do comando **New-MsolUser** , observe a gerado senha da conta de C
   
 Em seguida, você pode cria um grupo de executivos privado e adicione as novas contas de executivas a ela.
   
-1. No seu navegador, vá para o portal do Office em [http://portal.office.com](http://portal.office.com) e entrar em sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+1. No seu navegador, vá para o portal do Office em [http://portal.office.com](http://portal.office.com) e se conectar à sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
   - Se você estiver usando o ambiente de desenvolvimento e teste do Office 365 lightweight, abra uma sessão particular do Internet Explorer ou seu navegador e acesse do computador local.
     
@@ -137,7 +140,7 @@ Em seguida, você pode cria um conjunto de sites de executivos e permitir que ap
     
 8. Na lista de grupos do SharePoint, clique em **Membros de executivos**.
     
-9. Na página **pessoas e grupos** , clique em **novo**.
+9. Na página **Pessoas e Grupos**, clique em **Novo**.
     
 10. Em **compartilhamento 'Executivos'**, digite **executivos**, clique no grupo **executivos** e, em seguida, clique em **compartilhar**.
     
@@ -153,7 +156,7 @@ Em seguida, você permitir que todos acessar o conjunto de sites de vendas.
     
 4. Na lista de grupos do SharePoint, clique em **membros do conjunto de sites de vendas**.
     
-5. Na página **pessoas e grupos** , clique em **novo**.
+5. Na página **Pessoas e Grupos**, clique em **Novo**.
     
 6. Em **compartilhamento 'Conjunto de sites de vendas'**, digite **todos**, clique em **todos exceto os usuários externos**e, em seguida, clique em **compartilhar**.
     
@@ -241,7 +244,7 @@ Primeiro, você pode habilitar e configurar o IRM para a biblioteca de documento
   
 1. Em uma nova guia do navegador, digite a URL para o conjunto de sites de executivos.
     
-2. Clique em **documentos**.
+2. Clique em **Documentos**.
     
 3. No canto superior direito, clique no ícone configurações e clique em **definições da biblioteca**.
     
@@ -293,7 +296,7 @@ Em seguida, atuando como CEO, você carregar um novo documento na pasta de docum
     
 13. Em uma nova guia do navegador, digite a URL para o conjunto de sites de vendas.
     
-14. Clique em **documentos**.
+14. Clique em **Documentos**.
     
 15. Na página de **documentos** , clique em **carregar**, especifique o documento **SensitiveData-AfterIRM.docx** em sua pasta local e clique em **Abrir**.
     
@@ -309,7 +312,7 @@ Em seguida, atuando como um usuário normal, você tenta acessar o documento **S
     
 4. Em uma nova guia do navegador, digite a URL para o conjunto de sites de vendas.
     
-5. Clique em **documentos**.
+5. Clique em **Documentos**.
     
 6. Na página de **documentos** , abra o documento de **SensitiveData-AfterIRM.docx** .
     
@@ -327,14 +330,14 @@ Em seguida, atuando como um usuário normal, você tenta acessar o documento **S
     
 Outra maneira para ver a proteção de IRM é examinar os arquivos em sua pasta local. O **SensitiveData-AfterIRM.docx** deve ser muito maior do que o arquivo **SensitiveData-BeforeIRM.docx** . O arquivo **SensitiveData-AfterIRM.docx** é criptografado e as informações de proteção de IRM adicionou a ele.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 

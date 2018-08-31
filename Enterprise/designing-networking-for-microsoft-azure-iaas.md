@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Resumo: Entenda como projetar rede otimizada para cargas de trabalho no Microsoft Azure IaaS.'
-ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915116"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Projetando a rede para o Microsoft Azure IaaS
 
@@ -42,7 +45,7 @@ Um VNet somente em nuvem não tem nenhuma conexão a uma rede local. Aqui está 
   
 **Figura 1: Um somente em nuvem VNet**
 
-![Figura 1: Uma rede virtual somente na nuvem no Azure](images/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
+![Figura 1: Uma rede virtual somente na nuvem no Azure](media/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
   
 A Figura 1 mostra um conjunto de máquinas virtuais em um VNet somente em nuvem.
   
@@ -50,7 +53,7 @@ Uma locais cruzados VNet tem uma site a site (S2S) conexão VPN ou ExpressRoute 
   
 **Figura 2: Uma VNet entre locais**
 
-![Figura 2: Uma rede virtual entre locais no Azure](images/caacf007-e0dc-45d3-9531-441109776d25.png)
+![Figura 2: Uma rede virtual entre locais no Azure](media/caacf007-e0dc-45d3-9531-441109776d25.png)
   
 Figura 2 mostra um conjunto de máquinas virtuais em um VNet entre locais, que é conectado a uma rede local.
   
@@ -60,7 +63,7 @@ Consulte o adicionais seção [etapas de planejamento para uma VNet locais cruza
 
 A tabela 1 mostra os espaços de endereço para os diferentes tipos de VNets.
   
-|**Tipo de VNet**|**Espaço de endereço de rede virtual**|
+|**Tipo de VNet**|**Espaço de endereço da rede virtual**|
 |:-----|:-----|
 |Apenas Nuvem  <br/> |Espaço de endereço privado arbitrário  <br/> |
 |Interconectados somente em nuvem  <br/> |Privado arbitrário, mas não sobrepostas com os outros conectados VNets  <br/> |
@@ -85,9 +88,9 @@ Máquinas virtuais pode também ser atribuídas um endereço IP público, indivi
 
 Existem dois tipos de sub-redes em uma VNet, uma sub-rede de gateway e uma sub-rede de hospedagem de máquinas virtuais.
   
-**Figura 3: Os dois tipos de sub-redes no Windows Azure**
+**Figura 3: Os dois tipos de sub-redes no Azure**
 
-![Figura 3: Os dois tipos de sub-redes no Azure](images/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
+![Figura 3: Os dois tipos de sub-redes no Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
 A Figura 3 mostra uma VNet contendo uma sub-rede de gateway que contenha um gateway Azure e um conjunto de sub-redes de hospedagem de máquinas virtuais contendo as máquinas virtuais.
   
@@ -116,7 +119,7 @@ Para obter mais informações, consulte o [Calculadora de espaço de endereço p
   
 Hospedagem de máquinas virtuais sub-redes são onde você colocar máquinas virtuais do Azure, que pode ser feito de acordo com as diretrizes de local típico, uma função comuns ou a camada de um aplicativo ou para o isolamento de sub-rede.
   
-Azure usa os 3 primeiros endereços em cada sub-rede. Portanto, o número de endereços possíveis em uma sub-rede Azure é 2<sup>n</sup> -5, onde n é o número de bits de host. Mostra a tabela 3 hospeda o intervalo de máquinas virtuais necessárias, o número de bits necessários e o tamanho de sub-rede correspondente.
+Azure usa os 3 primeiros endereços em cada sub-rede. Portanto, o número de endereços possíveis em uma sub-rede Azure é 2<sup>n</sup> - 5, onde n é o número de bits de host. Mostra a tabela 3 hospeda o intervalo de máquinas virtuais necessárias, o número de bits necessários e o tamanho de sub-rede correspondente.
   
 |**Máquinas virtuais necessárias**|**Bits de host**|**Tamanho de sub-rede**|
 |:-----|:-----|:-----|
@@ -157,17 +160,17 @@ Em alguns casos, você deseja distribuir o tráfego de entrada para um conjunto 
   
 Azure voltado à Internet balanceamento aleatoriamente distribui o tráfego de entrada não solicitado da Internet para os membros de um conjunto com balanceamento de carga.
   
-**Figura 4: Um balanceador de carga externo no Windows Azure**
+**Figure 4: Um balanceador de carga externo no Azure**
 
-![Figure 4: Um balanceador de carga externo no Azure](images/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
+![Figure 4: Um balanceador de carga externo no Azure](media/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
   
 Figura 4 mostra um balanceador de carga externo no Azure que distribui o tráfego de entrada em uma regra de entrada NAT ou ponto de extremidade para um conjunto de máquinas virtuais em um conjunto com balanceamento de carga.
   
 Aleatoriamente de balanceamento de carga de interna Azure distribui o tráfego de entrada não solicitado a partir de outras VMs Azure ou computadores da intranet para os membros de um conjunto com balanceamento de carga. 
   
-**Figura 5: Um balanceador de carga interno no Windows Azure**
+**Figura 5: Um balanceador de carga interno no Azure**
 
-![Figura 5: Um balanceador de carga interno no Azure](images/d1451b73-6465-449d-b3e6-22160ce51f35.png)
+![Figura 5: Um balanceador de carga interno no Azure](media/d1451b73-6465-449d-b3e6-22160ce51f35.png)
   
 Figura 5 mostra um balanceador de carga interno no Azure que distribui o tráfego de entrada em uma regra de entrada NAT ou ponto de extremidade para um conjunto de máquinas virtuais em um conjunto com balanceamento de carga.
   
@@ -177,9 +180,9 @@ Para obter mais informações, consulte o [Balanceador de carga do Windows Azure
 
 Se você precisar encaminhar o tráfego de aparelhos virtuais na sua VNet, você pode precisar adicionar uma ou mais rotas definidas pelo usuário a uma sub-rede.
   
-**Figura 6: Dispositivos virtuais e rotas definidas pelo usuário no Windows Azure**
+**Figura 6: Dispositivos virtuais e rotas definidas pelo usuário no Azure**
 
-![Figura 6: Dispositivos virtuais e rotas definidas pelo usuário no Azure](images/f181d0f4-ebf9-439e-9c98-dec17428c32b.png)
+![Figura 6: Dispositivos virtuais e rotas definidas pelo usuário no Azure](media/f181d0f4-ebf9-439e-9c98-dec17428c32b.png)
   
 Figura 6 mostra uma VNet entre locais e uma rota definida pelo usuário atribuído a uma sub-rede de hospedagem de máquina virtual que aponta para um dispositivo virtual.
   
@@ -200,9 +203,9 @@ Tabela 5 lista os métodos de filtragem ou inspecionando o tráfego de entrada n
    
  **Tabela 5: Métodos para máquinas virtuais e seus modelos de implantação Azure correspondentes conectar**
   
-**Figura 7: Conectar-se a máquinas virtuais do Azure pela Internet**
+**Figura 7: Conexão com as máquinas virtuais do Azure pela Internet**
 
-![Figura 7: Conexão com as máquinas virtuais do Azure pela Internet](images/c5e3531b-170a-4482-a6ff-fb8fbbe81b35.png)
+![Figura 7: Conexão com as máquinas virtuais do Azure pela Internet](media/c5e3531b-170a-4482-a6ff-fb8fbbe81b35.png)
   
 Figura 7 mostra um computador conectado à Internet, conectando-se a uma máquina virtual em um serviço de nuvem usando um ponto de extremidade, uma máquina virtual em uma sub-rede usando um grupo de segurança de rede e uma máquina virtual em uma sub-rede usando um balanceador de carga externo e as regras de entrada NAT.
   
@@ -226,7 +229,7 @@ Uma configuração de corrente margarida conecta-se a VNets em uma série.
   
 **Figura 8: Uma conectados configuração para VNets**
 
-![Figura 8: Uma configuração encadeada para redes virtuais do Azure](images/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
+![Figura 8: Uma configuração encadeada para redes virtuais do Azure](media/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
   
 Figura 8 mostra cinco VNets conectados na série usando uma configuração conectados.
   
@@ -234,7 +237,7 @@ Uma configuração de hub e spoke conecta vários VNets para um conjunto de VNet
   
 **Figura 9: Uma configuração hub e spoke para VNets**
 
-![Figura 9: Uma configuração do tipo spoke and hub para redes virtuais do Azure](images/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
+![Figura 9: Uma configuração do tipo spoke and hub para redes virtuais do Azure](media/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
   
 Figura 9 mostra seis VNets, que dois VNets são hubs que estão conectados a umas às outras e também dois outro spoke VNets.
   
@@ -242,7 +245,7 @@ Uma configuração de malha completa se conecta a cada VNet uns aos outros.
   
 **Figura 10: Configuração para VNets de malha completa**
 
-![Figura 10: Uma configuração em malha para redes virtuais do Azure](images/9dda0738-10db-4a63-95b3-79851a399b71.png)
+![Figura 10: Uma configuração em malha para redes virtuais do Azure](media/9dda0738-10db-4a63-95b3-79851a399b71.png)
   
 Figura 10 mostra quatro VNets que estão conectados entre si, usando um total de conexões de seis VNet para VNet.
   
@@ -275,7 +278,7 @@ Para obter mais informações sobre VNet correspondência, consulte [VNet corres
   
 **Figura 11: As quatro maneiras para se conectar a um VNet entre locais**
 
-![Figura 11: As três maneiras de se conectar a uma rede virtual do Azure entre locais](images/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
+![Figura 11: As três maneiras de se conectar a uma rede virtual do Azure entre locais](media/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
   
 A Figura 11 mostra um VNet com os quatro tipos de conexões: uma conexão P2S de um computador, uma conexão VPN S2S de uma rede local, uma conexão ExpressRoute de uma rede local e uma conexão de VNet para VNet a partir de outra VNet. 
   
@@ -305,9 +308,9 @@ Seu dispositivo VPN no local ou roteador atua como:
     
 - O ponto BPG e rescisão apontam para a conexão privada de ExpressRoute de correspondência.
     
-**Figura 12: O roteador VPN local ou dispositivo**
+**Figura 12: O roteador ou dispositivo VPN local**
 
-![Figura 12: O roteador ou dispositivo VPN local](images/bd221468-a660-4730-aa55-0426986480b9.png)
+![Figura 12: O roteador ou dispositivo VPN local](media/bd221468-a660-4730-aa55-0426986480b9.png)
   
 Figura 12 mostra que um VNet locais cruzados conectado a um roteador VPN local ou dispositivo.
   
@@ -323,7 +326,7 @@ O roteamento para VNets no local consiste das seguintes opções:
     
 **Figura 13: As rotas de local necessário para fazer um VNet pode ser acessado**
 
-![Figura 13: As rotas locais necessárias para tornar um Azure VNet acessível](images/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
+![Figura 13: As rotas locais necessárias para tornar um Azure VNet acessível](media/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
   
 Figura 13 mostra as informações de roteamento exigidas pelos roteadores no local e o roteador VPN ou dispositivo que representa o espaço de endereço do VNet.
   
@@ -339,7 +342,7 @@ Você pode criar uma conexão ExpressRoute com correspondência privada entre su
     
 **Figura 14: Usando ExpressRoute para se conectar a um VNet entre locais**
 
-![Figura 14: Usando ExpressRoute para se conectar a uma rede virtual do Azure entre locais](images/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
+![Figura 14: Usando ExpressRoute para se conectar a uma rede virtual do Azure entre locais](media/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
   
 Figura 14 mostra uma VNet entre locais e uma conexão de ExpressRoute de um roteador no local para o Microsoft Azure.
   
@@ -351,7 +354,7 @@ Para o roteamento para outros VNets ou local de um VNet, o Azure encaminha o tr�
   
 **Figura 15: O espaço de endereço de rede Local para uma VNet entre locais**
 
-![Figura 15: O espaço de endereço de rede local para uma rede virtual Azure rede virtual](images/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
+![Figura 15: O espaço de endereço de rede local para uma rede virtual Azure rede virtual](media/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
   
 Figura 15 mostra uma VNet entre locais e o espaço de endereço de rede Local no gateway do Azure, que representa o espaço de endereçamento pode ser acessado na rede local. 
   
@@ -365,7 +368,7 @@ Porque o Azure gateway não permite rotas resumidas, você deve definir o espaç
   
 **Figura 16: O endereço espaço orifício criado pelo espaço de endereçamento VNet**
 
-![Figura 16: A abertura de espaço de endereço criada pelo espaço de endereço de rede virtual](images/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
+![Figura 16: A abertura de espaço de endereço criada pelo espaço de endereço de rede virtual](media/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
   
 Figura 16 mostra uma representação de um espaço de endereçamento, com o espaço de raiz e o espaço de endereçamento VNet.
   
@@ -393,7 +396,7 @@ Para garantir que os computadores no local podem resolver os nomes dos servidore
     
 **Figura 17: Replicação de DNS e o encaminhamento para um servidor DNS em uma VNet locais cruzados**
 
-![Figura 17: A replicação de DNS e o encaminhamento para um servidor DNS em uma rede virtual do Azure entre locais](images/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
+![Figura 17: A replicação de DNS e o encaminhamento para um servidor DNS em uma rede virtual do Azure entre locais](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
   
 Figura 17 mostra uma VNet entre locais com os servidores DNS na rede local e em uma sub-rede em que o VNet. Encaminhamento e replicação de DNS foi configurado entre os dois servidores DNS.
   
@@ -403,7 +406,7 @@ A rota de sistema padrão para sub-redes Azure aponta para a Internet. Para gara
   
 **Figura 18: Rotas definidas pelo usuário e encapsulamento forçado para um VNet entre locais**
 
-![Figura 18: Rotas definidas pelo usuário e túnel forçado para uma rede virtual do Azure entre locais](images/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
+![Figura 18: Rotas definidas pelo usuário e túnel forçado para uma rede virtual do Azure entre locais](media/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
   
 Figura 18 mostra uma VNet entre locais com uma rota definida pelo usuário para uma sub-rede apontando para o gateway do Azure.
   
@@ -414,7 +417,7 @@ Um exemplo de uma carga de trabalho de TI hospedado no Windows Azure IaaS intran
   
 **Figura 19: Um farm de SharePoint Server 2016 de intranet altamente disponível no Azure IaaS**
 
-![Farm de alta disponibilidade do SharePoint Server 2016 no Azure IaaS](images/3a922e21-df91-455f-ba90-78abdd48d98d.png)
+![Farm de alta disponibilidade do SharePoint Server 2016 no Azure IaaS](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
 Figura 19 mostra os nove servidores de um farm do SharePoint Server 2016 implantado em um VNet entre locais que usa balanceadores de carga interno para as camadas de front-end e de dados. Para obter mais informações, incluindo design passo a passo e instruções de implantação, consulte [2016 do SharePoint Server in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx).
   
@@ -427,9 +430,9 @@ Para obter exemplos adicionais de cargas de trabalho do IT implantados nas máqu
 
 <a name="cross_prem"> </a>
 
-[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

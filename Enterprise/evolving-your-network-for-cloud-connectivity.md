@@ -1,5 +1,5 @@
 ---
-title: "Evolução da sua rede para conectividade de nuvem"
+title: Expandindo sua rede para conectividade de nuvem
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
-description: "Resumo: Entenda como a adoção de nuvem requer uma nova abordagem sobre investimentos em infraestrutura de rede."
-ms.openlocfilehash: 1fe3b2cbacb0fff31de1c368fa36650adc7d570c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda como a adoção de nuvem requer uma nova abordagem sobre investimentos em infraestrutura de rede.'
+ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915136"
 ---
-# <a name="evolving-your-network-for-cloud-connectivity"></a>Evolução da sua rede para conectividade de nuvem
+# <a name="evolving-your-network-for-cloud-connectivity"></a>Expandindo sua rede para conectividade de nuvem
 
  **Resumo:** Compreenda como a adoção de nuvem requer uma nova abordagem sobre investimentos em infraestrutura de rede.
   
@@ -87,9 +90,9 @@ O escopo de investimentos de rede dependem da categoria do serviço na nuvem. In
 
 ## <a name="see-also"></a>Confira também
 
-[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Gerenciar grupos de sites do SharePoint Online com o Office 365 PowerShell
+title: Manage SharePoint Online site groups with Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,13 +14,14 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Usar o PowerShell do Office 365 para gerenciar grupos de sites do SharePoint Online.'
-ms.openlocfilehash: 881e67b7eb2d8bb5e04f83e28569aa54341d16b9
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: a9fddf33b2f29e7b4e8ed6b86c2433c7ca19a9fc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915346"
 ---
-# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Gerenciar grupos de sites do SharePoint Online com o Office 365 PowerShell
+# <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
  **Resumo:** Use o Office 365 PowerShell para gerenciar grupos de sites do SharePoint Online.
   
@@ -32,12 +33,12 @@ Os procedimentos neste artigo exigem que você se conectar ao SharePoint Online.
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Modo de exibição SharePoint Online com o Office 365 PowerShell
 
-Centro de administração do SharePoint Online tem alguns métodos fácil de usar para gerenciar grupos de sites. Por exemplo, suponha que você deseja examinar os grupos e os membros do grupo, para o https\://litwareinc.sharepoint.com/sites/finance site. Aqui está o que você deve fazer para:
+Centro de administração do SharePoint Online tem alguns métodos fácil de usar para gerenciar grupos de sites. Por exemplo, suponha que você deseja examinar os grupos e os membros do grupo, o `https://litwareinc.sharepoint.com/sites/finance` site. Aqui está o que você deve fazer para:
 
 1. No Centro de administração do Office 365, clique em **recursos** > **Sites**e, em seguida, clique na URL do site.
 2. Na caixa de diálogo do conjunto de sites, clique em **Ir para este site**.
 3. Na página do site, clique no ícone **configurações** (localizado no canto superior direito da página) e clique em **configurações do Site**:</br>
-![Configurações de site do SharePoint Online](images/spo-site-settings.png)</br>
+![Configurações de site do SharePoint Online](media/spo-site-settings.png)</br>
 4. Na página Configurações do Site, clique em **permissões de Sites** em **usuários e permissões**.
 
 E, em seguida, repita o processo para o próximo site que você deseja examinar.
@@ -66,9 +67,9 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 Em ambos os casos, você verá algo semelhante a esta:
 
-![Grupos de sites do SharePoint Online](images/SPO-site-groups.png)
+![Grupos de sites do SharePoint Online](media/SPO-site-groups.png)
 
-Esses são todos os grupos que foram criados para o site https\:/ / litwareinc.sharepoint.com/sites/finance, bem como todos os usuários atribuídos a esses grupos. Os nomes de grupo são em amarelo para ajudá-lo nomes de grupo separado de seus membros.
+Esses são todos os grupos que foram criados para o site `https://litwareinc.sharepoint.com/sites/finance`, assim como todos os usuários atribuídos a esses grupos. Os nomes de grupo são em amarelo para ajudá-lo nomes de grupo separado de seus membros.
 
 Como outro exemplo, aqui está um conjunto de comandos que lista os grupos e todas as associações de grupo, para todos os sites do SharePoint Online.
 
@@ -90,7 +91,7 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>Confira também
 
-[Conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Conectar ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Criar sites do SharePoint Online e adicionar usuários com o Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 

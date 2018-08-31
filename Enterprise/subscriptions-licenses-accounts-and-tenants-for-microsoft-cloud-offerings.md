@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: ebddd97afb2c45821cd25eae5e8124459720df0b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319212"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915196"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -62,7 +64,7 @@ As organizações podem ter várias assinaturas para ofertas de nuvem da Microso
   
 **Figura 1: Exemplo de várias assinaturas de uma organização**
 
-![Um exemplo de organização com várias assinaturas para ofertas de nuvem da Microsoft.](images/Subscriptions/Subscriptions_Fig1.png)
+![Um exemplo de organização com várias assinaturas para ofertas de nuvem da Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
 A Figura 1 mostra uma única organização com várias assinaturas do Office 365, uma assinatura do Intune, outra assinatura do Dynamics 365 e várias assinaturas do Azure.
@@ -73,7 +75,7 @@ Para ofertas da nuvem de SaaS da Microsoft, uma licença permite que uma determi
   
 **Figura 2: Licenças em assinaturas SaaS para uma organização**
 
-![Um exemplo de várias licenças em assinaturas para ofertas em nuvem baseadas em SaaS da Microsoft.](images/Subscriptions/Subscriptions_Fig2.png)
+![Um exemplo de várias licenças em assinaturas para ofertas em nuvem baseadas em SaaS da Microsoft.](media/Subscriptions/Subscriptions-Fig2.png)
   
 Para serviços de nuvem baseados em PaaS do Azure, as licenças de software são integradas ao preço do serviço.
   
@@ -89,7 +91,7 @@ A Figura 3 mostra um exemplo de várias assinaturas de uma organização usando 
   
 **Figura 3: Várias assinaturas de uma organização que usam o mesmo locatário do Azure AD**
 
-![Um exemplo de organização com várias assinaturas, todas usando o mesmo locatário do Microsoft Azure AD.](images/Subscriptions/Subscriptions_Fig3.png)
+![Um exemplo de organização com várias assinaturas, todas usando o mesmo locatário do Microsoft Azure AD.](media/Subscriptions/Subscriptions-Fig3.png)
   
 ### <a name="tenants"></a>Locatários
 
@@ -131,7 +133,7 @@ Várias assinaturas de oferta de nuvem da Microsoft podem usar o mesmo locatári
   
 **Figura 4: IDaaS e contas locais sincronizadas para uma organização**
 
-![IDaaS ou Identidade como um serviço (IaaS) para a sua organização.](images/Subscriptions/Subscriptions_Fig4.png)
+![IDaaS ou Identidade como um serviço (IaaS) para a sua organização.](media/Subscriptions/Subscriptions-Fig4.png)
   
 A Figura 4 mostra como um locatário comum do Azure AD é usado por ofertas em nuvem da Microsoft para SaaS, aplicativos PaaS do Azure e máquinas virtuais no IaaS do Azure que usam o Azure AD Domain Services. O Azure AD Connect sincroniza da floresta do AD do Windows Server local com o locatário do Azure AD.
   

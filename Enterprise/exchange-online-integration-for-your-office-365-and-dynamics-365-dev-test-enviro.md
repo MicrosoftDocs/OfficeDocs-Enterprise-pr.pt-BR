@@ -1,5 +1,5 @@
 ---
-title: "Integração do Exchange Online para seu ambiente de desenvolvimento e teste do Office 365 e Dynamics 365"
+title: Integração com o Exchange Online para seu ambiente de desenvolvimento/teste do Office 365 e do Dynamics 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: "Resumo: Use este guia de laboratório de teste para habilitar a integração de Dynamics 365 para Exchange Online em sua assinatura de avaliação do Office 365."
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Use este guia de laboratório de teste para habilitar a integração de Dynamics 365 para Exchange Online em sua assinatura de avaliação do Office 365.'
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915496"
 ---
-# <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integração do Exchange Online para seu ambiente de desenvolvimento e teste do Office 365 e Dynamics 365
+# <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integração com o Exchange Online para seu ambiente de desenvolvimento/teste do Office 365 e do Dynamics 365
 
  **Resumo:** Use este guia de laboratório de teste para habilitar a integração de Dynamics 365 para Exchange Online em sua assinatura de avaliação do Office 365.
   
@@ -45,7 +48,7 @@ Use estas etapas para configurar a caixa de correio do administrador global para
     
 3. Na guia **email** nova no seu navegador, clique em **novo** e observe como o canto inferior do painel abaixo da caixa para digitar uma mensagem contém um ícone para Meus modelos.
     
-     ![Nova mensagem de email em branco sem a integração com o Dynamics 365.](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Nova mensagem de email em branco sem a integração com o Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Clique em **Descartar** e deixe a guia **email** aberto.
     
@@ -87,30 +90,30 @@ Use estas etapas para instalar o aplicativo do Dynamics 365 para o Outlook e dem
     
 6. Na guia **email** nova no seu navegador, clique em **novo**. Observe que o canto inferior do painel abaixo da caixa para digitar uma mensagem agora contém um ícone para Dynamics 365.
     
-     ![Nova mensagem de email em branco com a integração com o Dynamics 365, mostrando o novo ícone.](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Nova mensagem de email em branco com a integração com o Dynamics 365, mostrando o novo ícone.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Clique no ícone do Dynamics 365. Você verá um painel **Dynamics 365** , do qual você pode controlar esse modelos de email ou de acesso, especificações ou artigos.
     
 8. No campo **para** da mensagem de email, digite **alex.y.wu@outlook.com**e, em seguida, clique em **Repetir** no painel **Dynamics 365** . Você deverá ver uma seção de **destinatários** no painel **Dynamics 365** com informações sobre Alex Wu, um contato do aplicativo de venda que foi fornecido com os dados de amostra para sua assinatura de avaliação.
     
-     ![Painel de informações do Dynamics 365 de um contato de vendas armazenado nesse serviço.](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Painel de informações do Dynamics 365 de um contato de vendas armazenado nesse serviço.](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Clique em **Descartar**.
 
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para acessar um mapa visual de todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Office 365 e o ambiente de desenvolvimento e teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+[Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync para o ambiente de desenvolvimento/ teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
 [Gerenciamento de assinatura do Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
   

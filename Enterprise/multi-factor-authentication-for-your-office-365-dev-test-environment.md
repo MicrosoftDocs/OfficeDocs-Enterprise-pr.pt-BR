@@ -1,26 +1,29 @@
 ---
-title: "A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365"
+title: Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/22/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
-description: "Resumo: Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento e teste do Office 365."
-ms.openlocfilehash: 23c5aa4e205937899cac813b3b39780c989a1073
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Resumo: Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento e teste do Office 365.'
+ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915656"
 ---
-# <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>A autenticação multifator para seu ambiente de desenvolvimento e teste do Office 365
+# <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento e teste do Office 365.
   
@@ -30,12 +33,13 @@ Este artigo descreve como habilitar e testar a autenticação baseada em mensage
   
 Há duas fases para configurar a autenticação multifator para o Office 365 em um ambiente de desenvolvimento e teste:
   
-1. Crie o ambiente de desenvolvimento e teste do Office 365.
+1. Criação do ambiente de desenvolvimento/teste do Office 365.
+
     
 2. Habilitar e testar a autenticação multifator para a conta de usuário 2.
     
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa visual para todos os artigos na pilha de um Microsoft Cloud Test Lab Guide.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -50,7 +54,7 @@ Se você deseja testar a autenticação multifator em uma empresa simulada, siga
 
 Habilite a autenticação multifator para a conta de usuário 2 com estas etapas:
   
-1. Abra uma instância separada do navegador, vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e então entrar com sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+1. Abra uma instância separada do navegador, vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e, em seguida, acesse sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
 2. Na página principal do portal, clique em **Admin**.
     
@@ -58,7 +62,7 @@ Habilite a autenticação multifator para a conta de usuário 2 com estas etapas
     
 4. No painel de usuários ativos, clique em **mais > instalação Azure multi-factor auth**.
     
-5. Na lista, clique na conta de **usuário 2** .
+5. Na lista, selecione a conta de **usuário 2** .
     
 6. Na seção **2 do usuário** , em **etapas rápidas**, clique em **Habilitar**.
     
@@ -84,31 +88,27 @@ Conclua a configuração da conta do usuário 2 a usar uma mensagem de texto par
     
   - Digite o número de telefone do telefone inteligente que receberá mensagens de texto.
     
-  - Selecione **Enviar-me um código de mensagem de texto**.
+  - **método**, clique em **Enviar-me um código de mensagem de texto**.
     
-5. Clique em **contato me**.
+5. Clique em **Avançar**.
     
 6. Insira o código de verificação da mensagem de texto recebida no seu telefone inteligente e clique em **Verificar**.
     
 7. Sobre o **etapa 3: mantenha seus aplicativos existentes** página, registre a senha do aplicativo exibido para a conta de usuário 2 em um local seguro e clique em **concluído**.
     
-8. Volta na página de entrada, digite a senha para a conta de usuário 2 e clique em **entrar**.
+8. Se essa for a primeira vez você entrou com a conta de usuário 2, você será solicitado alterar a senha. Digite a senha original e uma nova senha duas vezes e, em seguida, clique em **Atualizar senha e entrar**. Registre a nova senha em um local seguro.
     
-9. Insira o código de verificação da mensagem de texto recebida no seu telefone inteligente e, em seguida, clique em **entrar**.
+    Você deverá ver o portal do Office 365 para o usuário 2 na guia **Página inicial do Microsoft Office** do seu navegador.
     
-10. Se essa for a primeira vez você entrou com a conta de usuário 2, você será solicitado alterar a senha. Digite a senha original e uma nova senha duas vezes e, em seguida, clique em **Atualizar senha e entrar**. Registre a nova senha em um local seguro.
-    
-    Você deverá ver o portal do Office 365 para o usuário 2.
-    
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento e teste de configuração de base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
-[Ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 [Planejar a autenticação multifator para implantações do Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

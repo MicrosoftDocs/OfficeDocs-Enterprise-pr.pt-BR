@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "Resumo: Compreenda a estrutura básica da Contoso local como seus negócios precisa podem ser atendidos por ofertas de nuvem da Microsoft e a infraestrutura de TI."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Compreenda a estrutura básica da Contoso local como seus negócios precisa podem ser atendidos por ofertas de nuvem da Microsoft e a infraestrutura de TI.'
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915726"
 ---
 # <a name="contosos-it-infrastructure-and-needs"></a>Infraestrutura e necessidades de TI da Contoso
 
@@ -30,7 +31,7 @@ A Contoso usa principalmente centralizado infraestrutura de TI, com centros de d
   
 **Figura 1: Infra-estrutura de TI da Contoso**
 
-![Infraestrutura de TI da Contoso](images/Contoso_Poster/Existing_IT.png)
+![Infraestrutura de TI da Contoso](media/Contoso-Poster/Existing-IT.png)
   
 A Figura 1 mostra um escritório matriz com a Internet, DMZ e centros de dados de aplicativo.
   
@@ -80,11 +81,11 @@ Com base em uma análise das ofertas de nuvem da Microsoft, a Contoso do departa
 |**Dynamics 365:** Use o gerenciamento de fornecedores e clientes baseados em nuvem. Remova o parceiro extranet no DMZ.<br/> Necessidade comercial: 2  <br/> |Aplicativos móveis são baseadas em nuvem, em vez de Paris com base no datacenter.  <br/> Necessidades de negócios: 3 de 4  <br/> |Migre dados fora do local de centros de dados e aplicativos pouco usado.  <br/> Necessidade comercial: 5  <br/> |
 |**Intune/EMS:** Gerencie dispositivos com Android e iOS. <br/> Necessidade comercial: 3  <br/> ||Adicione servidores temporários e armazenamento para necessidades de processamento de final de trimestre.  <br/> Necessidade comercial: 6  <br/> |
    
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

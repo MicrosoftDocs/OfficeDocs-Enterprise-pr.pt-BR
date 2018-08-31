@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumo: Entenda os cenários e arquitetura híbrida para a infra-estrutura da Microsoft como um serviço (IaaS)-based ofertas de nuvem no Windows Azure.'
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915026"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Cenários de nuvem híbrida para a IaaS do Azure
 
@@ -30,7 +31,7 @@ A Figura 1 mostra a arquitetura dos cenários de implantação híbrida baseada 
   
 **Figura 1: Cenários de implantação híbrida baseada em IaaS Microsoft no Azure**
 
-![Cenários híbridos da Microsoft baseados em IaaS no Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Cenários híbridos da Microsoft baseados em IaaS no Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 Para cada camada da arquitetura:
   
@@ -56,7 +57,7 @@ Executar o seu servidor de sincronização (DirSync) do diretório de um VNet do
   
 **Figura 2: Servidor de DirSync para o Office 365 no Azure IaaS**
 
-![Servidor DirSync para Office 365 no Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![Servidor DirSync para Office 365 no Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 Na Figura 2, uma rede local hospeda uma infraestrutura do Windows Server AD, com um servidor proxy e um roteador em sua borda. O roteador conecta-se para um gateway Azure na extremidade de uma VNet Azure com uma conexão de VPN ou ExpressRoute-to-site. Dentro do VNet, um servidor DirSync executa Connect do Azure AD.
   
@@ -66,7 +67,7 @@ Um servidor de DirSync é um servidor baseado no Windows que executa o Connect d
   
 O servidor DirSync sonda Windows Server AD para que as alterações e sincroniza-los com assinatura do Office 365.
   
-Para obter mais informações, consulte [Implantar o Office 365 DirSync no Windows Azure](https://technet.microsoft.com/library/dn635310.aspx).
+Para obter mais informações, consulte [Configurar a sincronização de diretório para o Office 365](set-up-directory-synchronization.md).
   
 ## <a name="line-of-business-lob-application"></a>Linha do aplicativo de negócios (LOB)
 
@@ -74,7 +75,7 @@ A Figura 3 mostra a configuração de um aplicativo de LOB baseado em servidor e
   
 **Figura 3: Aplicativos de LOB no Azure IaaS**
 
-![Aplicativo LOB baseado em servidor na IaaS do Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Aplicativo LOB baseado em servidor na IaaS do Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 Na Figura 3, uma rede local hospeda uma infraestrutura de identidade e usuários. Ele está conectado a um gateway do Azure IaaS com uma conexão de VPN ou ExpressRoute-to-site. Azure IaaS hospeda uma rede virtual que contém os servidores do aplicativo LOB.
   
@@ -112,7 +113,7 @@ Um exemplo de um de várias camadas, os aplicativos LOB altamente disponível no
   
 **Figura 4: Um farm de SharePoint Server 2016 de alta disponibilidade no Azure IaaS**
 
-![Farm de alta disponibilidade do SharePoint Server 2016 no Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Farm de alta disponibilidade do SharePoint Server 2016 no Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 Na Figura 4, uma rede local hospeda uma infraestrutura de identidade e usuários. Ele está conectado a um gateway do Azure IaaS com uma conexão de VPN ou ExpressRoute-to-site. VNet o Azure contém os servidores do farm do SharePoint Server 2016, que inclui as camadas separadas para os servidores front-end, servidores de aplicativos, o cluster do SQL Server e os controladores de domínio.
   
@@ -138,17 +139,17 @@ Siga este caminho para a adoção bem-sucedida:
   
 1. Avaliar e testar
     
-    Consulte [2016 do SharePoint Server in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx) compreender as vantagens de executar o SharePoint Server 2016 no Windows Azure.
+    Consulte [2016 do SharePoint Server in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) compreender as vantagens de executar o SharePoint Server 2016 no Windows Azure.
     
-    Consulte [Intranet do SharePoint Server 2016 no ambiente de desenvolvimento e teste do Windows Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) para criar um ambiente de desenvolvimento e teste simulados
+    Consulte [Intranet do SharePoint Server 2016 no ambiente de desenvolvimento e teste do Windows Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) para criar um ambiente de desenvolvimento e teste simulados
     
 2. Design
     
-    Consulte [Projetando um farm do SharePoint Server 2016 no Windows Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) para passar por um processo para determinar o conjunto de rede do Azure IaaS, compute e elementos de armazenamento para hospedar seu farm e suas configurações.
+    Consulte [Projetando um farm do SharePoint Server 2016 no Windows Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) para passar por um processo para determinar o conjunto de rede do Azure IaaS, compute e elementos de armazenamento para hospedar seu farm e suas configurações.
     
 3. Implantar
     
-    Consulte [Implantando o SharePoint Server 2016 com grupos de disponibilidade do SQL Server AlwaysOn no Windows Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) para percorrer a configuração de ponta a ponta do farm de alta disponibilidade em cinco fases.
+    Consulte [Implantando o SharePoint Server 2016 com grupos de disponibilidade do SQL Server AlwaysOn no Windows Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) para percorrer a configuração de ponta a ponta do farm de alta disponibilidade em cinco fases.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Identidade federada para o Office 365 no Windows Azure
 
@@ -156,7 +157,7 @@ Outro exemplo de um aplicativo de LOB de várias camado, altamente disponível n
   
 **Figura 5: Uma infraestrutura de identidade federada de alta disponibilidade para o Office 365 no Azure IaaS**
 
-![A configuração final da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![A configuração final da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 Na Figura 5, uma rede local hospeda uma infraestrutura de identidade e usuários. Ele está conectado a um gateway do Azure IaaS com uma conexão de VPN ou ExpressRoute-to-site. VNet o Azure contém servidores proxy da web, servidores de serviços de Federação do Active Directory (AD FS) e controladores de domínio do Windows Server AD (Active Directory).
   
@@ -182,11 +183,11 @@ Consulte estes recursos adicionais:
     
 - [Projetar e criar um aplicativo LOB no Windows Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

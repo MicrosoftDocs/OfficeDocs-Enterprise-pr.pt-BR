@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
-description: "Resumo: Entenda como Contoso aproveita IDaaS e fornece geograficamente distribuída e autenticação redundante para seus usuários."
-ms.openlocfilehash: 7a6448969a90f1f646f70fee4c67a6da992dd2bc
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda como Contoso aproveita IDaaS e fornece geograficamente distribuída e autenticação redundante para seus usuários.'
+ms.openlocfilehash: 25e708147bda51fa8f8b4d0ea5e83eb4a9cd10b0
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915436"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidade para a Contoso Corporation
 
@@ -30,7 +31,7 @@ A Contoso usa uma única floresta do Windows Server Active Directory (AD) para c
   
 **Figura 1: Da Contoso floresta e domínios em todo o mundo**
 
-![Floresta e domínios do AD do Windows Server da Contoso em todo o mundo](images/Contoso_Poster/Contoso_WW_ID.png)
+![Floresta e domínios do AD do Windows Server da Contoso em todo o mundo](media/Contoso-Poster/Contoso-WW-ID.png)
   
 A Figura 1 mostra a floresta Contoso com domínios regionais para as diferentes partes do mundo que contêm os hubs regionais.
   
@@ -46,7 +47,7 @@ Permite que a Contoso:
     
 **Figura 2: Suporte da Contoso autenticação federada para clientes e parceiros**
 
-![Infraestrutura da Contoso para dar suporte à autenticação federada para clientes e parceiros](images/Contoso_Poster/Federated_ID.png)
+![Infraestrutura da Contoso para dar suporte à autenticação federada para clientes e parceiros](media/Contoso-Poster/Federated-ID.png)
   
 A Figura 2 mostra DMZ Contoso contendo um site público, um parceiro extranet e um conjunto de servidores do AD FS. DMZ está conectado à Internet que contém a clientes e parceiros e serviços de Internet.
   
@@ -60,7 +61,7 @@ A Contoso implantou a ferramenta conectar do Azure AD em um cluster de servidore
   
 **Figura 3: Infra-estrutura de sincronização de diretório da Contoso**
 
-![Infraestrutura de sincronização de diretórios da Contoso](images/Contoso_Poster/DirSync.png)
+![Infraestrutura de sincronização de diretórios da Contoso](media/Contoso-Poster/DirSync.png)
   
 A Figura 3 mostra um cluster de servidores que executam o Azure AD conectar-se a floresta Contoso Windows Server AD como sincronizar com o locatário do Azure AD.
   
@@ -74,7 +75,7 @@ Para distribuir a carga de solicitações de autenticação, a Contoso configuro
   
 **Figura 4: A distribuição geográfica de tráfego de autenticação para escritórios regionais**
 
-![Distribuição geográfica do tráfego de autenticação da Contoso para escritórios regionais](images/Contoso_Poster/Auth_GeoDist.png)
+![Distribuição geográfica do tráfego de autenticação da Contoso para escritórios regionais](media/Contoso-Poster/Auth-GeoDist.png)
   
 Figura 4 mostra as camadas de computadores clientes, Gerenciador de tráfego do Windows Azure e servidores de autenticação em escritórios regionais. Cada escritório regional usa proxies de web e servidores do AD FS para autenticar credenciais de usuário com os controladores de domínio do Windows Server AD.
   
@@ -106,7 +107,7 @@ Para fornecer redundância para os trabalhadores remotos e móveis da sede Paris
   
 **Figura 5: Infraestrutura de autenticação redundantes no Azure IaaS**
 
-![A infraestrutura de autenticação redundante no Azure IaaS para a sede de Paris](images/Contoso_Poster/Paris_Auth_Redun.png)
+![A infraestrutura de autenticação redundante no Azure IaaS para a sede de Paris](media/Contoso-Poster/Paris-Auth-Redun.png)
   
 Figura 5 mostra servidores AD FS e proxies de web no DMZ e um conjunto adicional de cada uma no Azure locais cruzados rede virtual.
   
@@ -118,13 +119,13 @@ Para alternar e voltar, Contoso atualizações o perfil do Gerenciador de tráfe
     
 - Quando os servidores de autenticação DMZ não estão disponíveis, use os endereços IP dos servidores no Azure IaaS.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
-[Identidade da Microsoft Cloud para arquitetos corporativos](http://aka.ms/cloudarchidentity)
+[Identidade do Microsoft Cloud para arquitetos corporativos](http://aka.ms/cloudarchidentity)
   
 [Proteção de identidade e dispositivo para o Office 365](http://aka.ms/o365protect_device)
   

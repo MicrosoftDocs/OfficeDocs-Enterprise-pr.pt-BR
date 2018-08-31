@@ -1,5 +1,5 @@
 ---
-title: "Bloquear contas de usuários com o Office 365 PowerShell"
+title: Bloquear contas de usuários com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,12 +13,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: "Explica como usar o Office 365 PowerShell para bloquear e desbloquear o acesso às contas do Office 365."
-ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Explica como usar o Office 365 PowerShell para bloquear e desbloquear o acesso às contas do Office 365.
+ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915406"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloquear contas de usuários com o Office 365 PowerShell
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/14/2018
   
 Bloqueando o acesso a uma conta do Office 365 impede que qualquer pessoa usando a conta para entrar e acessar os serviços e os dados em sua organização do Office 365. Quando você bloqueia o acesso à conta, o usuário recebe a seguinte mensagem de erro quando tentarem entrar:
   
-![Conta bloqueada do Office 365.](images/o365_powershell_account_blocked.png)
+![Conta bloqueada do Office 365.](media/o365-powershell-account-blocked.png)
   
 Você pode usar o Office 365 PowerShell para bloquear o acesso individuais e várias contas de usuário.
   
@@ -161,7 +162,6 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```
 
 ## <a name="see-also"></a>Veja também
-<a name="SeeAlso"> </a>
 
 Confira os seguintes tópicos adicionais sobre como gerenciar usuários com o Office 365 PowerShell:
   
@@ -169,7 +169,7 @@ Confira os seguintes tópicos adicionais sobre como gerenciar usuários com o Of
     
 - [Excluir e restaurar contas de usuários usando o Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [Atribuir licenças a contas de usuários usando o PowerShell do Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [Atribuir licenças a contas de usuários usando o Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
 - [Remover licenças de contas de usuários com o Office 365 PowerShell](remove-licenses-from-user-accounts-with-office-365-powershell.md)
     

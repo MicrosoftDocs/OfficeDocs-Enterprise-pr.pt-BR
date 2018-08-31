@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Resumo: Entenda como otimizar sua rede para o acesso ao Microsoft Azure PaaS.'
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915106"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Projetando a rede para o Microsoft Azure PaaS
 
@@ -46,7 +49,7 @@ Aplicativos de organização hospedados no Azure PaaS exigem largura de banda da
     
 **Figura 1: Opções de Conexão para conectar-se os serviços do Azure PaaS**
 
-![Figura 1: Opções de conexão para os serviços de PaaS do Azure](images/Network_Poster/PaaS1.png)
+![Figura 1: Opções de conexão para os serviços de PaaS do Azure](media/Network-Poster/PaaS1.png)
   
 A Figura 1 mostra uma rede local conectando-se aos serviços do Azure PaaS através de uma conexão de Internet ou ExpressRoute.
   
@@ -56,7 +59,7 @@ Roteamento de nível de aplicativo e balanceamento de serviços que permitem que
   
 **Figura 2: Gateway de aplicativo do Azure**
 
-![Figura 2: Serviço de gateway do aplicativo do Azure](images/Network_Poster/PaaS2.png)
+![Figura 2: Serviço de gateway do aplicativo do Azure](media/Network-Poster/PaaS2.png)
   
 A Figura 2 mostra o Gateway de aplicativo do Windows Azure e como o usuário solicita da Internet pode ser roteada para os aplicativos web do Azure, serviços de nuvem ou máquinas virtuais.
   
@@ -86,7 +89,7 @@ Aqui está um exemplo para três aplicativos da web distribuídos geograficament
   
 **Figura 3: Gerenciador de tráfego do Azure**
 
-![Figura 3: Gerenciador de tráfego do Azure](images/Network_Poster/PaaS3.png)
+![Figura 3: Gerenciador de tráfego do Azure](media/Network-Poster/PaaS3.png)
   
 A Figura 3 mostra o processo básico que o Gerenciador de tráfego usa para rotear solicitações para três aplicativos web Azure diferente nos Estados Unidos, Europa e Ásia. No exemplo:
   
@@ -102,9 +105,9 @@ Para obter mais informações, consulte [Gerenciador de tráfego](https://docs.m
  
 ## <a name="see-also"></a>Confira também
 
-[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

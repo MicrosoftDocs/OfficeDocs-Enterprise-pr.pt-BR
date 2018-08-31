@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Resumo: use este guia de laboratório de teste para criar um ambiente de desenvolvimento/teste que inclui todas as ofertas da nuvem da Microsoft.'
-ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915626"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente de desenvolvimento/teste do One Microsoft Cloud
 
@@ -27,7 +30,7 @@ ms.lasthandoff: 04/27/2018
   
 Com as instruções neste artigo, crie uma intranet simulada nos serviços de infraestrutura do Microsoft Azure e, em seguida, adicione as assinaturas do Microsoft Office 365, do Microsoft Enterprise Mobility + Security (EMS) e do Microsoft Dynamics 365. O resultado é uma organização simplificada que usa todas as ofertas da nuvem da Microsoft ao mesmo tempo em um único ambiente de desenvolvimento/teste. 
   
-![Fase 3 do ambiente de desenvolvimento/teste do One Microsoft Cloud com o Azure, Office 365, EMS e Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Fase 3 do ambiente de desenvolvimento/teste do One Microsoft Cloud com o Azure, Office 365, EMS e Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 Você pode usar a configuração resultante para:
   
@@ -47,7 +50,7 @@ A Figura 1 mostra a configuração resultante, que inclui o Office 365 e uma int
   
 **Figura 1: A intranet simulada no Azure com o Office 365**
 
-![O ambiente de desenvolvimento/teste do Office 365 com o DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![O ambiente de desenvolvimento/teste do Office 365 com o DirSync](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
 > A avaliação do Azure é de 30 dias. A assinatura de avaliação do Office 365 Enterprise E5 é de 30 dias, que podem ser facilmente estendidos por mais 30 dias. Para um ambiente de desenvolvimento/teste permanente, crie uma nova assinatura paga do Azure e uma nova assinatura paga do Office 365 Enterprise E5 com algumas licenças. 
@@ -93,7 +96,7 @@ A Figura 2 mostra a configuração resultante, que adiciona o EMS.
   
 **Figura 2: A intranet simulada no Azure com o Office 365 e o EMS**
 
-![Fase 2 do ambiente de desenvolvimento/teste do One Microsoft Cloud com o Azure, Office 365 e EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
+![Fase 2 do ambiente de desenvolvimento/teste do One Microsoft Cloud com o Azure, Office 365 e EMS](media/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
 ## <a name="phase-3-add-dynamics-365"></a>Fase 3: Adicionar o Dynamics 365
 
@@ -171,7 +174,7 @@ A Figura 3 mostra a configuração resultante.
   
 **Figura 3: A intranet simulada no Azure com o Office 365, o EMS e o Dynamics 365**
 
-![Fase 3 do ambiente de desenvolvimento/teste do One Microsoft Cloud com o Azure, Office 365, EMS e Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
+![Fase 3 do ambiente de desenvolvimento/teste do One Microsoft Cloud com o Azure, Office 365, EMS e Dynamics 365](media/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -183,7 +186,8 @@ Agora você pode experimentar seu ambiente de desenvolvimento/teste do One Micro
     
 - [Criar uma rede simulada entre locais nos serviços de infraestrutura Azure para hospedar cargas de trabalho baseadas em servidor](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
+
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   

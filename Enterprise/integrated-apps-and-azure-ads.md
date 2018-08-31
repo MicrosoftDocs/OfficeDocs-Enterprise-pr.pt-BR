@@ -1,5 +1,5 @@
 ---
-title: Aplicativos integrados e o Azure AD para administradores do Office 365
+title: Aplicativos integrados e Microsoft Azure AD para administradores do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,18 +10,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Saiba como o O365 integrado aplicativos registrados e administrado no Azure AD.
-ms.openlocfilehash: 666bfca5c2621d25f13dff7c5753c5ef47591b68
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: 0482271f15dc5e2b81e36fd265b49da6eba18702
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22213100"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914996"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicativos integrados e o Azure AD para administradores do Office 365
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicativos integrados e Microsoft Azure AD para administradores do Office 365
 
 Há mais com o gerenciamento de aplicativos integrados que acabou [Desativando integrada Apps ativada ou desativada](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Com o advento das APIs REST Office 365, os usuários podem conceder acesso de aplicativos aos seus dados do Office 365, como emails, calendários, contatos, usuários, grupos, arquivos e pastas. Por padrão, os usuários precisam individualmente conceder permissões para cada aplicativo, mas isso não pode ser dimensionado bem se você deseja autorizar um aplicativo uma vez a nível de administrador global e distribui-la para toda a sua organização por meio do iniciador de aplicativo. Para fazer isso, você deve registrar o aplicativo no Windows Azure AD. Existem algumas etapas que você deve realizar antes de você pode registrar um aplicativo no Azure AD e algumas informações de plano de fundo que você deve saber que podem ajudá-lo gerenciá-los em sua organização do Office 365. Este artigo o aponta a esses recursos.
   

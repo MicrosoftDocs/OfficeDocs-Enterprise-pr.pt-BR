@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tópico para saber mais sobre o recurso de gerenciamento de acesso privilegiado no Office 365
-ms.openlocfilehash: b2db3e16e53cca7deb2bf8fbff61b5b981f42fa6
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 22286d4f91ffa0bd3c49f028681d20e36d14283d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319202"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915386"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Privilégios acessar management no Office 365
 
@@ -46,7 +48,7 @@ Siga as etapas em [Connect to Exchange Online PowerShell usando a autenticação
 ### <a name="step-1---create-an-approvers-group"></a>Etapa 1 - Criar grupo do aprovador
 No Portal de administração do Office 365, selecione **grupos** > **Adicionar um grupo**, em seguida, crie um grupo de segurança habilitado para email para os aprovadores de acesso padrão privilegiado. Quando concluir, selecione **Adicionar** para criar e salvar o grupo de aprovador.
 
-![Tela de aprovadores acesso privilegiado no portal de administração do Office 365](images/privileged-access-approvers-ui.png)
+![Tela de aprovadores acesso privilegiado no portal de administração do Office 365](media/privileged-access-approvers-ui.png)
 
 > [!NOTE] 
 > Neste momento, somente os usuários com acesso administrativo têm permissão para aprovar solicitações de acesso ao Office 365 privilegiada. No futuro, qualquer usuário que faz parte do grupo dos aprovadores será aprovar solicitações de acesso.
@@ -140,7 +142,7 @@ Disable-ElevatedAccessControl
 ## <a name="managed-access-to-microsoft-graph-in-microsoft-azure"></a>Gerenciados acesso ao Microsoft Graph in Microsoft Azure
 
 > [!IMPORTANT]
-> Esta seção aborda as diretrizes de implantação e configuração para um recurso do Microsoft Graph versão beta pública só está disponível no Office 365 E5 e avançadas SKUs de conformidade.
+> Esta seção aborda os detalhes sobre um recurso está disponível somente na visualização.
 
 Acesso gerenciado para o Microsoft Graph in Microsoft Azure é um serviço que ajuda as organizações a exercer um nível granular de controle sobre seus dados do Office 365. Este sistema permite que os desenvolvedores de aplicativos de falsificar ideias com esses dados. 
 

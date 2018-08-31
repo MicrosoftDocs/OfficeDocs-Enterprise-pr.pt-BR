@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Resumo: Configure o Azure AD conectar-se para sua autenticação federada de alta disponibilidade para o Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915356"
 ---
-# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Alta disponibilidade federado autenticação fase 5: configurar a autenticação federada para o Office 365
+# <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Autenticação federada de alta disponibilidade Fase 5: configurar a autenticação federada para o Office 365
 
  **Resumo:** Configure o Azure AD conectar-se para sua autenticação federada de alta disponibilidade para o Office 365 in Microsoft Azure.
  
@@ -64,7 +65,7 @@ Aqui está um exemplo de organização Contoso:
   
 **Um exemplo de configuração para uma alta disponibilidade federado a infraestrutura de autenticação no Windows Azure**
 
-![Um exemplo de configuração da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure](images/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Um exemplo de configuração da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Execute o Azure AD conectar-se para configurar a autenticação federada
 
@@ -78,11 +79,11 @@ A ferramenta conectar do Azure AD configura o Office 365, os servidores de proxy
     
 4. Na página **Bem-vindo ao conectar do Azure AD** , clique em **Concordo**e clique em **continuar.**
     
-5. Na página **Configurações Express** , clique em **Personalizar**.
+5. Na página **Configurações Expressas**, clique em **Personalizar**.
     
-6. Na página **instalar componentes necessários** , clique em **instalar**.
+6. Na página **Instalar componentes necessários**, clique em **Instalar**. 
     
-7. Na página de **logon do usuário** , clique em **federação com o AD FS**e, em seguida, clique em **Avançar**.
+7. Na página **Entrada do usuário**, clique em **Federação com AD FS** e em **Avançar**.
     
 8. Na página **conectar ao AD do Windows Azure** , digite o nome e senha de uma conta de administrador global para a sua assinatura do Office 365 e clique em **Avançar**.
     
@@ -120,7 +121,7 @@ A ferramenta conectar do Azure AD configura o Office 365, os servidores de proxy
     
 25. Na página **Domínio do Windows Azure AD** , no **domínio**, selecione o nome de domínio DNS da sua organização e clique em **Avançar**.
     
-26. Na página **pronto para configurar** , clique em **instalar**.
+26. Na página **Pronto para configurar**, clique em **Instalar**.
     
 27. Na página **instalação concluída** , clique em **Verificar**. Você deverá ver duas mensagens indicando que a intranet e a Internet configuração foram verificada com êxito.
     
@@ -128,13 +129,13 @@ A ferramenta conectar do Azure AD configura o Office 365, os servidores de proxy
     
   - A mensagem de Internet deve listar o endereço IP público do seu balanceador de carga voltados para a Internet do Windows Azure para seus servidores de proxy de aplicativo web.
     
-28. Na página **instalação concluída** , clique em **Sair**.
+28. Na página **Instalação Completa**, clique em **Fechar**.
     
 Aqui está a configuração final, com nomes de espaço reservado para os servidores.
   
 **Fase 5: A configuração final de uma alta disponibilidade federado infraestrutura de autenticação no Windows Azure**
 
-![A configuração final da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![A configuração final da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Sua infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Windows Azure é concluída.
   

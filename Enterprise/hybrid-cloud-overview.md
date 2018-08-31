@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumo: Entenda a definição e elementos de nuvem da Microsoft híbrida.'
-ms.openlocfilehash: 6d23f4f759e882ed925bd8bcb4c21ee365b231a0
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915816"
 ---
 # <a name="hybrid-cloud-overview"></a>Visão geral da nuvem híbrida
 
@@ -36,7 +39,7 @@ Nuvem híbrida da Microsoft é um conjunto de cenários de negócios que combina
     
 **Figura 1: Componentes da nuvem híbrida Microsoft**
 
-![Componentes da nuvem híbrida da Microsoft](images/Hybrid_Poster/MS_Hybrid_Cloud.png)
+![Componentes da nuvem híbrida da Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
 A Figura 1 mostra os componentes de nuvem da Microsoft híbrido, a partir de uma rede local para o conjunto do Office 365, a plataforma do Azure como um serviço (PaaS) e a infra-estrutura do Azure como um serviço (IaaS) de serviços disponível pela Internet ou por uma conexão ExpressRoute.
   
@@ -66,7 +69,7 @@ Cenários para a nuvem híbrida com os serviços de nuvem da Microsoft variam de
 
 Você deve considerar os seguintes elementos ao planejamento e implementação de cenários de nuvem híbrida com o Microsoft cloud plataformas e serviços.
   
-- Sistema de rede
+- Rede
     
     A rede para cenários de nuvem híbrida inclui a conectividade com plataformas de nuvem da Microsoft e serviços de largura de banda suficiente para ter um bom desempenho sob cargas de pico. Para obter mais informações, consulte [Microsoft Cloud Networking para arquitetos da empresa](microsoft-cloud-networking-for-enterprise-architects.md).
     
@@ -84,7 +87,7 @@ Você deve considerar os seguintes elementos ao planejamento e implementação d
     
 ## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

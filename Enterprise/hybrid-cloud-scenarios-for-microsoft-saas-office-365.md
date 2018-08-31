@@ -1,5 +1,5 @@
 ---
-title: "Cenários de nuvem híbrida para a Microsoft SaaS (Office 365)"
+title: Cenários de nuvem híbrida para Microsoft SaaS (Office 365)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: "Resumo: Entenda os cenários e arquitetura de híbrido para Microsoft baseada em SaaS ofertas (Office 365) na nuvem."
-ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda os cenários e arquitetura de híbrido para Microsoft baseada em SaaS ofertas (Office 365) na nuvem.'
+ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915586"
 ---
-# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Cenários de nuvem híbrida para a Microsoft SaaS (Office 365)
+# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Cenários de nuvem híbrida para Microsoft SaaS (Office 365)
 
  **Resumo:** Entenda os cenários e arquitetura de híbrido para Microsoft baseada em SaaS ofertas (Office 365) na nuvem.
   
@@ -30,7 +31,7 @@ A Figura 1 mostra a arquitetura dos cenários de implantação híbrida baseada 
   
 **Figura 1: Cenários de implantação híbrida baseada em SaaS Microsoft para o Office 365**
 
-![Cenários híbridos da Microsoft baseados em SaaS para o Office 365](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
+![Cenários híbridos da Microsoft baseados em SaaS para o Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
 Para cada camada da arquitetura:
   
@@ -66,11 +67,11 @@ Skype para negócios 2015 híbrido permite combinar uma implantação local exis
   
 **Figura 2: O Skype para configuração híbrida de negócios 2015**
 
-![A configuração híbrida do Skype for Business 2015](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB.png)
+![A configuração híbrida do Skype for Business 2015](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
 A Figura 2 mostra o Skype para configuração híbrida de negócios 2015, consistindo em um Skype local para o pool de front-end de negócios 2015 e borda servidor se comunicando com Skype para negócios Online no Office 365.
   
-Para obter mais informações, consulte:
+Para mais informações, consulte:
   
 - [Planejar a conectividade híbrida entre Skype para Business Server e do Skype para negócios Online](https://technet.microsoft.com/library/jj205403.aspx)
     
@@ -84,7 +85,7 @@ Nuvem PBX com Skype para Business Server permite fazer a transição de um exist
   
 **Figura 3: Nuvem PBX com Skype para Business Server**
 
-![Cloud PBX com Skype for Business Server](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB_CloudPBX.png)
+![Cloud PBX com Skype for Business Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
 A Figura 3 mostra o PBX nuvem com Skype para configuração do servidor de negócios, consistindo em um gateway PBX existente ou telecomunicações, um Skype para Business Server e o PSTN conectado ao PBX Microsoft Cloud no Office 365, que inclui Skype for Business no local Online.
   
@@ -104,13 +105,13 @@ SharePoint híbrido combina SharePoint Online no Office 365 com o seu farm do Sh
   
 **Figura 4: Configuração do SharePoint híbrido**
 
-![A configuração híbrida do SharePoint](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SP.png)
+![A configuração híbrida do SharePoint](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
 Figura 4 mostra a configuração híbrida do SharePoint, consistindo em um farm do SharePoint local se comunicam com o SharePoint Online no Office 365.
   
 Cenários de híbridos do SharePoint:
   
-- [Híbrido OneDrive for Business](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
+- [OneDrive for Business híbrido](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
     
 - [Sites de equipe híbrida](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
@@ -118,13 +119,13 @@ Cenários de híbridos do SharePoint:
     
 - [Pesquisa híbrida](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
     
-- [Perfis de híbrido](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
+- [Perfis híbridos](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
     
 - [Seletor de híbrido](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
     
     É fácil habilitar cenários híbridos usando os assistentes que automatizam configuração híbrida, disponível no Centro de administração do SharePoint Online no Office 365.
     
-- [Iniciador de app híbrida extensível](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [Inicializador de aplicativos híbrido extensível](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
     
     Permite que os usuários exibam e usem o vídeo do Office 365 e Delve aplicativos e experiências dentro de páginas do seu farm do SharePoint local.
     
@@ -138,7 +139,7 @@ Com o Exchange Server 2016 híbrido, você pode aproveitar as vantagens do Excha
   
 **Figura 5: Configuração 2016 Exchange híbrida**
 
-![A configuração híbrida do Exchange 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_EX.png)
+![A configuração híbrida do Exchange 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
 Figura 5 mostra a configuração híbrida do Exchange 2016, consistindo em servidores de caixa de correio do Exchange local se comunicam com Exchange Online Protection e caixas de correio no Office 365.
   
@@ -158,11 +159,11 @@ Você também pode integrar esta configuração híbrida com outros aplicativos 
   
 Para obter mais informações, consulte [Implantações híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) e o [Exchange híbrido](http://hybrid.office.com/exchange/).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

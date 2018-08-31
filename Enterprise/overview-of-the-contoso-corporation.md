@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 'Resumo: Entenda a Contoso Corporation como um negócio e a estrutura hierárquica dos seus escritórios em todo o mundo.'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915856"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Visão geral da Contoso Corporation
 
@@ -30,7 +31,7 @@ Organização mundial da Contoso tem escritórios nos seguintes locais:
   
 **Figura 1: Escritórios da Contoso em todo o mundo**
 
-![Os escritórios da Contoso Corporation em todo o mundo](images/Contoso_Poster/Contoso_WW_Org.png)
+![Os escritórios da Contoso Corporation em todo o mundo](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 A Figura 1 mostra o escritório da matriz em regionais de hub e Paris e filiais em vários continentes.
@@ -61,7 +62,7 @@ Escritórios da Contoso em todo o mundo siga um design de três camadas.
 
 Da Contoso arquitetos de TI identificou os seguintes elementos durante o planejamento para a adoção das ofertas de nuvem da Microsoft.
   
-- Sistema de rede
+- Rede
     
     A rede inclui a conectividade com as ofertas de nuvem da Microsoft e a largura de banda suficiente para ter um bom desempenho sob cargas de pico. Alguns conectividade será local conexões de Internet e algumas serão entre a infraestrutura de rede privada da Contoso.
     
@@ -85,7 +86,7 @@ Da Contoso arquitetos de TI identificou os seguintes elementos durante o planeja
     
 ## <a name="see-also"></a>Confira também
 
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

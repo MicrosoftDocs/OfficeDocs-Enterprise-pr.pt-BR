@@ -1,5 +1,5 @@
 ---
-title: Elementos comuns da conectividade de nuvem da Microsoft
+title: Elementos comuns de conectividade de nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumo: Entenda os elementos comuns da infraestrutura de rede e como preparar sua rede.'
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915646"
 ---
-# <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comuns da conectividade de nuvem da Microsoft
+# <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comuns de conectividade de nuvem da Microsoft
 
  **Resumo:** Compreenda os elementos comuns da infraestrutura de rede e como preparar sua rede.
   
@@ -48,7 +51,7 @@ Use seu pipe Internet existente ou uma conexão ExpressRoute ao Office 365, Wind
   
 **Figura 1: Opções para conectividade de nuvem da Microsoft**
 
-![Figura 1:  Opções para a conectividade de nuvem da Microsoft](images/Network_Poster/CommonElements.png)
+![Figura 1:  Opções para a conectividade de nuvem da Microsoft](media/Network-Poster/CommonElements.png)
 
   
 A Figura 1 mostra como uma rede local pode ser conectada para ofertas de nuvem da Microsoft usando seus pipe de Internet existente ou ExpressRoute. O pipe Internet representa uma DMZ e pode ter os seguintes componentes:
@@ -81,12 +84,12 @@ Você precisa considerar nessas áreas de rede quando a adoção de qualquer um 
 
 [ExpressRoute para conectividade de nuvem da Microsoft](expressroute-for-microsoft-cloud-connectivity.md)
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 <a name="steps"> </a>
 
-[Microsoft Cloud Networking para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Resumo: Entenda a arquitetura das ofertas de nuvem da Microsoft híbrida.'
-ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631382"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914916"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura de cenários de nuvem híbrida da Microsoft
 
@@ -27,7 +29,7 @@ Use uma abordagem de arquitetura para planejar e implementar os cenários de nuv
   
 **Figura 1: Microsoft híbrida pilha da nuvem**
 
-![A pilha de nuvem híbrida da Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
+![A pilha de nuvem híbrida da Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
 A Figura 1 mostra a pilha de nuvem híbrida Microsoft e sua camada, que incluem o local, rede, identidade, aplicativos e cenários e categoria do serviço na nuvem (SaaS Microsoft Azure PaaS e Azure PaaS).
   
@@ -63,7 +65,7 @@ Muitas empresas, incluindo Microsoft, usam uma abordagem de três fases para ado
     
 ## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

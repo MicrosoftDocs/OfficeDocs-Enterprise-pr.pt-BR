@@ -1,5 +1,5 @@
 ---
-title: "Segurança para a Contoso Corporation"
+title: Segurança para a Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
-description: "Resumo: Entenda como Contoso mapeadas seus requisitos de segurança para recursos no ofertas de nuvem da Microsoft e determinado um caminho para a preparação de segurança na nuvem."
-ms.openlocfilehash: f8df7f6437159aefe88851a22cc8da8b19c3838c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda como Contoso mapeadas seus requisitos de segurança para recursos no ofertas de nuvem da Microsoft e determinado um caminho para a preparação de segurança na nuvem.'
+ms.openlocfilehash: 722c01995c95c36b9975b0682858c38063f79d2c
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914826"
 ---
 # <a name="security-for-the-contoso-corporation"></a>Segurança para a Contoso Corporation
 
@@ -66,7 +69,7 @@ A tabela a seguir mostra o mapeamento de níveis de dados da Contoso recursos na
 
 A tabela a seguir lista as políticas de informações da Contoso.
   
-||**Acesso**|**Retenção de dados**|**Proteção de informações**|
+||**Acessar**|**Retenção de dados**|**Proteção de informações**|
 |:-----|:-----|:-----|:-----|
 |Nível 1: Valor de negócio baixa  <br/> | Permitir o acesso a todos <br/> |6 meses  <br/> |Usar a criptografia  <br/> |
 |Nível 2: Valor de negócio médio  <br/> | Permitir acesso a Contoso funcionários, fornecedores e parceiros <br/>  Usar MFA, TLS e MAM <br/> |2 anos  <br/> |Usar valores de hash para integridade dos dados  <br/> |
@@ -118,11 +121,11 @@ De acordo com o Office 365 práticas recomendadas de segurança, os administrado
     
     Especialistas em segurança de Contoso estão usando o Exchange Online Protection e proteção de ameaça avançadas (ATP) para proteger contra malware desconhecido, vírus e URLs mal-intencionadas transmitidos por meio de emails. A Contoso também tem para determinar que entrou no caixas de correio do usuário, mensagens, enviadas e outras atividades realizadas pelo proprietário da caixa de correio, um usuário delegado ou administrador do log de auditoria de caixa de correio habilitada.
     
-    Para obter mais informações, consulte: 
+    Para mais informações, consulte: 
     
   - [Proteção de Anti-Spam de Email do Office 365](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
     
-  - [Proteção contra ameaças avançadas para anexos seguros e links de seguros](https://technet.microsoft.com/library/mt148491.aspx)
+  - [Proteção avançada para anexos seguros e links seguros](https://technet.microsoft.com/library/mt148491.aspx)
     
   - [Habilitar a auditoria de caixa de correio no Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109)
     
@@ -130,17 +133,17 @@ De acordo com o Office 365 práticas recomendadas de segurança, os administrado
     
     Contoso tem identificado seus dados confidenciais e configurou as diretivas DLP para Exchange Online, SharePoint Online e OneDrive ajudar a impedir que usuários acidentalmente ou intencionalmente compartilhamento de dados. 
     
-    Para obter mais informações, consulte [Visão geral das políticas de prevenção de perda de dados](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+    Para mais informações, confira [Visão geral das políticas de prevenção contra perda de dados](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
   
-[Práticas recomendadas de segurança para o Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+[Práticas recomendadas de segurança para Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
 
 
 

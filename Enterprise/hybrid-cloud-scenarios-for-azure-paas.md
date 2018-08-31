@@ -1,5 +1,5 @@
 ---
-title: "Cenários de nuvem híbrida para PaaS do Azure"
+title: Cenários de nuvem híbrida para a PaaS do Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
-description: "Resumo: Entenda os cenários e arquitetura híbrida para a plataforma Microsoft como um serviço (PaaS)-based ofertas de nuvem no Windows Azure."
-ms.openlocfilehash: 96548b74341474ff2bd0720f982cbdba96b06e4b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda os cenários e arquitetura híbrida para a plataforma Microsoft como um serviço (PaaS)-based ofertas de nuvem no Windows Azure.'
+ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915006"
 ---
-# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Cenários de nuvem híbrida para PaaS do Azure
+# <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Cenários de nuvem híbrida para a PaaS do Azure
 
  **Resumo:** Entenda os cenários e arquitetura híbrida para a plataforma Microsoft como um serviço (PaaS)-based ofertas de nuvem no Windows Azure.
   
@@ -30,7 +31,7 @@ A Figura 1 mostra a arquitetura dos cenários de implantação híbrida baseada 
   
 **Figura 1: Cenários de implantação híbrida baseada em PaaS Microsoft no Azure**
 
-![Cenários híbridos da Microsoft baseados em PaaS no Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS.png)
+![Cenários híbridos da Microsoft baseados em PaaS no Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS.png)
   
 Para cada camada da arquitetura:
   
@@ -56,7 +57,7 @@ Figura 2 mostra a configuração de um aplicativo híbrida executando no Windows
   
 **Figura 2: Aplicativo de implantação híbrida baseada em PaaS Azure**
 
-![Aplicativo híbrido baseado em PaaS no Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps.png)
+![Aplicativo híbrido baseado em PaaS no Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps.png)
   
 Na Figura 2, uma rede local hospeda aplicativos nos servidores e DMZ contendo um servidor proxy ou armazenamento. Ele está conectado aos serviços do Azure PaaS pela Internet ou com uma conexão ExpressRoute.
   
@@ -78,7 +79,7 @@ A Figura 3 mostra um exemplo de aplicativo híbrida executando no Windows Azure.
   
 **Figura 3: Um exemplo aplicativo baseado no Windows Azure PaaS híbrido**
 
-![Um aplicativo híbrido de exemplo baseado em PaaS no Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_Ex.png)
+![Um aplicativo híbrido de exemplo baseado em PaaS no Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-Ex.png)
   
 Na Figura 3, um hosts de rede local uma LOB App. Azure PaaS hospeda um aplicativo móvel personalizado. Um smartphone na Internet acessa o aplicativo móvel personalizado no Azure, que envia solicitações de dados para o aplicativo LOB local.
   
@@ -104,7 +105,7 @@ Figura 4 mostra o banco de dados de alongar com 2016 do SQL Server.
   
 **Figura 4: Alongamento banco de dados com o SQL Server 2016**
 
-![Estender o banco de dados com o SQL Server 2016](images/Hybrid_Poster/Hybrid_Cloud_Stack_PaaS_Apps_SQL.png)
+![Estender o banco de dados com o SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
   
 Na Figura 4, uma rede local hospeda um servidor executando o SQL Server 2016 com um pequeno banco de dados local. Azure PaaS hospeda uma instância do banco de dados do SQL Server Alongar Azure com a parte estendida do banco de dados. Consultas de T-SQL de um usuário local enviadas ao SQL server no local com segurança são encaminhadas para o Azure SQL Alongar banco de dados, que retorna os resultados ao usuário solicitante.
   
@@ -114,11 +115,11 @@ Banco de dados Alongar fornece uma opção econômica para armazenamento de long
   
 Para obter mais informações, consulte [Alongar banco de dados](https://msdn.microsoft.com/library/dn935011.aspx).
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

@@ -1,5 +1,5 @@
 ---
-title: "Alguns assembly necessário"
+title: Algum assembly necessário
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "Resumo: Conheça os detalhes sobre o conjunto de opções de armazenamento de nuvem que você pode usar para criar sua solução de armazenamento personalizado."
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Conheça os detalhes sobre o conjunto de opções de armazenamento de nuvem que você pode usar para criar sua solução de armazenamento personalizado.'
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915516"
 ---
-# <a name="some-assembly-required"></a>Alguns assembly necessário
+# <a name="some-assembly-required"></a>Algum assembly necessário
 
  **Resumo:** Obtenha os detalhes sobre o conjunto de nuvem opções de armazenamento que você pode usar para criar sua solução de armazenamento personalizado.
   
@@ -138,11 +141,11 @@ Use os recursos praticamente ilimitados do SQL Azure do banco de dados quando:
     
 Com o dimensionamento vertical, você pode alterar o nível de desempenho de banco de dados do Azure/edition ou usando pools elástica do banco de dados.
   
-![Dimensionamento vertical fornecido pelo Banco de Dados SQL do Azure.](images/Storage_Poster/CloudStor-VertScale.png)
+![Dimensionamento vertical fornecido pelo Banco de Dados SQL do Azure.](media/Storage-Poster/CloudStor-VertScale.png)
   
 Com o dimensionamento horizontal, você pode adicionar novos bancos de dados, conforme necessário.
   
-![Dimensionamento horizontal fornecido pelo Banco de Dados SQL do Azure.](images/Storage_Poster/CloudStor-HorizScale.png)
+![Dimensionamento horizontal fornecido pelo Banco de Dados SQL do Azure.](media/Storage-Poster/CloudStor-HorizScale.png)
   
 Clique [aqui](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) para obter mais informações.
   
@@ -150,7 +153,7 @@ Clique [aqui](https://docs.microsoft.com/azure/sql-database/sql-database-elastic
 
 Alongar banco de dados é um recurso do SQL Server 2016 que permite transparente e segurança mover dados frio, como dados corporativos fechado em uma tabela grande que contém as informações de pedido de cliente, para um banco de dados SQL Alongar no Windows Azure. Quando alongado, o conteúdo de uma instância do SQL Server, um banco de dados ou até mesmo em uma única tabela é a combinação de dados local no servidor do SQL Server 2016 e dados remotos no Windows Azure. Dados que se tornará qualificados para alongar automaticamente são movidos para o Azure pelo 2016 do SQL Server.
   
-![Estender o banco de dados com o SQL Server 2016.](images/Storage_Poster/CloudStor-Stretch.png)
+![Estender o banco de dados com o SQL Server 2016.](media/Storage-Poster/CloudStor-Stretch.png)
   
 Consultas de usuário que incluem os dados históricos transparente são encaminhadas para o banco de dados Alongar do SQL Azure. As consultas não precisará ser escritos novamente, mesmo que a tabela é alongada.
   
@@ -202,7 +205,7 @@ Atributos comuns de Cosmos DB, o armazenamento de tabela do Windows Azure e o ba
     
 A tabela a seguir mostra os atributos incomuns do Azure Cosmos DB, o armazenamento de tabela do Windows Azure e banco de dados de SQL Azure.
   
-![Atributos incomuns do Cosmos DB vs. Tabelas do Azure vs. Banco de Dados SQL do Azure](images/Storage_Poster/CloudStor-Table.png)
+![Atributos incomuns do Cosmos DB vs. Tabelas do Azure vs. Banco de Dados SQL do Azure](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>Recursos
 
@@ -402,11 +405,11 @@ Para obter informações de custo, clique [aqui](https://azure.microsoft.com/pri
 
 Examine as opções de armazenamento de nuvem [construir a partir do zero](build-from-the-ground-up.md) .
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Armazenamento do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
+[Armazenamento do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

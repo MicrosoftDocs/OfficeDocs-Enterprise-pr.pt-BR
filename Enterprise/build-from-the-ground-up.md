@@ -1,5 +1,5 @@
 ---
-title: "Criação de ponta a ponta para cima"
+title: Criar do zero
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "Resumo: Conheça os detalhes sobre o conjunto de nuvem blocos de construção de armazenamento que você pode usar para criar seu próprio serviço de armazenamento ou a solução."
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Conheça os detalhes sobre o conjunto de nuvem blocos de construção de armazenamento que você pode usar para criar seu próprio serviço de armazenamento ou a solução.'
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915676"
 ---
-# <a name="build-from-the-ground-up"></a>Criação de ponta a ponta para cima
+# <a name="build-from-the-ground-up"></a>Criar do zero
 
  **Resumo:** Obtenha os detalhes sobre o conjunto de nuvem blocos de construção de armazenamento que você pode usar para criar seu próprio serviço de armazenamento ou a solução.
   
@@ -190,11 +193,11 @@ Ao projetar sua solução de armazenamento personalizada com o armazenamento do 
     
 - Particione os dados em um verticalmente (pela tabela) ou horizontalmente (tabela de segmento entre vários fragmentos) para distribuir a carga em vários bancos de dados.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Armazenamento do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
+[Armazenamento do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-storage-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

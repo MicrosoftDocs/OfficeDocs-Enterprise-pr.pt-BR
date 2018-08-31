@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumo: recomendações de configuração para proteger arquivos no SharePoint Online e no Office 365.'
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319222"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915076"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Proteger sites e arquivos do SharePoint Online
 
@@ -138,7 +140,7 @@ O uso dos rótulos do Office 365 é recomendado para ambientes com dados confide
     
 - Pessoas na sua organização podem aplicar manualmente um rótulo ao conteúdo no Outlook na Web, Outlook 2010 e posteriores, OneDrive for Business, SharePoint Online e grupos do Office 365. Os usuários geralmente sabem melhor o tipo de conteúdo com o qual estão trabalhando, portanto podem classificá-lo e aplicar a política DLP apropriada.
     
-![Configuração recomendada para sites do SharePoint](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![Configuração recomendada para sites do SharePoint](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 Conforme ilustrado, essa solução inclui a criação dos seguintes rótulos:
   
@@ -160,7 +162,7 @@ Caso fornecida para sua segurança, é possível usar a Proteção de Informaç�
   
 Lembre-se de que quando a criptografia da Proteção de Informações do Azure é aplicada aos arquivos armazenados no Office 365, o serviço não pode processar o conteúdo desses arquivos. Coautoria, descoberta eletrônica, pesquisa, Delve e outros recursos de colaboração não funcionam. Políticas de DLP só funcionam com metadados (incluindo rótulos do Office 365), mas não com o conteúdo desses arquivos (como números de cartão de crédito em arquivos).
   
-![A Proteção de Informações do Azure é configurada no Azure e os rótulos são exibidos na barra de ferramentas do cliente.](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![A Proteção de Informações do Azure é configurada no Azure e os rótulos são exibidos na barra de ferramentas do cliente.](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 Conforme ilustrado:
   
@@ -185,6 +187,7 @@ Há duas maneiras para conceder aos usuários externos o acesso aos arquivos pro
 Para as etapas de configuração de Proteção de Informações do Azure nesta solução, consulte [Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure](protect-sharepoint-online-files-with-azure-information-protection.md).
   
 ## <a name="see-also"></a>Confira também
+
 
 [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações Agile](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

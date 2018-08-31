@@ -1,5 +1,5 @@
 ---
-title: "Exibir usuários licenciados e não licenciados com o Office 365 PowerShell"
+title: Exibir usuários licenciados e não licenciados com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: "Explica como usar o Office 365 PowerShell para exibir as contas de usuários licenciados e não licenciados."
-ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: Explica como usar o Office 365 PowerShell para exibir as contas de usuários licenciados e não licenciados.
+ms.openlocfilehash: d182e53992b189e8ede52e6d133b864a17ba7232
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914866"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Exibir usuários licenciados e não licenciados com o Office 365 PowerShell
 
@@ -57,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>A versão longa (instruções com explicações detalhadas)
 
-As contas de usuário do Office 365 e as licenças do Office 365 não precisam ter uma correspondência direta: é possível ter os usuários do Office 365 que não têm uma licença do Office 365 e é possível ter licenças do Office 365 que ainda não foram atribuídas a um usuário. (Na verdade, uma única conta de usuário pode até ter  *várias*  licenças do Office 365.) Quando você cria uma nova conta de usuário do Office 365 (confira o artigo[Licenciar usuários do Office 365 com o Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) para obter mais informações), não precisa atribuir uma licença ao usuário: o novo usuário terá uma conta válida, mas ele não poderá entrar no Office 365. Se tentar entrar, verá algo parecido com isto:
+Contas de usuário do Office 365 e licenças do Office 365 não precisam ter uma correspondência direta: é possível para que os usuários do Office 365 que não têm uma licença do Office 365 e é possível ter licenças do Office 365 que não foram atribuídas a um usuário. (Na verdade, uma única conta de usuário ainda pode ter *vários* Office 365 licenças.) Quando você cria um novo usuário do Office 365 conta (veja o artigo [Atribuir licenças às contas de usuário com o Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md) para obter mais informações você) não é necessário atribuir uma licença de usuário: o novo usuário terá uma conta válida, mas ele não conseguirá sig n no Office 365. Se eles tentarem entrar, eles verão algo semelhante a esta:
   
-![Usuário sem uma licença válida do Office 365.](images/o365_powershell_no_license.png)
+![Usuário sem uma licença válida do Office 365.](media/o365-powershell-no-license.png)
   
 Da mesma forma, você pode ter um usuário que ficará de férias ou ausente por um longo período. Nesse caso, você poderia remover a licença do usuário, mas deixar a conta intacta (isto é, manter todos os valores de propriedades, como endereço e telefone, como estão). Ao fazer isso, você pode atribuir a licença a outra pessoa (como, por exemplo, um funcionário temporário que esteja substituindo a pessoa que está de férias). Quando o usuário voltar ao trabalho, você poderá emitir uma nova licença e ele poderá retomar seu trabalho como se nunca tivesse saído.
   
@@ -125,7 +126,6 @@ AlexD@litwareinc.com        Alex Darrow                     True
 Como você pode ver, as informações não são retornadas para Brenda Fernandes. Por que não? Isso mesmo: porque a propriedade **isLicensed** da conta de Brenda não está definida como `True`.
   
 ## <a name="see-also"></a>Veja também
-<a name="SeeAlso"> </a>
 
 Para saber mais sobre os cmdlets usados nestes procedimentos, confira os seguintes tópicos:
   

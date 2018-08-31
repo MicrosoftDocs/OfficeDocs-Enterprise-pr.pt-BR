@@ -1,5 +1,5 @@
 ---
-title: "Contas de usuário para a Contoso Corporation, licenças e assinaturas"
+title: Contas de usuário para a Contoso Corporation, licenças e assinaturas
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
-description: "Resumo: Compreenda a estrutura de locatários, contas de usuário, licenças e assinaturas de nuvem da Contoso."
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Compreenda a estrutura de locatários, contas de usuário, licenças e assinaturas de nuvem da Contoso.'
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915506"
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Contas de usuário para a Contoso Corporation, licenças e assinaturas
 
@@ -36,7 +39,7 @@ Para fornecer um uso consistente de identidades e cobrança para todas as oferta
     
     Para ofertas de nuvem da Microsoft SaaS, uma licença permite que uma conta de usuário específica usar os serviços de nuvem. Para o Windows Azure, licenças de software são criadas no preço de serviço, mas, em alguns casos, que você precisará adquirir licenças de software adicional.
     
-- Contas do usuário
+- Contas de usuário
     
     Contas de usuário são armazenadas em um locatário do Azure AD e possam ser sincronizadas a partir de um provedor de identidade, como o Windows Server AD local.
     
@@ -46,7 +49,7 @@ Contoso determinados a estrutura para a organização e suas assinaturas, licen�
   
 **Figura 1: Da Contoso organização, assinaturas, licenças, contas de usuário e locatários**
 
-![Organização, assinaturas, licenças, contas de usuário e locatários da Contoso](images/Contoso_Poster/Subscriptions.png)
+![Organização, assinaturas, licenças, contas de usuário e locatários da Contoso](media/Contoso-Poster/Subscriptions.png)
   
 A Figura 1 mostra como a organização Contoso inclui diversas assinaturas e está vinculada a um locatário comuns do Azure AD que contém as contas de usuário sincronizadas a partir do contoso.com floresta do Windows Server AD.
   
@@ -82,7 +85,7 @@ A Figura 2 mostra o design hierárquico de assinaturas do Azure da Contoso:
   
 **Figura 2: Estrutura da Contoso para assinaturas do Azure**
 
-![Estrutura da Contoso para assinaturas do Azure](images/Contoso_Poster/Subscriptions_Nested.png)
+![Estrutura da Contoso para assinaturas do Azure](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - A Contoso é na parte superior, com base em seu Enterprise Agreement com a Microsoft.
     
@@ -92,11 +95,11 @@ A Figura 2 mostra o design hierárquico de assinaturas do Azure da Contoso:
     
 Cada assinatura Azure pode ser associada um único locatário do Azure AD que contém as contas de usuário e grupos para autenticação e autorização aos serviços do Azure. Inscrições de produção usam locatário da Contoso Azure AD comuns.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 

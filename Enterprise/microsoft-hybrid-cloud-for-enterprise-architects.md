@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Resumo: o que os arquitetos de TI precisam saber sobre cenários híbridos usando plataformas e serviços em nuvem da Microsoft.'
-ms.openlocfilehash: a729c770fee5a6484e8a8efbfe014b54fe266bc0
-ms.sourcegitcommit: 9f57825b10f20e3813732372541128ef187d52c3
+ms.openlocfilehash: a2859d6ce677a37541948d481530aee8f46adf7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "20161814"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915546"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 
@@ -28,7 +30,7 @@ ms.locfileid: "20161814"
   
 Este artigo conecta você a um conjunto de artigos que descrevem o que os arquitetos de TI precisam saber sobre configurações e arquitetura híbrida com as plataformas e os serviços de nuvem da Microsoft. Você também pode visualizar este artigo como um cartaz de 7 páginas e imprimi-lo em formato tabloide (também conhecido por ledger, 11 x 17 ou A3).
   
-[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
