@@ -1,5 +1,5 @@
 ---
-title: Projetando a rede para o Microsoft SaaS
+title: Criação de rede para o Microsoft SaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Resumo: Entenda como otimizar sua rede para o acesso aos serviços de SaaS da Microsoft, incluindo o Office 365 e Microsoft Intune Dynamics 365.'
-ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915466"
 ---
-# <a name="designing-networking-for-microsoft-saas"></a>Projetando a rede para o Microsoft SaaS
+# <a name="designing-networking-for-microsoft-saas"></a>Criação de rede para o Microsoft SaaS
 
  **Resumo:** Compreenda como otimizar sua rede para o acesso aos serviços de SaaS da Microsoft, incluindo o Office 365 e Microsoft Intune Dynamics 365.
   
@@ -42,9 +45,9 @@ Siga estas etapas para otimizar a sua rede de serviços SaaS da Microsoft:
 
 Aqui estão algumas coisas a considerar otimizam sua borda da Internet e a taxa de transferência aos serviços do Microsoft SaaS.
   
-**Figura 1: Opções de Conexão para serviços SaaS da Microsoft**
+**Figura 1: Opções de conexão para serviços SaaS da Microsoft**
 
-![Figura 1: Opções de conexão para serviços SaaS da Microsoft](images/Network_Poster/SaaS1.png)
+![Figura 1: Opções de conexão para serviços SaaS da Microsoft](media/Network-Poster/SaaS1.png)
   
 A Figura 1 mostra uma rede local conectando-se aos serviços do Microsoft SaaS através de um pipe de Internet ou ExpressRoute.
   
@@ -178,19 +181,19 @@ Para otimizar sua rede para sincronizações em andamento:
     
 - Use monitoramento resultados de largura de banda para determinar a necessidade de alterações na rede (up/dimensionamento, circuitos novos ou adicionar dispositivos)
     
-Para obter mais informações, consulte:
+Para mais informações, consulte:
   
-- [Rede e planejamento de migração para o Office 365](https://aka.ms/tune)
+- [Planejamento de migração e rede para Office 365](https://aka.ms/tune)
     
-- [ExpressRoute para o Office 365](https://aka.ms/expressrouteoffice365)
+- [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
 
 ## <a name="next-step"></a>Próxima etapa
 
-[Projetando a rede para o Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
+[Criação de rede para o Microsoft Azure PaaS](designing-networking-for-microsoft-azure-paas.md)
     
 ## <a name="see-also"></a>Confira também
 
-[Rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
