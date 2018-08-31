@@ -1,5 +1,5 @@
 ---
-title: Automatizar o conjunto de arquivos para eDiscovery
+title: Automatizar a coleção de arquivos para a Descoberta eletrônica
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,14 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
+search.appverid:
+- MET150
 description: 'Resumo: Saiba como automatizar o conjunto de arquivos dos computadores do usuário para a descoberta eletrônica.'
-ms.openlocfilehash: 0a09eb8ec997f62e0f8c3149d35422b0ee0e4a98
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915746"
 ---
-# <a name="automate-file-collection-for-ediscovery"></a>Automatizar o conjunto de arquivos para eDiscovery
+# <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleção de arquivos para a Descoberta eletrônica
 
  **Resumo:** Saiba como automatizar o conjunto de arquivos dos computadores do usuário para a descoberta eletrônica.
   
@@ -37,21 +40,21 @@ Esta solução usa um grupo de segurança global, diretiva de grupo e um script 
   
 O diagrama a seguir percorre todas as etapas e os elementos da solução.
   
-![Visão geral da solução de coleção de arquivos automatizada](images/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Visão geral da solução de coleção de arquivos automatizada](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
 |Legenda * * *||
 |:-----|:-----|
-|![balão magenta 1](images/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Criar um objeto de diretiva de grupo (GPO) e associá-lo com o script de logon da coleção.  <br/> |
-|![balão magenta 2](images/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configure o filtro de segurança do GPO para aplicar o GPO somente ao grupo responsáveis. <br/> |
-|![balão magenta 3](images/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Dos responsáveis faz logon e executa o GPO, chamar o script de logon da coleção.  <br/> |
-|![balão magenta 4](images/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|O script de logon da coleção faz o inventário todas as unidades conectadas localmente no computador responsáveis, pesquisar os arquivos que deseja e seu local de gravação.  <br/> |
-|![balão magenta 5](images/4bf8898c-44ad-4524-b983-70175804eb85.png)|O script de logon da coleção copia os arquivos inventariados para um compartilhamento de arquivo oculto no servidor intermediário.  <br/> |
-|![balão magenta 6](images/99589726-0c7e-406b-a276-44301a135768.png)| (Uma opção) Manualmente, execute o script de importação de PST para importar os arquivos PST coletados para Exchange Server 2013. <br/> |
-|![balão magenta 7](images/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opção B) Usando a ferramenta de importação do Office 365 e o processo, importe os arquivos PST coletados para Exchange Online.  <br/> |
-|![balão magenta 8](images/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mova coletados todos os arquivos para um compartilhamento de arquivo Azure para armazenamento de longo prazo com o runbook MoveToColdStorage System Center Orchestrator 2012 R2. <br/> |
-|![balão magenta 9](images/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexe os arquivos em compartilhamento de arquivos o armazenamento frio com o SharePoint 2013.  <br/> |
-|![balão magenta 10](images/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Execute a descoberta eletrônica no conteúdo em armazenamento de frio e do local Exchange Server 2013.  <br/> |
-|![balão magenta 11](images/e59ab403-2f19-497a-92a5-549846dded66.png)|Execute a descoberta eletrônica no conteúdo no Office 365.  <br/> |
+|![balão magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Criar um objeto de diretiva de grupo (GPO) e associá-lo com o script de logon da coleção.  <br/> |
+|![balão magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configure o filtro de segurança do GPO para aplicar o GPO somente ao grupo responsáveis. <br/> |
+|![balão magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Dos responsáveis faz logon e executa o GPO, chamar o script de logon da coleção.  <br/> |
+|![balão magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|O script de logon da coleção faz o inventário todas as unidades conectadas localmente no computador responsáveis, pesquisar os arquivos que deseja e seu local de gravação.  <br/> |
+|![balão magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|O script de logon da coleção copia os arquivos inventariados para um compartilhamento de arquivo oculto no servidor intermediário.  <br/> |
+|![balão magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Uma opção) Manualmente, execute o script de importação de PST para importar os arquivos PST coletados para Exchange Server 2013. <br/> |
+|![balão magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opção B) Usando a ferramenta de importação do Office 365 e o processo, importe os arquivos PST coletados para Exchange Online.  <br/> |
+|![balão magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mova coletados todos os arquivos para um compartilhamento de arquivo Azure para armazenamento de longo prazo com o runbook MoveToColdStorage System Center Orchestrator 2012 R2. <br/> |
+|![balão magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexe os arquivos em compartilhamento de arquivos o armazenamento frio com o SharePoint 2013.  <br/> |
+|![balão magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Execute a descoberta eletrônica no conteúdo em armazenamento de frio e do local Exchange Server 2013.  <br/> |
+|![balão magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Execute a descoberta eletrônica no conteúdo no Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -266,7 +269,7 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 3. Use o recurso ir para no bloco de notas. Faça as seguintes alterações, conforme necessário:
     
-|**N º de linha**|**Você precisa alterar**|**Obrigatório/opcional**|
+|**Número da linha**|**Você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
 |71  <br/> |Variável de **$FileTypes** . Inclua todas as extensões de tipo de arquivo que você deseja que o script de estoque e coletar na variável de matriz.<br/> |Opcional  <br/> |
 |76 e 77  <br/> |Alterar a maneira como a variável **$CaseNo** é criado para atender às suas necessidades. O script captura a data atual e a hora e o acrescenta o nome de usuário a ela.<br/> |Opcional  <br/> |
@@ -324,10 +327,10 @@ $AllFiles | ForEach-Object {
     
 3. Use o recurso ir para no bloco de notas e faça as seguintes alterações, conforme necessário:
     
-|**N º de linha**|**Você precisa alterar**|**Obrigatório/opcional**|
+|**Número da linha**|**Você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
-|12  <br/> |As pastas de caixa de correio que PSTs são importados para marcas de **$FolderIdentifier** . Altere essa opção se necessário.<br/> |Opcional  <br/> |
-|17  <br/> |**$ConnectionUri** deve ser definida para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se sua **$ConnectionUri** aponta para um local de http, https não. Ele não funcionará com https:.          |Obrigatório  <br/> |
+|12   <br/> |As pastas de caixa de correio que PSTs são importados para marcas de **$FolderIdentifier** . Altere essa opção se necessário.<br/> |Opcional  <br/> |
+|17   <br/> |**$ConnectionUri** deve ser definida para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se sua **$ConnectionUri** aponta para um local de http, https não. Ele não funcionará com https:.          |Obrigatório  <br/> |
    
 4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução para o \\ \\preparo\\compartilhamento de $ casos.
     
@@ -442,7 +445,7 @@ Todas as outras etapas não são específicas para essa solução. Eles são tar
     
 2. Observação o compartilhamento de arquivo Azure que você está usando para armazenamento de longo prazo, por exemplo \\ \\AZFile1\\ContentColdStorage e o arquivo da coleção local compartilharem, por exemplo \\ \\preparo\\casos$. Você deve ver os arquivos e pastas aparecem no compartilhamento de arquivo frio armazenamento e desaparecem do compartilhamento de arquivos da coleção.
     
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>Descoberta Eletrônica
 
 1. Permitir o rastreamento completo do compartilhamento de arquivo frio armazenamento para executar como agendas, ou inicia um rastreamento. Para obter mais informações sobre como iniciar rastreamentos completos ou incrementais, consulte [Iniciar, pausar, retomar ou parar um rastreamento no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     

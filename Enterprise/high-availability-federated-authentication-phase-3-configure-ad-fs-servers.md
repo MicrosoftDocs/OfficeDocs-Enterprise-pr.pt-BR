@@ -1,5 +1,5 @@
 ---
-title: "Alta disponibilidade federado servidores de autenticação fase 3 configurar o AD FS"
+title: Alta disponibilidade federado servidores de autenticação fase 3 configurar o AD FS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: "Resumo: Criar e configurar os servidores de serviços de Federação do Active Directory (AD FS) para sua autenticação federada de alta disponibilidade para o Office 365 in Microsoft Azure."
-ms.openlocfilehash: a9daecddb572bf2432d68ae76ed8d81571ef4b79
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Crie e configure os servidores dos Serviços de Federação do Active Directory (AD FS) para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
+ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915426"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Autenticação federada de alta disponibilidade Fase 3: Configurar servidores do AD FS
 
- **Resumo:** Criar e configurar os servidores de serviços de Federação do Active Directory (AD FS) para sua autenticação federada de alta disponibilidade para o Office 365 in Microsoft Azure.
+ **Resumo:** Crie e configure os servidores dos Serviços de Federação do Active Directory (AD FS) para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.
   
 Nessa fase de implantação da alta disponibilidade para a autenticação federada do Office 365 nos serviços de infraestrutura do Azure, você cria um balanceador de carga interno e dois servidores AD FS.
   
@@ -45,7 +46,7 @@ Use o seguinte bloco de comandos do PowerShell para criar as máquinas virtuais 
 Lembre-se de que você definiu milhões de tabela em [alta disponibilidade federado autenticação fase 2: Configure os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e tabelas R, V, S, I e A na [alta disponibilidade federado autenticação fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> O comando a seguir define usar a versão mais recente do Azure PowerShell. Consulte a [Introdução ao cmdlets do PowerShell do Windows Azure](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira a [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Primeiro, crie um balanceador de carga interno Azure para o AD dois servidores FS. Especifique os valores para as variáveis, removendo a \< e > caracteres. Quando você tiver fornecido todos os valores adequados, execute o bloco de resultante no prompt de comando do PowerShell do Azure ou com o PowerShell ISE.
   
@@ -128,7 +129,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Como essas máquinas virtuais são para um aplicativo de intranet, não estão atribuídos a um endereço IP público ou um rótulo de nome de domínio DNS e expostos à Internet. No entanto, isso também significa que você não pode se conectar a eles do portal do Azure. A opção **Conectar** está disponível quando você exibe as propriedades da máquina virtual. Use o acessório de Conexão de área de trabalho remota ou outra ferramenta de área de trabalho remota para se conectar à máquina virtual usando o privada IP endereço ou intranet nome DNS.
+> Como essas máquinas virtuais são para um aplicativo de intranet, elas não recebem um endereço IP público ou um rótulo de nome de domínio DNS, nem estão expostas à Internet. No entanto, isso também significa que você não pode se conectar a eles no portal do Azure. A opção **Conectar** não está disponível quando você visualiza as propriedades da máquina virtual. Use o acessório Conexão de Área de Trabalho Remota ou outra ferramenta de Área de Trabalho Remota para se conectar à máquina virtual usando seu endereço IP privado ou o nome DNS da intranet.
   
 Para cada máquina virtual, use o cliente de área de trabalho remota de sua preferência e crie uma conexão de área de trabalho remota. Use seu nome de computador ou DNS de intranet e as credenciais da conta de administrador local.
   
@@ -143,18 +144,18 @@ Restart-Computer
 
 Veja a seguir a configuração resultante da conclusão bem-sucedida dessa fase, com nomes de computador de espaço reservado.
   
-**Fase 3: Servidores AD FS e balanceador de carga interno para a sua infraestrutura de autenticação federada de alta disponibilidade no Windows Azure**
+**Fase 3: Os servidores do AD FS e o balanceador de carga interno para a sua infraestrutura de autenticação federada de alta disponibilidade no Azure**
 
-![Fase 3 da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure com os servidores AD FS](images/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Fase 3 da infraestrutura de autenticação federada de alta disponibilidade para o Office 365 no Azure com os servidores AD FS](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Próxima etapa
 
-Uso [alta disponibilidade federado autenticação fase 4: configurar proxies de aplicativo da web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) para continuar a configurar essa carga de trabalho.
+Use o [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) para continuar configurando essa carga de trabalho.
   
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Implantar a autenticação federada de alta disponibilidade para o Office 365 no Windows Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identidade federada para seu ambiente de desenvolvimento/teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
 
 

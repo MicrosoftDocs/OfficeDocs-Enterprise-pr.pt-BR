@@ -1,5 +1,5 @@
 ---
-title: "Mover dados de histórico de transação para a nuvem"
+title: Mover os dados históricos de transação para a nuvem
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: 'Resumo: Como Contoso implementou o SQL Server Alongar banco de dados para reduzir as suas necessidades de armazenamento de dados no local e diariamente executando os custos.'
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915716"
 ---
-# <a name="moving-historical-transaction-data-to-the-cloud"></a>Mover dados de histórico de transação para a nuvem
+# <a name="moving-historical-transaction-data-to-the-cloud"></a>Mover os dados históricos de transação para a nuvem
 
  **Resumo:** Como a Contoso implementou Alongar banco de dados do SQL Server para reduzir as suas necessidades de armazenamento de dados no local e diariamente executando os custos.
   
@@ -28,7 +31,7 @@ Como parte da sua necessidade comercial para dimensionar a seus centros de dados
   
 **Figura 1: SQL Server Database Alongar**
 
-![SQL Server Stretch Database como uma solução de dados híbrida](images/Contoso_Poster/StretchDB01.png)
+![SQL Server Stretch Database como uma solução de dados híbrida](media/Contoso-Poster/StretchDB01.png)
   
 A Figura 1 mostra como um cliente SQL envia consultas T-SQL para um servidor executando o SQL Server 2016, que encaminha para um banco de dados do Windows Azure SQL Alongar no Azure PaaS.
   
@@ -52,7 +55,7 @@ Aqui está a configuração resultante para um servidor executando o SQL Server 
   
 **Figura 2: Usando o banco de dados de Alongar para um servidor em um datacenter da Contoso**
 
-![SQL Server Stretch Database de configuração da Contoso para um único computador que executa o SQL Server](images/Contoso_Poster/StretchDB02.png)
+![SQL Server Stretch Database de configuração da Contoso para um único computador que executa o SQL Server](media/Contoso-Poster/StretchDB02.png)
 
   
 A Figura 2 mostra como consultas de usuário para um servidor de aplicativos no datacenter da Contoso se tornam consultas SQL que são passadas para um banco de dados do Windows Azure SQL Alongar no Azure PaaS.
@@ -67,13 +70,13 @@ Depois da implementação do banco de dados de alongar, Contoso:
     
 - Reduziu os seus custos de execução diários significativamente.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
 [Cenários empresariais para a Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Alongar para o banco de dados](https://msdn.microsoft.com/library/dn935011.aspx)
   

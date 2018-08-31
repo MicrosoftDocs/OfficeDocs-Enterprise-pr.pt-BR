@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 014b3710-e6e9-485c-8550-975d510eb2fc
-description: "Resumo: Entenda a definição e elementos de nuvem da Microsoft híbrida."
-ms.openlocfilehash: 1f023364c4b2e9c64af954ec9ba63a6197ebc01a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Resumo: Entenda a infra-estrutura de rede da Contoso e como ele pode usar ExpressRoute para acesso otimizado para as ofertas de nuvem da Microsoft.'
+ms.openlocfilehash: 89d4182d8a5ef44f936977ec51cc002b51f4b379
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915216"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Sistema de rede para a Contoso Corporation
 
- **Resumo:** Compreenda a definição e elementos de nuvem da Microsoft híbrida.
+ **Resumo:** Compreenda a infra-estrutura de rede da Contoso e como ele pode usar ExpressRoute para acesso otimizado para as ofertas de nuvem da Microsoft.
   
 Para adotar uma infra-estrutura inclusive de nuvem, engenheiros de rede da Contoso concretizados do turno fundamental da maneira que o tráfego de rede para viagens de serviços em nuvem. Em vez de apenas otimizar o tráfego para os servidores locais e data centers, igual atenção à otimização de tráfego até a borda da Internet e pela Internet.
   
@@ -30,7 +31,7 @@ A Contoso tem a infra-estrutura de rede mostrada na Figura 1.
   
 **Figura 1: WAN de infra-estrutura da Contoso**
 
-![Infraestrutura WAN da Contoso conectando a sede, os centros regionais e as filiais](images/Contoso_Poster/Contoso_WW_Net.png)
+![Infraestrutura WAN da Contoso conectando a sede, os centros regionais e as filiais](media/Contoso-Poster/Contoso-WW-Net.png)
   
 A Figura 1 mostra os escritórios da Contoso em todo o mundo e o conjunto de regionais e links de WAN office satélite entre elas.
   
@@ -54,7 +55,7 @@ Arquitetura do Contoso criada sua infraestrutura de aplicativo e servidor para o
   
 **Figura 2: Infra-estrutura da Contoso para aplicativos internos**
 
-![Infraestrutura da Contoso para aplicativos internos](images/Contoso_Poster/App_Infra.png)
+![Infraestrutura da Contoso para aplicativos internos](media/Contoso-Poster/App-Infra.png)
   
 - Filiais usam servidores locais de armazenamento em cache para armazenar documentos acessados frequentemente e sites internos.
     
@@ -80,7 +81,7 @@ Com uma conexão ExpressRoute, você está conectado à rede de nuvem da Microso
   
 **Figura 3: A Microsoft cloud rede mundial**
 
-![A rede de nuvem da Microsoft em todo o mundo](images/Contoso_Poster/MS_WW_Cloud.png)
+![A rede de nuvem da Microsoft em todo o mundo](media/Contoso-Poster/MS-WW-Cloud.png)
   
 A Figura 3 mostra a rede de nuvem Microsoft interconexão para as diversas regiões do mundo.
   
@@ -126,11 +127,11 @@ A Contoso usa as seguintes etapas para preparar sua rede para a nuvem da Microso
     
     Com base nos números dos servidores projetados de curtos e longo prazo no Azure IaaS, reserve espaço de endereço privado para VNets do Windows Azure e suas sub-redes.
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-[Contoso na Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
+[Contoso no Microsoft Cloud](contoso-in-the-microsoft-cloud.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 [Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
 
