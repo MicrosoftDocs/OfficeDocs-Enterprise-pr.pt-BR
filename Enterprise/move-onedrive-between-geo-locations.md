@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "19174897"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915326"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -39,6 +39,14 @@ Ao mover os sites do OneDrive entre locais geográficos, é importante comunicar
 
 Após a conclusão da mudança, envie um email aos seus usuários informando que eles podem continuar a trabalhar com o OneDrive.
 
+## <a name="scheduling-onedrive-site-moves"></a>Agendar movimentações do site do OneDrive
+
+Você pode agendar as movimentações de site do OneDrive com antecedência (conforme descrito posteriormente neste artigo). Recomendamos começar com um pequeno número de usuários para validar seus fluxos de trabalho e estratégias de comunicação. Quando você estiver familiarizado com o processo, poderá agendar as movimentações da seguinte maneira:
+
+- Você pode agendar até 4.000 movimentações por vez.
+- Conforme a movimentação se inicia, você pode agendar mais, com no máximo 4.000 movimentações pendentes na fila e a qualquer momento.
+- É recomendável não agendar mais de 4.000 movimentações por mês.
+
 ## <a name="moving-a-onedrive-site"></a>Mover um site do OneDrive
 
 Para executar uma movimentação geográfica do OneDrive, primeiro o administrador do locatário precisa definir o local de dados preferencial (PDL) do usuário como a localização geográfica apropriada. Quando o PDL for definido, aguarde pelo menos 24 horas para que a atualização do PDL seja sincronizada entre os vários locais geográficos antes de iniciar a movimentação geográfica do OneDrive.
@@ -51,7 +59,7 @@ Por exemplo: para mover o OneDrive do usuário 'Carlos@contosoenergy.onmicrosoft
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Validar o ambiente
 
@@ -86,7 +94,7 @@ Por exemplo, para mover o OneDrive de carlos@contosoenergy.onmicrosoft.com de EU
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 Para agendar uma movimentação geográfica posteriormente, use um dos seguintes parâmetros:
 
