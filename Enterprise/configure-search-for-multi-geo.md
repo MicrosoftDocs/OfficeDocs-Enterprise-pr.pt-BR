@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba mais sobre como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915056"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar a pesquisa para o OneDrive for Business com a funcionalidade multigeográfica
 
@@ -81,7 +82,7 @@ Alguns recursos de pesquisa que talvez você conheça funcionam diferente em um 
 </tr>
 <tr class="even">
 <td align="left">Refinadores de pesquisa</td>
-<td align="left">A pesquisa retorna refinadores de todas as localizações geográficas de um locatário e os agrega. A agregação é um esforço dentro do melhor possível, quer dizer, as contagens de refinador podem não estar 100% corretas. Para a maioria dos cenários orientados por pesquisa, esse nível e precisão é suficiente.</td>
+<td align="left">A pesquisa retorna refinadores de todas as localizações geográficas de um locatário e os agrega. A agregação é um esforço dentro do melhor possível, quer dizer, as contagens de refinador podem não estar 100% corretas. Para a maioria dos cenários orientados por pesquisa, esse nível e precisão é suficiente. </td>
 <td align="left">Para os aplicativos orientados por pesquisa que dependem da integridade de refinador, consulte cada localização geográfica individualmente sem usar o fan-out multigeográfico.</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ Alguns dos recursos de pesquisa que talvez você conheça não são suportados e
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Como a pesquisa funciona em um ambiente multigeográfico?
 
 **Todos os** clientes de pesquisa usam as existentes APIs REST de Pesquisa do SharePoint para interagir com os índices de pesquisa.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. Um cliente pesquisa chama o ponto de extremidade da API REST com a propriedade de consulta EnableMultiGeoSearch= true.
 2. A consulta é enviada a todas as localizações geográficas no locatário.
@@ -150,8 +152,8 @@ Cada centro de pesquisa tem vários verticais e você precisará configurar cada
 
 3.  Selecione o eixo vertical a configurar, clique no ícone de engrenagem **Configurações** no canto superior direito e, em seguida, clique em **Editar página**. A página de resultados de pesquisa abre no modo de edição.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  Na Web Part de resultados da pesquisa, mova o ponteiro para o canto superior direito da Web Part, clique na seta e, em seguida, clique em **Editar Web Part** no menu. O painel de ferramentas da Web Part de resultados de pesquisa abre na faixa de opções no canto superior direito da página. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  Na Web Part de resultados da pesquisa, mova o ponteiro para o canto superior direito da Web Part, clique na seta e, em seguida, clique em **Editar Web Part** no menu. O painel de ferramentas da Web Part de resultados de pesquisa abre na faixa de opções no canto superior direito da página. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  No painel de ferramentas da Web Part, na seção **Configurações**, em **Configurações de controle de resultados**, marque **Mostrar resultados multigeográficos** para obter a Web Part de resultados de pesquisa para mostrar resultados de todas as localizações geográficas.
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus – Isso é uma propriedade que a API de pesquisa do ShareP
 
 Com uma solicitação GET, você especifica os parâmetros da consulta na URL. Com uma solicitação POST, você passa os parâmetros de consulta no corpo no formato JavaScript Object Notation (JSON).
 
+
 #### <a name="request-headers"></a>Cabeçalhos de solicitação
 
 <table>
@@ -250,7 +253,10 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Exemplo de solicitação GET da qual realizar fan-out para **algumas** localizações geográficas
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> Vírgulas e dois-pontos na lista de locais geográficos da propriedade MultiGeoSearchConfiguration são precedidos pelo caractere **barra invertida**. Isso ocorre porque solicitações GET usam dois-pontos para separar propriedades e vírgulas para separar os argumentos de propriedades. Sem a barra invertida como caractere de escape, a propriedade MultiGeoSearchConfiguration será interpretada incorretamente.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exemplo de solicitação POST da qual se realiza fan-out para **todas** as localizações geográficas
 

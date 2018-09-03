@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumo: crie sites de equipe do SharePoint Online públicos, privados, confidenciais e altamente confidenciais em um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193721"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915766"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Proteger sites do SharePoint Online em um ambiente de desenvolvimento/teste
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193721"
   
 Este artigo fornece instruções passo a passo para criar um ambiente de desenvolvimento/teste que inclui os quatro tipos diferentes de sites de equipe do SharePoint Online para a solução de [arquivos e sites seguros do SharePoint Online](secure-sharepoint-online-sites-and-files.md).
   
-![Todos os quatro sites de equipe no ambiente seguro de desenvolvimento/teste do SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Todos os quatro sites de equipe no ambiente seguro de desenvolvimento/teste do SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Use este ambiente de desenvolvimento/teste para experimentar com os comportamentos de proteção de informações e ajustar as configurações para suas necessidades específicas antes de implantar sites de equipe do SharePoint Online na produção.
   
@@ -41,9 +43,9 @@ Em seguida, inscreva-se para a assinatura de avaliação do EMS e adicione-a à 
   
 1. Se necessário, entre no Portal do Office 365 com as credenciais da conta de administrador global da sua assinatura de avaliação. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Clique no bloco **Administração**.
+2. Clique no bloco de **Administração**.
     
-3. Na guia **Centro de administração do Office** no navegador, no painel de navegação à esquerda, clique em **Cobrança > Comprar serviços**.
+3. Na guia **Centro de Administração do Office** no navegador, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
     
 4. Na página **Comprar serviços**, encontre o item **Enterprise Mobility + Security E5**. Passe o ponteiro do mouse sobre ele e clique em **Iniciar avaliação gratuita**.
     
@@ -198,7 +200,7 @@ Nesta fase, você deve criar os rótulos para os diferentes níveis de seguranç
     
 2. Na guia **Microsoft Office Home**, clique no bloco **Administração**.
     
-3. Na nova guia **Centro de administração do Office** no navegador, clique em **Centro de administração > Segurança&amp; e Conformidade**.
+3. Na nova guia **Centro de Administração do Office** do navegador, clique em **Centros de Administração > Segurança&amp; e Conformidade**.
     
 4. Na nova guia **Início – Segurança &amp;e Conformidade** do navegador, clique em **Classificações > Rótulos**.
     
@@ -210,7 +212,7 @@ Nesta fase, você deve criar os rótulos para os diferentes níveis de seguranç
     
 8. No painel **Examine as configurações**, clique em **Criar este rótulo** e clique em **Fechar**.
     
-9. Repita as etapas de 5 a 8 para rótulos adicionais:
+9. Repita as etapas de 5 a 8 para os rótulos adicionais:
     
   - Private
     
@@ -270,7 +272,7 @@ Em seguida, configure a pasta de documentos do site de equipe Toda a organizaç�
     
 Esta é a configuração resultante.
   
-![Proteção básica para sites de equipe do SharePoint Online público para toda a Organização.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![Proteção básica para sites de equipe do SharePoint Online público para toda a Organização.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>Site de equipe do projeto 1
 
@@ -304,7 +306,7 @@ Em seguida, configure a pasta de documentos do site de equipe Projeto 1 para o r
     
 Esta é a configuração resultante.
   
-![Proteção básica para o site de equipe privado do SharePoint Online do Projeto 1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Proteção básica para o site de equipe privado do SharePoint Online do Projeto 1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>Site de equipe de campanhas de marketing
 
@@ -380,13 +382,13 @@ Em seguida, configure uma política DLP (prevenção de perda de dados) que noti
   
 1. Na guia **Página Inicial do Microsoft Office** no navegador, clique no bloco **Segurança e Conformidade**.
     
-2. Na nova guia **Segurança e Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+2. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
     
 3. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
     
-4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e em **Avançar**.
+4. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
     
-5. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online com rótulo Confidencial** em **Nome** e clique em **Avançar**.
+5. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online de rótulo Confidencial** em **Nome** e clique em **Avançar**.
     
 6. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
     
@@ -396,7 +398,7 @@ Em seguida, configure uma política DLP (prevenção de perda de dados) que noti
     
 9. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Adicionar** na caixa suspensa e clique em **Rótulos**.
     
-10. No painel **Rótulos**, clique em **+ Adicionar**, selecione o rótulo **Confidencial**, clique em **Adicionar** e em **Concluído**.
+10. No painel **Rótulos**, clique em **+ Adicionar**, selecione o rótulo **Confidencial**, clique em **Adicionar** e clique em **Concluído**.
     
 11. No painel **Escolher os tipos de conteúdo para proteger**, clique em **Salvar**.
     
@@ -420,7 +422,7 @@ Em seguida, configure uma política DLP (prevenção de perda de dados) que noti
     
 Esta é a configuração resultante.
   
-![Proteção de nível confidencial para campanhas de Marketing isoladas do site de equipe do SharePoint Online.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![Proteção de nível confidencial para campanhas de Marketing isoladas do site de equipe do SharePoint Online.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Site de equipe de estratégia empresarial
 
@@ -494,13 +496,13 @@ Em seguida, configure uma política DLP que bloqueia os usuários quando eles co
     
 2. Na guia **Página Inicial do Microsoft Office** no navegador, clique no bloco **Segurança e Conformidade**.
     
-3. Na nova guia **Segurança e Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
+3. Na nova guia **Segurança e&amp; Conformidade** no navegador, clique em **Prevenção de perda de dados > Política**.
     
 4. No painel **Prevenção de perda de dados**, clique em **+ Criar uma política**.
     
-5. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e em **Avançar**.
+5. No painel **Iniciar com um modelo ou criar uma política personalizada**, clique em **Personalizado** e clique em **Avançar**.
     
-6. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online com rótulo Altamente confidencial** em **Nome** e clique em **Avançar**.
+6. No painel **Atribuir um nome à política**, digite **Sites de equipe do SharePoint Online de rótulo Altamente Confidencial** em **Nome** e clique em **Avançar**.
     
 7. No painel **Escolher locais**, clique em **Deixe-me escolher locais específicos** e, em seguida, clique em **Avançar**.
     
@@ -538,7 +540,7 @@ Depois, configure a Proteção de Informações do Azure com uma nova política 
   
 1. Entre no Portal do Office 365 com uma conta que tenha a função de Administrador de Segurança ou Administrador da Empresa. Para obter ajuda, consulte [Onde entrar no Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Em uma guia separada do navegador, vá para o portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
+2. Em uma guia separada do navegador, vá para o Portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
     
 3. Se esta é a primeira vez que você configura a Proteção de Informações do Azure, confira estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
@@ -568,7 +570,7 @@ Depois, configure a Proteção de Informações do Azure com uma nova política 
 
 16. Na folha **Proteção de Informações do Azure**, clique em **Políticas > + Adicionar uma nova política**.
     
-17. Digite **Estratégia empresarial** em **Nome da política** e **Rótulo para documentos no site de equipe Estratégia empresarial** em **Descrição**.
+17. Digite **EstratégiaEmpresarial** em **Nome da política** e **Documentos no site da equipe de Estratégia empresarial** em **Descrição**.
     
 18. Clique em **Selecionar usuários ou grupos que obtêm essa política > Usuário/Grupos**e, em seguida, selecione **Pacote C**.
     
@@ -582,13 +584,13 @@ Para proteger um documento com a Proteção de Informações do Azure e o novo r
   
 Esta é a configuração resultante.
   
-![Proteção com alto nível de confidencialidade para o site de equipe isolado do SharePoint Online chamado Estratégia empresarial.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![Proteção com alto nível de confidencialidade para o site de equipe isolado do SharePoint Online chamado Estratégia empresarial.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 Agora você está pronto para criar documentos nestes quatro sites e testar o acesso a eles com várias contas de usuário em sua assinatura de avaliação.
   
 Aqui está a configuração geral para todos os quatro sites de equipe do SharePoint Online.
   
-![Todos os quatro sites de equipe no ambiente seguro de desenvolvimento/teste do SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Todos os quatro sites de equipe no ambiente seguro de desenvolvimento/teste do SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>Próxima etapa
 

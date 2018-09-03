@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumo: configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 2877fa7f85643057c6ba8630939c690256bb8918
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215853"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915236"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidade federada para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -33,7 +35,7 @@ Este artigo descreve como você pode configurar a autenticação federada para o
   
 **Figura 1: A autenticação federada para o ambiente de desenvolvimento/teste do Office 365.**
 
-![O servidor proxy do aplicativo Web adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![A autenticação federada para o ambiente de desenvolvimento/teste do Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 A configuração mostrada na Figura 1 consiste em: 
   
@@ -73,7 +75,7 @@ Esta é a configuração resultante.
   
 **Figura 2: Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365**
 
-![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 A Figura 2 mostra a sincronização de diretório do ambiente de desenvolvimento/teste do Office 365 que inclui máquinas virtuais do Office 365 e CLIENT1, APP1, e DC1 em uma rede virtual Azure.
   
@@ -121,7 +123,7 @@ Esta é a configuração resultante.
   
 **Figura 3: Adicionar o servidor AD FS**
 
-![O servidor AD FS adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![O servidor AD FS adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](media/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
 A Figura 3 mostra a adição do servidor ADFS1 ao DirSync para o ambiente de desenvolvimento/teste do Office 365.
   
@@ -192,7 +194,7 @@ Esta é a configuração resultante.
   
 **Figura 4: Adicionar o servidor proxy de aplicativo web**
 
-![O servidor proxy do aplicativo Web adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![O servidor proxy do aplicativo Web adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
 A Figura 4 mostra a adição do servidor PROXY1.
   

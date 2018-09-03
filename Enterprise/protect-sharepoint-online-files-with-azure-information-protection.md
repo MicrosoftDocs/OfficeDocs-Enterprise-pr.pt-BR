@@ -3,11 +3,13 @@ title: Proteger arquivos do SharePoint Online com a Proteção de Informações 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/08/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumo: aplique a Proteção de Informações do Azure para proteger arquivos em um site de equipe altamente confidencial do SharePoint Online.'
-ms.openlocfilehash: 2c4776f5795a5a0b07be0f04b4872abadb4d31ca
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 4ea6c1da8b39f22a56ba4f4d555518b671f07b70
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319282"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915306"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Proteger arquivos do SharePoint Online com a Proteção de Informações do Azure
 
@@ -46,41 +48,42 @@ Em seguida, configure a Proteção de Informações do Azure com uma nova polít
 2. Em uma guia separada do navegador, vá para o Portal do Azure ([https://portal.azure.com](https://portal.azure.com)).
     
 3. Se esta é a primeira vez que você configura a Proteção de Informações do Azure, confira estas [instruções](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-    
+
 4. No painel de lista, clique em **Todos os serviços**, digite **informações** e clique em **Proteção de Informações do Azure**.
+
+5. Clique em **Rótulos**.
     
-5. Na folha **Proteção de Informações do Azure**, clique em **Políticas no escopo > + Adicionar uma nova política**.
+6. Clique com o botão direito do mouse no rótulo **Altamente Confidencial** e clique em **Adicionar um sub-rótulo**.
     
-6. Digite um nome para a nova política no **Nome da política** e uma descrição em **Descrição**.
+7. Digite um nome para o sub-rótulo em **Nome** e uma descrição do sub-rótulo em **Descrição**.
     
-7. Clique em **Selecionar quais usuários ou grupos obtêm esta política > Usuário/ Grupos**, e selecione o grupo de acesso dos membros do site para o site da equipe do SharePoint Online altamente confidencial. 
+8. Em **Definir permissões para documentos e emails que contenham este rótulo**, clique em **Proteger**.
     
-8. Clique em **Selecionar > OK**.
+9. Na seção **Proteção**, clique em **Azure (chave de nuvem)**.
     
-9. Para o rótulo **Altamente Confidencial**, clique nas reticências (...) e, em seguida, clique em **Adicionar um sub-rótulo**.
+10. Na folha **Proteção**, em **Configurações de proteção**, clique em **Adicionar permissões**.
     
-10. Digite um nome para o subrótulo em **Nome** e uma descrição do rótulo em **Descrição**.
+11. Na folha **Adicionar permissões**, em **Especificar usuários e grupos**, clique em ** Procurar no diretório**.
     
-11. Em **Definir permissões para documentos e emails que contenham este rótulo**, clique em **Proteger**.
+12. No painel **Usuários e Grupos do AAD**, selecione o grupo de acesso de membros do site para seu site de equipe altamente confidencial do SharePoint Online e clique em **Selecionar**.
     
-12. Na seção **Proteção**, clique em **Azure (chave de nuvem)**.
+13. Em **Escolher permissões a partir de valores predefinidos ou definir valores personalizados**, clique em **Personalizar** e, em seguida, clique nas caixas de seleção **Exibir Direitos**, **Editar Conteúdo**, **Salvar**, **Responder** e **Responder a Todos**.
     
-13. Na folha **Proteção**, em **Configurações de proteção**, clique em **+ Adicionar permissões**.
+14. Clique em **OK** duas vezes.
     
-14. Na folha **Adicionar permissões**, em **Especificar usuários e grupos**, clique em **+ Procurar no diretório**.
+15. Na folha **Sub-rótulo**, clique em **Salvar** e em **OK**.
+
+16. Na folha **Proteção de Informações do Azure**, clique em **Políticas > + Adicionar uma nova política**.
     
-15. No painel **Usuários e Grupos do AAD**, selecione o grupo de acesso de membros do site para seu site de equipe altamente confidencial do SharePoint Online e clique em **Selecionar**.
+17. Digite um nome para a nova política no **Nome da política** e uma descrição em **Descrição**.
     
-16. Em **Escolher permissões da predefinição**, desmarque as caixas de seleção **Imprimir**, **Copiar e extrair conteúdo** e **Encaminhar**.
+18. Clique em **Selecionar quais usuários ou grupos obtêm esta política > Usuário/ Grupos**, e selecione o grupo de acesso dos membros do site para o site da equipe do SharePoint Online altamente confidencial.
     
-17. Clique em **OK** duas vezes.
-    
-18. Na folha **Sub-rótulo**, clique em **Salvar**.
-    
-19. Feche a nova folha de política com escopo.
-    
-20. Na folha **Proteção de Informações do Azure – Políticas com escopo**, clique em **Publicar**.
-    
+19. Clique em **Selecionar > OK**.
+
+20. Clique em **Adicionar ou remover rótulos**. No painel **Política: adicionar ou remover rótulos**, clique no nome de seu novo sub-rótulo e, em seguida, clique em **OK**.   
+
+21. Clique em **Salvar** e em **OK**.
  
 ##<a name="client-setup"></a>Configuração do cliente
 Agora você está pronto para começar a criar documentos e protegê-los com a Proteção de Informações do Azure e seu novo rótulo.

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -16,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumo: Configure a sincronização de diretórios do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: d1c48bcf4018088b527c3f85f8923413f9ffd268
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 106e902c9da46c7c3c0fc6eb8af96d6695c7bdce
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193531"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915836"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365
 
@@ -29,7 +31,7 @@ ms.locfileid: "19193531"
   
 Muitas organizações usam o Azure AD Connect e a sincronização de diretório para sincronizar o conjunto de contas em sua floresta local do Windows Server Active Directory (AD) com o conjunto de contas no Office 365. Este artigo descreve como você pode adicionar a sincronização de diretório com a sincronização de hash de senha para o ambiente de desenvolvimento/de teste do Office 365, resultando na seguinte configuração.
   
-![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuração consiste em: 
   
@@ -48,7 +50,7 @@ Há duas fases para configurar esse ambiente de desenvolvimento/ de teste:
 
 Siga as instruções nas fases 1, 2 e 3 do artigo [Ambiente de desenvolvimento/de teste do Office 365](office-365-dev-test-environment.md). Aqui está a configuração resultante.
   
-![O ambiente de desenvolvimento/teste do Office 365](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![O ambiente de desenvolvimento/teste do Office 365](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Esta configuração consiste em: 
   
@@ -104,7 +106,7 @@ Stop-Process -Name Explorer -Force
     
 Esta é a configuração resultante.
   
-![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Ambiente de desenvolvimento/de teste do Office 365 com a sincronização de diretório](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Esta configuração consiste em: 
   
@@ -113,9 +115,10 @@ Esta configuração consiste em:
     
 ## <a name="next-step"></a>Próxima etapa
 
-Quando estiver pronto para implantar a sincronização de diretório da sua organização, confira [Implantar a sincronização de diretório do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
+Quando estiver pronto para implantar a sincronização de diretórios da sua organização, confira [Implantar sincronização de diretórios do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
 ## <a name="see-also"></a>Confira também
+
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 

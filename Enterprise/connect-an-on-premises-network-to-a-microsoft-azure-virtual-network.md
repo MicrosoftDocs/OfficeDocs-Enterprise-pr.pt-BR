@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumo: Aprenda a configurar uma rede virtual Azure entre locais para cargas de trabalho de servidor do Office com uma conexão VPN site a site.'
-ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915316"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar uma rede local a uma rede virtual do Microsoft Azure
 
@@ -33,7 +36,7 @@ Por exemplo, um servidor de sincronização de diretórios em execução em uma 
 
 Suas máquinas virtuais no Azure não precisam ser isoladas do seu ambiente local. Para conectar as máquinas virtuais do Azure aos recursos da sua rede local, é preciso configurar uma rede virtual do Azure entre locais. O diagrama a seguir mostra os componentes necessários para implantar uma rede virtual do Azure entre locais com uma máquina virtual no Azure.
   
-![Rede local conectada ao Microsoft Azure por meio de uma conexão VPN site a site](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
+![Rede local conectada ao Microsoft Azure por meio de uma conexão VPN site a site](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
   
 No diagrama, há duas redes conectadas por uma conexão VPN site a site: a rede local e a rede virtual do Azure. A conexão VPN site a site:
 
@@ -141,11 +144,11 @@ Para as configurações da rede virtual, preencha a Tabela V.
   
 |**Item**|**Elemento Configuration**|**Descrição**|**Valor**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Nome da rede virtual  <br/> |Um nome a atribuir à rede virtual do Azure (por exemplo, DirSyncNet).  <br/> |![](./images/Common_Images/TableLine.png) |
-|2.  <br/> |Local da rede virtual  <br/> |O datacenter do Azure que conterá a rede virtual (como Oeste dos EUA).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |Endereço IP do dispositivo VPN  <br/> |O endereço IPv4 público da interface de seu dispositivo VPN na Internet. Trabalhe com seu departamento de TI para determinar este endereço.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Espaço de endereço da rede virtual  <br/> |O espaço de endereço (definido em um único prefixo de endereço privado) para a rede virtual. Trabalhe com seu departamento de TI para determinar este espaço de endereço. O espaço de endereço deve estar no formato Roteamento entre Domínios sem Classificação (CIDR), também conhecido como formato de prefixo de rede. 10.24.64.0/20 é um exemplo.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
-|5.  <br/> |Chave compartilhada IPsec  <br/> |Uma cadeia alfanumérica aleatória com 32 caracteres, que será usada para autenticar ambos os lados da conexão VPN site a site. Trabalhe com seu departamento de TI ou de segurança para determinar este valor de chave e armazená-lo em um local seguro. Como alternativa, confira [Criar uma cadeia de caracteres aleatória para uma chave pré-compartilhada IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png) <br/> |
+|1.  <br/> |Nome da rede virtual  <br/> |Um nome a atribuir à rede virtual do Azure (por exemplo, DirSyncNet).  <br/> |![](./media/Common-Images/TableLine.png) |
+|2.  <br/> |Local da rede virtual  <br/> |O datacenter do Azure que conterá a rede virtual (como Oeste dos EUA).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Endereço IP do dispositivo VPN  <br/> |O endereço IPv4 público da interface de seu dispositivo VPN na Internet. Trabalhe com seu departamento de TI para determinar este endereço.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Espaço de endereço da rede virtual  <br/> |O espaço de endereço (definido em um único prefixo de endereço privado) para a rede virtual. Trabalhe com seu departamento de TI para determinar este espaço de endereço. O espaço de endereço deve estar no formato Roteamento entre Domínios sem Classificação (CIDR), também conhecido como formato de prefixo de rede. 10.24.64.0/20 é um exemplo.  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Chave compartilhada IPsec  <br/> |Uma cadeia alfanumérica aleatória com 32 caracteres, que será usada para autenticar ambos os lados da conexão VPN site a site. Trabalhe com seu departamento de TI ou de segurança para determinar este valor de chave e armazená-lo em um local seguro. Como alternativa, confira [Criar uma cadeia de caracteres aleatória para uma chave pré-compartilhada IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./media/Common-Images/TableLine.png) <br/> |
    
 Preencha a Tabela S para as sub-redes desta solução.
   
@@ -157,10 +160,10 @@ Trabalhe com seu departamento de TI para determinar esses espaços de endereço 
   
  **Tabela S: Sub-redes na rede virtual**
   
-|**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Finalidade**|
+|**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Objetivo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |A sub-rede usada pelo gateway do Azure.  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo gateway do Azure.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 Para servidores de DNS locais que você deseja que sejam usados pelas máquinas virtuais da rede virtual, preencha a Tabela D. Dê a cada servidor DNS um nome amigável e um único endereço IP. Esse nome amigável não precisa corresponder ao nome do host ou ao nome do computador do servidor DNS. Observe que duas entradas em branco estão listadas, mas você pode adicionar mais. Trabalhe com seu departamento de TI para determinar esta lista.
   
@@ -168,8 +171,8 @@ Para servidores de DNS locais que você deseja que sejam usados pelas máquinas 
   
 |**Item**|**Nome amigável do servidor DNS**|**Endereço IP do servidor DNS**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 Para direcionar os pacotes da rede virtual do Azure para a rede de sua organização por uma conexão VPN de site a site, é preciso configurar a rede virtual com uma rede local. Essa rede local contém uma lista de espaços de endereço (no formato CIDR) para todos os locais da rede local de sua organização que as máquinas virtuais da rede virtual devem acessar. Essa lista pode conter todos os locais na rede ou em uma sub-rede locais. A lista de espaços de endereço que define sua rede local deve ser exclusiva e não deve coincidir com os espaços de endereço usados para essa rede virtual ou suas outras redes virtuais entre locais.
   
@@ -179,9 +182,9 @@ Para o conjunto de espaços de endereço da rede local, preencha a Tabela L. Obs
   
 |**Item**|**Espaço de endereço da rede local**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>Roteiro de implantação
 <a name="DeploymentRoadmap"> </a>
@@ -201,7 +204,7 @@ Você deve configurar sua rede local com uma rota que aponte e, por fim, gere tr
   
 Esta é a configuração resultante.
   
-![A rede local deve ter uma rota para o espaço de endereço da rede virtual que aponte para o dispositivo VPN.](images/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![A rede local deve ter uma rota para o espaço de endereço da rede virtual que aponte para o dispositivo VPN.](media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Fase 2: criar a rede virtual entre locais no Azure
 <a name="Phase2"></a>
@@ -293,7 +296,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -A
 
 Esta é a configuração resultante.
   
-![A rede virtual ainda não está conectada à rede local.](images/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
+![A rede virtual ainda não está conectada à rede local.](media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
 Em seguida, use estes comandos para criar os gateways para a conexão VPN site a site.
   
@@ -323,7 +326,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 
 Esta é a configuração resultante.
   
-![Agora a rede virtual tem um gateway.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
+![Agora a rede virtual tem um gateway.](media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
 Em seguida, configure seu dispositivo VPN local para se conectar ao gateway de VPN do Azure. Para saber mais, confira [Sobre dispositivos VPN para conexões de rede virtual do Azure de site a site](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
@@ -335,7 +338,7 @@ Para configurar seu dispositivo VPN, você precisará do seguinte:
     
 Esta é a configuração resultante.
   
-![A rede virtual ainda já está conectada à rede local.](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
+![A rede virtual ainda já está conectada à rede local.](media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Fase 3 (Opcional): Adicionar máquinas virtuais
 
@@ -353,9 +356,8 @@ Verifique se a máquina virtual está usando o DNS corretamente (examine o DNS i
   
 Esta é a configuração resultante.
   
-![Agora a rede virtual hospeda máquinas virtuais que são acessíveis pela rede local.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![Agora a rede virtual hospeda máquinas virtuais que são acessíveis pela rede local.](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
 ## <a name="next-step"></a>Próxima etapa
   
-[Implantar a DirSync (sincronização de diretórios) do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-
+[Implantar a sincronização de diretórios do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
