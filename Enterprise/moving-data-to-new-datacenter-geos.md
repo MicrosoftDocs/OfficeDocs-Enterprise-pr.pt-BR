@@ -3,7 +3,7 @@ title: Mover dados principais para o novo geos de datacenter do Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Novo geos de datacenter adicionar capacidade e recursos para suportar o nosso crescimento de demanda e o uso do cliente em andamento de computação. Além disso, os novo geos datacenter oferecem em geo residência de dados para os dados de cliente principal. Dados de cliente principal serão um termo que se refere a um subconjunto de dados de cliente definidos nos termos do Microsoft Online Services: conteúdo de caixa de correio Exchange Online (corpo do email, entradas de calendário e o conteúdo de anexos de email) e o SharePoint Online conteúdo e os arquivos do site armazenados no site e os arquivos carregados ao OneDrive for Business.'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539389"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839579"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover dados principais para o novo geos de datacenter do Office 365
 

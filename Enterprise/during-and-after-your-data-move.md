@@ -3,7 +3,7 @@ title: Durante e após a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentações de dados são uma operação de back-end com um impacto mínimo para os usuários finais. Nenhuma ação é necessária, enquanto o Microsoft move cada serviço e os dados associados para seu locatário para um novo geo de datacenter. Transferência de dados e validação ocorrerem em segundo plano com antecedência com um impacto mínimo para os usuários.
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539293"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839599"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -165,4 +165,13 @@ Todos os usuários serão desconectados do Skype para o software de cliente de n
 
 Podemos só mover dados do cliente para o Exchange Online, SharePoint Online e Skype para negócios. Nós não mover dados para outros serviços. Não há nenhuma alteração ou impacto para você, como um cliente ou usuário desses outros serviços. O processo de movimentação não influenciam-los e a localização dos seus dados de cliente permanecerá inalterada.
   
+## <a name="related-topics"></a>Tópicos relacionados 
+ 
+[Como solicitar a migração dos dados](request-your-data-move.md)
+    
+[Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
+  
+[Novo geos datacenter para o Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)
 

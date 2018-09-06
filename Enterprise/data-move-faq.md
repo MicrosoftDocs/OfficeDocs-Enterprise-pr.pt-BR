@@ -3,7 +3,7 @@ title: Perguntas frequentes gerais sobre migração de dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Aqui estão as respostas para perguntas gerais sobre como mover dados principais para um novo geo de datacenter.
-ms.openlocfilehash: 40f83ee94aaa7c919f08d91d888ff131da02df67
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: fe2399afa81a189416c41e3acba67e53eb99c674
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539304"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839589"
 ---
 # <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
@@ -149,4 +149,12 @@ R. Sim.
   
 R. Sim. A Microsoft mantém uma rede global grande com conexões de Internet públicas nos locais mais de 50, 23 países em todo o mundo com contratos de correspondência com mais de 1.500 da Internet (provedores). Os usuários poderão acessar os datacenters onde quer que estejam na Internet.
   
+## <a name="related-topics"></a>Tópicos relacionados
 
+[Mover dados principais para o novo geos de datacenter do Office 365](moving-data-to-new-datacenter-geos.md)
+
+[Como solicitar a migração dos dados](request-your-data-move.md)
+
+[Novo geos datacenter para o Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)

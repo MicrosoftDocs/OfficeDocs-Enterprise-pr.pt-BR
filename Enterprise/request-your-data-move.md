@@ -3,7 +3,7 @@ title: Como solicitar a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisará enviar uma solicitação antes do prazo para seu país para que os dados do cliente dos seus serviços do Office 365 participantes movidos para sua nova geo.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222973"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839569"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -109,5 +109,15 @@ O inquilino avaliação não pode ser combinado com seu locatário existente:
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificar os usuários a atualizarem desatualizadas configurações do Exchange em dispositivos móveis
 
 Se os usuários têm um dispositivo móvel com o Exchange Server definida como **m.outlook.com** ou **podxxxxx.outlook.com**, recomendamos que elas alternam para **outlook.office365.com**, seguindo as instruções em [Set up um dispositivo móvel para sincronizar com a sua conta](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+
+## <a name="related-topics"></a>Tópicos relacionados
+
+[Mover dados principais para o novo geos de datacenter do Office 365](moving-data-to-new-datacenter-geos.md)
+
+[Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
+
+[Novo geos datacenter para o Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)
   
 
