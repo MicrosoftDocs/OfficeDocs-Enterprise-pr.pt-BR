@@ -1,4 +1,4 @@
-# Modelos de arquitetura de nuvem
+# [Modelos de arquitetura de nuvem](microsoft-cloud-it-architecture-resources.md)
 ## [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [Evolução da sua rede para conectividade de nuvem](evolving-your-network-for-cloud-connectivity.md)
 ### [Elementos comuns da conectividade de nuvem da Microsoft](common-elements-of-microsoft-cloud-connectivity.md)
@@ -66,8 +66,8 @@
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
 
-# Testar o Office 365
-## [Ambiente de desenvolvimento/teste de configuração básica](base-configuration-dev-test-environment.md)
+# [Testar o Office 365](cloud-adoption-test-lab-guides-tlgs.md)
+## [Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
 ## [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
 ### [Sincronização de diretório para o ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
@@ -132,13 +132,13 @@
 ## [Treinar os usuários](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
 ## Multi-Geo
 ### [OneDrive for Business com Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
-#### [Planejar o OneDrive for Business com funcionalidades multigeográficas](plan-for-multi-geo.md)
-#### [Administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md)
+#### [Planejar o OneDrive for Business com Multi-Geo Capabilities](plan-for-multi-geo.md)
+#### [Administrar um ambiente Multi-Geo](administering-a-multi-geo-environment.md)
 ##### [Adicionar ou remover um administrador geográfico](add-a-sharepoint-geo-admin.md)
 ##### [Excluir uma localização geográfica](delete-a-geo-location.md)
-##### [Experiência do usuário em um ambiente multigeográfico](multi-geo-user-experience.md)
-#### [Configurar o OneDrive for Business com funcionalidades multigeográficas](multi-geo-tenant-configuration.md)
-#### [Configurar a Pesquisa para o OneDrive for Business com funcionalidades multigeográficas](configure-search-for-multi-geo.md)
+##### [Experiência do usuário em um ambiente Multi-Geo](multi-geo-user-experience.md)
+#### [Configurar o OneDrive for Business com Multi-Geo Capabilities](multi-geo-tenant-configuration.md)
+#### [Configurar a Pesquisa para o OneDrive for Business com Multi-Geo Capabilities](configure-search-for-multi-geo.md)
 #### [Mover uma biblioteca do OneDrive para um local geográfico diferente](move-onedrive-between-geo-locations.md)
 ### [Multi-Geo Capabilities no Exchange Online](multi-geo-capabilities-in-exchange-online.md)
 ## [Migrar para uma nova área geográfica do datacenter do Office 365](moving-data-to-new-datacenter-geos.md)
