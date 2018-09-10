@@ -92,7 +92,7 @@
 ### [Como preparar um domínio não roteável para sincronização de diretório](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [Planejamento de rede com o ExpressRoute para Office 365](network-planning-with-expressroute.md)
 ### [Como rotear com o ExpressRoute para Office 365](routing-with-expressroute.md)
-### [Princípios de conectividade de rede do Office 365](network-connectivity.md)
+### [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
 ### Pontos de extremidade do Office 365
 #### [Pontos de extremidade mundiais](urls-and-ip-address-ranges.md)
 #### [Pontos de extremidade do US Government DoD](office-365-u-s-government-dod-endpoints.md)
