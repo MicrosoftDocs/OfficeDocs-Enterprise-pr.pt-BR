@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para você identificar e diferenciar melhor o tráfego de rede do Office 365, um novo serviço Web publica pontos de extremidade do Office 365, permitindo avaliar, configurar e se manter atualizado em relação às alterações com mais facilidade. Esse novo serviço Web substitui os arquivos XML para download que estão disponíveis atualmente.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830880"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831896"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**URL do serviço Web e endereço IP do Office 365**
 
@@ -66,13 +66,15 @@ Há um parâmetro para o método de versão Web:
 
 - **AllVersions=true** – parâmetro de cadeia de caracteres de consulta. Por padrão, a versão retornada é a mais recente. Inclua esse parâmetro opcional para solicitar todas as versões publicadas.
 - **Format=JSON** | **CSV** | **RSS** – além dos formatos JSON e CSV, o método de versão Web também é compatível com RSS. Use-o com o parâmetro allVersions=true para solicitar um RSS feed que pode ser usado com o Outlook ou outros leitores de RSS.
-- **Instance** – parâmetro de roteamento. Esse parâmetro opcional especifica a instância para a qual a versão deve ser retornada. Caso seja omitido, todas as instâncias serão retornadas. As instâncias válidas são: Worldwide, China, Germany, USGovDoD, USGovGCCHigh
+- **Instance** – parâmetro de roteamento. Este parâmetro opcional especifica a instância para a qual a versão deve ser retornada. Caso seja omitido, todas as instâncias serão retornadas. As instâncias válidas são: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
 O resultado do método de versão Web pode ser um único registro ou uma matriz de registros. Os elementos de cada registro são:
 
 - instance – um nome curto da instância de serviço do Office 365.
 - latest – a versão mais recente dos pontos de extremidade da instância especificada.
-- versions – uma lista com todas as versões anteriores da instância especificada. Esse elemento só será incluído se o parâmetro AllVersions for verdadeiro.
+- versions – uma lista com todas as versões anteriores da instância especificada. Este elemento só será incluído se o parâmetro AllVersions for verdadeiro.
+
+Você pode usar o Microsoft Flow para receber notificações de email das alterações nos endereços IP e URLs. Confira [Usar o Microsoft Flow para receber um email das alterações em URLs e endereços IP do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 
 ### <a name="examples"></a>**Exemplos:**
 
@@ -487,24 +489,10 @@ No futuro, podem ser necessárias atualizações de parâmetros ou de resultados
 
 [Conectividade de rede para Office 365](network-connectivity.md)
   
-[Microsoft Azure ExpressRoute para Office 365](azure-expressroute.md)
-  
-[Como gerenciar o ExpressRoute para a conectividade do Office 365](managing-expressroute-for-connectivity.md)
-  
-[Como rotear com o ExpressRoute para Office 365](routing-with-expressroute.md)
-  
-[Como implementar o ExpressRoute para Office 365](implementing-expressroute.md)
-  
-[Como usar comunidades do BGP no ExpressRoute para cenários do Office 365 (visualização)](bgp-communities-in-expressroute.md)
-  
 [Qualidade da mídia e desempenho de conectividade de rede no Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Como otimizar a sua rede para o Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[ExpressRoute e QoS no Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[Fluxo de chamadas usando o ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho](performance-tuning-using-baselines-and-history.md)
   
 [Plano de solução de problemas de desempenho do Office 365](performance-troubleshooting-plan.md)
