@@ -3,7 +3,7 @@ title: Gerenciar o Skype for Business Online com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/22/2018
+ms.date: 09/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar as políticas do Skype for Business online, políticas por usuário e configurações da reunião.'
-ms.openlocfilehash: f490131491a026961b0a5db312df5780483eadd9
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: a91803316972337aa31e2b979f841ac1cfbe8566
+ms.sourcegitcommit: 053db5479f93478a65d4c36ffe44c6a7bcb60e3c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319232"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965188"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gerenciar o Skype for Business Online com o Office 365 PowerShell
 
@@ -60,15 +60,17 @@ Baixar e instalar o [Skype para módulo Business Connector Online](https://www.m
 
 4. Siga as instruções na caixa de diálogo **entrar em sua conta** para fornecer informações de autenticação adicionais, como um código de verificação e clique em **Verificar**.
 
-Para mais informações, consulte os seguintes tópicos:
+Para saber mais, confira os seguintes tópicos:
   
-- [Gerenciar Skype para políticas Business Online com o Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Gerenciar as políticas do Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
 - [Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>See also
 
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+
+[Skype para referências de cmdlet do PowerShell de negócios](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

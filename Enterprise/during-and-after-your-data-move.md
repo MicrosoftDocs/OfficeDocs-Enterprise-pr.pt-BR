@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentações de dados são uma operação de back-end com um impacto mínimo para os usuários finais. Nenhuma ação é necessária, enquanto o Microsoft move cada serviço e os dados associados para seu locatário para um novo geo de datacenter. Transferência de dados e validação ocorrerem em segundo plano com antecedência com um impacto mínimo para os usuários.
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839599"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975169"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -96,8 +96,8 @@ A tabela a seguir mostra como acessar o eDiscovery e auditoria via a segurança 
   
 ||**Centro de administração do Exchange**|**Segurança &amp; Centro de conformidade**|
 |:-----|:-----|:-----|
-|Descoberta Eletrônica  <br/> | Vá para https://portal.office.come clique em blocos de **Admin** . </br> Clique em **Admin centrais** \> **Exchange**. </br> Selecione **gerenciamento de conformidade** \> **Descoberta eletrônica in-loco &amp; mantenha**. | Vá para https://portal.office.come clique em blocos de Admin. </br> Clique em **Admin centrais** \> **segurança &amp; conformidade**. </br> Selecione **pesquisa &amp; investigação** \> **eDiscovery**.|
-|Auditoria  <br/> | Vá para https://portal.office.come clique em blocos de **Admin** . </br> Clique em **Admin centrais** \> **Exchange**. Selecione **gerenciamento de conformidade** \> **auditoria**. | Vá para https://portal.office.come clique em blocos de Admin. </br> Clique em **Admin centrais** \> **segurança &amp; conformidade**. </br> Selecione **pesquisa &amp; investigação** \> **pesquisa de log de auditoria**. |
+|Descoberta Eletrônica  <br/> | Vá para https://portal.office.come clique em blocos de **Admin** . <br/> Clique em **Admin centrais** \> **Exchange**. <br/> Selecione **gerenciamento de conformidade** \> **Descoberta eletrônica in-loco &amp; mantenha**. | Vá para https://portal.office.come clique em blocos de Admin. <br/> Clique em **Admin centrais** \> **segurança &amp; conformidade**. <br/> Selecione **pesquisa &amp; investigação** \> **eDiscovery**.|
+|Auditoria  <br/> | Vá para https://portal.office.come clique em blocos de **Admin** . <br/> Clique em **Admin centrais** \> **Exchange**. Selecione **gerenciamento de conformidade** \> **auditoria**. | Vá para https://portal.office.come clique em blocos de Admin. <br/> Clique em **Admin centrais** \> **segurança &amp; conformidade**. <br/> Selecione **pesquisa &amp; investigação** \> **pesquisa de log de auditoria**. |
    
 ### <a name="mailbox-migration"></a>Migração de caixa de correio
 

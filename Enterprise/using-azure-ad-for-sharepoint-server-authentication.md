@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: 'Resumo: Saiba como a fim de ignorar o serviço de controle de acesso do Windows Azure e usam o SAML 1.1 para autenticar os usuários do SharePoint Server com o Windows Azure Active Directory.'
-ms.openlocfilehash: 465f333638401402c743dc66d3ebecc33be00749
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5c95501d73c59a4af89147d3eec6c5d4e206d067
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915446"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975219"
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Usar o Azure AD para a autenticação do SharePoint Server
 
@@ -75,34 +75,34 @@ Este artigo foi escrito usando a arquitetura de referência, na caixa [executar 
 
 O uso de SAML exige que o aplicativo a ser configurado para usar SSL. Se seu aplicativo web do SharePoint não estiver configurado para usar SSL, use as etapas a seguir para criar um novo certificado autoassinado para configurar o aplicativo web para SSL. Essa configuração somente é destinada a um ambiente de laboratório e destina-se não produção. Ambientes de produção devem usar um certificado assinado.
 
-1. Vá até **A Administração Central** > **Gerenciamento de aplicativos** > **Gerenciar aplicativos Web**e escolha o aplicativo web que precisa ser estendido para usar SSL. Selecione o aplicativo web e clique no botão da **faixa de opções Extend** . Estenda o aplicativo web para usar a mesma URL mas usar SSL com a porta 443.</br>![Estendendo o aplicativo web para outro site do IIS](media/SAML11/fig3-extendwebapptoiis.png)</br>
+1. Vá até **A Administração Central** > **Gerenciamento de aplicativos** > **Gerenciar aplicativos Web**e escolha o aplicativo web que precisa ser estendido para usar SSL. Selecione o aplicativo web e clique no botão da **faixa de opções Extend** . Estenda o aplicativo web para usar a mesma URL mas usar SSL com a porta 443.<br/>![Estendendo o aplicativo web para outro site do IIS](media/SAML11/fig3-extendwebapptoiis.png)<br/>
 2. No Gerenciador do IIS, clique duas vezes em **Certificados de servidor**.
 3. No painel **ações** , clique em **Criar certificado autoassinado**. Digite um nome amigável do certificado na especificar um nome amigável para a caixa de certificado e, em seguida, clique em **Okey**.
-4. Na caixa de diálogo **Editar associação de Site** , verifique se o nome do host é o mesmo que o nome amigável, como ilustrado na imagem a seguir.</br>![Editando ligação do site no IIS](media/SAML11/fig4-editsitebinding.png)</br>
+4. Na caixa de diálogo **Editar associação de Site** , verifique se o nome do host é o mesmo que o nome amigável, como ilustrado na imagem a seguir.<br/>![Editando ligação do site no IIS](media/SAML11/fig4-editsitebinding.png)<br/>
 
 Cada um dos servidores web front-end no farm do SharePoint exigirá Configurando o certificado para a ligação do site no IIS.
 
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>Etapa 3: Criar um novo aplicativo empresarial no Azure AD.
 
-1. No Portal do Windows Azure ([https://portal.azure.com](https://portal.azure.com)), abra o seu diretório do Windows Azure AD. Clique em **Aplicativos empresariais**, clique em **novo aplicativo**. Escolha **o aplicativo de não-Galeria**. Forneça um nome, como *Integração de SAML do SharePoint* e clique em **Adicionar**.</br>![Adicionando um novo aplicativo de não-Galeria](media/SAML11/fig5-addnongalleryapp.png)</br>
-2. Clique no link de logon único no painel de navegação para configurar o aplicativo. Altere a lista suspensa **modo de logon único** para **baseada em SAML Sign-on** para revelar as propriedades de configuração de SAML para o aplicativo. Configure com as seguintes propriedades:</br>
+1. No Portal do Windows Azure ([https://portal.azure.com](https://portal.azure.com)), abra o seu diretório do Windows Azure AD. Clique em **Aplicativos empresariais**, clique em **novo aplicativo**. Escolha **o aplicativo de não-Galeria**. Forneça um nome, como *Integração de SAML do SharePoint* e clique em **Adicionar**.<br/>![Adicionando um novo aplicativo de não-Galeria](media/SAML11/fig5-addnongalleryapp.png)<br/>
+2. Clique no link de logon único no painel de navegação para configurar o aplicativo. Altere a lista suspensa **modo de logon único** para **baseada em SAML Sign-on** para revelar as propriedades de configuração de SAML para o aplicativo. Configure com as seguintes propriedades:<br/>
     - Identificador:`urn:sharepoint:portal.contoso.local`
     - URL de resposta:`https://portal.contoso.local/_trust/default.aspx`
     - URL de Sign-on:`https://portal.contoso.local/_trust/default.aspx`
-    - Identificador de usuário:`user.userprincipalname`</br>
-    - Observação: Não se esqueça altere as URLs, substituindo *portal.contoso.local* com a URL do site do SharePoint que você deseja proteger.</br>
-3. Configure uma tabela (semelhante a tabela 1 abaixo) que inclui as seguintes linhas:</br> 
+    - Identificador de usuário:`user.userprincipalname`<br/>
+    - Observação: Não se esqueça altere as URLs, substituindo *portal.contoso.local* com a URL do site do SharePoint que você deseja proteger.<br/>
+3. Configure uma tabela (semelhante a tabela 1 abaixo) que inclui as seguintes linhas:<br/> 
     - Realm
     - Caminho completo para o arquivo de certificado de assinatura de SAML
     - SAML Single Sign-On URL do serviço (substituindo */saml2* pelo */wsfed*)
-    - ID do objeto de aplicativo. </br>
+    - ID do objeto de aplicativo. <br/>
 Copiar o valor do *identificador* para a propriedade *Realm* em uma tabela (consulte Tabela 1 abaixo).
 4. Salve suas alterações.
-5. Clique no link **Configurar (nome de aplicativo)** para acessar a página Configurar logon.</br>![Configurando um logon único na página](media/SAML11/fig7-configssopage.png)</br> 
+5. Clique no link **Configurar (nome de aplicativo)** para acessar a página Configurar logon.<br/>![Configurando um logon único na página](media/SAML11/fig7-configssopage.png)<br/> 
     -  Clique no link de **SAML certificado de assinatura - brutos** para baixar o certificado de autenticação SAML como um arquivo com a extensão. cer. Copie e cole o caminho completo para o arquivo baixado em sua tabela.
-    - Copie e cole o link de SAML Single Sign-On Service URL em seu, substituindo a parte */saml2* da URL por */wsfed*.</br>
-6.  Navegue até o painel de **Propriedades** para o aplicativo. Copie e cole o valor de ID de objeto para a tabela que você configurou na etapa 3.</br>![Painel de propriedades para o aplicativo](media/SAML11/fig8-propertiespane.png)</br>
+    - Copie e cole o link de SAML Single Sign-On Service URL em seu, substituindo a parte */saml2* da URL por */wsfed*.<br/>
+6.  Navegue até o painel de **Propriedades** para o aplicativo. Copie e cole o valor de ID de objeto para a tabela que você configurou na etapa 3.<br/>![Painel de propriedades para o aplicativo](media/SAML11/fig8-propertiespane.png)<br/>
 7. Usando os valores que você capturou, verifique se a tabela que você configurou na etapa 3 se parece com a tabela 1 abaixo.
 
 
@@ -161,12 +161,12 @@ O usuário já tem permissão no Azure AD, mas também deve ter a permissão no 
 1. Em Administração Central, clique em **Gerenciamento de Aplicativo**.
 2. Na página **Gerenciamento de aplicativos** , na seção **Aplicativos Web** , clique em **Gerenciar aplicativos da web**.
 3. Clique no aplicativo da Web apropriado e, em seguida, clique em **Política do Usuário**.
-4. Em política para aplicativo Web, clique em **Adicionar usuários**.</br>![Procurando por um usuário por seu nome de declaração](media/SAML11/fig11-searchbynameclaim.png)</br>
+4. Em política para aplicativo Web, clique em **Adicionar usuários**.<br/>![Procurando por um usuário por seu nome de declaração](media/SAML11/fig11-searchbynameclaim.png)<br/>
 5. Na caixa de diálolgo **Adicionar Usuários**, clique na zona apropriada em **Zonas**e, depois, em **Avança**.
 6. Na caixa de diálogo **política para aplicativo Web** , na seção **Escolher usuários** , clique no ícone **Procurar** .
-7. Na caixa de texto **Localizar** , digite o nome de entrada para um usuário em seu diretório e clique em **Pesquisar**. </br>Exemplo: *demouser@blueskyabove.onmicrosoft.com*.
+7. Na caixa de texto **Localizar** , digite o nome de entrada para um usuário em seu diretório e clique em **Pesquisar**. <br/>Exemplo: *demouser@blueskyabove.onmicrosoft.com*.
 8. Sob o título AzureAD na exibição de lista, selecione a propriedade name e clique em **Adicionar** e clique em **Okey** para fechar a caixa de diálogo.
-9. Em permissões, clique em **Controle total**.</br>![Concedendo controle total a um usuário de declarações](media/SAML11/fig12-grantfullcontrol.png)</br>
+9. Em permissões, clique em **Controle total**.<br/>![Concedendo controle total a um usuário de declarações](media/SAML11/fig12-grantfullcontrol.png)<br/>
 10. Clique em **Concluir** e então clique em **OK**.
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Etapa 6: Adicionar uma política de emissão de tokens de SAML 1.1 no Azure AD.

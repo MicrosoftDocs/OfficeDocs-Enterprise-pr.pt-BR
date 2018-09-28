@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 description: Híbrido moderno autenticação (HMA), é um método de gerenciamento de identidade que oferece mais seguro de autenticação e autorização e está disponível para implantações híbridas do Exchange server local.
-ms.openlocfilehash: 871f03b8e776c694f7378f6905259d21516f7326
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: cfacb5661ddf4a2ac61054582f0c2043d8fe7a5a
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539291"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975189"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Exchange Server no local para usar a autenticação moderna híbrida
 
@@ -81,7 +81,7 @@ Verifique se as URLs que os clientes podem se conectar a são listados como nome
     
 Tomar nota das (e captura de tela para comparação posterior) a saída deste comando, que deve incluir um https:// * descoberta automática. *SeuDomínio* .com * e URL de *e-mailseudominio.com* https://, mas consistem principalmente SPNs que começam com 00000002-0000-0ff1-ce00-000000000000 /. Se houver https:// URLs a partir de seu local que está ausente precisamos adicionar esses registros específicos a essa lista. 
   
-3. Se você não vir os registros MAPI/HTTP, EWS, ActiveSync, OAB e descoberta automática internos e externos nessa lista, você deve adicioná-los usando o comando a seguir (o exemplo URLs são '`mail.corp.contoso.com`'e'`owa.contoso.com`', mas você tinha a **Substituir as URLs de exemplo com seu próprio** ) : </br>
+3. Se você não vir os registros MAPI/HTTP, EWS, ActiveSync, OAB e descoberta automática internos e externos nessa lista, você deve adicioná-los usando o comando a seguir (o exemplo URLs são '`mail.corp.contoso.com`'e'`owa.contoso.com`', mas você tinha a **Substituir as URLs de exemplo com seu próprio** ) : <br/>
 ```
 - $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 - $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

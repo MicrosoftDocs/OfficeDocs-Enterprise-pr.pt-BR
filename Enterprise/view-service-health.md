@@ -1,9 +1,8 @@
 ---
 title: Como verificar a integridade do serviço Office 365
-ms.author: kfollis
-author: kfollis
-manager: scotv
-ms.date: 6/15/2018
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -21,16 +20,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Exibir o status de integridade de serviços do Office 365, antes de chamar o suporte para ver se houver uma interrupção de serviço ativas
-ms.openlocfilehash: d01fe8e269ace922ab92cca779d6f8fea8b6802e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: f4bdc0f4b6faa7a3ae86580596e28e6391167340
+ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539199"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24976561"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço Office 365
 
-Você pode exibir a integridade do Office 365, Yammer, o Microsoft Dynamics CRM e serviços de nuvem da Microsoft Intune sobre o Office 365 * * integridade de serviço * * página no Centro de administração. Se você estiver enfrentando problemas com um serviço em nuvem, você pode verificar a integridade do serviço para determinar se esse é um problema conhecido com uma resolução em andamento antes de chamar suporte ou gasto na solução de problemas de tempo. 
+Você pode exibir a integridade do Office 365, Yammer, o Microsoft Dynamics CRM e serviços de nuvem da Microsoft Intune na página no Centro de administração do Office 365 **integridade do serviço** . Se você estiver enfrentando problemas com um serviço em nuvem, você pode verificar a integridade do serviço para determinar se esse é um problema conhecido com uma resolução em andamento antes de chamar suporte ou gasto na solução de problemas de tempo. 
   
 ### <a name="how-to-check-service-health"></a>Como verificar a integridade do serviço
 
@@ -39,7 +38,7 @@ Você pode exibir a integridade do Office 365, Yammer, o Microsoft Dynamics CRM 
     > [!NOTE]
     > Pessoas que receberem o administrador global ou a função de administrador de serviço podem exibir a integridade do serviço. Para permitir que o Exchange, SharePoint e Skype para administradores corporativos exibir a integridade do serviço, eles devem também ter a função de administrador de serviço. 
   
-2. Para abrir a integridade do serviço, no Centro de administração, vá para **integridade** \> **integridade do serviço**ou clique no painel de Home de cartão de integridade do serviço. O cartão de painel indica se há um problema de serviço ativas e links para a página de integridade do serviço detalhados.
+2. Para abrir a integridade do serviço, no Centro de administração, vá para **integridade** > **integridade do serviço**, ou clique no **cartão de integridade do serviço** do **Painel de Home**. O cartão de painel indica se há um problema de serviço ativas e links para a página de integridade do serviço detalhados.
     
     ![Cartão de Dashboard de integridade do serviço](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -94,16 +93,16 @@ A maioria dos serviços do tempo aparecerá como saudável sem mais informaçõe
    
 ### <a name="status-definitions"></a>Definições de status
 
-| |
 |**Status**|**Definição**|
 |:-----|:-----|
-|Investigando  <br/> |Estamos cientes de um problema potencial e reunindo mais informações sobre o que está acontecendo e o escopo do impacto.  <br/> |
-|Degradação do serviço  <br/> |Temos confirmado que há um problema que pode afetar o uso de um serviço ou recurso. Você pode ver esse status se um serviço está executando mais lenta do que o normal, há interrupções intermitentes, ou se um recurso não está funcionando, por exemplo.  <br/> |
-|Interrupção do serviço  <br/> |Você verá esse status se determinamos que um problema afeta a capacidade dos usuários acessar o serviço. Nesse caso, o problema é significativo e pode ser reproduzido de forma consistente.  <br/> |
-|Restaurar o serviço  <br/> |A causa do problema foi identificada, nós sabemos qual ação corretiva a ser executada e no processo trazendo o serviço de volta para um estado íntegro.  <br/> |
-|Recuperação estendida  <br/> |Esse status indica que uma ação corretiva estiver em andamento para restaurar o serviço à maioria dos usuários mas levarão algum tempo para chegar a todos os sistemas afetados. Você também poderá ver esse status se fizemos temporária corrigir para reduzir o impacto enquanto podemos esperar para aplicar uma correção permanente.  <br/> |
-|Investigação suspensa  <br/> |Se nossa investigação detalhada de um problema potencial resulta em uma solicitação para obter informações adicionais de clientes para permitir a investigar melhor, você verá esse status. Se precisarmos para agir, vamos deixá-lo saber quais dados ou os logs precisamos.  <br/> |
-|Serviço restaurado  <br/> |Temos confirmado que a ação corretiva tenha resolvido o problema subjacente e o serviço foi restaurado para um estado íntegro. Para saber o que deu errado, exiba os detalhes do problema.  <br/> |
+|**Investigando** | Estamos cientes de um problema potencial e reunindo mais informações sobre o que está acontecendo e o escopo do impacto. |
+|**Degradação do serviço** | Temos confirmado que há um problema que pode afetar o uso de um serviço ou recurso. Você pode ver esse status se um serviço está executando mais lenta do que o normal, há interrupções intermitentes, ou se um recurso não está funcionando, por exemplo. |
+|**Interrupção do serviço** | Você verá esse status se determinamos que um problema afeta a capacidade dos usuários acessar o serviço. Nesse caso, o problema é significativo e pode ser reproduzido de forma consistente. |
+|**Restaurar o serviço** | A causa do problema foi identificada, nós sabemos qual ação corretiva a ser executada e no processo trazendo o serviço de volta para um estado íntegro. |
+|**Recuperação estendida** | Esse status indica que uma ação corretiva estiver em andamento para restaurar o serviço à maioria dos usuários mas levarão algum tempo para chegar a todos os sistemas afetados. Você também poderá ver esse status se fizemos temporária corrigir para reduzir o impacto enquanto podemos esperar para aplicar uma correção permanente. |
+|**Investigação suspensa** | Se nossa investigação detalhada de um problema potencial resulta em uma solicitação para obter informações adicionais de clientes para permitir a investigar melhor, você verá esse status. Se precisarmos para agir, vamos deixá-lo saber quais dados ou os logs precisamos. |
+|**Serviço restaurado** | Temos confirmado que a ação corretiva tenha resolvido o problema subjacente e o serviço foi restaurado para um estado íntegro. Para saber o que deu errado, exiba os detalhes do problema. |
+|**Relatório de POST-incidente publicado** | Publicamos um relatório de incidente de postagem para um problema específico que inclui informações de causa raiz e próximas etapas para garantir que um problema semelhante não ocorrer novamente. |
    
 ## <a name="history"></a>Histórico
 

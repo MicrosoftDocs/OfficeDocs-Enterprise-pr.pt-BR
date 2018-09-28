@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: O suporte está terminando em breve para servidores do Office 2010 e aplicativos de cliente e contratos de suporte personalizado não estão disponíveis. Use este artigo para começar a planejar a atualização agora.
-ms.openlocfilehash: 97a21b3dc715fa90113491be216a8f2da45678e5
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d358cfc2e9fbc0ecc829995698b32801e4c55c9f
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915176"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975149"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ajudá-lo a atualizar do Office 2010 de servidores e clientes
 
@@ -39,8 +39,8 @@ Se você estiver usando o Office 2010 de produtos e serviços, agora é um ótim
 |Office 2010 (incluindo Outlook 2010, Excel 2010, PowerPoint 2010 e Word 2010)  <br/> |[Final do Office 2010 do mapa de suporte](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Fim do Exchange 2010 do mapa de suporte](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 ou do SharePoint Server 2010  <br/> |[Atualizando do SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 </br> | [Planejamento do Project Server e Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
-|Lync Server 2010 </br> | [Planejar a atualização para Skype para Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+|Project Server 2010 <br/> | [Planejamento do Project Server e Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) <br/> |
+|Lync Server 2010 <br/> | [Planejar a atualização para Skype para Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="what-if-im-a-home-user-what-do-i-do"></a>E se sou um usuário doméstico? O que posso fazer?
 
