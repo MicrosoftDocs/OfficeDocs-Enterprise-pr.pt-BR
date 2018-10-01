@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumo: Saiba mais sobre as plataformas e serviços em nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais.'
-ms.openlocfilehash: f6f390a493efe4f4155655cc6116e9fdd7ec5a9f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
+ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915736"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24022090"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
@@ -40,7 +40,6 @@ Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os 
     - [Mobilidade e segurança da Microsoft para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#mobility)
     - [Armazenamento do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#storage)
     - [Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#hybrid)
-    - [Contoso no Microsoft Cloud](microsoft-cloud-it-architecture-resources.md#contoso)
     - [Ataques comuns e recursos da Microsoft que protegem sua organização](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Office 365 Enterprise Solution Series](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -132,22 +131,13 @@ O que os arquitetos de TI precisam saber sobre nuvem híbrida dos serviços e pl
 |:-----|:-----|
 |[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Artigo](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Este modelo contém as seguintes páginas: <ul><li> **Visão geral da nuvem híbrida** Ofertas de nuvem da Microsoft (SaaS, Azure PaaS, and Azure IaaS) e seus elementos em comum. </li><li> **Arquitetura dos cenários de nuvem híbrida da Microsoft** Um diagrama arquitetônico da nuvem híbrida para ofertas de nuvem da Microsoft, mostrando as camadas comuns da infraestrutura, redes e identidades no local. </li><li> **Cenários de nuvem híbrida do Microsoft SaaS (Office 365)** A arquitetura de cenário híbrido do SaaS e as principais descrições das configurações híbridas do Skype for Business, SharePoint Server e Exchange Server. </li><li> **Cenários de nuvem híbrida do Azure PaaS** A arquitetura de cenário híbrido do Azure PaaS, a descrição de um aplicativo híbrido do Azure PaaS com um exemplo e a descrição do SQL Server 2016 Stretch Database. </li><li> **Cenários de nuvem híbrida do Azure IaaS** A arquitetura de cenário híbrido do Azure IaaS e a descrição de um aplicativo de linha de negócios (LOB) hospedado no Azure IaaS. </li></ul><br/>|
    
-<a name="contoso"> </a>
-### <a name="contoso-in-the-microsoft-cloud"></a>Contoso no Microsoft Cloud
-
-Como uma organização global fictícia mas representativa implementou ofertas de nuvem da Microsoft, incluindo o Office 365, o Azure, o Dynamics 365 e o Intune.
-  
-|**Item**|**Descrição**|
-|:-----|:-----|
-|[![Imagem em miniatura do cartaz Contoso no Microsoft Cloud](media/63077617-b8f2-45b6-b772-bad6cd98721d.png)          ](https://www.microsoft.com/download/details.aspx?id=54427) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)           \| [Artigo](https://technet.microsoft.com/library/mt775341.aspx) <br/>[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54427) <br/> |Este modelo contém: <ul><li>Visão geral da Contoso Corporation </li><li>Infraestrutura e necessidades de TI da Contoso </li><li>Rede na nuvem para a Contoso</li><li>Identidade de nuvem para a Contoso</li><li>Assinaturas, licenças e contas de usuário da Contoso</li><li>Segurança em nuvem para a Contoso</li><li>Cenários de nuvem corporativa da Contoso</li></ul> <br/>|
-   
 <a name="attacks"> </a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comuns e recursos da Microsoft que protegem sua organização
 Conheça os ataques cibernéticos mais comuns e saiba como a Microsoft pode ajudar sua organização em cada etapa de um ataque. 
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do cartaz de Ataques comuns.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) </br> | Este cartaz ilustra o caminho dos ataques comuns e descreve quais recursos ajudam a impedir os invasores em cada etapa de um ataque. <br/>|
+|[![Imagem em miniatura do cartaz de Ataques comuns.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Este cartaz ilustra o caminho dos ataques comuns e descreve quais recursos ajudam a impedir os invasores em cada etapa de um ataque. <br/>|
 
 
 <a name="santa"> </a>
