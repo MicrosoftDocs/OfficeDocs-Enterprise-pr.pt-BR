@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para você identificar e diferenciar melhor o tráfego de rede do Office 365, um novo serviço Web publica pontos de extremidade do Office 365, permitindo avaliar, configurar e se manter atualizado em relação às alterações com mais facilidade. Esse novo serviço Web substitui os arquivos XML para download que estão disponíveis atualmente.
-ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 2b5763b9f8f08f2cc619331dac70743474a8515b
+ms.sourcegitcommit: d67e73f6cdc1e8d220d90a239e23e218f24528d2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831896"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "24961820"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**URL do serviço Web e endereço IP do Office 365**
 
@@ -183,7 +183,7 @@ O resultado do método Web de pontos de extremidade é uma matriz de registros c
 - tcpPorts – as portas TCP para o conjunto de pontos de extremidade. Os elementos de todas as portas são formatados como uma lista separada por vírgulas ou intervalos de portas separados por um hífen (-). As portas se aplicam a todos os endereços IP e todas as URLs do conjunto de pontos de extremidade para essa categoria. Omitidas caso estejam em branco.
 - udpPorts – as portas UDP para os intervalos de endereço IP deste conjunto de pontos de extremidade. Omitidas caso estejam em branco.
 - ips – os intervalos de endereço IP associados a esse conjunto de pontos de extremidade conforme associação com as portas TCP ou UDP listadas. Uma matriz JSON de intervalos de Endereço IP. Omitidos caso estejam em branco.
-- category – a categoria de conectividade do conjunto de pontos de extremidade. Os valores válidos são Otimizar, Permitir e Padrão. Obrigatório.
+- categoria - A categoria conectividade para a configuração de ponto de extremidade. Os valores válidos são Otimizar, Permitir e Padrão. Se você estiver usando os dados do ponto de extremidade para pesquisar a categoria de um endereço IP ou URL, é possível que sua consulta possa retornar diversas categorias. Há alguns motivos para isso acontecer. Nesses casos, você deve seguir as recomendações para a categoria de maior prioridade. Por exemplo, se o ponto de extremidade aparecer tanto em Otimizar quanto em Permitir, você deve seguir os requisitos de Otimizar. Obrigatório. 
 - expressRoute – Verdadeiro ou Falso se esse conjunto de pontos de extremidade for roteado pelo ExpressRoute.
 - required – Verdadeiro se esse conjunto de pontos de extremidade precisar de conectividade com o Office 365 para ter suporte. Falso se o conjunto de pontos de extremidade for opcional.
 - notes – para pontos de extremidade opcionais, este texto descreve a funcionalidade do Office 365 que não estará disponível se os endereços IP ou URLs deste conjunto de pontos de extremidade não puderem ser acessados na camada de rede. Omitidos caso estejam em branco.

@@ -12,15 +12,16 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda a sua presença do Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive e do SharePoint Online.
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012731"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Funcionalidades multigeográficas no OneDrive e SharePoint Online no Office 365
 
-Com as funcionalidades multigeográficas do OneDrive e do SharePoint Online, a sua organização pode expandir a presença do Office 365 para várias regiões geográficas e/ou os países em seu locatário existente. Fale com a equipe da sua conta da Microsoft para inscrever a sua empresa multinacional no OneDrive for Business com Funcionalidades Multigeográficas.
+Com as funcionalidades multigeográficas do OneDrive e do SharePoint Online, sua organização pode expandir a presença do Office 365 para várias regiões geográficas e/ou países em seu locatário existente. Fale com a equipe da sua conta da Microsoft para inscrever a sua empresa multinacional no OneDrive for Business com Funcionalidades Multigeográficas.
   
 Com o OneDrive for Business com Funcionalidades Multigeográficas, você pode provisionar e armazenar dados em repouso nas localizações geográficas escolhidas para atender aos requisitos de residência de dados e, ao mesmo tempo, dar vazão à sua implantação global a partir de experiências de produtividade modernas para a sua força de trabalho.
   
@@ -69,6 +70,8 @@ A multigeografia do OneDrive atualmente é oferecida nas regiões e países segu
 - Canadá
     
 - União Europeia (EMEA)
+
+- França
     
 - Japão
     
@@ -80,7 +83,6 @@ A multigeografia do OneDrive atualmente é oferecida nas regiões e países segu
       
 Localizações geográficas futuras:
   
-- França
 - Índia
     
 ## <a name="getting-started"></a>Introdução

@@ -3,7 +3,7 @@ title: Endereços IP e URLs adicionais do Office 365 não incluídos nos serviç
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/22/2018
+ms.date: 9/13/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,14 +20,14 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: ''
-description: 'Resumo: Os novos serviços Web de ponto de extremidade não incluem uma quantidade pequena de pontos de extremidade em cenários específicos.'
+description: 'Resumo: os novos serviços Web de ponto de extremidade não incluem uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: b40fb1a40d2a815bfc6e02fa11204d10dde2af73
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
+ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22600505"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977346"
 ---
 # <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Endereços IP e URLs adicionais do Office 365 não incluídos nos serviços web
 
@@ -52,10 +52,11 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 6  | A coexistência do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) funciona como um compartilhamento de disponibilidade. | Servidor Exchange local do cliente | Tráfego do servidor de entrada |
 | 7  | Autenticação de proxy do [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS local do cliente | Tráfego do servidor de entrada |
 | 8  | Usado para configurar o [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), usando o Assistente de Configuração do Exchange Híbrido. <br> Observação: esses pontos de extremidade só são necessários para configurar o Exchange híbrido  | ```domains.live.com``` em portas TCP 80 e 443, exigido apenas para o Assistente de Configuração do Exchange 2010 SP3 Híbrido. | Somente o tráfego de servidor de saída |
-| 9  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
-| 10  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, você precisa habilitar os cookies de primeiros e terceiros e adicionar os FQDNs do Teams aos seus Sites Confiáveis. Isso além de todo o pacote de FQDNs, CDNs e telemetria listados acima. Confira [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) para saber mais. |  | Sites confiáveis |
-| 11  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todas as FDQNs '. sharepoint.com' com '\<locatário >' na FQDN precisam estar no IE ou na Zona de Sites Confiáveis de Borda de seu cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria listados acima, você precisará adicionar também esses pontos de extremidade. |  | Sites confiáveis |
-| 12  | **Yammer**  <br> O Yammer só está disponível no navegador e exige que o usuário esteja autenticado através de um proxy. Todos os FQDNs do Yammer devem estar no IE ou Zona de Sites confiáveis de Borda do cliente para funcionar. |  | Sites confiáveis |
+| 9  | O serviço de detecção automática é usado em cenários do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) com [Autenticação Híbrida Moderna com Outlook para iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor Exchange local do cliente em TCP 443 | Tráfego do servidor de entrada |
+| 10  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
+| 11  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, você precisa habilitar os cookies de primeiros e terceiros e adicionar os FQDNs do Teams aos seus Sites Confiáveis. Isso além de todo o pacote de FQDNs, CDNs e telemetria listados acima. Confira [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) para saber mais. |  | Sites confiáveis |
+| 12  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todas as FDQNs '. sharepoint.com' com '\<locatário >' na FQDN precisam estar no IE ou na Zona de Sites Confiáveis de Borda de seu cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria listados acima, você precisará adicionar também esses pontos de extremidade. |  | Sites confiáveis |
+| 13  | **Yammer**  <br> O Yammer só está disponível no navegador e exige que o usuário esteja autenticado através de um proxy. Todos os FQDNs do Yammer devem estar no IE ou Zona de Sites confiáveis de Borda do cliente para funcionar. |  | Sites confiáveis |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
