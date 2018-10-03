@@ -3,7 +3,7 @@ title: Durante e após a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentações de dados são uma operação de back-end com um impacto mínimo para os usuários finais. Nenhuma ação é necessária, enquanto o Microsoft move cada serviço e os dados associados para seu locatário para um novo geo de datacenter. Transferência de dados e validação ocorrerem em segundo plano com antecedência com um impacto mínimo para os usuários.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975169"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361499"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -34,7 +34,7 @@ Assista o Centro de mensagem do Office 365 confirmação quando movimentações 
 |Austrália, Nova Zelândia, Fiji  <br/> |31 de outubro de 2017  <br/> |
 |Japão  <br/> |31 de outubro de 2018  <br/> |
 |Índia  <br/> |31 de outubro de 2018  <br/> |
-|Canadá  <br/> |31 de outubro de 2018  <br/> |
+|Canadá  <br/> |30 de junho de 2019  <br/> |
 |Coreia do Sul  <br/> |31 de outubro de 2018  <br/> |
 |Reino Unido  <br/> |15 de setembro de 2019  <br/> |
 |França  <br/> |15 de setembro de 2020  <br/> |
