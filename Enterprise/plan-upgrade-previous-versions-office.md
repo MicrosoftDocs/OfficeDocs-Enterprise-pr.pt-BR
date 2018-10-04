@@ -3,7 +3,7 @@ title: Planejar a atualização do Office 2007 ou 2010 servidores e clientes
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: É hora de planejar a atualização de versões mais antigas dos produtos do Office e de servidores. Use esses recursos para começar a seu plano.
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Se você estiver usando o Office 2007 ou Office 2010, é hora de planejar a atualização. Use esses recursos para começar a seu plano.
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915156"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363164"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar a atualização do Office 2007 ou do Office 2010 de servidores e clientes
 
@@ -54,9 +54,11 @@ As organizações têm várias opções a serem considerados:
 
 Se você estiver usando o Office 2007 ou Office 2010 em casa, considere as seguintes opções:
 
+- **Uso Office Online para livre**. Criar, exibir, editar arquivos do Office no seu navegador e têm acesso aos arquivos do praticamente qualquer dispositivo com acesso à internet. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclui [Online do Word](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665), [On-line do PowerPoint](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [Email](http://go.microsoft.com/fwlink/p/?linkid=746676), [calendário](http://go.microsoft.com/fwlink/p/?linkid=746678)e [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Para começar, visite [office.com](https://office.com) e entrar usando sua conta da Microsoft. (Se você não tiver uma conta da Microsoft, você pode criar um no office.com.)
+
 - **Experimente o Office 365 para uso em casa**. Escolha entre uma assinatura do [Office 365 casa](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) ou [Pessoal do Office 365](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) . e inscreva-se para uma avaliação. Inscreva-se e instalar a versão mais recente do Office em seu Windows ou Mac computador, sua iOS ou Android smartphone e seu iOS ou tablet Android. Com o Office 365, você pode desfrutar de armazenamento na nuvem com o OneDrive, você obterá 60 minutos de chamadas do Skype para móveis e números de linha fixa cada mês e você obterá muitos outros excelentes recursos. [Consulte Office 365 planos e os preços do home](https://products.office.com/explore-office-for-home).
     
-- **Página inicial do Office de compra &amp; Student 2016**. Se você escolher essa opção, você fizer uma compra de uma única vez e, em seguida, instalar o Office 2016 em seu [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) ou [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). 
+- **Página inicial do Office de compra &amp; Student 2016**. Se você escolher essa opção, você fizer uma compra de uma única vez e, em seguida, instalar o Office 2016 em seu [Windows PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) ou [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). Isso não é uma assinatura; é uma licença de uso de uma única vez, perpétua para um computador.
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>O que acontece se eu não atualizar?
