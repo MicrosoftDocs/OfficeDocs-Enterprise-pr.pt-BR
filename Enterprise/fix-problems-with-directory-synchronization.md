@@ -15,12 +15,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descreve as causas comuns de problemas com a sincronização de diretórios no Office 365 e fornece alguns métodos para ajudar a solucionar e resolvê-los.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539208"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405124"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Corrigir problemas de sincronização de diretório do Office 365
 
@@ -63,7 +63,7 @@ Para atualizar a partir de sincronização do Azure Active Directory para conect
 - [Sincronização de diretórios para paradas do Azure Active Directory ou você estiver avisados que sync ainda não registrados em mais de um dia](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Hashes de senha não estão sincronizando ou Estou obtendo um alerta no Centro de administração do Office 365, que ainda não foi uma sincronização recente de hash de senha**
-- [Implementar a sincronização de hash de senha com a sincronização do Azure Connect do AD](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Implementar a sincronização de hash de senha com a sincronização do Azure Connect do AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Estou obtendo um alerta que excederam a cota de objeto**
 - Temos uma cota de objeto incorporado para ajudar a proteger o serviço. Se você tiver muitos objetos em seu diretório que precisa para sincronizar com o Office 365, você terá a [contatos de suporte para produtos de negócios](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para aumentar sua cota.
