@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: Saiba como autenticação moderna do Office 365 funciona de modo diferente para aplicativos de cliente de 2016 e Office 2013.
-ms.openlocfilehash: a9b6e2dabec9fb59f5fd7f60508dcbc6fe840cfb
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
+ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539302"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25436079"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Como a autenticação moderna funciona para os aplicativos clientes do Office 2013 e do Office 2016
 
@@ -54,7 +54,8 @@ Clique nos links abaixo para ver como a autenticação de cliente do Office 2013
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- 
+  [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -96,5 +97,8 @@ A tabela a seguir descreve o comportamento de autenticação para o Office 2013 
    
 ## <a name="see-also"></a>Confira também
 
-[Usando a autenticação moderna do Office 365 com clientes do Office](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)
+[Habilitar a autenticação moderno para Office 2013 em dispositivos do Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
+[Planejar a autenticação multifator para implantações do Office 365 (para administradores do Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+
+[Faça logon no Office 365 com 2-etapa verificação (para usuários finais)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
