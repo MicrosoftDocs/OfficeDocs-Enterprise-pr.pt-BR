@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no Exchange Online.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914776"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498221"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos de multi-Geo no Exchange Online
 
@@ -52,7 +52,7 @@ Os Geos a seguintes estão disponíveis para uso em uma configuração de Multi-
 - Estados Unidos
 
 ## <a name="prerequisite-configuration"></a>Configuração de pré-requisito
-Antes de começar a usar o Multi-Geo recursos no Exchange Online, o Microsoft precisa configurar seu locatário do Exchange Online para suporte Multi-Geo. Esse processo de configuração de uma única vez é disparado depois que você encomendar que multi-Geo e as licenças mostram no nosso inquilino. Esse processo de configuração de uma única vez normalmente deve levar menos de 30 dias para ser concluída.
+Antes de começar a usar o Multi-Geo recursos no Exchange Online, o Microsoft precisa configurar seu locatário do Exchange Online para suporte Multi-Geo. Esse processo de configuração de uma única vez é disparado depois que você encomendar que multi-Geo e as licenças mostram no seu locatário. Esse processo de configuração de uma única vez normalmente deve levar menos de 30 dias para ser concluída. A ordem Multi-Geo, contate o representante da Microsoft. Para obter mais informações, consulte https://aka.ms/Multi-Geo.
 
 Você receberá notificações no [Centro de mensagem do Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) , quando a configuração foi concluída. Configuração automaticamente é acionada depois de suas licenças Multi-Geo mostram no seu locatário.
 
