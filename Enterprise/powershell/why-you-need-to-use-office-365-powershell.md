@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Resumo: você deve ser capaz de usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e em outros casos por necessidade.'
-ms.openlocfilehash: 7149478efcbffcec56423a6c8ade5377992f3352
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915036"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575261"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por que você precisa usar o Office 365 PowerShell
 
@@ -43,12 +43,6 @@ Antes de começar, saiba que o Office 365 PowerShell é um conjunto de módulos 
   
 ```
 Get-Mailbox
-```
-
-Você também pode executar esse comando para calcular o número de itens em todas as listas de todos os sites para todos os seus aplicativos Web em SharePoint Online:
-  
-```
-Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Microsoft.SharePoint.SPDocumentLibrary]} | % {$total+= $_.ItemCount}; $total
 ```
 
 A lista de caixas de correio também pode ser facilmente obtida usando o Centro de administração do Office 365, mas a contagem do número de itens em todas as listas de todos os sites para todos os aplicativos Web não pode ser feita com facilidade.

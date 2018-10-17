@@ -3,7 +3,7 @@ title: Conectar-se ao PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2018
+ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,26 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: Conecte à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de centro de administração da linha de comando.'
-ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720397"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575275"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
  **Resumo:** Conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para executar tarefas de administração da linha de comando.
   
-O Office 365 PowerShell permite gerenciar as configurações do Office 365 na linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples de três etapas em que você instala e executa o software necessário e depois se conecta à sua organização do Office 365. 
+O Office 365 PowerShell permite que você para gerenciar suas configurações do Office 365 da linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples onde você instala o software necessário e conecte-se à sua organização do Office 365. 
 
-  
+Existem duas versões do módulo do PowerShell que você usa para se conectar ao Office 365 e administrar licenças, grupos e contas de usuário:
+
+- Azure Active Directory PowerShell para gráfico (cmdlets incluem **AzureAD** em seu nome) 
+- Microsoft Azure Active Directory módulo para Windows PowerShell (cmdlets incluem **MSol** em seu nome) 
+
+A partir da data deste artigo, o Azure Active Directory PowerShell para o módulo de gráfico não substitui completamente a funcionalidade dos cmdlets do módulo do Microsoft Azure Active Directory módulo para Windows PowerShell para o usuário, grupo e administração de licença . Em muitos casos, você precisará usar as duas versões. Com segurança, você pode instalar ambas as versões no mesmo computador.
+
 > [!TIP]
 > **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
   
@@ -38,14 +44,15 @@ O Office 365 PowerShell permite gerenciar as configurações do Office 365 na li
     
 - Você pode usar as seguintes versões do Windows:
     
-  - Windows 10, Windows 8.1, Windows 8 ou Windows 7 Service Pack 1 (SP1) 
+  - 10 do Windows, Windows 8.1, Windows 8 ou Windows 7 Service Pack 1 (SP1) 
     
-  - Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 ou Windows Server 2008 R2 SP1
+  - Windows Server 2019, 2016 do Windows Server, Windows Server 2012 R2, Windows Server 2012 ou Windows Server 2008 R2 SP1
     
     > [!NOTE]
     >Use uma versão de 64 bits do Windows, pois o suporte para a versão de 32 bits do Módulo Microsoft Azure Active Directory para Windows PowerShell foi descontinuada em outubro de 2014.
     
 -  Estes procedimentos destinam-se para os usuários que são membros de uma função de administrador do Office 365. Para obter mais informações, consulte [funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Conecte-se com o Azure Active Directory PowerShell para o módulo de gráfico
 
@@ -73,7 +80,7 @@ Se solicitado a instalar um módulo de um repositório não confiável, digite *
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: Conectar ao Azure AD para sua assinatura do Office 365
 
-Para se conectar ao AD do Windows Azure para o Office 365 assinatura com um nome de conta e senha ou com *a autenticação multifator (MFA)* execute este comando em um prompt de comando do Windows PowerShell (ele não tem de ser elevado):
+Para conectar ao Azure AD para sua assinatura do Office 365 com um nome de conta e senha ou com *a autenticação multifator (MFA)*, execute este comando em um prompt de comando do Windows PowerShell (ele não tem de ser elevado):
     
 ```
 Connect-AzureAD
@@ -116,7 +123,7 @@ Na caixa de diálogo **logon em sua conta** , digite o seu trabalho do Office 36
 Se você estiver usando MFA, siga as instruções nas caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
     
-### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
+### <a name="how-do-you-know-this-worked"></a>Como você sabe se funcionou?
 
 Se você não recebeu um erro, a conexão foi estabelecida. Um teste rápido é executar um cmdlet Office 365, por exemplo, **Get-MsolUser**, e ver os resultados.
   
@@ -127,8 +134,6 @@ Caso você receba erros, verifique os seguintes requisitos:
 - * *O Microsoft Azure Active Directory módulo para Windows PowerShell requer que o Microsoft .NET Framework 3.5.* x * recurso está ativado em seu computador * *. É provável que o seu computador tiver uma versão mais recente instalada (por exemplo, 4 ou 4.5.* x *), mas com versões anteriores a compatibilidade com versões mais antigas do .NET Framework pode ser habilitada ou desabilitada. Para obter mais informações, consulte os tópicos a seguir:
     
   - Para Windows Server 2012 ou Windows Server 2012 R2, confira [Habilitar o .NET Framework 3.5 usando o Assistente de Adição de Funções e Recursos](https://go.microsoft.com/fwlink/p/?LinkId=532368)
-    
-  - Para Windows 8 ou Windows 8.1, confira [Instalando o .NET Framework 3.5 no Windows 8 ou 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369)
     
   - Para Windows 7 ou Windows Server 2008 R2, confira [Não é possível abrir o módulo Microsoft Azure Active Directory para Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 
