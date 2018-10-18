@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: Conecte à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de centro de administração da linha de comando.'
-ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575275"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601635"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -89,6 +89,10 @@ Connect-AzureAD
 Na caixa de diálogo **logon em sua conta** , digite o seu trabalho do Office 365 ou o nome de usuário da conta de escola e a senha e clique em **Okey**.
 
 Se você estiver usando MFA, siga as instruções nas caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
+
+>[!Tip]
+>Para conectar ao Office 365 Alemanha, consulte [Connect to Alemanha do Windows Azure usando o PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 Depois de se conectar, você pode usar os novos cmdlets para o [Windows Azure Active Directory PowerShell para o módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
@@ -122,6 +126,9 @@ Na caixa de diálogo **logon em sua conta** , digite o seu trabalho do Office 36
 
 Se você estiver usando MFA, siga as instruções nas caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
+>[!Tip]
+>Para conectar ao Office 365 Alemanha, consulte [Connect to Alemanha do Windows Azure usando o PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
+>
     
 ### <a name="how-do-you-know-this-worked"></a>Como você sabe se funcionou?
 

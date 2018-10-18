@@ -3,7 +3,7 @@ title: Exibir licenças e serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/20/2018
+ms.date: 10/17/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
-ms.openlocfilehash: 4ee4a5d0173f97520075f146e50bd234e767cc95
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
+ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319252"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25601625"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
@@ -67,7 +67,7 @@ Para exibir detalhes sobre os serviços do Office 365 disponíveis em todos os p
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigáveis para os serviços mais comuns. Sua lista de planos de serviço pode ser diferente. Para obter uma lista completa de planos de serviço e seus nomes amigáveis, entre em contato com [Opções de suporte para usuários empresariais](https://support.microsoft.com/gp/support-options-for-business).
+A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigáveis para os serviços mais comuns. Sua lista de planos de serviço pode ser diferente. 
   
 |**Plano de serviço**|**Descrição**|
 |:-----|:-----|
@@ -81,13 +81,15 @@ A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigá
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plano 2 do Exchange Online  <br/> |
    
+Para obter uma lista completa de planos de licença (também conhecido como nomes de produto), seus planos de serviço incluído e seus nomes amigáveis correspondentes, consulte [nomes de produto e os identificadores de plano de serviço para licenciamento](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+
 Para exibir detalhes sobre os serviços do Office 365 disponíveis em um plano de licenciamento específico, use a sintaxe a seguir.
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano de licenciamento litwareinc:ENTERPRISEPACK (Office 365 Enterprise E3).
+Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano de licenciamento de litwareinc: enterprisepack (Office 365 Enterprise E3).
   
 ```
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
