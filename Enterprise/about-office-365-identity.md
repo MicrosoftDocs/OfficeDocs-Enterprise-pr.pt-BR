@@ -1,5 +1,5 @@
 ---
-title: Noções básicas sobre identidade do Office 365 e Azure Active Directory
+title: Noções básicas sobre a identidade do Office 365 e o Active Directory do Azure
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Saiba como a identidade do usuário é gerenciada no Office 365.
-ms.openlocfilehash: 0fb6e77aef4495b2284256c13cb21320e6292746
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 14d1ec8a3ebc4620a72f831c0ec80253f7b3072c
+ms.sourcegitcommit: dcb57859ad40090cf70586ac350472eb0fc8d9c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914976"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25639630"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Noções básicas sobre identidade do Office 365 e Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Noções básicas sobre a identidade do Office 365 e o Active Directory do Azure
 
 O Office 365 usa o usuário baseada em nuvem autenticação e identidade serviço Azure Active Directory (AD Azure) para gerenciar usuários. Escolhendo se o gerenciamento de identidade é configurado entre sua organização local e o Office 365 é uma decisão inicial que é uma das bases da sua infraestrutura de nuvem. Como alterar essa configuração posteriormente pode ser difícil, considere cuidadosamente as opções para determinar o que funciona melhor para as necessidades da sua organização. Você pode escolher entre dois modelos de autenticação principal no Office 365 para configurar e gerenciar contas de usuário; **autenticação de nuvem** e **autenticação federada**.
   
@@ -53,7 +53,7 @@ Saiba mais sobre [escolhendo a sincronização de hash de senha](https://docs.mi
   
 ### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>Autenticação de passagem com perfeita sign-on único
 
-Fornece uma validação de senha simples para serviços de autenticação do Azure AD usando um agente de software em execução em um ou mais servidores no local para validar os usuários diretamente com o seu local no Active Directory. Com a autenticação de passagem (PTA), você pode sincronizar objetos de conta de usuário local do Active Directory com o Office 365 e gerenciar seu usuários no local. Permite que seus usuários entrar no local e recursos do Office 365 e aplicativos usando sua conta local e a senha. Essa configuração valida senhas dos usuários diretamente em relação ao seu local Active Directory sem enviar hashes de senha para o Office 365. As empresas com um requisito de segurança para impor imediatamente a conta de usuário local afirma, diretivas de senha e o horário de logon usaria este método de autenticação. Com perfeita sign-on único, os usuários entrarão automaticamente Windows Azure AD quando estão em seus dispositivos corporativos e conectados à rede corporativa.
+Fornece uma validação de senha simples para serviços de autenticação do Azure AD usando um agente de software em execução em um ou mais servidores no local para validar os usuários diretamente com o seu local no Active Directory. Com a autenticação de passagem (PTA), você pode sincronizar objetos de conta de usuário local do Active Directory com o Office 365 e gerenciar seu usuários no local. Permite que seus usuários entrar no local e recursos do Office 365 e aplicativos usando sua conta local e a senha. Essa configuração valida senhas de usuários diretamente em relação ao seu local Active Directory sem enviar hashes de senha para o Office 365. As empresas com um requisito de segurança para impor imediatamente a conta de usuário local afirma, diretivas de senha e o horário de logon usaria este método de autenticação. Com perfeita sign-on único, os usuários entrarão automaticamente Windows Azure AD quando estão em seus dispositivos corporativos e conectados à rede corporativa.
   
 Saiba mais sobre [escolhendo a autenticação de passagem](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) e [perfeita single sign-on](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso).
   
