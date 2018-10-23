@@ -3,7 +3,7 @@ title: Gerenciar pontos de extremidade do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 7/18/2018
+ms.date: 10/22/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,829 +14,146 @@ ms.collection:
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
-description: Algumas redes são projetados para restringir o acesso à internet, para garantir que os computadores nas redes como essas podem acessar o Office 365, os administradores de rede e o proxy precisam gerenciar a lista de FQDNs, URLs, e endereços IP que compõem a lista de pontos de extremidade do Office 365. Esses necessidade a ser adicionado às regras de firewall ou proxy e PAC arquivos para garantir que as solicitações de rede são capazes de alcançar o Office 365.
-ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
-ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
+description: Algumas redes corporativas restringem o acesso a locais de internet genérico ou incluem backhaul substancial ou processamento de tráfego de rede. Para garantir que os computadores em redes como essas podem acessar o Office 365, os administradores de rede e proxy precisam gerenciar a lista de FQDNs, URLs, e endereços IP que compõem a lista de pontos de extremidade do Office 365. Esses necessidade a ser adicionado à rota direta, proxy bypass, e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede são capazes de alcançar o Office 365.
+ms.openlocfilehash: a240e3deea512dacd70b377b3d47a7b6f49a235c
+ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25359493"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25697967"
 ---
-# <a name="managing-office-365-endpoints"></a><span data-ttu-id="b1b9e-104">Gerenciar pontos de extremidade do Office 365</span><span class="sxs-lookup"><span data-stu-id="b1b9e-104">Managing Office 365 endpoints</span></span>
+# <a name="managing-office-365-endpoints"></a><span data-ttu-id="cfa65-105">Gerenciar pontos de extremidade do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-105">Managing Office 365 endpoints</span></span>
 
-## <a name="office-365-network-connectivity"></a><span data-ttu-id="b1b9e-105">Conectividade de rede do Office 365</span><span class="sxs-lookup"><span data-stu-id="b1b9e-105">Office 365 network connectivity</span></span>
+<span data-ttu-id="cfa65-p102">A maioria das organizações de empresa que possuem vários escritórios e uma conexão WAN precisará precisa ter a configuração para conectividade de rede do Office 365. Você pode otimizar sua rede enviando a que todos os confiáveis solicitações diretamente através do firewall da rede do Office 365, ignorando todos inspeção de nível de pacotes adicionais ou processamento. Isso reduzirá a latência e seus requisitos de capacidade de perímetro. Identificar o tráfego de rede do Office 365 é a primeira etapa no fornecimento de desempenho ideal para os usuários do Office 365. Para obter mais informações sobre conectividade de rede do Office 365, consulte [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)</span><span class="sxs-lookup"><span data-stu-id="cfa65-p102">Most enterprise organizations that have multiple office locations and a connecting WAN will need to need to have configuration for Office 365 network connectivity. You can optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all additional packet level inspection or processing. This reduces latency and reduces your perimeter capacity requirements. Identifying Office 365 network traffic is the first step in providing optimal performance for your Office 365 users. For more information about Office 365 network connectivity, see [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)</span></span>
 
- <span data-ttu-id="b1b9e-p102">Conexões para o Office 365 consistem em alto volume, solicitações de rede de perímetro que executar melhor quando eles estiver feitos ao longo de uma saída de baixa latência está perto do usuário. Algumas conexões do Office 365 podem se beneficiar de otimizar a conexão.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p102">Connections to Office 365 consist of high volume, trusted network requests that perform best when they're made over a low-latency egress that is near the user. Some Office 365 connections can benefit from optimizing the connection.</span></span> 
-  
-1. <span data-ttu-id="b1b9e-108">Certifique-se de seu firewall permitir listas permitem conectividade aos pontos de extremidade do Office 365.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-108">Ensure your firewall allow lists allow for connectivity to Office 365 endpoints.</span></span>
-    
-2. <span data-ttu-id="b1b9e-109">Use sua infraestrutura de proxy para permitir a conectividade à Internet para o caractere curinga e destinos de publicação cancelados.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-109">Use your proxy infrastructure to allow Internet connectivity to wildcard and unpublished destinations.</span></span>
-    
-3. <span data-ttu-id="b1b9e-110">Manter uma configuração de rede de perímetro ideal.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-110">Maintain an optimal perimeter network configuration.</span></span>
-    
-4. <span data-ttu-id="b1b9e-111">[Verifique se você estiver recebendo a melhor conectividade](https://aka.ms/o365perfprinciples).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-111">[Ensure you're getting the best connectivity](https://aka.ms/o365perfprinciples).</span></span>
-    
-5. <span data-ttu-id="b1b9e-112">Leia os [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md) para entender os princípios de conectividade para gerenciar o tráfego do Office 365 de forma segura e Obtendo o melhor desempenho possível.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-112">Read [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.</span></span> 
-    
-![Conectando-se ao Office 365 através de firewalls e proxies.](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
-  
-## <a name="update-your-firewalls-outbound-allow-lists"></a><span data-ttu-id="b1b9e-114">Atualização do seu firewall da saída listas de permissões</span><span class="sxs-lookup"><span data-stu-id="b1b9e-114">Update your firewall's outbound allow lists</span></span>
+<span data-ttu-id="cfa65-111">A Microsoft recomenda que você acessar o Office 365 pontos de extremidade de rede e altera a eles usando o [endereço de IP do Office 365 e serviços da Web de URL](office-365-ip-web-service.md)</span><span class="sxs-lookup"><span data-stu-id="cfa65-111">Microsoft recommends you access the Office 365 network endpoints and changes to them using the [Office 365 IP Address and URL Web Services](office-365-ip-web-service.md)</span></span>
 
-<span data-ttu-id="b1b9e-p103">Você pode otimizar sua rede enviando a que todos os confiáveis solicitações diretamente através do firewall da rede do Office 365, ignorando todos inspeção de nível de pacotes adicionais ou processamento. Isso reduz o desempenho lento de latência e reduz seus requisitos de capacidade de perímetro. A maneira mais fácil para escolher qual rede solicitações a confiança é usar nossos [arquivos de PAC pré-criados](managing-office-365-endpoints.md#pacfiles).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p103">You can optimize your network by sending all trusted Office 365 network requests directly through your firewall, bypassing all additional packet level inspection or processing. This reduces slow performance from latency and reduces your perimeter capacity requirements. The easiest way to choose which network requests to trust is to use our [pre-built PAC files](managing-office-365-endpoints.md#pacfiles).</span></span> 
-  
-<span data-ttu-id="b1b9e-p104">Se o tráfego de saída de blocos de firewall, você vai querer garantir que todos o IP e FQDNs listado como **necessários** neste [arquivo XML](https://go.microsoft.com/fwlink/?LinkId=533185) estão na lista de permissões. Reconhece que todos os serviços exigem o uso de alguns 3º serviços de terceiros. Nós não forneça endereços IP para esses serviços de terceiros 3º como provedores DNS do certificado provedores, redes de fornecimento de conteúdo e assim por diante. Para obter a funcionalidade completa do Office 365, você deve ser capaz de acessar todos os destinos solicitados pelo Office 365 independentemente quanta informação publicamos sobre o destino.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p104">If your firewall blocks outbound traffic, you'll want to ensure all of the IP and FQDNs listed as **Required** in this [XML file](https://go.microsoft.com/fwlink/?LinkId=533185) are on the allow list. Recognize all services require the use of some 3rd party services. We don't provide IP addresses for these 3rd party services such as certificate providers, Content Delivery Networks, DNS providers, and so on. For full Office 365 functionality, you must be able to reach all destinations requested by Office 365 regardless of how much information we publish about the destination.</span></span> 
-  
-<span data-ttu-id="b1b9e-122">Muitos destinos não têm um endereço IP publicado ou são listados como um domínio de curinga com nenhum nome de domínio totalmente qualificado específico, para usar essa funcionalidade, você deve ser capaz de resolver esses pedidos de rede como o IP atual está sendo solicitado de endereços e enviar o solicitação de rede pela Internet.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-122">Many destinations do not have an IP address published or are listed as a wildcard domain with no specific fully qualified domain name, to use this functionality you must be able to resolve these network requests to the current IP address being requested and send the network request over the Internet.</span></span>
-  
-<span data-ttu-id="b1b9e-p105">Automatize o processo usando um firewall que analisa o arquivo XML em seu nome e atualiza suas regras automaticamente com base em serviços ou recursos que você pretende encaminhar diretamente através do firewall. Você também pode usar a ferramenta de [Intervalo do Azure](https://azurerange.azurewebsites.net/) que foi criada pela comunidade e analisa o XML para você com opções de exportação para configuração da lista de ACL ou Cisco XE rota, CSV ou texto sem formatação.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p105">Automate your process by using a firewall that parses the XML file on your behalf and updates your rules automatically based on the services or features you plan to route directly through your firewall. You can also use the [Azure Range](https://azurerange.azurewebsites.net/) tool that has been built by the community and parses the XML for you with export options for Cisco XE Route or ACL list configuration, plain text, or CSV.</span></span> 
-  
-<span data-ttu-id="b1b9e-125">Uma explicação mais os destinos de rede está disponível em nosso [site de referência](urls-and-ip-address-ranges.md) também por meio de [log de alteração de RSS com base em](https://go.microsoft.com/fwlink/p/?linkid=236301) nosso, portanto você pode inscrever-se às alterações.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-125">A longer explanation of the network destinations is available on our [reference site](urls-and-ip-address-ranges.md) as well through our [RSS based change log](https://go.microsoft.com/fwlink/p/?linkid=236301) so you can subscribe to changes.</span></span> 
-  
-<span data-ttu-id="b1b9e-126"><a name="pacfiles"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-126"></span></span>
-## <a name="configure-outbound-paths-with-pac-files"></a><span data-ttu-id="b1b9e-127">Configurar caminhos de saída com os arquivos de PAC</span><span class="sxs-lookup"><span data-stu-id="b1b9e-127">Configure outbound paths with PAC files</span></span>
+<span data-ttu-id="cfa65-p103">Independentemente de como gerenciar o tráfego de rede do Office 365 vital, o Office 365 requer conectividade à Internet. Outros pontos de extremidade de rede onde é necessária a conectividade estão listados nos [pontos de extremidade adicionais não incluídos no serviço Web de URL e endereço de IP do Office 365](additional-office365-ip-addresses-and-urls.md)</span><span class="sxs-lookup"><span data-stu-id="cfa65-p103">Regardless of how you manage vital Office 365 network traffic, Office 365 requires Internet connectivity. Other network endpoints where connectivity is required are listed at [Additional endpoints not included in the Office 365 IP Address and URL Web service](additional-office365-ip-addresses-and-urls.md)</span></span>
 
-<span data-ttu-id="b1b9e-p106">Use arquivos PAC ou WPAD para gerenciar solicitações de rede que estão associadas com o Office 365, mas não têm um endereço IP fornecido. Solicitações de rede comuns que são enviadas por meio de um dispositivo de proxy ou perímetro acarretar uma latência adicional. Enquanto a autenticação de proxy provoca a maior imposto, outros serviços, como pesquisa de reputação e tentativas para inspecionar pacotes podem causar uma experiência de usuário ruim. Além disso, esses dispositivos de rede de perímetro precisam capacidade suficiente para processar todas as solicitações de rede. É recomendável ignorando a infra-estrutura de inspeção ou proxy para solicitações de rede diretas do Office 365.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p106">Use PAC or WPAD files to manage network requests that are associated with Office 365 but don't have an IP address provided. Typical network requests that are sent through a proxy or perimeter device incur additional latency. While proxy authentication incurs the largest tax, other services such as reputation lookup and attempts to inspect packets can cause a poor user experience. Additionally, these perimeter network devices need enough capacity to process all of the network requests. We recommend bypassing your proxy or inspection infrastructure for direct Office 365 network requests.</span></span>
-  
-<span data-ttu-id="b1b9e-p107">Use um dos arquivos nosso PAC como um ponto de partida para determinar qual o tráfego de rede será enviado a um proxy e qual será enviada a um firewall. Se estiver familiarizado com arquivos de PAC ou WPAD, leia esta postagem de [arquivos de PAC Implantando](https://blogs.technet.microsoft.com/undocumentedfeatures/2016/04/06/deploying-the-office-365-proxy-pac-to-manage-your-users/) um de nossos consultores do Office 365. Você vai querer Revise-as como um ponto de partida e editar de acordo com seu ambiente.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p107">Use one of our PAC files as a starting place to determine what network traffic will be sent to a proxy and which will be sent to a firewall. If you're new to PAC or WPAD files, read this post about [deploying PAC files](https://blogs.technet.microsoft.com/undocumentedfeatures/2016/04/06/deploying-the-office-365-proxy-pac-to-manage-your-users/) from one of our Office 365 consultants. You'll want to review these as a starting place and edit to suit your environment.</span></span> 
-  
- <span data-ttu-id="b1b9e-136">**Arquivos de PAC atualizados 10/7/2018**.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-136">**PAC files updated 7/10/2018**.</span></span> 
-  
-### <a name="1---pac-file-separates-required-internet-fqdns-from-known-office-365-fqdn"></a><span data-ttu-id="b1b9e-137">#1 - arquivo PAC: separa necessário FQDNs de Internet do FQDN de 365 Office conhecidos.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-137">#1 - PAC file: Separates required Internet FQDNs from known Office 365 FQDN.</span></span>
+<span data-ttu-id="cfa65-p104">Como você pode usar os pontos de extremidade de rede do Office 365 dependerá sua arquitetura de rede da organização de empresa. Este artigo descreve as arquiteturas de rede empresarial podem se integrar com endereços IP do Office 365 e URLs de várias maneiras. A maneira mais fácil para escolher qual rede solicitações a confiança é usar dispositivos SDWAN que oferecem suporte a configuração automatizada do Office 365 em cada um dos diversos escritórios.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p104">How you use the Office 365 network endpoints will depend on your enterprise organization network architecture. This article outlines several ways that enterprise network architectures can integrate with Office 365 IP addresses and URLs. The easiest way to choose which network requests to trust is to use SDWAN devices that support automated Office 365 configuration at each of your office locations.</span></span> 
 
-<span data-ttu-id="b1b9e-p108">O primeiro exemplo é uma demonstração de nossa abordagem recomendada para gerenciar pontos de extremidade pela Internet apenas. Ignora o proxy para o Office 365 destinos onde o endereço IP é publicado e envia solicitações de rede restantes para o proxy.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p108">The first example is a demonstration of our recommended approach to managing endpoints over the Internet only. Bypasses the proxy for Office 365 destinations where the IP address is published and sends remaining network requests to the proxy.</span></span>
+## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a><span data-ttu-id="cfa65-117">SDWAN para saída local de filial do tráfego de rede vital do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-117">SDWAN for local branch egress of vital Office 365 network traffic</span></span>
+
+<span data-ttu-id="cfa65-p105">Em cada escritório de filial, você pode fornecer um dispositivo SDWAN que é definido para endereços de IP de rota para otimizar o Office 365 categoria ou otimizar e permitir categorias, diretamente para a rede da Microsoft. Outros tráfego de rede, incluindo o tráfego de datacenter local, o tráfego de sites da web de internet genérico e tráfego de categoria padrão do Office 365 é enviado para outro local em que você tenha um perímetro de rede mais substancial.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p105">At each branch office location, you can provide an SDWAN device which is configured to route IP Addresses for Office 365 Optimize category, or Optimize and Allow categories, directly to Microsoft's network. Other network traffic including on-premises datacenter traffic, generic internet web sites traffic, and Office 365 Default category traffic is sent to another location where you have a more substantial network perimeter.</span></span> 
+
+<span data-ttu-id="cfa65-p106">Microsoft está trabalhando com provedores SDWAN para habilitar a configuração automatizada. Você pode ler mais sobre o [Programa de parceria de rede do Office 365](office-365-networking-partner-program.md)</span><span class="sxs-lookup"><span data-stu-id="cfa65-p106">Microsoft is working with SDWAN providers to enable automated configuration. You can read further about the [Office 365 Networking Partner Program](office-365-networking-partner-program.md)</span></span>
+
+<span data-ttu-id="cfa65-122"><a name="pacfiles"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-122"></span></span>
+## <a name="use-of-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a><span data-ttu-id="cfa65-123">Uso de um arquivo de PAC para roteamento direto do tráfego vital do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-123">Use of a PAC file for direct routing of vital Office 365 traffic</span></span>
+
+<span data-ttu-id="cfa65-p107">Use arquivos PAC ou WPAD para gerenciar solicitações de rede que estão associadas com o Office 365, mas não têm um endereço IP fornecido. Solicitações de rede comuns que são enviadas por meio de um dispositivo de proxy ou perímetro acarretar uma latência adicional. Enquanto se quebram SSL e inspecionar provoca a maior imposto, outros serviços, como a pesquisa de reputação e autenticação de proxy podem causar uma experiência de usuário ruim. Além disso, esses dispositivos de rede de perímetro precisam capacidade suficiente para processar todas as solicitações de conexão de rede. É recomendável ignorando a infra-estrutura de inspeção ou proxy para solicitações de rede diretas do Office 365.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p107">Use PAC or WPAD files to manage network requests that are associated with Office 365 but don't have an IP address provided. Typical network requests that are sent through a proxy or perimeter device incur additional latency. While SSL Break and Inspect incurs the largest tax, other services such as proxy authentication and reputation lookup can cause a poor user experience. Additionally, these perimeter network devices need enough capacity to process all of the network connection requests. We recommend bypassing your proxy or inspection infrastructure for direct Office 365 network requests.</span></span>
   
-<span data-ttu-id="b1b9e-140">Trecho de código:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-140">Code snippet:</span></span>
+<span data-ttu-id="cfa65-129">[Galeria de PowerShell Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) é um script do PowerShell que lê os pontos de extremidade de rede mais recentes de serviços da web e cria um arquivo de PAC da amostra.</span><span class="sxs-lookup"><span data-stu-id="cfa65-129">[PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) is a PowerShell script that reads the latest network endpoints from the web services and creates a sample PAC file.</span></span> 
 
-```javascript
-// JavaScript source code
-//July 2018 - Updates go live 1st August2018
-//This PAC file contains all FQDNs needed for all services and splits the traffic between those which Microsoft can provide IPs for (so can be sent through a managed firewall with conditional access if desired) and those which IPs cannot be provided for, so need to go to an unrestricted proxy or egress. 
-//Due to the use of wildcards, some extra logic is provided to send traffic to the proxy before a 'direct' wildcard is hit.
-//Includes Core ProPlus URLs but not Office Mobile/IPAD/IOS/ANDROID fqdns from https://support.office.com/en-gb/article/Network-requests-in-Office-365-ProPlus-eb73fcd1-ca88-4d02-a74b-2dd3a9f3364d
-//Every Effort is made to ensure 100% accuracy but this PAC should be used as an example and cross-checked with your needs and the Office 365 URL &amp; IP page
-//Intended only for Worldwide Office 365 instances, which the vast majority of customers will be using
-function FindProxyForURL(url, host)
-{
-    // Define proxy server
-    var proxyserver = "PROXY 10.10.10.10:8080";
-    var proxyserver2 = "PROXY 10.10.10.11:8080";
-    // Make host lowercase
-    var lhost = host.toLowerCase();
-    host = lhost;
-    //Catch explicit FQDNs which need the proxy but are covered under wildcarded FQDNs which have IPs. This has to be done first before the wildcard is hit
-    if ((shExpMatch(host, "quicktips.skypeforbusiness.com"))    
-        || (shExpMatch(host, "*.um.outlook.com"))
-        || (shExpMatch(host, "r3.res.office365.com"))
-        || (shExpMatch(host, "r3.res.outlook.com"))
-        || (shExpMatch(host, "r4.res.office365.com"))
-        || (shExpMatch(host, "xsi.outlook.com"))
-        || (shExpMatch(host, "r1.res.office365.com")))
-    {
-        return proxyserver;
-    }
-        //Send FQDNs which Microsoft provide IPs for direct, so they can be sent via a firewall
-    else if ((isPlainHostName(host))
-    || (shExpMatch(host, "*.aria.microsoft.com"))    
-    || (shExpMatch(host, "*.dc.trouter.io"))
-    || (shExpMatch(host, "*.lync.com"))
-    || (shExpMatch(host, "*.manage.office.com"))
-    || (shExpMatch(host, "*.office365.com"))
-    || (shExpMatch(host, "*.onenote.com"))
-    || (shExpMatch(host, "*.outlook.com"))
-    || (shExpMatch(host, "*.outlook.office.com"))
-    || (shExpMatch(host, "*.portal.cloudappsecurity.com"))
-    || (shExpMatch(host, "*.protection.office.com"))
-    || (shExpMatch(host, "*.sharepoint.com"))
-    || (shExpMatch(host, "*.skype.com"))
-    || (shExpMatch(host, "*.skypeforbusiness.com"))
-    || (shExpMatch(host, "*.svc.ms"))
-    || (shExpMatch(host, "*.teams.microsoft.com"))
-    || (shExpMatch(host, "*.yammer.com"))
-    || (shExpMatch(host, "*.yammerusercontent.com"))    
-    || (shExpMatch(host, "*broadcast.officeapps.live.com"))
-    || (shExpMatch(host, "*excel.officeapps.live.com"))
-    || (shExpMatch(host, "*onenote.officeapps.live.com"))
-    || (shExpMatch(host, "*powerpoint.officeapps.live.com"))
-    || (shExpMatch(host, "*view.officeapps.live.com"))
-    || (shExpMatch(host, "*visio.officeapps.live.com"))
-    || (shExpMatch(host, "*word-edit.officeapps.live.com"))
-    || (shExpMatch(host, "*word-view.officeapps.live.com"))
-    || (shExpMatch(host, "admin.microsoft.com"))    
-    || (shExpMatch(host, "account.office.net"))
-    || (shExpMatch(host, "adminwebservice.microsoftonline.com"))
-    || (shExpMatch(host, "agent.office.net"))
-    || (shExpMatch(host, "api.login.microsoftonline.com"))
-    || (shExpMatch(host, "api.passwordreset.microsoftonline.com"))
-    || (shExpMatch(host, "apc.delve.office.com"))
-    || (shExpMatch(host, "aus.delve.office.com"))
-    || (shExpMatch(host, "autologon.microsoftazuread-sso.com"))  
-    || (shExpMatch(host, "becws.microsoftonline.com"))
-    || (shExpMatch(host, "browser.pipe.aria.microsoft.com"))  
-    || (shExpMatch(host, "can.delve.office.com"))
-    || (shExpMatch(host, "ccs.login.microsoftonline.com"))
-    || (shExpMatch(host, "ccs-sdf.login.microsoftonline.com"))
-    || (shExpMatch(host, "clientconfig.microsoftonline-p.net"))
-    || (shExpMatch(host, "clientlog.portal.office.com"))
-    || (shExpMatch(host, "companymanager.microsoftonline.com"))
-    || (shExpMatch(host, "cus-000.tasks.osi.office.net"))
-    || (shExpMatch(host, "delve.office.com"))
-    || (shExpMatch(host, "device.login.microsoftonline.com"))    
-    || (shExpMatch(host, "ea-000.tasks.osi.office.net"))
-    || (shExpMatch(host, "eur.delve.office.com"))
-    || (shExpMatch(host, "eus-zzz.tasks.osi.office.net"))
-    || (shExpMatch(host, "gbr.delve.office.com"))    
-    || (shExpMatch(host, "hip.microsoftonline-p.net"))
-    || (shExpMatch(host, "hipservice.microsoftonline.com"))
-    || (shExpMatch(host, "home.office.com"))
-    || (shExpMatch(host, "ind.delve.office.com"))
-    || (shExpMatch(host, "jpn.delve.office.com"))
-    || (shExpMatch(host, "kor.delve.office.com"))
-    || (shExpMatch(host, "lam.delve.office.com"))
-    || (shExpMatch(host, "login.microsoft.com"))
-    || (shExpMatch(host, "login.microsoftonline.com"))
-    || (shExpMatch(host, "login.microsoftonline-p.com"))
-    || (shExpMatch(host, "login.windows.net"))
-    || (shExpMatch(host, "logincert.microsoftonline.com"))
-    || (shExpMatch(host, "loginex.microsoftonline.com"))
-    || (shExpMatch(host, "login-us.microsoftonline.com"))     
-    || (shExpMatch(host, "manage.office.com"))
-    || (shExpMatch(host, "mobile.pipe.aria.microsoft.com"))
-    || (shExpMatch(host, "nam.delve.office.com"))
-    || (shExpMatch(host, "neu-000.tasks.osi.office.net"))
-    || (shExpMatch(host, "nexus.microsoftonline-p.com"))
-    || (shExpMatch(host, "nexus.officeapps.live.com"))
-    || (shExpMatch(host, "nexusrules.officeapps.live.com"))
-    || (shExpMatch(host, "office.live.com"))
-    || (shExpMatch(host, "officeapps.live.com"))
-    || (shExpMatch(host, "passwordreset.microsoftonline.com"))
-    || (shExpMatch(host, "portal.microsoftonline.com"))
-    || (shExpMatch(host, "portal.office.com"))
-    || (shExpMatch(host, "protection.office.com"))
-    || (shExpMatch(host, "provisioningapi.microsoftonline.com"))
-    || (shExpMatch(host, "scsinstrument-ss-us.trafficmanager.net"))   
-    || (shExpMatch(host, "scsquery-ss-asia.trafficmanager.net")) 
-    || (shExpMatch(host, "scsquery-ss-eu.trafficmanager.net")) 
-    || (shExpMatch(host, "scsquery-ss-us.trafficmanager.net"))
-    || (shExpMatch(host, "sea-000.tasks.osi.office.net"))    
-    || (shExpMatch(host, "stamp2.login.microsoftonline.com"))
-    || (shExpMatch(host, "suite.office.net"))    
-    || (shExpMatch(host, "tasks.office.com"))
-    || (shExpMatch(host, "teams.microsoft.com"))
-    || (shExpMatch(host, "testconnectivity.microsoft.com"))
-    || (shExpMatch(host, "webshell.suite.office.com"))
-    || (shExpMatch(host, "weu-000.tasks.osi.office.net"))
-    || (shExpMatch(host, "wus-000.tasks.osi.office.net"))
-    || (shExpMatch(host, "www.office.com")))
+<span data-ttu-id="cfa65-p108">Após baixar esse script, você pode usá-lo para gerar um arquivo PAC. Você também pode modificar o script para que ele se integra o gerenciamento de arquivos PAC existente.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p108">Once you download this script, you can use it to generate a PAC file. You can also modify the script so that it integrates with your existing PAC file management.</span></span> 
 
-    {
-        return "DIRECT";
-    }
-    else
-        // Send all unknown IP traffic to Proxy for unrestricted access. This section is not necessary if you have a catchall for all other traffic to go to an unfiltered proxy. 
-        //However the fqdns required, but for which we dont have IPs for, are listed here incase you need an explicit list.
-   if          ((shExpMatch(host, "*.aadrm.com"))
-        || (shExpMatch(host, "*.adhybridhealth.azure.com")) 
-        || (shExpMatch(host, "*.adl.windows.com"))   
-        || (shExpMatch(host, "*.api.microsoftstream.com"))      
-        || (shExpMatch(host, "*.assets-yammer.com"))   
-        || (shExpMatch(host, "*.azureedge.net"))            
-        || (shExpMatch(host, "*.azurerms.com"))
-        || (shExpMatch(host, "*.cloudapp.net"))
-        || (shExpMatch(host, "*.entrust.net")) 
-        || (shExpMatch(host, "*.geotrust.com"))   
-        || (shExpMatch(host, "*.helpshift.com"))   
-        || (shExpMatch(host, "*.hockeyapp.net"))    
-        || (shExpMatch(host, "*.localytics.com"))    
-        || (shExpMatch(host, "*.log.optimizely.com"))    
-        || (shExpMatch(host, "*.microsoft.com"))
-        || (shExpMatch(host, "*.microsoftonline.com"))
-        || (shExpMatch(host, "*.microsoftonline-p.com"))
-        || (shExpMatch(host, "*.microsoftonline-p.net"))
-        || (shExpMatch(host, "*.msecnd.net"))
-        || (shExpMatch(host, "*.msedge.net"))      
-        || (shExpMatch(host, "*.msocdn.com")) 
-        || (shExpMatch(host, "*.mstea.ms"))    
-        || (shExpMatch(host, "*.notification.api.microsoftstream.com")) 
-        || (shExpMatch(host, "*.o365weve.com"))     
-        || (shExpMatch(host, "*.office.com"))   
-        || (shExpMatch(host, "*.office.net"))
-        || (shExpMatch(host, "*.omniroot.com"))
-        || (shExpMatch(host, "*.onmicrosoft.com"))
-        || (shExpMatch(host, "*.phonefactor.net"))
-        || (shExpMatch(host, "*.public-trust.com"))
-        || (shExpMatch(host, "*.search.production.apac.trafficmanager.net"))
-        || (shExpMatch(host, "*.search.production.emea.trafficmanager.net"))
-        || (shExpMatch(host, "*.search.production.us.trafficmanager.net"))
-        || (shExpMatch(host, "*.secure.skypeassets.com"))  
-        || (shExpMatch(host, "*.sfbassets.com"))
-        || (shExpMatch(host, "*.sharepointonline.com"))
-        || (shExpMatch(host, "*.sway.com"))
-        || (shExpMatch(host, "*.symcb.com"))
-        || (shExpMatch(host, "*.teams.microsoft.com"))  
-        || (shExpMatch(host, "*.tenor.com"))  
-        || (shExpMatch(host, "*.symcd.com"))     
-        || (shExpMatch(host, "*.users.storage.live.com"))
-        || (shExpMatch(host, "*.verisign.com"))
-        || (shExpMatch(host, "*.verisign.net"))
-        || (shExpMatch(host, "*.windows.net"))
-        || (shExpMatch(host, "*cdn.onenote.net"))
-        || (shExpMatch(host, "account.activedirectory.windowsazure.com"))
-        || (shExpMatch(host, "ad.atdmt.com"))
-        || (shExpMatch(host, "admin.onedrive.com"))
-        || (shExpMatch(host, "ajax.aspnetcdn.com"))
-        || (shExpMatch(host, "aka.ms"))
-        || (shExpMatch(host, "amp.azure.net"))
-        || (shExpMatch(host, "api.microsoftstream.com"))
-        || (shExpMatch(host, "apis.live.net"))  
-        || (shExpMatch(host, "apps.identrust.com"))  
-        || (shExpMatch(host, "assets.onestore.ms"))
-        || (shExpMatch(host, "auth.gfx.ms"))
-        || (shExpMatch(host, "cacerts.digicert.com"))        
-        || (shExpMatch(host, "cdn.odc.officeapps.live.com"))  
-        || (shExpMatch(host, "cdn.onenote.net"))
-        || (shExpMatch(host, "cdn.optimizely.com")) 
-        || (shExpMatch(host, "cert.int-x3.letsencrypt.org"))
-        || (shExpMatch(host, "client.hip.live.com"))
-        || (shExpMatch(host, "connect.facebook.net"))        
-        || (shExpMatch(host, "crl.globalsign.com"))
-        || (shExpMatch(host, "crl.globalsign.net"))
-        || (shExpMatch(host, "crl.identrust.com"))    
-        || (shExpMatch(host, "crl3.digicert.com"))  
-        || (shExpMatch(host, "crl4.digicert.com"))
-        || (shExpMatch(host, "cus-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "cus-roaming.officeapps.live.com"))
-        || (shExpMatch(host, "dc.services.visualstudio.com"))
-        || (shExpMatch(host, "domains.live.com"))
-        || (shExpMatch(host, "ea-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "ea-roaming.officeapps.live.com"))          
-        || (shExpMatch(host, "ecn.dev.virtualearth.net "))   
-        || (shExpMatch(host, "eus2-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "eus2-roaming.officeapps.live.com"))             
-        || (shExpMatch(host, "eus-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "eus-www.sway-cdn.com"))
-        || (shExpMatch(host, "eus-www.sway-extensions.com"))        
-        || (shExpMatch(host, "firstpartyapps.oaspapps.com"))
-        || (shExpMatch(host, "g.live.com"))
-        || (shExpMatch(host, "groupsapi2-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "groupsapi3-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "groupsapi4-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "groupsapi-prod.outlookgroups.ms"))   
-        || (shExpMatch(host, "isrg.trustid.ocsp.identrust.com"))   
-        || (shExpMatch(host, "liverdcxstorage.blob.core.windowsazure.com"))
-        || (shExpMatch(host, "management.azure.com"))        
-        || (shExpMatch(host, "mem.gfx.ms"))
-        || (shExpMatch(host, "mrodevicemgr.officeapps.live.com"))      
-        || (shExpMatch(host, "ncus-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "ncus-roaming.officeapps.live.com"))                
-        || (shExpMatch(host, "neu-000.ocws.officeapps.live.com")) 
-        || (shExpMatch(host, "neu-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "neu-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "nexus.officeapps.live.com"))
-        || (shExpMatch(host, "nexusrules.officeapps.live.com"))
-        || (shExpMatch(host, "nps.onyx.azure.net"))
-        || (shExpMatch(host, "ocsa.officeapps.live.com"))
-        || (shExpMatch(host, "ocsp.digicert.com"))
-        || (shExpMatch(host, "ocspx.digicert.com"))
-        || (shExpMatch(host, "ocsp.globalsign.com"))
-        || (shExpMatch(host, "ocsp.int-x3.letsencrypt.org"))
-        || (shExpMatch(host, "ocsp.msocsp.com"))       
-        || (shExpMatch(host, "ocsp2.globalsign.com"))
-        || (shExpMatch(host, "ocsredir.officeapps.live.com"))
-        || (shExpMatch(host, "ocws.officeapps.live.com"))
-        || (shExpMatch(host, "odc.officeapps.live.com"))  
-        || (shExpMatch(host, "officecdn.microsoft.com.edgekey.net"))            
-        || (shExpMatch(host, "officecdn.microsoft.com.edgesuite.net"))              
-        || (shExpMatch(host, "ols.officeapps.live.com"))  
-        || (shExpMatch(host, "oneclient.sfx.ms"))
-        || (shExpMatch(host, "outlook.uservoice.com"))
-        || (shExpMatch(host, "platform.linkedin.com"))
-        || (shExpMatch(host, "policykeyservice.dc.ad.msft.net"))
-        || (shExpMatch(host, "prod.firstpartyapps.oaspapps.com.akadns.net")) 
-        || (shExpMatch(host, "r1.res.office365.com"))
-        || (shExpMatch(host, "r3.res.office365.com"))
-        || (shExpMatch(host, "r4.res.office365.com"))
-        || (shExpMatch(host, "s.ytimg.com"))
-        || (shExpMatch(host, "scus-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "scus-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "scus-roaming.officeapps.live.com"))                 
-        || (shExpMatch(host, "sea-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "sea-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "secure.globalsign.com"))
-        || (shExpMatch(host, "site-cdn.onenote.net"))
-        || (shExpMatch(host, "skydrive.wns.windows.com"))
-        || (shExpMatch(host, "skypemaprdsitus.trafficmanager.net"))   
-        || (shExpMatch(host, "spoprod-a.akamaihd.net"))  
-        || (shExpMatch(host, "ssw.live.com"))
-        || (shExpMatch(host, "staffhub.ms"))
-        || (shExpMatch(host, "staffhub.uservoice.com"))
-        || (shExpMatch(host, "storage.live.com"))
-        || (shExpMatch(host, "sway.com")) 
-        || (shExpMatch(host, "teams.microsoft.com"))              
-        || (shExpMatch(host, "telemetry.remoteapp.windowsazure.com"))         
-        || (shExpMatch(host, "telemetryservice.firstpartyapps.oaspapps.com"))    
-        || (shExpMatch(host, "web.microsoftstream.com"))         
-        || (shExpMatch(host, "weu-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "weu-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "weu-roaming.officeapps.live.com"))
-        || (shExpMatch(host, "wu.client.hip.live.com"))
-        || (shExpMatch(host, "wus-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "wus-firstpartyapps.oaspapps.com"))  
-        || (shExpMatch(host, "wus-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "wus-roaming.officeapps.live.com"))
-        || (shExpMatch(host, "wus-www.sway-cdn.com"))
-        || (shExpMatch(host, "wus-www.sway-extensions.com"))   
-        || (shExpMatch(host, "www.digicert.com"))
-        || (shExpMatch(host, "www.google-analytics.com"))
-        || (shExpMatch(host, "www.onedrive.com"))
-        || (shExpMatch(host, "www.remoteapp.windowsazure.com"))
-        || (shExpMatch(host, "www.youtube.com"))
-        || (shExpMatch(host, "xsi.outlook.com")))
+<span data-ttu-id="cfa65-p109">![Conectando-se ao Office 365 através de firewalls e proxies. ](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png) Figura 1 - perímetro da rede corporativa simples</span><span class="sxs-lookup"><span data-stu-id="cfa65-p109">![Connecting to Office 365 through firewalls and proxies.](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png) Figure 1 - Simple enterprise network perimeter</span></span>
 
-    {
-        return proxyserver;
-    }
-    //Catchall for all other traffic to another proxy 
-else return proxyserver;
-}
+<span data-ttu-id="cfa65-p110">O arquivo PAC é implantado em computadores no ponto (1) na Figura 1. Ao usar um arquivo PAC para saída direta do tráfego de rede vital do Office 365, você também precisa permitir a conectividade com os endereços IP por trás dessas URLs em seu firewall de rede de perímetro. Isto é feito buscar os endereços IP para as mesmas categorias de ponto de extremidade de Office 365 conforme especificado no arquivo PAC e criação de firewall ACLs baseadas nesses endereços. O firewall é mostrado como ponto (3) na Figura 1.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p110">The PAC file is deployed to computers at point (1) in Figure 1. When using a PAC file for direct egress of vital Office 365 network traffic, you also need to allow connectivity to the IP addresses behind these URLs on your network perimeter firewall. This is done by fetching the IP addresses for the same Office 365 endpoint categories as specified in the PAC file and creating firewall ACLs based on those addresses. The firewall is shown as point (3) in Figure 1.</span></span> 
+
+<span data-ttu-id="cfa65-p111">Separadamente, se você optar por apenas diretos roteamento para rotear tráfego na rede para os pontos de extremidade de categoria Optimize, qualquer necessário permitir que os pontos de extremidade de categoria que você enviar para o servidor proxy precisará ser listados no servidor proxy para ignorar o processamento adicional. Por exemplo, quebra SSL e inspecionar e autenticação de Proxy são incompatíveis com o Optimize e permitir pontos de extremidade de categoria. O servidor proxy é mostrado como ponto (2) na Figura 1.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p111">Separately if you choose to only do direct routing for the route network traffic for the Optimize category endpoints, any required Allow category endpoints that you send to the proxy server will need to be listed in the proxy server to bypass further processing. For example, SSL break and Inspect and Proxy Authentication are incompatible with both the Optimize and Allow category endpoints. The proxy server is shown as point (2) in Figure 1.</span></span>
+
+<span data-ttu-id="cfa65-p112">A configuração comum é permitir todo o tráfego de saída do servidor proxy, de tal modo que os endereços IP de destino para o tráfego de rede do Office 365 que acessa o servidor proxy não é necessária. Leia sobre problemas com SSL se quebram e inspecionar no [usando dispositivos de rede de terceiros ou soluções de tráfego do Office 365](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).</span><span class="sxs-lookup"><span data-stu-id="cfa65-p112">The common configuration is to permit all outbound traffic from the proxy server such that destination IP addresses for Office 365 network traffic that hits the proxy server is not required. Read about issues with SSL Break and Inspect at [Using third-party network devices or solutions on Office 365 traffic](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).</span></span>
+
+<span data-ttu-id="cfa65-143">Existem dois tipos de arquivos de PAC que o script Get-PacFile irá gerar.</span><span class="sxs-lookup"><span data-stu-id="cfa65-143">There are two types of PAC files that the Get-PacFile script will generate.</span></span>
+
+|<span data-ttu-id="cfa65-144">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="cfa65-144">**Type**</span></span>|<span data-ttu-id="cfa65-145">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="cfa65-145">**Description**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="cfa65-146">**1**</span><span class="sxs-lookup"><span data-stu-id="cfa65-146">**1**</span></span> <br/> |<span data-ttu-id="cfa65-147">Envie o tráfego de ponto de extremidade de otimizar direto e de tudo ao servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="cfa65-147">Send Optimize endpoint traffic direct and all else to the proxy server.</span></span> <br/> |
+|<span data-ttu-id="cfa65-148">**2**</span><span class="sxs-lookup"><span data-stu-id="cfa65-148">**2**</span></span> <br/> |<span data-ttu-id="cfa65-p113">Enviar Optimize e permitir o tráfego de ponto de extremidade direta e todos os else ao servidor proxy. Também pode ser usado para enviar que todas as ExpressRoute com suporte para tráfego de Office 365 para os segmentos de rede ExpressRoute e todas as else ao servidor proxy.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p113">Send Optimize and Allow endpoint traffic direct and all else to the proxy server. Can also be used to send all supported ExpressRoute for Office 365 traffic to ExpressRoute network segments and all else to the proxy server.</span></span> <br/> |
+
+<span data-ttu-id="cfa65-151">Aqui está um exemplo simples de chamar o script do PowerShell:</span><span class="sxs-lookup"><span data-stu-id="cfa65-151">Here's a simple example of calling the PowerShell script:</span></span>
 
 ```
-
-### <a name="2---pac-file-connect-to-office-365-over-the-internet-and-expressroute"></a><span data-ttu-id="b1b9e-141">#2 – arquivo PAC: conectar ao Office 365 pela Internet e ExpressRoute</span><span class="sxs-lookup"><span data-stu-id="b1b9e-141">#2 - PAC file: Connect to Office 365 over the Internet and ExpressRoute</span></span>
-<span data-ttu-id="b1b9e-142"><a name="bkmk_inet-aer"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-142"></span></span>
-
-<span data-ttu-id="b1b9e-p109">O segundo exemplo é uma demonstração de nossa abordagem recomendada para gerenciar as conexões quando circuitos ExpressRoute e Internet estão disponíveis. Envia ExpressRoute divulgado destinos ao circuito ExpressRoute e Internet apenas divulgado destinos ao proxy.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p109">The second example is a demonstration of our recommended approach to managing connections when ExpressRoute and Internet circuits are available. Sends ExpressRoute advertised destinations to the ExpressRoute circuit and Internet only advertised destinations to the proxy.</span></span>
-  
-<span data-ttu-id="b1b9e-145">Trecho de código:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-145">Code snippet:</span></span>
-
-```javascript
-// JavaScript source code
-//July 2018 Update
-// Consolidated FQDNs of URLS which are reachable via Microsoft peering over ExpressRoute. All other traffic sent to a proxy in this example. 
-//Every Effort is made to ensure 100% accuracy but this PAC should be used as an example and cross-checked with your traffic flow needs and the Office 365 URL &amp; IP page. 
-//Intended only for Worldwide Office 365 instances, which the vast majority of customers will be using
-//PAC presumes all Office 365 BGP communities/route filters are allowed.
-function FindProxyForURL(url, host)
-{
-    // Define proxy server
-    var proxyserver = "PROXY 10.10.10.10:8080";
-    // Make host lowercase
-    var lhost = host.toLowerCase();
-    host = lhost;
-    //SUB-FQDNs of ExpressRoutable wildcards which need to be explicitly sent to the proxy at the top of the PAC because they arent ER routable
-    if ((shExpMatch(host, "xsi.outlook.com"))
-        || (shExpMatch(host, "r3.res.outlook.com"))
-        || (shExpMatch(host, "quicktips.skypeforbusiness.com"))
-        || (shExpMatch(host, "*.um.outlook.com")))                  
-    {
-        return proxyserver;
-    }
-        //EXPRESS ROUTE DIRECT
-    else if ((isPlainHostName(host))  
-            || (shExpMatch(host, "*.aria.microsoft.com"))             
-            || (shExpMatch(host, "*.dc.trouter.io"))
-            || (shExpMatch(host, "*.lync.com"))
-            || (shExpMatch(host, "*.manage.office.com"))
-            || (shExpMatch(host, "*.outlook.com"))
-            || (shExpMatch(host, "*.outlook.office.com"))
-            || (shExpMatch(host, "*.portal.cloudappsecurity.com"))
-            || (shExpMatch(host, "*.protection.office.com"))
-            || (shExpMatch(host, "*.protection.outlook.com"))
-            || (shExpMatch(host, "*.sharepoint.com")) 
-            || (shExpMatch(host, "*.skype.com")) 
-            || (shExpMatch(host, "*.skypeforbusiness.com")) 
-            || (shExpMatch(host, "*.svc.ms"))   
-            || (shExpMatch(host, "*.teams.microsoft.com"))  
-            || (shExpMatch(host, "*broadcast.officeapps.live.com"))
-            || (shExpMatch(host, "*excel.officeapps.live.com"))
-            || (shExpMatch(host, "*onenote.officeapps.live.com"))
-            || (shExpMatch(host, "*powerpoint.officeapps.live.com"))
-            || (shExpMatch(host, "*view.officeapps.live.com"))                                 
-            || (shExpMatch(host, "*visio.officeapps.live.com"))
-            || (shExpMatch(host, "*word-edit.officeapps.live.com"))
-            || (shExpMatch(host, "*word-view.officeapps.live.com"))
-            || (shExpMatch(host, "account.office.net"))
-            || (shExpMatch(host, "adminwebservice.microsoftonline.com"))
-            || (shExpMatch(host, "agent.office.net"))  
-            || (shExpMatch(host, "apc.delve.office.com"))
-            || (shExpMatch(host, "api.login.microsoftonline.com"))
-            || (shExpMatch(host, "api.passwordreset.microsoftonline.com"))
-            || (shExpMatch(host, "aus.delve.office.com"))
-            || (shExpMatch(host, "autologon.microsoftazuread-sso.com")) 
-            || (shExpMatch(host, "becws.microsoftonline.com"))
-            || (shExpMatch(host, "browser.pipe.aria.microsoft.com"))  
-            || (shExpMatch(host, "can.delve.office.com")) 
-            || (shExpMatch(host, "ccs.login.microsoftonline.com"))  
-            || (shExpMatch(host, "ccs-sdf.login.microsoftonline.com"))
-            || (shExpMatch(host, "clientconfig.microsoftonline-p.net"))
-            || (shExpMatch(host, "companymanager.microsoftonline.com"))
-            || (shExpMatch(host, "delve.office.com"))
-            || (shExpMatch(host, "device.login.microsoftonline.com"))
-            || (shExpMatch(host, "domains.live.com")) 
-            || (shExpMatch(host, "eur.delve.office.com"))
-            || (shExpMatch(host, "gbr.delve.office.com"))
-            || (shExpMatch(host, "hip.microsoftonline-p.net"))
-            || (shExpMatch(host, "hipservice.microsoftonline.com"))
-            || (shExpMatch(host, "home.office.com"))
-            || (shExpMatch(host, "ind.delve.office.com"))
-            || (shExpMatch(host, "jpn.delve.office.com"))
-            || (shExpMatch(host, "kor.delve.office.com"))
-            || (shExpMatch(host, "lam.delve.office.com"))
-            || (shExpMatch(host, "login.microsoft.com"))
-            || (shExpMatch(host, "login.microsoftonline.com"))
-            || (shExpMatch(host, "login.microsoftonline-p.net"))
-            || (shExpMatch(host, "login.windows.net"))
-            || (shExpMatch(host, "logincert.microsoftonline.com"))
-            || (shExpMatch(host, "loginex.microsoftonline.com"))
-            || (shExpMatch(host, "login-us.microsoftonline.com"))
-            || (shExpMatch(host, "manage.office.com"))
-            || (shExpMatch(host, "mobile.pipe.aria.microsoft.com"))
-            || (shExpMatch(host, "nam.delve.office.com"))
-            || (shExpMatch(host, "nexus.microsoftonline-p.net"))
-            || (shExpMatch(host, "office.live.com")) 
-            || (shExpMatch(host, "officeapps.live.com")) 
-            || (shExpMatch(host, "outlook.office365.com")) 
-            || (shExpMatch(host, "passwordreset.microsoftonline.com"))
-            || (shExpMatch(host, "portal.office.com"))
-            || (shExpMatch(host, "protection.office.com"))
-            || (shExpMatch(host, "provisioningapi.microsoftonline.com"))
-            || (shExpMatch(host, "scsinstrument-ss-us.trafficmanager.net")) 
-            || (shExpMatch(host, "scsquery-ss-asia.trafficmanager.net"))
-            || (shExpMatch(host, "scsquery-ss-eu.trafficmanager.net")) 
-            || (shExpMatch(host, "scsquery-ss-us.trafficmanager.net"))  
-            || (shExpMatch(host, "signup.microsoft.com"))
-            || (shExpMatch(host, "smtp.office365.com"))  
-            || (shExpMatch(host, "stamp2.login.microsoftonline.com"))
-            || (shExpMatch(host, "suite.office.net")) 
-            || (shExpMatch(host, "teams.microsoft.com")) 
-            || (shExpMatch(host, "webshell.suite.office.com")) 
-            || (shExpMatch(host, "www.office.com")))             
-       
-    {
-        return "DIRECT";
-    }
-        //Catchall for all other traffic to proxy
-    else
-    {
-        return proxyserver;
-    }
-}
-
+Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 ```
 
-### <a name="3---pac-file-manage-all-office-365-destinations-collectively"></a><span data-ttu-id="b1b9e-146">#3 – arquivo PAC: gerenciar todos os destinos de Office 365 coletivamente</span><span class="sxs-lookup"><span data-stu-id="b1b9e-146">#3 - PAC file: Manage all Office 365 destinations collectively</span></span>
-<span data-ttu-id="b1b9e-147"><a name="bkmk_inet-direct"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-147"></span></span>
+<span data-ttu-id="cfa65-152">Há vários parâmetros que você pode passar para o script:</span><span class="sxs-lookup"><span data-stu-id="cfa65-152">There are a number of parameters you can pass to the script:</span></span>
 
-<span data-ttu-id="b1b9e-p110">O terceiro exemplo demonstra o envio de todas as solicitações de rede associadas com o Office 365 para um único destino. Isso geralmente é usado para ignorar todos os inspeção de solicitações de rede do Office 365 e oferece a você um formato onde todos publicado pontos de extremidade está na lista no formato a ser usado para sua personalização PAC.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p110">The third example demonstrates sending all network requests associated with Office 365 to a single destination. This is commonly used to bypass all inspection of Office 365 network requests and offers you a format where all published endpoints are in list in the PAC format to use for your customization.</span></span>
-  
-<span data-ttu-id="b1b9e-150">Trecho de código:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-150">Code snippet:</span></span>
+|<span data-ttu-id="cfa65-153">**Parameter**</span><span class="sxs-lookup"><span data-stu-id="cfa65-153">**Parameter**</span></span>|<span data-ttu-id="cfa65-154">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="cfa65-154">**Description**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="cfa65-155">**ClientRequestId**</span><span class="sxs-lookup"><span data-stu-id="cfa65-155">**ClientRequestId**</span></span> <br/> |<span data-ttu-id="cfa65-156">Isso é necessário e um GUID que é passado para o serviço web que representa a máquina cliente fazendo a chamada</span><span class="sxs-lookup"><span data-stu-id="cfa65-156">This is required and is a GUID passed to the web service that represents the client machine making the call</span></span> <br/> |
+|<span data-ttu-id="cfa65-157">**Instance**</span><span class="sxs-lookup"><span data-stu-id="cfa65-157">**Instance**</span></span> <br/> |<span data-ttu-id="cfa65-p114">A instância de serviço do Office 365 que usa como padrão Worldwide. Também é passado para o serviço web</span><span class="sxs-lookup"><span data-stu-id="cfa65-p114">The Office 365 service instance which defaults to Worldwide. Also passed to the web service</span></span> <br/> |
+|<span data-ttu-id="cfa65-160">**TenantName**</span><span class="sxs-lookup"><span data-stu-id="cfa65-160">**TenantName**</span></span> <br/> |<span data-ttu-id="cfa65-p115">Seu nome de Inquilino do Office 365. Passadas para o serviço da web e usado como um parâmetro substituível em algumas URLs do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-p115">Your Office 365 tenant name. Passed to the web service and used as a replaceable parameter in some Office 365 URLs</span></span> <br/> |
+|<span data-ttu-id="cfa65-163">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="cfa65-163">**Type**</span></span> <br/> |<span data-ttu-id="cfa65-164">O tipo do arquivo PAC de proxy que você deseja gerar</span><span class="sxs-lookup"><span data-stu-id="cfa65-164">The type of the proxy PAC file that you want to generate</span></span> <br/> |
 
-```javascript
-// JavaScript source code
-//July 2018 Update new URLS go live 1st August 2018 -
-//Consolidated FQDNs required to access Office 365 - All services including optional components covered and elements covered under wildcards removed. 
-//Some repeated domains have been consoliodated into unpublished wildcards in order to keep the file as small as possible.
-//Includes Core ProPlus URLs but not Office Mobile/IPAD/IOS/ANDROID fqdns from https://support.office.com/en-gb/article/Network-requests-in-Office-365-ProPlus-eb73fcd1-ca88-4d02-a74b-2dd3a9f3364d
-//Every Effort is made to ensure 100% accuracy but this PAC should be used as an example and cross-checked with your needs and the Office 365 URL &amp; IP page
-//Intended only for Worldwide Office 365 instances, which the vast majority of customers will be using
-function FindProxyForURL(url, host)
-{
-    // Define proxy server
-    var proxyserver = "PROXY 10.10.10.10:8080";
-    // Make host lowercase
-    var lhost = host.toLowerCase();
-    host = lhost;
-   if  ((shExpMatch(host, "*.aadrm.com"))
-        || (shExpMatch(host, "*.adhybridhealth.azure.com"))
-        || (shExpMatch(host, "*.adl.windows.com"))
-        || (shExpMatch(host, "*.api.microsoftstream.com"))  
-        || (shExpMatch(host, "*.assets-yammer.com"))
-        || (shExpMatch(host, "autologon.microsoftazuread-sso.com"))  
-        || (shExpMatch(host, "*.azureedge.net"))   
-        || (shExpMatch(host, "*.azurerms.com"))
-        || (shExpMatch(host, "*.cloudapp.net")) 
-        || (shExpMatch(host, "*.dc.trouter.io"))
-        || (shExpMatch(host, "*.entrust.net")) 
-        || (shExpMatch(host, "*.geotrust.com"))
-        || (shExpMatch(host, "*.helpshift.com"))
-        || (shExpMatch(host, "*.hockeyapp.net"))       
-        || (shExpMatch(host, "*.localytics.com"))
-        || (shExpMatch(host, "*.log.optimizely.com"))     
-        || (shExpMatch(host, "*.lync.com"))
-        || (shExpMatch(host, "*.microsoft.com"))
-        || (shExpMatch(host, "*.microsoftonline.com"))
-        || (shExpMatch(host, "*.microsoftonline-p.com"))
-        || (shExpMatch(host, "*.microsoftonline-p.net"))
-        || (shExpMatch(host, "*.msecnd.net"))
-        || (shExpMatch(host, "*.msedge.net"))
-        || (shExpMatch(host, "*.msocdn.com"))
-        || (shExpMatch(host, "*.mstea.ms"))
-        || (shExpMatch(host, "*.o365weve.com"))
-        || (shExpMatch(host, "*.office.com"))
-        || (shExpMatch(host, "*.office.net"))
-        || (shExpMatch(host, "*.office365.com"))
-        || (shExpMatch(host, "*.omniroot.com"))
-        || (shExpMatch(host, "*.onenote.com"))
-        || (shExpMatch(host, "*.onmicrosoft.com"))
-        || (shExpMatch(host, "*.outlook.com"))
-        || (shExpMatch(host, "*.phonefactor.net")) 
-        || (shExpMatch(host, "*.portal.cloudappsecurity.com"))
-        || (shExpMatch(host, "*.public-trust.com"))
-        || (shExpMatch(host, "*.search.production.apac.trafficmanager.net"))
-        || (shExpMatch(host, "*.search.production.emea.trafficmanager.net"))
-        || (shExpMatch(host, "*.search.production.us.trafficmanager.net"))
-        || (shExpMatch(host, "*.secure.skypeassets.com"))
-        || (shExpMatch(host, "*.sfbassets.com"))  
-        || (shExpMatch(host, "*.sharepoint.com"))
-        || (shExpMatch(host, "*.sharepointonline.com"))
-        || (shExpMatch(host, "*.skype.com"))
-        || (shExpMatch(host, "*.skypeforbusiness.com"))
-        || (shExpMatch(host, "*.svc.ms")) 
-        || (shExpMatch(host, "*.sway.com"))
-        || (shExpMatch(host, "*.symcb.com"))
-        || (shExpMatch(host, "*.symcd.com"))
-        || (shExpMatch(host, "*.tenor.com"))
-        || (shExpMatch(host, "*.users.storage.live.com"))
-        || (shExpMatch(host, "*.verisign.com"))
-        || (shExpMatch(host, "*.verisign.net"))
-        || (shExpMatch(host, "*.windows.net"))
-        || (shExpMatch(host, "*.yammer.com"))
-        || (shExpMatch(host, "*.yammerusercontent.com"))         
-        || (shExpMatch(host, "*broadcast.officeapps.live.com"))
-        || (shExpMatch(host, "*cdn.onenote.net"))
-        || (shExpMatch(host, "*excel.officeapps.live.com"))
-        || (shExpMatch(host, "*onenote.officeapps.live.com"))
-        || (shExpMatch(host, "*powerpoint.officeapps.live.com"))
-        || (shExpMatch(host, "*view.officeapps.live.com"))
-        || (shExpMatch(host, "*visio.officeapps.live.com"))
-        || (shExpMatch(host, "*word-edit.officeapps.live.com"))
-        || (shExpMatch(host, "*word-view.officeapps.live.com"))    
-        || (shExpMatch(host, "account.activedirectory.windowsazure.com"))
-        || (shExpMatch(host, "ad.atdmt.com"))
-        || (shExpMatch(host, "admin.onedrive.com"))
-        || (shExpMatch(host, "ajax.aspnetcdn.com"))
-        || (shExpMatch(host, "aka.ms"))
-        || (shExpMatch(host, "amp.azure.net"))
-        || (shExpMatch(host, "api.microsoftstream.com"))
-        || (shExpMatch(host, "apis.live.net"))
-        || (shExpMatch(host, "apps.identrust.com")) 
-        || (shExpMatch(host, "assets.onestore.ms"))
-        || (shExpMatch(host, "auth.gfx.ms"))
-        || (shExpMatch(host, "cacerts.digicert.com"))    
-        || (shExpMatch(host, "cdn.odc.officeapps.live.com"))  
-        || (shExpMatch(host, "cdn.onenote.net"))
-        || (shExpMatch(host, "cdn.optimizely.com"))
-        || (shExpMatch(host, "cert.int-x3.letsencrypt.org"))
-        || (shExpMatch(host, "client.hip.live.com"))     
-        || (shExpMatch(host, "connect.facebook.net"))
-        || (shExpMatch(host, "crl.globalsign.com"))
-        || (shExpMatch(host, "crl.globalsign.net"))
-        || (shExpMatch(host, "crl.identrust.com"))    
-        || (shExpMatch(host, "crl3.digicert.com"))  
-        || (shExpMatch(host, "crl4.digicert.com"))
-        || (shExpMatch(host, "cus-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "cus-roaming.officeapps.live.com"))      
-        || (shExpMatch(host, "dc.services.visualstudio.com"))
-        || (shExpMatch(host, "domains.live.com"))
-        || (shExpMatch(host, "ea-000.ocws.officeapps.live.com")) 
-        || (shExpMatch(host, "ea-roaming.officeapps.live.com"))           
-        || (shExpMatch(host, "ecn.dev.virtualearth.net"))
-        || (shExpMatch(host, "eus2-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "eus2-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "eus-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "eus-www.sway-cdn.com"))
-        || (shExpMatch(host, "eus-www.sway-extensions.com"))
-        || (shExpMatch(host, "firstpartyapps.oaspapps.com"))
-        || (shExpMatch(host, "g.live.com"))
-        || (shExpMatch(host, "groupsapi2-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "groupsapi3-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "groupsapi4-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "groupsapi-prod.outlookgroups.ms"))  
-        || (shExpMatch(host, "isrg.trustid.ocsp.identrust.com"))
-        || (shExpMatch(host, "liverdcxstorage.blob.core.windowsazure.com"))
-        || (shExpMatch(host, "management.azure.com"))
-        || (shExpMatch(host, "mem.gfx.ms"))
-        || (shExpMatch(host, "mrodevicemgr.officeapps.live.com"))               
-        || (shExpMatch(host, "ncus-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "ncus-roaming.officeapps.live.com"))                 
-        || (shExpMatch(host, "neu-000.ocws.officeapps.live.com")) 
-        || (shExpMatch(host, "neu-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "neu-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "nexus.officeapps.live.com"))
-        || (shExpMatch(host, "nexusrules.officeapps.live.com"))
-        || (shExpMatch(host, "nps.onyx.azure.net"))   
-        || (shExpMatch(host, "ocsa.officeapps.live.com"))
-        || (shExpMatch(host, "ocsp.digicert.com"))
-        || (shExpMatch(host, "ocsp.globalsign.com"))
-        || (shExpMatch(host, "ocsp.int-x3.letsencrypt.org"))
-        || (shExpMatch(host, "ocsp.msocsp.com"))     
-        || (shExpMatch(host, "ocsp2.globalsign.com")) 
-        || (shExpMatch(host, "ocspx.digicert.com"))
-        || (shExpMatch(host, "ocsredir.officeapps.live.com"))
-        || (shExpMatch(host, "ocws.officeapps.live.com"))
-        || (shExpMatch(host, "odc.officeapps.live.com"))  
-        || (shExpMatch(host, "office.live.com"))
-        || (shExpMatch(host, "officeapps.live.com"))
-        || (shExpMatch(host, "officecdn.microsoft.com.edgekey.net"))              
-        || (shExpMatch(host, "officecdn.microsoft.com.edgesuite.net"))
-        || (shExpMatch(host, "ols.officeapps.live.com"))  
-        || (shExpMatch(host, "oneclient.sfx.ms"))
-        || (shExpMatch(host, "outlook.uservoice.com"))
-        || (shExpMatch(host, "platform.linkedin.com"))
-        || (shExpMatch(host, "policykeyservice.dc.ad.msft.net"))
-        || (shExpMatch(host, "prod.firstpartyapps.oaspapps.com.akadns.net"))
-        || (shExpMatch(host, "s.ytimg.com"))
-        || (shExpMatch(host, "s0.assets-yammer.com"))  
-        || (shExpMatch(host, "scsinstrument-ss-us.trafficmanager.net")) 
-        || (shExpMatch(host, "scsquery-ss-asia.trafficmanager.net"))
-        || (shExpMatch(host, "scsquery-ss-eu.trafficmanager.net")) 
-        || (shExpMatch(host, "scsquery-ss-us.trafficmanager.net")) 
-        || (shExpMatch(host, "scus-000.ocws.officeapps.live.com"))
-        || (shExpMatch(host, "scus-odc.officeapps.live.com"))         
-        || (shExpMatch(host, "scus-roaming.officeapps.live.com"))                 
-        || (shExpMatch(host, "sea-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "sea-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "secure.globalsign.com"))
-        || (shExpMatch(host, "site-cdn.onenote.net"))
-        || (shExpMatch(host, "skydrive.wns.windows.com"))
-        || (shExpMatch(host, "skypemaprdsitus.trafficmanager.net"))
-        || (shExpMatch(host, "spoprod-a.akamaihd.net"))
-        || (shExpMatch(host, "ssw.live.com"))
-        || (shExpMatch(host, "staffhub.ms"))
-        || (shExpMatch(host, "staffhub.uservoice.com"))    
-        || (shExpMatch(host, "storage.live.com"))
-        || (shExpMatch(host, "telemetry.remoteapp.windowsazure.com"))
-        || (shExpMatch(host, "telemetryservice.firstpartyapps.oaspapps.com"))
-        || (shExpMatch(host, "web.microsoftstream.com"))   
-        || (shExpMatch(host, "weu-000.ocws.officeapps.live.com")) 
-        || (shExpMatch(host, "weu-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "weu-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "wu.client.hip.live.com"))
-        || (shExpMatch(host, "wus-000.ocws.officeapps.live.com"))  
-        || (shExpMatch(host, "wus-firstpartyapps.oaspapps.com"))  
-        || (shExpMatch(host, "wus-odc.officeapps.live.com"))              
-        || (shExpMatch(host, "wus-roaming.officeapps.live.com"))              
-        || (shExpMatch(host, "wus-www.sway-cdn.com"))
-        || (shExpMatch(host, "wus-www.sway-extensions.com"))        
-        || (shExpMatch(host, "www.digicert.com"))
-        || (shExpMatch(host, "www.google-analytics.com"))
-        || (shExpMatch(host, "www.onedrive.com"))
-        || (shExpMatch(host, "www.remoteapp.windowsazure.com"))
-        || (shExpMatch(host, "www.youtube.com")))
-    {
-        return proxyserver;
-    }
-        //Catchall for all other traffic to another proxy
-    else return "PROXY 10.10.10.11:8080";
-}
+<span data-ttu-id="cfa65-165">Aqui está outro exemplo de chamar o script do PowerShell com parâmetros adicionais:</span><span class="sxs-lookup"><span data-stu-id="cfa65-165">Here's another example of calling the PowerShell script with additional parameters:</span></span>
 
 ```
+Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
+```
 
-### <a name="use-custom-scripts-or-manually-create-your-own-pac-files"></a><span data-ttu-id="b1b9e-151">Usam scripts personalizados ou criar manualmente seus próprios arquivos PAC</span><span class="sxs-lookup"><span data-stu-id="b1b9e-151">Use custom scripts or manually create your own PAC files</span></span>
-<span data-ttu-id="b1b9e-152"><a name="pacfiles_manual"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-152"></span></span>
+## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a><span data-ttu-id="cfa65-166">Processamento de tráfego de rede do Office 365 de desvio do servidor proxy</span><span class="sxs-lookup"><span data-stu-id="cfa65-166">Proxy server bypass processing of Office 365 network traffic</span></span> 
 
-<span data-ttu-id="b1b9e-p111">Eis algumas ferramentas mais da comunidade, se você tiver criado algo que você gostaria de compartilhar deixe uma nota nos comentários. None da comunidade ferramentas mencionadas neste artigo são oficialmente suportado ou mantida pela Microsoft e são oferecidos para sua conveniência.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p111">Here's a few more tools from the community, if you've built something you'd like to share leave a note in the comments. None of the community tools referenced in this article are officially supported or maintained by Microsoft and are provided here for your convenience.</span></span>
+<span data-ttu-id="cfa65-p116">Onde os arquivos de PAC não são usados para tráfego de saída direto, ainda será conveniente ignorar o processamento no seu perímetro de rede, configurando o servidor proxy. Alguns fornecedores de servidor proxy tem habilitado a configuração automatizada disso, conforme descrito no [Programa de parceria de rede do Office 365](office-365-networking-partner-program.md). Se você estiver fazendo isso manualmente você precisará obter a otimizar e permitir que os dados de ponto de extremidade de categoria do ponto de extremidade do endereço de IP do Office 365 e serviços da Web de URL e configure o servidor proxy para ignorar o processamento para esses. É importante evitar quebrar SSL e inspecionar e autenticação de Proxy para a otimizar e permitir que os pontos de extremidade de categoria.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p116">Where PAC files are not used for direct outbound traffic, you will still want to bypass processing on your network perimeter by configuring your proxy server. Some proxy server vendors have enabled automated configuration of this as described in the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). If you are doing this manually you will need to obtain the Optimize and Allow endpoint category endpoint data from the Office 365 IP Address and URL Web Services and configure your proxy server to bypass processing for these. It is important to avoid SSL Break and Inspect and Proxy Authentication for the Optimize and Allow category endpoints.</span></span> 
   
-- <span data-ttu-id="b1b9e-p112">Esta é a ferramenta de comunidade gerada mais antiga para ajudar a gerenciar o processo, uma ferramenta criada por um membro da comunidade do Office 365. Aqui está o link para [Baixar](https://gallery.technet.microsoft.com/Office-365-Proxy-Pac-60fb28f7).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p112">This is the oldest community generated tool to help manage the process, a tool built by a member of the Office 365 community. Here is link to [download](https://gallery.technet.microsoft.com/Office-365-Proxy-Pac-60fb28f7).</span></span>
-    
-- <span data-ttu-id="b1b9e-157">Verificação de conceito com regras de firewall exportável: [API do Microsoft Cloud IP](https://mscloudips.azurewebsites.net/).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-157">Proof of Concept with exportable firewall rules: [Microsoft Cloud IP API](https://mscloudips.azurewebsites.net/).</span></span>
-    
-- <span data-ttu-id="b1b9e-158">No IT Praktyk: [Conversão de RSS](https://gallery.technet.microsoft.com/Convert-the-RSS-channel-5efe18b7) e [conversão de XML](https://gallery.technet.microsoft.com/Convert-the-O365IPAddresses-9890d896).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-158">From IT Praktyk: [RSS conversion](https://gallery.technet.microsoft.com/Convert-the-RSS-channel-5efe18b7) and [XML conversion](https://gallery.technet.microsoft.com/Convert-the-O365IPAddresses-9890d896).</span></span>
-    
-- <span data-ttu-id="b1b9e-159">De Peter Abele: [Baixar](https://gallery.technet.microsoft.com/How-to-create-an-up-to-b1fc33f3).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-159">From Peter Abele: [Download](https://gallery.technet.microsoft.com/How-to-create-an-up-to-b1fc33f3).</span></span>
-    
-- <span data-ttu-id="b1b9e-p113">Use sua análise de rede para determinar qual rede solicita deve ignorar sua infraestrutura de proxy. Os FQDNs mais comuns usados para ignorar os proxies de cliente incluem devido ao volume de tráfego de rede enviados e recebidos desses pontos de extremidade.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p113">Use your network analysis to determine which network requests should bypass your proxy infrastructure. The most common FQDNs used to bypass customer proxies include the following due to the volume of network traffic sent and received from these endpoints.</span></span>
-    
-  ```
-  outlook.office365.com
-  outlook.office.com
-  <tenant-name>.sharepoint.com
-  <tenant-name>-my.sharepoint.com
-  <tenant-name>-<app>.sharepoint.com
-  *.Lync.com
-  ```
+<span data-ttu-id="cfa65-171"><a name="bkmk_changes"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-171"></span></span>
+## <a name="change-management-for-office-365-ip-addresses-and-urls"></a><span data-ttu-id="cfa65-172">Gerenciamento de alteração para endereços de IP do Office 365 e URLs</span><span class="sxs-lookup"><span data-stu-id="cfa65-172">Change management for Office 365 IP Addresses and URLs</span></span>
 
-- <span data-ttu-id="b1b9e-162">Certifique-se de que quaisquer solicitações de rede sendo enviadas diretamente à seu firewall tem uma entrada correspondente no firewall lista para permitir que a solicitação para passar de permissões.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-162">Ensure any network requests being sent to your firewall directly have a corresponding entry in the firewall allow list to allow the request to go through.</span></span>
+<span data-ttu-id="cfa65-p117">Além de selecionar a configuração apropriada para seu perímetro de rede, é muito importante que você adotar um processo de gerenciamento de alterações para pontos de extremidade do Office 365. Esses pontos de extremidade alterar regularmente e se você não gerencia as alterações você pode acabar tendo usuários bloqueados ou com desempenho ruim após um novo IP endereço ou URL é adicionado.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p117">In addition to selecting appropriate configuration for your network perimeter, it is critical that you adopt a change management process for Office 365 endpoints. These endpoints change regularly and if you do not manage the changes you can end up with users blocked or with poor performance after a new IP address or URL is added.</span></span> 
 
-## <a name="perimeter-network-integration"></a><span data-ttu-id="b1b9e-163">Integração de rede de perímetro</span><span class="sxs-lookup"><span data-stu-id="b1b9e-163">Perimeter network integration</span></span>
-<span data-ttu-id="b1b9e-164"><a name="BKMK_Perimeter"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-164"></span></span>
+<span data-ttu-id="cfa65-p118">Alterações nos endereços IP do Office 365 e URLs são geralmente publicadas perto o último dia de cada mês. Em alguns casos, uma alteração será publicada fora que agenda devido à operacionais, suporte ou requisitos de segurança.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p118">Changes to the Office 365 IP addresses and URLs are usually published near the last day of each month. Sometimes a change will be published outside of that schedule due to operational, support, or security requirements.</span></span>
 
-<span data-ttu-id="b1b9e-165">Você sabia da Microsoft WAN é uma dos backbones maiores no mundo?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-165">Did you know Microsoft's WAN is one of the largest backbones in the world?</span></span>
-  
-<span data-ttu-id="b1b9e-p114">É definido como true, que esta rede enorme é o que torna o Office 365 e nossos serviços de nuvem que trabalhar independentemente where do mundo que você está. Nossa rede consiste de largura de banda alta, baixa latência, links capaz de failover com milhares de quilômetros de rota de fibra escura pertencente em particular e multi-Terabit conexões entre data centers e borda nós, para facilitar a usar nossos serviços de nuvem.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p114">It's true, this massive network is what makes Office 365 and our other cloud services work regardless of where in the world you are. Our network consists of high bandwidth, low latency, fail-over capable links with thousands of route miles of privately owned dark fiber, and multi-Terabit connections between datacenters and edge nodes, all to make it easier to use our cloud services.</span></span>
-  
-<span data-ttu-id="b1b9e-p115">Com uma rede assim, você deseja que os dispositivos da sua organização para se conectar à nossa rede assim que possível. Com mais de 2.500 relacionamentos de correspondência ISP globalmente e 70 pontos de presença, obtendo da sua rede para nosso deve ser contínuo. Ele não pode prejudicar o gastar alguns minutos, certificando-se que o relacionamento de correspondência do seu ISP é o ideal, [Eis alguns exemplos](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__) de uma boa e não tão boas aos transferências à nossa rede.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p115">With a network like this, you want your organization's devices to connect to our network as soon as possible. With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__) of good and not so good peering hand-offs to our network.</span></span> 
-  
-<span data-ttu-id="b1b9e-p116">Você pode manualmente ou configurar automaticamente os dispositivos na sua rede para tratem de solicitações de rede de aplicativos do Office 365, dependendo de seu equipamento. Quais alterações de configuração que você precisa fazer em tratem de tráfego de rede do Office 365 dependerá de seu ambiente. Office 365 rede solicitações poderão se beneficiar configurações de rede que permitem o seguinte:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p116">You can manually or automatically configure the devices on your network to optimally handle Office 365 application network requests, depending on your equipment. What configuration changes you need to make to optimally handle Office 365 network traffic will depend on your environment. Office 365 network requests may benefit from network configurations that allow the following:</span></span>
-  
-- <span data-ttu-id="b1b9e-174">Prioridade sobre o tráfego de rede menos crítico.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-174">Priority over less critical network traffic.</span></span>
-    
-- <span data-ttu-id="b1b9e-p117">O roteamento para uma saída local para evitar backhauling em uma WAN lenta link, beneficiando a latência baixa disponível no Microsoft network. [Aqui está uma boa discussão](https://blogs.technet.microsoft.com/onthewire/2017/05/03/office-365-connectivity-guidance-part-2/) com base em contratos com clientes.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p117">Routing to a local egress to avoid backhauling over a slow WAN link while taking advantage of the low latency available on the Microsoft network. [Here's a good discussion](https://blogs.technet.microsoft.com/onthewire/2017/05/03/office-365-connectivity-guidance-part-2/) based on customer engagements.</span></span> 
-    
-- <span data-ttu-id="b1b9e-177">Usando o DNS perto de uma saída local para garantir que a solicitação de rede que deixa a saída local chega no local aos Microsoft mais próximo.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-177">Using DNS near a local egress to ensure the network request that leaves the local egress arrives at the nearest Microsoft peering location.</span></span>
-    
-- <span data-ttu-id="b1b9e-178">Exclusão de profunda inspeção de pacotes ou outros para atender aos requisitos de latência na escala de processamento de pacotes de rede intensiva.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-178">Exclusion from deep packet inspection or other intensive network packet processing to meet latency requirements at scale.</span></span>
-    
-<span data-ttu-id="b1b9e-p118">Os dispositivos de rede moderno incluem recursos para gerenciar solicitações de rede para aplicativos confiáveis, como o Office 365 diferente genérico, não confiável tráfego da Internet. Com o cenário emergente das soluções SD-WAN, tal diferenciação de tráfego e o caminho de seleção também pode ser executada com o reconhecimento de ao estado em mudança da rede, como o ponto na disponibilidade de tempo, latência ou desempenho dos diversos caminhos de conectividade entre o usuário e a nuvem.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p118">Modern network devices include capabilities to manage network requests for trusted applications such as Office 365 differently than generic, untrusted Internet traffic. With the emerging landscape of SD-WAN solutions, such differentiation of traffic and path selection can also be performed with awareness of the changing state of the network, such as point in time availability, latency or performance of various connectivity paths between the user and the cloud.</span></span>
-  
-<span data-ttu-id="b1b9e-181">Consulte [rede e planejamento de migração para o Office 365](network-and-migration-planning.md), [plano para o Office 365 de solução de problemas de desempenho](performance-troubleshooting-plan.md)e [processo de planejamento de implantação para Office 365](deployment-planning-checklist.md) para obter orientação adicional sobre como planejar sua configuração de rede.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-181">See [Network and migration planning for Office 365](network-and-migration-planning.md), [Performance troubleshooting plan for Office 365](performance-troubleshooting-plan.md), and [Deployment planning checklist for Office 365](deployment-planning-checklist.md) for additional guidance on planning your network configuration.</span></span> 
-  
-### <a name="to-implement-this-scenario"></a><span data-ttu-id="b1b9e-182">Para implementar esse cenário:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-182">To implement this scenario:</span></span>
+<span data-ttu-id="cfa65-p119">Quando uma alteração é publicada que exige a agir como um endereço IP ou a URL foi adicionado, você deve esperar receber o aviso de 30 dias desde o momento em que publicamos a alteração até que haja serviço live do Office 365 no ponto de extremidade. Embora a Microsoft tem como objetivo para esse período de notificação, não sempre pode ser possível devido à operacionais, suporte ou requisitos de segurança. As alterações que não exigem ação imediata para manter a conectividade, tais como removido endereços IP ou URLs ou menos alterações significativas, não incluir notificação prévia. Independentemente de qual notificação for fornecida, podemos listará da data de ativação de serviço esperados para cada alteração.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p119">When a change is published that requires you to take action because an IP address or URL was added, you should expect to receive 30 days notice from the time we published the change until there is live Office 365 service on that endpoint. Although Microsoft aims for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that do not require immediate action to maintain connectivity, such as removed IP Addresses or URLs or less significant changes, do not include advance notification. Regardless of what notification is provided, we will list the expected service active date for each change.</span></span>
 
-<span data-ttu-id="b1b9e-p119">Verifique com seu provedor de solução ou serviço de rede, se eles podem usar a URL do Office 365 e definições de IP de XML para facilitar o local (para o usuário), pouca sobrecarga de saída para o Office 365 tráfego de rede, gerenciar sua prioridade em relação a outros aplicativos e ajustar a caminho de rede para conexões do Office 365 em rede Microsoft dependendo alterando as condições de rede. Algumas soluções Baixe e automatizam a definição de URL do Office 365 e IP XMLs em suas pilhas.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p119">Check with your network solution or service provider if they can use Office 365 URL and IP definitions from XML to facilitate local (to the user), low overhead network egress for Office 365 traffic, manage its priority relative to other applications and adjust the network path for Office 365 connections into Microsoft network depending on changing network conditions. Some solutions download and automate Office 365 URL and IP XMLs definition in their stacks.</span></span>
-  
-<span data-ttu-id="b1b9e-185">Sempre certifique-se de que a solução implementada tem necessário grau de resiliência, redundância geo apropriada do caminho da rede para tráfego do Office 365 e acomoda mudanças URLs do Office 365 e IPs conforme eles se tornam publicados.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-185">Always ensure that the implemented solution has necessary degree of resiliency, appropriate geo-redundancy of the network path for Office 365 traffic and accommodates changes to Office 365 URLs and IPs as they become published.</span></span>
+### <a name="change-notification-using-web-services"></a><span data-ttu-id="cfa65-181">Notificação de alteração usando serviços da web</span><span class="sxs-lookup"><span data-stu-id="cfa65-181">Change notification using web services</span></span>
 
-## <a name="faq"></a><span data-ttu-id="b1b9e-186">Perguntas frequentes</span><span class="sxs-lookup"><span data-stu-id="b1b9e-186">FAQ</span></span>
+<span data-ttu-id="cfa65-p120">Você pode usar o endereço de IP do Office 365 e serviços da Web de URL para obter notificação de alteração. Recomendamos que você chama o método de web de /version uma vez por hora para verificar a versão dos pontos de extremidade que você está usando para se conectar ao Office 365. Se esta versão for alterado, quando comparada com a versão que você tem em uso, obter os dados mais recentes do ponto de extremidade do /endpoints método web e, opcionalmente, obter as diferenças do /changes método web. Não é necessário chamar os métodos de web /endpoints ou /changes se não houve nenhuma alteração para a versão encontrada.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p120">You can use the Office 365 IP Address and URL Web Services to get change notification. We recommend you call the /version web method once an hour to check the version of the endpoints that you are using to connect to Office 365. If this version changes when compared to the version that you have in use, then you should get the latest endpoint data from the /endpoints web method and optionally get the differences from the /changes web method. It is not necessary to call the /endpoints or /changes web methods if there has not been any change to the version you found.</span></span> 
 
-<span data-ttu-id="b1b9e-187">Perguntas sobre o administrador de perguntas frequentes sobre conectividade:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-187">Frequently-asked administrator questions about connectivity:</span></span>
-  
-### <a name="how-do-i-submit-a-question"></a><span data-ttu-id="b1b9e-188">Como faço para enviar uma pergunta?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-188">How do I submit a question?</span></span>
+<span data-ttu-id="cfa65-186">Para obter mais informações, consulte o [endereço de IP do Office 365 e o serviço Web de URL](office-365-ip-web-service.md).</span><span class="sxs-lookup"><span data-stu-id="cfa65-186">For more information, see [Office 365 IP Address and URL Web service](office-365-ip-web-service.md).</span></span>
 
-<span data-ttu-id="b1b9e-p120">Clique no link na parte inferior para indicar se o artigo foi útil ou não e enviar perguntas adicionais. Podemos monitorar o feedback e atualizar as perguntas aqui com perguntas frequentes.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p120">Click the link at the bottom to indicate if the article was helpful or not and submit any additional questions. We monitor the feedback and update the questions here with the most frequently asked.</span></span>
-  
-### <a name="when-is-the-xml-file-updated"></a><span data-ttu-id="b1b9e-191">Quando o arquivo XML é atualizado?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-191">When is the XML file updated?</span></span>
+### <a name="change-notification-using-rss-feeds"></a><span data-ttu-id="cfa65-187">Notificação de alteração usando RSS feeds</span><span class="sxs-lookup"><span data-stu-id="cfa65-187">Change notification using RSS feeds</span></span>
 
-<span data-ttu-id="b1b9e-p121">Quando novos pontos de extremidade são anunciados, normalmente há um buffer de 30 + dia antes que eles são eficazes e solicitações da rede começam a passando a eles. Esse buffer é para garantir que os clientes e parceiros terá a oportunidade de atualizar seus sistemas. FQDN e IP prefix adições e remoções são processadas no arquivo XML, ao mesmo tempo como o comunicado, que significa que um novo FQDN será no arquivo XML de 30 dias antes do uso. Como podemos parar de enviar solicitações da rede aos pontos de extremidade que podemos está removendo antes da anunciando sua remoção, quando removemos o ponto de extremidade do XML ao mesmo tempo que o comunicado já é não utilizado.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p121">When new endpoints are announced, there is usually a 30+ day buffer before they are effective and network requests begin going to them. This buffer is to ensure customers and partners have an opportunity to update their systems. FQDN and IP prefix additions and removals are processed in the XML file at the same time as the announcement, meaning a new FQDN will be in the XML file 30 days before use. Since we stop sending network requests to endpoints we're removing prior to announcing their removal, when we remove the endpoint from the XML at the same time as the announcement it is already unused.</span></span>
-  
-### <a name="how-can-i-be-notified-of-changes"></a><span data-ttu-id="b1b9e-196">Como posso ser notificado das alterações?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-196">How can I be notified of changes?</span></span>
-<span data-ttu-id="b1b9e-197"><a name="bkmk_changes"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-197"></span></span>
+<span data-ttu-id="cfa65-p121">O endereço de IP do Office 365 e os serviços da Web de URL fornecem que um RSS feed que você pode se inscrever no Outlook. Há links para as URLs RSS em cada uma das páginas específicas de instância do serviço do Office 365 para os endereços IP e URLs. O RSS feed está descrito no [endereço de IP do Office 365 e o serviço Web de URL](office-365-ip-web-service.md).</span><span class="sxs-lookup"><span data-stu-id="cfa65-p121">The Office 365 IP Address and URL Web Services provide an RSS feed that you can subscribe to in Outlook. There are links to the RSS URLs on each of the Office 365 service instance specific pages for the IP addresses and URLs. The RSS feed is further described in the [Office 365 IP Address and URL Web service](office-365-ip-web-service.md).</span></span>
 
-<span data-ttu-id="b1b9e-p122">Pontos de extremidade do Office 365 são publicados no final de cada mês com o aviso de 30 dias. Ocasionalmente, a alteração ocorrerá mais de uma vez por mês ou com mais curtos períodos de aviso. Quando é adicionado a um ponto de extremidade, a data efetiva listada no [RSS feed](https://go.microsoft.com/fwlink/p/?linkid=236301) é a data após o qual as solicitações de rede serão enviadas ao ponto de extremidade. Se estiver familiarizado com RSS, aqui está como [Inscreva-se via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) ou você pode [ter o RSS feed atualizações enviadas para você](https://go.microsoft.com/fwlink/p/?LinkId=532417).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p122">Office 365 endpoints are published at the end of each month with 30 days notice. Occasionally changes will occur more than once a month or with shorter notice periods. When an endpoint is added, the effective date listed in the [RSS feed](https://go.microsoft.com/fwlink/p/?linkid=236301) is the date after which network requests will be sent to the endpoint. If you're new to RSS, here is how to [subscribe via Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) or you can [have the RSS feed updates emailed to you](https://go.microsoft.com/fwlink/p/?LinkId=532417).</span></span>
-  
-### <a name="how-do-i-read-the-rss-change-log"></a><span data-ttu-id="b1b9e-202">Como ler que o RSS de log de alteração?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-202">How do I read the RSS change log?</span></span>
-<span data-ttu-id="b1b9e-203"><a name="bkmk_changes"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-203"></span></span>
+### <a name="change-notification-and-approval-review-using-microsoft-flow"></a><span data-ttu-id="cfa65-191">Usando o Microsoft Flow de revisão de notificação de alteração e aprovação</span><span class="sxs-lookup"><span data-stu-id="cfa65-191">Change notification and approval review using Microsoft Flow</span></span>
 
-<span data-ttu-id="b1b9e-p123">Depois que você se inscrever no RSS feed, você pode analisar as informações sozinho ou com um script. A tabela a seguir descreve o formato do RSS feed o tornam mais fácil.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p123">After you subscribe to the RSS feed, you can parse the information yourself or with a script. The following table describes the format of the RSS feed o make it easier.</span></span>
-  
-|<span data-ttu-id="b1b9e-206">**Seção**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-206">**Section**</span></span>|<span data-ttu-id="b1b9e-207">**Parte 1**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-207">**Part 1**</span></span>|<span data-ttu-id="b1b9e-208">**Parte 2**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-208">**Part 2**</span></span>|<span data-ttu-id="b1b9e-209">**Parte 3**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-209">**Part 3**</span></span>|<span data-ttu-id="b1b9e-210">**Parte 4**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-210">**Part 4**</span></span>|<span data-ttu-id="b1b9e-211">**Parte 5**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-211">**Part 5**</span></span>|<span data-ttu-id="b1b9e-212">**Parte 6**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-212">**Part 6**</span></span>|
-|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|<span data-ttu-id="b1b9e-213">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-213">**Description**</span></span> <br/> |<span data-ttu-id="b1b9e-214">Contagem</span><span class="sxs-lookup"><span data-stu-id="b1b9e-214">Count</span></span>  <br/> |<span data-ttu-id="b1b9e-215">Data após o qual você pode esperar solicitações sejam enviadas para o ponto de extremidade de rede.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-215">Date after which you can expect network requests to be sent to the endpoint.</span></span>  <br/> |<span data-ttu-id="b1b9e-216">Descrição básica do recurso ou serviço que exija o ponto de extremidade.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-216">Basic description of the feature or service that requires the endpoint.</span></span>  <br/> |<span data-ttu-id="b1b9e-217">Você pode se conectar a esse ponto de extremidade em um circuito ExpressRoute além da internet?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-217">Can you connect to this endpoint on an ExpressRoute Circuit in addition to the internet?</span></span>  <br/> |<span data-ttu-id="b1b9e-218">**Sim** — você pode se conectar a esse ponto de extremidade na internet e ExpressRoute.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-218">**Yes** - you can connect to this endpoint on both the internet and ExpressRoute.</span></span>  <br/> <span data-ttu-id="b1b9e-219">**Não** — você só pode se conectar a este ponto de extremidade na internet.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-219">**No** - you can only connect to this endpoint on the internet.</span></span>  <br/> |<span data-ttu-id="b1b9e-220">O intervalo IP ou FQDN que está sendo adicionado ou removido de destino.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-220">The destination FQDN or IP range being added or removed.</span></span>  <br/> |
-|<span data-ttu-id="b1b9e-221">**Exemplo**</span><span class="sxs-lookup"><span data-stu-id="b1b9e-221">**Example**</span></span> <br/> |<span data-ttu-id="b1b9e-222">1 /</span><span class="sxs-lookup"><span data-stu-id="b1b9e-222">1/</span></span>  <br/> |<span data-ttu-id="b1b9e-223">[Efetivo xx/xx/xxx.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-223">[Effective xx/xx/xxx.</span></span>  <br/> |<span data-ttu-id="b1b9e-224">Obrigatório: \<descrição\>.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-224">Required: \<description\>.</span></span>  <br/> |<span data-ttu-id="b1b9e-225">ExpressRoute:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-225">ExpressRoute:</span></span>  <br/> |<span data-ttu-id="b1b9e-226">\<Sim/não\>.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-226">\<Yes/No\>.</span></span>  <br/> |<span data-ttu-id="b1b9e-227">\<FQDN/IP\>],</span><span class="sxs-lookup"><span data-stu-id="b1b9e-227">\<FQDN/IP\>],</span></span>  <br/> |
+<span data-ttu-id="cfa65-p122">Sabemos que você ainda pode exigir processamento manual para que as alterações de ponto de extremidade de rede que vêm por meio de cada mês. Você pode usar o Microsoft Flow para criar um fluxo que notifica você por email e, opcionalmente, executa um processo de aprovação para que as alterações ao Office 365 pontos de extremidade de rede foram alteradas. Após a conclusão da revisão, você pode ter o fluxo de email automaticamente as alterações para a equipe de gerenciamento de servidor de firewall e proxy.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p122">We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Microsoft Flow to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.</span></span> 
 
-<span data-ttu-id="b1b9e-228">Algumas outras coisas observar, cada entrada tem um conjunto comum de delimitadores:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-228">A couple other things to note, every entry has a common set of delimiters:</span></span>
+<span data-ttu-id="cfa65-195">Leia sobre o modelo em [Uso Microsoft fluxo para receber um email para alterações URLs e os endereços de IP do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651) e Microsoft Flow amostra</span><span class="sxs-lookup"><span data-stu-id="cfa65-195">Read about the Microsoft Flow sample and template at [Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)</span></span>
   
-- <span data-ttu-id="b1b9e-229">**/**-Após a contagem</span><span class="sxs-lookup"><span data-stu-id="b1b9e-229">**/** - after the count</span></span>
-- <span data-ttu-id="b1b9e-230">**[-** para indicar a entrada para a contagem</span><span class="sxs-lookup"><span data-stu-id="b1b9e-230">**[** - to indicate the entry for the count</span></span>
-- <span data-ttu-id="b1b9e-p124">**.** -usados entre cada seção distinta da entrada</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p124">**.** - used in between each distinct section of the entry</span></span>
-- <span data-ttu-id="b1b9e-233">**],** - para indicar o final de uma única entrada</span><span class="sxs-lookup"><span data-stu-id="b1b9e-233">**],** - to indicate the end of a single entry</span></span>
-- <span data-ttu-id="b1b9e-p125">**].** -Para indicar o final de todas as entradas</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p125">**].** - To indicate the end of all the entries</span></span>
+<span data-ttu-id="cfa65-196"><a name="FAQ"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-196"></span></span>
+## <a name="office-365-network-endpoints-faq"></a><span data-ttu-id="cfa65-197">Pontos de extremidade do Office 365 rede perguntas Frequentes</span><span class="sxs-lookup"><span data-stu-id="cfa65-197">Office 365 network endpoints FAQ</span></span>
 
-### <a name="how-do-i-determine-the-location-of-my-tenant"></a><span data-ttu-id="b1b9e-236">Como faço para determinar o local do meu locatário?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-236">How do I determine the location of my tenant?</span></span>
+<span data-ttu-id="cfa65-198">Perguntas sobre o administrador de perguntas frequentes sobre a conectividade do Office 365:</span><span class="sxs-lookup"><span data-stu-id="cfa65-198">Frequently-asked administrator questions about Office 365 connectivity:</span></span>
+  
+### <a name="how-do-i-submit-a-question"></a><span data-ttu-id="cfa65-199">Como faço para enviar uma pergunta?</span><span class="sxs-lookup"><span data-stu-id="cfa65-199">How do I submit a question?</span></span>
 
- <span data-ttu-id="b1b9e-237">**Local de Inquilino** é melhor determinado usando nosso [Mapear datacenter](https://o365datacentermap.azurewebsites.net/).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-237">**Tenant location** is best determined using our [datacenter map](https://o365datacentermap.azurewebsites.net/).</span></span>
+<span data-ttu-id="cfa65-p123">Clique no link na parte inferior para indicar se o artigo foi útil ou não e enviar perguntas adicionais. Podemos monitorar o feedback e atualizar as perguntas aqui com perguntas frequentes.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p123">Click the link at the bottom to indicate if the article was helpful or not and submit any additional questions. We monitor the feedback and update the questions here with the most frequently asked.</span></span>
   
-### <a name="am-i-peering-appropriately-with-microsoft"></a><span data-ttu-id="b1b9e-238">Sou eu correspondência apropriadamente com Microsoft?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-238">Am I peering appropriately with Microsoft?</span></span>
+### <a name="how-do-i-determine-the-location-of-my-tenant"></a><span data-ttu-id="cfa65-202">Como faço para determinar o local do meu locatário?</span><span class="sxs-lookup"><span data-stu-id="cfa65-202">How do I determine the location of my tenant?</span></span>
 
- <span data-ttu-id="b1b9e-239">**Peering locais** são descritos em mais detalhes na [correspondência com a Microsoft](https://www.microsoft.com/peering).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-239">**Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).</span></span>
+ <span data-ttu-id="cfa65-203">**Local de Inquilino** é melhor determinado usando nosso [Mapear datacenter](http://aka.ms/datamaps).</span><span class="sxs-lookup"><span data-stu-id="cfa65-203">**Tenant location** is best determined using our [datacenter map](http://aka.ms/datamaps).</span></span>
   
-<span data-ttu-id="b1b9e-p126">Com mais de 2.500 relacionamentos de correspondência ISP globalmente e 70 pontos de presença, obtendo da sua rede para nosso deve ser contínuo. Ele não pode prejudicar o gastar alguns minutos, certificando-se que o relacionamento de correspondência do seu ISP é o ideal, [Eis alguns exemplos](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__) de uma boa e não tão boas aos transferências à nossa rede.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p126">With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__) of good and not so good peering hand-offs to our network.</span></span> 
-  
-### <a name="how-do-i-determine-which-ip-addresses-to-accept-over-expressroute"></a><span data-ttu-id="b1b9e-242">Como determinar quais endereços IP para aceitar o ExpressRoute?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-242">How do I determine which IP addresses to accept over ExpressRoute?</span></span>
+### <a name="am-i-peering-appropriately-with-microsoft"></a><span data-ttu-id="cfa65-204">Sou eu correspondência apropriadamente com Microsoft?</span><span class="sxs-lookup"><span data-stu-id="cfa65-204">Am I peering appropriately with Microsoft?</span></span>
 
- <span data-ttu-id="b1b9e-243">**Rotas ExpressRoute aceitos** são definidos por [intervalos IP da Microsoft](https://www.microsoft.com/download/details.aspx?id=53602) e o Office 365 [comunidades BGP](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099)específico.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-243">**Accepted ExpressRoute routes** are defined by [Microsoft's IP ranges](https://www.microsoft.com/download/details.aspx?id=53602) and the specific Office 365 [BGP communities](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099).</span></span>
+ <span data-ttu-id="cfa65-205">**Peering locais** são descritos em mais detalhes na [correspondência com a Microsoft](https://www.microsoft.com/peering).</span><span class="sxs-lookup"><span data-stu-id="cfa65-205">**Peering locations** are described in more detail in [peering with Microsoft](https://www.microsoft.com/peering).</span></span>
   
-### <a name="how-do-i-determine-which-endpoints-i-need"></a><span data-ttu-id="b1b9e-244">Como faço para determinar quais pontos de extremidade que eu preciso?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-244">How do I determine which endpoints I need?</span></span>
+<span data-ttu-id="cfa65-p124">Com mais de 2.500 relacionamentos de correspondência ISP globalmente e 70 pontos de presença, obtendo da sua rede para nosso deve ser contínuo. Ele não pode prejudicar o gastar alguns minutos, certificando-se que o relacionamento de correspondência do seu ISP é o ideal, [Eis alguns exemplos](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) de uma boa e não tão boas aos transferências à nossa rede.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p124">With over 2500 ISP peering relationships globally and 70 points of presence, getting from your network to ours should be seamless. It can't hurt to spend a few minutes making sure your ISP's peering relationship is the most optimal, [here's a few examples](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) of good and not so good peering hand-offs to our network.</span></span> 
+  
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a><span data-ttu-id="cfa65-208">Posso ver as solicitações de rede para os endereços IP não está na lista publicada, preciso para fornecer acesso a eles?</span><span class="sxs-lookup"><span data-stu-id="cfa65-208">I see network requests to IP addresses not on the published list, do I need to provide access to them?</span></span>
+<span data-ttu-id="cfa65-209"><a name="bkmk_MissingIP"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-209"></span></span>
 
-<span data-ttu-id="b1b9e-p127">Regularmente adicionamos novos recursos e serviços para o Office 365 suite, expandindo o cenário de conectividade. Se você estiver inscrito ao E3 ou SKU E5, de maneira simples de pensar a lista de pontos de extremidade é que você precisa todos eles para obter a funcionalidade total para o pacote. Se você não se inscreveu para qualquer um desses SKUs a diferença é mínima em termos de número de pontos de extremidade.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p127">We regularly add new features and services to the Office 365 suite, expanding the connectivity landscape. If you're subscribed to the E3 or E5 SKU, the simple way to think about the list of endpoints is that you need all of them to get full functionality for the suite. If you aren't subscribed to either of these SKUs the difference is minimal in terms of the number of endpoints.</span></span>
+<span data-ttu-id="cfa65-p125">Fornecemos apenas endereços IP para os servidores do Office 365 que você deve rotear diretamente para. Isso não é uma lista abrangente de todos os endereços IP, para que você verá as solicitações de rede. Você verá as solicitações de rede à Microsoft e endereços IP pertencentes, não publicados, softwares de terceiros. Esses endereços IP dinamicamente são gerados ou gerenciados de forma que impede que o aviso em tempo hábil quando eles são alterados. Se seu firewall não pode permitir o acesso com base nos FQDNs para essas solicitações da rede, use um arquivo PAC ou WPAD para gerenciar as solicitações.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p125">We only provide IP addresses for the Office 365 servers you should route directly to. This isn't a comprehensive list of all IP addresses you'll see network requests for. You will see network requests to Microsoft and third-party owned, unpublished, IP addresses. These IP addresses are dynamically generated or managed in a way that prevents timely notice when they change. If your firewall can't allow access based on the FQDNs for these network requests, use a PAC or WPAD file to manage the requests.</span></span>
   
-<span data-ttu-id="b1b9e-248">Leia os [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md) para obter mais informações sobre categorias de ponto de extremidade do Office 365 e entender os princípios de conectividade para gerenciar o tráfego do Office 365 de forma segura e Obtendo o melhor desempenho possível.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-248">Read [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md) to get more information on Office 365 endpoint categories, and to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.</span></span> 
+<span data-ttu-id="cfa65-215">Ver que um IP associado ao que você deseja obter mais informações no Office 365?</span><span class="sxs-lookup"><span data-stu-id="cfa65-215">See an IP associated with Office 365 that you want more information on?</span></span>
   
-<span data-ttu-id="b1b9e-p128">A imagem abaixo, você pode ver um exemplo de uma parte da tabela FQDN na seção Office Online. As linhas são organizadas por recurso e diferenças na conectividade. As duas primeiras linhas indicam Office Online depende os pontos de extremidade marcados necessário na autenticação do Office 365 e a identidade e portal e seções compartilhadas. Isso é típico de um serviço no Office 365 depender esses serviços compartilhados. A terceira linha indica os computadores cliente devem ser capazes de alcançar \*. officeapps.live.com para usar o Office Online e a quarta linha indica computadores também devem ser capazes de alcançar \*. cdn.office.net para usar o Office Online.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p128">In the image below, you can see an example from a portion of the FQDN table in the Office Online section. The rows are organized by feature and differences in connectivity. The first two rows indicate Office Online relies on the endpoints marked Required in the Office 365 Authentication and Identity and portal and shared sections. This is typical for a service within Office 365 to rely on these shared services. The third row indicates client computers must be able to reach \*.officeapps.live.com to use Office Online and the fourth row indicates computers must also be able to reach \*.cdn.office.net to use Office Online.</span></span>
-  
-<span data-ttu-id="b1b9e-254">Embora ambos linha três e quatro são necessários para usar o Office Online, tiver sido separadas para indicar que o destino é diferente:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-254">Even though both row three and four are required to use Office Online, they've been separated to indicate the destination is different:</span></span>
-  
-1. <span data-ttu-id="b1b9e-255">\*. officeapps.live.com não representa uma CDN, solicitações de significado para esse namespace serão levado diretamente para um datacenter da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-255">\*.officeapps.live.com does not represent a CDN, meaning requests to this namespace will go directly to a Microsoft datacenter.</span></span>
-2. <span data-ttu-id="b1b9e-256">\*. officeapps.live.com pode ser acessada em circuitos ExpressRoute usando o Microsoft Peering.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-256">\*.officeapps.live.com is accessible on ExpressRoute circuits using Microsoft Peering.</span></span>
-3. <span data-ttu-id="b1b9e-257">Os endereços IP associados com o Office Online e \*. officeapps.live.com podem ser encontradas seguindo este link.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-257">The IP addresses associated with Office Online and \*.officeapps.live.com can be found by following this link.</span></span>
-4. <span data-ttu-id="b1b9e-258">\*. cdn.office.net representa uma CDN hospedada pelo Akamai, solicitações de significado para esse namespace serão encaminhadas para um datacenter Akamai.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-258">\*.cdn.office.net represents a CDN hosted by Akamai, meaning requests to this namespace will go to an Akamai datacenter.</span></span>
-5. <span data-ttu-id="b1b9e-259">\*. cdn.office.net não está acessível em circuitos ExpressRoute.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-259">\*.cdn.office.net is not accessible on ExpressRoute circuits.</span></span>
-6. <span data-ttu-id="b1b9e-260">Os endereços IP associados com o Office Online e \*. cdn.office.net não estão disponíveis.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-260">The IP addresses associated with Office Online and \*.cdn.office.net are not available.</span></span>
+1. <span data-ttu-id="cfa65-216">Verifique se o endereço IP está incluído em um intervalo de publicado maior usando uma [Calculadora CIDR](http://jodies.de/ipcalc).</span><span class="sxs-lookup"><span data-stu-id="cfa65-216">Check if the IP address is included in a larger published range using a [CIDR calculator](http://jodies.de/ipcalc).</span></span>
+2. <span data-ttu-id="cfa65-p126">Consulte se um parceiro possui o IP com uma [consulta whois](https://dnsquery.org/). Se for Microsoft pertencente, talvez seja um parceiro interno.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p126">See if a partner owns the IP with a [whois query](https://dnsquery.org/). If it's Microsoft owned, it may be an internal partner.</span></span>
+3. <span data-ttu-id="cfa65-p127">Verifique o certificado, em um navegador conectar ao endereço IP usando \*HTTPS://\<IP_ADDRESS\> \* , verifique os domínios listados no certificado para entender quais domínios associados com o endereço IP. Se for um endereço IP de propriedade da Microsoft e não está na lista de endereços IP do Office 365, provavelmente é o endereço IP é associado um Microsoft CDN como *MSOCDN.NET* ou outro domínio Microsoft sem informações publicadas de IP. Se você encontrar que o domínio no certificado é uma onde podemos declaração listar o endereço IP, informe-nos.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p127">Check the certificate, in a browser connect to the IP address using  *HTTPS://\<IP_ADDRESS\>*  , check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft owned IP address and not on the list of Office 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.</span></span>
 
-![Captura de tela da página pontos de extremidade](media/42b487f3-24f3-48fe-9885-f97aae3194f3.png)
-  
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a><span data-ttu-id="b1b9e-262">Posso ver as solicitações de rede para os endereços IP não está na lista publicada, preciso para fornecer acesso a eles?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-262">I see network requests to IP addresses not on the published list, do I need to provide access to them?</span></span>
-<span data-ttu-id="b1b9e-263"><a name="bkmk_MissingIP"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-263"></span></span>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a><span data-ttu-id="cfa65-222">Por que vejo nomes como nsatc.net ou akadns.net em nomes de domínio Microsoft?</span><span class="sxs-lookup"><span data-stu-id="cfa65-222">Why do I see names such as nsatc.net or akadns.net in the Microsoft domain names?</span></span>
+<span data-ttu-id="cfa65-223"><a name="bkmk_akamai"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-223"></span></span>
 
-<span data-ttu-id="b1b9e-p129">Fornecemos apenas endereços IP para os servidores do Office 365 que você deve rotear diretamente pela Internet ou ExpressRoute. Isso não é uma lista abrangente de todos os endereços IP, para que você verá as solicitações de rede. Você verá as solicitações de rede à Microsoft e endereços IP pertencentes, não publicados, softwares de terceiros. Esses endereços IP dinamicamente são gerados ou gerenciados de forma que impede que o aviso em tempo hábil quando eles são alterados. Se seu firewall não pode permitir o acesso com base nos FQDNs para essas solicitações da rede, use um arquivo PAC ou WPAD para gerenciar as solicitações.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p129">We only provide IP addresses for the Office 365 servers you should route directly to over the Internet or ExpressRoute. This isn't a comprehensive list of all IP addresses you'll see network requests for. You'll see network requests to Microsoft and third-party owned, unpublished, IP addresses. These IP addresses are dynamically generated or managed in a way that prevents timely notice when they change. If your firewall can't allow access based on the FQDNs for these network requests, use a PAC or WPAD file to manage the requests.</span></span>
+<span data-ttu-id="cfa65-p128">Office 365 e outros serviços da Microsoft usam vários serviços de terceiros, como Akamai e MarkMonitor para melhorar a experiência do Office 365. Para manter oferecendo a melhor experiência possível, podemos alterar esses serviços no futuro. Ao fazer isso, muitas vezes Publicamos o registro CNAME que aponta para um terceiro domínio pertencente, um registro ou endereço IP. Domínios de terceiros podem hospedar o conteúdo, como uma CDN, ou eles podem hospedar um serviço, como um serviço de gerenciamento de tráfego geográficas. Quando você vir conexões com esses terceiros, eles estão no formato de um redirecionamento ou referência, não uma solicitação inicial do cliente. Alguns clientes precisam garantir a essa forma de referência e passar sem adicionar explicitamente que longa lista de serviços de terceiros FQDNs potenciais pode usar o redirecionamento será permitido.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p128">Office 365 and other Microsoft services use several third-party services such as Akamai and MarkMonitor to improve your Office 365 experience. To keep giving you the best experience possible, we may change these services in the future. In doing so, we often publish the CNAME record which points to a third party owned domain, A record, or IP address. Third party domains may host content, such as a CDN, or they may host a service, such as a geographical traffic management service. When you see connections to these third parties, they're in the form of a redirect or referral, not an initial request from the client. Some customers need to ensure this form of referral and redirection is allowed to pass without explicitly adding the long list of potential FQDNs third party services may use.</span></span>
   
-<span data-ttu-id="b1b9e-269">Ver que um IP associado ao que você deseja obter mais informações no Office 365?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-269">See an IP associated with Office 365 that you want more information on?</span></span>
+<span data-ttu-id="cfa65-p129">Lista de serviços está sujeita a alterações a qualquer momento. Alguns dos serviços atualmente em uso incluem:</span><span class="sxs-lookup"><span data-stu-id="cfa65-p129">The list of services is subject to change at any time. Some of the services currently in use include:</span></span>
   
-1. <span data-ttu-id="b1b9e-270">Verifique se o endereço IP está incluído em um intervalo de publicado maior usando uma [Calculadora CIDR](http://jodies.de/ipcalc).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-270">Check if the IP address is included in a larger published range using a [CIDR calculator](http://jodies.de/ipcalc).</span></span>
-2. <span data-ttu-id="b1b9e-p130">Consulte se um parceiro possui o IP com uma [consulta whois](https://dnsquery.org/). Se for Microsoft pertencente, talvez seja um parceiro interno.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p130">See if a partner owns the IP with a [whois query](https://dnsquery.org/). If it's Microsoft owned, it may be an internal partner.</span></span>
-3. <span data-ttu-id="b1b9e-p131">Verifique o certificado, em um navegador conectar ao endereço IP usando \*HTTPS://\<IP_ADDRESS\> \* , verifique os domínios listados no certificado para entender quais domínios associados com o endereço IP. Se for um endereço IP de propriedade da Microsoft e não está na lista de endereços IP do Office 365, provavelmente é o endereço IP é associado um Microsoft CDN como *MSOCDN.NET* ou outro domínio Microsoft sem informações publicadas de IP. Se você encontrar que o domínio no certificado é uma onde podemos declaração listar o endereço IP, informe-nos.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p131">Check the certificate, in a browser connect to the IP address using  *HTTPS://\<IP_ADDRESS\>*  , check the domains listed on the certificate to understand what domains are associated with the IP address. If it's a Microsoft owned IP address and not on the list of Office 365 IP addresses, it's likely the IP address is associated with a Microsoft CDN such as  *MSOCDN.NET*  or another Microsoft domain without published IP information. If you do find the domain on the certificate is one where we claim to list the IP address, please let us know.</span></span>
-
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a><span data-ttu-id="b1b9e-276">Por que vejo nomes como nsatc.net ou akadns.net em nomes de domínio Microsoft?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-276">Why do I see names such as nsatc.net or akadns.net in the Microsoft domain names?</span></span>
-<span data-ttu-id="b1b9e-277"><a name="bkmk_akamai"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-277"></span></span>
-
-<span data-ttu-id="b1b9e-p132">Office 365 e outros serviços da Microsoft usam vários serviços de terceiros, como Akamai e MarkMonitor para melhorar a experiência do Office 365. Para manter oferecendo a melhor experiência possível, podemos alterar esses serviços no futuro. Ao fazer isso, muitas vezes Publicamos o registro CNAME que aponta para um terceiro domínio pertencente, um registro ou endereço IP. Domínios de terceiros podem hospedar o conteúdo, como uma CDN, ou eles podem hospedar um serviço, como um serviço de gerenciamento de tráfego geográficas. Quando você vir conexões com esses terceiros, eles estão no formato de um redirecionamento ou referência, não uma solicitação inicial do cliente. Alguns clientes precisam garantir a essa forma de referência e passar sem adicionar explicitamente que longa lista de serviços de terceiros FQDNs potenciais pode usar o redirecionamento será permitido.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p132">Office 365 and other Microsoft services use several third-party services such as Akamai and MarkMonitor to improve your Office 365 experience. To keep giving you the best experience possible, we may change these services in the future. In doing so, we often publish the CNAME record which points to a third party owned domain, A record, or IP address. Third party domains may host content, such as a CDN, or they may host a service, such as a geographical traffic management service. When you see connections to these third parties, they're in the form of a redirect or referral, not an initial request from the client. Some customers need to ensure this form of referral and redirection is allowed to pass without explicitly adding the long list of potential FQDNs third party services may use.</span></span>
+<span data-ttu-id="cfa65-p130">[MarkMonitor](https://www.markmonitor.com/) está em uso quando você vir solicitações que incluem \* \*. nsatc.net\* . Este serviço oferece proteção de nome de domínio e monitoramento para proteger contra comportamentos mal-intencionados.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p130">[MarkMonitor](https://www.markmonitor.com/) is in use when you see requests that include  *\*.nsatc.net*  . This service provides domain name protection and monitoring to protect against malicious behavior.</span></span>
   
-<span data-ttu-id="b1b9e-p133">Lista de serviços está sujeita a alterações a qualquer momento. Alguns dos serviços atualmente em uso incluem:</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p133">The list of services is subject to change at any time. Some of the services currently in use include:</span></span>
+<span data-ttu-id="cfa65-p131">[ExactTarget](https://www.marketingcloud.com/) está em uso quando você vir solicitações para \* \*. exacttarget.com\* . Esse serviço fornece contra comportamento mal intencionado de monitoramento e gerenciamento do link de email.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p131">[ExactTarget](https://www.marketingcloud.com/) is in use when you see requests to  *\*.exacttarget.com*  . This service provides email link management and monitoring against malicious behavior.</span></span>
   
-<span data-ttu-id="b1b9e-p134">[MarkMonitor](https://www.markmonitor.com/) está em uso quando você vir solicitações que incluem \* \*. nsatc.net\* . Este serviço oferece proteção de nome de domínio e monitoramento para proteger contra comportamentos mal-intencionados.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p134">[MarkMonitor](https://www.markmonitor.com/) is in use when you see requests that include  *\*.nsatc.net*  . This service provides domain name protection and monitoring to protect against malicious behavior.</span></span>
-  
-<span data-ttu-id="b1b9e-p135">[ExactTarget](https://www.marketingcloud.com/) está em uso quando você vir solicitações para \* \*. exacttarget.com\* . Esse serviço fornece contra comportamento mal intencionado de monitoramento e gerenciamento do link de email.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p135">[ExactTarget](https://www.marketingcloud.com/) is in use when you see requests to  *\*.exacttarget.com*  . This service provides email link management and monitoring against malicious behavior.</span></span>
-  
-<span data-ttu-id="b1b9e-p136">[Akamai](https://www.akamai.com/) está em uso quando você vir solicitações que incluem um dos seguintes FQDNs. Este serviço oferece geo-DNS e serviços de rede de fornecimento de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p136">[Akamai](https://www.akamai.com/) is in use when you see requests that include one of the following FQDNs. This service offers geo-DNS and content delivery network services.</span></span>
+<span data-ttu-id="cfa65-p132">[Akamai](https://www.akamai.com/) está em uso quando você vir solicitações que incluem um dos seguintes FQDNs. Este serviço oferece geo-DNS e serviços de rede de fornecimento de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p132">[Akamai](https://www.akamai.com/) is in use when you see requests that include one of the following FQDNs. This service offers geo-DNS and content delivery network services.</span></span>
   
 ```
 *.akadns.net
@@ -850,56 +167,45 @@ function FindProxyForURL(url, host)
 *.edgesuite.net
 ```
 
-### <a name="what-are-the-three-types-of-office-365-endpoints"></a><span data-ttu-id="b1b9e-292">Quais são os três tipos de pontos de extremidade do Office 365?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-292">What are the three types of Office 365 endpoints?</span></span>
-<span data-ttu-id="b1b9e-293"><a name="bkmk_akamai"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-293"></span></span>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a><span data-ttu-id="cfa65-238">Tenho que têm a conectividade mínima possível para o Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-238">I have to have the minimum connectivity possible for Office 365</span></span>
+<span data-ttu-id="cfa65-239"><a name="bkmk_thirdparty"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-239"></span></span>
 
-- <span data-ttu-id="b1b9e-p137">Você pode se conectar aos serviços de terceiros para recuperar serviços básicos da internet, como pesquisas de DNS e recuperação de conteúdo CDN. Você também pode conectar aos serviços de terceiros para integrações como incorporação de vídeos do YouTube em seus blocos de anotações do OneNote.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p137">You connect to third-party services to retrieve basic internet services such as DNS lookups and CDN content retrieval. You also connect to third-party services for integrations such as incorporating YouTube videos in your OneNote notebooks.</span></span>
-- <span data-ttu-id="b1b9e-p138">Conecte-se aos serviços secundários hospedado e execute pela Microsoft, como nós da borda que permitem que sua solicitação de rede inserir a rede global da Microsoft no local mais próximo da internet para seu computador. Como a rede terceira maior do planeta, isso melhora a sua experiência de conectividade. Você também pode conectar aos serviços do Microsoft Azure como Azure Media Services, que são usados por uma variedade de serviços do Office 365.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p138">You connect to secondary services hosted and run by Microsoft such as edge nodes that enable your network request to enter Microsoft's global network at the closest internet location to your computer. As the third largest network on the planet, this improves your connectivity experience. You also connect to Microsoft Azure services such as Azure Media Services which are used by a variety of Office 365 services.</span></span>
-- <span data-ttu-id="b1b9e-p139">A conexão com serviços do Office 365 principais, como o servidor de caixa de correio Exchange Online ou o Skype para servidor Business Online onde os seus dados exclusivos e proprietários residem. Você pode se conectar aos serviços do Office 365 principais por endereço IP ou FQDN e usar ExpressRoute circuitos ou internet. Você só pode se conectar ao terceiro e serviços secundários usando FQDNs em um circuito de internet.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p139">You connect to primary Office 365 services such as the Exchange Online mailbox server or the Skype for Business Online server where your unique and proprietary data lives. You can connect to the primary Office 365 services by FQDN or IP address and use internet or ExpressRoute circuits. You can only connect to the third party and secondary services using FQDNs on an internet circuit.</span></span>
+<span data-ttu-id="cfa65-p133">Office 365 é um conjunto de serviços incluído funcione pela internet, confiabilidade e disponibilidade promessas baseiam-se no muitos serviços de internet padrão que está sendo disponíveis. Por exemplo, os serviços de internet padrão como DNS, CRL e CDNs devem ser acessíveis para usar o Office 365 assim como eles devem ser alcançados para usar os serviços de internet mais modernos.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p133">Office 365 is a suite of services built to function over the internet, the reliability and availability promises are based on many standard internet services being available. For example, standard internet services such as DNS, CRL, and CDNs must be reachable to use Office 365 just as they must be reachable to use most modern internet services.</span></span>
 
-<span data-ttu-id="b1b9e-p140">O diagrama a seguir mostra as diferenças entre essas áreas de serviço. Neste diagrama, a rede de local do cliente na parte inferior esquerda tem vários dispositivos de rede para auxiliar no gerenciamento de conectividade de rede. Configurações como esse são comuns para clientes empresariais. Se sua rede tem somente um firewall entre os computadores cliente e a internet, que é suportado, bem, e você vai querer Certifique-se de que seu firewall pode suportar FQDNs e curingas nas regras de lista Permitir.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p140">The following diagram shows the differences between these service areas. In this diagram, the customer on-premises network in the lower left has multiple network devices to assist in managing network connectivity. Configurations like this one are common for enterprise customers. If your network only has a firewall between your client computers and the internet, that's supported as well, and you'll want to ensure your firewall can support FQDNs and wildcards in the allow list rules.</span></span>
-  
-<span data-ttu-id="b1b9e-306">Leia os [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md) para obter mais informações sobre categorias de ponto de extremidade do Office 365 e entender os princípios de conectividade para gerenciar o tráfego do Office 365 de forma segura e Obtendo o melhor desempenho possível.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-306">Read [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md) to get more information on Office 365 endpoint categories, and to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.</span></span> 
-  
-![Mostra os três tipos diferentes de pontos de extremidade de rede ao usar o Office 365](media/6582bcfa-11ba-4ac2-9b69-14bef0437670.png)
-  
-### <a name="i-cant-or-dont-want-to-use-any-third-party-service"></a><span data-ttu-id="b1b9e-308">Não consigo ou não desejar usar qualquer serviço de terceiros</span><span class="sxs-lookup"><span data-stu-id="b1b9e-308">I can't or don't want to use any third-party service</span></span>
-<span data-ttu-id="b1b9e-309"><a name="bkmk_thirdparty"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-309"></span></span>
+<span data-ttu-id="cfa65-p134">Pacote Office 365 é dividido em áreas principais de serviço. Eles podem ser habilitados seletivamente para conectividade e houver uma área comum que é uma dependência para todos e é sempre necessário.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p134">The Office 365 suite is broken down into major service areas. These can be selectively enabled for connectivity and there is a Common area which is a dependency for all and is always required.</span></span>
 
-<span data-ttu-id="b1b9e-p141">Office 365 é um conjunto de serviços incluído funcione pela internet, confiabilidade e disponibilidade promessas baseiam-se no muitos serviços de internet padrão que está sendo disponíveis. Por exemplo, os serviços de internet padrão como DNS, CRL e CDNs devem ser acessíveis para usar o Office 365 assim como eles devem ser alcançados para usar os serviços de internet mais modernos.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p141">Office 365 is a suite of services built to function over the internet, the reliability and availability promises are based on many standard internet services being available. For example, standard internet services such as DNS, CRL, and CDNs must be reachable to use Office 365 just as they must be reachable to use most modern internet services.</span></span>
-  
-<span data-ttu-id="b1b9e-p142">Além desses serviços básicos da internet, existem serviços de terceiros que são usados somente para integrar funcionalidade. Por exemplo, usar Giphy.com dentro Teams Microsoft permite que os clientes incluem perfeitamente Gifs dentro de equipes. Da mesma forma, YouTube e Flickr são os serviços de terceiros que são usados para integrar perfeitamente vídeo e imagens em clientes do Office da internet. Enquanto elas são necessárias para integração, eles estão marcados como opcionais no artigo Office 365 pontos de extremidade que significa que a funcionalidade principal do serviço continuarão a funcionar se o ponto de extremidade não está acessível.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p142">In addition to these basic internet services, there are third-party services that are only used to integrate functionality. For example, using Giphy.com within Microsoft Teams allows customers to seamlessly include Gifs within Teams. Similarly, YouTube and Flickr are third-party services that are used to seamlessly integrate video and images into Office clients from the internet. While these are needed for integration, they're marked as optional in the Office 365 endpoints article which means core functionality of the service will continue to function if the endpoint isn't accessible.</span></span>
-  
-<span data-ttu-id="b1b9e-316">Se você estiver tentando usar o Office 365 e está descobrindo serviços de terceiros não estão acessíveis você desejará [Certifique-se de que todos os FQDNs marcados obrigatório ou opcional neste artigo são permitidos por meio do proxy e firewall](urls-and-ip-address-ranges.md).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-316">If you're attempting to use Office 365 and are finding third party services aren't accessible you'll want to [ensure all FQDNs marked required or optional in this article are allowed through the proxy and firewall](urls-and-ip-address-ranges.md).</span></span>
-  
-### <a name="i-cant-or-dont-want-to-use-any-secondary-services"></a><span data-ttu-id="b1b9e-317">Não consigo ou não deseja usar todos os serviços secundários</span><span class="sxs-lookup"><span data-stu-id="b1b9e-317">I can't or don't want to use any secondary services</span></span>
-<span data-ttu-id="b1b9e-318"><a name="bkmk_secondary"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-318"></span></span>
+|<span data-ttu-id="cfa65-244">**Área de serviço**</span><span class="sxs-lookup"><span data-stu-id="cfa65-244">**Service Area**</span></span>|<span data-ttu-id="cfa65-245">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="cfa65-245">**Description**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="cfa65-246">**Exchange**</span><span class="sxs-lookup"><span data-stu-id="cfa65-246">**Exchange**</span></span> <br/> |<span data-ttu-id="cfa65-247">Exchange Online e o Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="cfa65-247">Exchange Online and Exchange Online Protection</span></span> <br/> |
+|<span data-ttu-id="cfa65-248">**SharePoint**</span><span class="sxs-lookup"><span data-stu-id="cfa65-248">**SharePoint**</span></span> <br/> |<span data-ttu-id="cfa65-249">SharePoint Online e OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="cfa65-249">SharePoint Online and OneDrive for Business</span></span> <br/> |
+|<span data-ttu-id="cfa65-250">**Skype**</span><span class="sxs-lookup"><span data-stu-id="cfa65-250">**Skype**</span></span> <br/> |<span data-ttu-id="cfa65-251">Skype para equipes da Microsoft e de negócios</span><span class="sxs-lookup"><span data-stu-id="cfa65-251">Skype for Business and Microsoft Teams</span></span> <br/> |
+|<span data-ttu-id="cfa65-252">**Comuns**</span><span class="sxs-lookup"><span data-stu-id="cfa65-252">**Common**</span></span> <br/> |<span data-ttu-id="cfa65-253">O Office 365 Pro Plus, Office Online, Azure AD e outros pontos de extremidade de rede comuns</span><span class="sxs-lookup"><span data-stu-id="cfa65-253">Office 365 Pro Plus, Office Online, Azure AD and other common network endpoints</span></span> <br/> |
 
-<span data-ttu-id="b1b9e-p143">Secundário são serviços da Microsoft que não estão dentro do controle do Office 365. Estas são as coisas como a rede de borda, Azure Media Services e redes de distribuição de conteúdo do Windows Azure. Estes são necessários para usar o Office 365 e devem ser alcançados.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p143">Secondary services are Microsoft services that don't fall within Office 365 control. These are things like the edge network, Azure Media Services, and Azure Content Delivery Networks. These are all required to use Office 365 and must be reachable.</span></span>
+<span data-ttu-id="cfa65-p135">Além dos serviços básicos da internet, há serviços de terceiros que são usados somente para integrar funcionalidade. Enquanto elas são necessárias para integração, eles estão marcados como opcionais no artigo Office 365 pontos de extremidade que significa que a funcionalidade principal do serviço continuarão a funcionar se o ponto de extremidade não está acessível. Qualquer ponto de extremidade de rede que é exigido terá required atributo definido como verdadeiro. Qualquer ponto de extremidade de rede que é opcional terá o atributo required definido como false e o atributo de notas em detalhes a funcionalidade ausente, você deve esperar que se conectividade será bloqueada.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p135">In addition to basic internet services, there are third-party services that are only used to integrate functionality. While these are needed for integration, they're marked as optional in the Office 365 endpoints article which means core functionality of the service will continue to function if the endpoint isn't accessible. Any network endpoint which is required will have the required attribute set to true. Any network endpoint which is optional will have the required attribute set to false and the notes attribute will detail the missing functionality you should expect if connectivity is blocked.</span></span>
   
-<span data-ttu-id="b1b9e-322">Se você estiver tentando usar o Office 365 e está descobrindo serviços de terceiros não estão acessíveis você desejará [Certifique-se de que todos os FQDNs marcados obrigatório ou opcional neste artigo são permitidos por meio do proxy e firewall](urls-and-ip-address-ranges.md).</span><span class="sxs-lookup"><span data-stu-id="b1b9e-322">If you're attempting to use Office 365 and are finding third party services aren't accessible you'll want to [ensure all FQDNs marked required or optional in this article are allowed through the proxy and firewall](urls-and-ip-address-ranges.md).</span></span>
+<span data-ttu-id="cfa65-258">Se você estiver tentando usar o Office 365 e está descobrindo serviços de terceiros não estão acessíveis você desejará [Certifique-se de que todos os FQDNs marcados obrigatório ou opcional neste artigo são permitidos por meio do proxy e firewall](urls-and-ip-address-ranges.md).</span><span class="sxs-lookup"><span data-stu-id="cfa65-258">If you're attempting to use Office 365 and are finding third party services aren't accessible you'll want to [ensure all FQDNs marked required or optional in this article are allowed through the proxy and firewall](urls-and-ip-address-ranges.md).</span></span>
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a><span data-ttu-id="b1b9e-323">Como bloquear o acesso aos serviços de consumidor da Microsoft?</span><span class="sxs-lookup"><span data-stu-id="b1b9e-323">How do I block access to Microsoft's consumer services?</span></span>
-<span data-ttu-id="b1b9e-324"><a name="bkmk_consumer"> </a></span><span class="sxs-lookup"><span data-stu-id="b1b9e-324"></span></span>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a><span data-ttu-id="cfa65-259">Como bloquear o acesso aos serviços de consumidor da Microsoft?</span><span class="sxs-lookup"><span data-stu-id="cfa65-259">How do I block access to Microsoft's consumer services?</span></span>
+<span data-ttu-id="cfa65-260"><a name="bkmk_consumer"> </a></span><span class="sxs-lookup"><span data-stu-id="cfa65-260"></span></span>
 
-<span data-ttu-id="b1b9e-p144">Restringir o acesso aos nossos serviços de consumidor deve ser feita por seu próprio risco, a maneira confiável apenas aos serviços do consumidor de bloqueio é para restringir o acesso a *login.live.com* FQDN. Esse FQDN é utilizado por um amplo conjunto de serviços, incluindo serviços de não-consumidor como MSDN, TechNet e outros. Restringindo o acesso a esse FQDN pode resultar na necessidade de também incluem exceções à regra para solicitações de rede associados a esses serviços.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-p144">Restricting access to our consumer services should be done at your own risk, the only reliable way to block consumer services is to restrict access to the  *login.live.com*  FQDN. This FQDN is used by a broad set of services including non-consumer services such as MSDN, TechNet, and others. Restricting access to this FQDN may result in the need to also include exceptions to the rule for network requests associated with these services.</span></span>
+<span data-ttu-id="cfa65-p136">Restringir o acesso aos nossos serviços de consumidor deve ser feita por seu próprio risco, a maneira confiável apenas aos serviços do consumidor de bloqueio é para restringir o acesso a *login.live.com* FQDN. Esse FQDN é utilizado por um amplo conjunto de serviços, incluindo serviços de não-consumidor como MSDN, TechNet e outros. Restringindo o acesso a esse FQDN pode resultar na necessidade de também incluem exceções à regra para solicitações de rede associados a esses serviços.</span><span class="sxs-lookup"><span data-stu-id="cfa65-p136">Restricting access to our consumer services should be done at your own risk, the only reliable way to block consumer services is to restrict access to the  *login.live.com*  FQDN. This FQDN is used by a broad set of services including non-consumer services such as MSDN, TechNet, and others. Restricting access to this FQDN may result in the need to also include exceptions to the rule for network requests associated with these services.</span></span>
   
-<span data-ttu-id="b1b9e-328">Tenha em mente que bloqueando o acesso aos serviços do consumidor do Microsoft sozinhos não impedir a capacidade para alguém em sua rede às informações de exfiltrate usando um locatário do Office 365 ou outro serviço.</span><span class="sxs-lookup"><span data-stu-id="b1b9e-328">Keep in mind that blocking access to the Microsoft consumer services alone won't prevent the ability for someone on your network to exfiltrate information using an Office 365 tenant or other service.</span></span>
+<span data-ttu-id="cfa65-264">Tenha em mente que bloqueando o acesso aos serviços do consumidor do Microsoft sozinhos não impedir a capacidade para alguém em sua rede às informações de exfiltrate usando um locatário do Office 365 ou outro serviço.</span><span class="sxs-lookup"><span data-stu-id="cfa65-264">Keep in mind that blocking access to the Microsoft consumer services alone won't prevent the ability for someone on your network to exfiltrate information using an Office 365 tenant or other service.</span></span>
   
-## <a name="related-topics"></a><span data-ttu-id="b1b9e-329">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="b1b9e-329">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="cfa65-265">Tópicos relacionados</span><span class="sxs-lookup"><span data-stu-id="cfa65-265">Related Topics</span></span>
 
-[<span data-ttu-id="b1b9e-330">URL do serviço Web e endereço IP do Office 365</span><span class="sxs-lookup"><span data-stu-id="b1b9e-330">Office 365 IP Address and URL Web service</span></span>](office-365-ip-web-service.md)
+[<span data-ttu-id="cfa65-266">URL do serviço Web e endereço IP do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-266">Office 365 IP Address and URL Web service</span></span>](office-365-ip-web-service.md)
 
-[<span data-ttu-id="b1b9e-331">Intervalos de IP do Datacenter do Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="b1b9e-331">Microsoft Azure Datacenter IP Ranges</span></span>](https://www.microsoft.com/download/details.aspx?id=41653)
+[<span data-ttu-id="cfa65-267">Intervalos de IP do Datacenter do Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="cfa65-267">Microsoft Azure Datacenter IP Ranges</span></span>](https://www.microsoft.com/download/details.aspx?id=41653)
   
-[<span data-ttu-id="b1b9e-332">Grupos de notícias públicos da Microsoft</span><span class="sxs-lookup"><span data-stu-id="b1b9e-332">Microsoft Public IP Space</span></span>](https://www.microsoft.com/download/details.aspx?id=53602)
+[<span data-ttu-id="cfa65-268">Grupos de notícias públicos da Microsoft</span><span class="sxs-lookup"><span data-stu-id="cfa65-268">Microsoft Public IP Space</span></span>](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[<span data-ttu-id="b1b9e-333">Requisitos de infraestrutura de rede da Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="b1b9e-333">Network infrastructure requirements for Microsoft Intune</span></span>](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[<span data-ttu-id="cfa65-269">Requisitos de infraestrutura de rede da Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="cfa65-269">Network infrastructure requirements for Microsoft Intune</span></span>](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
-[<span data-ttu-id="b1b9e-334">ExpressRoute e no power BI</span><span class="sxs-lookup"><span data-stu-id="b1b9e-334">Power BI and ExpressRoute</span></span>](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
+[<span data-ttu-id="cfa65-270">ExpressRoute e no power BI</span><span class="sxs-lookup"><span data-stu-id="cfa65-270">Power BI and ExpressRoute</span></span>](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[<span data-ttu-id="b1b9e-335">URLs e intervalos de endereços IP do Office 365</span><span class="sxs-lookup"><span data-stu-id="b1b9e-335">Office 365 URLs and IP address ranges</span></span>](urls-and-ip-address-ranges.md)
+[<span data-ttu-id="cfa65-271">URLs e intervalos de endereços IP do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-271">Office 365 URLs and IP address ranges</span></span>](urls-and-ip-address-ranges.md)
   
-[<span data-ttu-id="b1b9e-336">Como gerenciar o ExpressRoute para a conectividade do Office 365</span><span class="sxs-lookup"><span data-stu-id="b1b9e-336">Managing ExpressRoute for Office 365 connectivity</span></span>](managing-expressroute-for-connectivity.md)
+[<span data-ttu-id="cfa65-272">Como gerenciar o ExpressRoute para a conectividade do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-272">Managing ExpressRoute for Office 365 connectivity</span></span>](managing-expressroute-for-connectivity.md)
   
-[<span data-ttu-id="b1b9e-337">Princípios de conectividade de rede do Office 365</span><span class="sxs-lookup"><span data-stu-id="b1b9e-337">Office 365 Network Connectivity Principles</span></span>](office-365-network-connectivity-principles.md)
+[<span data-ttu-id="cfa65-273">Princípios de conectividade de rede do Office 365</span><span class="sxs-lookup"><span data-stu-id="cfa65-273">Office 365 Network Connectivity Principles</span></span>](office-365-network-connectivity-principles.md)
