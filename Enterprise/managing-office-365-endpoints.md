@@ -15,18 +15,18 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais de internet genérico ou incluem backhaul substancial ou processamento de tráfego de rede. Para garantir que os computadores em redes como essas podem acessar o Office 365, os administradores de rede e proxy precisam gerenciar a lista de FQDNs, URLs, e endereços IP que compõem a lista de pontos de extremidade do Office 365. Esses necessidade a ser adicionado à rota direta, proxy bypass, e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede são capazes de alcançar o Office 365.
-ms.openlocfilehash: a240e3deea512dacd70b377b3d47a7b6f49a235c
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 480d2fa1b55507187f9150d02907849178a451b5
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719015"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
-A maioria das organizações de empresa que possuem vários escritórios e uma conexão WAN precisará precisa ter a configuração para conectividade de rede do Office 365. Você pode otimizar sua rede enviando a que todos os confiáveis solicitações diretamente através do firewall da rede do Office 365, ignorando todos inspeção de nível de pacotes adicionais ou processamento. Isso reduzirá a latência e seus requisitos de capacidade de perímetro. Identificar o tráfego de rede do Office 365 é a primeira etapa no fornecimento de desempenho ideal para os usuários do Office 365. Para obter mais informações sobre conectividade de rede do Office 365, consulte [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
+A maioria das organizações de empresa que possuem vários escritórios e uma conexão WAN precisará precisa de configuração para conectividade de rede do Office 365. Você pode otimizar sua rede enviando a que todos os confiáveis solicitações diretamente através do firewall da rede do Office 365, ignorando todos inspeção de nível de pacotes adicionais ou processamento. Isso reduz a latência e seus requisitos de capacidade de perímetro. Identificar o tráfego de rede do Office 365 é a primeira etapa no fornecimento de desempenho ideal para seus usuários. Para obter mais informações sobre conectividade de rede do Office 365, consulte [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
 
-A Microsoft recomenda que você acessar o Office 365 pontos de extremidade de rede e altera a eles usando o [endereço de IP do Office 365 e serviços da Web de URL](office-365-ip-web-service.md)
+A Microsoft recomenda que você acessar o Office 365 pontos de extremidade de rede e altera a eles usando o [endereço de IP do Office 365 e a URL do serviço Web](office-365-ip-web-service.md)
 
 Independentemente de como gerenciar o tráfego de rede do Office 365 vital, o Office 365 requer conectividade à Internet. Outros pontos de extremidade de rede onde é necessária a conectividade estão listados nos [pontos de extremidade adicionais não incluídos no serviço Web de URL e endereço de IP do Office 365](additional-office365-ip-addresses-and-urls.md)
 
@@ -34,33 +34,33 @@ Como você pode usar os pontos de extremidade de rede do Office 365 dependerá s
 
 ## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SDWAN para saída local de filial do tráfego de rede vital do Office 365
 
-Em cada escritório de filial, você pode fornecer um dispositivo SDWAN que é definido para endereços de IP de rota para otimizar o Office 365 categoria ou otimizar e permitir categorias, diretamente para a rede da Microsoft. Outros tráfego de rede, incluindo o tráfego de datacenter local, o tráfego de sites da web de internet genérico e tráfego de categoria padrão do Office 365 é enviado para outro local em que você tenha um perímetro de rede mais substancial. 
+Em cada escritório de filial, você pode fornecer um dispositivo SDWAN que está configurado para rotear o tráfego para otimizar o Office 365 categoria de pontos de extremidade ou otimizar e permitir categorias, diretamente para a rede da Microsoft. Outros tráfegos de rede, incluindo o tráfego de datacenter local, o tráfego de sites da web do Internet gerais e tráfego aos pontos de extremidade de categoria padrão do Office 365 é enviado para outro local em que você tenha um perímetro de rede mais substancial.
 
-Microsoft está trabalhando com provedores SDWAN para habilitar a configuração automatizada. Você pode ler mais sobre o [Programa de parceria de rede do Office 365](office-365-networking-partner-program.md)
+Microsoft está trabalhando com provedores SDWAN para habilitar a configuração automatizada. Para obter mais informações, consulte o [Programa de parceria de rede do Office 365](office-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
-## <a name="use-of-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Uso de um arquivo de PAC para roteamento direto do tráfego vital do Office 365
+## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Usar um arquivo de PAC direto de roteamento de tráfego vital do Office 365
 
-Use arquivos PAC ou WPAD para gerenciar solicitações de rede que estão associadas com o Office 365, mas não têm um endereço IP fornecido. Solicitações de rede comuns que são enviadas por meio de um dispositivo de proxy ou perímetro acarretar uma latência adicional. Enquanto se quebram SSL e inspecionar provoca a maior imposto, outros serviços, como a pesquisa de reputação e autenticação de proxy podem causar uma experiência de usuário ruim. Além disso, esses dispositivos de rede de perímetro precisam capacidade suficiente para processar todas as solicitações de conexão de rede. É recomendável ignorando a infra-estrutura de inspeção ou proxy para solicitações de rede diretas do Office 365.
+Use arquivos PAC ou WPAD para gerenciar solicitações de rede que estão associadas com o Office 365, mas não têm um endereço IP. Solicitações de rede comuns que são enviadas por meio de um dispositivo de proxy ou perímetro aumentam a latência. Enquanto se quebram SSL e inspecionar cria a maior latência, outros serviços, como a pesquisa de reputação e autenticação de proxy pode causar um desempenho fraco e uma experiência de usuário incorretos. Além disso, esses dispositivos de rede de perímetro precisam capacidade suficiente para processar todas as solicitações de conexão de rede. É recomendável, ignorando os dispositivos de proxy ou inspeção para solicitações de rede diretas do Office 365.
   
-[Galeria de PowerShell Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) é um script do PowerShell que lê os pontos de extremidade de rede mais recentes de serviços da web e cria um arquivo de PAC da amostra. 
+[Galeria de PowerShell Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) é um script do PowerShell que lê os pontos de extremidade de rede mais recentes do serviço Web de URL e o endereço de IP do Office 365 e cria um arquivo de PAC da amostra. Você pode modificar o script para que ele se integra o gerenciamento de arquivos PAC existente. 
 
-Após baixar esse script, você pode usá-lo para gerar um arquivo PAC. Você também pode modificar o script para que ele se integra o gerenciamento de arquivos PAC existente. 
+![Conectando-se ao Office 365 através de firewalls e proxies.](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
-![Conectando-se ao Office 365 através de firewalls e proxies. ](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png) Figura 1 - perímetro da rede corporativa simples
+**Figura 1 - perímetro da rede corporativa simples**
 
-O arquivo PAC é implantado em computadores no ponto (1) na Figura 1. Ao usar um arquivo PAC para saída direta do tráfego de rede vital do Office 365, você também precisa permitir a conectividade com os endereços IP por trás dessas URLs em seu firewall de rede de perímetro. Isto é feito buscar os endereços IP para as mesmas categorias de ponto de extremidade de Office 365 conforme especificado no arquivo PAC e criação de firewall ACLs baseadas nesses endereços. O firewall é mostrado como ponto (3) na Figura 1. 
+O arquivo PAC é implantado para os navegadores da web no ponto 1 na Figura 1. Ao usar um arquivo PAC para saída direta do tráfego de rede vital do Office 365, você também precisa permitir a conectividade com os endereços IP por trás dessas URLs em seu firewall de rede de perímetro. Isto é feito buscar os endereços IP para as mesmas categorias de ponto de extremidade de Office 365 conforme especificado no arquivo PAC e criação de firewall ACLs baseadas nesses endereços. O firewall é ponto 3 na Figura 1. 
 
-Separadamente, se você optar por apenas diretos roteamento para rotear tráfego na rede para os pontos de extremidade de categoria Optimize, qualquer necessário permitir que os pontos de extremidade de categoria que você enviar para o servidor proxy precisará ser listados no servidor proxy para ignorar o processamento adicional. Por exemplo, quebra SSL e inspecionar e autenticação de Proxy são incompatíveis com o Optimize e permitir pontos de extremidade de categoria. O servidor proxy é mostrado como ponto (2) na Figura 1.
+Separadamente, se você optar por apenas diretos roteamento para os pontos de extremidade de categoria de otimizar, qualquer necessário permitir que os pontos de extremidade de categoria que você enviar para o servidor proxy precisará ser listados no servidor proxy para ignorar o processamento adicional. Por exemplo, quebra SSL e inspecionar e autenticação de Proxy são incompatíveis com o Optimize e permitir pontos de extremidade de categoria. O servidor proxy é ponto 2 na Figura 1.
 
-A configuração comum é permitir todo o tráfego de saída do servidor proxy, de tal modo que os endereços IP de destino para o tráfego de rede do Office 365 que acessa o servidor proxy não é necessária. Leia sobre problemas com SSL se quebram e inspecionar no [usando dispositivos de rede de terceiros ou soluções de tráfego do Office 365](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+A configuração comum é permitir sem processamento todo o tráfego de saída do servidor proxy para os endereços IP de destino para o tráfego de rede do Office 365 que acessa o servidor proxy. Para obter informações sobre problemas com SSL se quebram e inspecionar, consulte [usando dispositivos de rede de terceiros ou soluções de tráfego do Office 365](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Existem dois tipos de arquivos de PAC que o script Get-PacFile irá gerar.
 
 |**Tipo**|**Descrição**|
 |:-----|:-----|
-|**1** <br/> |Envie o tráfego de ponto de extremidade de otimizar direto e de tudo ao servidor proxy. <br/> |
-|**2** <br/> |Enviar Optimize e permitir o tráfego de ponto de extremidade direta e todos os else ao servidor proxy. Também pode ser usado para enviar que todas as ExpressRoute com suporte para tráfego de Office 365 para os segmentos de rede ExpressRoute e todas as else ao servidor proxy. <br/> |
+|**1** <br/> |Envie o tráfego de ponto de extremidade de otimizar direto e todos os outros ao servidor proxy. <br/> |
+|**2** <br/> |Envie Optimize e permitir tráfego de ponto de extremidade direto e todos os outros para o servidor proxy. Esse tipo de também pode ser usado para enviar que todas as ExpressRoute com suporte para o tráfego do Office 365 para os segmentos de rede ExpressRoute e todo o resto do servidor proxy. <br/> |
 
 Aqui está um exemplo simples de chamar o script do PowerShell:
 
@@ -72,12 +72,12 @@ Há vários parâmetros que você pode passar para o script:
 
 |**Parameter**|**Descrição**|
 |:-----|:-----|
-|**ClientRequestId** <br/> |Isso é necessário e um GUID que é passado para o serviço web que representa a máquina cliente fazendo a chamada <br/> |
-|**Instance** <br/> |A instância de serviço do Office 365 que usa como padrão Worldwide. Também é passado para o serviço web <br/> |
-|**TenantName** <br/> |Seu nome de Inquilino do Office 365. Passadas para o serviço da web e usado como um parâmetro substituível em algumas URLs do Office 365 <br/> |
-|**Tipo** <br/> |O tipo do arquivo PAC de proxy que você deseja gerar <br/> |
+|**ClientRequestId** <br/> |Isso é necessário e um GUID que é passado para o serviço web que representa a máquina cliente fazendo a chamada. <br/> |
+|**Instance** <br/> |A instância de serviço do Office 365 que usa como padrão Worldwide. Também é passado para o serviço web. <br/> |
+|**TenantName** <br/> |Seu nome de Inquilino do Office 365. Passadas para o serviço da web e usado como um parâmetro substituível em algumas URLs do Office 365. <br/> |
+|**Tipo** <br/> |O tipo do arquivo PAC de proxy que você deseja gerar. <br/> |
 
-Aqui está outro exemplo de chamar o script do PowerShell com parâmetros adicionais:
+Aqui está outro exemplo de chamar o script do PowerShell com parâmetros adicionais.
 
 ```
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
@@ -85,32 +85,34 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 ## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>Processamento de tráfego de rede do Office 365 de desvio do servidor proxy 
 
-Onde os arquivos de PAC não são usados para tráfego de saída direto, ainda será conveniente ignorar o processamento no seu perímetro de rede, configurando o servidor proxy. Alguns fornecedores de servidor proxy tem habilitado a configuração automatizada disso, conforme descrito no [Programa de parceria de rede do Office 365](office-365-networking-partner-program.md). Se você estiver fazendo isso manualmente você precisará obter a otimizar e permitir que os dados de ponto de extremidade de categoria do ponto de extremidade do endereço de IP do Office 365 e serviços da Web de URL e configure o servidor proxy para ignorar o processamento para esses. É importante evitar quebrar SSL e inspecionar e autenticação de Proxy para a otimizar e permitir que os pontos de extremidade de categoria. 
+Onde os arquivos de PAC não são usados para tráfego de saída direto, ainda quiser ignorar processamento no seu perímetro de rede, configurando o servidor proxy. Alguns fornecedores de servidor proxy tem habilitado a configuração automatizada disso, conforme descrito no [Programa de parceria de rede do Office 365](office-365-networking-partner-program.md). 
+
+Se você estiver fazendo isso manualmente você precisará obter a otimizar e permitir que os dados de categoria do ponto de extremidade do endereço de IP do Office 365 e URL do serviço Web e configure o servidor proxy para ignorar o processamento para esses. É importante evitar quebrar SSL e inspecionar e autenticação de Proxy para a otimizar e permitir que os pontos de extremidade de categoria. 
   
 <a name="bkmk_changes"> </a>
-## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Gerenciamento de alteração para endereços de IP do Office 365 e URLs
+## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Gerenciamento de alteração para endereços IP do Office 365 e URLs
 
-Além de selecionar a configuração apropriada para seu perímetro de rede, é muito importante que você adotar um processo de gerenciamento de alterações para pontos de extremidade do Office 365. Esses pontos de extremidade alterar regularmente e se você não gerencia as alterações você pode acabar tendo usuários bloqueados ou com desempenho ruim após um novo IP endereço ou URL é adicionado. 
+Além de selecionar a configuração apropriada para seu perímetro de rede, é muito importante que você adotar um processo de gerenciamento de alterações para pontos de extremidade do Office 365. Esses pontos de extremidade alterar regularmente e se você não gerencia as alterações, você pode acabar tendo usuários bloqueados ou com desempenho ruim após um novo IP endereço ou URL é adicionado. 
 
 Alterações nos endereços IP do Office 365 e URLs são geralmente publicadas perto o último dia de cada mês. Em alguns casos, uma alteração será publicada fora que agenda devido à operacionais, suporte ou requisitos de segurança.
 
-Quando uma alteração é publicada que exige a agir como um endereço IP ou a URL foi adicionado, você deve esperar receber o aviso de 30 dias desde o momento em que publicamos a alteração até que haja serviço live do Office 365 no ponto de extremidade. Embora a Microsoft tem como objetivo para esse período de notificação, não sempre pode ser possível devido à operacionais, suporte ou requisitos de segurança. As alterações que não exigem ação imediata para manter a conectividade, tais como removido endereços IP ou URLs ou menos alterações significativas, não incluir notificação prévia. Independentemente de qual notificação for fornecida, podemos listará da data de ativação de serviço esperados para cada alteração.
+Quando uma alteração é publicada que exige a atuar como um endereço IP ou a URL foi adicionado, você deve esperar receber o aviso de 30 dias desde o momento em que publicamos a alteração até que haja um serviço do Office 365 no ponto de extremidade. Embora o nosso objetivo para esse período de notificação, não sempre pode ser possível devido à operacionais, suporte ou requisitos de segurança. As alterações que não exigem ação imediata para manter a conectividade, tais como removido endereços IP ou URLs ou menos alterações significativas, não incluir notificação prévia. Independentemente de qual notificação for fornecida, listamos da data de ativação de serviço esperados para cada alteração.
 
-### <a name="change-notification-using-web-services"></a>Notificação de alteração usando serviços da web
+### <a name="change-notification-using-the-web-service"></a>Usando o serviço Web de notificação de alteração
 
-Você pode usar o endereço de IP do Office 365 e serviços da Web de URL para obter notificação de alteração. Recomendamos que você chama o método de web de /version uma vez por hora para verificar a versão dos pontos de extremidade que você está usando para se conectar ao Office 365. Se esta versão for alterado, quando comparada com a versão que você tem em uso, obter os dados mais recentes do ponto de extremidade do /endpoints método web e, opcionalmente, obter as diferenças do /changes método web. Não é necessário chamar os métodos de web /endpoints ou /changes se não houve nenhuma alteração para a versão encontrada. 
+Você pode usar o endereço de IP do Office 365 e a URL do serviço Web para obter a notificação de alteração. Recomendamos que você chama o método de web de **/version** uma vez por hora para verificar a versão dos pontos de extremidade que você está usando para se conectar ao Office 365. Se esta versão for alterado, quando comparada com a versão que você tem em uso, obter os dados mais recentes do ponto de extremidade do método **/endpoints** web e, opcionalmente, obtenha as diferenças pelo método **/changes** web. Não é necessário chamar o **/endpoints** ou **/changes** métodos web se não houve nenhuma alteração para a versão encontrada. 
 
-Para obter mais informações, consulte o [endereço de IP do Office 365 e o serviço Web de URL](office-365-ip-web-service.md).
+Para obter mais informações, consulte o [endereço de IP do Office 365 e a URL do serviço Web](office-365-ip-web-service.md).
 
 ### <a name="change-notification-using-rss-feeds"></a>Notificação de alteração usando RSS feeds
 
-O endereço de IP do Office 365 e os serviços da Web de URL fornecem que um RSS feed que você pode se inscrever no Outlook. Há links para as URLs RSS em cada uma das páginas específicas de instância do serviço do Office 365 para os endereços IP e URLs. O RSS feed está descrito no [endereço de IP do Office 365 e o serviço Web de URL](office-365-ip-web-service.md).
+O endereço de IP do Office 365 e a URL do serviço Web oferece um RSS feed que você pode se inscrever no Outlook. Há links para as URLs RSS em cada um das páginas de específicas da instância de serviço do Office 365 para os endereços IP e URLs. Para obter mais informações, consulte o [endereço de IP do Office 365 e a URL do serviço Web](office-365-ip-web-service.md).
 
 ### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Usando o Microsoft Flow de revisão de notificação de alteração e aprovação
 
 Sabemos que você ainda pode exigir processamento manual para que as alterações de ponto de extremidade de rede que vêm por meio de cada mês. Você pode usar o Microsoft Flow para criar um fluxo que notifica você por email e, opcionalmente, executa um processo de aprovação para que as alterações ao Office 365 pontos de extremidade de rede foram alteradas. Após a conclusão da revisão, você pode ter o fluxo de email automaticamente as alterações para a equipe de gerenciamento de servidor de firewall e proxy. 
 
-Leia sobre o modelo em [Uso Microsoft fluxo para receber um email para alterações URLs e os endereços de IP do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651) e Microsoft Flow amostra
+Para obter informações sobre uma amostra da Microsoft Flow e um modelo, consulte [Uso Microsoft fluxo para receber um email para alterações URLs e endereços IP do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Pontos de extremidade do Office 365 rede perguntas Frequentes
