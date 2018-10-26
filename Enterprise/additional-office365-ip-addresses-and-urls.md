@@ -1,9 +1,9 @@
 ---
-title: Endereços IP e URLs adicionais do Office 365 não incluídos nos serviços web
+title: Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 9/13/2018
+ms.date: 10/23/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,24 +20,24 @@ search.appverid:
 - MOM160
 - BCS160
 ms.assetid: ''
-description: 'Resumo: os novos serviços Web de ponto de extremidade não incluem uma quantidade pequena de pontos de extremidade para cenários específicos.'
+description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
-ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
+ms.openlocfilehash: 1d551f8757464aa1336bc351de8689c103f0a54f
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719005"
 ---
-# <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Endereços IP e URLs adicionais do Office 365 não incluídos nos serviços web
+# <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
-Alguns pontos de extremidade de rede foram publicados anteriormente e não foram incluídos nos serviços da web. O escopo de serviços da web é de pontos de extremidade de rede que são necessários para conectividade de um usuário final do Office 365 em uma rede de perímetro empresarial. Atualmente, isso não inclui:
+Alguns pontos de extremidade de rede foram publicados anteriormente e não foram incluídos no [endereço IP do Office 365 e no serviço Web de URL](office-365-ip-web-service.md). O escopo de serviços Web é de pontos de extremidade de rede que são necessários para conectividade de um usuário final do Office 365 em uma rede de perímetro empresarial. Atualmente, isso não inclui:
 
-1. Conectividade de rede que pode ser requerida de um datacenter da Microsoft para uma rede do cliente (tráfego de rede de servidor de entrada híbrido)
-2. Conectividade de rede de servidores em uma rede do cliente no perímetro empresarial (tráfego de rede de servidor de saída)
-3. Cenários excepcionais para requisitos de conectividade de rede de um usuário
-4. Requisitos de conectividade de resolução DNS (não listados abaixo)
-5. Sites confiáveis do Internet Explorer ou Microsoft Edge
+1. Conectividade de rede que pode ser requerida de um datacenter da Microsoft para uma rede do cliente (tráfego de rede de servidor de entrada híbrido).
+2. Conectividade de rede de servidores em uma rede do cliente no perímetro empresarial (tráfego de rede de servidor de saída).
+3. Cenários excepcionais para requisitos de conectividade de rede de um usuário.
+4. Requisitos de conectividade de resolução DNS (não listados abaixo).
+5. Sites confiáveis do Internet Explorer ou Microsoft Edge.
 
 Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos que você precise do cenário específico descrito.
 
@@ -53,10 +53,13 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 7  | Autenticação de proxy do [Exchange híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS local do cliente | Tráfego do servidor de entrada |
 | 8  | Usado para configurar o [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), usando o Assistente de Configuração do Exchange Híbrido. <br> Observação: esses pontos de extremidade só são necessários para configurar o Exchange híbrido  | ```domains.live.com``` em portas TCP 80 e 443, exigido apenas para o Assistente de Configuração do Exchange 2010 SP3 Híbrido. | Somente o tráfego de servidor de saída |
 | 9  | O serviço de detecção automática é usado em cenários do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) com [Autenticação Híbrida Moderna com Outlook para iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor Exchange local do cliente em TCP 443 | Tráfego do servidor de entrada |
-| 10  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
-| 11  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, você precisa habilitar os cookies de primeiros e terceiros e adicionar os FQDNs do Teams aos seus Sites Confiáveis. Isso além de todo o pacote de FQDNs, CDNs e telemetria listados acima. Confira [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) para saber mais. |  | Sites confiáveis |
-| 12  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todas as FDQNs '. sharepoint.com' com '\<locatário >' na FQDN precisam estar no IE ou na Zona de Sites Confiáveis de Borda de seu cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria listados acima, você precisará adicionar também esses pontos de extremidade. |  | Sites confiáveis |
-| 13  | **Yammer**  <br> O Yammer só está disponível no navegador e exige que o usuário esteja autenticado através de um proxy. Todos os FQDNs do Yammer devem estar no IE ou Zona de Sites confiáveis de Borda do cliente para funcionar. |  | Sites confiáveis |
+| 10  | O Skype for Business no Office 2016 inclui o compartilhamento de tela baseado em vídeo que usa portas UDP. Os clientes mais antigos do Skype for Business no Office 2013 e em versões anteriores usavam a porta 443 RDP em vez da TCP. | Porta 443 TCP aberta para 52.112.0.0/14 | Versões de cliente mais antigas do Skype for Business no Office 2013 e em versões anteriores |
+| 11  | Conectividade entre o servidor híbrido local do Skype for Business e o Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14 portas UDP: 50.000 a 59.999 <BR>  Portas TCP: 50.000 a 59.999 | Conectividade de saída de servidor local no Skype for Business |
+| 12  | O PSTN na nuvem sem conectividade híbrida local requer conectividade aberta ao host local. Para saber mais sobre as configurações híbridas do Skype for Business Online  | Confira a [Solução Híbrida do Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Entrada híbrida local do Skype for Business |
+| 13  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
+| 14  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, você precisa habilitar os cookies de primeiros e terceiros e adicionar os FQDNs do Teams aos seus Sites Confiáveis. Isso além de todo o pacote de FQDNs, CDNs e telemetria listados acima. Confira [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues) para saber mais. |  | Sites confiáveis |
+| 15  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todas as FDQNs '. sharepoint.com' com '\<locatário >' na FQDN precisam estar no IE ou na Zona de Sites Confiáveis de Borda de seu cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria listados acima, você precisará adicionar também esses pontos de extremidade. |  | Sites confiáveis |
+| 16  | **Yammer**  <br> O Yammer só está disponível no navegador e exige que o usuário esteja autenticado através de um proxy. Todos os FQDNs do Yammer devem estar no IE ou Zona de Sites confiáveis de Borda do cliente para funcionar. |  | Sites confiáveis |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
