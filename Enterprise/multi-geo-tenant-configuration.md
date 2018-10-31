@@ -11,16 +11,16 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Saiba como configurar o OneDrive for Business com a funcionalidade multigeográfica.
-ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915246"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849867"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuração de locatário multigeográfico do Onedrive for Business
 
-Antes de configurar o locatário para o OneDrive for Business com a funcionalidade multigeográfica, leia [Plano do OneDrive for Business com a funcionalidade multigeográfica](plan-for-multi-geo.md). Para seguir as etapas deste artigo, você precisará de uma lista de locais que deseja habilitar e os usuários de teste que deseja provisionar para esses locais.
+Antes de configurar seu locatário para o OneDrive for Business com a funcionalidade multigeográfica, não se esqueça de ler o [Plano do OneDrive for Business com a funcionalidade multigeográfica](plan-for-multi-geo.md). Para seguir as etapas deste artigo, você precisará de uma lista de localizações geográficas que deseja habilitar como localizações satélites e dos usuários de teste que deseja provisionar para esses locais.
 
 ## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Adicionar recursos multigeográficos no plano do Office 365 para seu locatário
 
@@ -30,9 +30,9 @@ Observe que o plano de _Funcionalidades Multigeográficas no Office 365_ é um p
 
 Depois que o locatário for provisionado com o plano _Funcionalidades Multigeográficas no Office 365_, a guia **Locais geográficos** será disponibilizada na [Centro de administração do OneDrive](https://admin.onedrive.com).
 
-## <a name="set-the-allowed-data-locations-adl-to-your-tenant"></a>Defina Locais de Dados Permitidos (ADL) para seu locatário
+## <a name="add-satellite-locations-to-your-tenant"></a>Adicionar localizações satélites ao seu locatário
 
-Você deve definir um Local de Dados Permitido para o SharePoint para cada localização geográfica onde deseja usar o OneDrive for Business. As localizações geográficas disponíveis são mostradas na seguinte tabela:
+Você deve definir uma localização satélite para cada localização geográfica onde deseja usar o OneDrive for Business. As localizações geográficas disponíveis são mostradas na seguinte tabela:
 
 <table>
 <thead>
@@ -81,7 +81,7 @@ Você deve definir um Local de Dados Permitido para o SharePoint para cada local
 </tbody>
 </table>
 
-Para adicionar um local geográfico de satélite
+Adicionar uma localização satélite
 
 1. Abra o [Centro de administração do OneDrive](https://admin.onedrive.com)
 
@@ -95,35 +95,35 @@ Para adicionar um local geográfico de satélite
 
 6. Clique em **Fechar**.
 
-O provisionamento pode levar desde algumas horas até 72 horas, dependendo do tamanho do locatário. Depois que o provisionamento de um local de satélite for concluído, você receberá um email de confirmação. Quando o novo local geográfico for exibido em azul no mapa na guia **Localizações geográficas** no Centro de administração do OneDrive, você poderá definir o local preferencial de dados dos usuários como essa localização geográfica. 
+O provisionamento pode levar desde algumas horas até 72 horas, dependendo do tamanho de seu locatário. Depois que o provisionamento de uma localização satélite for concluído, você receberá um email de confirmação. Quando o novo local geográfico for exibido em azul no mapa na guia **Localizações geográficas** no Centro de administração do OneDrive, você poderá definir o local preferencial de dados dos usuários como essa localização geográfica. 
 
 > [!IMPORTANT]
-> A nova localização geográfica de satélite será definida com configurações padrão. Isso permitirá configurar a localização geográfica de acordo com suas necessidades de conformidade local.
+> A nova localização satélite será definida com configurações padrão. Isso permitirá configurar a localização satélite de acordo com suas necessidades locais de conformidade.
 
 ## <a name="setting-users-preferred-data-location"></a>Definir o local der dados preferencial dos usuários
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-Depois de habilitar as localizações de dados necessárias, você pode atualizar as contas de usuário para usar o local de dados apropriado. É recomendável definir um local preferencial de dados para todos os usuários, mesmo que o usuário permaneça no local de dados padrão.
+Depois de habilitar as localizações satélites necessárias, você pode atualizar as contas de usuários para usar o local de dados de sua preferência. É recomendável definir um local preferencial de dados para todos os usuários, mesmo que o usuário permaneça no local de dados central.
 
 > [!TIP]
-> É recomendável começar validações com um usuário de teste ou um pequeno grupo de usuários antes de implantar Funcionalidades Multigeográficas em sua organização mais ampla.
+> É recomendável começar validações com um usuário de teste ou um pequeno grupo de usuários antes de implantar Funcionalidades Multigeográficas em sua organização de forma mais ampla.
 
 Há dois tipos de objetos de usuário no AAD: usuários somente de nuvem e usuários sincronizados. Siga as instruções apropriadas para o tipo de usuário.
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizar o local de dados preferencial do usuário usando o AD Connect 
 
-Se os usuários da empresa são sincronizados com um sistema do AD (Active Directory) no local ao AAD (Azure Active Directory), PreferredDataLocation deve ser populado no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: fazer uma alteração na configuração padrão](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) para configurar a sincronização de local preferencial de dados do AD local para o AAD.
+Se os usuários da empresa são sincronizados com um sistema do AD (Active Directory) no local ao AAD (Azure Active Directory), o PreferredDataLocation deve ser populado no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: fazer uma alteração na configuração padrão](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) para configurar a sincronização do local preferencial de dados do Active Directory local para o Azure Active Directory.
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
 > [!IMPORTANT]
-> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos 24 horas após o PDL do usuário ser sincronizado com o AAD para que as alterações se propaguem antes que o usuário faça logon no OneDrive for Business. (Configurar o local preferencial de dados antes que o usuário faça logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
+> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos 24 horas após o PDL do usuário ser sincronizado com o Azure Active Directory para que as alterações se propaguem antes que o usuário faça logon no OneDrive for Business. (Configurar o local preferencial de dados antes que o usuário faça logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Configurar local de dados preferencial para usuários somente na nuvem 
 
-Se os usuários da empresa não estiverem sincronizados de um sistema do AD (Active Directory) local para o AAD (Azure Active Directory), ou seja, são criados no Office 365 ou no AAD, o PDL deverá ser definido usando o PowerShell do AAD.
+Se os usuários da empresa não estiverem sincronizados a partir de um sistema do Active Directory local para o Azure Active Directory, o que significa que são criados no Office 365 ou no Azure Active Directory, o PDL deverá ser definido usando o PowerShell do Azure Active Directory.
 
-Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Directory para o Módulo do Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se você já tiver instalado o PowerShell do AAD, atualize para a versão mais recente.
+Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Directory para o Módulo do Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se você já tiver instalado o PowerShell do Azure Active Directory, não se esqueça de atualizar para a versão mais recente.
 
 1.  Abra o Módulo Microsoft Azure Active Directory para Windows PowerShell.
 
@@ -142,13 +142,13 @@ Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Direc
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
 > [!IMPORTANT]
-> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos 24 horas após o PDL do usuário ser definido para que as alterações se propaguem antes que o usuário faça logon no OneDrive do SharePoint. (Configurar o local preferencial de dados antes que o usuário faça logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
+> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos 24 horas após o PDL do usuário ser definido para que as alterações se propaguem antes que o usuário faça logon no OneDrive. (Configurar o local preferencial de dados antes que o usuário faça logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisionamento do OneNote e efeito de PDL
 
 Se o usuário já tiver um site do OneDrive criado no locatário, configurar o PDL não moverá automaticamente o OneDrive existente. Para mover o OneDrive de um usuário, confira [Movimentação geográfica do OneDrive for Business](move-onedrive-between-geo-locations.md). Siga as instruções em Mover o OneDrive entre locais geográficos.
 
-Se o usuário não tiver um site do OneDrive no locatário, o OneDrive será provisionado para ele de acordo com o valor de PDL, supondo que o PDL do usuário corresponda a um dos locais de dados permitidos (ADLs) da empresa.
+Se o usuário não tiver um site do OneDrive no locatário, o OneDrive será provisionado para ele de acordo com o valor de PDL, supondo que o PDL do usuário corresponda a um dos locais satélites da empresa.
 
 ## <a name="configuring-multi-geo-search"></a>Configurar pesquisa multigeográfica
 
