@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: Conecte à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de centro de administração da linha de comando.'
-ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601635"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849887"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -80,20 +80,22 @@ Se solicitado a instalar um módulo de um repositório não confiável, digite *
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: Conectar ao Azure AD para sua assinatura do Office 365
 
-Para conectar ao Azure AD para sua assinatura do Office 365 com um nome de conta e senha ou com *a autenticação multifator (MFA)*, execute este comando em um prompt de comando do Windows PowerShell (ele não tem de ser elevado):
-    
-```
-Connect-AzureAD
-```
+Para conectar ao Azure AD para sua assinatura do Office 365 com um nome de conta e senha ou com *a autenticação multifator (MFA)*, execute um destes comandos em um prompt de comando do Windows PowerShell (ele não tem de ser elevado).
+
+|||
+|:-------|:-----|
+| **Nuvem do Office 365** | **Comando** |
+| O Office 365 em todo o mundo (+ GCC) | `Connect-AzureAD` |
+| Office 365 operado pela Vianet 21 | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 US governamentais DoD e governamentais do Office 365 US GCC alta | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+|||
 
 Na caixa de diálogo **logon em sua conta** , digite o seu trabalho do Office 365 ou o nome de usuário da conta de escola e a senha e clique em **Okey**.
 
 Se você estiver usando MFA, siga as instruções nas caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
->[!Tip]
->Para conectar ao Office 365 Alemanha, consulte [Connect to Alemanha do Windows Azure usando o PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
->
-    
+
 Depois de se conectar, você pode usar os novos cmdlets para o [Windows Azure Active Directory PowerShell para o módulo de gráfico](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 
@@ -116,27 +118,28 @@ Essas etapas precisam ser executadas apenas uma vez em seu computador e não tod
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: Conectar ao Azure AD para sua assinatura do Office 365
 
-Para conectar ao Azure AD para sua assinatura do Office 365 com um nome de conta e senha ou com *a autenticação multifator (MFA)*, execute este comando em um prompt de comando do Windows PowerShell (ele não tem de ser elevado):
-    
-```
-Connect-MsolService
-```
+Para conectar ao Azure AD para sua assinatura do Office 365 com um nome de conta e senha ou com *a autenticação multifator (MFA)*, execute um destes comandos em um prompt de comando do Windows PowerShell (ele não tem de ser elevado).
+
+|||
+|:-------|:-----|
+| **Nuvem do Office 365** | **Comando** |
+| O Office 365 em todo o mundo (+ GCC) | `Connect-MsolService` |
+| Office 365 operado pela Vianet 21 | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Germany | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 US governamentais DoD e governamentais do Office 365 US GCC alta | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+|||
 
 Na caixa de diálogo **logon em sua conta** , digite o seu trabalho do Office 365 ou o nome de usuário da conta de escola e a senha e clique em **Okey**.
 
 Se você estiver usando MFA, siga as instruções nas caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
->[!Tip]
->Para conectar ao Office 365 Alemanha, consulte [Connect to Alemanha do Windows Azure usando o PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
->
-    
-### <a name="how-do-you-know-this-worked"></a>Como você sabe se funcionou?
+### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
 
 Se você não recebeu um erro, a conexão foi estabelecida. Um teste rápido é executar um cmdlet Office 365, por exemplo, **Get-MsolUser**, e ver os resultados.
   
 Caso você receba erros, verifique os seguintes requisitos:
   
-- **Senhas incorretas são problemas comuns**. Execute as Etapa 3 novamente e preste muita atenção ao nome de usuário e à senha inseridos.
+- **Um problema comum é uma senha incorreta**. Execute novamente a etapa 2. e preste atenção o nome de usuário e a senha que você digitar.
     
 - * *O Microsoft Azure Active Directory módulo para Windows PowerShell requer que o Microsoft .NET Framework 3.5.* x * recurso está ativado em seu computador * *. É provável que o seu computador tiver uma versão mais recente instalada (por exemplo, 4 ou 4.5.* x *), mas com versões anteriores a compatibilidade com versões mais antigas do .NET Framework pode ser habilitada ou desabilitada. Para obter mais informações, consulte os tópicos a seguir:
     

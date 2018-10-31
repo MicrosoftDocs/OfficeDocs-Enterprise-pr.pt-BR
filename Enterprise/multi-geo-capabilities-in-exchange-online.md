@@ -10,26 +10,26 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no Exchange Online.
-ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
-ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
+ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498221"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849917"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos de multi-Geo no Exchange Online
 
-Recursos de multi-Geo no Office 365 habilitar um único locatário englobe vários locais geográficos (Geos). Quando Multi-Geo estiver habilitada, os clientes podem selecionar o local do conteúdo de caixa de correio Exchange Online (dados em repouso) em uma base por usuário.
+Recursos de multi-Geo no Office 365 habilitar um único locatário englobe vários locais geográficos. Quando multi-geo estiver habilitada, os clientes podem selecionar o local do conteúdo de caixa de correio Exchange Online (dados em repouso) em uma base por usuário.
 
-Seu local de locatário inicial (conhecido como seus "padrão" ou "central" local) é determinada com base em seu endereço de cobrança. Quando Multi-Geo estiver habilitada, você pode colocar a caixas de correio em locais adicionais "satélite" por:
+Seu local de locatário inicial (conhecido como o local central) é determinada com base em seu endereço de cobrança. Quando multi-geo estiver habilitada, você pode colocar a caixas de correio em locais adicionais de satélite por:
 
-- Criando uma nova caixa de correio Exchange Online diretamente em um satélite.
+- Criando uma nova caixa de correio Exchange Online diretamente em um local de satélite.
 
-- Mover uma caixa de correio do Exchange Online existente para um satélite.
+- Mover uma caixa de correio do Exchange Online existente para um local de satélite.
 
-- Inclusão de uma caixa de correio de uma organização do Exchange local diretamente em um satélite.
+- Inclusão de uma caixa de correio de uma organização do Exchange local diretamente em um local de satélite.
 
-Os Geos a seguintes estão disponíveis para uso em uma configuração de Multi-Geo:
+Os locais de geo a seguir estão disponíveis para uso em uma configuração de Multi-Geo:
 
 - Ásia Pacífico
 
@@ -52,45 +52,45 @@ Os Geos a seguintes estão disponíveis para uso em uma configuração de Multi-
 - Estados Unidos
 
 ## <a name="prerequisite-configuration"></a>Configuração de pré-requisito
-Antes de começar a usar o Multi-Geo recursos no Exchange Online, o Microsoft precisa configurar seu locatário do Exchange Online para suporte Multi-Geo. Esse processo de configuração de uma única vez é disparado depois que você encomendar que multi-Geo e as licenças mostram no seu locatário. Esse processo de configuração de uma única vez normalmente deve levar menos de 30 dias para ser concluída. A ordem Multi-Geo, contate o representante da Microsoft. Para obter mais informações, consulte https://aka.ms/Multi-Geo.
+Antes de começar a usar o Multi-Geo recursos no Exchange Online, o Microsoft precisa configurar seu locatário do Exchange Online para suporte multi-geo. Esse processo de configuração de uma única vez é disparado depois que você encomendar o Office 365 Multi-Geo e as licenças mostram no seu locatário. Esse processo de configuração de uma única vez normalmente deve levar menos de 30 dias para ser concluída. Para encomendar o Office 365 Multi-Geo, contate o representante da Microsoft. Para obter mais informações, consulte https://aka.ms/Multi-Geo.
 
-Você receberá notificações no [Centro de mensagem do Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) , quando a configuração foi concluída. Configuração automaticamente é acionada depois de suas licenças Multi-Geo mostram no seu locatário.
+Você receberá notificações no [Centro de mensagem do Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) , quando a configuração foi concluída. Configuração automaticamente é acionada depois de suas licenças multi-geo mostram no seu locatário.
 
 ## <a name="mailbox-placement-and-moves"></a>Movimentações e posicionamento de caixa de correio
-Após a conclusão da Microsoft as etapas de configuração de Multi-Geo pré-requisito, o Exchange Online aceita o atributo **PreferredDataLocation** em objetos de usuário no Windows Azure AD.
+Após a conclusão das etapas de configuração de pré-requisito multi-geo da Microsoft, Exchange Online aceita o atributo **PreferredDataLocation** em objetos de usuário no Windows Azure AD.
 
-O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure AD para a propriedade **MailboxRegion** no serviço de diretório Exchange Online. O valor **MailboxRegion** determina o Geo onde caixas de correio de usuário e qualquer caixa de correio de arquivo morto associada será colocada. Não é possível configurar da caixa de correio e arquivamento caixas de correio primárias um usuário para residir em Geos diferentes. Apenas um Geo pode ser configurado por um objeto de usuário.
+O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure AD para a propriedade **MailboxRegion** no serviço de diretório Exchange Online. O valor **MailboxRegion** determina o Geo onde caixas de correio de usuário e qualquer caixa de correio de arquivo morto associada será colocada. Não é possível configurar principal da caixa de correio e arquivamento caixas de correio um usuário para residir em geo diferentes locais. Somente um local geo pode ser configurado por um objeto de usuário.
 
-- Quando **PreferredDataLocation** estiver configurada em um usuário com uma caixa de correio existente, a caixa de correio será colocado em uma fila de realocação e movidas automaticamente para o Geo especificado. 
+- Quando **PreferredDataLocation** estiver configurada em um usuário com uma caixa de correio existente, a caixa de correio será colocado em uma fila de realocação e movidas automaticamente para o local de geo especificado. 
 
-- Quando **PreferredDataLocation** estiver configurada em um usuário sem uma caixa de correio existente, a caixa de correio será provisionada para o Geo especificado. 
+- Quando **PreferredDataLocation** estiver configurada em um usuário sem uma caixa de correio existente, a caixa de correio será provisionada no local, geo especificado. 
 
-- Quando **PreferredDataLocation** não for especificado em um usuário, a caixa de correio será colocada no Geo padrão.
+- Quando **PreferredDataLocation** não for especificado em um usuário, a caixa de correio será colocada no local central.
 
-- Se o código de **PreferredDataLocation** está incorreto (por exemplo, um tipo de NAN em vez do nome), a caixa de correio será colocada no Geo padrão.
+- Se o código de **PreferredDataLocation** está incorreto (por exemplo, um tipo de NAN em vez do nome), a caixa de correio será colocada no local central.
 
-**Observação**: capacidades de Multi-Geo e Skype para Business Online regional hospedada reuniões usam a propriedade **PreferredDataLocation** nos objetos de usuário para localizar serviços. Se você configurar valores **PreferredDataLocation** em objetos de usuário para reuniões regional hospedadas, a caixa de correio dos usuários serão automaticamente movida para o Geo especificado depois Multi-Geo está habilitado no inquilino do Office 365.
+**Observação**: capacidades de multi-geo e Skype para Business Online regional hospedada reuniões usam a propriedade **PreferredDataLocation** nos objetos de usuário para localizar serviços. Se você configurar valores **PreferredDataLocation** em objetos de usuário para reuniões regional hospedadas, a caixa de correio dos usuários serão automaticamente movida para o local especificado geo depois multi-geo está habilitado no inquilino do Office 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitações do recurso para Multi-Geo no Exchange Online
-1. Apenas caixas de correio do usuário, caixas de correio de recurso (caixas de correio de sala e equipamento) e caixas de correio compartilhadas suportam recursos de Multi-Geo. Caixas de correio de pasta de públicos e grupos do Office 365 permanecem em Geo de página inicial do cliente.
+1. Apenas caixas de correio do usuário, caixas de correio de recurso (caixas de correio de sala e equipamento) e caixas de correio compartilhadas suportam recursos de multi-geo. Caixas de correio de pasta de públicos e grupos do Office 365 permanecem no local central.
  
-2. Segurança e conformidade recursos (por exemplo, auditoria e descoberta eletrônica) que estão disponíveis no Centro de administração do Exchange (EAC) não estão disponíveis nas organizações Multi-Geo. Em vez disso, você precisará usar o [Centro de conformidade e segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e conformidade.
+2. Segurança e conformidade recursos (por exemplo, auditoria e descoberta eletrônica) que estão disponíveis no Centro de administração do Exchange (EAC) não estão disponíveis nas organizações multi-geo. Em vez disso, você precisará usar o [Centro de conformidade e segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e conformidade.
 
-3. Outlook para Mac usuários perceba uma perda temporária de acesso a sua pasta de arquivo morto Online enquanto você move suas caixas de correio para um novo Geo. Esta condição ocorre quando o principal do usuário e caixas de correio de arquivo morto estejam em Geos diferentes, porque cross-Geo movimentações de caixa de correio podem ser concluído em momentos diferentes.
+3. Outlook para Mac usuários perceba uma perda temporária de acesso a sua pasta de arquivo morto Online enquanto move suas caixas de correio para um novo local de geo. Esta condição ocorre quando o principal do usuário e arquivar caixas de correio estão em locais diferentes geo, porque cross-Geo movimentações de caixa de correio podem ser concluído em momentos diferentes.
 
-4. Os usuários não podem compartilhar *pastas de caixa de correio* entre Geos no Outlook na web (anteriormente conhecido como o Outlook Web App ou no OWA). Por exemplo, um usuário na União Europeia não pode usar o Outlook na web para abrir uma pasta compartilhada em uma caixa de correio que está localizada nos Estados Unidos. No entanto, o Outlook em que os usuários da Web pode abrir *outras caixas de correio* em diferentes Geos usando uma janela separada do navegador, conforme descrito em [Abrir a caixa de correio de outra pessoa em uma janela separada do navegador no Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+4. Os usuários não podem compartilhar *pastas de caixa de correio* entre localidades geo no Outlook na web (anteriormente conhecido como o Outlook Web App ou no OWA). Por exemplo, um usuário na União Europeia não pode usar o Outlook na web para abrir uma pasta compartilhada em uma caixa de correio que está localizada nos Estados Unidos. No entanto, o Outlook em que os usuários da Web pode abrir *outras caixas de correio* em diferentes Geos usando uma janela separada do navegador, conforme descrito em [Abrir a caixa de correio de outra pessoa em uma janela separada do navegador no Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
-    **Observação**: o compartilhamento de pasta de caixa de correio entre-Geo é suportado no Outlook no Windows.
+    **Observação**: o compartilhamento de pasta de caixa de correio entre-geo é suportado no Outlook no Windows.
 
 ## <a name="administration"></a>Administração 
-PowerShell remoto é necessária para exibir e configurar propriedades relacionadas ao Geo no seu ambiente do Office 365. Para obter informações sobre vários módulos do PowerShell usados para administrar o Office 365, consulte [Gerenciando o Office 365 e o Exchange Online com o Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
+PowerShell remoto é necessária para exibir e configurar o multi geo propriedades no seu ambiente do Office 365. Para obter informações sobre vários módulos do PowerShell usados para administrar o Office 365, consulte [Gerenciando o Office 365 e o Exchange Online com o Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).
 
 - É necessário o [Módulo Microsoft Azure Active Directory PowerShell](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 ou posterior em v1. x para ver a propriedade **PreferredDataLocation** em objetos de usuário. Objetos de usuário sincronizados via AAD conectar no AAD não podem ter seu valor **PreferredDataLocation** modificada diretamente por meio do PowerShell AAD. Objetos de usuário somente na nuvem podem ser modificados por meio do PowerShell AAD. Para se conectar ao AD do Windows Azure PowerShell, consulte [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell). 
 
 - Para conectar ao Exchange Online PowerShell, consulte [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). 
 
 ### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a>Conectar-se diretamente a um Geo específico usando o PowerShell do Exchange Online
-Normalmente, o Exchange Online PowerShell se conectará ao Geo padrão. Porém, você também pode conectar diretamente à Geos não-padrão. Devido aos aprimoramentos de desempenho, recomendamos que você se conectando diretamente ao Geo não-padrão, quando você gerencia somente usuários em que Geo.
+Normalmente, o PowerShell do Exchange Online se conectará geo local padrão. Porém, você também pode conectar diretamente para os locais de geo não-padrão. Devido aos aprimoramentos de desempenho, é recomendável conectar-se diretamente para o local não-padrão geo quando você gerencia somente os usuários nesta localização geográfica.
 
 Para conectar a um Geo específico, o parâmetro *ConnectionUri* é diferente das instruções de conexão regular. O restante dos comandos e valores são os mesmos. As etapas são:
 
@@ -101,7 +101,7 @@ Para conectar a um Geo específico, o parâmetro *ConnectionUri* é diferente da
     ```
    Na caixa de diálogo **Solicitação de credencial do Windows PowerShell** , digite seu trabalho escola conta e senha e clique em **Okey**.
     
-2. Substituir `<emailaddress>` com o endereço de email de **qualquer** caixa de correio de destino Geo e execute o comando a seguir. Suas permissões na caixa de correio e a relação com suas credenciais na etapa 1 não são um fator; o endereço de email simplesmente informa o Exchange Online onde para se conectar.
+2. Substituir `<emailaddress>` com o endereço de email de **qualquer** caixa de correio no local do destino geo e execute o comando a seguir. Suas permissões na caixa de correio e a relação com suas credenciais na etapa 1 não são um fator; o endereço de email simplesmente informa o Exchange Online onde para se conectar.
   
    ```
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -177,11 +177,11 @@ NAM
 
 
 ### <a name="find-the-geo-location-of-a-mailbox"></a>Encontrar o local de Geo de uma caixa de correio
-O cmdlet **Get-Mailbox** no Exchange Online PowerShell exibirá as seguintes propriedades relacionadas ao Geo em caixas de correio:
+O cmdlet **Get-Mailbox** no PowerShell do Exchange Online é exibido a seguir multi-geo relacionadas a propriedades em caixas de correio:
 
 - **Banco de dados**: as primeiro 3 letras do nome do banco de dados correspondem ao código de Geo, que informa onde a caixa de correio está localizada no momento. Caixas de correio de arquivo morto Online o **ArchiveDatabase** propriedade deve ser usada.
 
-- **MailboxRegion**: Especifica o código de Geo que foi definido para o administrador (sincronizado a partir **PreferredDataLocation** no Azure AD).
+- **MailboxRegion**: Especifica o código de local geo que foi definido para o administrador (sincronizado a partir **PreferredDataLocation** no Azure AD).
 
 - **MailboxRegionLastUpdateTime**: indica quando MailboxRegion última atualização (automática ou manualmente).
 
@@ -205,7 +205,7 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM 
 ```
 
-> **Observação:** Se o código Geo no nome do banco de dados não coincidir com o valor de **MailboxRegion** , a caixa de correio será automaticamente ser colocado em uma fila de realocação e movidos para o Geo especificado pelo valor **MailboxRegion** (Exchange Online parecidas uma incompatibilidade entre essas valores de propriedade).
+> **Observação:** Se o código de local geo no nome do banco de dados não coincidir com o valor de **MailboxRegion** , a caixa de correio será automaticamente ser colocado em uma fila de realocação e movido para o local de geo especificado pelo valor **MailboxRegion** (procura Exchange Online um incompatibilidade entre esses valores de propriedade).
 
 ### <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo"></a>Mover uma caixa de correio somente em nuvem existente para um Geo específico
 Um usuário somente na nuvem é um usuário não sincronizadas para o inquilino via AAD se conectar. Este usuário foi criado diretamente no Azure AD. Use os cmdlets **Get-MsolUser** e **Set-MsolUser** no módulo Azure AD para Windows PowerShell para exibir ou especificar o Geo onde será armazenada caixa de correio do usuário somente na nuvem.
@@ -245,7 +245,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 - Como mencionado anteriormente você não pode usar este procedimento para objetos de usuário sincronizado do Active Directory no local. Você precisa alterar o valor de **PreferredDataLocation** usando AAD se conectar. Para obter mais informações, consulte [sincronização do Azure Active Directory Connect: configurar o local dos dados preferencial para recursos do Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation). 
 
-- Quanto tempo levará para realocar um mailboxfrom que seu geo atual para o novo geo desejada depende de vários fatores:
+- Quanto tempo levará para realocar um mailboxfrom que seu geo atual para o novo local desejado geo depende de vários fatores:
  
   - O tamanho e o tipo de caixa de correio.
  
@@ -260,10 +260,10 @@ Desabilitado caixas de correio em retenção de litígio que são preservadas pa
 
 2. Altere o **PreferredDataLocation**.
 
-3. Remova a licença da caixa de correio depois que ela foi movida para a localização geográfica selecionada para colocá-lo novamente em estado desativado.
+3. Remova a licença da caixa de correio depois que ela foi movida para o local selecionado geo para colocá-lo novamente em estado desativado.
 
 ### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a>Criar novas caixas de correio da nuvem em um Geo específico 
-Para criar uma nova caixa de correio em um Geo específico, você precisará fazer qualquer uma dessas etapas:
+Para criar uma nova caixa de correio em um local específico geo, você precisará fazer qualquer uma dessas etapas:
 
 - Configure o valor de **PreferredDataLocation** , conforme descrito no anterior seção *antes da* que caixa de correio é criada no Exchange Online. Por exemplo, configure o valor de **PreferredDataLocation** em um usuário antes de atribuir uma licença. 
 
@@ -303,7 +303,7 @@ Você pode usar as ferramentas de inclusão standard e processos para migrar uma
 
 A primeira etapa é verificar se que existe um objeto de usuário para cada caixa de correio a ser onboarded e verifique se que o valor de **PreferredDataLocation** correto está configurado no Azure AD. As ferramentas de inclusão respeitam o valor de **PreferredDataLocation** e irá migrar as caixas de correio diretamente para o Geo especificado.
 
-Ou então, você pode usar as seguintes etapas para caixas de correio onboard diretamente em um Geo específico usando o cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) no PowerShell do Exchange Online.
+Ou então, você pode usar as seguintes etapas para caixas de correio onboard diretamente em um local específico geo usando o cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) no PowerShell do Exchange Online.
 
 1. Verifique se que o objeto de usuário existe para cada caixa de correio a ser onboarded e que o **PreferredDataLocation** está definido como o valor desejado no Azure AD. O valor de **PreferredDataLocation** será sincronizado com o atributo **MailboxRegion** do objeto de usuário de email correspondente no Exchange Online.
 
@@ -321,9 +321,9 @@ Ou então, você pode usar as seguintes etapas para caixas de correio onboard di
     New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
     ```
 
-5. Repita a etapa #4 para cada caixa de correio que você precisa para migrar do Exchange local para o satélite Geo que você está conectado atualmente.
+5. Repita a etapa #4 para cada caixa de correio que você precisa para migrar do Exchange local para o local de satélite que você está atualmente conectado ao.
 
-6. Se você precisar migrar caixas de correio adicionais para um satélite diferente Geo, repita as etapas 2 a 4 para cada Geo de satélite específico.
+6. Se você precisa saber para migrar caixas de correio adicionais para um local diferente de satélite, repita as etapas 2 a 4 para cada local de satélite específico.
 
 ### <a name="multi-geo-reporting"></a>Relatórios de multi-Geo
-**Relatórios de uso de Multi-Geo** no Centro de administração do Office 365 exibe a contagem de usuários por Geo. O relatório exibe a distribuição dos usuários para o mês atual e fornece dados históricos para os últimos seis meses.
+**Relatórios de uso de Multi-Geo** no Centro de administração do Office 365 exibe a contagem de usuário pelo geo local. O relatório exibe a distribuição dos usuários para o mês atual e fornece dados históricos para os últimos seis meses.

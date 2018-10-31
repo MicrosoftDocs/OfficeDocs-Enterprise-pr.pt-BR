@@ -1,5 +1,5 @@
 ---
-title: Adicionar ou remover um administrador geo
+title: Adicionar ou remover um administrador geográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -8,11 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Saiba como adicionar ou remover um administrador geo no OneDrive para Business Multi-Geo.
-ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849807"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Adicionar ou remover um administrador geo no OneDrive para Busniess Multi-Geo
 
@@ -20,7 +21,7 @@ Você pode configurar administradores separados para cada localidade geo que voc
 
 Alguns serviços - como o repositório de termos - são administrados do local central e replicados para locais de satélite. O administrador geo para o local central tem acesso a esses, enquanto não geo admins para locais de satélite.
 
-Os administradores globais e do SharePoint Online continuar têm acesso a configurações em todos os locais de geo.
+Os administradores globais e do SharePoint Online continuar a ter acesso às configurações no local central e todos os locais de satélite.
 
 ## <a name="configuring-geo-administrators"></a>Configurando geo administradores
 
@@ -40,7 +41,7 @@ Para remover um usuário como um administrador Geo de um local, execute`Remove-S
 
 Você pode adicionar um grupo de segurança ou de um grupo de segurança habilitados para email como um administrador de geo. (Grupos de distribuição e grupos do Office 365 não são suportados.)
 
-Para adicionar um grupo como um administrador geo, execute:`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Para adicionar um grupo como um administrador geo, execute`Add-SPOGeoAdministrator -GroupAlias <alias>`
 
 Para remover um grupo como um administrador geo, execute`Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
