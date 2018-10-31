@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 258c562343875ff4ad115b81dba5338c79641dfc
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915326"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849847"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -29,7 +29,7 @@ Os procedimentos deste artigo exigem o [Módulo PowerShell do Microsoft SharePoi
 
 ## <a name="communicating-to-your-users"></a>Comunicação com seus usuários
 
-Ao mover os sites do OneDrive entre locais geográficos, é importante comunicar aos seus usuários o que esperar. Isso pode ajudar a reduzir a confusão do usuário e chamadas para o suporte técnico. Envie um email para seus usuários antes de mudar com as seguintes informações:
+Ao mover os sites do OneDrive entre locais geográficos, é importante comunicar aos seus usuários o que esperar. Isso pode ajudar a reduzir a confusão do usuário e chamadas para o suporte técnico. Envie um email para seus usuários antes de fazer as movimentações com as seguintes informações:
 
 - Quando a mudança deve começar e quanto tempo deve demorar
 - Para qual localização geográfica o OneDrive mudará, e qual é a URL para acessar o novo local

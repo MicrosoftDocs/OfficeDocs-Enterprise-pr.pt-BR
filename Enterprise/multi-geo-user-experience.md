@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba mais sobre a experiência do usuário do SharePoint e do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: 3c7e4b6802bddc78db016c9c282f5add0c71c491
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849827"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiência do usuário em um ambiente multigeográfico
 
@@ -23,11 +24,11 @@ Vejamos a seguir o que os usuários verão em uma configuração multigeográfic
 
 #### <a name="users-onedrive-for-business-location"></a>Local do OneDrive for Business do usuário
 
-Os usuários terão o OneDrive for Business provisionado na localização dados preferida deles. Se um usuário navegar para uma URL do OneDrive com uma localização geográfica incorreta (por exemplo, um indicador de uma localização geográfica anterior), eles serão redirecionados automaticamente para o OneDrive na localização geográfica adequada.
+Os usuários terão o OneDrive for Business provisionado em sua localização dados preferida. Se um usuário navegar para uma URL do OneDrive com uma localização geográfica incorreta (por exemplo, um indicador de uma localização geográfica anterior), eles serão redirecionados automaticamente para o OneDrive na localização geográfica adequada.
 
 #### <a name="sharing"></a>Compartilhamento
 
-A experiência do Seletor de pessoas mostra todos os usuários independentemente da localização geográfica. Isso permite que um usuário compartilhe com outro usuário em sua mesma localização geográfica ou em qualquer outra localização do seu locatário. O conteúdo de localizações geográficas diferentes será exibido na vista **Compartilhado comigo** no OneDrive for Business do usuário e poderá ser acessado com a experiência de logon único independentemente de qual localização geográfica estiver hospedado.
+A experiência do Seletor de Pessoas mostra todos os usuários independentemente da localização geográfica. Isso permite que um usuário compartilhe com outro usuário, em sua mesma localização geográfica ou em qualquer outra localização do seu locatário. O conteúdo de localizações geográficas diferentes será exibido na visualização **Compartilhado comigo** no OneDrive for Business do usuário, e poderá ser acessado com a experiência de logon único, independentemente de em qual localização geográfica estiver hospedado.
 
 #### <a name="office-applications"></a>Aplicativos do Office
 
@@ -39,7 +40,7 @@ O cliente de sincronização do OneDrive for Business (versão 17.3.6943.0625 e 
 
 #### <a name="office-365-app-launcher"></a>Inicializador de aplicativos do Office 365
 
-O inicializador de aplicativos reconhece localizações geográficas diferentes e direcionará cada bloco para a localização adequada da carga de trabalho. O bloco do OneDrive aponta para a localização geográfica correta na qual a biblioteca do OneDrive do usuário está hospedada, ao passo que o bloco do SharePoint apontará todos os usuários para o local central, pois os sites de equipe ainda estão hospedados lá.
+O inicializador de aplicativos reconhece localizações geográficas diferentes e direcionará cada bloco para a localização geográfica adequada da carga de trabalho. O bloco do OneDrive aponta para a localização geográfica correta na qual a biblioteca do OneDrive do usuário está hospedada, ao passo que o bloco do SharePoint apontará todos os usuários para o local central, pois os sites de equipe ainda estão hospedados lá.
 
 #### <a name="delve-user-profiles"></a>Perfis do usuário Delve
 

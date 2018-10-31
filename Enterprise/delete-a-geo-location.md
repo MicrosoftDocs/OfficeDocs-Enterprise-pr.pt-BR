@@ -1,5 +1,5 @@
 ---
-title: Excluir uma localização geográfica
+title: Excluir uma localização de satélite
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,23 +10,24 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Saiba como excluir uma localização geográfica no OneDrive for Business com Funcionalidades Multigeográficas.
-ms.openlocfilehash: f1da3d2e849d7ee931ef3a115502498743cc23bb
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+description: Saiba como excluir uma localização de satélite no OneDrive for Business com Funcionalidades Multigeográficas.
+ms.openlocfilehash: d13de1b10cfc087337d22f9103afc33057bc40c1
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849837"
 ---
-# <a name="delete-a-geo-location-in-onedrive-for-business-multi-geo"></a>Excluir uma localização geográfica no OneDrive for Business com Funcionalidades Multigeográficas.
+# <a name="delete-a-satellite-location-in-onedrive-for-business-multi-geo"></a>Excluir uma localização de satélite no OneDrive for Business com Funcionalidades Multigeográficas
 
-Se você não precisa mais de uma localização geográfica, exclua-a do seu locatário no [centro de administração do OneDrive](https://admin.onedrive.com)
+Se você não precisa mais de uma localização de satélite, exclua-a do seu locatário no [centro de administração do OneDrive](https://admin.onedrive.com)
 
 > [!WARNING]
-> Todos os dados de usuário no local geográfica serão excluídos permanentemente, o que inclui todos os conteúdos do OneDrive for Business, os sites do SharePoint e de grupos. Você deve migrar todos os dados para outra localização antes de excluir essa localização. A ação não pode ser desfeita.
+> Todos os dados de usuário na localização do satélite serão excluídos permanentemente, o que inclui todos os conteúdos do OneDrive for Business, os sites do SharePoint e de grupos. Você deve migrar todos os dados para outra localização de satélite antes de excluir essa localização de satélite. A ação não pode ser desfeita.
 
-Somente os administradores globais podem excluir localizações geográficas.
+Somente os administradores globais podem excluir localizações de satélites.
 
-Para excluir uma localização geográfica
+Para excluir uma localização de satélite
 
 1. Abra o [centro de administração do OneDrive](https://admin.onedrive.com)
 

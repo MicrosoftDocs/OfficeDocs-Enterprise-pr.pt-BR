@@ -12,12 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Expanda a sua presença do Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive e do SharePoint Online.
-ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
-ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
+ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24012731"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849817"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Funcionalidades multigeográficas no OneDrive e SharePoint Online no Office 365
 
@@ -43,7 +43,7 @@ Vejamos a seguir como os recursos multigeográficos podem beneficiar a sua organ
     
 - Consolide os seus dados locais regionais em seu locatário multigeográfico do Office 365.
     
-Em uma configuração multigeográfica, o seu locatário do Office 365 consiste em um local central (também conhecido como local padrão) e uma ou mais localizações geográficas satélites. O conceito principal de multigeografia é que um único locatário atuar em várias localizações geográficas. Em um locatário multigeográfico, as informações sobre localizações geográficas, grupos e informações do usuário são dominadas no Azure Active Directory (AAD). Como as informações de locatário são controladas centralmente e sincronizadas em cada localização geográfica, o compartilhamento e as experiências envolvendo qualquer pessoa da sua empresa conterão uma abrangência global.
+Em uma configuração multigeográfica, o seu locatário do Office 365 consiste em um local central (onde sua assinatura do Office 365 foi provisionada originalmente) e uma ou mais localizações geográficas satélites. O conceito principal de multigeografia é que um único locatário pode atuar em várias localizações geográficas. Em um locatário multigeográfico, as informações sobre localizações geográficas, grupos e informações do usuário são dominadas no Azure Active Directory (AAD). Como as informações de locatário são controladas centralmente e sincronizadas em cada localização geográfica, o compartilhamento e as experiências envolvendo qualquer pessoa da sua empresa conterão uma abrangência global.
 
 ## <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Apresentando a multigeografia do Office 365
 
