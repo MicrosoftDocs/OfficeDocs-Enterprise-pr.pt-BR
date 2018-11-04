@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumo: Entenda os elementos comuns da infraestrutura de rede e como preparar sua rede.'
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915646"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897024"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comuns de conectividade de nuvem da Microsoft
 
