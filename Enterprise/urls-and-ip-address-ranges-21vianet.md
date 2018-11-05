@@ -3,7 +3,7 @@ title: Intervalos de URLs e endereços IP do Office 365 operados pela 21Vianet
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: Este artigo se aplica ao Office 365 operado pela 21Vianet na China. Este artigo lista as URLs e intervalos de endereços IP usados pelo Office 365 operado pela 21Vianet.
 hideEdit: true
-ms.openlocfilehash: 83147b27a3237bb7fbb3c63b739a0f3fcb401b92
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: b01c996d801f2ab34924ac7266dc8210bd8392cd
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827179"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933088"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>Intervalos de URLs e endereços IP do Office 365 operados pela 21Vianet
 
@@ -29,13 +29,13 @@ ms.locfileid: "23827179"
 **Resumo**: os pontos de extremidade a seguir (FQDNs, portas, URLs, prefixos IPv4 e IPv6) se aplicam ao Office 365 operado pela 21 Vianet e são projetados para entregar serviços de produtividade às organizações que usam somente esses planos.
   
 > [!NOTE]
-> A Microsoft está desenvolvendo um serviço web baseado em REST para o endereço IP e entradas FQDN desta página. Este novo serviço ajudará você a configurar e atualizar dispositivos de perímetro de rede como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista ou alterações específicas. Este serviço substituirá o documento XML desta página. Para experimentar o novo serviço, acesse [serviço Web](office-365-ip-web-service.md). 
+> A Microsoft lançou um serviço web baseado em REST para as entradas de endereço IP e FQDN desta página. Esse novo serviço ajudará você a configurar e atualizar dispositivos de perímetro de rede como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista ou alterações específicas. Este serviço substitui o documento XML desta página, que foi preterido em 2 de outubro de 2018. Para experimentar o novo serviço, acesse [serviço Web](office-365-ip-web-service.md).
   
  **Pontos de extremidade do Office 365:** [global (incluindo GCC)](urls-and-ip-address-ranges.md)  | *Office 365 operado pela 21 Vianet* | [Office 365 Alemanha](office-365-germany-endpoints.md)  |  [Office 365 Governo dos E.U.A. Departamento de Defesa](office-365-u-s-government-dod-endpoints.md) | [GCC High do Office 365 Governo dos E.U.A. ](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Última atualização:** 1/8/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Assinatura do registro de alterações](http://go.microsoft.com/fwlink/?LinkId=536386)||
+|**Última atualização:** 01/11/2018 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Assinatura do log de alterações](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Baixar:** todos os destinos obrigatórios e opcionais em uma lista [no formato em JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Comece com [Gerenciar os pontos de extremidade do Office 365](managing-office-365-endpoints.md) para entender nossas recomendações para gerenciar a conectividade de rede usando estes dados. Os dados dos pontos de extremidade são atualizados no início de cada mês com novos endereços IP e URLs publicadas 30 dias antes de se tornarem ativas. Isso permite que os clientes que ainda não têm atualizações automáticas completem seus processos antes de precisarem de nova conectividade. Os pontos de extremidade também podem ser atualizados durante o mês, se necessário, para tratar de escalações de suporte, incidentes de segurança ou outros requisitos operacionais imediatos. Todos os dados exibidos abaixo nesta página são gerados a partir dos serviços web baseados em REST. Se estiver usando um script ou dispositivo de rede para acessar esses dados, vá diretamente para o [serviço Web](office-365-ip-web-service.md).
 
