@@ -94,7 +94,7 @@
 #### [Pontos de extremidade do US Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Pontos de extremidade do Office 365 operado pela 21Vianet](urls-and-ip-address-ranges-21vianet.md)
 #### [Pontos de extremidade do Office 365 Germany](office-365-germany-endpoints.md)
-#### [Solicitações de rede do Office 2016 para Mac](network-requests-in-office-2016-for-mac.md)
+#### [Solicitações de rede do Office para Mac](network-requests-in-office-2016-for-mac.md)
 #### [URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
 #### [Pontos de extremidade adicionais não incluídos nos serviços Web](additional-office365-ip-addresses-and-urls.md)
 ### [Redes de distribuição de conteúdo](content-delivery-networks.md)
@@ -191,5 +191,5 @@
 ### [Conectividade de cliente](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Segurança e Conformidade](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 para empresas](https://support.office.com/office365admin)
+# [Office 365 para empresas](https://docs.microsoft.com/office365/admin/admin-home)
   
