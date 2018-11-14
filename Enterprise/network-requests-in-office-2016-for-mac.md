@@ -1,9 +1,9 @@
 ---
-title: Solicitações de rede do Office 2016 para Mac
+title: Solicitações de rede no Office para Mac
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office 2016 para aplicativos do Mac oferecem uma experiência de app nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em uma variedade de cenários, incluindo Estados quando nenhum acesso à rede estiver disponível. Quando uma máquina estiver conectada a uma rede, os aplicativos se conecte automaticamente a uma série de serviços baseados na web para fornecer funcionalidade avançada. Este documento descreve quais pontos de extremidade e URLs que tentam acessar os aplicativos e os serviços fornecidos. Essa informação é útil quando a solução de problemas de rede problemas de configuração e a configuração de uma diretiva para servidores de proxy da rede. Os detalhes deste artigo destinam-se para complementar o URL do Office 365 e o artigo de intervalos de endereços.
-ms.openlocfilehash: b94b77a0ff8cd37b0fa1c881ba590853615bfe93
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Office para aplicativos do Mac oferecem uma experiência de app nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em uma variedade de cenários, incluindo Estados quando nenhum acesso à rede estiver disponível. Quando uma máquina estiver conectada a uma rede, os aplicativos se conecte automaticamente a uma série de serviços baseados na web para fornecer funcionalidade avançada. Este documento descreve quais pontos de extremidade e URLs tentam alcançar os aplicativos e os serviços fornecidos. Essa informação é útil quando a solução de problemas de rede problemas de configuração e a configuração de uma diretiva para servidores de proxy da rede. Os detalhes deste artigo destinam-se para complementar o URL do Office 365 e o artigo de intervalos de endereços.
+ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539391"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219891"
 ---
-# <a name="network-requests-in-office-2016-for-mac"></a>Solicitações de rede do Office 2016 para Mac
+# <a name="network-requests-in-office-for-mac"></a>Solicitações de rede no Office para Mac
 
-Office 2016 para aplicativos do Mac oferecem uma experiência de app nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em uma variedade de cenários, incluindo Estados quando nenhum acesso à rede estiver disponível. Quando uma máquina estiver conectada a uma rede, os aplicativos se conecte automaticamente a uma série de serviços baseados na web para fornecer funcionalidade avançada. Este documento descreve quais pontos de extremidade e URLs que tentam acessar os aplicativos e os serviços fornecidos. Essas informações são úteis ao solucionar problemas de configuração de rede e definir políticas para servidores de proxy da rede. Os detalhes deste artigo destinam-se para complementar o [artigo de intervalos de URL do Office 365 e o endereço](urls-and-ip-address-ranges.md), que inclui os pontos de extremidade para computadores que executam o Microsoft Windows.
+Office para aplicativos do Mac oferecem uma experiência de app nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em uma variedade de cenários, incluindo Estados quando nenhum acesso à rede estiver disponível. Quando uma máquina estiver conectada a uma rede, os aplicativos se conecte automaticamente a uma série de serviços baseados na web para fornecer funcionalidade avançada. As informações a seguir descrevem quais pontos de extremidade e URLs tentam alcançar os aplicativos e os serviços fornecidos. Essas informações são úteis ao solucionar problemas de configuração de rede e definir políticas para servidores de proxy da rede. Os detalhes deste artigo destinam-se para complementar o [artigo de intervalos de URL do Office 365 e o endereço](urls-and-ip-address-ranges.md), que inclui os pontos de extremidade para computadores que executam o Microsoft Windows. A menos que observado, as informações neste artigo também se aplica ao 2019 do Office para Mac e 2016 do Office para Mac, que estão disponíveis como uma única compra de um repositório de varejo ou por meio de um contrato de licenciamento por volume. 
+
   
 A maior parte deste artigo é tabelas detalham as URLs de rede, tipo e descrição do serviço ou recurso fornecido pelo ponto de extremidade. Cada um dos aplicativos Office pode ser diferente no seu uso do serviço e o ponto de extremidade. Os aplicativos a seguintes são definidos nas tabelas a seguir:
   
@@ -39,12 +40,13 @@ O tipo de URL é definido da seguinte maneira:
 - SS: Delimitadas estática-o URL é codificada como parte de uma página da web ou redirecionador.
     
 - CS: Config Service - a URL é retornada como parte do serviço de configuração do Office.
+
     
-## <a name="office-2016-for-mac-default-configuration"></a>Office 2016 para que a configuração padrão Mac
+## <a name="office-for-mac-default-configuration"></a>Office para a configuração padrão do Mac
 
  **Instalação e atualizações**
   
-Os seguintes pontos de extremidade de rede são usados para baixar o Office 2016 para o programa de instalação do Mac da rede de entrega conteúdo a Microsoft (CDN).
+Os seguintes pontos de extremidade de rede são usados para fazer o download do Office para o programa de instalação do Mac da rede de entrega conteúdo a Microsoft (CDN).
   
 |**URL**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
@@ -127,7 +129,7 @@ Os seguintes pontos de extremidade de rede aplicam-se somente à assinatura do O
    
  **Pesquisador**
   
-Os seguintes pontos de extremidade de rede se aplicam a ambos os assinatura do Office 365.
+Os seguintes pontos de extremidade de rede aplicam-se somente à assinatura do Office 365.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -171,7 +173,7 @@ Os seguintes pontos de extremidade de rede se aplicam a assinatura do Office 365
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Enviar um serviço sorriso  <br/> |
    
- **Contatar o Suporte**
+ **Entre em contato com suporte**
   
 Os seguintes pontos de extremidade de rede se aplicam a assinatura do Office 365 e a licença de Volume de varejo/ativações.
   
@@ -220,7 +222,7 @@ Os seguintes pontos de extremidade de rede se aplicam a assinatura do Office 365
    
  **Links Seguros**
   
-O ponto de extremidade de rede seguinte se aplica aos aplicativos do Office 2016.
+O ponto de extremidade de rede seguinte se aplica a todos os aplicativos do Office para a assinatura do Office 365 apenas.
   
 |**URL**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
@@ -228,7 +230,7 @@ O ponto de extremidade de rede seguinte se aplica aos aplicativos do Office 2016
    
  **Travar relatórios**
   
-O ponto de extremidade de rede seguinte se aplica a todos os aplicativos do Office 2016 e tipos de licença. Quando um processo falha inesperadamente, um relatório é gerado e enviado para o serviço do Watson.
+O ponto de extremidade de rede seguinte se aplica a todos os aplicativos do Office para ativações de assinatura do Office 365 e a licença de varejo/Volume. Quando um processo falha inesperadamente, um relatório é gerado e enviado para o serviço do Watson.
   
 |**URL**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
@@ -237,7 +239,7 @@ O ponto de extremidade de rede seguinte se aplica a todos os aplicativos do Offi
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>Opções para reduzir o tráfego e solicitações de rede
 
-A configuração padrão de 2016 do Office para Mac oferece a melhor experiência de usuário, tanto em termos de funcionalidade e mantendo a máquina atualizado. Em alguns cenários, você poderá impedir que aplicativos contatar os pontos de extremidade de rede. Esta seção discute as opções para fazê-lo.
+A configuração padrão do Office para Mac oferece a melhor experiência de usuário, tanto em termos de funcionalidade e mantendo a máquina atualizado. Em alguns cenários, você poderá impedir que aplicativos contatar os pontos de extremidade de rede. Esta seção discute as opções para fazê-lo.
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Desabilitar suplementos entrar na nuvem e do Office
   
@@ -266,11 +268,11 @@ Se os usuários tentam acessar a função Sign-In, eles verão um erro que uma c
 Para restabelecer a funcionalidade total para o usuário, defina a preferência para '2' ou removê-lo.
   
 > [!NOTE]
-> Esta preferência requer 2016 do Office para Mac compilação 15.25 [160726] ou posterior. 
+> Esta preferência requer o Office para compilação Mac 15.25 [160726] ou posterior. 
   
 ### <a name="telemetry"></a>Telemetria
   
-2016 do Office para Mac envia informações de telemetria para a Microsoft em intervalos regulares. Dados são carregados no ponto de extremidade 'Ligação'. Os dados de telemetria ajudam a equipe de engenharia avaliar a integridade e quaisquer comportamentos inesperados de cada aplicativo do Office. Há duas categorias de telemetria:
+Office para Mac envia informações de telemetria para a Microsoft em intervalos regulares. Dados são carregados no ponto de extremidade 'Ligação'. Os dados de telemetria ajudam a equipe de engenharia avaliar a integridade e quaisquer comportamentos inesperados de cada aplicativo do Office. Há duas categorias de telemetria:
   
 - **Pulsação** contém informações de versão e licença. Esses dados são enviados imediatamente após o lançamento do aplicativo. 
     
@@ -307,7 +309,7 @@ Em alguns casos, o conteúdo de um documento fará com que o aplicativo falhe. S
   
 ### <a name="updates"></a>Atualizações
   
-A Microsoft lança 2016 do Office para atualizações do Mac em intervalos regulares (normalmente, uma vez por mês). Recomendamos que os usuários e administradores de TI para manter máquinas atualizados para garantir que as correções de segurança mais recentes estiverem instalados. Em casos onde deseja que os administradores de TI bastante, controlar e gerenciar atualizações de máquina, a seguinte preferência pode ser definida para impedir que o processo de atualização automática do detectando automaticamente e oferecendo atualizações de produto:
+A Microsoft lança Office para atualizações do Mac em intervalos regulares (normalmente, uma vez por mês). Recomendamos que os usuários e administradores de TI para manter máquinas atualizados para garantir que as correções de segurança mais recentes estiverem instalados. Em casos onde deseja que os administradores de TI bastante, controlar e gerenciar atualizações de máquina, a seguinte preferência pode ser definida para impedir que o processo de atualização automática do detectando automaticamente e oferecendo atualizações de produto:
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
@@ -315,7 +317,7 @@ A Microsoft lança 2016 do Office para atualizações do Mac em intervalos regul
   
 Se seus blocos de organização solicita a URLs por meio de um servidor proxy ou firewall não deixe de configurar as URLs listadas neste documento como uma permissão ou bloquear listados com uma resposta X 40 (ex.: 403 ou 404). Uma resposta de X 40 permitirá que os aplicativos do Office aceitar normalmente a incapacidade de acessar o recurso e irá fornecer uma experiência de usuário mais rápida, que simplesmente soltando a conexão, que por sua vez fará com que o cliente repetir.
   
-Se seu servidor proxy requer autenticação, uma resposta 407 será retornado ao cliente. Para uma melhor experiência, certifique-se de que você está usando o Office 2016 compilações 15.27 ou posteriores, conforme elas incluem correções específicas para trabalhar com os servidores NTLM e Kerberos.
+Se seu servidor proxy requer autenticação, uma resposta 407 será retornado ao cliente. Para uma melhor experiência, certifique-se de que você está usando o Office para compilações Mac 15.27 ou posteriores, conforme elas incluem correções específicas para trabalhar com os servidores NTLM e Kerberos.
   
   
 ## <a name="see-also"></a>Confira também

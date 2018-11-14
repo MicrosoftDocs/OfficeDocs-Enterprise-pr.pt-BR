@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Use o diagnóstico de página para a ferramenta SharePoint para analisar suas páginas clássicas contra as práticas recomendadas para o SharePoint Online.
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975159"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253612"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Use a ferramenta de diagnóstico de página para o SharePoint Online
 
 Este artigo descreve como você pode usar a ferramenta de diagnóstico de página para analisar o clássicas páginas de publicação e páginas em sites de equipe clássico, em relação a um subconjunto das práticas recomendadas no **SharePoint Online**. 
   
 Sites de equipe que não têm a publicação ativada não podem fazer com o uso das CDNs mas todas as demais regras são aplicáveis. Publicação adiciona sobrecarga adicional, portanto, não ative publicação apenas para obter a funcionalidade CDN conforme impactará negativamente tempos de carregamento de página.
+
+**Observação que V1.05 foi liberada portanto, a atualização de sua extensão, se você tiver instalado já**. Se você não souber qual versão você tem, em seguida, clique no link "Cerca" para verificar se ele.
   
 > [!IMPORTANT]
-> A ferramenta de diagnóstico de página não será executado em bibliotecas de documentos ou páginas de sistema, como a ferramenta foi projetada para examinar páginas do site do SharePoint. Uma página *AllItems* é uma página do sistema. Se você tentar executar a ferramenta em uma página do sistema, você receberá uma mensagem que lê, "Este aplicativo só deve ser executado nas páginas do SharePoint."<br/> ![Deve ser executado em uma página do SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Isso não é um erro na ferramenta de forma que não há nenhum valor na avaliação bibliotecas ou páginas do sistema. Navegue até uma página do SharePoint não seja do sistema para usar a ferramenta. Se desejar fornecer comentários sobre a ferramenta por favor, clique na guia sobre e siga a [oferecer o link de comentários](https://go.microsoft.com/fwlink/?linkid=874109). 
+> A ferramenta de diagnóstico de página não será executado em bibliotecas de documentos ou páginas de sistema, como a ferramenta foi projetada para examinar páginas do site do SharePoint. Uma página *AllItems* é uma página do sistema. Se você tentar executar a ferramenta em uma página do sistema, você receberá uma mensagem que lê, "Este aplicativo só deve ser executado nas páginas do SharePoint."<br/> ![Deve ser executado em uma página do SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Isso não é um erro na ferramenta de forma que não há nenhum valor na avaliação bibliotecas ou páginas do sistema. Navegue até uma página do SharePoint não seja do sistema para usar a ferramenta. Caso isso aconteça em uma página do SharePoint, verifique a página mestre como vimos os clientes remover MetaTags o SharePoint e, em seguida, a página não é mais uma página do SharePoint. Se desejar fornecer comentários sobre a ferramenta por favor, clique na guia sobre e siga a [oferecer o link de comentários](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Instalar a ferramenta de diagnóstico de página
 
@@ -113,7 +115,7 @@ Um elemento importante para que isso é a CorrelationID conforme a equipe de sup
     
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Ajuste o desempenho do SharePoint Online](tune-sharepoint-online-performance.md)
+[Ajustar o desempenho do SharePoint Online](tune-sharepoint-online-performance.md)
 
 [Ajustar o desempenho do Office 365](tune-office-365-performance.md)
 
