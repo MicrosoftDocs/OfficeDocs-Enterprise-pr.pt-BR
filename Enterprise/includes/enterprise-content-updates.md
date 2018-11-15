@@ -46,7 +46,7 @@
 | 22/10/2018 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
 | 22/10/2018 | [URL do serviço Web e endereço IP do Office 365](/Office365/Enterprise/office-365-ip-web-service) | modificado |
 | 23/10/2018 | [Como implementar o ExpressRoute para Office 365](/Office365/Enterprise/implementing-expressroute) | modificado |
-| 23/10/2018 | [Conectividade de rede para Office 365](/Office365/Enterprise/network-connectivity) | modificado |
+| 23/10/2018 | [Conectividade de rede do Office 365](/Office365/Enterprise/network-connectivity) | modificado |
 | 23/10/2018 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
 | 23/10/2018 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
 | 10/24/2018 | [Usando o cache de objetos com o SharePoint Online](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | modificado |
@@ -123,7 +123,7 @@
 | 11/1/2018 | [Ambiente de desenvolvimento/teste do One Microsoft Cloud](/Office365/Enterprise/the-one-microsoft-cloud-dev-test-environment) | modificado |
 | 11/1/2018 | [Corrigir problemas de sincronização de diretório do Office 365](/Office365/Enterprise/fix-problems-with-directory-synchronization) | modificado |
 | 11/1/2018 | [Microsoft Azure ExpressRoute para Office 365](/Office365/Enterprise/azure-expressroute) | modificado |
-| 11/1/2018 | [Conectividade de rede para Office 365](/Office365/Enterprise/network-connectivity) | modificado |
+| 11/1/2018 | [Conectividade de rede do Office 365](/Office365/Enterprise/network-connectivity) | modificado |
 | 11/1/2018 | [Planejar a atualização do Office 2007 ou 2010 servidores e clientes](/Office365/Enterprise/plan-upgrade-previous-versions-office) | modificado |
 | 11/1/2018 | [Recursos para ajudá-lo a atualizar do Office 2007 servidores e clientes](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | modificado |
 | 11/1/2018 | [Recursos para ajudá-lo a atualizar do Office 2010 de servidores e clientes](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modificado |
@@ -135,3 +135,22 @@
 | 11/2/2018 | [URLs e intervalos de endereços IP do Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
 | 11/2/2018 | [Recursos para ajudá-lo a atualizar do Office 2007 servidores e clientes](/Office365/Enterprise/upgrade-from-office-2007-servers-and-products) | modificado |
 | 11/2/2018 | [Recursos para ajudá-lo a atualizar do Office 2010 de servidores e clientes](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | modificado |
+
+
+## <a name="week-of-november-05-2018"></a>Semana de 05 de novembro de 2018
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 11/5/2018 | [Conectar uma rede local a uma rede virtual do Microsoft Azure](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | modificado |
+| 11/5/2018 | [Implantar a sincronização de diretório do Office 365 no Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificado |
+| 11/5/2018 | [Configure sua rede para o Office 365](/Office365/Enterprise/set-up-network-for-office-365) | adicionado |
+| 11/6/2018 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
+| 11/6/2018 | [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | modificado |
+| 11/6/2018 | [Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | modificado |
+| 11/7/2018 | [Pontos de extremidade do Office 365](/Office365/Enterprise/office-365-endpoints) | adicionado |
+| 11/7/2018 | [Configure sua rede para o Office 365](/Office365/Enterprise/set-up-network-for-office-365) | modificado |
+| 8/11/2018 | [Solicitações de rede do Office para Mac](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | modificado |
+| 8/11/2018 | [Colaboração entre locatários do Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificado |
+| 8/11/2018 | [Introdução ao ajuste de desempenho para o SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | modificado |
+| 11/9/2018 | [Use a ferramenta de diagnóstico de página para o SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | modificado |

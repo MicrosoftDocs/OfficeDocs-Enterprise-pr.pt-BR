@@ -3,7 +3,7 @@ title: Recursos de arquitetura de TI do Microsoft Cloud
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumo: Saiba mais sobre as plataformas e serviços em nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais.'
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022090"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525842"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
@@ -38,8 +38,7 @@ Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os 
     - [Segurança no Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#security)
     - [Rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#networking)
     - [Mobilidade e segurança da Microsoft para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [Armazenamento do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#storage)
-    - [Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#hybrid)
+    - [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Ataques comuns e recursos da Microsoft que protegem sua organização](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
 - **[Office 365 Enterprise Solution Series](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
@@ -112,15 +111,6 @@ O que os arquitetos de TI precisam saber sobre mobilidade com as plataformas e s
 |**Item**|**Descrição**|
 |:-----|:-----|
 |[![Imagem em miniatura do cartaz Proteção de Informações do Office 365](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Este modelo contém: <ul><li>Principais aplicativos móveis para empresas </li><li>Plataforma, serviços e recursos para o desenvolvimento de aplicativos móveis </li><li>Gerenciamento do acesso a aplicativos e dados baseados em nuvem por meio de dispositivos móveis </li><li>Comparação de recursos e suporte de plataforma para o Office 365 MDM, Azure Active Directory Premium e Intune </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Armazenamento do Microsoft Cloud para arquitetos corporativos
-
-O que os arquitetos de TI precisam saber sobre opções de armazenamento em plataformas e serviços em nuvem da Microsoft.
-  
-|**Item**|**Descrição**|
-|:-----|:-----|
-|[![Imagem em miniatura do modelo de armazenamento em nuvem da Microsoft](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [Artigo](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Este modelo contém: <ul><li>Motivos para usar o armazenamento em nuvem e os principais cenários </li><li>Opções de armazenamento em nuvem agrupadas com serviços existentes </li><li>Opções de armazenamento que você pode usar como ponto de partida para a solução de armazenamento </li><li>Armazenar blocos de construção para criar uma solução de armazenamento personalizada ou armazenamento para os seus aplicativos.</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos

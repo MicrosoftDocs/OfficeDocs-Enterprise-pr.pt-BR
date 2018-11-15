@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumo: Entenda como ExpressRoute pode ajudá-lo com mais rápidas e confiáveis de conexões para os serviços de nuvem da Microsoft e plataformas.'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915486"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525832"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para conectividade de nuvem da Microsoft
 
@@ -63,7 +63,7 @@ Mesmo com uma conexão ExpressRoute, alguns tráfego ainda é enviado pela Inter
   
 Consulte estes recursos adicionais para obter mais informações:
   
-- [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute para Office 365](https://aka.ms/expressrouteoffice365)
     
 - [ExpressRoute para o Windows Azure](https://azure.microsoft.com/services/expressroute/)
     
@@ -102,7 +102,7 @@ Uma conexão de ExpressRoute único oferece suporte a até três Border Gateway 
 
 ![Figura 3: As três diferentes relações BGP em uma única conexão ExpressRoute](media/Network-Poster/ERPeering.png)
   
-A Figura 3 mostra uma conexão ExpressRoute de uma rede local. A conexão ExpressRoute contém três relacionamentos lógicos de correspondência. Uma relação de correspondência da Microsoft vai para serviços de SaaS Microsoft, incluindo o Office 365 e Dynamcs CRM Online. Uma relação de correspondência pública vai aos serviços do Azure PaaS. Uma relação de correspondência privada vai para o Windows Azure IaaS e um gateway de rede virtual que hospeda máquinas virtuais.
+A Figura 3 mostra uma conexão ExpressRoute de uma rede local. A conexão ExpressRoute tem três relacionamentos lógicos de correspondência. Uma relação de correspondência da Microsoft vai para serviços de SaaS Microsoft, incluindo o Office 365 e Dynamcs CRM Online. Uma relação de correspondência pública vai aos serviços do Azure PaaS. Uma relação de correspondência privada vai para o Windows Azure IaaS e um gateway de rede virtual que hospeda máquinas virtuais.
   
 O relacionamento BGP aos Microsoft: 
   
@@ -186,9 +186,9 @@ Quando você cria uma conexão ExpressRoute para um local de correspondência de
   
 Isso pode resultar em entrega não ideal em centros de dados Microsoft locais para o modelo de conectividade para qualquer.
   
-**Figura 7: Exemplo de uma organização distribuída geograficamente que usa uma conexão ExpressRoute única**
+**Figura 7: Exemplo de uma organização geograficamente distribuídos que usa uma conexão de ExpressRoute único**
 
-![Figura 7: Exemplo de uma organização distribuída geograficamente que usa uma conexão ExpressRoute única](media/Network-Poster/MSNet1.png)
+![Figura 7: Exemplo de uma organização geograficamente distribuídos que usa uma conexão de ExpressRoute único](media/Network-Poster/MSNet1.png)
   
 Figura 7 mostra uma organização com dois locais, 1 do local em que o Noroeste dos Estados Unidos e local 2 nordeste do Estados Unidos. Eles são conectados por um provedor WAN para qualquer. Esta organização também tem uma conexão ExpressRoute para um local de correspondência da Microsoft na Costa Oeste. Tráfego de local 2 da região nordeste destinado a um datacenter Costa Leste deve viagens por toda WAN a organização da Costa Oeste, para o local de correspondência do Microsoft e, em seguida, volta em todo o país através da rede de nuvem da Microsoft para da Costa Leste Datacenter.
   
@@ -236,11 +236,11 @@ De um escritório regional, apropriadas tráfego do Office 365 para:
     
 - Centros de dados do Office 365 em outro continente viajam através da rede de nuvem Microsoft intercontinentais.
     
-Para mais informações, consulte:
+Para saber mais, confira:
   
 - [Azure ExpressRoute treinamento do Office 365](https://channel9.msdn.com/series/aer/)
     
-- [Planejamento de rede e ajuste de desempenho para Office 365](https://aka.ms/tune)
+- [Planejamento de rede e ajuste de desempenho para o Office 365](https://aka.ms/tune)
     
 - [Gerenciamento de desempenho do Office 365](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
@@ -258,7 +258,7 @@ As opções a seguir também podem ser incorporadas em sua implantação Express
     
 Consulte estes recursos adicionais para obter mais informações:
   
-- [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute para Office 365](https://aka.ms/expressrouteoffice365)
     
 - [Azure ExpressRoute treinamento do Office 365](https://channel9.msdn.com/series/aer/)
     
@@ -266,7 +266,7 @@ Consulte estes recursos adicionais para obter mais informações:
     
 ## <a name="next-step"></a>Próxima etapa
 
-[Projetando a rede para o Microsoft SaaS](designing-networking-for-microsoft-saas.md)
+[Criação de rede para o Microsoft SaaS](designing-networking-for-microsoft-saas.md)
 
 ## <a name="see-also"></a>Confira também
 
