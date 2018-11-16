@@ -64,6 +64,10 @@
       "Publish",
       "Pdf"
     ],
+    "live-sxs": [
+    "Publish",
+    "Pdf"
+    ],
     "master": [
       "Publish",
       "Pdf"
