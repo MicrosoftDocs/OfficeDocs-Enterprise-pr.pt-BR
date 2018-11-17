@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitado no SharePoint Online. As opções e a configuração da navegação afeta significativamente o desempenho e escalabilidade de sites no SharePoint Online.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957446"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547173"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opções de navegação para o SharePoint Online
 
@@ -193,7 +193,7 @@ Essa abordagem envolve a criação de uma página mestra personalizada e substit
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Os resultados são atribuídos à matriz self.nodes e uma hierarquia é compilada sem os objetos usando linq.js atribuindo a saída para um self.heirarchy de matriz. Esta matriz é o objeto que é vinculado ao HTML. Isso é feito na função toggleView() passando o objeto self para a função ko.applyBinding().<br/>Em seguida, isso faz a matriz de hierarquia deve ser vinculado a seguinte HTML:<br/>
+8. Os resultados são atribuídos à matriz self.nodes e uma hierarquia é compilada sem os objetos usando linq.js atribuindo a saída para um self.hierarchy de matriz. Esta matriz é o objeto que é vinculado ao HTML. Isso é feito na função toggleView() passando o objeto self para a função ko.applyBinding().<br/>Em seguida, isso faz a matriz de hierarquia deve ser vinculado a seguinte HTML:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
