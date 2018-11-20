@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Saiba como configurar o OneDrive for Business com a funcionalidade multigeográfica.
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849867"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539133"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuração de locatário multigeográfico do Onedrive for Business
 
@@ -112,7 +112,7 @@ Há dois tipos de objetos de usuário no AAD: usuários somente de nuvem e usuá
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizar o local de dados preferencial do usuário usando o AD Connect 
 
-Se os usuários da empresa são sincronizados com um sistema do AD (Active Directory) no local ao AAD (Azure Active Directory), o PreferredDataLocation deve ser populado no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: fazer uma alteração na configuração padrão](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration) para configurar a sincronização do local preferencial de dados do Active Directory local para o Azure Active Directory.
+Se os usuários da empresa são sincronizados de um sistema local do AD (Active Directory) ao AAD (Azure Active Directory), o PreferredDataLocation deve ser preenchido no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: configurar o local preferencial de dados para recursos do Office 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) para configurar a sincronização do local preferencial de dados do Active Directory local com o Azure Active Directory.
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
