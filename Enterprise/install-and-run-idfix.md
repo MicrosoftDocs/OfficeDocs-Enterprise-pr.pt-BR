@@ -3,7 +3,6 @@ title: Instalar e executar a ferramenta IdFix do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 f1_keywords:
@@ -16,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Como instalar e executar a ferramenta IdFix do Office 365 para ajudar a limpar seu active directory antes de sincronizá-lo para o Office 365.
-ms.openlocfilehash: 642273c0171603d627a19273a78fe66662f4caaf
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: c485d8397aa32005a34b77f886b9bc8f4e857f1b
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539157"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674425"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Instalar e executar a ferramenta IdFix do Office 365
 
@@ -36,30 +35,30 @@ Se você não pode concluir essa tarefa, há algumas outras coisas que você pod
     
 ## <a name="what-you-need-to-run-idfix"></a>O que você precisa para executar o IdFix
 
-A maneira mais fácil de fazer o IdFix para cima e em execução é instalá-lo em um computador que está vinculado ao seu domínio. Você pode executá-lo no controlador de domínio, se desejar, mas não é necessário.
+A maneira mais fácil de fazer o IdFix para cima e em execução é instalá-lo em um computador que está vinculado ao seu domínio. Você pode executá-lo no controlador de domínio, se você quiser, mas não é necessário.
   
 ### <a name="idfix-hardware-requirements"></a>Requisitos de hardware do IdFix
 
-O computador no qual você instalar o IdFix precisa atender a estes requisitos de hardware:
+O computador onde você instala o IdFix precisa atender a estes requisitos mínimos de hardware:
   
-- 4 GB de RAM (mínimo)
-- 2 GB de espaço em disco (mínimo)
+- 4 GB RAM
+- 2 GB de espaço em disco rígido
     
 ### <a name="idfix-software-requirements"></a>Requisitos de software do IdFix
 
-O computador onde você instala o IdFix precisa deve estar associado ao mesmo domínio do Active Directory do qual você deseja sincronizar usuários para o Office 365. O computador também precisa ter o .NET Framework 4.0 estiver instalado. 
+O computador onde você instala o IdFix precisa estar associado ao mesmo domínio do Active Directory do qual você deseja sincronizar usuários para o Office 365. O computador também precisa ter o .NET Framework 4.0 estiver instalado. 
   
-Se você estiver executando o Windows Server 2008 ou Windows Server 2012, o .NET Framework provavelmente já está instalado. Se não, você pode [baixar o .NET 4.0 Centro de download da](https://go.microsoft.com/fwlink/p/?LinkId=400475) ou usando o Windows Update. 
+Se você estiver executando o Windows Server 2008 ou Windows Server 2012, o .NET Framework provavelmente já está instalado. Se não, você pode [baixar o .NET 4.0 Centro de download da](https://go.microsoft.com/fwlink/p/?LinkId=400475) ou por meio do Windows Update. 
   
 ### <a name="idfix-permissions-requirements"></a>Requisitos de permissões do IdFix
 
 A conta de usuário que você usa para executar o IdFix precisa ter acesso de leitura/gravação ao diretório.
   
-Se você não tiver certeza se a sua conta de usuário atende a esses requisitos, e você não souber como verificar, você pode instalar e executar o IdFix mesmo assim. Se a sua conta de usuário não tem as permissões corretas, o IdFix simplesmente exibirá um erro ao tentar executá-lo.
+Se você não tiver certeza se a sua conta de usuário atende a esses requisitos, e você não souber como verificar, você pode instalar e executar o IdFix. Se a sua conta de usuário não tem as permissões corretas, o IdFix simplesmente exibirá um erro ao tentar executá-lo.
   
 ## <a name="install-idfix"></a>Instalar o IdFix
 
-Para instalar o IdFix, baixe e descompacte o **IdFix.exe** como descrito nestas etapas: 
+Para instalar o IdFix, baixe e descompacte o **IdFix.exe**: 
   
 1. Faça logon no computador no qual deseja instalar a ferramenta IdFix.
     
@@ -69,7 +68,7 @@ Para instalar o IdFix, baixe e descompacte o **IdFix.exe** como descrito nestas 
     
 4. Quando solicitado, escolha **Executar**.
     
-5. Na caixa de diálogo **WinZip Self-Extractor** , na caixa de texto **descompactar pasta** , digite ou procure o local onde você deseja instalar a ferramenta IdFix. Por padrão, o IdFix é instalada no C:\Deployment ferramentas\. 
+5. Na caixa de diálogo **WinZip Self-Extractor** , na caixa de texto **descompactar pasta** , digite ou procure o local onde você deseja instalar a ferramenta IdFix. Por padrão, o IdFix é instalado em `C:\Deployment Tools\`. 
     
 6. Escolha **Descompacte**.
     
@@ -79,7 +78,7 @@ Após a instalação do IdFix, execute a ferramenta para procurar problemas no d
   
 1. Usando uma conta que tenha acesso de leitura/gravação ao diretório, faça logon no computador no qual você instalou o IdFix.
     
-2. No Explorador de Arquivos, vá para o local onde você instalou o IdFix. Se você escolheu a pasta padrão durante a instalação, vá para C:\Ferramentas de Implantação\IdFix.
+2. No Gerenciador de arquivos, vá até o local onde você instalou o IdFix. Se você escolher a pasta padrão durante a instalação, vá para `C:\Deployment Tools\IdFix`.
     
 3. Clique duas vezes em **IdFix.exe**. 
     
@@ -97,7 +96,7 @@ Após a instalação do IdFix, execute a ferramenta para procurar problemas no d
     
     ![Contagem de consulta e de erro do IdFix.](media/da0198a0-7d4d-4afe-a256-e82f1330ada5.JPG)
   
-7. Depois que o IdFix conclui a consulta, caso não haja erros em seu diretório, você pode seguir em frente e sincronizar seu diretório. Caso haja erros em seu diretório, é recomendável que você os corrija antes de sincronizar. Se você quiser informações específicas sobre os tipos de erros e recomendações sobre as melhores maneiras de corrigir cada um deles, consulte os links no final deste tópico. 
+7. Após a consulta ser concluída IdFix, você pode prosseguir e sincronizar seu diretório, se não houver nenhum erro. Se houver erros em seu diretório, é recomendável que você corrigi-los antes de sincronizar. Se desejar que as informações mais específicas sobre tipos de erros e recomendações sobre a melhor maneira de corrigir cada um deles, consulte os links no final deste tópico. 
     
     Embora não seja obrigatório corrigir os erros antes de sincronizar, é altamente recomendável que você, pelo menos, analise todos os erros retornados pelo IdFix.
     
@@ -123,6 +122,6 @@ Mais informações detalhadas estão disponíveis com estes tópicos:
     
 ## <a name="video-training"></a>Treinamento em vídeo
 
-Para obter mais informações, consulte a lição, [instalar e usar a ferramenta IDFix](https://support.office.com/article/4d81d73c-f172-4fd5-8542-f601c0c96aa9.aspx), levada a você pelo aprendizado LinkedIn.
+Para obter mais informações, consulte a lição, [instalar e usar a ferramenta IDFix](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US), levada a você pelo aprendizado LinkedIn.
   
 

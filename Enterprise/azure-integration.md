@@ -3,7 +3,6 @@ title: Integração do Azure com o Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Sua assinatura do Office 365 inclui uma assinatura do Windows Azure AD. Integre o Office 365 com o Azure AD, se desejar sincronização de senha ou serviço single sign-on com seu ambiente local.
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531834"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674415"
 ---
 # <a name="azure-integration-with-office-365"></a>Integração do Azure com o Office 365
 
@@ -57,7 +56,7 @@ Para obter mais informações sobre o Office 365 e o Azure AD, consulte [Underst
    
 Para outros recursos sobre o Microsoft Cloud e o Office 365, consulte estes recursos:
   
-- [Identidade do Microsoft Cloud para arquitetos corporativos](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [Identidade do Microsoft Cloud para arquitetos corporativos](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Implantar a DirSync (sincronização de diretórios) do Office 365 no Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
