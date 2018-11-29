@@ -1,9 +1,9 @@
 ---
-title: Projetando a rede para o Microsoft Azure PaaS
+title: Criação de rede para o Microsoft Azure PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,14 +14,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Resumo: Entenda como otimizar sua rede para o acesso ao Microsoft Azure PaaS.'
-ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915106"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872232"
 ---
-# <a name="designing-networking-for-microsoft-azure-paas"></a>Projetando a rede para o Microsoft Azure PaaS
+# <a name="designing-networking-for-microsoft-azure-paas"></a>Criação de rede para o Microsoft Azure PaaS
 
  **Resumo:** Compreenda como otimizar sua rede para o acesso ao Microsoft Azure PaaS.
   
@@ -101,15 +101,11 @@ Para obter mais informações, consulte [Gerenciador de tráfego](https://docs.m
 
 ## <a name="next-step"></a>Próxima etapa
 
-[Projetando a rede para o Microsoft Azure IaaS](designing-networking-for-microsoft-azure-iaas.md)
+[Criação de rede para o Microsoft Azure IaaS](designing-networking-for-microsoft-azure-iaas.md)
  
 ## <a name="see-also"></a>Confira também
 
 [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

@@ -3,7 +3,7 @@ title: Pontos de extremidade do Office 365 DoD do governo dos EUA
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Resumo: O Office 365 requer conectividade à Internet. Os pontos de extremidade abaixo devem ser alcançados para clientes que usam os planos do Office 365 US governamentais DoD apenas.'
 hideEdit: true
-ms.openlocfilehash: 769830741e2444a9a2caeaaef50d95ae7defc6f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+ms.openlocfilehash: f4412f18407eeb1f9adcb750687f75de8f704fc2
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933098"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872312"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Pontos de extremidade do Office 365 DoD do governo dos EUA
 
@@ -31,13 +31,13 @@ ms.locfileid: "25933098"
  **Resumo:** O Office 365 requer conectividade à Internet. Os pontos de extremidade abaixo devem ser alcançados para clientes que usam os planos do Office 365 US governamentais DoD apenas.
   
 > [!NOTE]
-> Microsoft lançou um serviço web baseado em REST para o endereço IP e as entradas de FQDN nesta página. Esse novo serviço ajudará você a configurar e atualizar os dispositivos de perímetro de rede, como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista, ou alterações específicas. Esse serviço substitui o documento XML vinculado a partir desta página, que foi preterida no 2 de outubro de 2018. Para testar esse novo serviço, vá para o [serviço Web](office-365-ip-web-service.md).
+> A Microsoft lançou um serviço web baseado em REST para as entradas de endereço IP e FQDN desta página. Esse novo serviço ajudará você a configurar e atualizar dispositivos de perímetro de rede como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista ou alterações específicas. Este serviço substitui o documento XML desta página, que foi preterido em 2 de outubro de 2018. Para experimentar o novo serviço, acesse [serviço Web](office-365-ip-web-service.md).
   
  **Pontos de extremidade do Office 365:** [global (incluindo GCC)](urls-and-ip-address-ranges.md) | [Office 365 operado pela 21 Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Alemanha](office-365-germany-endpoints.md)  |  *Office 365 Governo dos E.U.A. Departamento de Defesa* | [GCC High do Office 365 Governo dos E.U.A. ](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Última atualização:** 11/1/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [assinatura do Log de alterações](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** a lista completa no [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Última atualização:** 11/28/2018 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [assinatura do Log de alterações](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** a lista completa no [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
  Comece com [pontos de extremidade de gerenciamento do Office 365](managing-office-365-endpoints.md) entender as nossas recomendações para o gerenciamento de conectividade de rede usando esses dados. Dados de pontos de extremidade são atualizados no início de cada mês com novos endereços IP e URLs publicadas 30 dias antes de começar a sendo ativo. Isso permite que os clientes que ainda não tenham automatizada atualizações para concluir seus processos antes que é necessária a conectividade do nova. Pontos de extremidade também podem ser atualizados durante o mês, se necessário para questões de suporte de endereço, incidentes de segurança ou outros requisitos operacionais imediatos. Os dados mostrados nesta página abaixo são gerados a partir de serviços da web baseado em REST. Se você estiver usando um script ou um dispositivo de rede para acessar esses dados, você deve ir diretamente para o [serviço Web](office-365-ip-web-service.md) .
 

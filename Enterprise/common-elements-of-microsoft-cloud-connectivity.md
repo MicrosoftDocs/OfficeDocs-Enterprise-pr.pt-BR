@@ -3,7 +3,7 @@ title: Elementos comuns de conectividade de nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumo: Entenda os elementos comuns da infraestrutura de rede e como preparar sua rede.'
-ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
-ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
+ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25897024"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872212"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comuns de conectividade de nuvem da Microsoft
 
@@ -62,7 +62,7 @@ A Figura 1 mostra como uma rede local pode ser conectada para ofertas de nuvem d
     
 - **Servidor proxy:** Serviços de solicitações de conteúdo da web em nome de usuários da intranet. Um proxy reverso permite que as solicitações de entrada não solicitadas.
     
-- **Firewall externo:** Permite que o tráfego de saída e o tráfego de entrada especificado. Pode executar a conversão de endereço.
+- **Firewall externo:** Permite que o tráfego de saída e o tráfego de entrada especificado. Pode executar a conversão de endereço, inspeção de pacotes, quebrar SSL e inspecionar ou prevenção de perda de dados.
     
 - **Conexão WAN para ISP:** Uma conexão para um ISP, quem peers com a Internet para conectividade e roteamento baseado em operadora.
     

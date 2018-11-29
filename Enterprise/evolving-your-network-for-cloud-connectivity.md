@@ -3,7 +3,7 @@ title: Expandindo sua rede para conectividade de nuvem
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: 'Resumo: Entenda como a adoção de nuvem requer uma nova abordagem sobre investimentos em infraestrutura de rede.'
-ms.openlocfilehash: 16dbbafe46e903fa41163e12c1741a45b47c5f45
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915136"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872252"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Expandindo sua rede para conectividade de nuvem
 
@@ -44,6 +44,8 @@ Investimentos em infraestrutura de rede começam com conectividade. Investimento
 - **Plataforma Windows Azure como um serviço (PaaS)** Além dos investimentos para serviços SaaS da Microsoft, aplicativos de PaaS multi-site ou geograficamente distribuídos podem exigir a arquitetura do Gerenciador de tráfego do Windows Azure para distribuir o tráfego do cliente. Investimentos em andamento incluem testes de desempenho e monitoramento de distribuição de tráfego e failover.
     
 - **Azure infraestrutura como um serviço (IaaS)** Além dos investimentos para os serviços Microsoft SaaS e PaaS, a execução de cargas de trabalho IT no IaaS requer o design e configuração do Azure virtual redes que hospedar máquinas virtuais, conectividade segura para os aplicativos executados neles, roteamento, IP Lidando com, DNS e balanceamento de carga. Investimentos em andamento incluem o desempenho e monitoramento e solução de problemas de segurança.
+
+[Microsoft 365](https://www.microsoft.com/microsoft-365) é uma combinação do Office 365, gerenciamento corporativo + segurança (EMS) e Windows 10. Microsoft 365 combina vários SaaS e serviços do Azure para uma solução completa e inteligente que capacita todos para ser criativo e funcionam em conjunto com segurança.
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>Áreas de investimento para obter êxito na nuvem de rede
 
@@ -59,7 +61,7 @@ Mais suas viagens de tráfego diárias de produtividade para a nuvem, como exami
   
 ### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Para um SLA alto Azure, Office 365 e Dynamics 365, use ExpressRoute
 
-Embora você pode utilizar sua conexão de Internet atual da sua rede de borda, o tráfego de entrada e dos serviços de nuvem da Microsoft deve compartilhar pipe com outros tráfegos de intranet indo para a Internet. Além disso, o tráfego para os serviços de nuvem da Microsoft está sujeito a congestionamento de tráfego de Internet.
+Embora você possa usar sua conexão de Internet atual da sua rede de borda, o tráfego de entrada e dos serviços de nuvem da Microsoft deve compartilhar pipe com outros tráfegos de intranet indo para a Internet. Além disso, o tráfego para os serviços de nuvem da Microsoft está sujeito a congestionamento de tráfego de Internet.
   
 Para obter o melhor desempenho e um SLA alto, use ExpressRoute, uma conexão WAN dedicada entre sua rede e Windows Azure, Office 365, Dynamics 365 ou todos os três. 
   

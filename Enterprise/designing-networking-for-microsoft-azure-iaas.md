@@ -1,9 +1,9 @@
 ---
-title: Projetando a rede para o Microsoft Azure IaaS
+title: Criação de rede para o Microsoft Azure IaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,14 +14,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Resumo: Entenda como projetar rede otimizada para cargas de trabalho no Microsoft Azure IaaS.'
-ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915116"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872332"
 ---
-# <a name="designing-networking-for-microsoft-azure-iaas"></a>Projetando a rede para o Microsoft Azure IaaS
+# <a name="designing-networking-for-microsoft-azure-iaas"></a>Criação de rede para o Microsoft Azure IaaS
 
  **Resumo:** Compreenda como projetar rede otimizada para cargas de trabalho no Microsoft Azure IaaS.
   
@@ -92,11 +92,11 @@ Existem dois tipos de sub-redes em uma VNet, uma sub-rede de gateway e uma sub-r
 
 ![Figura 3: Os dois tipos de sub-redes no Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-A Figura 3 mostra uma VNet contendo uma sub-rede de gateway que contenha um gateway Azure e um conjunto de sub-redes de hospedagem de máquinas virtuais contendo as máquinas virtuais.
+A Figura 3 mostra uma VNet contendo uma sub-rede de gateway que tem um gateway Azure e um conjunto de sub-redes de hospedagem de máquinas virtuais contendo as máquinas virtuais.
   
 A sub-rede do Azure gateway é necessário pelo Windows Azure para hospedar as duas máquinas virtuais do Azure gateway de. Especificar um espaço de endereçamento com pelo menos um comprimento de prefixo 29 bits (exemplo: 192.168.15.248/29). É recomendável um comprimento de prefixo 28 bits ou menor, especialmente se você estiver planejando usar ExpressRoute.
   
-Uma prática recomendada para determinar o espaço de endereço da sub-rede Azure gateway é o seguinte:
+Uma prática recomendada para determinar o espaço de endereço da sub-rede gateway Azure é:
   
 1. Decida sobre o tamanho da sub-rede gateway.
     
@@ -123,11 +123,11 @@ Azure usa os 3 primeiros endereços em cada sub-rede. Portanto, o número de end
   
 |**Máquinas virtuais necessárias**|**Bits de host**|**Tamanho de sub-rede**|
 |:-----|:-----|:-----|
-|1 a 3  <br/> |3  <br/> |/29  <br/> |
-|4 a 11  <br/> |4  <br/> |/28  <br/> |
-|12 a 27  <br/> |5  <br/> |/27  <br/> |
-|28 a 59  <br/> |6  <br/> |/26  <br/> |
-|60 a 123  <br/> |7  <br/> |/25  <br/> |
+|1 a 3  <br/> |3   <br/> |/29  <br/> |
+|4 a 11  <br/> |4   <br/> |/28  <br/> |
+|12 a 27  <br/> |5   <br/> |/27  <br/> |
+|28 a 59  <br/> |6   <br/> |/26  <br/> |
+|60 a 123  <br/> |7   <br/> |/25  <br/> |
    
  **Tabela 3: requisitos de máquina Virtual e seus tamanhos de sub-rede**
   
@@ -419,22 +419,17 @@ Um exemplo de uma carga de trabalho de TI hospedado no Windows Azure IaaS intran
 
 ![Farm de alta disponibilidade do SharePoint Server 2016 no Azure IaaS](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-Figura 19 mostra os nove servidores de um farm do SharePoint Server 2016 implantado em um VNet entre locais que usa balanceadores de carga interno para as camadas de front-end e de dados. Para obter mais informações, incluindo design passo a passo e instruções de implantação, consulte [2016 do SharePoint Server in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx).
+Figura 19 mostra os nove servidores de um farm do SharePoint Server 2016 implantado em um VNet entre locais que usa balanceadores de carga interno para as camadas de front-end e de dados. Para obter mais informações, incluindo design passo a passo e instruções de implantação, consulte [2016 do SharePoint Server in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
   
 > [!TIP]
-> Para criar um farm do SharePoint Server 2016 de servidor único em um VNet simulado entre locais, consulte [Intranet do SharePoint Server 2016 no ambiente de desenvolvimento e teste do Azure](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx). 
+> Para criar um farm do SharePoint Server 2016 de servidor único em um VNet simulado entre locais, consulte [Intranet do SharePoint Server 2016 no ambiente de desenvolvimento e teste do Azure](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
   
-Para obter exemplos adicionais de cargas de trabalho do IT implantados nas máquinas virtuais em um virtual de Azure entre locais de rede, consulte [os cenários de nuvem híbrida para o Windows Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
+Para obter exemplos adicionais de cargas de trabalho do IT implantados nas máquinas virtuais em um virtual de Azure entre locais de rede, consulte [os cenários de nuvem híbrida para o Windows Azure IaaS](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
   
 ## <a name="see-also"></a>Confira também
-
-<a name="cross_prem"> </a>
 
 [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 
