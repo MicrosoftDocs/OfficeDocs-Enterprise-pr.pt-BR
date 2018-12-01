@@ -3,7 +3,7 @@ title: Visão geral da nuvem híbrida
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumo: Entenda a definição e elementos de nuvem da Microsoft híbrida.'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915816"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123308"
 ---
 # <a name="hybrid-cloud-overview"></a>Visão geral da nuvem híbrida
 
@@ -55,7 +55,7 @@ Cenários para a nuvem híbrida com os serviços de nuvem da Microsoft variam de
   
 - SaaS
     
-    Serviços Microsoft SaaS incluem o Office 365, Microsoft Intune e Microsoft Dynamics 365. Cenários de nuvem híbrida com o Microsoft SaaS combinam esses serviços com aplicativos ou serviços no local. Por exemplo, o Exchange Online em execução no Office 365 pode ser integrado ao Skype para 2015 Business que esteja implantados no local.
+    Serviços Microsoft SaaS incluem o Office 365, Microsoft Intune e Microsoft Dynamics 365. Cenários de nuvem híbrida com o Microsoft SaaS combinam esses serviços com aplicativos ou serviços no local. Por exemplo, o Exchange Online em execução no Office 365 pode ser integrado ao Skype para 2019 Business que esteja implantados no local.
     
 - PaaS Azure
     
@@ -90,8 +90,4 @@ Você deve considerar os seguintes elementos ao planejamento e implementação d
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 

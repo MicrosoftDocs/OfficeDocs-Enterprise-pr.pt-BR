@@ -3,7 +3,7 @@ title: Arquitetura de cenários de nuvem híbrida da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Resumo: Entenda a arquitetura das ofertas de nuvem da Microsoft híbrida.'
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914916"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123388"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura de cenários de nuvem híbrida da Microsoft
 
@@ -33,7 +33,7 @@ Use uma abordagem de arquitetura para planejar e implementar os cenários de nuv
   
 A Figura 1 mostra a pilha de nuvem híbrida Microsoft e sua camada, que incluem o local, rede, identidade, aplicativos e cenários e categoria do serviço na nuvem (SaaS Microsoft Azure PaaS e Azure PaaS).
   
-A camada de aplicativos e cenários contém os cenários de nuvem híbrida específica que são detalhados nos artigos adicionais desse modelo. A identidade, rede e locais camadas podem ser comuns para as categorias de serviço na nuvem (SaaS, PaaS ou PaaS).
+A camada de aplicativos e cenários tem os cenários de nuvem híbrida específica que são detalhados nos artigos adicionais desse modelo. A identidade, rede e locais camadas podem ser comuns para as categorias de serviço na nuvem (SaaS, PaaS ou PaaS).
   
 - Local
     
@@ -68,8 +68,4 @@ Muitas empresas, incluindo Microsoft, usam uma abordagem de três fases para ado
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

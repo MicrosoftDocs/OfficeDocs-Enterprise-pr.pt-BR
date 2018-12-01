@@ -3,7 +3,7 @@ title: Cenários de nuvem híbrida para a PaaS do Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Resumo: Entenda os cenários e arquitetura híbrida para a plataforma Microsoft como um serviço (PaaS)-based ofertas de nuvem no Windows Azure.'
-ms.openlocfilehash: e60bc92eed45e5d29fe0be80320dee65b8325028
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915006"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123328"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Cenários de nuvem híbrida para a PaaS do Azure
 
@@ -95,33 +95,9 @@ Este exemplo de aplicativo do Windows Azure PaaS híbrido é um aplicativo móve
     
 Porque o provedor de identidade local foi sincronizado com o Azure AD, o aplicativo móvel personalizado e o aplicativo LOB possam validar nome da conta do usuário solicitante.
   
-## <a name="stretch-database-with-sql-server-2016"></a>Estender o banco de dados com o SQL Server 2016
-
-Alongar banco de dados é um recurso do SQL Server 2016 que permite transparente e segurança mover dados frio, como dados corporativos fechado em uma tabela grande que contém as informações de pedido de cliente, para um banco de dados SQL Alongar no Windows Azure.
-  
-Quando alongado, o conteúdo de uma instância do SQL Server, um banco de dados ou até mesmo em uma única tabela é a combinação de dados local no servidor do SQL Server 2016 e dados remotos no Windows Azure. Dados que se tornará qualificados para alongar automaticamente são movidos para o Azure pelo 2016 do SQL Server.
-  
-Figura 4 mostra o banco de dados de alongar com 2016 do SQL Server.
-  
-**Figura 4: Alongamento banco de dados com o SQL Server 2016**
-
-![Estender o banco de dados com o SQL Server 2016](media/Hybrid-Poster/Hybrid-Cloud-Stack-PaaS-Apps-SQL.png)
-  
-Na Figura 4, uma rede local hospeda um servidor executando o SQL Server 2016 com um pequeno banco de dados local. Azure PaaS hospeda uma instância do banco de dados do SQL Server Alongar Azure com a parte estendida do banco de dados. Consultas de T-SQL de um usuário local enviadas ao SQL server no local com segurança são encaminhadas para o Azure SQL Alongar banco de dados, que retorna os resultados ao usuário solicitante.
-  
- Consultas de usuário que incluem os dados históricos transparente são encaminhadas para o banco de dados Alongar do SQL Azure. As consultas não precisará ser escritos novamente, mesmo que a tabela é alongada.
-  
-Banco de dados Alongar fornece uma opção econômica para armazenamento de longo prazo e transparente acesso a dados históricos. Ele também resolve problemas de desempenho e disponibilidade que surgem quando tabelas tornam-se muito grandes.
-  
-Para obter mais informações, consulte [Alongar banco de dados](https://msdn.microsoft.com/library/dn935011.aspx).
-  
 ## <a name="see-also"></a>Confira também
 
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
