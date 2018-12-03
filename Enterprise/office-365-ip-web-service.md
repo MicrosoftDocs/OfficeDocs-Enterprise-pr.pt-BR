@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para você identificar e diferenciar melhor o tráfego de rede do Office 365, um novo serviço Web publica pontos de extremidade do Office 365, permitindo avaliar, configurar e se manter atualizado em relação às alterações com mais facilidade. Esse novo serviço Web substitui os arquivos XML para download que estão disponíveis atualmente.
-ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697977"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985766"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**URL do serviço Web e endereço IP do Office 365**
 
@@ -68,7 +68,7 @@ Há um parâmetro para o método de versão Web:
 - **Format=JSON** | **CSV** | **RSS** – além dos formatos JSON e CSV, o método de versão Web também é compatível com RSS. Use-o com o parâmetro allVersions=true para solicitar um RSS feed que pode ser usado com o Outlook ou outros leitores de RSS.
 - **Instance** – parâmetro de roteamento. Este parâmetro opcional especifica a instância para a qual a versão deve ser retornada. Caso seja omitido, todas as instâncias serão retornadas. As instâncias válidas são: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
 
-O resultado do método de versão Web pode ser um único registro ou uma matriz de registros. Os elementos de cada registro são:
+A versão do método Web não é limitado por taxa e nunca retornará o código de resposta HTTP 429. A resposta à versão do método Web inclui um cabeçalho de controle de cache que recomenda o armazenamento em cache dos dados por 1 hora. O resultado do método de versão Web pode ser um único registro ou uma matriz de registros. Os elementos de cada registro são:
 
 - instance – um nome curto da instância de serviço do Office 365.
 - latest – a versão mais recente dos pontos de extremidade da instância especificada.
@@ -168,12 +168,14 @@ Este URI mostra um RSS feed das versões publicadas que contêm links para a lis
 
 ## <a name="endpoints-web-method"></a>**Método Web de pontos de extremidade**
 
-O método Web de pontos de extremidade retorna todos os registros de intervalos de endereço IP e as URLs que compõem o serviço do Office 365. Embora os dados mais recentes do método Web de pontos de extremidade devam ser usados para a configuração de dispositivos de rede, os dados podem ser armazenados em cache por até 30 dias após a publicação, devido à notificação prévia fornecida para adições. Os parâmetros para o método Web de pontos de extremidade são:
+O método Web de pontos de extremidade retorna todos os registros de intervalos de endereço IP e as URLs que compõem o serviço do Office 365. Embora os dados mais recentes do método Web de pontos de extremidade devam ser usados para a configuração de dispositivos de rede, os dados podem ser armazenados em cache por até 30 dias após a publicação, devido à notificação prévia fornecida para adições. Recomendamos que você chame o método da Web ponto de extremidade somente quando o método da Web da versão indicar que uma nova versão dos dados está disponível. Os parâmetros para o método Web de pontos de extremidade são:
 
 - **ServiceAreas** – parâmetro de cadeia de caracteres de consulta. Uma lista separada por vírgulas de áreas de serviço. Os itens válidos são Common, Exchange, SharePoint, Skype. Como os itens de área de serviço do Common são um pré-requisito para todas as demais áreas de serviço, o serviço Web sempre os incluirá. Caso você não inclua esse parâmetro, todas as áreas de serviço serão retornadas.
 - **TenantName** – parâmetro de cadeia de caracteres de consulta. O nome do locatário do Office 365. O serviço Web busca o nome fornecido e o insere em partes das URLs que incluem o nome do locatário. Se você não fornecer o nome do locatário, essas partes das URLs terão o caractere curinga (\*).
 - **NoIPv6** – parâmetro de cadeia de caracteres de consulta. Defina como verdadeiro para excluir os endereços IPv6 dos resultados, por exemplo, se você não usar o IPv6 na sua rede.
 - **Instance** – parâmetro de roteamento. Esse parâmetro obrigatório especifica a instância para a qual os pontos de extremidade devem ser retornados. As instâncias válidas são: Worldwide, China, Germany, USGovDoD, USGovGCCHigh.
+
+Se você ligar os pontos de extremidade web método um número não razoável do mesmo endereço IP que você pode receber um código 429 de várias solicitações no HTTP. A maioria das pessoas não verá isso. Se você receber o código de resposta, você deve esperar 1 hora antes de chamar o método novamente. Planeje somente ligar os pontos de extremidade do método Web quando o método da versão Web versão indica que uma nova versão está disponível. 
 
 O resultado do método Web de pontos de extremidade é uma matriz de registros com cada registro representando um conjunto de pontos de extremidade. Os elementos de cada registro são:
 
@@ -239,11 +241,22 @@ O parâmetro para o método Web de alterações é:
 
 - **Version** – parâmetro obrigatório de roteamento de URL. A versão implementada atualmente e aquela a partir da qual você deseja ver as alterações. O formato é _AAAAMMDDNN_.
 
+O método de alterações da Web é limitado por taxa da mesma forma como o método Web de pontos de extremidade. Se você receber um código da resposta HTTP 429 em seguida, você deve esperar 1 hora antes de chamar novamente. 
+
 O resultado do método Web de alterações é uma matriz de registros com cada registro representando uma alteração em uma versão específica dos pontos de extremidade. Os elementos de cada registro são:
 
 - id – a ID imutável do registro de alterações.
 - endpointSetId – a ID do registro do conjunto de pontos de extremidade que é alterado. Obrigatório.
 - disposition – pode ser de alteração, adição ou remoção e descreve o que a alteração fez com o registro de conjunto de pontos de extremidade. Obrigatório.
+- impacto – nem todas as alterações serão igualmente importantes para todo ambiente. Isso descreve o impacto esperado em um ambiente de perímetro de rede corporativa como resultado dessa alteração. Esse atributo está incluído somente nos registros de alteração da versão 2018112800 e versões posteriores. As opções para o impacto são:
+  - AddedIp – um endereço de IP foi adicionado ao Office 365 e estará ativo no serviço em breve. Isso representa uma alteração que você precisa realizar em um firewall ou em outro dispositivo de perímetro de rede de camada 3. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
+  - AddedIp – Uma URL foi adicionada ao Office 365 e estará ativa no serviço em breve. Isso representa uma alteração que você precisa realizar em um servidor proxy ou dispositivos de análise de perímetro URL. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
+  - AddedIpAndUrl - um endereço de IP e URL foram adicionados. Isso representa uma alteração que você precisa realizar em um dispositivo de camada 3 firewall ou em um servidor proxy ou dispositivo de análise da URL. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
+  - RemovedIpOrUrl, pelo menos um endereço IP ou URL foi removido do Office 365. Você deve remover os pontos de extremidade de rede nos seus dispositivos de perímetro, mas não há nenhuma data limite para você fazer isso.
+  - ChangedIsExpressRoute – o atributo de suporte do ExpressRoute foi modificado. Se você usar o ExpressRoute será necessário tomar medidas dependendo da configuração.
+  - MovedIpOrUrl – Movemos um endereço IP ou uma Url entre esse conjunto de ponto de extremidade e outro. Geralmente, nenhuma ação é necessária.
+  - RemovedDuplicateIpOrUrl – Removemos um endereço IP ou uma Url duplicados, mas ele ainda é publicado para o Office 365. Geralmente, nenhuma ação é necessária.
+  - OtherNonPriorityChanges – alteramos algo menos crítico que todas as opções como um campo de anotações
 - version – a versão do conjunto de pontos de extremidade em que a alteração foi introduzida. Os números de versões estão no formato _AAAAMMDDNN_, em que NN é um número natural incrementado caso existam várias versões a serem publicadas em um único dia.
 - previous – uma estrutura que detalha valores anteriores de elementos alterados no conjunto de pontos de extremidade. Isso não será incluído em novos conjuntos de pontos de extremidade adicionados. Inclui tcpPorts, udpPorts, ExpressRoute, categoria, obrigatório, observações.
 - current – uma estrutura que detalha valores atualizados de elementos de alteração no conjunto de pontos de extremidade. Inclui tcpPorts, udpPorts, ExpressRoute, categoria, obrigatório, observações.
