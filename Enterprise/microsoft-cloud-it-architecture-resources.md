@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumo: Saiba mais sobre as plataformas e serviços em nuvem da Microsoft Veja nosso mapa do Enterprise Cloud, explore nossa série de arquitetura de nuvem e muito mais.'
-ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525842"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985756"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
@@ -137,7 +137,7 @@ Como a nuvem natalina e seus duendes usam as ofertas de nuvem da Microsoft para 
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do cartaz The Santa Cloud (Nuvem natalina)](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)          ](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Para determinar quem é levado e quem é bonzinho, e os presentes a serem entregues em 24 de dezembro, o Papai Noel e seu departamento de TI de elfos usam o Office 365, o Azure, o Dynamics 365 e o Intune.  <br/>|
+|[![Imagem em miniatura do cartaz The Santa Cloud (Nuvem natalina)](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [Exibir online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Para determinar quem é levado ou quem é bonzinho, e os presentes a serem entregues em 24 de dezembro, o Papai Noel e seu departamento de TI de elfos usam o Office 365, o Azure, o Dynamics 365 e o Intune.  <br/>|
    
 <a name="BKMK_o365solutions"> </a>
 ## <a name="office-365-enterprise-solution-series"></a>Office 365 Enterprise Solution Series
