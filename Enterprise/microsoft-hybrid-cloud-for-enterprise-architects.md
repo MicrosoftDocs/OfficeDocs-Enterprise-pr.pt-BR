@@ -3,7 +3,7 @@ title: Nuvem híbrida da Microsoft para arquitetos corporativos
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Resumo: o que os arquitetos de TI precisam saber sobre cenários híbridos usando plataformas e serviços em nuvem da Microsoft.'
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872242"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123368"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 
@@ -33,8 +33,7 @@ Este artigo conecta você a um conjunto de artigos que descrevem o que os arquit
 [![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 Você também pode ver todos os modelos nos [recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md).
   
@@ -61,13 +60,9 @@ Confira as seguintes seções:
     A arquitetura de cenário híbrido do Azure IaaS e a descrição de um aplicativo de LOB (linha de negócios) hospedado no Azure IaaS.
     
 > [!NOTE]
-> Estes artigos abordam o lançamento de **junho de 2017** do cartaz Nuvem híbrida da Microsoft para arquitetos corporativos.
+> Esses artigos refletem a versão de **dezembro de 2018** do cartaz Nuvem híbrida da Microsoft para arquitetos corporativos.
   
 ## <a name="see-also"></a>Confira também
 
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-
-[Roteiro do Enterprise Cloud da Microsoft: recursos para os responsáveis pelas decisões de TI](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
