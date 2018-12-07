@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumo: Entenda os cenários e arquitetura híbrida para a infra-estrutura da Microsoft como um serviço (IaaS)-based ofertas de nuvem no Windows Azure.'
-ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 441565adae46d50ad1b7139525ff3146c5f88ca3
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123238"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181032"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Cenários de nuvem híbrida para a IaaS do Azure
 
@@ -51,21 +51,21 @@ Para cada camada da arquitetura:
     
     Contém os servidores de identidade que são sincronizados com os servidores de identidade em execução no Windows Azure. Também pode conter recursos que podem acessar VMs em execução no Azure, como a infraestrutura de gerenciamento de armazenamento e sistemas.
     
-## <a name="dirsync-server-for-office-365"></a>Servidor DirSync para o Office 365
+## <a name="directory-synchronization-server-for-office-365"></a>Servidor de sincronização de diretório para o Office 365
 
-Executar o seu servidor de sincronização (DirSync) do diretório de um VNet do Azure, conforme mostrado na Figura 2, é um exemplo de estendendo sua infra-estrutura de computação e identidade para a nuvem.
+Executar o seu servidor de sincronização de diretório de um VNet do Azure, conforme mostrado na Figura 2, é um exemplo de estendendo sua infra-estrutura de computação e identidade para a nuvem.
   
-**Figura 2: Servidor de DirSync para o Office 365 no Azure IaaS**
+**Figura 2: Servidor de sincronização de diretório para o Office 365 no Azure IaaS**
 
-![Servidor DirSync para Office 365 no Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
+![Servidor de sincronização de diretório para o Office 365 no Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Na Figura 2, uma rede local hospeda uma infraestrutura do Windows Server AD, com um servidor proxy e um roteador em sua borda. O roteador conecta-se para um gateway Azure na extremidade de uma VNet Azure com uma conexão de VPN ou ExpressRoute-to-site. Dentro do VNet, um servidor DirSync executa Connect do Azure AD.
+Na Figura 2, uma rede local hospeda uma infraestrutura do Windows Server AD, com um servidor proxy e um roteador em sua borda. O roteador conecta-se para um gateway Azure na extremidade de uma VNet Azure com uma conexão de VPN ou ExpressRoute-to-site. Dentro do VNet, um servidor de sincronização de diretório executa Connect do Azure AD.
   
-Um servidor DirSync para o Office 365 sincroniza a lista de contas no Windows Server AD com o locatário do Azure AD de uma assinatura do Office 365.
+Um servidor de sincronização de diretório para o Office 365 sincroniza a lista de contas no Windows Server AD com o locatário do Azure AD de uma assinatura do Office 365.
   
-Um servidor de DirSync é um servidor baseado no Windows que executa o Connect do Azure AD. Para provisionamento mais rápidos ou reduzir o número de servidores locais em sua organização, implante seu servidor DirSync em uma rede virtual (VNet) no Windows Azure IaaS.
+Um servidor de sincronização de diretório é um servidor baseado no Windows que executa o Connect do Azure AD. Para provisionamento mais rápidos ou reduzir o número de servidores locais em sua organização, implante seu servidor de sincronização de diretório em uma rede virtual (VNet) no Windows Azure IaaS.
   
-O servidor DirSync sonda Windows Server AD para que as alterações e sincroniza-los com assinatura do Office 365.
+O servidor de sincronização de diretório sonda Windows Server AD para que as alterações e sincroniza-los com assinatura do Office 365.
   
 Para obter mais informações, consulte [Implantar o Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
