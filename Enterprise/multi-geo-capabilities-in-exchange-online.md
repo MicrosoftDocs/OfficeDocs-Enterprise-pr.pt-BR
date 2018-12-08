@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no Exchange Online.
-ms.openlocfilehash: 5f34a2da47b9767aa9dfe22c6be7237951128960
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849917"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200734"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos de multi-Geo no Exchange Online
 
@@ -41,7 +41,7 @@ Os locais de geo a seguir estão disponíveis para uso em uma configuração de 
 
 - França
 
-- Índia (atualmente disponível apenas a clientes com os endereços de cobrança na Índia)
+- Índia
 
 - Japão
 
