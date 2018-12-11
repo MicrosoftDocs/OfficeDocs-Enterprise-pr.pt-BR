@@ -3,7 +3,7 @@ title: ExpressRoute para conectividade de nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumo: Entenda como ExpressRoute pode ajudá-lo com mais rápidas e confiáveis de conexões para os serviços de nuvem da Microsoft e plataformas.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872322"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213968"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para conectividade de nuvem da Microsoft
 
@@ -222,11 +222,11 @@ Com várias conexões de ExpressRoute Premium, você pode ter:
     
 - Maior disponibilidade para o Microsoft cloud global quando uma conexão de ExpressRoute local fica indisponível.
     
-ExpressRoute Premium é necessário para conexões de ExpressRoute baseadas no Office 365. No entanto, não há nenhum custo adicional para empresas com usuários de 500 ou mais licenciados.
+ExpressRoute Premium é necessário para conexões de ExpressRoute baseadas no Office 365.
   
 **Figura 9: Mundial Microsoft cloud network**
 
-![Figura 9: A rede de nuvem da Microsoft em todo o mundo](media/Network-Poster/MSNet3.png)
+![Figura 9: Mundial Microsoft cloud network](media/Network-Poster/MSNet3.png)
   
 Figura 9 mostra um diagrama lógico da rede da nuvem Microsoft no mundo todo, com redes que ultrapassam o continentes e regiões do mundo e suas interconexões. Com uma parte da rede de nuvem da Microsoft em cada continente, uma empresa global cria ExpressRoute Premium conexões de seus escritórios regionais hub para local Microsoft aos locais.
   
@@ -270,7 +270,7 @@ Consulte estes recursos adicionais para obter mais informações:
 
 ## <a name="see-also"></a>Confira também
 
-[Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
+[Rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
