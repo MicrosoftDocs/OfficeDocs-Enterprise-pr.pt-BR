@@ -1,5 +1,5 @@
 ---
-title: "Diagrama acessível - o recurso integração entre produtos Microsoft Office Server"
+title: Diagrama acessível - o recurso integração entre produtos Microsoft Office Server
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: "Este artigo é uma versão de texto acessível do diagrama chamado o recurso integração entre produtos Microsoft Office Server - SharePoint Server, Exchange Server, Lync Server e Office Online."
+description: Este artigo é uma versão de texto acessível do diagrama chamado o recurso integração entre produtos Microsoft Office Server - SharePoint Server, Exchange Server, Lync Server e Office Online.
 ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504214"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama acessível - o recurso integração entre produtos Microsoft Office Server
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193681"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração de substituição para o Office 365
 

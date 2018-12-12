@@ -1,5 +1,5 @@
 ---
-title: "Amostra de Design de diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013"
+title: Amostra de Design de diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
-description: "Este artigo é uma versão de texto acessível do diagrama denominado amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013."
+description: 'Este artigo é uma versão de texto acessível do diagrama denominado amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013.'
 ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17502754"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama acessível - exemplo de Design: sites da Internet no Microsoft Azure para o SharePoint 2013
 

@@ -3,7 +3,6 @@ title: Configuração de locatário multigeográfico do Onedrive for Business
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +10,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Saiba como configurar o OneDrive for Business com a funcionalidade multigeográfica.
-ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
-ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
+ms.openlocfilehash: f521470b024817bbe53bbf3cbb1dd81e2a4a6754
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539133"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200696"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuração de locatário multigeográfico do Onedrive for Business
 
@@ -61,6 +60,10 @@ Você deve definir uma localização satélite para cada localização geográfi
 <tr class="even">
 <td align="left">França</td>
 <td align="left">FRA</td>
+</tr>
+<tr class="even">
+<td align="left">Índia</td>
+<td align="left">IND</td>
 </tr>
 <tr class="odd">
 <td align="left">Japão</td>

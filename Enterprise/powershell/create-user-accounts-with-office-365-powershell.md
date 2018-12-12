@@ -1,5 +1,5 @@
 ---
-title: "Criar contas de usuários usando o Office 365 PowerShell"
+title: Criar contas de usuários usando o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: "Saiba como usar o Office 365 PowerShell para criar contas de usuários no Office 365."
+description: Saiba como usar o Office 365 PowerShell para criar contas de usuários no Office 365.
 ms.openlocfilehash: e5fed572d0b835a42071e77b4aeaf8714f2178bd
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17553254"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Criar contas de usuários usando o Office 365 PowerShell
 

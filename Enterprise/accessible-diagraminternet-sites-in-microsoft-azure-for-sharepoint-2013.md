@@ -1,5 +1,5 @@
 ---
-title: "Diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013"
+title: Diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "Este artigo é uma versão de texto acessível do diagrama denominada sites da Internet no Microsoft Azure para SharePoint 2013."
+description: Este artigo é uma versão de texto acessível do diagrama denominada sites da Internet no Microsoft Azure para SharePoint 2013.
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503044"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013
 

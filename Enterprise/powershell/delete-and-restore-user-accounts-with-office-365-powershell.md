@@ -1,5 +1,5 @@
 ---
-title: "Excluir e restaurar contas de usuários usando o Office 365 PowerShell"
+title: Excluir e restaurar contas de usuários usando o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,12 +14,13 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365."
+description: Saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365.
 ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552774"
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Excluir e restaurar contas de usuários usando o Office 365 PowerShell
 

@@ -1,5 +1,5 @@
 ---
-title: "Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell"
+title: Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: "Resumo: Usar o PowerShell do Office 365 para atribuir configurações de comunicação com Skype para políticas de negócios Online de por usuário."
+description: 'Resumo: Usar o PowerShell do Office 365 para atribuir configurações de comunicação com Skype para políticas de negócios Online de por usuário.'
 ms.openlocfilehash: 7f819b619c5b3607c98c10791fe30c3944e862a4
 ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "17114802"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
 

@@ -1,5 +1,5 @@
 ---
-title: "Usar o PowerShell para realizar uma migração em estágios para o Office 365"
+title: Usar o PowerShell para realizar uma migração em estágios para o Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: "Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365."
+description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365.'
 ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17504364"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração em estágios para o Office 365
 
@@ -240,7 +241,7 @@ Ative as contas de usuário do Office 365 para as contas migradas atribuindo lic
 ### <a name="step-8-complete-post-migration-tasks"></a>Etapa 8: concluir tarefas pós-migração
 <a name="BK_Postmigration"> </a>
 
-- **Crie um registro DNS de Descoberta Automática para que os usuários possam facilmente acessar suas caixas de correio.**Após todas as caixas de correio locais serem migradas para o Office 365, você pode configurar um registro DNS de Descoberta Automática para sua organização do Office 365 e habilitar os usuários a se conectarem facilmente a suas novas caixas de correio do Office 365 com o Outlook e clientes móveis. Esse novo registro DNS de descoberta automática tem que usar o mesmo namespace que você usar para a organização do Office 365. Por exemplo, se seu namespace baseado em nuvem for cloud.contoso.com, o registro DNS de Descoberta Automática a ser criado será autodiscover.cloud.contoso.com.
+- **Crie um registro DNS de Descoberta Automática para que os usuários possam facilmente acessar suas caixas de correio.** Após todas as caixas de correio locais serem migradas para o Office 365, você pode configurar um registro DNS de Descoberta Automática para sua organização do Office 365 e habilitar os usuários a se conectarem facilmente a suas novas caixas de correio do Office 365 com o Outlook e clientes móveis. Esse novo registro DNS de descoberta automática tem que usar o mesmo namespace que você usar para a organização do Office 365. Por exemplo, se seu namespace baseado em nuvem for cloud.contoso.com, o registro DNS de Descoberta Automática a ser criado será autodiscover.cloud.contoso.com.
     
     O Office 365 usa um registro CNAME para implementar o serviço Descoberta Automática para o Outlook e para clientes móveis. O registro CNAME de Descoberta Automática deve conter as seguintes informações:
     

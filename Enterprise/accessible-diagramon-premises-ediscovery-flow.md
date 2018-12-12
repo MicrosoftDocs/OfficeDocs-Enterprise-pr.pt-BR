@@ -1,5 +1,5 @@
 ---
-title: "Diagrama acessível - eDiscovery local fluxo"
+title: Diagrama acessível - eDiscovery local fluxo
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,12 +10,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
-description: "Este artigo é uma versão de texto acessível do diagrama denominado eDiscovery local fluxo."
+description: Este artigo é uma versão de texto acessível do diagrama denominado eDiscovery local fluxo.
 ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
 ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/09/2018
+ms.locfileid: "17503054"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagrama acessível - eDiscovery local fluxo
 
