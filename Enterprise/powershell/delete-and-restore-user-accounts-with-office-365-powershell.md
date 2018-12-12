@@ -1,5 +1,5 @@
 ---
-title: "Excluir e restaurar contas de usuários usando o Office 365 PowerShell"
+title: Excluir e restaurar contas de usuários usando o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,124 +14,125 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365."
+description: Saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365.
 ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "17552774"
 ---
-# <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a><span data-ttu-id="57f7b-103">Excluir e restaurar contas de usuários usando o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="57f7b-103">Delete and restore user accounts with Office 365 PowerShell</span></span>
+# <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a><span data-ttu-id="7ec07-103">Excluir e restaurar contas de usuários usando o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="7ec07-103">Delete and restore user accounts with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="57f7b-104">**Resumo:** saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365.</span><span class="sxs-lookup"><span data-stu-id="57f7b-104">**Summary:**  Learn how to use Office 365 PowerShell to delete and restore Office 365 user accounts.</span></span>
+<span data-ttu-id="7ec07-104">**Resumo:** saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365.</span><span class="sxs-lookup"><span data-stu-id="7ec07-104">**Summary:**  Learn how to use Office 365 PowerShell to delete and restore Office 365 user accounts.</span></span>
   
-<span data-ttu-id="57f7b-p101">Quando você usa o Office 365 PowerShell para excluir uma conta de usuário, ela não é excluída permanentemente. Você pode restaurar a conta de usuário excluída no prazo de 30 dias.</span><span class="sxs-lookup"><span data-stu-id="57f7b-p101">When you use Office 365 PowerShell to delete a user account, the account isn't permanently deleted. You can restore the deleted user account within 30 days.</span></span>
+<span data-ttu-id="7ec07-p101">Quando você usa o Office 365 PowerShell para excluir uma conta de usuário, ela não é excluída permanentemente. Você pode restaurar a conta de usuário excluída no prazo de 30 dias.</span><span class="sxs-lookup"><span data-stu-id="7ec07-p101">When you use Office 365 PowerShell to delete a user account, the account isn't permanently deleted. You can restore the deleted user account within 30 days.</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="57f7b-107">Antes de começar</span><span class="sxs-lookup"><span data-stu-id="57f7b-107">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="7ec07-107">Antes de começar</span><span class="sxs-lookup"><span data-stu-id="7ec07-107">Before you begin</span></span>
 
-- <span data-ttu-id="57f7b-p102">Os procedimentos deste tópico exigem que você se conecte ao Office 365 PowerShell. Para obter instruções, confira [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="57f7b-p102">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
+- <span data-ttu-id="7ec07-p102">Os procedimentos deste tópico exigem que você se conecte ao Office 365 PowerShell. Para obter instruções, confira [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="7ec07-p102">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
     
-- <span data-ttu-id="57f7b-110">Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _-All_, somente as primeiras 500 contas serão retornadas.</span><span class="sxs-lookup"><span data-stu-id="57f7b-110">If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.</span></span>
+- <span data-ttu-id="7ec07-110">Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _-All_, somente as primeiras 500 contas serão retornadas.</span><span class="sxs-lookup"><span data-stu-id="7ec07-110">If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.</span></span>
     
-## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a><span data-ttu-id="57f7b-111">Usar o Office 365 PowerShell para bloquear o acesso a contas de usuário individuais</span><span class="sxs-lookup"><span data-stu-id="57f7b-111">Use Office 365 PowerShell to block access to individual user accounts</span></span>
-<span data-ttu-id="57f7b-112"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="57f7b-112"><a name="ShortVersion"> </a></span></span>
+## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a><span data-ttu-id="7ec07-111">Usar o Office 365 PowerShell para bloquear o acesso a contas de usuário individuais</span><span class="sxs-lookup"><span data-stu-id="7ec07-111">Use Office 365 PowerShell to block access to individual user accounts</span></span>
+<span data-ttu-id="7ec07-112"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="7ec07-112"><a name="ShortVersion"> </a></span></span>
 
-<span data-ttu-id="57f7b-113">Para excluir uma conta de usuário, use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="57f7b-113">To delete a user account, use the following syntax:</span></span>
+<span data-ttu-id="7ec07-113">Para excluir uma conta de usuário, use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="7ec07-113">To delete a user account, use the following syntax:</span></span>
   
 ```
 Remove-MsolUser -UserPrincipalName <Account>
 ```
 
-<span data-ttu-id="57f7b-114">Este exemplo exclui a conta de usuário BrendaF@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="57f7b-114">This example deletes the user account BelindaN@litwareinc.com.</span></span>
+<span data-ttu-id="7ec07-114">Este exemplo exclui a conta de usuário BrendaF@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="7ec07-114">This example deletes the user account BelindaN@litwareinc.com.</span></span>
   
 ```
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
-<span data-ttu-id="57f7b-115">Para restaurar uma conta de usuário excluída no período de tolerância de 30 dias, use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="57f7b-115">To restore a deleted user account within the 30-day grace period, use the following syntax:</span></span>
+<span data-ttu-id="7ec07-115">Para restaurar uma conta de usuário excluída no período de tolerância de 30 dias, use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="7ec07-115">To restore a deleted user account within the 30-day grace period, use the following syntax:</span></span>
   
 ```
 Restore-MsolUser -UserPrincipalName <Account>
 ```
 
-<span data-ttu-id="57f7b-116">Este exemplo restaura a conta excluída BrendaF@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="57f7b-116">This example restores the deleted account BelindaN@litwareinc.com.</span></span>
+<span data-ttu-id="7ec07-116">Este exemplo restaura a conta excluída BrendaF@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="7ec07-116">This example restores the deleted account BelindaN@litwareinc.com.</span></span>
   
 ```
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
- <span data-ttu-id="57f7b-117">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="57f7b-117">**Notes:**</span></span>
+ <span data-ttu-id="7ec07-117">**Observações:**</span><span class="sxs-lookup"><span data-stu-id="7ec07-117">**Notes:**</span></span>
   
-- <span data-ttu-id="57f7b-118">Para ver a lista de usuários excluídos que pode ser restaurados, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="57f7b-118">To see the list of deleted users that can be restored, run the following command:</span></span>
+- <span data-ttu-id="7ec07-118">Para ver a lista de usuários excluídos que pode ser restaurados, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="7ec07-118">To see the list of deleted users that can be restored, run the following command:</span></span>
     
   ```
   Get-MsolUser -All -ReturnDeletedUsers
   ```
 
-- <span data-ttu-id="57f7b-119">Se o nome UPN (nome principal do usuário) original da conta de usuário for usado por outra conta, use o parâmetro  _NewUserPrincipalName_ no lugar de _UserPrincipalName_ para especificar um UPN diferente ao restaurar a conta de usuário.</span><span class="sxs-lookup"><span data-stu-id="57f7b-119">If the user account's original user principal name is used by another account, use the  _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.</span></span>
+- <span data-ttu-id="7ec07-119">Se o nome UPN (nome principal do usuário) original da conta de usuário for usado por outra conta, use o parâmetro  _NewUserPrincipalName_ no lugar de _UserPrincipalName_ para especificar um UPN diferente ao restaurar a conta de usuário.</span><span class="sxs-lookup"><span data-stu-id="7ec07-119">If the user account's original user principal name is used by another account, use the  _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.</span></span>
     
-## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a><span data-ttu-id="57f7b-120">Usar o módulo PowerShell do Azure Active Directory V2 para remover uma conta de usuário</span><span class="sxs-lookup"><span data-stu-id="57f7b-120">Use the Azure Active Directory V2 PowerShell module to remove a user account</span></span>
-<span data-ttu-id="57f7b-121"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="57f7b-121"><a name="ShortVersion"> </a></span></span>
+## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a><span data-ttu-id="7ec07-120">Usar o módulo PowerShell do Azure Active Directory V2 para remover uma conta de usuário</span><span class="sxs-lookup"><span data-stu-id="7ec07-120">Use the Azure Active Directory V2 PowerShell module to remove a user account</span></span>
+<span data-ttu-id="7ec07-121"><a name="ShortVersion"> </a></span><span class="sxs-lookup"><span data-stu-id="7ec07-121"><a name="ShortVersion"> </a></span></span>
 
-<span data-ttu-id="57f7b-p103">Para usar o cmdlet **Remove-AzureADUser** no módulo PowerShell do Azure Active Directory V2, conecte-se primeiro à sua assinatura. Para conhecer as instruções, confira [Conectar-se com o módulo PowerShell do Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).</span><span class="sxs-lookup"><span data-stu-id="57f7b-p103">To use the **Remove-AzureADUser** cmdlet from the Azure Active Directory V2 PowerShell module, you must first connect to your subscription. For the instructions, see [Connect with the Azure Active Directory V2 PowerShell module](https://go.microsoft.com/fwlink/?linkid=842218).</span></span>
+<span data-ttu-id="7ec07-p103">Para usar o cmdlet **Remove-AzureADUser** no módulo PowerShell do Azure Active Directory V2, conecte-se primeiro à sua assinatura. Para conhecer as instruções, confira [Conectar-se com o módulo PowerShell do Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).</span><span class="sxs-lookup"><span data-stu-id="7ec07-p103">To use the **Remove-AzureADUser** cmdlet from the Azure Active Directory V2 PowerShell module, you must first connect to your subscription. For the instructions, see [Connect with the Azure Active Directory V2 PowerShell module](https://go.microsoft.com/fwlink/?linkid=842218).</span></span>
   
-<span data-ttu-id="57f7b-124">Após a conexão, use a seguinte sintaxe para remover uma conta de usuário individual:</span><span class="sxs-lookup"><span data-stu-id="57f7b-124">After you have connected, use the following syntax to remove an individual user account:</span></span>
+<span data-ttu-id="7ec07-124">Após a conexão, use a seguinte sintaxe para remover uma conta de usuário individual:</span><span class="sxs-lookup"><span data-stu-id="7ec07-124">After you have connected, use the following syntax to remove an individual user account:</span></span>
   
 ```
 Remove-AzureADUser -ObjectID <Account>
 ```
 
-<span data-ttu-id="57f7b-125">Este exemplo remove a conta de usuário ricardoc@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="57f7b-125">This example removes the user account fabricec@litwareinc.com.</span></span>
+<span data-ttu-id="7ec07-125">Este exemplo remove a conta de usuário ricardoc@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="7ec07-125">This example removes the user account fabricec@litwareinc.com.</span></span>
   
 ```
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> <span data-ttu-id="57f7b-126">O parâmetro **-ObjectID** no cmdlet **Remove-AzureAD** aceita o nome da conta, também conhecido como o nome UPN, ou a ID de objeto da conta.</span><span class="sxs-lookup"><span data-stu-id="57f7b-126">The **-ObjectID** parameter in the **Remove-AzureAD** cmdlet accepts either the account name, also known as the User Principal Name, or the account's object ID.</span></span>
+> <span data-ttu-id="7ec07-126">O parâmetro **-ObjectID** no cmdlet **Remove-AzureAD** aceita o nome da conta, também conhecido como o nome UPN, ou a ID de objeto da conta.</span><span class="sxs-lookup"><span data-stu-id="7ec07-126">The **-ObjectID** parameter in the **Remove-AzureAD** cmdlet accepts either the account name, also known as the User Principal Name, or the account's object ID.</span></span>
   
-<span data-ttu-id="57f7b-127">Para exibir o nome da conta com base no nome do usuário, use os seguintes comandos:</span><span class="sxs-lookup"><span data-stu-id="57f7b-127">To display the account name based on the user's name, use the following commands:</span></span>
+<span data-ttu-id="7ec07-127">Para exibir o nome da conta com base no nome do usuário, use os seguintes comandos:</span><span class="sxs-lookup"><span data-stu-id="7ec07-127">To display the account name based on the user's name, use the following commands:</span></span>
   
 ```
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="57f7b-128">Este exemplo exibe o nome da conta do usuário Carlos Lima.</span><span class="sxs-lookup"><span data-stu-id="57f7b-128">This example displays the account name for the user named Caleb Sills.</span></span>
+<span data-ttu-id="7ec07-128">Este exemplo exibe o nome da conta do usuário Carlos Lima.</span><span class="sxs-lookup"><span data-stu-id="7ec07-128">This example displays the account name for the user named Caleb Sills.</span></span>
   
 ```
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="57f7b-129">Para remover uma conta com base no nome do usuário, use os seguintes comandos:</span><span class="sxs-lookup"><span data-stu-id="57f7b-129">To remove an account based on the user's name, use the following commands:</span></span>
+<span data-ttu-id="7ec07-129">Para remover uma conta com base no nome do usuário, use os seguintes comandos:</span><span class="sxs-lookup"><span data-stu-id="7ec07-129">To remove an account based on the user's name, use the following commands:</span></span>
   
 ```
 $userName="<User name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-## <a name="see-also"></a><span data-ttu-id="57f7b-130">Veja também</span><span class="sxs-lookup"><span data-stu-id="57f7b-130">See also</span></span>
-<span data-ttu-id="57f7b-131"><a name="SeeAlso"> </a></span><span class="sxs-lookup"><span data-stu-id="57f7b-131"><a name="SeeAlso"> </a></span></span>
+## <a name="see-also"></a><span data-ttu-id="7ec07-130">Veja também</span><span class="sxs-lookup"><span data-stu-id="7ec07-130">See also</span></span>
+<span data-ttu-id="7ec07-131"><a name="SeeAlso"> </a></span><span class="sxs-lookup"><span data-stu-id="7ec07-131"><a name="SeeAlso"> </a></span></span>
 
-<span data-ttu-id="57f7b-132">Confira estes tópicos adicionais sobre como gerenciar usuários com o Office 365 PowerShell:</span><span class="sxs-lookup"><span data-stu-id="57f7b-132">See these additional topics about managing users with Office 365 PowerShell:</span></span>
+<span data-ttu-id="7ec07-132">Confira estes tópicos adicionais sobre como gerenciar usuários com o Office 365 PowerShell:</span><span class="sxs-lookup"><span data-stu-id="7ec07-132">See these additional topics about managing users with Office 365 PowerShell:</span></span>
   
-- [<span data-ttu-id="57f7b-133">Criar contas de usuários usando o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="57f7b-133">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="7ec07-133">Criar contas de usuários usando o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="7ec07-133">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="57f7b-134">Bloquear contas de usuários com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="57f7b-134">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="7ec07-134">Bloquear contas de usuários com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="7ec07-134">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="57f7b-135">Atribuir licenças a contas de usuários usando o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="57f7b-135">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="7ec07-135">Atribuir licenças a contas de usuários usando o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="7ec07-135">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="57f7b-136">Remover licenças de contas de usuários com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="57f7b-136">Remove licenses from user accounts with Office 365 PowerShell</span></span>](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="7ec07-136">Remover licenças de contas de usuários com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="7ec07-136">Remove licenses from user accounts with Office 365 PowerShell</span></span>](remove-licenses-from-user-accounts-with-office-365-powershell.md)
     
-<span data-ttu-id="57f7b-137">Para saber mais sobre os cmdlets usados nestes procedimentos, confira os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="57f7b-137">For more information about the cmdlets that are used in these procedures, see the following topics:</span></span>
+<span data-ttu-id="7ec07-137">Para saber mais sobre os cmdlets usados nestes procedimentos, confira os seguintes tópicos:</span><span class="sxs-lookup"><span data-stu-id="7ec07-137">For more information about the cmdlets that are used in these procedures, see the following topics:</span></span>
   
-- [<span data-ttu-id="57f7b-138">Get-MsolUser</span><span class="sxs-lookup"><span data-stu-id="57f7b-138">Get-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691543)
+- [<span data-ttu-id="7ec07-138">Get-MsolUser</span><span class="sxs-lookup"><span data-stu-id="7ec07-138">Get-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691543)
     
-- [<span data-ttu-id="57f7b-139">Remove-MsolUser</span><span class="sxs-lookup"><span data-stu-id="57f7b-139">Remove-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691636)
+- [<span data-ttu-id="7ec07-139">Remove-MsolUser</span><span class="sxs-lookup"><span data-stu-id="7ec07-139">Remove-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691636)
     
-- [<span data-ttu-id="57f7b-140">Restore-MsolUser</span><span class="sxs-lookup"><span data-stu-id="57f7b-140">Restore-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691637)
+- [<span data-ttu-id="7ec07-140">Restore-MsolUser</span><span class="sxs-lookup"><span data-stu-id="7ec07-140">Restore-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691637)
     
-- [<span data-ttu-id="57f7b-141">New-AzureADUser</span><span class="sxs-lookup"><span data-stu-id="57f7b-141">New-AzureADUser</span></span>](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
+- [<span data-ttu-id="7ec07-141">New-AzureADUser</span><span class="sxs-lookup"><span data-stu-id="7ec07-141">New-AzureADUser</span></span>](https://docs.microsoft.com/powershell/module/azuread/new-azureaduser?view=azureadps-2.0)
     
 
