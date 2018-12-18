@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>Semana de 5 de novembro de 2018
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 05/11/2018 | [Conectar uma rede local a uma rede virtual do Microsoft Azure](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | modificado |
-| 05/11/2018 | [Implantar a sincronização de diretório do Office 365 no Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificado |
-| 05/11/2018 | [Configure sua rede para o Office 365](/Office365/Enterprise/set-up-network-for-office-365) | adicionado |
-| 11/6/2018 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
-| 11/6/2018 | [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | modificado |
-| 11/6/2018 | [Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | modificado |
-| 11/7/2018 | [Pontos de extremidade do Office 365](/Office365/Enterprise/office-365-endpoints) | adicionado |
-| 11/7/2018 | [Configure sua rede para o Office 365](/Office365/Enterprise/set-up-network-for-office-365) | modificado |
-| 8/11/2018 | [Solicitações de rede do Office para Mac](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | modificado |
-| 8/11/2018 | [Colaboração entre locatários do Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificado |
-| 8/11/2018 | [Introdução ao ajuste de desempenho para o SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | modificado |
-| 11/9/2018 | [Use a ferramenta de diagnóstico de página para o SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | modificado |
-
-
 ## <a name="week-of-november-12-2018"></a>Semana de 12 de novembro de 2018
 
 
@@ -85,7 +66,7 @@
 | 11/30/2018 | [Cenários de nuvem híbrida para a Microsoft SaaS (Office 365)](/Office365/Enterprise/hybrid-cloud-scenarios-for-microsoft-saas-office-365) | modificado |
 | 11/30/2018 | [Rede do Microsoft Cloud para arquitetos corporativos](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modificado |
 | 11/30/2018 | [Nuvem híbrida da Microsoft para Arquitetos Corporativos](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | modificado |
-| 11/30/2018 | [Atribuir licenças a contas de usuários usando o Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificado |
+| 11/30/2018 | [Atribuir licenças a contas de usuários usando o PowerShell do Office 365](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificado |
 | 11/30/2018 | [Remover licenças de contas de usuários com o Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificado |
 | 11/30/2018 | [Exibir usuários licenciados e não licenciados com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificado |
 | 11/30/2018 | [Exibir as contas de usuário com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificado |
@@ -104,3 +85,12 @@
 | 12/7/2018 | [Recursos de multi-Geo no Exchange Online](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | modificado |
 | 12/7/2018 | [Configuração de locatário multigeográfico do Onedrive for Business](/Office365/Enterprise/multi-geo-tenant-configuration) | modificado |
 | 12/7/2018 | [Planejar o OneDrive for Business com Multi-Geo Capabilities](/Office365/Enterprise/plan-for-multi-geo) | modificado |
+
+
+## <a name="week-of-december-10-2018"></a>Semana de 10 de dezembro de 2018
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 12/10/2018 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
+| 12/10/2018 | [Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificado |
