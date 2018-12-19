@@ -4,19 +4,19 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: 8/27/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 description: Autenticação moderna é um método de gerenciamento de identidade que ofereça mais seguro de autenticação e autorização. Ele está disponível para implantações híbridas, do Skype para Business server local e Exchange server local, bem como a divisão de domínios Skype para híbridas de negócios. Este artigo apresenta links para relacionadas a documentos sobre pré-requisitos, instalação/desabilitar a autenticação moderno e para algumas das informações relacionadas do cliente (clientes do Outlook e Skype ex.).
-ms.openlocfilehash: 3d510c6d3e9f8ff885279dc008eeefb5d1014639
-ms.sourcegitcommit: 2ffe998e58ce1466366d697d99f0dd3e85b0605c
+ms.openlocfilehash: c10e5660d43ccce50497fccfd9d830d31ac07d55
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23240586"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371105"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Visão geral do híbrido autenticação moderno e pré-requisitos para usá-lo com Skype local para os servidores de negócios e do Exchange
 
@@ -51,7 +51,8 @@ Gerenciamento de identidades de usuário com a autenticação moderno oferece ao
   
 Lembre-se de que, como Skype para negócios trabalha junto com o Exchange, o comportamento de logon Skype para o cliente de negócios, os usuários verão será afetado pelo status moderno autenticação do Exchange. Isso também se aplicará se você tiver um Skype para o híbrido de divisão de domínios de negócios. Além disso, o tipo do Skype para o híbrido de negócios que suporta o uso da autenticação moderno geralmente é chamado um 'split-domínio' (em um domínio dividido, você tem Skype para Business Online e o Skype para negócios prem e os usuários estão hospedados em ambos os locais).
   
- **Importante** Você sabia que, a partir de agosto de 2017, todos os novos locatários do Office 365 que incluem Skype para negócios online e Exchange online terá autenticação moderno habilitado por padrão? Inquilinos pré-existente não terão uma alteração em seu estado de MA padrão, mas todos os locatários novos automaticamente suportam o conjunto expandido de recursos de identidade, que você verá listadas acima. Para verificar o status da sua MA Skype para negócios online, você pode usar o Skype para PowerShell online de negócios com credenciais de Administrador Global. Execute 'Get-CsOAuthConfiguration' para verificar a saída do - ClientADALAuthOverride. Se - ClientADALAuthOverride é 'permitido' autenticação do seu moderno está ligado. 
+> [!IMPORTANT]
+> Você sabia que, a partir de agosto de 2017, todos os novos locatários do Office 365 que incluem Skype para negócios online e Exchange online terá autenticação moderno habilitado por padrão? Inquilinos pré-existente não terão uma alteração em seu estado de MA padrão, mas todos os locatários novos automaticamente suportam o conjunto expandido de recursos de identidade, que você verá listadas acima. Para verificar o status da sua MA Skype para negócios online, você pode usar o Skype para PowerShell online de negócios com credenciais de Administrador Global. Execute `Get-CsOAuthConfiguration` para verificar a saída do - ClientADALAuthOverride. Se - ClientADALAuthOverride é 'permitido' autenticação do seu moderno está ligado. 
   
 ## <a name="what-changes-when-i-use-modern-authentication"></a>O que muda quando eu uso moderno autenticação?
 <a name="BKMK_WhatChanges"> </a>
@@ -66,12 +67,13 @@ Isso também significa que, mesmo que seu servidor Exchange e Skype para ambient
   
 O que não é alterado? Se você estiver em um híbrido de divisão de domínios ou usando Skype para negócios e do Exchange server local, todos os usuários devem primeiro autenticar *no local* . Em uma implementação híbrida de autenticação moderno, Lyncdiscovery e Autodiscovery apontam para seu servidor local. 
   
- **Importante** Se você precisa saber o Skype específico para topologias de negócios compatível com o MA, que é [documentado direita aqui](https://technet.microsoft.com/en-us/library/mt803262.aspx).
+> [!IMPORTANT]
+> Se você precisa saber o Skype específico para topologias de negócios compatível com o MA, que é [documentado direita aqui](https://technet.microsoft.com/en-us/library/mt803262.aspx).
   
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Verificar o status de autenticação moderno do seu ambiente local
 <a name="BKMK_CheckStatus"> </a>
 
-Como autenticação moderno altera o servidor de autorização usado quando os serviços utilizam OAuth/S2S, você precisa saber se a autenticação moderno está ativada ou desativada para seu Skype para ambiente de negócios e do Exchange. Você pode verificar o status em seu Exchange ou Skype para servidores de negócios, localmente, executando o comando Get-CSOAuthConfiguration no PowerShell. Se o comando retorna uma propriedade de 'OAuthServers' vazia, autenticação moderno está desabilitada.
+Como autenticação moderno altera o servidor de autorização usado quando os serviços utilizam OAuth/S2S, você precisa saber se a autenticação moderno está ativada ou desativada para seu Skype para ambiente de negócios e do Exchange. Você pode verificar o status em seu Exchange ou Skype para servidores de negócios, localmente, executando o `Get-CSOAuthConfiguration` command no PowerShell. Se o comando retorna uma propriedade de 'OAuthServers' vazia, autenticação moderno está desabilitada.
   
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Você cumpre os pré-requisitos de autenticação moderno?
 
@@ -85,35 +87,28 @@ Verifique se e verifique estes itens fora de sua lista antes de continuar:
     
   - O domínio SIP é adicionado como um domínio federado no Office 365
     
-  - Todos os SFB Front-Ends devem ter conexões de saída para a internet, como URLs de autenticação do Office 365 (TCP 443) e a raiz do certificado bem conhecido CRLs (TCP 80) listadas nas linhas 1 e 2 da seção 'Office 365 autenticação e identidade' do IP e [URLs do Office 365 intervalos de endereços](https://www.bing.com/search?q=%22Office+365+URLs+and+IP+address+ranges%22&amp;src=IE-SearchBox&amp;FORM=IESR3N&amp;redir=5&amp;itrid=96B6C7422F9F4019B37C1B7FDAF8831E).
+  - Todos os SFB Front-Ends devem ter conexões de saída para a internet, como URLs de autenticação do Office 365 (TCP 443) e a raiz de certificado bem conhecido CRLs (TCP 80) listados na 56 linhas e 125 da seção 'Microsoft 365 comuns e Office Online' do [IP e URLs do Office 365 intervalos de endereços](urls-and-ip-address-ranges.md).
     
  **Observação** Se seu Skype para servidores front-end de negócios usar um servidor proxy para acessar a Internet, o proxy server IP e número de porta usado deve ser inserido na seção Configuração do arquivo Web. config para cada front-end. 
   
-- c:\Program files\Skype para Business Server 2015\Web Components\Web ticket\int\web.config
+- C:\Program Files\Skype para Business Server 2015\Web Components\Web ticket\int\web.config
     
-- c:\Program files\Skype para Business Server 2015\Web Components\Web ticket\ext\web.config
+- C:\Program Files\Skype para Business Server 2015\Web Components\Web ticket\ext\web.config
     
-- \</System.IdentityModel.Services\>
+```xml
+<system.identityModel.services>
+  <system.net>
+    <defaultProxy>
+      <proxy
+        proxyaddress="http://192.168.100.60:8080"
+        bypassonlocal="true" />
+    </defaultProxy>
+  </system.net>
+</system.identityModel.services>
+```
     
-     \<System.NET\> 
-    
-     \<defaultProxy\> 
-    
-     \<proxy 
-    
-     proxyaddress = "http://192.168.100.60:8080" 
-    
-     bypassonlocal = "true" 
-    
-     /\> 
-    
-     \</defaultProxy\> 
-    
-     \</System.NET\> 
-    
-    \</ configuração\>
-    
- **Importante** Certifique-se de se inscrever no RSS feed para as [URLs do Office 365 e intervalos de endereços IP](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) permanecer atualizado com as listagens mais recentes de URLs necessárias. 
+> [!IMPORTANT]
+> Certifique-se de se inscrever no RSS feed para as [URLs do Office 365 e intervalos de endereços IP](urls-and-ip-address-ranges.md) permanecer atualizado com as listagens mais recentes de URLs necessárias. 
   
 - **Servidor Exchange específico**
     
