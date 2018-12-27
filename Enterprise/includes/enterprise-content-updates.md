@@ -3,24 +3,6 @@
 
 
 
-## <a name="week-of-november-12-2018"></a>Semana de 12 de novembro de 2018
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 14/11/2018 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
-| 14/11/2018 | [Recursos de arquitetura de TI do Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificado |
-| 15/11/2018 | [Configuração de locatário multigeográfico do Onedrive for Business](/Office365/Enterprise/multi-geo-tenant-configuration) | modificado |
-| 11/16/2018 | [Como configurar o Exchange Server no local para usar a autenticação moderna híbrida](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | modificado |
-| 11/16/2018 | [Configuração de locatário multigeográfico do Onedrive for Business](/Office365/Enterprise/multi-geo-tenant-configuration) | modificado |
-| 11/16/2018 | [Opções de navegação para o SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | modificado |
-| 11/16/2018 | Criar do zero | removido |
-| 11/16/2018 | Criação de armazenamento para a nuvem da Microsoft | removido |
-| 11/16/2018 | Armazenamento do Microsoft Cloud para arquitetos corporativos | removido |
-| 11/16/2018 | Pronto para mover | removido |
-| 11/16/2018 | Algum assembly necessário | removido |
-
-
 ## <a name="week-of-november-19-2018"></a>Semana de 19 de novembro de 2018
 
 
@@ -43,19 +25,19 @@
 | 11/26/2018 | [Preparar um domínio não roteáveis para sincronização de diretórios](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | modificado |
 | 27/11/2018 | [Configurar a Pesquisa para o OneDrive for Business com Multi-Geo Capabilities](/Office365/Enterprise/configure-search-for-multi-geo) | modificado |
 | 27/11/2018 | [Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | modificado |
-| 11/28/2018 | [Elementos comuns da conectividade de nuvem da Microsoft](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | modificado |
-| 11/28/2018 | [Projetando a rede para o Microsoft Azure IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | modificado |
-| 11/28/2018 | [Criação de rede para o Microsoft Azure PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | modificado |
-| 11/28/2018 | [Criação de rede para o Microsoft SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | modificado |
-| 11/28/2018 | [Evolução da sua rede para conectividade de nuvem](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | modificado |
-| 11/28/2018 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
-| 11/28/2018 | [Rede do Microsoft Cloud para arquitetos corporativos](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modificado |
-| 11/28/2018 | [Nuvem híbrida da Microsoft para Arquitetos Corporativos](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | modificado |
-| 11/28/2018 | [Pontos de extremidade do Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificado |
-| 11/28/2018 | [Pontos de extremidade do Office 365 DoD do governo dos EUA](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
-| 11/28/2018 | [Pontos de extremidade dos EUA governamentais GCC alta do Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
-| 11/28/2018 | [Intervalos de URLs e endereços IP do Office 365 operados pela 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modificado |
-| 11/28/2018 | [URLs e intervalos de endereços IP do Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
+| 28/11/2018 | [Elementos comuns da conectividade de nuvem da Microsoft](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | modificado |
+| 28/11/2018 | [Projetando a rede para o Microsoft Azure IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | modificado |
+| 28/11/2018 | [Criação de rede para o Microsoft Azure PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | modificado |
+| 28/11/2018 | [Criação de rede para o Microsoft SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | modificado |
+| 28/11/2018 | [Evolução da sua rede para conectividade de nuvem](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | modificado |
+| 28/11/2018 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
+| 28/11/2018 | [Rede do Microsoft Cloud para arquitetos corporativos](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | modificado |
+| 28/11/2018 | [Nuvem híbrida da Microsoft para Arquitetos Corporativos](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | modificado |
+| 28/11/2018 | [Pontos de extremidade do Office 365 Germany](/Office365/Enterprise/office-365-germany-endpoints) | modificado |
+| 28/11/2018 | [Pontos de extremidade do Office 365 DoD do governo dos EUA](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
+| 28/11/2018 | [Pontos de extremidade dos EUA governamentais GCC alta do Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
+| 28/11/2018 | [Intervalos de URLs e endereços IP do Office 365 operados pela 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | modificado |
+| 28/11/2018 | [URLs e intervalos de endereços IP do Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
 | 11/29/2018 | [Recursos de arquitetura de TI do Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificado |
 | 11/29/2018 | [URL do serviço Web e endereço IP do Office 365](/Office365/Enterprise/office-365-ip-web-service) | modificado |
 | 11/30/2018 | [Recursos de arquitetura de TI do Microsoft Cloud](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | modificado |
@@ -94,3 +76,17 @@
 |------|------------|--------|
 | 12/10/2018 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
 | 12/10/2018 | [Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificado |
+
+
+## <a name="week-of-december-17-2018"></a>Semana de 17 de dezembro de 2018
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 17/12/2018 | [Como rotear com o ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
+| 17/12/2018 | [Suporte a IPv6 nos serviços do Office 365](/Office365/Enterprise/ipv6-support) | modificado |
+| 18/12/2018 | [Visão geral do híbrido autenticação moderno e pré-requisitos para usá-lo com Skype local para os servidores de negócios e do Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | modificado |
+| 18/12/2018 | [Preparar-se para provisionar usuários por meio da sincronização de diretório para o Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | modificado |
+| 12/19/2018 | [Como a autenticação moderna funciona para os aplicativos clientes do Office 2013 e do Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modificado |
+| 12/19/2018 | [Tempos limite de sessão para o Office 365](/Office365/Enterprise/session-timeouts) | modificado |
+| 20/12/2018 | [Fim do Exchange 2010 do mapa de suporte](/Office365/Enterprise/exchange-2010-end-of-support) | modificado |
