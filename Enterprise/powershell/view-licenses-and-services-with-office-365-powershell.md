@@ -3,7 +3,7 @@ title: Exibir licenças e serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/17/2018
+ms.date: 12/31/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
-ms.openlocfilehash: 21dda5bfc1bf1fa975b4a94879435c1842c383ec
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: dab6b8f1828c6be4d32bb2432437d23328653560
+ms.sourcegitcommit: 6dd4ac5808d72406578fcc7be6590dd7a99cebea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601625"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466870"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
@@ -29,9 +29,9 @@ ms.locfileid: "25601625"
   
 Todas as assinaturas do Office 365 consistem nos seguintes elementos:
 
-- **Planos de licenciamento** Também são conhecidos comoplanos de licença ou planos do Office 365. Os planos de licenciamento determinam os serviços do Office 365 que estão disponíveis para os usuários. A assinatura do Office 365 pode conter vários planos de licenciamento. Um exemplo de plano seria o Office 365 Enterprise E3.
+- **Planos de licenciamento** Esses são também conhecidos como planos de licença ou planos do Office 365. Planos de licenciamento definem os serviços do Office 365 que estão disponíveis para usuários. Sua assinatura do Office 365 pode conter vários planos de licenciamento. Um plano de licenciamento de exemplo seria o Office 365 Enterprise E3.
     
-- **Serviços** Eles também são conhecidos comoplanos de serviço. Os serviços são os produtos, recursos e capacidades do Office 365 que estão disponíveis no plano de licenciamento, por exemplo, o Exchange Online e o Office Professional Plus. Os usuários podem receber várias licenças de diferentes planos de licenciamento que garantem o acesso a diferentes serviços.
+- **Serviços** Essas são também conhecidos como planos de serviço. Serviços são os produtos do Office 365, recursos e capacidades que estão disponíveis em cada plano de licenciamento, por exemplo, o Exchange Online e Office Professional Plus. Os usuários podem ter várias licenças atribuídas a eles de planos de licenciamento diferentes que concedem acesso aos serviços diferentes.
     
 - **Licenças** Cada plano de licenciamento contém o número de licenças que você adquiriu. Você atribui licenças a usuários para que eles possam usar os serviços do Office 365 definidos pelo plano de licenciamento. Cada conta de usuário requer ao menos uma licença de um plano de licenciamento para poder fazer logon no Office 365 e usar os serviços.
     
@@ -41,7 +41,7 @@ Você pode usar o Office 365 PowerShell para visualizar detalhes sobre os planos
 
 - Os procedimentos deste tópico exigem que você se conecte ao Office 365 PowerShell. Para obter instruções, confira [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).
     
-- Um script do PowerShell está disponível e automatiza os procedimentos descritos neste tópico. Especificamente, o script permite exibir e desabilitar serviços em sua organização do Office 365, incluindo o Sway. Para saber mais, confira [Desabilitar o acesso ao Sway com o PowerShell do Office 365](disable-access-to-sway-with-office-365-powershell.md).
+- Um script do PowerShell está disponível que automatiza os procedimentos descritos neste tópico. Especificamente, o script permite que você exibir e desabilite os serviços em sua organização do Office 365, incluindo Sway. Para obter mais informações, consulte [Desabilitar o acesso aos Sway com o Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
 ## <a name="view-information-about-licensing-plans-and-the-available-licenses"></a>Exibir informações sobre os planos de licenciamento e as licenças disponíveis
 

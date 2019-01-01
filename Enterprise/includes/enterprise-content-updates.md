@@ -3,16 +3,6 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>Semana de 19 de novembro de 2018
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 11/19/2018 | [Roteiro de fim do suporte do PerformancePoint Server 2007](/Office365/Enterprise/pps-2007-end-of-support) | modificado |
-| 11/19/2018 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
-| 11/19/2018 | [Aplicativos integrados e Microsoft Azure AD para administradores do Office 365](/Office365/Enterprise/integrated-apps-and-azure-ads) | modificado |
-
-
 ## <a name="week-of-november-26-2018"></a>Semana de 26 de novembro de 2018
 
 
@@ -90,3 +80,10 @@
 | 12/19/2018 | [Como a autenticação moderna funciona para os aplicativos clientes do Office 2013 e do Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modificado |
 | 12/19/2018 | [Tempos limite de sessão para o Office 365](/Office365/Enterprise/session-timeouts) | modificado |
 | 20/12/2018 | [Fim do Exchange 2010 do mapa de suporte](/Office365/Enterprise/exchange-2010-end-of-support) | modificado |
+
+
+## <a name="week-of-december-24-2018"></a>Semana de 24 de dezembro de 2018
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
