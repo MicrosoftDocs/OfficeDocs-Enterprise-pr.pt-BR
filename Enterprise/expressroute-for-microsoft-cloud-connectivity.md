@@ -3,7 +3,7 @@ title: ExpressRoute para conectividade de nuvem da Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumo: Entenda como ExpressRoute pode ajudá-lo com mais rápidas e confiáveis de conexões para os serviços de nuvem da Microsoft e plataformas.'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470163"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para conectividade de nuvem da Microsoft
 
@@ -96,25 +96,19 @@ A tabela 1 mostra os três modelos de conectividade principal para conexões de 
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>Relacionamentos de correspondência ExpressRoute aos serviços de nuvem da Microsoft
 
-Uma conexão de ExpressRoute único oferece suporte a até três Border Gateway Protocol (BGP) aos relacionamentos diferentes para diferentes partes de nuvem da Microsoft. BPG usa relações de correspondência para estabelecer a confiança e trocar informações de roteamento.
+Uma conexão de ExpressRoute único suporta até dois Border Gateway Protocol (BGP) aos relacionamentos diferentes para diferentes partes de nuvem da Microsoft. BPG usa relações de correspondência para estabelecer a confiança e trocar informações de roteamento.
   
-**Figura 3: As três diferentes relações BGP em uma única conexão ExpressRoute**
+**Figura 3: Os dois diferentes BGP relacionamentos em uma conexão de ExpressRoute único**
 
-![Figura 3: As três diferentes relações BGP em uma única conexão ExpressRoute](media/Network-Poster/ERPeering.png)
+![Figura 3: Os dois diferentes BGP relacionamentos em uma conexão de ExpressRoute único](media/Network-Poster/ERPeering.png)
   
-A Figura 3 mostra uma conexão ExpressRoute de uma rede local. A conexão ExpressRoute tem três relacionamentos lógicos de correspondência. Uma relação de correspondência da Microsoft vai para serviços de SaaS Microsoft, incluindo o Office 365 e Dynamcs CRM Online. Uma relação de correspondência pública vai aos serviços do Azure PaaS. Uma relação de correspondência privada vai para o Windows Azure IaaS e um gateway de rede virtual que hospeda máquinas virtuais.
+A Figura 3 mostra uma conexão ExpressRoute de uma rede local. A conexão ExpressRoute tem dois relacionamentos lógicos de correspondência. Uma relação de correspondência da Microsoft vai para serviços do Microsoft SaaS, incluindo serviços de PaaS do Azure, Dynamcs 365 e Office 365. Uma relação de correspondência privada vai para o Windows Azure IaaS e um gateway de rede virtual que hospeda máquinas virtuais.
   
 O relacionamento BGP aos Microsoft: 
   
-- É a partir de um roteador em sua DMZ e os endereços públicos de serviços do Office 365 e Dynamics 365. 
+- É a partir de um roteador em sua DMZ e os endereços públicos de serviços do Azure, Dynamics 365 e Office 365. 
     
 - Oferece suporte a comunicação iniciada pelo bidirecional.
-    
-O relacionamento BGP correspondência público:
-  
-- É a partir de um roteador em sua DMZ e os endereços IP públicos de serviços do Azure.
-    
-- Suporta comunicação unidirecional iniciadas dos sistemas locais somente. O relacionamento de correspondência não oferece suporte a comunicação iniciada dos serviços do Azure PaaS.
     
 O relacionamento BGP correspondência privado:
   
@@ -123,6 +117,10 @@ O relacionamento BGP correspondência privado:
 - Oferece suporte a comunicação iniciada pelo bidirecional.
     
 - É uma extensão da rede da organização para a nuvem da Microsoft, completa com endereçamento e roteamento internamente consistente.
+
+>[!Note]
+>O relacionamento BGP correspondência público descrito nas versões anteriores deste artigo foi preterido.
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Exemplo de fluxo de tráfego e implantação de aplicativo com ExpressRoute
 
@@ -250,7 +248,7 @@ As opções a seguir também podem ser incorporadas em sua implantação Express
   
 - **Segurança na sua borda:** Para fornecer segurança avançada para o tráfego enviado e recebido através de conexão de ExpressRoute, como inspeção do tráfego ou detecção de intrusão/malware, coloque seus aparelhos de segurança no caminho do tráfego em sua DMZ ou na borda de sua intranet.
     
-    Tráfego da Internet para máquinas virtuais para impedir que o Azure VMs iniciando tráfego diretamente com locais da Internet, anunciar a rota padrão para a Microsoft. O tráfego para a Internet será roteado entre a conexão ExpressRoute e através de seus servidores de proxy local. Tráfego de máquinas virtuais do Windows Azure para serviços do Azure PaaS ou do Office 365 é encaminhado volta entre a conexão ExpressRoute.
+- **Tráfego da Internet para VMs:** Para impedir que o Azure VMs iniciando tráfego diretamente com locais da Internet, anuncie a rota padrão para a Microsoft. O tráfego para a Internet será roteado entre a conexão ExpressRoute e através de seus servidores de proxy local. Tráfego de máquinas virtuais do Windows Azure para serviços do Azure PaaS ou do Office 365 é encaminhado volta entre a conexão ExpressRoute.
     
 - **Otimizadores WAN:** Você pode implantar otimizadores WAN em ambos os lados de uma conexão privada de correspondência para um Azure locais cruzados rede virtual (VNet). Dentro do Azure VNet, use um aparelho de rede WAN otimizador do Azure marketplace e definida pelo usuário de roteamento para rotear o tráfego através do aparelho.
     
