@@ -3,7 +3,7 @@ title: Exibir as contas de usuário com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/30/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Resumo: Assista, listar ou exibir suas contas de usuário de diversas maneiras com o Office 365 PowerShell.'
-ms.openlocfilehash: f2743197456cc56f654e99e682108230420384c9
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123248"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546522"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Exibir as contas de usuário com o Office 365 PowerShell
 
@@ -28,15 +28,11 @@ ms.locfileid: "27123248"
   
 Embora você possa usar o Centro de administração do Office 365 para exibir as contas para seu locatário do Office 365, você também pode usar o Office 365 PowerShell e fazer algumas coisas que não é possível o Centro de administração do Office 365.
   
-## <a name="before-you-begin"></a>Antes de começar
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo de gráfico
 
-Os procedimentos deste tópico exigem que você se conecte ao Office 365 PowerShell. Para obter instruções, confira [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).
+Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-## <a name="display-office-365-user-account-information-with-azure-active-directory-powershell-for-graph"></a>Exibir informações de conta de usuário do Office 365 com o Windows Azure Active Directory PowerShell para gráfico 
-
-As seções a seguir descrevem como exibir informações da conta de usuário.
-
-### <a name="all-accounts"></a>Todas as contas
+### <a name="view-all-accounts"></a>Exibir todas as contas
 
 Para exibir a lista completa das contas de usuário, execute este comando:
   
@@ -57,7 +53,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="a-specific-account"></a>Uma conta específica
+### <a name="view-a-specific-account"></a>Exibir uma conta específica
 
 Para exibir uma conta de usuário específica, preencha o nome principal do usuário (UPN) da conta de usuário, remova o "<" e ">" caracteres e execute este comando:
   
@@ -65,7 +61,7 @@ Para exibir uma conta de usuário específica, preencha o nome principal do usu�
 Get-AzureADUser -ObjectID <UPN of user account>
 ```
 
-### <a name="additional-property-values-for-a-specific-account"></a>Valores de propriedades adicionais para uma conta específica
+### <a name="view-additional-property-values-for-a-specific-account"></a>Exibir valores de propriedades adicionais para uma conta específica
 
 Por padrão, o cmdlet **Get-AzureADUser** exibe apenas as propriedades ObjectID, DisplayName e UserPrincipalName das contas.
 
@@ -93,7 +89,7 @@ Como outro exemplo, é possível verificar o status ativado de uma conta de usu�
 Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>Algumas contas com base em uma propriedade comum
+### <a name="view-some-accounts-based-on-a-common-property"></a>Exibir alguns contas com base em uma propriedade comum
 
 Para ser mais seletiva sobre a lista de contas para exibir, você pode usar o cmdlet **Where-Object** em combinação com o cmdlet **Get-AzureADUser** . Para combinar os dois cmdlets, usamos o caractere "pipe" "|", que informa o Azure Active Directory PowerShell para o gráfico obter os resultados de um comando e enviá-lo para o próximo comando. Aqui está um exemplo de comando que exibe apenas as contas de usuário que têm um local de uso não especificado:
   
@@ -123,11 +119,11 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 >  A sintaxe para o cmdlet **Where-Object** mostrada neste exemplo é **Where-Object {$\_.** [nome de propriedade de conta do usuário] [operador de comparação] [valor] **}**. > [operador de comparação] é **-eq** for igual a, **-ne** para não é igual a, **-lt** for menor que, **-gt** para maior e outros.  [valor] é geralmente uma cadeia de caracteres (uma sequência de letras, números e outros caracteres), um valor numérico ou **$Null** para não for especificado > consulte [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) para obter mais informações.
   
 
-## <a name="display-office-365-user-account-information-with-microsoft-azure-active-directory-module-for-windows-powershell"></a>Exibir informações de conta de usuário do Office 365 com o Microsoft Azure Active Directory módulo para Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o módulo do Microsoft Azure Active Directory para o Windows PowerShell
 
-As seções a seguir descrevem como exibir informações da conta de usuário.
+Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-### <a name="all-accounts"></a>Todas as contas
+### <a name="view-all-accounts"></a>Exibir todas as contas
 
 Para exibir a lista completa das contas de usuário, execute este comando:
   
@@ -166,7 +162,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Para obter mais informações sobre parâmetros adicionais para filtrar a exibição o conjunto de contas de usuário exibida, consulte [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
   
 
-### <a name="a-specific-account"></a>Uma conta específica
+### <a name="view-a-specific-account"></a>Exibir uma conta específica
 
 Para exibir uma conta de usuário específica, preencha o nome principal do usuário (UPN) da conta de usuário, remova o "<" e ">" caracteres e execute este comando:
   
@@ -174,7 +170,7 @@ Para exibir uma conta de usuário específica, preencha o nome principal do usu�
 Get-MsolUser -UserPrincipalName <UPN of user account>
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>Algumas contas com base em uma propriedade comum
+### <a name="view-some-accounts-based-on-a-common-property"></a>Exibir alguns contas com base em uma propriedade comum
 
 Para ser mais seletiva sobre a lista de contas para exibir, você pode usar o cmdlet **Where-Object** em combinação com o cmdlet **Get-MsolUser** . Para combinar os dois cmdlets, usamos o caractere "pipe" "|", que informa ao Office 365 PowerShell para obter os resultados de um comando e enviá-lo para o próximo comando. Aqui está um exemplo de comando que exibe apenas as contas de usuário que têm um local de uso não especificado:
   
@@ -219,7 +215,7 @@ Você pode verificar o status bloqueado de uma conta de usuário com o seguinte 
 Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-### <a name="additional-property-values-for-accounts"></a>Valores de propriedades adicionais para contas
+### <a name="view-additional-property-values-for-accounts"></a>Exibir valores de propriedades adicionais para contas
 
 O cmdlet **Get-MsolUser** por padrão exibe três propriedades de contas de usuário:
   
@@ -291,13 +287,9 @@ Se você estiver usando a sincronização de diretórios para criar e gerenciar 
 ```
 
     
-## <a name="new-to-office-365"></a>Começando a usar o Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-  
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
