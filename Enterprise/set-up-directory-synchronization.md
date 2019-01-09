@@ -3,7 +3,6 @@ title: Configurar a sincronização de diretório com o Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -12,17 +11,17 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
-- MED150
+- MED15
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Saiba como configurar a sincronização de diretórios entre o Office 365 e seu local no Active Directory.
-ms.openlocfilehash: e406eec08b34a694602c756235533f8b1ff6651e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 95f138a0a11f14a1036d7d48983f4c88bc965fd0
+ms.sourcegitcommit: 0fdb6e470342a98ba164db627fe3dd02cfe8aa0b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539169"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27768820"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurar a sincronização de diretório com o Office 365
 O Office 365 usa o serviço de gerenciamento de identidade de usuário baseada em nuvem do Azure Active Directory para gerenciar usuários. Também é possível integrar seu Active Directory no local com o Azure AD por meio da sincronização seu ambiente local com o Office 365. Depois que você configurar a sincronização você pode optar por ter sua autenticação de usuário ocorra dentro do Azure AD ou em seu diretório local.
@@ -62,57 +61,7 @@ Você também pode revisar o Azure Connect da AD [histórico de versão de lanç
     
     ![No menu mais, escolha a sincronização de diretórios](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-3. Sobre o * * é sincronização de diretório adequados para você? * * página, as duas primeiras escolhas de **1 a 10**e **11 e 50** resultados em "com base no tamanho da sua organização, recomendamos que você crie e gerencie usuários na nuvem. Usando a sincronização de diretório fará sua instalação mais complexos. Vá para usuários ativos para adicionar seus usuários." 
-    
-    - No entanto, ainda assim, pode continuar configurando a sincronização de diretórios, escolhendo **aqui continuar** na parte inferior da página. 
-    
-    - Se você selecionar as duas opções de últimas, **51-250** ou **251 ou posterior**, a configuração de sincronização recomendará a sincronização de diretórios. Escolha **próximo** para continuar. 
-    
-    ![Escolha próximo para continuar a configurar a sincronização de diretórios](media/359a1eb9-99ae-4b5b-a413-4de53037cceb.png)
-  
-4. Sobre a **sincronização de diretório local com a nuvem**, leia as informações e se você quiser obter mais informações, escolha a Saiba mais link que leva a: [preparar para provisionar usuários por meio da sincronização de diretório para o Office 365](prepare-for-directory-synchronization.md)e escolha **Avançar **. 
-    
-5. Na página **vamos verificar seu diretório** , examine os requisitos para a verificação automática de seu diretório. Se você atende aos requisitos, escolha **próximo** \> **Iniciar verificação**. Se você não puder atender os requisitos, você ainda pode continuar escolhendo **continuar manualmente**.
-    
-    ![Escolha Avançar ou continuar manualmente no vamos verificar sua página de diretório](media/af4a6bd5-13aa-4bfa-9751-4464a32ca8db.png)
-  
-6. Se você selecionar para examinar seus diretórios, escolha **Iniciar exame** na página **avaliando a configuração de sincronização de diretório** . 
-    
-    Siga as instruções para baixar e executar a verificação.
-    
-7. Uma vez concluída a varredura, voltar para o Assistente de configuração e escolha **próximo** para ver os resultados do exame. 
-    
-8. Verifique se seus domínios, como instruído na página **Verifique se a propriedade de seus domínios** . Para obter instruções detalhadas, consulte [criar registros DNS para Office 365 ao gerenciar seus registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
-    
-    > [!IMPORTANT]
-    > Depois de adicionar um registro TXT para verificar se que você é proprietário de seu domínio, não são encaminhadas para a próxima etapa de adição de usuários no Assistente de domínios. A sincronização de diretório adicionará os usuários para você. 
-  
-    Retornar à página de **Configuração do Office 365** e escolha **atualização**
-    
-    ![Depois de verificar os domínios, escolha atualizar](media/9b5fb593-5ff7-49f0-80d0-18e36d39d669.png)
-  
-9. Na página **seus domínios estiver prontos** , escolha **Avançar**.
-    
-10. Na página **Limpar o seu ambiente** , opcionalmente, siga as instruções para baixar o IDFix para verificar seu Active Directory. Escolha **próximo** para continuar. 
-    
-11. Sobre o * * execute Azure Active Directory Connect * * página, escolha o **Download** para instalar o Assistente de conectar do Azure AD. 
-    
-    > [!NOTE]
-    > Neste ponto, você será no Assistente para conectar do Azure AD. Verifique se que você deixar a página Assistente de sincronização de diretório que estava na abertura no seu navegador, portanto é possível retornar a ela, depois de concluir as etapas de conectar do Azure AD. 
-  
-    Depois de conectar do Azure AD wizard instalou será aberto automaticamente. Você também pode abri-lo da sua área de trabalho, o local de instalação padrão. Siga as instruções do assistente dependendo do cenário:
-    
-  - Sincronização de diretórios com a sincronização de hash de senha, use a [opção conectar AD Azure com configurações express](https://go.microsoft.com/fwlink/p/?LinkID=698537).
-    
-  - Para várias florestas, autenticação de passagem, identidade federada e opções de SSO, use o [sinalizador instalação do Windows Azure AD conectar](https://go.microsoft.com/fwlink/p/?LinkId=698430).
-    
-    Selecione **Personalizar** , na página **Configurações Express** para usar essas opções. 
-    
-12. Depois que o Assistente de conectar do Azure AD for concluído, voltar para o Assistente de **Instalação do Office 365** e siga as instruções na **tornar a sincronização se funcionou conforme esperada página**. Escolha **próximo** para continuar. 
-    
-13. Leia as instruções sobre o * * ativar usuários * * página e escolha **Avançar**.
-    
-14. Escolha **Concluir** na página **estiver toda a configuração** . 
+3. Na página de **preparação do Active Directory** , selecione o link de **Download Microsoft Azure Active Directory Connect ferramenta** para começar. Para obter mais informações sobre o processo de instalação do Azure Active Directory Connect, consulte [mapa de instalação Azure AD Connect e a integridade de conectar-se do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
     
 ## <a name="assign-licences-to-synchronized-users"></a>Atribuir licenças aos usuários sincronizados
 Depois de você ter sincronizado seus usuários para o Office 365, são criados, mas você precisa atribuir licenças a eles para que possam usar os recursos do Office 365, como email. Para obter instruções, consulte [Atribuir licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
