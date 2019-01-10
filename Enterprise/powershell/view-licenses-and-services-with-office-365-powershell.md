@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
-ms.openlocfilehash: f673ac984e504a740dfac474821366d34de5ccbc
-ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
+ms.openlocfilehash: 8efc123e2820560b4bd8547f4c99bccae242956f
+ms.sourcegitcommit: 96313c3c812bae47819f603af995839f4da034c5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27730326"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "27786147"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
@@ -38,9 +38,9 @@ Todas as assinaturas do Office 365 consistem nos seguintes elementos:
 Você pode usar o Office 365 PowerShell para visualizar detalhes sobre os planos de licenciamento, licenças e serviços disponíveis na sua organização do Office 365. Confira mais informações sobre produtos, recursos e serviços disponíveis em diferentes assinaturas do Office 365 em [Opções de Planos do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=691147).
 
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo de gráfico
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
-Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Para exibir informações de resumo sobre seus planos de licenciamento atuais e as licenças disponíveis para cada plano, execute o seguinte comando:
   
@@ -71,7 +71,7 @@ $licenses = Get-AzureADSubscribedSku
 Em seguida, exibe os serviços em um plano de licença específico.
 
 ````
-$licenses[<index>].ServicePlan
+$licenses[<index>].ServicePlans
 ````
 
 \<índice > é um inteiro que especifica o número da linha do plano de licença da exibição do `Get-AzureADSubscribedSku | Select SkuPartNumber` command, menos 1.
@@ -90,16 +90,16 @@ FLOW_FREE
 Em seguida, o comando para exibir os serviços para o plano de licença ENTERPRISEPREMIUM é o seguinte:
 
 ````
-$licenses[2].ServicePlan
+$licenses[2].ServicePlans
 ````
 
 ENTERPRISEPREMIUM é a terceira linha. Portanto, o valor de índice é (3 - 1), ou 2.
 
 Para obter uma lista completa de planos de licença (também conhecido como nomes de produto), seus planos de serviço incluído e seus nomes amigáveis correspondentes, consulte [nomes de produto e os identificadores de plano de serviço para licenciamento](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o módulo do Microsoft Azure Active Directory para o Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.
 
-Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 >[!Note]
 >Um script do PowerShell está disponível que automatiza os procedimentos descritos neste tópico. Especificamente, o script permite que você exibir e desabilite os serviços em sua organização do Office 365, incluindo Sway. Para obter mais informações, consulte [Desabilitar o acesso aos Sway com o Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
@@ -163,7 +163,7 @@ Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano 
 ## <a name="see-also"></a>Confira também
 
 
-[Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
