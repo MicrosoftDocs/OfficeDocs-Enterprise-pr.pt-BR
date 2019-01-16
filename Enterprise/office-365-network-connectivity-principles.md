@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de começar a planejar sua rede para conectividade de rede do Office 365, é importante entender os princípios de conectividade para gerenciar o tráfego de Office 365 de forma segura e obter o melhor desempenho possível. Este artigo ajudará você a entender as orientações mais recentes para otimizar com segurança de conectividade de rede do Office 365.
-ms.openlocfilehash: be41162833a7442ac65af1e973a00923841fca6b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d319d99cdd413fe1df9e8f88d18742ad464bbb3b
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539301"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021802"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Princípios de conectividade de rede do Office 365
 
@@ -54,8 +54,8 @@ A Microsoft recomenda os seguintes princípios para obter o desempenho e a conec
   
 O principal objetivo do design de rede deve ser minimizar a latência, reduzindo o tempo de ida e volta (tempo de resposta) da sua rede com a rede Global do Microsoft, backbone de rede pública da Microsoft que interconexão todos os centros de dados da Microsoft com baixa latência e pontos de entrada de aplicativo espalhados pelo mundo na nuvem. Você pode aprender mais sobre a rede Global da Microsoft em [como a Microsoft amplia sua rede global rápida e confiável](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
-### <a name="identify-and-differentiate-office-365-traffic"></a>Identificar e diferenciar o tráfego do Office 365
 <a name="BKMK_P1"> </a>
+### <a name="identify-and-differentiate-office-365-traffic"></a>Identificar e diferenciar o tráfego do Office 365
 
 ![Identificar o tráfego do Office 365](media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
@@ -67,10 +67,10 @@ Para obter mais detalhes sobre os métodos de otimização e categorias de ponto
   
 Agora, a Microsoft publica todos os pontos de extremidade do Office 365, como um serviço web e fornece orientação sobre como melhor usar esses dados. Para obter mais informações sobre como buscar e trabalhar com pontos de extremidade do Office 365, consulte o artigo [URLs do Office 365 e intervalos de endereços IP](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
-### <a name="egress-network-connections-locally"></a>Conexões de rede de saída localmente
 <a name="BKMK_P2"> </a>
+### <a name="egress-network-connections-locally"></a>Enviar conexões de rede de saída localmente
 
-![Conexões de rede de saída localmente](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Enviar conexões de rede de saída localmente](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 Saída DNS local e a Internet é de importância fundamental para reduzir a latência de conexão e para garantir que as conexões de usuário sejam feitas até o ponto mais próximo de entrada para serviços do Office 365. Em uma topologia de rede complexa, é importante implementar o DNS local e a saída de Internet local juntos. Para obter mais informações sobre como o Office 365 roteia as conexões de cliente até o ponto mais próximo de entrada, consulte o artigo [Conectividade do cliente](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
@@ -102,8 +102,8 @@ A arquitetura de saída local tem as seguintes vantagens sobre o modelo tradicio
 - Reduz a carga em infraestrutura de rede corporativa, permitindo a saída local.
 - Protege conexões em ambas as extremidades utilizando a segurança do cliente do ponto de extremidade e recursos de segurança de nuvem.
 
-### <a name="avoid-network-hairpins"></a>Evite hairpins de rede
 <a name="BKMK_P3"> </a>
+### <a name="avoid-network-hairpins"></a>Evitar hairpins de rede
 
 ![Evite hairpins](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
@@ -115,8 +115,8 @@ Se você usar a rede baseada em nuvem ou serviços de segurança para o tráfego
   
 Devido ao grande número de locais distribuídos com pontos de entrada do Office 365 e sua proximidade aos usuários finais, a rotear o tráfego de Office 365 para qualquer provedor de segurança ou de rede de terceiros pode ter um impacto adverso em conexões do Office 365 se não for de rede do provedor configurado para correspondência ideal do Office 365.
   
-### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Os proxies de desvio, dispositivos de inspeção de tráfego e as tecnologias de segurança duplicados
 <a name="BKMK_P4"> </a>
+### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Os proxies de desvio, dispositivos de inspeção de tráfego e as tecnologias de segurança duplicados
 
 ![Os proxies de desvio, dispositivos de inspeção de tráfego e as tecnologias de segurança duplicados](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
@@ -124,8 +124,8 @@ Os clientes corporativos devem examinar sua segurança de rede e métodos de red
   
 A maioria das redes de enterprise impor a segurança de rede para o tráfego de Internet usando tecnologias, como os proxies, inspeção SSL, inspeção de pacotes e sistemas de prevenção de perda de dados. Essas tecnologias fornecem mitigação de riscos importantes para solicitações de Internet genéricas, mas podem reduzir drasticamente o desempenho, escalabilidade e a qualidade da experiência do usuário final quando aplicada aos pontos de extremidade do Office 365.
   
-#### <a name="office-365-endpoints-web-service"></a>Serviço de web de pontos de extremidade do Office 365
 <a name="BKMK_WebSvc"> </a>
+#### <a name="office-365-endpoints-web-service"></a>Serviço de web de pontos de extremidade do Office 365
 
 Administradores do Office 365 podem usar um script ou chamada REST para consumir uma lista estruturada de pontos de extremidade de pontos de extremidade do Office 365 serviço da web e atualizar as configurações de firewalls de perímetro e outros dispositivos de rede. Isso garantirá que tráfego acoplado para o Office 365 é identificado, adequadamente tratado e gerenciado de modo diferente do tráfego de rede acoplado para sites da web Internet genérico e frequentemente desconhecido. Para obter mais informações sobre como usar os pontos de extremidade do Office 365 serviço da web, consulte o artigo [URLs do Office 365 e intervalos de endereços IP](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
@@ -151,7 +151,7 @@ Pontos de extremidade do Office 365 representam um conjunto variado de endereço
   
 Em nossa orientação anterior para gerenciar o tráfego do Office 365, os pontos de extremidade foram organizados em duas categorias, **necessários** e **opcionais**. Pontos de extremidade dentro de cada categoria requeridos otimizações diferentes dependendo do nível de importância do serviço e muitos clientes enfrentaram desafios em justificando a aplicação das otimizações de rede mesmo para a lista completa de endereços IP e URLs do Office 365. 
   
-No novo modelo, os pontos de extremidade sejam separados em três categorias, **otimizar**, **necessários** e **padrão**, fornecendo uma tabela dinâmica com base em prioridade sobre onde concentrar os esforços de otimização de rede para concretizar as melhorias de desempenho melhores e retorno do investimento. Os pontos de extremidade são consolidados nas categorias acima com base na sensibilidade da experiência do usuário efetivo para o envelope de qualidade, o volume e o desempenho de rede dos cenários e facilidade de implementação. Otimizações recomendadas podem ser aplicadas da mesma maneira para todos os pontos de extremidade em uma determinada categoria.
+No novo modelo, os pontos de extremidade sejam separados em três categorias, **otimizar**, **Permitir** e **padrão**, fornecendo uma tabela dinâmica com base em prioridade sobre onde concentrar os esforços de otimização de rede para concretizar as melhorias de desempenho melhores e retornar sobre o investimento. Os pontos de extremidade são consolidados nas categorias acima com base na sensibilidade da experiência do usuário efetivo para o envelope de qualidade, o volume e o desempenho de rede dos cenários e facilidade de implementação. Otimizações recomendadas podem ser aplicadas da mesma maneira para todos os pontos de extremidade em uma determinada categoria.
   
 - Pontos de extremidade de **otimizar** são necessários para a conectividade com todos os serviços do Office 365 e representam mais de 75% da largura de banda, conexões e volume de dados do Office 365. Esses pontos de extremidade representam cenários do Office 365 que são mais sensíveis ao desempenho, latência e disponibilidade de rede. Todos os pontos de extremidade são hospedados em data centers da Microsoft. Espera-se que a taxa de alteração para os pontos de extremidade nesta categoria é muito menor do que para os pontos de extremidade em duas categorias. Essa categoria inclui um conjunto muito pequeno (na ordem ~ 10) da chave de URLs e um conjunto definido de subredes IP dedicados ao cargas de trabalho de núcleo Office 365, como Exchange Online, SharePoint Online, Skype para Business Online e Teams da Microsoft.
 
