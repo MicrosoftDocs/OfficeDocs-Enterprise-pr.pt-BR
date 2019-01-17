@@ -3,7 +3,6 @@ title: Exibir erros de sincronização de diretórios no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +16,16 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Saiba como exibir erros de sincronização de diretório no Centro de administração do Office 365.
-ms.openlocfilehash: 62f1135568261eccf0e7e66b78c5aaff966c7281
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8beeeebbb24936abd7c93f4c04c0fa4e27c85c12
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539287"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327333"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Exibir erros de sincronização de diretórios no Office 365
 
-Você pode exibir erros de sincronização de diretório no Centro de administração do Office 365. Somente os erros de objeto de usuário são exibidos. Para exibir erros usando o PowerShell, consulte [objetos de identidade com DirSyncProvisioningErrors](https://go.microsoft.com/fwlink/p/?LinkId=798300).
+Você pode exibir erros de sincronização de diretório no Centro de administração do Office 365. Somente os erros de objeto de usuário são exibidos. Para exibir erros usando o PowerShell, consulte [objetos de identidade com DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Depois de exibição, consulte [Corrigindo problemas com a sincronização de diretório para o Office 365](fix-problems-with-directory-synchronization.md) para corrigir os problemas identificados.
   
@@ -34,7 +33,7 @@ Depois de exibição, consulte [Corrigindo problemas com a sincronização de di
 
 Para exibir quaisquer erros no Centro de administração:
   
-1. Entre no Office 365 com sua conta corporativa ou de estudante. 
+1. Entre no Office 365 com a sua conta corporativa ou de estudante. 
     
 2. Vá para o [Centro de administração sobre o Office 365](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
