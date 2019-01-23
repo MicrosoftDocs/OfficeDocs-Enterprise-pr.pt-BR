@@ -39,7 +39,8 @@
       "extendBreadcrumb": "true",
       "bilingual_type": "hover over",
       "searchScope": ["Office 365 Enterprise"],
-      "feedback_system": "GitHub",
+      "feedback_system": "None",
+      "hide_comments": true,
       "feedback_github_repo": "MicrosoftDocs/OfficeDocs-Enterprise",
       "feedback_product_url": "https://office365.uservoice.com/forums/273493-office-365-admin" 
     },
