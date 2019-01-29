@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisará enviar uma solicitação antes do prazo para seu país para que os dados do cliente dos seus serviços do Office 365 participantes movidos para sua nova geo.
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839569"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604502"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -80,7 +80,7 @@ Após a solicitação de uma movimentação, não é possível alterar sua sele�
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams ainda não dá suporte para migração de conteúdo do cliente em repouso na região para centros de dados de país onde residência de dados for Microsoft Teams está disponível.  Portanto, somente os novos clientes terão todos os seus dados armazenados no país nas novas regiões onde Teams Microsoft suporta residência de dados.  Saiba mais sobre o Office 365 residência de dados para o seu local de empresa no [onde estão seus dados localizados?](https://office/com/datamaps)   
+Microsoft Teams ainda não dá suporte para migração de conteúdo do cliente em repouso na região para centros de dados de país onde residência de dados for Microsoft Teams está disponível.  Portanto, somente os novos clientes terão todos os seus dados armazenados no país nas novas regiões onde Teams Microsoft suporta residência de dados.  Saiba mais sobre o Office 365 residência de dados para o seu local de empresa no [onde estão seus dados localizados?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Ações opcionais antes de você solicitar uma movimentação
 

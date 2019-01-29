@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-december-10-2018"></a>Semana de 10 de dezembro de 2018
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 12/10/2018 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
-| 12/10/2018 | [Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificado |
-
-
-## <a name="week-of-december-17-2018"></a>Semana de 17 de dezembro de 2018
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 17/12/2018 | [Como rotear com o ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
-| 17/12/2018 | [Suporte a IPv6 nos serviços do Office 365](/Office365/Enterprise/ipv6-support) | modificado |
-| 18/12/2018 | [Visão geral do híbrido autenticação moderno e pré-requisitos para usá-lo com Skype local para os servidores de negócios e do Exchange](/Office365/Enterprise/hybrid-modern-auth-overview) | modificado |
-| 18/12/2018 | [Preparar-se para provisionar usuários por meio da sincronização de diretório com o Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | modificado |
-| 12/19/2018 | [Como a autenticação moderna funciona para os aplicativos clientes do Office 2013 e do Office 2016](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | modificado |
-| 12/19/2018 | [Tempos limite de sessão para o Office 365](/Office365/Enterprise/session-timeouts) | modificado |
-| 20/12/2018 | [Fim do Exchange 2010 do mapa de suporte](/Office365/Enterprise/exchange-2010-end-of-support) | modificado |
-
-
 ## <a name="week-of-december-24-2018"></a>Semana de 24 de dezembro de 2018
 
 
@@ -66,5 +43,33 @@
 | 1/7/2019 | [URLs e intervalos de endereços IP do Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
 | 1/8/2019 | [Configurar a sincronização de diretório com o Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificado |
 | 9/1/2019 | [Exibir licenças e serviços com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | modificado |
-| 1/11/2019 | [Gerenciando pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
+| 1/11/2019 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
 | 1/11/2019 | [Pontos de extremidade do Office 365 DoD do governo dos EUA](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
+
+
+## <a name="week-of-january-14-2019"></a>Semana de 14 de janeiro de 2019
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 15/1/2019 | [Princípios de conectividade de rede do Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | modificado |
+| 15/1/2019 | [Planejamento de rede e ajuste de desempenho para o Office 365](/Office365/Enterprise/network-planning-and-performance) | modificado |
+| 1/16/2019 | [Suporte a IPv6 nos serviços do Office 365](/Office365/Enterprise/ipv6-support) | modificado |
+| 1/16/2019 | [Exibir usuários licenciados e não licenciados com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificado |
+| 1/16/2019 | [Exibir erros de sincronização de diretórios no Office 365](/Office365/Enterprise/identify-directory-synchronization-errors) | modificado |
+| 1/16/2019 | [Visão geral de nuvem híbrida](/Office365/Enterprise/hybrid-cloud-overview) | modificado |
+| 17/1/2019 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
+| 17/1/2019 | [Pontos de extremidade do Office 365 DoD do governo dos EUA](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
+| 17/1/2019 | [Pontos de extremidade dos EUA governamentais GCC alta do Office 365](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
+
+
+## <a name="week-of-january-21-2019"></a>Semana de 21 de janeiro de 2019
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 25/1/2019 | [Supervisores de implantação para serviços do Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | modificado |
+| 25/1/2019 | [Gerenciar Grupos do Office 365 com o PowerShell](/Office365/Enterprise/manage-office-365-groups-with-powershell) | modificado |
+| 25/1/2019 | [Mover um site do OneDrive para um local geográfico diferente](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificado |
+| 25/1/2019 | [Usar a rede de fornecimento de conteúdo do Office 365 com o SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modificado |
+| 25/1/2019 | [Configurar a sincronização de diretório com o Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificado |
