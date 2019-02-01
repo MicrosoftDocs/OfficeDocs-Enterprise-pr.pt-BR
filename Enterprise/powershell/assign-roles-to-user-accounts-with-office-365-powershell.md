@@ -3,7 +3,7 @@ title: Atribuir funções a contas de usuário com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 01/31/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,24 +14,58 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Resumo: Use o Office 365 PowerShell e o cmdlet Add-MsolRoleMember para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
-ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
+description: 'Resumo: Usar o PowerShell do Office 365 para atribuir funções a contas de usuário.'
+ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
+ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690432"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
 
- **Resumo:** Use o Office 365 PowerShell e o cmdlet **Add-MsolRoleMember** para atribuir funções a contas de usuário.
-  
-Você pode atribuir rapidez e facilidade funções a contas de usuário usando o Office 365 PowerShell identificando o nome para exibição da conta do usuário e o nome da função.
-  
-## <a name="before-you-begin"></a>Antes de começar
+Você pode atribuir rapidez e facilidade funções às contas de usuário usando o PowerShell do Office 365.
 
-Os procedimentos neste tópico exigem que você para se conectar ao Office 365 PowerShell usando uma conta de administrador global. Para obter instruções, consulte [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
+
+Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) usando uma conta de administrador global.
   
-## <a name="for-a-single-role-change"></a>Para alterar uma única função
+Em seguida, determine o nome de entrada da conta de usuário que você deseja adicionar a uma função (exemplo: fredsm@contoso.com). Isso também é conhecido como o nome de usuário principal (UPN).
+
+Em seguida, determine o nome da função. Use este comando para listar as funções que podem ser atribuídos com o PowerShell.
+
+````
+Get-AzureADDirectoryRole
+````
+
+Em seguida, preencha os nomes de entrada e de função e executar esses comandos.
+  
+```
+$userName="<sign-in name of the account>"
+$roleName="<role name>"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Aqui está um exemplo de um conjunto de comandos concluído:
+  
+```
+$userName="belindan@contoso.com"
+$roleName="Lync Service Administrator"
+Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+```
+
+Para exibir a lista de nomes de usuário para uma função específica, use esses comandos.
+
+```
+$roleName="<role name>"
+Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+```
+
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.
+
+Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) usando uma conta de administrador global.
+  
+### <a name="for-a-single-role-change"></a>Para alterar uma única função
 
 Determine o seguinte:
   
@@ -67,7 +101,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copie os comandos e colá-las no bloco de notas. Para as variáveis **$dispName** e **$roleName** , substitua o texto de descrição com seus valores, remova o \< e > caracteres e deixe as aspas. Copie as linhas modificadas e colá-los em sua janela do Windows Azure Active Directory módulo para Windows PowerShell para executá-los. Como alternativa, você pode usar o Windows PowerShell integrada Script Environment (ISE).
+Copie os comandos e colá-las no bloco de notas. Para as variáveis **$dispName** e **$roleName** , substitua o texto de descrição com seus valores, remova o \< e caracteres gt _ e deixe as aspas. Copie as linhas modificadas e colá-los em sua janela do Windows Azure Active Directory módulo para Windows PowerShell para executá-los. Como alternativa, você pode usar o Windows PowerShell integrada Script Environment (ISE).
   
 Aqui está um exemplo de um conjunto de comandos concluído:
   
@@ -77,7 +111,7 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-## <a name="for-multiple-role-changes"></a>Para várias alterações de função
+### <a name="for-multiple-role-changes"></a>Para várias alterações de função
 
 Determine o seguinte:
   
@@ -105,7 +139,7 @@ Determine o seguinte:
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Em seguida, crie um arquivo de texto delimitado por vírgula (CSV) que contém o DisplayName e função nomear campos. Aqui está um exemplo:
+Em seguida, crie um arquivo de texto delimitado por vírgula (CSV) que possui o DisplayName e role nomear campos. Aqui está um exemplo:
   
 ```
 DisplayName,RoleName
@@ -117,14 +151,13 @@ DisplayName,RoleName
 Em seguida, preencha o local do arquivo CSV e execute os comandos resultantes no prompt de comando do PowerShell.
   
 ```
-$fileName="<path and file name of the input CSV file that contains the role changes, example: C:\admin\RoleUpdates.CSV>"
+$fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
 $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $_.DisplayName).UserPrincipalName -RoleName $_.RoleName }
 
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 
-- [Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-- [Adicionar-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
