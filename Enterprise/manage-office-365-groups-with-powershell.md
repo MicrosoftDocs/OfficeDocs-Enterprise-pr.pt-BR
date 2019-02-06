@@ -1,8 +1,8 @@
 ---
-title: Gerenciar grupos do Office 365 com o PowerShell
-ms.author: dianef
-author: dianef77
-manager: scotv
+title: Gerenciar Grupos do Office 365 com o PowerShell
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Este artigo fornece as etapas para realizar tarefas comuns de gerenciamento para grupos no Microsoft PowerShell.
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539377"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741224"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>Gerenciar grupos do Office 365 com o PowerShell
+# <a name="manage-office-365-groups-with-powershell"></a>Gerenciar Grupos do Office 365 com o PowerShell
 
  *Última atualizados 18 de abril de 2018* 
   
@@ -35,9 +35,9 @@ Este artigo fornece as etapas para realizar tarefas comuns de gerenciamento para
 
 - [Listas de distribuição de atualização para o Office 365 grupos](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f.aspx)
     
-- [Gerenciar quem pode criar grupos do Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
+- [Gerenciar quem pode criar Grupos do Office 365](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [Gerenciar o acesso de convidado aos grupos do Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [Gerenciar o acesso de convidados aos Grupos do Office 365](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [Gerenciar grupos dinamicamente no Windows Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -204,7 +204,7 @@ Para saber mais, consulte [Set-OrganizationConfig](https://go.microsoft.com/fwli
   
 ## <a name="office-365-groups-cmdlets"></a>Cmdlets de grupos do Office 365
 
-Os cmdlets a seguir foram feitos recentemente disponíveis aos grupos do Office 365. Se você não poderá usá-los, sua assinatura do Office 365 não foi atualizada com essa funcionalidade ainda. Verifique seu centro de mensagens e o [mapa do Office 365](http://roadmap.office.com/en-us).
+Os cmdlets a seguir foram feitos recentemente disponíveis aos grupos do Office 365. Se você não poderá usá-los, sua assinatura do Office 365 não foi atualizada com essa funcionalidade ainda. Verifique seu centro de mensagens e o [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
   
 |**Nome do cmdlet**|**Descrição**|
 |:-----|:-----|
