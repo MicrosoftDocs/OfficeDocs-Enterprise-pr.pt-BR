@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Usar o PowerShell do Office 365 para criar novos sites do SharePoint Online e, em seguida, adicionar usuários e grupos para esses sites.'
-ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975199"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897164"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Criar sites do SharePoint Online e adicionar usuários com o Office 365 PowerShell
 
@@ -32,7 +32,7 @@ Os procedimentos neste tópico exigem que você se conectar ao SharePoint Online
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Etapa 1: Criar novos conjuntos de sites usando o PowerShell do Office 365
 
-Crie vários sites usando o Office 365 PowerShell e um arquivo. csv que você criar usando o código de exemplo fornecido e o bloco de notas. Esse procedimento, você substituirá as informações de espaço reservado mostradas na colchetes com suas próprias informações específicas do site e do inquilino. Esse processo permite que você crie um único arquivo e execute um comando do Office 365 PowerShell único que usa esse arquivo. Isso faz com que as ações realizadas repetível e portátil e elimina muitos, se não todos os erros que podem ser provenientes de comandos longos digitados no SharePoint Online Management Shell. Há duas partes para esse procedimento. Primeiro, você vai criar um arquivo. csv e, em seguida, você vai fazer referência a esse arquivo. csv usando o Office 365 PowerShell, que usará o seu conteúdo para criar os sites.
+Crie vários sites usando o Office 365 PowerShell e um arquivo. csv que você criar usando o código de exemplo fornecido e o bloco de notas. Esse procedimento, você substituirá as informações de espaço reservado mostradas na colchetes com suas próprias informações específicas do site e do inquilino. Esse processo permite criar um único arquivo e execute um comando do Office 365 PowerShell único que usa esse arquivo. Isso faz com que as ações realizadas repetível e portátil e elimina muitos, se não todos os erros que podem ser provenientes de comandos longos digitados no SharePoint Online Management Shell. Há duas partes para esse procedimento. Primeiro, você vai criar um arquivo. csv e, em seguida, você vai fazer referência a esse arquivo. csv usando o Office 365 PowerShell, que usará o seu conteúdo para criar os sites.
 
 O cmdlet do PowerShell do Office 365 importa o arquivo. csv e canaliza para um loop dentro de chaves que lê a primeira linha do arquivo como cabeçalhos de coluna. Em seguida, o cmdlet do PowerShell do Office 365 percorre os registros restantes, cria um novo conjunto de sites para cada registro e atribui propriedades do conjunto de sites de acordo com os cabeçalhos de coluna.
 

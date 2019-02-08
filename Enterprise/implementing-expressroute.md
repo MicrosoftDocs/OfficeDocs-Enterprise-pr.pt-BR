@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute para o Office 365 fornece um caminho alternativo de roteamento para internet muitos enfrentados pelos serviços do Office 365. A arquitetura do ExpressRoute para o Office 365 se baseia em anuncie públicos prefixos IP dos serviços do Office 365 que já estão acessíveis através da Internet em seus circuitos ExpressRoute provisionados para redistribuição subsequente desses prefixos IP em sua rede. Com ExpressRoute você efetivamente habilitar várias diferentes caminhos de roteamento, através da internet e ExpressRoute, para muitos serviços do Office 365. Este estado do roteamento em sua rede pode representar uma alteração significativa para como sua topologia de rede interna é criada.
-ms.openlocfilehash: c4479a236d1419293dbd433e8d3c10a11ea5fb45
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539492"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25715867"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Como implementar o ExpressRoute para Office 365
 
@@ -115,6 +115,7 @@ Aqui está um exemplo do nível de detalhes necessário. Nesse caso Exchange hí
 |**Controle de simetria de caminho** <br/> |**Método**: NAT de origem  <br/> **Caminho de Internet**: origem NAT as conexões 192.168.5.5 de entrada  <br/> |**Caminho de ExpressRoute**: conexões de fonte NAT 192.168.1.0 (Chicago) e 192.168.2.0 (Dallas)  <br/> |
 
 Aqui está um exemplo de um serviço que só é saído:
+
 |**Propriedade de Conexão**|**Valor**|
 |:-----|:-----|
 |**Direção do tráfego de rede** <br/> |Saída  <br/> |
@@ -563,7 +564,7 @@ Execute PSPing com um rastreamento de rede para cada ponto de extremidade do cli
   
 Tenha em mente que, ao mesmo tempo em que implantar o Office 365 com uma conexão de ExpressRoute, que você precisará garantir a configuração de rede para ExpressRoute foi projetado de forma ideal e você também tiver otimizado os outros componentes em sua rede, como computadores cliente. Além de usar este guia de planejamento para solucionar as etapas que você possa ter perdido, podemos também tenha escrito um [plano para o Office 365 de solução de problemas de desempenho](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c) .
   
-Aqui está um link curto que você pode usar para voltar:[https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+Aqui está um link curto que você pode usar para voltar: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -577,15 +578,15 @@ Aqui está um link curto que você pode usar para voltar:[https://aka.ms/impleme
   
 [Planejamento de rede com o ExpressRoute para Office 365](network-planning-with-expressroute.md)
   
-[Usando o comunidades BGP em ExpressRoute para cenários do Office 365 (preview)](bgp-communities-in-expressroute.md)
+[Como usar comunidades do BGP no ExpressRoute para cenários do Office 365 (visualização)](bgp-communities-in-expressroute.md)
   
-[Qualidade de mídia e o desempenho de conectividade de rede no Skype para negócios on-line](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualidade da mídia e desempenho de conectividade de rede no Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Otimização de sua rede para Skype para negócios Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Como otimizar a sua rede para o Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute e QoS em Skype para negócios on-line](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute e QoS no Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Fluxo de chamadas usando ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Fluxo de chamadas usando o ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho](performance-tuning-using-baselines-and-history.md)
   
@@ -593,4 +594,4 @@ Aqui está um link curto que você pode usar para voltar:[https://aka.ms/impleme
   
 [URLs e intervalos de endereços IP do Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Ajuste de desempenho e de rede do Office 365](network-planning-and-performance.md)
+[Rede do Office 365 e ajuste de desempenho](network-planning-and-performance.md)

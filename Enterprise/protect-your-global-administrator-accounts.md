@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Protege o acesso de administrador global à sua assinatura do Office 365 com estas três etapas.
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539390"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897514"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger as contas de administradores globais do Office 365
 
@@ -120,7 +120,7 @@ Para se conectar aos serviços do Office 365 com MFA e PowerShell, consulte [Est
   
 ## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>Etapa 3. Monitor das atividades da conta de administrador global suspeitas
 
-Segurança de aplicativo de nuvem do Office 365 permite que você crie políticas para notificá-lo de comportamento suspeito em sua assinatura. Segurança de aplicativo de nuvem é incorporada ao Office 365 E5, mas também está disponível como um serviço separado. Por exemplo, se você não tiver E5 do Office 365, você pode adquirir licenças individuais de segurança de aplicativo de nuvem para as contas de usuário que são atribuídas a administrador global, os administradores de segurança e funções de administrador de conformidade.
+Segurança de aplicativo de nuvem do Office 365 permite criar políticas para notificá-lo de comportamento suspeito em sua assinatura. Segurança de aplicativo de nuvem é incorporada ao Office 365 E5, mas também está disponível como um serviço separado. Por exemplo, se você não tiver E5 do Office 365, você pode adquirir licenças individuais de segurança de aplicativo de nuvem para as contas de usuário que são atribuídas a administrador global, os administradores de segurança e funções de administrador de conformidade.
   
 Se você tiver segurança de aplicativo de nuvem em sua assinatura do Office 365, execute estas etapas:
   

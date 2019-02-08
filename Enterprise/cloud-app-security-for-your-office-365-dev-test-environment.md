@@ -16,25 +16,25 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumo: Configurar e demonstrar a segurança de aplicativo de nuvem do Office 365 em seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 089b9771d0600f8c74bc7b4c30ff2a4931c93ae6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915756"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897054"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configurar e demonstrar a segurança de aplicativo de nuvem do Office 365 em seu ambiente de desenvolvimento e teste do Office 365.
   
-Segurança de aplicativo do Office 365 nuvem, anteriormente conhecido como o Office 365 gerenciamento avançado de segurança, permite que você crie diretivas que monitoram e informam atividades suspeitas em sua assinatura do Office 365, para que você possa investigar e levar possíveis ação de remediação. Para obter mais informações, consulte [Visão geral da segurança nuvem de App no Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Segurança App nuvem do Office 365, anteriormente conhecido como o Office 365 gerenciamento avançado de segurança, permite que você crie diretivas que monitoram e informam atividades suspeitas em sua assinatura do Office 365, para que você possa investigar e levar remediação possível ação. Para obter mais informações, consulte [Visão geral da segurança nuvem de App no Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Com as instruções deste artigo, você pode habilitar e testar a segurança do aplicativo de nuvem em sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
 Se você deseja testar a segurança do aplicativo de nuvem de forma leve com os requisitos mínimos, siga as instruções em fases 2 e 3 do [ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md).
   
@@ -81,13 +81,13 @@ Neste procedimento, habilite a segurança de aplicativo de nuvem e criar uma nov
 
 1. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e se conectar à sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
-2. Clique no lado do **Admin** . Na guia do **Centro de administração do Office** , clique em **centrais de Admin > segurança e conformidade**.
+2. Clique no lado do **Admin** . Na guia do **Centro de administração do Office** , clique em **Admin centrais gt _ segurança & conformidade**.
     
-3. No painel de navegação à esquerda, clique em **alertas > Gerenciar avançadas alertas**.
+3. No painel de navegação à esquerda, clique em **avançadas de alertas gt _ gerenciar alertas**.
     
 4. Na página **Gerenciar alertas de avançadas** , clique em **Ativar de segurança de aplicativo de nuvem do Office 365**e, em seguida, clique em **Ir para segurança de aplicativo de nuvem do Office 365**.
     
-5. Na guia nova **painel** , clique em **controle > políticas**.
+5. Na guia nova **painel** , clique em **controle gt _ políticas**.
     
 6. Na página **política** , clique em **Criar política**e clique em **política de atividade**.
     
@@ -111,7 +111,7 @@ Neste procedimento, você demonstrar como a segurança de aplicativo de nuvem cr
 
 1. No canto superior direito, clique no ícone de usuário e, em seguida, clique em **Sair**.
     
-2. Vá para [https://portal.office.com](https://portal.office.com).
+2. Acesse [https://portal.office.com](https://portal.office.com).
     
 3. Na página de entrada do Office 365, clique em **Usar outra conta**.
     
@@ -135,7 +135,7 @@ Neste procedimento, você demonstrar como a segurança de aplicativo de nuvem cr
     
 13. Clique no ícone de usuário no canto superior direito e clique em **Sair**. 
     
-14. Vá para [https://portal.office.com](https://portal.office.com).
+14. Acesse [https://portal.office.com](https://portal.office.com).
     
 15. Na página de **entrada do Office 365**, clique no nome da conta do administrador global.
     
@@ -145,7 +145,7 @@ Neste procedimento, você demonstrar como a segurança de aplicativo de nuvem cr
     
 18. Clique no **segurança &amp; conformidade** lado a lado.
     
-19. No painel de navegação à esquerda, clique em **alertas > Gerenciar avançadas alertas**.
+19. No painel de navegação à esquerda, clique em **avançadas de alertas gt _ gerenciar alertas**.
     
 20. Na página **Gerenciar alertas de avançadas** , clique em **Ir para segurança de aplicativo de nuvem do Office 365**.
     

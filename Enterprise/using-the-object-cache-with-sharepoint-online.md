@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: Este artigo explica a diferença entre usar o cache de objetos no SharePoint Server 2013 no local e o SharePoint Online.
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056160"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769850"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usando o cache de objetos com o SharePoint Online
 
@@ -34,7 +34,7 @@ Quando o SharePoint Server 2013 estiver hospedado no local, o cliente tem servid
   
 Como resultado, na segunda vez que um usuário visita uma página, o tempo de carregamento da página aumenta. Após um mínimo de quatro carregamentos da mesma página, ela é armazenada em cache em todos os servidores front-end da Web.
   
-Por outro lado, no SharePoint Online, há muitos mais servidores, mas também muitos sites mais. Todos os usuários podem se conectar a um servidor web front-end diferente que não tem o cache preenchido. Ou, talvez o cache obter preenchido para um servidor, mas o usuário próximo a esse servidor web front-end solicita uma página de um site diferente. Ou, mesmo se o próximo usuário solicita a mesma página nos seus visita anterior, eles estarão com balanceamento de carga para um servidor web front-end diferente que não tem essa página em seu cache. Nesse último caso, o cache não ajuda os usuários em todas as.
+Por outro lado, no SharePoint Online, há muitos mais servidores, mas também muitos sites mais. Todos os usuários podem se conectar a um servidor web front-end diferente que não tem o cache preenchido. Ou então, talvez o cache obter preenchido para um servidor, mas o próximo usuário para que solicitações de servidor web front-end uma página de um site diferente. Ou, mesmo se o próximo usuário solicita a mesma página nos seus visita anterior, eles estarão com balanceamento de carga para um servidor web front-end diferente que não tem essa página em seu cache. Nesse último caso, o cache não ajuda os usuários em todas as.
   
 Na figura a seguir, cada ponto representa uma página que um usuário está solicitando e onde ela é armazenada em cache. Cores diferentes representam diferentes clientes fazendo uso compartilhado da infraestrutura SaaS.
   

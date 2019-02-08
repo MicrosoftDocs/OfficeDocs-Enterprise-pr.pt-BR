@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: 'Resumo: Use este guia de laboratório de teste para habilitar a integração de Dynamics 365 para Exchange Online em sua assinatura de avaliação do Office 365.'
-ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897114"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Integração com o Exchange Online para seu ambiente de desenvolvimento/teste do Office 365 e do Dynamics 365
 
@@ -46,7 +46,7 @@ Use estas etapas para configurar a caixa de correio do administrador global para
     
 2. Na página **Inicial do Microsoft Office** , clique no lado do **email** .
     
-3. Na guia **email** nova no seu navegador, clique em **novo** e observe como o canto inferior do painel abaixo da caixa para digitar uma mensagem contém um ícone para Meus modelos.
+3. Na guia **email** nova no seu navegador, clique em **novo** e observe como o canto inferior do painel abaixo da caixa para digitar uma mensagem possui um ícone para Meus modelos.
     
      ![Nova mensagem de email em branco sem a integração com o Dynamics 365.](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -54,7 +54,7 @@ Use estas etapas para configurar a caixa de correio do administrador global para
     
 5. Clique na guia **Página inicial do Microsoft Office** no seu navegador e, em seguida, clique no lado de **Administração** .
     
-6. No painel de navegação à esquerda da guia **Centro de administração do Office** , clique em **centrais de Admin > Dynamics 365**.
+6. No painel de navegação à esquerda da guia **Centro de administração do Office** , clique em **Admin centrais gt _ Dynamics 365**.
     
 7. Na guia **Dynamics 365** nova em seu navegador, na lista de instâncias de Dynamics 365, clique em **Abrir**.
     
@@ -88,7 +88,7 @@ Use estas etapas para instalar o aplicativo do Dynamics 365 para o Outlook e dem
     
 5. Clique na guia **Página inicial do Microsoft Office** no seu navegador e, em seguida, clique no lado de **email** .
     
-6. Na guia **email** nova no seu navegador, clique em **novo**. Observe que o canto inferior do painel abaixo da caixa para digitar uma mensagem agora contém um ícone para Dynamics 365.
+6. Na guia **email** nova no seu navegador, clique em **novo**. Observe que o canto inferior do painel abaixo da caixa para digitar uma mensagem agora tem um ícone para Dynamics 365.
     
      ![Nova mensagem de email em branco com a integração com o Dynamics 365, mostrando o novo ícone.](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
@@ -105,7 +105,7 @@ Use estas etapas para instalar o aplicativo do Dynamics 365 para o Outlook e dem
     
 ## <a name="see-also"></a>Confira também
 
-[Office 365 e o ambiente de desenvolvimento/teste do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
+[Ambiente de desenvolvimento/teste do Office 365 e do Dynamics 365](office-365-and-dynamics-365-dev-test-environment.md)
   
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
@@ -113,10 +113,10 @@ Use estas etapas para instalar o aplicativo do Dynamics 365 para o Outlook e dem
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[DirSync para o ambiente de desenvolvimento/ teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync para o ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Gerenciamento de assinatura do Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
+[Gerenciamento de assinaturas do Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
   
-[Administrando o Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
+[Administração do Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
 
 

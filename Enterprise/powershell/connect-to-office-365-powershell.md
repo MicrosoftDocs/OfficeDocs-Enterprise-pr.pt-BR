@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: Conecte à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de centro de administração da linha de comando.'
-ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849887"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897194"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
  **Resumo:** Conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para executar tarefas de administração da linha de comando.
   
-O Office 365 PowerShell permite que você para gerenciar suas configurações do Office 365 da linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples onde você instala o software necessário e conecte-se à sua organização do Office 365. 
+O Office 365 PowerShell permite gerenciar suas configurações do Office 365 da linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples onde você instala o software necessário e conecte-se à sua organização do Office 365. 
 
 Existem duas versões do módulo do PowerShell que você usa para se conectar ao Office 365 e administrar licenças, grupos e contas de usuário:
 

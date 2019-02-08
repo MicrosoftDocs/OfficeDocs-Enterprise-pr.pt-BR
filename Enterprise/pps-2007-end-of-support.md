@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity e SharePoint Server 2007 alcançaram o fim do suporte. Leia este artigo para planejar uma atualização de solução de BI.
-ms.openlocfilehash: 219349a85f14ddf10058c853d69b58a52bb0d1cc
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: 03db75b38bfaa32df20eafb8ede745e403bc964f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831906"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26617874"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do PerformancePoint Server 2007
 
@@ -152,5 +152,7 @@ Se você estiver atualizando local ou mover para o Office 365, é recomendável 
 [Recursos para ajudá-lo a atualizar do Office 2007 servidores e clientes](upgrade-from-office-2007-servers-and-products.md)
   
 [Grupo de aposentadoria do Office (Microsoft Tech comunidade)](https://go.microsoft.com/fwlink/?linkid=842065)
+
+
   
 

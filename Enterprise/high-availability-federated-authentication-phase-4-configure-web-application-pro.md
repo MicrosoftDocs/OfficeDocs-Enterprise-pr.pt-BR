@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumo: Configure os servidores de proxy de aplicativo web para sua autenticação federada de alta disponibilidade para o Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 0f0299fe8fecdea608330eebc12aea01098f8cec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69c1102326a00592d1f79bec4582fb8c9aa7f344
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915806"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897424"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Autenticação federada de alta disponibilidade Fase 4: Configurar proxies de aplicativos Web
 
@@ -32,12 +32,12 @@ Você deve concluir esta fase antes de mover o logon em [alta disponibilidade fe
 Você deve criar um balanceador de carga voltado para a Internet para que o Azure distribua o tráfego de autenticação de cliente de entrada proveniente da Internet uniformemente entre os dois servidores proxy de aplicativos Web.
   
 > [!NOTE]
-> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Consulte a [introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Quando tiver fornecido os valores de localização e grupo de recursos, execute o bloco resultante no prompt de comando do Azure PowerShell ou no ISE do PowerShell.
   
 > [!TIP]
-> Para um arquivo de texto que contém todos os comandos do PowerShell este artigo e uma pasta de trabalho de configuração Microsoft Excel que gera blocos de comando do PowerShell pronto para executar com base em suas configurações personalizadas, consulte o [autenticação federada para o Office 365 Kit de implantação do Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Para um arquivo de texto que tem todos os comandos do PowerShell neste artigo e uma pasta de trabalho de configuração Microsoft Excel que gera blocos de comando do PowerShell pronto para executar com base em suas configurações personalizadas, consulte o [autenticação federada para o Office 365 no Windows Azure Kit de implantação](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up key variables

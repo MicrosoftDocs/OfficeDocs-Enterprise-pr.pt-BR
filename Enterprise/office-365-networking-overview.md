@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Discute por que a otimização de rede é importante para os serviços SaaS, o objetivo de rede do Office 365, e como SaaS requer uma rede diferente de outras cargas de trabalho.
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002350"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897204"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Visão geral de conectividade de rede do Office 365
 
@@ -84,7 +84,7 @@ A arquitetura de saída local tem os seguintes benefícios para tráfego de rede
 > [!NOTE]
 > A infra-estrutura de _distribuído porta frontal de serviço_ é a borda de rede altamente disponível e escalonável da rede Global Microsoft com locais geograficamente distribuídos. Ela termina conexões de usuário final e eficiente roteia-los dentro da rede Global da Microsoft. Você pode aprender mais sobre a rede Global da Microsoft em [como a Microsoft amplia sua rede global rápida e confiável](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-Para obter mais informações sobre a compreensão e a aplicação de princípios de conectividade de rede do Office 365, consulte [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles#office-365-connectivity-principles).
+Para obter mais informações sobre a compreensão e a aplicação de princípios de conectividade de rede do Office 365, consulte [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md).
 
 ## <a name="conclusion"></a>Conclusão
 

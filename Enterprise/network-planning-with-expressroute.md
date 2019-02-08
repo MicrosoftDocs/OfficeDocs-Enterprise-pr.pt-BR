@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: ExpressRoute para o Office 365 fornece conectividade de camada 3 entre a sua rede e centros de dados da Microsoft. Os circuitos usam anúncios de rota Border Gateway Protocol (BGP) dos servidores de front-end do Office 365. Da perspectiva dos seus dispositivos de local, sempre que precisarem selecionar o caminho correto do TCP/IP para o Office 365, ExpressRoute do Windows Azure é visto como uma alternativa à Internet.
-ms.openlocfilehash: 79cad16a619f048d1ba98b6058127f901211344d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539386"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897224"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planejamento de rede com o ExpressRoute para Office 365
 
@@ -106,7 +106,7 @@ Woodgrove Bank está considerando a implementação ExpressRoute do Windows Azur
   
 Para Woodgrove, uma organização multinacional com locais em vários continentes, segurança deve abranger todos os de perímetro. A opção de conectividade ideal para Woodgrove é uma conexão de multiponto com vários locais de correspondência em todo o mundo para atender às necessidades de seus funcionários em cada continente. Cada continente inclui circuitos redundantes do Azure ExpressRoute dentro do continente e segurança deve abranger todos esses.
   
-Infraestrutura do Woodgrove seja confiável e pode manipular o trabalho adicional, como resultado, Woodgrove Bank é capaz de utilizar a infraestrutura de segurança de perímetro seus ExpressRoute do Windows Azure e da internet. Se isso não fosse o caso, Woodgrove podia optar por adquirir equipamentos adicionais para complementar seus equipamentos existente ou para lidar com um tipo diferente de conexão.
+Infraestrutura do Woodgrove seja confiável e pode manipular o trabalho adicional, como resultado, o Woodgrove Bank é capaz de usar a infra-estrutura de sua segurança de perímetro ExpressRoute do Windows Azure e internet. Se isso não fosse o caso, Woodgrove podia optar por adquirir equipamentos adicionais para complementar seus equipamentos existente ou para lidar com um tipo diferente de conexão.
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>Alta disponibilidade e failover com ExpressRoute do Windows Azure
 <a name="BKMK_high-availability"> </a>
@@ -185,7 +185,7 @@ Escolha os locais de seus circuitos com base em sua largura de banda, latência,
   
 Trabalhar com o seu provedor ou provedores para selecionar as melhores opções de conectividade, ponto a ponto, multiponto ou hospedada. Lembre-se de que você pode misturar e corresponder as opções de conectividade, contanto que a largura de banda e outros componentes redundantes oferecem suporte a seu design de roteamento e a alta disponibilidade.
   
-Aqui está um link curto que você pode usar para voltar:[https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Aqui está um link curto que você pode usar para voltar: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
 ## <a name="related-topics"></a>Tópicos relacionados
 <a name="BKMK_high-availability"> </a>
@@ -200,15 +200,15 @@ Aqui está um link curto que você pode usar para voltar:[https://aka.ms/plannin
   
 [Como implementar o ExpressRoute para Office 365](implementing-expressroute.md)
   
-[Usando o comunidades BGP em ExpressRoute para cenários do Office 365 (preview)](bgp-communities-in-expressroute.md)
+[Como usar comunidades do BGP no ExpressRoute para cenários do Office 365 (visualização)](bgp-communities-in-expressroute.md)
   
-[Qualidade de mídia e o desempenho de conectividade de rede no Skype para negócios on-line](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Qualidade da mídia e desempenho de conectividade de rede no Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Otimização de sua rede para Skype para negócios Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Como otimizar a sua rede para o Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute e QoS em Skype para negócios on-line](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute e QoS no Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Fluxo de chamadas usando ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Fluxo de chamadas usando o ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho](performance-tuning-using-baselines-and-history.md)
   
@@ -216,6 +216,6 @@ Aqui está um link curto que você pode usar para voltar:[https://aka.ms/plannin
   
 [URLs e intervalos de endereços IP do Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Ajuste de desempenho e de rede do Office 365](network-planning-and-performance.md)
+[Rede do Office 365 e ajuste de desempenho](network-planning-and-performance.md)
   
-[Pontos de extremidade perguntas Frequentes do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
+[Perguntas frequentes sobre pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

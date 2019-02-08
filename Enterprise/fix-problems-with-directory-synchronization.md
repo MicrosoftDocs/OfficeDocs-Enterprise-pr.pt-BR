@@ -3,7 +3,6 @@ title: Corrigir problemas de sincronização de diretório do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descreve as causas comuns de problemas com a sincronização de diretórios no Office 365 e fornece alguns métodos para ajudar a solucionar e resolvê-los.
-ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
-ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
+ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25405124"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897304"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Corrigir problemas de sincronização de diretório do Office 365
 
@@ -54,12 +53,12 @@ Para atualizar a partir de sincronização do Azure Active Directory para conect
 
 ### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Objetos sincronizados não estão aparecendo ou atualizando online ou estou recebendo relatórios de erros de sincronização do serviço.**
 
-- [Resiliência de atributo de sincronização e duplicata de identidade](https://go.microsoft.com/fwlink/p/?LinkID=798300)
+- [Resiliência de atributo de sincronização e duplicata de identidade](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Posso ter um alerta no Centro de administração do Office 365 ou estou recebendo emails automatizados que ainda não foi um evento de sincronização recentes**
-- [Resolver problemas de conectividade com Connect do Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=820597)
+- [Resolver problemas de conectividade com Connect do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Azure AD conectar contas e permissões](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Sincronização do Azure AD Connect: como gerenciar a conta de serviço do Windows Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=820599)
+- [Sincronização do Azure AD Connect: como gerenciar a conta de serviço do Windows Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Sincronização de diretórios para paradas do Azure Active Directory ou você estiver avisados que sync ainda não registrados em mais de um dia](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Hashes de senha não estão sincronizando ou Estou obtendo um alerta no Centro de administração do Office 365, que ainda não foi uma sincronização recente de hash de senha**
@@ -79,7 +78,7 @@ Para atualizar a partir de sincronização do Azure Active Directory para conect
    
 ## <a name="other-resources"></a>Outros recursos
 
-- [Script para corrigir os nomes de entidade de usuário duplicado](https://go.microsoft.com/fwlink/p/?LinkId=396725)
+- [Script para corrigir UPNs duplicados](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
 - [Como preparar um domínio não roteáveis (por exemplo, o domínio. local) para sincronização de diretórios](prepare-a-non-routable-domain-for-directory-synchronization.md)
     

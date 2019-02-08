@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumo: Configure os controladores de domínio e o servidor DirSync para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: 1e66403348bc2cd9a6dfab56f32735d62c986035
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 88e96c8173a209eb9a0a371b65eacda769e1f50f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915146"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897214"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Autenticação federada de alta disponibilidade Fase 2: Configurar controladores de domínio
 
@@ -48,7 +48,7 @@ Em primeiro lugar, você precisa preencher a coluna **Nome da máquina virtual**
   
 Para obter a lista completa de tamanhos de máquinas virtuais, confira [Tamanhos das máquinas virtuais](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
-O seguinte bloco de comando do Windows Azure PowerShell cria as máquinas virtuais para os controladores de dois domínio. Especifique os valores para as variáveis, removendo a \< e > caracteres. Observe que este bloco de comando do Windows Azure PowerShell usa valores das tabelas a seguir:
+O seguinte bloco de comando do Windows Azure PowerShell cria as máquinas virtuais para os controladores de dois domínio. Especifique os valores para as variáveis, removendo a \< e gt _ caracteres. Observe que este bloco de comando do Windows Azure PowerShell usa valores das tabelas a seguir:
   
 - Tabela M, para suas máquinas virtuais
     
@@ -70,7 +70,7 @@ Lembre-se de que você definiu tabelas R, V, S, I e A na [alta disponibilidade f
 Quando tiver fornecido todos os valores corretos, execute o bloco resultante no prompt do Azure PowerShell ou no Ambiente de Script Integrado (ISE) do PowerShell no computador local.
   
 > [!TIP]
-> Para um arquivo de texto que contém todos os comandos do PowerShell este artigo e uma pasta de trabalho de configuração Microsoft Excel que gera blocos de comando do PowerShell pronto para executar com base em suas configurações personalizadas, consulte o [autenticação federada para o Office 365 Kit de implantação do Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Para um arquivo de texto que tem todos os comandos do PowerShell neste artigo e uma pasta de trabalho de configuração Microsoft Excel que gera blocos de comando do PowerShell pronto para executar com base em suas configurações personalizadas, consulte o [autenticação federada para o Office 365 no Windows Azure Kit de implantação](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up variables common to both virtual machines

@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Resumo: Crie e configure os servidores dos Serviços de Federação do Active Directory (AD FS) para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: 93b2ed3c0935aee586d5aa236e79ab1e89a61b93
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 16a8173f009ea89ec109a848e058ae02d29d3d12
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915426"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897254"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Autenticação federada de alta disponibilidade Fase 3: Configurar servidores do AD FS
 
@@ -46,12 +46,12 @@ Use o seguinte bloco de comandos do PowerShell para criar as máquinas virtuais 
 Lembre-se de que você definiu milhões de tabela em [alta disponibilidade federado autenticação fase 2: Configure os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e tabelas R, V, S, I e A na [alta disponibilidade federado autenticação fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira a [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
-Primeiro, crie um balanceador de carga interno Azure para o AD dois servidores FS. Especifique os valores para as variáveis, removendo a \< e > caracteres. Quando você tiver fornecido todos os valores adequados, execute o bloco de resultante no prompt de comando do PowerShell do Azure ou com o PowerShell ISE.
+Primeiro, crie um balanceador de carga interno Azure para o AD dois servidores FS. Especifique os valores para as variáveis, removendo a \< e gt _ caracteres. Quando você tiver fornecido todos os valores adequados, execute o bloco de resultante no prompt de comando do PowerShell do Azure ou com o PowerShell ISE.
   
 > [!TIP]
-> Para um arquivo de texto que contém todos os comandos do PowerShell este artigo e uma pasta de trabalho de configuração Microsoft Excel que gera blocos de comando do PowerShell pronto para executar com base em suas configurações personalizadas, consulte o [autenticação federada para o Office 365 Kit de implantação do Azure](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Para um arquivo de texto que tem todos os comandos do PowerShell neste artigo e uma pasta de trabalho de configuração Microsoft Excel que gera blocos de comando do PowerShell pronto para executar com base em suas configurações personalizadas, consulte o [autenticação federada para o Office 365 no Windows Azure Kit de implantação](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 ```
 # Set up key variables

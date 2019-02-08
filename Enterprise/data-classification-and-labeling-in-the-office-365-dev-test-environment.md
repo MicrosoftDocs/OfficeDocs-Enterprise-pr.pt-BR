@@ -16,21 +16,21 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Resumo: Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914846"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897434"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365.
   
-O cliente de proteção de informações do Windows Azure permite classificar um documento antes de carregá-la para uma pasta do SharePoint Online no Office 365. Com as instruções deste artigo, você pode instala o cliente de proteção de informações do Windows Azure e demonstrar a classificação de dados. Para obter mais informações, consulte [Proteção de informações do Windows Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
+O cliente de proteção de informações do Windows Azure lhe permite classificar um documento antes de carregá-la para uma pasta do SharePoint Online no Office 365. Com as instruções deste artigo, você pode instala o cliente de proteção de informações do Windows Azure e demonstrar a classificação de dados. Para obter mais informações, consulte [Proteção de informações do Windows Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Criar o seu ambiente de desenvolvimento e teste do Office 365
 
@@ -48,7 +48,7 @@ Em primeiro lugar, inscreva-se para uma assinatura de avaliação de proteção 
     
 2. Na guia **Página inicial do Microsoft Office** , clique no lado do **Admin** .
     
-3. Na guia de administração do Office 365, no painel de navegação esquerdo, clique em **faturamento > Serviços de compra**.
+3. Na guia de administração do Office 365, no painel de navegação esquerdo, clique em **Serviços de compra gt _ de cobrança**.
     
 4. Na página **Serviços de compra** , localize o item de **P2 de Premium de proteção de informações do Azure** . Passe o mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
     
@@ -80,7 +80,7 @@ Se você estiver usando o ambiente de desenvolvimento e teste do Office 365 ente
   
 1. Use o seu navegador e vá para o [portal do Azure](http://portal.azure.com).
     
-2. Clique em **grupos de recursos >** [seu nome de grupo de recurso] **> CLIENT1 > conectar**.
+2. Clique em **gt _ de grupos de recursos** [seu nome de grupo de recursos] **gt _ CLIENT1 gt _ Connect**.
     
 3. No CLIENT1, execute o Internet Explorer, vá para o portal do Office em [http://portal.office.com](http://portal.office.com)e, em seguida, entre com o nome da conta de User5 e a senha.
     
@@ -118,15 +118,15 @@ Em seguida, você demonstrar a classificação de documento.
     
 5. No documento em branco, digite algum texto.
     
-6. Clique em **arquivo > Salvar**, digite o nome **BeforeAIP**e, em seguida, clique em **Okey**. 
+6. Clique em **Salvar gt _ do arquivo**, digite o nome **BeforeAIP**e clique em **Okey**. 
     
 7. Na linha de classes de documento, clique na seta para **segredo**e, em seguida, clique em **Tudo empresa**.
     
-8. Clique em **arquivo > Salvar como**, digite o nome **AfterAIP**e, em seguida, clique em **Okey**.
+8. Clique em **arquivo gt _ Salvar como**, digite o nome **AfterAIP**e, em seguida, clique em **Okey**.
     
 9. Clique em **Gerenciador de arquivos** , na barra de tarefas e, em seguida, abra a pasta de **documentos** .
     
-    Observe os tamanhos de arquivo diferente dos documentos **BeforeAIP** e **AfterAIP** . O documento de AfterAIP for maior, pois ele contém as informações de classificação.
+    Observe os tamanhos de arquivo diferente dos documentos **BeforeAIP** e **AfterAIP** . O documento AfterAIP é maior porque ele tem as informações de classificação.
     
 Em seguida, você permitir que todos acessar a coleção de site de suporte.
   
@@ -150,11 +150,11 @@ Em seguida, você pode entrar com sua conta User5 e carregar um documento proteg
   
 1. Na guia **Página inicial do Microsoft Office** , no canto superior direito, clique no ícone de usuário e, em seguida, clique em **Sair**.
     
-2. Vá para [http://portal.office.com](http://portal.office.com).
+2. Acesse [http://portal.office.com](http://portal.office.com).
     
 3. Na página do **Office 365 entrar** , clique no nome da conta de User5 e entrar.
     
-4. Na guia **Página inicial do Microsoft Office** , clique em **SharePoint > suportam o conjunto de sites**.
+4. Na guia **Página inicial do Microsoft Office** , clique em **SharePoint gt _ conjunto de sites de suporte**.
     
 5. Clique em **documentos**, clique em **carregar**, clique no documento **AfterAIP** e clique em **Abrir**.
     

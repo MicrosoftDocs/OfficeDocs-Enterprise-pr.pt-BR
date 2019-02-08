@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumo: Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6e2aefa9309e7e268c937055f7fe59600f8c87da
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915656"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897444"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento e teste do Office 365.
   
-Para um nível adicional de segurança para entrar em sua assinatura do Office 365, você pode habilitar a autenticação multifator Azure, que requer mais do que apenas um nome de usuário e uma senha para verificar uma conta. Com a autenticação multifator para o Office 365, os usuários são necessários para reconhecer uma chamada telefônica, digite um código de verificação enviado em uma mensagem de texto ou especificar uma senha de app em seus telefones inteligentes após inserir corretamente suas senhas. Eles podem entrar somente depois que esse segundo fator de autenticação foram atendido. 
+Para um nível adicional de segurança para entrar em sua assinatura do Office 365, você pode habilitar a autenticação multifator Azure, que requer mais do que apenas um nome de usuário e senha para uma conta de autenticação. Com a autenticação multifator para o Office 365, os usuários são necessários para reconhecer uma chamada telefônica, digite um código de verificação enviado em uma mensagem de texto ou especificar uma senha de app em seus telefones inteligentes após inserir corretamente suas senhas. Eles podem entrar somente depois que esse segundo fator de autenticação foram atendido. 
   
 Este artigo descreve como habilitar e testar a autenticação baseada em mensagens de texto de uma conta específica do Office 365.
   
@@ -39,9 +39,9 @@ Há duas fases para configurar a autenticação multifator para o Office 365 em 
 2. Habilitar e testar a autenticação multifator para a conta de usuário 2.
     
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: Desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
 Se você deseja testar a autenticação multifator de forma leve com os requisitos mínimos, siga as instruções em fases 2 e 3 do [ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md).
   
@@ -60,7 +60,7 @@ Habilite a autenticação multifator para a conta de usuário 2 com estas etapas
     
 3. Na navegação à esquerda, clique em **Usuários > Usuários ativos**.
     
-4. No painel de usuários ativos, clique em **mais > instalação Azure multi-factor auth**.
+4. No painel de usuários ativos, clique em **mais gt _ instalação Azure multi-factor auth**.
     
 5. Na lista, selecione a conta de **usuário 2** .
     
@@ -78,7 +78,7 @@ Conclua a configuração da conta do usuário 2 a usar uma mensagem de texto par
   
 1. Abra uma nova instância do navegador.
     
-2. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e o logon com a conta de usuário 2 (Usuário2 @\<nome da organização >. onmicrosoft.com) e a senha.
+2. Vá para o portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e o logon com a conta de usuário 2 (Usuário2 @\<name>.onmicrosoft.com da organização) e a senha.
     
 3. Depois de entrar, você precisará configurar a conta para a validação de segurança adicionais. Clique em **montá-lo agora**.
     
@@ -110,5 +110,5 @@ Conclua a configuração da conta do usuário 2 a usar uma mensagem de texto par
   
 [Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
-[Planejar a autenticação multifator para implantações do Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Plano para a autenticação multifator para Implantações do Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
