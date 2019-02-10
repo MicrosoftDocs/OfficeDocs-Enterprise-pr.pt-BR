@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumo: configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d22f23d2c5c36f45cff7fde3185e1de3e4961ef9
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915236"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897544"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidade federada para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -105,11 +105,11 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) para obter um arquivo de texto contendo todos os comandos do Windows PowerShell neste artigo.
+> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) para obter um arquivo de texto que contém todos os comandos do PowerShell deste artigo.
   
 Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual do ADFS1 usando o nome da conta e a senha do administrador local do ADFS1, depois abra um prompt de comando do Windows PowerShell.
   
-Para verificar a comunicação da rede e a resolução de nome entre ADFS1 e DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.
+Para verificar a comunicação da rede e a resolução de nome entre o ADFS1 e o DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.
   
 Em seguida, associe a máquina virtual do ADFS1 ao domínio CORP com estes comandos no prompt do Windows PowerShell no ADFS1.
   
@@ -161,7 +161,7 @@ Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-A
 
 Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual do PROXY1 usando o nome e a senha da conta do administrador local do PROXY1, depois abra um prompt de comando do Windows PowerShell no PROXY1.
   
-Para verificar a comunicação da rede e a resolução de nome entre PROXY1 e DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.
+Para verificar a comunicação da rede e a resolução de nome entre o PROXY1 e o DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.
   
 Em seguida, associe a máquina virtual do PROXY1 ao domínio CORP com estes comandos no prompt do Windows PowerShell no PROXY1.
   

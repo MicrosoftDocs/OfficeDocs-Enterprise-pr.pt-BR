@@ -3,7 +3,7 @@ title: Conectar uma rede local a uma rede virtual do Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumo: Aprenda a configurar uma rede virtual Azure entre locais para cargas de trabalho de servidor do Office com uma conexão VPN site a site.'
-ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 145c7a082aff436ee3c3bb873f299f9706db72df
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915316"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25976707"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar uma rede local a uma rede virtual do Microsoft Azure
 
@@ -36,8 +36,8 @@ Por exemplo, um servidor de sincronização de diretórios em execução em uma 
 
 Suas máquinas virtuais no Azure não precisam ser isoladas do seu ambiente local. Para conectar as máquinas virtuais do Azure aos recursos da sua rede local, é preciso configurar uma rede virtual do Azure entre locais. O diagrama a seguir mostra os componentes necessários para implantar uma rede virtual do Azure entre locais com uma máquina virtual no Azure.
   
-![Rede local conectada ao Microsoft Azure por meio de uma conexão VPN site a site](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
-  
+![Rede local conectada ao Microsoft Azure por meio de uma conexão VPN site a site](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+ 
 No diagrama, há duas redes conectadas por uma conexão VPN site a site: a rede local e a rede virtual do Azure. A conexão VPN site a site:
 
 - Ocorre entre dois pontos de extremidade endereçáveis ​​e localizados na Internet pública.
@@ -51,7 +51,7 @@ A rede virtual do Azure hospeda máquinas virtuais. O tráfego originado das má
   
 Para configurar a conexão VPN entre a rede local e sua rede virtual do Azure, siga estas etapas: 
   
-1. **Local:** Defina e crie um roteamento de rede local para o espaço de endereço da rede virtual do Azure que aponte para o seu dispositivo VPN local.
+1. **Local** Defina e crie um roteamento de rede local para o espaço de endereço da rede virtual do Azure que aponte para o seu dispositivo VPN local.
     
 2. **Microsoft Azure:** Crie uma rede virtual do Azure com uma conexão VPN site a site. 
     
@@ -248,28 +248,7 @@ New-AzureRMResourceGroup -Name $rgName -Location $locName
 
 ```
 
-As máquinas virtuais baseadas no Gerenciador de Recursos exigem uma conta de armazenamento baseada no Gerenciador de Recursos. Você deve escolher um nome globalmente exclusivo para sua conta de armazenamento, e ele deve conter apenas letras minúsculas e números. Você pode usar este comando para listar as contas de armazenamento existentes.
-  
-```
-Get-AzureRMStorageAccount | Sort Name | Select Name
-```
-
-Use este comando para testar se o nome proposto para a conta de armazenamento é exclusivo.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-Para criar uma nova conta de armazenamento, execute estes comandos.
-  
-```
-$rgName="<your new resource group name>"
-$locName="<the location of your new resource group>"
-$saName="<unique storage account name>"
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
-Crie a rede virtual do Azure.
+Em seguida, crie a rede virtual do Azure.
   
 ```
 # Fill in the variables from previous values and from Tables V, S, and D
@@ -346,11 +325,9 @@ Crie as máquinas virtuais de que você precisa no Azure. Para saber mais, confi
   
 Use as seguintes configurações:
   
-- No painel **Básico**, selecione a mesma assinatura e grupo de recursos que sua rede virtual. Armazene o nome de usuário e a senha em um local seguro. Você precisará dessas informações posteriormente para entrar na máquina virtual.
+- Na guia **Básico**, selecione a mesma assinatura e grupo de recursos como sua rede virtual. Você precisará dessas informações posteriormente para entrar na máquina virtual. Na seção **Detalhes da instância**, escolha o tamanho apropriado da máquina virtual. Registre o nome de usuário de conta de administrador e a senha em local seguro. 
     
-- No painel **Tamanho**, escolha o tamanho apropriado.
-    
-- No painel **Configurações**, na seção **Armazenamento**, escolha o tipo de armazenamento **Padrão** e configure a conta de armazenamento com sua rede virtual. Na seção **Rede**, escolha o nome de suas rede e sub-rede virtuais para hospedar máquinas virtuais (não a GatewaySubnet). Deixe todas as outras configurações com os valores padrão.
+- Na guia **Rede**, escolha o nome da rede e da sub-rede virtuais para hospedar máquinas virtuais (não a GatewaySubnet). Deixe todas as configurações com os valores padrão.
     
 Verifique se a máquina virtual está usando o DNS corretamente (examine o DNS interno) para garantir que os registros de Endereço (A) foram adicionados à sua nova máquina virtual. Para acessar a Internet, suas máquinas virtuais do Azure devem estar configuradas para usar o servidor proxy da sua rede local. Entre em contato com o administrador da rede para etapas de configuração adicionais a executar no servidor.
   
