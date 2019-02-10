@@ -3,7 +3,7 @@ title: Implantar a sincronização de diretórios do Office 365 no Microsoft Azu
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,33 +17,29 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Resumo: implante o Azure AD Connect em uma máquina virtual no Azure para sincronizar as contas entre o diretório local e o locatário do Azure AD da sua assinatura do Office 365.'
-ms.openlocfilehash: 01dede756142c08722e3cf21d91a0028eb815051
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: c2aba481f789e52d027ccd8f5a91217e825ed8bf
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915636"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25976697"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Implantar a sincronização de diretórios do Office 365 no Microsoft Azure
 
  **Resumo:** implante o Azure AD Connect em uma máquina virtual no Azure para sincronizar as contas entre o diretório local e o locatário do Azure AD da sua assinatura do Office 365.
   
-O Azure Active Directory Connect (também conhecido como Ferramenta de Sincronização de Diretório ou ferramenta DirSync.exe) é um aplicativo baseado em servidor que você instala em um servidor associado ao domínio para sincronizar os usuários locais do Windows Server Active Directory com o locatário do Azure Active Directory da sua assinatura do Office 365. Você pode instalar o Azure AD Connect em um servidor local, mas pode também instalá-lo em uma máquina virtual no Azure pelos seguintes motivos:
+Azure Active Directory (AD) Connect (conhecido anteriormente como a ferramenta de sincronização de diretório, a ferramenta de sincronização de diretório ou ferramenta DirSync.exe) é um aplicativo que você instala em um servidor associado a um domínio para sincronizar seu local de usuários Windows Server Active Directory (AD) para o locatário do Azure AD de sua assinatura do Office 365. Office 365 usa o Azure Active Directory (Azure AD) para o serviço de diretório. Assinatura do Office 365 inclui um locatário do Azure AD. Este locatário também pode ser usado para gerenciamento de identidades da organização com outras cargas de trabalho de nuvem, incluindo outros aplicativos SaaS e aplicativos no Azure.
+
+Você pode instalar o Azure AD Connect em um servidor local, mas pode também instalá-lo em uma máquina virtual no Azure pelos seguintes motivos:
   
 - Você pode provisionar e configurar servidores baseados na nuvem mais depressa, disponibilizando os serviços aos usuários com mais antecedência.
-    
 - O Azure oferece melhor disponibilidade de sites com menos esforço.
-    
 - Você pode reduzir o número de servidores locais em sua organização.
-    
-> [!IMPORTANT]
-> Essa solução requer conectividade entre sua rede local e sua Rede Virtual do Azure. Para saber mais, confira o artigo [Conectar uma rede local a uma rede virtual do Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
-  
-> [!IMPORTANT]
-> Este artigo descreve a sincronização de um único domínio em uma única floresta. O Azure AD Connect sincroniza todos os domínios do AD do Windows Server em sua floresta do Active Directory com o Office 365. Se você tiver várias florestas do Active Directory para sincronizar com o Office 365, confira [Cenário de Sincronização de Diretório de Várias Florestas com Logon Único](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
+
+Essa solução requer conectividade entre sua rede local e sua Rede Virtual do Azure. Para saber mais, confira o artigo [Conectar uma rede local a uma rede virtual do Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> O Office 365 usa o Azure Active Directory (AD do Azure) para seu serviço de diretório. A sua assinatura do Office 365 inclui um locatário do AD do Azure. Esse locatário também pode ser usado para o gerenciamento de identidades da sua organização com outras cargas de trabalho de nuvem, incluindo outros aplicativos SaaS e aplicativos no Azure. 
+> Este artigo descreve a sincronização de um único domínio em uma única floresta. O Azure AD Connect sincroniza todos os domínios do AD do Windows Server em sua floresta do Active Directory com o Office 365. Se você tiver várias florestas do Active Directory para sincronizar com o Office 365, confira [Cenário de Sincronização de Diretório de Várias Florestas com Logon Único](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
   
 ## <a name="overview-of-deploying-office-365-directory-synchronization-in-azure"></a>Visão geral da implantação da sincronização de diretório do Office 365 no Azure
 
@@ -54,13 +50,10 @@ O diagrama a seguir mostra o Azure AD Connect em execução em uma máquina virt
 No diagrama, há duas redes conectadas por meio de uma conexão VPN site a site ou ExpressRoute. Há um rede local em que os controladores de domínio do AD do Windows Server estão localizados e há uma rede virtual do Azure com um servidor de sincronização de diretório, uma máquina virtual que executa o [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Existem dois fluxos de tráfego principais provenientes do servidor de sincronização de diretório:
   
 -  O Azure AD Connect consulta um controlador de domínio na rede local para detectar alterações em contas e senhas.
-    
 -  O Azure AD Connect envia as alterações nas contas e senhas à instância do Azure AD da assinatura do Office 365. Como o servidor de sincronização de diretório está em uma parte estendida da rede local, essas alterações são enviadas pelo servidor proxy da rede local.
     
 > [!NOTE]
 > Esta solução descreve a sincronização de um único domínio do Active Directory, uma única floresta do Active Directory. O Azure AD Connect sincroniza todos os domínios do Active Directory em sua floresta do Active Directory com o Office 365. Se você tiver várias florestas do Active Directory para sincronizar com o Office 365, confira [Cenário de Sincronização de Diretório de Várias Florestas com Logon Único](https://go.microsoft.com/fwlink/p/?LinkId=393091). 
-  
-Em ambos os casos, o tráfego originado pelo Azure AD Connect em execução na máquina virtual do Azure é encaminhado para um gateway em uma rede virtual no Azure, que então encaminha o tráfego pela conexão VPN de site a site ou ExpressRoute para o dispositivo de gateway VPN na rede local. A infraestrutura de roteamento da rede local encaminha então o tráfego ao seu destino, como um controlador de domínio ou um servidor proxy.
   
 Há duas etapas principais quando você implanta essa solução:
   
@@ -198,7 +191,6 @@ O Azure AD Connect adiciona contas à sua assinatura do Office 365 do AD local d
 7. Volte à etapa 3 para usuários adicionais.
     
 ## <a name="see-also"></a>Confira também
-
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
