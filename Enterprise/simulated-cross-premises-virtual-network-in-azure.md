@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: crie uma rede virtual simulada entre locais no Microsoft Azure como um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: 0aee14af136e0874c259faac26d83d85b188a7c7
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 7341c8cc412636e633001882edfdfc661cce9a11
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915336"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897134"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulada entre locais no Azure
 
@@ -81,14 +81,14 @@ Primeiro, inicie um prompt do Azure PowerShell em seu computador local.
 > [!NOTE]
 > O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/pt-BR/powershell/azureps-cmdlets-docs/). 
   
-Entre na sua conta do Azure usando o comando a seguir.
+Em seguida, entre com sua conta do Azure usando este comando.
   
 ```
 Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) para obter um arquivo de texto que contém todos os comandos do PowerShell usados neste artigo.
+> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) para obter um arquivo de texto que contém todos os comandos do PowerShell deste artigo.
   
 Para obter o nome de sua assinatura, use este comando.
   

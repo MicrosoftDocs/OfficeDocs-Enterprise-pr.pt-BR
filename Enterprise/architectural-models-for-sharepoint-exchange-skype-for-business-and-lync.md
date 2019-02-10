@@ -17,12 +17,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Resumo: obtenha os cartazes de TI que descrevem os modelos de arquitetura, implantação e opções de plataforma para o SharePoint, o Exchange, o Skype for Business e o Lync.'
-ms.openlocfilehash: 0965a4389ef61c981e30aeec8dd3b3dcff90d20e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 28cfc1073d54a46976224f115cce43315c7c43fb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915536"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897524"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -138,7 +138,7 @@ Estes cartazes de TI para o SharePoint 2013, o Exchange 2013 e o Lync 2013 ofere
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura de opções de plataforma do SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Para tomadores de decisões de negócios (BDMs) e arquitetos, este modelo descreve as opções de plataforma do SharePoint 2013, do SharePoint no Office 365, híbrido local com Office 365, Azure e implantações somente locais. Ele inclui uma visão geral de cada arquitetura, recomendações, requisitos de licença,e listas de tarefas de arquitetos e profissionais de TI para cada plataforma. Também são destacadas várias soluções do SharePoint no Windows Azure.<br/><br/>Para uma versão acessível deste cartaz em texto, confira [Diagrama acessível, opções de plataforma para Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Imagem em miniatura de opções de plataforma do SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Para tomadores de decisões de negócios (BDMs) e arquitetos, este modelo descreve as opções de plataforma do SharePoint 2013, do SharePoint no Office 365, híbrido local com Office 365, Azure e implantações somente locais. Ele inclui uma visão geral de cada arquitetura, recomendações, requisitos de licença, e listas de tarefas de arquitetos e profissionais de TI para cada plataforma. Também são destacadas várias soluções do SharePoint no Windows Azure.<br/><br/>Para uma versão acessível deste cartaz em texto, confira [Diagrama acessível, opções de plataforma para Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Opções de plataforma para o Exchange 2013

@@ -11,12 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849907"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "26705455"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar a pesquisa para o OneDrive for Business com a funcionalidade multigeográfica
 
@@ -167,6 +167,9 @@ Cada centro de pesquisa tem vários verticais e você precisará configurar cada
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Obter aplicativos de pesquisa personalizada para mostrar resultados de todas ou algumas localizações geográficas
 
 Os aplicativos de pesquisa personalizada obtêm resultados de todas ou algumas localizações geográficas, especificando-se os parâmetros de consulta com a solicitação para a API REST de pesquisa do SharePoint. Dependendo dos parâmetros de consulta, realiza-se fan-out da consulta para todas ou algumas localizações geográficas. Por exemplo, se você apenas precisar consultar um subconjunto de localizações geográficas para encontrar informações relevantes, você pode controlar o fan-out apenas de acordo com elas. Se a solicitação for concluída, a API REST de pesquisa do SharePoint retorna dados de resposta.
+
+#### <a name="requirement"></a>Requisito #### 
+Para cada local geográfico, certifique-se de que todos os usuários na organização tiverem o nível de permissão **ler** do site raiz (por exemplo, contoso**APAC**.sharepoint.com/ e a contoso** EU**.sharepoint.com/). [Saiba mais sobre permissões](https://support.office.com/pt-BR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 

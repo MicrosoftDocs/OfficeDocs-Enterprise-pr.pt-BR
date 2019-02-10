@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 5f434fef42777034d32970dd55e15be35b76961e
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022070"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897314"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 

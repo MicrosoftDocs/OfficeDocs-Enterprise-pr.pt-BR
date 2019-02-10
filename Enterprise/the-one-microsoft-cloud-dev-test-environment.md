@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Resumo: use este guia de laboratório de teste para criar um ambiente de desenvolvimento/teste que inclui todas as ofertas da nuvem da Microsoft.'
-ms.openlocfilehash: e5391b88a964261ad0698890bbb5c99866fbb57d
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 51899ceb0cceef0248f6dc10cb21f5353e774cea
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915626"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897144"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Ambiente de desenvolvimento/teste do One Microsoft Cloud
 
@@ -139,7 +139,7 @@ Use estas etapas para configurar as contas dos Usuários 2 e 3 como administrado
     
     Aguarde que a instalação seja concluída.
     
-    Ao concluir a instalação, ele exibe o Painel de atividades de vendas com base nos dados de exemplo que fazem parte da assinatura de avaliação. Aproveite para ver o vídeo **Bem-vindo à sua avaliação** vídeo. Feche a janela do vídeo após a conclusão.
+    Ao concluir a instalação, ele exibe o Painel de atividades de vendas com base nos dados de exemplo que fazem parte da assinatura de avaliação. Aproveite para ver o vídeo **Bem-vindo à sua avaliação**. Feche a janela do vídeo após a conclusão.
     
 3. Na barra superior, clique na seta para baixo ao lado de **Vendas**, clique em **Configurações**e em **Segurança**.
     

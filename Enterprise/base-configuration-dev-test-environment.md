@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumo: Criar uma intranet simplificada como um ambiente de desenvolvimento/teste no Microsoft Azure.'
-ms.openlocfilehash: 9ffa35a6318d83d489ec51051547ce22c16b5b5f
-ms.sourcegitcommit: 9ce1da973b8c91b0926142a28c5b90f95f0422d8
+ms.openlocfilehash: 71470a20586a0d1992cfafd35f213ec80286419b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353307"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897374"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente de desenvolvimento/teste para a Configuração Base
 
@@ -42,7 +42,7 @@ O ambiente de desenvolvimento/teste da Configuração Base na Figura 1 inclui a 
     
 - O CLIENT1 atua como um cliente de intranet.
     
-Essa configuração permite que o DC1, APP1, CLIENT1 e outros computadores na sub-rede Corpnet: 
+Essa configuração permite que o DC1, APP1, CLIENT1 e outros computadores adicionais da sub-rede da rede corporativa Corpnet a ser: 
   
 - Fiquem conectados à Internet para instalar atualizações, acessar os recursos da Internet em tempo real e participar de tecnologias públicas de nuvem como o Microsoft Office 365 e outros serviços do Azure.
     
@@ -296,7 +296,7 @@ $vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption 
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Em seguida, conecte-se à máquina virtual do APP1 usando o nome da conta e a senha do administrador local do APP1 e depois abra um prompt de comando do Windows PowerShell.
+Em seguida, conecte-se à máquina virtual APP1 usando o nome da conta e a senha do administrador local APP1 e depois abra um prompt de comando do Windows PowerShell.
   
 Para verificar a comunicação da rede e a resolução de nome entre o APP1 e o DC1, execute o comando **ping dc1.corp.contoso.com** e verifique se há quatro respostas.
   
@@ -357,7 +357,7 @@ $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOpti
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Em seguida, conecte-se à máquina virtual do CLIENT1 usando o nome da conta e a senha do administrador local do CLIENT1 e depois abra um prompt de comando de nível de administrador no Windows PowerShell.
+Em seguida, conecte-se à máquina virtual CLIENT1 usando o nome da conta e a senha do administrador local da CLIENT1 e depois abra um prompt de comando de nível de administrador no Windows PowerShell.
   
 Para verificar a comunicação da rede e a resolução de nome entre o CLIENT1 e o DC1, execute o comando **ping dc1.corp.contoso.com** no prompt de comando do Windows PowerShell e verifique se há quatro respostas.
   

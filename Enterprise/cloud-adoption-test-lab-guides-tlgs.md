@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: use estes Guias de Laboratório de Teste (TLGs) para adoção da nuvem para configurar ambientes de desenvolvimento/teste, de prova de conceito ou de demonstração para produtos do Office 365, Dynamics 365 e Office Server.'
-ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "23041495"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897234"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testar o Office 365 com os Guias de Laboratório de Teste (TLGs) para adoção da nuvem
 
@@ -66,7 +66,7 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
     
     Configure e demonstre a autenticação federada com as contas de um domínio do Windows Server Active Directory.
     
-- [Cloud App Security para o ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a Segurança no Aplicativo na Nuvem do Office 365, que permite a criação de políticas que monitoram e informam sobre atividades suspeitas em sua assinatura do Office 365.
     
@@ -76,7 +76,7 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
     
 - [Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento/teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-    Adicione dados de exemplo e demonstre a Descoberta Eletrônica Avançada, que permite que você localize e analise rapidamente os dados armazenados no Office 365, incluindo emails e documentos.
+    Adicione dados de exemplo e demonstre a Descoberta Eletrônica Avançada, que permite que você localize e analise rapidamente os dados armazenados no Office 365, incluindo email e documentos.
     
 - [Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
