@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Compreender o suporte ao aplicativo de cliente do Office 365 para acesso condicional
-ms.openlocfilehash: c03d7f1cc2f1a80abb7227a40eb606a3f40cd214
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 063363e4216a5bab46871421fc4028b760c2df2c
+ms.sourcegitcommit: df40eb730e416f206ca8387ef9e6f559c4e4b8a5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29771100"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29887587"
 ---
 # <a name="office-365-client-app-support---conditional-access"></a>Suporte para aplicativos de cliente do Office 365 - acesso condicional
 
@@ -32,6 +32,8 @@ Saiba mais sobre o [acesso condicional](https://docs.microsoft.com/azure/active-
  - Android
  - iOS
  - macOS
+
+Para obter mais informações sobre o suporte de plataforma no Office 365, consulte [System requirements for Office 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clientes com suporte
 
