@@ -1,5 +1,5 @@
 ---
-title: Funcionalidades multigeográficas no OneDrive e SharePoint Online no Office 365
+title: Funcionalidades Multigeográficas no OneDrive e Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Expanda a sua presença do Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive e do SharePoint Online.
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Expanda a sua presença do Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive Online.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200724"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052985"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Funcionalidades multigeográficas no OneDrive e SharePoint Online no Office 365
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Funcionalidades Multigeográficas no OneDrive e Office 365
 
-Com as funcionalidades multigeográficas do OneDrive e do SharePoint Online, sua organização pode expandir a presença do Office 365 para várias regiões geográficas e/ou países em seu locatário existente. Fale com a equipe da sua conta da Microsoft para inscrever a sua empresa multinacional no OneDrive for Business com Funcionalidades Multigeográficas.
+Com as Funcionalidades Multigeográficas do OneDrive Online, sua organização pode expandir a presença do Office 365 para várias regiões geográficas e/ou países em seu locatário existente. Fale com a equipe da sua conta Microsoft para inscrever sua empresa multinacional no OneDrive for Business com Funcionalidades Multigeográficas.
   
 Com o OneDrive for Business com Funcionalidades Multigeográficas, você pode provisionar e armazenar dados em repouso nas localizações geográficas escolhidas para atender aos requisitos de residência de dados e, ao mesmo tempo, dar vazão à sua implantação global a partir de experiências de produtividade modernas para a sua força de trabalho.
   
