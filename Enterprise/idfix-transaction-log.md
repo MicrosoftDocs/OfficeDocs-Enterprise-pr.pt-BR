@@ -1,5 +1,5 @@
 ---
-title: Log de transações do IdFix Office 365
+title: Log de transações do IdFix do Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,25 +9,28 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
-description: Fornece um exemplo e descreve a convenção de nomenclatura e o nível de log padrão do log de transação do IdFix do Office 365.
-ms.openlocfilehash: 016318c7e771ec6c5f90336e11c5dd011144d12e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.
+ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539288"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085060"
 ---
-# <a name="office-365-idfix-transaction-log"></a>Log de transações do IdFix Office 365
+# <a name="office-365-idfix-transaction-log"></a>Log de transações do IdFix do Office 365
 
-Fornece um exemplo e descreve a convenção de nomenclatura e o nível de log padrão do log de transação do IdFix do Office 365.
+Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.
   
 ## <a name="idfix-transaction-log-location"></a>Loca do log de transações do IdFix
 
-A ferramenta IdFix do Office 365 cria um novo log de transação de cada vez que você clique em **Aplicar** no IdFix e aplica alterações à floresta do Active Directory. O log de transação é salvo na mesma pasta onde você instalou o IdFix. Por padrão, essa pasta é C:\Deployment Tools\IDFix. O nome de arquivo de log de transação usa um formato de carimbo de data e hora, por exemplo, Verbose 6-1-2018 6-17-22 PM indica um arquivo que foi gerado em 1 de junho de 2018 na 6:17:22 PM. Verbose indica o nível de log. 
+A ferramenta IdFix do Office 365 cria um novo log de transações cada vez que você clica em **aplicar** no IdFix e aplica as alterações à floresta do Active Directory. O log de transações é salvo na mesma pasta onde você instalou o IdFix. Por padrão, essa pasta é C:\Deployment Tools\IDFix. O nome do arquivo de log de transações usa um formato de carimbo de data e hora, por exemplo, Verbose 6-1-2018 6-17-22 PM indica um arquivo que foi gerado em 1º de junho de 2018 às 6:17:22 PM. Verbose indica o nível de log. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>Nível de log do log de transações do IdFix.
 
@@ -35,7 +38,7 @@ A palavra "detalhado" no nome do arquivo de transação de log indica o nível d
   
 ## <a name="idfix-transaction-log-format"></a>Formato de log de transações do IdFix
 
-IdFix grava os resultados de cada ação de **atualização de** um log de transações, conforme mostrado no exemplo a seguir:
+O IdFix grava os resultados de cada ação de **atualização** em um log de transações, conforme mostrado no exemplo a seguir:
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant

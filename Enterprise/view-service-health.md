@@ -13,25 +13,28 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Exibir o status de integridade de serviços do Office 365, antes de chamar o suporte para ver se houver uma interrupção de serviço ativas
-ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
-ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
+description: Exibir o status de integridade dos serviços do Office 365 antes de ligar para o suporte para ver se há uma interrupção de serviço ativa
+ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29696348"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085290"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço do Office 365
 
-Você pode exibir a integridade do Office 365, Yammer, o Microsoft Dynamics CRM e serviços de nuvem da Microsoft Intune na página no Centro de administração do Office 365 **integridade do serviço** . Se você estiver enfrentando problemas com um serviço em nuvem, você pode verificar a integridade do serviço para determinar se esse é um problema conhecido com uma resolução em andamento antes de chamar suporte ou gasto na solução de problemas de tempo. 
+Você pode exibir a integridade do Office 365, do Yammer, do Microsoft Dynamics CRM e dos serviços de nuvem do Microsoft Intune na página **integridade do serviço** do Office 365 no centro de administração. Se você estiver tendo problemas com um serviço de nuvem, poderá verificar a integridade do serviço para determinar se esse é um problema conhecido com uma resolução em andamento antes de ligar ou perder tempo de solução de problemas. 
 
-Se você não conseguir entrar no portal do serviço, você pode usar a [página de status do serviço](https://status.office365.com) para verificar se há problemas conhecidos impedindo de fazer logon no seu locatário.
+Se você não conseguir entrar no portal de serviço, poderá usar a [página status do serviço](https://status.office365.com) para verificar se há problemas conhecidos, impedindo o login no locatário.
   
 ### <a name="how-to-check-service-health"></a>Como verificar a integridade do serviço
 
@@ -40,7 +43,7 @@ Se você não conseguir entrar no portal do serviço, você pode usar a [página
     > [!NOTE]
     > As pessoas às quais a função de administrador global ou do serviço é atribuída podem visualizar a integridade do serviço. Para permitir que os administradores do Exchange, SharePoint e Skype for Business visualizem a integridade do serviço, eles também devem receber a função de administrador do serviço.
   
-2. Para abrir a integridade do serviço, no Centro de administração, vá para **integridade** > **integridade do serviço**, ou clique no **cartão de integridade do serviço** do **Painel de Home**. O cartão de painel indica se há um problema de serviço ativas e links para a página de integridade do serviço detalhados.
+2. Para abrir a integridade do serviço, no centro de administração, vá para**integridade do serviço**de **integridade** > ou clique no **cartão de integridade do serviço** no **painel inicial**. O cartão de painel indica se há um problema de serviço ativo e links para a página de integridade do serviço detalhada.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -51,13 +54,13 @@ Se você não conseguir entrar no portal do serviço, você pode usar a [página
   
 ### <a name="view-details-of-posted-service-health"></a>Exibir detalhes da integridade do serviço postado
 
-No modo de exibição padrão, todos os serviços e respectivos estados vigentes de integridade são exibidas. Para filtrar sua opinião aos serviços experimentando um incidente, selecione **incidentes** da barra de sombreado à esquerda. Selecionar **os comunicados** mostrará apenas os serviços que possuírem um comunicado lançado. Da exibição **todos os serviços** , clicando no estado do serviço exibido será aberto um modo de exibição de resumo do comunicado ou incidente. 
+No modo de exibição padrão, todos os serviços e seu estado de integridade atual são exibidos. Para filtrar o modo de exibição para serviços que estão experimentando um incidente, selecione **incidentes** da barra sombreada à esquerda. A **** seleção de comunicados mostrará apenas os serviços que têm um comunicado publicado no momento. No modo de exibição **todos os serviços** , clicar no estado de serviço exibido abrirá um modo de exibição de resumo do comunicado ou incidente. 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
 O resumo do aviso ou incidente fornece as seguintes informações: 
   
-![Uma captura de tela rotular os campos em um comunicado do serviço](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
+![Uma captura de tela rotulando os campos em um comunicado de serviço](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
   
 1. Um identificador de problemas e uma declaração resumida do problema.
     
@@ -104,11 +107,11 @@ A maioria dos serviços de tempo aparecerá como íntegro sem mais informações
 |**Recuperação estendida** | Esse status indica que uma ação corretiva está em andamento para restaurar o serviço para a maioria dos usuários, mas levará algum tempo para alcançar todos os sistemas afetados. Você também poderá ver esse status se tivermos feito uma correção temporária para reduzir o impacto enquanto aguardamos para aplicar uma correção permanente. |
 |**Investigação suspensa** | Se a nossa investigação detalhada de um problema potencial resultar em uma solicitação de informações adicionais de clientes para nos permitir investigar mais, você verá esse status. Se precisarmos de você para prosseguir, informaremos quais dados ou logs precisamos. |
 |**Serviço restaurado** | Confirmamos que a ação corretiva solucionou o problema subjacente, e o serviço foi restaurado para um estado íntegro. Para descobrir o que deu errado, confira os detalhes do problema. |
-|**Relatório de POST-incidente publicado** | Publicamos um relatório de incidente de postagem para um problema específico que inclui informações de causa raiz e próximas etapas para garantir que um problema semelhante não ocorrer novamente. |
+|**Relatório de pós-incidente publicado** | Publicamos um relatório de incidente de postagem para um problema específico que inclui informações de causa raiz e próximas etapas para garantir que um problema semelhante não ocorra. |
    
 ## <a name="history"></a>Histórico
 
-Integridade do serviço permite examinar o status atual da integridade e exibir o histórico de qualquer comunicados de serviço e incidentes que têm afetado seu locatário nos últimos 30 dias. Para exibir a integridade últimos de todos os serviços, selecione **Exibir histórico** na página **integridade do serviço** . 
+A integridade do serviço permite que você examine o status de integridade atual e visualize o histórico de qualquer comunicados de serviço e incidentes que impactaram o locatário nos últimos 30 dias. Para exibir a integridade passada de todos os serviços, selecione **Exibir histórico** na página **integridade do serviço** . 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -116,9 +119,9 @@ Uma lista de todas as mensagens de integridade de serviço postadas no cronogram
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Você pode exibir o histórico de integridade para o nos últimos 7 dias ou últimos 30 dias. Selecione qualquer linha para exibir mais detalhes sobre esse problema.
+Você pode exibir o histórico de integridade dos últimos 7 dias ou dos últimos 30 dias. Selecione qualquer linha para exibir mais detalhes sobre esse problema.
   
-Para obter mais informações sobre nosso compromisso com o tempo de atividade, consulte [operations transparentes do Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
+Para obter mais informações sobre nosso compromisso com o tempo de atividade, consulte [operações transparentes do Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
 ## <a name="leave-feedback"></a>Deixar comentários
 
