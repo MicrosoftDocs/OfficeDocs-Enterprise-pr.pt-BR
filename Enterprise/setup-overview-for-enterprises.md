@@ -12,15 +12,16 @@ search.appverid: MOE150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estas etapas gerais são projetadas para ajudá-lo a implantar o Office 365, conectar seu Active Directory, migrar seus dados e ajudar as pessoas em sua organização a começar a usar a versão mais recente do Office 2016.
-ms.openlocfilehash: 7540a53f37b08412f24db7798e29fe6149351bc4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4dd2dff88ed9ef435b5e36517cee9b3e76c8132f
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539262"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085270"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implantar o Office 365 Enterprise em sua organização
 Pronto para implantar e integrar o Office 365 Enterprise em sua infraestrutura local? Estas etapas gerais são projetadas para ajudá-lo a conectar seu diretório, migrar os dados e ajudar as pessoas em sua organização a começar a usar a versão mais recente do Office 2016.
