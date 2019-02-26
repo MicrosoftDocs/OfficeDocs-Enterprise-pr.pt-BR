@@ -3,22 +3,6 @@
 
 
 
-## <a name="week-of-january-14-2019"></a>Semana de 14 de janeiro de 2019
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 1/15/2019 | [Princípios de conectividade de rede do Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | modificado |
-| 1/15/2019 | [Planejamento de rede e ajuste de desempenho para o Office 365](/Office365/Enterprise/network-planning-and-performance) | modificado |
-| 1/16/2019 | [Suporte a IPv6 nos serviços do Office 365](/Office365/Enterprise/ipv6-support) | modificado |
-| 1/16/2019 | [Exibir usuários licenciados e não licenciados com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-licensed-and-unlicensed-users-with-office-365-powershell) | modificado |
-| 1/16/2019 | [Exibir erros de sincronização de diretório no Office 365](/Office365/Enterprise/identify-directory-synchronization-errors) | modificado |
-| 1/16/2019 | [Visão geral de nuvem híbrida](/Office365/Enterprise/hybrid-cloud-overview) | modificado |
-| 1/17/2019 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
-| 1/17/2019 | [Pontos de extremidade DoD do governo dos EUA do Office 365](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | modificado |
-| 1/17/2019 | [Pontos de extremidade altos do Office 365 governo dos EUA](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | modificado |
-
-
 ## <a name="week-of-january-21-2019"></a>Semana de 21 de janeiro de 2019
 
 
@@ -81,3 +65,39 @@
 | 2/14/2019 | [Funcionalidades Multigeográficas no OneDrive e Office 365](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
 | 2/14/2019 | [Princípios de conectividade de rede do Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | modificado |
 | 2/14/2019 | [Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificado |
+
+
+## <a name="week-of-february-18-2019"></a>Semana de 18 de fevereiro de 2019
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 2/19/2019 | [Noções básicas sobre identidade do Office 365 e Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | modificado |
+| 2/19/2019 | [Integração do Azure com o Office 365](/Office365/Enterprise/azure-integration) | modificado |
+| 2/19/2019 | [Configurar aplicativos e serviços do Office 365 Enterprise](/Office365/Enterprise/configure-services-and-applications) | modificado |
+| 2/19/2019 | [Supervisores de implantação para serviços do Office 365](/Office365/Enterprise/deployment-advisors-for-office-365) | modificado |
+| 2/19/2019 | [Lista de verificação de planejamento de implantação do Office 365](/Office365/Enterprise/deployment-planning-checklist) | modificado |
+| 2/19/2019 | [Corrigir problemas de sincronização de diretório do Office 365](/Office365/Enterprise/fix-problems-with-directory-synchronization) | modificado |
+| 2/19/2019 | [Preparar sua organização para o Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365)
+ | modificado |
+| 2/19/2019 | [Exibir erros de sincronização de diretório no Office 365](/Office365/Enterprise/identify-directory-synchronization-errors) | modificado |
+| 2/19/2019 | [Objetos e atributos excluídos e compatíveis com a IdFix](/Office365/Enterprise/idfix-excluded-and-supported-objects-and-attributes) | modificado |
+| 2/19/2019 | [Log de transações do IdFix do Office 365](/Office365/Enterprise/idfix-transaction-log) | modificado |
+| 2/19/2019 | [Instalar e executar a ferramenta IdFix do Office 365](/Office365/Enterprise/install-and-run-idfix) | modificado |
+| 2/19/2019 | [Ferramentas para gerenciar contas do Office 365](/Office365/Enterprise/manage-office-365-accounts) | modificado |
+| 2/19/2019 | [Suporte ao aplicativo cliente do Office 365-acesso condicional](/Office365/Enterprise/office-365-client-support-conditional-access) | modificado |
+| 2/19/2019 | [Suporte ao aplicativo cliente do Office 365-gerenciamento de aplicativo móvel](/Office365/Enterprise/office-365-client-support-mobile-application-management) | modificado |
+| 2/19/2019 | [Suporte ao aplicativo cliente do Office 365-autenticação moderna](/Office365/Enterprise/office-365-client-support-modern-authentication) | modificado |
+| 2/19/2019 | [Use o seu domínio a fim de integrá-lo ao email local, por exemplo, usando os serviços de diretório](/Office365/Enterprise/office-365-integration) | modificado |
+| 2/19/2019 | [Plano para sincronização de diretórios para o Office 365](/Office365/Enterprise/plan-for-directory-synchronization) | modificado |
+| 2/19/2019 | [Planejar para certificados SSL de terceiros para o Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | modificado |
+| 2/19/2019 | [Preparar um domínio não roteável para sincronização de diretório](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | modificado |
+| 2/19/2019 | [Preparar atributos de diretório para sincronização com o Office 365 usando a ferramenta IdFix](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | modificado |
+| 2/19/2019 | [Preparar-se para provisionar usuários por meio da sincronização de diretório para o Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | modificado |
+| 2/19/2019 | [Configurar a sincronização de diretórios com o Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificado |
+| 2/19/2019 | [Implantar o Office 365 Enterprise na organização](/Office365/Enterprise/setup-overview-for-enterprises) | modificado |
+| 2/19/2019 | [Ferramentas para gerenciar contas do Office 365](/Office365/Enterprise/tools-to-manage-office-365-accounts) | modificado |
+| 2/19/2019 | [Desativar a sincronização de diretório do Office 365](/Office365/Enterprise/turn-off-directory-synchronization) | modificado |
+| 2/19/2019 | [Exibir o status da sincronização de diretório no Office 365](/Office365/Enterprise/view-directory-synchronization-status) | modificado |
+| 2/19/2019 | [Como verificar a integridade do serviço do Office 365](/Office365/Enterprise/view-service-health) | modificado |
+| 2/21/2019 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
