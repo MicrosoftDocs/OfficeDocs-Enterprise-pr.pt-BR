@@ -7,16 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: Normal
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- M365-subscription-management
 search.appverid:
 - MET150
 description: Entender o suporte do aplicativo cliente do Office 365 para gerenciamento de aplicativos móveis
-ms.openlocfilehash: c5cfe356e9c25fd23df298b52100e38b4064655c
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 6f8461a9a0cdb49123c2a0fc2b55c2c27b74ca5b
+ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085040"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303585"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Suporte ao aplicativo cliente do Office 365-gerenciamento de aplicativo móvel
 
