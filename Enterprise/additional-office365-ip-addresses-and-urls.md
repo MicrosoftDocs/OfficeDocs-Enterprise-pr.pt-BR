@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723368"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242083"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
@@ -56,7 +56,7 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 10  | O serviço de detecção automática é usado em cenários do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) com [Autenticação Híbrida Moderna com Outlook para iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor Exchange local do cliente em TCP 443 | Tráfego do servidor de entrada |
 | 11  | O Skype for Business no Office 2016 inclui o compartilhamento de tela baseado em vídeo que usa portas UDP. Os clientes mais antigos do Skype for Business no Office 2013 e em versões anteriores usavam a porta 443 RDP em vez da TCP. | Porta 443 TCP aberta para 52.112.0.0/14 | Versões de cliente mais antigas do Skype for Business no Office 2013 e em versões anteriores |
 | 12  | Conectividade entre o servidor híbrido local do Skype for Business e o Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14 portas UDP: 50.000 a 59.999 <BR>  Portas TCP: 50.000 a 59.999 | Conectividade de saída de servidor local no Skype for Business |
-| 13  | O PSTN na nuvem sem conectividade híbrida local requer conectividade aberta ao host local. Para saber mais sobre as configurações híbridas do Skype for Business Online  | Confira a [Solução Híbrida do Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions) | Entrada híbrida local do Skype for Business |
+| 13  | O PSTN na nuvem sem conectividade híbrida local requer conectividade aberta ao host local. Para saber mais sobre as configurações híbridas do Skype for Business Online  | Confira [Planejar conectividade híbrida entre o Skype for Business Server e o Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Entrada híbrida local do Skype for Business |
 | 14  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
 | 15  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, é necessário habilitar os cookies primários e de terceiros, adicionar os FQDNs do Teams aos Sites Confiáveis, além de todo o pacote de FQDNs, CDNs e telemetria relacionados na linha 14. Para saber mais, confira o artigo [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sites confiáveis |
 | 16  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todos os FDQNs ".sharepoint.com" com "\<locatário>" devem estar na zona de Sites Confiáveis do Internet Explorer ou do Microsoft Edge do cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria relacionados na linha 14, é necessário também adicionar esses pontos de extremidade. |  | Sites confiáveis |
