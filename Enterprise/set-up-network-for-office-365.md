@@ -11,18 +11,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumo: Confira estes artigos para entender a rede do Office 365.'
-ms.openlocfilehash: 10f5742e8fc38af49df95e98c4f512eeddc9377f
-ms.sourcegitcommit: b94bd747d0797a5889294f4794e8cfc0310f5539
+ms.openlocfilehash: b86d4afaf204cfdd22cb4ca7c85608b384ca431a
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26034882"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341912"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configure sua rede para o Office 365
 

@@ -11,18 +11,18 @@ localization_priority: Priority
 search.appverid:
 - MET150
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumo: Confira estes artigos para informações sobre os pontos de extremidade de Internet das diferentes nuvens do Office 365.'
-ms.openlocfilehash: 24e1e79beba1dd3457b50b2cbfd9cc6101dae144
-ms.sourcegitcommit: b94bd747d0797a5889294f4794e8cfc0310f5539
+ms.openlocfilehash: 1312dd80130d99dba24b0c99f7570a57e70982ac
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26036697"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341922"
 ---
 # <a name="office-365-endpoints"></a>Pontos de extremidade do Office 365
 
