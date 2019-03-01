@@ -1,34 +1,36 @@
 ---
-title: Pontos de extremidade do Office 365 DoD do governo dos EUA
+title: Pontos de extremidade DoD do governo dos EUA do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/28/2019
+ms.date: 02/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- M365-subscription-management
+- Strat_O365_Enterprise
 search.appverid:
 - OGA150
 - OGC150
 - OGD150
 - MOE150
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
-description: 'Resumo: O Office 365 requer conectividade à Internet. Os pontos de extremidade abaixo devem ser alcançados para clientes que usam os planos do Office 365 US governamentais DoD apenas.'
+description: 'Resumo: o Office 365 requer conectividade com a Internet. Os pontos de extremidade abaixo devem ser acessíveis para os clientes que usam apenas os planos de DoD do governo dos EUA do Office 365.'
 hideEdit: true
-ms.openlocfilehash: f1d18de6426700d135ab2c2a42c39f01e84a76cd
-ms.sourcegitcommit: 51cb8941a15f6d77b85f47cdf95822ae00d8f7e6
+ms.openlocfilehash: d51d44a4793d476f2083e5bb66b766b4e52fb3d9
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29612140"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341952"
 ---
-# <a name="office-365-us-government-dod-endpoints"></a>Pontos de extremidade do Office 365 DoD do governo dos EUA
+# <a name="office-365-us-government-dod-endpoints"></a>Pontos de extremidade DoD do governo dos EUA do Office 365
 
-*Aplicável à: Administração do Office 365*
+*Aplica-se a: administrador do Office 365*
 
- **Resumo:** O Office 365 requer conectividade à Internet. Os pontos de extremidade abaixo devem ser alcançados para clientes que usam os planos do Office 365 US governamentais DoD apenas.
+ **Resumo:** O Office 365 requer conectividade com a Internet. Os pontos de extremidade abaixo devem ser acessíveis para os clientes que usam apenas os planos de DoD do governo dos EUA do Office 365.
   
 > [!NOTE]
 > A Microsoft lançou um serviço web baseado em REST para as entradas de endereço IP e FQDN desta página. Esse novo serviço ajudará você a configurar e atualizar dispositivos de perímetro de rede como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista ou alterações específicas. Este serviço substitui o documento XML desta página, que foi preterido em 2 de outubro de 2018. Para experimentar o novo serviço, acesse [serviço Web](office-365-ip-web-service.md).
@@ -37,9 +39,9 @@ ms.locfileid: "29612140"
   
 |||
 |:-----|:-----|
-|**Última atualização:** 01/28/2019 - ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [assinatura do Log de alterações](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** a lista completa no [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**última atualização:** 02/28/2019- ![](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [assinatura de Log de alteração](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) de RSS <br/> |**Baixar:** a lista completa no [formato JSON](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
    
- Comece com [pontos de extremidade de gerenciamento do Office 365](managing-office-365-endpoints.md) entender as nossas recomendações para o gerenciamento de conectividade de rede usando esses dados. Dados de pontos de extremidade são atualizados no início de cada mês com novos endereços IP e URLs publicadas 30 dias antes de começar a sendo ativo. Isso permite que os clientes que ainda não tenham automatizada atualizações para concluir seus processos antes que é necessária a conectividade do nova. Pontos de extremidade também podem ser atualizados durante o mês, se necessário para questões de suporte de endereço, incidentes de segurança ou outros requisitos operacionais imediatos. Os dados mostrados nesta página abaixo são gerados a partir de serviços da web baseado em REST. Se você estiver usando um script ou um dispositivo de rede para acessar esses dados, você deve ir diretamente para o [serviço Web](office-365-ip-web-service.md) .
+ Comece com o [Gerenciamento de pontos de extremidade do Office 365](managing-office-365-endpoints.md) para entender nossas recomendações de gerenciamento de conectividade de rede usando esses dados. Os dados de pontos de extremidade são atualizados no início de cada mês com novos endereços IP e URLs publicados 30 dias antes de estarem ativos. Isso permite que os clientes que ainda não tenham atualizações automatizadas concluam seus processos antes que uma nova conectividade seja necessária. Os pontos de extremidade também podem ser atualizados durante o mês, se necessário para lidar com escalonamentos de suporte, incidentes de segurança ou outros requisitos operacionais imediatos. Os dados mostrados nesta página abaixo são todos gerados a partir dos serviços Web baseados em REST. Se você estiver usando um script ou um dispositivo de rede para acessar esses dados, vá diretamente para o [serviço Web](office-365-ip-web-service.md) .
 
 Os dados dos pontos de extremidade abaixo listam requisitos de conectividade do computador de um usuário para o Office 365. Eles não incluem conexões de rede da Microsoft com uma rede de clientes, que são algumas vezes chamadas conexões de rede híbridas ou de entrada.
 
@@ -51,7 +53,7 @@ As colunas de dados exibidas são:
 
 - **Categoria**: mostra se o conjunto de pontos de extremidade é categorizado como "Otimizar", "Permitir" ou "Padrão". Leia sobre essas categorias e diretrizes para gerenciamento de todos eles em [ http://aka.ms/pnc ](http://aka.ms/pnc). Esta coluna também lista quais conjuntos de ponto de extremidade são necessários para que haja conectividade de rede. Para conjuntos de ponto de extremidade que não são necessários para que haja conectividade de rede, fornecemos notas nesse campo para indicar qual funcionalidade estaria ausente se o conjunto de pontos de extremidade estiver bloqueado. Se você estiver excluindo uma área de serviço inteira, os conjuntos de pontos de extremidade listados como necessários não vão precisar de conectividade.
 
-- **ER**: esse é **Sim** , se o conjunto de ponto de extremidade é suportado pela ExpressRoute Azure com prefixos de rota do Office 365. Comunidade do BGP que inclui os prefixos de rota mostrados se alinha com a área de serviço listada. Quando ER for **não**, isso significa que ExpressRoute não é suportado para este conjunto de ponto de extremidade. No entanto, ele não deve ser presumido que não há rotas são anunciadas para um conjunto de pontos de extremidade onde ER é **não**. Se você planeja usar Connect do Azure AD, leia a [seção Considerações especiais](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) para garantir que você tem o apropriado configuração Connect do Azure AD.
+- **Er**: **Sim** se o conjunto de pontos de extremidade for compatível com o Azure ExpressRoute com prefixos de rota do Office 365. A Comunidade BGP que inclui os prefixos de rota mostrada é alinhada com a área de serviço listada. Quando ER é **não**, isso significa que o ExpressRoute não é suportado para este conjunto de pontos de extremidade. No enTanto, não deve ser considerado que nenhuma rota é anunciada para um conjunto de pontos de extremidade em que a ER é **não**. Se você planeja usar o Azure AD Connect, leia a [seção considerações especiais](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) para garantir que você tenha a configuração apropriada do Azure ad Connect.
 
 - **Endereços**: lista os FQDNs ou nomes de domínio curinga e intervalos de endereços IP para o conjunto de pontos de extremidade. Observe que o intervalo de endereços IP está no formato CIDR e pode incluir vários endereços IP individuais na rede especificada.
  
@@ -61,6 +63,6 @@ As colunas de dados exibidas são:
   
 Observações da tabela:
 
-- A segurança e o Centro de conformidade (SCC) oferece suporte para ExpressRoute do Windows Azure para o Office 365. O mesmo se aplica para muitos recursos expostos por meio de SCC, como relatórios, auditoria, eDiscovery avançado, DLP unificada e governança de dados. Dois recursos específicos, PST de importação e exportação, de descoberta eletrônica atualmente não suportam o Azure ExpressRoute com apenas filtros de rota de Office 365 devido à sua dependência no armazenamento de Blob do Azure. Para consumir esses recursos, você precisa ter conectividade separada para o armazenamento de Blob Azure usando quaisquer opções de conectividade Azure com suporte, que incluem a conectividade de Internet ou ExpressRoute Azure com filtros de rota pública do Windows Azure. Você deve avaliar o estabelecimento de tal conectividade para esses recursos. A equipe de proteção de informações do Office 365 está ciente de que esta limitação e está trabalhando ativamente para oferecer suporte para ExpressRoute do Windows Azure para o Office 365 como limitados às filtros de roteamento do Office 365 para esses recursos.
+- O centro de segurança e conformidade (SCC) oferece suporte para o Azure ExpressRoute para Office 365. O mesmo se aplica a vários recursos expostos por meio de SCC, como relatórios, auditoria, descoberta eletrônica avançada, DLP uniFicada e governança de dados. Dois recursos específicos, importação de PST e exportação de descoberta eletrônica, atualmente não suportam o Azure ExpressRoute com apenas filtros de rota do Office 365 devido à sua dependência no armazenamento de blob do Azure. Para consumir esses recursos, você precisa de conectividade separada para o armazenamento de blob do Azure usando as opções de conectividade do Azure compatíveis, que incluem a conectividade com a Internet ou o Azure ExpressRoute com filtros de rotas públicas do Azure. Você precisa avaliar o estabelecimento dessa conectividade para ambos os recursos. A equipe de proteção de informações do Office 365 está ciente dessa limitação e está trabalhando ativamente para trazer suporte para o Azure ExpressRoute para Office 365 como limitado aos filtros de rotas do Office 365 para ambos os recursos.
 
-- Há adicionais opcionais pontos de extremidade do Office 365 ProPlus que não estejam listados e não são necessários para os usuários iniciam os aplicativos Office 365 ProPlus e editar documentos. Pontos de extremidade opcionais são hospedados em data centers da Microsoft e não processar, transmitir ou armazenar dados de clientes. É recomendável que as conexões de usuário para esses pontos de extremidade seja direcionado para o perímetro de saída de Internet padrão.
+- Há pontos de extremidade opcionais adicionais para o Office 365 proPlus que não estão listados e não são necessários para que os usuários iniciem aplicativos do Office 365 proPlus e editem documentos. Os pontos de extremidade opcionais são hospedados em datacenters da Microsoft e não processam, transmitem ou armazenam dados do cliente. Recomendamos que as conexões de usuário para esses pontos de extremidade sejam direcionadas para o perímetro de saída da Internet padrão.
