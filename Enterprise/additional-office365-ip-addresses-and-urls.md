@@ -3,7 +3,7 @@ title: Pontos de extremidade adicionais não incluídos no endereço IP do Offic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/16/2019
+ms.date: 03/04/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
+ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242083"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30374404"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
@@ -52,7 +52,7 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 6  | Migração de caixa de correio. Quando a migração de caixa de correio é iniciada a partir do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) para o Office 365, o Office 365 se conectará a seu servidor publicado de Serviços Web do Exchange (EWS)/Serviços de Replicação da Caixa de Correio (MRS). Se você precisar que os endereços IP NAT usados pelos servidores Exchange Online restrinjam conexões de entrada de intervalos IP de fontes específicas, eles se encontram listados em [Intervalos IP e de URL do Office 365](urls-and-ip-address-ranges.md) na área do serviço “Exchange Online”. Tome cuidado para garantir que o acesso a pontos de extremidade EWS publicados como OWA não seja impactado, certificando-se de que o proxy de MRS seja resolvido em um FQDN separado e em um endereço IP público antes de restringir as conexões TCP 443 de intervalos IP de fontes específicas. | Proxy de EWS/MRS local do cliente<br> Porta TCP 443 | Tráfego do servidor de entrada |
 | 7  | A coexistência do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) funciona como um compartilhamento de disponibilidade. | Servidor Exchange local do cliente | Tráfego do servidor de entrada |
 | 8  | Autenticação de proxy do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) | STS local do cliente | Tráfego do servidor de entrada |
-| 9  | Usado para configurar o [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), usando o Assistente de Configuração do Exchange Híbrido. <br> Observação: esses pontos de extremidade só são necessários para configurar o Exchange híbrido  | ```domains.live.com``` em portas TCP 80 e 443, exigido apenas para o Assistente de Configuração do Exchange 2010 SP3 Híbrido. | Somente o tráfego de servidor de saída |
+| 9  | Usado para configurar o [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), usando o [Assistente de Configuração do Exchange Híbrido](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> Observação: esses pontos de extremidade só são necessários para configurar o Exchange híbrido  | domains.live.com em portas TCP 80 e 443, exigido apenas para o Assistente de Configuração do Exchange 2010 SP3 Híbrido.<BR> <BR> Endereços de IP DoD GCC High: 40.118.209.192/32; 168.62.190.41/32 <BR> <BR> Comercial em todo o mundo e GCC: *. *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | Somente o tráfego de servidor de saída |
 | 10  | O serviço de detecção automática é usado em cenários do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) com [Autenticação Híbrida Moderna com Outlook para iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor Exchange local do cliente em TCP 443 | Tráfego do servidor de entrada |
 | 11  | O Skype for Business no Office 2016 inclui o compartilhamento de tela baseado em vídeo que usa portas UDP. Os clientes mais antigos do Skype for Business no Office 2013 e em versões anteriores usavam a porta 443 RDP em vez da TCP. | Porta 443 TCP aberta para 52.112.0.0/14 | Versões de cliente mais antigas do Skype for Business no Office 2013 e em versões anteriores |
 | 12  | Conectividade entre o servidor híbrido local do Skype for Business e o Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14 portas UDP: 50.000 a 59.999 <BR>  Portas TCP: 50.000 a 59.999 | Conectividade de saída de servidor local no Skype for Business |
