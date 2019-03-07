@@ -15,20 +15,20 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
-ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341982"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458351"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
-A maioria das organizações corporativas que têm vários locais do Office e uma WAN de conexão precisará precisar de configuração para a conectividade de rede do Office 365. Você pode otimizar sua rede enviando todas as solicitações de rede do Office 365 confiáveis diretamente através do firewall, ignorando a inspeção ou o processamento de qualquer nível de pacote adicional. Isso reduz a latência e seus requisitos de capacidade de perímetro. A identificação do tráfego de rede do Office 365 é a primeira etapa para fornecer o melhor desempenho para seus usuários. Para obter mais informações sobre a conectividade de rede do Office 365, consulte [office 365 princípios de conectividade de rede](office-365-network-connectivity-principles.md)
+A maioria das organizações corporativas que têm vários locais do Office e uma WAN de conexão precisará precisar de configuração para a conectividade de rede do Office 365. Você pode otimizar sua rede enviando todas as solicitações de rede do Office 365 confiáveis diretamente através do firewall, ignorando a inspeção ou o processamento de qualquer nível de pacote adicional. Isso reduz a latência e seus requisitos de capacidade de perímetro. A identificação do tráfego de rede do Office 365 é a primeira etapa para fornecer o melhor desempenho para seus usuários. Para obter mais informações sobre a conectividade de rede do Office 365, consulte [office 365 princípios de conectividade de rede](office-365-network-connectivity-principles.md).
 
-A Microsoft recomenda que você acesse os pontos de extremidade de rede do Office 365 e altere-os usando o [endereço IP 365 do Office e o serviço Web de URL](office-365-ip-web-service.md)
+A Microsoft recomenda que você acesse os pontos de extremidade de rede do Office 365 e altere-os usando o [endereço IP 365 do Office e o serviço Web de URL](office-365-ip-web-service.md).
 
-Independentemente de como você gerencia o tráfego de rede vital do Office 365, o Office 365 requer conectividade com a Internet. Outros pontos de extremidade de rede onde a conectividade é necessária são listados em [pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](additional-office365-ip-addresses-and-urls.md)
+Independentemente de como você gerencia o tráfego de rede vital do Office 365, o Office 365 requer conectividade com a Internet. Outros pontos de extremidade de rede onde a conectividade é necessária são listados em [pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](additional-office365-ip-addresses-and-urls.md).
 
 O modo de uso dos pontos de extremidade de rede do Office 365 dependerá da arquitetura de rede da organização de sua empresa. Este artigo descreve várias maneiras pelas quais as arquiteturas de rede corporativas podem se integrar com os endereços IP e URLs do Office 365. A maneira mais fácil de escolher quais solicitações de rede confiar é usar dispositivos SDWAN que suportam a configuração automatizada do Office 365 em cada um dos seus locais do Office.
 
@@ -70,14 +70,14 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Há vários parâmetros que podem ser passados para o script:
 
-|**Parameter**|**Descrição**|
+|**Parâmetro**|**Descrição**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |Isso é obrigatório e é um GUID passado para o serviço Web que representa a máquina cliente que está fazendo a chamada. <br/> |
-|**Instance** <br/> |A instância de serviço do Office 365 que assume como padrão em todo o mundo. Também passado para o serviço Web. <br/> |
+|**Instância** <br/> |A instância de serviço do Office 365 que assume como padrão em todo o mundo. Também passado para o serviço Web. <br/> |
 |**TenantName** <br/> |O nome do locatário do Office 365. Passado para o serviço Web e usado como um parâmetro substituível em algumas URLs do Office 365. <br/> |
 |**Tipo** <br/> |O tipo de arquivo de PAC de proxy que você deseja gerar. <br/> |
 
-Este é outro exemplo de chamar o script do PowerShell com parâmetros adicionais.
+Este é outro exemplo de chamada do script do PowerShell com parâmetros adicionais:
 
 ```powershell
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
@@ -112,7 +112,7 @@ O serviço Web de URL e endereço IP do Office 365 fornece um RSS feed que você
 
 Entendemos que você ainda pode exigir o processamento manual para alterações de ponto de extremidade de rede que aparecem em cada mês. Você pode usar o Microsoft Flow para criar um fluxo que o notifique por email e, opcionalmente, execute um processo de aprovação para alterações quando os pontos de extremidade de rede do Office 365 tiverem alterações. Após a conclusão da revisão, você pode fazer com que o fluxo envie as alterações automaticamente para o firewall e a equipe de gerenciamento do servidor proxy.
 
-Para obter informações sobre um modelo e exemplo de fluxo da Microsoft, consulte [usar o Microsoft Flow para receber um email para alterações nos endereços IP e URLs do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
+Para obter informações sobre um modelo e exemplo de fluxo da Microsoft, consulte [use Microsoft Flow para receber um email para alterações nos endereços IP e URLs do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>PERGUNTAS FREQUENTEs sobre pontos de extremidade de rede do Office 365
@@ -185,7 +185,7 @@ O [Akamai](https://www.akamai.com/) está em uso quando você vê solicitações
 ### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Preciso ter a conectividade mínima possível para o Office 365
 <a name="bkmk_thirdparty"> </a>
 
-O Office 365 é um pacote de serviços criados para funcionar pela Internet, as promessas de confiabilidade e disponibilidade são baseadas em muitos serviços padrão da Internet que estão disponíveis. Por exemplo, os serviços padrão da Internet, como DNS, CRL e CDNs devem ser acessíveis para usar o Office 365 da mesma forma que devem ser acessados para usar os serviços de Internet mais modernos.
+Como o Office 365 é um pacote de serviços criados para funcionar pela Internet, as promessas de confiabilidade e disponibilidade são baseadas em muitos serviços padrão da Internet que estão disponíveis. Por exemplo, os serviços padrão da Internet, como DNS, CRL e CDNs devem ser acessíveis para usar o Office 365 da mesma forma que devem ser acessados para usar os serviços de Internet mais modernos.
 
 O pacote do Office 365 é dividido nas principais áreas de serviço. Eles podem ser habilitados seletivamente para conectividade e há uma área comum que é uma dependência para todos e é sempre necessário.
 
@@ -194,7 +194,7 @@ O pacote do Office 365 é dividido nas principais áreas de serviço. Eles podem
 |**Exchange** <br/> |Proteção do Exchange Online e do Exchange Online <br/> |
 |**SharePoint** <br/> |SharePoint Online e OneDrive for Business <br/> |
 |**Skype for Business Online e Microsoft Teams** <br/> |Skype for Business e Microsoft Teams <br/> |
-|**Convencionais** <br/> |Office 365 Pro Plus, Office Online, Azure AD e outros pontos de extremidade de rede comuns <br/> |
+|**Comum** <br/> |Office 365 Pro Plus, Office Online, Azure AD e outros pontos de extremidade de rede comuns <br/> |
 
 Além dos serviços básicos da Internet, há serviços de terceiros que são usados apenas para integrar a funcionalidade. Embora sejam necessários para integração, eles são marcados como opcionais no artigo de pontos de extremidade do Office 365, o que significa que a funcionalidade principal do serviço continuará funcionando se o ponto de extremidade não estiver acessível. Qualquer ponto de extremidade de rede necessário terá o atributo Required definido como true. Qualquer ponto de extremidade de rede opcional terá o atributo Required definido como false e o atributo Notes detalhará a funcionalidade ausente que você deverá esperar se a conectividade for bloqueada.
   
@@ -203,7 +203,7 @@ Se você estiver tentando usar o Office 365 e localizar serviços de terceiros n
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Como faço para bloquear o acesso aos serviços de consumidor da Microsoft?
 <a name="bkmk_consumer"> </a>
 
-Restringir o acesso aos nossos serviços de consumidor deve ser feito por sua conta e risco, a única maneira confiável de bloquear serviços de consumidor é restringir o acesso ao FQDN do *login.Live.com* . Esse FQDN é usado por um amplo conjunto de serviços, incluindo serviços não-consumidor como o MSDN, o TechNet e outros. Esse FQDN também é usado pelo programa de troca segura de arquivos do suporte da Microsoft e é necessário para transferir arquivos para facilitar a solução de problemas para produtos da Microsoft.  Restringir o acesso a esse FQDN pode resultar na necessidade de também incluir exceções à regra para solicitações de rede associadas a esses serviços.
+Restringir o acesso aos nossos serviços de consumidor deve ser feito por sua conta e risco. A única maneira confiável de bloquear serviços de consumidor é restringir o acesso ao FQDN do *login.Live.com* . Esse FQDN é usado por um amplo conjunto de serviços, incluindo serviços não-consumidor como o MSDN, o TechNet e outros. Esse FQDN também é usado pelo programa de troca segura de arquivos do suporte da Microsoft e é necessário para transferir arquivos para facilitar a solução de problemas para produtos da Microsoft.  Restringir o acesso a esse FQDN pode resultar na necessidade de também incluir exceções à regra para solicitações de rede associadas a esses serviços.
   
 Tenha em mente que bloquear o acesso aos serviços de cliente da Microsoft sozinhos não impedirá a capacidade de alguém de sua rede Exfiltrate informações usando um locatário do Office 365 ou outro serviço.
   
@@ -221,6 +221,6 @@ Tenha em mente que bloquear o acesso aos serviços de cliente da Microsoft sozin
   
 [URLs e intervalos de endereços IP do Office 365](urls-and-ip-address-ranges.md)
   
-[Como gerenciar o ExpressRoute para a conectividade do Office 365](managing-expressroute-for-connectivity.md)
+[Gerenciando o ExpressRoute para a conectividade do Office 365](managing-expressroute-for-connectivity.md)
   
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
