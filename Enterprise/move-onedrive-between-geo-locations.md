@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "29547129"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458321"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -68,6 +68,8 @@ Antes de começar uma movimentação geográfica do OneDrive, recomendamos valid
 Para garantir que todos os locais geográficos são compatíveis, execute:
 
 `Get-SPOGeoMoveCrossCompatibilityStatus`
+
+Você verá uma lista da localização geográfica e se o conteúdo poder ser movido, será indicado como "Compatível". Se o comando retornar "Incompatível", repita a validação do status em uma data posterior.
 
 Se o OneDrive estiver com retenção legal ou se contiver um subsite, não poderá ser movido. Você pode usar o cmdlet Start-SPOUserAndContentMove com o parâmetro –ValidationOnly para validar se o OneDrive pode ser movido:
 
