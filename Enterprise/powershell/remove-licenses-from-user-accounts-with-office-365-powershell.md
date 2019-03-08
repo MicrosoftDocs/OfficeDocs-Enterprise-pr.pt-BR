@@ -3,7 +3,7 @@ title: Remover licenças de contas de usuários com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/29/2019
+ms.date: 03/07/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,32 +15,32 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Explica como usar o Office 365 PowerShell para remover licenças do Office 365 que previamente atribuídas aos usuários.
-ms.openlocfilehash: 5b5f4550a5fade7f95669ad455aebd5d5f7fbf34
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+description: Explica como usar o Office 365 PowerShell para remover as licenças do Office 365 que foram previamente atribuídas aos usuários.
+ms.openlocfilehash: 66ffe7275bcfd936c7df70d3969b96fefafb355d
+ms.sourcegitcommit: 0a99abcb67fc8ee7594cb66f5f7fd0e6e94eb3fd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651215"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474172"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Remover licenças de contas de usuários com o Office 365 PowerShell
 
-**Resumo:** Explica como usar o Office 365 PowerShell para remover licenças do Office 365 que previamente atribuídas aos usuários.
+**Resumo:** Explica como usar o Office 365 PowerShell para remover as licenças do Office 365 que foram previamente atribuídas aos usuários.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
-Em seguida, liste os planos de licença para o seu locatário com este comando.
+Em seguida, liste os planos de licença para seu locatário com este comando.
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Em seguida, obtenha o nome de logon da conta para o qual você deseja remover uma licença, também conhecido como o usuário nome principal (UPN).
+Em seguida, obtenha o nome de entrada da conta para a qual você deseja remover uma licença, também conhecido como o nome de usuário principal (UPN).
 
-Finalmente, especifique os nomes de plano de entrar e licença do usuário, remova os caracteres "<" e gt _"e executar esses comandos.
+Por fim, especifique os nomes de entrada e de plano de licença do usuário, remova os caracteres "<" e ">" e execute esses comandos.
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -60,7 +60,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
    
-Para exibir as informações de licenciamento plano (**AccountSkuID** ) em sua organização, consulte os seguintes tópicos:
+Para exibir as informações do plano de licenciamento (**AccountSkuID** ) em sua organização, consulte os seguintes tópicos:
     
   - [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md)
     
@@ -68,7 +68,7 @@ Para exibir as informações de licenciamento plano (**AccountSkuID** ) em sua o
     
 Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _-All_, somente as primeiras 500 contas serão retornadas.
     
-### <a name="removing-licenses-from-user-accounts"></a>Remover licenças de contas de usuário
+### <a name="removing-licenses-from-user-accounts"></a>Removendo licenças de contas de usuário
 
 Para remover licenças de uma conta de usuário existente, use a seguinte sintaxe:
   
@@ -76,7 +76,7 @@ Para remover licenças de uma conta de usuário existente, use a seguinte sintax
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
-Este exemplo remove o `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) da conta de usuário BelindaN@litwareinc.com.
+Este exemplo remove a `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) da conta de usuário BelindaN@litwareinc.com.
   
 ```
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
@@ -84,14 +84,14 @@ Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "
 
 Para remover licenças de um grupo de usuários licenciados existentes, use um dos seguintes métodos:
   
-- **Filtrar as contas com base em um atributo existente da conta** Para fazer isso, use a seguinte sintaxe:
+- **Filtrar as contas com base em um atributo de conta existente** Para fazer isso, use a seguinte sintaxe:
     
 ```
 $x = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
 $x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-Este exemplo remove o `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3) licenças de opinião para usuários no departamento de vendas nos Estados Unidos.
+Este exemplo remove as `litwareinc:ENTERPRISEPACK` licenças (Office 365 Enterprise E3) de todas as contas de usuários no departamento de vendas nos Estados Unidos.
     
 ```
 $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
@@ -111,30 +111,30 @@ kakers@contoso.com
 2. Use a sintaxe a seguir:
     
   ```
-  Get-Content "<FileNameAndPath>" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
+  Get-Content "<FileNameAndPath>" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"... }
   ```
 
-Este exemplo remove o `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) das contas de usuário definidos no arquivo de texto C:\My Documents\Accounts.txt.
+Este exemplo remove a `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) das contas de usuário definidas no arquivo de texto c:\Meus Documents\Accounts.txt.
     
   ```
-  Get-Content "C:\My Documents\Accounts.txt" | Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"
+  Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK" }
   ```
 
 Para remover licenças de todas as contas de usuário existentes, use a seguinte sintaxe:
   
 ```
-$x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
+$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...}
 ```
 
-Este exemplo remove o `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) de todos os existentes licenciados contas de usuário.
+Este exemplo remove a `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) de todas as contas de usuário licenciado existentes.
   
 ```
-$x = Get-MsolUser -All  | where {$_.isLicensed -eq $true}
-$x | foreach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
+$x = Get-MsolUser -All  | Where {$_.isLicensed -eq $true}
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -RemoveLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-Outra maneira para liberar uma licença é, excluindo a conta de usuário. Para obter mais informações, consulte [Excluir e restaurar as contas de usuário com o Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
+Outra maneira de liberar uma licença é excluir a conta de usuário. Para obter mais informações, consulte [excluir e restaurar contas de usuário com o Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Confira também
 
