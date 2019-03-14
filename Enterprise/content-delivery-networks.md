@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber mais sobre redes de distribuição de conteúdo (CDNs) e como o Office 365 as utiliza. CDNs ajudar a manter o Office 365 rápido e confiável para usuários finais. Com o CDNs, os serviços de nuvem, como o Office 365, baixam rapidamente conteúdo genérico, como ícones, para o navegador de seus usuários quando estão usando o serviço por meio de um cliente da Web.
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458331"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492951"
 ---
 # <a name="content-delivery-networks"></a>Redes de distribuição de conteúdo
 
@@ -77,7 +77,7 @@ Estamos continuamente procurando novas maneiras de dar suporte às necessidades 
   
 ## <a name="is-my-data-safe"></a>Meus dados estão seguros?
 
-Temos muito cuidado para ajudar a garantir que protegemos os dados que executam sua empresa. Dados específicos do cliente armazenados no CDNs são criptografados em trânsito e em repouso, e são protegidos pelas mesmas permissões de nível de arquivo que os dados não são armazenados em uma CDN.
+Temos muito cuidado para ajudar a garantir que protegemos os dados que executam sua empresa. Dados específicos do cliente armazenados no CDNs são criptografados em trânsito e em repouso.
 
 Os provedores de CDN podem ter padrões de privacidade e conformidade diferentes dos compromissos indicados pela central de confiabilidade do Office 365. Os dados armazenados em cache através do serviço de CDN podem não estar em conformidade com os termos de processamento de dados da Microsoft (DPT) e podem estar fora dos limites de conformidade da central de confiabilidade do Office 365.
 
@@ -89,7 +89,7 @@ Para obter informações detalhadas sobre privacidade e proteção de dados para
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Como posso proteger minha rede com todos esses serviços de terceiros?
 
-O uso de um conjunto abrangente de serviços parceiros permite que o Office 365 dimensione e atenda aos requisitos de disponibilidade, bem como aprimore a experiência do usuário ao usar o Office 365. Os serviços de terceiros do Office 365 aproveitam as listas de certificados revogados; como crl.microsoft.com ou sa.symcb.com, e CDNs; como R3.res.Outlook.com. Todos os FQDNS de CDN do Office 365 usam um FQDN personalizado para o Office 365, se você for enviado para um FQDN na solicitação do Office 365, poderá ter certeza de que controlamos o FQDN e o conteúdo subjacente nesse local.
+O uso de um conjunto abrangente de serviços parceiros permite que o Office 365 dimensione e atenda aos requisitos de disponibilidade, bem como aprimore a experiência do usuário ao usar o Office 365. Os serviços de terceiros do Office 365 aproveitam as listas de certificados revogados; como crl.microsoft.com ou sa.symcb.com, e CDNs; como R3.res.Outlook.com. Cada FQDN de CDN do Office 365 usa é um FQDN personalizado para o Office 365. Se você for enviado para um FQDN na solicitação do Office 365, poderá ter certeza de que o provedor de CDN controla o FQDN e o conteúdo subjacente nesse local.
   
 Para clientes que ainda querem segregar solicitações destinadas a um datacenter da Microsoft ou do Office 365 de solicitações destinadas a um terceiro, criamos orientações sobre como [gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
   

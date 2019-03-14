@@ -16,31 +16,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
-description: Tempos limite de sessão é usado para balancear a segurança e facilidade de acesso nos aplicativos de cliente do Office 365.
-ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
-ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
+ms.collection:
+- M365-security-compliance
+description: Os tempos limite da sessão são usados para equilibrar Securtiy e facilidade de acesso nos aplicativos cliente do Office 365.
+ms.openlocfilehash: 05e0ddbfb569f476986567e55bbf93428125b3af
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27378487"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372878"
 ---
 # <a name="session-timeouts-for-office-365"></a>Tempos limite de sessão para o Office 365
 
-Tempo de vida de sessão é uma parte importante de autenticação para o Office 365 e um componente importante no balanceamento de segurança e o número de vezes que os usuários são solicitados para suas credenciais.
+Os tempos de vida da sessão são uma parte importante da autenticação do Office 365 e são um componente importante no equilíbrio de segurança e o número de vezes que os usuários são solicitados por suas credenciais.
   
 ## <a name="session-times-for-office-365-services"></a>Tempos de sessão para serviços do Office 365
 
-Quando os usuários são autenticados em qualquer um dos aplicativos do Office 365 web ou aplicativos móveis, uma sessão é estabelecida. Para a duração da sessão, os usuários não precisam autenticar novamente. Sessões podem expirar quando os usuários estão inativos, quando eles fecharem o navegador ou o guia, ou quando seu token de autenticação expira por outros motivos, como quando sua senha for redefinida. Os serviços do Office 365 têm tempos limite de sessão diferente para se corresponder com o uso normal de cada serviço.
+Quando os usuários autenticam em qualquer um dos aplicativos Web ou aplicativos móveis do Office 365, uma sessão é estabelecida. Para a duração da sessão, os usuários não precisarão autenticar novamente. As sessões podem expirar quando os usuários estão inativos, quando fecham o navegador ou guia, ou quando o token de autenticação expira por outros motivos, como quando a senha foi redefinida. Os serviços do Office 365 têm tempos limite de sessão diferentes para corresponder ao uso típico de cada serviço.
   
-A tabela a seguir lista os tempos de vida de sessão para os serviços do Office 365:
+A tabela a seguir lista os tempos de vida da sessão para os serviços do Office 365:
   
-|**Serviço do Office 365**|**Tempo limite de sessão**|
+|**Serviço do Office 365**|**Tempo limite da sessão**|
 |:-----|:-----|
-|Centro de administração do Office 365  <br/> |Será solicitado que você forneça credenciais para o admin center a cada 8 horas.  <br/> |
-|SharePoint Online  <br/> |5 dias de inatividade, desde que os usuários escolhe **Mantenha-me conectado**. Se o usuário acessa o SharePoint Online novamente após 24 ou mais horas do sign-in anterior, o valor de tempo limite é redefinido para 5 dias.<br/> |
-|Outlook Web App  <br/> |seis horas.  <br/> Você pode alterar esse valor usando o _ActivityBasedAuthenticationTimeoutInterval_ parâmetro no cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
-|Azure Active Directory  <br/> (Usado pelos clientes do Office 2013 Windows com autenticação moderna habilitada)  <br/> | Autenticação moderna usa tokens de acesso e tokens de atualização para conceder acesso aos recursos do Office 365 usando o Windows Azure Active Directory do usuário. Um token de acesso é um JSON Web Token fornecido após uma autenticação bem-sucedida e é válido para 1 hora. Também é fornecido um token de atualização com um tempo de vida de mais tempo. Quando terminar de tokens de acesso, os clientes do Office usam um token de atualização válido para obter um novo token de acesso. Troca for bem-sucedido, se a autenticação inicial do usuário é voltado e ainda válida.  <br/>  Tokens de atualização são válidas por 90 dias e com o uso contínuo, eles podem ser válidos até revogado.  <br/>  Atualizar tokens podem ser invalidados por vários eventos, como:  <br/>  Senha do usuário foi alterado desde que o token de atualização foi emitido.  <br/>  Um administrador pode aplicar políticas de acesso condicional que restringem o acesso ao recurso que o usuário está tentando acessar.  <br/> |
-|SharePoint e OneDrive aplicativos móveis para Android, iOS e Windows 10  <br/> |O tempo de vida padrão para o token de acesso é 1 hora. O tempo inativo máximo de padrão do token refresh é 90 dias.<br/> [Saiba mais sobre como configurar a vida útil do token e de tokens](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Para revogar a atualização de token, você pode redefinir a senha do usuário Office 365  <br/> |
-|Com o Office 365 entrar no Yammer  <br/> |Tempo de vida do navegador. Se os usuários feche o navegador e acessar o Yammer em um novo navegador, o Yammer vai autenticá-los novamente com o Office 365. Se os usuários usarem navegadores de terceiros que cookies de cache, eles não precisará sua reconexão quando eles reabra o navegador.<br/> > [!NOTE]> Isso é válido apenas para redes que usam o Office 365 entrar no Yammer.           |
+|Centro de administração do Office 365  <br/> |Você será solicitado a fornecer credenciais para o centro de administração a cada 8 horas.  <br/> |
+|SharePoint Online  <br/> |5 dias de inatividade, desde que os usuários decidam **entrar**. Se o usuário acessar o SharePoint Online novamente após 24 ou mais horas passadas da entrada anterior, o valor de tempo limite é redefinido como 5 dias.  <br/> |
+|Outlook Web App  <br/> |6 horas.  <br/> Você pode alterar esse valor usando o parâmetro _ActivityBasedAuthenticationTimeoutInterval_ no cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
+|Azure Active Directory  <br/> (Usado por clientes do Windows 2013 com autenticação moderna habilitada)  <br/> | A autenticação moderna usa tokens de acesso e atualiza tokens para conceder ao usuário acesso aos recursos do Office 365 usando o Azure Active Directory. Um token de acesso é um token Web JSON fornecido após uma autenticação bem-sucedida e é válido por 1 hora. Um token de atualização com um tempo de vida maior também é fornecido. Quando os tokens de acesso expiram, os clientes do Office usam um token de atualização válido para obter um novo token de acesso. Esse Exchange será bem-sucedido se a autenticação inicial do usuário ainda for válida.  <br/>  Os tokens de atualização são válidos por 90 dias e com o uso contínuo, eles podem ser válidos até serem revogados.  <br/>  Os tokens de atualização podem ser invalidados por vários eventos, como:  <br/>  A senha do usuário foi alterada desde a emissão do token de atualização.  <br/>  Um administrador pode aplicar as políticas de acesso condicional que restringem o acesso ao recurso que o usuário está tentando acessar.  <br/> |
+|Aplicativos móveis do SharePoint e do OneDrive para Android, iOS e Windows 10  <br/> |O tempo de vida padrão para o token de acesso é de 1 hora. O tempo máximo de inatividade padrão do token de atualização é de 90 dias.  <br/> [Saiba mais sobre tokens e como configurar tempos de vida do token](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Para revogar o token de atualização, você pode redefinir a senha do Office 365 do usuário  <br/> |
+|Entrada do Yammer com o Office 365  <br/> |Tempo de vida do navegador. Se o usuário fechar o navegador e acessar o yammer em um novo navegador, o Yammer o autenticará novamente com o Office 365. Se os usuários usarem navegadores de terceiros que armazenam cookies em cache, talvez não precisem se autenticar novamente quando abrirem novamente o navegador.  <br/> > [!NOTE]> isso é válido apenas para redes que usam o logon do Office 365 para o Yammer.           |
    
 
