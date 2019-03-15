@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumo: conheça os principais conceitos de arquitetura de nuvens relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Office ProPlus.'
-ms.openlocfilehash: a32b73facd54da98d7c5df84223237d857883cfe
-ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
+ms.openlocfilehash: ff184f8a805977a081b533ff33d662ac181646f5
+ms.sourcegitcommit: d182d93f7a6906bf132876288d6ee79139cf5a35
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741234"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30536363"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
@@ -29,9 +29,9 @@ ms.locfileid: "29741234"
   
 Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os serviços em nuvem da Microsoft, incluindo o Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
   
-<!---**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) --->
+<!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
-- **[Série Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!--- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) --->
+- **[Série Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#cloudarch)** <!-- [Microsoft Cloud Services and Platform Options](microsoft-cloud-it-architecture-resources.md#platformoptions) -->
     - [Identidade do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#identity)
     - [Segurança no Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#security)
     - [Rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#networking)
@@ -50,8 +50,8 @@ Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os 
   
 Dê sua opinião! Envie um email para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
-<!---
-<a name="roadmap"> </a>
+<!--
+<a name="roadmap"></a>
 ## Microsoft's Enterprise Cloud Roadmap
 
 See the posters, icon sets, community venues, and other resources that describe the industry's most complete cloud solution.
@@ -59,15 +59,15 @@ See the posters, icon sets, community venues, and other resources that describe 
 |**Item**|**Description**|
 |:-----|:-----|
 |[![Thumbnail for Enterprise Cloud Roadmap](media/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Swipe through this Sway experience for the resources that describe the industry's most complete cloud solution.  <br/> |
---->
+-->
   
-<a name="cloudarch"> </a>
-##Série Microsoft Cloud para arquitetos corporativos
+<a name="cloudarch"></a>
+## Série Microsoft Cloud para arquitetos corporativos
 
 Esses cartazes de arquitetura em nuvem proporcionam informações sobre os serviços em nuvem da Microsoft, incluindo o Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança.
 
-<!---  
-<a name="platformoptions"> </a>
+<!--  
+<a name="platformoptions"></a>
 ### Microsoft Cloud Services and Platform Options
 
 Learn key differences between Microsoft cloud services and platform offerings. Find the best fit for your solution.
@@ -75,28 +75,28 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 |**Item**|**Description**|
 |:-----|:-----|
 |[![Thumb image of cloud architecture model with service options](media/ff5c74e2-afc6-40c1-9292-cc4cb128cdd1.png)          ](https://www.microsoft.com/download/details.aspx?id=54432) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524731)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=524732)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54432) <br/> | This model describes: <ul><li>  Software as a Service (SaaS) offerings, including Office 365 </li><li>  Platform as a Service (PaaS) features in Microsoft Azure </li><li>  Infrastructure as a Service (IaaS) features in Microsoft Azure </li><li>  Private cloud datacenter capabilities using Windows Server and System Center </li><li>  Learn how Microsoft's own IT department is migrating to these cloud services and building its hybrid cloud. </li></ul><br/>|
---->
+-->
 
    
-<a name="identity"> </a>
+<a name="identity"></a>
 ### Identidade do Microsoft Cloud para arquitetos corporativos
 
 O que os arquitetos de TI precisam saber sobre a criação de identidade para organizações que usam plataformas e serviços em nuvem da Microsoft.
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do modelo de identidade de nuvem da Microsoft](media/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Este modelo contém: <ul><li>Introdução à identidade com a nuvem da Microsoft </li> <li>Recursos do Azure AD IDaaS </li><li>Integração de contas do Active Directory Domain Services no local com o Microsoft Azure Active Directory </li> <li>Colocando componentes de diretório no Azure </li><li>Opções de serviços de domínio para cargas de trabalho no Azure IaaS </li></ul> <br/>|
+|[![Imagem em miniatura do modelo de identidade de nuvem da Microsoft](media/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54431) <br/> | Este modelo contém: <ul><li>Introdução à identidade com a nuvem da Microsoft </li><li>Recursos do Azure AD IDaaS </li><li>Integração de contas do Active Directory Domain Services no local com o Microsoft Azure Active Directory </li><li>Colocando componentes de diretório no Azure </li><li>Opções de serviços de domínio para cargas de trabalho no Azure IaaS </li></ul><br/>|
    
-<a name="security"> </a>
+<a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Segurança no Microsoft Cloud para arquitetos corporativos
 
 O que os arquitetos de TI precisam saber sobre segurança em plataformas e serviços em nuvem da Microsoft.
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do modelo de segurança em nuvem da Microsoft](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Este modelo contém: <ul><li>Função da Microsoft no fornecimento de plataformas e serviços seguros</li><li>Responsabilidade do cliente em reduzir os riscos de segurança</li><li>Principais certificações de segurança </li><li>Ofertas de segurança fornecidas pelos serviços de consultoria da Microsoft </ul> <br/>|
+|[![Imagem em miniatura do modelo de segurança em nuvem da Microsoft](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Este modelo contém: <ul><li>Função da Microsoft no fornecimento de plataformas e serviços seguros</li><li>Responsabilidade do cliente em reduzir os riscos de segurança</li><li>Principais certificações de segurança </li><li>Ofertas de segurança fornecidas pelos serviços de consultoria da Microsoft </ul><br/>|
    
-<a name="networking"> </a>
+<a name="networking"></a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Rede do Microsoft Cloud para arquitetos corporativos
 
 O que os arquitetos de TI precisam saber sobre redes para plataformas e serviços em nuvem da Microsoft.
@@ -106,7 +106,7 @@ O que os arquitetos de TI precisam saber sobre redes para plataformas e serviço
 |[![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Artigo](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Este modelo contém as seguintes páginas: <ul><li> **Desenvolvimento de sua rede para conectividade de nuvem** A migração de nuvem altera o volume e a natureza dos fluxos de tráfego dentro e fora de uma rede corporativa. Ela também afeta as abordagens para atenuar os riscos de segurança.</li><li> **Elementos comuns da conectividade de nuvem da Microsoft** A integração de sua rede à nuvem da Microsoft proporciona acesso ideal a uma grande variedade de serviços. </li><li> **ExpressRoute para conectividade com a nuvem da Microsoft** O ExpressRoute fornece uma conexão de rede privada, dedicada e de alta produtividade para a nuvem da Microsoft. </li><li> **Criação de rede para o Microsoft SaaS (Office 365, Microsoft Intune e Dynamics CRM Online)** A otimização da rede para serviços do Microsoft SaaS requer análise cuidadosa da borda de Internet, dos dispositivos de clientes e das operações típicas de TI. </li><li> **Criação de rede para o Azure PaaS** Otimizar a rede para os aplicativos PaaS do Azure exige uma largura de banda de Internet adequada e pode ainda exigir a distribuição de tráfego de rede em diversos sites ou aplicativos. </li><li> **Criação de rede para o Azure IaaS** Percorra o processo de design para criar uma rede virtual (VNet) do Azure, ideal para hospedar cargas de trabalho de TI baseadas em servidor, incluindo sub-redes, espaços de endereço, roteamento, DNS, balanceamento de carga e conectividade com a rede local, com outras VNets e com a Internet. </li></ul><br/>  Assista ao vídeo [Otimizar a rede para as ofertas do Microsoft Cloud](https://aka.ms/optimizecloudnetworkingmva), um novo curso da Microsoft Virtual Academy com base neste cartaz de arquitetura.  <br/>|
    
    
-<a name="hybrid"> </a>
+<a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 
 O que os arquitetos de TI precisam saber sobre nuvem híbrida dos serviços e plataformas da Microsoft.
@@ -115,7 +115,7 @@ O que os arquitetos de TI precisam saber sobre nuvem híbrida dos serviços e pl
 |:-----|:-----|
 |[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Artigo](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Este modelo contém as seguintes páginas: <ul><li> **Visão geral da nuvem híbrida** Ofertas de nuvem da Microsoft (SaaS, Azure PaaS, and Azure IaaS) e seus elementos em comum. </li><li> **Arquitetura dos cenários de nuvem híbrida da Microsoft** Um diagrama arquitetônico da nuvem híbrida para ofertas de nuvem da Microsoft, mostrando as camadas comuns da infraestrutura, redes e identidades no local. </li><li> **Cenários de nuvem híbrida do Microsoft SaaS (Office 365)** A arquitetura de cenário híbrido do SaaS e as principais descrições das configurações híbridas do Skype for Business, SharePoint Server e Exchange Server. </li><li> **Cenários de nuvem híbrida do Azure PaaS** A arquitetura de cenário híbrido do Azure PaaS, a descrição de um aplicativo híbrido do Azure PaaS com um exemplo e a descrição do SQL Server 2016 Stretch Database. </li><li> **Cenários de nuvem híbrida do Azure IaaS** A arquitetura de cenário híbrido do Azure IaaS e a descrição de um aplicativo de linha de negócios (LOB) hospedado no Azure IaaS. </li></ul><br/>|
    
-<a name="attacks"> </a>
+<a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comuns e recursos da Microsoft que protegem sua organização
 Conheça os ataques cibernéticos mais comuns e saiba como a Microsoft pode ajudar sua organização em cada etapa de um ataque. 
 
@@ -124,22 +124,22 @@ Conheça os ataques cibernéticos mais comuns e saiba como a Microsoft pode ajud
 |[![Imagem em miniatura do cartaz de Ataques comuns.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Este cartaz ilustra o caminho dos ataques comuns e descreve quais recursos ajudam a impedir os invasores em cada etapa de um ataque. <br/>|
 
 
-<!---<a name="santa"> </a>
+<!--<a name="santa"></a>
 ### The Santa cloud
 
 How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
   
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| --->
+|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
-<a name="BKMK_o365solutions"> </a>
-##Série de solução do Microsoft 365 Enterprise
+<a name="BKMK_o365solutions"></a>
+## Série de solução do Microsoft 365 Enterprise
 
 A série de solução do Microsoft 365 Enterprise fornece orientações para a implementação de recursos do Microsoft 365, especialmente quando os recursos e as tecnologias se encontram.
 
-<!---  
-<a name="BKMK_infoprotect"> </a>
+<!--  
+<a name="BKMK_infoprotect"></a>
 ### Information Protection for Office 365
 
 Capabilities for enterprise organizations to protect corporate assets.
@@ -147,9 +147,9 @@ Capabilities for enterprise organizations to protect corporate assets.
 |**Item**|**Description**|
 |:-----|:-----|
 |[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
---->
+-->
    
-<a name="BKMK_O365IDP"> </a>
+<a name="BKMK_O365IDP"></a>
 ### Proteção de identidade e dispositivo para o Office 365
 
 Recursos recomendados para proteger identidades e dispositivos que acessam o Office 365, outros serviços SaaS e aplicativos locais publicados com o Proxy de Aplicativo do Azure AD.
@@ -158,7 +158,7 @@ Recursos recomendados para proteger identidades e dispositivos que acessam o Off
 |:-----|:-----|
 |[![Pôster de modelo: proteção de identidade e do dispositivo para o Office 365 e outros aplicativos SaaS](media/c1cfb31b-5150-45ff-b46c-3a237e9f5581.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=55032) <br/> |É importante usar níveis consistentes de proteção em seus dados, identidades e dispositivos. Este documento mostra quais recursos são comparáveis com mais informações sobre recursos para proteger identidades e dispositivos.  <br/> |
    
-<a name="BKMK_O365fileprotect"> </a>
+<a name="BKMK_O365fileprotect"></a>
 ### <a name="file-protection-solutions-in-office-365"></a>Soluções de proteção de arquivos do Office 365
 
 Recursos recomendados para proteção de arquivos do Office 365 com base em três níveis diferentes de confidencialidade.
@@ -197,7 +197,7 @@ A Microsoft oferece suporte a várias opções conforme você começa sua jornad
 
 Para saber mais, confira o artigo neste cartaz: [Soluções de telefonia da Microsoft](https://docs.microsoft.com/pt-BR/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"> </a>
+<a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Implantar uma área de trabalho segura e moderna com a Microsoft
 
 O que os arquitetos de TI precisam saber sobre implantação e gerenciamento de atualizações para o Office 365 ProPlus no Windows 10.
