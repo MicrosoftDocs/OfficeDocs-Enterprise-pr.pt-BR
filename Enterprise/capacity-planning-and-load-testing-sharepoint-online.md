@@ -3,7 +3,7 @@ title: Planejamento de capacidade e teste de carregamento do SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/18/2016
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Este artigo descreve como você pode implantar o no SharePoint Online sem executar testes de carga tradicionais, pois ele não é permitido.
-ms.openlocfilehash: ef5d6c043b4be2e8c5358a9c060459b4c6a92156
-ms.sourcegitcommit: 468c8e8d2f951e08cf50301445ad650ef17328aa
+ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512716"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "30665184"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planejamento de capacidade e teste de carga do SharePoint Online.
 
