@@ -1,9 +1,9 @@
 ---
-title: Mover dados principais para o novo geos de datacenter do Office 365
+title: Movendo dados principais para o novo Office 365 datacenter GEOS
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 03/15/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,66 +11,64 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
-description: 'Novo geos de datacenter adicionar capacidade e recursos para suportar o nosso crescimento de demanda e o uso do cliente em andamento de computação. Além disso, os novo geos datacenter oferecem em geo residência de dados para os dados de cliente principal. Dados de cliente principal serão um termo que se refere a um subconjunto de dados de cliente definidos nos termos do Microsoft Online Services: conteúdo de caixa de correio Exchange Online (corpo do email, entradas de calendário e o conteúdo de anexos de email) e o SharePoint Online conteúdo e os arquivos do site armazenados no site e os arquivos carregados ao OneDrive for Business.'
-ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
+ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839579"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647979"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Mover dados principais para o novo geos de datacenter do Office 365
+# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
-Podemos continuar abrir o novo geos do datacenter para o Office 365 para serviços corporativos. Essas novas geos de datacenter adicionar capacidade e recursos para suportar o nosso crescimento de demanda e o uso do cliente em andamento de computação. Além disso, os novo geos datacenter oferecem em geo residência de dados para os dados de cliente principal. 
+Continuaremos a abrir a nova GEOS do datacenter para o Office 365 para serviços corporativos. Esses novos datacenters GEOS adicionam capacidade e computam recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. 
 
-Dados de cliente principal são um termo que se refere a um subconjunto de dados de cliente definidos nos [Termos do Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
-- Conteúdo de caixa de correio Exchange Online (corpo do email, entradas de calendário e o conteúdo de anexos de email)
-- O conteúdo do site do SharePoint Online e os arquivos armazenados em um site
-- Arquivos carregados ao OneDrive for Business 
+Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos [termos do Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+- Conteúdo de caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email)
+- Conteúdo do site do SharePoint Online e os arquivos armazenados nesse site
+- Arquivos carregados no OneDrive for Business 
   
-Os clientes existentes com seus dados de cliente principal armazenados em um já existente geo de datacenter não são afetados pelo lançamento de um novo geo de datacenter. Apresentamos sem recursos exclusivos, recursos ou certificações de conformidade com o novo geo datacenter. Como um cliente em qualquer um desses dois geos, fica a mesma qualidade de serviço, desempenho e controles de segurança como fez anteriormente. Oferecemos que têm requisitos de residência de dados estrito e que estão listados na tabela a seguir, uma opção para que os dados dos clientes de núcleo movidos para o novo geo os clientes existentes.
+Os clientes existentes que têm seus dados principais de cliente armazenados em uma geografia do datacenter já existente não são afetados pelo lançamento de uma nova Geografia de datacenter. Não apresentamos recursos exclusivos, recursos ou certificações de conformidade com a nova Geografia do datacenter. Como cliente em qualquer uma dessas duas GEOS, você terá os mesmos controles de qualidade de serviço, desempenho e segurança que fazia antes. Oferecemos clientes existentes que têm requisitos de residência de dados rigorosos e que estão listados na tabela abaixo, uma opção para que seus principais dados do cliente sejam movidos para a nova geografia.
   
-|Clientes com cobrança abranger * * *|Anterior datacenter geo * * *|Novo datacenter geo * * *|Geo disponível desde * * *|
+|Clientes com endereço de cobrança em * * * *|Geo do datacenter anterior * * * *|Nova Geografia do datacenter * * * *|Geo disponível desde * * * *|
 |:-----|:-----|:-----|:-----|
-|Japão * * *| Ásia/Pacífico | Japão | Dezembro de 2014 |
-|Austrália, Nova Zelândia, Fiji * * *| Ásia/Pacífico | Austrália | Março de 2015 |
-|Índia * * *| Ásia/Pacífico | Índia | Outubro de 2015 |
-|Canadá * * *| América do Norte | Canadá | Maio de 2016 |
-|Reino Unido * * *| Europa | Reino Unido | Setembro de 2016 |
-|Coreia do Sul * * *| Ásia/Pacífico | Coreia do Sul | Abril de 2017 |
-|França * * *| Europa | França | Março de 2018 |
+|Japão * * * *| Ásia/Pacífico | Japão | Dezembro de 2014 |
+|Austrália, Nova Zelândia, Fiji * * * *| Ásia/Pacífico | Austrália | Março de 2015 |
+|Índia * * * *| Ásia/Pacífico | Índia | Outubro de 2015 |
+|Canadá * * * *| América do Norte | Canadá | Maio de 2016 |
+|Reino Unido * * * *| Europa | United Kingdom | Setembro de 2016 |
+|Coréia do Sul * * * *| Ásia/Pacífico | Coréia do Sul | Abril de 2017 |
+|França * * * *| Europa | França | Março de 2018 |
+|Emirados Árabes Unidos * * * *| Europa | Emirados Árabes Unidos | Apresentados |
+|África do Sul * * * *| Europa | África do Sul | Apresentados |
    
 > [!NOTE]
-> A opção de residência de dados e a disponibilidade para mover dados do cliente para o novo geo, não é um padrão para cada novo geo iniciamos. À medida que expandimos em novos geos no futuro, avaliaremos a disponibilidade e as condições de dados move em um geo por geo base. 
+> A opção de residência de dados e a disponibilidade para mover os dados do cliente para a nova geografia não é um padrão para cada nova geografia que iniciamos. À medida que expandirmos para o novo GEOS no futuro, avaliaremos a disponibilidade e as condições dos dados serão movidas em uma geografia por localização geográfica. 
   
-Novos clientes ou locatários do Office 365 criados após a disponibilidade do novo geo datacenter terão seus dados do cliente de núcleo armazenados em repouso no novo geo datacenter automaticamente.
+Novos clientes ou locatários do Office 365 criados após a disponibilidade da nova Geografia do datacenter terão seus principais dados de cliente armazenados em repouso na nova Geografia do datacenter automaticamente.
   
-Uma lista completa de todos os geos de datacenter, centros de dados e a localização dos dados do cliente em repouso está disponível como parte do [datacenter interativo mapeia](https://aka.ms/dcmaps)o. 
+Uma lista completa de todos os GEOS do datacenter, datacenters e o local dos dados do cliente em repouso está disponível como parte dos [mapas](https://office.com/datamaps)de datacenter interativos. 
   
 ## <a name="data-residency-option"></a>Opção de residência de dados
 
-Fornecemos uma opção de residência de dados para os clientes existentes do Office 365 que são cobertos pelo geos datacenter listados na tabela acima. Com essa opção, os clientes com requisitos de residência de dados poderá solicitar para mover os dados do núcleo dos clientes para o novo geo. É recomendável nossos clientes a nenhuma ação, a menos que sua organização precisa dados de cliente principais a serem armazenados em repouso em seu respectivos geo novo do datacenter. Escolhendo mover os dados, os clientes limitam possibilidades da Microsoft para otimizar a localização dos dados de cliente de núcleo em repouso em seu atual ou a nova geo datacenter. Como um cliente em qualquer um desses dois geos, fica a mesma qualidade de serviço, desempenho e controles de segurança como fez anteriormente.
+Fornecemos uma opção de residência de dados para os clientes existentes do Office 365 que estão cobertos pelo datacenter GEOS listados na tabela acima. Com essa opção, os clientes com requisitos de residência de dados podem solicitar a transferência dos dados principais do cliente para a nova geografia. Recomendamos que nossos clientes não executem nenhuma ação, a menos que sua organização precise que os principais dados do cliente sejam armazenados em repouso em suas respectivas geografias de datacenter. Ao optar por mover seus dados, os clientes limitam as possibilidades da Microsoft de otimizar o local dos dados principais do cliente em repouso em sua geografia atual ou no novo data center. Como cliente em qualquer uma dessas duas GEOS, você terá os mesmos controles de qualidade de serviço, desempenho e segurança que fazia antes.
   
-Para clientes que precisam ter seus dados principais movidos para o novo geo:
-  
-- Os clientes precisará solicitar que seus dados movidos dentro de uma janela de inscrição do conjunto. Revise a página [como solicitar sua movimentação de dados](request-your-data-move.md) para obter mais detalhes sobre a janela de inscrição para a sua localização geográfica e as etapas para inscrever-se no programa. 
+Os clientes que precisam ter seus dados principais movidos para a nova geografia com um prazo comprometido da solicitação da Microsoft para que seus dados sejam movidos em uma janela de registro definida.  Revise a página [como solicitar a movimentação de dados](request-your-data-move.md) para obter mais detalhes sobre a janela de registro da sua geografia e as etapas para se inscrever no programa.  As movimentações de dados podem levar até 24 meses após o período de solicitação ser concluído.
+
+- Não se faz nenhum resultado de ação na Microsoft ser capaz de mover seus dados principais do cliente em repouso para a sua nova Geografia do datacenter ao longo do tempo, como parte do gerenciamento e otimização de serviços.Seus dados principais do csutomer só podem ser movidos para a sua nova Geografia do datacenter, não para qualquer outra geografia.Notificaremos os administradores de locatários por meio do centro de mensagens quando uma movimentação de gerenciamento de serviço for concluída.
+   
+- Não apresentamos recursos exclusivos, recursos ou certificações de conformidade com a nova Geografia do datacenter.
     
-- Movimentações de dados podem demorar até 24 meses após o período de solicitação para a conclusão.
+- A complexidade, a precisão e a escala em que precisamos realizar movimentações de dados dentro de um ambiente operado globalmente e automatizado proíbem o compartilhamento quando uma movimentação de dados é esperada para concluir o locatário ou qualquer outro locatário único. Os clientes receberão uma confirmação no centro de mensagens por serviço participante quando sua movimentação de dados tiver sido concluída. 
     
-- Apresentamos sem recursos exclusivos, recursos ou certificações de conformidade com o novo geo datacenter.
-    
-- A complexidade, precisão e escala em que precisamos realizar movimentações de dados dentro de um ambiente automatizado e operado globalmente nos proíbem de compartilhamento quando uma movimentação de dados é esperada para ser concluída para seu locatário ou qualquer outro locatário único. Os clientes receberão uma confirmação no Centro de mensagens por serviço participante, de quando sua movimentação de dados foi concluída. 
-    
-- Movimentações de dados são uma operação de serviço back-end com um impacto mínimo para os usuários finais. Recursos que podem ser afetados estão listados na página [durante e após sua movimentação de dados](during-and-after-your-data-move.md) . Podemos aderir ao [Microsoft Online Services nível contrato serviço (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) para disponibilidade, portanto, não há nada que os clientes precisam para preparar ou monitorar durante a movimentação. Notificação de qualquer manutenção de serviço é feita, se necessário. 
+- Movimentação de dados é uma operação de serviço de back-end com impacto mínimo para os usuários finais. Os recursos que podem ser afetados são listados na página [durante e após a movimentação de dados](during-and-after-your-data-move.md) . Respeitamos o contrato de [nível de serviço (SLA) dos serviços online da Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=523897) para disponibilidade, portanto, não há nada que os clientes precisem preparar ou monitorar durante a movimentação. A notificação de qualquer manutenção de serviço é feita, se necessário. 
     
 ## <a name="related-topics"></a>Tópicos relacionados 
  
-[Como solicitar a migração dos dados](request-your-data-move.md)
+[Como solicitar a movimentação de dados](request-your-data-move.md)
     
-[Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
+[PERGUNTAS FREQUENTEs sobre movimentação de dados gerais](data-move-faq.md)
   
-[Novo geos datacenter para o Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)
-  
-

@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumo: Conecte o Windows PowerShell a todos os serviços do Office 365 em uma única janela do Windows PowerShell.'
-ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
-ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
+ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339509"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573965"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell
 
  **Resumo:** Em vez de gerenciar diferentes serviços do Office 365 em janelas de console do PowerShell separadas, você pode se conectar a todos os serviços do Office 365 e gerenciá-los em uma única janela do console.
   
-Quando você usa o PowerShell para gerenciar o Office 365, é possível ter até cinco sessões do Windows PowerShell diferentes abertas ao mesmo tempo que corresponde ao Office 365 Administration Center, SharePoint Online, Exchange Online, Skype for Business Online e à segurança &amp;Centro de conformidade. Com cinco métodos de conexão diferentes em sessões separadas do Windows PowerShell, sua área de trabalho pode ter a seguinte aparência:
+Quando você usa o PowerShell para gerenciar o Office 365, é possível ter até cinco sessões do Windows PowerShell diferentes abertas ao mesmo tempo que corresponde ao centro de administração do Microsoft 365, SharePoint Online, Exchange Online, Skype for Business Online e à segurança &amp; Centro de conformidade. Com cinco métodos de conexão diferentes em sessões separadas do Windows PowerShell, sua área de trabalho pode ter a seguinte aparência:
   
 ![Cinco consoles do Windows PowerShell em execução ao mesmo tempo](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   

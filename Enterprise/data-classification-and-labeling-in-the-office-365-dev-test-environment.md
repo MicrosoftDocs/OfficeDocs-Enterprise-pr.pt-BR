@@ -15,152 +15,153 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
-description: 'Resumo: Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Resumo: Configure e demonstre a classificação de dados e rotular usando o cliente de proteção de informações do Azure (AIP) no seu ambiente de desenvolvimento/teste do Office 365.'
+ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897434"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573955"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365
 
- **Resumo:** Configurar e demonstrar a classificação de dados e rótulos usando o cliente de proteção de informações do Windows Azure (AIP) em seu ambiente de desenvolvimento e teste do Office 365.
+ **Resumo:** Configurar e demonstrar a classificação de dados e rotular usando o cliente de proteção de informações do Azure (AIP) em seu ambiente de desenvolvimento/teste do Office 365.
   
-O cliente de proteção de informações do Windows Azure lhe permite classificar um documento antes de carregá-la para uma pasta do SharePoint Online no Office 365. Com as instruções deste artigo, você pode instala o cliente de proteção de informações do Windows Azure e demonstrar a classificação de dados. Para obter mais informações, consulte [Proteção de informações do Windows Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
+O cliente de proteção de informações do Azure permite que você classifique um documento antes de carregá-lo em uma pasta do SharePoint Online no Office 365. Com as instruções deste artigo, você instala o cliente de proteção de informações do Azure e demonstra a classificação de dados. Confira mais informações em [proteção de informações do Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
 > Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
   
-## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: Criar o seu ambiente de desenvolvimento e teste do Office 365
+## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: criar seu ambiente de desenvolvimento/teste do Office 365
 
-Siga as instruções no [ambiente de desenvolvimento e teste do Office 365](office-365-dev-test-environment.md).
+Siga as instruções em [ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md).
   
-## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>Fase 2: Adicionar uma assinatura de avaliação de proteção de informações do Windows Azure
+## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>Fase 2: adicionar a assinatura de avaliação do Azure Information Protection
 
-Nesta fase, você adiciona a proteção de informações do Windows Azure para seu ambiente de desenvolvimento e teste do Office 365 e habilitá-lo para suas contas de usuário. Se você tiver configurado o [Office 365 e o ambiente de desenvolvimento e teste do EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), ignore esta fase. A assinatura de avaliação Enterprise mobilidade Suite inclui licenças da proteção de informações do Windows Azure.
+Nesta fase, adicione a proteção de informações do Azure ao seu ambiente de desenvolvimento/teste do Office 365 e habilite-a para suas contas de usuário. Se você tiver configurado o [ambiente de desenvolvimento/teste do Office 365 e EMS](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx), pule esta fase. A assinatura de avaliação do Enterprise Mobility Suite inclui licenças de proteção de informações do Azure.
   
-Em primeiro lugar, inscreva-se para uma assinatura de avaliação de proteção de informações do Windows Azure.
+Primeiro, Inscreva-se em uma assinatura de avaliação do Azure Information Protection.
   
-### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Inscreva-se para uma assinatura de avaliação de proteção de informações do Windows Azure
+### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>InScreva-se para obter uma assinatura de avaliação do Azure Information Protection
 
-1. No Internet Explorer ou seu navegador, vá para [http://portal.office.com](http://portal.office.com) e entre com sua conta de administrador global do Office 365.
+1. No Internet Explorer ou no navegador, acesse [http://admin.microsoft.com](http://admin.microsoft.com) e entre com sua conta de administrador global do Office 365.
     
-2. Na guia **Página inicial do Microsoft Office** , clique no lado do **Admin** .
+2. Na guia **Microsoft Office Home** , clique no bloco **administrador** .
     
-3. Na guia de administração do Office 365, no painel de navegação esquerdo, clique em **Serviços de compra gt _ de cobrança**.
+3. Na guia Administração do Office 365, na navegação à esquerda, clique em **cobrança _GT_ comprar serviços**.
     
-4. Na página **Serviços de compra** , localize o item de **P2 de Premium de proteção de informações do Azure** . Passe o mouse sobre ele e clique em **Iniciar a versão gratuita de avaliação**.
+4. Na página **comprar serviços** , encontre o item do **Azure Information Protection Premium P2** . Passe o mouse sobre ele e clique em **Iniciar avaliação gratuita**.
     
 5. Na página **Confirmar seu pedido**, clique em **Experimentar agora**.
     
 6. Na página **Recibo do pedido**, clique em **Continuar**.
     
-Em seguida, você pode habilitar a licença de proteção de informações do Windows Azure para todas as contas de usuário.
+Em seguida, habilite a licença de proteção de informações do Azure para todas as contas de usuário.
   
-1. Na guia Office 365 admin center, clique em **usuários**.
+1. Na guia centro de administração do Microsoft 365, clique em **usuários**.
     
-2.  Na lista de contas de usuário, selecione sua conta de administrador global e, em seguida, clique em **Editar** para **licenças de produto**.
+2.  Na lista de contas de usuário, selecione sua conta de administrador global e clique em **Editar** para **licenças de produto**.
     
-3. Ativar a licença do produto para o **Windows Azure informações proteção Premium P2** para **ativado**, clique em **Salvar** e, em seguida, clique duas vezes em **Fechar** .
+3. Ative a licença de produto do **Azure Information Protection Premium P2** para **ativado**, clique em **salvar** e clique em **fechar** duas vezes.
     
-4. Repita as etapas 2 e 3 para suas outras contas de usuário (usuário 1 a 5 do usuário).
+4. Repita as etapas 2 e 3 para suas outras contas de usuário (usuário 1 até usuário 5).
     
-Agora tem seu ambiente de desenvolvimento e teste do Office 365:
+Seu ambiente de desenvolvimento/teste do Office 365 agora tem:
   
-- Assinaturas de avaliação do Office 365 E5 Enterprise e proteção de informações do Windows Azure.
+- Assinaturas de avaliação do Office 365 E5 Enterprise e Azure Information Protection.
     
-- Todas as suas contas de usuário habilitado para usar o Office 365 E5 Enterprise e proteção de informações do Windows Azure.
+- Todas as suas contas de usuário habilitadas para usar a proteção de informações do Office 365 E5 Enterprise e do Azure.
     
-## <a name="phase-3-demonstrate-data-classification"></a>Fase 3: Demonstrar a classificação de dados
+## <a name="phase-3-demonstrate-data-classification"></a>Fase 3: demonstrar a classificação dos dados
 
-Nesta fase, você demonstrar a classificação de dados usando o cliente de proteção de informações do Windows Azure e a diretiva de proteção de informações do Azure padrão.
+Nesta fase, você demonstra a classificação de dados usando o cliente de proteção de informações do Azure e a política de proteção de informações padrão do Azure.
   
-Se você estiver usando o ambiente de desenvolvimento e teste do Office 365 enterprise simulado, você deve instalar primeiro 2016 do Office no CLIENT1.
+Se você estiver usando o ambiente de desenvolvimento/teste do Office Enterprise 365 simulado, primeiro deverá instalar o Office 2016 em CLIENT1.
   
-1. Use o seu navegador e vá para o [portal do Azure](http://portal.azure.com).
+1. Use seu navegador e vá para o [portal do Azure](http://portal.azure.com).
     
-2. Clique em **gt _ de grupos de recursos** [seu nome de grupo de recursos] **gt _ CLIENT1 gt _ Connect**.
+2. Clique em **grupos de recursos >** [seu nome de grupo de recursos] **_GT_ CLIENT1 > conectar**.
     
-3. No CLIENT1, execute o Internet Explorer, vá para o portal do Office em [http://portal.office.com](http://portal.office.com)e, em seguida, entre com o nome da conta de User5 e a senha.
+3. Em CLIENT1, execute o Internet Explorer, vá para o portal do [http://admin.microsoft.com](http://admin.microsoft.com)Office em e entre com o nome da conta e senha do User5.
     
 4. Na guia **Microsoft Office Home**, clique em **Instalar o Office 2016**.
     
-5. Execute o download quando solicitado e clique em **Sim** quando solicitado pelo controle de conta de usuário. Aguarde do Office instalar. Quando concluir, clique em **Fechar** duas vezes.
+5. Execute o download quando solicitado e clique em **Sim** quando solicitado pelo controle de conta de usuário. Aguarde a instalação do Office. Ao concluir, clique em **fechar** duas vezes.
     
-Em seguida, você pode instalar o cliente de proteção de informações do Windows Azure.
+Em seguida, instale o cliente de proteção de informações do Azure.
   
-1. No seu navegador ou o Internet Explorer, vá para a [página de download de proteção de informações do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=53018).
+1. No navegador ou no Internet Explorer, vá para a [página de download da proteção de informações do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=53018).
     
-  - Se você estiver usando a versão leve do ambiente de desenvolvimento e teste do Office 365, use o navegador no computador local.
+  - Se você estiver usando a versão leve do ambiente de desenvolvimento/teste do Office 365, use o navegador no computador local.
     
-  - Se você estiver usando o ambiente de desenvolvimento e teste do Office 365 enterprise simulado, execute o Internet Explorer do CLIENT1.
+  - Se você estiver usando o ambiente de desenvolvimento/teste do Office Enterprise 365 simulado, execute o Internet Explorer a partir de CLIENT1.
     
-2. Na página de download de **Proteção de informações do Microsoft Azure** , clique em **Download**, clique em **AzInfoProtection.exe**e, em seguida, clique em **Avançar**.
+2. Na página Download da **proteção de informações do Microsoft Azure** , clique em **baixar**, clique em **AzInfoProtection. exe**e clique em **Avançar**.
     
-3. Quando solicitado, execute AzInfoProtection.exe.
+3. Quando solicitado, execute AzInfoProtection. exe.
     
-4. Na caixa de cliente **instalar a proteção de informações do Windows Azure** , clique em **Concordo**e clique em **Sim** quando solicitado pelo controle de conta de usuário.
+4. Na caixa **instalar o cliente de proteção de informações do Azure** , clique em **concordo**e, em seguida, clique em **Sim** quando solicitado pelo controle de conta de usuário.
     
-5. Na caixa **concluída com êxito** , clique em **Close.**
+5. Na caixa **concluído com êxito** , clique em **fechar.**
     
-Em seguida, você demonstrar a classificação de documento.
+Em seguida, demonstre a classificação de documentos.
   
 1. Clique no ícone do **Word** na barra de tarefas.
     
-2. Quando solicitado, inscreva-se com o nome da conta de User5 e a senha.
+2. Quando solicitado, entre com o nome da conta e senha do User5.
     
-3. Se você acabou de instalar Office 2016 no CLIENT1, no **primeiras coisas primeiro** , clique em **Aceitar**.
+3. Se você acabou de instalar o Office 2016 em CLIENT1, na primeira caixa de **informações** , clique em **aceitar**.
     
 4. Clique em **documento em branco**. 
     
-    Observe que a seção de **proteção** da faixa de opções, na guia **página inicial** e a linha de classificações de documento.
+    Observe a seção **proteção** da faixa de opções na guia **página inicial** e a linha de classificações de documento.
     
 5. No documento em branco, digite algum texto.
     
-6. Clique em **Salvar gt _ do arquivo**, digite o nome **BeforeAIP**e clique em **Okey**. 
+6. Clique em **arquivo _GT_ salvar**, digite o nome **BeforeAIP**e clique em **OK**. 
     
-7. Na linha de classes de documento, clique na seta para **segredo**e, em seguida, clique em **Tudo empresa**.
+7. Na linha de classes de documento, clique na seta para baixo para **segredo**e, em seguida, clique em **toda a empresa**.
     
-8. Clique em **arquivo gt _ Salvar como**, digite o nome **AfterAIP**e, em seguida, clique em **Okey**.
+8. Clique em **arquivo _GT_ salvar como**, digite o nome **AfterAIP**e clique em **OK**.
     
-9. Clique em **Gerenciador de arquivos** , na barra de tarefas e, em seguida, abra a pasta de **documentos** .
+9. Clique em **Explorador de arquivos** na barra de tarefas e, em seguida, abra a pasta **documentos** .
     
-    Observe os tamanhos de arquivo diferente dos documentos **BeforeAIP** e **AfterAIP** . O documento AfterAIP é maior porque ele tem as informações de classificação.
+    Observe os diferentes tamanhos de arquivo dos documentos **BeforeAIP** e **AfterAIP** . O documento AfterAIP é maior porque tem as informações de classificação.
     
-Em seguida, você permitir que todos acessar a coleção de site de suporte.
+Em seguida, permita que todos acessem o conjunto de sites de suporte.
   
-1. Na guia **Página inicial do Microsoft Office** , clique em **SharePoint**.
+1. Na guia **Microsoft Office Home** , clique em **SharePoint**.
     
 2. Na guia **SharePoint** , clique em **conjunto de sites de suporte**.
     
 3. No canto superior direito, clique no ícone **configurações** e, em seguida, clique em **compartilhado com**.
     
-4. Em **compartilhamento 'Conjunto de sites de suporte'**, clique em **Avançado**.
+4. Em **compartilhar ' conjunto de sites de suporte '**, clique em **avançado**.
     
-5. Na lista de grupos do SharePoint, clique em **conjunto de sites de suporte membros**.
+5. Na lista de grupos do SharePoint, clique em **suporte para membros do conjunto de sites**.
     
 6. Na página **Pessoas e Grupos**, clique em **Novo**.
     
-7. Em **compartilhamento 'Conjunto de sites de suporte'**, digite **todos**, clique em **todos exceto os usuários externos**e, em seguida, clique em **Share.**
+7. Em **compartilhar ' conjunto de sites de suporte '**, digite **todos**, clique em **todos exceto usuários externos**e, em seguida, clique em **compartilhar.**
     
 8. Feche a guia **pessoas e grupos** .
     
-Em seguida, você pode entrar com sua conta User5 e carregar um documento protegido por AIP para a pasta de documentos do conjunto de sites de suporte.
+Em seguida, entre com sua conta do User5 e carregue o documento protegido por AIP na pasta documentos do conjunto de sites de suporte.
   
-1. Na guia **Página inicial do Microsoft Office** , no canto superior direito, clique no ícone de usuário e, em seguida, clique em **Sair**.
+1. Na guia **página inicial do Microsoft Office** , no canto superior direito, clique no ícone usuário e, em **** seguida, clique em sair.
     
-2. Acesse [http://portal.office.com](http://portal.office.com).
+2. Acesse [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Na página do **Office 365 entrar** , clique no nome da conta de User5 e entrar.
+3. Na página de **entrada do Office 365** , clique no nome da conta do User5 e entre.
     
-4. Na guia **Página inicial do Microsoft Office** , clique em **SharePoint gt _ conjunto de sites de suporte**.
+4. Na guia **Microsoft Office Home** , clique em **conjunto de sites de suporte do SharePoint >**.
     
-5. Clique em **documentos**, clique em **carregar**, clique no documento **AfterAIP** e clique em **Abrir**.
+5. Clique em **documentos**, clique em **carregar**, clique no documento **AfterAIP** e, em seguida, clique em **abrir**.
     
-    Você deverá ver AfterAIP.docx na pasta documentos no conjunto de sites de suporte.
+    Você verá AfterAIP. docx na pasta documentos no conjunto de sites de suporte.
     
 ## <a name="see-also"></a>Confira também
+
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 

@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração de substituição para o Office 365.'
-ms.openlocfilehash: db2782faac86e53ffd4d2794ee77d53605c9484e
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193681"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574075"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração de substituição para o Office 365
 
@@ -75,7 +75,7 @@ Para obter uma lista completa dos comandos de migração, confira [Cmdlets de mo
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Atribuir as permissões necessárias para acessar caixas de correio em sua organização do Exchange de uma conta de usuário local.** A conta de usuário local que você usa para se conectar à sua organização do Exchange local (também chamada de administrador de migração) deve ter as permissões necessárias para acessar as caixas de correio local que você deseja migrar para o Office 365. Esta conta de usuário é usada para criar um ponto de extremidade de migração para sua organização local.
+- **Atribua as permissões necessárias a uma conta de usuário local para acessar caixas de correio em sua organização do Exchange.** A conta de usuário local que você usa para se conectar à sua organização local do Exchange (também chamada de administrador de migração) deve ter as permissões necessárias para acessar as caixas de correio locais que você deseja migrar para o Office 365. Essa conta de usuário é usada para criar um ponto de extremidade de migração para a sua organização local.
     
     A lista a seguir mostra os privilégios administrativos necessários para migrar caixas de correio usando uma migração de transferência. Existem três opções possíveis.
     
@@ -195,7 +195,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Seção 7: atribuir licenças de usuários
 <a name="BK_Step7"> </a>
 
- **Ative as contas de usuário do Office 365 para as contas migradas atribuindo licenças.** Se você não atribuir uma licença, a caixa de correio será desabilitada quando terminar o período de carência (30 dias). Para atribuir uma licença no Centro de administração do Office 365, confira[Atribuir ou cancelar a atribuição de licenças para o Office 365 para empresas](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Ative as contas de usuário do Office 365 para as contas migradas atribuindo licenças.** Se você não atribuir uma licença, a caixa de correio será desabilitada quando o período de cortesia terminar (30 dias). Para atribuir uma licença no centro de administração do Microsoft 365, confira[atribuir ou cancelar a atribuição de licenças para o Office 365 para empresas](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Etapa 8: concluir tarefas pós-migração
 <a name="BK_Step8"> </a>
