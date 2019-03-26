@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumo: Configure a sincronização de diretórios do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 12a352bda387b79016edcc62c08ff15b0bf96ee9
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897494"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573945"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365
 
@@ -92,7 +92,7 @@ Stop-Process -Name Explorer -Force
     
 11. Na página **Configuração concluída**, clique em **Sair**.
     
-12. No Internet Explorer, vá ao Portal do Office 365 ([https://portal.office.com](https://portal.office.com)) e entre na sua assinatura de avaliação do Office 365 com a sua conta de administrador global.
+12. No Internet Explorer, vá ao centro de administração do Office 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) e entre na sua assinatura de avaliação do Office 365 com a sua conta de administrador global.
     
 13. Na página principal do portal, clique em **Admin**.
     
