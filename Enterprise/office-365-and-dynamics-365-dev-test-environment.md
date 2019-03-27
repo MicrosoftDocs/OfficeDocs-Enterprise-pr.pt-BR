@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Resumo: use este Guia do Laboratório de Teste para adicionar o Dynamics 365 a seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 195e5ab4fd96d1f238c96d47cc7406a45e0e02b1
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9e4c98129c68ab5d2f0d9fc486ab62740c625af5
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915206"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574055"
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365 e do Dynamics 365
 
@@ -66,11 +66,11 @@ Nesta fase, inscreva-se para receber a assinatura de avaliação do Dynamics 365
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Adicionar uma assinatura de avaliação do Dynamics 365
 
-1. Usando um navegador em seu computador desktop ou no CLIENT1 (empresa simulada), entre no portal do Office 365 em [https://portal.office.com](https://portal.office.com) com as credenciais de sua conta de administrador global.
+1. Usando um navegador em seu computador desktop (leve) ou no CLIENT1 (empresa simulada), entre no centro de administração do Microsoft 365 em [https://admin.microsoft.com](https://admin.microsoft.com) com as credenciais da sua conta de administrador global.
     
 2. Clique no bloco de **Administração**.
     
-3. Na guia **centro de administração do Office**, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
+3. Na guia **centro de administração do Microsoft 365**, no painel de navegação esquerdo, clique em **Cobrança > Comprar serviços**.
     
 4. Na página **Comprar serviços**, encontre o item **Dynamics 365 Plan 1 Enterprise Edition**. Passe o ponteiro do mouse sobre ele e clique em **Iniciar avaliação gratuita**.
     
@@ -89,7 +89,7 @@ Nesta fase, você atribui licenças do Dynamics 365 às contas do administrador 
   
 Use estas etapas para atribuir licenças do Dynamics 365.
   
-1. Na guia **centro de administração do Office**, clique em **Usuários > Usuários ativos**.
+1. Na guia **centro de administração do Microsoft 365**, clique em **Usuários > Usuários Ativos**.
     
 2. Na lista de usuários ativos, clique em sua conta de administrador global e depois em **Editar** para **Licenças de produto**.
     
@@ -97,7 +97,7 @@ Use estas etapas para atribuir licenças do Dynamics 365.
     
 4. Siga as etapas 2 e 3 para as contas dos Usuários 2 e 3.
     
-5. Feche a guia **centro de administração do Office**.
+5. Feche a guia do **centro de administração do Microsoft 365**.
     
 Use estas etapas para configurar as contas dos Usuários 2 e 3 como administradores de sistema do Dynamics 365.
   

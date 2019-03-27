@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365.'
-ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 3e390502e239573f1b3c93f5e3d46c0aa0f4579a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504364"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574105"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração em estágios para o Office 365
 
@@ -236,7 +236,7 @@ Para saber mais sobre o cmdlet **Get-MigrationBatch**, confira[Get-MigrationBatc
 ### <a name="step7-assign-licenses-to-office-365-users"></a>Etapa7: atribuir licenças aos usuários do Office 365
 <a name="BK_Endpoint"> </a>
 
-Ative as contas de usuário do Office 365 para as contas migradas atribuindo licenças. Se você não atribuir uma licença, a caixa de correio será desabilitada quando terminar o período de carência (30 dias). Para atribuir uma licença no Centro de administração do Office 365, confira [Atribuir ou cancelar a atribuição de licenças para o Office 365 para empresas](https://go.microsoft.com/fwlink/?LinkId=536681).
+Ative as contas de usuário do Office 365 para as contas migradas atribuindo licenças. Se você não atribuir uma licença, a caixa de correio será desabilitada quando terminar o período de cortesia (30 dias). Para atribuir uma licença no centro de administração do Microsoft 365, confira [Atribuir ou cancelar atribuição de licenças para o Office 365 para empresas](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Etapa 8: concluir tarefas pós-migração
 <a name="BK_Postmigration"> </a>

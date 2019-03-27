@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897314"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574045"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -145,14 +145,14 @@ A tabela a seguir descreve como você pode combinar várias ofertas da nuvem da 
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |N/D  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |Adicione uma assinatura do Intune/EMS para sua organização no portal do Office 365.  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização no portal do Office 365.  <br/> |
+|**Office 365** <br/> |N/D  <br/> |Adicione uma assinatura do Azure na sua organização no portal do Azure.  <br/> |Adicionar uma assinatura do Intune/EMS para sua organização no centro de administração do Microsoft 365.  <br/> |Adicionar uma assinatura do Dynamics 365 para sua organização no centro de administração do Microsoft 365.  <br/> |
 |**Azure** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |N/D  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
 |**Intune/EMS** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |N/D  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
 |**Dynamics 365** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |N/D  <br/> |
    
 Uma maneira fácil de adicionar assinaturas de serviços baseados em SaaS da Microsoft para sua organização é por meio do centro de administração do Office 365:
   
-1. Entre no portal do Office 365 ([https://portal.office.com](https://portal.office.com)) com sua conta de administrador global e clique em **Administrador**.
+1. Entre no centro de administração do Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) com sua conta de administrador global.
     
 2. Na navegação à esquerda da página inicial do **centro de administração **, clique em **Cobrança**e depois em **Serviços de compra**.
     

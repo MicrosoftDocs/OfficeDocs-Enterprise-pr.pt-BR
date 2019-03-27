@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Resumo: Use este guia de laboratório de teste para criar uma assinatura de avaliação do Office 365 para avaliação ou desenvolvimento/ teste.'
-ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 7a7b12038acf914667655decee52993286faab1e
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897264"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573995"
 ---
 # <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
 
@@ -118,7 +118,7 @@ Para começar a usar a sua assinatura de avaliação do Office 365 E5, primeiro 
     
 11. Na próxima página, aguarde até o Office 365 concluir a configuração e os blocos estarem disponíveis.
     
-Você verá a página principal do portal do Office 365 em que pode acessar os serviços do Office Online e o Centro de administração do Office 365 .
+Você verá a página principal do portal do Office 365 que você pode acessar os serviços do Office Online e o centro de Administração do Microsoft 365.
   
 Para o ambiente corporativo simulado de desenvolvimento/teste do Office 365, aqui está a sua configuração resultante.
   
@@ -153,8 +153,10 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+<!--
 > [!TIP]
-> Clique [aqui](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) para obter um arquivo de texto que contém todos os comandos do PowerShell deste artigo.
+> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) to get a text file that has all the PowerShell commands in this article.
+-->
 
 Na exibição do comando **New-MsolUser**, anote a senha gerada para a conta de Usuário 2 e grave-a em um local seguro.
   
