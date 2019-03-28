@@ -19,10 +19,10 @@
 | 3/4/2019 | [Tempos limite de sessão para o Office 365](/Office365/Enterprise/session-timeouts) | modificado |
 | 3/4/2019 | [Ajustar o desempenho do Exchange Online](/Office365/Enterprise/tune-exchange-online-performance) | modificado |
 | 3/4/2019 | [Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | modificado |
-| 3/6/2019 | [Redes de distribuição de conteúdo](/Office365/Enterprise/content-delivery-networks) | modificado |
-| 3/6/2019 | [Visão geral da autenticação moderna híbrida e pré-requisitos para usá-lo com o Skype for Business e servidores do Exchange locais](/Office365/Enterprise/hybrid-modern-auth-overview) | modificado |
-| 3/6/2019 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
-| 3/6/2019 | [Mover um site do OneDrive para um local geográfico diferente](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificado |
+| 06/03/2019 | [Redes de distribuição de conteúdo](/Office365/Enterprise/content-delivery-networks) | modificado |
+| 06/03/2019 | [Visão geral da autenticação moderna híbrida e pré-requisitos para usá-lo com o Skype for Business e servidores do Exchange locais](/Office365/Enterprise/hybrid-modern-auth-overview) | modificado |
+| 06/03/2019 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
+| 06/03/2019 | [Mover um site do OneDrive para um local geográfico diferente](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificado |
 | 3/7/2019 | [Remover licenças de contas de usuários com o Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | modificado |
 | 3/8/2019 | [Configurar a sincronização de diretórios com o Office 365](/Office365/Enterprise/set-up-directory-synchronization) | modificado |
 | 3/8/2019 | [Ajustar o desempenho do SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | modificado |
@@ -44,7 +44,7 @@
 | 3/13/2019 | [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | modificado |
 | 3/13/2019 | [Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | modificado |
 | 3/13/2019 | [Implantar a sincronização de diretórios do Office 365 no Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificado |
-| 3/13/2019 | [Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | modificado |
+| 3/13/2019 | [Sincronização de diretórios para seu ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | modificado |
 | 3/13/2019 | [Integração com o Exchange Online para seu ambiente de desenvolvimento/teste do Office 365 e do Dynamics 365](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | modificado |
 | 3/13/2019 | [ExpressRoute para conectividade de nuvem da Microsoft](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | modificado |
 | 3/13/2019 | [Identidade federada para seu ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | modificado |
@@ -70,7 +70,7 @@
 | 3/14/2019 | [Perguntas frequentes sobre o sistema de rede de vídeo do Office 365](/Office365/Enterprise/office-365-video-networking-faq) | modificado |
 | 3/15/2019 | [Movendo dados principais para o novo Office 365 datacenter GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | modificado |
 | 3/15/2019 | [Durante e após a movimentação dos dados](/Office365/Enterprise/during-and-after-your-data-move) | modificado |
-| 3/15/2019 | [Configuração básica do ambiente de desenvolvimento/teste](/Office365/Enterprise/base-configuration-dev-test-environment)  | modificado |
+| 3/15/2019 | [O ambiente de desenvolvimento/teste de configuração base](/Office365/Enterprise/base-configuration-dev-test-environment)  | modificado |
 | 3/15/2019 | [Conectar uma rede local a uma rede virtual do Microsoft Azure](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | modificado |
 | 3/15/2019 | [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | modificado |
 | 3/15/2019 | [Implantar a sincronização de diretórios do Office 365 no Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | modificado |
@@ -84,19 +84,16 @@
 | 3/15/2019 | [Rede virtual entre locais simulada no Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | modificado |
 
 
-## <a name="week-of-february-11-2019"></a>Semana de 11 de fevereiro de 2019
+## <a name="week-of-march-18-2019"></a>Semana de 18 de março de 2019
 
 
 | Publicado em |Título do tópico | Alteração |
 |------|------------|--------|
-| 2/11/2019 | [Suporte ao aplicativo cliente do Office 365-acesso condicional](/Office365/Enterprise/office-365-client-support-conditional-access) | modificado |
-| 2/11/2019 | [Suporte ao aplicativo cliente do Office 365-gerenciamento de aplicativo móvel](/Office365/Enterprise/office-365-client-support-mobile-application-management) | modificado |
-| 2/11/2019 | [Suporte ao aplicativo cliente do Office 365-autenticação moderna](/Office365/Enterprise/office-365-client-support-modern-authentication) | modificado |
-| 2/12/2019 | [Plano para certificados SSL de terceiros para o Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | modificado |
-| 2/14/2019 | [Gerenciar pontos de extremidade do Office 365](/Office365/Enterprise/managing-office-365-endpoints) | modificado |
-| 2/14/2019 | [Funcionalidades Multigeográficas no OneDrive e Office 365](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
-| 2/14/2019 | [Princípios de conectividade de rede do Office 365](/Office365/Enterprise/office-365-network-connectivity-principles) | modificado |
-| 2/14/2019 | [Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | modificado |
+| 3/18/2019 | [PERGUNTAS FREQUENTEs sobre movimentação de dados gerais](/Office365/Enterprise/data-move-faq) | modificado |
+| 3/18/2019 | [Durante e após a movimentação dos dados](/Office365/Enterprise/during-and-after-your-data-move) | modificado |
+| 3/18/2019 | [Planejamento de capacidade e teste de carregamento do SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificado |
+| 3/18/2019 | [Colaboração entre locatários do Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificado |
+| 3/19/2019 | [Exibir as contas de usuário com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificado |
 
 
 ## <a name="week-of-february-18-2019"></a>Semana de 18 de fevereiro de 2019
