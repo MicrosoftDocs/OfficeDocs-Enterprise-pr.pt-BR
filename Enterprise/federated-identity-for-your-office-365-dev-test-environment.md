@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumo: configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 74ea602e867e97d3db3ceb3d9656cfe0132b4298
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574085"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948632"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidade federada para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -86,10 +86,10 @@ Um servidor do AD FS fornece autenticação federada entre o Office 365 e contas
 Para criar uma máquina virtual do Azure para ADFS1, preencha o nome da assinatura e do grupo de recursos, o local do Azure para a Configuração da base e execute estes comandos no prompt de comando do Azure PowerShell no computador local.
   
 ```
-$subscr="<your Azure subscription name>"
+$subscrName="<your Azure subscription name>"
 $rgName="<the resource group name of your Base Configuration>"
 Connect-AzAccount
-Select-AzSubscription -SubscriptionName $subscrName -Current
+Select-AzSubscription -SubscriptionName $subscrName
 $staticIP="10.0.0.100"
 $locName=(Get-AzResourceGroup -Name $rgName).Location
 $vnet=Get-AzVirtualNetwork -Name TestLab -ResourceGroupName $rgName

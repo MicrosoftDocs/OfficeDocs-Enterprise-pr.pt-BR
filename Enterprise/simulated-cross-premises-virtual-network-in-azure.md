@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: crie uma rede virtual simulada entre locais no Microsoft Azure como um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: f96231294db6d80d267040c0f3e42a02490f281d
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 9ef0424bad831294066e4ff4b5f7d602babc0a48
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650084"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948592"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulada entre locais no Azure
 
@@ -102,7 +102,7 @@ Defina sua assinatura do Azure. Substitua tudo o que está entre aspas, incluind
   
 ```
 $subscrName="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 Em seguida, crie a rede virtual XPrem e proteja-a usando um grupo de segurança de rede com estes comandos.

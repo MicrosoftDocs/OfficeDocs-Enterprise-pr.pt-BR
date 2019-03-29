@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumo: Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.'
-ms.openlocfilehash: a57085ef066aeaf14235b8901c045911ef97ceed
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650154"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948602"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: Configurar o Azure
 
@@ -137,8 +137,8 @@ Get-AzSubscription | Sort Name | Select SubscriptionName
 Defina sua assinatura do Azure. Substitua tudo dentro das aspas, incluindo os \< caracteres e >, pelo nome correto.
   
 ```
-$subscr="<subscription name>"
-Select-AzSubscription -SubscriptionName $subscrName -Current
+$subscrName="<subscription name>"
+Select-AzSubscription -SubscriptionName $subscrName
 ```
 
 Em seguida, crie os novos grupos de recursos. Para determinar um conjunto exclusivo de nomes de grupo de recursos, use este comando para listar os grupos de recurso existentes.
@@ -310,6 +310,7 @@ Esta é a configuração resultante da conclusão bem-sucedida dessa fase.
 Use o [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar com a configuração dessa carga de trabalho.
   
 ## <a name="see-also"></a>Confira também
+
 
 [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
