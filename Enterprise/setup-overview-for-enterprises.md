@@ -3,11 +3,10 @@ title: Implantar o Office 365 Enterprise em sua organização
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estas etapas gerais são projetadas para ajudá-lo a implantar o Office 365, conectar seu Active Directory, migrar seus dados e ajudar as pessoas em sua organização a começar a usar a versão mais recente do Office 2016.
-ms.openlocfilehash: 76421a7870358e48798f21866d69672509084c6a
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303595"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004402"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implantar o Office 365 Enterprise em sua organização
 Pronto para implantar e integrar o Office 365 Enterprise em sua infraestrutura local? Estas etapas gerais são projetadas para ajudá-lo a conectar seu diretório, migrar os dados e ajudar as pessoas em sua organização a começar a usar a versão mais recente do Office 2016.

@@ -3,11 +3,10 @@ title: Migrar os dados de sua organização para o Office 365 Enterprise
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Se você tiver optado por não implantar o FastTrack e estiver pronto para migrar dados para o Office 365, este é o lugar para começar.
-ms.openlocfilehash: e522464c31e8a4a1f9b59d2e7955640f0482af3a
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: ffa239c4f91c4229bb28e918909da06502ba9198
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539303"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004392"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Migrar os dados de sua organização para o Office 365 Enterprise
 

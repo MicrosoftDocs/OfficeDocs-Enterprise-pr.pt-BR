@@ -1,9 +1,8 @@
 ---
-title: Automatizar a coleção de arquivos para a Descoberta eletrônica
+title: Automatizar a coleta de arquivos para descoberta eletrônica
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,95 +12,95 @@ ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
-description: 'Resumo: Saiba como automatizar o conjunto de arquivos dos computadores do usuário para a descoberta eletrônica.'
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 'Resumo: saiba como automatizar a coleta de arquivos dos computadores dos usuários para descoberta eletrônica.'
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915746"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001604"
 ---
-# <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleção de arquivos para a Descoberta eletrônica
+# <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleta de arquivos para descoberta eletrônica
 
- **Resumo:** Saiba como automatizar o conjunto de arquivos dos computadores do usuário para a descoberta eletrônica.
+ **Resumo:** Saiba como automatizar a coleta de arquivos dos computadores dos usuários para descoberta eletrônica.
   
-Todas as empresas enfrentam o potencial de ações legais ou outros tipos de ações legais. Enquanto departamentos legais trabalham para reduzir a essa exposição, litígio é um fato da vida útil de negócios. Quando uma empresa faces ação judicial, eles são necessários, pelo processo de descoberta legal, para fornecer a todos os materiais de documentos relevantes para o tribunal e advogado oposto. 
+Todas as empresas enfrentam o potencial de processos judiciais ou outros tipos de ações legais. Embora os departamentos jurídicos trabalhem para reduzir essa exposição, o litígio é um fato da vida útil da empresa. Quando uma empresa enfrenta ações legais, elas são necessárias, por meio do processo de descoberta legal, para fornecer todo o material documentário relevante para o tribunal e para o advogado oposto. 
   
-descoberta eletrônica é o processo pelo qual as empresas de estoque, pesquisa, identificam, preservar, filtrar e disponibilizar os materiais de documentos relevantes que existem em formulário eletrônico. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online e Exchange Online podem armazenar grandes quantidades de conteúdo de documentos. Dependendo da versão, esses produtos podem suportar a descoberta eletrônica e in-loco retém (Lync através do servidor do Exchange), tornando mais fácil para que as equipes legais indexar, identificam, mantenha e filtrar o conteúdo mais relevante para uma determinada ocorrência.
+a descoberta eletrônica é o processo pelo qual as empresas fazem inventário, pesquisa, identificar, preservar, filtrar e disponibilizar os materiais documentários relevantes que existem em formato eletrônico. O SharePoint 2013, o Exchange Server 2013, o Lync Server 2013, o SharePoint Online e o Exchange Online podem armazenar grandes quantidades de conteúdo documentário. Dependendo da versão, esses produtos podem oferecer suporte a descoberta eletrônica e bloqueios no local (Lync através do Exchange Server), tornando mais fácil para as equipes legais indexar, identificar, reter e filtrar o conteúdo mais relevante para um determinado caso.
   
-Muitos documentos são armazenados em dos usuários (responsáveis) computadores locais, não em um local centralizado. Isso torna impossível essencialmente para o SharePoint 2013 pesquisar e se ele não pode ser pesquisado, ele não pode ser incluído no eDiscovery. Essa solução mostra como usar scripts de logon, o System Center Orchestrator 2012 R2 e o Windows PowerShell para o Exchange Server para automatizar a identificação e o conjunto de documentos materiais dos computadores dos usuários.
+Muitos documentos são armazenados nos computadores locais dos usuários (responsáveis), e não em um local centralizado. Isso torna praticamente impossível que o SharePoint 2013 pesquise e, se não puder ser pesquisado, não possa ser incluído no eDiscovery. Esta solução mostra como usar scripts de logon, System Center Orchestrator 2012 R2 e Windows PowerShell para Exchange Server para automatizar a identificação e coleção de materiais documentários de computadores dos usuários.
   
-## <a name="what-this-solution-does"></a>Esta solução não
+## <a name="what-this-solution-does"></a>O que esta solução faz
 
-Esta solução usa um grupo de segurança global, diretiva de grupo e um script do Windows PowerShell para localizar, de estoque e coletar conteúdo e os arquivos de armazenamento pessoal (. PST) do Outlook dos computadores de usuários locais para um compartilhamento de arquivo oculto. A partir daí, os arquivos PST podem ser importados para o Exchange Server 2013 ou Exchange Online. Todos os arquivos são movidos usando um runbook do System Center Orchestrator 2012 R2 para outro compartilhamento de arquivo no Microsoft Azure para armazenamento de longo prazo e indexação pelo SharePoint 2013. Você então usar centros de eDiscovery em sua implantação do SharePoint 2013 no local ou no SharePoint Online como faria regularmente para executar a descoberta eletrônica. 
+Esta solução usa um grupo de segurança global, uma diretiva de grupo e um script do Windows PowerShell para localizar, inventariar e coletar conteúdo e arquivos de repositório pessoal do Outlook de computadores locais de usuários para um compartilhamento de arquivo oculto. A partir daí, os arquivos PST podem ser importados para o Exchange Server 2013 ou o Exchange Online. Todos os arquivos são movidos usando um runbook do System Center Orchestrator 2012 R2 para outro compartilhamento de arquivos no Microsoft Azure para armazenamento de longo prazo e indexação pelo SharePoint 2013. Em seguida, você usa centros de descoberta eletrônica em sua implantação local do SharePoint 2013 ou no SharePoint Online, como faria regularmente para executar a descoberta eletrônica. 
   
 > [!IMPORTANT]
-> Esta solução usa o robocopy para copiar os arquivos dos computadores dos responsáveis para um compartilhamento de arquivo centralizado. Porque o robocopy não copia os arquivos que são aberto ou bloqueado, quaisquer arquivos, incluindo arquivos PST, que dos responsáveis abriu não será coletado. Você precisará coletá-los manualmente. Essa solução fornecem uma lista que identifica explicitamente os arquivos que ele não é possível copiar e o caminho completo para cada arquivo. 
+> Esta solução usa o Robocopy para copiar arquivos dos computadores dos responsáveis para um compartilhamento de arquivos centralizado. Como o Robocopy não copia arquivos que estão abertos ou bloqueados, qualquer arquivo, incluindo arquivos PST, que os responsáveis por abrir não serão coletados. Você terá que coletar manualmente. Esta solução fornece uma lista que identifica explicitamente os arquivos que não podem ser copiados e o caminho completo para cada arquivo. 
   
-O diagrama a seguir percorre todas as etapas e os elementos da solução.
+O diagrama a seguir orienta você por todas as etapas e elementos da solução.
   
-![Visão geral da solução de coleção de arquivos automatizada](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
+![Visão geral da solução de conjunto de arquivos automatizado](media/dbb447b5-c74c-4956-986c-10a1d047ac99.png)
   
-|Legenda * * *||
+|Legenda * * * *||
 |:-----|:-----|
-|![balão magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Criar um objeto de diretiva de grupo (GPO) e associá-lo com o script de logon da coleção.  <br/> |
+|![texto explicativo magenta 1](media/000026a3-2bf0-4678-b468-ccb5f81da6f1.png)|Crie um objeto de política de grupo (GPO) e associe-o ao script de logon da coleção.  <br/> |
 |![balão magenta 2](media/a31b11e2-3597-42a4-933e-b6af11ed6ef1.png)| Configure o filtro de segurança do GPO para aplicar o GPO somente ao grupo responsáveis. <br/> |
-|![balão magenta 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Dos responsáveis faz logon e executa o GPO, chamar o script de logon da coleção.  <br/> |
-|![balão magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|O script de logon da coleção faz o inventário todas as unidades conectadas localmente no computador responsáveis, pesquisar os arquivos que deseja e seu local de gravação.  <br/> |
-|![balão magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|O script de logon da coleção copia os arquivos inventariados para um compartilhamento de arquivo oculto no servidor intermediário.  <br/> |
-|![balão magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Uma opção) Manualmente, execute o script de importação de PST para importar os arquivos PST coletados para Exchange Server 2013. <br/> |
-|![balão magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opção B) Usando a ferramenta de importação do Office 365 e o processo, importe os arquivos PST coletados para Exchange Online.  <br/> |
-|![balão magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mova coletados todos os arquivos para um compartilhamento de arquivo Azure para armazenamento de longo prazo com o runbook MoveToColdStorage System Center Orchestrator 2012 R2. <br/> |
-|![balão magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexe os arquivos em compartilhamento de arquivos o armazenamento frio com o SharePoint 2013.  <br/> |
-|![balão magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Execute a descoberta eletrônica no conteúdo em armazenamento de frio e do local Exchange Server 2013.  <br/> |
-|![balão magenta 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Execute a descoberta eletrônica no conteúdo no Office 365.  <br/> |
+|![texto explicativo 3](media/3ced060c-daec-460d-a9b5-260a3dfcae36.png)|Os responsáveis fizer o logon e o GPO ser executado, chamando o script de logon da coleção.  <br/> |
+|![texto explicativo magenta 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|O script de logon da coleção faz o inventário de todas as unidades conectadas localmente no computador responsáveis, pesquisando os arquivos que você deseja e gravando sua localização.  <br/> |
+|![balão magenta 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|O script de logon da coleção copia os arquivos inventariados para um compartilhamento de arquivo oculto no servidor de teste.  <br/> |
+|![chamada magenta 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Opção A) Execute manualmente o script de importação PST para importar os arquivos PST coletados para o Exchange Server 2013. <br/> |
+|![texto explicativo de magenta 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Opção B) Usando a ferramenta e o processo de importação do Office 365, importe os arquivos PST coletados para o Exchange Online.  <br/> |
+|![balão de magenta 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Mova todos os arquivos coletados para um compartilhamento de arquivos do Azure para armazenamento de longo prazo com o runbook do MoveToColdStorage System Center Orchestrator 2012 R2. <br/> |
+|![texto explicativo magenta 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexe os arquivos no compartilhamento de arquivos de armazenamento Cold com o SharePoint 2013.  <br/> |
+|![texto explicativo Magenta 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Realize o conteúdo de descoberta eletrônica no armazenamento Cold e no Exchange Server 2013 local.  <br/> |
+|![texto explicativo 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Realize o conteúdo de descoberta eletrônica no Office 365.  <br/> |
    
 ## <a name="prerequisites"></a>Pré-requisitos
 
-A configuração dessa solução requer muitos elementos, mais dos quais você provavelmente in-loco e configurou se você estiver pensando sobre a descoberta eletrônica. Para os elementos que você pode não ter ou aquelas que exigem uma configuração específica, forneceremos você com os links que você precisa criar sua configuração de base. Você deve ter a configuração básica in-loco antes de configurar a solução em si.
+A configuração dessa solução requer muitos elementos, a maioria dos quais você provavelmente já fez e configurou se você está pensando no eDiscovery. Para os elementos que você não pode ter ou que exijam uma configuração específica, forneceremos os links necessários para desenvolver sua configuração básica. Você deve ter a configuração básica in-loco antes de configurar a própria solução.
   
 ### <a name="base-configuration"></a>Configuração base
 
 |**Elemento**|**Link**|
 |:-----|:-----|
-|Domínio do Active Directory Domain Services (AD DS)  <br/> ||
-|Conectividade de Internet da sua rede local  <br/> ||
-|SQL Server 2012 para dar suporte ao SharePoint 2013 e o System Center Orchestrator 2012 R2  <br/> |[Implantando o System Center Orchestrator - 2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-| Local ou Azure com base em SharePoint 2013 para descoberta eletrônica (necessária para a opção uma) <br/> ||
-|Servidor de compartilhamento de arquivos local para preparação  <br/> ||
-|Local do Exchange Server 2013 para importação de PST de uma opção  <br/> |CU5 (15.913.22) está disponível em [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426).  <br/> |
-|System Center Orchestrator 2012 R2  <br/> |[Implantando o System Center Orchestrator - 2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-|Office 365 (plano E3) com o Exchange Online e SharePoint Online (necessário para a opção B)  <br/> |Para se inscrever para uma assinatura do Office 365 E3, consulte [assinatura do Office 365 E3](https://go.microsoft.com/fwlink/p/?LinkId=613504).  <br/> |
-|Assinatura do Windows Azure com uma máquina virtual  <br/> |Para se inscrever para um Azure, consulte [inscrever-se no Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=512010) <br/> |
-|Uma conexão VPN entre sua rede local e a sua assinatura do Windows Azure  <br/> |Para configurar um túnel VPN entre sua assinatura do Windows Azure e sua rede local, consulte [Connect uma local da rede para uma rede virtual do Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=613507).  <br/> |
-|EDiscovery do SharePoint 2013 configurado para pesquisar por meio do SharePoint e Exchange Server 2013 e, opcionalmente, Lync Server 2013  <br/> |Para configurar o eDiscovery dessa maneira, consulte [Configurar o eDiscovery no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) e[Test Lab Guide: configurar a descoberta eletrônica para um Exchange, Lync, SharePoint e do laboratório de teste de compartilhamentos de arquivo Windows](https://go.microsoft.com/fwlink/p/?LinkId=393130).  <br/> |
-|descoberta eletrônica no Office 365 para o SharePoint Online e o Exchange Online  <br/> |Para configurar o eDiscovery no Office 365, consulte [Configurar uma central de descoberta eletrônica no SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628).  <br/> |
+|Domínio dos serviços de domínio do Active Directory (AD DS)  <br/> ||
+|Conectividade com a Internet da sua rede local  <br/> ||
+|SQL Server 2012 para oferecer suporte ao SharePoint 2013 e ao System Center Orchestrator 2012 R2  <br/> |[ImPlantando o System Center Orchestrator-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
+| SharePoint 2013 local ou baseado no Azure para descoberta eletrônica (necessário para A opção A) <br/> ||
+|Servidor de compartilhamento de arquivos no local para preparação  <br/> ||
+|Exchange Server 2013 local para A opção uma importação de PST  <br/> |CU5 (15.913.22) está disponível em [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426).  <br/> |
+|System Center Orchestrator 2012 R2  <br/> |[ImPlantando o System Center Orchestrator-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
+|Office 365 (E3 Plan) com Exchange Online e SharePoint Online (necessário para a opção B)  <br/> |Para se inscrever em uma assinatura do Office 365 E3, confira [assinatura do office 365 E3](https://go.microsoft.com/fwlink/p/?LinkId=613504).  <br/> |
+|Assinatura do Azure com uma máquina virtual  <br/> |Para se inscrever no Azure, confira [inscrever-se no Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=512010) <br/> |
+|Uma conexão VPN entre a rede local e sua assinatura do Azure  <br/> |Para configurar um túnel VPN entre sua assinatura do Azure e sua rede local, consulte [conectar uma rede local a uma rede virtual do Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=613507).  <br/> |
+|Descoberta eletrônica do SharePoint 2013 configurada para pesquisar no SharePoint e no Exchange Server 2013 e, opcionalmente, Lync Server 2013  <br/> |Para configurar a descoberta eletrônica dessa maneira, confira [Configurar a descoberta eletrônica no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) e[testar o guia de laboratório: configurar a descoberta eletrônica para um laboratório de teste de compartilhamentos de arquivos do Exchange, Lync, SharePoint e Windows](https://go.microsoft.com/fwlink/p/?LinkId=393130).  <br/> |
+|Descoberta eletrônica no Office 365 para SharePoint Online e Exchange Online  <br/> |Para configurar a descoberta eletrônica no Office 365, consulte [configurar um centro de descoberta eletrônica no SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628).  <br/> |
    
 ## <a name="configure-the-environment"></a>Configurar o ambiente
 
-Agora que você tem a configuração básica in-loco, você pode mover com antecedência para configurar a solução em si. 
+Agora que você tem a configuração base in-loco, você pode prosseguir para configurar a própria solução. 
   
-### <a name="staging-file-share"></a>Compartilhamento de arquivo do teste
+### <a name="staging-file-share"></a>Compartilhamento de arquivo de preparação
 
 1. No domínio local, crie um grupo de segurança global chamado responsáveis.
     
-2. Crie um compartilhamento de arquivo oculto para os arquivos que são coletadas de computadores responsáveis. Este deve ser em um servidor local. Por exemplo, em um servidor chamado preparo, crie um compartilhamento de arquivo chamado $ casos. O **$** é necessário para fazer isso em um compartilhamento oculto.
+2. Criar um compartilhamento de arquivo oculto para os arquivos coletados de computadores. Ele deve estar em um servidor local. Por exemplo, em um servidor chamado preparação, crie um compartilhamento de arquivos chamado casos $. O **$** é necessário para tornar este um compartilhamento oculto.
     
-3. Defina as permissões de compartilhamento a seguir:
+3. Defina as seguintes permissões de compartilhamento:
     
-  - Responsáveis: Alteração e leitura
+  - Responsáveis: alterar, ler
     
   - Administradores: Controle Total
     
-  - Subsistema confiável do Exchange: Leitura, alteração
+  - Subsistema confiável do Exchange: alterar, ler
     
-4. Abra a guia **segurança** , adicione o grupo responsáveis e clique em **Avançado**. Defina as seguintes permissões para o grupo responsáveis:
+4. Abra a guia **segurança** , adicione o grupo responsáveis e clique em **avançado**. Defina as seguintes permissões para o grupo responsáveis:
     
-  - **Tipo: Negar**
+  - **Tipo: negar**
     
   - **Aplica-se a: esta pasta, subpastas e arquivos**
     
-5. Clique em **Permissões avançadas** e selecione o seguinte:
+5. Clique em **permissões avançadas** e selecione o seguinte:
     
   - **Atributos de leitura**
     
@@ -109,15 +108,15 @@ Agora que você tem a configuração básica in-loco, você pode mover com antec
     
   - **Permissões de leitura**
     
-6. Teste o acesso ao compartilhamento de arquivos de $ casos fazendo o seguinte:
+6. Teste o acesso ao compartilhamento de arquivos de casos $, fazendo o seguinte:
     
-1. Adicione um usuário ao grupo responsáveis.
+1. Adicionar um usuário ao grupo responsáveis.
     
-2. Coloca um arquivo na pasta de $ casos.
+2. Coloque um arquivo na pasta casos $.
     
-3. Como o usuário, vá para o servidor de teste, por exemplo, navegue até o \\ \\preparo compartilhar para ver quais compartilhamentos estão disponíveis. Você não deve ver o compartilhamento de **casos$** listado.
+3. Como usuário, navegue até o servidor de teste, por exemplo, navegue até o \\ \\compartilhamento de preparo para ver quais compartilhamentos estão disponíveis. Você não verá os **casos $** share listados.
     
-4. Manualmente, digite o caminho completo para o compartilhamento de $ casos no Explorer. Isso deve abrir o compartilhamento de $ casos.
+4. Digite manualmente o caminho completo para os casos $ share no Explorer. Isso deve abrir os casos $ share.
     
 5. Tente abrir o arquivo que você colocou anteriormente no compartilhamento. Isso deve falhar.
     
@@ -265,25 +264,25 @@ Write-Host -ForegroundColor Cyan "Finished."
 
   ```
 
-2. Salve o script acima como CollectionScript.ps1 em um local fácil de encontrar, por exemplo, c:\\AFCScripts.
+2. Salve o script acima como CollectionScript. ps1 em um local que seja fácil de localizar, por exemplo, C:\\AFCScripts.
     
 3. Use o recurso ir para no bloco de notas. Faça as seguintes alterações, conforme necessário:
     
-|**Número da linha**|**Você precisa alterar**|**Obrigatório/opcional**|
+|**Número da linha**|**O que você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
-|71  <br/> |Variável de **$FileTypes** . Inclua todas as extensões de tipo de arquivo que você deseja que o script de estoque e coletar na variável de matriz.<br/> |Opcional  <br/> |
-|76 e 77  <br/> |Alterar a maneira como a variável **$CaseNo** é criado para atender às suas necessidades. O script captura a data atual e a hora e o acrescenta o nome de usuário a ela.<br/> |Opcional  <br/> |
-|80  <br/> |Compartilha **$CaseRootLocation** variável precisa ser definida como seu arquivo preparo de conjunto de servidores, por exemplo ** \\ \\preparo\\casos$**. <br/> |Obrigatório  <br/> |
+|71  <br/> |**$Filetypes** variável. Inclua todas as extensões de tipo de arquivo que você deseja que o script faça inventário e colete na variável de matriz. <br/> |Opcional  <br/> |
+|76 e 77  <br/> |Alterar a maneira como a variável de **$CaseNo** é criada para atender às suas necessidades. O script captura a data atual e a hora e acrescenta o nome de usuário a ela. <br/> |Opcional  <br/> |
+|80  <br/> |**$CaseRootLocation** variável precisa ser definida para o compartilhamento de arquivos do conjunto de servidores de preparo, por exemplo ** \\ \\, exemplos de preparação\\$**. <br/> |Obrigatório  <br/> |
    
-4. Coloque o arquivo de CollectionScript.ps1 no compartilhamento de arquivo de logon de rede em um controlador de domínio. 
+4. Coloque o arquivo CollectionScript. ps1 no compartilhamento de arquivos Netlogon em um controlador de domínio. 
     
 ### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Configurar o GPO para o script de logon e o grupo de responsáveis
 
-1. Configure um script de logon para o grupo responsáveis seguindo a seção "Como atribuir scripts de logon do usuário" no tópico, [usando inicialização, desligamento, Logon e os Scripts de Logoff na diretiva de grupo](https://go.microsoft.com/fwlink/p/?LinkId=614844).
+1. Configure um script de logon para o grupo responsáveis seguindo a seção "como atribuir scripts de logon do usuário" no tópico, [usando scripts de inicialização, desligamento, logon e logoff na política de grupo](https://go.microsoft.com/fwlink/p/?LinkId=614844).
     
-2. Remover usuários autenticados do **Filtro de segurança**e adicione o grupo responsáveis.
+2. Remova os usuários autenticados da **filtragem de segurança**e adicione o grupo responsáveis.
     
-### <a name="pst-import-option-a-script-for-exchange-server-2013"></a>PST importar opção A, o script do Exchange Server 2013
+### <a name="pst-import-option-a-script-for-exchange-server-2013"></a>Opção de importação de PST A, script para O Exchange Server 2013
 
 1.  Copie e cole o seguinte script do Windows PowerShell no bloco de notas:
     
@@ -323,132 +322,132 @@ $AllFiles | ForEach-Object {
 }
   ```
 
-2. Salve o script como PSTImportScript.ps1 em um local fácil de encontrar. Por exemplo e facilidade de uso, crie uma pasta no seu servidor intermediário chamado \\ \\preparo\\AFCScripts e salvá-lo nesse local.
+2. Salve o script como PSTImportScript. ps1 em um local que seja fácil de encontrar. Por exemplo e facilidade de uso, crie uma pasta no seu servidor de teste, \\ \\chamada preparação\\de AFCScripts, e salve-a.
     
 3. Use o recurso ir para no bloco de notas e faça as seguintes alterações, conforme necessário:
     
-|**Número da linha**|**Você precisa alterar**|**Obrigatório/opcional**|
+|**Número da linha**|**O que você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
-|12   <br/> |As pastas de caixa de correio que PSTs são importados para marcas de **$FolderIdentifier** . Altere essa opção se necessário.<br/> |Opcional  <br/> |
-|17   <br/> |**$ConnectionUri** deve ser definida para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se sua **$ConnectionUri** aponta para um local de http, https não. Ele não funcionará com https:.          |Obrigatório  <br/> |
+|3,6  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
+|17.07.06  <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se o **$ConnectionURI** aponta para um local http, não para https. Ele não funcionará com https:.          |Obrigatório  <br/> |
    
-4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução para o \\ \\preparo\\compartilhamento de $ casos.
+4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução \\ \\para o\\compartilhamento de casos de preparação $.
     
-5. O script de importação de PST requer os dois parâmetros de entrada a seguintes:
+5. O script de importação de PST requer os dois parâmetros de entrada a seguir:
     
-  - **$SourcePath** O local dos arquivos PST a ser importado, por exemplo \\ \\preparo\\casos$.
+  - **$SourcePath** O local dos arquivos PST a serem importados, por \\ \\exemplo,\\exemplos de preparação $.
     
-  - **$MailboxAlias** O alias da caixa de correio de destino que receberá os itens de e-mail importadas.
+  - **$MailboxAlias** O alias da caixa de correio de destino que receberá os itens de email importados.
     
-6. Por exemplo, se você deseja importar todos os arquivos PST do caminho da \\Staging\Cases$ em uma caixa de correio com o eDiscoveryMailbox alias, você pode executar o script semelhante a esta `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`.
+6. Por exemplo, se você deseja importar todos os arquivos PST do caminho \\Staging\Cases $ para uma caixa de correio com o alias eDiscoveryMailbox, você deve executar o script como este `\\staging\AFCscripts\PSTImportScript.ps1 \\Staging\cases$ eDiscoveryMailbox`.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Opção de importação de PST B, para o Exchange Online
 
--  Crie a estrutura da caixa de correio para colocar os arquivos PST importados em. Para obter mais informações sobre como criar uma caixa de correio do usuário no Exchange Online, consulte[Criar caixas de correio de usuário no Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  Crie a estrutura da caixa de correio para colocar os arquivos PST importados no. Para saber mais sobre como criar uma caixa de correio de usuário no Exchange Online, confira[criar caixas de correio de usuário no Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
     
-### <a name="cold-storage"></a>Armazenamento frio
+### <a name="cold-storage"></a>Armazenamento Cold
 
-1. Criar um compartilhamento de arquivo no Windows Azure Máquina Virtual, onde todos os arquivos coletados serão colocados, por exemplo, \\ \\AZFile1\\ContentColdStorage.
+1. Crie um compartilhamento de arquivos na máquina virtual do Azure, onde todos os arquivos coletados serão colocados, por exemplo \\ \\,\\AZFile1 ContentColdStorage.
     
-2. Conceder a conta de acesso a conteúdo padrão pelo menos permissões de leitura para o compartilhamento e todas as subpastas e arquivos. Para obter mais informações sobre como configurar a pesquisa do SharePoint 2013, consulte [criar e configurar um aplicativo de serviço de pesquisa no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
+2. Conceda à conta de acesso ao conteúdo padrão pelo menos permissões de leitura para o compartilhamento e todas as subpastas e arquivos. Para obter mais informações sobre como configurar a pesquisa do SharePoint 2013, consulte [Create and configure a Search Service Application in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
     
-3. Se você prevê a importação de arquivos PST do \\ \\AZFile1\\ContentColdStorage, conceder leia subsistema confiável do Exchange, gravação e execução de permissões para o compartilhamento.
+3. Se você previr a importação de arquivos \\ \\PST\\do AZFile1 ContentColdStorage, conceda permissões de leitura, gravação e execução do subsistema confiável do Exchange para o compartilhamento.
     
-### <a name="orchestrator"></a>Orchestrator
+### <a name="orchestrator"></a>Orquestrador
 
-1. Baixe o[ MoveToColdStorage runbook](https://go.microsoft.com/fwlink/?LinkId=616095) do Microsoft Download Center.
+1. Baixe o[ runbook MoveToColdStorage](https://go.microsoft.com/fwlink/?LinkId=616095) do centro de download da Microsoft.
     
-2. Abrir o **Runbook Designer**, no painel **conexões** , clique na pasta que você deseja importar o runbook em. Clique no menu **ações** e clique em **Importar**. Será exibida a caixa de diálogo de **importação** .
+2. Abra o **runbook designer**, no painel **conexões** , clique na pasta para a qual você deseja importar o runbook. Clique no menu **ações** e clique em **importar**. A caixa de diálogo **importar** é exibida.
     
-3. Na caixa **Local do arquivo** , digite o nome de arquivo e caminho do runbook que você deseja importar ou clique nas reticências ( **…**) para navegar até o arquivo que você deseja importar. 
+3. Na caixa **local do arquivo** , digite o caminho e o nome de arquivo do runbook que você deseja importar ou clique nas reticências ( **...**) para navegar até o arquivo que você deseja importar. 
     
-4. Selecione **Importar runbooks** e **Orchestrator importar os dados criptografados**. Desmarque **contadores**, **agendas**, **variáveis**, **Grupos de computadores**, **configurações globais de importação**e **Substituir as configurações globais existentes**.
+4. Selecione **importar runbooks** e **importar dados criptografados**do Orchestrator. Limpe **contadores**, **agendas**, **variáveis**, **grupos de computadores**, **importe configurações globais**e **substitua as configurações globais existentes**.
     
 5. Clique em **Concluir**.
     
 6. Edite o runbook **MoveFilesToColdStorage** da seguinte maneira:
     
-1. Atividade de **Mover arquivos** - definir o caminho do **Arquivo de origem** para o compartilhamento de arquivos da coleção, por exemplo \\ \\preparo\\casos$. Conjunto de compartilhar a **Pasta de destino** para o arquivo frio armazenamento no Windows Azure, por exemplo \\ \\AZFile1\\ContentColdStorage. Selecione **criar um arquivo com um nome exclusivo**.
+1. **Mover arquivo** atividade-define o caminho do **arquivo de origem** para o compartilhamento de arquivo de \\ \\conjunto,\\por exemplo, exemplos de preparação $. Defina a **pasta de destino** para o compartilhamento de arquivo de armazenamento Cold no Azure \\ \\,\\por exemplo, AZFile1 ContentColdStorage. Selecione **criar um arquivo com um nome exclusivo**.
     
-2. **Excluir pasta** atividade - definir o **caminho:** à coleção de compartilhamento de arquivo, por exemplo \\ \\preparo\\casos$\\* e selecione **Excluir todos os arquivos e subpastas**. 
+2. **Excluir** atividade da pasta-defina **o caminho:** para o compartilhamento de arquivo da coleção \\ \\, por\\exemplo,\\casos de preparação $ *, e selecione **excluir todos os arquivos e**subpastas. 
     
-7. Implante o runbook **MoveToColdStorage** usando os procedimentos em[Implantando Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615120).
+7. Implante o runbook **MoveToColdStorage** usando os procedimentos de[implantação de Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615120).
     
-### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Pesquisa do SharePoint local para armazenamento frio
+### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Pesquisa do SharePoint no local para armazenamento Cold
 
-1. Criar uma nova fonte de conteúdo em seu farm do SharePoint 2013 para o compartilhamento de armazenamento frio no Windows Azure, por exemplo \\ \\AZFile1\\ContentColdStorage. Para obter mais informações sobre como gerenciar fontes de conteúdo, consulte [Adicionar, editar ou excluir uma fonte de conteúdo no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. crie uma nova fonte de conteúdo no seu farm do SharePoint 2013 para o compartilhamento de armazenamento cold no Azure \\ \\,\\por exemplo, AZFile1 ContentColdStorage. Para obter mais informações sobre como gerenciar fontes de conteúdo, consulte [Adicionar, editar ou excluir uma fonte de conteúdo no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
     
-2. Inicie um rastreamento completo. Para mais informações, consulte [Iniciar, pausar, retomar ou parar um rastreamento no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+2. Inicie um rastreamento completo. Para obter mais informações, consulte, [Iniciar, pausar, continuar ou parar um rastreamento no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
 ## <a name="using-the-solution"></a>Usando a solução
 
-Há cinco etapas principais usando essa solução, supondo que você não quiser importar os arquivos PST para o Exchange Server 2013 e Exchange Online. Esta seção fornece os procedimentos para todos eles. Sua principal interação com a solução será ao fazer o seguinte:
+Há cinco etapas principais para usar essa solução, supondo que você não queira importar os arquivos PST para o Exchange Server 2013 e o Exchange Online. Esta seção fornece os procedimentos para todos eles. Sua interação principal com a solução será fazer o seguinte:
   
-1. Gerencie a associação do usuário no grupo responsáveis.
+1. Gerenciar a associação do usuário no grupo responsáveis.
     
-2. Revise os arquivos de log gerados pelo script de logon. O FileCopyErrors.log lista todos os arquivos que não foram copiados com êxito. É necessário decidir o que você deseja fazer com eles
+2. Revise os arquivos de log gerados pelo script de logon. O FileCopyErrors. log lista todos os arquivos que não foram copiados com êxito. Você precisa decidir o que deseja fazer com eles
     
-3. Gerenciando o processo de importação de PST.
+3. Gerenciar o processo de importação de PST.
     
-4. Mover os arquivos da coleção para armazenamento frio.
+4. Mover os arquivos da coleção para o armazenamento Cold.
     
-Todas as outras etapas não são específicas para essa solução. Eles são tarefas administrativas padrão que podem ser executadas no SharePoint 2013 e o Office 365 e o Windows Azure. Existem itens que essa solução não oferece quaisquer diretrizes que você precisará trabalhar check-out com base nas necessidades da sua empresa, como:
+Todas as outras etapas não são específicas desta solução. São tarefas administrativas padrão realizadas no SharePoint 2013 e no Office 365 e no Azure. Há itens que esta solução não fornece orientações que você precisará para trabalhar com base nas necessidades da sua empresa, como:
   
-1. Controlando seus casos de eDiscovery e quais responsáveis estão associados a qual caso.
+1. Controle de casos de descoberta eletrônica e quais responsáveis estão associados a esse caso.
     
-2. Controlando quais conjuntos de conjuntos de arquivo são associe com qual caso de descoberta eletrônica.
+2. Controlar quais conjuntos de coleções de arquivos são associados ao caso de descoberta eletrônica.
     
-3. Coordenar o tempo de importação e mover para armazenamento frio etapas.
+3. Coordenar o tempo das etapas de importação e migração para o armazenamento Cold.
     
-4. Gerenciando o espaço de arquivo usado no Windows Azure.
+4. Gerenciar o espaço de arquivo usado no Azure.
     
-5. Gerenciando as caixas de correio que PSTs são importados para.
+5. Gerenciar as caixas de correio nas quais os PSTs são importados.
     
-6. Backup e restauração de todos os dados de local.
+6. Backup e restauração de todos os dados locais.
     
-### <a name="custodian-management"></a>Gerenciamento dos responsáveis
+### <a name="custodian-management"></a>Gerenciamento de responsáveis
 
-- Para iniciar o processo de coleta automatizada de arquivos para um usuário individual, adicioná-los ao grupo responsáveis. Na próxima vez que o usuário fizer logon, o script de logon atribuído ao grupo responsáveis pela diretiva de grupo será executado. 
+- Para iniciar o processo de coleta automatizada de arquivos para um usuário individual, adicione-os ao grupo responsáveis. Na próxima vez que o usuário fizer logon, o script de logon atribuído ao grupo responsáveis por meio da política de grupo será executado. 
     
-### <a name="monitor-collected-files-and-review-log-files"></a>Monitore arquivos coletados e revisar os arquivos de log
+### <a name="monitor-collected-files-and-review-log-files"></a>Monitorar arquivos coletados e examinar arquivos de log
 
-1. Assista o arquivo da coleção compartilhar, por exemplo \\ \\preparo\\casos$\\*, para a pasta da coleção do usuário. O nome da pasta será formatado como esta: *yyyyMMddHHmm_UserName* .
+1. Assista ao compartilhamento de arquivo de coleção, \\ \\por exemplo\\, casos\\de preparação $ *, para a pasta de coleção do usuário. O nome da pasta será formatado da seguinte maneira: *yyyyMMddHHmm_UserName* .
     
-2. Quando a coleção for concluída, abra a pasta da coleção e navegue até a pasta _Log. Na pasta _Log, você verá o seguinte:
+2. Quando a coleção estiver concluída, abra a pasta de coleção e navegue até a pasta _Log Na pasta _Log, você verá o seguinte:
     
-  - Um arquivo XML para cada unidade local no computador do usuário, por exemplo **A.xml**, **C.xml**. Esses arquivos contêm as unidades de estoque que são nomeados após, e elas são usadas para a operação robocopy.
+  - Um arquivo XML para cada unidade local no computador do usuário, por exemplo, **um. xml**, **C. xml**. Esses arquivos contêm as unidades de estoque que são nomeadas após e são usadas para a operação do Robocopy.
     
     > [!NOTE]
-    > O script de coleção somente criará uma entrada no arquivo inventário para os tipos de arquivo que você definiu no próprio script. Além disso, ele não criará uma entrada de inventário para todos os arquivos no computador do usuário. 
+    > O script de coleção só criará uma entrada no arquivo de inventário para os tipos de arquivo que você definiu no próprio script. Ele não criará uma entrada de inventário para cada arquivo no computador do usuário. 
   
-  - Um arquivo de log denominado FileCopyErrors.log para cada conjunto de executar. Esse arquivo contém uma lista dos arquivos que robocopy poderia não uma cópia para o conjunto de arquivos compartilhar, por exemplo, \\ \\preparo\\casos$\\*. Você precisará revisar isso e decidir quais ações tomar para esses arquivos perdidos. Normalmente, você tanto precisa coletá-los manualmente, se desejado, ou você pode decidir que eles não são necessários e, portanto, podem ser omitidos da coleção.
+  - Um arquivo de log chamado FileCopyErrors. log para cada execução de coleção. Este arquivo contém uma lista dos arquivos que o Robocopy não pôde copiar para o compartilhamento de coleção de arquivos, por \\ \\exemplo,\\casos de\\preparação $ *. Você precisará revisar esta ação e decidir quais ações tomar para esses arquivos perdidos. Normalmente, você precisará coletar manualmente, se quiser, ou pode decidir que elas não são necessárias e, portanto, podem ser omitidas da coleção.
     
-### <a name="pst-import-option-a-for-exchange-server-2013"></a>Opção de importação de PST uma para o Exchange Server 2013
+### <a name="pst-import-option-a-for-exchange-server-2013"></a>Opção de importação de PST A para O Exchange Server 2013
 
-1. Faça logon servidor que hospeda o compartilhamento de arquivos da coleção, por exemplo **preparo**e abra o Windows PowerShell. Para obter mais informações sobre como iniciar o Windows PowerShell, consulte[Iniciando o Windows PowerShell no Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
+1. Faça logon no servidor que hospeda o compartilhamento de arquivo de conjunto, por exemplo, **preparação**e abra o Windows PowerShell. Para obter mais informações sobre como iniciar o Windows PowerShell, consulte[iniciando o Windows PowerShell no Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
     
-2. Defina a diretiva de execução como irrestrito. Tipo `Set-ExecutionPolicy Unrestricted -Scope Process` em Windows PowerShell e pressione Enter.
+2. Defina a política de execução como irrestrita. Digite `Set-ExecutionPolicy Unrestricted -Scope Process` no Windows PowerShell e pressione Enter.
     
-3. Execute o arquivo PSTImportScript.ps1 e fornecem os parâmetros **$SourcePath** e **$MailboxAlias** . Para obter mais informações sobre a execução de scripts do Windows PowerShell, consulte[Executando Scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
+3. Execute o arquivo PSTImportScript. ps1 e forneça os parâmetros **$SourcePath** e **$MailboxAlias** . Para obter mais informações sobre a execução de scripts do Windows PowerShell, consulte[running scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
     
-4. Analise a saída se há erros.
+4. Revise a saída para ver se há erros.
     
-5. Antes de tentar importar um arquivo PST de nome idêntico para a mesma caixa de correio, você precisa remover a solicitação de importação da caixa de correio. Execute o seguinte comando para fazer isso: `Get-MailboxImportRequest | Remove-MailboxImportRequest`. Você será solicitado para remover a cada solicitação individual da fila. Responda conforme necessário.
+5. Antes de tentar importar um arquivo PST com nome idêntico para a mesma caixa de correio, você precisa remover a solicitação de importação de caixa de correio. Execute o seguinte comando para fazer isso: `Get-MailboxImportRequest | Remove-MailboxImportRequest`. Você será solicitado a remover cada solicitação individual da fila. Responder conforme necessário.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>Opção de importação de PST B, para o Exchange Online
 
-- Para colocar os arquivos PST coletados em Exchange Online, siga os procedimentos nos arquivos de importação para o Office 365 por meio da seção de carregamento de rede do [Serviço de importação do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=614938).
+- Para colocar os arquivos PST coletados no Exchange Online, siga os procedimentos na seção importar arquivos para o Office 365 através da seção carregamento de rede do [serviço de importação do office 365](https://go.microsoft.com/fwlink/p/?LinkId=614938).
     
-### <a name="move-to-cold-storage"></a>Migrar para o armazenamento frio
+### <a name="move-to-cold-storage"></a>Mover para o armazenamento Cold
 
-1. Execute o runbook **MoveToColdStorage** usando os procedimentos em[Execução Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615123).
+1. Execute o runbook **MoveToColdStorage** usando os procedimentos em[executando Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615123).
     
-2. Observação o compartilhamento de arquivo Azure que você está usando para armazenamento de longo prazo, por exemplo \\ \\AZFile1\\ContentColdStorage e o arquivo da coleção local compartilharem, por exemplo \\ \\preparo\\casos$. Você deve ver os arquivos e pastas aparecem no compartilhamento de arquivo frio armazenamento e desaparecem do compartilhamento de arquivos da coleção.
+2. Assista ao compartilhamento de arquivos do Azure que você está usando para armazenamento de longo \\ \\prazo\\, por exemplo, AZFile1 ContentColdStorage e o compartilhamento de arquivo da \\ \\coleção local\\, por exemplo, exemplos de preparação $. Você deve ver os arquivos e pastas que aparecem no compartilhamento de arquivos de armazenamento Cold e desaparecem do conjunto de arquivos de coleção.
     
-### <a name="ediscovery"></a>Descoberta Eletrônica
+### <a name="ediscovery"></a>Descoberta eletrônica
 
-1. Permitir o rastreamento completo do compartilhamento de arquivo frio armazenamento para executar como agendas, ou inicia um rastreamento. Para obter mais informações sobre como iniciar rastreamentos completos ou incrementais, consulte [Iniciar, pausar, retomar ou parar um rastreamento no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+1. Permitir que o rastreamento completo do compartilhamento de arquivos de armazenamento Cold seja executado como agendamentos ou iniciar um rastreamento. Para obter mais informações sobre como iniciar rastreamentos completos ou incrementais, consulte [Iniciar, pausar, continuar ou parar um rastreamento no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
-2. Criar um caso de descoberta eletrônica no SharePoint 2013, se você usou a opção uma para uma importação de arquivos PST ou criar um caso de descoberta eletrônica no SharePoint Online, se você tiver usado a opção B.
+2. Criar um caso de descoberta eletrônica no SharePoint 2013 se você usou A opção A para um arquivo PST, importe ou crie um caso de descoberta eletrônica no SharePoint Online se você usou a opção B.
     
 

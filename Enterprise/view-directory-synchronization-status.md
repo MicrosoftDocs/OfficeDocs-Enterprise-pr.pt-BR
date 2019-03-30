@@ -1,9 +1,8 @@
 ---
-title: Exibir o status da sincronização de diretório no Office 365
+title: Exibir status de sincronização de diretório no Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,20 +17,22 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Saiba como desativar a sincronização de diretórios. Você também pode exibir seu status.
-ms.openlocfilehash: 4803cbadd17dbc1ee23d019f39144ff1ffaefd9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085050"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001564"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Exibir o status da sincronização de diretório no Office 365
+# <a name="view-directory-synchronization-status-in-office-365"></a>Exibir status de sincronização de diretório no Office 365
+
 Se você integrou o Active Directory local ao Azure AD sincronizando seu ambiente local com o Office 365, você também pode verificar o status da sua sincronização.
   
 ## <a name="view-directory-synchronization-status"></a>Exibir status de sincronização de diretório
-- Entre no centro de administração do Office 365 e escolha **status DirSync** na página inicial. 
+
+- Entre no centro de [Administração do Microsoft 365](https://admin.microsoft.com) e escolha **status DirSync** na página inicial.
 - Como alternativa, você pode ir para **** \> **usuários ativos**do usuário e, na **página usuários ativos** , escolha **mais** \> **sincronização de diretórios**. No painel de **sincronização de diretórios** , escolha **ir para gerenciamento DirSync**.
-    
+
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>Informações na página Gerenciar sincronização de diretório
 
 A tabela a seguir lista os recursos para os quais você pode obter informações na página.

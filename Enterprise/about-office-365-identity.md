@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Saiba como a identidade do usuário é gerenciada no Office 365.
-ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372888"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001554"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Noções básicas sobre a identidade do Office 365 e o Azure Active Directory
 
@@ -37,7 +37,7 @@ Dependendo de se você tiver ou não tiver um ambiente existente do Active Direc
   
 ### <a name="cloud-only"></a>Apenas Nuvem
 
-Com o modelo somente de nuvem, você gerencia suas contas de usuário somente no Office 365. Nenhum servidor local é necessário; tudo isso é tratado na nuvem pelo Azure AD. Você cria e gerencia usuários no centro de administração do Office 365 ou usando os cmdlets e a identidade e a autenticação do Windows PowerShell [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) são tratados completamente na nuvem pelo Azure AD. O modelo somente na nuvem é normalmente uma boa opção se: 
+Com o modelo somente de nuvem, você gerencia suas contas de usuário somente no Office 365. Nenhum servidor local é necessário; tudo isso é tratado na nuvem pelo Azure AD. Você cria e gerencia usuários no [centro de administração do Microsoft 365](https://admin.microsoft.com) ou usando os cmdlets e a identidade e a autenticação do Windows PowerShell [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) são tratados completamente na nuvem pelo Azure AD. O modelo somente na nuvem é normalmente uma boa opção se: 
   
 - Você não tem outro diretório de usuário local.
     

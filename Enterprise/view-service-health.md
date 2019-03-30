@@ -23,16 +23,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Exibir o status de integridade dos serviços do Office 365 antes de ligar para o suporte para ver se há uma interrupção de serviço ativa
-ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085290"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001574"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço do Office 365
 
-Você pode exibir a integridade do Office 365, do Yammer, do Microsoft Dynamics CRM e dos serviços de nuvem do Microsoft Intune na página **integridade do serviço** do Office 365 no centro de administração. Se você estiver tendo problemas com um serviço de nuvem, poderá verificar a integridade do serviço para determinar se esse é um problema conhecido com uma resolução em andamento antes de ligar ou perder tempo de solução de problemas. 
+Você pode exibir a integridade do Office 365, do Yammer, do Microsoft Dynamics CRM e dos serviços de nuvem do Microsoft Intune na página **integridade do serviço** do Office 365 no centro de [administração do Microsoft 365](https://admin.microsoft.com). Se tiver problemas com um serviço em nuvem, poderá verificar a integridade do serviço para determinar se é um problema conhecido com uma resolução em andamento, antes de chamar o suporte ou perder tempo na solução de problemas. 
 
 Se você não conseguir entrar no portal de serviço, poderá usar a [página status do serviço](https://status.office365.com) para verificar se há problemas conhecidos, impedindo o login no locatário.
   
@@ -43,7 +43,7 @@ Se você não conseguir entrar no portal de serviço, poderá usar a [página st
     > [!NOTE]
     > As pessoas às quais a função de administrador global ou do serviço é atribuída podem visualizar a integridade do serviço. Para permitir que os administradores do Exchange, SharePoint e Skype for Business visualizem a integridade do serviço, eles também devem receber a função de administrador do serviço.
   
-2. Para abrir a integridade do serviço, no centro de administração, vá para**integridade do serviço**de **integridade** > ou clique no **cartão de integridade do serviço** no **painel inicial**. O cartão de painel indica se há um problema de serviço ativo e links para a página de integridade do serviço detalhada.
+2. Para abrir a integridade do serviço, no centro de administração, vá para**integridade do serviço**de **integridade** > ou clique no **cartão de integridade do serviço** no **painel inicial**. O cartão do painel indica se existe um problema de serviço ativo e links para a página de integridade do serviço detalhada.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -111,7 +111,7 @@ A maioria dos serviços de tempo aparecerá como íntegro sem mais informações
    
 ## <a name="history"></a>Histórico
 
-A integridade do serviço permite que você examine o status de integridade atual e visualize o histórico de qualquer comunicados de serviço e incidentes que impactaram o locatário nos últimos 30 dias. Para exibir a integridade passada de todos os serviços, selecione **Exibir histórico** na página **integridade do serviço** . 
+A integridade do serviço permite que você examine o status de integridade atual e visualize o histórico de qualquer comunicados de serviço e incidentes que impactaram o locatário nos últimos 30 dias. Para visualizar o estado de integridade anterior de todos os serviços, selecione **Exibir Histórico** na página **Integridade do Serviço**. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -119,7 +119,7 @@ Uma lista de todas as mensagens de integridade de serviço postadas no cronogram
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Você pode exibir o histórico de integridade dos últimos 7 dias ou dos últimos 30 dias. Selecione qualquer linha para exibir mais detalhes sobre esse problema.
+Você pode visualizar o histórico de integridade dos últimos 7 dias ou dos últimos 30 dias. Selecione qualquer linha para exibir mais detalhes sobre esse problema.
   
 Para obter mais informações sobre nosso compromisso com o tempo de atividade, consulte [operações transparentes do Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
@@ -127,9 +127,6 @@ Para obter mais informações sobre nosso compromisso com o tempo de atividade, 
 
 Nosso objetivo é garantir que as informações que fornecemos a você sobre um problema em andamento sejam oportunas, precisas e úteis. Para nos dizer como estamos trabalhando, selecione uma classificação por estrelas. Depois de nos dar uma pontuação de 1 a 5 estrelas, você pode fazer comentários sobre qualquer detalhe específico. Usaremos seus comentários para ajustar o nosso sistema de integridade do serviço.
   
-![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
-  
 ## <a name="see-also"></a>Confira também
 
-[Relatórios de Atividade no Centro de administração do Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
-
+[Relatórios de atividades no centro de administração do Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
