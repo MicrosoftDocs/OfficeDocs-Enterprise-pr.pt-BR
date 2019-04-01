@@ -1,5 +1,5 @@
 ---
-title: Funcionalidades Multigeográficas no OneDrive e Office 365
+title: Funcionalidades multigeográficas no OneDrive e no SharePoint Online
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,78 +10,46 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Expanda a sua presença do Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive Online.
-ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+description: Expanda a sua presença no Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive Online.
+ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052985"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948582"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Funcionalidades Multigeográficas no OneDrive e Office 365
+# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Funcionalidades multigeográficas no OneDrive e no SharePoint Online
 
-Com as Funcionalidades Multigeográficas do OneDrive Online, sua organização pode expandir a presença do Office 365 para várias regiões geográficas e/ou países em seu locatário existente. Fale com a equipe da sua conta Microsoft para inscrever sua empresa multinacional no OneDrive for Business com Funcionalidades Multigeográficas.
-  
-Com o OneDrive for Business com Funcionalidades Multigeográficas, você pode provisionar e armazenar dados em repouso nas localizações geográficas escolhidas para atender aos requisitos de residência de dados e, ao mesmo tempo, dar vazão à sua implantação global a partir de experiências de produtividade modernas para a sua força de trabalho.
-  
-Vejamos a seguir como os recursos multigeográficos podem beneficiar a sua organização:
-  
-- Opere como uma organização conectada globalmente com um único locatário do Office 365 em várias localizações geográficas.
-    
-- Atenda aos requisitos de residência de dados criando e hospedando dados em repouso em um localização geográfica especificada.
-    
-- Capacite os seus usuários-satélites com as mesmas experiências de produtividade modernas que os seus usuários do local central desfrutam.
-    
-- Permita que os seus usuários transitem por localizações geográficas à medida que mudarem de função, mantendo intacto o acesso ao conteúdo deles.
-    
-- Adapte as suas políticas de compartilhamento por localização geográfica e as políticas de prevenção contra perda de dados por local.
-    
-- Designe gerentes de descoberta eletrônica por localização geográfica e permita a administração de casos de acordo com a sua localização geográfica.
-    
-- Escolha namespaces de URL exclusivos (por exemplo, ContosoEUR.sharepoint.com) para as suas localizações geográficas adicionais.
-    
-- Consolide os seus dados locais regionais em seu locatário multigeográfico do Office 365.
-    
-Em uma configuração multigeográfica, o seu locatário do Office 365 consiste em um local central (onde sua assinatura do Office 365 foi provisionada originalmente) e uma ou mais localizações geográficas satélites. O conceito principal de multigeografia é que um único locatário pode atuar em várias localizações geográficas. Em um locatário multigeográfico, as informações sobre localizações geográficas, grupos e informações do usuário são dominadas no Azure Active Directory (AAD). Como as informações de locatário são controladas centralmente e sincronizadas em cada localização geográfica, o compartilhamento e as experiências envolvendo qualquer pessoa da sua empresa conterão uma abrangência global.
+As funcionalidades multigeográfica do OneDrive e do SharePoint Online permite controlar o país ou região onde recursos compartilhados, como sites de equipe do SharePoint e caixas de correio do Grupo do Office 365 são armazenados em repouso.
 
-## <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Apresentando a multigeografia do Office 365
+Cada usuário, caixa de correio do Grupo e site do SharePoint possui uma Localização Preferencial do Dados (PDL) que indica a localização geográfica onde os dados relacionados devem ser armazenados. Dados pessoais do usuário (caixa de correio do Exchange e OneDrive) juntamente com Grupos do Office 365 ou sites do SharePoint criados por eles podem ser armazenados em uma localização geográfica especificada para atender aos requisitos de residência dos dados. Você pode [especificar administradores diferentes para cada localização geográfica](add-a-sharepoint-geo-admin.md).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
-  
-## <a name="get-multi-geo-features-in-three-simple-steps"></a>Obter recursos multigeográficos em três etapas simples
+Os usuários têm uma experiência perfeita ao usar os serviços do Office 365, incluindo os aplicativos do Office, OneDrive e Search. Para obter mais detalhes, confira [Experiência do usuário em um ambiente multigeográfico](multi-geo-user-experience.md).
 
-A configuração multigeográfica é fácil:
-  
-1. Trabalhe com a sua equipe de contas para adicionar o plano de serviço _Funcionalidades multigeográficos no Office 365_. Ela dará instruções sobre a adição do número de licenças necessárias.
-    
-2. Adicione seus locais de satélite.
-    
-3. Configure as suas de conta de usuário para o local apropriado.
-    
-## <a name="multi-geo-status-and-availability"></a>Disponibilidade e status multigeográficos
+## <a name="onedrive"></a>OneDrive
 
-A multigeografia do OneDrive atualmente é oferecida nas regiões e países seguintes:
-  
-- Ásia – Pacífico
+Cada usuário do OneDrive pode ser provisionado ou [movido por um administrador](move-onedrive-between-geo-locations.md) em um localização por satélite de acordo com PDL do usuário. Os arquivos pessoais são mantidos nessa localização geográfica, embora eles possam ser compartilhados com usuários em outras localizações geográficas.
 
-- Austrália
+## <a name="sites-and-groups"></a>Sites e Grupos
 
-- Canadá
+Quando um usuário cria um site conectado a um grupo do SharePoint, o PDL é usado para determinar a localização geográfica onde o site e sua caixa de correio de Grupo associada do grupo foram criados. (Se o valor PDL do usuário ainda não foi definida ou foi definida em uma localização geográfica que ainda não foi configurada como uma localização por satélite, os sites e as caixas de correio são criados em uma localização central.)
 
-- União Europeia (EMEA)
+Os serviços do Office 365 diferentes do Exchange, OneDrive, e SharePoint não são multigeográficos. No entanto, os grupos do Office 365 que são criados por esses serviços serão marcados com a PDL do criador e sua caixa de correio do Grupo do Exchange e o Site do Grupo do SharePoint O365 provisionados na localização geográfica correspondente. 
 
-- França
+## <a name="managing-the-multi-geo-environment"></a>Gerenciar o ambiente multigeográfico
 
-- Índia
+A configuração e o gerenciamento do ambiente multigeográfico são feitos pelo centro de administração do SharePoint. 
 
-- Japão
+![Captura de tela da página de localizações geográficas do centro de administração SharePoint](media/sharepoint-multi-geo-admin-center.png)
 
-- Reino Unido
+(Algumas ações, como mover um site do SharePoint ou um site do OneDrive necessitam do Microsoft PowerShell.)
 
-- Estados Unidos (América do Norte)
+## <a name="see-also"></a>Confira também
 
-- República da Coreia
+[Aka.ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
 
-## <a name="getting-started"></a>Introdução
+[Administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md)
 
-Para começar a usar o OneDrive for Business com Funcionalidades Multigeográficas, a primeira etapa é [planejar o seu ambiente do OneDrive for Business com Funcionalidades Multigeográficas](plan-for-multi-geo.md). Em seguida, [aprenda como administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md) e [como será a experiência dos seus usuários em um ambiente multigeográfico](multi-geo-user-experience.md). Quando estiver pronto para configurar o OneDrive for Business com Funcionalidades Multigeográficas, [configure o seu locatário para a multigeografia](multi-geo-tenant-configuration.md) e, em seguida, [mova todos os sites do OneDrive existentes para as suas novas localizações geográficas](move-onedrive-between-geo-locations.md) e [configure a pesquisa](configure-search-for-multi-geo.md).
+[Cotas de armazenamento do SharePoint em ambientes multigeográficos](sharepoint-multi-geo-storage-quota.md)
+
+[Administrar caixas de correio do Exchange Online em um ambiente multigeográfico](administering-exchange-online-multi-geo.md)
