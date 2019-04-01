@@ -1,5 +1,5 @@
 ---
-title: Funcionalidades Multigeográficas no OneDrive e Office 365
+title: Funcionalidades multigeográficas no OneDrive e no SharePoint Online
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,78 +10,46 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Expanda a sua presença do Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive Online.
-ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+description: Expanda a sua presença no Office 365 para várias regiões geográficas com funcionalidades multigeográficas do OneDrive Online.
+ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052985"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948582"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a><span data-ttu-id="cf48c-103">Funcionalidades Multigeográficas no OneDrive e Office 365</span><span class="sxs-lookup"><span data-stu-id="cf48c-103">Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365</span></span>
+# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a><span data-ttu-id="d1553-103">Funcionalidades multigeográficas no OneDrive e no SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="d1553-103">Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365</span></span>
 
-<span data-ttu-id="cf48c-p101">Com as Funcionalidades Multigeográficas do OneDrive Online, sua organização pode expandir a presença do Office 365 para várias regiões geográficas e/ou países em seu locatário existente. Fale com a equipe da sua conta Microsoft para inscrever sua empresa multinacional no OneDrive for Business com Funcionalidades Multigeográficas.</span><span class="sxs-lookup"><span data-stu-id="cf48c-p101">With Multi-Geo capabilities in OneDrive and SharePoint Online, your organization can expand its Office 365 presence to multiple geographic regions and/or countries within your existing tenant. Reach out to your Microsoft Account Team to sign up your Multi-National Company for OneDrive for Business Multi-Geo.</span></span>
-  
-<span data-ttu-id="cf48c-106">Com o OneDrive for Business com Funcionalidades Multigeográficas, você pode provisionar e armazenar dados em repouso nas localizações geográficas escolhidas para atender aos requisitos de residência de dados e, ao mesmo tempo, dar vazão à sua implantação global a partir de experiências de produtividade modernas para a sua força de trabalho.</span><span class="sxs-lookup"><span data-stu-id="cf48c-106">With OneDrive Multi-Geo, you can provision and store data at rest in the geo locations that you've chosen to meet data residency requirements, and at the same time unlock your global roll out of modern productivity experiences to your workforce.</span></span>
-  
-<span data-ttu-id="cf48c-107">Vejamos a seguir como os recursos multigeográficos podem beneficiar a sua organização:</span><span class="sxs-lookup"><span data-stu-id="cf48c-107">Here's how multi-geo features can benefit your organization:</span></span>
-  
-- <span data-ttu-id="cf48c-108">Opere como uma organização conectada globalmente com um único locatário do Office 365 em várias localizações geográficas.</span><span class="sxs-lookup"><span data-stu-id="cf48c-108">Operate as one global connected organization with a single Office 365 tenant spanning multiple geo locations.</span></span>
-    
-- <span data-ttu-id="cf48c-109">Atenda aos requisitos de residência de dados criando e hospedando dados em repouso em um localização geográfica especificada.</span><span class="sxs-lookup"><span data-stu-id="cf48c-109">Meet data residency requirements by creating and hosting data-at-rest within a specified geo location.</span></span>
-    
-- <span data-ttu-id="cf48c-110">Capacite os seus usuários-satélites com as mesmas experiências de produtividade modernas que os seus usuários do local central desfrutam.</span><span class="sxs-lookup"><span data-stu-id="cf48c-110">Empower your satellite users with the same modern productivity experiences enjoyed by your central location users.</span></span>
-    
-- <span data-ttu-id="cf48c-111">Permita que os seus usuários transitem por localizações geográficas à medida que mudarem de função, mantendo intacto o acesso ao conteúdo deles.</span><span class="sxs-lookup"><span data-stu-id="cf48c-111">Enable your users to move across geo locations as their role changes, while access to their content is kept intact.</span></span>
-    
-- <span data-ttu-id="cf48c-112">Adapte as suas políticas de compartilhamento por localização geográfica e as políticas de prevenção contra perda de dados por local.</span><span class="sxs-lookup"><span data-stu-id="cf48c-112">Tailor your sharing policies per geo location and data loss prevention policies per site.</span></span>
-    
-- <span data-ttu-id="cf48c-113">Designe gerentes de descoberta eletrônica por localização geográfica e permita a administração de casos de acordo com a sua localização geográfica.</span><span class="sxs-lookup"><span data-stu-id="cf48c-113">Designate eDiscovery managers per geo location and allow governing cases tailored to your geo location.</span></span>
-    
-- <span data-ttu-id="cf48c-114">Escolha namespaces de URL exclusivos (por exemplo, ContosoEUR.sharepoint.com) para as suas localizações geográficas adicionais.</span><span class="sxs-lookup"><span data-stu-id="cf48c-114">Choose unique URL namespaces (for example, ContosoEUR.sharepoint.com) for your additional geo locations.</span></span>
-    
-- <span data-ttu-id="cf48c-115">Consolide os seus dados locais regionais em seu locatário multigeográfico do Office 365.</span><span class="sxs-lookup"><span data-stu-id="cf48c-115">Consolidate your regional on-premises data into your Office 365 multi-geo tenant.</span></span>
-    
-<span data-ttu-id="cf48c-p102">Em uma configuração multigeográfica, o seu locatário do Office 365 consiste em um local central (onde sua assinatura do Office 365 foi provisionada originalmente) e uma ou mais localizações geográficas satélites. O conceito principal de multigeografia é que um único locatário pode atuar em várias localizações geográficas. Em um locatário multigeográfico, as informações sobre localizações geográficas, grupos e informações do usuário são dominadas no Azure Active Directory (AAD). Como as informações de locatário são controladas centralmente e sincronizadas em cada localização geográfica, o compartilhamento e as experiências envolvendo qualquer pessoa da sua empresa conterão uma abrangência global.</span><span class="sxs-lookup"><span data-stu-id="cf48c-p102">In a multi-geo configuration, your Office 365 tenant consists of a central location (where your Office 365 subscription was originally provisioned) and one or more satellite geo locations. The key concept of multi-geo is that a single tenancy will span across one multiple geo locations. In a multi-geo tenant, the information about geo locations, groups, and user information, is mastered in Azure Active Directory (AAD). Because your tenant information is mastered centrally and synchronized into each geo location, sharing and experiences involving anyone from your company contain global awareness.</span></span>
+<span data-ttu-id="d1553-104">As funcionalidades multigeográfica do OneDrive e do SharePoint Online permite controlar o país ou região onde recursos compartilhados, como sites de equipe do SharePoint e caixas de correio do Grupo do Office 365 são armazenados em repouso.</span><span class="sxs-lookup"><span data-stu-id="d1553-104">Multi-Geo capabilities in OneDrive and SharePoint Online enables control of the country or region where shared resources like SharePoint team sites and Office 365 Group mailboxes are stored at rest.</span></span>
 
-## <a name="video-introducing-office-365-multi-geo"></a><span data-ttu-id="cf48c-120">Vídeo: Apresentando a multigeografia do Office 365</span><span class="sxs-lookup"><span data-stu-id="cf48c-120">Video: Introducing Office 365 Multi-Geo</span></span>
+<span data-ttu-id="d1553-105">Cada usuário, caixa de correio do Grupo e site do SharePoint possui uma Localização Preferencial do Dados (PDL) que indica a localização geográfica onde os dados relacionados devem ser armazenados.</span><span class="sxs-lookup"><span data-stu-id="d1553-105">Each user, Group mailbox, and SharePoint site has a Preferred Data Location (PDL) which denotes the geo location where related data is to be stored.</span></span> <span data-ttu-id="d1553-106">Dados pessoais do usuário (caixa de correio do Exchange e OneDrive) juntamente com Grupos do Office 365 ou sites do SharePoint criados por eles podem ser armazenados em uma localização geográfica especificada para atender aos requisitos de residência dos dados.</span><span class="sxs-lookup"><span data-stu-id="d1553-106">Users' personal data (Exchange mailbox and OneDrive) along with any Office 365 Groups or SharePoint sites that they create can be stored in the specified geo location to meet data residency requirements.</span></span> <span data-ttu-id="d1553-107">Você pode [especificar administradores diferentes para cada localização geográfica](add-a-sharepoint-geo-admin.md).</span><span class="sxs-lookup"><span data-stu-id="d1553-107">You can [specify different administrators for each geo location](add-a-sharepoint-geo-admin.md).</span></span>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
-  
-## <a name="get-multi-geo-features-in-three-simple-steps"></a><span data-ttu-id="cf48c-121">Obter recursos multigeográficos em três etapas simples</span><span class="sxs-lookup"><span data-stu-id="cf48c-121">Get multi-geo features in three simple steps</span></span>
+<span data-ttu-id="d1553-108">Os usuários têm uma experiência perfeita ao usar os serviços do Office 365, incluindo os aplicativos do Office, OneDrive e Search.</span><span class="sxs-lookup"><span data-stu-id="d1553-108">Users get a seamless experience when using Office 365 services, including Office applications, OneDrive, and Search.</span></span> <span data-ttu-id="d1553-109">Para obter mais detalhes, confira [Experiência do usuário em um ambiente multigeográfico](multi-geo-user-experience.md).</span><span class="sxs-lookup"><span data-stu-id="d1553-109">See [User experience in a multi-geo environment](multi-geo-user-experience.md) for details.</span></span>
 
-<span data-ttu-id="cf48c-122">A configuração multigeográfica é fácil:</span><span class="sxs-lookup"><span data-stu-id="cf48c-122">Configuring multi-geo is easy:</span></span>
-  
-1. <span data-ttu-id="cf48c-p103">Trabalhe com a sua equipe de contas para adicionar o plano de serviço _Funcionalidades multigeográficos no Office 365_. Ela dará instruções sobre a adição do número de licenças necessárias.</span><span class="sxs-lookup"><span data-stu-id="cf48c-p103">Work with your account team to add the _Multi-Geo Capabilities in Office 365_ service plan. They will guide you to add the number of licenses needed.</span></span>
-    
-2. <span data-ttu-id="cf48c-125">Adicione seus locais de satélite.</span><span class="sxs-lookup"><span data-stu-id="cf48c-125">Add your satellite locations.</span></span>
-    
-3. <span data-ttu-id="cf48c-126">Configure as suas de conta de usuário para o local apropriado.</span><span class="sxs-lookup"><span data-stu-id="cf48c-126">Configure your user accounts for the appropriate location.</span></span>
-    
-## <a name="multi-geo-status-and-availability"></a><span data-ttu-id="cf48c-127">Disponibilidade e status multigeográficos</span><span class="sxs-lookup"><span data-stu-id="cf48c-127">Multi-Geo status and availability</span></span>
+## <a name="onedrive"></a><span data-ttu-id="d1553-110">OneDrive</span><span class="sxs-lookup"><span data-stu-id="d1553-110">OneDrive</span></span>
 
-<span data-ttu-id="cf48c-128">A multigeografia do OneDrive atualmente é oferecida nas regiões e países seguintes:</span><span class="sxs-lookup"><span data-stu-id="cf48c-128">OneDrive Multi-Geo is currently offered in these regions and countries:</span></span>
-  
-- <span data-ttu-id="cf48c-129">Ásia – Pacífico</span><span class="sxs-lookup"><span data-stu-id="cf48c-129">Asia-Pacific</span></span>
+<span data-ttu-id="d1553-111">Cada usuário do OneDrive pode ser provisionado ou [movido por um administrador](move-onedrive-between-geo-locations.md) em um localização por satélite de acordo com PDL do usuário.</span><span class="sxs-lookup"><span data-stu-id="d1553-111">Each user's OneDrive can be provisioned in or [moved by an administrator](move-onedrive-between-geo-locations.md) to a satellite location in accordance with the user's PDL.</span></span> <span data-ttu-id="d1553-112">Os arquivos pessoais são mantidos nessa localização geográfica, embora eles possam ser compartilhados com usuários em outras localizações geográficas.</span><span class="sxs-lookup"><span data-stu-id="d1553-112">Personal files are then kept in that geo location, though they can be shared with users in other geo locations.</span></span>
 
-- <span data-ttu-id="cf48c-130">Austrália</span><span class="sxs-lookup"><span data-stu-id="cf48c-130">Australia</span></span>
+## <a name="sites-and-groups"></a><span data-ttu-id="d1553-113">Sites e Grupos</span><span class="sxs-lookup"><span data-stu-id="d1553-113">Active Directory Sites and Routing Groups tab</span></span>
 
-- <span data-ttu-id="cf48c-131">Canadá</span><span class="sxs-lookup"><span data-stu-id="cf48c-131">Canada</span></span>
+<span data-ttu-id="d1553-114">Quando um usuário cria um site conectado a um grupo do SharePoint, o PDL é usado para determinar a localização geográfica onde o site e sua caixa de correio de Grupo associada do grupo foram criados.</span><span class="sxs-lookup"><span data-stu-id="d1553-114">When a user creates a SharePoint group-connected site, their PDL is used to determine the geo location where the site and its associated Group mailbox is created.</span></span> <span data-ttu-id="d1553-115">(Se o valor PDL do usuário ainda não foi definida ou foi definida em uma localização geográfica que ainda não foi configurada como uma localização por satélite, os sites e as caixas de correio são criados em uma localização central.)</span><span class="sxs-lookup"><span data-stu-id="d1553-115">(If the user's PDL value hasn't been set, or has been set to geo location that hasn't been configured as a satellite location, then the site and mailbox are created in the central location.)</span></span>
 
-- <span data-ttu-id="cf48c-132">União Europeia (EMEA)</span><span class="sxs-lookup"><span data-stu-id="cf48c-132">European Union (EMEA)</span></span>
+<span data-ttu-id="d1553-116">Os serviços do Office 365 diferentes do Exchange, OneDrive, e SharePoint não são multigeográficos.</span><span class="sxs-lookup"><span data-stu-id="d1553-116">Office 365 services other than Exchange, OneDrive, and SharePoint are not Multi-Geo.</span></span> <span data-ttu-id="d1553-117">No entanto, os grupos do Office 365 que são criados por esses serviços serão marcados com a PDL do criador e sua caixa de correio do Grupo do Exchange e o Site do Grupo do SharePoint O365 provisionados na localização geográfica correspondente.</span><span class="sxs-lookup"><span data-stu-id="d1553-117">However, Office 365 Groups that are created by these services will be stamped with the PDL of the creator and their Exchange Group mailbox and SharePoint O365 Group Site provisioned in the corresponding geo.</span></span> 
 
-- <span data-ttu-id="cf48c-133">França</span><span class="sxs-lookup"><span data-stu-id="cf48c-133">France</span></span>
+## <a name="managing-the-multi-geo-environment"></a><span data-ttu-id="d1553-118">Gerenciar o ambiente multigeográfico</span><span class="sxs-lookup"><span data-stu-id="d1553-118">Managing the multi-geo environment</span></span>
 
-- <span data-ttu-id="cf48c-134">Índia</span><span class="sxs-lookup"><span data-stu-id="cf48c-134">India</span></span>
+<span data-ttu-id="d1553-119">A configuração e o gerenciamento do ambiente multigeográfico são feitos pelo centro de administração do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="d1553-119">Setting up and managing your multi-geo environment is done through the SharePoint admin center.</span></span> 
 
-- <span data-ttu-id="cf48c-135">Japão</span><span class="sxs-lookup"><span data-stu-id="cf48c-135">Japan</span></span>
+![Captura de tela da página de localizações geográficas do centro de administração SharePoint](media/sharepoint-multi-geo-admin-center.png)
 
-- <span data-ttu-id="cf48c-136">Reino Unido</span><span class="sxs-lookup"><span data-stu-id="cf48c-136">United Kingdom</span></span>
+<span data-ttu-id="d1553-121">(Algumas ações, como mover um site do SharePoint ou um site do OneDrive necessitam do Microsoft PowerShell.)</span><span class="sxs-lookup"><span data-stu-id="d1553-121">(Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)</span></span>
 
-- <span data-ttu-id="cf48c-137">Estados Unidos (América do Norte)</span><span class="sxs-lookup"><span data-stu-id="cf48c-137">United States (North America)</span></span>
+## <a name="see-also"></a><span data-ttu-id="d1553-122">Confira também</span><span class="sxs-lookup"><span data-stu-id="d1553-122">See also</span></span>
 
-- <span data-ttu-id="cf48c-138">República da Coreia</span><span class="sxs-lookup"><span data-stu-id="cf48c-138">Korea</span></span>
+[<span data-ttu-id="d1553-123">Aka.ms/GetMultiGeo </span><span class="sxs-lookup"><span data-stu-id="d1553-123">Aka.ms/GetMultiGeo </span></span>](https://Aka.ms/GetMultiGeo)
 
-## <a name="getting-started"></a><span data-ttu-id="cf48c-139">Introdução</span><span class="sxs-lookup"><span data-stu-id="cf48c-139">Getting started</span></span>
+[<span data-ttu-id="d1553-124">Administrar um ambiente multigeográfico</span><span class="sxs-lookup"><span data-stu-id="d1553-124">Administering a multi-geo environment</span></span>](administering-a-multi-geo-environment.md)
 
-<span data-ttu-id="cf48c-p104">Para começar a usar o OneDrive for Business com Funcionalidades Multigeográficas, a primeira etapa é [planejar o seu ambiente do OneDrive for Business com Funcionalidades Multigeográficas](plan-for-multi-geo.md). Em seguida, [aprenda como administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md) e [como será a experiência dos seus usuários em um ambiente multigeográfico](multi-geo-user-experience.md). Quando estiver pronto para configurar o OneDrive for Business com Funcionalidades Multigeográficas, [configure o seu locatário para a multigeografia](multi-geo-tenant-configuration.md) e, em seguida, [mova todos os sites do OneDrive existentes para as suas novas localizações geográficas](move-onedrive-between-geo-locations.md) e [configure a pesquisa](configure-search-for-multi-geo.md).</span><span class="sxs-lookup"><span data-stu-id="cf48c-p104">To get started with OneDrive for Business Multi-Geo, the first step is to [plan your OneDrive for Business Multi-Geo environment](plan-for-multi-geo.md). Next, [learn about administering a multi-geo environment](administering-a-multi-geo-environment.md) and [how your users will experience a multi-geo environment](multi-geo-user-experience.md). When you are ready to set up OneDrive for Business Multi-Geo, [configure your tenant for multi-geo](multi-geo-tenant-configuration.md), then [move any existing OneDrive sites to thier new geo-locations](move-onedrive-between-geo-locations.md) and [set up search](configure-search-for-multi-geo.md).</span></span>
+[<span data-ttu-id="d1553-125">Cotas de armazenamento do SharePoint em ambientes multigeográficos</span><span class="sxs-lookup"><span data-stu-id="d1553-125">SharePoint storage quotas in multi-geo environments</span></span>](sharepoint-multi-geo-storage-quota.md)
+
+[<span data-ttu-id="d1553-126">Administrar caixas de correio do Exchange Online em um ambiente multigeográfico</span><span class="sxs-lookup"><span data-stu-id="d1553-126">Administering Exchange Online mailboxes in a multi-geo environment</span></span>](administering-exchange-online-multi-geo.md)
