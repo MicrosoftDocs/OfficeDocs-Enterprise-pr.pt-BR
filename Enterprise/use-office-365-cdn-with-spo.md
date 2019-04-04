@@ -3,7 +3,7 @@ title: Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o Shar
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039498"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396919"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -288,7 +288,7 @@ Use o cmdlet **Add-SPOTenantCdnOrigin** para definir uma origem. Você pode defi
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-O valor de _path_ é o caminho para a biblioteca ou pasta que contém os ativos. Você pode usar caracteres curinga, além de caminhos relativos. As origens dão suporte a curingas precedidas à URL. Isso permite criar origens que abrangem vários sites. Por exemplo, para incluir todos os ativos na pasta masterpages de todos os sites como uma origem pública dentro da CDN, digite o seguinte comando:
+O valor de _path_ é o caminho relativo para a biblioteca ou pasta que contém os ativos. Você pode usar caracteres curinga, além de caminhos relativos. As origens dão suporte a curingas precedidas à URL. Isso permite criar origens que abrangem vários sites. Por exemplo, para incluir todos os ativos na pasta masterpages de todos os sites como uma origem pública dentro da CDN, digite o seguinte comando:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - O modificador curinga**/** * só pode ser usado no início do caminho e corresponderá a todos os segmentos de URL na URL especificada.
 - O caminho pode apontar para uma biblioteca de documentos, pasta ou site. Por exemplo, o caminho _*/site1_ corresponderá a todas as bibliotecas de documentos no site.
 
-Você pode adicionar uma origem com um caminho específico usando um caminho relativo ou um caminho completo.
+Você pode adicionar uma origem com um caminho relativo específico. Não é possível adicionar uma origem usando o caminho completo.
 
-Este exemplo adiciona uma origem privada da biblioteca siteassets em um site específico usando um caminho relativo:
+Este exemplo adiciona uma origem privada da biblioteca siteassets em um site específico:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Este exemplo adiciona uma origem privada da pasta _Pasta1_ na biblioteca de ativos do site do conjunto de sites usando o caminho completo:
+Este exemplo adiciona uma origem privada da pasta _Pasta1_ na biblioteca de ativos do site do conjunto de sites:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 Para obter mais informações sobre este comando e sua sintaxe, consulte [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -469,7 +469,7 @@ Consulte [origens de CDN padrão](use-office-365-cdn-with-spo.md#default-cdn-ori
 
 ### <a name="add-an-office-365-cdn-origin"></a>Adicionar uma origem de CDN do Office 365
 
-> [!NOTE]
+> [!IMPORTANT]
 > Você nunca deve colocar os recursos considerados confidenciais para sua organização em uma biblioteca de documentos do SharePoint configurada como uma origem pública.
 
 Use o adicionar comando [spo cdn origem ](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) para definir uma origem de CDN. Você pode definir várias origens. A origem é uma URL que aponta para uma biblioteca ou pasta do SharePoint contendo os ativos que você deseja hospedar na CDN.
@@ -478,7 +478,7 @@ Use o adicionar comando [spo cdn origem ](https://pnp.github.io/office365-cli/cm
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Em que `path` é o caminho para a pasta que contém os ativos. Você pode usar caracteres curinga, além de caminhos relativos.
+Em `path` que é o caminho relativo para a pasta que contém os ativos. Você pode usar caracteres curinga, além de caminhos relativos.
 
 Para incluir todos os ativos da **Galeria de páginas mestras** de todos os sites como uma origem pública, execute:
 
