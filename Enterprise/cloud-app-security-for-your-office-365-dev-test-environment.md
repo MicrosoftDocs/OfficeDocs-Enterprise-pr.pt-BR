@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumo: Configure e demonstre o Office 365 Cloud app Security no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573675"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038027"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -41,7 +41,7 @@ Se você só quiser testar o Cloud app Security de uma maneira leve com os requi
 Se você quiser testar o Cloud app Security em uma empresa simulada, siga as instruções em [DirSync para seu ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> O teste do Cloud app Security não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta do Windows Server AD. Ele é fornecido aqui como uma opção para que você possa testar a segurança do Cloud app e experimentá-lo em um ambiente que representa uma organização típica. 
+> O teste do Cloud app Security não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta dos serviços de domínio Active Directory (AD DS). Ele é fornecido aqui como uma opção para que você possa testar a segurança do Cloud app e experimentá-lo em um ambiente que representa uma organização típica. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>Fase 2: antes de habilitar o Cloud app Security e criar uma política
 
@@ -158,7 +158,6 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
 Agora você pode usar esse ambiente para criar novas políticas e experimentar mais com o Office 365 Cloud app Security. Consulte preparar [para o Office 365 Cloud app Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) para obter links para artigos de configuração adicionais.
   
 ## <a name="see-also"></a>Confira também
-
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -3,7 +3,7 @@ title: Desabilitar o acesso aos serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 03/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,50 +14,54 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Explica como usar o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para usuários em sua organização.
-ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Use o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para os usuários.
+ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897414"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001814"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Desabilitar o acesso aos serviços com o PowerShell do Office 365
 
 **Resumo:** Explica como usar o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para usuários em sua organização.
   
-Quando uma conta do Office 365 é atribuída a uma licença de um plano de licenciamento, serviços do Office 365 são disponibilizados para o usuário dessa licença. No entanto, você pode controlar os serviços do Office 365 que o usuário pode acessar. Por exemplo, mesmo que a licença permite acesso ao serviço do SharePoint Online, você pode desabilitar o acesso a ele. Você pode usar o Office 365 PowerShell para desabilitar o acesso a qualquer número de serviços para um plano de licenciamento específico para:
+Quando uma conta do Office 365 recebe uma licença de um plano de licenciamento, os serviços do Office 365 são disponibilizados para o usuário dessa licença. No enTanto, você pode controlar os serviços do Office 365 que o usuário pode acessar. Por exemplo, mesmo que a licença permita acesso ao serviço do SharePoint Online, você pode desabilitar o acesso a ele. Você pode usar o PowerShell para desabilitar o acesso a qualquer número de serviços para um plano de licenciamento específico para:
 
 - Uma conta individual
     
 - Um grupo de contas.
     
 - Todas as contas em sua organização.
-    
-## <a name="before-you-begin"></a>Antes de começar
-<a name="RTT"> </a>
 
-- Os procedimentos deste tópico exigem que você se conecte ao Office 365 PowerShell. Para obter instruções, confira [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.
+
+Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+Em seguida, use este comando para exibir seus planos de licenciamento disponíveis, também conhecidos como AccountSkuIds:
+
+```
+Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
+```
+
+Para obter mais informações, consulte [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
     
-- Você pode usar o cmdlet **Get-MsolAccountSku** para exibir seus planos de licenciamento disponíveis e que estão disponíveis nesses planos de serviços do Office 365. Para obter mais informações, consulte [Exibir as licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+Para ver os resultados anteriores e posteriores dos procedimentos neste tópico, consulte [Exibir licença de conta e detalhes do serviço com o Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).
     
-- Para ver o antes e depois os resultados dos procedimentos neste tópico, consulte [Exibir detalhes de licença e serviço de conta com o Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).
+Um script do PowerShell está disponível e automatiza os procedimentos descritos neste tópico. Especificamente, o script permite que você exiba e desabilite serviços na sua organização do Office 365, incluindo Sway. Para saber mais, confira [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
-- Um script do PowerShell está disponível que automatiza os procedimentos descritos neste tópico. Especificamente, o script permite que você exibir e desabilite os serviços em sua organização do Office 365, incluindo Sway. Para obter mais informações, consulte [Desabilitar o acesso aos Sway com o Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
-- Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _All_ , somente as contas de 500 usuário primeira são retornadas.
-    
-## <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Desabilitar serviços específicos do Office 365 para usuários específicos para um plano de licenciamento específico
+### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Desabilitar serviços específicos do Office 365 para usuários específicos para um plano de licenciamento específico
   
-Para desabilitar um conjunto específico de serviços do Office 365 para usuários de um plano de licenciamento específico, execute as seguintes etapas:
+Para desabilitar um conjunto específico de serviços do Office 365 para os usuários para um plano de licenciamento específico, execute as seguintes etapas:
   
-1. Identificar os serviços indesejáveis no plano de licenciamento usando a seguinte sintaxe:
+1. Identifique os serviços indesejáveis no plano de licenciamento usando a seguinte sintaxe:
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  O exemplo a seguir cria um objeto de **LicenseOptions** que desabilita os Serviços Online do Office e SharePoint Online no plano de licenciamento denominado `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).
+  O exemplo a seguir cria **** um objeto licenseoptions que desabilita o Office Online e o SharePoint Online Services no plano de licenciamento `litwareinc:ENTERPRISEPACK` chamado (Office 365 Enterprise E3).
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -71,13 +75,13 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
-  O exemplo a seguir cria uma nova conta para Allie Bellew que atribui a licença e desabilita os serviços descritos na etapa 1.
+  O exemplo a seguir cria uma nova conta para o Leonor Marques que atribui a licença e desabilita os serviços descritos na etapa 1.
     
   ```
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  Para obter mais informações sobre a criação de contas de usuário no Office 365 PowerShell, consulte [criar contas de usuário com o Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
+  Para obter mais informações sobre a criação de contas de usuário no Office 365 PowerShell, consulte [Create User Accounts with office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
     
   - Para desabilitar os serviços de um usuário licenciado existente, use a seguinte sintaxe:
     
@@ -91,7 +95,7 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
-  - Para desabilitar os serviços descritos na etapa 1 para todos os usuários licenciados existentes, especifique o nome do seu plano do Office 365 da exibição do cmdlet **Get-MsolAccountSku** (por exemplo, **litwareinc: enterprisepack**) e, em seguida, execute os seguintes comandos:
+  - Para desabilitar os serviços descritos na etapa 1 para todos os usuários licenciados existentes, especifique o nome do seu plano do Office 365 na exibição do cmdlet **Get-MsolAccountSku** (como **litwareinc: ENTERPRISEPACK**) e, em seguida, execute os seguintes comandos:
     
   ```
   $acctSKU="<AccountSkuId>"
@@ -99,16 +103,19 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
+  Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _All_ , somente as primeiras 500 contas de usuário serão retornadas.
+
+
   - Para desabilitar os serviços para um grupo de usuários existentes, use um dos seguintes métodos para identificar os usuários:
     
-  - **Filtrar as contas com base em um atributo existente da conta** Para fazer isso, use a seguinte sintaxe:
+  - **Filtrar as contas com base em um atributo de conta existente** Para fazer isso, use a seguinte sintaxe:
     
   ```
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  O exemplo a seguir desabilita os serviços para os usuários no departamento de vendas nos Estados Unidos.
+  O exemplo a seguir desabilita os serviços para usuários no departamento de vendas nos Estados Unidos.
     
   ```
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
@@ -125,7 +132,7 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
   kakers@contoso.com
   ```
 
-  Neste exemplo, o arquivo de texto é c:\\Meus documentos\\Accounts.txt.
+  Neste exemplo, o arquivo de texto é C:\\meus documentos\\accounts. txt.
     
 2. Execute o seguinte comando:
     
@@ -133,12 +140,12 @@ Para desabilitar um conjunto específico de serviços do Office 365 para usuári
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-Se desejar desabilitar o acesso aos serviços para vários planos de licenciamento, repita as instruções acima para cada plano de licenciamento, garantindo que:
+Se você quiser desabilitar o acesso aos serviços para vários planos de licenciamento, repita as instruções acima para cada plano de licenciamento, assegurando que:
 
-- As contas de usuário atribuiu o plano de licenciamento.
-- Para desabilitar os serviços estão disponíveis no plano de licenciamento.
+- O plano de licenciamento foi atribuído às contas de usuário.
+- Os serviços a serem desabilitados estão disponíveis no plano de licenciamento.
 
-Para desabilitar os serviços do Office 365 para usuários enquanto eles atribuídas a um plano de licenciamento, consulte [Desabilitar o acesso aos serviços durante a atribuição de licenças de usuário](disable-access-to-services-while-assigning-user-licenses.md).
+Para desabilitar os serviços do Office 365 para usuários enquanto você estiver atribuindo-os a um plano de licenciamento, confira [desabilitar o acesso aos serviços ao atribuir licenças de usuário](disable-access-to-services-while-assigning-user-licenses.md).
 
 
 ## <a name="new-to-office-365"></a>Começando a usar o Office 365?
@@ -161,23 +168,3 @@ Confira os seguintes tópicos adicionais sobre como gerenciar usuários com o Of
     
 - [Criar contas de usuários usando o Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
     
-Para saber mais sobre os cmdlets usados nestes procedimentos, confira os seguintes tópicos:
-  
-- [Get-Content](https://go.microsoft.com/fwlink/p/?LinkId=289917)
-    
-- [Get-MsolAccountSku](https://go.microsoft.com/fwlink/p/?LinkId=691549)
-    
-- [New-MsolLicenseOptions](https://go.microsoft.com/fwlink/p/?LinkId=691546)
-    
-- [Get-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
-    
-- [Set-MsolUserLicense](https://go.microsoft.com/fwlink/p/?LinkId=691548)
-    
-- [ForEach-Object](https://go.microsoft.com/fwlink/p/?LinkId=113300)
-    
-- [Where-Object](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-  
-

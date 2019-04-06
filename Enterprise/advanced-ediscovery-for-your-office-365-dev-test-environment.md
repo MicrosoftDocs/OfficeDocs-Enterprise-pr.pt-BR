@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumo: Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573815"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038015"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365
 
@@ -30,7 +30,7 @@ A descoberta eletrônica avançada do Office 365 permite que você encontre e an
 Com as instruções neste artigo, você cria um pequeno conjunto de dados para uma disputa de contrato fictícia e o analisa com a Descoberta Eletrônica Avançada.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -39,7 +39,7 @@ Se você só quiser testar a descoberta eletrônica avançada de forma leve com 
 Se você quiser testar a descoberta eletrônica avançada em uma empresa simulada, siga as instruções em [DirSync para seu ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> O teste da Descoberta Eletrônica Avançada não requer o ambiente de desenvolvimento em empresa simulada, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta do AD no Windows Server. Ele é fornecido aqui como uma opção para que você possa executar testes e experimentos em um ambiente que representa uma organização típica. 
+> O teste de descoberta eletrônica avançada não requer o ambiente de empresa simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta dos serviços de domínio Active Directory (AD DS). Ele é fornecido aqui como uma opção para que você possa executar testes e experimentos em um ambiente que representa uma organização típica. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Fase 2: Criar dados de exemplo para a Descoberta Eletrônica Avançada
 
@@ -183,10 +183,9 @@ Agora, você pode usar esse ambiente para criar novo conteúdo, novas pesquisas 
   
 ## <a name="see-also"></a>Confira também
 
-
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   

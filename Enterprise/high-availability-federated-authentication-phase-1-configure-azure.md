@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumo: Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.'
-ms.openlocfilehash: 0268178b12374f200181c0f1b8a38de6a39e7173
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948602"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037955"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: Configurar o Azure
 
@@ -63,7 +63,7 @@ Trabalhe com seu departamento de TI para determinar esses espaços de endereço 
   
 |**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Objetivo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio e as máquinas virtuais (VMs) DirSync do Windows Server Active Directory (AD).  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio dos serviços de domínio do Active Directory (AD DS) e pelas máquinas virtuais (VMs) do servidor dirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelos VMs do AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelas VMs de proxy do aplicativo Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelas VMs do gateway do Azure.  <br/> |
@@ -311,13 +311,12 @@ Use o [High availability federated authentication Phase 2: Configure domain cont
   
 ## <a name="see-also"></a>Confira também
 
-
 [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
 [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
-[Noções básicas sobre a identidade do Office 365 e o Active Directory do Azure](about-office-365-identity.md)
+[Noções básicas sobre identidade do Office 365 e Azure Active Directory](about-office-365-identity.md)
 
 

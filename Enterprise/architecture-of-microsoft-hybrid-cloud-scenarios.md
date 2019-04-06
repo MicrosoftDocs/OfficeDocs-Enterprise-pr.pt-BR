@@ -13,59 +13,59 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: 'Resumo: Entenda a arquitetura das ofertas de nuvem da Microsoft híbrida.'
-ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+description: 'Resumo: entenda a arquitetura das ofertas de nuvem híbrida da Microsoft.'
+ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123388"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038005"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura de cenários de nuvem híbrida da Microsoft
 
- **Resumo:** Entenda a arquitetura de ofertas de nuvem da Microsoft híbrida.
+ **Resumo:** Entenda a arquitetura das ofertas de nuvem híbrida da Microsoft.
   
-Use uma abordagem de arquitetura para planejar e implementar os cenários de nuvem híbrida com os serviços de nuvem da Microsoft e plataformas.
+Use uma abordagem arquitetônica para planejar e implementar cenários de nuvem híbrida com plataformas e serviços em nuvem da Microsoft.
   
-**Figura 1: Microsoft híbrida pilha da nuvem**
+**Figura 1: a pilha de nuvem híbrida da Microsoft**
 
 ![A pilha de nuvem híbrida da Microsoft](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
-A Figura 1 mostra a pilha de nuvem híbrida Microsoft e sua camada, que incluem o local, rede, identidade, aplicativos e cenários e categoria do serviço na nuvem (SaaS Microsoft Azure PaaS e Azure PaaS).
+A Figura 1 mostra a pilha de nuvem híbrida da Microsoft e sua camada, que incluem local, rede, identidade, aplicativos e cenários e a categoria de serviço de nuvem (Microsoft SaaS, Azure PaaS e Azure PaaS).
   
-A camada de aplicativos e cenários tem os cenários de nuvem híbrida específica que são detalhados nos artigos adicionais desse modelo. A identidade, rede e locais camadas podem ser comuns para as categorias de serviço na nuvem (SaaS, PaaS ou PaaS).
+A camada aplicativos e cenários tem os cenários de nuvem híbrida específicos que são detalhados nos artigos adicionais desse modelo. A identidade, a rede e as camadas locais podem ser comuns às categorias de serviço de nuvem (SaaS, PaaS ou PaaS).
   
 - Local
     
-    Infraestrutura do local para cenários híbridos pode incluir servidores para SharePoint, Exchange, Skype para aplicativos linha de negócios e de negócios. Ele também pode incluir os repositórios de dados (bancos de dados, listas, arquivos). Sem conexões ExpressRoute, acesso para os repositórios de dados de locais deve ser permitido por meio de um proxy reverso ou tornando o servidor ou os dados acessíveis em sua DMZ ou extranet.
+    A infraestrutura local para cenários híbridos pode incluir servidores para o SharePoint, o Exchange, o Skype for Business e aplicativos de linha de negócios. Também pode incluir repositórios de dados (bancos de dados, listas, arquivos). Sem conexões ExpressRoute, o acesso aos armazenamentos de dados locais deve ser permitido por meio de um proxy reverso ou ao tornar o servidor ou os dados acessíveis em sua DMZ ou Extranet.
     
 - Rede
     
-    Há duas opções para conectividade com plataformas de nuvem da Microsoft e serviços: seu pipe existente da Internet e ExpressRoute. Use uma conexão ExpressRoute se desempenho previsível é importante. Você pode usar uma conexão de ExpressRoute para conectar-se diretamente para os serviços Microsoft SaaS (Office 365 e Dynamics 365), serviços do Azure PaaS e serviços do Azure IaaS.
+    Há duas opções de conectividade para plataformas e serviços da nuvem da Microsoft: seu pipe da Internet existente e o ExpressRoute. Use uma conexão ExpressRoute se o desempenho previsível for importante. Você pode usar uma conexão ExpressRoute para se conectar diretamente aos serviços Microsoft SaaS (Office 365 e Dynamics 365), serviços de PaaS do Azure e serviços do Azure IaaS.
     
 - Identidade
     
-    Para infraestrutura de identidade de nuvem, há duas maneiras de ir, dependendo da plataforma de nuvem da Microsoft. Para SaaS e PaaS do Azure, integrar sua infraestrutura de identidade no local com o Azure AD ou estabelecer uma federação com provedores de identidade seu local identidade infraestrutura ou de terceiros. Para VMs em execução no Windows Azure, você pode estender sua infraestrutura de identidade de local, como o Windows Server AD, para as redes virtuais (VNets) onde residem os suas VMs.
+    Para a infraestrutura de identidade em nuvem, há duas maneiras de ir, dependendo da plataforma de nuvem da Microsoft. Para o SaaS e o PaaS do Azure, integre sua infraestrutura de identidade local com o Azure AD ou Federação com sua infraestrutura de identidade local ou provedores de identidade de terceiros. Para VMs em execução no Azure, você pode estender sua infraestrutura de identidade local, como os serviços de domínio do Active Directory (AD DS), para as redes virtuais (VNets) onde suas VMs residem.
     
-## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Cenários de nuvem híbrida para o processo de adoção de nuvem de três fases
+## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Cenários de nuvem híbrida para o processo de adoção em nuvem de três fases
 
-Muitas empresas, incluindo Microsoft, usam uma abordagem de três fases para adotar a nuvem. Cenários de nuvem híbrida podem reproduzir uma função em cada fase.
+Muitas empresas, incluindo a Microsoft, usam uma abordagem de três fases para adotar a nuvem. Cenários de nuvem híbrida podem desempenhar uma função em cada fase.
   
-1. Mover cargas de trabalho de produtividade para SaaS
+1. Mover cargas de trabalho de produtividade para o SaaS
     
-    Para produtividade cargas de trabalho que atualmente estão ou devem permanecer no local, cenários híbridos permitir que eles sejam integrados com os representantes de nuvem.
+    Para cargas de trabalho de produtividade que atualmente estão ou devem permanecer no local, os cenários híbridos permitem que eles sejam integrados às suas contrapartes da nuvem.
     
-2. Desenvolva aplicativos novos e modernos no Azure PaaS
+2. Desenvolver aplicativos novos e modernos na PaaS do Azure
     
-    Aplicativos do Azure PaaS híbrida com segurança podem aproveitar os recursos de servidor ou armazenamento local.
+    Os aplicativos híbridos da PaaS do Azure podem aproveitar com segurança os recursos de servidor ou armazenamento local.
     
-3. Mover aplicativos existentes para o Windows Azure IaaS
+3. Mover aplicativos existentes para o Azure IaaS
     
-    Para cenários de shift e levantar e compilação na nuvem, aplicativos de servidor em execução no Azure VMs fornecem fácil provisionamento e dimensionamento.
+    Para cenários de aumento e de fim e de compilação em nuvem, os aplicativos baseados em servidor executados nas VMs do Azure oferecem provisionamento e dimensionamento simples.
     
 ## <a name="see-also"></a>Confira também
 
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

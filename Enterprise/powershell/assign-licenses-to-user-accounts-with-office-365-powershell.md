@@ -15,19 +15,21 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: Explica como usar o Office 365 PowerShell para atribuir uma licença do Office 365 para usuários não licenciados.
-ms.openlocfilehash: ab9b66065e20d0c2d6cfb673dac24ee2ab79e831
-ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
+search.appverid:
+- MET150
+description: Explica como usar o Office 365 PowerShell atribuir uma licença do Office 365 a usuários não licenciados.
+ms.openlocfilehash: 5040249f29ac8390db5b2933fc04fb1d01f0af2c
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29651175"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931760"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Atribuir licenças a contas de usuários usando o PowerShell do Office 365
 
-**Resumo:** explica como usar o Office 365 PowerShell para atribuir uma licença do Office 365 para usuários não licenciados.
+**Resumo:**  Explica como usar o Office 365 PowerShell atribuir uma licença do Office 365 a usuários não licenciados.
   
-Usuários não podem usar qualquer serviços do Office 365, até que sua conta tenha sido atribuída uma licença de um plano de licenciamento. Você pode usar o Office 365 PowerShell rapidamente atribuir licenças às contas não licenciadas. 
+Os usuários não podem usar os serviços do Office 365 até que a conta tenha sido atribuída a uma licença de um plano de licenciamento. Você pode usar o Office 365 PowerShell para atribuir licenças rapidamente a contas não licenciadas. 
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
@@ -35,15 +37,15 @@ Usuários não podem usar qualquer serviços do Office 365, até que sua conta t
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 
-Em seguida, liste os planos de licença para o seu locatário com este comando.
+Em seguida, liste os planos de licença para seu locatário com este comando.
 
 ```
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Em seguida, obtenha o nome de logon da conta para o qual você deseja adicionar uma licença, também conhecido como o usuário nome principal (UPN).
+Em seguida, obtenha o nome de entrada da conta para a qual você deseja adicionar uma licença, também conhecido como o nome de usuário principal (UPN).
 
-Finalmente, especifique o nome de entrada do usuário e o nome do plano de licença e executar esses comandos.
+Por fim, especifique o nome de entrada do usuário e o nome do plano de licença e execute esses comandos.
 
 ```
 $userUPN="<user sign-in name (UPN)>"
@@ -59,7 +61,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Execute o comando **Get-MsolAccountSku** para exibir os planos de licenciamento disponíveis e o número de licenças disponíveis em cada plano em sua organização. O número de licenças disponíveis em cada plano é **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obter mais informações sobre o licenciamento planos, licenças e serviços, consulte [Exibir as licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+Execute o comando **Get-MsolAccountSku** para exibir os planos de licenciamento disponíveis e o número de licenças disponíveis em cada plano da sua organização. O número de licenças disponíveis em cada plano é **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obter mais informações sobre planos de licenciamento, licenças e serviços, consulte [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
     
 Para localizar as contas não licenciadas em sua organização, execute este comando.
 
@@ -67,15 +69,15 @@ Para localizar as contas não licenciadas em sua organização, execute este com
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
     
-Você só pode atribuir licenças às contas de usuário que têm a propriedade **UsageLocation** definida como um código de país do 3166-1 alpha-2 ISO válido. Por exemplo, nos Estados Unidos e FR para França de tempo. Alguns serviços do Office 365 não estão disponíveis em determinados países. Para obter mais informações, consulte [sobre as restrições de licença](https://go.microsoft.com/fwlink/p/?LinkId=691730).
+Você só pode atribuir licenças a contas de usuário que tenham a propriedade **UsageLocation** definida para um código de país 3166-1 do país de 2 Alpha válido. Por exemplo, US para os Estados Unidos e FR para a França. Alguns serviços do Office 365 não estão disponíveis em determinados países. Para obter mais informações, consulte [about License Restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
-Para localizar as contas que não têm um valor de **UsageLocation** , execute este comando.
+Para localizar contas que não tenham um valor **UsageLocation** , execute este comando.
 
 ```
 Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 ```
 
-Para definir o valor de **UsageLocation** em uma conta, execute este comando.
+Para definir o valor **UsageLocation** em uma conta, execute este comando.
 
 ```
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
@@ -89,7 +91,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
     
 Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro **-All**, somente as primeiras 500 contas serão retornadas.
 
-### <a name="assigning-licenses-to-user-accounts"></a>Atribuir licenças às contas de usuário
+### <a name="assigning-licenses-to-user-accounts"></a>Atribuir licenças a contas de usuário
     
 Para atribuir uma licença a um usuário, use o seguinte comando no Office 365 PowerShell.
   
@@ -97,29 +99,29 @@ Para atribuir uma licença a um usuário, use o seguinte comando no Office 365 P
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-Este exemplo atribui uma licença a partir do **litwareinc: enterprisepack** (Office 365 Enterprise E3) plano para o usuário não licenciado **belindan@litwareinc.com**de licenciamento:
+Este exemplo atribui uma licença do plano de licenciamento do **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) ao usuário não licenciado **belindan@litwareinc.com**:
   
 ```
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Para atribuir uma licença a muitos usuários não licenciados, execute este comando.
+Para atribuir uma licença a vários usuários não licenciados, execute este comando.
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | ForEach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
   
 >[!Note]
->Você não pode atribuir várias licenças a um usuário do plano de licenciamento do mesmo. Se você não possui licenças suficientes disponíveis, as licenças são atribuídas a usuários na ordem em que estiver retornadas pelo cmdlet **Get-MsolUser** até que as licenças disponíveis se esgotar.
+>Você não pode atribuir várias licenças a um usuário do mesmo plano de licenciamento. Se você não tiver licenças o suficiente disponíveis, as licenças serão atribuídas aos usuários na ordem em que eles forem retornados pelo cmdlet **Get-MsolUser** até que as licenças disponíveis esgotem.
 >
 
-Este exemplo atribui as licenças do plano de licenciamento do **litwareinc: enterprisepack** (Office 365 Enterprise E3) para todos os usuários não licenciados:
+Este exemplo atribui licenças do plano de licenciamento do **litwareinc: ENTERPRISEPACK** (Office 365 Enterprise E3) a todos os usuários não licenciados:
   
 ```
 Get-MsolUser -All -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}
 ```
 
-Este exemplo atribui as mesmas licenças aos usuários não licenciados no departamento de vendas nos Estados Unidos:
+Este exemplo atribui as mesmas licenças a usuários não licenciados no departamento de vendas nos Estados Unidos:
   
 ```
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | ForEach {Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"}

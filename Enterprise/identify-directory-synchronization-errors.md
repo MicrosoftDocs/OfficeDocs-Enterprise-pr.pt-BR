@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Saiba como exibir erros de sincronização de diretório no centro de administração do Office 365.
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Saiba como exibir os erros de sincronização de diretório no centro de administração do Microsoft 365.
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085030"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001804"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Exibir erros de sincronização de diretório no Office 365
 
-Você pode exibir os erros de sincronização de diretório no centro de administração do Office 365. Somente os erros de objeto do usuário são exibidos. Para exibir erros usando o PowerShell, consulte [identificar objetos com DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Você pode exibir os erros de sincronização de diretório no [centro de administração do Microsoft 365](https://admin.microsoft.com). Somente os erros de objeto do usuário são exibidos. Para exibir erros usando o PowerShell, consulte [identificar objetos com DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Após a exibição, confira [corrigir problemas de sincronização de diretório para o Office 365](fix-problems-with-directory-synchronization.md) para corrigir quaisquer problemas identificados.
   
@@ -36,9 +36,9 @@ Após a exibição, confira [corrigir problemas de sincronização de diretório
 
 Para exibir qualquer erro no centro de administração:
   
-1. Entre no Office 365 com a sua conta corporativa ou de estudante. 
+1. Entre no Office 365 com uma conta corporativa ou de estudante. 
     
-2. Vá até o [centro de administração do Office 365](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+2. Vá até o [centro de administração](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
 3. Na **Home** Page, você verá o bloco **status DirSync** . 
     

@@ -3,7 +3,7 @@ title: Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumo: Configure e demonstre como o gerenciamento de direitos de informação do Office 365 protege seus arquivos confidenciais, mesmo quando eles são publicados no conjunto de sites do SharePoint Online errado.'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574065"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037965"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365
 
@@ -32,7 +32,7 @@ O gerenciamento de direitos de informação (IRM) no Office 365 é um conjunto d
 Com as instruções deste artigo, você habilita e testa o IRM no Office 365 para arquivos que contêm possíveis informações confidenciais em sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -232,7 +232,7 @@ Para preparar o Office 365 para as fases 3 e 4, habilite o IRM para o SharePoint
     
 5. Na guia **centro de administração do SharePoint** , clique em **configurações**.
     
-6. Na página **configurações** , na seção **Gerenciamento de direitos de informação (IRM)** , selecione **usar o serviço IRM especificado em sua configuração**e, em seguida, selecione **Atualizar configurações de IRM**.
+6. Na página, na seção **Gerenciamento de direitos de informação (IRM)** , selecione **usar o serviço IRM especificado em sua configuração**e, em seguida, selecione **Atualizar configurações de IRM**.
     
 7. Feche a guia **centro de administração do SharePoint** .
     
@@ -264,7 +264,7 @@ Primeiro, habilite e configure o IRM para a biblioteca de documentos do conjunto
     
 8. Em **Configurar direitos de acesso ao documento**, selecione **permitir que** os visualizadores imprimam e **permitir que os visualizadores escrevam em uma cópia do documento baixado**.
     
-9. Em **definir intervalo de credenciais e proteção de grupo**, selecione **permitir proteção de grupo** e para **grupo padrão**, digite **executivos**.
+9. Em **definir intervalo de credenciais e proteção de grupo**, selecione **permitir proteção de grupo. Grupo padrão**e, em seguida, digite **executivos**.
     
 10. Clique em **OK**.
     
@@ -332,10 +332,9 @@ Outra maneira de ver a proteção de IRM é examinar os arquivos na sua pasta lo
   
 ## <a name="see-also"></a>Confira também
 
-
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Resumo: exiba, liste ou exiba suas contas de usuário de várias maneiras com o Office 365 PowerShell.'
-ms.openlocfilehash: 717a7c11f4e7f6d2e5e0c452854df7d4c419007e
-ms.sourcegitcommit: 1dc7b4731cf9899c5ae867624ed142dbab0c517f
+ms.openlocfilehash: 2858efef6220beed76894414ea99ed922353afc3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30683698"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037915"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Exibir as contas de usuário com o Office 365 PowerShell
 
@@ -217,7 +217,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 Você pode verificar o status bloqueado de uma conta de usuário com o seguinte comando:
   
 ```
-Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
+Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
 ### <a name="view-additional-property-values-for-accounts"></a>Exibir valores de propriedade adicionais para contas

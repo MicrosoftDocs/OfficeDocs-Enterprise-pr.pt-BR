@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumo: Configure e demonstre a Proteção Avançada contra Ameaças do Office 365 no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 9870f666a979d00ce6621e9459a1f9ad236f9799
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 4ef057480f0ebfb2e64529f39d0db65031b75010
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573825"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037935"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365
 
@@ -38,7 +38,7 @@ Se você só quiser testar a ATP de uma maneira leve com os requisitos mínimos,
 Se você quiser testar a ATP em uma empresa simulada, siga as instruções em [DirSync para seu ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> O teste da ATP não requer o ambiente de desenvolvimento e teste em uma empresa simulada, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta do AD no Windows Server. Ele é fornecido aqui como uma opção para que você possa testar a ATP e fazer testes com ele em um ambiente que representa uma organização típica. 
+> O teste de ATP não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta dos serviços de domínio Active Directory (AD DS). Ele é fornecido aqui como uma opção para que você possa testar a ATP e fazer testes com ele em um ambiente que representa uma organização típica. 
   
 ## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Fase 2: demonstrar o comportamento padrão de entrega de email do Office 365
 
@@ -156,14 +156,13 @@ Nesta fase, você demonstrará como a ATP lida com emails potencialmente mal-int
 Agora, você pode usar esse ambiente para criar novas políticas e fazer testes com a ATP.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
   
 ## <a name="see-also"></a>Confira também
 
-
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
