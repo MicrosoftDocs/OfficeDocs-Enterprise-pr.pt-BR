@@ -1,5 +1,5 @@
 ---
-title: Recursos de multi-Geo no Exchange Online
+title: Exchange Multi-geográfica
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -7,323 +7,49 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-localization_priority: Normal
-ms.assetid: ''
-description: Expanda sua presença do Office 365 para várias regiões geográficas com os recursos de multi-geo no Exchange Online.
-ms.openlocfilehash: 6acd2ffab1f35b74d06d6ab5f7bfcbf70f88f8b4
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+localization_priority: Priority
+description: Saiba mais sobre recursos de várias geografia no Exchange Online.
+ms.openlocfilehash: 60d25cab08ada195d1b189b30bdce8ea505f1d19
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200734"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931770"
 ---
-# <a name="multi-geo-capabilities-in-exchange-online"></a><span data-ttu-id="583a1-103">Recursos de multi-Geo no Exchange Online</span><span class="sxs-lookup"><span data-stu-id="583a1-103">Multi-Geo Capabilities in Exchange Online</span></span>
+# <a name="multi-geo-capabilities-in-exchange-online"></a><span data-ttu-id="a3cf7-103">Recursos multigeográficos no Exchange Online</span><span class="sxs-lookup"><span data-stu-id="a3cf7-103">Multi-Geo Capabilities in Exchange Online</span></span>
 
-<span data-ttu-id="583a1-p101">Recursos de multi-Geo no Office 365 habilitar um único locatário englobe vários locais geográficos. Quando multi-geo estiver habilitada, os clientes podem selecionar o local do conteúdo de caixa de correio Exchange Online (dados em repouso) em uma base por usuário.</span><span class="sxs-lookup"><span data-stu-id="583a1-p101">Multi-Geo Capabilities in Office 365 enable a single tenant to span multiple geographic locations. When multi-geo is enabled, customers can select the location of Exchange Online mailbox content (data at rest) on a per-user basis.</span></span>
+<span data-ttu-id="a3cf7-104">Em um ambiente multigeográfico, você pode selecionar o local do conteúdo da caixa de correio do Exchange Online (dados em repouso) em uma base por usuário.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-104">In a multi-geo environment, you can select the location of Exchange Online mailbox content (data at rest) on a per-user basis.</span></span>
 
-<span data-ttu-id="583a1-p102">Seu local de locatário inicial (conhecido como o local central) é determinada com base em seu endereço de cobrança. Quando multi-geo estiver habilitada, você pode colocar a caixas de correio em locais adicionais de satélite por:</span><span class="sxs-lookup"><span data-stu-id="583a1-p102">Your initial tenant location (referred to as the central location) is determined based on your billing address. When multi-geo is enabled, you can place mailboxes in additional satellite locations by:</span></span>
+<span data-ttu-id="a3cf7-105">Você pode colocar caixas de correio em locais de satélite:</span><span class="sxs-lookup"><span data-stu-id="a3cf7-105">You can place mailboxes in satellite locations by:</span></span>
 
-- <span data-ttu-id="583a1-108">Criando uma nova caixa de correio Exchange Online diretamente em um local de satélite.</span><span class="sxs-lookup"><span data-stu-id="583a1-108">Creating a new Exchange Online mailbox directly in a satellite location.</span></span>
+- <span data-ttu-id="a3cf7-106">Criar uma nova caixa de correio do Exchange Online diretamente em um local de satélite</span><span class="sxs-lookup"><span data-stu-id="a3cf7-106">Creating a new Exchange Online mailbox directly in a satellite location</span></span>
 
-- <span data-ttu-id="583a1-109">Mover uma caixa de correio do Exchange Online existente para um local de satélite.</span><span class="sxs-lookup"><span data-stu-id="583a1-109">Moving an existing Exchange Online mailbox into a satellite location.</span></span>
+- <span data-ttu-id="a3cf7-107">Mover uma caixa de correio existente do Exchange Online para um local de satélite alterando o local de dados preferencial do usuário</span><span class="sxs-lookup"><span data-stu-id="a3cf7-107">Moving an existing Exchange Online mailbox to a satellite location by changing the user's preferred data location</span></span>
 
-- <span data-ttu-id="583a1-110">Inclusão de uma caixa de correio de uma organização do Exchange local diretamente em um local de satélite.</span><span class="sxs-lookup"><span data-stu-id="583a1-110">Onboarding a mailbox from an on-premises Exchange organization directly into a satellite location.</span></span>
+- <span data-ttu-id="a3cf7-108">Integração de uma caixa de correio de uma organização local do Exchange diretamente em um local de satélite</span><span class="sxs-lookup"><span data-stu-id="a3cf7-108">Onboarding a mailbox from an on-premises Exchange organization directly into a satellite location</span></span>
 
-<span data-ttu-id="583a1-111">Os locais de geo a seguir estão disponíveis para uso em uma configuração de Multi-Geo:</span><span class="sxs-lookup"><span data-stu-id="583a1-111">The following geo locations are available for use in a Multi-Geo configuration:</span></span>
+## <a name="mailbox-placement-and-moves"></a><span data-ttu-id="a3cf7-109">Posicionamento e movimentação de caixa de correio</span><span class="sxs-lookup"><span data-stu-id="a3cf7-109">Mailbox placement and moves</span></span>
+<span data-ttu-id="a3cf7-110">Depois que a Microsoft concluir as etapas de configuração multigeográficas de pré-requisito, o Exchange Online honrará o atributo **PreferredDataLocation** nos objetos de usuário no Azure AD.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-110">After Microsoft completes the prerequisite multi-geo configuration steps, Exchange Online will honor the **PreferredDataLocation** attribute on user objects in Azure AD.</span></span>
 
-- <span data-ttu-id="583a1-112">Ásia Pacífico</span><span class="sxs-lookup"><span data-stu-id="583a1-112">Asia Pacific</span></span>
+<span data-ttu-id="a3cf7-111">O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure ad para a propriedade **MailboxRegion** no serviço de diretório do Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-111">Exchange Online synchronizes the **PreferredDataLocation** property from Azure AD into the **MailboxRegion** property in the Exchange Online directory service.</span></span> <span data-ttu-id="a3cf7-112">O valor de **MailboxRegion** determina a geografia onde caixas de correio do usuário e quaisquer caixas de correio de arquivo morto associadas serão colocadas.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-112">The value of **MailboxRegion** determines the Geo where user mailboxes and any associated archive mailboxes will be placed.</span></span> <span data-ttu-id="a3cf7-113">Não é possível configurar a caixa de correio principal de um usuário e as caixas de correio de arquivo morto para residir em diferentes locais geográficos.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-113">It is not possible to configure a user's primary mailbox and archive mailboxes to reside in different geo locations.</span></span> <span data-ttu-id="a3cf7-114">Somente um local geográfico pode ser configurado por objeto do usuário.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-114">Only one geo location may be configured per user object.</span></span>
 
-- <span data-ttu-id="583a1-113">Austrália</span><span class="sxs-lookup"><span data-stu-id="583a1-113">Australia</span></span>
+- <span data-ttu-id="a3cf7-115">Quando o **PreferredDataLocation** é configurado em um usuário com uma caixa de correio existente, a caixa de correio será colocada em uma fila de realocação e automaticamente movida para o local geográfico especificado.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-115">When **PreferredDataLocation** is configured on a user with an existing mailbox, the mailbox will be put into a relocation queue and automatically moved to the specified geo location.</span></span> 
 
-- <span data-ttu-id="583a1-114">Canadá</span><span class="sxs-lookup"><span data-stu-id="583a1-114">Canada</span></span>
+- <span data-ttu-id="a3cf7-116">Quando o **PreferredDataLocation** é configurado em um usuário sem uma caixa de correio existente, quando você provisiona a caixa de correio, ele será provisionado no local geográfico especificado.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-116">When **PreferredDataLocation** is configured on a user without an existing mailbox, when you provision the mailbox, it will be provisioned into the specified geo location.</span></span> 
 
-- <span data-ttu-id="583a1-115">União Europeia</span><span class="sxs-lookup"><span data-stu-id="583a1-115">European Union</span></span>
+- <span data-ttu-id="a3cf7-117">Quando o **PreferredDataLocation** não for especificado em um usuário, quando você provisionar a caixa de correio, ele será provisionado no local central.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-117">When **PreferredDataLocation** is not specified on a user, when you provision the mailbox, it will be provisioned in the central location.</span></span>
 
-- <span data-ttu-id="583a1-116">França</span><span class="sxs-lookup"><span data-stu-id="583a1-116">France</span></span>
+- <span data-ttu-id="a3cf7-118">Se o código **PreferredDataLocation** estiver incorreto (por exemplo, um tipo de Nan em vez de um), a caixa de correio será provisionada no local central.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-118">If the **PreferredDataLocation** code is incorrect (e.g. a type of NAN instead of NAM), the mailbox will be provisioned in the central location.</span></span>
 
-- <span data-ttu-id="583a1-117">Índia</span><span class="sxs-lookup"><span data-stu-id="583a1-117">India</span></span>
+<span data-ttu-id="a3cf7-119">**Observação**: as reuniões hospedadas de várias geografias e do Skype for Business online usam a propriedade **PreferredDataLocation** em objetos de usuário para localizar serviços.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-119">**Note**: multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the **PreferredDataLocation** property on user objects to locate services.</span></span> <span data-ttu-id="a3cf7-120">Se você configurar valores de **PreferredDataLocation** em objetos de usuário para reuniões hospedadas de modo regional, a caixa de correio para esses usuários será automaticamente movida para o local geográfico especificado após a hospedagem múltipla ser habilitada no locatário do Office 365.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-120">If you configure **PreferredDataLocation** values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified geo location after multi-geo is enabled on the Office 365 tenant.</span></span>
 
-- <span data-ttu-id="583a1-118">Japão</span><span class="sxs-lookup"><span data-stu-id="583a1-118">Japan</span></span>
+## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a><span data-ttu-id="a3cf7-121">Limitações de recursos para várias GEOS no Exchange Online</span><span class="sxs-lookup"><span data-stu-id="a3cf7-121">Feature limitations for multi-geo in Exchange Online</span></span>
 
-- <span data-ttu-id="583a1-119">Coreia</span><span class="sxs-lookup"><span data-stu-id="583a1-119">Korea</span></span>
+1. <span data-ttu-id="a3cf7-122">Os recursos de segurança e conformidade (por exemplo, auditoria e descoberta eletrônica) que estão disponíveis no centro de administração do Exchange (Eat) não estão disponíveis em organizações multigeográfico.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-122">Security and compliance features (for example, auditing and eDiscovery) that are available in the Exchange admin center (EAC) aren't available in multi-geo organizations.</span></span> <span data-ttu-id="a3cf7-123">Em vez disso, você precisa usar o [centro de conformidade do & de segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e conformidade.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-123">Instead, you need to use the [Office 365 Security & Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) to configure security and compliance features.</span></span>
 
-- <span data-ttu-id="583a1-120">Reino Unido</span><span class="sxs-lookup"><span data-stu-id="583a1-120">United Kingdom</span></span>
+2. <span data-ttu-id="a3cf7-124">Os usuários do Outlook para Mac podem ter uma perda temporária de acesso à sua pasta de arquivo morto online enquanto você move a caixa de correio para um novo local geográfico.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-124">Outlook for Mac users may experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new geo location.</span></span> <span data-ttu-id="a3cf7-125">Esta condição ocorre quando as caixas de correio primárias e de arquivo morto do usuário estão em locais geográficos diferentes, porque as movimentações de caixa de correio entre geografias podem ser concluídas em momentos diferentes.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-125">This condition occurs when the user's the primary and archive mailboxes are in different geo locations, because cross-geo mailbox moves may complete at different times.</span></span>
 
-- <span data-ttu-id="583a1-121">Estados Unidos</span><span class="sxs-lookup"><span data-stu-id="583a1-121">United States</span></span>
+3. <span data-ttu-id="a3cf7-126">Os usuários não podem compartilhar *pastas de caixa de correio* entre locais geográficos no Outlook na Web (anteriormente conhecido como Outlook Web App ou OWA).</span><span class="sxs-lookup"><span data-stu-id="a3cf7-126">Users can't share *mailbox folders* across geo locations in Outlook on the web (formerly known as Outlook Web App or OWA).</span></span> <span data-ttu-id="a3cf7-127">Por exemplo, um usuário na União Européia não pode usar o Outlook na Web para abrir uma pasta compartilhada em uma caixa de correio localizada nos Estados Unidos.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-127">For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox that's located in the United States.</span></span> <span data-ttu-id="a3cf7-128">No enTanto, os usuários do Outlook na Web podem abrir *outras caixas de correio* em diferentes GEOS usando uma janela do navegador separada, conforme descrito em [abrir a caixa de correio de outra pessoa em uma janela do navegador separada no Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).</span><span class="sxs-lookup"><span data-stu-id="a3cf7-128">However, Outlook on the Web users can open *other mailboxes* in different Geos by using a separate browser window as described in [Open another person’s mailbox in a separate browser window in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).</span></span>
 
-## <a name="prerequisite-configuration"></a><span data-ttu-id="583a1-122">Configuração de pré-requisito</span><span class="sxs-lookup"><span data-stu-id="583a1-122">Prerequisite configuration</span></span>
-<span data-ttu-id="583a1-p103">Antes de começar a usar o Multi-Geo recursos no Exchange Online, o Microsoft precisa configurar seu locatário do Exchange Online para suporte multi-geo. Esse processo de configuração de uma única vez é disparado depois que você encomendar o Office 365 Multi-Geo e as licenças mostram no seu locatário. Esse processo de configuração de uma única vez normalmente deve levar menos de 30 dias para ser concluída. Para encomendar o Office 365 Multi-Geo, contate o representante da Microsoft. Para obter mais informações, consulte https://aka.ms/Multi-Geo.</span><span class="sxs-lookup"><span data-stu-id="583a1-p103">Before you can start using Multi-Geo capabilities in Exchange Online, Microsoft needs to configure your Exchange Online tenant for multi-geo support. This one-time configuration process is triggered after you order Office 365 Multi-Geo and the licenses show up in your tenant. This one-time configuration process should typically take less than 30 days to complete. To order Office 365 Multi-Geo, contact your Microsoft representative. For more information, see https://aka.ms/Multi-Geo.</span></span>
+    <span data-ttu-id="a3cf7-129">**Observação**: o compartilhamento de pastas de caixa de correio entre regiões tem suporte no Outlook no Windows.</span><span class="sxs-lookup"><span data-stu-id="a3cf7-129">**Note**: Cross-geo mailbox folder sharing is supported in Outlook on Windows.</span></span>
 
-<span data-ttu-id="583a1-p104">Você receberá notificações no [Centro de mensagem do Office 365](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) , quando a configuração foi concluída. Configuração automaticamente é acionada depois de suas licenças multi-geo mostram no seu locatário.</span><span class="sxs-lookup"><span data-stu-id="583a1-p104">You'll receive notifications in the [Office 365 message center](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) when your configuration has completed. Configuration is automatically triggered once your multi-geo licenses show up in your tenant.</span></span>
-
-## <a name="mailbox-placement-and-moves"></a><span data-ttu-id="583a1-130">Movimentações e posicionamento de caixa de correio</span><span class="sxs-lookup"><span data-stu-id="583a1-130">Mailbox placement and moves</span></span>
-<span data-ttu-id="583a1-131">Após a conclusão das etapas de configuração de pré-requisito multi-geo da Microsoft, Exchange Online aceita o atributo **PreferredDataLocation** em objetos de usuário no Windows Azure AD.</span><span class="sxs-lookup"><span data-stu-id="583a1-131">After Microsoft completes the prerequisite multi-geo configuration steps, Exchange Online will honor the **PreferredDataLocation** attribute on user objects in Azure AD.</span></span>
-
-<span data-ttu-id="583a1-p105">O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure AD para a propriedade **MailboxRegion** no serviço de diretório Exchange Online. O valor **MailboxRegion** determina o Geo onde caixas de correio de usuário e qualquer caixa de correio de arquivo morto associada será colocada. Não é possível configurar principal da caixa de correio e arquivamento caixas de correio um usuário para residir em geo diferentes locais. Somente um local geo pode ser configurado por um objeto de usuário.</span><span class="sxs-lookup"><span data-stu-id="583a1-p105">Exchange Online synchronizes the **PreferredDataLocation** property from Azure AD into the **MailboxRegion** property in the Exchange Online directory service. The value of **MailboxRegion** determines the Geo where user mailboxes and any associated archive mailboxes will be placed. It is not possible to configure a user's primary mailbox and archive mailboxes to reside in different geo locations. Only one geo location may be configured per user object.</span></span>
-
-- <span data-ttu-id="583a1-136">Quando **PreferredDataLocation** estiver configurada em um usuário com uma caixa de correio existente, a caixa de correio será colocado em uma fila de realocação e movidas automaticamente para o local de geo especificado.</span><span class="sxs-lookup"><span data-stu-id="583a1-136">When **PreferredDataLocation** is configured on a user with an existing mailbox, the mailbox will be put into a relocation queue and automatically moved to the specified geo location.</span></span> 
-
-- <span data-ttu-id="583a1-137">Quando **PreferredDataLocation** estiver configurada em um usuário sem uma caixa de correio existente, a caixa de correio será provisionada no local, geo especificado.</span><span class="sxs-lookup"><span data-stu-id="583a1-137">When **PreferredDataLocation** is configured on a user without an existing mailbox, the mailbox will be provisioned into the specified geo location.</span></span> 
-
-- <span data-ttu-id="583a1-138">Quando **PreferredDataLocation** não for especificado em um usuário, a caixa de correio será colocada no local central.</span><span class="sxs-lookup"><span data-stu-id="583a1-138">When **PreferredDataLocation** is not specified on a user, the mailbox will be placed in the central location.</span></span>
-
-- <span data-ttu-id="583a1-139">Se o código de **PreferredDataLocation** está incorreto (por exemplo, um tipo de NAN em vez do nome), a caixa de correio será colocada no local central.</span><span class="sxs-lookup"><span data-stu-id="583a1-139">If the **PreferredDataLocation** code is incorrect (e.g. a type of NAN instead of NAM), the mailbox will be placed in the central location.</span></span>
-
-<span data-ttu-id="583a1-p106">**Observação**: capacidades de multi-geo e Skype para Business Online regional hospedada reuniões usam a propriedade **PreferredDataLocation** nos objetos de usuário para localizar serviços. Se você configurar valores **PreferredDataLocation** em objetos de usuário para reuniões regional hospedadas, a caixa de correio dos usuários serão automaticamente movida para o local especificado geo depois multi-geo está habilitado no inquilino do Office 365.</span><span class="sxs-lookup"><span data-stu-id="583a1-p106">**Note**: multi-geo capabilities and Skype for Business Online regionally hosted meetings both use the **PreferredDataLocation** property on user objects to locate services. If you configure **PreferredDataLocation** values on user objects for regionally hosted meetings, the mailbox for those users will be automatically moved to the specified geo location after multi-geo is enabled on the Office 365 tenant.</span></span>
-
-## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a><span data-ttu-id="583a1-142">Limitações do recurso para Multi-Geo no Exchange Online</span><span class="sxs-lookup"><span data-stu-id="583a1-142">Feature limitations for Multi-Geo in Exchange Online</span></span>
-1. <span data-ttu-id="583a1-p107">Apenas caixas de correio do usuário, caixas de correio de recurso (caixas de correio de sala e equipamento) e caixas de correio compartilhadas suportam recursos de multi-geo. Caixas de correio de pasta de públicos e grupos do Office 365 permanecem no local central.</span><span class="sxs-lookup"><span data-stu-id="583a1-p107">Only user mailboxes, resource mailboxes (room and equipment mailboxes), and shared mailboxes support multi-geo features. Public Folder Mailboxes and Office 365 Groups remain in the central location.</span></span>
- 
-2. <span data-ttu-id="583a1-p108">Segurança e conformidade recursos (por exemplo, auditoria e descoberta eletrônica) que estão disponíveis no Centro de administração do Exchange (EAC) não estão disponíveis nas organizações multi-geo. Em vez disso, você precisará usar o [Centro de conformidade e segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e conformidade.</span><span class="sxs-lookup"><span data-stu-id="583a1-p108">Security and compliance features (for example, auditing and eDiscovery) that are available in the Exchange admin center (EAC) aren't available in multi-geo organizations. Instead, you need to use the [Office 365 Security & Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) to configure security and compliance features.</span></span>
-
-3. <span data-ttu-id="583a1-p109">Outlook para Mac usuários perceba uma perda temporária de acesso a sua pasta de arquivo morto Online enquanto move suas caixas de correio para um novo local de geo. Esta condição ocorre quando o principal do usuário e arquivar caixas de correio estão em locais diferentes geo, porque cross-Geo movimentações de caixa de correio podem ser concluído em momentos diferentes.</span><span class="sxs-lookup"><span data-stu-id="583a1-p109">Outlook for Mac users may experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new geo location. This condition occurs when the user's the primary and archive mailboxes are in different geo locations, because cross-Geo mailbox moves may complete at different times.</span></span>
-
-4. <span data-ttu-id="583a1-p110">Os usuários não podem compartilhar *pastas de caixa de correio* entre localidades geo no Outlook na web (anteriormente conhecido como o Outlook Web App ou no OWA). Por exemplo, um usuário na União Europeia não pode usar o Outlook na web para abrir uma pasta compartilhada em uma caixa de correio que está localizada nos Estados Unidos. No entanto, o Outlook em que os usuários da Web pode abrir *outras caixas de correio* em diferentes Geos usando uma janela separada do navegador, conforme descrito em [Abrir a caixa de correio de outra pessoa em uma janela separada do navegador no Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).</span><span class="sxs-lookup"><span data-stu-id="583a1-p110">Users can't share *mailbox folders* across geo locations in Outlook on the web (formerly known as Outlook Web App or OWA). For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox that's located in the United States. However, Outlook on the Web users can open *other mailboxes* in different Geos by using a separate browser window as described in [Open another person’s mailbox in a separate browser window in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).</span></span>
-
-    <span data-ttu-id="583a1-152">**Observação**: o compartilhamento de pasta de caixa de correio entre-geo é suportado no Outlook no Windows.</span><span class="sxs-lookup"><span data-stu-id="583a1-152">**Note**: Cross-geo mailbox folder sharing is supported in Outlook on Windows.</span></span>
-
-## <a name="administration"></a><span data-ttu-id="583a1-153">Administração</span><span class="sxs-lookup"><span data-stu-id="583a1-153">Administration</span></span> 
-<span data-ttu-id="583a1-p111">PowerShell remoto é necessária para exibir e configurar o multi geo propriedades no seu ambiente do Office 365. Para obter informações sobre vários módulos do PowerShell usados para administrar o Office 365, consulte [Gerenciando o Office 365 e o Exchange Online com o Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).</span><span class="sxs-lookup"><span data-stu-id="583a1-p111">Remote PowerShell is required to view and configure multi geo properties in your Office 365 environment. For information on various PowerShell modules used to administer Office 365, see [Managing Office 365 and Exchange Online with Windows PowerShell](https://support.office.com//article/06a743bb-ceb6-49a9-a61d-db4ffdf54fa6).</span></span>
-
-- <span data-ttu-id="583a1-p112">É necessário o [Módulo Microsoft Azure Active Directory PowerShell](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 ou posterior em v1. x para ver a propriedade **PreferredDataLocation** em objetos de usuário. Objetos de usuário sincronizados via AAD conectar no AAD não podem ter seu valor **PreferredDataLocation** modificada diretamente por meio do PowerShell AAD. Objetos de usuário somente na nuvem podem ser modificados por meio do PowerShell AAD. Para se conectar ao AD do Windows Azure PowerShell, consulte [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="583a1-p112">You need the [Microsoft Azure Active Directory PowerShell Module](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 or later in v1.x to see the **PreferredDataLocation** property on user objects. User objects synchronized via AAD Connect into AAD cannot have their **PreferredDataLocation** value directly modified via AAD PowerShell. Cloud-only user objects can be modified via AAD PowerShell. To connect to Azure AD PowerShell, see [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell).</span></span> 
-
-- <span data-ttu-id="583a1-160">Para conectar ao Exchange Online PowerShell, consulte [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span><span class="sxs-lookup"><span data-stu-id="583a1-160">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> 
-
-### <a name="connect-directly-to-a-specific-geo-using-exchange-online-powershell"></a><span data-ttu-id="583a1-161">Conectar-se diretamente a um Geo específico usando o PowerShell do Exchange Online</span><span class="sxs-lookup"><span data-stu-id="583a1-161">Connect directly to a specific Geo using Exchange Online PowerShell</span></span>
-<span data-ttu-id="583a1-p113">Normalmente, o PowerShell do Exchange Online se conectará geo local padrão. Porém, você também pode conectar diretamente para os locais de geo não-padrão. Devido aos aprimoramentos de desempenho, é recomendável conectar-se diretamente para o local não-padrão geo quando você gerencia somente os usuários nesta localização geográfica.</span><span class="sxs-lookup"><span data-stu-id="583a1-p113">Typically, Exchange Online PowerShell will connect to the default geo location. But, you can also connect directly to non-default geo locations. Because of performance improvements, we recommend connecting directly to the non-default geo location when you only manage users in that geo location.</span></span>
-
-<span data-ttu-id="583a1-p114">Para conectar a um Geo específico, o parâmetro *ConnectionUri* é diferente das instruções de conexão regular. O restante dos comandos e valores são os mesmos. As etapas são:</span><span class="sxs-lookup"><span data-stu-id="583a1-p114">To connect to a specific Geo, the *ConnectionUri* parameter is different than the regular connection instructions. The rest of the commands and values are the same. The steps are:</span></span>
-
-1. <span data-ttu-id="583a1-168">No computador local, abra o Windows PowerShell e execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-168">On your local computer, open Windows PowerShell and run the following command:</span></span>
-    
-    ```
-    $UserCredential = Get-Credential
-    ```
-   <span data-ttu-id="583a1-169">Na caixa de diálogo **Solicitação de credencial do Windows PowerShell** , digite seu trabalho escola conta e senha e clique em **Okey**.</span><span class="sxs-lookup"><span data-stu-id="583a1-169">In the **Windows PowerShell Credential Request** dialog box, type your work or school account and password, and then click **OK**.</span></span>
-    
-2. <span data-ttu-id="583a1-p115">Substituir `<emailaddress>` com o endereço de email de **qualquer** caixa de correio no local do destino geo e execute o comando a seguir. Suas permissões na caixa de correio e a relação com suas credenciais na etapa 1 não são um fator; o endereço de email simplesmente informa o Exchange Online onde para se conectar.</span><span class="sxs-lookup"><span data-stu-id="583a1-p115">Replace `<emailaddress>` with the email address of **any** mailbox in the target geo location and run the following command. Your permissions on the mailbox and the relationship to your credentials in Step 1 are not a factor; the email address simply tells Exchange Online where to connect.</span></span>
-  
-   ```
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-
-   <span data-ttu-id="583a1-172">Por exemplo, se olga@contoso.onmicrosoft.com é o endereço de email de uma caixa de correio válida do Geo que você deseja se conectar, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-172">For example, if olga@contoso.onmicrosoft.com is the email address of a valid mailbox in the Geo you want to connect, run the following command:</span></span>
-
-   ```
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-3. <span data-ttu-id="583a1-173">Execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-173">Run the following command:</span></span>
-    
-    ```
-    Import-PSSession $Session
-    ```
-
-### <a name="azure-ad-connect-version-requirements"></a><span data-ttu-id="583a1-174">Requisitos de versão do Azure AD Connect</span><span class="sxs-lookup"><span data-stu-id="583a1-174">Azure AD Connect version requirements</span></span>
-<span data-ttu-id="583a1-p116">Conectar AAD versão 1.1.524.0 ou posterior é o único método suportado para definir a propriedade **PreferredDataLocation** nos objetos de usuário que são sincronizados do Active Directory no local. Objetos de usuário sincronizados via AAD conectar no AAD não podem ter seu valor **PreferredDataLocation** modificada diretamente por meio do PowerShell AAD. Objetos de usuário somente na nuvem podem ser modificados por meio do PowerShell AAD. Para obter instruções detalhadas, consulte [sincronização do Azure Active Directory Connect: configurar o local dos dados preferencial para recursos do Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).</span><span class="sxs-lookup"><span data-stu-id="583a1-p116">AAD Connect version 1.1.524.0 or later is the only supported method for setting the **PreferredDataLocation** property on user objects that are synchronized from on-premises Active Directory. User objects synchronized via AAD Connect into AAD cannot have their **PreferredDataLocation** value directly modified via AAD PowerShell. Cloud-only user objects can be modified via AAD PowerShell. For detailed instructions, see [Azure Active Directory Connect sync: Configure preferred data location for Office 365 resources](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).</span></span>
-
-### <a name="geo-codes"></a><span data-ttu-id="583a1-179">Códigos de geo</span><span class="sxs-lookup"><span data-stu-id="583a1-179">Geo Codes</span></span>
-<span data-ttu-id="583a1-p117">Você pode usar os códigos de três letras para especificar o Geo na propriedade **PreferredDataLocation** . A tabela a seguir lista os códigos para o Geos disponíveis:</span><span class="sxs-lookup"><span data-stu-id="583a1-p117">You use three-letter codes to specify the Geo in the **PreferredDataLocation** property. The following table lists the codes for the available Geos:</span></span>
-
-|<span data-ttu-id="583a1-182">Geo</span><span class="sxs-lookup"><span data-stu-id="583a1-182">Geo</span></span> |<span data-ttu-id="583a1-183">Código</span><span class="sxs-lookup"><span data-stu-id="583a1-183">Code</span></span> |
-|---------|---------|
-|<span data-ttu-id="583a1-184">Ásia/Pacífico</span><span class="sxs-lookup"><span data-stu-id="583a1-184">Asia/Pacific</span></span> |<span data-ttu-id="583a1-185">APC</span><span class="sxs-lookup"><span data-stu-id="583a1-185">APC</span></span> |
-|<span data-ttu-id="583a1-186">Austrália</span><span class="sxs-lookup"><span data-stu-id="583a1-186">Australia</span></span> |<span data-ttu-id="583a1-187">AUS</span><span class="sxs-lookup"><span data-stu-id="583a1-187">AUS</span></span> |
-|<span data-ttu-id="583a1-188">Canadá</span><span class="sxs-lookup"><span data-stu-id="583a1-188">Canada</span></span> |<span data-ttu-id="583a1-189">CAN</span><span class="sxs-lookup"><span data-stu-id="583a1-189">CAN</span></span> |
-|<span data-ttu-id="583a1-190">União Europeia</span><span class="sxs-lookup"><span data-stu-id="583a1-190">European Union</span></span> |<span data-ttu-id="583a1-191">EUR</span><span class="sxs-lookup"><span data-stu-id="583a1-191">EUR</span></span> |
-|<span data-ttu-id="583a1-192">França</span><span class="sxs-lookup"><span data-stu-id="583a1-192">France</span></span> |<span data-ttu-id="583a1-193">FRA</span><span class="sxs-lookup"><span data-stu-id="583a1-193">FRA</span></span>|
-|<span data-ttu-id="583a1-194">Índia</span><span class="sxs-lookup"><span data-stu-id="583a1-194">India</span></span> |<span data-ttu-id="583a1-195">IND</span><span class="sxs-lookup"><span data-stu-id="583a1-195">IND</span></span> |
-|<span data-ttu-id="583a1-196">Japão</span><span class="sxs-lookup"><span data-stu-id="583a1-196">Japan</span></span> |<span data-ttu-id="583a1-197">JPN</span><span class="sxs-lookup"><span data-stu-id="583a1-197">JPN</span></span> |
-|<span data-ttu-id="583a1-198">Coreia</span><span class="sxs-lookup"><span data-stu-id="583a1-198">Korea</span></span> |<span data-ttu-id="583a1-199">KOR</span><span class="sxs-lookup"><span data-stu-id="583a1-199">KOR</span></span> |
-|<span data-ttu-id="583a1-200">Reino Unido</span><span class="sxs-lookup"><span data-stu-id="583a1-200">United Kingdom</span></span> |<span data-ttu-id="583a1-201">GBR</span><span class="sxs-lookup"><span data-stu-id="583a1-201">GBR</span></span> |
-|<span data-ttu-id="583a1-202">Estados Unidos</span><span class="sxs-lookup"><span data-stu-id="583a1-202">United States</span></span> |<span data-ttu-id="583a1-203">NAM</span><span class="sxs-lookup"><span data-stu-id="583a1-203">NAM</span></span> |
-
-<span data-ttu-id="583a1-p118">**Observação**: as propriedades **PreferredDataLocation** e **MailboxRegion** são cadeias de caracteres com nenhuma verificação de erro. Se você inserir um valor inválido (por exemplo, NAN) a caixa de correio será colocada no Geo padrão.</span><span class="sxs-lookup"><span data-stu-id="583a1-p118">**Note**: The **PreferredDataLocation** and **MailboxRegion** properties are strings with no error checking. If you enter an invalid value (for example, NAN) the mailbox will be placed in the default Geo.</span></span>
-
-### <a name="view-the-available-geos-that-are-configured-in-your-exchange-online-organization"></a><span data-ttu-id="583a1-206">Exibir o Geos disponíveis que estão configurados em sua organização do Exchange Online</span><span class="sxs-lookup"><span data-stu-id="583a1-206">View the available Geos that are configured in your Exchange Online organization</span></span>
-<span data-ttu-id="583a1-207">Para ver a lista de Geos configurado em sua organização do Exchange Online, execute o seguinte comando no Exchange Online PowerShell:</span><span class="sxs-lookup"><span data-stu-id="583a1-207">To see the list of configured Geos in your Exchange Online organization, run the following command in Exchange Online PowerShell:</span></span>
-
-```
-Get-OrganizationConfig | Select -ExpandProperty AllowedMailboxRegions | Format-Table
-```
-
-<span data-ttu-id="583a1-208">A saída do comando será parecida com o seguinte:</span><span class="sxs-lookup"><span data-stu-id="583a1-208">The output of the command looks like this:</span></span>
-
-```
-APC
-AUS
-CAN
-EUR
-FRA
-GBR
-JPN
-KOR
-NAM
-```
-
-### <a name="view-the-default-geo-for-your-exchange-online-organization"></a><span data-ttu-id="583a1-209">Modo de exibição padrão Geo para sua organização do Exchange Online</span><span class="sxs-lookup"><span data-stu-id="583a1-209">View the default Geo for your Exchange Online organization</span></span>
-<span data-ttu-id="583a1-210">Para exibir o geo padrão da sua organização do Exchange Online, execute o seguinte comando no Exchange Online PowerShell:</span><span class="sxs-lookup"><span data-stu-id="583a1-210">To view the default geo of your Exchange Online organization, run the following command in Exchange Online PowerShell:</span></span>
-
-```
-Get-OrganizationConfig | Select DefaultMailboxRegion
-```
-
-<span data-ttu-id="583a1-211">A saída do comando será parecida com o seguinte:</span><span class="sxs-lookup"><span data-stu-id="583a1-211">The output of the command looks like this:</span></span>
-
-```
-DefaultMailboxRegion
---------------------
-NAM
-```
-
-
-### <a name="find-the-geo-location-of-a-mailbox"></a><span data-ttu-id="583a1-212">Encontrar o local de Geo de uma caixa de correio</span><span class="sxs-lookup"><span data-stu-id="583a1-212">Find the Geo location of a mailbox</span></span>
-<span data-ttu-id="583a1-213">O cmdlet **Get-Mailbox** no PowerShell do Exchange Online é exibido a seguir multi-geo relacionadas a propriedades em caixas de correio:</span><span class="sxs-lookup"><span data-stu-id="583a1-213">The **Get-Mailbox** cmdlet in Exchange Online PowerShell displays the following multi-geo related properties on mailboxes:</span></span>
-
-- <span data-ttu-id="583a1-p119">**Banco de dados**: as primeiro 3 letras do nome do banco de dados correspondem ao código de Geo, que informa onde a caixa de correio está localizada no momento. Caixas de correio de arquivo morto Online o **ArchiveDatabase** propriedade deve ser usada.</span><span class="sxs-lookup"><span data-stu-id="583a1-p119">**Database**: The first 3 letters of the database name correspond to the Geo code, which tells you where the mailbox is currently located. For Online Archive Mailboxes the **ArchiveDatabase** property should be used.</span></span>
-
-- <span data-ttu-id="583a1-216">**MailboxRegion**: Especifica o código de local geo que foi definido para o administrador (sincronizado a partir **PreferredDataLocation** no Azure AD).</span><span class="sxs-lookup"><span data-stu-id="583a1-216">**MailboxRegion**: Specifies the geo location code that was set by the admin (synchronized from **PreferredDataLocation** in Azure AD).</span></span>
-
-- <span data-ttu-id="583a1-217">**MailboxRegionLastUpdateTime**: indica quando MailboxRegion última atualização (automática ou manualmente).</span><span class="sxs-lookup"><span data-stu-id="583a1-217">**MailboxRegionLastUpdateTime**: Indicates when MailboxRegion was last updated (either automatically or manually).</span></span>
-
-<span data-ttu-id="583a1-218">Para ver essas propriedades para uma caixa de correio, use a seguinte sintaxe:</span><span class="sxs-lookup"><span data-stu-id="583a1-218">To see these properties for a mailbox, use the following syntax:</span></span>
-
-```
-Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
-```
-
-<span data-ttu-id="583a1-219">Por exemplo, para ver as informações de localização geográfica para chris@contoso.onmicrosoft.com a caixa de correio, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-219">For example, to see the Geo information for the mailbox chris@contoso.onmicrosoft.com, run the following command:</span></span>
-
-```
-Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
-```
-
-<span data-ttu-id="583a1-220">A saída do comando será parecida com o seguinte:</span><span class="sxs-lookup"><span data-stu-id="583a1-220">The output of the command looks like this:</span></span>
-
-```
-Database                    : EURPR03DG077-db007 
-MailboxRegion               : EUR 
-MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM 
-```
-
-> <span data-ttu-id="583a1-221">**Observação:** Se o código de local geo no nome do banco de dados não coincidir com o valor de **MailboxRegion** , a caixa de correio será automaticamente ser colocado em uma fila de realocação e movido para o local de geo especificado pelo valor **MailboxRegion** (procura Exchange Online um incompatibilidade entre esses valores de propriedade).</span><span class="sxs-lookup"><span data-stu-id="583a1-221">**Note:** If the geo location code in the database name doesn't match **MailboxRegion** value, the mailbox will be automatically be put into a relocation queue and moved to the geo location specified by the **MailboxRegion** value (Exchange Online looks for a mismatch between these property values).</span></span>
-
-### <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo"></a><span data-ttu-id="583a1-222">Mover uma caixa de correio somente em nuvem existente para um Geo específico</span><span class="sxs-lookup"><span data-stu-id="583a1-222">Move an existing cloud-only mailbox to a specific Geo</span></span>
-<span data-ttu-id="583a1-p120">Um usuário somente na nuvem é um usuário não sincronizadas para o inquilino via AAD se conectar. Este usuário foi criado diretamente no Azure AD. Use os cmdlets **Get-MsolUser** e **Set-MsolUser** no módulo Azure AD para Windows PowerShell para exibir ou especificar o Geo onde será armazenada caixa de correio do usuário somente na nuvem.</span><span class="sxs-lookup"><span data-stu-id="583a1-p120">A cloud-only user is a user not syncrhonized to the tenant via AAD Connect. This user was created directly in Azure AD. Use the **Get-MsolUser** and **Set-MsolUser** cmdlets in the Azure AD Module for Windows PowerShell to view or specify the Geo where a cloud-only user's mailbox will be stored.</span></span>
-
-<span data-ttu-id="583a1-226">Para exibir o valor de **PreferredDataLocation** para um usuário, use esta sintaxe no Windows Azure AD PowerShell:</span><span class="sxs-lookup"><span data-stu-id="583a1-226">To view the **PreferredDataLocation** value for a user, use this syntax in Azure AD PowerShell:</span></span>
-
-```
-Get-MsolUser -UserPrincipalName <UserPrincipalName> | Format-List UserPrincipalName,PreferredDataLocation
-```
-
-<span data-ttu-id="583a1-227">Por exemplo, para ver o valor de **PreferredDataLocation** para michelle@contoso.onmicrosoft.com o usuário, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-227">For example, to see the **PreferredDataLocation** value for the user michelle@contoso.onmicrosoft.com, run the following command:</span></span>
-
-```
-Get-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com | Format-List
-```
-
-<span data-ttu-id="583a1-228">A saída do comando será parecida com o seguinte:</span><span class="sxs-lookup"><span data-stu-id="583a1-228">The output of the command looks like this:</span></span>
-
-```
-UserPrincipalName     : michelle@contoso.onmicrosoft.com
-PreferredDataLocation : EUR
-```
-
-<span data-ttu-id="583a1-229">Para modificar o valor de **PreferredDataLocation** para um objeto de usuário somente na nuvem, use a seguinte sintaxe no Windows Azure AD PowerShell:</span><span class="sxs-lookup"><span data-stu-id="583a1-229">To modify the **PreferredDataLocation** value for a cloud-only user object, use the following syntax in Azure AD PowerShell:</span></span>
-
-``` 
-Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoCode>
-```
-
-<span data-ttu-id="583a1-230">Por exemplo, para definir o valor de **PreferredDataLocation** como geo a União Europeia (EUR) para michelle@contoso.onmicrosoft.com o usuário, execute o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-230">For example, to set the **PreferredDataLocation** value to the European Union (EUR) geo for the user michelle@contoso.onmicrosoft.com, run the following command:</span></span>
-
-``` 
-Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
-```
-
-<span data-ttu-id="583a1-231">**Observações**:</span><span class="sxs-lookup"><span data-stu-id="583a1-231">**Notes**:</span></span>
-
-- <span data-ttu-id="583a1-p121">Como mencionado anteriormente você não pode usar este procedimento para objetos de usuário sincronizado do Active Directory no local. Você precisa alterar o valor de **PreferredDataLocation** usando AAD se conectar. Para obter mais informações, consulte [sincronização do Azure Active Directory Connect: configurar o local dos dados preferencial para recursos do Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).</span><span class="sxs-lookup"><span data-stu-id="583a1-p121">As mentioned previously you cannot use this procedure for synchronized user objects from on-premises Active Directory. You need to change the **PreferredDataLocation** value using AAD Connect. For more information, see [Azure Active Directory Connect sync: Configure preferred data location for Office 365 resources](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).</span></span> 
-
-- <span data-ttu-id="583a1-235">Quanto tempo levará para realocar um mailboxfrom que seu geo atual para o novo local desejado geo depende de vários fatores:</span><span class="sxs-lookup"><span data-stu-id="583a1-235">How long it takes to relocate a mailboxfrom its current geo to the new desired geo location depends on several factors:</span></span>
- 
-  - <span data-ttu-id="583a1-236">O tamanho e o tipo de caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="583a1-236">The size and type of mailbox.</span></span>
- 
-  - <span data-ttu-id="583a1-237">O número de caixas de correio sendo movido.</span><span class="sxs-lookup"><span data-stu-id="583a1-237">The number of mailboxes being moved.</span></span>
- 
-  - <span data-ttu-id="583a1-238">A disponibilidade dos recursos de movimentação.</span><span class="sxs-lookup"><span data-stu-id="583a1-238">The availability of move resources.</span></span>
-
-#### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a><span data-ttu-id="583a1-239">Move desabilitado caixas de correio que estão na retenção de litígio</span><span class="sxs-lookup"><span data-stu-id="583a1-239">Move disabled mailboxes that are on Litigation Hold</span></span>
-<span data-ttu-id="583a1-p122">Desabilitado caixas de correio em retenção de litígio que são preservadas para eDiscovery fins não podem ser movidos, alterando seu valor **PreferredDataLocation** em seu estado desabilitado. Para mover uma caixa de correio desabilitada em suspensão de litígio:</span><span class="sxs-lookup"><span data-stu-id="583a1-p122">Disabled mailboxes on Litigation Hold that are preserved for eDiscovery purposes cannot be moved by changing their **PreferredDataLocation** value in their disabled state. To move a disabled mailbox on litigation hold:</span></span>
-
-1. <span data-ttu-id="583a1-242">Atribua temporariamente uma licença à caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="583a1-242">Temporarily assign a license to the mailbox.</span></span>
-
-2. <span data-ttu-id="583a1-243">Altere o **PreferredDataLocation**.</span><span class="sxs-lookup"><span data-stu-id="583a1-243">Change the **PreferredDataLocation**.</span></span>
-
-3. <span data-ttu-id="583a1-244">Remova a licença da caixa de correio depois que ela foi movida para o local selecionado geo para colocá-lo novamente em estado desativado.</span><span class="sxs-lookup"><span data-stu-id="583a1-244">Remove the license from the mailbox after it has been moved to the selected geo location to put it back into the disabled state.</span></span>
-
-### <a name="create-new-cloud-mailboxes-in-a-specific-geo"></a><span data-ttu-id="583a1-245">Criar novas caixas de correio da nuvem em um Geo específico</span><span class="sxs-lookup"><span data-stu-id="583a1-245">Create new cloud mailboxes in a specific Geo</span></span> 
-<span data-ttu-id="583a1-246">Para criar uma nova caixa de correio em um local específico geo, você precisará fazer qualquer uma dessas etapas:</span><span class="sxs-lookup"><span data-stu-id="583a1-246">To create a new mailbox in a specific geo location, you need to do either of these steps:</span></span>
-
-- <span data-ttu-id="583a1-p123">Configure o valor de **PreferredDataLocation** , conforme descrito no anterior seção *antes da* que caixa de correio é criada no Exchange Online. Por exemplo, configure o valor de **PreferredDataLocation** em um usuário antes de atribuir uma licença.</span><span class="sxs-lookup"><span data-stu-id="583a1-p123">Configure the **PreferredDataLocation** value as described in the previous section *before* the mailbox is created in Exchange Online. For example, configure the **PreferredDataLocation** value on a user before assigning a license.</span></span> 
-
-- <span data-ttu-id="583a1-249">Atribua uma licença ao mesmo tempo em que você definir o valor de **PreferredDataLocation** .</span><span class="sxs-lookup"><span data-stu-id="583a1-249">Assign a license at the same time you set the **PreferredDataLocation** value.</span></span>
-
-<span data-ttu-id="583a1-250">Para criar um novo somente em nuvem licenciado usuário (não AAD conectar sincronizados) em um Geo específico, use a seguinte sintaxe no Windows Azure AD PowerShell:</span><span class="sxs-lookup"><span data-stu-id="583a1-250">To create a new cloud-only licensed user (not AAD Connect synchronized) in a specific Geo, use the following syntax in Azure AD PowerShell:</span></span>
-
-```
-New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>" [-FirstName <FirstName>] [-LastName <LastName>] [-Password <Password>] [-LicenseAssignment <AccountSkuId>] -PreferredDataLocation <GeoCode> 
-```
-<span data-ttu-id="583a1-251">Este exemplo cria uma nova conta de usuário para Elizabeth Brunner com os seguintes valores:</span><span class="sxs-lookup"><span data-stu-id="583a1-251">This example create a new user account for Elizabeth Brunner with the following values:</span></span>
-
-- <span data-ttu-id="583a1-252">Nome principal do usuário: ebrunner@contoso.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="583a1-252">User principal name: ebrunner@contoso.onmicrosoft.com</span></span>
-
-- <span data-ttu-id="583a1-253">Nome: Elizabeth</span><span class="sxs-lookup"><span data-stu-id="583a1-253">First name: Elizabeth</span></span>
-
-- <span data-ttu-id="583a1-254">Sobrenome: Brunner</span><span class="sxs-lookup"><span data-stu-id="583a1-254">Last name: Brunner</span></span>
-
-- <span data-ttu-id="583a1-255">Nome para exibição Elizabeth Brunner</span><span class="sxs-lookup"><span data-stu-id="583a1-255">Display name Elizabeth Brunner</span></span>
-
-- <span data-ttu-id="583a1-256">Senha: gerada aleatoriamente e mostra os resultados do comando (porque não estamos usando o parâmetro *Password* )</span><span class="sxs-lookup"><span data-stu-id="583a1-256">Password: randomly-generated and shown in the results of the command (because we're not using the *Password* parameter)</span></span>
-
-- <span data-ttu-id="583a1-257">Licença: contoso:ENTERPRISEPREMIUM (E5)</span><span class="sxs-lookup"><span data-stu-id="583a1-257">License: contoso:ENTERPRISEPREMIUM (E5)</span></span>
-
-- <span data-ttu-id="583a1-258">Local: Austrália (Austrália)</span><span class="sxs-lookup"><span data-stu-id="583a1-258">Location: Australia (AUS)</span></span>
-
-```
-New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "Elizabeth Brunner" -FirstName Elizabeth -LastName Brunner -LicenseAssignment contoso:ENTERPRISEPREMIUM -PreferredDataLocation AUS
-```
-
-<span data-ttu-id="583a1-259">Para obter mais informações sobre como criar novas contas de usuário e Localizando LicenseAssignment valores no PowerShell do Windows Azure AD, consulte [criar contas de usuário com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) e [Exibir as licenças e serviços com o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).</span><span class="sxs-lookup"><span data-stu-id="583a1-259">For more information about creating new user accounts and finding LicenseAssignment values in Azure AD PowerShell, see [Create user accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell) and [View licenses and services with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).</span></span>
-
-> <span data-ttu-id="583a1-p124">**Observação:** Se você estiver usando o PowerShell do Exchange Online para habilitar uma caixa de correio e precisam ser criados diretamente a Geo especificado em **PreferredDataLocation**a caixa de correio, você precisará usar um cmdlet do Exchange Online como **Enable-Mailbox** ou \*\*New-Mailbox \*\*diretamente em relação ao serviço de nuvem. Se você usar o cmdlet **Enable-RemoteMailbox** local Exchange, a caixa de correio será criada no Geo padrão.</span><span class="sxs-lookup"><span data-stu-id="583a1-p124">**Note:** If you are using Exchange Online PowerShell to enable a mailbox and need the mailbox to be created directly in the Geo that's specified in **PreferredDataLocation**, you need to use an Exchange Online cmdlet such as **Enable-Mailbox** or **New-Mailbox** directly against the cloud service. If you use the **Enable-RemoteMailbox** on-premises Exchange cmdlet, the mailbox will be created in the default Geo.</span></span>
-
-### <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo"></a><span data-ttu-id="583a1-262">Existente onboard local caixas de correio de um específico Geo</span><span class="sxs-lookup"><span data-stu-id="583a1-262">Onboard existing on-premises mailboxes in a specific Geo</span></span>
-<span data-ttu-id="583a1-263">Você pode usar as ferramentas de inclusão standard e processos para migrar uma caixa de correio de uma organização do Exchange no local para o Exchange Online, incluindo o [Painel de migração no EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)e o cmdlet [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) no Exchange Online PowerShell.</span><span class="sxs-lookup"><span data-stu-id="583a1-263">You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) cmdlet in Exchange Online PowerShell.</span></span>
-
-<span data-ttu-id="583a1-p125">A primeira etapa é verificar se que existe um objeto de usuário para cada caixa de correio a ser onboarded e verifique se que o valor de **PreferredDataLocation** correto está configurado no Azure AD. As ferramentas de inclusão respeitam o valor de **PreferredDataLocation** e irá migrar as caixas de correio diretamente para o Geo especificado.</span><span class="sxs-lookup"><span data-stu-id="583a1-p125">The first step is to verify a user object exists for each mailbox to be onboarded, and verify the correct **PreferredDataLocation** value is configured in Azure AD. The onboarding tools will respect the **PreferredDataLocation** value and will migrate the mailboxes directly to the specified Geo.</span></span>
-
-<span data-ttu-id="583a1-266">Ou então, você pode usar as seguintes etapas para caixas de correio onboard diretamente em um local específico geo usando o cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) no PowerShell do Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="583a1-266">Or, you can use the following steps to onboard mailboxes directly in a specific geo location using the [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest) cmdlet in Exchange Online PowerShell.</span></span>
-
-1. <span data-ttu-id="583a1-p126">Verifique se que o objeto de usuário existe para cada caixa de correio a ser onboarded e que o **PreferredDataLocation** está definido como o valor desejado no Azure AD. O valor de **PreferredDataLocation** será sincronizado com o atributo **MailboxRegion** do objeto de usuário de email correspondente no Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="583a1-p126">Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Azure AD. The value of **PreferredDataLocation** will be synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.</span></span>
-
-2. <span data-ttu-id="583a1-269">Conecte-se diretamente para o satélite específico Geo usando as instruções de conexão do anteriormente neste tópico.</span><span class="sxs-lookup"><span data-stu-id="583a1-269">Connect directly to the specific satellite Geo using the connection instructions from earlier in this topic.</span></span>
-
-3. <span data-ttu-id="583a1-270">No PowerShell do Exchange Online, armazene as credenciais de administrador local que é usada para executar uma migração de caixa de correio em uma variável executando o seguinte comando:</span><span class="sxs-lookup"><span data-stu-id="583a1-270">In Exchange Online PowerShell, store the on-premises administrator credentials that's used to perform a mailbox migration in a variable by running the following command:</span></span>
-
-    ```
-    $RC = Get-Credential
-    ```
-
-4. <span data-ttu-id="583a1-271">No PowerShell do Exchange Online, crie um novo **New-MoveRequest** semelhante ao exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="583a1-271">In Exchange Online PowerShell, create a new **New-MoveRequest** similar to the following example:</span></span> 
-
-    ```
-    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
-    ```
-
-5. <span data-ttu-id="583a1-272">Repita a etapa #4 para cada caixa de correio que você precisa para migrar do Exchange local para o local de satélite que você está atualmente conectado ao.</span><span class="sxs-lookup"><span data-stu-id="583a1-272">Repeat step #4 for every mailbox you need to migrate from on-premises Exchange to the satellite location you are currently connected to.</span></span>
-
-6. <span data-ttu-id="583a1-273">Se você precisa saber para migrar caixas de correio adicionais para um local diferente de satélite, repita as etapas 2 a 4 para cada local de satélite específico.</span><span class="sxs-lookup"><span data-stu-id="583a1-273">If you need to migrate additional mailboxes to a different satellite location, repeat steps 2 through 4 for each specific satellite location.</span></span>
-
-### <a name="multi-geo-reporting"></a><span data-ttu-id="583a1-274">Relatórios de multi-Geo</span><span class="sxs-lookup"><span data-stu-id="583a1-274">Multi-Geo Reporting</span></span>
-<span data-ttu-id="583a1-p127">**Relatórios de uso de Multi-Geo** no Centro de administração do Office 365 exibe a contagem de usuário pelo geo local. O relatório exibe a distribuição dos usuários para o mês atual e fornece dados históricos para os últimos seis meses.</span><span class="sxs-lookup"><span data-stu-id="583a1-p127">**Multi-Geo Usage Reports** in the Office 365 admin center displays the user count by geo location. The report displays user distribution for the current month and provides historical data for the past 6 months.</span></span>
