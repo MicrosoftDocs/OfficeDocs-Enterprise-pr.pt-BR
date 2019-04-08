@@ -1,9 +1,8 @@
 ---
-title: Configurar a pesquisa para o OneDrive for Business com a funcionalidade multigeográfica
+title: Configurar a pesquisa para o Office 365 Multigeográfico
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,20 +10,18 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "26705455"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931830"
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Configurar a pesquisa para o OneDrive for Business com a funcionalidade multigeográfica
+# <a name="configure-search-for-office-365-multi-geo"></a>Configurar a Pesquisa para o Office 365 Multigeográfico
 
-Em um ambiente multigeográfico do OneDrive for Business, uma organização pode ter um locatário do Office 365, mas armazenar o conteúdo do OneDrive em várias localizações geográficas – um local central e uma ou mais localizações geográficas satélites.
+Em um ambiente multigeográfico, cada localização geográfica tem seu próprio índice de pesquisa e Centro de pesquisa. Quando um usuário pesquisa, é realizado o fan out para todos os índices e os resultados retornados são mesclados.
 
-Cada localização geográfica tem o seu próprio índice de pesquisa e Centro de Pesquisa. Quando um usuário pesquisa, um fan-out da consulta é realizado para todos os índices, e os resultados retornados são mesclados.
-
-Por exemplo, um usuário em uma localização geográfica pode pesquisar conteúdo armazenado em outra localização geográfica ou por conteúdo em um site do SharePoint restrito a uma localização geográfica diferente. Se o usuário tiver acesso a esse conteúdo, a pesquisa mostrará o resultado.
+Por exemplo, um usuário em uma localização geográfica pode pesquisar por um conteúdo armazenado em outra localização geográfica ou por um conteúdo em um site do SharePoint restrito a uma localização geográfica diferente. Se o usuário tiver acesso a esse conteúdo, a pesquisa mostrará o resultado.
 
 ## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Quais clientes de pesquisa funcionam em um ambiente multigeográfico?
 
@@ -48,7 +45,7 @@ Assim que o ambiente multigeográfico for configurado, os usuários que pesquisa
 
 Assim que o ambiente multigeográfico for configurado, os usuários que pesquisam no Delve obtêm resultados de todas as localizações geográficas.
 
-O feed do Delve e o cartão de perfil mostram apenas as visualizações de arquivos armazenados no local **central**. Para os arquivos armazenados em localizações satélites, é mostrado o ícone para o tipo de arquivo.
+O feed do Delve e o cartão de perfil mostram apenas as visualizações dos arquivos que estão armazenadas em uma localização central. Para arquivos que estão armazenados em localizações de satélite, o ícone para o tipo de arquivo é mostrado em vez disso.
 
 ### <a name="the-sharepoint-home-page"></a>A home page do SharePoint
 
@@ -77,13 +74,13 @@ Alguns recursos de pesquisa que talvez você conheça funcionam diferente em um 
 <tbody>
 <tr class="odd">
 <td align="left">Resultados promovidos</td>
-<td align="left">Você pode criar regras de consulta com resultados promovidos em diferentes níveis: para o locatário inteiro, para um conjunto de sites ou para um site. Em um ambiente multigeográfico, defina os resultados promovidos no nível de <strong>locatário</strong> se quiser promover os resultados para os Centros de Pesquisa em <strong>todas</strong> as localizações geográficas. Se você <strong>apenas</strong> deseja promover resultados no Centro de Pesquisa que está na localização geográfica do conjunto de sites ou do site, defina os resultados no nível do <strong>conjunto de sites</strong> ou do <strong>site</strong>.</td>
+<td align="left">Você pode criar regras de consulta com nos resultados promovidos em diferentes níveis: do locatário inteiro, um conjunto de sites ou um site. Em um ambiente multigeográfico, definir resultados promovidos no nível do locatário para promover os resultados para os Centros de Pesquisa em todos as localizações geográficas. Se você deseja promover resultados no Centro de pesquisa que está na localização geográfica do conjunto de sites ou site, defina os resultados promovidos no nível do site ou conjunto de sites. Esses resultados não são promovidos em outras localizações geográficas.</td>
 <td align="left">Se você não precisar de diferentes resultados promovidos por localização geográfica, como diferentes regras de viagens, recomendamos definir resultados promovidos no nível do locatário.</td>
 </tr>
 <tr class="even">
 <td align="left">Refinadores de pesquisa</td>
 <td align="left">A pesquisa retorna refinadores de todas as localizações geográficas de um locatário e os agrega. A agregação é um esforço dentro do melhor possível, quer dizer, as contagens de refinador podem não estar 100% corretas. Para a maioria dos cenários orientados por pesquisa, esse nível e precisão é suficiente. </td>
-<td align="left">Para os aplicativos orientados por pesquisa que dependem da integridade do refinador, consulte cada localização geográfica individualmente sem usar o fan-out multigeográfico.</td>
+<td align="left">Para os aplicativos orientados por pesquisa que dependem da integridade do refinador, consulte cada localização geográfica individualmente.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -93,11 +90,16 @@ Alguns recursos de pesquisa que talvez você conheça funcionam diferente em um 
 <tr class="even">
 <td align="left">IDs do documento</td>
 <td align="left">Se você estiver desenvolvendo um aplicativo orientado por pesquisa que depende de IDs de documento, observe que as IDs de documento em um ambiente multigeográfico não são exclusivas entre localizações geográficas, elas são exclusivas por localização geográfica.</td>
-<td align="left">Adicionamos uma coluna que identifica a localização geográfica. Use essa coluna para obter exclusividade. Essa coluna é denominada "GeoLocationSource".</td>
+<td align="left">Adicionar uma coluna que identifique a localização geográfica. Use essa coluna para ter exclusividade. Essa coluna é denominada "GeoLocationSource".</td>
 </tr>
 <tr class="odd">
 <td align="left">Número de resultados</td>
-<td align="left">A página de resultados de pesquisa mostra resultados combinados das localizações geográficas, mas não é possível paginar mais de 500 resultados.</td>
+<td align="left">A página de resultados de pesquisa mostra os resultados combinados das localizações geográficas, mas não é possível paginar mais de 500 resultados.</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Pesquisa híbrida</td>
+<td align="left">Em um ambiente do SharePoint híbrido com <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">pesquisa híbrida de nuvem</a>,  o conteúdo local é adicionado ao índice do Office 365 da localização central.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -128,7 +130,7 @@ Alguns dos recursos de pesquisa que talvez você conheça não são suportados e
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Como a pesquisa funciona em um ambiente multigeográfico?
 
-**Todos os** clientes de pesquisa usam as existentes APIs REST de Pesquisa do SharePoint para interagir com os índices de pesquisa.
+Todos os clientes de pesquisa usam as APIs REST de Pesquisa existentes do SharePoint para interagir com os índices de pesquisa.
 
 <img src="media/configure-search-for-multi-geo-image1-1.png" />
 
@@ -139,7 +141,7 @@ Alguns dos recursos de pesquisa que talvez você conheça não são suportados e
 
 
 
-<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Observe que não mesclamos os resultados de pesquisa até recebermos resultados de todas as localizações geográficas. Isso significa que as pesquisas multigeográficas têm latência adicional comparadas às pesquisas em um ambiente com apenas uma localização geográfica.
+<span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>Observe que não mesclamos os resultados da pesquisa até recebemos resultados de todas as localizações geográficas. Isso significa que pesquisas multigeográficas têm latência adicional comparadas com pesquisas em um ambiente com localização geográfica única.
 
 <span id="_Set_up_a_1" class="anchor"><span id="_Ref505252370" class="anchor"></span></span>
 ## <a name="get-a-search-center-to-show-results-from-all-geo-locations"></a>Obter um centro de pesquisa para mostrar resultados de todas as localizações geográficas
@@ -153,7 +155,7 @@ Cada centro de pesquisa tem vários verticais e você precisará configurar cada
 3.  Selecione o eixo vertical a configurar, clique no ícone de engrenagem **Configurações** no canto superior direito e, em seguida, clique em **Editar página**. A página de resultados de pesquisa abre no modo de edição.
 
      ![](media/configure-search-for-multi-geo-image2.png)
-1.  Na Web Part de resultados da pesquisa, mova o ponteiro para o canto superior direito da Web Part, clique na seta e, em seguida, clique em **Editar Web Part** no menu. O painel de ferramentas da Web Part de resultados de pesquisa abre na faixa de opções no canto superior direito da página. ![](media/configure-search-for-multi-geo-image3.png)
+1.  Na Web Part de Resultados de Pesquisa, mova o ponteiro para o canto superior direito da web part, clique na seta e, em seguida, clique em **Editar Web Part** no menu. O painel de ferramentas da Web Part de Resultados de Pesquisa é aberto na faixa de opções no canto superior direito da página. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  No painel de ferramentas da Web Part, na seção **Configurações**, em **Configurações de controle de resultados**, marque **Mostrar resultados multigeográficos** para obter a Web Part de resultados de pesquisa para mostrar resultados de todas as localizações geográficas.
 
@@ -168,16 +170,17 @@ Cada centro de pesquisa tem vários verticais e você precisará configurar cada
 
 Os aplicativos de pesquisa personalizada obtêm resultados de todas ou algumas localizações geográficas, especificando-se os parâmetros de consulta com a solicitação para a API REST de pesquisa do SharePoint. Dependendo dos parâmetros de consulta, realiza-se fan-out da consulta para todas ou algumas localizações geográficas. Por exemplo, se você apenas precisar consultar um subconjunto de localizações geográficas para encontrar informações relevantes, você pode controlar o fan-out apenas de acordo com elas. Se a solicitação for concluída, a API REST de pesquisa do SharePoint retorna dados de resposta.
 
-#### <a name="requirement"></a>Requisito #### 
+**Requisito**
+
 Para cada local geográfico, certifique-se de que todos os usuários na organização tiverem o nível de permissão **ler** do site raiz (por exemplo, contoso**APAC**.sharepoint.com/ e a contoso** EU**.sharepoint.com/). [Saiba mais sobre permissões](https://support.office.com/pt-BR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
-EnableMultiGeoSearch — É um valor booliano que especifica se se realiza fan-out da consulta para os índices de outras localizações geográficas do locatário multigeográfico. Definia-o como **verdadeiro** para fazer fan-out da consulta; **falso** para não fazer fan-out da consulta. O valor padrão é **falso**. Se esse parâmetro não for incluído, **não** será realizado fan-out da consulta para outras localizações geográficas. Se você usar o parâmetro em um ambiente que não seja multigeográfico, o parâmetro será ignorado.
+EnableMultiGeoSearch, isso é um valor Booleano que especifica se o fan ou deve ser realizado para os índices das outras localizações geográficas do locatário multigeográfico. Definido como **verdadeiro** para realizar o fan out da consulta. **falso** para não realizar o fan out da consulta. O valor padrão é **falso**. Se esse parâmetro não for incluído, o fan out da consulta não é feito em outra localizações geográficas. Se você usa o parâmetro em um ambiente que não é multigeográfico, o parâmetro será ignorado.
 
-ClientType — Isso é uma cadeia de caracteres. Insira um nome de cliente exclusivo para cada aplicativo de pesquisa. Se você não incluir esse parâmetro, **não** será realizado fan-out da consulta para outras localizações geográficas.
+ClientType - Isso é uma cadeia de caracteres. Insira um nome exclusivo do cliente para cada aplicativo de pesquisa. Se esse parâmetro não for incluído, o fan out da consulta não é feito em outra localizações geográficas.
 
-MultiGeoSearchConfiguration — Esta é uma lista opcional de quais localizações geográficas no locatário multigeográfico realizará fan-out da consulta para quando **EnableMultiGeoSearch** for **verdadeiro**. Se você não incluir esse parâmetro ou deixá-lo em branco, será realizado fan-out da consulta para todas as localizações geográficas. Para cada localização, insira os seguintes itens, no formato JSON:
+MultiGeoSearchConfiguration - Isso é uma lista opcional de localizações geográficas filiais em um locatário multigeográfico para realizar o fan out da consulta quando **EnableMultiGeoSearch** for **verdadeiro**. Se você não incluir este parâmetro ou deixar em branco, o fan out da consulta é feito para todas as localizações geográficas. Para cada localização geográfica, insira os seguintes itens no formato JSON:
 
 <table>
 <thead>
@@ -259,7 +262,7 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 https:// \<tenant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
-> Vírgulas e dois-pontos na lista de locais geográficos da propriedade MultiGeoSearchConfiguration são precedidos pelo caractere **barra invertida**. Isso ocorre porque solicitações GET usam dois-pontos para separar propriedades e vírgulas para separar os argumentos de propriedades. Sem a barra invertida como caractere de escape, a propriedade MultiGeoSearchConfiguration será interpretada incorretamente.
+> Vírgulas e dois-pontos na lista de localizações geográficas para a propriedade MultiGeoSearchConfiguration são precedidas pelo caractere **barra invertida**. Isso ocorre porque solicitações GET usam dois-pontos para separar propriedades e vírgulas para separar os argumentos das propriedades. Sem uma barra invertida como um caractere de escape, a propriedade MultiGeoSearchConfiguration será interpretada incorretamente.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Exemplo de solicitação POST da qual se realiza fan-out para **todas** as localizações geográficas
 

@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 1197d23bdf94fe38ba24138ddde7c1f1fb92b41f
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458321"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931819"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -59,7 +59,7 @@ Por exemplo: para mover o OneDrive do usuário 'Carlos@contosoenergy.onmicrosoft
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations-image1.png)
+![Captura de tela da janela do PowerShell mostrando o cmdlet connect-sposervice](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Validar o ambiente
 
@@ -71,7 +71,7 @@ Para garantir que todos os locais geográficos são compatíveis, execute:
 
 Você verá uma lista da localização geográfica e se o conteúdo poder ser movido, será indicado como "Compatível". Se o comando retornar "Incompatível", repita a validação do status em uma data posterior.
 
-Se o OneDrive estiver com retenção legal ou se contiver um subsite, não poderá ser movido. Você pode usar o cmdlet Start-SPOUserAndContentMove com o parâmetro –ValidationOnly para validar se o OneDrive pode ser movido:
+Se OneDrive contiver um subsite, por exemplo, não pode ser movido. Você pode usar o cmdlet Start-SPOUserAndContentMove com o parâmetro -ValidationOnly para validar se o OneDrive pode ser movido:
 
 `Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly`
 
@@ -96,7 +96,7 @@ Por exemplo, para mover o OneDrive de carlos@contosoenergy.onmicrosoft.com de EU
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations-image2.png)
+![Captura de tela da janela do PowerShell mostrando o cmdlet Start-SPOUserAndContentMove](media/move-onedrive-between-geo-locations-image2.png)
 
 Para agendar uma movimentação geográfica posteriormente, use um dos seguintes parâmetros:
 
