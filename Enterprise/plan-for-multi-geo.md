@@ -1,5 +1,5 @@
 ---
-title: Planejar o OneDrive for Business com a funcionalidade multigeográfica
+title: Plano para o Office 365 multigeográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,29 +9,29 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Saiba mais sobre o OneDrive for Business com a funcionalidade multigeográfica, como ela funciona e quais localizações geográficas estão disponíveis para o armazenamento de dados.
-ms.openlocfilehash: de856bdeb0c0f1ca8e718439ddb98d738843bc5a
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Saiba mais sobre o Office 365 multigeográfico, como a funcionalidade multigeográfica funciona e quais localizações geográficas estão disponíveis para o armazenamento de dados.
+ms.openlocfilehash: 4f7905c55cbb926978a43d70300a70d451512f6f
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200714"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931790"
 ---
-# <a name="plan-for-onedrive-for-business-multi-geo"></a>Planejar o OneDrive for Business com a funcionalidade multigeográfica
+# <a name="plan-for-office-365-multi-geo"></a>Plano para o Office 365 multigeográfico
 
-Este guia foi projetado para os administradores de empresas multinacionais (MNCs) que estão preparando o locatário do SharePoint Online para ser expandido para outras regiões de acordo com a presença da empresa para atender aos requisitos de residência de dados.
+Este guia foi projetado para os administradores de empresas multinacionais (MNCs) que estão preparando o locatário do Office 365 para ser expandido para outras regiões de acordo com a presença da empresa para atender aos requisitos de residência dos dados.
 
-Em uma configuração multigeográfica do OneDrive, o seu locatário do Office 365 consiste em um local central e uma ou mais localizações geográficas satélites. Este é um único locatário que se distribui em várias localizações geográficas. No OneDrive com a funcionalidade multigeográfica, as suas informações de locatário, incluindo as localizações geográficas, são controladas no Azure Active Directory (AAD). 
+Em uma configuração multigeográfica, o locatário do Office 365 consiste em uma localização central e uma ou mais localizações geográficas de satélite. Este é um locatário único que se estende em várias localizações geográficas. Suas informações de locatário, incluindo localizações geográficas, são armazenadas no Azure Active Directory (AAD).
 
-Vejamos alguns termos da multigeografia que o ajudarão a entender os conceitos básicos da configuração:
+Vejamos alguns termos chave da multigeografia que o ajudarão a entender os conceitos básicos da configuração:
 
--   **Locatário** – a representação de uma organização na nuvem do Office 365 que geralmente tem um ou mais domínios associados (por exemplo, http://contoso.sharepoint.com). 
+-   **Locatário** – A representação de uma organização no Office 365 que geralmente tem um ou mais domínios associados (por exemplo, http://contoso.sharepoint.com). 
 
--   **Localizações geográficas** – locais geográficos disponíveis para hospedar os dados em um locatário do Office 365.
+-   **Localizações geográficas** – Localizações geográficas disponíveis para hospedar os dados em um locatário do Office 365.
 
--   **Localizações geográficas** – As localizações geográficas que você configurou para hospedarem os dados de seu locatário do Office 365. Os locatários multigeográficos abrangem mais de uma localização geográfica, por exemplo, América do Norte e Europa.
+-   **Locais de satélite** – Localizações geográficas adicionais configuradas para hospedar dados em seu locatário do Office 365. Locatários multigeográficos abrangem mais do que uma localização geográfica, por exemplo, América do Norte e Europa.
 
--   **Local de dados preferencial (PDL)** – a localização geográfica em que são armazenados os dados do OneDrive de um usuário individual. Isso pode ser definido pelo administrador como qualquer um dos locais de dados permitidos que foram configurados para o locatário. Se você alterar o PDL para um usuário que já tenha um site do OneDrive, os dados do OneDrive não serão movidos para a nova localização geográfica automaticamente. Veja mais informações em [Mover uma biblioteca do OneDrive para uma localização geográfica diferente](move-onedrive-between-geo-locations.md).
+-   **Local de Dados Preferencial (PDL)** – A localização geográfica onde os dados do OneDrive e do usuário individual do Exchange são armazenados. Isso pode ser definido pelo administrador, m qualquer localização geográfica configurada para o locatário. Observe que se você alterar a PDL para um usuário que já tenha um site do OneDrive, seus dados do OneDrive não serão movidos para a nova localização geográfica automaticamente. Confira [Mover uma biblioteca do OneDrive para uma localização geográfica diferente](move-onedrive-between-geo-locations.md) para saber mais. Se houver uma caixa de correio do Exchange, a caixa de correio é movida para o novo local de dados preferencial automaticamente.
 
 Habilitar a multigeografia requer quatro etapas principais:
 
@@ -39,86 +39,37 @@ Habilitar a multigeografia requer quatro etapas principais:
 
 2.  Escolha a(s) localização(ões) geográfica(s) satélite(s) desejada(s) e adicione-a(s) ao seu locatário.
 
-3.  Defina seu local de dados preferencial dos usuários na localização satélite desejada. Quando um novo site do OneDrive é provisionado para um usuário, ele é provisionado para o PDL dele.
+3.  Defina o local preferencial dos dados dos usuários para a localização de satélite desejada. Quando um novo site do OneDrive ou caixa de correio do Exchange está provisionada para um usuário, está provisionado para sua PDL.
 
-4.  Migre os seus sites existentes do OneDrive dos usuários do local central para o local de dados preferencial conforme necessário.
+4.  Migre os seus sites existentes do OneDrive dos usuários do local central para o local de dados preferencial conforme necessário. (As caixas de correio do Exchange são migradas automaticamente quando você define o PDL do usuário.)
 
-Veja em [Configurar o OneDrive for Business com a funcionalidade multigeográfica](multi-geo-tenant-configuration.md) detalhes sobre cada uma dessas etapas.
+Ver [Configurar o Office 365 multigeográfico](multi-geo-tenant-configuration.md) para obter detalhes sobre cada uma dessas etapas.
 
 > [!IMPORTANT]
-> Observe que as funcionalidades multigeográficas do Office 365 não foram criadas para casos de otimização de desempenho, mas sim para atender aos requisitos de residência de dados. Para saber mais sobre a otimização de desempenho do Office 365, confira [Planejamento de rede e ajuste de desempenho para o Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou fale com o grupo de suporte.
+> Observe que o Office 365 multigeográfico não foi desenvolvido para otimizar o desempenho, foi projetado para atender aos requisitos de residência de dados. Para saber mais sobre a otimização do desempenho do Office 365, confira [Planejamento de rede e ajuste de desempenho do Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou fale com o suporte.
 
-Você pode configurar qualquer um dos seguintes locais como localizações geográficas satélites onde você pode hospedar arquivos do OneDrive. Ao planejar a multigeografia, crie uma lista das localizações que você deseja adicionar ao seu locatário do Office 365. Recomendamos começar com uma ou duas localizações satélites e, depois, ir expandindo gradualmente para mais localizações, se necessário.
+Você pode configurar qualquer uma das seguintes localizações para ser de satélite onde você pode hospedar o OneDrive, sites do SharePoint e caixas de correio do Exchange. Ao planejar multigeográfico, crie uma lista de locais que você deseja adicionar ao seu locatário do Office 365. Recomendamos começar com um ou dois locais de satélite e expandir gradualmente para mais localizações geográficas, se necessário.
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Localização</strong></th>
-<th align="left"><strong>Código</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Ásia – Pacífico</td>
-<td align="left">APC</td>
-</tr>
-<tr class="even">
-<td align="left">Austrália</td>
-<td align="left">AUS</td>
-</tr>
-<tr class="odd">
-<td align="left">Canadá</td>
-<td align="left">CAN</td>
-</tr>
-<tr class="even">
-<td align="left">Europa/Oriente Médio/África</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
-<td align="left">França</td>
-<td align="left">FRA</td>
-</tr>
-<tr class="odd">
-<td align="left">Índia</td>
-<td align="left">IND</td>
-</tr>
-<tr class="odd">
-<td align="left">Japão</td>
-<td align="left">JPN</td>
-</tr>
-<tr class="even">
-<td align="left">Coreia</td>
-<td align="left">KOR</td>
-</tr>
-<tr class="odd">
-<td align="left">América do Norte</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="odd">
-<td align="left">Reino Unido</td>
-<td align="left">GBR</td>
-</tr>
-</tbody>
-</table>
+[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 Ao configurar a multigeografia, considere aproveitar a oportunidade de consolidar a sua infraestrutura local ao migrar para o Office 365. Por exemplo, se você tiver farms locais em Cingapura e na Malásia, poderá consolidá-los para a localização satélite de APC, desde que os requisitos de residência de dados permitam isso.
 
 ## <a name="best-practices"></a>Práticas recomendadas
 
-Recomendamos que você crie um usuário de teste no Office 365 para executar alguns testes iniciais. Você passará por algumas etapas de teste e verificação com esse usuário antes de prosseguir para a integração de usuários de produção no recurso de multigeografia do OneDrive.
+Recomendamos que você criie um usuário de teste no Office 365 para executar alguns testes iniciais. Vamos executar algumas etapas de teste e verificação com esse usuário antes de prosseguir para os usuários de produção no Office 365 multigeográfico.
 
-Depois de concluir os testes com o usuário de teste, selecione um grupo piloto, talvez do departamento de TI, como o primeiro a usar o OneDrive em uma nova localização geográfica. Para este primeiro grupo, selecione os usuários que ainda não têm o OneDrive. Recomendamos no máximo cinco pessoas nesse grupo inicial e, depois, que se expanda gradualmente seguindo uma abordagem de implantação em lote.
+Depois de concluir os testes com o usuário de teste, selecione um grupo piloto – talvez do departamento de TI – para ser o primeiro a usar o OneDrive e o Exchange em uma nova localização geográfica. Para esse primeiro grupo, selecione os usuários que ainda não tem do OneDrive. É recomendável não mais do que cinco pessoas neste grupo inicial e expanda-o gradualmente seguindo uma abordagem de implantação em lote.
 
-Cada usuário deve ter um *local de dados preferencial* (PDL) definido para que o Office 365 possa determinar em qual localização geográfica provisionar o OneDrive. O local de dados preferencial do usuário deve corresponder a um de seus locais satélites escolhidos ou ao local central. Embora o campo PDL não seja obrigatório, é recomendável que um PDL seja definido para todos os usuários. As cargas de trabalho de um usuário sem um PDL serão provisionadas no local central.   
+Cada usuário deve ter um *local de dados preferencial* (PDL) definido para que o Office 365 possa determinar em qual localização geográfica provisionar o OneDrive. O local de dados preferencial do usuário deve corresponder a um de seus locais satélites escolhidos ou ao local central. Embora o campo PDL não seja obrigatório, é recomendável que um PDL seja definido para todos os usuários. As cargas de trabalho de um usuário sem um PDL serão provisionadas no local central.
 
 Crie uma lista dos seus usuários e inclua o nome UPN e o código de local para o local de dados preferencial adequado. Inclua o seu usuário de teste e o seu grupo piloto inicial para começar. Você precisará dessa lista para os procedimentos de configuração.
 
-Se os usuários forem sincronizados de um sistema local do Active Directory (AD) para o Azure Active Directory (AAD), você deverá definir o local de dados preferencial para os usuários sincronizados usando o Azure Active Directory Connect. Diretamente, você não poderá configurar o local de dados preferencial para os usuários sincronizados usando o PowerShell do Azure AD. As etapas para se configurar o PDL no AD e sincronizá-lo estão descritas em [Sincronização do Azure Active Directory Connect: Configurar o local de dados preferencial para os recursos do Office 365](https://docs.microsoft.com/pt-BR/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Se os usuários serão sincronizados com um sistema do Active Directory local ao Azure Active Directory, você deve definir o local de dados preferencial como um atributo Active Directory e sincronizá-lo usando o Azure Active Directory Connect. Você não pode configurar o local de dados preferencial diretamente para os usuários sincronizados usando o Azure AD PowerShell. As etapas para configurar o PDL no Active Directory e sincronizá-lo são descritas em [Sincronização do Azure Active Directory Connect: Configurar o local dos dados preferencial para recursos do Office 365](https://docs.microsoft.com/pt-BR/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 A administração de um locatário multigeográfico pode variar de um locatário que não seja de multigeografia, pois muitos dos serviços e configurações do SharePoint e do OneDrive detectam a multigeografia. Recomendamos que leia [Administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md) antes de prosseguir com a configuração.
 
 Leia em [Experiência do usuário em um ambiente multigeográfico](multi-geo-user-experience.md) detalhes sobre a experiência dos usuários finais em um ambiente multigeográfico.
 
-Para começar a configurar o OneDrive for Business com a funcionalidade multigeográfica, confira [Configurar o OneDrive for Business com a funcionalidade multigeográfica](multi-geo-tenant-configuration.md).
+Para começar a configurar o Office 365 Multigeográfico, confira [Configurar o Office 365 Multigeográfico](multi-geo-tenant-configuration.md).
 
 Depois de concluir a configuração, lembre-se de [migrar as bibliotecas do OneDrive dos seus usuários](move-onedrive-between-geo-locations.md) conforme necessário para que os usuários possam trabalhar dos locais de dados preferenciais.

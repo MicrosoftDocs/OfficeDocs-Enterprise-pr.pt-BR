@@ -1,5 +1,5 @@
 ---
-title: Configuração de locatário multigeográfico do Onedrive for Business
+title: Configuração de um locatário do Office 365 multigeográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,84 +9,37 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
-description: Saiba como configurar o OneDrive for Business com a funcionalidade multigeográfica.
-ms.openlocfilehash: f521470b024817bbe53bbf3cbb1dd81e2a4a6754
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Saiba como configurar o Office 365 multigeográfico.
+ms.openlocfilehash: 6a3282c65da79480fe9d7ed1aac24b5e7941c1fc
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200696"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931810"
 ---
-# <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Configuração de locatário multigeográfico do Onedrive for Business
+# <a name="office-365-multi-geo-tenant-configuration"></a>Configuração de um locatário do Office 365 multigeográfico
 
-Antes de configurar seu locatário para o OneDrive for Business com a funcionalidade multigeográfica, não se esqueça de ler o [Plano do OneDrive for Business com a funcionalidade multigeográfica](plan-for-multi-geo.md). Para seguir as etapas deste artigo, você precisará de uma lista de localizações geográficas que deseja habilitar como localizações satélites e dos usuários de teste que deseja provisionar para esses locais.
+Antes de configurar seu locatário do Office 365 multigeográfico, certifique-se de que você leu o [Plano para o Office 365 multigeográfico](plan-for-multi-geo.md). Para seguir as etapas neste artigo, você precisará de uma lista de localizações geográficas que você deseja habilitar como locais de satélite e os usuários de teste que você deseja provisionar para esses locais.
 
 ## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Adicionar recursos multigeográficos no plano do Office 365 para seu locatário
 
-Para usar o OneDrive for Business com Funcionalidades Multigeográficas, é necessário o plano _Funcionalidades Multigeográficas no Office 365_. Trabalhe com sua equipe de conta para adicionar esse plano ao locatário. A equipe de conta conectará você ao especialista em licenciamento apropriado e configurará o locatário.
+Para usar o Office 365 multigeográfico, é necessário o plano _Funcionalidades Multigeográficas no Office 365_. Trabalhar com sua equipe de conta para adicionar este plano para seu locatário. Sua equipe de conectará você com o especialista de licenciamento apropriado e fará a configuração do seu locatário.
 
 Observe que o plano de _Funcionalidades Multigeográficas no Office 365_ é um plano de serviços de nível de usuário. Você precisa de uma licença para cada usuário que deseja hospedar em um local de satélite. Você pode adicionar mais licenças ao longo do tempo ao adicionar usuários em locais de satélite.
 
-Depois que o locatário for provisionado com o plano _Funcionalidades Multigeográficas no Office 365_, a guia **Locais geográficos** será disponibilizada na [Centro de administração do OneDrive](https://admin.onedrive.com).
+Depois que o locatário for provisionado com o plano  _Funcionalidades Multigeográficas no Office 365_, a guia **Localizaões geográficas** será disponibilizada no OneDrive e no Centro de administração do SharePoint.
 
-## <a name="add-satellite-locations-to-your-tenant"></a>Adicionar localizações satélites ao seu locatário
+## <a name="add-satellite-locations-to-your-tenant"></a>Adicionar locais de satélites ao seu locatário
 
-Você deve definir uma localização satélite para cada localização geográfica onde deseja usar o OneDrive for Business. As localizações geográficas disponíveis são mostradas na seguinte tabela:
+Você deve adicionar um local de satélite para cada localização geográfica onde você deseja armazenar dados. As localizações geográficas disponíveis são mostrados na tabela a seguir:
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>Localização</strong></th>
-<th align="left"><strong>Código</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Ásia – Pacífico</td>
-<td align="left">APC</td>
-</tr>
-<tr class="even">
-<td align="left">Austrália</td>
-<td align="left">AUS</td>
-</tr>
-<tr class="even">
-<td align="left">Canadá</td>
-<td align="left">CAN</td>
-</tr>
-<tr class="even">
-<td align="left">Europa/Oriente Médio/África</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="even">
-<td align="left">França</td>
-<td align="left">FRA</td>
-</tr>
-<tr class="even">
-<td align="left">Índia</td>
-<td align="left">IND</td>
-</tr>
-<tr class="odd">
-<td align="left">Japão</td>
-<td align="left">JPN</td>
-</tr>
-<tr class="even">
-<td align="left">Coreia</td>
-<td align="left">KOR</td>
-</tr>
-<tr class="odd">
-<td align="left">América do Norte</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="odd">
-<td align="left">Reino Unido</td>
-<td align="left">GBR</td>
-</tr>
-</tbody>
-</table>
+[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-Adicionar uma localização satélite
+![Captura de tela da página de localizações geográficas do centro de administração do SharePoint](media/sharepoint-multi-geo-admin-center.png)
 
-1. Abra o [Centro de administração do OneDrive](https://admin.onedrive.com)
+Para adicionar um local de satélite
+
+1. Abra o Centro de Administração do SharePoint.
 
 2. Navegue até a guia **Localizações geográficas**.
 
@@ -103,26 +56,29 @@ O provisionamento pode levar desde algumas horas até 72 horas, dependendo do ta
 > [!IMPORTANT]
 > A nova localização satélite será definida com configurações padrão. Isso permitirá configurar a localização satélite de acordo com suas necessidades locais de conformidade.
 
-## <a name="setting-users-preferred-data-location"></a>Definir o local der dados preferencial dos usuários
+## <a name="setting-users-preferred-data-location"></a>Defina o local de dados preferencial dos usuários
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
 Depois de habilitar as localizações satélites necessárias, você pode atualizar as contas de usuários para usar o local de dados de sua preferência. É recomendável definir um local preferencial de dados para todos os usuários, mesmo que o usuário permaneça no local de dados central.
 
+> [!IMPORTANT]
+> Se o local de dados preferencial do usuário for definido em um local que não foi configurado como um local de satélite ou um local central, o sistema adotará como padrão o local central ao provisionar sites do OneDrive e do SharePoint e caixas de correio de Grupo.
+
 > [!TIP]
 > É recomendável começar validações com um usuário de teste ou um pequeno grupo de usuários antes de implantar Funcionalidades Multigeográficas em sua organização de forma mais ampla.
 
-Há dois tipos de objetos de usuário no AAD: usuários somente de nuvem e usuários sincronizados. Siga as instruções apropriadas para o tipo de usuário.
+Há dois tipos de objetos de usuário no Azure Active Directory: usuários somente nuvem e usuários sincronizados. Siga as instruções apropriadas para o seu tipo de usuário.
 
-### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Sincronizar o local de dados preferencial do usuário usando o AD Connect 
+### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Sincronizar o local de dados preferencial do usuário usando o Azure Active Directory Connect 
 
 Se os usuários da empresa são sincronizados de um sistema local do AD (Active Directory) ao AAD (Azure Active Directory), o PreferredDataLocation deve ser preenchido no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: configurar o local preferencial de dados para recursos do Office 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) para configurar a sincronização do local preferencial de dados do Active Directory local com o Azure Active Directory.
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
 > [!IMPORTANT]
-> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos 24 horas após o PDL do usuário ser sincronizado com o Azure Active Directory para que as alterações se propaguem antes que o usuário faça logon no OneDrive for Business. (Configurar o local preferencial de dados antes que o usuário faça logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
+> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos de 24 horas após o PDL do usuário ser sincronizado com o Azure Active Directory para que as alterações se propaguem antes de fazer logon no OneDrive for Business. (Configurar o Local de Dados Preferencial antes do usuário fazer o logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
 
-### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Configurar local de dados preferencial para usuários somente na nuvem 
+### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Configurar Local de Dados Preferencial para usuários somente na nuvem 
 
 Se os usuários da empresa não estiverem sincronizados a partir de um sistema do Active Directory local para o Azure Active Directory, o que significa que são criados no Office 365 ou no Azure Active Directory, o PDL deverá ser definido usando o PowerShell do Azure Active Directory.
 
@@ -140,18 +96,18 @@ Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Direc
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration-image3.png)
+![Captura de tela de uma janela do PowerShell mostrando o conjunto-msoluser](media/multi-geo-tenant-configuration-image3.png)
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
 > [!IMPORTANT]
-> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos 24 horas após o PDL do usuário ser definido para que as alterações se propaguem antes que o usuário faça logon no OneDrive. (Configurar o local preferencial de dados antes que o usuário faça logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
+> Para novos usuários sem o OneDrive provisionado, aguarde pelo menos de 24 horas após o PDL ser feito para que as alterações se propaguem antes de fazer logon no OneDrive. (Configurar o Local de Dados Preferencial antes do usuário fazer o logon para provisionar o OneDrive for Business garante que o novo OneDrive do usuário seja provisionado no local correto.)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisionamento do OneNote e efeito de PDL
 
-Se o usuário já tiver um site do OneDrive criado no locatário, configurar o PDL não moverá automaticamente o OneDrive existente. Para mover o OneDrive de um usuário, confira [Movimentação geográfica do OneDrive for Business](move-onedrive-between-geo-locations.md). Siga as instruções em Mover o OneDrive entre locais geográficos.
+Se o usuário já tiver um site do OneDrive criado no locatário, configurar o PDL não moverá automaticamente o OneDrive existente. Para mover o OneDrive de um usuário, confira [Movimentação Geográfica do OneDrive for Business](move-onedrive-between-geo-locations.md) siga as instruções em Mover o OneDrive entre localizações geográfica. (Observe que a caixa de correio do Exchange do usuário não move automaticamente quando ao definir o PDL do usuário.)
 
-Se o usuário não tiver um site do OneDrive no locatário, o OneDrive será provisionado para ele de acordo com o valor de PDL, supondo que o PDL do usuário corresponda a um dos locais satélites da empresa.
+Se o usuário não tiver um site do OneDrive no locatário, o OneDrive será provisionado para ele de acordo com o valor do PDL, supondo que o PDL do usuário corresponda a um dos locais de satélites da empresa.
 
 ## <a name="configuring-multi-geo-search"></a>Configurar pesquisa multigeográfica
 
@@ -171,13 +127,13 @@ Além disso, recursos de pesquisa multigeográfica podem ser configurados para o
 
 Examine [Configurar a pesquisa para o OneDrive for Business com a funcionalidade multigeográfica](configure-search-for-multi-geo.md) para obter instruções, incluindo limitações e diferenças.
 
-## <a name="validating-the-onedrive-for-business-multi-geo-configuration"></a>Validar a configuração multigeográfica do OneDrive for Business
+## <a name="validating-the-office-365-multi-geo-configuration"></a>Validar a configuração do Office 365 multigeográfico
 
-Veja a seguir alguns casos de uso básicos que convém incluir em seu plano de validação antes de implantar amplamente o OneDrive for Business com Funcionalidades Multigeográficas em sua empresa. Depois de concluir essas testes e os casos de uso mais relevantes para sua empresa, você pode optar por adicionar os usuários em seu grupo piloto inicial.
+Veja a seguir alguns casos de uso básico que você pode incluir em seu plano de validação antes de implementar o Office 365 multigeográficolargamente em sua empresa. Depois de concluir esses testes e os casos de uso mais relevantes para sua empresa, você pode optar por prosseguir e adicionar os usuários em seu grupo piloto inicial.
 
 **OneDrive for Business**
 
-Selecione o OneDrive por meio do inicializador de aplicativos do Office 365 e confirme se você será direcionado automaticamente para a localização geográfica apropriada do usuário, com base no PDL do usuário. O OneDrive for Business agora deve iniciar o provisionamento nesse local. Após o provisionamento, tente carregar e baixar alguns documentos.
+Selecione o OneDrive no inicializador de aplicativos do Office 365 e confirme que você será direcionado automaticamente para a localização geográfica apropriada do usuário com base no PDL do usuário. OneDrive for Business agora vai começar a provisionar nesse local. Uma vez provisionado, tente carregar e baixar alguns documentos.
 
 **Aplicativo móvel do OneDrive**
 
