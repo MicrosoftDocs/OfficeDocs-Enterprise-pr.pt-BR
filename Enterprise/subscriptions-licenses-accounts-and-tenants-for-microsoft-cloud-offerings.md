@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574045"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741317"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -85,7 +85,7 @@ Algumas imagens máquina virtual tem versões de avaliação dos aplicativos ins
   
 ### <a name="user-accounts"></a>Contas de usuário
 
-Contas de usuário para todas as ofertas da nuvem da Microsoft são armazenadas em um locatário do Azure Active Directory (AD) que contém os grupos e as contas de usuários. Um locatário do Azure AD pode ser sincronizado com suas contas existentes do Windows Server Active Directory usando o Azure AD Connect, um serviço baseado no Windows Server, algo conhecido como sincronização de diretórios (DirSync).
+Contas de usuário para todas as ofertas da nuvem da Microsoft são armazenadas em um locatário do Azure Active Directory (AD) que contém os grupos e as contas de usuários. Um locatário do Azure AD pode ser sincronizado com suas contas existentes do Active Directory Domain Services (AD DS) usando o Azure AD Connect, um serviço baseado no Windows Server, algo conhecido como sincronização de diretórios (DirSync).
   
 A Figura 3 mostra um exemplo de várias assinaturas de uma organização usando um locatário comum do Azure AD que contém as contas da organização.
   
@@ -129,13 +129,13 @@ Aqui está um exemplo da relação das organizações, assinaturas, licenças e 
     
   - Contas de usuários da organização em um locatário comum do Azure AD.
     
-Várias assinaturas de oferta de nuvem da Microsoft podem usar o mesmo locatário do Azure AD, que atua como um provedor de identidade comum. Um locatário central do Azure AD, que contém as contas sincronizadas do Windows Server AD local, fornece a Identidade como serviço (IDaaS) baseada em nuvem para a sua organização, o que é mostrado na Figura 4.
+Várias assinaturas de oferta de nuvem da Microsoft podem usar o mesmo locatário do Azure AD, que atua como um provedor de identidade comum. Um locatário central do Azure AD, que contém as contas sincronizadas do AD DS local, fornece a Identidade como serviço (IDaaS) baseada em nuvem para a sua organização, o que é mostrado na Figura 4.
   
 **Figura 4: IDaaS e contas locais sincronizadas para uma organização**
 
 ![IDaaS ou Identidade como um serviço (IaaS) para a sua organização.](media/Subscriptions/Subscriptions-Fig4.png)
   
-A Figura 4 mostra como um locatário comum do Azure AD é usado por ofertas em nuvem da Microsoft para SaaS, aplicativos PaaS do Azure e máquinas virtuais no IaaS do Azure que usam o Azure AD Domain Services. O Azure AD Connect sincroniza da floresta do AD do Windows Server local com o locatário do Azure AD.
+A Figura 4 mostra como um locatário comum do Azure AD é usado por ofertas em nuvem da Microsoft para SaaS, aplicativos PaaS do Azure e máquinas virtuais no IaaS do Azure que usam o Azure AD Domain Services. O Azure AD Connect sincroniza da floresta do AD DS local com o locatário do Azure AD.
   
 Para saber mais sobre a integração de identidade em ofertas da nuvem da Microsoft em [Identidade do Microsoft Cloud para arquitetos corporativos](https://aka.ms/cloudarchidentity).
   
@@ -170,7 +170,7 @@ Para adicionar uma assinatura do Azure com a mesma organização e locatário do
     
 Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e deseja acessar o locatário do Azure AD do Office 365 de sua assinatura do Azure, confira as instruções em [Associar um locatário do Office 365 com uma assinatura do Azure](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
   
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira Também
 
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
