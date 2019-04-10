@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumo: Configure e demonstre como o gerenciamento de direitos de informação do Office 365 protege seus arquivos confidenciais, mesmo quando eles são publicados no conjunto de sites do SharePoint Online errado.'
-ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037965"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741297"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365
 
@@ -32,7 +32,7 @@ O gerenciamento de direitos de informação (IRM) no Office 365 é um conjunto d
 Com as instruções deste artigo, você habilita e testa o IRM no Office 365 para arquivos que contêm possíveis informações confidenciais em sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa Visual para todos os artigos da pilha do guia do laboratório de teste do Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -41,7 +41,7 @@ Se você só quiser testar a proteção de arquivos confidenciais de forma leve 
 Se você quiser testar a proteção de arquivos confidenciais em uma empresa simulada, siga as instruções em [DirSync para seu ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> O teste de proteção de arquivos confidenciais não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta do Windows Server AD. Ele é fornecido aqui como uma opção para que você possa testar a proteção de arquivos confidenciais e experimentá-lo em um ambiente que representa uma organização típica. 
+> O teste de proteção de arquivos confidenciais não exige o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta dos serviços de domínio Active Directory (AD DS). Ele é fornecido aqui como uma opção para que você possa testar a proteção de arquivos confidenciais e experimentá-lo em um ambiente que representa uma organização típica. 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Fase 2: demonstrar como os documentos de sites protegidos por permissões podem ser vazados
 
@@ -55,7 +55,7 @@ Use as instruções em [conectar-se ao Office 365 PowerShell](https://technet.mi
     
 - A máquina virtual CLIENT1 (para o ambiente de desenvolvimento/teste corporativo simulado do Office 365).
     
-Na caixa de diálogo solicitação de credencial do **Windows PowerShell** , digite o nome do administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e a senha da sua assinatura de avaliação do Office 365.
+Na caixa de diálogo solicitação de credencial do **Windows PowerShell** , digite o nome do administrador global do jdoe@contosotoycompany.onmicrosoft.comOffice 365 (exemplo:) e a senha da sua assinatura de avaliação do Office 365.
   
 Preencha o nome da sua organização (exemplo: contosotoycompany) e o código de país de dois caracteres para seu local e, em seguida, execute os seguintes comandos do prompt do módulo do Windows Azure Active Directory para Windows PowerShell:
   
@@ -332,12 +332,13 @@ Outra maneira de ver a proteção de IRM é examinar os arquivos na sua pasta lo
   
 ## <a name="see-also"></a>Confira também
 
+
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
+[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 

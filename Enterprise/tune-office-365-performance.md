@@ -3,7 +3,7 @@ title: Ajustar o desempenho do Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 04/09/2019
 ms.audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -14,51 +14,24 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
-description: Links para outros recursos que descrevem como melhorar o desempenho do Office 365, blogs, artigos e cursos de treinamento.
-ms.openlocfilehash: ebfea1e1b5d3e1195041caf8bbb0b1d96546de80
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Links para cursos de treinamento, Blogs, artigos e outros recursos que explicam como melhorar o desempenho do Office 365.
+ms.openlocfilehash: c44a930c9dabed0061096b456c2535b61f326cfd
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539342"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741177"
 ---
 # <a name="tune-office-365-performance"></a>Ajustar o desempenho do Office 365
 
-Links este artigo para cursos de treinamento, blogs, artigos e outros recursos que descrevem como melhorar o desempenho do Office 365.
+Este artigo fornece links para cursos de treinamento, Blogs, artigos e outros recursos que explicam como melhorar o desempenho do Office 365.
   
-Este artigo faz parte do projeto [de planejamento de rede e ajuste de desempenho para o Office 365](https://aka.ms/tune) .
+Este artigo faz parte do [planejamento de rede e ajuste de desempenho para o projeto do Office 365](https://aka.ms/tune) .
    
-## <a name="articles-about-fine-tuning-office-365-performance"></a>Artigos sobre o desempenho do Office 365 de ajuste fino
+## <a name="articles-about-fine-tuning-office-365-performance"></a>Artigos sobre como ajustar o desempenho do Office 365
 
-Curso de [Gerenciamento de desempenho do Office 365](https://aka.ms/tunemva) em Microsoft Virtual Academy contém 11 módulos em planejamento e Solucionando problemas de áreas que incluem: 
+Confira as [10 dicas principais para otimizar e solucionar problemas de sua conectividade de rede do Office 365](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) em Paul Collinge. 
   
-- Introdução ao Office 365 desempenho gerenciamento curso
-    
-- Rede e centros de dados do office 365
-    
-- Planejamento de capacidade de Internet do Office 365 - Exchange Online
-    
-- Planejamento de capacidade de Internet do Office 365 - Lync Online (agora Skype para negócios)
-    
-- Planejamento de capacidade de Internet do Office 365 - SharePoint Online
-    
-- O modelo de criação de linha de base para o planejamento de capacidade de Internet
-
-    
-- Práticas recomendadas &amp; reais de clientes projetos de planejamento de capacidade de Internet
-    
-- Planejamento para a lista de exceções de firewalls de Office 365
-    
-- Processo e ferramentas de solução de problemas de desempenho usados
-    
-- Testes de solução de problemas de desempenho
-
-    
-- Solução de problemas de personalizações do SharePoint Online
-
-    
-Dê uma olhada as [principais 10 dicas para otimização e resolver problemas de conectividade de rede seu Office 365](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) por Paul Collinge. 
-  
-Para obter informações sobre como usar conversão de endereço de rede com o Office 365, consulte [suporte a NAT com o Office 365](nat-support-with-office-365.md).
+Para obter informações sobre como usar a conversão de endereços de rede com o Office 365, consulte [suporte de NAT com o office 365](nat-support-with-office-365.md).
   
 

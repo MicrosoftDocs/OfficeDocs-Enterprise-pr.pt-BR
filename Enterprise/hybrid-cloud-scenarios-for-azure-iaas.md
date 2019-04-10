@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumo: entenda a arquitetura híbrida e os cenários para ofertas de nuvem com base na infraestrutura do Microsoft de serviço (IaaS) no Azure.'
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037925"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741357"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Cenários de nuvem híbrida para a IaaS do Azure
 
@@ -41,7 +41,7 @@ Para cada camada da arquitetura:
     
 - Identidade
     
-    Adicione servidores de identidade, como controladores de domínio do Windows Server AD, ao conjunto de servidores que estão sendo executados no Azure VNets para autenticação local.
+    Adicione servidores de identidade, como controladores de domínio dos serviços de domínio do Active Directory (AD DS), ao conjunto de servidores em execução no Azure VNets para autenticação local.
     
 - Rede
     
@@ -59,13 +59,13 @@ Executar seu servidor de sincronização de diretório a partir de uma VNet do A
 
 ![Servidor de sincronização de diretório para o Office 365 no Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-Na Figura 2, uma rede local hospeda uma infraestrutura do AD do Windows Server, com um servidor proxy e um roteador em sua borda. O roteador conecta-se a um gateway do Azure na borda de uma VNet do Azure com uma conexão VPN de site a site ou ExpressRoute. Dentro da VNet, um servidor de sincronização de diretório executa o Azure AD Connect.
+Na Figura 2, uma rede local hospeda uma infraestrutura do AD DS, com um servidor proxy e um roteador em sua borda. O roteador conecta-se a um gateway do Azure na borda de uma VNet do Azure com uma conexão VPN de site a site ou ExpressRoute. Dentro da VNet, um servidor de sincronização de diretório executa o Azure AD Connect.
   
-Um servidor de sincronização de diretório para O Office 365 sincroniza a lista de contas no Windows Server AD com o locatário do Azure AD de uma assinatura do Office 365.
+Um servidor de sincronização de diretório para o Office 365 sincroniza a lista de contas no AD DS com o locatário do Azure AD de uma assinatura do Office 365.
   
 Um servidor de sincronização de diretório é um servidor baseado em Windows que executa o Azure AD Connect. Para o provisionamento mais rápido ou para reduzir o número de servidores locais em sua organização, implante seu servidor de sincronização de diretório em uma rede virtual (VNet) no Azure IaaS.
   
-O servidor de sincronização de diretório sonda as alterações no AD do Windows Server e as sincroniza com a assinatura do Office 365.
+O servidor de sincronização de diretório sonda alterações no AD DS e, em seguida, sincroniza-as com a assinatura do Office 365.
   
 Para obter mais informações, consulte [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
@@ -163,7 +163,7 @@ Na Figura 5, uma rede local hospeda uma infraestrutura de identidade e usuários
   
 Essa configuração tem os seguintes atributos de aplicativos LOB no Azure:
   
-- **Camadas:** Há camadas para servidores de proxy da Web, servidores do AD FS e controladores de domínio do Windows Server AD.
+- **Camadas:** Há camadas para servidores de proxy da Web, servidores do AD FS e controladores de domínio do AD DS.
     
 - **Distribuição de carga:** Um balanceador de carga externo do Azure distribui as solicitações de autenticação de cliente de entrada para os proxies web e um balanceador de carga interno do Azure distribui solicitações de autenticação para os servidores do AD FS.
     
@@ -180,8 +180,9 @@ Siga este caminho para adoção bem-sucedida:
     
 ## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+
+[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 
 

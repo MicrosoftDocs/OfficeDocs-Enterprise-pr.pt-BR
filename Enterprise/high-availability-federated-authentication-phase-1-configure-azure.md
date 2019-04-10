@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumo: Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.'
-ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037955"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741307"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: Configurar o Azure
 
@@ -61,7 +61,7 @@ Consulte a [calculadora de espaço de endereçamento para sub-redes de gateway d
   
 Trabalhe com seu departamento de TI para determinar esses espaços de endereço a partir do espaço de endereço da rede virtual.
   
-|**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Objetivo**|
+|**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Finalidade**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio dos serviços de domínio do Active Directory (AD DS) e pelas máquinas virtuais (VMs) do servidor dirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelos VMs do AD FS.  <br/> |
@@ -149,7 +149,7 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Preencha a tabela a seguir para o conjunto de nomes de grupos de recursos exclusivos.
   
-|**Item**|**Nome do grupo de recursos**|**Objetivo**|
+|**Item**|**Nome do grupo de recursos**|**Finalidade**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Controladores de domínio:  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Servidores do AD FS  <br/> |
@@ -254,7 +254,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> A autenticação federada de usuários individuais não confia em nenhum recurso local. No enTanto, se esta conexão VPN de site a site ficar indisponível, os controladores de domínio no VNet não receberão atualizações para contas de usuário e grupos criados no Windows Server AD local. Para garantir que isso não aconteça, é possível configurar a alta disponibilidade para a conexão VPN site a site. Veja mais informações em [Conectividade VNet para VNet e entre instalações altamente disponível](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> A autenticação federada de usuários individuais não confia em nenhum recurso local. No enTanto, se esta conexão VPN de site a site ficar indisponível, os controladores de domínio no VNet não receberão atualizações para contas de usuário e grupos feitos nos serviços de domínio do Active Directory local. Para garantir que isso não aconteça, é possível configurar a alta disponibilidade para a conexão VPN site a site. Veja mais informações em [Conectividade VNet para VNet e entre instalações altamente disponível](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Em seguida, registre o endereço IPv4 público do gateway de VPN do Azure para a sua rede virtual na exibição deste comando:
   
@@ -311,9 +311,10 @@ Use o [High availability federated authentication Phase 2: Configure domain cont
   
 ## <a name="see-also"></a>Confira também
 
+
 [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+[Identidade federada para seu ambiente de desenvolvimento/teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 

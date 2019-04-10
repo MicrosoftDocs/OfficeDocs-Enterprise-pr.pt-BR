@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Resumo: Crie e configure os servidores dos Serviços de Federação do Active Directory (AD FS) para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: b2ea785aa5bb2237df5509a2a4d4401cd149f36d
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: add154dbce67c76b3f88e205c683711f72cb7b9a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650134"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741157"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Autenticação federada de alta disponibilidade Fase 3: Configurar servidores do AD FS
 
@@ -135,10 +135,10 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 Para cada máquina virtual, use o cliente de área de trabalho remota de sua preferência e crie uma conexão de área de trabalho remota. Use seu nome de computador ou DNS de intranet e as credenciais da conta de administrador local.
   
-Para cada máquina virtual, associe-os ao domínio do AD apropriado do Windows Server com esses comandos no prompt do Windows PowerShell.
+Para cada máquina virtual, ingresse-as para o domínio do Active Directory Domain Services (AD DS) apropriado com estes comandos no prompt do Windows PowerShell.
   
 ```
-$domName="<Windows Server AD domain name to join, such as corp.contoso.com>"
+$domName="<AD DS domain name to join, such as corp.contoso.com>"
 $cred=Get-Credential -Message "Type the name and password of a domain acccount."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
@@ -155,6 +155,7 @@ Veja a seguir a configuração resultante da conclusão bem-sucedida dessa fase,
 Use o [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) para continuar configurando essa carga de trabalho.
   
 ## <a name="see-also"></a>Confira também
+
 
 [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

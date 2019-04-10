@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumo: Configure e demonstre a Proteção Avançada contra Ameaças do Office 365 no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 4ef057480f0ebfb2e64529f39d0db65031b75010
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037935"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741337"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365
 
@@ -156,13 +156,14 @@ Nesta fase, você demonstrará como a ATP lida com emails potencialmente mal-int
 Agora, você pode usar esse ambiente para criar novas políticas e fazer testes com a ATP.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para ver um mapa visual para todos os artigos da pilha do Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa Visual para todos os artigos da pilha do guia do laboratório de teste do Office 365.
   
 ## <a name="see-also"></a>Confira também
 
+
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
+[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
@@ -170,7 +171,7 @@ Agora, você pode usar esse ambiente para criar novas políticas e fazer testes 
   
 [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md) 
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md) 
 
 [Proteção avançada para anexos seguros e links seguros](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)
 

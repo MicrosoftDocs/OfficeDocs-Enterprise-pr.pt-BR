@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumo: Configure e demonstre o Office 365 Cloud app Security no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038027"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741257"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -32,7 +32,7 @@ O Office 365 Cloud app Security, anteriormente conhecido como gerenciamento de s
 Com as instruções deste artigo, você habilita e testa o Cloud app Security na sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa Visual para todos os artigos da pilha do guia do laboratório de teste do Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -63,7 +63,7 @@ Neste procedimento, você demonstra que antes de habilitar o Cloud app Security,
     
 5. Na página **usuário 4** , clique em **Editar** para a linha **funções** .
     
-6. Na página **Editar funções de usuário** , clique em **Administrador Global**, digite **User4@contoso.com** no **endereço de email alternativo**e clique em **salvar**. Clique em **fechar** duas vezes.
+6. Na página **Editar funções de usuário** , clique em **administrador global**, **user4@contoso.com** digite o **endereço de email alternativo**e clique em **salvar**. Clique em **fechar** duas vezes.
     
 7. Selecione o ícone do inicializador de aplicativos no canto superior esquerdo e escolha **email**.
     
@@ -131,7 +131,7 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
     
 11. Na página **usuário 5** , clique em **Editar** para a linha **funções** .
     
-12. Na página **Editar funções de usuário** , clique em **administrador personalizado**, clique em administrador de **Gerenciamento de usuário**e administrador de **senha** , digite **User5@contoso.com** no **endereço de email alternativo**e clique em **Salvar**. Clique em **fechar** duas vezes.
+12. Na página **Editar funções de usuário** , clique **em administrador personalizado**, clique em administrador **de gerenciamento de usuário**e **user5@contoso.com** administrador de **senha** , digite o **endereço de email alternativo**e clique em **salvar**. Clique em **fechar** duas vezes.
     
 13. Clique no ícone de usuário no canto superior direito e clique em sair ****. 
     
@@ -159,11 +159,12 @@ Agora você pode usar esse ambiente para criar novas políticas e experimentar m
   
 ## <a name="see-also"></a>Confira também
 
+
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 [Visão geral do Cloud app Security no Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

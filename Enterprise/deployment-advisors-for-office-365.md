@@ -17,25 +17,25 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: Os assistentes de implantação do Office 365 oferecem suporte autoorientado para a configuração do Office 365.
-ms.openlocfilehash: d948363c640896c8c14e695c5588f322756c92d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Os consultores de implantação do Office 365 oferecem suporte autoorientado para a configuração do Office 365.
+ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085430"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741468"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Supervisores de implantação para serviços do Office 365
 
-Os consultores de implantação do Office 365 oferecem suporte autoorientado para a configuração do Office 365 para sua organização. Basta selecionar um assistente e entrar no Office 365. 
+Os consultores de implantação do Office 365 oferecem suporte autoorientado para a configuração do Office 365 para sua organização. Basta selecionar um guia de configuração ou um supervisor e entrar no Office 365. 
 
-À medida que você seleciona os recursos e opções que deseja implantar, o assistente cria um plano de instalação passo a passo que é personalizado para suas necessidades. Você receberá um conjunto completo de instruções, vídeos, artigos de referência e scripts. Alguns assistentes têm automação que alterará algumas de suas configurações, enquanto em outras áreas dos assistentes você alterar suas configurações e dados com o assistente para orientá-lo. Você pode usar esses assistentes a qualquer momento, mesmo durante o planejamento ou depois de configurar os serviços, para saber mais sobre os recursos e opções do Office 365.
+À medida que você seleciona os recursos e opções que deseja implantar, o supervisor cria um plano de instalação passo a passo que é personalizado para suas necessidades. Você receberá um conjunto completo de instruções, vídeos, artigos de referência e scripts. Alguns conselheiros têm automação que alterará algumas de suas configurações, enquanto em outras áreas do supervisor você altera suas configurações e dados com o supervisor para orientá-lo. Você pode usar esses conselheiros a qualquer momento, mesmo durante o planejamento ou depois de configurar os serviços, para saber mais sobre os recursos e opções do Office 365.
   
 ## <a name="windows-10-with-office-365"></a>Windows 10 com o Office 365
 
 [Supervisor de implantação do Microsoft 365](https://aka.ms/microsoft365setupguide)
   
-O Microsoft 365 é uma solução completa e inteligente que inclui o Office 365, Windows 10 e Enterprise Mobility + Security. O Microsoft 365 permite que todas as pessoas sejam criativas e trabalhem juntas de forma segura. Use este guia para configurar os dispositivos Windows 10 ou atualizar os computadores dos usuários para o Windows 10, com a implantação opcional de aplicativos do Office, Windows Analytics e proteção avançada contra ameaças do Windows Defender (Microsoft 365 Enterprise E5 somente plano).
+O Microsoft 365 é uma solução completa e inteligente que inclui o Office 365, Windows 10 e Enterprise Mobility + Security. O Microsoft 365 permite que todas as pessoas sejam criativas e trabalhem juntas de forma segura. Use este supervisor para configurar os dispositivos Windows 10 ou atualizar os computadores dos usuários para o Windows 10, com a implantação opcional de aplicativos do Office, Windows Analytics e proteção avançada contra ameaças do Windows Defender (Microsoft 365 Enterprise E5 somente plano).
 
 
 ## <a name="mail-migration-and-protection"></a>Migração e proteção de email
@@ -46,7 +46,7 @@ O [guia preparar o ambiente](https://go.microsoft.com/fwlink/?linkid=2005213) é
 ### <a name="exchange-migration-advisor"></a>Supervisor de migração do Exchange
 O [supervisor de migração de email do Office 365](https://aka.ms/office365setup) ajudará você a mover caixas de correio do seu sistema de email atual para o Exchange Online no Office 365 com ferramentas automatizadas e orientações passo a passo. Recomendamos o melhor caminho de migração para sua organização com base no sistema de email atual, o número de caixas de correio que você deseja migrar e como você planeja gerenciar usuários e acesso de usuários.
   
-O [Assistente de calendário e contatos do Gmail](https://aka.ms/gmailcontactscalendar) fornece instruções passo a passo para migrar seus contatos do Gmail e itens do Google Calendar para o Office 365. Quando você migra a caixa de correio do Gmail de um usuário para o Office 365, as mensagens de email são migradas, mas os contatos e os itens de calendário não. Este assistente fornece as etapas para importar contatos do Gmail e itens de calendário do Google para o Office 365.
+O [Assistente de calendário e contatos do Gmail](https://aka.ms/gmailcontactscalendar) fornece instruções passo a passo para migrar seus contatos do Gmail e itens do Google Calendar para o Office 365. Quando você migra a caixa de correio do Gmail de um usuário para o Office 365, as mensagens de email são migradas, mas os contatos e os itens de calendário não. Este guia fornece as etapas para importar contatos do Gmail e itens de calendário do Google para o Office 365.
   
 ### <a name="exchange-online-protection"></a>Proteção do Exchange Online
 O Microsoft [proteção do Exchange Online (EOP)](https://aka.ms/EOPguidance) é um serviço de filtragem de email baseado em nuvem que ajuda a proteger sua organização contra spam e malware e inclui recursos para proteger sua organização contra violações de política de mensagens.
@@ -57,7 +57,7 @@ O Microsoft [proteção do Exchange Online (EOP)](https://aka.ms/EOPguidance) é
 ### <a name="office-365-proplus"></a>Office 365 ProPlus
 O [Guia de início rápido do Office ProPlus](https://aka.ms/OPPquickstartguide) orienta você pelas etapas para instalar o Office em um computador ou Mac para sua empresa e inclui dicas para a introdução de todos os usuários do Office.
 
-O [supervisor de implantação do Office ProPlus](https://aka.ms/o365proplusdeploy) ajuda você a colocar seus usuários em funcionamento nas versões mais recentes do Office. Este supervisor orienta você pelas etapas para ajudar os usuários a instalar o Office diretamente do portal do Office 365 online, ou para implantar o Office em seus usuários a partir de um local no local. Estão incluídas instruções para usar o System Center Configuration Manager, um script de inicialização de política de grupo, uma imagem de disco do sistema operacional ou uma ativação compartilhada de serviços de área de trabalho remota (RDS).
+O [supervisor de implantação do Office ProPlus](https://aka.ms/o365proplusdeploy) ajuda você a colocar seus usuários em funcionamento nas versões mais recentes do Office. Este supervisor orienta você pelas etapas para ajudar os usuários a instalar o Office diretamente do portal do Office 365 online ou a implantar o Office para seus usuários a partir de um local no local. Estão incluídas instruções para usar o System Center Configuration Manager, um script de inicialização de política de grupo, uma imagem de disco do sistema operacional ou uma ativação compartilhada de serviços de área de trabalho remota (RDS).
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 Use o [Guia de início rápido do onedrive for Business](https://aka.ms/ODfBquickstartguide) para começar rapidamente com o onedrive for Business para armazenamento de arquivos, compartilhamento e sincronização.
@@ -66,17 +66,17 @@ Use o [Guia de início rápido do onedrive for Business](https://aka.ms/ODfBquic
   
 O [início rápido do SharePoint Online](https://aka.ms/SPOquickstartguide) mostra como configurar o SharePoint na nuvem para o armazenamento de documentos e o gerenciamento de conteúdo. Essa configuração básica será tudo o que você precisará se não tiver uma grande quantidade de dados para migrar ou um SharePoint Server local que você deseja continuar executando em uma configuração híbrida.
   
-O [supervisor de implantação do SharePoint Online](https://aka.ms/spoguidance) ajuda você a escolher a opção de implantação que funciona melhor para a sua organização e fornece as etapas para configurar os recursos do SharePoint Online para atender às suas necessidades de negócios. Escolha em implantação de nuvem, implantação híbrida ou migração local para nuvem. Siga as etapas para configurar recursos do SharePoint Online, como armazenamento e compartilhamento de arquivos, compartilhamento externo de arquivos, conjuntos de sites, configurações globais e perfis de usuário, e seu site de equipe do Office 365.
+O [supervisor de implantação do SharePoint Online](https://aka.ms/spoguidance) ajuda você a escolher a opção de implantação que funciona melhor para a sua organização e fornece as etapas para configurar os recursos do SharePoint Online para atender às suas necessidades de negócios. Escolha em implantação de nuvem, implantação híbrida ou migração local para nuvem. Siga as etapas para configurar os recursos do SharePoint Online, como armazenamento e compartilhamento de arquivos, compartilhamento de arquivos externos, conjuntos de sites, configurações globais e perfis de usuário e seu site de equipe do Office 365.
   
 ## <a name="security-and-identity"></a>Segurança e identidade
 
 ### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>Supervisor do Azure Active Directory Connect (Azure AD Connect)
 O Microsoft [Azure ad Connect Advisor](https://aka.ms/aadconnectpwsync) é um guia passo a passo que mostra como adicionar informações da conta de usuário ao Office 365 sem criar manualmente cada usuário. Também mostra como configurar a sincronização de hash de senha ou a autenticação de passagem, para que os usuários possam entrar no email e no domínio usando a mesma senha. Se você optar por configurar a entrada federada com o AD FS, este guia também fornecerá etapas para implantar o AD FS em um novo servidor ou em um farm existente do Windows Server 2012 R2. O Azure AD Connect substitui versões antigas das ferramentas de integração de identidades, como dirSync e sincronização do Azure AD, e é usada principalmente para adicionar usuários e outros dados ao Azure Active Directory para o Office 365.
   
-### <a name="azure"></a>Azure
-O [Guia de instalação do Azure ad Basic](https://aka.ms/azureadbasic) ajuda você a configurar recursos como gerenciamento de acesso baseado em grupo, redefinição de senha de autoatendimento para aplicativos em nuvem e proxy de aplicativo do Azure Active Directory para publicar aplicativos Web no local.
+### <a name="azure"></a>Azul-fino
+O [Guia de instalação do Azure ad Basic](https://aka.ms/azureadbasic) ajuda você a configurar recursos, como gerenciamento de acesso baseado em grupo, redefinição de senha de autoatendimento para aplicativos em nuvem e proxy de aplicativo do Azure Active Directory para publicar aplicativos Web no local.
   
-O [Guia de instalação do Azure ad Premium](https://aka.ms/aadpguidance) ajuda você a habilitar recursos do Azure Active Directory Premium (Azure ad Premium), que fornece recursos de gerenciamento de identidades como autenticação multifator, logon único (SSO), registro de dispositivo gerenciamento de senha e de grupo de autoatendimento, monitoramento de segurança.
+O [Guia de instalação do Azure ad Premium](https://aka.ms/aadpguidance) ajuda você a habilitar os vários recursos do Azure Active Directory Premium (Azure ad Premium), que fornece recursos de gerenciamento de identidades como autenticação multifator, logon único (SSO), registro de dispositivos gerenciamento de senha e de grupo de autoatendimento e monitoramento de segurança.
   
 ### <a name="verify-your-domain"></a>Verify your domain
 A [verificar seu domínio no office 365](https://aka.ms/verifyyourdomaino365) Advisor ajuda você a personalizar o Office 365 adicionando seu próprio nome de domínio (também conhecido como o nome do site).
@@ -86,7 +86,7 @@ A [verificar seu domínio no office 365](https://aka.ms/verifyyourdomaino365) Ad
 ### <a name="office-365-groups"></a>Grupos do Office 365
 [Guia de instalação de grupos do Office 365](https://aka.ms/groupsguide)
 
-Os grupos do Office 365 são um espaço de trabalho compartilhado para email, conversas, arquivos e eventos em que os membros do grupo podem realizar coletivamente as coisas. Os grupos no Office 365 permitem que você escolha um conjunto de pessoas com as quais você deseja colaborar e configure facilmente uma coleção de recursos para que as pessoas compartilhem. Você não precisa se preocupar em atribuir permissões manualmente a todos esses recursos, pois adicionar membros ao grupo fornece automaticamente as permissões necessárias para as ferramentas que o seu grupo oferece.
+Os grupos do Office 365 são um espaço de trabalho compartilhado para email, conversas, arquivos e eventos em que os membros do grupo podem realizar coletivamente as coisas. Grupos no Office 365 permite que você escolha um conjunto de pessoas com as quais você deseja colaborar e configure facilmente uma coleção de recursos para que as pessoas compartilhem. Você não precisa se preocupar em atribuir permissões manualmente a todos esses recursos, pois a adição de membros ao grupo fornece automaticamente as permissões necessárias para as ferramentas que o seu grupo oferece.
   
 ### <a name="microsoft-teams"></a>Microsoft Teams
 
@@ -102,7 +102,7 @@ Vá rapidamente com o Skype for Business para mensagens instantâneas (IM), pres
   
 [Supervisor de implantação do Skype for Business](https://aka.ms/skypeguidance)
   
-O supervisor de implantação do Skype for Business ajuda você a começar a trabalhar com o Skype for Business online. Este assistente mostra como configurar os recursos do Skype for Business, como mensagens instantâneas (IM), reuniões online, conferências de vídeo, conferência PSTN (rede telefônica pública comutada), PBX (Cloud Private branding Exchange) e transmissão de reunião do Skype. As etapas são incluídas para configurar um ambiente híbrido, onde você conecta o Skype for Business online à sua implantação local do Skype for Business.
+O supervisor de implantação do Skype for Business ajuda você a começar a trabalhar com o Skype for Business online. Este supervisor mostra como configurar os recursos do Skype for Business, como mensagens instantâneas (IM), reuniões online, conferências de vídeo, conferência PSTN (rede telefônica pública comutada), PBX (Cloud Private branding Exchange) e transmissão de reunião do Skype. As etapas são incluídas para configurar um ambiente híbrido, onde você conecta o Skype for Business online à sua implantação local do Skype for Business.
   
 ### <a name="yammer"></a>Yammer
 

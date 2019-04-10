@@ -13,81 +13,82 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
-description: 'Resumo: Entenda a definição e elementos de nuvem da Microsoft híbrida.'
-ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+description: 'Resumo: entender a definição e os elementos da nuvem híbrida da Microsoft.'
+ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327343"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741426"
 ---
 # <a name="hybrid-cloud-overview"></a>Visão geral da nuvem híbrida
 
- **Resumo:** Compreenda a definição e elementos de nuvem da Microsoft híbrida.
+ **Resumo:** Entender a definição e os elementos da nuvem híbrida da Microsoft.
   
-Nuvem híbrida usa os recursos de computação ou armazenamento em sua rede local e na nuvem. Você pode usar a nuvem híbrida como um caminho para migrar seus negócios e suas necessidades de TI para a nuvem ou integre plataformas de nuvem e serviços com as existentes no local infraestrutura como parte de sua estratégia geral de TI.
+A nuvem híbrida usa recursos de computação ou armazenamento em sua rede local e na nuvem. Você pode usar a nuvem híbrida como um caminho para migrar sua empresa e suas necessidades de ti para a nuvem ou integrar plataformas de nuvem e serviços com sua infraestrutura local existente como parte da sua estratégia geral de ti.
   
 ## <a name="microsoft-hybrid-cloud"></a>Nuvem híbrida da Microsoft
 
-Nuvem híbrida da Microsoft é um conjunto de cenários de negócios que combinam uma plataforma de nuvem da Microsoft com um componente de local, como: 
+A nuvem híbrida da Microsoft é um conjunto de cenários comerciais que combinam uma plataforma de nuvem da Microsoft com um componente local, como: 
   
-- Obtenção de resultados da pesquisa do conteúdo em um farm do SharePoint no local e no SharePoint Online no Office 365.
+- Obter resultados de pesquisa do conteúdo em um farm local do SharePoint e no SharePoint Online no Office 365.
     
-- Um aplicativo móvel em execução no Azure que consulta a um armazenamento de dados local.
+- Um aplicativo móvel em execução no Azure que consulta um repositório de dados local.
     
-- Uma intranet IT carga de trabalho em execução em máquinas virtuais do Azure.
+- Uma carga de trabalho de ti de intranet em execução nas máquinas virtuais do Azure.
     
-**Figura 1: Componentes da nuvem híbrida Microsoft**
+**Figura 1: componentes da nuvem híbrida da Microsoft**
 
 ![Componentes da nuvem híbrida da Microsoft](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   
-A Figura 1 mostra os componentes de nuvem da Microsoft híbrido, a partir de uma rede local para o conjunto do Office 365, a plataforma do Azure como um serviço (PaaS) e a infra-estrutura do Azure como um serviço (IaaS) de serviços disponível pela Internet ou por uma conexão ExpressRoute.
+A Figura 1 mostra os componentes da nuvem híbrida da Microsoft, de uma rede local para o conjunto de serviços do Office 365, da plataforma do Azure como um serviço (PaaS) e do Azure infraestrutura como serviço (IaaS) disponíveis através da Internet ou de uma conexão ExpressRoute.
   
-Como a Microsoft tem a solução de nuvem mais completa no mercado — incluindo Software como um serviço (SaaS), PaaS e IaaS — você pode:
+Como a Microsoft tem a solução de nuvem mais completa do mercado, incluindo software como um serviço (SaaS), PaaS e IaaS, você pode:
   
-- Aproveite os investimentos existentes do local conforme você migra cargas de trabalho e aplicativos para a nuvem.
+- Aproveite seus investimentos locais existentes ao migrar cargas de trabalho e aplicativos para a nuvem.
     
-- Incorpore cenários de nuvem híbrida aos seus planos IT a longo prazo, por exemplo, quando as normas ou políticas não permitir a movimentação de dados específicos ou cargas de trabalho para a nuvem.
+- Incorpore cenários de nuvem híbridas em seus planos de ti de longo prazo, por exemplo, quando regulamentos ou políticas não permitem a movimentação de dados ou cargas de trabalho específicos para a nuvem.
     
-- Crie cenários híbridos adicionais que incluem vários serviços de nuvem da Microsoft e plataformas.
+- Crie outros cenários híbridos que incluem vários serviços e plataformas do Microsoft Cloud.
     
-Cenários para a nuvem híbrida com os serviços de nuvem da Microsoft variam de acordo com a plataforma.
+Cenários para nuvem híbrida com os serviços de nuvem da Microsoft variam com a plataforma.
   
 - SaaS
     
-    Serviços Microsoft SaaS incluem o Office 365, Microsoft Intune e Microsoft Dynamics 365. Cenários de nuvem híbrida com o Microsoft SaaS combinam esses serviços com aplicativos ou serviços no local. Por exemplo, o Exchange Online em execução no Office 365 pode ser integrado ao Skype para 2019 Business que esteja implantados no local.
+    Os serviços Microsoft SaaS incluem o Office 365, o Microsoft Intune e o Microsoft Dynamics 365. Cenários de nuvem híbrida com o Microsoft SaaS combina esses serviços com aplicativos ou serviços locais. Por exemplo, o Exchange Online em execução no Office 365 pode ser integrado ao Skype for Business 2019 implantado no local.
     
-- PaaS Azure
+- PaaS do Azure
     
-    Serviços do Microsoft Azure PaaS permitem que você crie aplicativos baseados em nuvem. Cenários de nuvem híbrida com os serviços do Azure PaaS combinam um aplicativo do Windows Azure PaaS com recursos locais ou aplicativos. Por exemplo, um aplicativo do Windows Azure PaaS com segurança pôde consultar um armazenamento de dados no local para informações necessárias para exibir aos usuários de aplicativos móveis.
+    Os serviços de PaaS do Microsoft Azure permitem que você crie aplicativos baseados em nuvem. Cenários de nuvem híbrida com os serviços de PaaS do Azure combinam um aplicativo de PaaS do Azure com recursos ou aplicativos locais. Por exemplo, um aplicativo de PaaS do Azure pode consultar com segurança um repositório de dados local para obter informações necessárias para exibir os usuários do aplicativo móvel.
     
 - Azure IaaS
     
-    Serviços do Azure IaaS permitem que você criar e executar cargas de trabalho baseado em servidor IT na nuvem, em vez de seu centro de dados local. Cenários de nuvem híbrida com os serviços do Azure IaaS geralmente consistem em uma carga de trabalho TI que é executado em máquinas virtuais transparente conectado à sua rede local. Os usuários no local não perceberá a diferença.
+    Os serviços do Azure IaaS permitem que você crie e execute cargas de trabalho de ti baseadas em servidor na nuvem, em vez de no datacenter local. Cenários de nuvem híbrida com serviços do Azure IaaS geralmente consistem em uma carga de trabalho de ti que é executada em máquinas virtuais conectadas de forma transparente à sua rede local. Os usuários locais não perceberão a diferença.
     
-## <a name="elements-of-hybrid-cloud"></a>Elementos de nuvem híbrida
+## <a name="elements-of-hybrid-cloud"></a>Elementos da nuvem híbrida
 
-Você deve considerar os seguintes elementos ao planejamento e implementação de cenários de nuvem híbrida com o Microsoft cloud plataformas e serviços.
+Você deve considerar os seguintes elementos ao planejar e implementar cenários de nuvem híbrida com plataformas e serviços de nuvem da Microsoft.
   
-- Rede
+- Sistema de rede
     
-    A rede para cenários de nuvem híbrida inclui a conectividade com plataformas de nuvem da Microsoft e serviços de largura de banda suficiente para ter um bom desempenho sob cargas de pico. Para obter mais informações, consulte [Microsoft Cloud Networking para arquitetos da empresa](microsoft-cloud-networking-for-enterprise-architects.md).
+    O sistema de rede para cenários de nuvem híbrida inclui a conectividade para plataformas e serviços da nuvem da Microsoft e largura de banda suficiente para ser um desempenho em picos de carga. Para obter mais informações, consulte [rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md).
     
 - Identidade
     
-    Identidade para os cenários híbridos SaaS e o Azure PaaS pode incluir o Azure AD como um provedor de identidade comuns, que pode ser sincronizado com o seu local Windows Server AD ou federado com o Windows Server AD ou outros provedores de identidade. Você também pode estender sua infraestrutura de identidade no local para o Windows Azure IaaS. Para obter mais informações, consulte [Identidade de nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-it-architecture-resources.md#identity).
+    A identidade para o SaaS e cenários híbridos de PaaS do Azure podem incluir o Azure AD como um provedor de identidade comum, que pode ser sincronizado com os serviços de domínio do Active Directory (AD DS) local ou federado com o AD DS ou outros provedores de identidade. Você também pode estender sua infraestrutura de identidade local para o Azure IaaS. Para obter mais informações, consulte [identidade de nuvem da Microsoft para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Segurança
     
-    Segurança para cenários de nuvem híbrida inclui o gerenciamento para sua identidades, proteção de dados, gerenciamento de privilégio administrativo, reconhecimento de ameaça e a implementação da governança e diretivas de segurança e proteção. Para obter mais informações, consulte [Segurança de nuvem da Microsoft para arquitetos da empresa](microsoft-cloud-it-architecture-resources.md#security).
+    A segurança para cenários de nuvem híbrida inclui proteção e gerenciamento de identidades, proteção de dados, gerenciamento de privilégios administrativos, reconhecimento de ameaças e implementação de políticas de governança e segurança. Para obter mais informações, consulte [segurança de nuvem da Microsoft para arquitetos corporativos](microsoft-cloud-it-architecture-resources.md#security).
     
 - Gerenciamento
     
-    Gerenciamento para cenários de nuvem híbrida inclui a capacidade de manter configurações, dados, contas, políticas e permissões e para monitorar a integridade em andamento dos elementos do cenário e seu desempenho. Você também pode usar o mesmo conjunto de ferramentas, como o Systems Management Server, para o gerenciamento de máquinas virtuais no Windows Azure IaaS.
+    O gerenciamento de cenários de nuvem híbrida inclui a capacidade de manter configurações, dados, contas, políticas e permissões e para monitorar a integridade contínua dos elementos do cenário e seu desempenho. Você também pode usar o mesmo conjunto de ferramentas, como o Systems Management Server, para gerenciar máquinas virtuais no Azure IaaS.
     
 ## <a name="see-also"></a>Confira também
 
-[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+
+[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
 

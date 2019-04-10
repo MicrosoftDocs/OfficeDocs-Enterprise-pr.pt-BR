@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumo: Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573975"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741217"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365
 
@@ -38,7 +38,7 @@ Há duas fases para configurar a autenticação multifator para o Office 365 em 
 2. Habilite e teste a autenticação multifator para a conta do usuário 2.
     
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual para todos os artigos da pilha da Guia do Laboratório de Teste do One Microsoft Cloud.
+> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa Visual para todos os artigos da pilha do guia do laboratório de teste do Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -47,7 +47,7 @@ Se você só quiser testar a autenticação multifator de forma leve com os requ
 Se você quiser testar a autenticação multifator em uma empresa simulada, siga as instruções em [DirSync para seu ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Testar a autenticação multifator não requer o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta do Windows Server AD. É fornecida aqui como uma opção para que você possa testar a autenticação multifator e experimentá-la em um ambiente que representa uma organização típica. 
+> Testar a autenticação multifator não requer o ambiente de desenvolvimento/teste corporativo simulado, que inclui uma intranet simulada conectada à Internet e a sincronização de diretórios para uma floresta dos serviços de domínio Active Directory (AD DS). É fornecida aqui como uma opção para que você possa testar a autenticação multifator e experimentá-la em um ambiente que representa uma organização típica. 
   
 ## <a name="phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account"></a>Fase 2: habilitar e testar a autenticação multifator para a conta do usuário 2
 
@@ -104,11 +104,11 @@ Conclua a configuração da conta do usuário 2 para usar uma mensagem de texto 
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
+[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
-[Planejar a autenticação multifator para imPlantações do Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Plano para a autenticação multifator para Implantações do Office 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
