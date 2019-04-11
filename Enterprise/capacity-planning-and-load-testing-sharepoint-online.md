@@ -1,9 +1,9 @@
 ---
 title: Planejamento de capacidade e teste de carregamento do SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/14/2019
+ms.date: 04/10/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Este artigo descreve como você pode implantar o no SharePoint Online sem executar testes de carga tradicionais, pois ele não é permitido.
-ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
+ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665184"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31765053"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planejamento de capacidade e teste de carga do SharePoint Online.
 
@@ -44,7 +44,7 @@ Alguns fatores importantes devem ser considerados:
 - Qualquer página/recurso/personalização usada para o consumo em nuvem deve ser otimizado para vários locais, de forma que os usuários em diferentes áreas ou regiões tenham uma experiência consistente. A nuvem oferece otimizações como redes de distribuição de conteúdo (CDN) para otimizar para uma base de usuários distribuídos.
 
 Para páginas de publicação clássicas no SharePoint Online, você pode usar a extensão de Chrome da [ferramenta de diagnóstico de página](https://aka.ms/perftool) que auxiliará na análise das principais páginas de aterrissagem usadas pelos usuários.
-As ferramentas de desenvolvedor F12 no navegador ou [Fiddler](https://www.telerik.com/download/fiddler) podem ser usadas para revisar o peso da página e o número de chamadas e elementos que afetam a carga de página Geral deve ser revisado e otimizado. Uma lista de recomendações incluindo o uso de redes de distribuição de conteúdo e outras otimizações pode ser analisada no artigo [ajustar desempenho do SharePoint Online](https://aka.ms/spoperformance) .
+As ferramentas de desenvolvedor F12 no navegador ou [Fiddler](https://www.telerik.com/download/fiddler) podem ser usadas para revisar o peso da página e o número de chamadas e elementos que afetam a carga de página Geral deve ser revisado e otimizado. Uma lista de recomendações incluindo o uso de redes de distribuição de conteúdo e outras otimizações pode ser analisada no artigo [ajustar desempenho do SharePoint Online](https://aka.ms/tuneSPO) .
 
 ### <a name="wave--phase-approach"></a>Abordagem de onda/fase
 A abordagem de Big Bang tradicional para os lançamentos de site não permite que a verificação de que personalizações, fontes externas, serviços ou processos tenha sido testada na escala correta. O SharePoint como um serviço também dimensiona sua capacidade com base no uso e no uso previsto e, embora não seja necessário notificar o lançamento do site, siga as diretrizes abaixo para garantir o sucesso.
