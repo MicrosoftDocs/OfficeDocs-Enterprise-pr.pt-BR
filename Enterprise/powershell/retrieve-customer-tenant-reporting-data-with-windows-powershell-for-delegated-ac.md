@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Resumo: Use o Windows PowerShell remoto para Microsoft Exchange Online para recuperar os relatórios de locatários individuais do cliente.'
-ms.openlocfilehash: 8df88e8b00cbd8e14558e423f41f45ea5f9bf26a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 478cd8736a837dae571e20f38187be087b48231a
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992821"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Recuperar dados de relatório do locatário do cliente com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
@@ -26,8 +26,7 @@ Os Parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). podem
   
 Neste artigo, você vai aprender a usar o Windows PowerShell remoto para Exchange Online para se conectar a uma locação única do cliente e a recuperar um relatório. Por padrão, o Windows PowerShell não tem suporte para agregar dados de relatórios de várias locações do cliente. Os relatórios que você recuperar com esse procedimento são destinados apenas ao  _DelegatedOrg_ para o qual você se conectar.
   
-Se deseja recuperar um único relatório para todas as locações do seu cliente, encontre um script de exemplo para fazer isso em [Agregar dados de relatório do cliente por meio do Windows PowerShell para parceiros com permissão de acesso delegado (DAP)](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md).
-  
+ 
 ## <a name="before-you-begin"></a>Antes de começar
 
 - Você deve se conectar ao seu locatário do Exchange Online usando o Windows PowerShell remoto. Para obter instruções, confira [Conectar-se aos locatários do Exchange Online com o Windows PowerShell remoto para parceiros com permissões de acesso delegado (DAP)](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)

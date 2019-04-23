@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 'Resumo: Os Parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). podem usar o Windows PowerShell para gerenciar Office 365 os locatários do cliente.'
-ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 93b323d8de7016008ba7e4f75ff4b1c011adb9f2
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992811"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gerenciar o Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
@@ -36,6 +36,6 @@ Os Parceiros com Permissão de Acesso Delegada (DAP) são parceiros da Agregaç�
     
 - [Recuperar dados de relatório do locatário do cliente com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
     
-- [Agregar dados de relatório do cliente por meio do Windows PowerShell para parceiros com permissão de acesso delegado (DAP)](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
+
     
 
