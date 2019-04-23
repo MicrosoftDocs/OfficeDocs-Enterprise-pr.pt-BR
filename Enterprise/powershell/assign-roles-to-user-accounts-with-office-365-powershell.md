@@ -3,7 +3,7 @@ title: Atribuir funções a contas de usuário com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/31/2019
+ms.date: 04/18/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,47 +14,59 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Resumo: Usar o PowerShell do Office 365 para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 702c7358ccca9bb36bd106d742b5c454283ee8b4
-ms.sourcegitcommit: d0c870c7a487eda48b11f649b30e4818fd5608aa
+description: 'Resumo: Use o Office 365 PowerShell para atribuir funções a contas de usuário.'
+ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957702"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
 
-Você pode atribuir rapidez e facilidade funções às contas de usuário usando o PowerShell do Office 365.
+Você pode atribuir funções de forma rápida e fácil às contas de usuário usando o Office 365 PowerShell.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
 Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) usando uma conta de administrador global.
   
-Em seguida, determine o nome de entrada da conta de usuário que você deseja adicionar a uma função (exemplo: fredsm@contoso.com). Isso também é conhecido como o nome de usuário principal (UPN).
+Em seguida, determine o nome de entrada da conta de usuário que você deseja adicionar a uma função (exemplo: fredsm@contoso.com). Isso também é conhecido como nome de usuário principal (UPN).
 
-Em seguida, determine o nome da função. Use este comando para listar as funções que podem ser atribuídos com o PowerShell.
+Em seguida, determine o nome da função. Use essa [lista de permissões de função de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
-````
-Get-AzureADDirectoryRole
-````
+>[!Note]
+>Preste atenção nas anotações deste artigo. Alguns nomes de função são diferentes para o Azure AD PowerShell. Por exemplo, a função "administrador do SharePoint" no centro de administração do Microsoft 365 é chamada de "administrador de serviços do SharePoint" para o Azure AD PowerShell.
+>
 
-Em seguida, preencha os nomes de entrada e de função e executar esses comandos.
+Em seguida, preencha os nomes de entrada e de função e execute esses comandos.
   
 ```
 $userName="<sign-in name of the account>"
 $roleName="<role name>"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Aqui está um exemplo de um conjunto de comandos concluído:
+Veja um exemplo de um conjunto de comandos concluído:
   
 ```
 $userName="belindan@contoso.com"
-$roleName="Lync Service Administrator"
-Add-AzureADDirectoryRoleMember -ObjectId (Get-AzureADDirectoryRole | Where {$_.DisplayName -eq $roleName}).ObjectID -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
+$roleName="SharePoint Service Administrator"
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+if ($role -eq $null) {
+$roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
+Enable-AzureADDirectoryRole -RoleTemplateId $roleTemplate.ObjectId
+$role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
+}
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Para exibir a lista de nomes de usuário para uma função específica, use esses comandos.
+Para exibir a lista de nomes de usuário para uma função específica, use estes comandos.
 
 ```
 $roleName="<role name>"
@@ -65,25 +77,25 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) usando uma conta de administrador global.
   
-### <a name="for-a-single-role-change"></a>Para alterar uma única função
+### <a name="for-a-single-role-change"></a>Para uma alteração de função única
 
 Determine o seguinte:
   
 - A conta de usuário que você deseja configurar.
     
-    Para especificar a conta de usuário, você deve determinar seu nome para exibição. Para obter uma lista completa de contas, use este comando:
+    Para especificar a conta de usuário, você deve determinar seu nome de exibição. Para obter uma lista completa de contas, use este comando:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Este comando lista o nome de exibição de suas contas de usuário, classificadas por nome de exibição, uma tela por vez. Você pode filtrar a lista para um conjunto menor usando o cmdlet **onde** . Aqui está um exemplo:
+    Este comando lista o nome de exibição de suas contas de usuário, classificados pelo nome de exibição, uma tela por vez. Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** . Veja um exemplo:
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    Este comando lista apenas as contas de usuário para o qual o nome de exibição começa com "João".
+    Este comando lista apenas as contas de usuário para as quais o nome de exibição começa com "John".
     
 - A função que você deseja atribuir.
     
@@ -93,7 +105,7 @@ Determine o seguinte:
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Depois de ter determinado o nome para exibição da conta e o nome da função, use estes comandos para atribuir a função para a conta:
+Depois de determinar o nome de exibição da conta e o nome da função, use estes comandos para atribuir a função à conta:
   
 ```
 $dispName="<The Display Name of the account>"
@@ -101,9 +113,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Copie os comandos e colá-las no bloco de notas. Para as variáveis **$dispName** e **$roleName** , substitua o texto de descrição com seus valores, remova o \< e caracteres gt _ e deixe as aspas. Copie as linhas modificadas e colá-los em sua janela do Windows Azure Active Directory módulo para Windows PowerShell para executá-los. Como alternativa, você pode usar o Windows PowerShell integrada Script Environment (ISE).
+Copie os comandos e cole-os no bloco de notas. Para as variáveis **$dispName** e **$roleName** , substitua o texto da descrição por seus valores, remova \< os caracteres e > e deixe as aspas. Copie as linhas modificadas e cole-as em sua janela do módulo do Microsoft Azure Active Directory para Windows PowerShell para executá-las. Como alternativa, você pode usar o ambiente de script integrado (ISE) do Windows PowerShell.
   
-Aqui está um exemplo de um conjunto de comandos concluído:
+Veja um exemplo de um conjunto de comandos concluído:
   
 ```
 $dispName="Scott Wallace"
@@ -115,23 +127,23 @@ Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq
 
 Determine o seguinte:
   
-- Quais contas de usuário que você deseja configurar.
+- Quais contas de usuário você deseja configurar.
     
-    Para especificar a conta de usuário, você deve determinar seu nome para exibição. Para obter uma lista de contas, use este comando:
+    Para especificar a conta de usuário, você deve determinar seu nome de exibição. Para obter uma lista de contas, use este comando:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Este comando lista o nome de exibição de todas as suas contas de usuário, classificadas por nome de exibição, uma tela por vez. Você pode filtrar a lista para um conjunto menor usando o cmdlet **onde** . Aqui está um exemplo:
+    Este comando lista o nome de exibição de todas as suas contas de usuário, classificados pelo nome de exibição, uma tela por vez. Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** . Veja um exemplo:
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    Este comando lista apenas as contas de usuário para o qual o nome de exibição começa com "João".
+    Este comando lista apenas as contas de usuário para as quais o nome de exibição começa com "John".
     
-- Quais funções que você deseja atribuir a cada conta de usuário.
+- Quais funções você deseja atribuir a cada conta de usuário.
     
     Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:
     
@@ -139,7 +151,7 @@ Determine o seguinte:
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-Em seguida, crie um arquivo de texto delimitado por vírgula (CSV) que possui o DisplayName e role nomear campos. Aqui está um exemplo:
+Em seguida, crie um arquivo de texto de valor separado por vírgula (CSV) que tenha os campos DisplayName e nome da função. Veja um exemplo:
   
 ```
 DisplayName,RoleName
