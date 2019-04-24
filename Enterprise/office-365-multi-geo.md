@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Expanda a sua presença do Office 365 para várias regiões geográficas com o Office 365 multigeográfico.
-ms.openlocfilehash: e216f61806ea5d648519ac7217acf7dbaddd1419
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30933930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992831"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 multigeográfico
 
@@ -55,7 +55,7 @@ A multigeografia do Office 365 atualmente é oferecida nos países e regiões se
 
 Siga estas etapas para iniciar com o multigeográfico:
 
-1. Trabalhe com a sua equipe de contas para adicionar o plano de serviço _Funcionalidades multigeográficos no Office 365_. Ela dará instruções sobre a adição do número de licenças necessárias.
+1. Trabalhe com a sua equipe de conta para adicionar o plano de serviço _Funcionalidades multigeográficas do Office 365_. Elas orientarão você ra adicionar o número de licenças necessárias. O recurso multigeográfico está disponível para clientes com um mínimo de 2.500 assinaturas do Office 365.
 
    Antes de começar a usar o Office 365 multigeográfico, a Microsoft precisa configurar seu locatário do Exchange Online para suporte multigeográfico. Esse processo de configuração único é disparado após você solicitar o plano de serviço *Funcionalidades Multigeográficas no Office 365* e as licenças aparecem em seu locatário. Você receberá notificações no [Centro de mensagens do Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) depois que as licenças multigeográficas são aplicadas e você pode começar configurar e usar recursos do Office 365 multigeográfico.
 
@@ -69,8 +69,8 @@ Siga estas etapas para iniciar com o multigeográfico:
 
 ## <a name="see-also"></a>Confira também
 
-[Aka.ms/GoMultiGeo ](https://Aka.ms/GoMultiGeo)
+[Multigeográfico no Exchange Online e no OneDrive](https://Aka.ms/GoMultiGeo)
 
-[Recursos multigeográficos no OneDrive e SharePoint Online](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+[Recursos multigeográficos no OneDrive e SharePoint Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
-[Recursos multigeográficos no Exchange Online](multi-geo-capabilities-in-exchange-online.md)
+[Recursos multigeográficos no Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)
