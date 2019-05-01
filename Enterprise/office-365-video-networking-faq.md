@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
 description: O repositório de vídeo do Office 365 e os serviços de streaming facilitam o armazenamento e o fluxo de vídeo em sua organização. Há muitas informações importantes sobre o vídeo do Office 365; essas perguntas FREQUENTEs de rede são projetadas para responder às perguntas mais comuns sobre planejamento de largura de banda, criptografia e como o serviço aproveita as redes de distribuição de conteúdo (CDNs).
 ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30641518"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491918"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Perguntas frequentes sobre o sistema de rede de vídeo do Office 365
 
@@ -112,11 +112,12 @@ Veja alguns outros recursos para ajudá-lo a implantar e usar com êxito o víde
   
 [Encontre ajuda sobre a configuração de vídeo do Office 365](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50)
   
-[Vídeo do Office 365](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
+[Conheça o Vídeo do Office 365](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6)
   
 [Criar e gerenciar um canal no Office 365 vídeo](https://support.office.com/article/Create-and-manage-a-channel-in-Office-365-Video-1fede4cc-13c0-435a-b585-e7fbf1c83bb2)
   
-[Gerenciar seu portal de vídeo do Office 365](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
+
+  [Gerenciar portal de Vídeo do Office 365](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da)
   
 [Formatos de vídeo que funcionam no Office 365 vídeo](https://support.office.com/article/Video-formats-that-work-in-Office-365-Video-dd1af01c-fd8e-4640-b17b-93ee02b9b817)
   

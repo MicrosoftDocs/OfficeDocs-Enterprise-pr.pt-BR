@@ -15,58 +15,58 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
-description: 'Resumo: Descreve as considerações para a capacidade da rede, aceleradores de WAN e balanceamento de dispositivos que são usados para conectar para o Office 365.'
+description: 'Resumo: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.'
 ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933118"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492062"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Plano para dispositivos de rede que se conectam aos serviços do Office 365
 
- **Resumo**: Descreve as considerações para a capacidade da rede, aceleradores de WAN e balanceamento de dispositivos que são usados para conectar para o Office 365.
+ **Resumo**: descreve as considerações de capacidade de rede, aceleraDORES de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.
   
-Alguns dispositivos de hardware de rede podem ter limitações no número de sessões simultâneas que são suportados. Para ter mais de 2.000 usuários de empresas, recomendamos que eles monitoram seus dispositivos de rede para garantir que eles sejam capazes de lidar com o tráfego de serviço adicional do Office 365. Simple Network Management Protocol (SNMP) software de monitoramento pode ajudá-lo a fazer isso.
+Alguns hardwares de rede podem ter limitações quanto ao número de sessões simultâneas suportadas. Para organizações com mais de 2.000 usuários, recomendamos que eles monitorem seus dispositivos de rede para garantir que eles sejam capazes de lidar com o tráfego de serviço adicional do Office 365. O software de monitoramento do protocolo SNMP pode ajudá-lo a fazer isso.
 
 ||
 |:-----|
-| Este artigo faz parte do [planejamento de rede e ajuste de desempenho para o Office 365](https://aka.ms/tune).|
+| Este artigo faz parte do [planejamento de rede e do ajuste de desempenho do Office 365](https://aka.ms/tune).|
 
-Local saídas configurações de proxy de Internet também afetam a conectividade com os serviços do Office 365 para seus aplicativos de cliente. Você também deve configurar os dispositivos de proxy de rede para permitir conexões para aplicativos e URLs de serviços de nuvem do Microsoft. Cada organização é diferente. Para obter uma ideia de como o Microsoft gerencia esse processo e a largura de banda, vamos provisionar, [Leia o estudo de caso](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
+As configurações de proxy da Internet de saída local também afetam a conectividade com os serviços do Office 365 para seus aplicativos cliente. Você também deve configurar seus dispositivos de proxy de rede para permitir conexões para aplicativos e URLs de serviços de nuvem da Microsoft. Cada organização é diferente. Para ter uma ideia de como a Microsoft gerencia esse processo e a quantidade de largura de banda que fazemos, [Leia o estudo de caso](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365).
   
-A seguir Skype para artigos de Ajuda do Business ter mais informações sobre Skype para configurações de negócios:
+Os seguintes artigos da ajuda do Skype for Business têm mais informações sobre as configurações do Skype for Business:
   
-- [Skype para solução de problemas para erros de entrada no Business Online para administradores](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
+- [Solucionando problemas de erros de entrada do Skype for Business online para administradores](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
-- [Você não pode se conectar ao Skype para negócios ou determinados recursos não funcionam porque um firewall local bloqueia a conexão](https://go.microsoft.com/fwlink/p/?LinkID=243625)
+- [Você não pode se conectar ao Skype for Business ou determinados recursos não funcionam porque um firewall local bloqueia a conexão](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
 > [!NOTE]
-> Embora muitas dessas configurações sejam Skype para negócios específicos, a orientação geral sobre configuração de rede é útil para todos os serviços do Office 365.
+> Embora muitas dessas configurações sejam específicas do Skype for Business, a orientação geral sobre a configuração de rede é útil para todos os serviços do Office 365.
   
 ## <a name="determining-network-capacity"></a>Determinando a capacidade da rede
 
-Cada dispositivo de rede que existe em uma conexão tem seu limite de capacidade. Esses dispositivos incluem os adaptadores de rede do cliente e do servidor, roteadores, chaves e hubs que se interconectam. Capacidade de rede adequada significa que nenhum deles está saturado. O monitoramento da atividade da rede é essencial para ajudar a assegurar que os carregamentos reais em todos os dispositivos de rede estejam abaixo de sua capacidade máxima. A capacidade da rede afeta o desempenho do dispositivo proxy.
+Todos os dispositivos de rede que existem em uma conexão têm seu limite de capacidade. Esses dispositivos incluem adaptadores de rede de cliente e de servidor, roteadores, comutadores e hubs que os interconectam. A capacidade de rede adequada significa que nenhuma delas é saturada. O monitoramento da atividade de rede é essencial para ajudar a garantir que as cargas reais em todos os dispositivos de rede sejam menores do que sua capacidade máxima. A capacidade de rede afeta o desempenho do dispositivo de proxy.
   
-Na maioria das situações, a largura de banda de conexão de Internet define o limite para a quantidade de tráfego. Desempenho fraco durante as horas de pico tráfego provavelmente é causado por uso excessivo do link da Internet. Essa situação também se aplica a um cenário de filiais, onde os computadores de servidores de proxy de escritório de filial estão conectados ao dispositivo proxy nas matrizes da ramificação em um link de rede de longa distância (WAN) lento.
+Na maioria das situações, a largura de banda de conexão com a Internet define o limite para o volume de tráfego. O desempenho fraco durante as horas de tráfego de pico provavelmente é causado pelo uso excessivo do link da Internet. Essa situação também se aplica a um cenário de filial, onde os computadores do servidor proxy de filial do escritório estão conectados ao dispositivo proxy na matriz da filial através de um link de rede de longa distância (WAN) lento.
   
-Para testar a capacidade da rede, monitore a atividade de rede na interface da rede de proxy. Se for mais de 75% da largura de banda máxima de qualquer interface de rede, considere a aumentar a largura de banda da infraestrutura de rede que for inadequada. Ou então, considere o uso de recursos avançados, como compactação HTTP.
+Para testar a capacidade da rede, monitore a atividade de rede na interface de rede de proxy. Se for mais de 75% da largura de banda máxima de qualquer interface de rede, considere aumentar a largura de banda da infraestrutura de rede inadequada. Ou, considere usar recursos avançados, como a compactação HTTP.
   
 ## <a name="wan-accelerators"></a>Aceleradores de WAN
 
-Se sua organização usa os dispositivos de proxy de aceleração de rede (WAN) de longa distância, você poderá encontrar problemas ao acessar os serviços do Office 365. Você pode precisar otimizar seu dispositivo de rede ou dispositivos para garantir que os usuários tenham uma experiência consistente ao acessar o Office 365. Por exemplo, serviços do Office 365 criptografar algum conteúdo do Office 365 e o cabeçalho TCP. O dispositivo não estejam aptos a lidar com esse tipo de tráfego.
+Se sua organização usa dispositivos proxy de aceleração de rede de longa distância (WAN), você pode encontrar problemas ao acessar os serviços do Office 365. Talvez seja necessário otimizar o dispositivo ou dispositivos de rede para garantir que os usuários tenham uma experiência consistente ao acessar o Office 365. Por exemplo, os serviços do Office 365 criptografam alguns conteúdos do Office 365 e o cabeçalho TCP. O dispositivo pode não ser capaz de lidar com esse tipo de tráfego.
   
-Leia nossa declaração de suporte sobre [usando o controlador de otimização de WAN ou dispositivos de inspeção do tráfego com o Office 365](https://support.microsoft.com/kb/2690045).
+Leia nossa declaração de suporte sobre o [uso do controlador de otimização WAN ou dispositivos de tráfego/inspeção com o Office 365](https://support.microsoft.com/kb/2690045).
   
 ## <a name="hardware-and-software-load-balancing-devices"></a>Dispositivos de balanceamento de carga de hardware e software
 
-Sua organização precisa usar um balanceador de carga de hardware (HLB) ou uma solução de balanceamento de carga da rede (NLB) para distribuir as solicitações para seus servidores Active Directory Federation Services (AD FS) e/ou servidores híbridos do Exchange. Os dispositivos de balanceamento de carga controlam o tráfego da rede para os servidores locais. Esses servidores são cruciais para ajudar a assegurar a disponibilidade do logon único e da implantação híbrida do Exchange.
+Sua organização precisa usar um balanceador de carga de hardware (HLB) ou uma solução de balanceamento de carga de rede (NLB) para distribuir solicitações aos seus servidores de serviços de Federação do Active Directory (AD FS) e/ou seus servidores híbridos do Exchange. Os dispositivos de balanceamento de carga controlam o tráfego de rede para os servidores locais. Esses servidores são cruciais para ajudar a garantir a disponibilidade de logon único e a implantação híbrida do Exchange.
   
-Fornecemos uma solução NLB baseada em software integrada ao Windows Server. Office 365 oferece suporte a essa solução para atingir o balanceamento de carga.
+Fornecemos uma solução NLB baseada em software incorporada ao Windows Server. O Office 365 suporta esta solução para alcançar um balanceamento de carga.
   
 ## <a name="firewalls-and-proxies"></a>Firewalls e proxies
 
-Para obter mais detalhes sobre como configurar firewalls e proxies para se conectar ao Office 365, leia os [pontos de extremidade de gerenciar o Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [conectividade de rede para o Office 365](network-connectivity.md)e [pontos de extremidade do Office 365 perguntas Frequentes](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para saber mais sobre os dispositivos e seleção de circuito.
+Para obter mais detalhes sobre a configuração de firewalls e proxies para se conectar ao Office 365, leia [Managing office 365 pontos de extremidade](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [conectividade de rede para o Office 365](network-connectivity.md)e perguntas frequentes sobre os [pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para saber mais sobre dispositivos e seleção de circuitos.
   
 ## <a name="see-also"></a>Confira também
 

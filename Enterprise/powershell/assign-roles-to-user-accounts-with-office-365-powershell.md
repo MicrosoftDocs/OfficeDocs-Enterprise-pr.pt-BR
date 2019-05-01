@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Resumo: Use o Office 365 PowerShell para atribuir funções a contas de usuário.'
 ms.openlocfilehash: 78f2e08df6d46588b93dc217d0e16b7c3a350a88
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957702"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491987"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
 

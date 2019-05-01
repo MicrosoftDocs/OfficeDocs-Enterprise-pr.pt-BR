@@ -14,11 +14,11 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos desatualizados. Use estes recursos para começar a usar seu plano.
 ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838223"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492039"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
 

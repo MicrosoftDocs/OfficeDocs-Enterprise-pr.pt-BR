@@ -1,5 +1,5 @@
 ---
-title: Colaboração entre locatários do Office 365
+title: Colaboração interlocatário do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Saiba como o Office 365 Collaboration funciona em locatários e organizações.
 ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665244"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492087"
 ---
-# <a name="office-365-inter-tenant-collaboration"></a>Colaboração entre locatários do Office 365
+# <a name="office-365-inter-tenant-collaboration"></a>Colaboração interlocatário do Office 365
 
 Este artigo descreve várias maneiras de colaborar entre dois locatários do Office 365. Destina-se aos administradores do Office 365.
   
