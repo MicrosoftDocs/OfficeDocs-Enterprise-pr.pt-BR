@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Resumo: implante o Azure AD Connect em uma máquina virtual no Azure para sincronizar as contas entre o diretório local e o locatário do Azure AD da sua assinatura do Office 365.'
 ms.openlocfilehash: 02706235d2de816ff5dd4ceeced8b7158ab7c2ce
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038055"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490461"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Implantar a sincronização de diretórios do Office 365 no Microsoft Azure
 

@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumo: configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.'
 ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741417"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487949"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidade federada para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -193,7 +193,7 @@ Esses comandos criam um registro DNS A para o seu FQDN do serviço de federaçã
   
 Esta é a configuração resultante.
   
-**Figura 4: Adicionar o servidor proxy de aplicativo Web**
+**Figura 4: Adicionar o servidor proxy de aplicativo web**
 
 ![O servidor proxy do aplicativo Web adicionado ao DirSync para o ambiente de desenvolvimento/teste do Office 365](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -408,7 +408,7 @@ Para demonstrar que a autenticação federada está funcionando, faça o seguint
     
 2. Como credenciais de entrada, digite **usuário1@**\<domínio criado na Fase 1 >. 
     
-    Por exemplo, se o domínio de teste for **testlab.contoso.com**, digite **user1@testlab.contoso.com**. Pressione a tecla TAB ou deixe que o Office 365 o redirecione automaticamente.
+    Por exemplo, se o domínio de teste for **testlab.contoso.com**, digite **usuário1@testlab.contoso.com**. Pressione a tecla TAB ou deixe que o Office 365 o redirecione automaticamente.
     
     Agora você deverá ver a página **Sua conexão não é particular** porque você instalou o certificado autoassinado em ADFS1 que seu computador desktop não consegue validar. Em uma implantação de produção com autenticação federada, será necessário usar um certificado de autoridade de certificação confiável e os usuários não verão esta página.
     
@@ -442,15 +442,15 @@ Agora a assinatura de avaliação do Office 365 está configurada com a autentic
 
 Quando estiver pronto para a implementação da autenticação federada pronta para a produção e de alta disponibilidade para o Office 365 no Azure, confira [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
 [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
 

@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Resumo: Configure a sincronização de diretórios do ambiente de desenvolvimento/teste do Office 365.'
 ms.openlocfilehash: 74457cca2d199fe7bfa8839908b0f6a413890f8a
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741227"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487309"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Sincronização de diretório do ambiente de desenvolvimento/teste do Office 365
 
@@ -117,19 +117,20 @@ Esta configuração consiste em:
 
 Quando estiver pronto para implantar a sincronização de diretórios da sua organização, confira [Implantar sincronização de diretórios do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
 
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
+
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
 
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
 
 [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
 
-[Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento/teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
 

@@ -11,11 +11,11 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Ativando as funcionalidades multigeográficas do SharePoint na sua localização geográfica por satélite.
 ms.openlocfilehash: 98666f76a5b3ec055a6f26d30f502c3cc6b6d3bb
-ms.sourcegitcommit: 0ddd9b0c9c23dc6479dce9f5701b69d533d76127
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "31025170"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487859"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Ativando as funcionalidades multigeográficas do SharePoint em sua localização geográfica por satélite
 
