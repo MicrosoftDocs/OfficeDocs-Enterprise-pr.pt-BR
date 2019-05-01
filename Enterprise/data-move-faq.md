@@ -1,5 +1,5 @@
 ---
-title: PERGUNTAS FREQUENTEs sobre movimentação de dados gerais
+title: Perguntas frequentes gerais sobre migração de dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
 ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665234"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490058"
 ---
-# <a name="data-move-general-faq"></a>PERGUNTAS FREQUENTEs sobre movimentação de dados gerais
+# <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
 Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
   
@@ -145,7 +145,7 @@ Sim, seu locatário está qualificado para se inscrever.  Moveremos todas as cai
 
 [Movendo dados principais para o novo Office 365 datacenter GEOS](moving-data-to-new-datacenter-geos.md)
 
-[Como solicitar a movimentação de dados](request-your-data-move.md)
+[Como solicitar a migração dos dados](request-your-data-move.md)
 
 [Office 365 multiGeográfico](https://aka.ms/multi-geo)
 

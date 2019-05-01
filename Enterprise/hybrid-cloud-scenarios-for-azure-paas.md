@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Resumo: entenda a arquitetura híbrida e os cenários para ofertas de nuvem com base na PaaS (plataforma como serviço) da Microsoft no Azure.'
 ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741367"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491180"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Cenários de nuvem híbrida para a PaaS do Azure
 
@@ -47,7 +47,7 @@ Para cada camada da arquitetura:
     
     O consiste no seu pipe existente na Internet ou em uma conexão ExpressRoute com emparelhamento público para a PaaS do Azure. Você deve incluir uma maneira de o aplicativo de PaaS do Azure acessar o recurso de armazenamento ou de computação local.
     
-- Local
+- No local
     
     O consiste em uma infraestrutura de identidade e segurança e em servidores de banco de dados ou aplicativos LOB (linha de negócios) existentes, que um aplicativo de PaaS do Azure pode acessar com segurança.
     
@@ -97,8 +97,7 @@ Como o provedor de identidade local foi sincronizado com o Azure AD, o aplicativ
   
 ## <a name="see-also"></a>Confira também
 
-
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

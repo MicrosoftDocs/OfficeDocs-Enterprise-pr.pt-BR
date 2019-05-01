@@ -1,5 +1,5 @@
 ---
-title: Use o seu domínio a fim de integrá-lo ao email local, por exemplo, usando os serviços de diretório
+title: Integração do Office 365 com ambientes locais
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Saiba como integrar o Office 365 com os serviços de diretório existentes.
 ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085330"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487388"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Use o seu domínio a fim de integrá-lo ao email local, por exemplo, usando os serviços de diretório
+# <a name="office-365-integration-with-on-premises-environments"></a>Integração do Office 365 com ambientes locais
 
 Você pode integrar o Office 365 com os serviços de diretório existentes e com uma instalação local do Exchange Server, do Skype for Business Server 2015 ou do SharePoint Server 2013.
   

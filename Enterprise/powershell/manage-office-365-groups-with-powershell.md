@@ -18,37 +18,37 @@ search.appverid:
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Saiba como realizar tarefas comuns de gerenciamento para grupos do Office 365 no Microsoft PowerShell.
 ms.openlocfilehash: 6d7841595315507b0b7f28f6b86f9349705f1d8b
-ms.sourcegitcommit: 662d75796991bac4e959348ded4999008875422e
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29760053"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491740"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Gerenciar Grupos do Office 365 com o PowerShell
 
- *Última atualizados 18 de abril de 2018* 
+ *Última atualização 18 de abril de 2018* 
   
-Este artigo fornece as etapas para realizar tarefas comuns de gerenciamento para grupos no Microsoft PowerShell. Ela também lista os cmdlets do PowerShell para grupos. Para informações sobre como gerenciar sites do SharePoint, consulte [Gerenciar o SharePoint Online sites usando o PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
+Este artigo fornece as etapas para realizar tarefas comuns de gerenciamento para grupos no Microsoft PowerShell. Ele também lista os cmdlets do PowerShell para grupos. Para obter informações sobre como gerenciar sites do SharePoint, confira [gerenciar sites do SharePoint online usando o PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
-## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Link para a suas diretrizes de uso de grupos do Office 365
+## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Link para suas diretrizes de uso de grupos do Office 365
 <a name="BK_LinkToGuideLines"> </a>
 
-Quando os usuários [criar ou editar um grupo no Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), você poderá mostrar um link para as diretrizes de uso da sua organização. Por exemplo, se você exige um prefixo específico ou sufixo a ser adicionado a um nome de grupo.
+Quando os usuários [criarem ou editarem um grupo no Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), você poderá mostrar um link para as diretrizes de uso da sua organização. Por exemplo, se você precisar adicionar um prefixo ou sufixo específico a um nome de grupo.
   
-Use o Azure Active Directory PowerShell para direcionar seus usuários às diretrizes de uso da sua organização para grupos do Office 365. Check-out de [cmdlets do Windows Azure Active Directory para definir as configurações de grupo](https://go.microsoft.com/fwlink/?LinkID=827484) e siga as etapas na **criar configurações no nível do diretório** para definir o hiperlink de diretriz de uso. Uma vez você executar o cmdlet AAD, usuário verá o link para a suas diretrizes quando eles cria ou edita um grupo no Outlook. 
+Use o PowerShell do Azure Active Directory para apontar seus usuários para as diretrizes de uso da sua organização para grupos do Office 365. ConFira os [cmdlets do Azure Active Directory para definir as configurações de grupo](https://go.microsoft.com/fwlink/?LinkID=827484) e siga as etapas em **criar configurações no nível do diretório** para definir o hiperlink de diretriz de uso. Depois de executar o cmdlet AAD, o usuário verá o link para suas diretrizes ao criar ou editar um grupo no Outlook. 
   
 ![Criar um novo grupo com o link de diretrizes de uso](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
-![Clique em diretrizes de uso de grupo para ver suas organizações diretrizes de grupos do Office 365](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
+![Clique em diretrizes de uso de grupo para ver as diretrizes de grupos do Office 365](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
   
-## <a name="allow-users-to-send-as-the-office-365-group"></a>Permitir que os usuários enviar como o grupo do Office 365
+## <a name="allow-users-to-send-as-the-office-365-group"></a>Permitir que os usuários enviem como o grupo do Office 365
 <a name="BK_LinkToGuideLines"> </a>
   
-Se você deseja habilitar os grupos do Office 365 para "Enviar como", use o [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) e os cmdlets [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) essa configuração. Depois que você habilitar essa configuração, os usuários de grupo do Office 365 podem usar o Outlook ou o Outlook na web para enviar e responder para emails como o grupo do Office 365. Os usuários podem ir ao grupo, crie um novo email e altere o campo "Enviar como" para o endereço de email do grupo. 
+Se você deseja habilitar seus grupos do Office 365 para "enviar como", use os cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) e [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) para configurá-lo. Após habilitar essa configuração, os usuários do grupo do Office 365 podem usar o Outlook ou o Outlook na Web para enviar e responder a email como o grupo do Office 365. Os usuários podem ir para o grupo, criar um novo email e alterar o campo "enviar como" para o endereço de email do grupo. 
 
-([Você também pode fazer isso no Centro de administração do Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)).
+([Você também pode fazer isso no centro de administração do Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
-Use o seguinte script, substituindo * \<GroupAlias\> * com o alias do grupo que você deseja atualizar, e * \<UserAlias\> * com o alias do usuário a quem você deseja conceder permissões. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) executar esse script.
+Use o script a seguir, substituindo * \<GroupAlias\> * com o alias do grupo que você deseja atualizar e * \<useralias\> * com o alias do usuário a quem você deseja conceder permssions. [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para executar esse script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -61,25 +61,25 @@ $groupsRecipientDetails = Get-Recipient -RecipientTypeDetails groupmailbox -Iden
 Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAlias -AccessRights SendAs
 ```
 
-Depois que o cmdlet é executado, os usuários podem ir para o Outlook ou do Outlook na web para ser enviada como o grupo, adicionando o endereço de email do grupo no campo **de** . 
+Depois que o cmdlet é executado, os usuários podem acessar o Outlook ou o Outlook na Web para enviar como o grupo, adicionando o endereço de email do grupo ao campo **de** . 
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>Criar classificações para grupos do Office em sua organização
 
-Você pode criar classificações que os usuários em sua organização podem ser definidas quando eles criam um grupo do Office 365. Por exemplo, você pode permitir que os usuários definam "Standard", "Secret" e "Altamente secretos" nos grupos que eles criam. Classificações de grupo não são definidas por padrão, e você precisa criá-lo na ordem para seus usuários para defini-la. Use o Azure Active Directory PowerShell para direcionar seus usuários às diretrizes de uso da sua organização para grupos do Office 365.
+Você pode criar classificações que os usuários em sua organização podem definir quando criarem um grupo do Office 365. Por exemplo, você pode permitir que os usuários definam "Standard", "Secret" e "Top Secret" em grupos criados. As classificações de grupo não são definidas por padrão e você precisa criá-las para que os usuários a definam. Use o PowerShell do Azure Active Directory para apontar seus usuários para as diretrizes de uso da sua organização para grupos do Office 365.
   
-Check-out de [cmdlets do Windows Azure Active Directory para definir as configurações de grupo](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) e siga as etapas na **criar configurações no nível do diretório** para definir a classificação de para grupos do Office 365. 
+ConFira os [cmdlets do Azure Active Directory para definir as configurações de grupo](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) e siga as etapas em **criar configurações no nível do diretório** para definir a classificação dos grupos do Office 365. 
   
 ```
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
 ```
 
-Para associar uma descrição de cada tabela de classificação que você pode usar as configurações *ClassificationDescriptions* para definir o atributo.
+Para associar uma descrição a cada classificação, você pode usar o atributo de configurações *ClassificationDescriptions* para definir.
   
 ```
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-onde classificação corresponde a ClassificationList as sequências de caracteres.
+em que a classificação corresponde às cadeias de caracteres na classificação.
 
 Exemplo:
   
@@ -87,56 +87,56 @@ Exemplo:
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-Após executar o cmdlet acima do Azure Active Directory para definir sua classificação, execute o cmdlet [Set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) se você deseja definir a classificação de um grupo específico. 
+Depois de executar o cmdlet acima do Active Directory do Azure para definir sua classificação, execute o cmdlet [set-](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) unificado, se quiser definir a classificação de um grupo específico. 
   
 ```
 Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact> 
 ```
 
-Ou crie um novo grupo com uma classificação.
+Ou criar um novo grupo com uma classificação.
   
 ```
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-Confira [Usando o PowerShell com o Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) e [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para obter mais detalhes sobre como usar o PowerShell do Exchange Online. 
+ConFira [usando o PowerShell com o Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell) e [Conecte-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para obter mais detalhes sobre como usar o PowerShell do Exchange Online. 
   
-Depois que essas configurações estão habilitadas, o proprietário do grupo será capaz de escolher uma classificação na lista suspensa menu no Outlook na Web e Outlook e salvá-lo da página **Editar** grupo. 
+Depois que essas configurações forem habilitadas, o proprietário do grupo poderá escolher uma classificação no menu suspenso no Outlook na Web e no Outlook e salvá-la na página **Editar** grupo. 
   
 ![Escolha a classificação de grupo do Office 365](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
   
 ## <a name="hide-office-365-groups-from-gal"></a>Ocultar grupos do Office 365 da GAL
 <a name="BKMK_CreateClassification"> </a>
 
-Você pode especificar se um grupo do Office 365 é exibida na lista de endereços global (GAL) e outras listas em sua organização. Por exemplo, se você tiver um grupo de departamento jurídico que você não deseja que seja mostrada na lista de endereços, você poderá interromper esse grupo apareçam na GAL. Execute o cmdlet Set-Unified grupo para ocultar o grupo da lista de endereços semelhante a esta:
+Você pode especificar se um grupo do Office 365 aparece na lista de endereços global (GAL) e em outras listas em sua organização. Por exemplo, se você tiver um grupo de departamento jurídico que não deseja exibir na lista de endereços, você pode impedir que esse grupo apareça na GAL. Execute o cmdlet Set-Unified Group para ocultar o grupo da lista de endereços da seguinte maneira:
   
 ```
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
 ```
 
-## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>Permitir que somente usuários internos enviar a mensagem ao grupo do Office 365
+## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>Permitir que somente usuários internos enviem mensagens para o grupo do Office 365
 <a name="BKMK_CreateClassification"> </a>
 
-Se você não desejar que os usuários de outra organização para enviar email a um grupo do Office 365, você poderá alterar as configurações para esse grupo. Ele permitirá que apenas usuários internos enviar um email para seu grupo. Se o usuário externo tente enviar a mensagem a esse grupo que serão rejeitadas.
+Se não quiser que os usuários de outra organização enviem emails para um grupo do Office 365, você poderá alterar as configurações desse grupo. Ele permitirá que apenas usuários internos enviem um email para o seu grupo. Se o usuário externo tentar enviar uma mensagem para esse grupo, ele será rejeitado.
   
-Execute o cmdlet Set-UnifiedGroup para atualizar esta configuração, semelhante a esta:
+Execute o cmdlet Set-uniFicado para atualizar essa configuração, da seguinte maneira:
 
 ```
 Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
 ```
 
-## <a name="add-mailtips-to-the-office-365-groups"></a>Adicionar dicas de email aos grupos do Office 365
+## <a name="add-mailtips-to-the-office-365-groups"></a>Adicionar dicas de correio aos grupos do Office 365
 <a name="BKMK_CreateClassification"> </a>
 
-Sempre que um remetente tenta enviar um email a um grupo do Office 365, uma dica de email pode ser mostrada para acessá-los.
+Sempre que um remetente tenta enviar um email a um grupo do Office 365, uma dica de email pode ser exibida para eles.
   
-Execute o cmdlet grupo Set-Unified para adicionar uma dica de email para o grupo:
+Execute o cmdlet Set-Unified Group para adicionar uma dica de tela ao grupo:
 
 ```
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 ```
 
-Junto com a dica de email, também é possível definir MailTipTranslations, que especifica os idiomas adicionais para a dica de email. Suponha que você deseja que têm a tradução em espanhol e, em seguida, execute o seguinte comando:
+Juntamente com as dicas de dicas, você também pode definir MailTipTranslations, que especifica idiomas adicionais para a dica de a. Suponha que você deseja ter a tradução para espanhol e, em seguida, execute o seguinte comando:
   
 ```
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
@@ -144,20 +144,20 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-display-name-of-the-office-365-group"></a>Alterar o nome de exibição do grupo do Office 365
 
-Nome para exibição Especifica o nome do grupo do Office 365. Você pode ver esse nome no seu centro de administração do exchange ou o portal de administração do Office 365. Você pode editar o nome para exibição do grupo ou atribuir um nome de exibição para um grupo existente do Office 365, executando o comando Set-UnifiedGroup:
+Nome para exibição especifica o nome do grupo do Office 365. Você pode ver esse nome no seu centro de administração do Exchange ou no portal de administração do Office 365. Você pode editar o nome de exibição do grupo ou atribuir um nome para exibição a um grupo existente do Office 365 executando o comando Set-Unified Group:
 
 ```
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ```
 
-## <a name="change-the-default-setting-of-office-365-groups-for-outlook-to-public-or-private"></a>Altere a configuração padrão dos grupos do Office 365 para o Outlook para pública ou privada
+## <a name="change-the-default-setting-of-office-365-groups-for-outlook-to-public-or-private"></a>Alterar a configuração padrão dos grupos do Office 365 para o Outlook para público ou privado
 <a name="BKMK_CreateClassification"> </a>
 
-O Office 365 grupos no Outlook são criados como particular por padrão. Se sua organização deseja grupos do Office 365 deve ser criado como público por padrão (ou para Private), use esta sintaxe de cmdlet do PowerShell:
+Os grupos do Office 365 no Outlook são criados como particulares por padrão. Se sua organização deseja que os grupos do Office 365 sejam criados como públicos por padrão (ou de volta para privado), use esta sintaxe de cmdlet do PowerShell:
   
  `Set-OrganizationConfig -DefaultGroupAccessType Public`
   
-Para definir como privada:
+Para definir como particular:
   
  `Set-OrganizationConfig -DefaultGroupAccessType Private`
   
@@ -165,31 +165,31 @@ Para verificar a configuração:
   
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
   
-Para saber mais, consulte [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) e [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig).
+Para saber mais, confira [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) e [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/Get-OrganizationConfig).
   
 ## <a name="office-365-groups-cmdlets"></a>Cmdlets de grupos do Office 365
 
-Os cmdlets a seguir pode ser usados com grupos do Office 365.
+Os cmdlets a seguir podem ser usados com grupos do Office 365.
   
 |**Nome do cmdlet**|**Descrição**|
 |:-----|:-----|
-|[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Use este cmdlet para procurar grupos de 365 existentes do Office e para visualizar as propriedades do objeto de grupo  <br/> |
-|[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Atualizar as propriedades de um grupo específico de 365 do Office  <br/> |
-|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Crie um novo grupo do Office 365. Esse cmdlet fornece um conjunto mínimo de parâmetros, para configuração valores para propriedades estendidas usam Set-UnifiedGroup após a criação do novo grupo  <br/> |
-|[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Excluir um grupo de 365 existente do Office  <br/> |
-|[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Recuperar informações de associação e o proprietário de um grupo do Office 365  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Adicionar centenas ou milhares de usuários ou proprietários novos, a um grupo de 365 existente do Office  <br/> |
-|[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Remover membros e proprietários de um grupo de 365 existente do Office  <br/> |
-|[Get-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Usado para exibir informações sobre a foto do usuário associada a uma conta. Fotos dos usuários são armazenadas no Active Directory  <br/> |
-|[Set-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Usado para associar uma foto do usuário com uma conta. Fotos dos usuários são armazenadas no Active Directory  <br/> |
-|[Remove-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Remover a foto de um grupo do Office 365  <br/> |
+|[Obter-uniFicação de um](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Use este cmdlet para pesquisar grupos existentes do Office 365 e para exibir as propriedades do objeto Group  <br/> |
+|[Conjunto-uniFicado](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Atualizar as propriedades de um grupo específico do Office 365  <br/> |
+|[Novo-uniFicado](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Criar um novo grupo do Office 365. Este cmdlet fornece um conjunto mínimo de parâmetros, para definir valores para propriedades estendidas use set-Unified Group depois de criar o novo grupo  <br/> |
+|[Remover-uniFicado](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Excluir um grupo existente do Office 365  <br/> |
+|[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Recuperar informações de associação e de proprietário de um grupo do Office 365  <br/> |
+|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Adicionar centenas ou milhares de usuários, ou novos proprietários, a um grupo existente do Office 365  <br/> |
+|[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |Remover proprietários e membros de um grupo existente do Office 365  <br/> |
+|[Get-userPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |Usado para exibir informações sobre a foto do usuário associada a uma conta. As fotos do usuário são armazenadas no Active Directory  <br/> |
+|[Set-userPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |Usado para associar uma foto de usuário a uma conta. As fotos do usuário são armazenadas no Active Directory  <br/> |
+|[Remove-userPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Remover a foto de um grupo do Office 365  <br/> |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Listas de distribuição de atualização para o Office 365 grupos](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
+[Atualizar listas de distribuição para grupos do Office 365](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
 
-[Gerenciar quem pode criar Grupos do Office 365](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
+[Gerenciar quem pode criar grupos do Office 365](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
 
 [Gerenciar o acesso de convidados aos Grupos do Office 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Alterar a associação ao grupo estático para dinâmico em](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)
+[Alterar a associação de grupo estático para dinâmico no](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)

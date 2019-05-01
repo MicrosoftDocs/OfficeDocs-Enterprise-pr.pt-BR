@@ -3,18 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Semana de 18 de março de 2019
-
-
-| Publicado em |Título do tópico | Alteração |
-|------|------------|--------|
-| 3/18/2019 | [Perguntas frequentes gerais sobre migração de dados](/Office365/Enterprise/data-move-faq) | modificado |
-| 3/18/2019 | [Durante e após a migração dos dados](/Office365/Enterprise/during-and-after-your-data-move) | modificado |
-| 3/18/2019 | [Planejamento de capacidade e teste de carregamento do SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | modificado |
-| 3/18/2019 | [Colaboração entre locatários do Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | modificado |
-| 3/19/2019 | [Exibir as contas de usuário com o Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | modificado |
-
-
 ## <a name="week-of-march-25-2019"></a>Semana de 25 de março de 2019
 
 
@@ -22,22 +10,22 @@
 |------|------------|--------|
 | 3/27/2019 | [Adicionar ou remover um administrador geográfico](/Office365/Enterprise/add-a-sharepoint-geo-admin) | modificado |
 | 3/27/2019 | [Administrar um ambiente multigeográfico](/Office365/Enterprise/administering-a-multi-geo-environment) | modificado |
-| 3/27/2019 | [Administrar caixas de correio do Exchange Online em um ambiente multigeográfico](/Office365/Enterprise/administering-exchange-online-multi-geo) | adicioná |
+| 3/27/2019 | [Administrar caixas de correio do Exchange Online em um ambiente multigeográfico](/Office365/Enterprise/administering-exchange-online-multi-geo) | adicionado |
 | 3/27/2019 | [Configurar a pesquisa para o Office 365 multiGeográfico](/Office365/Enterprise/configure-search-for-multi-geo) | modificado |
 | 3/27/2019 | [Excluir uma localização de satélite](/Office365/Enterprise/delete-a-geo-location) | modificado |
 | 3/27/2019 | [Mover um site do OneDrive para um local geográfico diferente](/Office365/Enterprise/move-onedrive-between-geo-locations) | modificado |
-| 3/27/2019 | [Mover um site do SharePoint para uma localização geográfica diferente (Visualização)](/Office365/Enterprise/move-sharepoint-between-geo-locations) | adicioná |
-| 3/27/2019 | [Criar um grupo no Office 365 com uma PDL específica ](/Office365/Enterprise/multi-geo-add-group-with-pdl) | adicioná |
+| 3/27/2019 | [Mover um site do SharePoint para uma localização geográfica diferente (Visualização)](/Office365/Enterprise/move-sharepoint-between-geo-locations) | adicionado |
+| 3/27/2019 | [Criar um grupo no Office 365 com uma PDL específica ](/Office365/Enterprise/multi-geo-add-group-with-pdl) | adicionado |
 | 3/27/2019 | [Exchange Multi-geográfica](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | modificado |
 | 3/27/2019 | [Recursos multigeográficos no OneDrive e SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
-| 3/27/2019 | [Configurar a descoberta eletrônica do Office 365 multigeográfico](/Office365/Enterprise/multi-geo-ediscovery-configuration) | adicioná |
+| 3/27/2019 | [Configurar a descoberta eletrônica do Office 365 multigeográfico](/Office365/Enterprise/multi-geo-ediscovery-configuration) | adicionado |
 | 3/27/2019 | [Configuração de um locatário do Office 365 multigeográfico](/Office365/Enterprise/multi-geo-tenant-configuration) | modificado |
 | 3/27/2019 | [Experiência do usuário em um ambiente multigeográfico](/Office365/Enterprise/multi-geo-user-experience) | modificado |
-| 3/27/2019 | [Office 365 multigeográfico](/Office365/Enterprise/office-365-multi-geo) | adicioná |
+| 3/27/2019 | [Office 365 multigeográfico](/Office365/Enterprise/office-365-multi-geo) | adicionado |
 | 3/27/2019 | [Plano para o Office 365 multigeográfico](/Office365/Enterprise/plan-for-multi-geo) | modificado |
 | 3/27/2019 | [Atribuir licenças a contas de usuários usando o Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | modificado |
-| 3/27/2019 | [Restringir o conteúdo para uma localização geográfica](/Office365/Enterprise/restrict-content-to-geo-location) | adicioná |
-| 3/27/2019 | [Cotas de armazenamento do SharePoint em ambientes multigeográficos](/Office365/Enterprise/sharepoint-multi-geo-storage-quota) | adicioná |
+| 3/27/2019 | [Restringir o conteúdo para uma localização geográfica](/Office365/Enterprise/restrict-content-to-geo-location) | adicionado |
+| 3/27/2019 | [Cotas de armazenamento do SharePoint em ambientes multigeográficos](/Office365/Enterprise/sharepoint-multi-geo-storage-quota) | adicionado |
 | 3/27/2019 | [Mover um site do SharePoint para um local geográfico diferente-visualização](/Office365/Enterprise/move-sharepoint-between-geo-locations) | modificado |
 | 3/27/2019 | [Mover um site do SharePoint para uma localização geográfica diferente (Visualização)](/Office365/Enterprise/move-sharepoint-between-geo-locations) | modificado |
 | 3/28/2019 | [Recursos multigeográficos no OneDrive e SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
@@ -49,7 +37,7 @@
 | 3/29/2019 | [URLs e intervalos de endereços IP do Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | modificado |
 | 3/29/2019 | [Redes de distribuição de conteúdo](/Office365/Enterprise/content-delivery-networks) | modificado |
 | 3/29/2019 | [Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | modificado |
-| 3/29/2019 | [Desabilitar o acesso aos serviços ao atribuir licenças de usuário](/Office365/Enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) | modificado |
+| 3/29/2019 | [Desabilitar o acesso aos serviços na atribuição de licenças de usuário](/Office365/Enterprise/powershell/disable-access-to-services-while-assigning-user-licenses) | modificado |
 | 3/29/2019 | [Desabilitar o acesso aos serviços com o Office 365 PowerShell](/Office365/Enterprise/powershell/disable-access-to-services-with-office-365-powershell) | modificado |
 | 3/29/2019 | [Noções básicas sobre identidade do Office 365 e Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | modificado |
 | 3/29/2019 | [Automatizar a coleta de arquivos para descoberta eletrônica](/Office365/Enterprise/automate-file-collection-for-ediscovery) | modificado |
@@ -77,7 +65,7 @@
 
 | Publicado em |Título do tópico | Alteração |
 |------|------------|--------|
-| 4/1/2019 | [Ativando as funcionalidades multigeográficas do SharePoint em sua localização geográfica por satélite](/Office365/Enterprise/enabling-sp-multigeo-satellite-geolocation) | adicioná |
+| 4/1/2019 | [Ativando as funcionalidades multigeográficas do SharePoint em sua localização geográfica por satélite](/Office365/Enterprise/enabling-sp-multigeo-satellite-geolocation) | adicionado |
 | 4/2/2019 | [Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | modificado |
 | 4/2/2019 | [Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento/teste do Office 365](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | modificado |
 | 4/2/2019 | [Arquitetura dos cenários de nuvem híbrida da Microsoft](/Office365/Enterprise/architecture-of-microsoft-hybrid-cloud-scenarios) | modificado |
@@ -155,3 +143,15 @@
 | 4/18/2019 | [Atribuir funções a contas de usuário com o Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | modificado |
 | 4/18/2019 | [Como rotear com o ExpressRoute para Office 365](/Office365/Enterprise/routing-with-expressroute) | modificado |
 | 4/18/2019 | [Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | modificado |
+
+
+## <a name="week-of-april-22-2019"></a>Semana de 22 de abril de 2019
+
+
+| Publicado em |Título do tópico | Alteração |
+|------|------------|--------|
+| 4/22/2019 | [Recursos multigeográficos no OneDrive e SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | modificado |
+| 4/22/2019 | [Office 365 multigeográfico](/Office365/Enterprise/office-365-multi-geo) | modificado |
+| 4/22/2019 | Agregar dados de relatório do cliente por meio do Windows PowerShell para parceiros com permissão de acesso delegado (DAP) | removido |
+| 4/22/2019 | [Gerenciar o Office 365 com o Windows PowerShell para parceiros com DAP (permissões de acesso delegadas)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | modificado |
+| 4/22/2019 | [Recuperar dados de relatório do locatário do cliente com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | modificado |

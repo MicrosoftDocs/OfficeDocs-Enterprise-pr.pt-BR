@@ -15,13 +15,13 @@ ms.custom:
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumo: Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.'
 ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741448"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491217"
 ---
-# <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento e teste do Office 365
+# <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.
   
@@ -30,7 +30,7 @@ A descoberta eletrônica avançada do Office 365 permite que você encontre e an
 Com as instruções neste artigo, você cria um pequeno conjunto de dados para uma disputa de contrato fictícia e o analisa com a Descoberta Eletrônica Avançada.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa Visual para todos os artigos da pilha do guia do laboratório de teste do Office 365.
+> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -53,7 +53,7 @@ Neste procedimento, você criará mensagens de email que, mais tarde, serão ana
     
 2. Na guia **Email do Outlook**, clique em **Novo**.
     
-3. Em **para**, digite o endereço de email da conta usuário6 da sua assinatura de avaliação ( ** user6@.**<organization name> **. onmicrosoft.com**).
+3. Em **para**, digite o endereço de email da conta usuário6 da sua assinatura de avaliação ( **usuário6 @.**<organization name> **. onmicrosoft.com**).
     
 4. Para o assunto, digite **Email de teste 1**.
     
@@ -183,10 +183,9 @@ Agora, você pode usar esse ambiente para criar novo conteúdo, novas pesquisas 
   
 ## <a name="see-also"></a>Confira também
 
-
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
+[O ambiente de desenvolvimento/teste de configuração base](base-configuration-dev-test-environment.md) 
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
@@ -194,7 +193,7 @@ Agora, você pode usar esse ambiente para criar novo conteúdo, novas pesquisas 
   
 [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 [Descoberta Eletrônica Avançada do Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 

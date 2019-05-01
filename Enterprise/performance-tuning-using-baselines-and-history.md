@@ -19,11 +19,11 @@ ms.collection:
 - Ent_O365
 description: Há algumas maneiras simples de verificar o desempenho da conexão entre o Office 365 e sua empresa, que permitirá estabelecer uma linha de base aproximada da conectividade. Conhecer o histórico de desempenho de suas conexões de computador cliente pode ajudá-lo a detectar problemas emergentes antecipadamente, identificar e prever problemas.
 ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372938"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491796"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho
 
@@ -157,7 +157,7 @@ Você pode obter uma linha de base antes do horário comercial, novamente durant
   
 ![Gráfico que propõe uma maneira de organizar seus dados de desempenho em pastas.](media/13e01ffa-f0f2-4d10-b89d-d5980ec89fae.png)
   
-Você também deve escolher uma Convenção de nomenclatura de seus arquivos. Estes são alguns exemplos:
+Você também deve escolher uma Convenção de nomenclatura de seus arquivos. Aqui estão alguns exemplos:
   
 - Feb_09_2015_9amPST_PerfBaseline_Netmon_ClientToEgress_Normal
     

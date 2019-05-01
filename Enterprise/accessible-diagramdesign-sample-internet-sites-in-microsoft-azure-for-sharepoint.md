@@ -1,5 +1,5 @@
 ---
-title: Amostra de Design de diagrama acessível - sites da Internet no Microsoft Azure para o SharePoint 2013
+title: Diagrama acessível-exemplo de design de sites da Internet no Microsoft Azure para SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,19 +10,19 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
-description: 'Este artigo é uma versão de texto acessível do diagrama denominado amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013.'
+description: 'Este artigo é uma versão de texto acessível do diagrama chamado amostra de design: sites da Internet no Microsoft Azure para SharePoint 2013.'
 ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17502754"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487827"
 ---
-# <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama acessível - exemplo de Design: sites da Internet no Microsoft Azure para o SharePoint 2013
+# <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama acessível-exemplo de design: sites da Internet no Microsoft Azure para SharePoint 2013
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama denominado amostra de Design: sites da Internet no Microsoft Azure para o SharePoint 2013.
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado amostra de design: sites da Internet no Microsoft Azure para SharePoint 2013.
   
-Use este exemplo de design como ponto de partida para um site da Internet no Windows Azure usando o SharePoint 2013.
+Use este exemplo de design como ponto de partida para um site voltado para a Internet no Azure usando o SharePoint 2013.
   
 Este cartaz mostra um exemplo de como criar os seguintes aspectos do SharePoint 2013:
   
@@ -36,7 +36,7 @@ Este cartaz mostra um exemplo de como criar os seguintes aspectos do SharePoint 
     
 - Serviços
     
-- Pools de aplicativos e aplicativos da web
+- Pools de aplicativos e aplicativos Web
     
 - Conjuntos de sites
     
@@ -48,116 +48,116 @@ Este cartaz mostra um exemplo de como criar os seguintes aspectos do SharePoint 
     
 ## <a name="users-zones-and-authentication"></a>Usuários, zonas e autenticação
 
-Há quatro tipos de contas de usuário neste design. Cada tipo de conta é associado com um site para o acesso e uma zona que usa um tipo específico de autenticação. 
+Há quatro tipos de contas de usuário nesse design. Cada tipo de conta é associada a um site para acesso e com uma zona que usa um tipo específico de autenticação. 
   
-- Clientes anônimos — clientes anônimos têm acesso através de um site como http://www.contoso.com. É a zona que utilizarem o "zona da Internet / anônimo", que usa a autenticação anônima.
+- Clientes anônimos — clientes anônimos têm acesso por meio de http://www.contoso.comum site como o. A zona que eles usam é a "zona de Internet/anônima", que usa a autenticação anônima.
     
-- Autenticado clientes — autenticado clientes têm acesso através de um site, como https://secure.contoso.com. É a zona que utilizarem o "zona Extranet / SAML", que usa o Azure Active Directory com autenticação SAML.
+- Clientes autenticados – clientes autenticados têm acesso por meio de um site https://secure.contoso.comcomo o. A zona que usa é "extranet Zone/SAML", que usa o Azure Active Directory com a autenticação SAML.
     
-- Os autores e desenvolvedores de sites — autores de Site e desenvolvedores têm acesso por meio de sites como http://authoring.contoso.com:8000 ou http://www.contoso.com:8000. É a zona que utilizarem o "zona padrão / integrada do Windows", que usa os serviços de domínio Active Directory (AD DS).
+- Autores e desenvolvedores de sites — autores e desenvolvedores de sites têm acesso por meio http://authoring.contoso.com:8000 de http://www.contoso.com:8000sites como ou. A zona que usa é "padrão de zona/Windows integrado", que usa os serviços de domínio do Active Directory (AD DS).
     
-- Conta de rastreamento de pesquisa — A conta de rastreamento de pesquisa possui acesso por meio de sites como http://authoring.contoso.com:8000 ou http://www.contoso.com:8000. É a zona que ele usa o "zona padrão / integrada do Windows", que usa o AD DS com autenticação Windows NTLM.
+- Conta de rastreamento de pesquisa — a conta de rastreamento de pesquisa tem acesso http://authoring.contoso.com:8000 por http://www.contoso.com:8000meio de sites como ou. A zona que ela usa é "padrão de zona/Windows integrado", que usa o AD DS com a autenticação NTLM do Windows.
     
 ## <a name="server-farm"></a>Farm de servidores
 
-Os usuários acessam o farm de servidores por meio do Windows Azure. O farm de servidores contém um ou mais servidores Web.
+Os usuários acessam o farm de servidores por meio do Azure. O farm de servidores contém um ou mais servidores Web.
   
 ## <a name="administration-site"></a>Site de administração
 
-O site de administração contém vários servidores de aplicativos, que se comunicam com um Pool de aplicativos (1 de Pool de aplicativos no exemplo) que usa o Site da Administração Central do aplicativo web. O Site da Administração Central fornece acesso aos conjuntos de sites dentro da organização.
+O site de administração contém vários servidores de aplicativos, que se comunicam com um pool de aplicativos (pool de aplicativos 1 no exemplo) que usa o site da administração central do aplicativo Web. O site da administração central fornece acesso a conjuntos de sites dentro da organização.
   
-O site da administração também contém os servidores de banco de dados do SQL, que são os servidores de banco de dados com o SQL Server instalado e configurado para dar suporte a SQL clustering, espelhamento ou AlwaysOn (AlwaysOn é aplicado ao SQL Server 2012 apenas).
+O site de administração também contém servidores de banco de dados SQL, que são servidores de banco de dados com o SQL Server instalado e configurado para dar suporte a clustering SQL, espelhamento ou AlwaysOn (AlwaysOn aplica-se somente ao SQL Server 2012).
   
 ## <a name="services"></a>Serviços
 
-O exemplo de design mostra um site de serviços de informações da Internet (IIS), serviços Web do SharePoint. Serviços Web do SharePoint contém um pool de aplicativos (2 de Pool de aplicativo) com três serviços, perfil de usuário, pesquisa e metadados gerenciados.
+O exemplo de design mostra um site dos serviços de informações da Internet (IIS), serviços Web do SharePoint. Os serviços Web do SharePoint contêm um pool de aplicativos (pool de aplicativos 2) com três serviços, perfil de usuário, pesquisa e metadados gerenciados.
   
 Observações sobre serviços para sites da Internet:
   
-> Metadados gerenciados — Certifique-se de selecionar **Este aplicativo de serviço é o local de armazenamento padrão para conjuntos de termos específicos de coluna**.
+> Metadados gerenciados — certifique-se de selecionar **este aplicativo de serviço é o local de armazenamento padrão para conjuntos de termos específicos de coluna**.
     
-> Gerenciamento de aplicativos — Não recomendamos usar aplicativos em um site de Internet público no Windows Azure.
+> Gerenciamento de aplicativos — não recomendamos o uso de aplicativos em um site de Internet público no Azure.
     
-## <a name="application-pools-and-web-applications"></a>Pools de aplicativos e aplicativos da web
+## <a name="application-pools-and-web-applications"></a>Pools de aplicativos e aplicativos Web
 
-O grupo padrão no Windows Azure mostra 3 de Pool de aplicativos, que contém um aplicativo web chamado Contoso Sites. Este conjunto de sites baseados em caminho está localizado em http://internal:8000.
+O grupo padrão no Azure mostra o pool de aplicativos 3, que contém um aplicativo Web chamado contoso sites. Este conjunto de sites baseado em caminho está localizado http://internal:8000em.
   
-## <a name="site-collections-and-sites"></a>Conjuntos de sites
+## <a name="site-collections-and-sites"></a>Conjuntos de sites e sites
 
 Os conjuntos de sites contidos no pool de aplicativos incluem:
   
-- Conjunto de sites nomeados por host 1 para rastreamento (exemplo local http://authoring.contoso.com:8000)
+- Conjunto de sites com nome de host 1 para rastreamento (exemplo de localhttp://authoring.contoso.com:8000)
     
-- Conjunto de sites nomeados por host 2 para consultas (amostra locais http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000)
+- Conjunto de sites nomeados por host 2 para consultas ( http://www.contoso.comlocais https://secure.contoso.comde exemplo,http://www.contoso.com:8000)
     
-- Conjunto de sites nomeados por host 3 para consultas (amostra locais http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000)
+- Conjunto de sites nomeado por host 3 para consultas (locais http://assets.contoso.comde https://secureassets.contoso.comexemplo,http://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>Bancos de dados de conteúdo
 
-O exemplo mostra dois bancos de dados de conteúdo. Um é o conjunto de sites 1 usado para rastreamento (http://authoring.contoso.com:8000). O outro é para os conjuntos de dois sites 2 e 3 usadas para consultas (http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000 ou http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000).
+O exemplo mostra dois bancos de dados de conteúdo. Um é para o conjunto de sites 1 usado para rastreamento (http://authoring.contoso.com:8000). O outro é para os dois conjuntos de sites 2 e 3 usados para consultashttp://www.contoso.com( https://secure.contoso.com, http://www.contoso.com:8000,, http://assets.contoso.comou https://secureassets.contoso.com, http://assets.contoso.com:8000),.
   
 ## <a name="zones-and-urls"></a>Zonas e URLs
 
-O exemplo mostra três zonas com as URLs associadas com balanceamento de carga que são usadas por diferentes contas de usuário. 
+O exemplo mostra três zonas com as URLs de carga balanceada associadas usadas por diferentes contas de usuário. 
   
-Primeira lista das URLs e zonas está relacionada ao conjunto de sites 1 e contém as seguintes informações:
+A primeira lista de zonas e URLs está relacionada ao conjunto de sites 1 e contém as seguintes informações:
   
-- Usuários - criadores de sites
+- Usuários-autores de site
     
-- Zona - padrão
+- Zona-padrão
     
-- URL com carga balanceada - http://authoring.contoso.com:8000
+- URL com balanceamento de carga-http://authoring.contoso.com:8000
     
-Segunda lista das URLs e zonas tem três tipos diferentes de usuários em três zonas diferentes. Ela está relacionada a conjunto de sites 2, e ele contém as seguintes informações:
-  
-Primeira zona:
-  
-- Usuários - criadores de sites
-    
-- Zona - padrão
-    
-- URL com carga balanceada - http://www.contoso.com:8000
-    
-Segunda zona:
-  
-- Usuários - clientes anônimos
-    
-- Zona - Internet
-    
-- Com balanceamento de carga URL - http://www.contoso.com
-    
-Terceira zona:
-  
-- Usuários - clientes autenticados
-    
-- Zona - Extranet
-    
-- Com balanceamento de carga URL - https://secure.contoso.com
-    
-A terceira lista das URLs e zonas tem três tipos diferentes de usuários em três zonas diferentes. Ela está relacionada a conjunto de sites 3 e ele contém as seguintes informações:
+A segunda lista de zonas e URLs tem três tipos diferentes de usuários em três zonas diferentes. Ele está relacionado ao conjunto de sites 2 e contém as seguintes informações:
   
 Primeira zona:
   
-- Usuários - criadores de sites
+- Usuários-autores de site
     
-- Zona - Internet
+- Zona-padrão
     
-- URL com carga balanceada - http://assets.contoso.com:8000
+- URL com balanceamento de carga-http://www.contoso.com:8000
     
 Segunda zona:
   
-- Usuários - clientes anônimos
+- Usuários-clientes anônimos
     
-- Zona - Internet
+- Zona-Internet
     
-- Com balanceamento de carga URL - http://assets.contoso.com
+- URL com balanceamento de carga-http://www.contoso.com
     
 Terceira zona:
   
-- Usuários - clientes autenticados
+- Clientes autenticados por usuários
     
-- Zona - Extranet
+- Zona-Extranet
     
-- Com balanceamento de carga URL - http://secureassets.contoso.com
+- URL com balanceamento de carga-https://secure.contoso.com
+    
+A terceira lista de zonas e URLs tem três tipos diferentes de usuários em três zonas diferentes. Ele está relacionado ao conjunto de sites 3 e contém as seguintes informações:
+  
+Primeira zona:
+  
+- Usuários-autores de site
+    
+- Zona-Internet
+    
+- URL com balanceamento de carga-http://assets.contoso.com:8000
+    
+Segunda zona:
+  
+- Usuários-clientes anônimos
+    
+- Zona-Internet
+    
+- URL com balanceamento de carga-http://assets.contoso.com
+    
+Terceira zona:
+  
+- Clientes autenticados por usuários
+    
+- Zona-Extranet
+    
+- URL com balanceamento de carga-http://secureassets.contoso.com
     
 

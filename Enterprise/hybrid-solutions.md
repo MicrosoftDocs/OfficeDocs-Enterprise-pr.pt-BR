@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Resumo: use estes artigos para implantar cargas de trabalho do Office Server no Microsoft Azure.'
 ms.openlocfilehash: c648ecb7df1a4604960a5b0445ce3de7a74c9acf
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915866"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487187"
 ---
 # <a name="hybrid-solutions"></a>Soluções híbridas
 

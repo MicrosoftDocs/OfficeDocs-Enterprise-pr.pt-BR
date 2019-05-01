@@ -1,5 +1,5 @@
 ---
-title: Diagrama acessível - opções de plataforma do Microsoft Exchange 2013
+title: Diagrama acessível-opções de plataforma do Microsoft Exchange 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,109 +9,109 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
-description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, que está disponível em diagramas técnicos.
+description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em diagramas técnicos.
 ms.openlocfilehash: e1c4957c9152c5a23008c657d7e2d0d47b5cce0f
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503124"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487777"
 ---
-# <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagrama acessível - opções de plataforma do Microsoft Exchange 2013
+# <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagrama acessível-opções de plataforma do Microsoft Exchange 2013
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, que está disponível em [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em [diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
-Este cartaz descreve o que arquitetos e business decision tomadores de precisam saber sobre implantações do Exchange Online e o Exchange Server e inclui: 
+Este cartaz descreve quais responsáveis pelas decisões de negócios (BDMs) e arquitetos precisam saber sobre as implantações do Exchange Online e do Exchange Server e incluem: 
   
-- Uma comparação de quatro opções de plataforma disponíveis para o Exchange 2013: Exchange Online (Office 365), Exchange híbrido, Exchange Server local e Provider-Hosted Exchange. 
+- Uma comparação de quatro opções de plataforma disponíveis para o Exchange 2013: Exchange Online (Office 365), Exchange híbrido, Exchange Server local e Exchange hospedado pelo provedor. 
     
 - Descrições de três recursos novos ou atualizados no Exchange 2013. 
     
-## <a name="comparison-of-four-different-deployments-for-the-exchange-2013-platform"></a>Comparação entre quatro diferentes implantações para a plataforma Exchange 2013
+## <a name="comparison-of-four-different-deployments-for-the-exchange-2013-platform"></a>Comparação de quatro implantações diferentes para a plataforma Exchange 2013
 
-Comparação fornece informações sobre cada opção de implantação nas seguintes áreas: 
+A comparação fornece informações sobre cada opção de implantação nas seguintes áreas: 
   
-- Uma visão geral dos recursos de implantação diferentes 
+- Uma visão geral dos diferentes recursos de implantação 
     
 - Benefícios da implementação de cada opção de implantação 
     
-- Requisitos de licenciamento 
+- Requisitos de licença 
     
-- Tarefas necessárias de arquiteturais 
+- Tarefas de arquitetura necessárias 
     
-- Responsabilidades do IT Pro para implementar cada opção de implantação 
+- Responsabilidades de profissionais de ti para implementar cada opção de implantação 
     
-### <a name="overview"></a>Visão geral
+### <a name="overview"></a>Visão Geral
 
 #### <a name="exchange-online-office-365"></a>Exchange Online (Office 365)
 
-Ganho de eficiência e reduzir os custos com o Office 365.
+Você obtém eficiência e reduz custos com o Office 365.
   
-O diagrama acompanha mostra o Exchange Online com um locatário do Azure Active Directory que sincroniza os nomes de conta e senhas entre o ambiente de serviços de domínio Active Directory (AD DS) no local e o locatário do Azure Active Directory. Os serviços de Federação do Active Directory (AD FS) é necessário para o serviço single sign-on. 
+O diagrama a seguir mostra o Exchange Online com um locatário do Azure Active Directory que sincroniza nomes de conta e senhas entre o ambiente do AD DS (serviços de domínio Active Directory) local e o locatário do Azure Active Directory. O AD FS (serviços de Federação do Active Directory) é necessário para o logon único. 
   
-Descrição dos recursos e funcionalidades:
+Descrição dos recursos e funcionalidade:
   
-- A operação de servidores e de software do servidor é manipulada pela Microsoft.
+- A operação de servidores e software de servidor é manipulada pela Microsoft.
     
-- Conjunto de recursos de rich do Exchange Server 2013 como um serviço baseado em nuvem.
+- Conjunto de recursos avançados do Exchange Server 2013 como um serviço baseado em nuvem.
     
-- Sempre atualizada com os recursos mais recentes.
+- Sempre atualizado com os recursos mais recentes.
     
-- Exchange Online Protection (EOP) é incluído para anti-spam/anti-malware protection.
+- O proteção do Exchange Online (EOP) está incluído para proteção antispam/antimalware.
     
-- Alta disponibilidade incorporada com um 99,9% contrato de nível de serviço (SLA).
+- Alta disponibilidade interna com um contrato de nível de serviço (SLA) de 99,9%.
     
-- Sincronização de diretórios incluindo senhas entre o local serviços de domínio do Active Directory (AD DS) e o locatário do Azure Active Directory. Os serviços de Federação do Active Directory (AD FS) é necessário para o serviço single sign-on.
+- Sincronização de diretório, incluindo senhas entre o AD DS (serviços de domínio Active Directory) local e o locatário do Azure Active Directory. O AD FS (serviços de Federação do Active Directory) é necessário para o logon único.
     
-#### <a name="exchange-hybrid"></a>Exchange híbrido
+#### <a name="exchange-hybrid"></a>Exchange Híbrido
 
-Você pode aproveitar os benefícios do Office 365, mantendo o Exchange Server local.
+Você pode aproveitar os benefícios do Office 365 enquanto mantém o Exchange Server no local.
   
-O diagrama acompanha mostra o Office 365 com o Exchange Online em que alguns usuários estão hospedados no local e alguns usuários hospedados online. Ele também mostra um locatário do Azure Active Directory que sincroniza os nomes de conta e senhas entre o ambiente de serviços de domínio Active Directory (AD DS) no local e o locatário do Azure Active Directory.
+O diagrama a seguir mostra o Office 365 com o Exchange Online em que alguns usuários estão hospedados no local e alguns usuários estão hospedados online. Também mostra um locatário do Azure Active Directory que sincroniza nomes de conta e senhas entre o ambiente do AD DS (serviços de domínio Active Directory) local e o locatário do Azure Active Directory.
   
-Descrição dos recursos e funcionalidades:
+Descrição dos recursos e funcionalidade:
   
-- Alguns usuários estão hospedados no local e alguns usuários hospedados online e usuários compartilham o mesmo espaço de endereço de email.
+- Alguns usuários estão hospedados no local e alguns usuários estão hospedados online, e os usuários compartilham o mesmo espaço de endereço de email.
     
-- Aproveita a infra-estrutura existente do Exchange Server.
+- Aproveita a infraestrutura existente do Exchange Server.
     
-- Migre do Exchange local para o Exchange Online ao longo do tempo, no seu calendário.
+- Migre do Exchange no local para o Exchange Online com o passar do tempo, no seu cronograma.
     
-- Integre com outros aplicativos do Office 365, incluindo o Lync Online e SharePoint Online.
+- Integre-se com outros aplicativos do Office 365, incluindo o Lync Online e o SharePoint Online.
     
 #### <a name="exchange-server-on-premises"></a>Exchange Server local
 
-Você pode criar e gerenciar sua própria infra-estrutura do Exchange Server 2013.
+Você pode criar e gerenciar sua própria infraestrutura do Exchange Server 2013.
   
-O diagrama acompanha mostra uma infraestrutura do Exchange Server com um ambiente de serviços de domínio Active Directory (AD DS) do local onde os usuários são hospedados no local.
+O diagrama a seguir mostra uma infraestrutura do Exchange Server com um ambiente do AD DS (serviços de domínio Active Directory) local onde os usuários estão hospedados no local.
   
-Descrição dos recursos e funcionalidades:
+Descrição dos recursos e funcionalidade:
   
-- Maior grau de personalização para sua configuração e controle.
+- O maior grau de controle e personalização da sua configuração.
     
-- Nenhuma dependência no mantendo a afinidade de sessão na camada de balanceamento de carga.
+- Nenhuma dependência para manter a afinidade da sessão na camada de balanceamento de carga.
     
-- Simple alta disponibilidade e resiliência do site usando grupos de disponibilidade de banco de dados (DAGs).
+- Alta disponibilidade simples e resiliência de site usando grupos de disponibilidade de banco de dados (DAGs).
     
-- Gerenciados disponibilidade que ajuda você a manter uma excelente experiência de usuário.
+- Disponibilidade gerenciada que ajuda você a manter uma ótima experiência do usuário.
     
-- Aproveite a infra-estrutura de armazenamento e o hardware existente.
+- Aproveite o hardware existente e a infraestrutura de armazenamento.
     
-#### <a name="provider-hosted-exchange"></a>Exchange hospedado em provedor
+#### <a name="provider-hosted-exchange"></a>Exchange hospedado pelo provedor
 
 Você pode terceirizar sua carga de trabalho do Exchange Server para um provedor de soluções do Exchange Server.
   
-O diagrama acompanha mostra um ambiente do Exchange Server que é operado e mantido por um provedor.
+O diagrama a seguir mostra um ambiente do Exchange Server operado e mantido por um provedor.
   
-Descrição dos recursos e funcionalidades:
+Descrição dos recursos e funcionalidade:
   
-- A operação de servidores e de software do servidor é manipulada pelo provedor.
+- A operação de servidores e software de servidor é manipulada pelo seu provedor.
     
-- Planejamento, dimensionamento, dimensionamento e manutenção da infraestrutura do Exchange Server são delegadas ao provedor.
+- O planejamento, o dimensionamento, a escalabilidade e a manutenção da infraestrutura do Exchange Server são delegados ao seu provedor.
     
-- Manutenção de serviço é manipulada pelo provedor.
+- A manutenção do serviço é manipulada pelo seu provedor.
     
-- O conjunto de recursos do Exchange é limitado a versão do software implantada pelo seu provedor.
+- O conjunto de recursos do Exchange é limitado à versão do software implantada pelo provedor.
     
 ### <a name="benefits-of-implementing-each-deployment-option"></a>Benefícios da implementação de cada opção de implantação
 
@@ -119,19 +119,19 @@ Descrição dos recursos e funcionalidades:
 
 Essa opção de implantação é melhor para:
   
-- Organizações que buscam para reduzir os custos de operações para o local do Exchange implantações.
+- Organizações que procuram reduzir os custos de operações para implantações locais do Exchange.
     
 - Organizações que planejam aproveitar outras ofertas do Office 365, como o SharePoint Online e o Lync Online.
     
-#### <a name="exchange-hybrid"></a>Exchange híbrido
+#### <a name="exchange-hybrid"></a>Exchange Híbrido
 
 Essa opção de implantação é melhor para:
   
-- Facilitando uma migração do Exchange local para o Exchange Online.
+- Facilitar uma migração do Exchange no local para o Exchange Online.
     
-- Dando suporte a sites remotos sem investir em infraestrutura de escritório de filial.
+- Suporte a sites remotos sem investir na infraestrutura de filial do escritório.
     
-- Empresas multinacionais com subsidiárias que exigem dados devem residir no local.
+- Empresas multinacionais com subsidiárias que exigem dados para residir no local.
     
 #### <a name="exchange-server-on-premises"></a>Exchange Server local
 
@@ -139,136 +139,136 @@ Essa opção de implantação é melhor para:
   
 - Soluções altamente personalizadas.
     
-- Soluções herdada com componentes de terceiros que dependem de hardware e software que não são suportados pelo Exchange Online.
+- Soluções herdadas com componentes de terceiros que dependem de hardware e software que não são compatíveis com o Exchange Online.
     
-- As organizações está sujeito às normas de governança de dados que exigem dados devem residir no local.
+- As organizações estão sujeitas às regulamentações de governança de dados que exigem dados para residir no local.
     
-- Organizações que desejam retém o controle da plataforma inteira and solution.
+- Organizações que desejam manter o controle de toda a plataforma e solução.
     
-#### <a name="provider-hosted-exchange"></a>Exchange hospedado em provedor
+#### <a name="provider-hosted-exchange"></a>Exchange hospedado pelo provedor
 
 Essa opção de implantação é melhor para:
   
-- Organizações que precisam de funcionalidade do servidor do Exchange, mas deseja terceirizar sua implantação e manutenção.
+- Organizações que precisam de funcionalidade do Exchange Server, mas que desejam terceirizar sua implantação e manutenção.
     
 - Organizações que precisam de opções de suporte personalizado.
     
-- Soluções personalizadas e integração com aplicativos personalizados oferecidos pelo provedor.
+- Soluções e integração personalizadas com aplicativos personalizados oferecidos pelo provedor.
     
-- Soluções herdada com componentes de terceiros que dependem de hardware e software que não são suportados pelo Exchange Online.
+- Soluções herdadas com componentes de terceiros que dependem de hardware e software que não são compatíveis com o Exchange Online.
     
 ### <a name="license-requirements"></a>Requisitos de licença
 
-A tabela a seguir detalha os requisitos de licença de cada opção de implantação.
+A tabela a seguir detalha os requisitos de licença para cada opção de implantação.
   
 |**Opção de implantação**|**Requisitos de licença**|
 |:-----|:-----|
 |Exchange Online (Office 365)  <br/> |Modelo de assinatura  <br/> |
-|Exchange híbrido  <br/> | Office 365 - modelo de assinatura <br/>  Local - todas as licenças de local se aplicam (licenças de revisão para trocas Server local) <br/>  Licença de servidor híbrido * <br/> |
-|Exchange Server local  <br/> | Sistema operacional do servidor <br/>  Licença de servidor do Exchange 2013 <br/>  Licença de acesso para cliente Exchange 2013 <br/> |
-|Exchange hospedado em provedor  <br/> |Custos baseiam-se no contrato com o provedor  <br/> |
+|Exchange Híbrido  <br/> | Office 365-modelo de assinatura <br/>  Local-todas as licenças locais são aplicadas (revise as licenças do servidor de troca local) <br/>  Licença de servidor híbrido * <br/> |
+|Exchange Server local  <br/> | Sistema operacional do servidor <br/>  Licença de servidor do Exchange 2013 <br/>  Licença de acesso para cliente do Exchange 2013 <br/> |
+|Exchange hospedado pelo provedor  <br/> |Os custos são baseados no contrato com o provedor  <br/> |
    
 ### <a name="architecture-tasks"></a>Tarefas de arquitetura
 
-Esta seção lista as tarefas de arquiteturais para cada opção de implantação.
+Esta seção lista as tarefas arquitetônicas de cada opção de implantação.
   
 #### <a name="exchange-online-office-365"></a>Exchange Online (Office 365)
 
-- Planejar e projetar a sincronização de diretório.
+- Planejar e projetar a sincronização de diretórios.
     
-- Certifique-se de capacidade de rede e conectividade através de firewalls, servidores proxy, gateways e em links de WAN.
+- Garantir a capacidade e a conectividade da rede por meio de firewalls, servidores de proxy, gateways e entre links de WAN.
     
-#### <a name="exchange-hybrid"></a>Exchange híbrido
+#### <a name="exchange-hybrid"></a>Exchange Híbrido
 
-Além das tarefas a arquitetura para o Office 365 e o local de ambientes:
+Além das tarefas de arquitetura para os ambientes do Office 365 e local:
   
-- Decida se deseja fornecer um logon único na experiência.
+- Decida se deseja fornecer uma experiência de logon único.
     
-- Decida se deseja rotear emails de entrada da Internet por meio de uma organização local ou Exchange Online Protection.
+- Decida se deseja encaminhar emails de entrada da Internet por meio de uma organização local ou através do Exchange Online Protection.
     
 #### <a name="exchange-server-on-premises"></a>Exchange Server local
 
-- Projete a topologia do Exchange.
+- Projetar a topologia do Exchange.
     
-- Planeje a capacidade para hardware de servidor.
+- Planejar a capacidade do hardware do servidor.
     
-- Projete a topologia de roteamento de mensagem.
+- Criar a topologia de roteamento de mensagens.
     
-- Projetar o balanceamento de carga para servidores de acesso para cliente.
+- Designar balanceamento de carga para servidores de acesso para cliente.
     
-- Plano para alta disponibilidade usando grupos de disponibilidade de banco de dados.
+- Planejar a alta disponibilidade usando grupos de disponibilidade de banco de dados.
     
-#### <a name="provider-hosted-exchange"></a>Exchange hospedado em provedor
+#### <a name="provider-hosted-exchange"></a>Exchange hospedado pelo provedor
 
-Verifique se a capacidade da rede e a disponibilidade por meio de firewalls, servidores proxy, gateways e em links de WAN estão disponíveis para o seu provedor.
+Certifique-se de que a capacidade e a disponibilidade da rede por meio de firewalls, servidores de proxy, gateways e links de WAN estão disponíveis para o provedor.
   
-### <a name="it-pro-responsibilities"></a>Responsabilidades do IT Pro
+### <a name="it-pro-responsibilities"></a>Responsabilidades de profissionais de ti
 
-Esta seção lista as responsabilidades profissionais de TI para cada opção de implantação.
+Esta seção lista as responsabilidades de profissionais de ti para cada opção de implantação.
   
 #### <a name="exchange-online-office-365"></a>Exchange Online (Office 365)
 
-- Implemente o plano de sincronização de diretório.
+- Implementar o plano de sincronização de diretórios.
     
-- Planejar e implementar os registros DNS internos e externos e roteamento.
+- Planejar e implementar registros DNS internos e externos e roteamento.
     
-- Configure o servidor proxy ou firewall para o endereço IP do Office 365 e requisitos de URL.
+- Configure o servidor de proxy ou o firewall para os requisitos de URL e endereço IP do Office 365.
     
 - Administre as contas de usuário e as configurações do Exchange Online.
     
-#### <a name="exchange-hybrid"></a>Exchange híbrido
+#### <a name="exchange-hybrid"></a>Exchange Híbrido
 
-Além das responsabilidades profissionais de TI para o Office 365 e o local de ambientes:
+Além das responsabilidades do profissional de ti para os ambientes do Office 365 e locais:
   
-- Configure serviços de Federação Active Directory (AD FS) para logon único em (se desejar).
+- Configure o AD FS (serviços de Federação do Active Directory) para logon único (se desejado).
     
-- Configure certificados do Exchange para comunicações seguras entre os servidores Exchange 2013 e o Office 365.
+- Configure certificados do Exchange para comunicações seguras entre os servidores do Exchange 2013 e o Office 365.
     
-- Configure registros DNS para o caminho de email de Internet entrado desejado.
+- Configurar registros DNS para o caminho de email da Internet de entrada desejado.
     
 #### <a name="exchange-server-on-premises"></a>Exchange Server local
 
 - Configure os certificados necessários para os serviços do Exchange.
     
-- Provisione os servidores.
+- ProVisionar os servidores.
     
-- Implemente a topologia de roteamento de mensagem do Exchange.
+- Implementar a topologia de roteamento de mensagens do Exchange.
     
-- Implemente grupos de disponibilidade de banco de dados.
+- Implementar grupos de disponibilidade de banco de dados.
     
 - Atualizar e manter servidores do Exchange.
     
-- Dependendo da utilização, adicionar ou remover servidores conforme necessário.
+- Dependendo da utilização, adicione ou remova os servidores conforme necessário.
     
-#### <a name="provider-hosted-exchange"></a>Exchange hospedado em provedor
+#### <a name="provider-hosted-exchange"></a>Exchange hospedado pelo provedor
 
-Responsabilidades do provedor incluem:
+As responsabilidades do provedor incluem:
   
-- Manutenção do sistema e de serviço.
+- Manutenção do sistema e do serviço.
     
-- Recurso de distribuições.
+- Distribuições de recursos.
     
-- Recuperação de desastres e proteção de dados.
+- Proteção de dados e recuperação de desastres.
     
-Responsabilidades da equipe de TI em sua organização incluem criando e gerenciando contas de usuário.
+As responsabilidades da equipe de ti em sua organização incluem a criação e o gerenciamento de contas de usuário.
   
 #### <a name="more-information"></a>Mais informações
 
-Para saber mais sobre o Exchange Online (Office 365), consulte o seguinte:
+Para saber mais sobre o Exchange Online (Office 365), confira o seguinte:
   
 - [Descrição do serviço do Exchange Online](https://aka.ms/EXOSD)
     
-- [Biblioteca on-line do Exchange no TechNet](https://aka.ms/EXOTN)
+- [Biblioteca do Exchange Online no TechNet](https://aka.ms/EXOTN)
     
-- [Portal Online do Exchange](https://aka.ms/EXO)
+- [Portal do Exchange Online](https://aka.ms/EXO)
     
-Para saber mais sobre o híbrido do Exchange, consulte o seguinte:
+Para saber mais sobre o Exchange híbrido, confira o seguinte:
   
-- [Implantações híbridas do Exchange 2013](https://aka.ms/ExchangeHybrid). Lembre-se de que a licença de servidor híbrido só é necessária para os seguintes cenários: organização do Exchange 2010 com o servidor híbrido do Exchange 2013 e a organização do Exchange 2007 com o servidor híbrido do Exchange 2013 ou Exchange 2010.
+- Implantações híbridas do [Exchange 2013](https://aka.ms/ExchangeHybrid). Você deve observar que a licença de servidor híbrido só é necessária para os seguintes cenários: organização do Exchange 2010 com o servidor do Exchange 2013 Hybrid Server e a organização do Exchange 2007 com o Exchange 2013 ou Exchange 2010 Hybrid Server.
     
-- [O Office 365 entrar](https://aka.ms/HybridKey)
+- [Entrada do Office 365](https://aka.ms/HybridKey)
     
-Para saber mais sobre o Exchange Server local, consulte o seguinte:
+Para saber mais sobre o Exchange Server local, confira o seguinte:
   
 - [Biblioteca do Exchange Server 2013 no TechNet](https://aka.ms/Ex2013TN)
     
@@ -276,48 +276,48 @@ Para saber mais sobre o Exchange Server local, consulte o seguinte:
     
 - [Arquitetura do Exchange Server 2013](https://aka.ms/Ex2013SP1ArchPoster)
     
-Para saber mais sobre Provider-Hosted Exchange, consulte o seguinte:
+Para saber mais sobre o Exchange hospedado pelo provedor, confira o seguinte:
   
-[Orientação e soluções de hospedagem e de multilocação do Exchange Server 2013](https://aka.ms/Ex2013Hosting)
+[Orientações e soluções de hospedagem e multilocação do Exchange Server 2013](https://aka.ms/Ex2013Hosting)
   
-## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a>Descrições dos três recursos novos ou atualizados no Exchange 2013
+## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a>Descrições de três recursos novos ou atualizados no Exchange 2013
 
 ### <a name="exchange-online-protection"></a>Proteção do Exchange Online
 
-Exchange Online Protection (EOP) oferece proteção antispam e antimalware para qualquer implantação, fornecendo uma camada de recursos de proteção que são implantados em uma rede global de centros de dados. Isso ajuda a simplificar o gerenciamento de seus ambientes de mensagens. EOP está incluído no Exchange Online assinaturas, mas você também pode aproveitá-lo para implantações híbridas e no local.
+O Exchange Online Protection (EOP) fornece proteção antispam e antimalware para qualquer implantação fornecendo uma camada de recursos de proteção implantados em uma rede global de data centers. Isso ajuda a simplificar o gerenciamento de seus ambientes de mensagens. O EOP está incluído nas assinaturas do Exchange Online, mas você também pode utilizá-lo para implantações híbridas e locais.
   
-Os diagramas acompanha mostram as implantações do Exchange Online, Exchange híbrido e Exchange local que incluem a camada EOP na rede global.
+Os diagramas a seguir mostram implantações para o Exchange Online, o Exchange híbrido e o Exchange local que incluem a camada EOP na rede global.
   
-### <a name="exchange-server-deployment-assistant"></a>Assistente de implantação do Exchange Server
+### <a name="exchange-server-deployment-assistant"></a>Assistente de Implantação do Exchange Server
 
-O Assistente de implantação do Exchange Server é uma ferramenta baseada na web que faz algumas perguntas sobre seu ambiente atual e, em seguida, gera uma lista de verificação personalizada que tenha um passo a passo para ajudá-lo a implantar o Exchange Server para diferentes tipos de cenários. Se você estiver migrando de uma versão anterior do Exchange para o Exchange 2013, migrando para o Exchange Online ou planejando uma infraestrutura híbrida, o Assistente de implantação do Exchange Server cria uma lista de verificação de implantação personalizada para seu cenário.
+O assistente de implantação do Exchange Server é uma ferramenta baseada na Web que faz algumas perguntas sobre seu ambiente atual e, em seguida, gera uma lista de verificação passo a passo personalizada para ajudá-lo a implantar o Exchange Server para diferentes tipos de cenários. Se você estiver migrando de uma versão anterior do Exchange para o Exchange 2013, migrar para o Exchange Online ou planejar uma infraestrutura híbrida, o assistente de implantação do Exchange Server cria uma lista de verificação de implantação personalizada para seu cenário.
   
-Acompanha a captura de tela mostra uma lista de verificação de exemplo que foi criada usando o Assistente de implantação do Exchange Server.
+A captura de tela a seguir mostra um exemplo de lista de verificação que foi criada usando o assistente de implantação do Exchange Server.
   
 ### <a name="integration-with-lync-and-sharepoint"></a>Integração com o Lync e o SharePoint
 
-Exchange Server 2013 inclui vários recursos que integram com o Lync Server 2013 e SharePoint Server 2013. Juntos, esses produtos oferecem um conjunto rico de recursos e melhorar a colaboração em toda a organização. 
+O Exchange Server 2013 inclui muitos recursos que se integram ao Lync Server 2013 e ao SharePoint Server 2013. Juntos, esses produtos oferecem um pacote avançado de recursos e aprimoram a colaboração em sua organização. 
   
-Um diagrama acompanha mostra o cartaz de autenticação de servidor-para-servidor e inclui um link para o pôster. 
+Um diagrama de acompanhamento mostra o pôster de autenticação de servidor para servidor e inclui um link para o pôster. 
   
 - Arquivamento, retenção e descoberta eletrônica
     
-- Caixas de correio locais
+- Caixas de correio local
     
 - Repositório unificado de contatos
     
-- Fotos de alta resolução do usuário
+- Fotos do usuário de alta resolução
     
-- Presença do Lync no Outlook e Outlook Web App
+- Presença do Lync no Outlook e no Outlook Web App
     
-- Autenticação servidor-para-servidor
+- Autenticação de servidor para servidor
     
 - Caixa postal
     
-- Gravações de reuniões
+- Gravações de reunião
     
 - Sincronização de tarefas do Exchange
     
-Um diagrama acompanha mostra o cartaz da arquitetura do Exchange Server 2013 SP1 e inclui um link para o pôster.
+Um diagrama de acompanhamento mostra o pôster da arquitetura do Exchange Server 2013 SP1 e inclui um link para o pôster.
   
 

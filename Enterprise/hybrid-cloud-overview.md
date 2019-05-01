@@ -1,5 +1,5 @@
 ---
-title: Visão geral da nuvem híbrida
+title: Visão geral de nuvem híbrida
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Resumo: entender a definição e os elementos da nuvem híbrida da Microsoft.'
 ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741426"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491148"
 ---
-# <a name="hybrid-cloud-overview"></a>Visão geral da nuvem híbrida
+# <a name="hybrid-cloud-overview"></a>Visão geral de nuvem híbrida
 
  **Resumo:** Entender a definição e os elementos da nuvem híbrida da Microsoft.
   
@@ -69,7 +69,7 @@ Cenários para nuvem híbrida com os serviços de nuvem da Microsoft variam com 
 
 Você deve considerar os seguintes elementos ao planejar e implementar cenários de nuvem híbrida com plataformas e serviços de nuvem da Microsoft.
   
-- Sistema de rede
+- Rede
     
     O sistema de rede para cenários de nuvem híbrida inclui a conectividade para plataformas e serviços da nuvem da Microsoft e largura de banda suficiente para ser um desempenho em picos de carga. Para obter mais informações, consulte [rede do Microsoft Cloud para arquitetos corporativos](microsoft-cloud-networking-for-enterprise-architects.md).
     
@@ -87,8 +87,7 @@ Você deve considerar os seguintes elementos ao planejar e implementar cenários
     
 ## <a name="see-also"></a>Confira também
 
-
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

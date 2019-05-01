@@ -1,5 +1,5 @@
 ---
-title: Aplicativos integrados e Microsoft Azure AD para administradores do Office 365
+title: Aplicativos integrados e Azure AD para administradores do Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Saiba como os aplicativos integrados do O365 são registrados e administrados no Azure AD
 ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001874"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487117"
 ---
-# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicativos integrados e Microsoft Azure AD para administradores do Office 365
+# <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicativos integrados e Azure AD para administradores do Office 365
 
 Há mais informações para gerenciar aplicativos integrados do que apenas [Ativar ou desativar aplicativos integrados](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114). Com o advento das APIs REST do Office 365, os usuários podem conceder aos aplicativos acesso aos dados do Office 365, como emails, calendários, contatos, usuários, grupos, arquivos e pastas. Por padrão, os usuários precisam conceder permissões individualmente a cada aplicativo, mas isso não é bem redimensionado se você deseja autorizar um aplicativo uma vez no nível de administrador global e distribuí-lo para toda a sua organização por meio do inicializador de aplicativos. Para fazer isso, você deve registrar o aplicativo no Azure AD. Há algumas etapas que você precisa seguir antes de registrar um aplicativo no Azure AD e algumas informações de fundo que você deve saber que podem ajudá-lo a gerenciar aplicativos em sua organização do Office 365. Este artigo aponta você para esses recursos.
   
@@ -45,7 +45,7 @@ O gerenciamento de aplicativos do Office 365 requer que você tenha conhecimento
 |[Visão geral da plataforma de APIs do Office 365](https://go.microsoft.com/fwlink/?LinkId=617140) <br/> |As APIs do Office 365 permitem que você forneça acesso aos dados do Office 365 do cliente, incluindo as coisas com as quais eles se preocupam com a maioria: seus emails, calendários, contatos, usuários e grupos, arquivos e pastas. Há um bom diagrama neste artigo que ilustra a relação entre os aplicativos do Office 365, o AD do Azure e os dados que os aplicativos acessam.  <br/> |
 |[Integração de aplicativos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-add-azure-ad-app) <br/> | Saiba mais sobre os aplicativos integrados ao Azure Active Directory e como registrar seu aplicativo, compreender os conceitos por trás de um aplicativo registrado e saiba mais sobre as diretrizes de identidade visual para aplicativos de vários locatários.  <br/> |
 |[Tutoriais de integração do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list) <br/> |O objetivo desses tutoriais é mostrar como configurar o Azure AD SSO para aplicativos SaaS de terceiros.  <br/> |
-|[Cenários de Autenticação para o Azure AD](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |O Azure AD simplifica a autenticação para desenvolvedores ao fornecer a identidade como um serviço, com suporte para protocolos padrão do setor, como OAuth 2,0 e OpenID Connect, bem como bibliotecas de código aberto para diferentes plataformas para ajudá-lo a iniciar a codificação rapidamente. Este documento ajuda você a compreender os vários cenários com suporte para o Azure AD e mostra como começar.  <br/> |
+|[Cenários de autenticação do Azure AD](https://go.microsoft.com/fwlink/?LinkId=617145) <br/> |O Azure AD simplifica a autenticação para desenvolvedores ao fornecer a identidade como um serviço, com suporte para protocolos padrão do setor, como OAuth 2,0 e OpenID Connect, bem como bibliotecas de código aberto para diferentes plataformas para ajudá-lo a iniciar a codificação rapidamente. Este documento ajuda você a compreender os vários cenários com suporte para o Azure AD e mostra como começar.  <br/> |
 |[Acesso ao aplicativo](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-access-management) <br/> |O Azure AD permite a integração fácil a muitos dos aplicativos de software populares (SaaS) atuais. Ele fornece gerenciamento de identidade e acesso e fornece um painel de acesso para os usuários onde eles podem descobrir quais aplicativos têm acesso a eles e onde eles podem usar o SSO para acessar seus aplicativos. Este artigo fornece links para os recursos relacionados que permitem que você saiba mais sobre os aprimoramentos de acesso ao aplicativo do Azure AD e como você pode contribuir para eles.  <br/> |
 |[Personalizar a experiência do Office 365](https://support.office.com/article/eb34a21b-52fa-4fbf-a8d5-146132242985) <br/> |Você pode obter acesso rápido aos aplicativos que você usa todos os dias adicionando ou removendo aplicativos no inicializador de aplicativos do Office 365.  <br/> |
    

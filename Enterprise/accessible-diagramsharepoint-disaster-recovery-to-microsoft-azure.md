@@ -1,5 +1,5 @@
 ---
-title: Diagrama acessível - recuperação de desastres do SharePoint para o Microsoft Azure
+title: Diagrama acessível-recuperação de desastre do SharePoint para o Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,45 +10,45 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
-description: Este artigo é uma versão de texto acessível do diagrama chamado de recuperação de desastres do SharePoint para o Microsoft Azure.
+description: Este artigo é uma versão de texto acessível do diagrama chamado recuperação de desastre do SharePoint para o Microsoft Azure.
 ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503544"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487717"
 ---
-# <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama acessível - recuperação de desastres do SharePoint para o Microsoft Azure
+# <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama acessível-recuperação de desastre do SharePoint para o Microsoft Azure
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado de recuperação de desastres do SharePoint para o Microsoft Azure.
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado recuperação de desastre do SharePoint para o Microsoft Azure.
   
-Este cartaz fornece exemplos de arquiteturas para a criação de um ambiente de recuperação no Windows Azure. 
+Este cartaz fornece exemplos de arquiteturas para a criação de um ambiente de recuperação no Azure. 
   
-## <a name="on-premises-environment-with-an-azure-recovery-environment"></a>Ambiente de local com um ambiente de recuperação do Azure
+## <a name="on-premises-environment-with-an-azure-recovery-environment"></a>Ambiente local com um ambiente de recuperação do Azure
 
-O diagrama mostra um exemplo de arquitetura usado para o ambiente de produção de um ambiente de local que usa o Windows Azure para recuperação. 
+O diagrama mostra um exemplo de arquitetura usada para o ambiente de produção de um ambiente local que usa o Azure para recuperação. 
   
-### <a name="on-premises-production-environment"></a>Ambiente de produção do local
+### <a name="on-premises-production-environment"></a>Ambiente de produção local
 
-O diagrama acompanha mostra um ambiente de produção ao vivo com quatro níveis de servidores em um farm de servidores. 
+O diagrama a seguir mostra um ambiente de produção ativo com quatro camadas de servidores em um farm de servidores. 
   
-#### <a name="tier-1"></a>Nível 1
+#### <a name="tier-1"></a>Camada 1
 
-Há dois servidores de serviços de front-end e processamento de consultas. Não há uma partição do índice que fornece uma réplica de ambos os servidores. 
+Há dois servidores para o processamento de consultas e serviços de front-end. Há uma partição de índice que fornece uma réplica dos dois servidores. 
   
 #### <a name="tier-2"></a>Camada 2
 
-Há dois servidores de cache distribuído nesse nível. 
+Há dois servidores para o cache distribuído nessa camada. 
   
 #### <a name="tier-3"></a>Camada 3
 
-Há três servidores nesse nível. Cada servidor fornece os seguintes serviços: 
+Há três servidores nessa camada. Cada servidor fornece os seguintes serviços: 
   
-- Serviços de back-end 
+- Serviços de backend 
     
-- Administrador 
+- Admin 
     
-- Gerenciador de fluxo de trabalho 
+- Gerenciador de fluxos de trabalho 
     
 - Rastreamento 
     
@@ -56,119 +56,119 @@ Há três servidores nesse nível. Cada servidor fornece os seguintes serviços:
     
 - Análise 
     
-#### <a name="tier-4"></a>Nível 4
+#### <a name="tier-4"></a>Camada 4
 
-Há dois servidores nesse nível. Ambos os servidores têm três grupos de disponibilidade, da seguinte maneira: 
+Há dois servidores nessa camada. Ambos os servidores têm três grupos de disponibilidade, da seguinte maneira: 
   
-- Grupo de disponibilidade #1 fornece recursos de pesquisa. 
+- O grupo de disponibilidade #1 fornece recursos de pesquisa. 
     
-- Grupo de disponibilidade #2 fornece conteúdo, configuração e aplicativos de serviço. 
+- O grupo de disponibilidade #2 fornece aplicativos de conteúdo, configuração e serviço. 
     
-- Grupo de disponibilidade #3 fornece conteúdo. 
+- O grupo de disponibilidade #3 fornece conteúdo. 
     
-Também é um servidor nesse nível de compartilhamento de arquivo. Os servidores de camada 4 usam o envio de logs para se comunicar com este servidor. Este servidor, por sua vez, comunica-se via distribuído arquivo sistema replicação (DFSR) para um servidor de compartilhamento de arquivos no ambiente de recuperação de espera passiva Azure, conforme descrito na seção a seguir. 
+Há também um servidor de compartilhamento de arquivos nessa camada. Os servidores de camada 4 usam o envio de logs para se comunicar com este servidor. Este servidor, por sua vez, se comunica através da replicação do sistema de arquivos distribuídos (DFSR) para um servidor de compartilhamento de arquivos no ambiente de recuperação de espera passiva do Azure, conforme descrito na seção a seguir. 
   
 ### <a name="azure-recovery-environment"></a>Ambiente de recuperação do Azure
 
-#### <a name="warm-standby-environment-running-virtual-machines"></a>Ambiente de em espera passiva máquinas virtuais em execução
+#### <a name="warm-standby-environment-running-virtual-machines"></a>Ambiente de espera passiva executando máquinas virtuais
 
-O diagrama acompanha mostra o ambiente local replicado exatamente no ambiente de recuperação do Azure. O servidor de compartilhamento de arquivos nesse ambiente está vinculado DFSR do ambiente local. DFSR transfere logs do ambiente de produção para o ambiente de recuperação por meio do servidor de compartilhamento de arquivo. 
+O diagrama a seguir mostra o ambiente local replicado exatamente no ambiente de recuperação do Azure. O servidor de compartilhamento de arquivos desse ambiente está vinculado ao ambiente local por meio do DFSR. O DFSR transfere logs do ambiente de produção para o ambiente de recuperação por meio do servidor de compartilhamento de arquivos. 
   
-### <a name="overview"></a>Visão geral
+### <a name="overview"></a>Visão Geral
 
-O ambiente de recuperação de desastres para um farm do SharePoint 2013 no local pode ser hospedado no Windows Azure. 
+O ambiente de recuperação de desastres para um farm local do SharePoint 2013 pode ser hospedado no Azure. 
   
--  Serviços de infraestrutura Azure fornece um datacenter secundário.
+-  Os serviços de infraestrutura do Azure fornecem um data center secundário.
     
-- Preste apenas para os recursos usados. 
+- Pague apenas os recursos que você usa. 
     
-- Farms de recuperação pequenas podem ser dimensionados após um desastre para cumprir as metas de dimensionamento e capacidade. 
+- Pequenos farms de recuperação podem ser dimensionados após um desastre para atender às metas de escala e capacidade. 
     
-O farm de recuperação no Windows Azure é configurado como identicamente possível ao farm do local de produção. 
+O farm de recuperação no Azure é configurado da forma mais idêntica possível para o farm local de produção. 
   
-- Mesma representação das funções de servidor. 
+- Mesma representação de funções de servidor. 
     
-- Mesma configuração das personalizações. 
+- Mesma configuração de personalizações. 
     
-- Mesma configuração de recursos de pesquisa (essas podem estar em uma versão menor do que o farm de produção). 
+- Mesma configuração dos recursos de pesquisa (eles podem estar em uma versão menor do farm de produção). 
     
-Envio de logs e DFSR são usados para copiar backups de banco de dados e logs de transação para o farm do Azure. 
+O envio de logs e o DFSR são usados para copiar backups de banco de dados e logs de transações para o farm do Azure. 
   
-- DFSR é usado para transferir os logs do ambiente de produção para o ambiente de recuperação. Em um cenário WAN, DFSR é mais eficiente do que os logs diretamente para o servidor secundário de envio no Windows Azure. 
+- O DFSR é usado para transferir logs do ambiente de produção para o ambiente de recuperação. Em um cenário WAN, a DFSR é mais eficiente do que enviar os logs diretamente para o servidor secundário no Azure. 
     
-- Logs são reproduzidos nos computadores com base no Windows Azure SQL Server. 
+- Os logs são repetidos nos computadores do SQL Server baseados no Azure. 
     
-- Bancos de dados enviados com logs não são anexados ao farm até que um exercício de recuperação é executado. 
+- Os bancos de dados enviados por log não são anexados ao farm até que um exercício de recuperação seja realizado. 
     
 Procedimentos de failover: 
   
-1. Pare o envio de log. 
+1. Parar o envio de logs. 
     
 2. Pare de aceitar o tráfego para o farm principal. 
     
-3. Repetição durante os logs de transações final. 
+3. Reproduza os logs de transação finais. 
     
 4. Anexe os bancos de dados de conteúdo ao farm. 
     
 5. Inicie um rastreamento completo. 
     
-6. Restaure aplicativos de serviço dos bancos de dados replicados. 
+6. Restaure os aplicativos de serviço dos bancos de dados de serviços replicados. 
     
-Objetivos de recuperação fornecidos por essa solução incluem: 
+Os objetivos de recuperação fornecidos por esta solução incluem: 
   
 - Sites e conteúdo 
     
-- Pesquisa (novamente não rastreado, nenhum histórico de pesquisa) 
+- Pesquisar (rastreado novamente, sem histórico de pesquisa) 
     
 - Serviços
     
-Itens adicionais que podem ser abordados por um parceiro ou de serviços de consultoria da Microsoft: 
+Itens adicionais que podem ser tratados pelos serviços de consultoria da Microsoft ou por um parceiro: 
   
-- Sincronizando soluções personalizadas do farm 
+- Sincronizando soluções de farm personalizadas 
     
-- Conexões com fontes de dados no local (conectividade de dados corporativos (BDC) e pesquisar fontes de conteúdo) 
+- Conexões com fontes de dados locais (BDC (conectividade de dados corporativos) e fontes de conteúdo de pesquisa) 
     
 - Cenários de restauração de pesquisa 
     
 - Objetivos de tempo de recuperação (RTO) e objetivos de ponto de recuperação (RPO) 
     
-#### <a name="cold-standby-environment-running-virtual-machines"></a>Ambiente de em espera a frio máquinas virtuais em execução
+#### <a name="cold-standby-environment-running-virtual-machines"></a>Ambiente de espera Cold executando máquinas virtuais
 
-Ambientes de espera a frio demoram mais para iniciar, mas são baratos. 
+Os ambientes de espera Cold levam mais tempo para começar, mas são menos caros. 
   
-- O farm totalmente é criado, mas as máquinas virtuais são interrompidas depois que o farm é criado. Você paga apenas os custos de processamento quando as máquinas virtuais estão funcionando, mas aplicam custos de transferência de dados de armazenamento e de rede. 
+- O farm está totalmente construído, mas as máquinas virtuais são interrompidas após a criação do farm. Você paga apenas os custos de processamento quando as máquinas virtuais estão em execução, mas os custos de transferência de dados de rede e armazenamento são aplicáveis. 
     
-- Em caso de desastre, todas as máquinas virtuais do farm foram iniciadas e corrigidas. 
+- No caso de um desastre, todas as máquinas virtuais no farm são iniciadas e corrigidas. 
     
-- Backups e logs de transações são aplicados nos bancos de dados do farm. 
+- Os backups e logs de transações são aplicados aos bancos de dados do farm. 
     
-A lista a seguir descreve os procedimentos adicionais para ambientes de espera a frio: 
+A lista a seguir descreve procedimentos adicionais para ambientes de espera Cold: 
   
-- Ative máquinas virtuais regularmente para o patch, atualizar e verificar o ambiente. 
+- Ative as máquinas virtuais regularmente para corrigir, atualizar e verificar o ambiente. 
     
-- Execute os procedimentos para atualizar o DNS e endereços IP. 
+- Execute procedimentos para atualizar DNS e endereços IP. 
     
-- Configure SQL AlwaysOn após um failover. 
+- Configure o AlwaysOn do SQL após um failover. 
     
-O diagrama acompanha mostra um ambiente de recuperação replicado nas máquinas virtuais. Após o failover para um ambiente em espera a frio, todas as máquinas virtuais são iniciadas e os grupos de disponibilidade são configurados usando logs de repetição para disponibilizar os servidores de banco de dados. 
+O diagrama a seguir mostra um ambiente de recuperação replicado em máquinas virtuais. Após o failover para um ambiente de espera Cold, todas as máquinas virtuais são iniciadas e os grupos de disponibilidade são configurados usando logs de repetição para disponibilizar os servidores de banco de dados. 
   
-## <a name="sharepoint-recovery-environment-in-azure"></a>Ambiente de recuperação do SharePoint no Windows Azure
+## <a name="sharepoint-recovery-environment-in-azure"></a>Ambiente de recuperação do SharePoint no Azure
 
-Projetar e criar o ambiente de failover no Windows Azure. 
+Projete e construa o ambiente de failover no Azure. 
   
-- Crie uma rede virtual no Windows Azure. 
+- Criar uma rede virtual no Azure. 
     
-- Conecte a rede local com a rede virtual no Windows Azure com uma conexão de VPN-to-site. Esta conexão utiliza um gateway dinâmico no Windows Azure. 
+- Conecte a rede local com a rede virtual no Azure com uma conexão VPN de site a site. Esta conexão usa um gateway dinâmico no Azure. 
     
-- Implantar um ou mais controladores de domínio para a rede virtual do Azure e configurá-los para trabalhar com seu domínio local. Esses controladores de domínio são servidores de catálogo. 
+- Implante um ou mais controladores de domínio na rede virtual do Azure e configure-os para que funcionem com seu domínio local. Esses controladores de domínio são servidores de catálogo. 
     
-- Adaptar-se o farm do SharePoint para conjuntos de disponibilidade e de serviços de nuvem. 
+- Adaptar o farm do SharePoint para os serviços de nuvem e conjuntos de disponibilidade. 
     
-- Implante o farm do SharePoint mais de um servidor de arquivos em compartilhamentos de arquivos de host. 
+- Implante o farm do SharePoint, além de um servidor de arquivos para hospedar compartilhamentos de arquivos. 
     
-- Configure o envio de log e DFSR entre o ambiente local e o ambiente de recuperação baseada no Windows Azure. 
+- Configurar o envio de logs e o DFSR entre o ambiente local e o ambiente de recuperação baseado no Azure. 
     
-O diagrama acompanha mostra o ambiente local e a rede virtual do Azure com os seguintes recursos: 
+O diagrama a seguir mostra o ambiente local e a rede virtual do Azure com os seguintes recursos: 
   
 ### <a name="on-premises-environment"></a>Ambiente no local
 
@@ -176,40 +176,40 @@ O diagrama acompanha mostra o ambiente local e a rede virtual do Azure com os se
     
 - Servidor do Active Directory 
     
-As interfaces de rede local com a rede virtual do Azure através de um gateway de rede virtual privada (VPN). 
+A interface de rede local com a rede virtual do Azure por meio de um gateway VPN (rede virtual privada). 
   
 ### <a name="azure-virtual-network"></a>Rede virtual do Azure
 
-As interfaces de gateway VPN com uma sub-rede de gateway VPN ativa. 
+As interfaces de gateway VPN com uma sub-rede ativa de gateway VPN. 
   
-Há três serviços de nuvem a rede virtual do Azure: 
+Há três serviços de nuvem na rede virtual do Azure: 
   
-- O primeiro serviço de nuvem tem dois Active Directory e servidores DNS com uma disponibilidade definida. 
+- O primeiro serviço de nuvem tem dois servidores Active Directory e DNS com um conjunto de disponibilidade. 
     
-- O serviço de nuvem segundo tem três conjuntos de servidores: dois servidores de cache com um conjunto de disponibilidade de distribuídos. Dois servidores front-end com um conjunto de disponibilidade. Três servidores back-end com um conjunto de disponibilidade.
+- O segundo serviço de nuvem tem três conjuntos de servidores: dois servidores de cache distribuído com um conjunto de disponibilidade. Dois servidores front-end com um conjunto de disponibilidade. Três servidores de back-end com um conjunto de disponibilidade.
     
-- O serviço de nuvem terceiro tem três servidores de banco de dados com um conjunto de disponibilidade. Um desses servidores de banco de dados é um compartilhamento de arquivo para o nó de uma terceira e de envio de log da maioria nó para SQL Server AlwaysOn. 
+- O terceiro serviço de nuvem tem três servidores de banco de dados com um conjunto de disponibilidade. Um desses servidores de banco de dados é um compartilhamento de arquivos para o envio de logs e um terceiro nó de uma maioria de nós para o SQL Server AlwaysOn. 
     
 ### <a name="build-the-ad-ds-hybrid-environment"></a>Criar o ambiente híbrido do AD DS
 
-A configuração do AD DS para essa solução constitui um cenário de implantação híbrido no qual o AD DS é parcialmente implantados no local e parcialmente implantadas em máquinas virtuais do Azure. 
+A configuração do AD DS para esta solução constitui um cenário de implantação híbrida no qual o AD DS é implantado parcialmente no local e implantado parcialmente nas máquinas virtuais do Azure. 
   
-Importante — Antes de implantar o AD DS no Windows Azure, leia as diretrizes para implantar o Windows Server Active Directory no Microsoft máquinas virtuais do Azure (http://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx). 
+Importante — antes de implantar o AD DS no Azure, leia as diretrizes para implantar o Windows Server Active Directory nas máquinas virtuais dohttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Microsoft Azure (. 
   
-Para obter orientação completa sobre como projetar e implantar ambientes do Active Directory, consulte http://TechNet.microsoft.com. 
+Para obter uma orientação completa sobre como projetar e implantar ambientes do Active http://TechNet.microsoft.comDirectory, consulte. 
   
 Essa arquitetura de referência inclui duas máquinas virtuais configuradas como controladores de domínio. Cada uma é configurada da seguinte maneira: 
   
-- Tamanho — pequeno. 
+- Tamanho – pequeno. 
     
 - Sistema operacional — Windows Server 2012. 
     
-- Função — Controlador de domínio de AD DS designado como um servidor de catálogo global. Essa configuração reduz o tráfego de saída entre a conexão VPN. Em um ambiente de vários domínio com altas taxas de alteração, configure o domínio controladores local não sincronizar com os servidores de catálogo global no Windows Azure. 
+- Função — controlador de domínio AD DS designado como um servidor de catálogo global. Essa configuração reduz o tráfego de egresso na conexão VPN. Em um ambiente de vários domínios com altas taxas de alteração, configure os controladores de domínio no local para não sincronizar com os servidores de catálogo global no Azure. 
     
-- Discos de dados — colocar o banco de dados do AD DS, logs e SYSVOL em discos de dados do Azure. Não coloque essas do disco de sistema operacional ou os discos temporários fornecidos pelo Windows Azure. Isso é importante. 
+- Discos de dados — Coloque o banco de dados do AD DS, os logs e o SYSVOL nos discos de dados do Azure. Não coloque esses no disco do sistema operacional ou nos discos temporários fornecidos pelo Azure. Isso é importante. 
     
-- Função — Instalar e configurar o DNS do Windows nos controladores de domínio. 
+- Função — instale e configure o DNS do Windows nos controladores de domínio. 
     
-- Endereços IP — usar endereços IP dinâmicos. Isso exige a criação de uma rede Virtual do Azure. 
+- Endereços IP — use endereços IP dinâmicos. Isso exige que você crie uma rede virtual do Azure. 
     
 

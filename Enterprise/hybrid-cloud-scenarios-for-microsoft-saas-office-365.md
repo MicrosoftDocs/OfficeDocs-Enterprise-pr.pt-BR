@@ -13,11 +13,11 @@ ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: 'Resumo: entenda a arquitetura híbrida e os cenários de ofertas de nuvem baseadas em SaaS da Microsoft (Office 365).'
 ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741387"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487482"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Cenários de nuvem híbrida para Microsoft SaaS (Office 365)
 
@@ -55,7 +55,7 @@ Para cada camada da arquitetura:
     
     O consiste no seu pipe existente na Internet ou em uma conexão ExpressRoute com o emparelhamento da Microsoft para o Office 365 ou Dynamics 365.
     
-- Local
+- No local
     
     Pode consistir em servidores existentes para o Exchange, o SharePoint e o Skype for Business, que devem ser atualizados para suas versões mais recentes. Em seguida, você pode combiná-los com seus correspondentes do Office 365 para cenários híbridos.
     
@@ -152,8 +152,7 @@ Para obter mais informações, consulte imPlantações híbridas do [Exchange Se
   
 ## <a name="see-also"></a>Confira também
 
-
-[Nuvem híbrida da Microsoft para arquitetos corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
+[Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

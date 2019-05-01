@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 fornece serviços de nuvem online poderosa que permitem a colaboração, segurança e conformidade, mobilidade e intellgence e análise. Esta página fornece orientações para administradores e profissionais de TI que estão implantando, configurando e gerenciando serviços do Office 365 em organizações de empresa.
+description: O Microsoft Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade e intellgence e análise. Esta página fornece orientações para administradores e profissionais de ti que estão implantando, Configurando e gerenciando serviços do Office 365 em organizações empresariais.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "27745315"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487120"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 fornece serviços de nuvem online poderosa que permitem a colaboração, segurança e conformidade, mobilidade e intellgence e análise. Esta página fornece links para orientação para administradores e profissionais de TI que estão implantando, configurando e gerenciando o Office&nbsp;365 serviços nas organizações de empresa.</p>
+<p>O Microsoft&nbsp;Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade e intellgence e análise. Esta página fornece links para diretrizes para administradores e profissionais de ti que estão implantando, configurando&nbsp;e gerenciando serviços do Office 365 em organizações empresariais.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -35,8 +35,8 @@ ms.locfileid: "27745315"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Implantação guiada com FastTrack</h3>
-                <p>Usar o benefício da Central de FastTrack for Office&nbsp;para guiada assistência ao planejamento, implantação e orientando a adoção do Office 365&nbsp;365 services para sua organização.</p>
+                        <h3>Implantação dirigida com o FastTrack</h3>
+                <p>Use o benefício do FastTrack Center para&nbsp;o Office 365 para assistência interativa em planejamento, implantação e condução da adoção de&nbsp;serviços do Office 365 para sua organização.</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ ms.locfileid: "27745315"
                     </div>
                     <div class="cardText">
                         <h3>Migrar para o Office 365</h3>
-                <p>Migrar sua infra-estrutura existente do local para o Office&nbsp;365 e Microsoft na nuvem.</p>
+                <p>Migre sua infraestrutura local existente para o Office&nbsp;365 e a nuvem da Microsoft.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ ms.locfileid: "27745315"
                     </div>
                     <div class="cardText">
                         <h3>Implantar o Office 365</h3>
-                <p>Implantar o Office&nbsp;365, incluindo a definição de seu locatário, configurando sua rede e provisionamento de seus usuários.</p>
+                <p>Implantar o&nbsp;Office 365, incluindo a configuração do seu locatário, a configuração da sua rede e o provisionamento de seus usuários.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "27745315"
                     </div>
                     <div class="cardText">
                         <h3>Implantações híbridas</h3>
-                <p>Configurar e gerenciar uma implantação híbrida entre sua infraestrutura do local e o Office existentes&nbsp;365.</p>
+                <p>Configurar e gerenciar uma implantação híbrida entre sua infraestrutura local existente e o Office&nbsp;365.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@ ms.locfileid: "27745315"
                     </div>
                     <div class="cardText">
                         <h3>Treinamento do Office 365</h3>
-                <p>Melhorar seu escritório&nbsp;365 habilidades com o Office e o conhecimento de administração&nbsp;365 cursos de treinamento para profissionais de TI.</p>
+                <p>Melhorar o conhecimento&nbsp;e a técnica de administração do Office&nbsp;365 com os cursos de treinamento do Office 365 para profissionais de ti.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ ms.locfileid: "27745315"
     </li>
 </ul>
 
-<h2>Implantar as cargas de trabalho do Office 365</h2>
+<h2>Implantar cargas de trabalho do Office 365</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -256,8 +256,8 @@ ms.locfileid: "27745315"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Comunidade do Office 365 Tech</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Saiba mais sobre as práticas recomendadas, notícias e as últimas tendências e tópicos relacionados ao Office&nbsp;365.</a></p>
+                        <h3>Comunidade de tecnologia do Office 365</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Saiba mais sobre as práticas recomendadas, notícias e as últimas tendências e tópicos relacionados&nbsp;ao Office 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "27745315"
                     </div>
                     <div class="cardText">
                         <h3>Obter suporte</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Contate o suporte para obter ajuda com o Office&nbsp;365.</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Entre em contato com o suporte&nbsp;para obter ajuda com o Office 365.</a></p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 ---
-title: Diagrama acessível - opções de plataforma do Microsoft SharePoint 2013
+title: Diagrama acessível – opções de plataforma do Microsoft SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,211 +12,211 @@ localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft SharePoint 2013.
 ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17504314"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487817"
 ---
-# <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Diagrama acessível - opções de plataforma do Microsoft SharePoint 2013
+# <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Diagrama acessível – opções de plataforma do Microsoft SharePoint 2013
 
 **Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft SharePoint 2013.
   
-O que arquitetos e business decision tomadores de precisam saber sobre o Office 365, Microsoft Azure e implantações em instalações. 
+Quais responsáveis pelas decisões de negócios (BDMs) e arquitetos precisam saber sobre o Office 365, o Microsoft Azure e implantações locais. 
   
 Este cartaz tem duas seções: 
   
-- Uma comparação dos quatro diferentes implantações do SharePoint 2013: SharePoint no Office 365, um híbrido do Office 365 com uma implantação local do SharePoint 2013, Windows Azure e uma implantação local do SharePoint 2013. 
+- Uma comparação de quatro implantações diferentes para o SharePoint 2013: SharePoint no Office 365, um híbrido do Office 365 com uma implantação local do SharePoint 2013, Azure e uma implantação local do SharePoint 2013. 
     
-- Uma descrição das três cargas de trabalho típicas para mover para o Windows Azure. 
+- Uma descrição de três cargas de trabalho típicas para mover para o Azure. 
     
-## <a name="comparison-of-four-different-deployments-for-the-sharepoint-2013-platform"></a>Comparação entre quatro diferentes implantações para a plataforma SharePoint 2013
+## <a name="comparison-of-four-different-deployments-for-the-sharepoint-2013-platform"></a>Comparação de quatro implantações diferentes para a plataforma do SharePoint 2013
 
-Comparação fornece informações sobre cada opção de implantação relacionada às seguintes áreas: 
+A comparação fornece informações sobre cada opção de implantação relacionada às seguintes áreas: 
   
-- Uma visão geral dos recursos de implantação diferentes 
+- Uma visão geral dos diferentes recursos de implantação 
     
-- O que é melhor para cada tipo de implantação 
+- O que cada tipo de implantação é ideal para 
     
 - Requisitos de licença 
     
 - Tarefas de arquitetura necessárias para implementar 
     
-- IT profissionais responsabilidades da implementação 
+- Responsabilidades de profissionais de ti para implementação 
     
-### <a name="overview"></a>Visão geral
+### <a name="overview"></a>Visão Geral
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 no Office 365
 
-Ganho de eficiência e otimizar o custo com vários locatários planos do Office 365. 
+Ganhe eficiência e otimize o custo com planos multilocatários do Office 365. 
   
-O diagrama acompanha mostra o SharePoint Online com um locatário do Azure Active Directory, o que sincroniza os nomes de conta e senhas entre o ambiente do Active Directory local e o locatário do Azure Active Directory. 
+O diagrama a seguir mostra o SharePoint Online com um locatário do Azure Active Directory, que sincroniza nomes de conta e senhas entre o ambiente do Active Directory local e o locatário do Azure Active Directory. 
   
-Descrição de recursos: 
+Descrição dos recursos: 
   
-- Software como um serviço (SaaS). 
+- Software como serviço (SaaS). 
     
-- Conjunto de recursos avançados sempre é atualizado. 
+- O conjunto de recursos avançados está sempre atualizado. 
     
 - Inclui um locatário do Azure Active Directory (pode ser usado com outros aplicativos). 
     
-- Integração de diretórios inclui sincronizando nomes de conta e senhas entre o ambiente do Active Directory local e o locatário do Azure Active Directory. 
+- A integração de diretórios inclui a sincronização de nomes de contas e senhas entre o ambiente do Active Directory local e o locatário do Azure Active Directory. 
     
-- Se o logon único (SSO) é um requisito, os serviços de Federação do Active Directory (AD FS) pode ser implementados. 
+- Se o logon único (SSO) for um requisito, o AD FS (serviços de Federação do Active Directory) pode ser implementado. 
     
-- Comunicação do cliente pela Internet por meio de acesso criptografado e autenticado (porta 443). 
+- Comunicação de cliente pela Internet por meio de acesso criptografado e autenticado (porta 443). 
     
-- Migração de dados está limitada a que pode ser carregado pela Internet. 
+- A migração de dados é limitada ao que pode ser carregado pela Internet. 
     
-- Personalizações: Aplicativos para Office, SharePoint e o SharePoint Designer 2013. 
+- Personalizações: aplicativos para Office, SharePoint e SharePoint Designer 2013. 
     
 #### <a name="hybrid-with-office-365"></a>Híbrido com o Office 365
 
-Combine os benefícios do Office 365 com uma implantação local do SharePoint 2013. 
+Combinar os benefícios do Office 365 com uma implantação local do SharePoint 2013. 
   
-O diagrama acompanha mostra o Office 365 com o SharePoint Online usando os serviços corporativos de conectividade (BCS) para conectar a um farm do SharePoint Server 2013 local. 
+O diagrama a seguir mostra o Office 365 com o SharePoint online usando o serviços corporativos de conectividade (BCS) para se conectar a um farm local do SharePoint Server 2013. 
   
-Escolha qual dos seguintes recursos para integrar: 
+Escolha quais dos seguintes recursos serão integrados: 
   
 Pesquisa do SharePoint 
   
-- Os usuários podem ver resultados de pesquisa de ambos os ambientes. 
+- Os usuários podem ver os resultados de pesquisa de ambos os ambientes. 
     
-- Usuários da extranet podem fazer logon com uma conta do Active Directory local e usar toda a funcionalidade híbrida disponível remotamente. 
+- Os usuários da extranet podem fazer logon remotamente com uma conta do Active Directory local e usar toda a funcionalidade híbrida disponível. 
     
 BCS
   
-Do SharePoint Online: Os usuários podem realizar leitura e operações de gravação. O serviço BCS conecta-se a um farm do SharePoint Server 2013 local. O serviço BCS configurado nos agentes de farm local a conexão aos pontos de extremidade de serviço OData local. 
+No SharePoint Online: os usuários podem executar operações de leitura e gravação. O serviço BCS se conecta a um farm local do SharePoint Server 2013. O serviço BCS configurado nos agentes do farm local a conexão com pontos de extremidade do serviço OData local. 
   
 Duet Enterprise Online 
   
-Do SharePoint Online, os usuários podem executar leitura e gravação operações em relação a um sistema SAP no local. 
+No SharePoint Online, os usuários podem realizar operações de leitura e gravação em um sistema SAP local. 
   
 #### <a name="azure"></a>Azure
 
-Tirar proveito da nuvem, mantendo o controle total da plataforma e recursos. 
+Aproveite a nuvem enquanto mantém o controle total da plataforma e dos recursos. 
   
-O diagrama acompanha mostra Azure, que contém dois serviços de nuvem, um farm do SharePoint 2013 e Windows Server Active Directory com o DNS, conectando-se aos usuários através da Internet ou a conexão com o Active Directory no local por meio de túnel VPN. 
+O diagrama a seguir mostra o Azure, que contém dois serviços de nuvem, um farm do SharePoint 2013 e o Windows Server Active Directory com o DNS conectado a usuários pela Internet ou conectando-se ao Active Directory local via túnel VPN. 
   
 Os recursos incluem: 
   
--  Windows Azure é uma plataforma que fornece os serviços de infraestrutura e aplicativos necessários para hospedar um farm do SharePoint 2013.
+-  O Azure é uma plataforma que fornece a infraestrutura e os serviços de aplicativo necessários para hospedar um farm do SharePoint 2013.
     
 - Serviços de infraestrutura. 
     
-- Plataforma de nuvem nativo recomendada para SQL Server e SharePoint. 
+- Melhor plataforma de nuvem nativa para o SQL Server e o SharePoint. 
     
-- Recursos de computação estão disponíveis quase imediatamente com nenhum compromisso. 
+- Os recursos de computação estão disponíveis quase imediatamente sem nenhum compromisso. 
     
-- Concentre-se nos aplicativos, em vez de data centers e infra-estrutura. 
+- Concentre-se nos aplicativos, em vez de datacenters e infraestrutura. 
     
-- Ambientes de desenvolvimento e teste e econômica. 
+- Ambientes de desenvolvimento e teste de baixo custo. 
     
-- Soluções do SharePoint podem ser acessível pela Internet ou acessível somente a partir de um ambiente corporativo por meio de um túnel VPN-to-site. 
+- As soluções do SharePoint podem ser acessadas pela Internet ou acessíveis apenas de um ambiente corporativo por meio de um túnel VPN de site a site. 
     
-- Personalizações não são limitadas. 
+- As personalizações não são limitadas. 
     
-#### <a name="on-premises"></a>No local
+#### <a name="on-premises"></a>Local
 
-Você é proprietário tudo. 
+Você tem tudo. 
   
-O diagrama acompanha mostra um ambiente no local com servidores web, servidores de aplicativos e do Active Directory se comunicam com todos os bancos de dados e servidores de aplicativos dedicado para pesquisa. 
+O diagrama a seguir mostra um ambiente local com servidores Web, servidores de aplicativos e o Active Directory se comunicando com todos os bancos de dados e servidores de aplicativos dedicados para pesquisa. 
   
 Os recursos incluem: 
   
 - Planejamento de capacidade e dimensionamento. 
     
-- Aquisição de servidor e a instalação. 
+- Aquisição e configuração do servidor. 
     
-- Implantação. 
+- Instalação. 
     
-- Dimensionamento, aplicando o patch e operações. 
+- Expansão, aplicação de patch e operações. 
     
-- Fazendo backup de dados. 
+- Backup de dados. 
     
-- Mantendo um ambiente de recuperação de desastres. 
+- Manutenção de um ambiente de recuperação de desastres. 
     
-- Personalizações não são limitadas. 
+- As personalizações não são limitadas. 
     
-### <a name="deployment-type-is-best-for---"></a>Tipo de implantação é melhor para...
+### <a name="deployment-type-is-best-for---"></a>O tipo de implantação é melhor para o. . .
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 no Office 365
 
-- Proteja a colaboração e compartilhamento externo. (Recurso exclusivo!) 
+- Compartilhamento e colaboração externos seguros. (Recurso exclusivo!) 
     
-- Intranet — Colaboração interna, Meus Sites e sites de equipe. 
+- Intranet — sites de equipe, meus sites e colaboração interna. 
     
 - Armazenamento de documentos e controle de versão na nuvem. 
     
-- Site público de Basic. 
+- Site básico voltado para o público. 
     
 Recursos adicionais com planos de assinatura dedicados do Office 365: 
   
-- Equipamento de datacenter da Microsoft que é dedicado à sua organização e não é compartilhado com qualquer outra organização. 
+- Equipamento de datacenter da Microsoft dedicado à sua organização e não compartilhado com nenhuma outra organização. 
     
-- Ambiente de cada cliente reside em uma rede fisicamente separada. 
+- Cada ambiente do cliente reside em uma rede fisicamente separada. 
     
-- Comunicação do cliente em uma VPN protegido por IPSec ou conexão privada de propriedade do cliente. Autenticação de dois fatores é opcional. 
+- Comunicação de cliente através de uma VPN protegida por IPSec ou uma conexão privada de Propriedade do cliente. A autenticação de dois fatores é opcional. 
     
-- Suporte de ITAR planos. 
+- ITAR-planos de suporte. 
     
 #### <a name="hybrid-with-office-365"></a>Híbrido com o Office 365
 
-- Use o Office 365 para compartilhamento e colaboração em vez de configurar um ambiente de extranet externo. 
+- Use o Office 365 para compartilhamento externo e colaboração em vez de configurar um ambiente de extranet. 
     
-- Mova Meus Sites (OneDrive for Business) para a nuvem facilitam para os usuários acessem seus arquivos remotamente. 
+- Mover meus sites (OneDrive for Business) para a nuvem para facilitar o acesso dos usuários aos seus arquivos remotamente. 
     
 - Inicie novos sites de equipe no Office 365. 
     
-- Integre um site do Office 365 com o ambiente do SharePoint de BCS no local. 
+- Integre um site do Office 365 com o ambiente do SharePoint de BCS local. 
     
 #### <a name="azure"></a>Azure
 
-- SharePoint para Sites da Internet — pública enfrentados pelos sites. Beneficie-se do Azure AD para contas de cliente e de autenticação. 
+- SharePoint para sites da Internet — sites voltados ao público. Aproveite o Azure AD para contas de clientes e autenticação. 
     
-- Desenvolvedor, teste e preparo de ambientes — rapidamente provisionar e desprovisionamento ambientes inteiros. 
+- Ambientes de desenvolvimento, teste e preparação — rapidamente provisionar e desprovisionar ambientes inteiros. 
     
-- Aplicativos híbridos — aplicativos que abrangem o seu data center e a nuvem. 
+- Aplicativos híbridos — aplicativos que abrangem seu datacenter e a nuvem. 
     
-- Ambiente de recuperação de desastre — rapidamente a recuperação de desastres. Preste apenas para uso. 
+- Ambiente de recuperação de desastres — recupere rapidamente de um desastre. Pagar somente para uso. 
     
-- Farms que exigem a profundidade de relatórios ou auditoria. 
+- Farms que exigem relatórios ou auditoria profundas. 
     
-- Análise da Web. 
+- Web Analytics. 
     
-- Criptografia de dados em repouso (dados criptografados nos bancos de dados SQL). 
+- Criptografia de dados em repouso (os dados são criptografados nos bancos de dados SQL). 
     
-#### <a name="data-encryption-at-rest-data-is-encrypted-in-the-sql-databases"></a>Criptografia de dados em repouso (dados criptografados nos bancos de dados SQL)
+#### <a name="data-encryption-at-rest-data-is-encrypted-in-the-sql-databases"></a>Criptografia de dados em repouso (os dados são criptografados nos bancos de dados SQL)
 
-- Farms de país (quando os dados é necessário para residem em uma jurisdição). 
+- Farms no país (quando os dados precisam residir em uma jurisdição). 
     
-- Soluções de BI complexas que devem residir fechar aos dados de BI. 
+- Soluções complexas de BI que devem residir perto de BI de dados. 
     
 - Soluções de nuvem privada. 
     
 - Soluções altamente personalizadas. 
     
-- Soluções herdada com componentes de terceiros que dependem de hardware e software que não são suportados nos serviços de infraestrutura do Windows Azure. 
+- Soluções legadas com componentes de terceiros que dependem de hardware e software que não são suportados nos serviços de infraestrutura do Azure. 
     
-- Restrições de privacidade que evitam a sincronização de contas do Active Directory com o Windows Azure Active Directory (um requisito para o Office 365). 
+- Restrições de privacidade que impedem a sincronização de contas do Active Directory com o Azure Active Directory (um requisito para o Office 365). 
     
-- Organizações que preferem o controle da plataforma inteira and solution. 
+- Organizações que preferem o controle de toda a plataforma e solução. 
     
 ### <a name="license-requirements"></a>Requisitos de licença
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 no Office 365
 
-Modelo de assinatura. Não há licenças adicionais necessárias. 
+Modelo de assinatura. Nenhuma licença adicional necessária. 
   
 #### <a name="hybrid-with-office-365"></a>Híbrido com o Office 365
 
-- Office 365 — Modelo de assinatura. Não há licenças adicionais necessárias. 
+- Office 365 – modelo de assinatura. Nenhuma licença adicional necessária. 
     
-- Local — Se aplicam todas as licenças de local. 
+- Local – todas as licenças locais são aplicadas. 
     
 #### <a name="azure"></a>Azure
 
--  Assinatura do Windows Azure (inclui o sistema operacional do servidor)
+-  Assinatura do Azure (inclui o sistema operacional do servidor)
     
 - SQL Server 
     
@@ -224,7 +224,7 @@ Modelo de assinatura. Não há licenças adicionais necessárias.
     
 - Licença de acesso para cliente do SharePoint 2013 
     
-#### <a name="on-premises"></a>No local
+#### <a name="on-premises"></a>Local
 
 - Sistema operacional do servidor 
     
@@ -238,198 +238,198 @@ Modelo de assinatura. Não há licenças adicionais necessárias.
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 no Office 365
 
-- Design e plano de integração de diretório. Duas opções. Qualquer uma das opções podem ser implantados no local ou no Windows Azure: sincronização de senha (requer um servidor de 64 bits). SSO (requer o AD FS e vários servidores). 
+- Planejar e projetar a integração de diretórios. Duas opções. Qualquer uma das opções pode ser implantada no local ou no Azure: a sincronização de senha (requer o servidor de 1 64 bits). SSO (requer o AD FS e vários servidores). 
     
-- Certifique-se de capacidade de rede e a disponibilidade por meio de firewalls, servidores proxy, gateways e em links de WAN. 
+- Garantir a capacidade e a disponibilidade da rede por meio de firewalls, servidores de proxy, gateways e entre links de WAN. 
     
-- Adquira certificados SSL de terceiros para fornecer segurança da empresa para ofertas de serviços do Office 365. 
+- Adquirir certificados SSL de terceiros para oferecer segurança corporativa para ofertas de serviços do Office 365. 
     
-- O nome do locatário de planejar e projetar a arquitetura do conjunto de sites e um governança. 
+- Planeje o nome do locatário e projete a arquitetura e a governança do conjunto de sites. 
     
-- Planeje personalizações, soluções e aplicativos para o SharePoint Online. 
+- Planejar personalizações, soluções e aplicativos para o SharePoint Online. 
     
-- Decida se deseja se conectar ao Office 365 usando o Internet Protocol 6 (IPv6). Isso não é comum. 
+- Decida se você deseja se conectar ao Office 365 usando o protocolo de Internet 6 (IPv6). Isso não é comum. 
     
 #### <a name="hybrid-with-office-365"></a>Híbrido com o Office 365
 
-Além das tarefas para o Office 365 e o local de ambientes: 
+Além das tarefas para os ambientes do Office 365 e local: 
   
-- Determine quanto integração do recurso desejado e escolha a topologia híbrida. Consulte este cartaz de modelo: qual topologia híbrida devo usar? 
+- Determine quanta integração de recursos você deseja e escolha a topologia híbrida. Consulte este pôster de modelo: qual topologia híbrida devo usar? 
     
-- Se for necessário, determine qual dispositivo do servidor de proxy será usado. 
+- Se necessário, determine qual dispositivo de servidor proxy será usado. 
     
 #### <a name="azure"></a>Azure
 
-Projete o ambiente de rede Windows Azure: 
+Projete o ambiente de rede do Azure: 
   
-- Rede virtual dentro do Azure, incluindo sub-redes. 
+- Rede virtual no Azure, incluindo sub-redes. 
     
 - Ambiente de domínio e integração com servidores locais. 
     
 - Endereços IP e DNS. 
     
-- Afinidade de grupos e contas de armazenamento. 
+- Grupos de afinidade e contas de armazenamento. 
     
-Projete o ambiente do SharePoint no Windows Azure: 
+Projete o ambiente do SharePoint no Azure: 
   
 - Topologia de farm do SharePoint e arquitetura lógica. 
     
--  Conjuntos de disponibilidade do Azure e domínios de atualização.
+-  Conjuntos de disponibilidade do Azure e atualizar domínios.
     
 - Tamanhos de máquinas virtuais. 
     
 - Ponto de extremidade com balanceamento de carga. 
     
-- Pontos de extremidade externos para acesso público, se o que é preferível. 
+- Pontos de extremidade externos para acesso público, se for preferível. 
     
 - Ambiente de recuperação de desastres. 
     
-#### <a name="on-premises"></a>No local
+#### <a name="on-premises"></a>Local
 
-Projete o ambiente do SharePoint em um ambiente local existente: 
+Projetar o ambiente do SharePoint em um ambiente local existente: 
   
 - Topologia de farm do SharePoint e arquitetura lógica. 
     
-- Hardware de servidor. 
+- Hardware do servidor. 
     
 - Ambiente virtual, se usado. 
     
 - Balanceamento de carga. 
     
-- Integração com o AD DS e DNS. 
+- Integração com o AD DS e o DNS. 
     
 - Ambiente de recuperação de desastres. 
     
-### <a name="it-pro-responsibilities"></a>IT profissionais responsabilidades
+### <a name="it-pro-responsibilities"></a>Responsabilidades de profissionais de ti
 
 #### <a name="sharepoint-2013-in-office-365"></a>SharePoint 2013 no Office 365
 
-- Certifique-se de estações de trabalho do usuário atender aos pré-requisitos de cliente do Office 365. 
+- Verifique se as estações de trabalho de usuário atendem aos pré-requisitos de cliente do Office 365. 
     
-- Implemente o plano de integração de diretório. 
+- Implementar o plano de integração de diretórios. 
     
-- Planejar e implementar os registros DNS internos e externos e roteamento. 
+- Planejar e implementar registros DNS internos e externos e roteamento. 
     
-- Configure o proxy ou firewall para o endereço IP do Office 365 e requisitos de URL. 
+- Configure o proxy ou firewall para os requisitos de URL e endereço IP do Office 365. 
     
-- Criar e atribuir permissões aos conjuntos de sites. 
+- Criar e atribuir permissões a conjuntos de sites. 
     
 - Implementar personalizações, soluções e aplicativos para o SharePoint Online. 
     
-- Monitorar a disponibilidade da rede e identificar afunilamentos possíveis. 
+- Monitorar a disponibilidade da rede e identificar possíveis afunilamentos. 
     
 #### <a name="hybrid-with-office-365"></a>Híbrido com o Office 365
 
-Além das tarefas para o Office 365 e o local de ambientes: 
+Além das tarefas para os ambientes do Office 365 e local: 
   
 - Configure o dispositivo de servidor proxy, se necessário. 
     
-- Configurar a infraestrutura de gerenciamento de identidade híbrida: SSO e autenticação de servidor-para-servidor entre os dois ambientes. 
+- Configure a infraestrutura de gerenciamento de identidade híbrida: autenticação de SSO e servidor para servidor entre os dois ambientes. 
     
-- Configurar a integração dos recursos escolhidos: pesquisa, o BCS, Duet Enterprise Online. 
+- Configure a integração dos recursos escolhidos: Search, BCS, Duet Enterprise online. 
     
 #### <a name="azure"></a>Azure
 
-Implantar e gerenciar o ambiente do Windows Azure e o SharePoint: 
+Implantar e gerenciar o ambiente do Azure e do SharePoint: 
   
 - Implementar e gerenciar o ambiente de rede do Azure. 
     
-- Implante o ambiente do SharePoint. 
+- Implantar o ambiente do SharePoint. 
     
-- Atualize servidores de farm do SharePoint. 
+- Atualizar servidores de farm do SharePoint. 
     
-- Adicionar ou desligar máquinas virtuais conforme necessário com base na utilização de farm. 
+- Adicionar ou desligar máquinas virtuais conforme necessário com base na utilização do farm. 
     
-- Aumentar ou diminuir os tamanhos de máquina virtual, conforme necessário. 
+- Aumentar ou diminuir tamanhos de máquina virtual, conforme necessário. 
     
 - Faça backup do ambiente do SharePoint. 
     
-- Implemente o ambiente de recuperação de desastres e o protocolo. 
+- Implementar o ambiente de recuperação de desastres e o protocolo. 
     
-#### <a name="on-premises"></a>No local
+#### <a name="on-premises"></a>Local
 
-Implantar e gerenciar o SharePoint no ambiente local: 
+Implantar e gerenciar o ambiente local do SharePoint: 
   
-- Servidores de provisionamento. 
+- ProVisionar servidores. 
     
-- Implante o ambiente do SharePoint. 
+- Implantar o ambiente do SharePoint. 
     
-- Atualize servidores de farm do SharePoint. 
+- Atualizar servidores de farm do SharePoint. 
     
-- Adicionar ou remover servidores do farm conforme necessário com base na utilização de farm. 
+- Adicione ou remova servidores de farm conforme necessário com base na utilização do farm. 
     
 - Faça backup do ambiente do SharePoint. 
     
-- Implemente o ambiente de recuperação de desastres e o protocolo. 
+- Implementar o ambiente de recuperação de desastres e o protocolo. 
     
-## <a name="three-typical-workloads-to-move-to-azure"></a>Três cargas de trabalho típicas para mover para o Windows Azure
+## <a name="three-typical-workloads-to-move-to-azure"></a>Três cargas de trabalho típicas para mover para o Azure
 
-### <a name="office-365-plus-directory-components-in-azure"></a>O Office 365 mais componentes de diretório no Windows Azure
+### <a name="office-365-plus-directory-components-in-azure"></a>Office 365 mais componentes de diretório no Azure
 
-Implantar o Office 365 componentes de integração de diretório no Windows Azure é mais rápido porque ele pode implantar máquinas virtuais sob demanda. 
+Implantar os componentes de integração de diretório do Office 365 no Azure é mais rápido porque pode implantar máquinas virtuais sob demanda. 
   
 #### <a name="directory-synchronization-server-only"></a>Somente servidor de sincronização de diretório
 
-Em vez de implantar o servidor de sincronização de diretório de 64 bits em seu ambiente local, em vez disso provisionar uma máquina virtual no Windows Azure. 
+Em vez de implantar o servidor de sincronização de diretório de 64 bits no seu ambiente local, Provisione uma máquina virtual no Azure. 
   
-O diagrama acompanha mostra o SharePoint Online com um locatário do Azure Active Directory, o que sincroniza os nomes de conta e senhas entre o ambiente do Active Directory local e o locatário do Azure Active Directory. 
+O diagrama a seguir mostra o SharePoint Online com um locatário do Azure Active Directory, que sincroniza nomes de conta e senhas entre o ambiente do Active Directory local e o locatário do Azure Active Directory. 
   
-#### <a name="directory-synchronization-plus-ad-fs"></a>Sincronização de diretórios plus do AD FS
+#### <a name="directory-synchronization-plus-ad-fs"></a>Sincronização de diretórios e AD FS
 
-Essa opção permite que você ofereça suporte a identidades do Office 365 federado (SSO) sem adicionar hardware à infraestrutura local. Ele também fornece resiliência se o ambiente do Active Directory local não está disponível. 
+Essa opção permite que você ofereça suporte a identidades federadas do Office 365 (SSO) sem adicionar hardware à sua infraestrutura local. Também fornece resiliência se o ambiente do Active Directory local não estiver disponível. 
   
-- Componentes de integração de diretório residem no Windows Azure. 
+- Os componentes de integração de diretórios residem no Azure. 
     
-- O AD FS é publicado na Internet por meio de proxies do AD FS no Windows Azure. 
+- O AD FS é publicado na Internet por meio de proxies do AD FS no Azure. 
     
-- Tráfego de autenticação de cliente, para usuários que estão se conectando de qualquer local, é tratado por servidores AD FS e proxies que são implantados no Azure. 
+- O tráfego de autenticação do cliente, para usuários que estão se conectando de qualquer local, é tratado por servidores e proxies do AD FS implantados no Azure. 
     
-### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>Site de Internet público e o Azure AD para autenticação de cliente
+### <a name="public-facing-internet-site-and-azure-ad-for-customer-authentication"></a>Site voltado para o público e o Azure AD para autenticação de clientes
 
-Aproveite a capacidade de expansão facilmente a demanda colocando em seu site da Internet no Windows Azure. Use o Azure AD para armazenar contas de cliente. 
+Aproveite a capacidade de expansão fácil para a demanda, colocando seu site na Internet no Azure. Use o Azure AD para armazenar contas de cliente. 
   
 #### <a name="azure-advantages-for-internet-sites"></a>Vantagens do Azure para sites da Internet
 
-- Preste apenas para os recursos que necessários dimensionando o número de máquinas virtuais com base na utilização de farm. 
+- Pague apenas os recursos necessários, dimensionando o número de máquinas virtuais com base na utilização do farm. 
     
-- Adicione profundidade a emissão de relatórios e do web analytics. 
+- Adicione relatórios detalhados e análises da Web. 
     
-- Foco no desenvolvimento de um grande site, em vez da criação de infra-estrutura. 
+- Concentre-se no desenvolvimento de um ótimo site, em vez de criar uma infraestrutura. 
     
-#### <a name="azure-ad"></a>AD do Azure
+#### <a name="azure-ad"></a>Azure AD
 
-Azure AD fornece recursos de controle acesso e o gerenciamento de identidade para serviços de nuvem. Os recursos incluem um repositório baseado em nuvem para dados de diretório e um conjunto básico de serviços de identidade, incluindo processos de logon do usuário, serviços de autenticação e AD FS. Os serviços de identidade que estão incluídos no Windows Azure AD integram facilmente suas implantações do Active Directory local e suportam totalmente os provedores de identidade de terceiros. 
+O Azure AD fornece recursos de gerenciamento de identidades e controle de acesso para serviços em nuvem. Os recursos incluem um repositório baseado em nuvem para dados de diretório e um conjunto principal de serviços de identidade, incluindo processos de logon do usuário, serviços de autenticação e AD FS. Os serviços de identidade que estão incluídos no Azure AD se integram facilmente às implantações do Active Directory local e dão suporte completo a provedores de identidade de terceiros. 
   
-O diagrama acompanha mostra a configuração de zonas e autenticação que é importante para sites na Internet. O diagrama mostra o Azure Active Directory inquilino, que contém um Farm do SharePoint no Azure com duas zonas: 
+O diagrama a seguir mostra a configuração de zonas e autenticação importantes para sites voltados para a Internet. O diagrama mostra o locatário do Azure Active Directory, que contém um farm do SharePoint no Azure com duas zonas: 
   
 - Uma zona da Internet que interage com visitantes anônimos e autenticados e clientes fora da rede 
     
-- Uma zona padrão que contém o NTLM para autenticação do Windows que interage com sua implantação do Active Directory local um túnel VPN e de rastreamento. 
+- Uma zona padrão que contém NTLM para rastreamento e autenticação do Windows que interage com sua implantação local do Active Directory em um túnel VPN. 
     
-### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>Farm local além de recuperação de desastres no Azure
+### <a name="on-premises-farm-plus-disaster-recovery-in-azure"></a>Farm local mais recuperação de desastre no Azure
 
-Escolha uma opção de recuperação de desastres que atenda às suas necessidades de negócios. Azure fornece opções de nível básica para empresas de Introdução à recuperação de desastres e opções avançadas para empresas de grande porte com requisitos de alta resiliência. 
+Escolha uma opção de recuperação de desastres que corresponda aos seus requisitos de negócios. O Azure fornece opções de nível de entrada para empresas que são introdução à recuperação de desastres e opções avançadas para empresas com requisitos de alta resiliência. 
   
-#### <a name="cold-standby"></a>Espera a frio
+#### <a name="cold-standby"></a>Espera Cold
 
-- O farm totalmente é criado, mas as máquinas virtuais são interrompidas. (Você está pagando somente quando eles estão executando!) 
+- O farm está totalmente construído, mas as máquinas virtuais são interrompidas. (Você está pagando apenas quando estão executando!) 
     
-- Manter o ambiente inclui começar as máquinas virtuais do tempo em tempos, patches, atualizando e verificando o ambiente. 
+- A manutenção do ambiente inclui o início das máquinas virtuais de hora para hora, aplicação de patch, atualização e verificação do ambiente. 
     
 - Inicie o ambiente completo em caso de desastre. 
     
 #### <a name="warm-standby"></a>Espera passiva
 
-- Isso inclui um pequeno farm é provisionado e em execução. 
+- Isso inclui um pequeno farm que é provisionado e em execução. 
     
-- O farm imediatamente pode atender a usuários em caso de um failover. 
+- O farm pode servir imediatamente aos usuários em caso de failover. 
     
-- Dimensionar o farm rapidamente para atender a base completos do usuário. 
+- Expanda o farm rapidamente para atender à base completa do usuário. 
     
 #### <a name="hot-standby"></a>Espera ativa
 
-Um farm de tamanho totalmente é provisionado e executado em espera. 
+Um farm de tamanho completo é provisionado e executado no modo de espera. 
   
-O diagrama acompanha mostra um farm local interação com o ambiente de recuperação de desastres do SharePoint no Azure. Usam o os bancos de dados local envio de Log do SQL Server no túnel VPN para acessar o ambiente de recuperação de desastres do SharePoint, que inclui dois servidores de banco de dados SQL que contêm os bancos de dados do SharePoint, dois servidores Web Front-End e dois SharePoint Servidores de aplicativos. 
+O diagrama a seguir mostra um farm local interagindo com o ambiente de recuperação de desastres do SharePoint no Azure. Os bancos de dados locais usam o envio de logs do SQL Server sobre o túnel VPN para acessar o ambiente de recuperação de desastres do SharePoint, que inclui dois servidores de banco de dados SQL que contêm os bancos de dados do SharePoint, dois servidores Web front-end e dois SharePoint Servidores de aplicativos. 
   
 

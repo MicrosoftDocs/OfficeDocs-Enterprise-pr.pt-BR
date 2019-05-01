@@ -1,5 +1,5 @@
 ---
-title: Desabilitar o acesso aos serviços ao atribuir licenças de usuário
+title: Desabilitar o acesso aos serviços na atribuição de licenças de usuário
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,13 +15,13 @@ ms.custom:
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Saiba como atribuir licenças a contas de usuário e desabilitar planos de serviço específicos ao mesmo tempo usando o Office 365 PowerShell.
 ms.openlocfilehash: c93f54fcd5716a0ea53290c24a2594b8bc63cecf
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001844"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491307"
 ---
-# <a name="disable-access-to-services-while-assigning-user-licenses"></a>Desabilitar o acesso aos serviços ao atribuir licenças de usuário
+# <a name="disable-access-to-services-while-assigning-user-licenses"></a>Desabilitar o acesso aos serviços na atribuição de licenças de usuário
 
 **Resumo:**  Saiba como atribuir licenças a contas de usuário e desabilitar planos de serviço específicos ao mesmo tempo usando o Office 365 PowerShell.
   

@@ -18,23 +18,23 @@ search.appverid:
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085060"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490937"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Log de transações do IdFix do Office 365
 
 Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.
   
-## <a name="idfix-transaction-log-location"></a>Loca do log de transações do IdFix
+## <a name="idfix-transaction-log-location"></a>Local do log de transações do IdFix
 
 A ferramenta IdFix do Office 365 cria um novo log de transações cada vez que você clica em **aplicar** no IdFix e aplica as alterações à floresta do Active Directory. O log de transações é salvo na mesma pasta onde você instalou o IdFix. Por padrão, essa pasta é C:\Deployment Tools\IDFix. O nome do arquivo de log de transações usa um formato de carimbo de data e hora, por exemplo, Verbose 6-1-2018 6-17-22 PM indica um arquivo que foi gerado em 1º de junho de 2018 às 6:17:22 PM. Verbose indica o nível de log. 
   
-## <a name="idfix-transaction-log-logging-level"></a>Nível de log do log de transações do IdFix.
+## <a name="idfix-transaction-log-logging-level"></a>Nível de log do log de transações do IdFix
 
-A palavra "detalhado" no nome do arquivo de transação de log indica o nível de log no arquivo. Detalhado significa que a quantidade máxima de informação é capturada no log. Esse é o nível de log padrão. Não é possível alterar o nível de log nesse momento.
+A palavra Verbose no nome do arquivo de log de transações indica o nível de log no arquivo. Verbose significa que a quantidade máxima de informações é capturada no log. Este é o nível de log padrão. No momento, não é possível alterar o nível de log.
   
 ## <a name="idfix-transaction-log-format"></a>Formato de log de transações do IdFix
 

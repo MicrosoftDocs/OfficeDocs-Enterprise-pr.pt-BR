@@ -1,5 +1,5 @@
 ---
-title: Durante e após a movimentação dos dados
+title: Durante e após a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647989"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487227"
 ---
-# <a name="during-and-after-your-data-move"></a>Durante e após a movimentação dos dados
+# <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
 Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
   
@@ -36,7 +36,7 @@ Assista ao centro de mensagens do Office 365 para confirmação quando se move p
 |Índia  <br/> |31 de outubro de 2018  <br/> |
 |Canadá  <br/> |30 de junho de 2019  <br/> |
 |Coréia do Sul  <br/> |31 de outubro de 2018  <br/> |
-|United Kingdom  <br/> |15 de setembro de 2019  <br/> |
+|Reino Unido  <br/> |15 de setembro de 2019  <br/> |
 |França  <br/> |15 de setembro de 2020  <br/> |
 |Emirados Árabes Unidos  <br/> |Apresentados  <br/> |
 |África do Sul  <br/> |Apresentados  <br/> |
@@ -129,9 +129,9 @@ Só movemos dados do cliente para o Exchange Online, o SharePoint Online e o Sky
   
 ## <a name="related-topics"></a>Tópicos relacionados 
  
-[Como solicitar a movimentação de dados](request-your-data-move.md)
+[Como solicitar a migração dos dados](request-your-data-move.md)
     
-[PERGUNTAS FREQUENTEs sobre movimentação de dados gerais](data-move-faq.md)
+[Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
   
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Resumo: Configure e demonstre a classificação de dados e rotular usando o cliente de proteção de informações do Azure (AIP) no seu ambiente de desenvolvimento/teste do Office 365.'
 ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741347"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490057"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Classificação de dados e rotulagem no ambiente de desenvolvimento/teste do Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "31741347"
 O cliente de proteção de informações do Azure permite que você classifique um documento antes de carregá-lo em uma pasta do SharePoint Online no Office 365. Com as instruções deste artigo, você instala o cliente de proteção de informações do Azure e demonstra a classificação de dados. Confira mais informações em [proteção de informações do Azure](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para obter um mapa Visual para todos os artigos da pilha do guia do laboratório de teste do Office 365.
+> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -161,7 +161,6 @@ Em seguida, entre com sua conta do User5 e carregue o documento protegido por AI
     Você verá AfterAIP. docx na pasta documentos no conjunto de sites de suporte.
     
 ## <a name="see-also"></a>Confira também
-
 
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
 

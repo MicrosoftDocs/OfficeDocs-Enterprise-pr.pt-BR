@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 'Resumo: saiba como automatizar a coleta de arquivos dos computadores dos usuários para descoberta eletrônica.'
 ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001604"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490759"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleta de arquivos para descoberta eletrônica
 
@@ -328,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**Número da linha**|**O que você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
-|3,6  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
-|17.07.06  <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se o **$ConnectionURI** aponta para um local http, não para https. Ele não funcionará com https:.          |Obrigatório  <br/> |
+|12  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
+|17   <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se o **$ConnectionURI** aponta para um local http, não para https. Ele não funcionará com https:.          |Obrigatório  <br/> |
    
 4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução \\ \\para o\\compartilhamento de casos de preparação $.
     

@@ -1,5 +1,5 @@
 ---
-title: Diagrama acessível - SharePoint Server, Exchange, Lync, Office Web Apps - o paisagem de celular
+title: Diagrama acessível-SharePoint Server, Exchange, Lync, Office Web Apps-o cenário móvel
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,112 +9,112 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
-description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, que está disponível em diagramas técnicos.
+description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em diagramas técnicos.
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/09/2018
-ms.locfileid: "17503404"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487677"
 ---
-# <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama acessível - SharePoint Server, Exchange, Lync, Office Web Apps - o paisagem de celular
+# <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama acessível-SharePoint Server, Exchange, Lync, Office Web Apps-o cenário móvel
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, que está disponível em [Diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em [diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
   
-Este cartaz mostra um layout detalhado do aplicativo e móvel paisagem baseada em navegador para o SharePoint Server, Lync, Exchange Server e Office Web Apps. Ele inclui as seguintes informações: 
+Este cartaz mostra um layout detalhado do aplicativo e do panorama baseado em navegador móvel para o SharePoint Server, Lync, Exchange Server e Office Web Apps. Ele inclui as seguintes informações: 
   
-- Uma seção que descreve aplicativos e experiências baseadas em navegador.
+- Uma seção que descreve aplicativos e experiências baseadas no navegador.
     
-- Topologias de quatro retratando locais e implantações móveis baseadas em nuvem.
+- Quatro topologias que descrevem implantações remotas locais e baseadas em nuvem.
     
 ## <a name="applications-and-browser-based-experiences"></a>Aplicativos e experiências baseadas em navegador
 
-Esta seção abrange uma seleção de aplicativos de dispositivo e experiências baseada em navegador para o SharePoint Server 2013, Exchange Server 2013 e Lync 2013. É importante observar que nem todos os aplicativos e experiências baseadas em navegador estão disponíveis para ambos os fatores de forma (telefone e tablet), e não todas as experiências trabalham nos ambientes do Office 365 e no local. Informações detalhadas sobre suporte é fornecido para cada aplicativo e o cenário baseado em navegador.
+Esta seção aborda uma seleção de aplicativos de dispositivo e experiências baseadas em navegador para SharePoint Server 2013, Exchange Server 2013 e Lync 2013. É importante observar que nem todos os aplicativos e experiências baseadas em navegador estão disponíveis para os dois fatores de forma (telefone e Tablet), e nem todas as experiências funcionam em ambientes locais e do Office 365. São fornecidas informações detalhadas de suporte para cada aplicativo e cenário baseado em navegador.
   
 ### <a name="sharepoint"></a>SharePoint
 
-A seguinte lista de aplicativos e experiências baseadas no navegador está disponível para o SharePoint Server 2013. Cada experiência inclui um gráfico de telefone/eletrônica acompanha.
+A lista a seguir de aplicativos e experiências baseadas em navegador está disponível para o SharePoint Server 2013. Cada experiência inclui um gráfico de telefone/Tablet de acompanhamento.
   
- **A exibição contemporânea (baseado em navegador)**
+ **Modo de exibição contemporâneo (baseado em navegador)**
   
-Esta experiência oferece:
+Essa experiência oferece:
   
-- Um modo de exibição de navegador baseado em HTML5 ativado por padrão, em modelos de site select (Site de equipe, Site em branco, o espaço de trabalho de documento, Central de documentos e sites de projeto).
+- Um modo de exibição do navegador baseado em HTML5 ativado por padrão em selecionar modelos de site (site de equipe, site em branco, espaço de trabalho de documento, centro de documentos e site de projeto).
     
-- Recursos avançados, como o botão Menu, janela de navegação, toque de abrir links e paginação.
+- Recursos avançados, como botão de menu, janela de navegação, links de toque para abrir e paGinação.
     
-- Recursos padrão com pouca ou nenhuma configuração ou personalização necessários.
+- Recursos padrão com pouco ou nenhuma configuração ou personalização necessária.
     
-- Suporte para navegadores de dispositivos móveis de telefone selecionado no SharePoint Server (2013) ou o SharePoint Online.
+- Suporte para navegadores móveis de telefone selecionados no SharePoint Server (2013 apenas) ou SharePoint Online.
     
- **Aplicativo SharePoint Newsfeed**
+ **Aplicativo de news feed do SharePoint**
   
-Esse aplicativo oferece:
+Este aplicativo oferece:
   
-- Uma nova social experiência disponível em seus dispositivos móveis por meio de aplicativos para download.
+- Uma nova experiência social disponível em seus dispositivos móveis via aplicativos baixáveis.
     
-- A capacidade de postar news feeds em todos os sites do SharePoint, siga as pessoas, @mentions, documentos, #hashtags e muito mais.
+- A capacidade de postar nos News feeds em todos os seus sites do SharePoint, siga pessoas, @mentions, documentos, #hashtags e muito mais.
     
-- Disponibilidade com o SharePoint Server 2013 (Windows 8, iOS) ou o SharePoint Online (Windows Phone, Windows 8 e Apple iOS).
+- Disponibilidade com o SharePoint Server 2013 (Windows 8, iOS) ou SharePoint Online (Windows Phone, Windows 8 e Apple iOS).
     
- **Canais de dispositivo (baseado em navegador)**
+ **Canais de dispositivo (baseados em navegador)**
   
-Esta experiência oferece:
+Essa experiência oferece:
   
-- Com o recurso de canais de dispositivo no SharePoint 2013, a capacidade de renderização de um único site de publicação de várias maneiras, usando diferentes designs que dispositivos diferentes de destino.
+- Com o recurso de canais de dispositivo no SharePoint 2013, a capacidade de renderizar um único site de publicação de várias maneiras usando diferentes designs que direcionam dispositivos diferentes.
     
 - Canais de dispositivo que estão disponíveis somente para sites de publicação do SharePoint 2013.
     
-- Um máximo de dez canais de dispositivo, incluindo o padrão configurado em um site específico para uma instalação local e um total de dois canais de dispositivo ao usar o SharePoint Online.
+- Um máximo de dez canais de dispositivos, incluindo o padrão configurado em um site específico para uma instalação local e um total de dois canais de dispositivo ao usar o SharePoint Online.
     
 ### <a name="exchange"></a>Exchange
 
-A seguinte lista de opções de email do dispositivo está disponível para o Exchange 2013. Cada opção inclui um gráfico de telefone/eletrônica acompanha.
+A lista a seguir de opções de email do dispositivo está disponível para o Exchange 2013. Cada opção inclui um gráfico de telefone/Tablet de acompanhamento.
   
 > [!NOTE]
-> Há várias experiências de dispositivo, aplicativo e navegador, para acessar o email do Office 365 ou Exchange local. Esta seção destaca alguns métodos e não deve ser uma lista exaustiva. 
+> Há várias experiências de dispositivos, tanto de aplicativo quanto de navegador, para acessar o email do Exchange no local ou do Office 365. Esta seção destaca alguns métodos e não se destina a ser uma lista exaustiva. 
   
- **Outlook Mobile no Windows Phone** Essa opção está disponível em dispositivos Windows Phone 7.5 e Windows Phone 8 e o padrão é adicionar a conta do Exchange para as configurações de email.
+ **Outlook Mobile no Windows Phone** Essa opção está disponível nos dispositivos do Windows Phone 7,5 e Windows Phone 8, e o padrão é adicionar a conta do Exchange às configurações de email.
   
 Com essa opção, você pode:
   
-- Classificar, scan e responder a email.
+- Classificar, examinar e responder a emails.
     
-- Opte por exibir várias contas de vários provedores de email diferentes.
+- Escolha Exibir várias contas de vários provedores de email diferentes.
     
-- Agrupar email por conversa e o sinalizador de mensagens.
+- Agrupar emails por conversa e mensagens de sinalizador.
     
  **Outlook Web App/OWA (baseado em navegador)**
   
 Descrição dessa opção:
   
-- Você pode classificar, scan e responder a email.
+- Você pode classificar, examinar e responder a emails.
     
 - Disponível no Windows Phone, iPhone e iPad.
     
-- Exige uma assinatura para o Office 365 com o Exchange Online
+- Requer uma assinatura do Office 365 com o Exchange Online
     
-- Como alternativa app, o OWA para iPhone e OWA para iPad trazem uma experiência nativa do Outlook Web App para dispositivos iOS. Eles podem ser instalados do loja de App Apple e necessitam de uma assinatura para o Office 365.
+- Como uma alternativa de aplicativo, o OWA para iPhone e o OWA para iPad trazem uma experiência nativa do Outlook Web App para dispositivos iOS. Eles podem ser instalados a partir da Apple App Store e exigem uma assinatura do Office 365.
     
-### <a name="lync-mobile-2013-app"></a>Lync Mobile 2013 (App)
+### <a name="lync-mobile-2013-app"></a>Lync Mobile 2013 (aplicativo)
 
 Essa opção tem os seguintes recursos:
   
-- Lync 2013 é um aplicativo de comunicação que fornece presença avançada, mensagens instantâneas, reuniões do Lync e chamadas de voz e vídeos pela Internet ou a conexão de celular.
+- O Lync 2013 é um aplicativo de comunicações que oferece presença avançada, mensagens instantâneas, reuniões do Lync e chamadas de voz e vídeo pela Internet ou conexão celular.
     
-- Funcionalidade de mensagens Instantâneas inclui participando de sessões única ou vários participantes, navegar entre várias sessões de mensagens Instantâneas e envio de conversas como uma mensagem de email.
+- A funcionalidade de mensagens INSTANTÂNEAs inclui participar de sessões únicas ou de vários participantes, navegar entre várias sessões de IM e enviar conversas como uma mensagem de email.
     
-- Disponível no Windows 8, Windows Phone, iPhone, iPad e Android.
+- Disponível no Windows Phone, Windows 8, iPhone, iPad e Android.
     
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-OneDrive for Business é armazenamento na nuvem que sua organização pode usar para funcionários como parte do SharePoint 2013 no local e/ou implantações do Office 365 SharePoint Online. Aplicativos móveis estão disponíveis para o Windows Phone, Windows 8, dispositivos iOS e Android por meio de opções, como Office Mobile e de aplicativos do marketplace. Um gráfico de telefone/eletrônica acompanha mostra OneDrive for Business em uso.
+O OneDrive for Business é o armazenamento em nuvem que sua organização pode usar para os funcionários como parte das implantações do SharePoint Online do SharePoint 2013 local e/ou do Office 365. Os aplicativos móveis estão disponíveis para Windows Phone, Windows 8, dispositivos iOS e Android por meio de opções como aplicativos de Marketplace e Office Mobile. Um telefone/gráfico Tablet de acompanhamento mostra o OneDrive for Business em uso.
   
 Com essa opção, você pode:
   
-- Exibir documentos em sua OneDrive para a pasta de negócios.
+- Exibir documentos em sua pasta do OneDrive for Business.
     
-- Selecione o conteúdo específico tomar offline, quando você estiver viajando.
+- Selecione conteúdo específico para ser colocado offline quando viajar.
     
 - Carregar novo conteúdo.
     
@@ -122,98 +122,98 @@ Com essa opção, você pode:
     
 ### <a name="office-on-mobile-devices"></a>Office em dispositivos móveis
 
-Uma ilustração acompanha mostra o Office Mobile em um dispositivo Windows Phone. Essa opção tem os seguintes recursos:
+Uma ilustração a seguir mostra o Office Mobile em um dispositivo Windows Phone. Essa opção tem os seguintes recursos:
   
-- Office Mobile no seu telefone é o local para ir para trabalhar em documentos do Microsoft Office. Você pode fet ao escritório local de documentos que estão no seu dispositivo ou salvo em um local para outro, como no Microsoft OneDrive, um Microsoft SharePoint 2010 (ou posterior) ou no SharePoint Online site. SharePoint Online está disponível com o Office 365.
+- O Office Mobile em seu telefone é o local para trabalhar com os documentos do Microsoft Office. Você pode fazer o FET para documentos do Office que estão no seu dispositivo ou salvos em outros lugares, como no Microsoft OneDrive, em um site do Microsoft SharePoint 2010 (ou posterior) ou em um site do SharePoint Online. O SharePoint Online está disponível com o Office 365.
     
-- Abrir ou encontrar documentos existentes ou crie um novo. Quaisquer documentos que você salvou recentemente para seu telefone (de um email, por exemplo) aparecem aqui também.
+- Abra ou localize documentos existentes ou crie um novo. Todos os documentos salvos recentemente no telefone (de um email, por exemplo) também aparecem aqui.
     
-- Exibir, abrir, pesquisar e editar suas notas para ficar atento aos que está acontecendo em casa, trabalhar ou escola enquanto você estiver em trânsito.
+- Exibir, abrir, Pesquisar e editar suas anotações para acompanhar o que está acontecendo em casa, trabalho ou escola enquanto estiver em trânsito.
     
-- Office Mobile está disponível no Android, iPhone e Windows Phone (interno). Para iPhone e Android usuários, você deve ter uma assinatura para o Office 365 usem esse aplicativo.
+- O Office Mobile está disponível no Windows Phone (interno), iPhone e Android. Para usuários do iPhone e Android, você deve ter uma assinatura do Office 365 para usar este aplicativo.
     
 ### <a name="office"></a>Office
 
-Fora do usando o Office Mobile, os usuários podem exibir documentos do Office em navegadores de dispositivo móvel, tablets Windows 8, iPads e telefones. O Office Web Apps é o complemento online para aplicativos do Word, Excel, PowerPoint e OneNote. Embora o Office Web Apps está disponível para vários navegadores de dispositivo e os fabricantes, Exibir experiências pode variar entre dispositivos. Por exemplo, tablets Windows 8 e iPad fornecem recursos de edição, ao passo que os telefones só podem exibir esses aplicativos. Uma ilustração acompanha mostra a que experiência de Office Web Apps em um iPad para Microsoft PowerPoint e Microsoft Excel. Ele está disponível para implantações online e no local.
+Fora do uso do Office Mobile, os usuários podem exibir documentos do Office em navegadores de dispositivos móveis, como tablets, iPads e telefones do Windows 8. O Office Web Apps é o companheiro online para aplicativos do Word, Excel, PowerPoint e OneNote. Embora o Office Web Apps esteja disponível para vários navegadores e fabricantes de dispositivos, a exibição das experiências pode variar entre dispositivos. Por exemplo, tablets e iPad com Windows 8 oferecem recursos de edição, enquanto os telefones só podem exibir esses aplicativos. Uma ilustração a seguir mostra a experiência do Office Web Apps em um iPad para Microsoft PowerPoint e Microsoft Excel. Está disponível para implantações locais e online.
   
- **Exibição de alta fidelidade**. Você pode exibir e compartilhar seus documentos do Office diretamente no navegador do dispositivo e conhecer que seus documentos terá a mesma a aparência e polonês como quando eles foram criados. Uma ilustração acompanha mostra a que experiência do Office Web Apps em um tablet.
+ **Exibição de alta fidelidade**. Você pode exibir e compartilhar seus documentos do Office diretamente a partir do navegador do dispositivo e saber que seus documentos terão a mesma aparência e polonês como quando foram criados. Uma ilustração a seguir mostra a experiência do Office Web Apps em um Tablet.
   
-- Com o Word Web App, você pode ver gráficos, imagens e layout com fidelidade excelente, incluindo o novo suporte para exibir e adicionar comentários.
+- Com o Word Web App, você vê gráficos, imagens e layout com excelente fidelidade, incluindo novo suporte para exibição e adição de comentários.
     
-- Com o PowerPoint Web App, você exibir suas apresentações, como você faria em sua área de trabalho, com slides de alta resolução, transições completos e comentários visíveis. Você pode também reproduzir arquivos de áudio e vídeos diretamente no seu tablet ou telefone.
+- Com o PowerPoint Web App, você visualiza suas apresentações da mesma forma como faria na sua área de trabalho, com slides de alta resolução, transições completas e comentários visíveis. Você também pode reproduzir arquivos de áudio e vídeo diretamente do seu Tablet ou telefone.
     
-- Com o Excel Web App, você pode alterar e visualizar seus dados para profundo com gráficos de alta fidelidade, incluindo 3D, a tabela de consulta aprimorada e suporte de validação de dados, a funcionalidade de segmentação de dados e interatividade de gráfico dinâmico.
+- Com o Excel Web App, você pode alterar e visualizar seus dados para informações mais profundas com gráficos de alta fidelidade, incluindo 3D, melhor suporte à tabela de consulta e validação de dados, funcionalidade de segmentação de dados e interatividade de gráfico dinâmico.
     
- **Editar no navegador (Windows 8/iPad)**. Você pode fazer edições usando ferramentas familiares essenciais ao Office Web Apps baseados em navegador. Uma ilustração acompanha mostra a que experiência do Office Web Apps em um tablet.
+ **Editar no navegador (Windows 8/iPad)**. Você pode fazer edições usando ferramentas essenciais e familiares com o Office Web Apps baseado em navegador. Uma ilustração a seguir mostra a experiência do Office Web Apps em um Tablet.
   
-- Com o Excel Web App, você pode obter recursos de planilha essencial através do seu navegador, como mesclar células, menus de contexto, autoajustar colunas, assistência de fórmula, alça de preenchimento e AutoSum. Você pode imprimir a partir do seu navegador e, em seguida, renomear ou adicionar planilhas, conforme necessário.
+- Com o Excel Web App, você obtém recursos essenciais de planilha por meio do navegador, como células de mesclagem, menus de contexto, colunas de ajuste automático, assistência de fórmula, alça de preenchimento e autoSoma. Você pode imprimir diretamente do navegador e renomear ou adicionar planilhas conforme necessário.
     
-- Com o Word Web App, você pode editar, formatar e projetar seus documentos diretamente no seu navegador com recursos comumente usados e atalhos que você conhece do Word em sua área de trabalho. 
+- Com o Word Web App, você pode editar, Formatar e projetar seus documentos diretamente no navegador com recursos usados e atalhos comumente conhecidos do Word na área de trabalho. 
     
-- Com o PowerPoint Web App, você pode editar texto ou mover elementos, como imagens ou gráficos, usando uma operação de arrastar e soltar. Você pode inserir imagens, adicione transições e animações ou aplicar um tema predefinido diretamente no seu navegador.
+- Com o PowerPoint Web App, você pode editar texto ou mover elementos, como imagens ou gráficos, usando uma operação de arrastar e soltar. Você pode inserir imagens, adicionar transições e animações ou aplicar um tema predefinido diretamente do seu navegador.
     
-### <a name="device-management-and-software-distribution"></a>Gerenciamento de dispositivo e a distribuição de Software
+### <a name="device-management-and-software-distribution"></a>Gerenciamento de dispositivos e distribuição de software
 
-A Microsoft possui novas ofertas de gerenciamento de dispositivos em várias marcas de dispositivo. O Windows Intune é uma plataforma de gerenciamento baseadas em nuvem para dispositivos móveis. Pode ser usado tanto por si só a gerenciar seus dispositivos, ou juntamente com o Gerenciador de configuração do System Center 2012 R2 e administrados dentro do console. Alguns benefícios desta operação conjunta incluem:
+A Microsoft tem novas ofertas para gerenciamento de dispositivos em várias marcas de dispositivo. O Windows Intune é uma plataforma de gerenciamento baseada na nuvem para dispositivos móveis. Ele pode ser usado sozinho para gerenciar seus dispositivos ou juntamente com o Gerenciador de configuração do System Center 2012 R2 e administrado dentro desse console. Alguns benefícios dessa operação conjunta incluem:
   
-- Aplicação de políticas e gerenciamento entre diversos dispositivos, incluindo RT do Windows, Windows 8.1, Windows Phone 8, iOS e Android
+- Imposição e gerenciamento de políticas em vários dispositivos, incluindo Windows RT, Windows 8,1, Windows Phone 8, iOS e Android
     
-- Escala para até 100.000 dispositivos · sua organização Registro do dispositivo dinâmica
+- Expanda até 100.000 dispositivos em sua organização · Registro de dispositivos do ar
     
-- Direcionamento de usuário de aplicativos
+- Direcionamento do usuário de aplicativos
     
 - Executando o inventário de dispositivos
     
-- Aposentadoria do dispositivo remoto e apagamento do dispositivo
+- Descontinuação de dispositivo remoto e apagamento de dispositivos
     
-- Gerenciamento de um console do Configuration Manager familiar
+- Gerenciamento de um console familiar do Configuration Manager
     
-Um diagrama acompanha mostra como você pode usar o Gerenciador de configuração do System Center 2012 R2 e o Windows Intune para gerenciamento de dispositivo.
+Um diagrama de acompanhamento mostra como você pode usar o System Center 2012 R2 Configuration Manager e o Windows Intune para gerenciamento de dispositivos.
   
- **Considerações para usar o Gerenciador de configuração do System Center 2012 R2 e o Windows Intune:**
+ **Considerações para usar o System Center 2012 R2 Configuration Manager e o Windows Intune:**
   
 - Ao usar o Gerenciador de configuração do System Center 2012 R2 e o Windows Intune, você pode gerenciar e administrar todos os dispositivos em sua organização em um único console.
     
-- Para conectar o Configuration Manager com o Windows Intune, você precisa de uma assinatura do Windows Intune e a função de servidor de site do Windows Intune conector deve ser implantada em um servidor no seu ambiente do Configuration Manager.
+- Para conectar o Gerenciador de configurações ao Windows Intune, você precisa de uma assinatura do Windows Intune e a função de servidor do site do conector do Windows Intune deve ser implantada em um servidor no seu ambiente do Configuration Manager.
     
-- Gerenciador de configuração do System Center 2012 R2 fornece gerenciamento e distribuição de software para seus PCs local.
+- O System Center 2012 R2 Configuration Manager oferece gerenciamento e distribuição de software para seus PCs locais.
     
-- Dispositivos modernos gerenciados receberá a distribuição de software e imposição de política do Windows Intune. Tipos de dispositivos com suporte incluem: Windows RT, Windows 8.1, Windows Phone 8, iOS, Android.
+- Dispositivos modernos gerenciados receberão a imposição de política e a distribuição de software do Windows Intune. Os tipos de dispositivos suportados incluem: Windows RT, Windows 8,1, Windows Phone 8, iOS, Android.
     
-## <a name="on-premises-and-cloud-based-mobile-deployments"></a>Implantações de móveis baseadas em nuvem e no local
+## <a name="on-premises-and-cloud-based-mobile-deployments"></a>Implantações móveis locais e baseadas em nuvem
 
-As topologias aqui representada para o SharePoint Server, Lync, e não Exchange ilustram uma maneira preferencial para implementar essas plataformas. Eles fornecem um exemplo, meramente conforme topologias serão diferentes com base nos requisitos de rede exclusivo e considerações de segurança.
+As topologias representadas aqui para o SharePoint Server, Lync e Exchange não ilustram uma forma preferida para implementar essas plataformas. Eles simplesmente fornecem um exemplo, pois as topologias diferem com base nos requisitos de rede exclusivos e nas considerações de segurança.
   
 ### <a name="sharepoint-deployment"></a>Implantação do SharePoint
 
-A ilustração acompanha mostra uma implantação de extranet do SharePoint Server 2013. É recomendável que os dispositivos são conectados de forma segura para os servidores de front-end da web no SharePoint 2013 usando uma opção como camada de soquete seguro (SSL) ou um gateway VPN.
+A ilustração a seguir mostra uma implantação de extranet do SharePoint Server 2013. Recomendamos que os dispositivos se conectem com segurança aos servidores Web front-end do SharePoint 2013 usando uma opção como Secure Socket Layer (SSL) ou um gateway VPN.
   
-SharePoint pode usar a porta TCP 443 (SSL) para comunicação criptografada entre o dispositivo e do proxy reverso. Para acesso externo da Internet, essa porta deve ser aberta para o tráfego de entrada e saído em qualquer firewall ou roteador. 
+O SharePoint pode usar a porta TCP 443 (SSL) para comunicação criptografada entre o dispositivo e o proxy reverso. Para acesso externo pela Internet, esta porta precisa ser aberta para tráfego de entrada e saída em qualquer firewall ou roteador. 
   
-Quando um navegador móvel acessa um site do servidor web front-end, uma solicitação http é feita no IIS. Na solicitação de http, o campo USERAGENT contém informações sobre o navegador móvel fazendo a solicitação. Essas informações podem ser usadas para decisões de redirecionamento do navegador para o modo de exibição contemporâneo de-de-imediata ou uma implementação de site personalizada usando o recurso de canais do dispositivo.
+Quando um navegador móvel acessa um site do servidor Web front-end, uma solicitação HTTP é feita ao IIS. Na solicitação HTTP, o campo userAGENT contém informações sobre o navegador móvel que está fazendo a solicitação. Essas informações podem ser usadas para as decisões de redirecionamento de navegador para o modo de exibição de uso da caixa de informações, ou uma implementação de site personalizada usando o recurso de canais de dispositivo.
   
-Para o SharePoint 2013, o Office Web Apps tiver sido desmembrado da instalação e agora é um produto autônomo. Para fornecer acesso para cliente para o Office Web Apps, incluindo móvel, você precisa configurar o SharePoint 2013 para usar sua instalação do Office Web Apps Server. Você pode fazer isso com o seguinte cmdlet do Shell de gerenciamento do SharePoint 2013:
+Para o SharePoint 2013, o Office Web Apps foi dissociado da instalação e agora é um produto autônomo. Para fornecer acesso ao cliente para o Office Web Apps, incluindo o Mobile, você precisa configurar o SharePoint 2013 para usar a instalação do servidor do Office Web Apps. Você pode fazer isso com o seguinte cmdlet do Shell de gerenciamento do SharePoint 2013:
   
 ```
 New-SPWOPIBinding -ServerName <ServerName>, where <ServerName> is the FQDN name of the URL that you set for the internal and external URLs.
 ```
 
-### <a name="exchanage-deployment"></a>Implantação de Exchanage
+### <a name="exchanage-deployment"></a>Implantação de distribuição
 
-Um dispositivo se conecta ao local Exchange Client Access Server que hospeda os aplicativos, como Microsoft Exchange ActiveSync, o Outlook Web app e também fornece o serviço de descoberta automática do Exchange. Recomendamos que você use criptografia SSL entre o dispositivo externo e o servidor de acesso de cliente do Exchange.
+Um dispositivo conecta-se ao servidor de acesso para cliente local do Exchange que hospeda aplicativos como o Microsoft Exchange ActiveSync, o Outlook Web App e também fornece o serviço de descoberta automática do Exchange. Recomendamos que você use a criptografia SSL entre o dispositivo externo e o servidor de acesso para cliente do Exchange.
   
-Tráfego de dispositivo, como descobrir de automático do Exchange e o Exchange ActiveSync é manipulado através da porta 443 (HTTPS). O recurso de Direct Push no Exchange 2013 mantém um dispositivo móvel atual sobre uma conexão de rede celular ou sem fio. Notifica o dispositivo móvel ao conteúdo novo está pronto para ser sincronizada. É importante que todos os firewalls em sua organização e a operadora suportam uma solicitação de longa espera HTTPS. Por padrão o Direct Push é configurado para sondam se há alterações por 15 minutos em qualquer pasta e atualizar o dispositivo. Talvez você precise aumentar o valor de tempo limite em um firewall se ela cair sob a configuração de Direct Push padrão 15 minutos.
+O tráfego de dispositivos como a descoberta automática do Exchange e o Exchange ActiveSync é manipulado pela porta 443 (HTTPS). O recurso Direct Push no Exchange 2013 mantém um dispositivo móvel atual através de uma conexão de rede celular ou sem fio. Ele avisa ao dispositivo móvel quando há conteúdo novo pronto para ser sincronizado. É importante que todos os firewalls da sua organização e operadora ofereçam suporte a uma solicitação HTTPS de longa duração. Por padrão, o Direct Push é configurado para pesquisar qualquer alteração por 15 minutos em qualquer pasta e atualizar o dispositivo. Talvez seja necessário aumentar o valor de tempo limite em um firewall, se ele estiver abaixo da configuração de envio direto de 15 minutos padrão.
   
-O servidor de acesso de cliente do Exchange (CAS) hospeda o serviço do Exchange ActiveSync. Ele permite sincronizar dados entre seu telefone ou tablet e Exchange 2013. 
+O servidor de acesso para cliente (CAS) do Exchange hospeda o serviço do Exchange ActiveSync. Ele permite sincronizar dados entre o seu telefone ou Tablet e o Exchange 2013. 
   
 ### <a name="lync-deployment"></a>Implantação do Lync
 
-Para um fluxo de trabalho geral, um dispositivo móvel externo envia uma solicitação Get HTTPS para um URL Lync externo de exemplo: LyncDiscover.contoso.com. A solicitação for recebida pelo servidor proxy reverso, que encaminha a solicitação na porta 443 para um servidor Front-End (ou pool de servidores). O servidor proxy reverso deve ter uma regra de publicação para LyncDiscover.contoso.com. Também recomendamos que o firewall e o servidor proxy reverso ser hospedados em computadores separados.
+Para um fluxo de trabalho geral, um dispositivo móvel externo envia uma solicitação HTTPS Get para um exemplo de URL externa do Lync: LyncDiscover.contoso.com. A solicitação é recebida pelo servidor de proxy reverso, que encaminha a solicitação pela porta 443 para um servidor front-end (ou pool de servidores). O servidor proxy reverso deve ter uma regra de publicação para o LyncDiscover.contoso.com. Recomendamos também que o firewall e o servidor de proxy reverso sejam hospedados em computadores separados.
   
-No servidor Front-End, o serviço Descoberta automática recupera as URLs de serviço Web para o pool base do usuário e retorna as informações de que o dispositivo móvel por meio do servidor proxy reverso. O serviço de descoberta automática permite que os dispositivos móveis localizar os serviços Web do Lync Server sem exigir que os usuários insiram URLs manualmente.
+No servidor front-end, o serviço de descoberta automática recupera as URLs do serviço Web para o pool inicial do usuário e retorna essas informações ao dispositivo móvel por meio do servidor de proxy reverso. O serviço de descoberta automática permite que os dispositivos móveis localizem os serviços Web do Lync Server sem exigir que os usuários insiram URLs manualmente.
   
-Se um dispositivo móvel fizer logon dentro do firewall, um comando obter HTTPS é enviado diretamente para o Lync Pool Front-End, como LyncDiscoverInternal.com. A solicitação for recebida na porta 443, a mesma porta que o serviço Descoberta automática usa para comunicar-se novamente para o dispositivo móvel.
+Se um dispositivo móvel fizer logon dentro do firewall, um comando HTTPS Get será enviado diretamente para o pool de front-ends do Lync, como LyncDiscoverInternal.com. A solicitação é recebida na porta 443, a mesma porta que o serviço de descoberta automática usa para se comunicar de volta ao dispositivo móvel.
   
-Você deve configurar dois registros DNS para oferecer suporte a mobilidade: uma para LyncDiscover.contoso.com e outra para LyncDiscoverInternal.com. O FQDN externo deve ser acessível somente de fora do firewall; o FQDN interno só deve ser acessível a partir de dentro do firewall.
+Você deve configurar dois registros DNS para oferecer suporte à mobilidade: um para o LyncDiscover.contoso.com e outro para o LyncDiscoverInternal.com. O FQDN externo deve ser acessível somente de fora do firewall; o FQDN interno só deve ser acessível de dentro do firewall.
   
 

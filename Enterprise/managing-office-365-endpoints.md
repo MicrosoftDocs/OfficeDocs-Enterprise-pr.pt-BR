@@ -16,11 +16,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458351"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487078"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
@@ -70,7 +70,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Há vários parâmetros que podem ser passados para o script:
 
-|**Parâmetro**|**Descrição**|
+|**Parâmetro**|**Description**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |Isso é obrigatório e é um GUID passado para o serviço Web que representa a máquina cliente que está fazendo a chamada. <br/> |
 |**Instância** <br/> |A instância de serviço do Office 365 que assume como padrão em todo o mundo. Também passado para o serviço Web. <br/> |
@@ -221,6 +221,6 @@ Tenha em mente que bloquear o acesso aos serviços de cliente da Microsoft sozin
   
 [URLs e intervalos de endereços IP do Office 365](urls-and-ip-address-ranges.md)
   
-[Gerenciando o ExpressRoute para a conectividade do Office 365](managing-expressroute-for-connectivity.md)
+[Como gerenciar o ExpressRoute para a conectividade do Office 365](managing-expressroute-for-connectivity.md)
   
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)

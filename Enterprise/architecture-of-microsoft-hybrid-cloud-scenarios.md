@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Resumo: entenda a arquitetura das ofertas de nuvem híbrida da Microsoft.'
 ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038005"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490258"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Arquitetura de cenários de nuvem híbrida da Microsoft
 
@@ -35,7 +35,7 @@ A Figura 1 mostra a pilha de nuvem híbrida da Microsoft e sua camada, que inclu
   
 A camada aplicativos e cenários tem os cenários de nuvem híbrida específicos que são detalhados nos artigos adicionais desse modelo. A identidade, a rede e as camadas locais podem ser comuns às categorias de serviço de nuvem (SaaS, PaaS ou PaaS).
   
-- Local
+- No local
     
     A infraestrutura local para cenários híbridos pode incluir servidores para o SharePoint, o Exchange, o Skype for Business e aplicativos de linha de negócios. Também pode incluir repositórios de dados (bancos de dados, listas, arquivos). Sem conexões ExpressRoute, o acesso aos armazenamentos de dados locais deve ser permitido por meio de um proxy reverso ou ao tornar o servidor ou os dados acessíveis em sua DMZ ou Extranet.
     
@@ -67,5 +67,5 @@ Muitas empresas, incluindo a Microsoft, usam uma abordagem de três fases para a
 
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

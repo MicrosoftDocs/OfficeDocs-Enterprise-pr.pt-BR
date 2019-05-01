@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Office 365. As fases e etapas da lista de verificação são alinhadas com as orientações fornecidas pelo centro de integração.
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085300"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490097"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de verificação de planejamento de implantação do Office 365
 
@@ -37,7 +37,7 @@ Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Tarefas de implantação /Eventos** <br/> |**Data de início** <br/> |**Data de término** <br/> |**Recursos** <br/> |**Dependências** <br/> |
+|**Tarefas de implantação/Events** <br/> |**Data de início** <br/> |**Data de término** <br/> |**Resources** <br/> |**Dependências** <br/> |
 |**Determinar seus objetivos de implantação** <br/> |||||
 | Com seus participantes internos e externos:<br>  -Concordo no escopo e na linha do tempo <br>  -Concordo no mecanismo de controle do projeto  <br>  – desenvolver critérios de êxito e uma introdução de [comunicação](https://fasttrack.microsoft.com/office) / [com o Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventariar o ambiente atual e tomar decisões importantes de implantação** |||||
