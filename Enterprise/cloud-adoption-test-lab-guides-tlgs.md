@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: use estes Guias de Laboratório de Teste (TLGs) para adoção da nuvem para configurar ambientes de desenvolvimento/teste, de prova de conceito ou de demonstração para produtos do Office 365.'
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741167"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490227"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testar o Office 365 com os Guias de Laboratório de Teste (TLGs) para adoção da nuvem
 
@@ -40,7 +40,7 @@ Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os a
 
 Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 365:
   
-- [Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
+- [Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
     
     Crie uma intranet simplificada em execução nos serviços de infraestrutura do Microsoft Azure. Esta é uma etapa opcional se você quiser compilar uma configuração corporativa simulada.
     
@@ -48,7 +48,7 @@ Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 
     
     Crie uma assinatura de avaliação do Office 365 Enterprise E5, o que pode ser feito de seu computador ou de uma intranet simplificada em execução em serviços de infraestrutura do Azure.
     
-- [DirSync para seu ambiente de desenvolvimento/teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+- [DirSync para o ambiente de desenvolvimento/ teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
     
     Instale e configure o Azure AD Connect para a sincronização de diretório com a sincronização de hash de senha. Esta etapa é opcional se você quiser compilar uma configuração corporativa simulada.
     
@@ -58,19 +58,19 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
     
     Configure e teste a autenticação secundária para uma conta em sua assinatura do Office 365 usando uma mensagem de texto enviada ao seu smartphone.
     
-- [Identidade federada para o ambiente de desenvolvimento/teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
+- [Identidade federada para seu ambiente de desenvolvimento/teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a autenticação federada com as contas de um domínio do Active Directory Domain Services (AD DS).
     
-- [Segurança de Aplicativo na Nuvem para o ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
+- [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a Segurança no Aplicativo na Nuvem do Office 365, que permite a criação de políticas que monitoram e informam sobre atividades suspeitas em sua assinatura do Office 365.
     
-- [Proteção Avançada contra Ameaças para o ambiente de desenvolvimento/teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+- [Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento/teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     
     Configure e demonstre a Proteção Avançada contra Ameaças, que é um recurso da Proteção do Exchange Online (EOP) que ajuda a evitar malware em emails.
     
-- [Descoberta Eletrônica Avançada para o ambiente de desenvolvimento/teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
+- [Descoberta Eletrônica Avançada para o seu ambiente de desenvolvimento/teste do Office 365](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
     Adicione dados de exemplo e demonstre a Descoberta Eletrônica Avançada, que permite que você localize e analise rapidamente os dados armazenados no Office 365, incluindo email e documentos.
     
@@ -82,7 +82,7 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
     
     Demonstre como o cliente da Proteção de Informações do Azure pode ser usado para classificar os documentos com vários níveis de segurança.
     
-- [Site de equipe do SharePoint Online isolado no ambiente de desenvolvimento/teste](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Site de equipe do SharePoint Online isolado no seu ambiente de desenvolvimento/teste](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
     Demonstre como criar um site de equipe do SharePoint Online isolado do restante da organização para recursos sensíveis ou altamente confidenciais.
     
@@ -91,7 +91,7 @@ Para seu ambiente de desenvolvimento/teste do Office 365, use estes artigos para
 
 Você pode criar um ambiente de desenvolvimento/teste entre instalações, o que inclui uma rede virtual do Azure e uma rede local simulada, com estes artigos:
   
-- [Rede virtual simulada entre locais no Azure](simulated-cross-premises-virtual-network-in-azure.md)
+- [Rede virtual entre locais simulada no Azure](simulated-cross-premises-virtual-network-in-azure.md)
     
     Crie uma intranet simulada conectada a uma rede virtual do Azure em uma configuração de nuvem híbrida.
     
@@ -120,7 +120,7 @@ Crie um ambiente de desenvolvimento/teste para o [Microsoft 365 Enterprise](http
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

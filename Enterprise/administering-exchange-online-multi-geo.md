@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Saiba como administrar a configuração multigeográfica doExchange Online com o Microsoft PowerShell.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765043"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490877"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administrar caixas de correio do Exchange Online em um ambiente multigeográfico
 
@@ -42,7 +42,7 @@ Para conectar-se a uma localização geográfica específica, o parâmetro *Conn
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   Por exemplo, se olga@contoso.onmicrosoft.com for o endereço de email de uma caixa de correio válida na localização geográfica onde você deseja se conectar, execute o seguinte comando:
+   Por exemplo, se olga@contoso.onmicrosoft.com for o endereço de email de uma caixa de correio válida na localização geográfica que você deseja conectar, execute o seguinte comando:
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -86,7 +86,7 @@ Para ver as propriedades de uma caixa de correio, use a seguinte sintaxe:
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-Por exemplo, para ver as informações de localização geográfica da caixa de correio chris@contoso.onmicrosoft.com, execute o seguinte comando:
+Por exemplo, para ver as informações da localização geográfica da caixa de correio de chris@contoso.onmicrosoft.com, execute o seguinte comando:
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -124,7 +124,7 @@ Para modificar o valor **PreferredDataLocation** para um objeto de usuário apen
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoLocationCode>
 ```
 
-Por exemplo, para definir o valor **PreferredDataLocation** para a União Europeia (EUR) para o usuário michelle@contoso.onmicrosoft.com, execute o seguinte comando:
+Por exemplo, para configurar o valor **PreferredDataLocation** para a área geográfica União Europeia (UE) para o usuário michelle@contoso.onmicrosoft.com, execute o seguinte comando:
 
 ```powershell
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
@@ -168,7 +168,7 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 
 Este exemplo cria uma nova conta de usuário para Elizabeth Brunner com os seguintes valores:
 
-- Nome principal do usuário: ebrunner@contoso.onmicrosoft.com
+- Nome de usuário principal: ebrunner@contoso.onmicrosoft.com
 
 - Nome: Elizabeth
 
