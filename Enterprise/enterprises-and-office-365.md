@@ -1,5 +1,5 @@
 ---
-title: Empresas e o Office 365
+title: Organizações corporativas e o Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,109 +15,109 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
-description: Recursos para planejar e gerenciar o Office 365 para sua organização da empresa.
+description: Recursos para planejar e gerenciar o Office 365 para sua organização corporativa.
 ms.openlocfilehash: 7d28f68b0f33e02c9101abcac479d75675f1d0bc
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22539289"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33489675"
 ---
-# <a name="enterprise-organizations-and-office-365"></a><span data-ttu-id="fdab3-103">Empresas e o Office 365</span><span class="sxs-lookup"><span data-stu-id="fdab3-103">Enterprise organizations and Office 365</span></span>
+# <a name="enterprise-organizations-and-office-365"></a><span data-ttu-id="984c2-103">Organizações corporativas e o Office 365</span><span class="sxs-lookup"><span data-stu-id="984c2-103">Enterprise organizations and Office 365</span></span>
 
-<span data-ttu-id="fdab3-p101">Como uma grande organização com os profissionais de TI em sua equipe, você tem requisitos específicos e padrões para manter seu ambiente. Eis aqui as informações que necessárias para planejar e gerenciar o Office 365 para a sua empresa.</span><span class="sxs-lookup"><span data-stu-id="fdab3-p101">As a larger organization with IT professionals on staff, you have specific requirements and standards for maintaining your environment. Here's the information you need to plan for and manage Office 365 for your enterprise.</span></span>
+<span data-ttu-id="984c2-104">Como uma organização maior com profissionais de ti no pessoal, você tem requisitos e padrões específicos para manter seu ambiente.</span><span class="sxs-lookup"><span data-stu-id="984c2-104">As a larger organization with IT professionals on staff, you have specific requirements and standards for maintaining your environment.</span></span> <span data-ttu-id="984c2-105">Veja aqui as informações necessárias para planejar e gerenciar o Office 365 para sua empresa.</span><span class="sxs-lookup"><span data-stu-id="984c2-105">Here's the information you need to plan for and manage Office 365 for your enterprise.</span></span>
   
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d08b637c-66dc-4f0e-afc2-56da92e99589?autoplay=false]
   
-## <a name="key-resources"></a><span data-ttu-id="fdab3-106">Principais recursos</span><span class="sxs-lookup"><span data-stu-id="fdab3-106">Key resources</span></span>
+## <a name="key-resources"></a><span data-ttu-id="984c2-106">Recursos principais</span><span class="sxs-lookup"><span data-stu-id="984c2-106">Key resources</span></span>
 
-![FastTrack - símbolo olhos para envisioning](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
+![Símbolo do FastTrack-olho para a concepção](media/263443cf-d8bd-460b-ac46-a08323551f3f.png)
   
- <span data-ttu-id="fdab3-108">**Obter assistência do FastTrack**</span><span class="sxs-lookup"><span data-stu-id="fdab3-108">**Get assistance from FastTrack**</span></span>
+ <span data-ttu-id="984c2-108">**Obter assistência do FastTrack**</span><span class="sxs-lookup"><span data-stu-id="984c2-108">**Get assistance from FastTrack**</span></span>
   
-<span data-ttu-id="fdab3-109">Planejar a instalação, e migrar dados para o Office 365 com a Ajuda do FastTrack.</span><span class="sxs-lookup"><span data-stu-id="fdab3-109">Plan, setup, and migrate data to Office 365 with help from FastTrack.</span></span>
+<span data-ttu-id="984c2-109">Planejar, configurar e migrar dados para o Office 365 com a ajuda do FastTrack.</span><span class="sxs-lookup"><span data-stu-id="984c2-109">Plan, setup, and migrate data to Office 365 with help from FastTrack.</span></span>
   
-[<span data-ttu-id="fdab3-110">Obter o FastTrack</span><span class="sxs-lookup"><span data-stu-id="fdab3-110">Get on the FastTrack</span></span>](https://go.microsoft.com/fwlink/?linkid=238431)
+[<span data-ttu-id="984c2-110">Obter no FastTrack</span><span class="sxs-lookup"><span data-stu-id="984c2-110">Get on the FastTrack</span></span>](https://go.microsoft.com/fwlink/?linkid=238431)
   
 ![Símbolos de segurança e conformidade](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   
- <span data-ttu-id="fdab3-112">**Segurança &amp; conformidade**</span><span class="sxs-lookup"><span data-stu-id="fdab3-112">**Security &amp; Compliance**</span></span>
+ <span data-ttu-id="984c2-112">**Conformidade &amp; de segurança**</span><span class="sxs-lookup"><span data-stu-id="984c2-112">**Security &amp; Compliance**</span></span>
   
-<span data-ttu-id="fdab3-113">Proteger os dados e cumprir os padrões legais ou normativos.</span><span class="sxs-lookup"><span data-stu-id="fdab3-113">Protect your data and comply with legal or regulatory standards.</span></span>
+<span data-ttu-id="984c2-113">Proteger seus dados e cumprir padrões legais ou normativos.</span><span class="sxs-lookup"><span data-stu-id="984c2-113">Protect your data and comply with legal or regulatory standards.</span></span>
   
-[<span data-ttu-id="fdab3-114">Visão geral da segurança &amp; conformidade no Office 365</span><span class="sxs-lookup"><span data-stu-id="fdab3-114">Overview of security &amp; compliance in Office 365</span></span>](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[<span data-ttu-id="984c2-114">Visão geral da &amp; conformidade de segurança no Office 365</span><span class="sxs-lookup"><span data-stu-id="984c2-114">Overview of security &amp; compliance in Office 365</span></span>](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
-![Símbolos de nuvem e arquitetura](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
+![Símbolos de nuvem e de arquitetura](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
- <span data-ttu-id="fdab3-116">**Entender a arquitetura de nuvem**</span><span class="sxs-lookup"><span data-stu-id="fdab3-116">**Understand cloud architecture**</span></span>
+ <span data-ttu-id="984c2-116">**Entender a arquitetura da nuvem**</span><span class="sxs-lookup"><span data-stu-id="984c2-116">**Understand cloud architecture**</span></span>
   
-<span data-ttu-id="fdab3-117">Explore cartazes de arquitetura sobre nuvem empresarial.</span><span class="sxs-lookup"><span data-stu-id="fdab3-117">Explore architecture posters about the Enterprise Cloud.</span></span>
+<span data-ttu-id="984c2-117">Explore os pôsteres de arquitetura sobre a nuvem empresarial.</span><span class="sxs-lookup"><span data-stu-id="984c2-117">Explore architecture posters about the Enterprise Cloud.</span></span>
   
-[<span data-ttu-id="fdab3-118">Obter cartazes</span><span class="sxs-lookup"><span data-stu-id="fdab3-118">Get posters</span></span>](https://aka.ms/cloudarch)
+[<span data-ttu-id="984c2-118">Obter cartazes</span><span class="sxs-lookup"><span data-stu-id="984c2-118">Get posters</span></span>](https://aka.ms/cloudarch)
   
-<span data-ttu-id="fdab3-119">[![Um gancho de peixe selecionar um documento em uma tela (ataque de phishing)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span><span class="sxs-lookup"><span data-stu-id="fdab3-119">[![A fish hook snagging a document on a screen (phishing attack)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span></span>
+<span data-ttu-id="984c2-119">[![Um gancho de peixe snagging um documento em uma tela (ataque de phishing)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span><span class="sxs-lookup"><span data-stu-id="984c2-119">[![A fish hook snagging a document on a screen (phishing attack)](media/dc32a996-623a-400c-9b7a-ed1b89a56948.png)](https://aka.ms/commonattacks)</span></span>
   
- <span data-ttu-id="fdab3-120">**Saiba mais sobre os ataques comuns**</span><span class="sxs-lookup"><span data-stu-id="fdab3-120">**Learn about common attacks**</span></span>
+ <span data-ttu-id="984c2-120">**Saiba mais sobre ataques comuns**</span><span class="sxs-lookup"><span data-stu-id="984c2-120">**Learn about common attacks**</span></span>
   
-<span data-ttu-id="fdab3-121">Saiba como a Microsoft pode ajudar a proteger a sua organização.</span><span class="sxs-lookup"><span data-stu-id="fdab3-121">Learn how Microsoft can help protect your organization.</span></span>
+<span data-ttu-id="984c2-121">Saiba como a Microsoft pode ajudar a proteger sua organização.</span><span class="sxs-lookup"><span data-stu-id="984c2-121">Learn how Microsoft can help protect your organization.</span></span>
   
-[<span data-ttu-id="fdab3-122">Baixar o cartaz</span><span class="sxs-lookup"><span data-stu-id="fdab3-122">Download the poster</span></span>](https://aka.ms/commonattacks)
+[<span data-ttu-id="984c2-122">Baixar o cartaz</span><span class="sxs-lookup"><span data-stu-id="984c2-122">Download the poster</span></span>](https://aka.ms/commonattacks)
   
-## <a name="training-for-it-pros"></a><span data-ttu-id="fdab3-123">Treinamento para profissionais de TI</span><span class="sxs-lookup"><span data-stu-id="fdab3-123">Training for IT Pros</span></span>
+## <a name="training-for-it-pros"></a><span data-ttu-id="984c2-123">Treinamento para profissionais de ti</span><span class="sxs-lookup"><span data-stu-id="984c2-123">Training for IT Pros</span></span>
 
-![IT Pro treinamento do LinkedIn Learning](media/b951eac7-9d99-42b5-86a3-3058a6445077.png)
+![Treinamento para profissionais de ti do LinkedIn Learning](media/b951eac7-9d99-42b5-86a3-3058a6445077.png)
   
- <span data-ttu-id="fdab3-125">**IT Pro treinamento**</span><span class="sxs-lookup"><span data-stu-id="fdab3-125">**IT Pro training**</span></span>
+ <span data-ttu-id="984c2-125">**Treinamento para profissionais de ti**</span><span class="sxs-lookup"><span data-stu-id="984c2-125">**IT Pro training**</span></span>
   
-<span data-ttu-id="fdab3-126">Descobrir cursos gratuitos de vídeos levados a você pelo aprendizado LinkedIn.</span><span class="sxs-lookup"><span data-stu-id="fdab3-126">Discover free video courses brought to you by LinkedIn Learning.</span></span>
+<span data-ttu-id="984c2-126">Descubra cursos de vídeo gratuitos trazidos para você pelo LinkedIn Learning.</span><span class="sxs-lookup"><span data-stu-id="984c2-126">Discover free video courses brought to you by LinkedIn Learning.</span></span>
   
-[<span data-ttu-id="fdab3-127">Treinamento avançado</span><span class="sxs-lookup"><span data-stu-id="fdab3-127">Advanced training</span></span>](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
+[<span data-ttu-id="984c2-127">Treinamento avançado</span><span class="sxs-lookup"><span data-stu-id="984c2-127">Advanced training</span></span>](https://support.office.com/article/68cc9b95-0bdc-491e-a81f-ee70b3ec63c5.aspx)
   
-![Certificados do Microsoft Learning: MTA, MCSE, MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
+![Certificações do Microsoft Learning: MTA, MCSE, MCSA](media/8eab3b6a-5aff-423c-9c57-fd078fdebca8.png)
   
- <span data-ttu-id="fdab3-129">**Microsoft Learning**</span><span class="sxs-lookup"><span data-stu-id="fdab3-129">**Microsoft Learning**</span></span>
+ <span data-ttu-id="984c2-129">**Microsoft Learning**</span><span class="sxs-lookup"><span data-stu-id="984c2-129">**Microsoft Learning**</span></span>
   
-<span data-ttu-id="fdab3-130">Treinamento do Office 365 e certificação para profissionais de TI.</span><span class="sxs-lookup"><span data-stu-id="fdab3-130">Office 365 training and certification for IT Professionals.</span></span>
+<span data-ttu-id="984c2-130">Treinamento e certificação do Office 365 para profissionais de ti.</span><span class="sxs-lookup"><span data-stu-id="984c2-130">Office 365 training and certification for IT Professionals.</span></span>
   
-[<span data-ttu-id="fdab3-131">Treinamento popular</span><span class="sxs-lookup"><span data-stu-id="fdab3-131">Popular training</span></span>](https://go.microsoft.com/fwlink/?linkid=826247)
+[<span data-ttu-id="984c2-131">Treinamento popular</span><span class="sxs-lookup"><span data-stu-id="984c2-131">Popular training</span></span>](https://go.microsoft.com/fwlink/?linkid=826247)
   
 ![Microsoft Virtual Academy](media/1bced083-acd6-4705-9f22-22009166a5d7.png)
   
- <span data-ttu-id="fdab3-133">**Academia virtual**</span><span class="sxs-lookup"><span data-stu-id="fdab3-133">**Virtual Academy**</span></span>
+ <span data-ttu-id="984c2-133">**Virtual Academy**</span><span class="sxs-lookup"><span data-stu-id="984c2-133">**Virtual Academy**</span></span>
   
-<span data-ttu-id="fdab3-134">Aprenda com especialistas da Microsoft Virtual Academy.</span><span class="sxs-lookup"><span data-stu-id="fdab3-134">Learn from the experts at Microsoft Virtual Academy.</span></span>
+<span data-ttu-id="984c2-134">Aprenda com os especialistas da Microsoft Virtual Academy.</span><span class="sxs-lookup"><span data-stu-id="984c2-134">Learn from the experts at Microsoft Virtual Academy.</span></span>
   
-[<span data-ttu-id="fdab3-135">Procurar cursos</span><span class="sxs-lookup"><span data-stu-id="fdab3-135">Browse courses</span></span>](https://go.microsoft.com/fwlink/?linkid=826248)
+[<span data-ttu-id="984c2-135">Procurar cursos</span><span class="sxs-lookup"><span data-stu-id="984c2-135">Browse courses</span></span>](https://go.microsoft.com/fwlink/?linkid=826248)
   
-![certificado edX University](media/c52ff863-94fa-4d6e-b91f-f9057956a7b0.png)
+![certificado universitário edX](media/c52ff863-94fa-4d6e-b91f-f9057956a7b0.png)
   
- <span data-ttu-id="fdab3-137">**Universidade edX**</span><span class="sxs-lookup"><span data-stu-id="fdab3-137">**edX University**</span></span>
+ <span data-ttu-id="984c2-137">**Universidade edX**</span><span class="sxs-lookup"><span data-stu-id="984c2-137">**edX University**</span></span>
   
-<span data-ttu-id="fdab3-138">Experiências de aprendizado online personalizado para profissionais de TI do Office 365.</span><span class="sxs-lookup"><span data-stu-id="fdab3-138">Self-paced online learning experiences for Office 365 IT Pros.</span></span>
+<span data-ttu-id="984c2-138">Experiências de aprendizado online individualizadas para profissionais de ti do Office 365.</span><span class="sxs-lookup"><span data-stu-id="984c2-138">Self-paced online learning experiences for Office 365 IT Pros.</span></span>
   
-[<span data-ttu-id="fdab3-139">Inscrever-se agora</span><span class="sxs-lookup"><span data-stu-id="fdab3-139">Enroll now</span></span>](https://go.microsoft.com/fwlink/?linkid=852994)
+[<span data-ttu-id="984c2-139">Registrar agora</span><span class="sxs-lookup"><span data-stu-id="984c2-139">Enroll now</span></span>](https://go.microsoft.com/fwlink/?linkid=852994)
   
-## <a name="featured-articles"></a><span data-ttu-id="fdab3-140">Artigos em destaque</span><span class="sxs-lookup"><span data-stu-id="fdab3-140">Featured articles</span></span>
+## <a name="featured-articles"></a><span data-ttu-id="984c2-140">Artigos em destaque</span><span class="sxs-lookup"><span data-stu-id="984c2-140">Featured articles</span></span>
 
-[<span data-ttu-id="fdab3-141">Contate o suporte para produtos de negócios - ajuda de Admin</span><span class="sxs-lookup"><span data-stu-id="fdab3-141">Contact support for business products - Admin Help</span></span>](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+[<span data-ttu-id="984c2-141">Contatar o suporte para produtos empresariais – Ajuda para Administradores</span><span class="sxs-lookup"><span data-stu-id="984c2-141">Contact support for business products - Admin Help</span></span>](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
-[<span data-ttu-id="fdab3-142">Implantar o novo cliente de sincronização do OneDrive para Windows</span><span class="sxs-lookup"><span data-stu-id="fdab3-142">Deploy the new OneDrive sync client for Windows</span></span>](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
+[<span data-ttu-id="984c2-142">Implantar o novo cliente de sincronização do OneDrive para Windows</span><span class="sxs-lookup"><span data-stu-id="984c2-142">Deploy the new OneDrive sync client for Windows</span></span>](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
   
-[<span data-ttu-id="fdab3-143">Maneiras de migrar várias contas de email para o Office 365</span><span class="sxs-lookup"><span data-stu-id="fdab3-143">Ways to migrate multiple email accounts to Office 365</span></span>](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
+[<span data-ttu-id="984c2-143">Formas de migrar várias contas de email para o Office 365</span><span class="sxs-lookup"><span data-stu-id="984c2-143">Ways to migrate multiple email accounts to Office 365</span></span>](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
   
-[<span data-ttu-id="fdab3-144">Atualizar a partir de clientes e servidores do Office 2010</span><span class="sxs-lookup"><span data-stu-id="fdab3-144">Upgrade from Office 2010 servers and clients</span></span>](upgrade-from-office-2010-servers-and-products.md)
+[<span data-ttu-id="984c2-144">Atualização de clientes e servidores do Office 2010</span><span class="sxs-lookup"><span data-stu-id="984c2-144">Upgrade from Office 2010 servers and clients</span></span>](upgrade-from-office-2010-servers-and-products.md)
   
-[<span data-ttu-id="fdab3-145">Supervisores de implantação para serviços do Office 365</span><span class="sxs-lookup"><span data-stu-id="fdab3-145">Deployment advisors for Office 365 services</span></span>](deployment-advisors-for-office-365.md)
+[<span data-ttu-id="984c2-145">Supervisores de implantação para serviços do Office 365</span><span class="sxs-lookup"><span data-stu-id="984c2-145">Deployment advisors for Office 365 services</span></span>](deployment-advisors-for-office-365.md)
   
- <span data-ttu-id="fdab3-146">**Treinamento para usuários finais**</span><span class="sxs-lookup"><span data-stu-id="fdab3-146">**Training for end users**</span></span>
+ <span data-ttu-id="984c2-146">**Treinamento para usuários finais**</span><span class="sxs-lookup"><span data-stu-id="984c2-146">**Training for end users**</span></span>
   
-[<span data-ttu-id="fdab3-147">Treinamento de produtividade do Office 365</span><span class="sxs-lookup"><span data-stu-id="fdab3-147">Office 365 productivity training</span></span>](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
+[<span data-ttu-id="984c2-147">Treinamento de produtividade do Office 365</span><span class="sxs-lookup"><span data-stu-id="984c2-147">Office 365 productivity training</span></span>](https://support.office.com/article/af07cb6b-980d-4f33-8599-322582767408)
   
-[<span data-ttu-id="fdab3-148">Vídeo: O que é o Office 365?</span><span class="sxs-lookup"><span data-stu-id="fdab3-148">Video: What is Office 365?</span></span>](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
+[<span data-ttu-id="984c2-148">Vídeo: o que é o Office 365?</span><span class="sxs-lookup"><span data-stu-id="984c2-148">Video: What is Office 365?</span></span>](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b)
   
- <span data-ttu-id="fdab3-149">**Recursos de desenvolvimento**</span><span class="sxs-lookup"><span data-stu-id="fdab3-149">**Development resources**</span></span>
+ <span data-ttu-id="984c2-149">**Recursos de desenvolvimento**</span><span class="sxs-lookup"><span data-stu-id="984c2-149">**Development resources**</span></span>
   
-[<span data-ttu-id="fdab3-150">Centro de Desenvolvimento do Office</span><span class="sxs-lookup"><span data-stu-id="fdab3-150">Office Dev Center</span></span>](https://go.microsoft.com/fwlink/?linkid=615418)
+[<span data-ttu-id="984c2-150">Centro de Desenvolvedores do Office</span><span class="sxs-lookup"><span data-stu-id="984c2-150">Office Dev Center</span></span>](https://go.microsoft.com/fwlink/?linkid=615418)
   
 
