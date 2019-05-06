@@ -3,7 +3,7 @@ title: URL do serviço Web e endereço IP do Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 5/1/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para você identificar e diferenciar melhor o tráfego de rede do Office 365, um novo serviço Web publica pontos de extremidade do Office 365, permitindo avaliar, configurar e se manter atualizado em relação às alterações com mais facilidade. Esse novo serviço Web substitui os arquivos XML para download que estão disponíveis atualmente.
-ms.openlocfilehash: 8dedb88c830d51d9d2cf16df783be75fc9d66450
-ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
+ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
+ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497693"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33512677"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>URL do serviço Web e endereço IP do Office 365
 
@@ -180,7 +180,7 @@ Os parâmetros para o método da Web de pontos de extremidade são:
 - **NoIPv6=<true | false>** - Defina como true para excluir endereços IPv6 dos resultados; por exemplo, se você não usar o IPv6 em sua rede.
 - **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - Este parâmetro obrigatório especifica a instância para a qual retornar os terminais. As instâncias válidas são: em todo o mundo, China, Alemanha, USGovDoD, USGovGCCHigh.
 
-Se você chamar o método da Web de pontos de extremidade um grande número de vezes a partir do mesmo endereço IP do cliente, você poderá receber o código de resposta HTTP 429 (Excesso de solicitações). A maioria das pessoas nunca verá isso. Se você receber esse código de resposta, espere 1 hora antes de chamar o método novamente. Planeje chamar apenas o método da Web de pontos de extremidade quando o método da web de versão indicar que há uma nova versão disponível.
+Se você chamar o método da Web de pontos de extremidade um grande número de vezes a partir do mesmo endereço IP do cliente, poderá receber o código de resposta HTTP 429 (Excesso de solicitações). A maioria das pessoas nunca verá isso. Se você receber esse código de resposta, aguarde uma hora antes de repetir sua solicitação. Planeje chamar apenas o método da Web de pontos de extremidade quando o método da web de versão indicar que há uma nova versão disponível.
 
 O resultado do método Web de pontos de extremidade é uma matriz de registros com cada registro representando um conjunto de pontos de extremidade. Os elementos de cada registro são:
 
@@ -227,7 +227,6 @@ Esse URI obtém todos os pontos de extremidade da instância do Office 365 em to
    [
     "*.mail.protection.outlook.com"
    ],
-...
 ```
 
 Os conjuntos de ponto de extremidade adicionais não são incluídos neste exemplo.
@@ -244,9 +243,9 @@ O método Web de alterações retorna as atualizações mais recentes publicadas
 
 O parâmetro necessário para o método da web de alterações é:
 
-- **Version=<YYYYMMDDNN>** - Parâmetro de rota de URL obrigatório. Este valor deve ser a versão que você tem implementada atualmente. O serviço da Web retornará as alterações desde essa versão. O formato é _AAAAMMDDNN_.
+- **Version=\<YYYYMMDDNN>** - Parâmetro de rota de URL obrigatório. Este valor deve ser a versão que você tem implementada atualmente. O serviço da Web retornará as alterações desde essa versão. O formato é _YYYYMMDDNN_, onde _NN_ são zeros. O serviço da web requer que este parâmetro contenha exatamente 10 dígitos.
 
-O método de alterações da Web é limitado por taxa da mesma forma como o método Web de pontos de extremidade. Se você receber um código da resposta HTTP 429 em seguida, você deve esperar 1 hora antes de chamar novamente.
+O método da Web de alterações é limitado por taxa da mesma forma que o método da web de pontos de extremidade. Se você receber um código de resposta HTTP 429, espere 1 hora antes de repetir sua solicitação.
 
 O resultado do método Web de alterações é uma matriz de registros com cada registro representando uma alteração em uma versão específica dos pontos de extremidade. Os elementos de cada registro são:
 
@@ -255,7 +254,7 @@ O resultado do método Web de alterações é uma matriz de registros com cada r
 - disposição - Pode ser de alteração, adição ou remoção e descreve o que a alteração fez no registro do conjunto de pontos de extremidade.
 - impacto – nem todas as alterações serão igualmente importantes para todo ambiente. Isso descreve o impacto esperado em um ambiente de perímetro de rede corporativa como resultado dessa alteração. Esse atributo está incluído somente nos registros de alteração da versão 2018112800 e versões posteriores. As opções para o impacto são:
   - AddedIp – um endereço de IP foi adicionado ao Office 365 e estará ativo no serviço em breve. Isso representa uma alteração que você precisa realizar em um firewall ou em outro dispositivo de perímetro de rede de camada 3. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
-  - AddedIp – Uma URL foi adicionada ao Office 365 e estará ativa no serviço em breve. Isso representa uma alteração que você precisa realizar em um servidor proxy ou dispositivos de análise de perímetro URL. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
+  - AddedUrl - Uma URL foi adicionada ao Office 365 e será exibida no serviço em breve. Isso representa uma mudança que você precisa fazer em um servidor de proxy ou dispositivo de perímetro de rede de análise de URL. Se você não adicionar isso antes de começar a usá-lo, talvez haja uma interrupção.
   - AddedIpAndUrl - um endereço de IP e URL foram adicionados. Isso representa uma alteração que você precisa realizar em um dispositivo de camada 3 firewall ou em um servidor proxy ou dispositivo de análise da URL. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
   - RemovedIpOrUrl, pelo menos um endereço IP ou URL foi removido do Office 365. Você deve remover os pontos de extremidade de rede nos seus dispositivos de perímetro, mas não há nenhuma data limite para você fazer isso.
   - ChangedIsExpressRoute – o atributo de suporte do ExpressRoute foi modificado. Se você usar o ExpressRoute será necessário tomar medidas dependendo da configuração.
@@ -263,8 +262,8 @@ O resultado do método Web de alterações é uma matriz de registros com cada r
   - RemovedDuplicateIpOrUrl – Removemos um endereço IP ou uma Url duplicados, mas ele ainda é publicado para o Office 365. Geralmente, nenhuma ação é necessária.
   - OtherNonPriorityChanges – alteramos algo menos crítico que todas as opções como um campo de anotações
 - version – a versão do conjunto de pontos de extremidade em que a alteração foi introduzida. Os números de versões estão no formato _AAAAMMDDNN_, em que NN é um número natural incrementado caso existam várias versões a serem publicadas em um único dia.
-- previous – uma estrutura que detalha valores anteriores de elementos alterados no conjunto de pontos de extremidade. Isso não será incluído em novos conjuntos de pontos de extremidade adicionados. Inclui tcpPorts, udpPorts, ExpressRoute, categoria, obrigatório, observações.
-- atual - Uma subestrutura detalhando valores atualizados de elementos de alterações no conjunto de pontos de extremidade. Inclui _tcpPorts_, _udpPorts_, _ExpressRoute_, _categoria_, _obrigatório_ e _anotações_.
+- previous - Uma subestrutura detalhando os valores anteriores de elementos alterados no conjunto de pontos de extremidade. Isso não será incluído para conjuntos de pontos de extremidade recém-adicionados. Inclui _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ e _notes_.
+- current - Uma subestrutura detalhando valores atualizados de elementos de alterações no conjunto de pontos de extremidade. Inclui _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ e _notes_.
 - add – uma subestrutura que detalha os itens a serem adicionados às coleções do conjunto de pontos de extremidade. Omitida caso não haja nenhuma adição.
   - effectiveDate – define os dados de quando as adições estarão disponíveis no serviço.
   - ips - Itens a serem adicionados à matriz _ips_.
@@ -311,7 +310,6 @@ Solicita todas as alterações anteriores da instância do serviço do Office 36
    {
     "ips":
      [
-...
 ```
 
 Exemplo 2 de URI de solicitação: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
