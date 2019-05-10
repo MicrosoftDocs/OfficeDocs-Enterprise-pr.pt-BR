@@ -65,7 +65,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 -->
   
 <a name="cloudarch"></a>
-<span data-ttu-id="789bd-128">## Série Microsoft Cloud para arquitetos corporativos</span><span class="sxs-lookup"><span data-stu-id="789bd-128">## Microsoft cloud for enterprise architects series</span></span>
+## <span data-ttu-id="789bd-128">Série Microsoft Cloud para arquitetos corporativos</span><span class="sxs-lookup"><span data-stu-id="789bd-128">Microsoft cloud for enterprise architects series</span></span>
 
 <span data-ttu-id="789bd-p105">Esses cartazes de arquitetura em nuvem proporcionam informações sobre os serviços em nuvem da Microsoft, incluindo o Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança.</span><span class="sxs-lookup"><span data-stu-id="789bd-p105">These cloud architecture posters give you information about Microsoft cloud services, including Office 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online, and hybrid on-premises and cloud solutions. IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as identity and security.</span></span>
 
@@ -82,7 +82,7 @@ Learn key differences between Microsoft cloud services and platform offerings. F
 
    
 <a name="identity"></a>
-<span data-ttu-id="789bd-131">### Identidade do Microsoft Cloud para arquitetos corporativos</span><span class="sxs-lookup"><span data-stu-id="789bd-131">### Microsoft cloud identity for enterprise architects</span></span>
+### <span data-ttu-id="789bd-131">Identidade do Microsoft Cloud para arquitetos corporativos</span><span class="sxs-lookup"><span data-stu-id="789bd-131">Microsoft cloud identity for enterprise architects</span></span>
 
 <span data-ttu-id="789bd-132">O que os arquitetos de TI precisam saber sobre a criação de identidade para organizações que usam plataformas e serviços em nuvem da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="789bd-132">What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.</span></span>
   
@@ -137,7 +137,7 @@ How Santa and his elves use Microsoft's cloud offerings to make their annual del
 |[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
    
 <a name="BKMK_o365solutions"></a>
-<span data-ttu-id="789bd-189">## Série de solução do Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="789bd-189">## Microsoft 365 enterprise solution series</span></span>
+## <span data-ttu-id="789bd-189">Série de solução do Microsoft 365 Enterprise</span><span class="sxs-lookup"><span data-stu-id="789bd-189">Microsoft 365 enterprise solution series</span></span>
 
 <span data-ttu-id="789bd-190">A série de solução do Microsoft 365 Enterprise fornece orientações para a implementação de recursos do Microsoft 365, especialmente quando os recursos e as tecnologias se encontram.</span><span class="sxs-lookup"><span data-stu-id="789bd-190">The Microsoft 365 enterprise solution series provides guidance for implementing Microsoft 365 capabilities, especially where capabilities cross technologies.</span></span>
 
