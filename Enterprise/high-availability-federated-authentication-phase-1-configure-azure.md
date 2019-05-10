@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumo: Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.'
-ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487419"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867706"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: configurar o Azure
 
@@ -218,6 +218,7 @@ Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet2Name -Addre
 New-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName -Location $locShortName
 $nsg=Get-AzNetworkSecurityGroup -Name $subnet3Name -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $subnet3Name -AddressPrefix $subnet3Prefix -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Em seguida, use estes comandos para criar os gateways para a conexão VPN site a site.
@@ -254,7 +255,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> A autenticação federada de usuários individuais não confia em nenhum recurso local. No enTanto, se esta conexão VPN de site a site ficar indisponível, os controladores de domínio no VNet não receberão atualizações para contas de usuário e grupos feitos nos serviços de domínio do Active Directory local. Para garantir que isso não aconteça, é possível configurar a alta disponibilidade para a conexão VPN site a site. Veja mais informações em [Conectividade VNet para VNet e entre instalações altamente disponível](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> A autenticação federada de usuários individuais não confia em nenhum recurso local. No entanto, se esta conexão VPN de site a site ficar indisponível, os controladores de domínio no VNet não receberão atualizações para contas de usuário e grupos feitos nos serviços de domínio do Active Directory local. Para garantir que isso não aconteça, é possível configurar a alta disponibilidade para a conexão VPN site a site. Veja mais informações em [Conectividade VNet para VNet e entre instalações altamente disponível](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Em seguida, registre o endereço IPv4 público do gateway de VPN do Azure para a sua rede virtual na exibição deste comando:
   

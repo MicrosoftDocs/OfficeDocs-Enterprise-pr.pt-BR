@@ -3,7 +3,7 @@ title: URL do serviço Web e endereço IP do Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/1/2019
+ms.date: 5/7/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para você identificar e diferenciar melhor o tráfego de rede do Office 365, um novo serviço Web publica pontos de extremidade do Office 365, permitindo avaliar, configurar e se manter atualizado em relação às alterações com mais facilidade. Esse novo serviço Web substitui os arquivos XML para download que estão disponíveis atualmente.
-ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
-ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
+ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33512677"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655785"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>URL do serviço Web e endereço IP do Office 365
 
@@ -122,7 +122,6 @@ Esse URI retorna a última versão da instância de serviço especificada do Off
  "instance": "Worldwide",
  "latest": "2018063000"
 }
-
 ```
 
 Exemplo 3 de URI de solicitação: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
@@ -166,7 +165,6 @@ Este URI mostra um RSS feed das versões publicadas que contêm links para a lis
 <link>https://endpoints.office.com/changes/Worldwide/2018080200?singleVersion&clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7</link> <description>Version 2018080200 includes 2 changes. IPs: 2 added and 0 removed.</description>
 <pubDate>Thu, 02 Aug 2018 00:00:00 Z</pubDate>
 </item>
-...
 ```
 
 ## <a name="endpoints-web-method"></a>Método da Web de pontos de extremidade
@@ -178,7 +176,7 @@ Os parâmetros para o método da Web de pontos de extremidade são:
 - **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - Uma lista de áreas de serviço separadas por vírgulas. Os itens válidos são _Common_, _Exchange_, _SharePoint_ e _Skype_. Como os itens da área de serviço comum são um pré-requisito para todas as outras áreas de serviço, o serviço da Web sempre os incluirá. Se você não incluir esse parâmetro, todas as áreas de serviço serão retornadas.
 - **TenantName=<tenant_name>** - Seu nome de locatário do Office 365. O serviço da web insere o seu nome fornecido em partes de URLs que incluem o nome do locatário. Se você não fornecer um nome de locatário, essas partes das URLs terão o caractere curinga (\*).
 - **NoIPv6=<true | false>** - Defina como true para excluir endereços IPv6 dos resultados; por exemplo, se você não usar o IPv6 em sua rede.
-- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - Este parâmetro obrigatório especifica a instância para a qual retornar os terminais. As instâncias válidas são: em todo o mundo, China, Alemanha, USGovDoD, USGovGCCHigh.
+- **Instance=<Worldwide | China | Germany | USGovDoD | USGovGCCHigh>** - Este parâmetro obrigatório especifica a instância para a qual retornar os terminais. As instâncias válidas são: _Mundialmente_, _China_, _Alemanha_, _USGovDoD_ e _USGovGCCHigh_.
 
 Se você chamar o método da Web de pontos de extremidade um grande número de vezes a partir do mesmo endereço IP do cliente, poderá receber o código de resposta HTTP 429 (Excesso de solicitações). A maioria das pessoas nunca verá isso. Se você receber esse código de resposta, aguarde uma hora antes de repetir sua solicitação. Planeje chamar apenas o método da Web de pontos de extremidade quando o método da web de versão indicar que há uma nova versão disponível.
 
@@ -243,7 +241,7 @@ O método Web de alterações retorna as atualizações mais recentes publicadas
 
 O parâmetro necessário para o método da web de alterações é:
 
-- **Version=\<YYYYMMDDNN>** - Parâmetro de rota de URL obrigatório. Este valor deve ser a versão que você tem implementada atualmente. O serviço da Web retornará as alterações desde essa versão. O formato é _YYYYMMDDNN_, onde _NN_ são zeros. O serviço da web requer que este parâmetro contenha exatamente 10 dígitos.
+- **Version=\<YYYYMMDDNN>** - Parâmetro de rota de URL obrigatório. Este valor deve ser a versão que você tem implementada atualmente. O serviço da Web retornará as alterações desde essa versão. O formato é _YYYYMMDDNN_, em que _NN_ é um número natural incrementado, se houver várias versões que precisem ser publicadas em um único dia, com _00_ representando a primeira atualização de um determinado dia. O serviço da web requer que o parâmetro de _versão_ contenha exatamente 10 dígitos.
 
 O método da Web de alterações é limitado por taxa da mesma forma que o método da web de pontos de extremidade. Se você receber um código de resposta HTTP 429, espere 1 hora antes de repetir sua solicitação.
 
@@ -252,7 +250,7 @@ O resultado do método Web de alterações é uma matriz de registros com cada r
 - id – a ID imutável do registro de alterações.
 - endpointSetId - O ID do registro do conjunto de pontos de extremidade que é alterado.
 - disposição - Pode ser de alteração, adição ou remoção e descreve o que a alteração fez no registro do conjunto de pontos de extremidade.
-- impacto – nem todas as alterações serão igualmente importantes para todo ambiente. Isso descreve o impacto esperado em um ambiente de perímetro de rede corporativa como resultado dessa alteração. Esse atributo está incluído somente nos registros de alteração da versão 2018112800 e versões posteriores. As opções para o impacto são:
+- impacto - Nem todas as alterações serão igualmente importantes para todos os ambientes. Isso descreve o impacto esperado para um ambiente de perímetro de rede corporativa como resultado dessa alteração. Este atributo está incluído apenas nos registros de alterações da versão **2018112800** e posterior. As opções para o impacto são:
   - AddedIp – um endereço de IP foi adicionado ao Office 365 e estará ativo no serviço em breve. Isso representa uma alteração que você precisa realizar em um firewall ou em outro dispositivo de perímetro de rede de camada 3. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
   - AddedUrl - Uma URL foi adicionada ao Office 365 e será exibida no serviço em breve. Isso representa uma mudança que você precisa fazer em um servidor de proxy ou dispositivo de perímetro de rede de análise de URL. Se você não adicionar isso antes de começar a usá-lo, talvez haja uma interrupção.
   - AddedIpAndUrl - um endereço de IP e URL foram adicionados. Isso representa uma alteração que você precisa realizar em um dispositivo de camada 3 firewall ou em um servidor proxy ou dispositivo de análise da URL. Se você não adicionar isso antes de começar a usá-lo, você pode observar uma interrupção.
@@ -508,11 +506,8 @@ Para usar este módulo, simplesmente copie o arquivo de módulo [O365EndpointFun
 Depois de importar o módulo, você poderá chamar o serviço REST. Isso retornará o URI como uma coleção que você pode processar diretamente no PowerShell. Você deve inserir o nome do seu locatário do Office 365, conforme descrito no seguinte comando:
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant]
+    Invoke-O365EndpointService -tenantName [Name of your tenant]
 ```
-
-> [!NOTE]
-> A escrita correta do cmdlet é **Invoke-O365EnpointService**, sem a letra _d_. Este não é um erro tipográfico.
 
 #### <a name="parameters"></a>Parâmetros
 
@@ -525,13 +520,13 @@ Depois de importar o módulo, você poderá chamar o serviço REST. Isso retorna
 Retornar a lista completa de todos os URIs, incluindo os endereços IPv6
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
 ```
 
 Retornar somente os endereços IP para o serviço do Exchange Online
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
 ```
 
 ### <a name="exporting-a-proxy-pac-file"></a>Exportando um arquivo Proxy PAC
@@ -539,7 +534,7 @@ Retornar somente os endereços IP para o serviço do Exchange Online
 Você pode usar este módulo para criar um arquivo Proxy PAC. Neste exemplo, você primeiro obtém os pontos de extremidade e filtra o resultado para selecionar as URLs. Estas URLs são direcionadas para serem exportadas.  
 
 ```powershell
- Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+ Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
 ```
 
 ## <a name="related-topics"></a>Tópicos Relacionados

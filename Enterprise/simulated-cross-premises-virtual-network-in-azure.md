@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Resumo: crie uma rede virtual simulada entre locais no Microsoft Azure como um ambiente de desenvolvimento/teste.'
-ms.openlocfilehash: 57262ee58f539fffbb0fc5b92c3a24f4c9204293
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 1eefbf94549d8af927d93a554418cb2642d1b447
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741207"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867716"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Rede virtual simulada entre locais no Azure
 
@@ -117,6 +117,7 @@ New-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName -Location 
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -Name XPrem
 $nsg=Get-AzNetworkSecurityGroup -Name "Testnet" -ResourceGroupName $rgName
 Set-AzVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name "Testnet" -AddressPrefix 192.168.0.0/24 -NetworkSecurityGroup $nsg
+$vnet | Set-AzVirtualNetwork
 ```
 
 Depois, crie a relação de emparelhamento de VNets entre as VNets TestLab e XPrem com estes comandos.
@@ -211,18 +212,18 @@ Seu ambiente simulado de nuvem híbrida do Azure já está pronto para testes.
 
 Use este ambiente de desenvolvimento/teste para simular um [farm de Intranet do SharePoint Server 2016 hospedado no Azure ](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx).
   
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
 
-[Ambiente de desenvolvimento/teste para a Configuração Base](base-configuration-dev-test-environment.md)
+[Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[DirSync para seu ambiente de desenvolvimento e teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
+[DirSync para o ambiente de desenvolvimento/ teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
   
 [Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento e teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[Proteção Avançada contra Ameaças para seu ambiente de desenvolvimento/teste do Office 365](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 
