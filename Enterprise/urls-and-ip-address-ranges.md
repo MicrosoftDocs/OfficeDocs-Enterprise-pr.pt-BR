@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumo: o Office 365 requer conectividade com a Internet. Os pontos de extremidade abaixo devem estar acessíveis para os clientes que usam os planos do Office 365, incluindo a Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 4248c8f79ba9fe0435b49ccca181b871e164385d
-ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
+ms.openlocfilehash: 98748ade517d6da85429e91bc5fdac0702528598
+ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497653"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867736"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URLs e intervalos de endereço IP do Office 365 
 
@@ -44,7 +44,7 @@ ms.locfileid: "33497653"
    
  Comece com [Gerenciar os pontos de extremidade do Office 365](managing-office-365-endpoints.md) para entender nossas recomendações para gerenciar a conectividade de rede usando estes dados. Os dados dos pontos de extremidade são atualizados no início de cada mês com novos endereços IP e URLs publicadas 30 dias antes de se tornarem ativas. Isso permite que os clientes que ainda não têm atualizações automáticas completem seus processos antes de precisarem de nova conectividade. Os pontos de extremidade também podem ser atualizados durante o mês, se necessário, para tratar de escalações de suporte, incidentes de segurança ou outros requisitos operacionais imediatos. Todos os dados exibidos abaixo nesta página são gerados a partir dos serviços web baseados em REST. Se estiver usando um script ou dispositivo de rede para acessar esses dados, vá diretamente para o [serviço Web](office-365-ip-web-service.md).
 
-Os dados dos pontos de extremidade abaixo listam requisitos de conectividade do computador de um usuário para o Office 365. Eles não incluem conexões de rede da Microsoft com uma rede de clientes, que são algumas vezes chamadas conexões de rede híbridas ou de entrada.
+Os dados dos pontos de extremidade abaixo listam requisitos de conectividade do computador de um usuário para o Office 365. Eles não incluem conexões de rede da Microsoft com uma rede de cliente, às vezes chamadas de conexões de redes híbridas ou de entrada. Para mais informações, consulte [ponto de extremidade adicionais](additional-office365-ip-addresses-and-urls.md).
 
 Os pontos de extremidade são agrupados em quatro áreas de serviço. As primeiras três áreas de serviço podem ser selecionadas independentemente de conectividade. A quarta área de serviço é uma dependência comum (chamada de Microsoft 365 Comum e Office Online) e deve ter sempre conectividade de rede.
 
@@ -62,7 +62,12 @@ As colunas de dados exibidas são:
 
 [!INCLUDE [Office 365 worldwide endpoints](./includes/office-365-worldwide-endpoints.md)]
 
-## <a name="related-topics"></a>Tópicos relacionados
+>[!Note]
+>Para saber as URLs e endereços IP do Yammer, consulte [esta postagem de blog](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
+>
+
+
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Gerenciar pontos de extremidade do Office 365](managing-office-365-endpoints.md)
   
