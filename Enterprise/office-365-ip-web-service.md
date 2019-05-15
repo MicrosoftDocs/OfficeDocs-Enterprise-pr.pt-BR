@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Para você identificar e diferenciar melhor o tráfego de rede do Office 365, um novo serviço Web publica pontos de extremidade do Office 365, permitindo avaliar, configurar e se manter atualizado em relação às alterações com mais facilidade. Esse novo serviço Web substitui os arquivos XML para download que estão disponíveis atualmente.
-ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
-ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
+ms.openlocfilehash: 35a34071a76e551cde8342566a912e4fd4d0100e
+ms.sourcegitcommit: 9c6e31204aa326c31d60befe80e610f702e65800
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "33655785"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33976516"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>URL do serviço Web e endereço IP do Office 365
 
@@ -406,8 +406,28 @@ if ($version.latest -gt $lastVersion) {
         }
         $ipCustomObjects
     }
+    $flatIp6s = $endpointSets | ForEach-Object {
+    $endpointSet = $_
+    $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
+    # IPv6 strings have colons while IPv6 strings have dots
+    $ip6s = $ips | Where-Object { $_ -like '*:*' }
+    $ipCustomObjects = @()
+    if ($endpointSet.category -in ("Optimize")) {
+        $ipCustomObjects = $ip6s | ForEach-Object {
+            [PSCustomObject]@{
+                category = $endpointSet.category;
+                ip = $_;
+                tcpPorts = $endpointSet.tcpPorts;
+                udpPorts = $endpointSet.udpPorts;
+            }
+        }
+    }
+    $ipCustomObjects
+}
     Write-Output "IPv4 Firewall IP Address Ranges"
     ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
+    Write-Output "IPv6 Firewall IP Address Ranges"
+    ($flatIp6s.ip | Sort-Object -Unique) -join "," | Out-String
     Write-Output "URLs for Proxy Server"
     ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
     # TODO Call Send-MailMessage with new endpoints data
