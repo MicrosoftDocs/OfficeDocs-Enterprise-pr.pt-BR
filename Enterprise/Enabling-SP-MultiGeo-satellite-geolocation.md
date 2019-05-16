@@ -3,19 +3,19 @@ title: Ativando as funcionalidades multigeográficas do SharePoint em sua locali
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Ativando as funcionalidades multigeográficas do SharePoint na sua localização geográfica por satélite.
-ms.openlocfilehash: 98666f76a5b3ec055a6f26d30f502c3cc6b6d3bb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d1f18c22410ec98e6c27cf3d10cdaf05a5095036
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487859"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070757"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Ativando as funcionalidades multigeográficas do SharePoint em sua localização geográfica por satélite
 

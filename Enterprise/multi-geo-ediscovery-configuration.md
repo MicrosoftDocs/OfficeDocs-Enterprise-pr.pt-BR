@@ -3,19 +3,19 @@ title: Configurar a descoberta eletrônica do Office 365 multigeográfica
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Saiba como configurar a descoberta eletrônica no Office 365 multigeográfica.
-ms.openlocfilehash: 11d226605ba1f194393405edd5bb535da6ad7343
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: f9d8fe8b65f5772005bf7d6a7ea3735277077d3b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30933929"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069957"
 ---
 # <a name="office-365-multi-geo-ediscovery-configuration"></a>Configuração de descoberta eletrônica do Office 365 multigeográfica
 
