@@ -1,10 +1,10 @@
 ---
-title: Como solicitar a movimentação de dados
+title: Como solicitar a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650074"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071007"
 ---
-# <a name="how-to-request-your-data-move"></a>Como solicitar a movimentação de dados
+# <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
 > [!NOTE]
 > As informações nesta página só se aplicam aos clientes que tinham locatários do Office 365 antes dos novos datacenters em sua geografia. 
@@ -36,7 +36,7 @@ Não é possível aceitar as solicitações a serem movidas após o prazo final 
 |Austrália, Nova Zelândia, Fiji  <br/> |1 de agosto de 2016  <br/> |31 de outubro de 2016  <br/> |
 |Índia  <br/> |1 de agosto de 2016  <br/> |31 de outubro de 2016  <br/> |
 |Canadá  <br/> |1 de agosto de 2016  <br/> |31 de outubro de 2016  <br/> |
-|United Kingdom  <br/> |15 de março de 2017  <br/> |15 de setembro de 2017  <br/> |
+|Reino Unido  <br/> |15 de março de 2017  <br/> |15 de setembro de 2017  <br/> |
 |Coréia do Sul  <br/> |1 de maio de 2017  <br/> |31 de outubro de 2017  <br/> |
 |França  <br/> |14 de março de 2018  <br/> |15 de setembro de 2018  <br/> |
 |Emirados Árabes Unidos  <br/> |Liga  <br/> |Liga  <br/> |
@@ -113,7 +113,7 @@ Se os usuários tiverem um dispositivo móvel com o Exchange Server definido com
 
 [Movendo dados principais para o novo Office 365 datacenter GEOS](moving-data-to-new-datacenter-geos.md)
 
-[PERGUNTAS FREQUENTEs sobre movimentação de dados gerais](data-move-faq.md)
+[Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
 
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumo: Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491217"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068337"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o ambiente de desenvolvimento/teste do Office 365
 
@@ -91,7 +91,7 @@ Neste procedimento, você criará dois documentos do Word que, mais tarde, serã
   
 1. Na página do **Office**, clique em **Entrar** e entre com as credenciais da sua conta de administrador global.
     
-2. em uma nova guia, acesse a URL do site de produção do SharePoint: **https://** <fictional organization name> **. sharepoint.com/sites/production**
+2. Em uma nova guia, acesse a URL do site de produção do SharePoint: **https://** <fictional organization name> **. SharePoint.com/sites/Production**
     
 3. Na guia **Conjunto de sites de produção**, em **Documentos**, clique em **Novo > Documento do Word**.
     

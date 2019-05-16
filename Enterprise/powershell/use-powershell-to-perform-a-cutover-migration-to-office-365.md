@@ -3,7 +3,7 @@ title: Usar o PowerShell para realizar uma migração de substituição para o O
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração de substituição para o Office 365.'
-ms.openlocfilehash: 0f284e2dcccd3d7fc6958922ac4e87da4fc086ec
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071197"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração de substituição para o Office 365
 

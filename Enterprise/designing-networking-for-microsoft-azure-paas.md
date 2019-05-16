@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: 'Resumo: entenda como otimizar sua rede para acesso à PaaS do Microsoft Azure.'
-ms.openlocfilehash: 49096276a0e8356a11e52bc8765cc796eec32510
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fafc3de1c5f755e891da6c07ae8993fb869bc5e1
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491350"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067817"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Criação de rede para o Microsoft Azure PaaS
 
@@ -107,5 +107,5 @@ Para obter mais informações, consulte [Traffic Manager](https://docs.microsoft
 
 [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

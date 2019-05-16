@@ -1,9 +1,9 @@
 ---
 title: Instalar e executar a ferramenta IdFix do Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 f1_keywords:
 - O365E_HRCSetupAADConnectIDFixLM617036
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Como instalar e executar a ferramenta IdFix do Office 365 para ajudar a limpar o Active Directory antes de sincronizá-lo com o Office 365.
-ms.openlocfilehash: a35b2a476f2b30eccc955b980eda6315b146af27
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4197694ce90ab600652aa729809ef0ddb0647e03
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067287"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Instalar e executar a ferramenta IdFix do Office 365
 
@@ -87,7 +87,7 @@ Após instalar o IdFix, execute a ferramenta para pesquisar problemas no diretó
     
     ![Escolha o arquivo IdFix. exe.](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
   
-4. Por padrão, o IdFix usa o conjunto de regras multiLocatário para testar as entradas no seu diretório. Este é o conjunto de regras correto para a maioria dos clientes do Office 365. No enTanto, se você for um cliente do Office 365 dedicado ou ITAR (leis internacionais de tráfego de braços), poderá configurar o IdFix para usar o conjunto de regras dedicado. Se você não tiver certeza sobre o tipo de cliente que você está, pode ignorar esta etapa com segurança. Para definir o conjunto de regras como dedicado, clique no ícone de engrenagem na barra de menus e, em seguida, escolha **dedicado**.
+4. Por padrão, o IdFix usa o conjunto de regras multilocatário para testar as entradas no seu diretório. Este é o conjunto de regras correto para a maioria dos clientes do Office 365. No entanto, se você for um cliente do Office 365 dedicado ou ITAR (leis internacionais de tráfego de braços), poderá configurar o IdFix para usar o conjunto de regras dedicado. Se você não tiver certeza sobre o tipo de cliente que você está, pode ignorar esta etapa com segurança. Para definir o conjunto de regras como dedicado, clique no ícone de engrenagem na barra de menus e, em seguida, escolha **dedicado**.
     
 5. Escolha **consulta**.
     

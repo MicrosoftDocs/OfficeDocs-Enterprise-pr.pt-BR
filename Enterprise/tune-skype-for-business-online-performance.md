@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 9/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Este artigo fornece links para administradores de sistema que desejam planejar os requisitos de largura de banda de rede ou que precisam melhorar o desempenho do Skype for Business online.
-ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9475f94678836842b6e6cf3b49084b4a6de3c77d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491997"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070387"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Ajustar o desempenho do Skype for Business Online
 
@@ -32,7 +32,7 @@ Este artigo fornece links para administradores de sistema que desejam planejar o
 
 - **Para saber mais sobre as configurações e as métricas para manter a qualidade da chamada para sua organização**, é importante ler a [qualidade da mídia e o desempenho da conectividade de rede no Skype for Business online](https://docs.microsoft.com/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance). Este artigo fornece informações, se você quiser usar o ExpressRoute, sobre os tipos de implantação e outras informações que serão necessárias.
     
-- **Para implantações locais e híbridas**, você pode ver os requisitos de largura de banda para a conferência disCada do Skype for Business Server, consulte [Plan for dial-in Conferencing in Skype for Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
+- **Para implantações locais e híbridas**, você pode ver os requisitos de largura de banda para a conferência discada do Skype for Business Server, consulte [Plan for dial-in Conferencing in Skype for Business Server 2015](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/conferencing/dial-in-conferencing).
     
 ## <a name="more-ways-to-improve-skype-for-business-online-performance"></a>Outras maneiras de melhorar o desempenho do Skype for Business Online
 

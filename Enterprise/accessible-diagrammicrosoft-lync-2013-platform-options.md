@@ -3,19 +3,19 @@ title: Diagrama acessível – opções da plataforma Microsoft Lync 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2858d1e7-be37-4484-b121-a99779742a38
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Lync 2013, disponível em diagramas técnicos.
-ms.openlocfilehash: 4a660df4bfacad2a00f5d9fbb5e1b668840e3b9f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4993ad90307973589da6dc5081d8c2875b44ce66
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068607"
 ---
 # <a name="accessible-diagram---microsoft-lync-2013-platform-options"></a>Diagrama acessível – opções da plataforma Microsoft Lync 2013
 
@@ -41,7 +41,7 @@ A comparação fornece informações sobre cada opção de implantação nas seg
     
 - Responsabilidades de profissionais de ti para implementar cada opção de implantação
     
-### <a name="overview"></a>Visão Geral
+### <a name="overview"></a>Visão geral
 
 #### <a name="lync-online-office-365"></a>Lync Online (Office 365)
 
@@ -277,7 +277,7 @@ Além das tarefas para os ambientes do Office 365 e local:
 
 Implantar e gerenciar o Lync Server em um ambiente local:
   
-- ProVisionar os servidores.
+- Provisionar os servidores.
     
 - Implantar a topologia do Lync.
     
@@ -331,7 +331,7 @@ As vantagens dessa implantação permitem:
     
 - Use o SharePoint Online para colaboração, carregando o ônus de manter os servidores locais do SharePoint.
     
-- Use o Lync, o Exchange e os recursos integrados do SharePoint, incluindo uniFicação de mensagens (UM) no Office 365.
+- Use o Lync, o Exchange e os recursos integrados do SharePoint, incluindo Unificação de mensagens (UM) no Office 365.
     
 #### <a name="exchange-server-with-lync-online"></a>Servidor Exchange com Lync Online
 

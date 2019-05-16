@@ -1,10 +1,10 @@
 ---
-title: Ajustar o desempenho do Exchange Online
+title: Ajuste o desempenho do Exchange Online
 ms.author: krowley
 author: tracyp
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,14 +14,14 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Este artigo contém dicas gerais e links para outros recursos que explicam como melhorar o desempenho do Exchange Online.
-ms.openlocfilehash: f75869ba6d83a92b1e19743c8b38c4bcbb6762cf
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d736568687da5ffe0ebed5a57a6afa6f93173c54
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372848"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070347"
 ---
-# <a name="tune-exchange-online-performance"></a>Ajustar o desempenho do Exchange Online
+# <a name="tune-exchange-online-performance"></a>Ajuste o desempenho do Exchange Online
 
 Este artigo contém dicas gerais e links para outros recursos que explicam como melhorar o desempenho do Exchange Online, particularmente na frente de uma migração. Este artigo faz parte do [planejamento de rede e ajuste de desempenho para o projeto do Office 365](https://aka.ms/tune) .
    
@@ -48,6 +48,6 @@ Para melhorar a velocidade da migração e reduzir as restrições de largura de
 
 - Certifique-se de que os dados da caixa de correio estão de acordo com as limitações da pasta e dos valores de item.
     
-Para obter mais informações sobre o desempenho de migração do Exchange, confira [desempenho de migração e práticas recomendaDas do Office 365](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).
+Para obter mais informações sobre o desempenho de migração do Exchange, confira [desempenho de migração e práticas recomendadas do Office 365](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).
   
 

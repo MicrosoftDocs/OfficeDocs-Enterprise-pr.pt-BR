@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para entender corretamente o tráfego de roteamento para o Office 365 usando o Azure ExpressRoute, você precisará de uma compreensão dos requisitos de roteamento principal do ExpressRoute e dos domínios de roteamento e circuitos do ExpressRoute. Eles formam os conceitos básicos para usar o ExpressRoute em que os clientes do Office 365 confiarão.
-ms.openlocfilehash: 83c3801e7886bf44500f1dc0b185782e2a7f3bc1
-ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
+ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31957712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070997"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Como rotear com o ExpressRoute para Office 365
 
@@ -35,7 +35,7 @@ Alguns dos principais itens nos artigos acima que você precisa entender incluem
 
 - Há um mapeamento 1:1 entre um circuito ExpressRoute e uma chave s do cliente.
 
-- Cada circuito pode suportar até 3 relações de emparelhamento independentes (emparelhamento público do Azure, emparelhamento privado do Azure e emparelhamento da Microsoft); O Office 365 requer o emparelhamento da Microsoft.
+- Cada circuito pode suportar duas relações de emparelhamento independentes (emparelhamento privado do Azure e emparelhamento da Microsoft); O Office 365 requer o emparelhamento da Microsoft.
 
 - Cada circuito tem uma largura de banda fixa que é compartilhada em todas as relações de emparelhamento.
 
@@ -47,7 +47,7 @@ Consulte a [página perguntas frequentes](https://azure.microsoft.com/documentat
   
 ## <a name="ensuring-route-symmetry"></a>Garantindo a simetria da rota
 
-Os servidores front-end do Office 365 estão acessíveis na Internet e no ExpressRoute. Esses servidores preferem rotear de volta para o local sobre os circuitos do ExpressRoute quando ambos estiverem disponíveis. Por causa disso, há uma possibilidade de a rota assimetria se o tráfego de sua rede preferir rotear seus circuitos de Internet. As rotas asSimétricas são um problema porque os dispositivos que executam a inspeção de pacote com estado podem bloquear o tráfego de retorno que segue um caminho diferente dos pacotes de saída seguidos.
+Os servidores front-end do Office 365 estão acessíveis na Internet e no ExpressRoute. Esses servidores preferem rotear de volta para o local sobre os circuitos do ExpressRoute quando ambos estiverem disponíveis. Por causa disso, há uma possibilidade de a rota assimetria se o tráfego de sua rede preferir rotear seus circuitos de Internet. As rotas assimétricas são um problema porque os dispositivos que executam a inspeção de pacote com estado podem bloquear o tráfego de retorno que segue um caminho diferente dos pacotes de saída seguidos.
   
 Independentemente de você iniciar uma conexão com o Office 365 pela Internet ou o ExpressRoute, a origem deve ser um endereço roteável publicamente. Com muitos clientes emparelhamento direto com a Microsoft, ter endereços privados em que a duplicação é possível entre os clientes não é viável.
   
@@ -57,7 +57,7 @@ Estes são os cenários em que as comunicações do Office 365 para a sua rede l
 
 - ADFS durante a validação de senha para entrada.
 
-- [ImplantaÇões híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [Implantações híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
 
 - [Pesquisa híbrida federada do SharePoint](https://technet.microsoft.com/library/dn197174.aspx).
 
@@ -82,7 +82,7 @@ Ao configurar um relacionamento de emparelhamento usando o domínio de roteament
 Outros aplicativos, como o vídeo do Office 365, são um aplicativo do Office 365; no entanto, o vídeo do Office 365 é composto por três componentes diferentes, o portal, o serviço de streaming e a rede de distribuição de conteúdo. O portal reside no SharePoint Online, o serviço de streaming reside nos serviços de mídia do Azure e a rede de distribuição de conteúdo reside dentro da CDN do Azure. A tabela a seguir descreve esses componentes.
   
 | |
-|**Componente**|**Aplicativo subjacente**|**Incluído na Comunidade BGP do SharePoint Online?**|**Uso**|
+|**Componente**|**Aplicativo subjacente**|**Incluído na Comunidade BGP do SharePoint Online?**|**Usar**|
 |:-----|:-----|:-----|:-----|
 |Portal de vídeo do Office 365  <br/> |SharePoint Online  <br/> |Sim  <br/> |Configuração, carregar  <br/> |
 |Serviço de streaming de vídeo do Office 365  <br/> |Serviços de mídia do Azure  <br/> |Não  <br/> |Serviço de streaming, usado no evento o vídeo não está disponível na CDN  <br/> |
@@ -90,14 +90,14 @@ Outros aplicativos, como o vídeo do Office 365, são um aplicativo do Office 36
 
 Cada um dos recursos do Office 365 que estão disponíveis usando o emparelhamento da Microsoft estão listados no [artigo de pontos de extremidade do office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) por tipo de aplicativo e FQDN. O motivo para usar o FQDN nas tabelas é permitir que os clientes gerenciem o tráfego usando arquivos PAC ou outras configurações de proxy, consulte nosso guia para [gerenciar pontos de extremidade do Office 365](https://aka.ms/manageo365endpoints) para arquivos PAC de exemplo.
   
-Em algumas situações, utilizamos um domínio curinga onde um ou mais subFQDNss são anunciados de forma diferente do domínio curinga de nível superior. Isso geralmente ocorre quando o caractere curinga representa uma longa lista de servidores que são todos anunciadas para o ExpressRoute e a Internet, enquanto um pequeno subconjunto de destinos é anunciado apenas para a Internet ou vice-versa. ConFira as tabelas abaixo para entender onde estão as diferenças.
+Em algumas situações, utilizamos um domínio curinga onde um ou mais subFQDNss são anunciados de forma diferente do domínio curinga de nível superior. Isso geralmente ocorre quando o caractere curinga representa uma longa lista de servidores que são todos anunciadas para o ExpressRoute e a Internet, enquanto um pequeno subconjunto de destinos é anunciado apenas para a Internet ou vice-versa. Confira as tabelas abaixo para entender onde estão as diferenças.
   
 Esta tabela exibe os FQDNs curinga que são anunciados para a Internet e para o Azure ExpressRoute junto com os subFQDNs que são anunciados apenas para a Internet.
 
 |**Domínio curinga anunciado para o ExpressRoute e circuitos da Internet**|**SubFQDN anunciado somente para circuitos da Internet**|
 |:-----|:-----|
-|\*. microsoftonline.com  <br/> |Click.email.microsoftonline.com  <br/> Portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
-|\*. officeapps.Live.com  <br/> |nexusRules.officeapps.live.com  <br/> Nexus.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> CDN.odc.officeapps.Live.com  <br/> OLS.officeapps.Live.com  <br/> ocsredir.officeapps.Live.com  <br/> OCWs.officeapps.Live.com  <br/> ocsa.officeapps.Live.com  <br/> |
+|\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
+|\*. officeapps.live.com  <br/> |nexusRules.officeapps.live.com  <br/> nexus.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> cdn.odc.officeapps.live.com  <br/> ols.officeapps.live.com  <br/> ocsredir.officeapps.live.com  <br/> ocws.officeapps.live.com  <br/> ocsa.officeapps.live.com  <br/> |
 
 Normalmente, os arquivos de PAC se destinam a enviar solicitações de rede para pontos de extremidade anunciadas do ExpressRoute diretamente para o circuito e todas as outras solicitações de rede para o seu proxy. Se você estiver configurando um arquivo de PAC como este, redija o arquivo de PAC na seguinte ordem:
   
@@ -111,11 +111,11 @@ Esta tabela exibe os domínios curinga que são anunciados para circuitos da Int
 
 |**Domínio curinga anunciado somente para circuitos da Internet**|**SubFQDN anunciado para o ExpressRoute e circuitos da Internet**|
 |:-----|:-----|
-|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> Home.Office.com  <br/> Outlook.Office.com  <br/> Portal.Office.com  <br/> www.Office.com  <br/> |
-|\*. Office.net  <br/> |Agent.Office.net  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. mail.Protection.Outlook.com  <br/> descoberta automática-\<locatário\>. Outlook.com  <br/> |
-|\*. Windows.net  <br/> |login.Windows.net  <br/> |
+|\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> descoberta automática-\<locatário\>. Outlook.com  <br/> |
+|\*. windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Roteamento do tráfego do Office 365 pela Internet e ExpressRoute
 
@@ -151,13 +151,13 @@ Os FQDNs de volume mais altos para o Exchange Online, o SharePoint Online e o Sk
   
 ![Rede de borda do cliente ExpressRoute](media/dab8cc42-b1d6-46d6-b2f6-d70f9e16d5ea.png)
   
-- Outlook.office365.com, Outlook.Office.com
+- outlook.office365.com, outlook.office.com
 
-- \<tenant-name\>. sharepoint.com, \<tenant-name\>-my.sharepoint.com, \<tenant-name\>-\<app\>. sharepoint.com
+- \<Tenant-name\>. SharePoint.com, \<Tenant-name\>-My.SharePoint.com, \<Tenant-name\>-\<app\>. SharePoint.com
 
 - \*. Lync.com juntamente com intervalos IP para tráfego não-TCP
 
-- \*Broadcast.officeapps.Live.com, \*Excel.officeapps.Live.com, \*OneNote.officeapps.Live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*broadcast.officeapps.live.com, \*excel.officeapps.live.com, \*onenote.officeapps.live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* word-edit.officeapps.live.com, \*word-view.officeapps.live.com, Office.Live.com
 
 Saiba mais sobre a [implantação e o gerenciamento de configurações de proxy no Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) e [a garantia de que o Office 365 não está limitado pelo proxy](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -169,7 +169,7 @@ O último cenário, roteamento do tráfego do Office 365 no ExpressRoute é a ba
   
 As perguntas adicionais que devem ser respondidas para clientes com vários locais em várias geografias incluem:
   
-1. Você precisa de um circuito ExpressRoute em todos os locais? Se você estiver usando o Skype for Business online ou estiver preocupado com a confidencialidade da latência para o SharePoint Online ou o Exchange Online, um par redundante de circuitos ativos/ativos do ExpressRoute é recomendado em cada local. ConFira o guia de conectividade de rede e qualidade de mídia do Skype for Business para obter mais detalhes.
+1. Você precisa de um circuito ExpressRoute em todos os locais? Se você estiver usando o Skype for Business online ou estiver preocupado com a confidencialidade da latência para o SharePoint Online ou o Exchange Online, um par redundante de circuitos ativos/ativos do ExpressRoute é recomendado em cada local. Confira o guia de conectividade de rede e qualidade de mídia do Skype for Business para obter mais detalhes.
 
 2. Se um circuito ExpressRoute não estiver disponível em uma determinada região, como o tráfego destinado ao Office 365 deve ser roteado?
 
@@ -206,7 +206,7 @@ Se a Humongous Insurance não estiver usando ou não planeja aproveitar o Skype 
   
 Quando a Humongous Insurance estiver planejando sua estratégia de vários geografias, há várias coisas a considerar o tamanho do circuito, o número de circuitos, o failover e assim por diante.
   
-Com o ExpressRoute em um único local com várias regiões tentando usar o circuito, a Humongous Insurance deseja garantir que as conexões para o Office 365 do escritório remoto sejam enviadas para a matriz mais próxima do Office 365 datacenter e recebidas pelo local da sede. Para fazer isso, a Humongous Insurance implementa o encaminhamento de DNS para reduzir o número de viagens e pesquisas de DNS necessárias para estabelecer a conexão apropriada com o ambiente do Office 365 mais próximo do ponto de saída do Headquarters Internet. Isso impede que o cliente resolva um servidor front-end local e garante que o servidor front-end ao qual a pessoa se conecta esteja próximo da sede, onde a Humongous Insurance está interligando com a Microsoft. Você também pode aprender a [atribuir um encaminhaDor condicional para um nome de domínio](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
+Com o ExpressRoute em um único local com várias regiões tentando usar o circuito, a Humongous Insurance deseja garantir que as conexões para o Office 365 do escritório remoto sejam enviadas para a matriz mais próxima do Office 365 datacenter e recebidas pelo local da sede. Para fazer isso, a Humongous Insurance implementa o encaminhamento de DNS para reduzir o número de viagens e pesquisas de DNS necessárias para estabelecer a conexão apropriada com o ambiente do Office 365 mais próximo do ponto de saída do Headquarters Internet. Isso impede que o cliente resolva um servidor front-end local e garante que o servidor front-end ao qual a pessoa se conecta esteja próximo da sede, onde a Humongous Insurance está interligando com a Microsoft. Você também pode aprender a [atribuir um encaminhador condicional para um nome de domínio](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
   
 Neste cenário, o tráfego do escritório remoto resolveria a infraestrutura de front-ends do Office 365 na América do Norte e aproveita o Office 365 para se conectar aos servidores de back-end de acordo com a arquitetura do aplicativo do Office 365. Por exemplo, o Exchange Online encerraria a conexão na América do Norte, e esses servidores front-end se conectarão ao servidor de caixa de correio de backend onde quer que o locatário tivesse sido relado. Todos os serviços têm um serviço de porta frontal amplamente distribuído composto por destinos unicast e anycast.
   
@@ -228,7 +228,7 @@ O roteamento seletivo com o ExpressRoute pode ser necessário por vários motivo
 
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Conectividade de rede para Office 365](network-connectivity.md)
   

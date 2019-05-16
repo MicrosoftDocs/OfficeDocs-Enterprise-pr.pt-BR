@@ -1,9 +1,9 @@
 ---
 title: Como verificar a integridade do serviço do Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_ServiceHealthModern
@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Exibir o status de integridade dos serviços do Office 365 antes de ligar para o suporte para ver se há uma interrupção de serviço ativa
-ms.openlocfilehash: 483ff0ff6507010c9a81f0774fc8c3e8820395cb
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 67595bddaed23222d09c0e7f6f5353b764722f83
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071217"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço do Office 365
 

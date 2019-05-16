@@ -1,10 +1,10 @@
 ---
-title: Ajustar o desempenho do SharePoint Online
+title: Ajuste o desempenho do SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,14 +15,14 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contém links para outros artigos que explicam como melhorar o desempenho de tempos de download de página do SharePoint Online.
-ms.openlocfilehash: 8c4f3c0545408457b2c0b5150ea062b9666f7e44
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492931"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070667"
 ---
-# <a name="tune-sharepoint-online-performance"></a>Ajustar o desempenho do SharePoint Online
+# <a name="tune-sharepoint-online-performance"></a>Ajuste o desempenho do SharePoint Online
 
 Este artigo contém links para outros artigos que explicam como melhorar o desempenho dos tempos de download de página do SharePoint Online. Este artigo faz parte do [planejamento de rede e ajuste de desempenho para o projeto do Office 365](https://aka.ms/tune) .
    

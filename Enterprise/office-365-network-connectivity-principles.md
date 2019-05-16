@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Antes de começar a planejar sua rede para a conectividade de rede do Office 365, é importante compreender os princípios de conectividade para o gerenciamento seguro do tráfego do Office 365 e obter o melhor desempenho possível. Este artigo o ajudará a entender as orientações mais recentes para otimizar com segurança a conectividade de rede do Office 365.
-ms.openlocfilehash: 3dfb0732ff15c7d8f3c20ac659f94b8d807afa07
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2d8b629d291be44da3d3360e676e7a01d9cd5a35
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069817"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Princípios de conectividade de rede do Office 365
 
@@ -35,7 +35,7 @@ Neste artigo, você aprenderá sobre:
 - Conceitos e estratégias de [conectividade do Office 365](office-365-network-connectivity-principles.md#BKMK_Principles) atualizados para otimizar o tráfego de rede e a experiência do usuário final
 - O [serviço Web de pontos de extremidade do Office 365](office-365-network-connectivity-principles.md#BKMK_WebSvc), que permite aos administradores de rede consumir uma lista estruturada de pontos de extremidade para uso na otimização de rede
 - Novas orientações de otimização e [categorias de pontos de extremidade do Office 365](office-365-network-connectivity-principles.md#BKMK_Categories)
-- [ComParando a segurança de perímetro de rede com segurança de ponto](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
+- [Comparando a segurança de perímetro de rede com segurança de ponto](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Opções de [otimização incremental](office-365-network-connectivity-principles.md#BKMK_IncOpt) para o tráfego do Office 365
 
 ## <a name="office-365-architecture"></a>Arquitetura do Office 365
@@ -137,14 +137,14 @@ Os administradores do Office 365 podem criar scripts de PAC (configuração auto
 #### <a name="office-365-security-features"></a>Recursos de segurança do Office 365
 <a name="BKMK_WebSvc"> </a>
 
-A Microsoft é transparente sobre a segurança de datacenter, a segurança operacional e a redução de riscos em torno dos servidores do Office 365 e dos pontos de extremidade de rede que representam. Os recursos internos de segurança do Office 365 estão disponíveis para reduzir o risco de segurança de rede, como prevenção contra perda de dados, antivírus, autenticação multiFator, caixa de bloqueio de cliente, proteção avançada contra ameaças, Office 365 Threat Intelligence, Office 365 Secure Pontuação, proteção do Exchange Online e segurança de DDOS de rede.
+A Microsoft é transparente sobre a segurança de datacenter, a segurança operacional e a redução de riscos em torno dos servidores do Office 365 e dos pontos de extremidade de rede que representam. Os recursos internos de segurança do Office 365 estão disponíveis para reduzir o risco de segurança de rede, como prevenção contra perda de dados, antivírus, autenticação multifator, caixa de bloqueio de cliente, proteção avançada contra ameaças, Office 365 Threat Intelligence, Office 365 Secure Pontuação, proteção do Exchange Online e segurança de DDOS de rede.
   
 Para obter mais informações sobre o Microsoft datacenter e a segurança de rede global, consulte a [central de confiabilidade da Microsoft](https://www.microsoft.com/en-us/trustcenter/security).
   
 ## <a name="new-office-365-endpoint-categories"></a>Novas categorias de pontos de extremidade do Office 365
 <a name="BKMK_Categories"> </a>
 
-Os pontos de extremidade do Office 365 representam um conjunto variado de endereços de rede e sub-redes. Os pontos de extremidade podem ser URLs, endereços IP ou intervalos IP e alguns pontos de extremidade são listados com portas TCP/UDP específicas. URLs podem ser um FQDN como *account.office.net* ou uma URL curinga como * \*. office365.com*.
+Os pontos de extremidade do Office 365 representam um conjunto variado de endereços de rede e sub-redes. Os pontos de extremidade podem ser URLs, endereços IP ou intervalos IP e alguns pontos de extremidade são listados com portas TCP/UDP específicas. URLs podem ser um FQDN como *Account.Office.net* ou uma URL curinga como * \*. office365.com*.
   
 > [!NOTE]
 > Os locais dos pontos de extremidade do Office 365 dentro da rede não estão diretamente relacionados ao local dos dados de locatário do Office 365. Por esse motivo, os clientes devem examinar o Office 365 como um serviço distribuído e global e não devem tentar bloquear conexões de rede para pontos de extremidade do Office 365 com base nos critérios geográficos.
@@ -157,7 +157,7 @@ No novo modelo, os pontos de extremidade são separados em três categorias, **o
 
     Uma lista condensada de pontos de extremidade críticos bem definidos deve ajudá-lo a planejar e implementar otimizações de rede de alto valor para esses destinos de forma mais rápida e fácil.
 
-    exemplos de *otimização* de pontos de extremidade *https://outlook.office365.com* incluem *,\<https://\>locatário. sharepoint.com* e *\<https://\>locatário-my.sharepoint.com* .
+    Exemplos de *otimização* de pontos de extremidade *https://outlook.office365.com* incluem *,\<https://\>locatário. SharePoint.com* e *\<https://\>locatário-My.SharePoint.com* .
 
     Os métodos de otimização incluem:
 
@@ -187,7 +187,7 @@ No novo modelo, os pontos de extremidade são separados em três categorias, **o
 
 Para obter mais informações sobre as técnicas de otimização de rede do Office 365, consulte o artigo [Managing office 365](https://support.office.com/en-us/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EAEAAA=0._Overview)endpoints.
   
-## <a name="comparing-network-perimeter-security-with-endpoint-security"></a>ComParando a segurança de perímetro de rede com segurança de ponto
+## <a name="comparing-network-perimeter-security-with-endpoint-security"></a>Comparando a segurança de perímetro de rede com segurança de ponto
 <a name="BKMK_SecurityComparison"> </a>
 
 O objetivo da segurança de rede tradicional é reforçar o perímetro da rede corporativa contra invasão e explorações mal-intencionadas. À medida que as organizações adotam o Office 365, alguns serviços e dados de rede são parcialmente ou completamente migrados para a nuvem. Como acontece com qualquer alteração fundamental na arquitetura de rede, esse processo requer uma reavaliação da segurança de rede que leva em conta os fatores emergentes:
@@ -235,7 +235,7 @@ Você pode abordar a otimização como um processo incremental, aplicando cada m
   
 |**Método de otimização**|**Descrição**|**Impacto**|
 |:-----|:-----|:-----|
-|Resolução de DNS local e saída de Internet  <br/> |ProVisione servidores DNS locais em cada local e verifique se o Office 365 faz conexões de saída para a Internet o mais próximo possível do local do usuário.  <br/> | Minimizar latência  <br/>  Melhorar a conectividade confiável para o ponto de entrada mais próximo do Office 365  <br/> |
+|Resolução de DNS local e saída de Internet  <br/> |Provisione servidores DNS locais em cada local e verifique se o Office 365 faz conexões de saída para a Internet o mais próximo possível do local do usuário.  <br/> | Minimizar latência  <br/>  Melhorar a conectividade confiável para o ponto de entrada mais próximo do Office 365  <br/> |
 |Adicionar pontos de saída regionais  <br/> |Se sua rede corporativa tiver vários locais, mas apenas um ponto de saída, adicione pontos de saída regionais para permitir que os usuários se conectem ao ponto de entrada do Office 365 mais próximo.  <br/> | Minimizar latência  <br/>  Melhorar a conectividade confiável para o ponto de entrada mais próximo do Office 365  <br/> |
 |Ignorar proxies e dispositivos de inspeção  <br/> |Configure navegadores com arquivos de PAC que enviam solicitações do Office 365 diretamente aos pontos de saída.  <br/> Configure roteadores de borda e firewalls para permitir tráfego do Office 365 sem inspeção.  <br/> | Minimizar latência  <br/>  Reduzir a carga nos dispositivos de rede  <br/> |
 |Habilitar conexão direta para usuários VPN  <br/> |Para usuários VPN, habilite conexões do Office 365 para se conectar diretamente a partir da rede do usuário, e não do túnel VPN, implementando o túnel de divisão.  <br/> | Minimizar latência  <br/>  Melhorar a conectividade confiável para o ponto de entrada mais próximo do Office 365  <br/> |

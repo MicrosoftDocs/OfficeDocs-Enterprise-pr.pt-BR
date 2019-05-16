@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 2/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: O SharePoint 2010 e o SharePoint Server 2010 estão se aproximando do fim do suporte. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
-ms.openlocfilehash: c88c6010aa398d8076fce59976bf6f5c0aa1a743
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 18522f9abb1514e14a172c6f2d661591826dff22
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492037"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070677"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Atualizando do SharePoint 2010
 
@@ -81,7 +81,7 @@ Esteja ciente dos custos ocultos associados à manutenção de um farm de servid
 |Custo único em migração  <br/> |Custo de um único tempo repetido por migração futura  <br/> |
 |Baixo custo total de propriedade/manutenção  <br/> |Alto custo total de propriedade/manutenção  <br/> |
    
-Quando você migrar para o Office 365, a movimentação única terá um custo mais pesado em planejamento, em frente (enquanto você estiver organizando dados e decidindo o que deve ser usado para a nuvem e o que deixar atrás). No enTanto, depois que os dados forem migrados, as atualizações serão automáticas desse ponto, visto que você não precisará mais gerenciar atualizações de hardware e de software, e o tempo de ingestão do farm será feito por um contrato de nível de serviço ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) da Microsoft.
+Quando você migrar para o Office 365, a movimentação única terá um custo mais pesado em planejamento, em frente (enquanto você estiver organizando dados e decidindo o que deve ser usado para a nuvem e o que deixar atrás). No entanto, depois que os dados forem migrados, as atualizações serão automáticas desse ponto, visto que você não precisará mais gerenciar atualizações de hardware e de software, e o tempo de ingestão do farm será feito por um contrato de nível de serviço ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) da Microsoft.
   
 ### <a name="migrate-to-sharepoint-online"></a>Migrar para o SharePoint Online
 
@@ -149,15 +149,15 @@ Comece comparando os requisitos de hardware e software. Se você não atender ao
   
 - **Requisitos de hardware/software para**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Limites **e limites de software para**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **A visão geral do processo de atualização para**: 
     
-    [sharepoint server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [sharepoint server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [sharepoint server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Criar uma solução híbrida do SharePoint entre o SharePoint Online e o SharePoint Server no local
 

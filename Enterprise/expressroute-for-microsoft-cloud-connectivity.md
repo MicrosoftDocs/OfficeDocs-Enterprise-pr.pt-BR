@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Resumo: entenda como o ExpressRoute pode ajudá-lo com conexões mais rápidas e mais confiáveis para plataformas e serviços em nuvem da Microsoft.'
-ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0bab6cf3d400293221692a595346445afd242e48
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488079"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067677"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute para conectividade de nuvem da Microsoft
 
@@ -61,7 +61,7 @@ Os usuários na Internet, como usuários móveis ou remotos, ainda enviam o trá
   
 Mesmo com uma conexão ExpressRoute, algum tráfego ainda é enviado pela Internet, como consultas de DNS, verificação de lista de certificados revogados e solicitações de rede de distribuição de conteúdo (CDN).
   
-ConFira estes recursos adicionais para obter mais informações:
+Confira estes recursos adicionais para obter mais informações:
   
 - [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
     
@@ -73,7 +73,7 @@ Veja algumas vantagens de usar o ExpressRoute para serviços de nuvem baseados n
   
 - **Desempenho previsível:** Com um caminho dedicado para a borda da nuvem da Microsoft, seu desempenho não está sujeito às interrupções e aos picos do provedor de Internet no tráfego da Internet. Você pode determinar e manter seus provedores em sua conta em um SLA de taxa de transferência e latência para a nuvem da Microsoft.
     
-- **Privacidade dos dados de seu tráfego:** O tráfego enviado por sua conexão expressa dedicada não está sujeito à monitoração da Internet ou captura de pacotes e análise por usuários mal-intencionados. É tão seguro quanto usar links WAN baseados em comutação de rótulo de multiProtocolo (MPLS).
+- **Privacidade dos dados de seu tráfego:** O tráfego enviado por sua conexão expressa dedicada não está sujeito à monitoração da Internet ou captura de pacotes e análise por usuários mal-intencionados. É tão seguro quanto usar links WAN baseados em comutação de rótulo de multiprotocolo (MPLS).
     
 - **Conexões de alto desempenho:** Com amplo suporte para conexões ExpressRoute por provedores do Exchange e provedores de serviços de rede, você pode obter até um link de 10 Gbps para a nuvem da Microsoft.
     
@@ -204,7 +204,7 @@ Várias conexões ExpressRoute podem fornecer:
     
 - Maior disponibilidade para a nuvem da Microsoft quando uma conexão expressa local fica indisponível.
     
-Isso funciona bem para organizações no mesmo continente. No enTanto, o tráfego para os data centers da Microsoft fora do continente da organização passa pela Internet.
+Isso funciona bem para organizações no mesmo continente. No entanto, o tráfego para os data centers da Microsoft fora do continente da organização passa pela Internet.
   
 Para o tráfego Intercontinental na rede do Microsoft Cloud, você deve usar conexões Premium do ExpressRoute.
   
@@ -252,7 +252,7 @@ Você também pode incorporar as seguintes opções à sua implantação do Expr
     
 - **Qualidade do serviço:** Use valores de ponto de código de serviços diferenciados (DSCP) no cabeçalho IPv4 do seu tráfego para marcá-lo para voz, vídeo/interativo ou entrega de melhor esforço. Isso é especialmente importante para o relacionamento de emparelhamento da Microsoft e o tráfego do Skype for Business online.
     
-ConFira estes recursos adicionais para obter mais informações:
+Confira estes recursos adicionais para obter mais informações:
   
 - [Rota Expressa para Office 365](https://aka.ms/expressrouteoffice365)
     
@@ -268,5 +268,5 @@ ConFira estes recursos adicionais para obter mais informações:
 
 [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

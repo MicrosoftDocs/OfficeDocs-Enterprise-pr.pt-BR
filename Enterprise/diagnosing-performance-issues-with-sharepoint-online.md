@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 2/23/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
 description: Este artigo mostra como você pode diagnosticar problemas comuns com seu site do SharePoint online usando as ferramentas de desenvolvedor do Internet Explorer.
-ms.openlocfilehash: 89d4544bfabf6424b5f401bad7d63bd7fa41b5ca
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: dfc66822a98ce26bfd9fd94d9d58882b8b140831
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492242"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067857"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosticando problemas de desempenho no SharePoint Online
 
@@ -57,7 +57,7 @@ Você também pode ver os tempos de download dos arquivos no lado direito, confo
   
 Isso dá a você uma representação visual de quanto tempo o arquivo levou para carregar. A linha verde representa quando a página está pronta para ser renderizada pelo navegador. Isso pode dar a você uma visão rápida dos diferentes arquivos que podem estar causando cargas de página lentas no site.
   
-## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>ConFigurando uma linha de base não personalizada para o SharePoint Online
+## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Configurando uma linha de base não personalizada para o SharePoint Online
 <a name="F12ToolInfo"> </a>
 
 A melhor maneira de determinar o desempenho do seu site pontos fracos é configurar um conjunto de sites totalmente pronto no SharePoint Online. Dessa forma, você pode comparar todos os vários aspectos do seu site com o que você obteria sem nenhuma personalização na página. A home page do OneDrive for Business é um bom exemplo de um conjunto de sites separado que provavelmente não terá qualquer personalização.

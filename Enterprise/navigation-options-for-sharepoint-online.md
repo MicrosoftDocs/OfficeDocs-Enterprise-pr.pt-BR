@@ -3,7 +3,7 @@ title: Opções de navegação para o SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,112 +11,112 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitado no SharePoint Online. As opções e a configuração da navegação afeta significativamente o desempenho e escalabilidade de sites no SharePoint Online.
-ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
-ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
+description: Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitada no SharePoint Online. A escolha e a configuração de navegação impactam significativamente o desempenho e a escalabilidade de sites no SharePoint Online.
+ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069937"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opções de navegação para o SharePoint Online
 
-Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitado no SharePoint Online. As opções e a configuração da navegação afeta significativamente o desempenho e escalabilidade de sites no SharePoint Online.
+Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitada no SharePoint Online. A escolha e a configuração de navegação impactam significativamente o desempenho e a escalabilidade de sites no SharePoint Online.
 
 ## <a name="overview"></a>Visão geral
 
-Configuração de provedor de navegação pode afetar significativamente o desempenho para todo o site e cuidadosa consideração deve ser seguida para selecionar um provedor de navegação e a configuração que pode ser dimensionado com eficiência para os requisitos de um site do SharePoint. Existem dois provedores de navegação da caixa, bem como implementações de navegação personalizado.
+A configuração do provedor de navegação pode impactar significativamente o desempenho de todo o site e é necessário fazer uma consideração cuidadosa para escolher um provedor de navegação e uma configuração que sejam dimensionados de forma eficaz para os requisitos de um site do SharePoint. Há dois provedores de navegação prontos para uso, bem como implementações de navegação personalizadas.
 
-A primeira opção, [**navegação gerenciado (metadados)**](#using-managed-navigation-and-metadata-in-sharepoint-online), é recomendável e é uma das opções padrão no SharePoint Online; No entanto, é recomendável que a filtragem de segurança seja desativado, a menos que o necessário. Filtragem de segurança está habilitada como uma configuração de seguro por padrão para esse provedor de navegação; No entanto, muitos sites não exigem a sobrecarga de filtragem de segurança desde que elementos de navegação normalmente são consistentes para todos os usuários do site. Com a configuração recomendada para desabilitar a filtragem de segurança, esse provedor de navegação não exige enumerando a estrutura do site e é altamente escalonável com impacto no desempenho aceitável.
+A primeira opção, [**navegação gerenciada (metadados)**](#using-managed-navigation-and-metadata-in-sharepoint-online), é recomendada e é uma das opções padrão no SharePoint Online; no entanto, recomendamos que o aparamento de segurança seja desabilitado, a menos que seja necessário O aparamento de segurança está habilitado como uma configuração segura por padrão para este provedor de navegação; no entanto, muitos sites não exigem a sobrecarga da filtragem de segurança, já que os elementos de navegação freqüentemente são consistentes para todos os usuários do site. Com a configuração recomendada para desabilitar a filtragem de segurança, esse provedor de navegação não requer a enumeração da estrutura do site e é altamente escalável com impacto de desempenho aceitável.
 
-A segunda opção, [**navegação estrutural**](#using-structural-navigation-in-sharepoint-online), **não uma opção de navegação recomendada no SharePoint Online**. Esse provedor de navegação foi projetado para uma topologia de local tem suporte limitado no SharePoint Online. Enquanto ele fornece alguns adicional conjunto de recursos em comparação com outras opções de navegação, esses recursos, incluindo a filtragem de segurança e enumeração de estrutura do site, tem um custo de desempenho e escalabilidade impactos e chamadas de cargas excessivas no servidor quando ele é usado. Sites usando navegação structed que consomem recursos excessivos podem estar sujeitos de limitação.
+A segunda opção, [**navegação estrutural**](#using-structural-navigation-in-sharepoint-online), **não é uma opção de navegação recomendada no SharePoint Online**. Este provedor de navegação foi projetado para uma topologia local com suporte limitado no SharePoint Online. Enquanto fornece um conjunto adicional de recursos em relação a outras opções de navegação, esses recursos, incluindo filtragem de segurança e enumeração de estrutura de site, vêm com um custo de chamadas excessivas no servidor e impactam a escalabilidade e o desempenho quando são usados. Sites usando navegação struct que consumam recursos excessivos podem estar sujeitos à limitação.
 
-Os provedores de navegação de-de-imediata, além de muitos clientes implementou com êxito implementações alternativas de navegação personalizado. Uma classe comum das implementações de navegação personalizado engloba os padrões de design renderizados pelo cliente que armazenam um cache local de nós de navegação. (Consulte **[scripts do lado do cliente orientado por pesquisa](#using-search-driven-client-side-scripting)** neste artigo.)
+Além dos provedores de navegação prontos para uso, muitos clientes implementaram com êxito implementações de navegação personalizada alternativas. Uma classe comum de implementações de navegação personalizadas engloba padrões de design renderizados pelo cliente que armazenam um cache local de nós de navegação. (Confira **[scripts do lado do cliente orientados por pesquisa](#using-search-driven-client-side-scripting)** neste artigo.)
 
-Esses provedores de navegação tem algumas das principais vantagens: 
-- Eles geralmente funcionam bem com designs de página responsivos.
-- Eles são escaláveis extremamente alto desempenho porque eles podem renderizar sem custo do recurso (e a atualização em segundo plano após um tempo limite). 
-- Esses provedores de navegação podem recuperar dados de navegação usando diversas estratégias, que varia de configurações estáticas simples a vários provedores de intercâmbio dinâmico de dados. 
+Esses provedores de navegação têm algumas vantagens importantes: 
+- Em geral, eles funcionam bem com designs de página responsivos.
+- Eles são extremamente escalonáveis e de desempenho porque podem renderizar sem custo de recurso (e atualizar em segundo plano após um tempo limite). 
+- Esses provedores de navegação podem recuperar dados de navegação usando várias estratégias, variando de configurações estáticas simples para vários provedores de dados dinâmicos. 
 
-Um exemplo de um provedor de dados é usar uma **navegação orientada por pesquisa**, que permite a flexibilidade para enumerar nós de navegação e lidar com eficiência de filtragem de segurança. 
+Um exemplo de um provedor de dados é usar uma **navegação orientada por pesquisa**, o que permite flexibilidade para enumerar nós de navegação e manipular a filtragem de segurança com eficiência. 
 
-Existem outras opções populares para criar **provedores de navegação personalizado**. Analise [as soluções de navegação para portais SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) para obter mais orientações sobre a criação de um provedor de navegação personalizado.
+Há outras opções populares para criar **provedores de navegação personalizados**. Revise as [soluções de navegação para portais do SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) para obter mais orientações sobre a criação de um provedor de navegação personalizado.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Opções de navegação prós e contras do SharePoint Online
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Prós e contras das opções de navegação do SharePoint Online
 
-A tabela a seguir resume as vantagens e desvantagens de cada opção. 
+A tabela a seguir resume os prós e contras de cada opção. 
 
 
 |Navegação gerenciada  |Navegação estrutural  |Navegação orientada por pesquisa  |Provedor de navegação personalizada  |
 |---------|---------|---------|---------|
-|Vantagens:<br/><br/>Fácil de manter<br/>Opção recomendada<br/>     |Vantagens:<br/><br/>Fácil de configurar<br/>Filtragem de segurança<br/>Atualiza automaticamente conforme o conteúdo é adicionado<br/>|Prós:<br/><br/>Filtragem de segurança<br/>Atualização automática quando os sites são adicionados<br/>Tempo de carregamento rápido e estrutura de navegação armazenada em cache localmente<br/>|Prós:<br/><br/>Ampla gama de opções disponíveis<br/>Carregando Fast quando o cache é usada corretamente<br/>Muitas opções funcionam bem com o design da página responsivos<br/>|
-|Desvantagens:<br/><br/>Não é atualizado automaticamente para refletir a estrutura do site<br/>Impacto sobre o desempenho se a filtragem de segurança está habilitada<br/>|Desvantagens:<br/><br/>**Não recomendado**<br/>**Impacto sobre o desempenho e escalabilidade**<br/>**Sujeito a limitação**<br/>|Desvantagens:<br/><br/>Não possui capacidade de ordenar facilmente os sites<br/>Requer a personalização da página mestra (habilidades técnicas necessárias)<br/>|Desvantagens:<br/><br/>Desenvolvimento personalizado é necessário<br/>Fonte de dados externa / cache armazenados é necessária Azure ex.:<br/>|
+|Prós<br/><br/>Fácil de manter<br/>Opção recomendada<br/>     |Prós<br/><br/>Fácil de configurar<br/>Segurança cortada<br/>Atualiza automaticamente à medida que o conteúdo é adicionado<br/>|Prós<br/><br/>Segurança cortada<br/>Atualiza automaticamente à medida que os sites são adicionados<br/>Tempo de carregamento rápido e estrutura de navegação em cache local<br/>|Prós<br/><br/>Escolha mais ampla de opções disponíveis<br/>Carregamento rápido quando o cache é usado corretamente<br/>Muitas opções funcionam bem com o design de página responsivo<br/>|
+|Contras<br/><br/>Não atualizado automaticamente para refletir a estrutura do site<br/>Impacta o desempenho se a filtragem de segurança estiver habilitada<br/>|Contras<br/><br/>**Não recomendado**<br/>**Impacta o desempenho e a escalabilidade**<br/>**Sujeito à limitação**<br/>|Contras<br/><br/>Sem capacidade para encomendar facilmente sites<br/>Requer a personalização da página mestra (habilidades técnicas obrigatórias)<br/>|Contras<br/><br/>O desenvolvimento personalizado é necessário<br/>A fonte de dados externa/cache armazenado é necessária, por exemplo, o Azure<br/>|
 
-A opção mais adequada ao seu site dependerá em seus requisitos de site e em sua capacidade técnica. Se desejar que um provedor de navegação de-de-imediata escalonável, navegação gerenciada com a filtragem de segurança desabilitada é uma boa opção. 
+A opção mais apropriada para seu site dependerá dos requisitos do seu site e do seu recurso técnico. Se você quiser um provedor de navegação de caixa de saída escalável, a navegação gerenciada com a remoção de segurança desabilitada é uma boa opção. 
 
-A opção de navegação gerenciado pode ser mantida por meio de configuração, não envolvem arquivos de personalização de código e é consideravelmente menor do que a navegação estrutural. Se você exige a filtragem de segurança e estiver familiarizado com o uso de uma página mestra personalizada e alguns recursos na organização para manter as alterações que podem ocorrer na página mestra padrão para o SharePoint Online, a opção orientado por pesquisa pode produzir um melhor experiência do usuário. Se você tiver requisitos mais complexos, um provedor de navegação personalizado pode ser a melhor opção. Navegação estrutural não é recomendada.
+A opção de navegação gerenciada pode ser mantida através da configuração, não envolve arquivos de personalização de código e é significativamente mais rápida do que a navegação estrutural. Se você precisar de filtragem de segurança e estiver seguro usando uma página mestra personalizada e tiver algum recurso na organização para manter as alterações que podem ocorrer na página mestra padrão do SharePoint Online, a opção orientada por pesquisa poderá produzir um melhor experiência do usuário. Se você tiver requisitos mais complexos, um provedor de navegação personalizado pode ser a escolha certa. A navegação estrutural não é recomendada.
 
-Finalmente, é importante observar que o SharePoint está adicionando provedores de navegação adicionais e funcionalidades para modernas arquiteturas de site do SharePoint aproveitamento uma hierarquia de site mais plana e um modelo de hub e spoke com sites de hub do SharePoint. Isso permite que vários cenários que não exigem o uso do recurso de publicação do SharePoint a ser alcançada, e essas configurações de navegação otimizadas para escalabilidade e a latência no SharePoint Online. Observe que geralmente aplicando o mesmo princípio - simplificando a estrutura geral do seu site de publicação do SharePoint para uma estrutura mais simples, ajuda com o desempenho geral e dimensionar também. Isso significa que, em vez de informarem um único conjunto de sites com centenas de sites (subwebs), uma abordagem melhor é terá muitos conjuntos de sites com subsites pouquíssimas (subwebs).
+Por fim, é importante observar que o SharePoint está adicionando outros provedores de navegação e funcionalidade para arquiteturas de site do SharePoint modernas, aproveitando uma hierarquia de sites mais nivelada e um modelo de Hub e spoke com sites de Hub do SharePoint. Isso permite que muitos cenários sejam alcançados e não exijam o uso do recurso de publicação do SharePoint, e essas configurações de navegação são otimizadas para escalabilidade e latência no SharePoint Online. Observe que aplicar o mesmo princípio – simplificando a estrutura geral do seu site de publicação do SharePoint para uma estrutura Flatter, geralmente ajuda no desempenho e na escala gerais. Isso significa que, em vez de ter um único conjunto de sites com centenas de sites (subwebs), uma abordagem melhor é ter muitos conjuntos de sites com muito poucos subsites (subwebs).
 
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Usando navegação gerenciada e metadados no SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Usando a navegação gerenciada e metadados no SharePoint Online
 
-Navegação gerenciada é outra opção de-de-imediata que você pode usar para recriar a maioria da mesma funcionalidade da navegação estrutural. Metadados gerenciados podem ser configurado para que a filtragem de segurança habilitados ou desabilitados. Quando configurado com a filtragem de segurança desabilitada, navegação gerenciada é bastante eficiente, conforme ele carrega todos os links de navegação com um número constante de chamadas do servidor. Habilitar a filtragem de segurança, no entanto, dispensa algumas das vantagens da navegação gerenciada e os clientes podem escolher explorar uma das soluções de navegação personalizada para obter o melhor desempenho e escalabilidade.
+A navegação gerenciada é outra opção pronta para uso, que você pode usar para recriar a maior parte da mesma funcionalidade que a navegação estrutural. Os metadados gerenciados podem ser configurados para que o aparamento de segurança seja habilitado ou desabilitado. Quando configurado com o aparamento de segurança desabilitado, a navegação gerenciada é bastante eficiente, pois carrega todos os links de navegação com um número constante de chamadas do servidor. Habilitar a filtragem de segurança, no entanto, elimina algumas das vantagens da navegação gerenciada e os clientes podem optar por explorar uma das soluções de navegação personalizadas para obter desempenho e escalabilidade ideais.
 
-Muitos sites não exigem a filtragem de segurança, como a estrutura de navegação normalmente é consistente para todos os usuários do site. Se a filtragem de segurança está desabilitada e um link é adicionado à navegação que nem todos os usuários têm acesso a, o link ainda mostrará mas levará a uma mensagem acesso negado. Não há nenhum risco de acesso inadvertidas ao conteúdo.
+Muitos sites não exigem filtragem de segurança, já que a estrutura de navegação é geralmente consistente para todos os usuários do site. Se a filtragem de segurança estiver desabilitada e um link for adicionado à navegação à qual nem todos os usuários tenham acesso, o link ainda será mostrado, mas levará a uma mensagem de acesso negado. Não há risco de acesso inadvertido ao conteúdo.
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Como implementar a navegação gerenciada e os resultados
 
-Há vários artigos sobre Docs.Microsoft.com sobre os detalhes da navegação gerenciada, por exemplo, consulte [Visão geral da navegação gerenciada no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
+Há vários artigos no Docs.Microsoft.com sobre os detalhes da navegação gerenciada, por exemplo, confira [visão geral da navegação gerenciada no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
 
-Para implementar a navegação gerenciada, você configurar termos com URLs correspondente à estrutura de navegação do site. Navegação gerenciada ainda pode ser curated manualmente para substituir a navegação estrutural em muitos casos. Por exemplo:
+Para implementar a navegação gerenciada, você configura termos com URLs correspondentes à estrutura de navegação do site. A navegação gerenciada pode até ser organizada manualmente para substituir a navegação estrutural em muitos casos. Por exemplo:
 
-![Estrutura de site do SharePoint Online](media/SPONavOptionsListOfSites.png)
+![Estrutura do site do SharePoint Online](media/SPONavOptionsListOfSites.png)
 
 O exemplo a seguir mostra o desempenho da navegação complexa usando a navegação gerenciada.
 
-![Desempenho da navegação complexo usando navegação gerenciada](media/SPONavOptionsComplexNavPerf.png)
+![Desempenho da navegação complexa usando a navegação gerenciada](media/SPONavOptionsComplexNavPerf.png)
 
-Usar a navegação gerenciada consistentemente melhora o desempenho em comparação com a abordagem de navegação estrutural.
+Usar a navegação gerenciada aumenta consistentemente o desempenho em comparação com a abordagem de navegação estrutural.
   
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Usando a navegação estrutural no SharePoint Online
 
-Esta é a navegação da caixa usada por padrão e é a solução mais simples, mas como tal, tem uma compensação de desempenho caro. Ele não requer qualquer personalização e um usuário não técnico também facilmente pode adicionar itens, ocultar itens e gerenciar o painel de navegação da página Configurações. Isso é Entretanto também true para a navegação gerenciada então, é recomendável usar a navegação gerenciada como que pode também ser facilmente gerenciado e controlado também com melhor desempenho.
+Esta é a navegação pronta para uso, usada por padrão e é a solução mais direta, mas, como tal, tem uma compensação de desempenho dispendiosa. Não requer personalização e um usuário não técnico também pode facilmente adicionar itens, ocultar itens e gerenciar a navegação na página Configurações. No entanto, isso também é verdadeiro para a navegação gerenciada, de modo que seja recomendado usar a navegação gerenciada, também pode ser facilmente gerenciada e controlada, bem como um desempenho aprimorado.
 
-![Navegação estrutural com Subsites Mostrar selecionada](media/SPONavOptionsStructuredShowSubsites.png)
+![Navegação estrutural com mostrar subsites selecionados](media/SPONavOptionsStructuredShowSubsites.png)
   
 ### <a name="turning-on-structural-navigation-in-sharepoint-online"></a>Ativando a navegação estrutural no SharePoint Online
 
-Para ilustrar como o desempenho em uma solução do SharePoint Online standard com navegação estrutural e show subsites opção ativada. A seguir é uma captura de tela das configurações encontradas na página **Configurações do Site** \> **navegação**.
+Ilustrar como o desempenho em uma solução do SharePoint Online padrão com navegação estrutural e a opção Mostrar subsites ativadas. Veja a seguir uma captura de tela das configurações encontradas na **navegação** **configurações** \> do site da página.
   
 ![Captura de tela mostrando subsites](media/5b6a8841-34ed-4f61-b6d3-9d3e78d393e7.png)
   
-### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analisando o desempenho da navegação estrutural no SharePoint Online
+### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analisar o desempenho da navegação estrutural no SharePoint Online
 
-Para analisar o desempenho de uma página do SharePoint, use a guia de **rede** das ferramentas de desenvolvedor do F12 no Internet Explorer. 
+Para analisar o desempenho de uma página do SharePoint, use a guia **rede** das ferramentas de desenvolvedor F12 no Internet Explorer. 
   
 ![Captura de tela mostrando a guia Rede das ferramentas de desenvolvimento F12](media/SPONavOptionsNetworks.png)
   
-1. Na guia **Rede**, clique na página .aspx que está sendo carregada e, em seguida, clique na guia **Detalhes**.<br/> ![Captura de tela mostrando a guia de detalhes](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
-2. Clique em **Cabeçalhos de resposta**. <br/>![Captura de tela da guia Detalhes](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint retorna algumas informações de diagnósticos úteis em seus cabeçalhos de resposta. 
-3. Uma das partes de informações mais útil é **SPRequestDuration** , que é o valor, em milissegundos, dos quanto tempo levou de uma solicitação para ser processada no servidor. **Mostrar subsites** é desmarcada para navegação estrutural na seguinte imagem. Isso significa que há somente o link de conjunto de sites, no painel de navegação global:<br/>![Captura de tela mostrando tempos de carga como duração da solicitação](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
-4. A chave **SPRequestDuration** tem um valor de 245 milissegundos. Isso representa o tempo necessário para retornar a solicitação. Como há somente um item de navegação no site, este é um parâmetro de comparação bom para como o SharePoint Online executa sem navegação pesada. A próxima captura de tela mostra como a adição de subsites afeta essa chave.<br/>![Captura de tela mostrando uma duração de solicitação de 2502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
+1. Na guia **rede** , clique na página. aspx que está sendo carregada e, em seguida, clique na guia **detalhes** .<br/> ![Captura de tela mostrando a guia de detalhes](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
+2. Clique em **cabeçalhos de resposta**. <br/>![Captura de tela da guia Detalhes](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>O SharePoint retorna algumas informações úteis de diagnóstico em seus cabeçalhos de resposta. 
+3. Uma das informações mais úteis é o **SPRequestDuration** , que é o valor, em milissegundos, quanto tempo uma solicitação levou para ser processada no servidor. A captura de tela a seguir **mostra** subsites está desmarcada para a navegação estrutural. Isso significa que há apenas o link do conjunto de sites na navegação global:<br/>![Captura de tela mostrando tempos de carga como duração da solicitação](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+4. A chave **SPRequestDuration** tem um valor de 245 milissegundos. Isso representa o tempo necessário para retornar a solicitação. Como há apenas um item de navegação no site, este é um bom benchmark para como o SharePoint Online é executado sem uma navegação intensa. A captura de tela a seguir mostra como a adição nos subsites afeta essa chave.<br/>![Captura de tela mostrando uma duração de solicitação de 2502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
-Adicionar os subsites aumentou significativamente o tempo que leva para retornar a solicitação de página para este site de amostra relativamente simples. Hierarquias de sites complexos, incluindo páginas na navegação e outras configuração e as opções de topologia drasticamente podem aumentar ainda mais esse impacto.
+A adição dos subsites aumentou significativamente o tempo necessário para retornar a solicitação de página para este site de exemplo relativamente simples. Hierarquias de sites complexas, incluindo páginas em navegação, e outras opções de configuração e topologia, podem aumentar consideravelmente esse impacto ainda mais.
 
-## <a name="using-search-driven-client-side-scripting"></a>Usando o script do lado do cliente orientado por pesquisa
+## <a name="using-search-driven-client-side-scripting"></a>Usando scripts do lado do cliente orientados por pesquisa
 
-Usando a pesquisa, você pode aproveitar os índices que são criados no plano de fundo usando o rastreamento contínuo. Os resultados da pesquisa são extraídos do índice de pesquisa e os resultados são aparada de segurança. Isso é geralmente menor do que os provedores de navegação da caixa quando a filtragem de segurança é necessária. Usando a pesquisa para a navegação estrutural, especialmente se você tiver uma estrutura de site complexa, agilizará consideravelmente o tempo de carregamento de página. A principal vantagem disso sobre navegação gerenciada é que você se beneficia de filtragem de segurança.
+Usando a pesquisa você pode aproveitar os índices criados em segundo plano usando o rastreamento contínuo. Os resultados da pesquisa são extraídos do índice de pesquisa e os resultados são cortados de segurança. Isso é geralmente mais rápido do que os provedores de navegação prontos quando o aparamento de segurança é necessário. Usando a pesquisa para navegação estrutural, especialmente se você tiver uma estrutura de site complexa, acelerará consideravelmente o tempo de carregamento da página. A principal vantagem disso sobre a navegação gerenciada é que você se beneficia da filtragem de segurança.
 
-Essa abordagem envolve a criação de uma página mestra personalizada e substituindo o código de navegação da caixa com HTML personalizadas. Siga este procedimento descrito no exemplo a seguir para substituir o código de navegação no arquivo `seattle.html`. Neste exemplo, você abrirá o `seattle.html` de arquivo e substitua o elemento todo `id=”DeltaTopNavigation”` com código personalizado de HTML.
+Essa abordagem envolve a criação de uma página mestra personalizada e a substituição do código de navegação pronto com HTML personalizado. Siga este procedimento descrito no exemplo a seguir para substituir o código de navegação no arquivo `seattle.html`. Neste exemplo, você abrirá o `seattle.html` arquivo e substituirá o elemento `id=”DeltaTopNavigation”` inteiro pelo código HTML personalizado.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemplo: Substitua o código de navegação da caixa em uma página mestra
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Exemplo: substituir o código de navegação pronto em uma página mestra
 
-1.  Navegue até a página Configurações do Site.
-2.  Abra a galeria de páginas mestras clicando em **Páginas Mestras**.
-3.  A partir daqui, você pode navegar por meio da biblioteca e baixe o arquivo `seattle.master`.
+1.  Navegue até a página Configurações do site.
+2.  Abra a Galeria de páginas mestras clicando em **páginas mestras**.
+3.  Aqui você pode navegar pela biblioteca e baixar o arquivo `seattle.master`.
 4.  Edite o código usando um editor de texto e exclua o bloco de código na captura de tela a seguir.<br/>![Excluir o bloco de código mostrado](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Remover o código entre o `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` e `<\SharePoint:AjaxDelta>` tags e substituí-lo com o trecho a seguir:<br/>
+5. Remova o código entre as `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` marcas `<\SharePoint:AjaxDelta>` e e substitua-o pelo seguinte trecho:<br/>
 
 ```
 <div id="loading">
@@ -186,24 +186,24 @@ Essa abordagem envolve a criação de uma página mestra personalizada e substit
 </div>
 ```
 <br/>
-6. Substituir a URL no carregamento da imagem marca âncora no início, com um link para uma imagem de carregamento em seu conjunto de sites. Depois de fazer as alterações, renomeie o arquivo e, em seguida, carregue-o para a Galeria de páginas mestras. Isso gerará um novo arquivo. master.<br/>
-7. Este HTML é a marcação básica que será preenchida pelos resultados de pesquisa retornados pelo código JavaScript. Você precisará editar o código para alterar o valor para a raiz de var = "URL do conjunto de sites" conforme demonstrado no seguinte trecho:<br/>
+6. Substitua a URL na marca de âncora carregar imagem no início, com um link para uma imagem de carregamento no seu conjunto de sites. Depois de fazer as alterações, renomeie o arquivo e carregue-o na Galeria de páginas mestras. Isso gera um novo arquivo. master.<br/>
+7. Este HTML é a marcação básica que será preenchida pelos resultados da pesquisa retornados do código JavaScript. Você precisará editar o código para alterar o valor de var root = "URL do conjunto de sites", conforme demonstrado no seguinte trecho de código:<br/>
 
 ```
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Os resultados são atribuídos à matriz self.nodes e uma hierarquia é compilada sem os objetos usando linq.js atribuindo a saída para um self.hierarchy de matriz. Esta matriz é o objeto que é vinculado ao HTML. Isso é feito na função toggleView() passando o objeto self para a função ko.applyBinding().<br/>Em seguida, isso faz a matriz de hierarquia deve ser vinculado a seguinte HTML:<br/>
+8. Os resultados são atribuídos à matriz Self. Nodes e uma hierarquia é criada a partir dos objetos usando LINQ. js, atribuindo a saída a uma hierarquia de matriz própria. Esta matriz é o objeto que está vinculado ao HTML. Isso é feito na função toggleView (), passando o autoobjeto para a função ko. applybinding ().<br/>Isso faz com que a matriz de hierarquia seja vinculada ao seguinte HTML:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
-Os manipuladores de eventos para `mouseenter` e `mouseexit` são adicionados para a navegação de nível superior para lidar com os menus de lista suspensa de subsite que é feita no `addEventsToElements()` função.
+Os manipuladores de eventos `mouseenter` para `mouseexit` e são adicionados à navegação de nível superior para lidar com os menus suspensos de subsites que é feito `addEventsToElements()` na função.
 
-No nosso exemplo complexas de navegação, uma página nova carga sem mostra o cache local o tempo gasto no servidor foi reduzido para baixo de navegação estrutural parâmetro de comparação para obter um resultado semelhante como a abordagem da navegação gerenciada.
+No nosso exemplo de navegação complexa, uma nova carga de página sem o cache local mostra que o tempo gasto no servidor foi reduzido da navegação estrutural de benchmark para obter um resultado semelhante à abordagem de navegação gerenciada.
 
-### <a name="about-the-javascript-file"></a>Sobre o arquivo JavaScript …
+### <a name="about-the-javascript-file"></a>Sobre o arquivo JavaScript...
 
 O arquivo JavaScript inteiro é o seguinte:
 
@@ -440,27 +440,27 @@ function addEventsToElements() {
 
 ``` 
 
-Para resumir o código mostrado acima no `jQuery $(document).ready` função existe um `viewModel object` criado e depois o `loadNavigationNodes()` função em tal objeto é chamada. Essa função ou carrega a hierarquia de navegação previamente compilado armazenada no armazenamento local HTML5 do navegador do cliente ou ele chama a função `queryRemoteInterface()`.
+Para resumir o código mostrado acima na `jQuery $(document).ready` função, há uma `viewModel object` criada e, em `loadNavigationNodes()` seguida, a função desse objeto é chamada. Essa função carrega a hierarquia de navegação criada anteriormente armazenada no armazenamento local do HTML5 do navegador cliente ou chama a função `queryRemoteInterface()`.
 
-`QueryRemoteInterface()`cria uma solicitação usando o `getRequest()` função com o parâmetro de consulta definidos anteriormente no script e, em seguida, retorna dados do servidor. Esses dados são essencialmente uma matriz de todos os sites no conjunto de sites, representado como objetos de transferência de dados com várias propriedades. 
+`QueryRemoteInterface()`Cria uma solicitação usando a `getRequest()` função com o parâmetro de consulta definido anteriormente no script e, em seguida, retorna dados do servidor. Esses dados são essencialmente uma matriz de todos os sites no conjunto de sites representados como objetos de transferência de dados com várias propriedades. 
 
-Esses dados são analisados, em seguida, em previamente definido `SPO.Models.NavigationNode` objetos que utilizam `Knockout.js` para criar propriedades observáveis para uso por dados, os valores de vinculação para o HTML que podemos definidos anteriormente. 
+Esses dados são analisados nos objetos previamente definidos `SPO.Models.NavigationNode` que usam `Knockout.js` para criar propriedades observáveis para uso por dados associando os valores no HTML que definimos anteriormente. 
 
-Os objetos são colocados em uma matriz de resultados. Essa matriz é analisada em JSON usando vazado e armazenado no armazenamento local do navegador para melhorar o desempenho no futuro página for carregada.
+Os objetos são então colocados em uma matriz de resultados. Essa matriz é analisada no JSON usando vazar e armazenada no armazenamento de navegador local para melhorar o desempenho em cargas de página futuras.
 
 ### <a name="benefits-of-this-approach"></a>Benefícios dessa abordagem
 
-Uma grande vantagem [dessa](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) abordagem é que usando-se HTML5 de armazenamento local, painel de navegação é armazenado localmente para o usuário na próxima vez em que eles carregam a página. Recebemos melhorias de desempenho principais que usa a API de pesquisa para a navegação estrutural; No entanto, levará alguns recursos técnicos para executar e personalizar essa funcionalidade. 
+Uma das principais vantagens dessa [abordagem](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) é que, usando o armazenamento local do HTML5, a navegação é armazenada localmente para o usuário na próxima vez que ele carregar a página. Obtemos grandes aprimoramentos de desempenho ao usar a API de pesquisa para navegação estrutural; no entanto, ele leva algum recurso técnico para executar e personalizar essa funcionalidade. 
 
-Na [implementação de exemplo](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), os sites são ordenados da mesma maneira como a navegação estrutural-de-imediata; ordem alfabética. Se você quisesse desviar nesta ordem, seria mais complicado para desenvolver e manter. Além disso, essa abordagem exige que você desviar das páginas mestras com suporte. Se a página mestra não é mantida, seu site será perder abrindo diante atualizações e aperfeiçoamentos que a Microsoft faz as páginas mestras.
+Na [implementação de exemplo](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), os sites são classificados da mesma maneira que a navegação estrutural pronta para uso; ordem alfabética. Se você quisesse se desviar dessa ordem, seria mais complicado desenvolver e manter. Além disso, essa abordagem exige que você se desvie das páginas mestras com suporte. Se a página mestra personalizada não for mantida, seu site perderá as atualizações e melhorias que a Microsoft faz nas páginas mestras.
 
-O [acima código](#about-the-javascript-file) tem as seguintes dependências:
+O [código acima](#about-the-javascript-file) tem as seguintes dependências:
 
-- jQuery-http://jquery.com/
-- KnockoutJS-http://knockoutjs.com/
-- LINQ.js - http://linqjs.codeplex.com/, ou github.com/neuecc/linq.js
+- jQueryhttp://jquery.com/
+- KnockoutJS -http://knockoutjs.com/
+- LINQ. js- http://linqjs.codeplex.com/ou github.com/neuecc/LINQ.js
 
-A versão atual do LinqJS não contém o método ByHierarchy usado no código acima e interromperá o código de navegação. Para corrigir esse problema, adicione o seguinte método ao arquivo Linq.js antes da linha `Flatten: function ()`.
+A versão atual do LinqJS não contém o método ByHierarchy usado no código acima e quebrará o código de navegação. Para corrigir isso, adicione o seguinte método ao arquivo LINQ. js antes da linha `Flatten: function ()`.
 
 ```
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 5/10/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Você precisa saber as etapas a serem tomadas para identificar e corrigir o retardo, as interrupções e o desempenho lento entre o SharePoint Online, o OneDrive for Business, o Exchange Online ou o Skype for Business Online e o computador cliente? Antes de ligar para o suporte, este artigo pode ajudá-lo a solucionar problemas de desempenho do Office 365 e até mesmo corrigir alguns dos problemas mais comuns.
-ms.openlocfilehash: 5d7201174d33afab3e85714202aa637a835b7776
-ms.sourcegitcommit: f506c95807a681cd661a99b1a8768c5c657dc126
+ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33881529"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069577"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plano de solução de problemas de desempenho do Office 365
 
@@ -494,7 +494,7 @@ Abra o prompt de comando no computador cliente (por meio \> de \> Iniciar Execut
 
 Não abordaremos as ferramentas usadas na solução de problemas específica do aplicativo neste artigo específico da rede. Mas você encontrará recursos que *podem* ser usados [nesta página](https://support.office.com/en-us/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848).
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

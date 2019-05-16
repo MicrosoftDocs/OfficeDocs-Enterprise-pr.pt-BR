@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Resumo: use estes artigos para implantar cargas de trabalho do Office Server no Microsoft Azure.'
-ms.openlocfilehash: c648ecb7df1a4604960a5b0445ce3de7a74c9acf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 8f418c6fda9fb40ba0a714fd164ab3c1fe11f79e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067237"
 ---
 # <a name="hybrid-solutions"></a>Soluções híbridas
 
@@ -50,7 +50,7 @@ Para cargas de trabalho do SharePoint Server 2013 no Azure:
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
   
 [Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   

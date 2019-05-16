@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/2/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber como o Office 365 usa redes de distribuição de conteúdo (CDNs) para melhorar o desempenho.
-ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490411"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068017"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo (CDNs)
 
@@ -121,7 +121,7 @@ O CDNs em uso pelo Office 365 está sempre sujeito a alterações e, em muitos c
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Quais ganhos de desempenho uma CDN oferece?
 
-Há muitos fatores envolvidos na medição de diferenças específicas de desempenho entre os dados baixados diretamente do Office 365 e os dados baixados de uma CDN específica, como seu local em relação ao locatário e ao ponto de extremidade da CDN mais próximo, o número de ativos em uma página que são atendidos pela CDN e alterações transitórias na largura de banda e latência da rede. No enTanto, um teste A/B simples pode ajudar a mostrar a diferença no tempo de download para um arquivo específico.
+Há muitos fatores envolvidos na medição de diferenças específicas de desempenho entre os dados baixados diretamente do Office 365 e os dados baixados de uma CDN específica, como seu local em relação ao locatário e ao ponto de extremidade da CDN mais próximo, o número de ativos em uma página que são atendidos pela CDN e alterações transitórias na largura de banda e latência da rede. No entanto, um teste A/B simples pode ajudar a mostrar a diferença no tempo de download para um arquivo específico.
 
 As capturas de tela a seguir ilustram a diferença na velocidade de download entre o local do arquivo nativo no Office 365 e o mesmo arquivo hospedado na [rede de distribuição de conteúdo do Microsoft Ajax](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview). Essas capturas de tela são da guia **rede** nas ferramentas de desenvolvedor do Internet Explorer 11. Essas capturas de tela mostram a latência na biblioteca popular jQuery. Para exibir essa tela, no Internet Explorer, pressione **F12** e selecione a guia **rede** que é simbolizada com um ícone de Wi-Fi.
   
@@ -152,7 +152,7 @@ Para obter informações detalhadas sobre privacidade e proteção de dados para
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Como posso proteger minha rede com todos esses serviços de terceiros?
 
-O uso de um conjunto abrangente de serviços parceiros permite que o Office 365 dimensione e atenda aos requisitos de disponibilidade, bem como aprimore a experiência do usuário ao usar o Office 365. Os serviços de terceiros do Office 365 aproveitam as listas de certificados revogados; como crl.microsoft.com ou sa.symcb.com, e CDNs; como R3.res.Outlook.com. Todos os FQDNS CDN gerados pelo Office 365 são um FQDN personalizado para o Office 365. Se você for enviado para um FQDN na solicitação do Office 365, poderá ter certeza de que o provedor de CDN controla o FQDN e o conteúdo subjacente nesse local.
+O uso de um conjunto abrangente de serviços parceiros permite que o Office 365 dimensione e atenda aos requisitos de disponibilidade, bem como aprimore a experiência do usuário ao usar o Office 365. Os serviços de terceiros do Office 365 aproveitam as listas de certificados revogados; como crl.microsoft.com ou sa.symcb.com, e CDNs; como r3.res.outlook.com. Todos os FQDNS CDN gerados pelo Office 365 são um FQDN personalizado para o Office 365. Se você for enviado para um FQDN na solicitação do Office 365, poderá ter certeza de que o provedor de CDN controla o FQDN e o conteúdo subjacente nesse local.
   
 Para clientes que desejam segregar solicitações destinadas a um datacenter da Microsoft ou do Office 365 de solicitações destinadas a um terceiro, criamos orientações sobre como [gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
 

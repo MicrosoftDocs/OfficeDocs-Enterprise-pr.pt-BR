@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/11/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,18 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Resumo: você deve ser capaz de usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e em outros casos por necessidade.'
-ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: be117dd2e4eaa7f3e2e95cd0d2444bd5b813bccb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574095"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071147"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por que você precisa usar o Office 365 PowerShell
 
  **Resumo:** entenda por que usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e, em outros casos, por necessidade.
   
-Com o centro de administração do Microsoft 365, você não só pode gerenciar suas licenças e contas de usuário do Office 365, mas também pode gerenciar os produtos de servidor do Office 365: Exchange, Skype for Business Online e SharePoint Online. No enTanto, você também pode gerenciar esses elementos com os comandos do Office 365 PowerShell, tirando proveito de um ambiente de linha de comando e de linguagem de script para velocidade, automação e capacidade adicional.
+Com o centro de administração do Microsoft 365, você não só pode gerenciar suas licenças e contas de usuário do Office 365, mas também pode gerenciar os produtos de servidor do Office 365: Exchange, Skype for Business Online e SharePoint Online. No entanto, você também pode gerenciar esses elementos com os comandos do Office 365 PowerShell, tirando proveito de um ambiente de linha de comando e de linguagem de script para velocidade, automação e capacidade adicional.
   
 Neste artigo, mostraremos a você as seguintes maneiras em que você pode usar o Office 365 PowerShell para gerenciar o Office 365.
   
@@ -65,7 +65,7 @@ O centro de administração 365 da Microsoft exibe muitas informações úteis, 
   
 ![Exemplo de exibição de usuários e grupos no centro de administração do Microsoft 365.](media/o365-powershell-users-and-groups.png)
   
-Para muitas finalidades, isso exibe as informações que você precisa saber. No enTanto, há ocasiões em que você precisa de mais. Por exemplo, o licenciamento do Office 365 (e os recursos do Office 365 disponíveis para um usuário) dependem parte da localização geográfica desse usuário. As políticas e os recursos que você pode estender para um usuário que reside nos Estados Unidos podem não ser os mesmos que as políticas e os recursos que você pode estender para um usuário que mora na Índia ou na Bélgica. Você pode usar o centro de administração do Microsoft 365 para determinar a localização geográfica de um usuário com estas etapas:
+Para muitas finalidades, isso exibe as informações que você precisa saber. No entanto, há ocasiões em que você precisa de mais. Por exemplo, o licenciamento do Office 365 (e os recursos do Office 365 disponíveis para um usuário) dependem parte da localização geográfica desse usuário. As políticas e os recursos que você pode estender para um usuário que reside nos Estados Unidos podem não ser os mesmos que as políticas e os recursos que você pode estender para um usuário que mora na Índia ou na Bélgica. Você pode usar o centro de administração do Microsoft 365 para determinar a localização geográfica de um usuário com estas etapas:
   
 1. Clique duas vezes no **Nome de exibição** do usuário.
     

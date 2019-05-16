@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/21/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
-ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067167"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
@@ -138,11 +138,11 @@ Com mais de 2500 relações de emparelhamento de ISP globalmente e 70 pontos de 
 
 Só fornecemos endereços IP para os servidores do Office 365 que você deve rotear diretamente para o. Esta não é uma lista abrangente de todos os endereços IP para os quais você verá as solicitações de rede. Você verá as solicitações de rede para endereços IP de terceiros, não publicados, da Microsoft e de terceiros. Esses endereços IP são gerados dinamicamente ou gerenciados de forma que evitam o aviso em tempo hábil quando mudam. Se o firewall não puder permitir acesso com base nos FQDNs dessas solicitações de rede, use um arquivo de PAC ou de WPAD para gerenciar as solicitações.
   
-ConFira um IP associado ao Office 365 no qual você deseja obter mais informações?
+Confira um IP associado ao Office 365 no qual você deseja obter mais informações?
   
 1. Verifique se o endereço IP está incluído em um intervalo de publicação maior usando uma [calculadora de CIDR](http://jodies.de/ipcalc).
 2. Veja se um parceiro é proprietário do IP com uma [consulta whois](https://dnsquery.org/). Se ele for proprietário da Microsoft, poderá ser um parceiro interno.
-3. verificar o certificado, em um navegador se conectar ao endereço IP usando *HTTPS://\<endereço_ip\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
+3. Verificar o certificado, em um navegador se conectar ao endereço IP usando *https://\<Endereço_IP\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algumas URLs do Office 365 apontam para registros CNAME em vez de registros no DNS. O que preciso fazer com os registros CNAME?
@@ -207,7 +207,7 @@ Restringir o acesso aos nossos serviços de consumidor deve ser feito por sua co
   
 Tenha em mente que bloquear o acesso aos serviços de cliente da Microsoft sozinhos não impedirá a capacidade de alguém de sua rede Exfiltrate informações usando um locatário do Office 365 ou outro serviço.
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
 

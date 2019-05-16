@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Resumo: entenda como projetar redes otimizadas para cargas de trabalho no Microsoft Azure IaaS.'
-ms.openlocfilehash: c41e92445dd01a94b7d305b521bbd4330311fcb4
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b06564c8a86c59dac4ac9a5380cd88cf9d045974
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068127"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Criação de rede para o Microsoft Azure IaaS
 
@@ -113,8 +113,8 @@ Veja a seguir as etapas e o exemplo de determinação do prefixo do endereço da
 1. Escolha o tamanho da sub-rede do gateway. No nosso exemplo, escolhemos/28.
 2. Defina os bits na parte variável do espaço de endereço da VNet (b) como 0 para os bits de sub-rede de gateway (G), caso contrário, 1 (V). No nosso exemplo, estamos usando o espaço de endereço 10.119.0.0/16 para a VNet.
 <br/>
-<br/>10,119. bbbbbbbb. bbbbbbbb
-<br/>10,119. VVVVVVVV. VVVVGGGG
+<br/>10,119. bbbbbbbb . bbbbbbbb
+<br/>10,119. VVVVVVVV . VVVVGGGG
 <br/>10,119. 11111111. 11110000
 <br/><br/>
 3. Converta o resultado da etapa 2 para decimal e Express como um espaço de endereço. Para o nosso exemplo, 10,119. 11111111. 11110000 é 10.119.255.240 e com o comprimento do prefixo da etapa 1, (28 no nosso exemplo), o prefixo do endereço da sub-rede do gateway resultante é 10.119.255.240/28.
@@ -128,10 +128,10 @@ O Azure usa os primeiros 3 endereços em cada sub-rede. Portanto, o número de e
 |**Máquinas virtuais necessárias**|**Bits de host**|**Tamanho da sub-rede**|
 |:-----|:-----|:-----|
 |1 a 3  <br/> |3D  <br/> |/29  <br/> |
-|4 a 11  <br/> |4   <br/> |/28  <br/> |
-|12 a 27  <br/> |5   <br/> |/27  <br/> |
-|28 a 59  <br/> |6   <br/> |/26  <br/> |
-|60 a 123  <br/> |7   <br/> |/25  <br/> |
+|4 a 11  <br/> |quatro  <br/> |/28  <br/> |
+|12 a 27  <br/> |0,5  <br/> |/27  <br/> |
+|28 a 59  <br/> |6  <br/> |/26  <br/> |
+|60 a 123  <br/> |178  <br/> |/25  <br/> |
    
  **Tabela 3: requisitos de máquina virtual e seus tamanhos de sub-rede**
   
@@ -434,6 +434,6 @@ Para obter exemplos adicionais de cargas de trabalho de ti implantadas em máqui
 
 [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

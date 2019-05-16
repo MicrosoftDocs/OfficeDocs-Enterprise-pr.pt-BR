@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Resumo: Configure o Azure AD Connect para sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067317"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Autenticação federada de alta disponibilidade Fase 5: configurar a autenticação federada para o Office 365
 
@@ -93,7 +93,7 @@ A ferramenta Azure AD Connect configura os servidores do AD FS, os servidores de
     
 11. Na página **filtragem de ou domínio** , clique em **Avançar**.
     
-12. Na página **identificaNdo exclusivamente os usuários** , clique em **Avançar**.
+12. Na página **identificando exclusivamente os usuários** , clique em **Avançar**.
     
 13. Na página **Filtrar usuários e dispositivos** , clique em **Avançar**.
     

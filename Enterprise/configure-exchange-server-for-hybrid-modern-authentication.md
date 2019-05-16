@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: A protocolo de autenticação moderna (HMA) híbrida é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras e está disponível para implantações híbridas locais do Exchange Server.
-ms.openlocfilehash: 364f95bbbc06f477d258ed55a8711864e7a87e69
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 98a47f9527b3922767bfd8240790d7cfdeb14936
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490087"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068037"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Exchange Server no local para usar a autenticação moderna híbrida
 
@@ -97,7 +97,7 @@ Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -S
  
 4. Verifique se os novos registros foram adicionados executando o comando Get-MsolServicePrincipal da etapa 2 novamente e examinando a saída. Compare a lista/captura de tela antes da nova lista de SPNs (você também pode capturar a nova lista para seus registros). Se você tiver êxito, verá as duas novas URLs na lista. Indo em nosso exemplo, a lista de SPNs agora incluirá as URLs `https://mail.corp.contoso.com` específicas e `https://owa.contoso.com`. 
   
-## <a name="verify-virtual-directories-are-properly-configured"></a>Verificar se os diretórios virtuais estão conFigurados corretamente
+## <a name="verify-virtual-directories-are-properly-configured"></a>Verificar se os diretórios virtuais estão configurados corretamente
 
 Agora, verifique se o OAuth está habilitado corretamente no Exchange em todos os diretórios virtuais que o Outlook pode usar executando os seguintes comandos:
 
@@ -127,7 +127,7 @@ Se o OAuth estiver ausente de qualquer servidor e de qualquer um dos quatro dire
   
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Confirmar se o objeto de servidor de autenticação EvoSTS está presente
 
-ReTorne ao Shell de gerenciamento do Exchange local para este último comando. Agora você pode validar que seu local tem uma entrada para o provedor de autenticação do evoSTS:
+Retorne ao Shell de gerenciamento do Exchange local para este último comando. Agora você pode validar que seu local tem uma entrada para o provedor de autenticação do evoSTS:
   
 ```powershell
 Get-AuthServer | where {$_.Name -eq "EvoSts"}

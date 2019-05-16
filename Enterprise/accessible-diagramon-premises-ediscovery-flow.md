@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: Este artigo é uma versão de texto acessível do diagrama chamado fluxo de descoberta eletrônica local.
-ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068527"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagrama de fluxo de descoberta eletrônica no local acessível
 
@@ -26,7 +26,7 @@ Este cartaz fornece detalhes sobre a arquitetura e o fluxo de dados nos produtos
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>Entre o SharePoint, o Exchange, o Lync e os compartilhamentos de arquivos
 
-O diagrama mostra um usuário enviando uma consulta que acessa dois farms de servidores, um farm de aplicativos corporativos do SharePoint 2013 e um farm de serviços do SharePoint 2013. O farm de serviços do SharePoint 2013 se comunica com um farm de conteúdo do SharePoint 2013, o Exchange Server 2013 (que se comunica com o Lync 2013) e comPartilhamentos de arquivos do Windows. 
+O diagrama mostra um usuário enviando uma consulta que acessa dois farms de servidores, um farm de aplicativos corporativos do SharePoint 2013 e um farm de serviços do SharePoint 2013. O farm de serviços do SharePoint 2013 se comunica com um farm de conteúdo do SharePoint 2013, o Exchange Server 2013 (que se comunica com o Lync 2013) e compartilhamentos de arquivos do Windows. 
   
 A lista de fluxo de descoberta eletrônica descreve o fluxo de dados e a ordem em que as ações de consulta do eDisovery ocorrem entre o SharePoint, o Exchange, o Lync e os compartilhamentos de arquivos. 
   
@@ -42,7 +42,7 @@ Os números de cada uma das etapas descritas nesta lista pertencem a uma etapa r
     
 3. Se a solicitação for consultar uma ocorrência, o SSA consulta o índice de pesquisa. Em seguida, o conjunto de resultados da consulta de descoberta eletrônica retorna ao usuário por meio do EDC. 
     
-4. Se a solicitação for uma ação, como colocar uma isEnção ou ReleaseHold, essa ação será gravada no Actions_Table no banco de dados administrativo do SSA. Neste exemplo, uma solicitação de bloqueio para qualquer coisa no farm de conteúdo do SharePoint com "CONTOSO" é gravada no Actions_Table. 
+4. Se a solicitação for uma ação, como colocar uma isenção ou ReleaseHold, essa ação será gravada no Actions_Table no banco de dados administrativo do SSA. Neste exemplo, uma solicitação de bloqueio para qualquer coisa no farm de conteúdo do SharePoint com "CONTOSO" é gravada no Actions_Table. 
     
 5. Em intervalos regulares, o trabalho de timer de bloqueio in-loco de descoberta eletrônica do farm de conteúdo é ativado e gera uma solicitação para ações pendentes e envia atualizações de status por meio do proxy SSA para o SSA. 
     
@@ -70,7 +70,7 @@ Os números de cada uma das etapas descritas nesta lista pertencem a uma etapa r
     
 ### <a name="description-of-components-in-the-diagram"></a>Descrição dos componentes no diagrama
 
-O diagrama mostra um usuário que envia uma consulta, que acessa dois farms de servidores, um farm de aplicativos corporativos do SharePoint 2013 e um farm de serviços do SharePoint 2013. O farm do SharePoint Services é interfaces com um farm de conteúdo do SharePoint 2013, o Exchange Server 2013 (que interface com o Lync 2013) e comPartilhamentos de arquivos do Windows. 
+O diagrama mostra um usuário que envia uma consulta, que acessa dois farms de servidores, um farm de aplicativos corporativos do SharePoint 2013 e um farm de serviços do SharePoint 2013. O farm do SharePoint Services é interfaces com um farm de conteúdo do SharePoint 2013, o Exchange Server 2013 (que interface com o Lync 2013) e compartilhamentos de arquivos do Windows. 
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>Farm de aplicativos Enterprise do SharePoint 2013
 
@@ -112,7 +112,7 @@ Quando o proxy SSA no farm de aplicativos corporativos do SharePoint envia uma c
     
 - Uma solicitação de resultados de rastreamento e resposta é enviada do adaptador SSA para o farm de conteúdo do SharePoint 2013 e uma resposta é retornada ao SSA. 
     
-- Uma solicitação de resultados de rastreamento e resposta é enviada do adaptador SSA para os comPartilhamentos de arquivos do Windows, e uma resposta é retornada ao SSA. 
+- Uma solicitação de resultados de rastreamento e resposta é enviada do adaptador SSA para os compartilhamentos de arquivos do Windows, e uma resposta é retornada ao SSA. 
     
 - Uma consulta de ações pendentes, respostas ou atualizações de status é enviada do SSA para o proxy SSA no farm de conteúdo do SharePoint e uma resposta é retornada ao SSA. 
     
@@ -154,9 +154,9 @@ O componente de servidor do Exchange 2013 contém o serviço Web do Exchange e o
 
 O componente do Lync 2013 arquiva o conteúdo do Lync no Exchange 2013. 
   
-#### <a name="windows-file-shares"></a>ComPartilhamentos de arquivos do Windows
+#### <a name="windows-file-shares"></a>Compartilhamentos de arquivos do Windows
 
-O componente de comPartilhamentos de arquivos do Windows fornece resultados de rastreamento para o SSA no farm do SharePoint Services. 
+O componente de compartilhamentos de arquivos do Windows fornece resultados de rastreamento para o SSA no farm do SharePoint Services. 
   
 ### <a name="legend"></a>Legenda
 

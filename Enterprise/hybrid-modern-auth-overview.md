@@ -5,7 +5,7 @@ ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras. Ele está disponível para implantações híbridas do Skype for Business Server local e do Exchange Server local, bem como de divisão de domínio do Skype for Business. Este artigo contém links para documentos relacionados sobre pré-requisitos, configuração/desabilitação da autenticação moderna e para alguns dos clientes relacionados (ex. Informações sobre clientes Outlook e Skype).
-ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491397"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067197"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Visão geral da autenticação moderna híbrida e pré-requisitos para usá-lo com o Skype for Business e servidores do Exchange locais
 
@@ -63,7 +63,7 @@ Ao usar a autenticação moderna com o Skype for Business ou o Exchange Server l
   
 A alteração no evoSTS permite que seus servidores locais aproveitem o OAuth (emissão de token) para autorizar seus clientes e também permite que os métodos de segurança de uso local sejam comuns na nuvem (como autenticação multifator). Além disso, o evoSTS emite tokens que permitem aos usuários solicitar acesso a recursos sem fornecer a senha como parte da solicitação. Não importa onde seus usuários estejam hospedados (de online ou no local), e não importa qual local hospede o recurso necessário, o EvoSTS se tornará o núcleo da autorização de usuários e clientes após a configuração da autenticação moderna.
   
-Veja um exemplo do que eu quero dizer. Se o cliente Skype for Business precisa acessar o Exchange Server para obter informações de calendário em nome de um usuário, ele usa a biblioteca de autenticação do Active Directory (ADAL) para fazer isso. A ADAL é uma biblioteca de códigos projetada para disponibilizar recursos protegidos em seu diretório para aplicativos cliente usando tokens de segurança OAuth. A ADAL funciona com o OAuth para verificar declarações e trocar tokens (em vez de senhas) para conceder a um usuário acesso a um recurso. No passado, a autoridade em uma transação como esta--o servidor que sabe como validar declarações de usuário e emitir os tokens necessários--pode ter sido um serviço de token de segurança local ou até mesmo os serviços de Federação do Active Directory. No enTanto, a autenticação moderna centraliza essa autoridade no Azure Active Directory (Azure AD) na nuvem.
+Veja um exemplo do que eu quero dizer. Se o cliente Skype for Business precisa acessar o Exchange Server para obter informações de calendário em nome de um usuário, ele usa a biblioteca de autenticação do Active Directory (ADAL) para fazer isso. A ADAL é uma biblioteca de códigos projetada para disponibilizar recursos protegidos em seu diretório para aplicativos cliente usando tokens de segurança OAuth. A ADAL funciona com o OAuth para verificar declarações e trocar tokens (em vez de senhas) para conceder a um usuário acesso a um recurso. No passado, a autoridade em uma transação como esta--o servidor que sabe como validar declarações de usuário e emitir os tokens necessários--pode ter sido um serviço de token de segurança local ou até mesmo os serviços de Federação do Active Directory. No entanto, a autenticação moderna centraliza essa autoridade no Azure Active Directory (Azure AD) na nuvem.
   
 Isso também significa que, embora seus ambientes do Exchange Server e do Skype for Business possam ser totalmente locais, o servidor de autorização estará online e seu ambiente local deverá ter a capacidade de criar e manter uma conexão com o Office 365 assinatura na nuvem (e a instância do Azure Active Directory que sua assinatura usa como seu diretório).
   
@@ -75,7 +75,7 @@ O que não muda? Se você estiver em um domínio de divisão híbrida ou usando 
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>Verificar o status de autenticação moderna do seu ambiente local
 <a name="BKMK_CheckStatus"> </a>
 
-Como a autenticação moderna muda o servidor de autorização usado quando os serviços aproveitam o OAuth/S2S, você precisa saber se a autenticação moderna está ativada ou desAtivada para seu ambiente do Skype for Business e do Exchange. Você pode verificar o status em seus servidores Exchange ou Skype for Business, no local, executando o `Get-CSOAuthConfiguration` comando no PowerShell. Se o comando retornar uma propriedade ' OAuthServers ' vazia, a autenticação moderna estará desabilitada.
+Como a autenticação moderna muda o servidor de autorização usado quando os serviços aproveitam o OAuth/S2S, você precisa saber se a autenticação moderna está ativada ou desativada para seu ambiente do Skype for Business e do Exchange. Você pode verificar o status em seus servidores Exchange ou Skype for Business, no local, executando o `Get-CSOAuthConfiguration` comando no PowerShell. Se o comando retornar uma propriedade ' OAuthServers ' vazia, a autenticação moderna estará desabilitada.
   
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>Você atende aos pré-requisitos de autenticação modernos?
 
@@ -130,7 +130,7 @@ Verifique e verifique os itens da lista antes de continuar:
     
   - Não há um Exchange Server 2010 no ambiente.
     
-  - O desCarregamento SSL não está configurado. A terminação de SSL e a nova criptografia são suportadas.
+  - O descarregamento SSL não está configurado. A terminação de SSL e a nova criptografia são suportadas.
     
   - No caso de seu ambiente usar uma infraestrutura de servidor proxy para permitir que os servidores se conectem à Internet, verifique se todos os servidores do Exchange têm o servidor proxy definido na propriedade [InternetWebProxy](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) .
   

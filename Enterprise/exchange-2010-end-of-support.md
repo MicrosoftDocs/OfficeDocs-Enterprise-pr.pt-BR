@@ -4,19 +4,19 @@ ms.author: dstrome
 author: dstrome
 manager: laurawi
 ms.date: 1/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: O Exchange 2010 está se aproximando do fim do suporte. Use este mapa de planejamento como um guia para preparar a atualização para o Exchange Online ou uma versão mais recente do Exchange Server no local.
-ms.openlocfilehash: d9dcc2120f549c55fedc78483689dbded0a4464f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487217"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067567"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2010
 
@@ -32,7 +32,7 @@ Quando o Exchange 2010 atingir o fim do suporte em 14 de janeiro de 2020, a Micr
 - Correções de segurança para vulnerabilidades descobertas e que podem tornar o servidor vulnerável a falhas de segurança;
 - Atualizações de fuso horário.
 
-A instalação do Exchange 2010 continuará a ser executada após essa data. No enTanto, devido às alterações listadas acima, é altamente recomendável migrar do Exchange 2010 o mais rápido possível.
+A instalação do Exchange 2010 continuará a ser executada após essa data. No entanto, devido às alterações listadas acima, é altamente recomendável migrar do Exchange 2010 o mais rápido possível.
 
 Para obter mais informações sobre os servidores do Office 2010 próximos ao fim do suporte, confira [recursos para ajudá-lo a atualizar de clientes e servidores do office 2010](https://docs.microsoft.com/en-us/office365/enterprise/upgrade-from-office-2010-servers-and-products).
 
@@ -82,7 +82,7 @@ Dependendo da sua organização, você tem algumas opções que o ajudarão a ac
 | Migração híbrida mínima | Menos de 150 estações  | Algumas semanas ou menos |
 | Migração híbrida completa    | Mais de 150 assentos   | Algumas semanas ou mais |
 
-As seções a seguir fornecem uma visão geral desses métodos. ConFira [decida em um caminho de migração](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) para aprender os detalhes de cada método.
+As seções a seguir fornecem uma visão geral desses métodos. Confira [decida em um caminho de migração](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) para aprender os detalhes de cada método.
 
 ### <a name="cutover-migration"></a>Migração de substituição
 
@@ -160,7 +160,7 @@ Embora acreditemos que você possa obter o melhor valor e a experiência do usu�
 
 Para obter a melhor experiência, recomendamos que você atualize seu ambiente local restante para o Exchange 2016. Você não precisa instalar o Exchange Server 2013 se quiser ir diretamente do Exchange Server 2010 para o Exchange Server 2016.
 
-O Exchange 2016 inclui todos os recursos e avanços incluídos nas versões anteriores do Exchange e mais uma delas correspondem à experiência disponível com o Office 365 (embora alguns recursos estão disponíveis apenas no Office 365). ConFira apenas algumas das coisas que você esteve perdendo:
+O Exchange 2016 inclui todos os recursos e avanços incluídos nas versões anteriores do Exchange e mais uma delas correspondem à experiência disponível com o Office 365 (embora alguns recursos estão disponíveis apenas no Office 365). Confira apenas algumas das coisas que você esteve perdendo:
 
 | **Versão do Exchange**                     | **Recursos**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

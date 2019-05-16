@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/28/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumo: Conecte o Windows PowerShell a todos os serviços do Office 365 em uma única janela do Windows PowerShell.'
-ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: ae9487f48439c6f8d98f927c610e5f2af4c1b361
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069177"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell
 
@@ -41,7 +41,7 @@ Isso não é ideal para gerenciar o Office 365 porque não é possível trocar d
 
 Antes de poder gerenciar todo o Office 365 de uma única instância do Windows PowerShell, considere os seguintes pré-requisitos:
   
-- O Office 365conta comercial ou escolar que você usa para esses procedimentos precisa ser um membro de uma função de administrador do Office 365. Para obter mais informações, consulte [sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Isso é um requisito para o Office 365 PowerShell, não necessariamente para todos os outros serviços do Office 365.
+- O Office 365conta comercial ou escolar que você usa para esses procedimentos precisa ser um membro de uma função de administrador do Office 365. Para saber mais, veja [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Isso é um requisito para o Office 365 PowerShell, não necessariamente para todos os outros serviços do Office 365.
     
 - Você pode usar as seguintes versões de 64 bits do Windows:
     
@@ -66,7 +66,7 @@ Antes de poder gerenciar todo o Office 365 de uma única instância do Windows P
 - Você precisa instalar os módulos necessários para o Azure AD, o SharePoint Online e o Skype for Business Online:
     
    - [Azure Active Directory v2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
-   - [Shell de Gerenciamento do SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
+   - [Shell de gerenciamento do SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype for Business Online, módulo do Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532439)
     
 -  O Windows PowerShell precisa ser configurado para executar scripts assinados para o Skype for Business Online, o Exchange Online e &amp; o centro de conformidade de segurança. Para fazer isso, execute o seguinte comando em uma sessão elevada do Windows PowerShell (uma janela do Windows PowerShell que você abre selecionando **Executar como administrador**).
@@ -99,7 +99,7 @@ Aqui estão as etapas para se conectar a todos os serviços em uma única janela
   Connect-MsolService -Credential $credential
  ```
 
-4. Execute estes comandos para se conectar ao SharePoint Online. Substitua _ \<domainhost>_ pelo valor real do seu domínio. por exemplo, para "litwareinc.onmicrosoft.com", o valor de _ \<domainhost>_ é "litwareinc".
+4. Execute estes comandos para se conectar ao SharePoint Online. Substitua _ \<domainhost>_ pelo valor real do seu domínio. Por exemplo, para "litwareinc.onmicrosoft.com", o valor de _ \<domainhost>_ é "litwareinc".
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking

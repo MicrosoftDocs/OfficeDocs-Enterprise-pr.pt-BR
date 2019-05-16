@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Este artigo é uma versão de texto acessível do diagrama chamado recuperação de desastre do SharePoint para o Microsoft Azure.
-ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068517"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama acessível-recuperação de desastre do SharePoint para o Microsoft Azure
 
@@ -74,7 +74,7 @@ Há também um servidor de compartilhamento de arquivos nessa camada. Os servido
 
 O diagrama a seguir mostra o ambiente local replicado exatamente no ambiente de recuperação do Azure. O servidor de compartilhamento de arquivos desse ambiente está vinculado ao ambiente local por meio do DFSR. O DFSR transfere logs do ambiente de produção para o ambiente de recuperação por meio do servidor de compartilhamento de arquivos. 
   
-### <a name="overview"></a>Visão Geral
+### <a name="overview"></a>Visão geral
 
 O ambiente de recuperação de desastres para um farm local do SharePoint 2013 pode ser hospedado no Azure. 
   

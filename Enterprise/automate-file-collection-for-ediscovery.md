@@ -3,7 +3,7 @@ title: Automatizar a coleta de arquivos para descoberta eletrônica
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Resumo: saiba como automatizar a coleta de arquivos dos computadores dos usuários para descoberta eletrônica.'
-ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068417"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleta de arquivos para descoberta eletrônica
 
@@ -65,11 +65,11 @@ A configuração dessa solução requer muitos elementos, a maioria dos quais vo
 |:-----|:-----|
 |Domínio dos serviços de domínio do Active Directory (AD DS)  <br/> ||
 |Conectividade com a Internet da sua rede local  <br/> ||
-|SQL Server 2012 para oferecer suporte ao SharePoint 2013 e ao System Center Orchestrator 2012 R2  <br/> |[ImPlantando o System Center Orchestrator-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
+|SQL Server 2012 para oferecer suporte ao SharePoint 2013 e ao System Center Orchestrator 2012 R2  <br/> |[Implantando o System Center Orchestrator-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
 | SharePoint 2013 local ou baseado no Azure para descoberta eletrônica (necessário para A opção A) <br/> ||
 |Servidor de compartilhamento de arquivos no local para preparação  <br/> ||
 |Exchange Server 2013 local para A opção uma importação de PST  <br/> |CU5 (15.913.22) está disponível em [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426).  <br/> |
-|System Center Orchestrator 2012 R2  <br/> |[ImPlantando o System Center Orchestrator-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
+|System Center Orchestrator 2012 R2  <br/> |[Implantando o System Center Orchestrator-2012](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
 |Office 365 (E3 Plan) com Exchange Online e SharePoint Online (necessário para a opção B)  <br/> |Para se inscrever em uma assinatura do Office 365 E3, confira [assinatura do office 365 E3](https://go.microsoft.com/fwlink/p/?LinkId=613504).  <br/> |
 |Assinatura do Azure com uma máquina virtual  <br/> |Para se inscrever no Azure, confira [inscrever-se no Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=512010) <br/> |
 |Uma conexão VPN entre a rede local e sua assinatura do Azure  <br/> |Para configurar um túnel VPN entre sua assinatura do Azure e sua rede local, consulte [conectar uma rede local a uma rede virtual do Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=613507).  <br/> |
@@ -328,8 +328,8 @@ $AllFiles | ForEach-Object {
     
 |**Número da linha**|**O que você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
-|17   <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se o **$ConnectionURI** aponta para um local http, não para https. Ele não funcionará com https:.          |Obrigatório  <br/> |
+|3,6  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
+|17.07.06  <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se o **$ConnectionURI** aponta para um local http, não para https. Ele não funcionará com https:.          |Obrigatório  <br/> |
    
 4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução \\ \\para o\\compartilhamento de casos de preparação $.
     
@@ -375,7 +375,7 @@ $AllFiles | ForEach-Object {
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Pesquisa do SharePoint no local para armazenamento Cold
 
-1. crie uma nova fonte de conteúdo no seu farm do SharePoint 2013 para o compartilhamento de armazenamento cold no Azure \\ \\,\\por exemplo, AZFile1 ContentColdStorage. Para obter mais informações sobre como gerenciar fontes de conteúdo, consulte [Adicionar, editar ou excluir uma fonte de conteúdo no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
+1. Crie uma nova fonte de conteúdo no seu farm do SharePoint 2013 para o compartilhamento de armazenamento Cold no Azure \\ \\,\\por exemplo, AZFile1 ContentColdStorage. Para obter mais informações sobre como gerenciar fontes de conteúdo, consulte [Adicionar, editar ou excluir uma fonte de conteúdo no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
     
 2. Inicie um rastreamento completo. Para obter mais informações, consulte, [Iniciar, pausar, continuar ou parar um rastreamento no SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     

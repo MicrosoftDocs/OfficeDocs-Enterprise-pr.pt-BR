@@ -1,9 +1,9 @@
 ---
 title: Ferramentas para gerenciar contas do Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Saiba quais ferramentas usar para gerenciar seus usuários do Office 365 e como o que você pode usar depende de como você gerencia as identidades do usuário. '
-ms.openlocfilehash: 6e8f35d9b4f753d8e5ddad448d311767971c3c2a
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 3b1a869825991d9c85e16b1cc5f50646806ab3fd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070368"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Ferramentas para gerenciar contas do Office 365
 
@@ -51,7 +51,7 @@ Onde e como você pode gerenciar suas contas de usuário depende do modelo de id
 Ao decidir o modo como sua organização criará e gerenciará contas, considere o seguinte:
   
 - O software de sincronização de diretório precisa ser instalado em servidores dentro do seu ambiente local para conectar as identidades entre o Office 365 e seu diretório local.
-- Qualquer opção de sincronização de diretório, incluindo as opções de SSO, requer que seus atributos de diretório local atendam aos padrões. As informações específicas de quais atributos são usados no seu diretório e qual limpeza (se houver) é necessária são descritas em preparar-se [para provisionar usuários por meio da sincronização de diretórios com o Office 365](prepare-for-directory-synchronization.md). ConFira [instalar e executar a ferramenta IdFix do Office 365](install-and-run-idfix.md) para obter instruções sobre como usar o IdFix para automatizar a limpeza de diretório. 
+- Qualquer opção de sincronização de diretório, incluindo as opções de SSO, requer que seus atributos de diretório local atendam aos padrões. As informações específicas de quais atributos são usados no seu diretório e qual limpeza (se houver) é necessária são descritas em preparar-se [para provisionar usuários por meio da sincronização de diretórios com o Office 365](prepare-for-directory-synchronization.md). Confira [instalar e executar a ferramenta IdFix do Office 365](install-and-run-idfix.md) para obter instruções sobre como usar o IdFix para automatizar a limpeza de diretório. 
 
 ## <a name="plan-how-you-are-going-to-create-office-365-accounts"></a>Planejar como você vai criar contas do Office 365
 
@@ -62,8 +62,8 @@ A tabela a seguir lista as diferentes ferramentas de gerenciamento de conta:
 |**Centro de administração** | - [Adicionar usuários individualmente ou em massa ao Office 365-ajuda para administradores](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) <br> – Fornece uma interface Web simples para adicionar e alterar contas de usuário. <br> – Não pode ser usado para alterar usuários se a sincronização de diretórios estiver habilitada (a atribuição de local e licença pode ser definida). <br> – Não pode ser usado com opções de SSO. <br> |
 |**Windows PowerShell** | - [Gerenciar o Office 365 com o Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br> – Permite que você adicione usuários a usuários em massa usando um script do Windows PowerShell. <br> – Pode ser usado para atribuir local e licenças a contas, independentemente de como as contas são criadas. <br> |
 |**Importação em massa** | - [Adicionar vários usuários ao mesmo tempo para o Office 365-ajuda para administradores](add-several-users-at-the-same-time.md) <br> – Permite que você importe um arquivo CSV para adicionar um grupo de usuários ao Office 365. <br> – Não pode ser usado com opções de SSO. <br> |
-|**Azure Active Directory** | – Você Obtém uma edição gratuita do Azure Active Directory com sua assinatura do Office 365. – Você pode executar funções como redefinição de senha de autoatendimento para usuários em nuvem e a personalização das páginas de entrada e painel de acesso usando a edição gratuita. <br> – Para obter uma funcionalidade aprimorada, você pode atualizar para o Basic Edition ou Premium Edition. ConFira [Azure Active Directory Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) para obter a lista de recursos com suporte. <br> |
-|**Sincronização de diretórios** | - [Integração de suas identidades locais com o Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br> – Para a sincronização de diretório com ou sem sincronização de senha, use o [Azure ad Connect com as configurações expressas](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br>  – Para várias florestas e opções de SSO, use a [instalação personalizada do Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430). <br> – Fornece a infraestrutura necessária para habilitar o SSO. <br> – Necessário para vários cenários híbridos (migração em estágios, Exchange híbrido) <br> – Sincroniza os grupos de segurança e habilitados para email do seu diretório local. <br> |
+|**Azure Active Directory** | – Você Obtém uma edição gratuita do Azure Active Directory com sua assinatura do Office 365. – Você pode executar funções como redefinição de senha de autoatendimento para usuários em nuvem e a personalização das páginas de entrada e painel de acesso usando a edição gratuita. <br> – Para obter uma funcionalidade aprimorada, você pode atualizar para o Basic Edition ou Premium Edition. Confira [Azure Active Directory Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) para obter a lista de recursos com suporte. <br> |
+|**Sincronização de diretório** | - [Integração de suas identidades locais com o Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br> – Para a sincronização de diretório com ou sem sincronização de senha, use o [Azure ad Connect com as configurações expressas](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br>  – Para várias florestas e opções de SSO, use a [instalação personalizada do Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430). <br> – Fornece a infraestrutura necessária para habilitar o SSO. <br> – Necessário para vários cenários híbridos (migração em estágios, Exchange híbrido) <br> – Sincroniza os grupos de segurança e habilitados para email do seu diretório local. <br> |
 
 Independentemente de como você pretende adicionar as contas de usuário ao Office 365, você precisa gerenciar vários recursos de conta, como atribuir licenças, especificar o local e assim por diante. Esses recursos podem ser gerenciados de longo prazo no centro de administração ou você também pode [criar contas de usuário com o Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 'Resumo: saiba como gerenciar contas e licenças de usuários usando o Office 365 PowerShell.'
-ms.openlocfilehash: 604f0e6926936473f4b8e13546cdf0d7d839c667
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
-ms.translationtype: HT
+ms.openlocfilehash: b9b59db7ab1108db625aa6188ff12fec5d5814d7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068747"
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Gerenciar contas de usuário e licenças usando o Office 365 PowerShell
 

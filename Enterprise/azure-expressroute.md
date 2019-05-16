@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365.
-ms.openlocfilehash: c8cff4ef85c4383ba04829cf3cf8da3a1bc36715
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 26aa65cdec5e9e37ee99a283d600d56f79fd85a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490339"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068267"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Rota Expressa do Azure para Office 365
 
@@ -66,7 +66,7 @@ A tabela a seguir lista os serviços do Office 365 que são compatíveis com o E
 
 <sup>1</sup> Cada um desses aplicativos tem requisitos de conectividade com a Internet que não têm suporte no ExpressRoute, consulte o artigo sobre os [pontos de extremidade do Office 365](https://aka.ms/o365endpoints) para obter mais informações.
 
-Os serviços que não estão incluídos no ExpressRoute para Office 365 são downloads de cliente do Office 365 proPlus, entrada do provedor de identidade local e serviço do Office 365 (operado por 21 vianet) na China.
+Os serviços que não estão incluídos no ExpressRoute para Office 365 são downloads de cliente do Office 365 ProPlus, entrada do provedor de identidade local e serviço do Office 365 (operado por 21 vianet) na China.
 
 ([Azure ExpressRoute para Office 365](azure-expressroute.md#BKMK_HOME))
 
@@ -102,7 +102,7 @@ Pronto para se inscrever no [ExpressRoute para o Office 365](https://aka.ms/ert)
 
 ([Azure ExpressRoute para Office 365](azure-expressroute.md#BKMK_HOME))
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Conectividade de rede para Office 365](network-connectivity.md)
 

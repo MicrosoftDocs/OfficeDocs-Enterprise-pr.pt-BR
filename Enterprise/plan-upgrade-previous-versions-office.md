@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos desatualizados. Use estes recursos para começar a usar seu plano.
-ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492039"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069327"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
 
@@ -30,7 +30,7 @@ Se sua organização estiver usando versões mais antigas dos produtos e servido
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>O que acontece se eu não atualizar?
 
-Você pode optar por não atualizar no momento. Seus servidores e aplicativos locais continuarão a ser executados. No enTanto, quando você não receber mais atualizações de segurança ou opções de suporte, você ou sua organização pode estar vulnerável a brechas de segurança. É altamente recomendável que você planeje sua atualização o mais rápido possível, seja para o Office 365 ou para versões mais recentes de seus servidores e aplicativos locais.
+Você pode optar por não atualizar no momento. Seus servidores e aplicativos locais continuarão a ser executados. No entanto, quando você não receber mais atualizações de segurança ou opções de suporte, você ou sua organização pode estar vulnerável a brechas de segurança. É altamente recomendável que você planeje sua atualização o mais rápido possível, seja para o Office 365 ou para versões mais recentes de seus servidores e aplicativos locais.
 
 ## <a name="what-upgrade-options-are-available"></a>Quais opções de atualização estão disponíveis?      
 
@@ -50,7 +50,7 @@ As organizações têm várias opções para considerar:
     |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
     |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
  
-- **Implementar uma solução híbrida, incluindo o Office 365** e seus servidores e aplicativos locais. Se você estiver migrando para a nuvem em fases, ou se precisar manter alguns servidores e aplicativos locais, uma solução híbrida pode ser adequada para a sua organização. ConFira **[visão geral das soluções de nuvem híbrida do Office 365.](hybrid-cloud-overview.md)** 
+- **Implementar uma solução híbrida, incluindo o Office 365** e seus servidores e aplicativos locais. Se você estiver migrando para a nuvem em fases, ou se precisar manter alguns servidores e aplicativos locais, uma solução híbrida pode ser adequada para a sua organização. Confira **[visão geral das soluções de nuvem híbrida do Office 365.](hybrid-cloud-overview.md)** 
     
 ### <a name="help-is-available-for-your-organization"></a>A ajuda está disponível para sua organização
 
@@ -74,7 +74,7 @@ Se você estiver usando o Office 2007 ou o Office 2010 em casa, considere as seg
     - Se seu computador Windows está executando o Windows 10, considere obter o [Office Home _AMP_ Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
     - Se o seu computador Windows estiver executando o Windows 7, 8 ou 8,1 e você não estiver atualizando para o Windows 10 no momento, considere obter o Office Home & Student 2016 (ou outra edição do Microsoft Office) de um revendedor autorizado.
 
-Você também pode optar por não atualizar no momento. Seus aplicativos do Office continuarão a ser executados. (Cronogramas para datas de suporte do Office estão disponíveis [aqui](https://go.microsoft.com/fwlink/p/?linkid=2085724)). No enTanto, a atualização fornecerá acesso a recursos novos e aprimorados, incluindo atualizações de segurança. 
+Você também pode optar por não atualizar no momento. Seus aplicativos do Office continuarão a ser executados. (Cronogramas para datas de suporte do Office estão disponíveis [aqui](https://go.microsoft.com/fwlink/p/?linkid=2085724)). No entanto, a atualização fornecerá acesso a recursos novos e aprimorados, incluindo atualizações de segurança. 
    
 ## <a name="what-is-microsoft-365"></a>O que é o Microsoft 365?
 

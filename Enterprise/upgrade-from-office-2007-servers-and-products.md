@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: O suporte está terminando em breve para os aplicativos cliente e servidores do Office 2007, e os acordos de suporte personalizados não estão disponíveis. Use este artigo para começar a planejar sua atualização agora.
-ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.openlocfilehash: 7f07de4fcca57dd2ad744a7c8c594ca88ddd5f4e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070207"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2007
 
@@ -40,8 +40,7 @@ O suporte terminou para produtos e serviços do Office 2007. Os seguintes roteir
 |:-----|:-----|
 |[Roteiro de fim do suporte do Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10 de outubro de 2017  <br/> |
 |[Roteiro de fim do suporte do Exchange 2007](exchange-2007-end-of-support.md) <br/> |11 de abril de 2017  <br/> |
-|
-  [Roteiro de fim do suporte do SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 de outubro de 2017  <br/> |
+|[Roteiro de fim do suporte do SharePoint Server 2007](sharepoint-2007-end-of-support.md) <br/> |10 de outubro de 2017  <br/> |
 |[Roteiro de fim do suporte do Project Server 2007](project-server-2007-end-of-support.md) <br/> |10 de outubro de 2017  <br/> |
 |[Atualização do Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 de janeiro de 2018  <br/> |
 |[Roteiro de fim do suporte do PerformancePoint Server 2007](pps-2007-end-of-support.md) <br/> |9 de janeiro de 2018  <br/> |

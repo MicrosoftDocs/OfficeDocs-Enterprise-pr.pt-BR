@@ -1,10 +1,9 @@
 ---
 title: Integração do Office 365 com ambientes locais
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Saiba como integrar o Office 365 com os serviços de diretório existentes.
-ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1fa044a0a9db0d8422239cf301fea21a2c3d47e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487388"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069737"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Integração do Office 365 com ambientes locais
 
@@ -42,7 +41,7 @@ Você também pode usar os consultores do Azure AD para obter orientação de in
 ## <a name="before-you-begin"></a>Antes de começar
 Antes de integrar o Office 365 e um ambiente local, você também precisará participar [do planejamento de rede e do ajuste de desempenho do Office 365](network-planning-and-performance.md). Você também vai querer entender os modelos de [identidade](about-office-365-identity.md) disponíveis no Office 365. 
 
-ConFira [onde gerenciar contas de usuário do office 365](manage-office-365-accounts.md) para obter uma lista de ferramentas que você pode usar para gerenciar usuários e contas do Office 365. 
+Confira [onde gerenciar contas de usuário do office 365](manage-office-365-accounts.md) para obter uma lista de ferramentas que você pode usar para gerenciar usuários e contas do Office 365. 
   
 ## <a name="integrate-office-365-with-directory-services"></a>Integrar o Office 365 com os serviços de diretório
 Se você tiver contas de usuário existentes em um diretório local, não será necessário recriar todas essas contas no Office 365 e correr o risco de introdução a diferenças ou erros entre os ambientes. A sincronização de diretórios ajuda você a espelhar essas contas entre seus ambientes online e local. Com a sincronização de diretórios, os usuários não precisam se lembrar de novas informações para cada ambiente, e você não precisa criar ou atualizar contas duas vezes. Você precisará [preparar o diretório local](prepare-for-directory-synchronization.md) para a sincronização de diretórios, é possível fazer isso manualmente ou usar a [ferramenta IdFix](install-and-run-idfix.md) (IdFix Tool só funciona com o Active Directory). 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Resumo: entenda os elementos comuns da infraestrutura de rede e como preparar sua rede.'
-ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f092e3fb0a2f009aa7c6bbb14229fe98b35700ea
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068107"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Elementos comuns de conectividade de nuvem da Microsoft
 
@@ -90,6 +90,6 @@ Você precisa considerar essas áreas de rede ao adotar qualquer um dos serviço
 
 [Rede do Microsoft Cloud para Arquitetos Corporativos](microsoft-cloud-networking-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

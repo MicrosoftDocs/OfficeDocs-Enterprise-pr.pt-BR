@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 9/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Discute por que a otimização de rede é importante para serviços SaaS, a meta da rede do Office 365 e como o SaaS requer redes diferentes de outras cargas de trabalho.
-ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069614"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Visão geral da conectividade de rede do Office 365
 
@@ -45,7 +45,7 @@ Para obter mais informações sobre os princípios de conectividade de rede do O
 
 Os princípios de arquitetura de rede tradicionais para cargas de trabalho do cliente/servidor são projetados em torno da pressuposição de que o tráfego entre os clientes e os pontos de extremidade não é estendido fora do perímetro da rede corporativa. Além disso, em muitas redes corporativas, todas as conexões de saída da Internet atravessam a rede corporativa e saem de um local central.
 
-Nas arquiteturas de rede tradicionais, a maior latência para o tráfego de Internet genérico é uma compensação necessária para manter a segurança do perímetro de rede, e a otimização de desempenho para o tráfego da Internet geralmente envolve a atualização ou a expansão do equipamento em pontos de saída de rede. No enTanto, essa abordagem não aborda os requisitos para o desempenho ideal da rede de serviços SaaS como o Office 365.
+Nas arquiteturas de rede tradicionais, a maior latência para o tráfego de Internet genérico é uma compensação necessária para manter a segurança do perímetro de rede, e a otimização de desempenho para o tráfego da Internet geralmente envolve a atualização ou a expansão do equipamento em pontos de saída de rede. No entanto, essa abordagem não aborda os requisitos para o desempenho ideal da rede de serviços SaaS como o Office 365.
 
 ## <a name="identifying-office-365-network-traffic"></a>Identificando o tráfego de rede do Office 365
 
@@ -69,7 +69,7 @@ Determinados problemas comuns de desempenho são criados quando o tráfego do Of
 
 - Alta latência pode causar um desempenho extremamente ruim de fluxos de áudio e vídeo e resposta lenta de recuperação de dados, pesquisas, colaboração em tempo real, informações de disponibilidade do calendário, conteúdo do produto e outros serviços
 - As conexões de egresso de um local central derrotam os recursos de roteamento dinâmico da rede global do Office 365, adicionando latência e tempo de ida e volta
-- DesCriptografar o tráfego de rede do Office 365 protegido por SSL e criptografá-lo novamente pode causar erros de protocolo e ter risco de segurança
+- Descriptografar o tráfego de rede do Office 365 protegido por SSL e criptografá-lo novamente pode causar erros de protocolo e ter risco de segurança
 
 Reduzir o caminho de rede para os pontos de entrada do Office 365, permitindo que o tráfego de saída do cliente seja o mais próximo possível de sua localização geográfica pode melhorar o desempenho de conectividade e a experiência do usuário final no Office 365. Também pode ajudar a reduzir o impacto de alterações futuras na arquitetura de rede no desempenho e na confiabilidade do Office 365. O modelo de conectividade ideal é sempre fornecer egresso de rede no local do usuário, independentemente se isso está na rede corporativa ou locais remotos, como casa, hotéis, lanchonetes e aeroportos. O tráfego da Internet genérico e o tráfego de rede corporativa baseado em WAN seriam roteados separadamente e não usam o modelo de egresso direta local. Esse modelo de egresso direta local é representado no diagrama abaixo.
 
@@ -90,7 +90,7 @@ Para obter mais informações sobre a compreensão e a aplicação de princípio
 
 Otimizar o desempenho da rede do Office 365 é muito bem a remover impedimentos desnecessários. Ao tratar as conexões do Office 365 como tráfego confiável, você pode evitar que a latência seja introduzida pela inspeção de pacote e concorrência para a largura de banda do proxy. Permitir conexões locais entre máquinas clientes e pontos de extremidade do Office 365 permite que o tráfego seja direcionado dinamicamente através da rede global da Microsoft.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
 

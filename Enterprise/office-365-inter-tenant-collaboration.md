@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Saiba como o Office 365 Collaboration funciona em locatários e organizações.
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492087"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069667"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Colaboração interlocatário do Office 365
 
@@ -42,7 +42,7 @@ As opções de colaboração entre locatários do Office 365 incluem o uso de um
    
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>Opções de colaboração do SharePoint Online e do OneDrive for Business
 
-|**ComPartilhando metas**|**Ação administrativa**|**Informações de instruções**|
+|**Compartilhando metas**|**Ação administrativa**|**Informações de instruções**|
 |:-----|:-----|:-----|
 |Compartilhar sites e documentos com usuários externos  <br/> |Os administradores configuram o compartilhamento no locatário ou no nível do conjunto de sites para contas da conta da Microsoft, de conta de trabalho ou da escola autenticadas ou de convidado  <br/> |[Gerenciar compartilhamento externo para o ambiente do SharePoint Online](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Compartilhamento de domínios restritos no Office 365 SharePoint Online e no OneDrive for Business](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [Usar o SharePoint Online como uma solução de extranet B2B (entre empresas)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |Controlar e controlar o compartilhamento externo para usuários finais  <br/> |Proprietários de arquivos do OneDrive for Business e usuários finais do SharePoint Online configurar o compartilhamento de sites e documentos e estabelecer notificações para controlar o compartilhamento  <br/> |[Configurar notificações para compartilhamento externo para o OneDrive for Business](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Compartilhar arquivos ou pastas do SharePoint no Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |

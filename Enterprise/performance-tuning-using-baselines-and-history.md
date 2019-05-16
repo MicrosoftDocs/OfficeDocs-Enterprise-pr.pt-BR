@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Há algumas maneiras simples de verificar o desempenho da conexão entre o Office 365 e sua empresa, que permitirá estabelecer uma linha de base aproximada da conectividade. Conhecer o histórico de desempenho de suas conexões de computador cliente pode ajudá-lo a detectar problemas emergentes antecipadamente, identificar e prever problemas.
-ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491796"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069517"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho
 
@@ -47,7 +47,7 @@ A solução de problemas de desempenho não está prestes a atender metas espec�
   
 ## <a name="okay-what-does-a-performance-problem-look-like"></a>Ok, qual é a aparência de um problema de desempenho?
 
-Primeiro, você precisa certificar-se de que o que você está enfrentando é realmente um problema de desempenho e não um incidente de serviço. Um problema de desempenho é diferente de um incidente de serviço no Office 365. ConFira aqui como diferenciá-los.
+Primeiro, você precisa certificar-se de que o que você está enfrentando é realmente um problema de desempenho e não um incidente de serviço. Um problema de desempenho é diferente de um incidente de serviço no Office 365. Confira aqui como diferenciá-los.
   
 Se o serviço do Office 365 estiver com problemas, isso é um incidente de serviço. Você verá ícones vermelhos ou amarelos sob **integridade atual** no centro de administração do Office 365, você também pode notar um desempenho lento em computadores clientes que se conectam ao Office 365. Por exemplo, se a integridade atual relatar um ícone vermelho e você vir a **investigar** ao lado do Exchange, também poderá receber uma série de chamadas de pessoas em sua organização que reclamam que as caixas de correio de cliente que usam o Exchange Online estão funcionando incorretamente. Nesse caso, é razoável supor que seu desempenho do Exchange Online se tornou uma vítima de problemas no serviço. 
   
@@ -151,7 +151,7 @@ Isso significa que você verificou a equipe da sua rede e descobriu que você de
   
 ![Rede básica com cliente, proxy e nuvem, e ferramentas sugestões de PSPing, TraceTCP e rastreamentos de rede.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
-As opções são listadas como **simples** e **avançadas** por causa da quantidade de conhecimento necessária para localizar os dados de desempenho. Um rastreamento de rede levará muito tempo, comparado à execução de ferramentas de linha de comando, como PsPing e TraceTCP. Essas duas ferramentas de linha de comando foram escolhidas porque não usam pacotes ICMP, que serão bloqueados pelo Office 365, e como eles fornecem o tempo em milissegundos que é necessário para deixar o computador cliente ou servidor proxy (se você tiver acesso) e chegar ao Office 365. Cada salto individual de um computador para outro terminará com um valor de tempo, e isso é ótimo para as linhas de base! Da mesma forma, essas ferramentas de linha de comando permitem que você adicione um número de porta ao comando, isso é útil porque o Office 365 se comunica pela porta 443, que é a porta usada pela camada de soquetes seguros e pela segurança da camada de transporte (SSL e TLS). No enTanto, outras ferramentas de terceiros podem ser soluções melhores para a sua situação. A Microsoft não dá suporte a todas essas ferramentas, portanto, se, por algum motivo, você não puder obter o PsPing e o TraceTCP funcionando, vá para um rastreamento de rede com uma ferramenta como Netmon. 
+As opções são listadas como **simples** e **avançadas** por causa da quantidade de conhecimento necessária para localizar os dados de desempenho. Um rastreamento de rede levará muito tempo, comparado à execução de ferramentas de linha de comando, como PsPing e TraceTCP. Essas duas ferramentas de linha de comando foram escolhidas porque não usam pacotes ICMP, que serão bloqueados pelo Office 365, e como eles fornecem o tempo em milissegundos que é necessário para deixar o computador cliente ou servidor proxy (se você tiver acesso) e chegar ao Office 365. Cada salto individual de um computador para outro terminará com um valor de tempo, e isso é ótimo para as linhas de base! Da mesma forma, essas ferramentas de linha de comando permitem que você adicione um número de porta ao comando, isso é útil porque o Office 365 se comunica pela porta 443, que é a porta usada pela camada de soquetes seguros e pela segurança da camada de transporte (SSL e TLS). No entanto, outras ferramentas de terceiros podem ser soluções melhores para a sua situação. A Microsoft não dá suporte a todas essas ferramentas, portanto, se, por algum motivo, você não puder obter o PsPing e o TraceTCP funcionando, vá para um rastreamento de rede com uma ferramenta como Netmon. 
   
 Você pode obter uma linha de base antes do horário comercial, novamente durante o uso pesado e, em seguida, novamente após as horas. Isso significa que você pode ter uma estrutura de pastas parecida com esta:
   
@@ -214,13 +214,13 @@ Há algumas maneiras de lidar com o ponto de egresso, nesse caso, o servidor pro
     
 - \*. microsoftonline-p.com
     
-- \*. SharePoint.com
+- \*. sharepoint.com
     
-- \*. Outlook.com
+- \*. outlook.com
     
-- \*. Lync.com
+- \*. lync.com
     
-- osub.Microsoft.com
+- osub.microsoft.com
     
 Todos os usuários precisam ter permissão para acessar esses endereços sem interferência de proxy ou autenticação. Em uma rede menor, você deve adicioná-los à sua lista de bypass de proxy no seu navegador da Web. 
   
@@ -246,13 +246,13 @@ Você precisa usar o [PSPing](https://technet.microsoft.com/en-us/sysinternals/j
     
 2. Navegue até a pasta onde a ferramenta (neste caso, PsPing) está instalada e teste estas URLs do Office 365:
     
-  - psping Portal.Office.com:443
+  - psping portal.office.com:443
     
-  - psping Microsoft-My.SharePoint.com:443
+  - psping microsoft-my.sharepoint.com:443
     
-  - psping Outlook.office365.com:443
+  - psping outlook.office365.com:443
     
-  - psping www.Yammer.com:443
+  - psping www.yammer.com:443
     
     ![O comando PSPing indo para a porta 443 do microsoft-my.sharepoint.com.](media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
   
@@ -276,13 +276,13 @@ Se você não está familiarizado com o bypass de proxy e prefere realizar as co
     
     O comando pode ser semelhante a um destes exemplos: 
     
-  - ping ourproxy.ourdomain.Industry.Business.com
+  - ping ourproxy.ourdomain.industry.business.com
     
   - ping 155.55.121.55
     
   - ping ourproxy
     
-  - psping ourproxy.ourdomain.Industry.Business.com:80
+  - psping ourproxy.ourdomain.industry.business.com:80
     
   - psping 155.55.121.55:80
     

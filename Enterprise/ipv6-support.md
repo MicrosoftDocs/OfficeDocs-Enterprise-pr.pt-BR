@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 10/10/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumo: descreve o suporte a IPv6 nos componentes do Microsoft Office 365 e nas ofertas governamentais do Office 365.'
-ms.openlocfilehash: 82af5c7659b3c16c8e92b45b65b6868a404eca23
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067227"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Suporte a IPv6 nos serviços do Office 365
 
@@ -59,9 +59,9 @@ O proteção do Exchange Online (EOP) oferece suporte ao IPv6 se a transmissão 
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>Suporte a IPv6 para ofertas governamentais do Office 365
 
-O Office 365 IPv6 support para ofertas governamentais está em conformidade com o Office of Management and Budget (OMB) Memorandum para os principais gerentes de informações de departamentos e agências de executivos, bem como a adoção governamental do governo federal do protocolo Internet versão 6 (IPv6 ) Memorandum. [O Microsoft Office 365 para o governo](https://go.microsoft.com/fwlink/p/?LinkId=325414) é um serviço de vários locatários que armazena dados do governo dos EUA em uma nuvem de comunidade segregada. Como outras ofertas do Office 365, ele fornece serviços de produtividade e colaboração, incluindo o Exchange Online, o Skype for Business, o SharePoint Online e o Office Professional Plus. 
+O Office 365 IPv6 support para ofertas governamentais está em conformidade com o Office of Management and Budget (OMB) Memorandum para os principais gerentes de informações de departamentos e agências de executivos, bem como a adoção governamental do governo federal do protocolo Internet versão 6 (IPv6 ) memorandum. [O Microsoft Office 365 para o governo](https://go.microsoft.com/fwlink/p/?LinkId=325414) é um serviço de vários locatários que armazena dados do governo dos EUA em uma nuvem de comunidade segregada. Como outras ofertas do Office 365, ele fornece serviços de produtividade e colaboração, incluindo o Exchange Online, o Skype for Business, o SharePoint Online e o Office Professional Plus. 
 
-As ofertas do governo do Microsoft Office 365 aplicam-se apenas aos 2013 e posteriores. Para obter mais informações sobre as ofertas governamentais do Office 365, consulte [anunciaNdo o Office 365 para o governo: uma nuvem da Comunidade do governo dos EUA](https://go.microsoft.com/fwlink/p/?LinkId=325414). O tráfego internacional em normas de braços (ITAR) é um conjunto de regulamentações governamentais dos EUA que controlam a exportação e a importação de artigos e serviços relacionados à defesa na [lista de munitions (USML) dos Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
+As ofertas do governo do Microsoft Office 365 aplicam-se apenas aos 2013 e posteriores. Para obter mais informações sobre as ofertas governamentais do Office 365, consulte [anunciando o Office 365 para o governo: uma nuvem da Comunidade do governo dos EUA](https://go.microsoft.com/fwlink/p/?LinkId=325414). O tráfego internacional em normas de braços (ITAR) é um conjunto de regulamentações governamentais dos EUA que controlam a exportação e a importação de artigos e serviços relacionados à defesa na [lista de munitions (USML) dos Estados Unidos](https://go.microsoft.com/fwlink/p/?LinkId=325415). 
 
 O Microsoft Office 365 para empresas fornece serviços de hospedagem dedicados para soluções de produtividade da Microsoft que dão suporte a segurança, privacidade e requisitos de conformidade normativa para agências federais dos EUA que exigem a segurança Federal de informações Certificação de gerenciamento (FISMA) e entidades comerciais sujeitas ao ITAR.
   
@@ -79,7 +79,7 @@ Essas considerações podem se aplicar à sua rede:
 
 - O IPv6 não oferece suporte a alguns cenários de serviços de gerenciamento de direitos (RMS).
 
-- O IPv6 não suporta o BlackBerry ® Enterprise Server (BES) porque o BlackBerry não dá suporte a IPv6.
+- O IPv6 não oferece suporte a BlackBerry® Enterprise Server (BES) porque o BlackBerry não dá suporte a IPv6.
 
 - Se você usar o AD FS (serviços de Federação do Active Directory) com o Office 365, não será possível anunciar o ponto de extremidade de rede do AD FS para o Office 365 usando IPv6. Você não deve incluir registros AAAA na entrada DNS do AD FS ao usar o Exchange Online. 
 

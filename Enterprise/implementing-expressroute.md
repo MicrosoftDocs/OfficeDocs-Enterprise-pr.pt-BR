@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/5/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: O ExpressRoute para Office 365 fornece um caminho de roteamento alternativo para vários serviços do Office 365 voltados para a Internet. A arquitetura do ExpressRoute para Office 365 baseia-se no anúncio de prefixos IP públicos de serviços do Office 365 que já estão acessíveis pela Internet para seus circuitos do ExpressRoute provisionados para a redistribuição subsequente desses prefixos IP em sua rede. Com o ExpressRoute, você habilita efetivamente vários caminhos de roteamento diferentes, através da Internet e do ExpressRoute, para muitos serviços do Office 365. Esse estado de roteamento na rede pode representar uma alteração significativa na forma como sua topologia de rede interna é projetada.
-ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c9e4fa4f5c8cb46d32e1b0de6f18f66b3a971aa6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491628"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067397"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Como implementar o ExpressRoute para o Office 365
 
@@ -43,7 +43,7 @@ Esperamos que os seguintes pré-requisitos sejam concluídos antes que este guia
 
 3. Você já leu e entendeu a [documentação do expressroute](https://azure.microsoft.com/documentation/services/expressroute/) , e sua rede interna é capaz de atender aos pré-requisitos do expressroute até o fim.
 
-4. sua equipe leu todas as orientações e documentações públicas em [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert)e observados a série de treinamentos do [Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer) no canal 9 para obter uma compreensão dos detalhes técnicos críticos, incluindo:
+4. Sua equipe leu todas as orientações e documentações públicas em [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert)e observados a série de treinamentos do [Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer) no canal 9 para obter uma compreensão dos detalhes técnicos críticos, incluindo:
 
       - As dependências da Internet dos serviços SaaS.
 
@@ -185,7 +185,7 @@ Muitas vezes, há vários locais de reunião que podem ser selecionados em uma r
 
 |**Locais de reunião de atendimento ao ExpressRoute planejados na Califórnia e Nova York**||
 |:-----|:-----|
-|Local  <br/> |Número de pessoas  <br/> |Latência esperada para rede da Microsoft através de egresso de Internet  <br/> |Latência esperada para o Microsoft Network over ExpressRoute  <br/> |
+|Locais  <br/> |Número de pessoas  <br/> |Latência esperada para rede da Microsoft através de egresso de Internet  <br/> |Latência esperada para o Microsoft Network over ExpressRoute  <br/> |
 |Los Angeles  <br/> |10.000  <br/> |~ 15ms  <br/> |~ 10 ms (via vale do silício)  <br/> |
 |DC Washington  <br/> |15.000  <br/> |~ 20 ms  <br/> |~ 10 ms (via Nova York)  <br/> |
 |Dallas  <br/> |5.000  <br/> |~ 15ms  <br/> |~ 40ms (por meio de Nova York)  <br/> |
@@ -336,7 +336,7 @@ O diagrama a seguir ilustra o caminho de rede assimétrica executado quando a co
 
   - O servidor em sua rede roteia o tráfego de retorno para o Office 365 por meio de qualquer conexão de rede ExpressRoute disponível.
 
-  - O resultado é um caminho asSimétrico para esse fluxo para o Office 365, resultando em uma conexão interrompida.
+  - O resultado é um caminho assimétrico para esse fluxo para o Office 365, resultando em uma conexão interrompida.
 
 ![Problema de roteamento 1 do ExpressRoute Asymetric](media/9c210c2a-e0ea-4180-8ede-1bf41746ce7a.png)
   
@@ -370,7 +370,7 @@ O diagrama a seguir ilustra o caminho de rede assimétrica executado quando a co
 
   - O computador em sua rede roteia o tráfego de retorno para o Office 365 por meio de qualquer conexão de rede ExpressRoute disponível.
 
-  - O resultado é uma conexão asSimétrica com o Office 365.
+  - O resultado é uma conexão assimétrica com o Office 365.
 
 ![Problema de roteamento 2 do ExpressRoute Asymetric](media/f6fd155b-bbb7-472a-846e-039a99f09913.png)
   
@@ -499,7 +499,7 @@ Alguns exemplos de atividades de teste incluem o seguinte.
 
 ### <a name="common-problems"></a>Problemas comuns
 
-O roteamento asSimétrico é o problema de implementação mais comum. Aqui estão algumas fontes comuns a serem procuradas:
+O roteamento assimétrico é o problema de implementação mais comum. Aqui estão algumas fontes comuns a serem procuradas:
   
 - Usando uma topologia de roteamento de rede aberta ou plana sem o NAT de origem em vigor.
 
@@ -507,7 +507,7 @@ O roteamento asSimétrico é o problema de implementação mais comum. Aqui est�
 
 - Não testar serviços de entrada no ExpressRoute em uma rede de teste antes de implantar amplamente.
 
-## <a name="deploying-expressroute-connectivity-through-your-network"></a>ImPlantando a conectividade ExpressRoute através da rede
+## <a name="deploying-expressroute-connectivity-through-your-network"></a>Implantando a conectividade ExpressRoute através da rede
 <a name="testing"> </a>
 
 Teste sua implantação para um segmento da rede por vez, distribuindo progressivamente a conectividade para diferentes partes da rede com um plano para reverter para cada novo segmento de rede. Se sua implantação estiver alinhada com uma implantação do Office 365, implante-a primeiro em seus usuários do Office 365 Pilot e estenda-a.
@@ -520,7 +520,7 @@ Primeiro para o teste e, em seguida, para produção:
 
 - Execute testes em cada serviço de entrada e saída.
 
-- ReVersão se você descobrir algum problema.
+- Reversão se você descobrir algum problema.
 
 ### <a name="set-up-a-test-connection-to-expressroute-with-a-test-network-segment"></a>Configurar uma conexão de teste para o ExpressRoute com um segmento de rede de teste
 
@@ -566,7 +566,7 @@ Tenha em mente que durante a implantação do Office 365 com uma conexão Expres
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Conectividade de rede para Office 365](network-connectivity.md)
   

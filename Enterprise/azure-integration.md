@@ -1,9 +1,9 @@
 ---
 title: Integração do Azure ao Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Sua assinatura do Office 365 inclui uma assinatura do Azure AD. Integre o Office 365 com o Azure AD se você quiser sincronização de senha ou logon único com seu ambiente local.
-ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 51ed71aa94bc5317d9b5ff76d0aa6af2762c429e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490137"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068217"
 ---
 # <a name="azure-integration-with-office-365"></a>Integração do Azure ao Office 365
 
@@ -48,7 +48,7 @@ Com a assinatura gratuita, você pode sincronizar com os diretórios locais, con
   
 Se quiser uma funcionalidade avançada do AD DS, uma sincronização bidirecional e outros recursos de gerenciamento, você poderá atualizar sua assinatura gratuita para uma assinatura premium paga. Para obter detalhes, consulte [Azure Active Directory Editions](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
   
-Para obter mais informações sobre o Office 365 e o Azure AD, consulte underStanding [office 365 Identity e Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
+Para obter mais informações sobre o Office 365 e o Azure AD, consulte Understanding [office 365 Identity e Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
   
 ## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Estenda os recursos do seu locatário do Office 365
 

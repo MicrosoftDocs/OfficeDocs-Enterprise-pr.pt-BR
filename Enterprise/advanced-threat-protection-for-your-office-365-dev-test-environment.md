@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumo: Configure e demonstre a Proteção Avançada contra Ameaças do Office 365 no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 53bff386490ed9647a511f75c997cb91b0acc181
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490147"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068297"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Proteção Avançada contra Ameaças para o ambiente de desenvolvimento/teste do Office 365
 
@@ -149,7 +149,7 @@ Nesta fase, você demonstrará como a ATP lida com emails potencialmente mal-int
 11. Clique duas vezes na mensagem com o assunto **Enc: Suas novas chaves**. Observe como essa mensagem foi processada pela ATP e entregue à caixa de entrada. Feche esta janela.
     
     > [!NOTE]
-    > O objetivo da política de anexos seguros era começar a examinar anexos por código mal-intencionado. O anexo getKeys. js era permitido porque não foi determinado como mal-intencionado. Esta etapa mostra que a ATP executou uma verificação do anexo. 
+    > O objetivo da política de anexos seguros era começar a examinar anexos por código mal-intencionado. O anexo getkeys. js era permitido porque não foi determinado como mal-intencionado. Esta etapa mostra que a ATP executou uma verificação do anexo. 
   
 12. Clique duas vezes na mensagem com o assunto **Enc: Novo site de viagem**. Observe que essa mensagem foi entregue com êxito para a caixa de entrada.
     

@@ -1,10 +1,10 @@
 ---
-title: Proteger suas contas de administrador global do Office 365
+title: Proteger as contas de administradores globais do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 4/10/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteja o acesso de administrador global à sua assinatura do Office 365 com estas três etapas.
-ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: bb1b19a7ac0ec8e32c23303e8acf2b7ee42f0532
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573915"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071017"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger suas contas de administrador global do Office 365
+# <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger as contas de administradores globais do Office 365
 
  **Resumo:** Proteja sua assinatura do Office 365 contra ataques com base no comprometimento de uma conta de administrador global. 
   
@@ -75,7 +75,7 @@ Há relativamente poucas tarefas administrativas, como a atribuição de funçõ
     
 O resultado deve ser:
   
-- As únicas contas de usuário em sua assinatura que têm a função de administrador global são o novo conjunto de contas de administrador global dedicadas. Verifique isso com o seguinte comando do PowerShell:
+- As únicas contas de usuários que possuem a função de administrador global em sua assinatura fazem parte do novo conjunto de contas de administradores globais dedicadas. Verifique isso com o seguinte comando do PowerShell:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 8dd9295618c765bb9eeaffbcec82ff83af8b2e21
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647979"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069987"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
@@ -36,7 +36,7 @@ Os clientes existentes que têm seus dados principais de cliente armazenados em 
 |Austrália, Nova Zelândia, Fiji * * * *| Ásia/Pacífico | Austrália | Março de 2015 |
 |Índia * * * *| Ásia/Pacífico | Índia | Outubro de 2015 |
 |Canadá * * * *| América do Norte | Canadá | Maio de 2016 |
-|Reino Unido * * * *| Europa | United Kingdom | Setembro de 2016 |
+|Reino Unido * * * *| Europa | Reino Unido | Setembro de 2016 |
 |Coréia do Sul * * * *| Ásia/Pacífico | Coréia do Sul | Abril de 2017 |
 |França * * * *| Europa | França | Março de 2018 |
 |Emirados Árabes Unidos * * * *| Europa | Emirados Árabes Unidos | Apresentados |
@@ -65,9 +65,9 @@ Os clientes que precisam ter seus dados principais movidos para a nova geografia
     
 ## <a name="related-topics"></a>Tópicos relacionados 
  
-[Como solicitar a movimentação de dados](request-your-data-move.md)
+[Como solicitar a migração dos dados](request-your-data-move.md)
     
-[PERGUNTAS FREQUENTEs sobre movimentação de dados gerais](data-move-faq.md)
+[Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
   
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

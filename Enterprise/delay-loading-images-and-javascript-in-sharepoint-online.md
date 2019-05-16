@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Este artigo descreve como você pode diminuir o tempo de carregamento das páginas do SharePoint online usando o JavaScript para atrasar o carregamento de imagens e aguardando o carregamento de JavaScript não essencial até que a página seja carregada.
-ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490279"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067977"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Atraso no carregamento de imagens e JavaScript no SharePoint Online
 
@@ -92,7 +92,7 @@ $('#s4-workspace').on("scroll", function () {
 
 Salve o arquivo de texto como um arquivo JavaScript com a extensão. js, por exemplo, Atrasarcarregamentodeimagens. js.
   
-Após ter concluído a gravação de Atrasarcarregamentodeimagens. js, você pode adicionar o conteúdo do arquivo a uma página mestra no SharePoint Online. Para fazer isso, adicione um link de script ao cabeçalho na página mestra. Assim que estiver em uma página mestra, o JavaScript será aplicado a todas as páginas em seu site do SharePoint Online que usam esse layout de página mestra. Como alternativa, se você pretende usá-la somente em uma página do seu site, use a Web Part do editor de scripts para incorporar o JavaScript à página. ConFira estes tópicos para obter mais informações:
+Após ter concluído a gravação de Atrasarcarregamentodeimagens. js, você pode adicionar o conteúdo do arquivo a uma página mestra no SharePoint Online. Para fazer isso, adicione um link de script ao cabeçalho na página mestra. Assim que estiver em uma página mestra, o JavaScript será aplicado a todas as páginas em seu site do SharePoint Online que usam esse layout de página mestra. Como alternativa, se você pretende usá-la somente em uma página do seu site, use a Web Part do editor de scripts para incorporar o JavaScript à página. Confira estes tópicos para obter mais informações:
   
 - [Como: aplicar uma página mestra a um site no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
@@ -116,7 +116,7 @@ Não perca o artigo e o exemplo de código sobre a [injeção de JavaScript](htt
   
 ## <a name="see-also"></a>Confira também
 
-[Navegadores com suporte no Office 2013 e no Office 365 proPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Navegadores com suporte no Office 2013 e no Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Como: aplicar uma página mestra a um site no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

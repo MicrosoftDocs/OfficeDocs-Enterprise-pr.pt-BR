@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/3/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070627"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -61,7 +61,7 @@ Após concluir a instalação, você poderá [gerenciar a CDN do Office 365](use
   
 - Adicionando, atualizando e removendo ativos
 - Adição e remoção de origens
-- ConFigurando políticas de CDN
+- Configurando políticas de CDN
 - Se necessário, desabilitando a CDN
 
 Por fim, consulte [usando seus ativos de CDN](use-office-365-cdn-with-spo.md#using-your-cdn-assets) para saber mais sobre como acessar seus ativos de CDN de origens públicas e privadas.
@@ -88,7 +88,7 @@ Em geral, o CDNs é mais eficaz para hospedar _ativos estáticos_ou ativos que n
 
 Por exemplo, arquivos pequenos que são solicitados repetidamente como imagens de site e scripts podem melhorar significativamente o desempenho da renderização de site e reduzir incrementalmente a carga em seus sites do SharePoint Online quando você os adiciona a uma origem de CDN. Arquivos maiores, como executáveis de instalação ou arquivos de vídeo, podem ser baixados ou transmitidos da CDN, fornecendo um impacto de desempenho positivo e a redução subsequente da carga no seu site do SharePoint Online, mesmo que eles não sejam acessados com a frequência.
 
-A melhoria de desempenho por arquivo depende de vários fatores, incluindo a proximidade do cliente para o ponto de extremidade da CDN mais próxima, condições transitórias na rede local e assim por diante. Muitos arquivos estáticos são bem pequenos e podem ser baixados do Office 365 em menos de um segundo. No enTanto, uma página da Web pode conter vários arquivos incorporados com um tempo de download cumulativo de vários segundos. Servir esses arquivos da CDN pode reduzir significativamente o tempo de carregamento geral da página. Veja [quais ganhos de desempenho uma CDN oferece?](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide) por exemplo.
+A melhoria de desempenho por arquivo depende de vários fatores, incluindo a proximidade do cliente para o ponto de extremidade da CDN mais próxima, condições transitórias na rede local e assim por diante. Muitos arquivos estáticos são bem pequenos e podem ser baixados do Office 365 em menos de um segundo. No entanto, uma página da Web pode conter vários arquivos incorporados com um tempo de download cumulativo de vários segundos. Servir esses arquivos da CDN pode reduzir significativamente o tempo de carregamento geral da página. Veja [quais ganhos de desempenho uma CDN oferece?](content-delivery-networks.md#what-performance-gains-does-a-cdn-provide) por exemplo.
 
 ### <a name="determine-where-you-want-to-store-your-assets"></a>Determinar onde você deseja armazenar seus ativos
 <a name="CDNStoreAssets"> </a>
@@ -144,12 +144,12 @@ A menos que você especifique o contrário, o Office 365 configura algumas orige
   
 Origens de CDN privadas padrão:
   
-- \*/UserPhoto.aspx
+- \*/userphoto.aspx
 - \*/siteassets
 
 Origens padrão da CDN pública:
   
-- \*/MasterPage
+- \*/masterpage
 - \*biblioteca/Style
 - \*/clientsideassets
 
@@ -321,7 +321,7 @@ Depois de executar o comando, o sistema sincroniza a configuração no datacente
 ### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Exemplo: Configure uma origem pública para suas páginas mestras e para sua biblioteca de estilos para o SharePoint Online
 <a name="ExamplePublicOrigin"> </a>
 
-Normalmente, essas origens são configuradas por padrão quando você habilita a CDN do Office 365. No enTanto, se você quiser habilitá-los manualmente, siga estas etapas.
+Normalmente, essas origens são configuradas por padrão quando você habilita a CDN do Office 365. No entanto, se você quiser habilitá-los manualmente, siga estas etapas.
   
 - Use o cmdlet **Add-SPOTenantCdnOrigin** para definir a biblioteca de estilos como uma origem pública.
 
@@ -385,7 +385,7 @@ Depois de configurar a CDN, você pode fazer alterações na configuração ao a
 #### <a name="add-update-or-remove-assets-from-the-office-365-cdn"></a>Adicionar, atualizar ou remover ativos da CDN do Office 365
 <a name="Office365CDNforSPOaddremoveasset"> </a>
 
-Depois de concluir as etapas de configuração, você pode adicionar novos ativos e atualizar ou remover ativos existentes sempre que desejar. Basta fazer suas alterações nos ativos na pasta ou na biblioteca do SharePoint que você identificou como origem. Se você adicionar um novo ativo, ele estará disponível através da CDN imediatamente. No enTanto, se você atualizar o ativo, levará até 15 minutos para que a nova cópia se propague e fique disponível na CDN.
+Depois de concluir as etapas de configuração, você pode adicionar novos ativos e atualizar ou remover ativos existentes sempre que desejar. Basta fazer suas alterações nos ativos na pasta ou na biblioteca do SharePoint que você identificou como origem. Se você adicionar um novo ativo, ele estará disponível através da CDN imediatamente. No entanto, se você atualizar o ativo, levará até 15 minutos para que a nova cópia se propague e fique disponível na CDN.
   
 Se for necessário recuperar o local da origem, você poderá usar o cmdlet **Get-SPOTenantCdnOrigins** . Para obter informações sobre como usar esse cmdlet, consulte [Get-SPOTenantCdnOrigins](https://technet.microsoft.com/en-us/library/mt790770.aspx).
   
@@ -573,7 +573,7 @@ Se você quiser usar a URL completa para o ativo em vez de um caminho relativo, 
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> Em geral, você não deve codificar URLs diretamente para os ativos na CDN. No enTanto, você pode criar manualmente URLs para ativos em origens públicas, se necessário. Para obter mais informações, consulte [codificar URLs da CDN para ativos públicos](use-office-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
+> Em geral, você não deve codificar URLs diretamente para os ativos na CDN. No entanto, você pode criar manualmente URLs para ativos em origens públicas, se necessário. Para obter mais informações, consulte [codificar URLs da CDN para ativos públicos](use-office-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
 
 Para saber mais sobre como verificar se os ativos estão sendo servidos da CDN, confira [como confirmar se os ativos estão sendo servidos pela CDN?](use-office-365-cdn-with-spo.md#CDNConfirm) na seção [solução de problemas do Office 365 CDN](use-office-365-cdn-with-spo.md#CDNTroubleshooting) .
 
@@ -640,7 +640,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 ```
 
 > [!NOTE]
-> Qualquer pessoa em posse do token pode acessar o recurso na CDN. No enTanto, URLs contendo esses tokens de acesso são compartilhados somente por HTTPS, então, a menos que a URL seja explicitamente compartilhada por um usuário final antes que o token expire, o ativo não poderá ser acessado por usuários não autorizados.
+> Qualquer pessoa em posse do token pode acessar o recurso na CDN. No entanto, URLs contendo esses tokens de acesso são compartilhados somente por HTTPS, então, a menos que a URL seja explicitamente compartilhada por um usuário final antes que o token expire, o ativo não poderá ser acessado por usuários não autorizados.
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Permissões de nível de item não são suportadas para ativos em origens privadas
 
@@ -666,7 +666,7 @@ Você também pode usar as ferramentas de desenvolvedor do navegador para exibir
 > [!NOTE]
 > Se você usar uma ferramenta de rede como o Fiddler para testar seus ativos fora do processamento do ativo de uma página do SharePoint, você deve adicionar manualmente o cabeçalho referenciado `https://yourdomain.sharepoint.com`"referenciador" à solicitação GET, onde a URL é a URL raiz do seu locatário do SharePoint Online.
 
-Você não pode testar URLs de CDN diretamente em um navegador da Web, pois deve ter um referenciador proveniente do SharePoint Online. No enTanto, se você adicionar a URL de ativo da CDN a uma página do SharePoint e, em seguida, abrir a página em um navegador, verá o ativo da CDN renderizado na página.
+Você não pode testar URLs de CDN diretamente em um navegador da Web, pois deve ter um referenciador proveniente do SharePoint Online. No entanto, se você adicionar a URL de ativo da CDN a uma página do SharePoint e, em seguida, abrir a página em um navegador, verá o ativo da CDN renderizado na página.
 
 Para obter mais informações sobre como usar as ferramentas de desenvolvedor no navegador do Microsoft Edge, consulte [ferramentas de desenvolvedor do Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).
 

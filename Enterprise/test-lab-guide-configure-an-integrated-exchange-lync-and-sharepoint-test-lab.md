@@ -1,10 +1,10 @@
 ---
-title: Testar o guia de laboratório configurar do Exchange integrado, laboratório de teste do Lync e o SharePoint
+title: Guia do laboratório de teste configure um laboratório de teste do Exchange, Lync e SharePoint integrado
 ms.author: jhendr
 author: JoanneHendrickson
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
@@ -12,53 +12,53 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
-description: 'Resumo: Saiba como criar um laboratório de teste integrado que contém um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.'
-ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Resumo: saiba como criar um laboratório de teste integrado que contenha um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.'
+ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897044"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070397"
 ---
-# <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guia de laboratório de teste: Configurar um laboratório de teste integrado do Exchange, Lync e SharePoint
+# <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guia do laboratório de teste: configurar um laboratório de teste do Exchange, Lync e SharePoint integrado
 
- **Resumo:** Saiba como criar um laboratório de teste integrado que contém um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.
+ **Resumo:** Saiba como criar um laboratório de teste integrado que contenha um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.
  
-**Assista a integrado do Exchange, Lync e vídeo de visão geral do guia de laboratório de teste do SharePoint**
+**Assista ao vídeo visão geral do guia do laboratório de teste do Exchange, Lync e SharePoint**
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=8d1f00cc-b8b1-4394-9367-0cc9765e380a&AutoPlayVideo=false]
  
-Laboratório de teste que é resultado nesta configuração, que inclui a autenticação de servidor-para-servidor entre todos os três tipos de servidores, pode ser usado para criar o e demonstrar o produtos vários cenários e soluções que usam um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.
+O laboratório de teste resultante dessa configuração, que inclui a autenticação de servidor para servidor entre todos os três tipos de servidores, pode ser usado para criar e demonstrar cenários e soluções de vários produtos que usam um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.
   
 Este documento contém instruções para:
   
-1. Configurando o laboratório de teste de configuração básica do Windows Server 2012.
+1. Configurar o laboratório de teste de configuração básica do Windows Server 2012.
     
 2. Instalando e configurando um novo servidor com o nome SQL1.
     
-3. Instalando o SQL Server 2012 no servidor SQL1.
+3. Instalando o SQL Server 2012 no servidor do SQL1.
     
-4. Instalando e configurando um novo computador cliente denominado CLIENT2.
+4. Instalação e configuração de um novo computador cliente chamado CLIENT2.
     
-5. Instalando e configurando o Exchange Server 2013 em EX1.
+5. Instalando e Configurando o Exchange Server 2013 no EX1.
     
-6. Instalando e configurando um novo servidor denominado LYNC1.
+6. Instalando e configurando um novo servidor chamado LYNC1.
     
 7. Instalando o Lync Server 2013 Standard Edition no LYNC1.
     
 8. Instalando o SharePoint Server 2013 no SP1.
     
-9. Configurando a integração entre EX1, LYNC1 e SP1.
+9. Configurando a integração entre o EX1, o LYNC1 e o SP1.
     
-Para obter informações sobre como configurar este laboratório de teste no Hyper-V, consulte [hospedando o Exchange integrado, Lync e o SharePoint com o Windows Server 2012 Hyper-V do laboratório de teste](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
+Para obter informações sobre como configurar esse laboratório de teste no Hyper-V, consulte [hospedagem do laboratório de teste do Exchange, Lync e SharePoint integrado com o Windows Server 2012 Hyper-v](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
   
 ## <a name="download-the-test-lab-guide"></a>Como baixar o guia do laboratório de teste
 
-[Guia de laboratório de teste: configurar um Exchange integrado, Lync e do laboratório de teste do SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[Guia do laboratório de teste: configurar um laboratório de teste do Exchange, Lync e SharePoint integrado](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>Confira também
 
-[Guias de laboratório de teste](https://go.microsoft.com/fwlink/p/?LinkId=202817)
+[Guias do Laboratório de Teste](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 
 
 

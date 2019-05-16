@@ -1,9 +1,9 @@
 ---
-title: Configurar a sincronização de diretório com o Office 365
-ms.author: robmazz
-author: robmazz
+title: Configurar a sincronização de diretório no Office 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,20 +19,20 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Saiba como configurar a sincronização de diretórios entre o Office 365 e o Active Directory local.
-ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: d5c09b006c4e4b9ca9fbe3b0d673435a8ea6637e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070867"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Configurar a sincronização de diretório com o Office 365
+# <a name="set-up-directory-synchronization-for-office-365"></a>Configurar a sincronização de diretório no Office 365
 
 O Office 365 usa o serviço de gerenciamento de identidade de usuário baseado em nuvem do Azure Active Directory para gerenciar usuários. Você também pode integrar seu Active Directory local com o Azure AD sincronizando seu ambiente local com o Office 365. Depois de configurar a sincronização, você pode optar por fazer com que a autenticação do usuário ocorra no AD do Azure ou no diretório local.
   
 ## <a name="office-365-directory-synchronization"></a>Sincronização de diretórios do Office 365
 
-Você pode usar identidade sincronizada ou identidade federada entre sua organização local e o Office 365. Com a identidade sincronizada, você gerencia os usuários locais e eles são autenticados pelo Azure AD quando eles usam a mesma senha na nuvem como local. Este é o cenário mais comum de sincronização de diretórios. A autenticação de passagem ou a identidade federada permite que você gerencie os usuários no local e eles são autenticados por seu diretório local. A identidade federada requer configuração adicional e permite que os usuários entrem apenas uma vez. Para obter detalhes, leia underStanding [Office 365 Identity e Azure Active Directory](about-office-365-identity.md).
+Você pode usar identidade sincronizada ou identidade federada entre sua organização local e o Office 365. Com a identidade sincronizada, você gerencia os usuários locais e eles são autenticados pelo Azure AD quando eles usam a mesma senha na nuvem como local. Este é o cenário mais comum de sincronização de diretórios. A autenticação de passagem ou a identidade federada permite que você gerencie os usuários no local e eles são autenticados por seu diretório local. A identidade federada requer configuração adicional e permite que os usuários entrem apenas uma vez. Para obter detalhes, leia Understanding [Office 365 Identity e Azure Active Directory](about-office-365-identity.md).
   
 ## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>Deseja atualizar da sincronização do Windows Azure Active Directory (dirSync) para o Azure Active Directory Connect?
 
@@ -64,7 +64,7 @@ Você também pode analisar o histórico de versões da [versão](https://docs.m
 
 ## <a name="to-set-up-directory-synchronization"></a>Para configurar a sincronização de diretórios
 
-1. entre no centro de [administração do Microsoft 365](https://admin.microsoft.com) e escolha usuários **ativos** do **usuário** \> no painel de navegação à esquerda.
+1. Entre no centro de [Administração do Microsoft 365](https://admin.microsoft.com) e escolha usuários **ativos** do **usuário** \> no painel de navegação à esquerda.
 2. No centro de administração, na página **usuários ativos** , escolha **mais** \> **sincronização de diretórios**.
 
     ![No menu mais, escolha sincronização de diretório](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)

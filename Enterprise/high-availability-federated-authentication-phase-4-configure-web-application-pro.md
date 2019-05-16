@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumo: Configure os servidores proxy de aplicativo Web para a autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: c5472c8c7268d39dd6d3ca5ef78bde9e4bdde7a3
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491278"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067327"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Autenticação federada de alta disponibilidade Fase 4: configurar proxies de aplicativos Web
 
@@ -66,15 +66,15 @@ Você precisa determinar o nome DNS para identificar o nome do seu serviço de f
   
 Depois que você tiver o FQDN do serviço de federação, crie para ele um registro A de domínio DNS público que seja resolvido para o endereço IP público do balanceador de carga voltado para a Internet do Azure.
   
-|**Nome**|**Type**|**TTL**|**Valor**|
+|**Nome**|**Tipo**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |FQDN do serviço de federação  <br/> |A  <br/> |3600  <br/> |endereço IP público do balanceador de carga voltado para a Internet do Azure (exibido pelo comando **Write-Host** na seção anterior) <br/> |
    
 Este é um exemplo:
   
-|**Nome**|**Type**|**TTL**|**Valor**|
+|**Nome**|**Tipo**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
-|FS.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
+|fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
 Em seguida, adicione um registro de endereço DNS ao namespace DNS particular da sua organização que resolva o FQDN do serviço de federação para o endereço IP privado atribuído ao balanceador de carga interno dos servidores do AD FS (Tabela I, item 4, coluna Valor).
   

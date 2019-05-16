@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
 description: Este artigo é uma versão de texto acessível do diagrama chamado integração de rede dos produtos do Microsoft Office Server.
-ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d63b3b581a03840676393657d6ed641e11046ef9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068557"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Diagrama acessível-integração de rede de produtos do Microsoft Office Server
 
@@ -54,7 +54,7 @@ Para essa topologia, o roteador de gateway fica na borda da rede e roteia todo o
   
 #### <a name="load-balancer-and-reverse-proxy-devices"></a>Balanceador de carga e dispositivos de proxy reverso
 
-Você pode usar soluções de balanceamento de carga de software ou hardware para redirecionar o tráfego de segmentos, incluindo servidores Web front-end do SharePoint e servidores de acesso para cliente do Exchange (CASs). Em alguns casos, é ideal usar um balanceador de carga baseado em hardware de camada 7 para obter os requisitos de persistência, pois ele pode funcionar melhor usando informações na solicitação, como cookies ou cabeçalhos. No enTanto, fatores como custo e maior utilização e carga de trabalho de tal solução podem não ser desejáveis para suas necessidades específicas. Considere os seguintes pontos para balanceamento de carga no SharePoint, no Exchange e no Lync: 
+Você pode usar soluções de balanceamento de carga de software ou hardware para redirecionar o tráfego de segmentos, incluindo servidores Web front-end do SharePoint e servidores de acesso para cliente do Exchange (CASs). Em alguns casos, é ideal usar um balanceador de carga baseado em hardware de camada 7 para obter os requisitos de persistência, pois ele pode funcionar melhor usando informações na solicitação, como cookies ou cabeçalhos. No entanto, fatores como custo e maior utilização e carga de trabalho de tal solução podem não ser desejáveis para suas necessidades específicas. Considere os seguintes pontos para balanceamento de carga no SharePoint, no Exchange e no Lync: 
   
 - SharePoint – para o SharePoint 2013, não é necessário habilitar a afinidade para seus servidores Web front-end. Normalmente, isso seria usado para criar sessões adesivas e evitar várias solicitações de autenticação de clientes para cada servidor Web front-end. O novo serviço de cache distribuído no SharePoint 2013 armazena e distribui tokens de logon nos servidores Web do farm do SharePoint. 
     
@@ -64,9 +64,9 @@ Você pode usar soluções de balanceamento de carga de software ou hardware par
     
 ### <a name="remote-access-options"></a>Opções de acesso remoto
 
-Há várias opções que podem publicar recursos de intranet para parceiros na Internet ou fornecer acesso remoto seguro para funcionários remotos ou móveis. Esses exemplos incluem proxies reversos, DirectAccess e gateways VPN de terceiros. As soluções de acesso remoto discutidas mais adiante nesta seção são possibilidades para o SharePoint, Lync e Exchange, ou qualquer combinação desses servidores em uma implantação local. No enTanto, algumas opções remotas podem não funcionar com uma solução específica. 
+Há várias opções que podem publicar recursos de intranet para parceiros na Internet ou fornecer acesso remoto seguro para funcionários remotos ou móveis. Esses exemplos incluem proxies reversos, DirectAccess e gateways VPN de terceiros. As soluções de acesso remoto discutidas mais adiante nesta seção são possibilidades para o SharePoint, Lync e Exchange, ou qualquer combinação desses servidores em uma implantação local. No entanto, algumas opções remotas podem não funcionar com uma solução específica. 
   
-Proxy reverso-um proxy reverso oferece suporte à criptografia de tráfego, como SSL (Secure Sockets Layer) e com ele você pode publicar aplicativos de intranet e recursos da Web para usuários e parceiros autenticados na Internet. Um exemplo é o Microsoft Forefront Unified Access Gateway (UAG). Muitos balanceadores de carga de hardware também oferecem suporte à funcionalidade de proxy reverso. No enTanto, ainda há cenários válidos para usar uma solução autônoma com base em suas necessidades e requisitos, como isolamento de tráfego, compartimentalização de segurança e otimização de desempenho. 
+Proxy reverso-um proxy reverso oferece suporte à criptografia de tráfego, como SSL (Secure Sockets Layer) e com ele você pode publicar aplicativos de intranet e recursos da Web para usuários e parceiros autenticados na Internet. Um exemplo é o Microsoft Forefront Unified Access Gateway (UAG). Muitos balanceadores de carga de hardware também oferecem suporte à funcionalidade de proxy reverso. No entanto, ainda há cenários válidos para usar uma solução autônoma com base em suas necessidades e requisitos, como isolamento de tráfego, compartimentalização de segurança e otimização de desempenho. 
   
 Considerações e benefícios do proxy reverso: 
   
@@ -88,7 +88,7 @@ Pontos do DirectAccess a considerar:
     
 - Recomendamos o uso do DirectAccess com o Lync Server 2013 devido a problemas de latência de áudio e vídeo associados à criptografia e descriptografia IPsec. 
     
-    Gateway VPN-gateways VPN típicos fornecem uma conexão de acesso remoto na qual um computador cliente de acesso remoto é projetado logicamente para a intranet por meio de uma conexão encapsulada e iniciada pelo usuário. Você pode usar o acesso remoto uniFicado no Windows Server 2012 ou várias soluções de terceiros para fornecer acesso seguro à intranet para funcionários móveis ou remotos. A VPN não é recomendada para o Lync. O tráfego do Lync remoto deve usar os servidores de borda e o túnel de divisão. 
+    Gateway VPN-gateways VPN típicos fornecem uma conexão de acesso remoto na qual um computador cliente de acesso remoto é projetado logicamente para a intranet por meio de uma conexão encapsulada e iniciada pelo usuário. Você pode usar o acesso remoto unificado no Windows Server 2012 ou várias soluções de terceiros para fornecer acesso seguro à intranet para funcionários móveis ou remotos. A VPN não é recomendada para o Lync. O tráfego do Lync remoto deve usar os servidores de borda e o túnel de divisão. 
     
 ### <a name="domain-name-system-dns-considerations"></a>Considerações sobre DNS (sistema de nomes de domínio)
 

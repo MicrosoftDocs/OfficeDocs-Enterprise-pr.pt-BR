@@ -3,7 +3,7 @@ title: Criar sites do SharePoint Online e adicionar usuários com o Office 365 P
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,29 +12,29 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Resumo: Usar o PowerShell do Office 365 para criar novos sites do SharePoint Online e, em seguida, adicionar usuários e grupos para esses sites.'
-ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Resumo: Use o Office 365 PowerShell para criar novos sites do SharePoint Online e, em seguida, adicione usuários e grupos a esses sites.'
+ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897164"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069097"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Criar sites do SharePoint Online e adicionar usuários com o Office 365 PowerShell
 
- **Resumo:** Use o Office 365 PowerShell para criar novos sites do SharePoint Online e, em seguida, adicionar usuários e grupos para esses sites.
+ **Resumo:** Use o Office 365 PowerShell para criar novos sites do SharePoint Online e, em seguida, adicione usuários e grupos a esses sites.
 
-Quando você usa o Office 365 PowerShell para criar sites do SharePoint Online e adicionar usuários, você pode rapidamente e repetidamente executar tarefas muito mais rápidas do que você pode fazer no Centro de administração do Office 356. Você também pode executar as tarefas que não serão possíveis executar no Centro de administração do Office 356. 
+Ao usar o Office 365 PowerShell para criar sites do SharePoint Online e adicionar usuários, você pode executar as tarefas com rapidez e repetidamente do que você pode no centro de administração do Office 356. Você também pode executar tarefas que não são possíveis de realizar no centro de administração do Office 356. 
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Os procedimentos neste tópico exigem que você se conectar ao SharePoint Online. Para obter instruções, consulte [Connect to do PowerShell no SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Os procedimentos neste tópico exigem que você se conecte ao SharePoint Online. Para obter instruções, consulte [conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Etapa 1: Criar novos conjuntos de sites usando o PowerShell do Office 365
+## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Etapa 1: criar novos conjuntos de sites usando o Office 365 PowerShell
 
-Crie vários sites usando o Office 365 PowerShell e um arquivo. csv que você criar usando o código de exemplo fornecido e o bloco de notas. Esse procedimento, você substituirá as informações de espaço reservado mostradas na colchetes com suas próprias informações específicas do site e do inquilino. Esse processo permite criar um único arquivo e execute um comando do Office 365 PowerShell único que usa esse arquivo. Isso faz com que as ações realizadas repetível e portátil e elimina muitos, se não todos os erros que podem ser provenientes de comandos longos digitados no SharePoint Online Management Shell. Há duas partes para esse procedimento. Primeiro, você vai criar um arquivo. csv e, em seguida, você vai fazer referência a esse arquivo. csv usando o Office 365 PowerShell, que usará o seu conteúdo para criar os sites.
+Crie vários sites usando o Office 365 PowerShell e um arquivo. csv que você cria usando o código de exemplo fornecido e o bloco de notas. Para este procedimento, você substituirá as informações do espaço reservado mostradas entre colchetes com suas próprias informações específicas do site e do locatário. Esse processo permite que você crie um único arquivo e execute um único comando do Office 365 PowerShell que usa esse arquivo. Isso faz com que as ações sejam refeitas e portáveis e elimina muitas, se não todos os, erros que podem vir da digitação de comandos Long no Shell de gerenciamento do SharePoint Online. Há duas partes nesse procedimento. Primeiro, você criará um arquivo. csv e, em seguida, fará referência a esse arquivo. CSV usando o Office 365 PowerShell, que usará seu conteúdo para criar os sites.
 
-O cmdlet do PowerShell do Office 365 importa o arquivo. csv e canaliza para um loop dentro de chaves que lê a primeira linha do arquivo como cabeçalhos de coluna. Em seguida, o cmdlet do PowerShell do Office 365 percorre os registros restantes, cria um novo conjunto de sites para cada registro e atribui propriedades do conjunto de sites de acordo com os cabeçalhos de coluna.
+O cmdlet do Office 365 PowerShell importa o arquivo. csv e o canaliza para um loop dentro das chaves que lê a primeira linha do arquivo como cabeçalhos de coluna. O cmdlet do PowerShell do Office 365, em seguida, itera por meio dos registros restantes, cria um novo conjunto de sites para cada registro e atribui Propriedades do conjunto de sites de acordo com os cabeçalhos da coluna.
 
 ### <a name="create-a-csv-file"></a>Criando um arquivo .csv
 
@@ -47,33 +47,33 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Onde o *locatário* é o nome do seu locatário e *proprietário* é o nome de usuário do usuário do seu locatário aos quais você deseja conceder o papel de administrador do conjunto de sites primário.<br/>(Você pode pressionar Ctrl + H ao usar o bloco de notas para em massa substituir mais rápido).<br/>
+<br/>Onde *locatário* é o nome do seu locatário e *proprietário* é o nome de usuário do usuário em seu locatário para o qual você deseja conceder a função de administrador do conjunto de sites principal.<br/>(Você pode pressionar CTRL + H ao usar o bloco de notas para substituir em massa mais rápido.)<br/>
 
-2. Salve o arquivo no seu desktop como **Sitecollections**.<br/>
+2. Salve o arquivo na área de trabalho como **SiteCollections. csv**.<br/>
 
 > [!TIP]
-> Antes de usar esta ou qualquer outro. csv ou arquivo de script do Windows PowerShell, é uma boa prática para certificar-se de que não há nenhum caractere incorretas ou não-imprimível. Abra o arquivo no Word e, na faixa de opções, clique no ícone de parágrafo para mostrar os caracteres não imprimíveis. Não deve haver nenhum caracteres não-imprimíveis não essenciais. Por exemplo, deve haver sem marcas de parágrafo além daquela final no final do arquivo.
+> Antes de usar este ou qualquer outro arquivo de script. csv ou do Windows PowerShell, é recomendável garantir que não haja caracteres estranhos ou não imprimíveis. Abra o arquivo no Word, e na faixa de opções, clique no ícone do parágrafo  para mostrar caracteres não imprimíveis. Não deve haver caracteres estranhos não imprimíveis. Por exemplo, não deve haver marcas do parágrafo no final do arquivo.
 
 ### <a name="run-the-windows-powershell-command"></a>Execute o comando do Windows PowerShell:
 
-1. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione Enter:<br/>
+1. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione ENTER:<br/>
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Onde *MyAlias* é igual ao seu nome de usuário.<br/>
+<br/>Em ** que myalias é igual ao seu alias de usuário.<br/>
 
-2. Aguarde o prompt do Windows PowerShell reaparecem. Ela pode levar um minuto ou dois.<br/>
+2. Aguarde até que o prompt do Windows PowerShell reapareça. Pode demorar um minuto ou dois.<br/>
 
-3. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione Enter:<br/>
+3. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione ENTER:<br/>
 
 ```
 Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. Observe os novos conjuntos de sites na lista. Você deverá ver os seguintes conjuntos de sites: **contosotest**, **TeamSite01**, **Blog01**e **Project01**
+4. Observe os novos conjuntos de sites na lista. Você deve ver os seguintes conjuntos de sites: **ContosoTest**, **TeamSite01**, **Blog01**e **Project01**
 
-É isso. Você criou vários conjuntos de sites usando o arquivo. csv que você criou e um único cmdlet do Windows PowerShell. Agora você está pronto para criar e atribuir usuários a esses sites.
+É isso. Você criou vários conjuntos de sites usando o arquivo. csv criado e um único cmdlet do Windows PowerShell. Agora você está pronto para criar e alocar usuários nestes sites.
 
 ## <a name="step-2-add-users-and-groups"></a>Etapa 2: Adicionar usuários ou grupos
 
@@ -95,9 +95,9 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>Onde *inquilino* é igual ao nome do seu locatário.<br/>
+<br/>Onde *locatário* é igual ao nome do locatário.<br/>
 
-2. Salve o arquivo seu desktop como **GroupsandPermissions**.<br/>
+2. Salve o arquivo em sua área de trabalho como **GroupsAndPermissions. csv**.<br/>
 
 3. Abra uma nova instância do bloco de notas e cole o seguinte bloco de texto:<br/>
 
@@ -112,9 +112,9 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>Onde *inquilino* é igual ao nome do seu locatário e *username* é igual ao nome de usuário de um usuário existente.<br/>
+<br/>Onde *locatário* é igual ao nome do locatário e *username* é igual ao nome de usuário de um usuário existente.<br/>
 
-4. Salve o arquivo seu desktop como **Users**.<br/>
+4. Salve o arquivo na sua área de trabalho como **users. csv**.<br/>
 
 5. Abra uma nova instância do bloco de notas e cole o seguinte bloco de texto:<br/>
 
@@ -122,29 +122,29 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
-<br/>Onde o MyAlias é igual ao nome de usuário do usuário que está conectado no momento.<br/>
+<br/>Em que myalias é igual ao nome de usuário do usuário que está conectado no momento.<br/>
 
-6. Salve o arquivo em sua área de trabalho como **UsersAndGroups.ps1**. Este é um simple script do Windows PowerShell.
+6. Salve o arquivo em sua área de trabalho como **UsersAndGroups. ps1**. Este é um script simples do Windows PowerShell.
 
 Agora você está pronto para executar o script UsersAndGroup.ps1 para adicionar usuários e grupos a vários conjuntos de sites.
 
 ### <a name="run-usersandgroupsps1-script"></a>Execute o script UsersAndGroups.ps1
 
 1. Retorne ao shell de gerenciamento do SharePoint Online<br/>
-2. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione Enter:<br/>
+2. No prompt do Windows PowerShell, digite ou copie e cole a seguinte linha e pressione ENTER:<br/>
 ```
 Set-ExecutionPolicy Bypass
 ```
 <br/>
 
-3. No prompt de confirmação, clique em **Y**.<br/>
+3. No prompt de confirmação, pressione **s**.<br/>
 
-4. No prompt do Windows PowerShell, tipo ou copiar e colar o seguinte cmdlet e pressione insira:<br/>
+4. No prompt do Windows PowerShell, digite ou copie e cole o seguinte e pressione ENTER:<br/>
 
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>Onde *MyAlias* é igual a seu nome de usuário.<br/>
+<br/>Em ** que myalias é igual ao nome de usuário.<br/>
 
 5. Aguarde a solicitação de retorno do prompt antes de prosseguir. Os grupos aparecerão de acordo com a criação dos mesmos. Então você verá a repetição da lista do grupo de acordo com os usuários que são agregados.
 
@@ -152,7 +152,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Conectar ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Gerenciar grupos de sites do SharePoint Online do Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[Gerenciar grupos de sites do SharePoint Online Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   

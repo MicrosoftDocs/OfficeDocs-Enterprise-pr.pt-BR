@@ -1,9 +1,9 @@
 ---
 title: Preparar um domínio não roteável para sincronização de diretório
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365E_SetupDirSyncLocalDir
@@ -20,23 +20,23 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Saiba o que fazer se você tiver um domínio não routale associado aos seus usuários locais antes de sincronizar com o Office 365.
-ms.openlocfilehash: 150e670e58419cda0f8ba08a5fb1e375478a27b1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071077"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar um domínio não roteável para sincronização de diretório
-Ao sincronizar seu diretório local com o Office 365, você precisa ter um domínio verificado no Azure Active Directory. Somente os nomes principais de usuário (UPN) associados ao domínio local são sincronizados. No enTanto, qualquer UPN que contenha um domínio não roteável, por exemplo. local (como Billa @ contoso. local), será sincronizado com um domínio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
+Ao sincronizar seu diretório local com o Office 365, você precisa ter um domínio verificado no Azure Active Directory. Somente os nomes principais de usuário (UPN) associados ao domínio local são sincronizados. No entanto, qualquer UPN que contenha um domínio não roteável, por exemplo. local (como Billa @ contoso. local), será sincronizado com um domínio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
 
 Se você usa atualmente um domínio. local para suas contas de usuário no Active Directory, é recomendável alterá-lo para usar um domínio verificado (como o billa@contoso.com) a fim de sincronizar corretamente com seu domínio do Office 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>E se eu só tiver um domínio. local local?
 
-A ferramenta mais recente que você pode usar para sincronizar seu Active Directory com o Azure Active Directory é chamada Azure AD Connect. Para obter mais informações, consulte [integrando suas identidades locais com o Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+A ferramenta mais recente que você pode usar para sincronizar seu Active Directory com o Azure Active Directory é chamada Azure AD Connect. Para mais informações, confira [Integrar suas identidades locais ao Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
-O Azure AD Connect sincroniza o UPN e a senha dos usuários para que os usuários possam entrar com as mesmas credenciais que usam no local. No enTanto, o Azure AD Connect sincroniza apenas os usuários em domínios verificados pelo Office 365. Isso significa que o domínio também é verificado pelo Azure Active Directory porque as identidades do Office 365 são gerenciadas pelo Azure Active Directory. Em outras palavras, o domínio deve ser um domínio válido da Internet (por exemplo,. com,. org, .net,. us, etc.). Se o Active Directory interno usar apenas um domínio não roteável (por exemplo,. local), isso não poderá corresponder ao domínio verificado que você tem no Office 365. Você pode corrigir esse problema alterando seu domínio primário no Active Directory local ou adicionando um ou mais sufixos UPN.
+O Azure AD Connect sincroniza o UPN e a senha dos usuários para que os usuários possam entrar com as mesmas credenciais que usam no local. No entanto, o Azure AD Connect sincroniza apenas os usuários em domínios verificados pelo Office 365. Isso significa que o domínio também é verificado pelo Azure Active Directory porque as identidades do Office 365 são gerenciadas pelo Azure Active Directory. Em outras palavras, o domínio deve ser um domínio válido da Internet (por exemplo,. com,. org, .net,. us, etc.). Se o Active Directory interno usar apenas um domínio não roteável (por exemplo,. local), isso não poderá corresponder ao domínio verificado que você tem no Office 365. Você pode corrigir esse problema alterando seu domínio primário no Active Directory local ou adicionando um ou mais sufixos UPN.
   
 ### <a name="change-your-primary-domain"></a>**Alterar seu domínio primário**
 

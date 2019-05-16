@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
-ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487790"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068767"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama acessível-integração de recursos nos produtos do Microsoft Office Server
 
@@ -96,7 +96,7 @@ Fotos do usuário de alta resolução. Esse recurso se aplica a:
     
 - Lync
     
-Repositório uniFicado de contatos. Esse recurso se aplica a: 
+Repositório unificado de contatos. Esse recurso se aplica a: 
   
 - Exchange
     
@@ -263,11 +263,11 @@ O diagrama a seguir mostra como um usuário pode atualizar uma foto para ser usa
     
 7. O cliente herdado do Lync agora tem acesso à foto. 
     
-## <a name="unified-contact-store-tab"></a>Guia repositório uniFicado de contatos
+## <a name="unified-contact-store-tab"></a>Guia repositório unificado de contatos
 
 ### <a name="exchange-2013-is-the-contact-store-for-all-office-applications"></a>O Exchange 2013 é o repositório de contatos para todos os aplicativos do Office
 
-O uso do repositório uniFicado de contatos (UCS) fornece uma experiência de contato consistente nos produtos do Microsoft Office. Os usuários armazenam todas as informações de contato em suas caixas de correio do Exchange 2013. As mesmas informações de contato estão disponíveis globalmente no Lync, no Exchange, no Outlook e no Outlook Web App. 
+O uso do repositório unificado de contatos (UCS) fornece uma experiência de contato consistente nos produtos do Microsoft Office. Os usuários armazenam todas as informações de contato em suas caixas de correio do Exchange 2013. As mesmas informações de contato estão disponíveis globalmente no Lync, no Exchange, no Outlook e no Outlook Web App. 
   
  **Produtos de servidor**
   
@@ -305,7 +305,7 @@ Entra no Lync usando um cliente avançado do Lync 2013.
     
 2. Entrar no Lync 2013. O cliente Lync contata o Lync Server sobre SIP/5061 HTTPS/443. 
     
-3. O cliente Lync informa ao Lync Server que o usuário está habilitado para o repositório uniFicado de contatos sobre SIP/5061. 
+3. O cliente Lync informa ao Lync Server que o usuário está habilitado para o repositório unificado de contatos sobre SIP/5061. 
     
 4. O Lync Server usa o serviço de armazenamento do Lync para migrar os contatos do usuário para o Exchange 2013 no servidor de acesso para cliente do Exchange. 
     
@@ -535,7 +535,7 @@ O primeiro mostra como um usuário entra no Outlook Web App e, em seguida, procu
     
 2. O usuário entra em suas caixas de correio do Exchange 2013 e o Exchange CAS consulta o Lync Server para obter informações de presença sobre SIP/MTLS: 5061. 
     
-Para obter mais informações, consulte [integraNdo o Microsoft Lync Server 2013 e o Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).
+Para obter mais informações, consulte [integrando o Microsoft Lync Server 2013 e o Microsoft Outlook Web App 2013](https://go.microsoft.com/fwlink/?LinkId=313522).
   
 O segundo diagrama mostra como o Outlook e o SharePoint Server usam o Lync 2013 para exibir as informações de presença dos usuários. 
   
@@ -553,7 +553,7 @@ O segundo diagrama mostra como o Outlook e o SharePoint Server usam o Lync 2013 
 
 ### <a name="exchange-um-is-the-voicemail-system-for-lync-server"></a>UM do Exchange é o sistema de caixa postal para o Lync Server
 
-A caixa postal permite que um chamador deixe uma caixa postal para os usuários do Lync usando a uniFicação de mensagens (UM) do Exchange. 
+A caixa postal permite que um chamador deixe uma caixa postal para os usuários do Lync usando a Unificação de mensagens (UM) do Exchange. 
   
 Produtos de cliente: 
   

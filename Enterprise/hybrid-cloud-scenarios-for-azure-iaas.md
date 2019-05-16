@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Resumo: entenda a arquitetura híbrida e os cenários para ofertas de nuvem com base na infraestrutura do Microsoft de serviço (IaaS) no Azure.'
-ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 429af408ca3f21fe667b36cdb9767d3916a6b1a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067347"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Cenários de nuvem híbrida para a IaaS do Azure
 
@@ -149,7 +149,7 @@ Siga este caminho para adoção bem-sucedida:
     
 3. Implantar
     
-    Consulte [deployIng SharePoint server 2016 with SQL Server AlwaysOn Availability groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) para percorrer a configuração de ponta a ponta do farm de alta disponibilidade em cinco fases.
+    Consulte [Deploying SharePoint server 2016 with SQL Server AlwaysOn Availability groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) para percorrer a configuração de ponta a ponta do farm de alta disponibilidade em cinco fases.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Identidade federada para o Office 365 no Azure
 
@@ -182,6 +182,6 @@ Siga este caminho para adoção bem-sucedida:
 
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 
 

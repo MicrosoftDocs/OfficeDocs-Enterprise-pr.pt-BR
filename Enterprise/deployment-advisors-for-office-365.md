@@ -1,10 +1,10 @@
 ---
 title: Consultores de implantação para os serviços do Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Os consultores de implantação do Office 365 oferecem suporte autoorientado para a configuração do Office 365.
-ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7aec5d6b59500fb092ab8d0e8a7f952997ebd1bb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067887"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Consultores de implantação para os serviços do Office 365
 

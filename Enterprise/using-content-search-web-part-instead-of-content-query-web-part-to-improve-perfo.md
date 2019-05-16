@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/20/2015
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Este artigo descreve como aumentar o desempenho substituindo a Web Part de consulta de conteúdo pela Web Part de pesquisa de conteúdo no SharePoint Server 2013 e no SharePoint Online.
-ms.openlocfilehash: f86a4b75c4bf75ebaa99924411d017c7eb7b6760
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 590cd5f60dedf870d58d053b01e4e1b45469bfa4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492150"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070547"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Usando a Web Part de pesquisa de conteúdo em vez da Web Part de consulta de conteúdo para melhorar o desempenho no SharePoint Online
 
@@ -30,7 +30,7 @@ Um dos novos recursos mais poderosos do SharePoint Server 2013 e do SharePoint O
   
 Usar uma Web Part de pesquisa de conteúdo em uma Web Part de consulta de conteúdo quase sempre resultará em um desempenho de carregamento de página significativamente melhor no SharePoint Online. Há uma pequena configuração adicional para obter a consulta certa, mas os prêmios têm desempenho aprimorado e mais feliz usuários.
   
-## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>ComParando o ganho de desempenho obtido usando a Web Part de pesquisa de conteúdo em vez da Web Part de consulta de conteúdo
+## <a name="comparing-the-performance-gain-you-get-from-using-content-search-web-part-instead-of-content-query-web-part"></a>Comparando o ganho de desempenho obtido usando a Web Part de pesquisa de conteúdo em vez da Web Part de consulta de conteúdo
 
 Os exemplos a seguir mostram os ganhos de desempenho relativos que você pode receber ao usar uma Web Part de pesquisa de conteúdo em vez de uma Web Part de consulta de conteúdo. Os efeitos são mais óbvios com uma estrutura de site complexa e consultas de conteúdo muito abrangentes.
   

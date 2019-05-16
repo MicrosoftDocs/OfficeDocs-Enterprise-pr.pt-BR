@@ -4,19 +4,19 @@ ms.author: dstrome
 author: dstrome
 manager: laurawi
 ms.date: 1/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: Em 11 de abril de 2017, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para o Office 365 ou o Exchange 2016, agora é hora de iniciar o planejamento.
-ms.openlocfilehash: 674de8904d03e024a8a75b945b5ef94319214f92
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 08796407e41fcc249da709267301de94fc359f36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067607"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2007
 
@@ -34,7 +34,7 @@ O Exchange Server, como quase todos os produtos da Microsoft, tem um ciclo de vi
     
 - Atualizações de fuso horário.
     
-A instalação do Exchange 2007 continuará a ser executada após essa data. No enTanto, devido às alterações listadas acima, é altamente recomendável migrar do Exchange 2007 o mais rápido possível.
+A instalação do Exchange 2007 continuará a ser executada após essa data. No entanto, devido às alterações listadas acima, é altamente recomendável migrar do Exchange 2007 o mais rápido possível.
   
 Para obter mais informações sobre os servidores do Office 2007 próximos ao fim do suporte, consulte [Plan Your Upgrade from Office 2007 Servers and Products](upgrade-from-office-2007-servers-and-products.md).
   
@@ -85,7 +85,7 @@ Dependendo da sua organização, você tem algumas opções que o ajudarão a ac
 |Migração em estágios  <br/> |Mais de 150 assentos  <br/> |Algumas semanas  <br/> |
 |Migração híbrida completa  <br/> |Várias centenas de milhares de estações  <br/> |Alguns meses ou mais  <br/> |
    
-As seções a seguir fornecem uma visão geral desses métodos. ConFira [decida em um caminho de migração](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) para aprender os detalhes de cada método. 
+As seções a seguir fornecem uma visão geral desses métodos. Confira [decida em um caminho de migração](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) para aprender os detalhes de cada método. 
   
 #### <a name="cutover-migration"></a>Migração de substituição
 
@@ -199,7 +199,7 @@ Se uma migração híbrida completa for adequada para você, dê uma olhada nos 
 
 Embora acreditemos que você possa obter o melhor valor e a experiência do usuário migrando para o Office 365, também entendemos que algumas organizações precisam manter seus emails no local. Isso pode ser devido a requisitos normativos, para garantir que os dados não sejam armazenados em um Datacenter localizado em outro país e assim por diante. Se você optar por manter seu email no local, poderá migrar seu ambiente do Exchange 2007 para o Exchange 2010, Exchange 2013 ou Exchange 2016.
   
-Recomendamos migrar para o Exchange 2016 se não for possível migrar para o Office 365. O Exchange 2016 inclui todos os recursos e avanços incluídos nas versões anteriores do Exchange e mais uma delas correspondem à experiência disponível com o Office 365 (embora alguns recursos estão disponíveis apenas no Office 365). ConFira apenas algumas das coisas que você esteve perdendo:
+Recomendamos migrar para o Exchange 2016 se não for possível migrar para o Office 365. O Exchange 2016 inclui todos os recursos e avanços incluídos nas versões anteriores do Exchange e mais uma delas correspondem à experiência disponível com o Office 365 (embora alguns recursos estão disponíveis apenas no Office 365). Confira apenas algumas das coisas que você esteve perdendo:
   
 |**Versão do Exchange**|**Recursos**|
 |:-----|:-----|

@@ -1,9 +1,9 @@
 ---
 title: Visualizar o status de sincronização de diretório no Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Saiba como desativar a sincronização de diretórios. Você também pode exibir seu status.
-ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492097"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070407"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Visualizar o status de sincronização de diretório no Office 365
 
@@ -48,5 +48,5 @@ Se houver um problema com a sincronização de diretório, os erros também ser�
 |**Sincronização de senha habilitada** | True ou false. Especifica se você tem sincronização de hash de senha entre o seu locatário do Office 365 e o local. |
 |**Última sincronização de senha** | Última vez em que a sincronização de hash de senha foi executada. Exibirá um aviso e um link para uma ferramenta de solução de problemas se a última sincronização tiver mais de três dias. |
 |**Versão do cliente de sincronização de diretório** | Contém um link de download se uma nova versão do Azure AD Connect foi liberada. |
-|**Ferramenta IDFix** | Link de download para o [IDFix](install-and-run-idfix.md), uma ferramenta que você pode usar para verificar se você localIzou o Active Directory. |
+|**Ferramenta IDFix** | Link de download para o [IDFix](install-and-run-idfix.md), uma ferramenta que você pode usar para verificar se você localizou o Active Directory. |
 |**Conta de serviço de sincronização de diretório** | Exibe o nome da conta do serviço de sincronização de diretório do Office 365. |

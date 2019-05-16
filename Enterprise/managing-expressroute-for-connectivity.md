@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/13/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: O ExpressRoute para Office 365 oferece um caminho de roteamento alternativo para alcançar muitos serviços do Office 365 sem precisar de todo o tráfego para saída na Internet. Embora a conexão com a Internet com o Office 365 ainda seja necessária, as rotas específicas que a Microsoft anuncia por meio do BGP para a sua rede tornam o circuito direto do ExpressRoute preferencial, a menos que haja outras configurações na sua rede. As três áreas comuns que você pode querer configurar para gerenciar esse roteamento incluem filtragem de prefixo, segurança e conformidade.
-ms.openlocfilehash: 5345c4067f4ecf9b1b1bc1a0ad20d6e1f5273f65
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067127"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gerenciar o ExpressRoute para conectividade do Office 365
 
@@ -80,7 +80,7 @@ Há vários cenários opcionais que exigem que a Microsoft inicie conexões à s
   
 - ADFS durante a validação de senha para entrada.
 
-- [ImplantaÇões híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
+- [Implantações híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx).
 
 - Emails de um locatário do Exchange Online para um host local.
 
@@ -102,7 +102,7 @@ Não confiamos no caminho de roteamento que você usa para qualquer um dos nosso
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
   

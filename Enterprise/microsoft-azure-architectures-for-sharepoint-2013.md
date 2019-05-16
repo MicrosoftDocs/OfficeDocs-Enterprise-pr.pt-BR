@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Resumo: as soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um.'
-ms.openlocfilehash: 7e40b7c4d37e5646d44a14f12a80a9c6cd25834b
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 913910af1acf1353c3ee9b553178c4f0736eb290
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070287"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquiteturas do Microsoft Azure para o SharePoint 2013
 
@@ -36,8 +36,8 @@ Os serviços de infraestrutura do Azure são uma opção atraente para hospedar 
 |**Solução**|**Por que esta solução é recomendada para o Azure**|
 |:-----|:-----|
 |Ambientes de desenvolvimento e teste  <br/> |É fácil criar e gerenciar esses ambientes.  <br/> |
-|Recuperação de desastres de farms locais do SharePoint para o Azure  <br/> |**Data center secundário hospedado** Use o Azure em vez de investir em um data center secundário em uma região diferente. <br/> **Ambientes de recuperação de desastres de baixo custo** Mantenha e pague por menos recursos do que um ambiente de recuperação de desastres local. O número de recursos depende do ambiente de recuperação de desastres que você escolhe: espera Cold, espera passiva ou espera ativa. <br/> **Mais plataforma elástica** No caso de um desastre, dimensione facilmente seu farm do SharePoint de recuperação para atender aos requisitos de carga. Expanda quando não precisar mais dos recursos. <br/> ConFira [recuperação de desastre do SharePoint Server 2013 no Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Sites voltados para a Internet que usam recursos e escala não estão disponíveis no Office 365  <br/> |**Concentrar seus esforços** Concentre-se em criar um ótimo site, em vez de criar uma infraestrutura. <br/> Aproveite a **elasticidade no Azure** Dimensione o farm para a demanda adicionando novos servidores e pague apenas os recursos de que você precisa. Não há suporte para a alocação de máquina dinâmica (escala automática). <br/> **Usar o Azure Active Directory (AD)** Aproveite o Azure AD para contas de cliente. <br/> **Adicionar funcionalidade do SharePoint não disponível no Office 365** Adicione relatórios detalhados e análises da Web. <br/> ConFira [sites da Internet no Microsoft Azure usando o SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Recuperação de desastres de farms locais do SharePoint para o Azure  <br/> |**Data center secundário hospedado** Use o Azure em vez de investir em um data center secundário em uma região diferente. <br/> **Ambientes de recuperação de desastres de baixo custo** Mantenha e pague por menos recursos do que um ambiente de recuperação de desastres local. O número de recursos depende do ambiente de recuperação de desastres que você escolhe: espera Cold, espera passiva ou espera ativa. <br/> **Mais plataforma elástica** No caso de um desastre, dimensione facilmente seu farm do SharePoint de recuperação para atender aos requisitos de carga. Expanda quando não precisar mais dos recursos. <br/> Confira [recuperação de desastre do SharePoint Server 2013 no Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
+|Sites voltados para a Internet que usam recursos e escala não estão disponíveis no Office 365  <br/> |**Concentrar seus esforços** Concentre-se em criar um ótimo site, em vez de criar uma infraestrutura. <br/> Aproveite a **elasticidade no Azure** Dimensione o farm para a demanda adicionando novos servidores e pague apenas os recursos de que você precisa. Não há suporte para a alocação de máquina dinâmica (escala automática). <br/> **Usar o Azure Active Directory (AD)** Aproveite o Azure AD para contas de cliente. <br/> **Adicionar funcionalidade do SharePoint não disponível no Office 365** Adicione relatórios detalhados e análises da Web. <br/> Confira [sites da Internet no Microsoft Azure usando o SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
 |Farms de aplicativos compatíveis com o Office 365 ou ambientes locais  <br/> |**Crie, teste e hospede aplicativos** no Azure para dar suporte a ambientes locais e de nuvem. <br/> **Hospede essa função** no Azure, em vez de comprar novo hardware para ambientes locais. <br/> |
    
 Para soluções de intranet e colaboração e cargas de trabalho, considere as seguintes opções:

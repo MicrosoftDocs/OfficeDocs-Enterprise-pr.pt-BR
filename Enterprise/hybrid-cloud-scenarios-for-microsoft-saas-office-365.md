@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: 'Resumo: entenda a arquitetura híbrida e os cenários de ofertas de nuvem baseadas em SaaS da Microsoft (Office 365).'
-ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 84092fe419ab31fca7763f434e328eb855d46835
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067217"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Cenários de nuvem híbrida para Microsoft SaaS (Office 365)
 
@@ -148,11 +148,11 @@ Esta configuração híbrida:
     
 Você também pode integrar essa configuração híbrida com outros aplicativos do Microsoft Office 365, incluindo o Skype for Business Online e o SharePoint Online.
   
-Para obter mais informações, consulte imPlantações híbridas do [Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
+Para obter mais informações, consulte implantações híbridas do [Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
   
 ## <a name="see-also"></a>Confira também
 
 [Nuvem híbrida da Microsoft para Arquitetos Corporativos](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
-[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI da Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
 

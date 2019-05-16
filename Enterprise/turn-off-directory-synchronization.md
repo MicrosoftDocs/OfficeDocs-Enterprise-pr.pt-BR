@@ -1,10 +1,9 @@
 ---
-title: Desativar a sincronização de diretório do Office 365
-ms.author: robmazz
-author: robmazz
+title: Desativar a sincronização de diretório no Office 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,15 +17,15 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Saiba como usar o PowerShell para desativar a sincronização de diretório para o Office 365
-ms.openlocfilehash: 4fbfb6b9e3fcb1512fc4aa9c3d8ee6c37682e58a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 83a01d827217db141016f622a2cb417f93f88e76
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085070"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070357"
 ---
-# <a name="turn-off-directory-synchronization-for-office-365"></a>Desativar a sincronização de diretório do Office 365
-Você pode usar o PowerShell para desativar a sincronização de diretórios. No enTanto, não é recomendável que você desative a sincronização de diretório como uma etapa de solução de problemas. Se precisar de ajuda para solucionar problemas de sincronização de diretórios, consulte o artigo [corrigindo problemas com a sincronização de diretórios para o Office 365](fix-problems-with-directory-synchronization.md) . 
+# <a name="turn-off-directory-synchronization-for-office-365"></a>Desativar a sincronização de diretório no Office 365
+Você pode usar o PowerShell para desativar a sincronização de diretórios. No entanto, não é recomendável que você desative a sincronização de diretório como uma etapa de solução de problemas. Se precisar de ajuda para solucionar problemas de sincronização de diretórios, consulte o artigo [corrigindo problemas com a sincronização de diretórios para o Office 365](fix-problems-with-directory-synchronization.md) . 
   
 [Entre em contato com o suporte](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para produtos de negócios, se necessário.
   

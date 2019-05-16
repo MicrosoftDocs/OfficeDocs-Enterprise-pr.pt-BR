@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Resumo: explica como os computadores cliente se conectam aos locatários do Office 365, dependendo do local do computador cliente e do datacenter de locatário do Office 365.'
-ms.openlocfilehash: 9455147e70a391619e1602f2e36d9162ff2c0928
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068197"
 ---
 # <a name="client-connectivity"></a>Conectividade de cliente
 
@@ -31,7 +31,7 @@ ms.locfileid: "33490551"
   
 O Office 365 reside nos datacenters da Microsoft em todo o mundo, o que ajuda a manter o serviço em execução, mesmo quando há um problema significativo em uma região, como um terremoto ou uma queda de energia. Quando você se conectar ao seu locatário do Office 365, a conexão do cliente será direcionada para o datacenter apropriado onde o locatário está sendo hospedado. As regras que determinam onde seu locatário podem ser hospedados são definidas por seu contrato com a Microsoft. As regras que determinam como o cliente adquire os dados desse local de datacenter dependem da arquitetura do serviço que você está usando.
   
-Por exemplo, quando você faz logon no portal do Office 365, geralmente está conectado ao datacenter mais próximo ao cliente e, em seguida, direcionado, dependendo do serviço que você usa em seguida. Se você iniciar o email, a conexão inicial para exibir a interface do usuário ainda pode ser proveniente do datacenter mais próximo, mas uma segunda conexão pode ser aberta entre o datacenter mais próximo e o datacenter onde o locatário está localizado para mostrar o que há nos emails que você lê. A Microsoft opera uma das dez principais redes do mundo, o que resulta em conexões de datacenter incrivelmente rápidas com rapidez.
+Por exemplo, quando você faz logon no portal do Office 365, geralmente está conectado ao datacenter mais próximo ao cliente e, em seguida, direcionado, dependendo do serviço que você usa em seguida. Se você iniciar o email, a conexão inicial para exibir a interface do usuário ainda pode ser proveniente do datacenter mais próximo, mas uma segunda conexão pode ser aberta entre o datacenter mais próximo e o datacenter onde o locatário está localizado para mostrar o que há nos emails que você lê. A Microsoft opera uma das dez principais redes do mundo, resultando em conexões de datacenter incrivelmente rápidas.
   
 Depois de ler o artigo, é provável que você entenda por que não fornecemos as [URLs e os intervalos de endereços IP do Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) por datacenter, eles são simplesmente interconectados e dependentes uns dos outros para torná-lo viável.
   

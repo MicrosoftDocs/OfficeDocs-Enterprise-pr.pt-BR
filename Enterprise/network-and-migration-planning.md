@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
-ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487268"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069917"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planejamento de migração e rede para o Office 365
 
@@ -75,7 +75,7 @@ Aprofundar-se nas práticas recomendadas para obter mais informações sobre a m
     
 3. Melhorar o desempenho da migração de email Gerenciando cuidadosamente o agendamento de atualizações do Windows. Você pode atualizar seus computadores clientes em lotes e garantir que todos os computadores clientes sejam atualizados antes de migrar para o Office 365 para regulamentar o uso da largura de banda da rede. Para saber mais, confira [atualizar e configurar manualmente as áreas de trabalho para o Office 365 para as atualizações mais recentes](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. O tráfego de rede do Office 365 funciona melhor quando é tratado como um serviço de Internet confiável e tem permissão para ignorar a maior parte da filtragem e verificação tradicionais que algumas organizações colocam no tráfego de rede para serviços de Internet não confiáveis. Isso geralmente inclui remover o processamento de saída, como a autenticação de usuário de proxy e a inspeção de pacotes, além de garantir a egresso local à Internet com a conversão de endereço de rede (NAT) adequada e a capacidade de largura de banda suficiente para lidar com o aumento solicitações de rede. ConFira o [Gerenciamento de pontos de extremidade do office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)para obter orientação adicional sobre como configurar sua rede para lidar com o Office 365 como um serviço de Internet confiável na sua rede.
+4. O tráfego de rede do Office 365 funciona melhor quando é tratado como um serviço de Internet confiável e tem permissão para ignorar a maior parte da filtragem e verificação tradicionais que algumas organizações colocam no tráfego de rede para serviços de Internet não confiáveis. Isso geralmente inclui remover o processamento de saída, como a autenticação de usuário de proxy e a inspeção de pacotes, além de garantir a egresso local à Internet com a conversão de endereço de rede (NAT) adequada e a capacidade de largura de banda suficiente para lidar com o aumento solicitações de rede. Confira o [Gerenciamento de pontos de extremidade do office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)para obter orientação adicional sobre como configurar sua rede para lidar com o Office 365 como um serviço de Internet confiável na sua rede.
     
 1. Verifique se o [Gerenciamento de pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). O tráfego adicional indo para o Office 365 resulta em um aumento de conexões de proxy de saída, bem como um aumento no tráfego seguro sobre TLS/SSL.
     

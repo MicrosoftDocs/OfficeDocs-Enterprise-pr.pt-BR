@@ -1,10 +1,10 @@
 ---
-title: Exibir usuários licenciados e não licenciados com o Office 365 PowerShell
+title: Exibir usuários licenciados e não licenciados com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explica como usar o Office 365 PowerShell para exibir as contas de usuários licenciados e não licenciados.
-ms.openlocfilehash: eb1ca1d9812b08a6ea932fde546351f664c93066
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: 8b0456b468f4e0f912491f4a138d5868feb5abbc
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071127"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Exibir usuários licenciados e não licenciados com o Office 365 PowerShell
 
@@ -33,13 +33,13 @@ As contas de usuário em sua organização do Office 365 podem ter algumas, toda
 
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-Para exibir a lista de todas as contas de usuário na sua organização que não foram atribuídos qualquer um dos seus planos de licenciamento (usuários não licenciados), execute o seguinte comando:
+Para exibir a lista de todas as contas de usuário em sua organização que não tenham sido atribuídos a nenhum dos seus planos de licenciamento (usuários não licenciados), execute o seguinte comando:
   
 ```
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-Para exibir uma lista de todas as contas de usuário em sua organização que foram atribuídas qualquer um dos seus planos de licenciamento (usuários licenciados), executados o seguinte comando:
+Para exibir a lista de todas as contas de usuário em sua organização que foram atribuídas a qualquer um dos seus planos de licenciamento (usuários licenciados), execute o seguinte comando:
   
 ```
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }

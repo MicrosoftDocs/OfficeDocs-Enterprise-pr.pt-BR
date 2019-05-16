@@ -3,19 +3,19 @@ title: Diagrama acessível-SharePoint Server, Exchange, Lync, Office Web Apps-o 
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em diagramas técnicos.
-ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487677"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068429"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama acessível-SharePoint Server, Exchange, Lync, Office Web Apps-o cenário móvel
 
@@ -41,7 +41,7 @@ Essa experiência oferece:
   
 - Um modo de exibição do navegador baseado em HTML5 ativado por padrão em selecionar modelos de site (site de equipe, site em branco, espaço de trabalho de documento, centro de documentos e site de projeto).
     
-- Recursos avançados, como botão de menu, janela de navegação, links de toque para abrir e paGinação.
+- Recursos avançados, como botão de menu, janela de navegação, links de toque para abrir e paginação.
     
 - Recursos padrão com pouco ou nenhuma configuração ou personalização necessária.
     
@@ -146,7 +146,7 @@ Fora do uso do Office Mobile, os usuários podem exibir documentos do Office em 
     
  **Editar no navegador (Windows 8/iPad)**. Você pode fazer edições usando ferramentas essenciais e familiares com o Office Web Apps baseado em navegador. Uma ilustração a seguir mostra a experiência do Office Web Apps em um Tablet.
   
-- Com o Excel Web App, você obtém recursos essenciais de planilha por meio do navegador, como células de mesclagem, menus de contexto, colunas de ajuste automático, assistência de fórmula, alça de preenchimento e autoSoma. Você pode imprimir diretamente do navegador e renomear ou adicionar planilhas conforme necessário.
+- Com o Excel Web App, você obtém recursos essenciais de planilha por meio do navegador, como células de mesclagem, menus de contexto, colunas de ajuste automático, assistência de fórmula, alça de preenchimento e AutoSoma. Você pode imprimir diretamente do navegador e renomear ou adicionar planilhas conforme necessário.
     
 - Com o Word Web App, você pode editar, Formatar e projetar seus documentos diretamente no navegador com recursos usados e atalhos comumente conhecidos do Word na área de trabalho. 
     
