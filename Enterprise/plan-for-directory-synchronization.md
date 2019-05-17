@@ -1,5 +1,5 @@
 ---
-title: Planejar a sincronização de diretórios do Office 365
+title: Identidade híbrida e sincronização de diretório para o Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,41 +15,87 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
-description: Descreve a sincronização de diretório com o Office 365, a limpeza do Active Directory e a ferramenta Azure Active Directory Connect.
-ms.openlocfilehash: b1d48696195c572de3a87bc5acb0646fc4bd0f41
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Descreve a sincronização de diretório com o Office 365, limpeza de serviços de domínio do Active Directory e a ferramenta Azure Active Directory Connect.
+ms.openlocfilehash: 31fcd8baaccabf5d3f4f0cf47c7573c43f7cd40b
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069357"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102480"
 ---
-# <a name="plan-for-directory-synchronization-for-office-365"></a>Planejar a sincronização de diretórios do Office 365
+# <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identidade híbrida e sincronização de diretório para o Office 365
 
-Dependendo da necessidade de negócios e dos requisitos técnicos, a sincronização de diretórios é a opção de provisionamento mais comum para clientes corporativos que estão migrando para o Office 365. A sincronização de diretórios permite que as identidades sejam gerenciadas no Active Directory local e todas as atualizações para essa identidade são sincronizadas com o Office 365.
-  
-Há algumas coisas que você deve ter em mente ao planejar uma implementação da sincronização de diretórios, incluindo a preparação do diretório e os requisitos e a funcionalidade do Azure Active Directory. A preparação do diretório abrange algumas áreas. Eles incluem atualizações de atributo, auditoria e planejamento do controlador de domínio. Os requisitos e as funcionalidades de planejamento incluem determinar as permissões necessárias, planejamento para cenários de várias florestas/diretórios, planejamento de capacidade e sincronização bidirecional.
-  
-## <a name="office-365-identity-models"></a>Modelos de identidade do Office 365
+Dependendo das necessidades de negócios e dos requisitos técnicos, o modelo de identidade híbrida e a sincronização de diretórios é a opção mais comum para clientes corporativos que estão adotando o Office 365. A sincronização de diretórios permite gerenciar identidades em seus serviços de domínio do Active Directory (AD DS) e todas as atualizações de contas de usuário, grupos e contatos são sincronizadas com o locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365.
 
-O Office 365 usa dois modelos de autenticação e identidade principais: autenticação de nuvem e autenticação federada.
-  
-### <a name="cloud-authentication"></a>Autenticação na nuvem
 
-[Identidade em nuvem](about-office-365-identity.md) -criar e gerenciar usuários no [centro de administração do Microsoft 365](https://admin.microsoft.com), você também pode usar o Windows PowerShell ou o Azure Active Directory para gerenciar seus usuários.
+>[!Note]
+>Quando as contas de usuário do AD DS são sincronizadas pela primeira vez, elas não recebem automaticamente uma licença do Office 365 e não podem acessar os serviços do Office 365, como email. Você deve atribuir uma licença a essas contas de usuário, individualmente ou dinamicamente por meio da Associação de grupo.
+>
+
+## <a name="authentication-for-hybrid-identity"></a>Autenticação para identidade híbrida
+
+Há dois tipos de autenticação ao usar o modelo de identidade híbrida:
+
+- Autenticação gerenciada
+
+  O Azure AD lida com o processo de autenticação usando uma versão de hash armazenada localmente ou envia as credenciais para um agente de software local para ser autenticado pelo AD DS local.
+
+- Autenticação federada
+
+  O Azure AD redireciona o computador cliente solicitando a autenticação para entrar em contato com outro provedor de identidade.
+
+### <a name="managed-authentication"></a>Autenticação gerenciada
+
+Há dois tipos de autenticação gerenciada:
+
+- Sincronização de hash de senha (PHS)
+
+  O Azure AD executa a própria autenticação.
+
+- Autenticação de passagem (PTA)
+
+  O Azure AD tem o AD DS executando a autenticação.
+
+
+#### <a name="password-hash-synchronization"></a>Sincronização de hash de senha
+
+Com a sincronização de hash de senha (PHS), você sincroniza suas contas de usuário do AD DS com o Office 365 e gerencia seus usuários no local. Hashes de senhas de usuário são sincronizados do AD DS para o Azure AD para que os usuários tenham a mesma senha no local e na nuvem. Essa é a maneira mais simples de habilitar a autenticação para identidades do AD DS no Azure AD. 
+
+![](./media/plan-for-directory-synchronization/phs-authentication.png)
+
+Quando as senhas são alteradas ou redefinidas no local, os novos hashes de senha são sincronizados com o Azure AD para que os usuários sempre possam usar a mesma senha para recursos de nuvem e recursos locais. As senhas do usuário nunca são enviadas para o Azure AD ou armazenadas no Azure AD em texto não criptografado. Alguns recursos premium do Azure AD, como proteção de identidade, exigem PHS independentemente do método de autenticação selecionado.
   
-[Sincronização de hash de senha com logon único contínuo](about-office-365-identity.md) -a maneira mais simples de habilitar a autenticação para objetos de diretório local no Azure AD. Com a sincronização de hash de senha (PHS), você sincroniza seus objetos de conta de usuário do Active Directory local com o Office 365 e gerencia seus usuários no local.
+Consulte [escolher PHS](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para saber mais.
   
-[Autenticação de passagem com logon único contínuo](about-office-365-identity.md) -fornece uma validação de senha simples para os serviços de autenticação do Azure ad usando um agente de software em execução em um ou mais servidores locais para validar os usuários diretamente com o seu Active Directory local.
+#### <a name="pass-through-authentication"></a>Autenticação de passagem
+
+A autenticação de passagem (PTA) fornece uma validação de senha simples para os serviços de autenticação do Azure AD usando um agente de software executado em um ou mais servidores locais para validar os usuários diretamente com o AD DS. Com a autenticação de passagem (PTA), você sincroniza contas de usuário do AD DS com o Office 365 e gerencia seus usuários no local. 
+
+![](./media/plan-for-directory-synchronization/pta-authentication.png)
+
+O PTA permite que os usuários entrem em recursos e aplicativos locais e do Office 365 usando sua conta e senha local. Essa configuração valida senhas de usuários diretamente em seu AD DS local sem armazenar hashes de senha no Azure AD. 
+
+PTA também é para organizações com um requisito de segurança para impor imediatamente os Estados de conta de usuário local, as diretivas de senha e o horário de logon. 
+  
+Consulte [escolher PTA](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para saber mais.
   
 ### <a name="federated-authentication"></a>Autenticação federada
 
-[Identidade federada com os serviços de Federação do Active Directory AD FS](about-office-365-identity.md) – primariamente para grandes organizações corporativas com requisitos de autenticação mais complexos, os objetos de diretório no local são sincronizados com o Office 365 e as contas de usuários são gerenciado no local.
-  
-[Provedores de autenticação e de identidade](about-office-365-identity.md) de terceiros-os objetos de diretório no local podem ser sincronizados com o Office 365 e o acesso a recursos em nuvem é basicamente gerenciado por um provedor de identidade de terceiros (IDP).
-  
-## <a name="active-directory-cleanup"></a>Limpeza do Active Directory
+A autenticação federada é principalmente para grandes organizações corporativas com requisitos de autenticação mais complexos. As identidades do AD DS são sincronizadas com o Office 365 e as contas de usuários são gerenciadas no local. Com a autenticação federada, os usuários têm a mesma senha no local e na nuvem, e não precisam entrar novamente para usar o Office 365. 
 
-Para ajudar a garantir uma transição contínua para o Office 365 usando a sincronização, recomendamos enfaticamente que você prepare sua floresta do Active Directory antes de começar sua implantação de sincronização de diretório do Office 365.
+A autenticação federada pode dar suporte a requisitos de autenticação adicionais, como a autenticação com base em Smartcard ou uma autenticação multifator de terceiros, e normalmente é necessária quando as organizações têm um requisito de autenticação não com suporte nativo pelo Azure AD.
+ 
+Consulte [escolhendo autenticação federada](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para saber mais.
+  
+#### <a name="third-party-authentication-and-identity-providers"></a>Provedores de autenticação e identidade de terceiros
+
+Os objetos de diretório no local podem ser sincronizados com o Office 365 e o acesso a recursos em nuvem é basicamente gerenciado por um provedor de identidade de terceiros (IdP). Se sua organização usa uma solução de Federação de terceiros, você pode configurar o logon com essa solução para o Office 365 desde que a solução de Federação de terceiros seja compatível com o Azure AD.
+  
+Confira [compatibilidade de Federação do Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) para saber mais.
+  
+## <a name="ad-ds-cleanup"></a>Limpeza do AD DS
+
+Para ajudar a garantir uma transição contínua para o Office 365 usando a sincronização, você deve preparar sua floresta do AD DS antes de começar sua implantação de sincronização de diretório do Office 365.
   
 Ao [Configurar a sincronização de diretórios no Office 365](set-up-directory-synchronization.md), uma das etapas é [baixar e executar a ferramenta IdFix](install-and-run-idfix.md). Você pode usar a ferramenta IdFix para ajudar com a [limpeza de diretório](prepare-directory-attributes-for-synch-with-idfix.md).
   
@@ -68,31 +114,33 @@ Para várias florestas e opções de SSO, use a [instalação personalizada do A
   
 Se sua organização tiver várias florestas para autenticação (florestas de logon), recomendamos enfaticamente o seguinte:
   
-- **Avaliar a consolidação de suas florestas.** Em geral, há mais sobrecarga necessária para manter várias florestas. A menos que sua organização tenha restrições de segurança que ditem a necessidade de florestas separadas, considere simplificar o ambiente local.
+- **Considere a consolidação de suas florestas.** Em geral, há mais sobrecarga necessária para manter várias florestas. A menos que sua organização tenha restrições de segurança que ditem a necessidade de florestas separadas, considere simplificar o ambiente local.
 - **Use somente na floresta de logon principal.** Considere a implantação do Office 365 somente em sua floresta de logon principal para a sua distribuição inicial do Office 365. 
 
-Se você não puder consolidar sua implantação do Active Directory de várias florestas ou se estiver usando outros serviços de diretório para gerenciar identidades, talvez seja possível sincronizá-las com a ajuda da Microsoft ou de um parceiro.
+Se você não puder consolidar sua implantação do AD DS de várias florestas ou se estiver usando outros serviços de diretório para gerenciar identidades, talvez seja possível sincronizá-las com a ajuda da Microsoft ou de um parceiro.
   
-Para obter mais informações, consulte [sincronização de diretórios com várias florestas com o cenário de logon único](https://go.microsoft.com/fwlink/p/?LinkId=525321).
+Confira [sincronização de diretórios de várias florestas com um cenário de logon único](https://go.microsoft.com/fwlink/p/?LinkId=525321) para obter mais informações.
   
-## <a name="directory-integration-tools"></a>Ferramentas de integração de diretórios
-
-A sincronização de diretórios é a sincronização de objetos de diretório (usuários, grupos e contatos) do seu ambiente do Active Directory local para a infraestrutura de diretório do Office 365. Consulte [ferramentas de integração de diretórios](https://go.microsoft.com/fwlink/p/?LinkID=510956) para obter uma lista das ferramentas disponíveis e sua funcionalidade. A ferramenta recomendada para usar o [Azure Active Directory Connect](https://go.microsoft.com/fwlink/?LinkId=525323).
-  
-Quando as contas de usuário são sincronizadas com o diretório do Office 365 pela primeira vez, elas são marcadas como não ativadas. Eles não podem enviar nem receber emails e não consomem licenças de assinatura. Quando estiver pronto para atribuir assinaturas do Office 365 a usuários específicos, você deverá selecionar e ativá-las atribuindo uma licença válida.
+## <a name="features-that-are-dependent-on-directory-synchronization"></a>Recursos que dependem da sincronização de diretório
   
 A sincronização de diretórios é necessária para os seguintes recursos e funcionalidade:
   
-- SSO
+- Logon único (SSO) contínuo do Azure AD
 - Coexistência do Skype
 - Implantação híbrida do Exchange, incluindo:
   - GAL (lista de endereços global) totalmente compartilhada entre seu ambiente do Exchange local e o Office 365.
   - Sincronizar informação de GAL de sistemas de email diferentes.
   - A capacidade de adicionar usuários e remover usuários das ofertas de serviço do Office 365. Isto exige o seguinte:
-  - A sincronização bidirecional deve ser configurada durante a configuração de sincronização de diretório. Por padrão, as ferramentas de sincronização de diretório gravam informações de diretório somente na nuvem. Ao configurar a sincronização bidirecional, você habilita a funcionalidade de write-back para que um número limitado de atributos de objeto seja copiado da nuvem e, em seguida, os escreveu novamente no seu Active Directory local. O Write-back também é conhecido como modo híbrido do Exchange. 
+  - A sincronização bidirecional deve ser configurada durante a configuração de sincronização de diretório. Por padrão, as ferramentas de sincronização de diretório gravam informações de diretório somente na nuvem. Ao configurar a sincronização bidirecional, você habilita a funcionalidade de write-back para que um número limitado de atributos de objeto seja copiado da nuvem e, em seguida, os escreveu novamente no AD DS local. O Write-back também é conhecido como modo híbrido do Exchange. 
   - Uma implantação híbrida local do Exchange
   - A capacidade de mover algumas caixas de correio do usuário para o Office 365 enquanto mantém outras caixas de correio do usuário no local.
   - Remetentes confiáveis e remetentes bloqueados no local são replicados para o Office 365.
   - Delegação básica e funcionalidade de email enviar em nome de.
   - Você tem uma solução integrada de cartão inteligente ou de autenticação multifator no local.
 - Sincronização de fotos, miniaturas, salas de conferência e grupos de segurança
+
+## <a name="next-step"></a>Próxima etapa
+
+Quando estiver pronto para implantar a identidade híbrida, confira [preparar para provisionar usuários](prepare-for-directory-synchronization.md).
+  
+

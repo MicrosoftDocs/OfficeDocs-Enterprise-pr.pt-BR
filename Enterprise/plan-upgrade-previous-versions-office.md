@@ -13,20 +13,20 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos desatualizados. Use estes recursos para começar a usar seu plano.
-ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3af3b366aa8ae7b9e70169ca0885959fe2b6f8dd
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069327"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102429"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
 
-Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 chegaram ao fim do suporte, e os produtos e serviços do Office 2010 estão chegando ao fim do suporte. Use os recursos desta seção para começar.
-
-- [Atualização de clientes e servidores do Office 2010](upgrade-from-office-2010-servers-and-products.md)
+Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o fim do suporte e os produtos e serviços do Office 2010 atingirão o fim do suporte em **13 de outubro de 2020**. Use os recursos desta seção para começar.
 
 - [Atualização de clientes e servidores do Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
+- [Atualização de clientes e servidores do Office 2010](upgrade-from-office-2010-servers-and-products.md)
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>O que acontece se eu não atualizar?
 

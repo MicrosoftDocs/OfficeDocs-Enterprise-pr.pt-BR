@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumo: Configure os controladores de domínio e o servidor DirSync para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: f04488ad9a99111734d476725eb8e9d423c167cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 299723c8f49cddd4a30ba2defc73dd156792f337
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067477"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102519"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Autenticação federada de alta disponibilidade Fase 2: configurar controladores de domínio
 
@@ -259,8 +259,6 @@ Use o [High availability federated authentication Phase 3: Configure AD FS serve
   
 [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
-
-[Opções de autenticação federada](about-office-365-identity.md#federated-authentication-options)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 
 

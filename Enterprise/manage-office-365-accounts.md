@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Saiba quais ferramentas usar para gerenciar seus usuários do Office 365 e como o que você pode usar depende de como você gerencia as identidades do usuário. '
-ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067187"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102439"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Ferramentas para gerenciar contas do Office 365
 
@@ -35,15 +35,15 @@ Onde e como você pode gerenciar suas contas de usuário depende do modelo de id
   
 ### <a name="cloud-authentication"></a>Autenticação na nuvem
 
-- [Autenticação na nuvem](about-office-365-identity.md#cloud-authentication) -criar e gerenciar usuários no centro de administração, você também pode usar o Windows PowerShell ou o Active Directory do Azure para gerenciar seus usuários. 
+- Autenticação na nuvem-Criar e gerenciar usuários no centro de administração, você também pode usar o Windows PowerShell ou o Active Directory do Azure para gerenciar seus usuários. 
     
-- [Sincronização de hash de senha com logon único contínuo](about-office-365-identity.md) -a maneira mais simples de habilitar a autenticação para objetos de diretório local no Azure AD. Com a sincronização de hash de senha (PHS), você sincroniza seus objetos de conta de usuário do Active Directory local com o Office 365 e gerencia seus usuários no local. 
+- Sincronização de hash de senha com logon único contínuo-a maneira mais simples de habilitar a autenticação para objetos de diretório local no Azure AD. Com a sincronização de hash de senha (PHS), você sincroniza seus objetos de conta de usuário do Active Directory local com o Office 365 e gerencia seus usuários no local. 
     
-- [Autenticação de passagem com logon único contínuo](about-office-365-identity.md) -fornece uma validação de senha simples para os serviços de autenticação do Azure ad usando um agente de software em execução em um ou mais servidores locais para validar os usuários diretamente com o seu Active Directory local. 
+- Autenticação de passagem com logon único contínuo-fornece uma validação de senha simples para os serviços de autenticação do Azure AD usando um agente de software em execução em um ou mais servidores locais para validar os usuários diretamente com o ativo no local Directory. 
     
 ### <a name="federated-authentication"></a>Autenticação federada
 
-- [Opções de autenticação federada](about-office-365-identity.md#federated-authentication-options) – primariamente para grandes organizações corporativas com requisitos de autenticação mais complexos, os objetos de diretório no local são sincronizados com o Office 365 e as contas de usuários são gerenciadas no local. 
+- Opções de autenticação federada – primariamente para grandes organizações corporativas com requisitos de autenticação mais complexos, os objetos de diretório no local são sincronizados com o Office 365 e as contas de usuários são gerenciadas no local. 
     
 - [Provedores de autenticação e de identidade](about-office-365-identity.md) de terceiros-os objetos de diretório no local podem ser sincronizados com o Office 365 e o acesso a recursos em nuvem é basicamente gerenciado por um provedor de identidade de terceiros (IDP). 
     
