@@ -1,57 +1,57 @@
 ---
-title: Exchange Multi-geográfica
+title: Exchange Multigeográfico
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
-description: Saiba mais sobre recursos de várias geografia no Exchange Online.
-ms.openlocfilehash: 70db45bb7626c49a2c9cd6ec827bff6ca16d4673
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
-ms.translationtype: MT
+description: Saiba mais sobre os recursos multigeográficos no Exchange Online.
+ms.openlocfilehash: d518121c69ee29ee246c6947e361a74a3933310f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069927"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos multigeográficos no Exchange Online
 
-Em um ambiente multigeográfico, você pode selecionar o local do conteúdo da caixa de correio do Exchange Online (dados em repouso) em uma base por usuário.
+Em um ambiente multigeográfico, você pode selecionar o local do conteúdo da caixa de correio do Exchange Online (dados em repouso) por usuário.
 
-Você pode colocar caixas de correio em locais geográficos de satélite:
+Você pode colocar caixas de correio em localização geográfica do satélite por:
 
-- Criar uma nova caixa de correio do Exchange Online diretamente em uma localização geográfica de satélite.
+- Criar uma nova caixa de correio do Exchange Online diretamente em uma localização geográfica do satélite.
 
-- Mover uma caixa de correio do Exchange Online existente para uma localização geográfica de satélite, alterando o local de dados preferencial do usuário.
+- Mover uma caixa de correio do Exchange Online existente para um local geográfico do satélite, alterando o local de dados preferencial do usuário.
 
-- Integração de uma caixa de correio de uma organização local do Exchange diretamente em um local geográfico de satélite.
+- Integração de uma caixa de correio de uma organização de um local da organização Exchange diretamente para uma localização geográfica do satélite.
 
-## <a name="mailbox-placement-and-moves"></a>Posicionamento e movimentação de caixa de correio
+## <a name="mailbox-placement-and-moves"></a>Colocação e movimentações de caixa de correio
 
-Depois que a Microsoft concluir as etapas de configuração multigeográficas de pré-requisito, o Exchange Online honrará o atributo **PreferredDataLocation** nos objetos de usuário no Azure AD.
+Depois que a Microsoft concluir as etapas de configuração pré-requisito multigeográfica, o Exchange online segue o atributo **PreferredDataLocation** em objetos de usuário no Azure AD.
 
-O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure ad para a propriedade **MailboxRegion** no serviço de diretório do Exchange Online. O valor de **MailboxRegion** determina o local geográfico onde as caixas de correio do usuário e as caixas de correio de arquivo morto associadas serão colocadas. Não é possível configurar a caixa de correio principal de um usuário e as caixas de correio de arquivo morto para residir em diferentes locais geográficos. Somente um local geográfico pode ser configurado por objeto do usuário.
+O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure ad na propriedade **MailboxRegion** no serviço do diretório do Exchange Online. O valor de **MailboxRegion** determina a localização geográfica em que as caixas de correio do usuário e quaisquer caixas de correio de arquivo morto associadas serão colocadas. Não é possível configurar a caixa de correio principal do usuário e as caixas de correio de arquivo morto para residirem em diferentes localizações geográficas. Só é possível configurar uma localização geográfica por objeto do usuário.
 
-- Quando o **PreferredDataLocation** é configurado em um usuário com uma caixa de correio existente, a caixa de correio será colocada em uma fila de realocação e automaticamente movida para o local geográfico especificado.
+- Quando o **PreferredDataLocation** está configurado em um usuário com uma caixa de correio existente, a caixa de correio será inserida em uma fila de realocação e será movida automaticamente para a localização geográfica especificada.
 
-- Quando o **PreferredDataLocation** é configurado em um usuário sem uma caixa de correio existente, quando você provisiona a caixa de correio, ele será provisionado no local geográfico especificado.
+- Quando o **PreferredDataLocation** está configurado em um usuário com uma caixa de correio existente, quando você fornece a caixa de correio, ela será fornecida para a localização geográfica especificada.
 
-- Quando o **PreferredDataLocation** não for especificado em um usuário, quando você provisionar a caixa de correio, ele será provisionado na localização geográfica central.
+- Quando o **PreferredDataLocation** não está especificado em um usuário, quando você fornece a caixa de correio, ela será fornecida para a localização geográfica central.
 
-- Se o código **PreferredDataLocation** estiver incorreto (por exemplo, um tipo de Nan em vez de um), a caixa de correio será provisionada na localização geográfica central.
+- Se o código **PreferredDataLocation** estiver incorreto (por exemplo, um tipo de NAN, em vez de NAM), a caixa de correio será provisionada na localização geográfica central.
 
-**Observação**: as reuniões hospedadas de várias geografias e do Skype for Business online usam a propriedade **PreferredDataLocation** em objetos de usuário para localizar serviços. Se você configurar valores de **PreferredDataLocation** em objetos de usuário para reuniões hospedadas de modo regional, a caixa de correio para esses usuários será automaticamente movida para o local geográfico especificado após a hospedagem múltipla ser habilitada no locatário do Office 365.
+**Observação**: os recursos multigeográficos e as reuniões hospedadas regionalmente do Skype for Business Online usam a propriedade **PreferredDataLocation** em objetos de usuário para localizar os serviços. Se você configurar valores do **PreferredDataLocation** em objetos de usuário para reuniões hospedadas regionalmente, a caixa de correio para esses usuários será movida automaticamente para a localização geográfica especificada após a habilitação do recurso multigéografico no locatário do Office 365.
 
-## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitações de recursos para várias GEOS no Exchange Online
+## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitações de recursos para a funcionalidade multigeográfica no Exchange Online
 
-- Os recursos de segurança e conformidade (por exemplo, auditoria e descoberta eletrônica) que estão disponíveis no centro de administração do Exchange (Eat) não estão disponíveis em organizações multigeográfico. Em vez disso, você precisa usar o [centro de conformidade do & de segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e conformidade.
+- Os recursos de segurança e de conformidade (por exemplo, auditoria e a descoberta eletrônica) que estão disponíveis no centro de administração do Exchange (EAC) não estão disponíveis em organizações multigeográficas. Em vez disso, você precisa usar o [Centro de Conformidade e Segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e de conformidade.
 
-- Os usuários do Outlook para Mac podem ter uma perda temporária de acesso à sua pasta de arquivo morto online enquanto você move a caixa de correio para um novo local geográfico. Esta condição ocorre quando as caixas de correio primárias e de arquivo morto do usuário estão em locais geográficos diferentes, porque as movimentações de caixa de correio entre geografias podem ser concluídas em momentos diferentes.
+- Os usuários do Outlook para Mac podem perder temporariamente o acesso à pasta de arquivo morto online enquanto você move caixa de correio para uma nova localização geográfica. Isso ocorre quando as caixas de correio principal e de arquivo morto do usuário estão em localizações geográficas diferentes, porque as movimentações de caixas de correio geográficas cruzadas podem ser concluídas em diferentes horários.
 
-- Os usuários não podem compartilhar *pastas de caixa de correio* entre locais geográficos no Outlook na Web (anteriormente conhecido como Outlook Web App ou OWA). Por exemplo, um usuário na União Européia não pode usar o Outlook na Web para abrir uma pasta compartilhada em uma caixa de correio localizada nos Estados Unidos. No enTanto, os usuários do Outlook na Web podem abrir *outras caixas de correio* em diferentes locais geográficos usando uma janela do navegador separada, conforme descrito em [abrir a caixa de correio de outra pessoa em uma janela do navegador separada no Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
+- Os usuários não podem compartilhar *pastas da caixa de correio* em localizações geográficas no Outlook na Web (conhecido anteriormente como Outlook Web App ou OWA). Por exemplo, um usuário na União Europeia não pode usar o Outlook na Web para abrir uma pasta compartilhada em uma caixa de correio localizada nos Estados Unidos. No entanto, o Outlook na Web pode abrir *outras caixas de correio* em diferentes localizações geográficas usando uma janela separada do navegador, conforme descrito em [Abrir a caixa de correio de outra pessoa em uma janela separada do navegador no Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362).
 
-  **Observação**: o compartilhamento de pastas de caixa de correio entre regiões tem suporte no Outlook no Windows.
+  **Observação**: o compartilhamento de pastas de caixa de correio multigeográfica tem suporte no Outlook no Windows.
 
-- As pastas públicas são suportadas em organizações com várias geografias. No enTanto, as pastas públicas devem permanecer no local geográfico central. Não é possível mover pastas públicas para locais geográficos satélite.
+- As pastas públicas têm suporte nas organizações multigeográficas. No entanto, as pastas públicas devem permanecer na localização multigeográfica central. Você não pode mover pastas públicas para locais geográficos de satélite.
