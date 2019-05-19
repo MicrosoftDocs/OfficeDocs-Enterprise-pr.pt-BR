@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumo: Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068337"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162404"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o ambiente de desenvolvimento/teste do Office 365
 
@@ -190,8 +190,6 @@ Agora, você pode usar esse ambiente para criar novo conteúdo, novas pesquisas 
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
 [DirSync para o ambiente de desenvolvimento/ teste do Office 365](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Segurança de Aplicativo na Nuvem para seu ambiente de desenvolvimento/teste do Office 365](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
 

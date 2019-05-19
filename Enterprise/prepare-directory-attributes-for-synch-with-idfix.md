@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Fornece instruções sobre como usar o IdFix para preparar e limpar o diretório local antes de sincronizar com o Office 365.
-ms.openlocfilehash: 134f9cd60e65b64b91fb42fd7cbfa300626fc867
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071067"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162364"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparar atributos de diretório para sincronizarem com o Office 365 usando a ferramenta IdFix
 Este tópico contém instruções detalhadas sobre como executar a ferramenta IdFix, alguns erros comuns que você pode encontrar, sugestões de correção, exemplos e práticas recomendadas para o que fazer se você tiver um grande número de erros.
@@ -81,3 +81,7 @@ Por padrão, o IdFix pesquisa todo o diretório. Se quiser, você pode configura
   
 ## <a name="rolling-back-your-changes-by-using-the-idfix-gui"></a>Reverter suas alterações usando a GUI do IdFix
 Cada vez que você clica em **aplicar** para aplicar alterações, a ferramenta IdFix cria um arquivo separado chamado log de transações que lista as alterações que você acabou de fazer. Você pode usar o log de transações para reverter apenas as alterações que estão no log mais recente caso você cometa um erro. Se você cometer um erro enquanto estiver atualizando, poderá desfazer as alterações aplicadas mais recentemente clicando em **desfazer**. Quando você clica em **desfazer**, o IdFix usa o log de transações para reverter apenas as alterações que estão no log de transações mais recente. Para obter mais informações sobre como usar o log de transações, consulte [Reference: Office 365 IdFix Transaction log](idfix-transaction-log.md).
+
+## <a name="next-step"></a>Próxima etapa
+
+[Configurar a sincronização de diretórios](set-up-directory-synchronization.md)
