@@ -31,7 +31,7 @@
 
 ### [Planejar para certificados SSL de terceiros para o Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
-### [Aplicativos integrados e Microsoft Azure AD para administradores do Office 365](integrated-apps-and-azure-ads.md)
+### [Aplicativos Integrados e o Azure AD](integrated-apps-and-azure-ads.md)
 
 ### Integração com o Office 365
 #### [Integração com o local](office-365-integration.md)
@@ -80,7 +80,6 @@
 ### [Sincronização de diretório](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Autenticação multifator](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Identidade federada](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Segurança no Aplicativo na Nuvem](cloud-app-security-for-your-office-365-dev-test-environment.md)
 ### [Proteção Avançada contra Ameaças](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
 ### [Descoberta Eletrônica Avançada](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
 ### [Proteção de arquivos confidenciais](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
@@ -123,21 +122,24 @@
 #### [Como rotear com o ExpressRoute para Office 365](routing-with-expressroute.md)
 
 ## 2. Configure suas identidades
-### [Prepare-se para a sincronização de diretórios](prepare-for-directory-synchronization.md)
-### Use a ferramenta IdFix
-#### [Preparar os atributos do diretório com a ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-#### [Instalar e executar a ferramenta IdFix](install-and-run-idfix.md)
-#### [Objetos e atributos excluídos e compatíveis com a IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-#### [Log de transações da IdFix](idfix-transaction-log.md)
-### [Configurar a sincronização de diretórios](set-up-directory-synchronization.md)
-### [Proteger suas contas de administrador global](protect-your-global-administrator-accounts.md)
+### [Proteger contas de administrador global](protect-your-global-administrator-accounts.md)
+### [Identidades somente na nuvem](cloud-only-identities.md)
+### Identidades híbridas
+#### [Preparar-se para a sincronização de diretórios](prepare-for-directory-synchronization.md)
+#### Use a ferramenta IdFix
+##### [Preparar os atributos do diretório com a ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
+##### [Instalar e executar a ferramenta IdFix](install-and-run-idfix.md)
+##### [Objetos e atributos excluídos e compatíveis com a IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
+##### [Log de transações da IdFix](idfix-transaction-log.md)
+#### [Configurar a sincronização de diretórios](set-up-directory-synchronization.md)
+### [Atribuir licenças às contas de usuário](assign-licenses-to-user-accounts.md)
 
 ## 3. Implante o software cliente
 ### [Implantar o Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Implantar o cliente do Skype for Business](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Implantar e gerenciar aplicativos móveis](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Configurar o gerenciamento de dispositivos com o Intune](https://docs.microsoft.com/intune/setup-steps)
+## [4. Configure o gerenciamento de dispositivos móveis](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
 ## 5. Configure serviços e aplicativos
 ### [Prepare-se](configure-services-and-applications.md)
