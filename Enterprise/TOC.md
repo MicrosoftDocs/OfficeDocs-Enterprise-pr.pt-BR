@@ -14,8 +14,7 @@
 ### [Cenários de nuvem híbrida para o Windows Azure IaaS](hybrid-cloud-scenarios-for-azure-iaas.md)
 ## [Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# Planejar para o Office 365
-## [Prepare sua organização](get-your-organization-ready-for-office-365.md)
+# [Planejar para o Office 365](get-your-organization-ready-for-office-365.md)
 
 ## Seu locatário do Office 365
 ### [Assinaturas, licenças e locatários](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
@@ -26,8 +25,8 @@
 #### [Planejamento de migração e rede para Office 365](network-and-migration-planning.md)
 
 ### Planeje suas identidades
-#### [Modelos de identidade do Office 365](about-office-365-identity.md)
-#### [Identidades híbridas](plan-for-directory-synchronization.md)
+#### [Modelos de identidade](about-office-365-identity.md)
+#### [Identidade híbrida](plan-for-directory-synchronization.md)
 
 ### [Planejar para certificados SSL de terceiros para o Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
@@ -86,12 +85,7 @@
 ### [Rotulação e classificação de dados](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Rede virtual simulada entre locais no Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
-# Implantar o Office 365
-
-## Listas de verificação e melhores práticas
-### [Implantar o Office 365 Enterprise na organização](setup-overview-for-enterprises.md)
-### [Lista de verificação de planejamento de implantação](deployment-planning-checklist.md)
-### [Roteiro de segurança do Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+# [Implantar Office 365 Enterprise](setup-overview-for-enterprises.md)
 
 ## 1. Configure sua rede
 ### [Configurar rede corporativa](set-up-network-for-office-365.md)
@@ -134,14 +128,16 @@
 #### [Configurar a sincronização de diretórios](set-up-directory-synchronization.md)
 ### [Atribuir licenças às contas de usuário](assign-licenses-to-user-accounts.md)
 
-## 3. Implante o software cliente
+## [3. Implementar recursos de segurança](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 4. Implantar o software do cliente
 ### [Implantar o Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Implantar o cliente do Skype for Business](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Implantar e gerenciar aplicativos móveis](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Configure o gerenciamento de dispositivos móveis](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+## [5. Configurar gerenciamento de dispositivo móvel](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-## 5. Configure serviços e aplicativos
+## 6. Configurar serviços e aplicativos
 ### [Prepare-se](configure-services-and-applications.md)
 ### [Migrar dados para o Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
@@ -150,9 +146,9 @@
 ### [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
 ### [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 ### [Ativar gerenciamento de direitos](activate-rms-in-office-365.md)
-### [Configurando opções de liberação](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
+### [Configurando opções lançamento](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [6. Treine seus usuários](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+## [7. Treine seus usuários](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## Implantação avançada
 
