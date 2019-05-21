@@ -15,35 +15,65 @@ ms.collection:
 - M365-subscription-management
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Estas etapas gerais são projetadas para ajudá-lo a implantar o Office 365, conectar seu Active Directory, migrar seus dados e ajudar as pessoas em sua organização a começar a usar a versão mais recente do Office 2016.
-ms.openlocfilehash: 2530b170c607f635f6f1baebf1d83fa7745d23a6
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+description: Estas etapas de visão geral foram projetadas para ajudá-lo a configurar sua rede, criar suas identidades, implantar o Office 365 ProPlus, migrar seus dados e ajudar as pessoas da sua organização a começar a usar o Office 365.
+ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102539"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249499"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implantar o Office 365 Enterprise em sua organização
-Pronto para implantar e integrar o Office 365 Enterprise em sua infraestrutura local? Estas etapas gerais são projetadas para ajudá-lo a conectar seu diretório, migrar os dados e ajudar as pessoas em sua organização a começar a usar a versão mais recente do Office 2016.
-  
-Estas etapas são para empresas e [entidades sem fins lucrativos](https://go.microsoft.com/fwlink/?LinkId=627221) que querem iniciar uma implantação personalizada do Office 365 Enterprise. 
-  
-Não tem o Office 365 Enterprise? Confira [Configurar o Office 365 para empresas](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para ver instruções direcionadas a pequenas empresas. 
-  
+
+Você está pronto para implantar o Office 365 Enterprise, integrá-lo à sua infraestrutura local e permitir que seus funcionários aproveitem a produtividade e a colaboração baseadas em nuvem?
+
+Este artigo descreve duas opções de implantação, se você deseja obter ajuda ou fazer isso por conta própria. Em cada caso, a Microsoft fornece um caminho orientado a ser seguido para o sucesso da implantação.
+
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>Processo de configuração orientado do Office 365 FastTrack para empresas
-O Office 365 ** [FastTrack](https://docs.microsoft.com/fasttrack) ** é o melhor método para implantar o Office 365. O FastTrack orienta você pelas configurações de implantação mais comuns e pode responder a perguntas durante o processo. Se desejar autoajuda ou a orientação de um parceiro, use nosso [guia de configuração do Office 365](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), nossos [assistentes de configuração do Office 365](https://aka.ms/o365fasttrack) ou [encontre um parceiro qualificado](https://partnercenter.microsoft.com/en-us/pcv/search).
 
-## <a name="self-deployment-of-office-365"></a>Autoimplantação do Office 365
-Se você deseja implantar o Office 365 por conta própria, as etapas de implantação a seguir estão aqui para ajudar.
+O **[FastTrack para Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** é o melhor método para implantar o Office 365. O FastTrack orienta você pelas configurações de implantação mais comuns e pode responder às perguntas ao longo do caminho. 
 
-1. **[Preparar-se para o Office 365](get-your-organization-ready-for-office-365.md)**. Essas ferramentas e recursos ajudarão você a preparar sua rede, diretório e os usuários finais do Office 365.
+Para acessar uma série de guias de configuração, entre em sua assinatura do Office 365 e vá para [Configurar o Office 365](https://aka.ms/o365fasttrack).
 
-2. **Entre e adicione seu (s) domínio (s) da Internet ao Office 365**. Entre no [centro de administração do Microsoft 365](https://portal.microsoft.com), clique em **configurar domínios do >** e, em seguida, clique em **novo domínio**. Adicione um ou mais domínios à sua assinatura do Office 365 sem adicionar usuários ou migrar emails. 
+>[!Note]
+>Você também pode obter ajuda de um [parceiro da Microsoft](https://www.microsoft.com/solution-providers/home).
+>
 
->[!IMPORTANT] 
->As instruções de configuração básica não funcionarão se você quiser sincronizar os usuários de um diretório local ou usar logon único.
+## <a name="self-deployment-of-office-365-enterprise"></a>Auto-implantação do Office 365 Enterprise
 
-3. **[Conecte seu diretório ao Office 365](about-office-365-identity.md)**. Oriente-se para a sincronização de identidades e/ou opções de configuração de logon único. Use o [consultor do AAD Connect](https://aka.ms/aadconnectpwsync) e o [guia de configuração do Azure AD Premium](https://aka.ms/aadpguidance) para obter orientações personalizadas de configuração.
-4. **[Configure aplicativos e serviços do Office 365](configure-services-and-applications.md)**. Comece aqui a configurar email, compartilhamento de arquivos,mensagens instantâneas ou qualquer um dos outros aplicativos e serviços do Office 365.
-5. **[Migre dados para o Office 365](migrate-data-to-office-365.md)**. Quando os serviços estiverem configurados, você poderá começar a migração de dados.
-6. **[Faça as pessoas usarem o Office 365](https://support.office.com/article/Get-started-with-Office-365-for-business-d6466f0d-5d13-464a-adcb-00906ae87029)**. Ajude as pessoas em sua organização a fortalecer a confiança usando o Office 365 com estes recursos.
+Implantar o Office 365 Enterprise sozinho requer que você execute uma pesquisa detalhada para tomar as decisões de design que simplificam a configuração do serviço de nuvem e a adoção do usuário. Inicie seu planejamento [aqui](get-your-organization-ready-for-office-365.md).
+
+Para implantar o Office 365 Enterprise sozinho, estas são as etapas recomendadas.
+
+1. Configurar a rede
+
+   Inclui adicionar seus domínios de Internet e otimizar o desempenho da rede para seus usuários locais. Inicie [aqui](set-up-network-for-office-365.md).
+ 
+2. Configurar suas identidades
+
+   Inclui a determinação de um modelo de identidade (somente na nuvem ou híbrida) e a identidade híbrida, a configuração da sincronização de diretórios entre os serviços de domínio do Active Directory (AD DS) local e sua assinatura do Office 365. Inicie [aqui](protect-your-global-administrator-accounts.md).
+
+3. Implementar recursos de segurança
+
+   Inclui a configuração e a implantação de segurança, ameaças e proteções de informações e de locatários básicos e aprimorados para o seu locatário e as identidades nos primeiros 30 dias, 90 dias e posteriores. Inicie [aqui](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).
+ 
+4. Implantar software cliente
+
+   Inclui a implantação do Office 365 ProPlus, a versão atualizada em nuvem e sempre atual do pacote do Office (Word, Excel, PowerPoint e outros) em seus dispositivos. Cada licença de cliente do Office 365 inclui uma licença para o Office 365 ProPlus. Inicie [aqui](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus).
+ 
+5. Configurar o gerenciamento de dispositivos móveis
+
+   O Office 365 Enterprise inclui recursos de gerenciamento de dispositivos móveis que ajudam você a proteger e gerenciar os dispositivos móveis dos seus usuários. Inicie [aqui](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).
+ 
+6. Configurar serviços e aplicativos
+
+   Inclui informações sobre a migração de seus dados e links para artigos que o ajudarão a usar os principais serviços do Office 365, como o Exchange Online, o SharePoint Online e o Teams. Inicie [aqui](configure-services-and-applications.md).
+ 
+7. Treinar seus usuários
+
+   Inclui vídeos curtos que ajudam os usuários a obter o máximo do Office 365 rapidamente. Inicie [aqui](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users).
+ 
+
+>[!Note]
+>Essas etapas também são para empresas e não [fins lucrativos](https://go.microsoft.com/fwlink/?LinkId=627221) que desejam iniciar com uma implantação personalizada do Office 365 Enterprise. 
+>
