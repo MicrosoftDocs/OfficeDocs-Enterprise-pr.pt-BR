@@ -4,7 +4,6 @@ ms.author: tracyp
 ms.reviewer: smithre4
 author: MSFTTracyP
 manager: laurawi
-ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras. Ele está disponível para implantações híbridas do Skype for Business Server local e do Exchange Server local, bem como de divisão de domínio do Skype for Business. Este artigo contém links para documentos relacionados sobre pré-requisitos, configuração/desabilitação da autenticação moderna e para alguns dos clientes relacionados (ex. Informações sobre clientes Outlook e Skype).
-ms.openlocfilehash: 17c61b028aacd5abaf72450e197475fa2c0a2589
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
+ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067197"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34404213"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Visão geral da autenticação moderna híbrida e pré-requisitos para usá-lo com o Skype for Business e servidores do Exchange locais
 
@@ -30,7 +29,7 @@ A autenticação moderna é um método de gerenciamento de identidades que ofere
     
 - [Verificar o status de autenticação moderna do seu ambiente local](hybrid-modern-auth-overview.md#BKMK_CheckStatus)
     
-- [Você atende aos pré-requisitos de autenticação modernos?](hybrid-modern-auth-overview.md#BKMK_MeetPrereq)
+- [Você atende aos pré-requisitos de autenticação modernos?](#do-you-meet-modern-authentication-prerequisites)
     
 - [O que mais preciso saber antes de começar?](hybrid-modern-auth-overview.md#BKMK_Whatelse)
     
@@ -43,7 +42,7 @@ Ao falar sobre a comunicação entre um cliente (por exemplo, seu laptop ou seu 
   
 A autenticação moderna é um termo abrangente para uma combinação de métodos de autenticação e autorização, além de algumas medidas de segurança que dependem de políticas de acesso que você já conhece. Ele inclui:
   
-- **Métodos de autenticação**: autenticação multifator; Autenticação baseada em certificado do cliente; e a biblioteca de autenticação do Active Directory ( [Adal](https://technet.microsoft.com/en-us/library/mt710548.aspx)).
+- **Métodos de autenticação**: autenticação multifator; Autenticação baseada em certificado do cliente.
     
 - **Métodos de autorização**: implementação da Microsoft de autorização aberta (OAuth). 
     
