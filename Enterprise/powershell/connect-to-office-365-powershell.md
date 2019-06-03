@@ -14,7 +14,7 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Resumo: conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas do centro de administração a partir da linha de comando.'
+description: 'Resumo: conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas do centro de administração a partir da linha de comando.'
 ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
 ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
@@ -24,9 +24,9 @@ ms.locfileid: "34069087"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
- **Resumo:** conecte-se à sua organização do Office 365 usando o Office 365 PowerShell para realizar tarefas de administração a partir da linha de comando.
+ **Resumo:** conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas de administração da linha de comando.
   
-O Office 365 PowerShell permite gerenciar as configurações do Office 365 a partir da linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples em que você instala o software necessário e em seguida conecta-se à sua organização do Office 365. 
+O Office 365 PowerShell permite gerenciar as configurações do Office 365 da linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples em que você instala o software necessário e se conecta à sua organização do Office 365. 
 
 Existem duas versões do módulo do PowerShell usadas para se conectar ao Office 365 e administrar contas de usuários, grupos e licenças:
 
@@ -79,20 +79,20 @@ Essas etapas precisam ser executadas apenas uma vez em seu computador e não tod
 
 Se solicitado a instalar um módulo de um repositório não confiável, digite **Y** e pressione Enter.
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: conectar-se ao Azure AD para a sua assinatura do Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: conectar-se ao Azure AD da sua assinatura do Office 365
 
-Para se conectar ao Azure AD para a sua assinatura do Office 365 com um nome de conta e senha, ou com *autenticação multifator (MFA)*, execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
+Para se conectar ao Azure AD da sua assinatura do Office 365 com um nome de conta e senha, ou com *autenticação multifator (MFA)*, execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
 
 |||
 |:-------|:-----|
 | **Nuvem do Office 365** | **Comando** |
 | Office 365 no Mundo (+GCC) | `Connect-AzureAD` |
 | Office 365 operado pela 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
-| Office 365 Alemanha | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 Germany | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
 | Office 365 U.S. Government DoD e Office 365 U.S. Government GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Na caixa de diálogo **Entrar na sua conta**, digite seu nome de usuário e senha para uma conta corporativa ou de estudante do Office 365 e clique em **OK**.
+Na caixa de diálogo **Entrar na sua conta**, digite seu nome de usuário e senha para uma conta corporativa ou de estudante do Office 365, e clique em **OK**.
 
 Se você estiver usando uma MFA, siga as instruções das caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
@@ -117,20 +117,20 @@ Essas etapas precisam ser executadas apenas uma vez em seu computador e não tod
   - Se solicitado a instalar o provedor de NuGet, digite **Y** e pressione Enter.
   - Se solicitado a instalar o módulo de PSGallery, digite **Y** e pressione Enter.
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: conectar-se ao Azure AD para a sua assinatura do Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: conectar-se ao Azure AD da sua assinatura do Office 365
 
-Para se conectar ao Azure AD para a sua assinatura do Office 365 com um nome de conta e senha, ou com *autenticação multifator (MFA)*, execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
+Para se conectar ao Azure AD da sua assinatura do Office 365 com um nome de conta e senha, ou com *autenticação multifator (MFA)*, execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
 
 |||
 |:-------|:-----|
 | **Nuvem do Office 365** | **Comando** |
 | Office 365 no Mundo (+GCC) | `Connect-MsolService` |
 | Office 365 operado pela 21 Vianet | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
-| Office 365 Alemanha | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
+| Office 365 Germany | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
 | Office 365 U.S. Government DoD e Office 365 U.S. Government GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Na caixa de diálogo **Entrar na sua conta**, digite seu nome de usuário e senha para uma conta corporativa ou de estudante do Office 365 e clique em **OK**.
+Na caixa de diálogo **Entrar na sua conta**, digite seu nome de usuário e senha para uma conta corporativa ou de estudante do Office 365, e clique em **OK**.
 
 Se você estiver usando uma MFA, siga as instruções das caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
