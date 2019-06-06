@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumo: Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162404"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726227"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o ambiente de desenvolvimento/teste do Office 365
 
@@ -95,11 +95,11 @@ Neste procedimento, você criará dois documentos do Word que, mais tarde, serã
     
 3. Na guia **Conjunto de sites de produção**, em **Documentos**, clique em **Novo > Documento do Word**.
     
-4. Na página do **Word Online**, digite **Contrato de rascunho com a Tailspin**, aguarde até que **Salvo** apareça no título e feche a guia da página do **Word Online**.
+4. Na página do **Word** , digite **contrato de rascunho da Tailspin**, aguarde até que ele seja **salvo** no título e, em seguida, feche a guia página do **Word** .
     
 5. Na guia **Conjunto de sites de produção**, em **Documentos**, clique em **Novo > Documento do Word**.
     
-6. 	Na guia do **Word Online**, digite **Notas da disputa contratual com a Tailspin**, aguarde até que **Salvo** apareça no título e feche a guia do **Word Online**.
+6. Na guia **Word** , digite notas de contestação de contrato com a **Tailspin**, aguarde até que ela seja **salva** no título e, em seguida, feche a guia **Word** .
     
 7. Na guia **Conjunto de sites de produção**, você verá **Documento** e **Documento1** na lista de documentos.
     
@@ -139,7 +139,7 @@ Neste procedimento, você cria uma pesquisa no centro de conformidade &amp; de s
     
 11. Na janela **Grupo de Funções**, clique em **Salvar**.
     
-12. No painel de navegação à esquerda, clique em **investigação de pesquisa &amp; > conteúdo pesquisa**.
+12. No painel de navegação à esquerda, clique em **investigação de pesquisa &amp; > pesquisa de conteúdo**.
     
 13. Clique no ícone de adição para adicionar uma pesquisa.
     
