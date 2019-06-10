@@ -3,7 +3,7 @@ title: Pontos de extremidade adicionais não incluídos no endereço IP do Offic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/04/2019
+ms.date: 06/05/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: d124ac514e83c7cb9a2d8baf476b6a5880acb0ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 05bb48efef57785b75d302fd12294b7fb7062862
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068477"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726237"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
@@ -61,8 +61,9 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 15  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, é necessário habilitar os cookies primários e de terceiros, adicionar os FQDNs do Teams aos Sites Confiáveis, além de todo o pacote de FQDNs, CDNs e telemetria relacionados na linha 14. Para saber mais, confira o artigo [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sites confiáveis |
 | 16  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todos os FDQNs ".sharepoint.com" com "\<locatário>" devem estar na zona de Sites Confiáveis do Internet Explorer ou do Microsoft Edge do cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria relacionados na linha 14, é necessário também adicionar esses pontos de extremidade. |  | Sites confiáveis |
 | 17  | **Yammer**  <br> O Yammer só está disponível no navegador e exige que o usuário esteja autenticado através de um proxy. Todos os FQDNs do Yammer devem estar no IE ou Zona de Sites confiáveis de Borda do cliente para funcionar. |  | Sites confiáveis |
+| 18  | Use o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar contas de usuários locais com o Azure AD. | Consulte [Portas e Protocolos Necessários de Identidade Híbrida](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Solucionar problemas de conectividade do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalação do Agente de Integridade do Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Somente o tráfego de servidor de saída |
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Gerenciar pontos de extremidade do Office 365](managing-office-365-endpoints.md)
   
