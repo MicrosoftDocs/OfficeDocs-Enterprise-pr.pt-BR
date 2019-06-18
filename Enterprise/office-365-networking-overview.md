@@ -3,7 +3,7 @@ title: Visão geral da conectividade de rede do Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/12/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Discute por que a otimização de rede é importante para serviços SaaS, a meta da rede do Office 365 e como o SaaS requer redes diferentes de outras cargas de trabalho.
-ms.openlocfilehash: 88fde9a142b5394b642a46c19da6979c93fe8f9e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069614"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017281"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Visão geral da conectividade de rede do Office 365
 
@@ -94,18 +94,26 @@ Otimizar o desempenho da rede do Office 365 é muito bem a remover impedimentos 
 
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
 
-[URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
-
 [Gerenciar pontos de extremidade do Office 365](managing-office-365-endpoints.md)
 
+[URLs e intervalos de endereços IP do Office 365](urls-and-ip-address-ranges.md)
+
 [URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
 
-[Conectividade de rede para Office 365](network-connectivity.md)
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
 
 [Rede do Office 365 e ajuste de desempenho](network-planning-and-performance.md)
+
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
 
 [Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho](performance-tuning-using-baselines-and-history.md)
 
 [Plano de solução de problemas de desempenho do Office 365](performance-troubleshooting-plan.md)
 
+[Redes de Distribuição de Conteúdo](content-delivery-networks.md)
+
+[Ferramenta de integração de rede do Office 365](https://aka.ms/netonboard)
+
 [Como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Blog de rede do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

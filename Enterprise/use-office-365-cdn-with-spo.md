@@ -3,7 +3,7 @@ title: Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o Shar
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2019
+ms.date: 5/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +15,21 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070627"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017311"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
 Você pode usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 integrado para proporcionar melhor desempenho a suas páginas do SharePoint Online. A CDN do Office 365 melhora o desempenho ao armazenar em cache ativos estáticos mais próximos aos navegadores que os solicitaram, o que ajuda a acelerar downloads e reduzir a latência. Além disso, a CDN do Office 365 usa o [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para maior compactação e canalização http. O serviço de CDN do Office 365 faz parte da assinatura do SharePoint Online.
+
+> [!NOTE]
+> Restrições para o uso da CDN do Office 365:
+> + A CDN do Office 365 só está disponível para locatários na nuvem de **produção** (internacional). Os locatários nas nuvens do governo dos EUA, da China e da Alemanha não suportam atualmente a CDN do Office 365.
+> + A CDN do Office 365 atualmente não suporta locatários configurados com domínios personalizados ou "personalizado". Se você tiver adicionado um domínio ao seu locatário usando as instruções no tópico [Adicionar um domínio ao Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), a CDN do Office 365 retornará erros quando você tentar acessar o conteúdo da CDN.
 
 A CDN do Office 365 é composta por várias CDNs que permitem que você hospede ativos estáticos em vários locais ou _origens_e sirva-os de redes globais de alta velocidade. Dependendo do tipo de conteúdo você quiser hospedar na CDN do Office 365, você pode adicionar origens **públicas**, origens **privadas** ou ambas. Veja [escolher se cada origem deve ser pública ou privada](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) para obter mais informações sobre a diferença entre origens públicas e privadas.
 
@@ -308,7 +313,17 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 Este exemplo adiciona uma origem privada da pasta _Pasta1_ na biblioteca de ativos do site do conjunto de sites:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder1
+```
+
+Se houver um espaço no caminho, você poderá colocar o caminho entre aspas duplas ou substituir o espaço pela codificação de URL% 20. Os exemplos a seguir adicionam uma origem privada da pasta _pasta 1_ na biblioteca de ativos do site do conjunto de sites:
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%201
+```
+
+``` powershell
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
 Para obter mais informações sobre este comando e sua sintaxe, consulte [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -598,7 +613,7 @@ O diagrama a seguir ilustra o fluxo de trabalho quando o SharePoint recebe uma s
 ![Diagrama de fluxo de trabalho: recuperação de ativos de CDN do Office 365 de uma origem pública] (media/O365-CDN/o365-cdn-public-steps-transparent.svg "Fluxo de trabalho: recuperação de ativos de CDN do Office 365 de uma origem pública")
 
 > [!TIP]
-> Se quiser desabilitar a reconfiguração automática para URLs específicas em uma página, você pode fazer o check-out da página e adicionar o parâmetro de cadeia de caracteres de consulta **?NoAutoReWrites = true** ao final de cada link que você deseja desabilitar.
+> Se quiser desabilitar a reconfiguração automática para URLs específicas em uma página, você pode fazer check-out da página e adicionar o parâmetro de cadeia de caracteres de consulta **? NoAutoReWrites = true** para o final de cada link que você deseja desabilitar.
 
 #### <a name="hardcoding-cdn-urls-for-public-assets"></a>Codificar URLs de CDN para ativos públicos
 
@@ -633,7 +648,7 @@ O diagrama a seguir ilustra o fluxo de trabalho quando o SharePoint recebe uma s
 
 O acesso a ativos em origens privadas na CDN do Office 365 é concedido por tokens gerados pelo SharePoint Online. Os usuários que já têm permissão para acessar a pasta ou a biblioteca designada pela origem recebem tokens automaticamente que permitem que o usuário acesse o arquivo com base em seu nível de permissão. Esses tokens de acesso são válidos por 30 a 90 minutos após serem gerados para ajudar a evitar ataques de repetição de token.
 
-Depois que o token de acesso é gerado, o SharePoint Online retorna um URI personalizado ao cliente contendo dois __ parâmetros de autorização (token de autorização de borda) e _OAT_ (token de autorização de origem). A estrutura de cada token é _<'expiration tempo no tempo de época Format'>__<'secure signature'>_. Por exemplo:
+Depois que o token de acesso é gerado, o SharePoint Online retorna um URI personalizado ao cliente contendo dois __ parâmetros de autorização (token de autorização de borda) e _OAT_ (token de autorização de origem). A estrutura de cada token é _< ' tempo de expiração no formato de hora da época ' >__< ' assinatura segura ' >_. Por exemplo:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
