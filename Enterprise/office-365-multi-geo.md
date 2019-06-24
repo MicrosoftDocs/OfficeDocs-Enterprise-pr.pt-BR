@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Expanda a sua presença do Office 365 para várias regiões geográficas com o Office 365 multigeográfico.
-ms.openlocfilehash: 25621a0a8c833c4334fe6f70e7cb04d15690ba71
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
+ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069747"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078505"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 multigeográfico
 
@@ -55,7 +55,7 @@ A multigeografia do Office 365 atualmente é oferecida nos países e regiões se
 
 Siga estas etapas para iniciar com o multigeográfico:
 
-1. Trabalhe com a sua equipe de conta para adicionar o plano de serviço _Funcionalidades multigeográficas do Office 365_. Elas orientarão você ra adicionar o número de licenças necessárias. O recurso multigeográfico está disponível para clientes com um mínimo de 2.500 assinaturas do Office 365.
+1. Trabalhe com a sua equipe de conta para adicionar o plano de serviço _Funcionalidades multigeográficas do Office 365_. Elas orientarão você ra adicionar o número de licenças necessárias. O recurso multigeográfico está disponível para clientes com um mínimo de 500 assinaturas do Office 365.
 
    Antes de começar a usar o Office 365 multigeográfico, a Microsoft precisa configurar seu locatário do Exchange Online para suporte multigeográfico. Esse processo de configuração único é disparado após você solicitar o plano de serviço *Funcionalidades Multigeográficas no Office 365* e as licenças aparecem em seu locatário. Você receberá notificações no [Centro de mensagens do Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) depois que as licenças multigeográficas são aplicadas e você pode começar configurar e usar recursos do Office 365 multigeográfico.
 
