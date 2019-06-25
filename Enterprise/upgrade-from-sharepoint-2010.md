@@ -15,20 +15,20 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: O suporte para o SharePoint 2010 e o SharePoint Server 2010 termina em 13 de outubro de 2020. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704152"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203610"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Atualizando do SharePoint 2010
 
-O Microsoft SharePoint 2010 e o SharePoint Server 2010 atingirão o fim do suporte em **13 de outubro de 2020**. Este artigo detalha os recursos para ajudar as pessoas a migrar seus dados existentes do SharePoint Server 2010 para o SharePoint Online ou a atualizar seu ambiente local do SharePoint Server 2010.
+O Microsoft SharePoint 2010 e o SharePoint Server 2010 atingirão o fim do suporte em **13 de outubro de 2020**. Este artigo detalha os recursos para ajudá-lo a migrar seus dados existentes do SharePoint Server 2010 para o SharePoint Online no Office 365 ou atualizar seu ambiente local do SharePoint Server 2010.
   
 ## <a name="what-is-end-of-support"></a>O que é o fim do suporte?
 
-Quando o software do SharePoint Server 2010 e do SharePoint Foundation 2010 atinge o final do seu ciclo de vida de suporte (o tempo durante o qual a Microsoft fornece novos recursos, correções de erros, correções de segurança e assim por diante) isso é chamado de ' fim de suporte ' do software ou, às vezes, seu ' aposentadoria '. Após o fim do suporte (ou EOS) de um produto, nada é realmente desligado ou pára de funcionar; no entanto, no final do suporte ao software, a Microsoft não fornece mais:
+Quando o software do SharePoint Server 2010 e do SharePoint Foundation 2010 atinge o final do seu ciclo de vida de suporte (o tempo durante o qual a Microsoft fornece novos recursos, correções de erros, correções de segurança e assim por diante), isso é chamado de ' fim de suporte ' do software ou, às vezes, seu ' aposentadoria '. Após o fim do suporte (ou EOS) de um produto, nada é realmente desligado ou pára de funcionar; no entanto, no final do suporte ao software, a Microsoft não fornece mais:
   
 - Suporte técnico para problemas que podem ocorrer;
     
@@ -74,7 +74,7 @@ O SharePoint Server 2013 e o SharePoint Foundation 2013 podem ser instalados no 
     
 - Faça ambas as opções acima
     
-- Implementar uma solução [híbrida do SharePoint](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 
+- Implementar uma solução [híbrida do SharePoint](https://docs.microsoft.com/sharepoint/hybrid/hybrid) 
     
 Esteja ciente dos custos ocultos associados à manutenção de um farm de servidores que está indo, mantendo ou migrando personalizações e atualizando o hardware no qual o SharePoint Server depende. Se você estiver ciente e tiver considerado tudo isso, será mais fácil continuar a atualizar no local. Caso contrário, se você executar o farm em servidores herdados do SharePoint sem muita personalização, poderá se beneficiar de uma migração planejada para o SharePoint Online. Também é possível que, para seu ambiente local do SharePoint Server, você possa optar por colocar alguns dados no SharePoint Online para reduzir a quantidade de gerenciamento de hardware que mantém todos os seus dados no local. Pode ser mais econômico mover alguns de seus dados para o SharePoint Online.
   

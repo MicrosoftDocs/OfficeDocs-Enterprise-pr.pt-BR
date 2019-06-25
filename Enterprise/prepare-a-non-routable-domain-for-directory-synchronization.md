@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Saiba o que fazer se você tiver um domínio não routale associado aos seus usuários locais antes de sincronizar com o Office 365.
-ms.openlocfilehash: 15ab67212ec1ea6ca7665bb5a4b0748f7d85adb5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf7b901c3aaf6f49e4ecd92d27b9a6d9b8951d40
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071077"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203630"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar um domínio não roteável para sincronização de diretório
 Ao sincronizar seu diretório local com o Office 365, você precisa ter um domínio verificado no Azure Active Directory. Somente os nomes principais de usuário (UPN) associados ao domínio local são sincronizados. No entanto, qualquer UPN que contenha um domínio não roteável, por exemplo. local (como Billa @ contoso. local), será sincronizado com um domínio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
@@ -40,7 +40,7 @@ O Azure AD Connect sincroniza o UPN e a senha dos usuários para que os usuário
   
 ### <a name="change-your-primary-domain"></a>**Alterar seu domínio primário**
 
-Altere o domínio primário para um domínio verificado no Office 365, por exemplo, contoso.com. Todos os usuários que têm o domínio contoso. local é atualizado para o contoso.com. Para obter instruções, consulte [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Esse é um processo muito envolvido, no entanto, e uma solução mais fácil é [Adicionar sufixos UPN e atualizar seus usuários](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), conforme mostrado na seção a seguir.
+Altere o domínio primário para um domínio verificado no Office 365, por exemplo, contoso.com. Todos os usuários que têm o domínio contoso. local é atualizado para o contoso.com. Para obter instruções, consulte [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Esse é um processo muito envolvido, no entanto, e uma solução mais fácil é descrita na seção a seguir.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Adicionar sufixos UPN e atualizar seus usuários para eles**
 
@@ -84,8 +84,7 @@ Depois de atualizar os UPNs para usar o domínio verificado, você está pronto 
   
 4. Conclua estas etapas para cada usuário.
     
-    Como alternativa, você pode atualizar os sufixos de UPN em massa [também pode usar o Windows PowerShell para alterar o sufixo UPN para todos os usuários](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).
-    
+   
 ### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Você também pode usar o Windows PowerShell para alterar o sufixo UPN de todos os usuários**
 
 Se você tiver muitos usuários para atualizar, é mais fácil usar o Windows PowerShell. O exemplo a seguir usa os cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) e [set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) para alterar todos os sufixos contoso. local para contoso.com. 

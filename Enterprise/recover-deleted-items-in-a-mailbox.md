@@ -16,13 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Este artigo é para administradores. Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usuário deseja refazê-los, mas não pode recuperá-los. Você pode ser capaz de recuperar os itens removidos se eles não foram removidos permanentemente da caixa de correio do usuário. '
-ms.openlocfilehash: 5ec1ba41924d773859d742bc06bbfe76582072c1
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071207"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203650"
 ---
+<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
 
 **Este artigo é para administradores. Você está tentando recuperar itens excluídos em sua própria caixa de correio?** Tente uma das seguintes opções:
@@ -230,7 +231,8 @@ A etapa final que você precisa realizar é enviar o arquivo PST que foi exporta
     
 As etapas da próxima seção são executadas pelo usuário para restaurar os itens excluídos para a caixa de correio.
   
- **Restaurar itens excluídos para uma caixa de correio usando um arquivo PST**
+ <a name="restoredeleteditems"></a>
+**Restaurar itens excluídos para uma caixa de correio usando um arquivo PST**
   
 Você precisa usar o aplicativo da área de trabalho do Outlook para restaurar um item excluído usando um arquivo PST. Você não pode usar o Outlook Web App ou o Outlook na Web para abrir um arquivo PST.
   

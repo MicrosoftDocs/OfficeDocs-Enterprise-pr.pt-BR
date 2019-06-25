@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumo: usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como criar e implementar esta solução.'
-ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070437"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203640"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de desastres do SharePoint Server 2013 no Microsoft Azure
 
@@ -36,34 +36,6 @@ Use este artigo com o modelo de solução a seguir: **recuperação de desastres
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
-Neste artigo:
-  
-- [Usar os serviços de infraestrutura do Azure para recuperação de desastre](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#AZ)
-    
-- [Descrição da solução](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#SOL)
-    
-- [Arquitetura detalhada](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#arch)
-    
-- [Roteiro de recuperação de desastre](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#RDmap)
-    
-- [Fase 1: projetar o ambiente de recuperação de desastres](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase1)
-    
-- [Fase 2: criar a rede virtual do Azure e a conexão VPN](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase2)
-    
-- [Fase 3: implantar o Active Directory e os serviços de nome de domínio na rede virtual do Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase3)
-    
-- [Fase 4: implantar o farm de recuperação do SharePoint no Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase4)
-    
-- [Fase 5: configurar o DFSR entre os farms](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase5)
-    
-- [Fase 6: configurar o envio de log para o farm de recuperação](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase6)
-    
-- [Fase 7: validar o failover e a recuperação](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Phase7)
-    
-- [Ambiente de verificação de conceito da Microsoft](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#POC)
-    
-- [Dicas de solução de problemas](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md#Troubleshooting)
-    
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Usar os serviços de infraestrutura do Azure para recuperação de desastre
 
 Muitas organizações não têm um ambiente de recuperação de desastres para o SharePoint, que pode ser caro criar e manter no local. Os serviços de infraestrutura do Azure fornecem opções atraentes para ambientes de recuperação de desastres que são mais flexíveis e mais baratos do que as alternativas locais.
@@ -297,7 +269,7 @@ Esta fase inclui a implantação do Active Directory do Windows Server e do DNS 
   
 **Figura: configuração de domínio do Active Directory híbrido**
 
-![STwo máquinas virtuais implantadas para a rede virtual do Azure e a sub-rede do farm do SharePoint são controladores de domínio de réplica e servidores DNS](media/AZarch-HyADdomainConfig.png)
+![Duas máquinas virtuais implantadas para a rede virtual do Azure e a sub-rede do farm do SharePoint são controladores de domínio de réplica e servidores DNS](media/AZarch-HyADdomainConfig.png)
   
 Na ilustração, duas máquinas virtuais são implantadas na mesma sub-rede. Essas máquinas virtuais estão hospedando duas funções: Active Directory e DNS.
   
@@ -632,7 +604,7 @@ Verifique se há uma associação de aplicativo de serviço ausente entre seu co
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>O comando Get-ADForest do Windows PowerShell gera o erro "o termo ' Get-ADForest ' não é reconhecido como o nome de um cmdlet, uma função, um arquivo de script ou um programa operável."
 
-Ao configurar perfis de usuário, você precisa do nome da floresta do Active Directory. No Assistente para adicionar funções e recursos, verifique se você habilitou o módulo Active Directory para Windows PowerShell (na seção Administração de **servidor remoto do Tools>Role Administration TOOLS_GT_AD DS e AD LDS** ). Além disso, execute os seguintes comandos antes de usar o **Get-ADForest** para ajudar a garantir que suas dependências de software sejam carregadas.
+Ao configurar perfis de usuário, você precisa do nome da floresta do Active Directory. No Assistente para adicionar funções e recursos, verifique se você habilitou o módulo Active Directory para Windows PowerShell (sob as ferramentas de **Administração de servidor remoto>ferramentas de administração de função>seção ferramentas AD DS e AD LDS** ). Além disso, execute os seguintes comandos antes de usar o **Get-ADForest** para ajudar a garantir que suas dependências de software sejam carregadas.
   
 ```
 Import-module servermanager
