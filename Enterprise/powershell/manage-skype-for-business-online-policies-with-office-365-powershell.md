@@ -3,7 +3,7 @@ title: Gerenciar Skype para políticas Business Online com o Office 365 PowerShe
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/01/2019
+ms.date: 06/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar suas propriedades de conta de usuário do Skype for Business online com políticas.'
-ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f19e262947b40b3e61dc8376b8e2e9c8ec984ff7
+ms.sourcegitcommit: c115a3554647167e3770dda6b69dbf5c5de11ed7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068837"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35253681"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gerenciar Skype para políticas Business Online com o Office 365 PowerShell
 
@@ -84,15 +84,14 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Este comando localiza a política atribuída ao usuário e, em seguida, localiza os recursos habilitados ou desabilitados nessa política.
   
-Observe que não há cmdlets para criar ou modificar políticas. Você deve usar as políticas previamente fornecidas pelo Office 365. Se quiser observar as diferentes políticas disponíveis, você pode usar estes comandos:
-  
-- Get-CsClientPolicy       
-- Get-CsConferencingPolicy        
-- Get-CsDialPlan            
-- Get-CsExternalAccessPolicy                         
-- Get-CsHostedVoicemailPolicy                        
-- Get-CsPresencePolicy                               
-- Get-CsVoicePolicy                                  
+Para gerenciar as políticas do Skype for Business online com o PowerShell, confira os cmdlets para:
+
+- [Política de cliente](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Política de conferência](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Política móvel](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Política de caixa postal online](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Política de roteamento de voz](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+
 
 > [!NOTE]
 > Um plano de discagem do Skype for Business Online é uma política em cada relação, exceto o nome. O nome "plano de discagem" foi escolhido em vez de, digamos, "política de discagem" para fornecer compatibilidade com versões anteriores do Office Communications Server e com o Exchange. 
