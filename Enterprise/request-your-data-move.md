@@ -3,7 +3,7 @@ title: Como solicitar a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +12,19 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071007"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392351"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
 > [!NOTE]
 > As informações nesta página só se aplicam aos clientes que tinham locatários do Office 365 antes dos novos datacenters em sua geografia. 
   
-Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia. 
-  
-Não é possível aceitar as solicitações a serem movidas após o prazo final em cada geografia. 
+Os clientes existentes do Office 365 estão qualificados para solicitar a migração inicial de todos os dados do cliente principais da sua organização em repouso.  
   
 ## <a name="when-can-i-request-a-move"></a>Quando posso solicitar uma movimentação?
 
@@ -55,13 +53,10 @@ Na página **perfil da organização** , role para baixo até a seção **opçã
 ![Cartão de residência de dados](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
   
 **Talvez você não veja esta seção se uma das seguintes opções se aplicar**:
-- Seu locatário não está qualificado para o programa de movimentação. 
+- Seu locatário não está qualificado para o programa de movimentação.  A qualificação é determinada pelo país de inscrição do locatário.
 - Todos os seus dados já estão localizados na nova Geografia (consulte a seção local de dados da página). 
   
-> [!IMPORTANT]
-> **Você está prestes a fazer uma escolha importante para sua organização. Após confirmar a opção abaixo, não será possível desfazê-la. O suporte também não é capaz de reverter essa decisão.**
-  
-Se sua organização tiver requisitos de residência de dados e você precisar solicitar uma movimentação, clique em **Editar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa de movimentação. Selecione o botão de alternância ao lado do texto que diz **Sim, minha organização tem requisitos de residência de dados**. Em seguida, clique em **Salvar**.
+Se sua organização tiver requisitos de residência de dados e você precisar solicitar a migração inicial, clique em **Editar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa de movimentação. Selecione o botão de alternância ao lado do texto que diz **Sim, minha organização tem requisitos de residência de dados**. Em seguida, clique em **Salvar**.
   
 ![Tela de aceitação de data center](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
   
@@ -74,8 +69,6 @@ Você deve ver o texto na seção **opção de residência de dados** alterar pa
 Depois de solicitar uma movimentação, planejaremos movê-lo tão rapidamente quanto nossas restrições operacionais permitir. Devido à natureza imprevisível de muitas das restrições, não é possível compartilhar uma data ou um intervalo de tempo específico para as movimentações. Você verá uma notificação após a conclusão da movimentação.
   
 As movimentações podem levar até 24 meses do prazo da solicitação para que o seu país seja concluído.
-  
-Depois de solicitar uma movimentação, não é possível alterar a seleção à medida que começamos a processar as movimentações depois de fazer a solicitação.
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
