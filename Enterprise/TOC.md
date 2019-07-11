@@ -205,6 +205,8 @@
 ### [Ferramentas para gerenciar contas de usuários](manage-office-365-accounts.md)
 ### [Adicionar vários usuários ao mesmo tempo](add-several-users-at-the-same-time.md)
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
+### Colaborar com convidados
+#### [Referência de compartilhamento de convidado](microsoft-365-guest-settings.md)
 
 ## Dispositivos
 ### [Escolher entre MDM ou Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
