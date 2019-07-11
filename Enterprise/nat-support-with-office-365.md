@@ -1,7 +1,7 @@
 ---
 title: Suporte NAT com o Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/24/2017
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Resumo: fornece detalhes sobre como aproximar o número correto de clientes que você pode usar por endereço IP em sua organização usando a conversão de endereços de rede (NAT).'
-ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 63180faab720e32c1066dcca60536db492d52734
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069877"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616864"
 ---
 # <a name="nat-support-with-office-365"></a>Suporte NAT com o Office 365
 
@@ -50,12 +50,12 @@ Máximo de dispositivos suportados por trás de um único endereço IP público 
   
  **Por exemplo, se o seguinte foi verdadeiro:**
   
-- **Portas restritas:** 4.000 para o sistema operacional 
-    
-- **Consumo de porta de pico:** 6 por dispositivo 
-    
-- **Fator de pico:** 4 
-    
+- **Portas restritas:** 4.000 para o sistema operacional
+
+- **Consumo de porta de pico:** 6 por dispositivo
+
+- **Fator de pico:** 4
+
 Em seguida, o máximo de dispositivos suportados por trás de um único endereço IP público = (64.000-4000)/(6 + 4) = 6.000
   
 Com o lançamento do pacote de hospedagem do Office 365, incluído nas atualizações de setembro de 2011 para o Microsoft Office Outlook 2007 ou de novembro de 2011 para o Microsoft Outlook 2010, ou uma atualização posterior, o número de conexões do Outlook (tanto do Office Outlook 2007 com o serviço Pack 2 e o Outlook 2010) para o Exchange podem ser apenas 2. Você precisará fatorar os diferentes sistemas operacionais, comportamentos de usuário e assim por diante para determinar o número mínimo e máximo de portas que sua rede precisará em pico.
@@ -79,4 +79,3 @@ Há vários métodos para distribuir a carga do cliente entre endereços IP púb
 [Gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
 [Perguntas frequentes sobre pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
-

@@ -1,7 +1,7 @@
 ---
 title: Opções de navegação para o SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitada no SharePoint Online. A escolha e a configuração de navegação impactam significativamente o desempenho e a escalabilidade de sites no SharePoint Online.
-ms.openlocfilehash: 9bf2010000f14b173b63574fab4ee77cb772b3f4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b3194009d21f60093ec80cb2e138df34df60e22e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069937"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616854"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opções de navegação para o SharePoint Online
 
@@ -29,7 +29,7 @@ A configuração do provedor de navegação pode impactar significativamente o d
 
 A primeira opção, [**navegação gerenciada (metadados)**](#using-managed-navigation-and-metadata-in-sharepoint-online), é recomendada e é uma das opções padrão no SharePoint Online; no entanto, recomendamos que o aparamento de segurança seja desabilitado, a menos que seja necessário O aparamento de segurança está habilitado como uma configuração segura por padrão para este provedor de navegação; no entanto, muitos sites não exigem a sobrecarga da filtragem de segurança, já que os elementos de navegação freqüentemente são consistentes para todos os usuários do site. Com a configuração recomendada para desabilitar a filtragem de segurança, esse provedor de navegação não requer a enumeração da estrutura do site e é altamente escalável com impacto de desempenho aceitável.
 
-A segunda opção, [**navegação estrutural**](#using-structural-navigation-in-sharepoint-online), **não é uma opção de navegação recomendada no SharePoint Online**. Este provedor de navegação foi projetado para uma topologia local com suporte limitado no SharePoint Online. Enquanto fornece um conjunto adicional de recursos em relação a outras opções de navegação, esses recursos, incluindo filtragem de segurança e enumeração de estrutura de site, vêm com um custo de chamadas excessivas no servidor e impactam a escalabilidade e o desempenho quando são usados. Sites usando navegação struct que consumam recursos excessivos podem estar sujeitos à limitação.
+A segunda opção, [**navegação estrutural**](#using-structural-navigation-in-sharepoint-online), **não é uma opção de navegação recomendada no SharePoint Online**. Este provedor de navegação foi projetado para uma topologia local com suporte limitado no SharePoint Online. Enquanto fornece um conjunto adicional de recursos em relação a outras opções de navegação, esses recursos, incluindo filtragem de segurança e enumeração de estrutura de site, vêm com um custo de chamadas excessivas no servidor e impactam a escalabilidade e o desempenho quando são usados. Sites usando navegação estruturada que consumam recursos excessivos podem estar sujeitos à limitação.
 
 Além dos provedores de navegação prontos para uso, muitos clientes implementaram com êxito implementações de navegação personalizada alternativas. Uma classe comum de implementações de navegação personalizadas engloba padrões de design renderizados pelo cliente que armazenam um cache local de nós de navegação. (Confira **[scripts do lado do cliente orientados por pesquisa](#using-search-driven-client-side-scripting)** neste artigo.)
 
@@ -52,7 +52,7 @@ A tabela a seguir resume os prós e contras de cada opção.
 |Prós<br/><br/>Fácil de manter<br/>Opção recomendada<br/>     |Prós<br/><br/>Fácil de configurar<br/>Segurança cortada<br/>Atualiza automaticamente à medida que o conteúdo é adicionado<br/>|Prós<br/><br/>Segurança cortada<br/>Atualiza automaticamente à medida que os sites são adicionados<br/>Tempo de carregamento rápido e estrutura de navegação em cache local<br/>|Prós<br/><br/>Escolha mais ampla de opções disponíveis<br/>Carregamento rápido quando o cache é usado corretamente<br/>Muitas opções funcionam bem com o design de página responsivo<br/>|
 |Contras<br/><br/>Não atualizado automaticamente para refletir a estrutura do site<br/>Impacta o desempenho se a filtragem de segurança estiver habilitada<br/>|Contras<br/><br/>**Não recomendado**<br/>**Impacta o desempenho e a escalabilidade**<br/>**Sujeito à limitação**<br/>|Contras<br/><br/>Sem capacidade para encomendar facilmente sites<br/>Requer a personalização da página mestra (habilidades técnicas obrigatórias)<br/>|Contras<br/><br/>O desenvolvimento personalizado é necessário<br/>A fonte de dados externa/cache armazenado é necessária, por exemplo, o Azure<br/>|
 
-A opção mais apropriada para seu site dependerá dos requisitos do seu site e do seu recurso técnico. Se você quiser um provedor de navegação de caixa de saída escalável, a navegação gerenciada com a remoção de segurança desabilitada é uma boa opção. 
+A opção mais apropriada para seu site dependerá dos requisitos do seu site e do seu recurso técnico. Se você quiser um provedor de navegação de caixa de saída escalável, a navegação gerenciada com a remoção de segurança desabilitada é uma boa opção.
 
 A opção de navegação gerenciada pode ser mantida através da configuração, não envolve arquivos de personalização de código e é significativamente mais rápida do que a navegação estrutural. Se você precisar de filtragem de segurança e estiver seguro usando uma página mestra personalizada e tiver algum recurso na organização para manter as alterações que podem ocorrer na página mestra padrão do SharePoint Online, a opção orientada por pesquisa poderá produzir um melhor experiência do usuário. Se você tiver requisitos mais complexos, um provedor de navegação personalizado pode ser a escolha certa. A navegação estrutural não é recomendada.
 

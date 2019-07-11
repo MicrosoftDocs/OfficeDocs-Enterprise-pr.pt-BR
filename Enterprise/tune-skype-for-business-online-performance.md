@@ -1,7 +1,7 @@
 ---
 title: Ajustar o desempenho do Skype for Business Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 9/29/2016
 audience: Admin
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Este artigo fornece links para administradores de sistema que desejam planejar os requisitos de largura de banda de rede ou que precisam melhorar o desempenho do Skype for Business online.
-ms.openlocfilehash: 9475f94678836842b6e6cf3b49084b4a6de3c77d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 57b326849fbb4fb1448824da1682d8f7ca66a473
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070387"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616814"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Ajustar o desempenho do Skype for Business Online
 

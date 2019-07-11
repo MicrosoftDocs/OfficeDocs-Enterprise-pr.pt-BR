@@ -1,7 +1,7 @@
 ---
 title: Usar Lean pop-ups para reduzir a memória usada ao ler mensagens de email
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 3/8/2018
 audience: ITPro
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 description: Este artigo contém informações para melhorar o desempenho de download de mensagens no Outlook na Web.
-ms.openlocfilehash: 344047363bd58850fcd08a7f8f2fd46de757668c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a9070d9aefc8e4c223667848b4af5c06518de076
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070557"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616804"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Usar Lean pop-ups para reduzir a memória usada ao ler mensagens de email
 

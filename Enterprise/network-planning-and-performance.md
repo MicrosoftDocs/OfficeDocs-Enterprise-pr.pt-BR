@@ -1,7 +1,7 @@
 ---
 title: Planejamento de rede e ajuste de desempenho para o Office 365
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 1/15/2019
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Ajuda a planejar os requisitos de largura de banda de rede do Microsoft Office 365. Depois de implantado, retorne para ajustar e solucionar problemas de desempenho do Office 365.
-ms.openlocfilehash: 3497ab5ec006011cefd6e09db323847c97999a34
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c7ea169fbb39a16612c957f0d0275de60c83de1e
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069887"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616734"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Planejamento de rede e ajuste de desempenho para Office 365
 Antes de implantar o pela primeira vez ou migrar para o Office 365, você pode usar as informações nesses tópicos para estimar a largura de banda necessária e, em seguida, testar e verificar se você tem largura de banda suficiente para implantar ou migrar para o Office 365. Para obter uma visão geral, consulte: [Network and Migration Planning for Office 365](network-and-migration-planning.md).
