@@ -3,7 +3,7 @@ title: Atualizando do SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 06/04/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: O suporte para o SharePoint 2010 e o SharePoint Server 2010 termina em 13 de outubro de 2020. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
-ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
+ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203610"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35643053"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Atualizando do SharePoint 2010
 
@@ -57,12 +57,14 @@ Esta matriz ajuda a plotar um curso quando se trata da migração dos recursos d
    
 Se você escolher opções no final da escala (opções boas), precisará começar a planejar outra atualização logo após a conclusão da migração do SharePoint Server 2010. 
 
+Estes são os três caminhos que você pode seguir para evitar o fim do suporte para o SharePoint Server 2010.
+
+![Caminhos de atualização do SharePoint Server 2010](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
+
 >[!Note]
 >O fim do suporte para o SharePoint Server 2010 e o SharePoint Foundation 2010 estão agendados para 13 de outubro de 2020, mas *lembre* -se de que você sempre deve verificar o [site de ciclo de vida do produto](https://support.microsoft.com/en-us/lifecycle) para obter as datas mais atuais.
 >
 
-
- 
   
 ## <a name="where-should-i-go-next"></a>Onde devo ir para a próxima?
 
