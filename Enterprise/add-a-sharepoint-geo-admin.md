@@ -59,5 +59,4 @@ Para remover um grupo usando o ObjectID, execute `Remove-SPOGeoAdministrator -Ob
 
 [Remover SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-
-  [Configurar um alias (MailNickName) para um grupo de segurança](https://docs.microsoft.com/pt-BR/powershell/module/azuread/set-azureadgroup)
+[Configurar um alias (MailNickName) para um grupo de segurança](https://docs.microsoft.com/pt-BR/powershell/module/azuread/set-azureadgroup)

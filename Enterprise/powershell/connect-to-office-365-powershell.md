@@ -36,8 +36,7 @@ Existem duas versões do módulo do PowerShell usadas para se conectar ao Office
 A partir da data deste artigo, o Azure Active Directory PowerShell para o módulo do Graph não substituiu completamente a funcionalidade dos cmdlets do Módulo Microsoft Azure Active Directory para o módulo do Windows PowerShell para a administração de usuários, grupos e licenças. Em muitos casos, é necessário usar as duas versões. As duas versões podem ser instaladas com segurança no mesmo computador.
 
 > [!TIP]
-> 
-  **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/pt-BR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
+> **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/pt-BR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
