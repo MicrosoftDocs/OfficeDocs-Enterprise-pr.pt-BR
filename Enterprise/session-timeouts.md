@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
-description: Os tempos limite da sessão são usados para equilibrar Securtiy e facilidade de acesso nos aplicativos cliente do Office 365.
-ms.openlocfilehash: d43bc123de982f3ebf55f05f48e53debe7df036b
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Os tempos limite da sessão são usados para equilibrar a segurança e a facilidade de acesso nos aplicativos cliente do Office 365.
+ms.openlocfilehash: 82ce98de440175f2190d5da6e4d1c02b8b678b89
+ms.sourcegitcommit: 237e1c485214c2ff75375988febfd7fb70faa5f3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070847"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35746689"
 ---
 # <a name="session-timeouts-for-office-365"></a>Tempos limite de sessão para o Office 365
 
@@ -43,6 +43,6 @@ A tabela a seguir lista os tempos de vida da sessão para os serviços do Office
 |Aplicativo Web do Outlook  <br/> |6 horas.  <br/> Você pode alterar esse valor usando o parâmetro _ActivityBasedAuthenticationTimeoutInterval_ no cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
 |Azure Active Directory  <br/> (Usado por clientes do Windows 2013 com autenticação moderna habilitada)  <br/> | A autenticação moderna usa tokens de acesso e atualiza tokens para conceder ao usuário acesso aos recursos do Office 365 usando o Azure Active Directory. Um token de acesso é um token Web JSON fornecido após uma autenticação bem-sucedida e é válido por 1 hora. Um token de atualização com um tempo de vida maior também é fornecido. Quando os tokens de acesso expiram, os clientes do Office usam um token de atualização válido para obter um novo token de acesso. Esse Exchange será bem-sucedido se a autenticação inicial do usuário ainda for válida.  <br/>  Os tokens de atualização são válidos por 90 dias e com o uso contínuo, eles podem ser válidos até serem revogados.  <br/>  Os tokens de atualização podem ser invalidados por vários eventos, como:  <br/>  A senha do usuário foi alterada desde a emissão do token de atualização.  <br/>  Um administrador pode aplicar as políticas de acesso condicional que restringem o acesso ao recurso que o usuário está tentando acessar.  <br/> |
 |Aplicativos móveis do SharePoint e do OneDrive para Android, iOS e Windows 10  <br/> |O tempo de vida padrão para o token de acesso é de 1 hora. O tempo máximo de inatividade padrão do token de atualização é de 90 dias.  <br/> [Saiba mais sobre tokens e como configurar tempos de vida do token](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Para revogar o token de atualização, você pode redefinir a senha do Office 365 do usuário  <br/> |
-|Entrada do Yammer com o Office 365  <br/> |Tempo de vida do navegador. Se o usuário fechar o navegador e acessar o yammer em um novo navegador, o Yammer o autenticará novamente com o Office 365. Se os usuários usarem navegadores de terceiros que armazenam cookies em cache, talvez não precisem se autenticar novamente quando abrirem novamente o navegador.  <br/> > [!NOTE]> isso é válido apenas para redes que usam o logon do Office 365 para o Yammer.           |
+|Entrada do Yammer com o Office 365  <br/> |Tempo de vida do navegador. Se o usuário fechar o navegador e acessar o yammer em um novo navegador, o Yammer o autenticará novamente com o Office 365. Se os usuários usarem navegadores de terceiros que armazenam cookies em cache, talvez não precisem se autenticar novamente quando abrirem novamente o navegador.  <br/> > [!NOTE]> isso é válido somente para redes que usam o logon do Office 365 para o Yammer.           |
    
 
