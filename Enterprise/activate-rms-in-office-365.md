@@ -1,5 +1,5 @@
 ---
-title: Ponteiros para informações sobre o gerenciamento de direitos no centro de administração do Office 365
+title: Ponteiros para informações sobre o gerenciamento de direitos no centro de administração
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: 5b6d3ac7-b1ac-428e-b03e-50e882f85a6e
 description: Aponta para tópicos que descrevem como ativar e usar o serviço de gerenciamento de direitos com o Office 365.
-ms.openlocfilehash: 7ae954eafacb196dc85f3e4c084de2f704f4ddce
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: dca4b547ceee9af32caaaead32dd5251157ca00e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616704"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782361"
 ---
-# <a name="pointers-to-information-about-rights-management-in-the-office-365-admin-center"></a>Ponteiros para informações sobre o gerenciamento de direitos no centro de administração do Office 365
+# <a name="pointers-to-information-about-rights-management-in-the-admin-center"></a>Ponteiros para informações sobre o gerenciamento de direitos no centro de administração
 
 Este tópico aponta para tópicos que descrevem como habilitar e usar o RMS com o Office 365.
   

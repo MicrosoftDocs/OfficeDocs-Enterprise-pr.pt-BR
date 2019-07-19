@@ -10,17 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e servidor do Office Online.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068767"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782241"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama acessível-integração de recursos nos produtos do Microsoft Office Server
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e Office Online.
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e servidor do Office Online.
   
 O diagrama consiste em várias guias, conforme indicado pelos títulos da seção deste documento.
   
@@ -86,7 +86,7 @@ Autenticação de servidor para servidor. Esse recurso se aplica a:
     
 - Lync
     
-- Office Online (anteriormente conhecido como Office Web Apps) 
+- Servidor do Office Online (anteriormente conhecido como Office Web Apps) 
     
 Fotos do usuário de alta resolução. Esse recurso se aplica a: 
   

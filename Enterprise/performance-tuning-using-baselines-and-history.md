@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Há algumas maneiras simples de verificar o desempenho da conexão entre o Office 365 e sua empresa, que permitirá estabelecer uma linha de base aproximada da conectividade. Conhecer o histórico de desempenho de suas conexões de computador cliente pode ajudá-lo a detectar problemas emergentes antecipadamente, identificar e prever problemas.
-ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 755f4c4bde7e040638e768002a528710bcdd48fd
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069517"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781901"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Ajuste de desempenho do Office 365 usando linhas de base e histórico de desempenho
 
@@ -49,7 +49,7 @@ A solução de problemas de desempenho não está prestes a atender metas espec�
 
 Primeiro, você precisa certificar-se de que o que você está enfrentando é realmente um problema de desempenho e não um incidente de serviço. Um problema de desempenho é diferente de um incidente de serviço no Office 365. Confira aqui como diferenciá-los.
   
-Se o serviço do Office 365 estiver com problemas, isso é um incidente de serviço. Você verá ícones vermelhos ou amarelos sob **integridade atual** no centro de administração do Office 365, você também pode notar um desempenho lento em computadores clientes que se conectam ao Office 365. Por exemplo, se a integridade atual relatar um ícone vermelho e você vir a **investigar** ao lado do Exchange, também poderá receber uma série de chamadas de pessoas em sua organização que reclamam que as caixas de correio de cliente que usam o Exchange Online estão funcionando incorretamente. Nesse caso, é razoável supor que seu desempenho do Exchange Online se tornou uma vítima de problemas no serviço. 
+Se o serviço do Office 365 estiver com problemas, isso é um incidente de serviço. Você verá ícones vermelhos ou amarelos sob **integridade atual** no centro de administração do Microsoft 365, você também pode notar um desempenho lento em computadores clientes que se conectam ao Office 365. Por exemplo, se a integridade atual relatar um ícone vermelho e você vir a **investigar** ao lado do Exchange, também poderá receber uma série de chamadas de pessoas em sua organização que reclamam que as caixas de correio de cliente que usam o Exchange Online estão funcionando incorretamente. Nesse caso, é razoável supor que seu desempenho do Exchange Online se tornou uma vítima de problemas no serviço. 
   
 ![O painel de integridade do Office 365 com todas as cargas de trabalho mostrando o verde, exceto o Exchange, que mostra o serviço restaurado.](media/ec7f0325-9e61-4e1a-bec0-64b87f4469be.PNG)
   
@@ -59,7 +59,7 @@ Neste ponto, você, o administrador do Office 365, deve verificar a **integridad
   
 Um problema de desempenho não é um incidente de serviço, mesmo que os incidentes possam causar um desempenho lento. Um problema de desempenho tem a seguinte aparência:
   
-- Um problema de desempenho ocorre independentemente da **integridade atual** do centro de administração do Office 365 ser reportada para o serviço. 
+- Um problema de desempenho ocorre independentemente da **integridade atual** do centro de administração estar relatando para o serviço. 
     
 -  Um comportamento que costumava ser relativamente perfeito demora muito para ser concluído ou nunca é concluído. 
     
@@ -145,7 +145,7 @@ Se você não estiver familiarizado com o modo de realizar essas etapas, vamos n
 
 Você saberá o impacto quando ele ficar ruim, mas se você não souber seus dados de desempenho históricos, não é possível ter um contexto de quanto o mau pode ter se tornado e quando. Portanto, sem uma linha de base, você não tem a pista principal para resolver o quebra-cabeça: a imagem na caixa de quebra-cabeça. Na solução de problemas de desempenho, você precisa de um ponto de *comparação* . Não é difícil realizar as linhas de base de desempenho simples. Sua equipe de operações pode ter a tarefa de realizar essas tarefas em um cronograma. Por exemplo, digamos que a conexão tenha a seguinte aparência: 
   
-![Um gráfico de rede básico mostrando O cliente, o proxy e o Office 365 Cloud.](media/c6ca7140-09f9-4c2d-a775-dbf2820eaa0c.PNG)
+![Um gráfico de rede básico mostrando o cliente, o proxy e o Office 365 Cloud.](media/c6ca7140-09f9-4c2d-a775-dbf2820eaa0c.PNG)
   
 Isso significa que você verificou a equipe da sua rede e descobriu que você deixou sua empresa para a Internet por meio de um servidor proxy e que o proxy cuida de todas as solicitações que seu computador cliente envia para a nuvem. Nesse caso, você deve desenhar uma versão simplificada da sua conexão que lista todos os dispositivos intervenientes. Agora, insira ferramentas que você pode usar para testar o desempenho entre o cliente, o ponto de saída (onde você sai da rede para a Internet) e a nuvem do Office 365.
   
@@ -198,7 +198,7 @@ O objetivo desses métodos simples é aprender a tomar, compreender e armazenar 
 ![Rede básica com cliente, proxy e nuvem, e ferramentas sugestões de PSPing, TraceTCP e rastreamentos de rede.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> O TraceTCP está incluído nesta captura de tela porque é uma ferramenta útil para exibição, em milissegundos, quanto tempo uma solicitação demora para ser processada e quantos saltos de rede, ou conexões de um computador para o próximo, que a solicitação leva para atingir um destino. TraceTCP também pode fornecer os nomes de servidores usados durante saltos, que podem ser úteis para uma solução de problemas do Microsoft Office 365 no suporte. os comandos > TraceTCP podem ser muito simples, como: > `tracetcp.exe outlook.office365.com:443`_GT_ se lembrar de incluir o número da porta no comando! > O [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) é um download gratuito, mas se baseia no Wincap. Wincap é uma ferramenta que também é usada e instalada pelo Netmon. Também usamos o Netmon na seção métodos avançados. 
+> O TraceTCP está incluído nesta captura de tela porque é uma ferramenta útil para exibição, em milissegundos, quanto tempo uma solicitação demora para ser processada e quantos saltos de rede, ou conexões de um computador para o próximo, que a solicitação leva para atingir um destino. TraceTCP também pode fornecer os nomes de servidores usados durante saltos, que podem ser úteis para uma solução de problemas do Microsoft Office 365 no suporte. > comandos TraceTCP podem ser muito simples, como: > `tracetcp.exe outlook.office365.com:443`> Lembre-se de incluir o número da porta no comando! > O [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) é um download gratuito, mas se baseia no Wincap. Wincap é uma ferramenta que também é usada e instalada pelo Netmon. Também usamos o Netmon na seção métodos avançados. 
   
  Se você tiver vários escritórios, precisará manter um conjunto de dados de um cliente em cada um desses locais também. Esse teste mede a latência, que, nesse caso, é um valor de número que descreve a quantidade de tempo entre um cliente enviando uma solicitação para o Office 365, e o Office 365 responder à solicitação. O teste é originado dentro do seu domínio em um computador cliente e procura medir uma viagem de dentro da sua rede, através de um ponto de egresso, através da Internet para o Office 365 e de volta. 
   

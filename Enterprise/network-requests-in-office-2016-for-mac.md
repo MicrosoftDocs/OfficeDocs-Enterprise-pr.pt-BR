@@ -13,12 +13,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Os aplicativos do Office para Mac oferecem uma experiência de aplicativo nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em vários cenários, incluindo Estados quando não há acesso à rede disponível. Quando um computador está conectado a uma rede, os aplicativos se conectam automaticamente a uma série de serviços baseados na Web para fornecer funcionalidade aprimorada. Este artigo descreve quais pontos de extremidade e URLs os aplicativos tentam alcançar e os serviços fornecidos. Essas informações são úteis para solucionar problemas de configuração de rede e definir uma política para servidores proxy de rede. Os detalhes neste artigo destinam-se a complementar a URL do Office 365 e o artigo de intervalos de endereços.
-ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069647"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781951"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitações de rede do Office para Mac
 
@@ -68,7 +68,7 @@ Os pontos de extremidade de rede a seguir são contatados na primeira inicializa
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Download de telemetria de regras do Office-informa o cliente sobre quais dados e eventos carregar no serviço de telemetria.  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |CS  <br/> |Serviço de telemetria do OneNote  <br/> |
 |```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Relatório de carregamento de telemetria do Office-"Heartbeart" e eventos de erro que ocorrem no cliente são carregados no serviço de telemetria.  <br/> |
-|```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Serviço de modelo do Office Online – fornece aos usuários modelos de documento online.  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Serviço de modelo do Office: fornece aos usuários modelos de documento online.  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |CS  <br/> |Downloads de modelos do Office-armazenamento de imagens de modelo PNG.  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Configuração de repositório para aplicativos do Office.  <br/> |
 |```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Catálogo dos serviços de integração de documentos do Office (lista de serviços e pontos de extremidade) e descoberta de realm inicial.  <br/> |

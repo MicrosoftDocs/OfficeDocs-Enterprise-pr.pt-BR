@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Resumo: saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business Online, SharePoint Online, Exchange Online e o Centro de Conformidade e Segurança do Office 365.'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068897"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782101"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Gerenciar o Office 365 com o Office 365 PowerShell
 
  **Resumo:** saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business Online, SharePoint Online, Exchange Online e o Centro de Conformidade e Segurança do Office 365.
   
-O Office 365 PowerShell é uma poderosa ferramenta de gerenciamento que complementa o Centro de administração do Office 365. Por exemplo, é possível usar a automação do Office 365 PowerShell para gerenciar várias contas de usuário e licenças mais rapidamente e criar relatórios. Saiba como usar o Office 365 PowerShell com usuários e licenças do Office 365, Skype for Business Online, SharePoint Online, Exchange Online e o Centro de Conformidade e Segurança do Office 365.
+O Office 365 PowerShell é uma poderosa ferramenta de gerenciamento que complementa o centro de administração do Microsoft 365. Por exemplo, você pode usar a automação do Office 365 PowerShell para gerenciar várias contas de usuário e licenças mais rapidamente e criar relatórios. Saiba como usar o Office 365 PowerShell com o Office 365 usuários e licenças, Skype for Business Online, SharePoint Online, Exchange Online e o centro de conformidade & segurança do Office 365.
   
 Selecione o tópico de acordo com suas necessidades:
   

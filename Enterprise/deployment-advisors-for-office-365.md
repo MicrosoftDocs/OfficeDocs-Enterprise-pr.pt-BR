@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere o planejamento e a configuração do Office 365 ou Microsoft 365 com os consultores de implantação.
-ms.openlocfilehash: dbc7ee6c3bbb7d672cf9d02be6958c5fea469099
-ms.sourcegitcommit: 37c29ded24f999fc5f41f5aae284238b25eb83f3
+ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34857364"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782301"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Comunicados de implantação para o Office 365 ou serviços do Microsoft 365
 

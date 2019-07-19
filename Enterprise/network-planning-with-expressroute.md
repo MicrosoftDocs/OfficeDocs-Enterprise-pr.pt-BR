@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: O ExpressRoute para Office 365 fornece conectividade de camada 3 entre a rede e os datacenters da Microsoft. Os circuitos usam anúncios de rota do Border Gateway Protocol (BGP) dos servidores front-end do Office 365. Da perspectiva de seus dispositivos locais, quando eles precisam selecionar o caminho TCP/IP correto para o Office 365, o Azure ExpressRoute é visto como uma alternativa para a Internet.
-ms.openlocfilehash: 459850a29e87650f1aecfc6a6977cd6e5b77ae07
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069697"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782231"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planejamento de rede com o ExpressRoute para Office 365
 
@@ -34,7 +34,7 @@ A tabela a seguir realça algumas diferenças entre a Internet e as conexões Ex
 |**Diferenças no planejamento de rede**|**Conexão de rede da Internet**|**Conexão de rede ExpressRoute**|
 |:-----|:-----|:-----|
 | Acesso aos serviços de Internet necessários, incluindo;  <br/>  Resolução de nomes DNS  <br/>  Verificação de revogação de certificado  <br/>  Redes de fornecimento de conteúdo  <br/> |Sim  <br/> |As solicitações à infraestrutura de DNS e/ou CDN de propriedade da Microsoft podem usar a rede ExpressRoute.  <br/> |
-| Acesso aos serviços do Office 365, incluindo;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business online  <br/>  Office Online  <br/>  Portal e autenticação do Office 365  <br/> |Sim, todos os aplicativos e recursos  <br/> |Sim, [aplicativos e recursos específicos](https://aka.ms/o365endpoints) <br/> |
+| Acesso aos serviços do Office 365, incluindo;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office em um navegador  <br/>  Portal e autenticação do Office 365  <br/> |Sim, todos os aplicativos e recursos  <br/> |Sim, [aplicativos e recursos específicos](https://aka.ms/o365endpoints) <br/> |
 |Segurança local no perímetro.  <br/> |Sim  <br/> |Sim  <br/> |
 |Planejamento de alta disponibilidade.  <br/> |Failover para uma conexão de rede da Internet alternativa  <br/> |Failover para uma conexão ExpressRoute alternativa  <br/> |
 |Conexão direta com um perfil de rede previsível.  <br/> |Não  <br/> |Sim  <br/> |
@@ -190,7 +190,7 @@ Aqui está um link curto que você pode usar para voltar: [https://aka.ms/planni
 ## <a name="related-topics"></a>Tópicos Relacionados
 <a name="BKMK_high-availability"> </a>
 
-[Conectividade de rede para Office 365](network-connectivity.md)
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
   
 [Microsoft Azure ExpressRoute para Office 365](azure-expressroute.md)
   

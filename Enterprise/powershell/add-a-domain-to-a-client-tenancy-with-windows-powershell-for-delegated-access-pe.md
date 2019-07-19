@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumo: Use o Windows PowerShell para o Office 365 para adicionar um nome de domínio alternativo a um locatário existente do cliente.'
-ms.openlocfilehash: 9b65a5665ce8aa7205db733a2d0e0969e5cd401d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069267"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781841"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Adicionar um domínio a uma locação do cliente com o Windows PowerShell para parceiros com permissão de acesso delegado (DAP)
 
@@ -46,7 +46,7 @@ Você também precisará das seguintes informações:
  Os clientes provavelmente vão solicitar a criação de domínios adicionais para associar às suas locações, uma vez que não pretendem ter o<domínio>.onmicrosoft.compadrão como o domínio principal que representa sua identidade corporativa mundialmente. Este procedimento lhe orienta na criação de um novo domínio associado à locação do cliente.
   
 > [!NOTE]
-> Para realizar algumas dessas operações, a conta de administrador do parceiro com a qual você entrar deve ser definida como **Administração total** para a configuração **Atribuir acesso administrativo a empresas às quais você oferece suporte** encontrada nos detalhes da conta do administrador no Centro de administração do Office 365. Para saber mais informações sobre como gerenciar funções de administrador de parceiro, confira[Parceiros: Oferecer administração delegada](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> Para realizar algumas dessas operações, a conta de administrador de parceiros que você faz logon deve ser definida como **Administração completa** para a configuração **atribuir acesso administrativo às empresas às quais você dá suporte,** localizada nos detalhes da conta de administrador no Centro de administração do Microsoft 365. Para obter mais informações sobre o gerenciamento de funções de administrador de parceiros, consulte[parceiros: oferecer administração delegada](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Criar o domínio no Azure Active Directory
 

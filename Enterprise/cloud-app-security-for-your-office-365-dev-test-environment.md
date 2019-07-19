@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumo: Configure e demonstre o Office 365 Cloud app Security no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068097"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782251"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de Aplicativo na Nuvem para o ambiente de desenvolvimento/teste do Office 365
 
@@ -81,13 +81,13 @@ Neste procedimento, você habilitará o Cloud app Security e criará uma nova po
 
 1. Vá para o centro de administração do Microsoft[https://admin.microsoft.com](https://admin.microsoft.com)365 () e entre na sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
-2. Clique no bloco de **Administração**. Na guia **centro de administração do Office** , clique em **centros de administração _GT_ segurança & conformidade**.
+2. Clique no bloco de **Administração**. Na guia **centro de administração do Office** , clique em **centros de administração > segurança & conformidade**.
     
-3. No painel de navegação esquerdo, clique em **alertas _GT_ Gerenciar alertas avançados**.
+3. No painel de navegação esquerdo, clique em **alertas > Gerenciar alertas avançados**.
     
 4. Na página **Gerenciar alertas avançados** , clique em **ativar o Office 365 Cloud app Security**e clique em **ir para o Office 365 Cloud app Security**.
     
-5. Na guia novo **painel** , clique em **controlar políticas de >**.
+5. Na guia novo **painel** , clique em **controlar > políticas**.
     
 6. Na página **política** , clique em **criar política**e em política de **atividade**.
     
@@ -145,7 +145,7 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
     
 18. Clique no **bloco &amp; conformidade de segurança** .
     
-19. No painel de navegação esquerdo, clique em **alertas _GT_ Gerenciar alertas avançados**.
+19. No painel de navegação esquerdo, clique em **alertas > Gerenciar alertas avançados**.
     
 20. Na página **Gerenciar alertas avançados** , clique em **ir para o Office 365 Cloud app Security**.
     
@@ -153,7 +153,7 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
     
 22. Na guia **Microsoft Office Home** , clique em **email**. Aguarde até 30 minutos. 
     
-    Você deve ver duas novas mensagens de email na caixa de entrada com o título **Microsoft Azure ad Notification Service**. Uma mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de senha** e outra mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de usuários** (igual à função Administrador de gerenciamento de usuários no Centro de administração do Office 365).
+    Você deve ver duas novas mensagens de email na caixa de entrada com o título **Microsoft Azure ad Notification Service**. Uma mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de senha** e outra mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de usuários** (igual à função Administrador de gerenciamento de usuários no Centro de administração do Microsoft 365).
     
 Agora você pode usar esse ambiente para criar novas políticas e experimentar mais com o Office 365 Cloud app Security. Consulte preparar [para o Office 365 Cloud app Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) para obter links para artigos de configuração adicionais.
   

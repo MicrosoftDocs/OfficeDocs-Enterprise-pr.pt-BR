@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
-ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067888"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782321"
 ---
 # <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
@@ -61,7 +61,7 @@ Sim. Depois que uma nova Geografia do datacenter estiver disponível, novos clie
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>Onde está localizado o meus dados principais do cliente?
 
-Os administradores de locatários podem exibir o cartão de local de dados no centro de administração a qualquer momento para confirmar os dados principais do cliente no local restante de cada serviço, especificamente para o locatário.Também publicamos o local do datacenter GEOS, datacenters e local dos dados do cliente do Office 365 nos mapas de datacenters do [ office 365 Interactive](https://office.com/datamaps) como uma referência para os dados de cliente principais padrão atuais em locais REST para novos locatários.  Você pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Office 365.  
+Os administradores de locatários podem exibir o cartão de local de dados no centro de administração a qualquer momento para confirmar os dados principais do cliente no local restante de cada serviço, especificamente para o locatário.Também publicamos o local do datacenter GEOS, datacenters e local dos dados do cliente do Office 365 nos mapas de datacenters do [ office 365 Interactive](https://office.com/datamaps) como uma referência para os dados de cliente principais padrão atuais em locais REST para novos locatários.  Você pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando poderei solicitar uma movimentação?
   
@@ -101,7 +101,7 @@ Consulte [durante e após a movimentação de dados](during-and-after-your-data-
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Como saber se a movimentação está concluída?
   
-Assista ao centro de mensagens do Office 365 para confirmar que a mudança dos dados de cada serviço está concluída. Quando os dados de cada serviço são movidos, publicaremos um aviso de conclusão para que você receba três avisos de conclusão: um para o Exchange Online, o SharePoint Online e o Skype for Business online.  Você também pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Office 365.  
+Assista ao centro de mensagens do Office 365 para confirmar que a mudança dos dados de cada serviço está concluída. Quando os dados de cada serviço são movidos, publicaremos um aviso de conclusão para que você receba três avisos de conclusão: um para o Exchange Online, o SharePoint Online e o Skype for Business online.  Você também pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Microsoft 365.  
   
 ## <a name="i-am-an-office-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Eu sou um cliente do Office 365 em um dos novos datacenters GEOS, mas quando eu se conecto, selecionei outro país. Como posso ser movido para a nova Geografia do datacenter?
 
