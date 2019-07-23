@@ -3,7 +3,7 @@ title: Como solicitar a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392351"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818013"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -37,20 +37,20 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
 |Reino Unido  <br/> |15 de março de 2017  <br/> |15 de setembro de 2017  <br/> |
 |Coréia do Sul  <br/> |1 de maio de 2017  <br/> |31 de outubro de 2017  <br/> |
 |França  <br/> |14 de março de 2018  <br/> |15 de setembro de 2018  <br/> |
-|Emirados Árabes Unidos  <br/> |Liga  <br/> |Liga  <br/> |
+|Emirados Árabes Unidos  <br/> |15 de julho de 2019  <br/> |31 de janeiro de 2020  <br/> |
 |África do Sul  <br/> |Liga  <br/> |Liga  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Como solicitar uma movimentação
 
-Os clientes qualificados verão uma página em seu [centro de administração do Office 365](https://aka.ms/365admin), que lhes permitirá solicitar que seus principais dados do cliente sejam movidos para sua nova região de datacenter.  
+Os clientes qualificados verão uma página em seu [centro de administração](https://aka.ms/365admin), que lhes permitirá solicitar que seus principais dados do cliente sejam movidos para sua nova região de datacenter.  
   
-Para acessar a página no centro de administração do Office 365, no painel de navegação à esquerda, expanda **configurações**e clique em **perfil da organização**.
+Para acessar a página no centro de administração do Microsoft 365, no painel de navegação à esquerda, expanda **configurações**e clique em **perfil da organização**.
   
-![Menu Configurações com Perfil Organizacional realçado](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![Menu configurações com perfil organizacional realçado](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 Na página **perfil da organização** , role para baixo até a seção **opção de residência de dados** . 
   
-![Cartão de residência de dados](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![Cartão de residência de dados](media/dataresidencyae.jpg)
   
 **Talvez você não veja esta seção se uma das seguintes opções se aplicar**:
 - Seu locatário não está qualificado para o programa de movimentação.  A qualificação é determinada pelo país de inscrição do locatário.
@@ -58,7 +58,7 @@ Na página **perfil da organização** , role para baixo até a seção **opçã
   
 Se sua organização tiver requisitos de residência de dados e você precisar solicitar a migração inicial, clique em **Editar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa de movimentação. Selecione o botão de alternância ao lado do texto que diz **Sim, minha organização tem requisitos de residência de dados**. Em seguida, clique em **Salvar**.
   
-![Tela de aceitação de data center](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![Tela de aceitação de data center](media/dataresidencyflyoutae.jpg)
   
 Você deve ver o texto na seção **opção de residência de dados** alterar para indicar que **sua organização solicitou a movimentação dos dados principais do cliente.** Você também terá uma mensagem de confirmação no centro de mensagens. Isso confirma que você solicitou uma movimentação com êxito. 
 
