@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Resumo: Use o Windows PowerShell para o Office 365 para adicionar um nome de domínio alternativo a um locatário existente do cliente.'
-ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 60088a9eafa1f5380eef2cc0240b0f5b5b02fe0f
+ms.sourcegitcommit: 68181eca8e43ea7f5dfd89cbaf587bc0c260ca7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781841"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35853224"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Adicionar um domínio a uma locação do cliente com o Windows PowerShell para parceiros com permissão de acesso delegado (DAP)
 
@@ -29,7 +29,9 @@ Você pode criar e associar novos domínios à locação do cliente com o Window
 Os Parceiros com Permissão de Acesso Delegada (DAP) são parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). Muitas vezes, eles são provedores de rede ou de telecomunicações para outras empresas. Eles reúnem assinaturas do Office 365 em suas ofertas de serviço aos seus clientes. Quando eles vendem uma assinatura do Office 365, recebem automaticamente permissões de Administrar Em Nome de (AOBO) para as locações de cliente para que possam administrar e relatar todas as suas locações de cliente.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
-UNRESOLVED_TOKEN_VAL(GENL_O365_PowerShell_BeforeYouBegin)
+Os procedimentos neste tópico exigem que você se conecte ao Windows PowerShell para Office 365. Para obter instruções, veja [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).
+  
+Você também precisa ter as credenciais de administrador de locatários do parceiro.
   
 Você também precisará das seguintes informações:
   
@@ -61,7 +63,7 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
  O Office 365 gerará os dados específicos necessários para você colocar no registro de verificação TXT de DNS. Para obter os dados, execute o seguinte comando.
   
 ```
-Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain>
+Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
 Isso lhe dará saída como:
