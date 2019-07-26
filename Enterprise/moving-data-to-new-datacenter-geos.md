@@ -3,7 +3,7 @@ title: Movendo dados principais para o novo Office 365 datacenter GEOS
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392341"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907634"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
@@ -39,8 +39,8 @@ Os clientes existentes que têm seus dados principais de cliente armazenados em 
 |Reino Unido * * * *| Europa | Reino Unido | Setembro de 2016 |
 |Coréia do Sul * * * *| Ásia/Pacífico | Coréia do Sul | Abril de 2017 |
 |França * * * *| Europa | França | Março de 2018 |
-|Emirados Árabes Unidos * * * *| Europa | Emirados Árabes Unidos | Apresentados |
-|África do Sul * * * *| Europa | África do Sul | Apresentados |
+|Emirados Árabes Unidos * * * *| Europa | Emirados Árabes Unidos | Junho de 2019 |
+|África do Sul * * * *| Europa | África do Sul | Julho de 2019 |
   
 Novos clientes ou locatários do Office 365 criados após a disponibilidade da nova Geografia do datacenter terão seus principais dados de cliente armazenados em repouso na nova Geografia do datacenter automaticamente.
   

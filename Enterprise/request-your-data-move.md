@@ -3,7 +3,7 @@ title: Como solicitar a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
-ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
+ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35818013"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907644"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -38,7 +38,7 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
 |Coréia do Sul  <br/> |1 de maio de 2017  <br/> |31 de outubro de 2017  <br/> |
 |França  <br/> |14 de março de 2018  <br/> |15 de setembro de 2018  <br/> |
 |Emirados Árabes Unidos  <br/> |15 de julho de 2019  <br/> |31 de janeiro de 2020  <br/> |
-|África do Sul  <br/> |Liga  <br/> |Liga  <br/> |
+|África do Sul  <br/> |25 de julho de 2019  <br/> |31 de janeiro de 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Como solicitar uma movimentação
 
@@ -53,14 +53,14 @@ Na página **perfil da organização** , role para baixo até a seção **opçã
 ![Cartão de residência de dados](media/dataresidencyae.jpg)
   
 **Talvez você não veja esta seção se uma das seguintes opções se aplicar**:
-- Seu locatário não está qualificado para o programa de movimentação.  A qualificação é determinada pelo país de inscrição do locatário.
-- Todos os seus dados já estão localizados na nova Geografia (consulte a seção local de dados da página). 
+- Seu locatário não está qualificado para o programa Office 365 move.  A qualificação é determinada pelo país de inscrição do locatário.
+- Todos os dados principais do cliente em repouso já estão localizados na nova Geografia (consulte a seção local dos dados da página). 
   
-Se sua organização tiver requisitos de residência de dados e você precisar solicitar a migração inicial, clique em **Editar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa de movimentação. Selecione o botão de alternância ao lado do texto que diz **Sim, minha organização tem requisitos de residência de dados**. Em seguida, clique em **Salvar**.
+Se sua organização tiver requisitos de residência de dados e você precisar solicitar a migração inicial, clique em **aceitar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa Office 365 move. Selecione o botão de alternância ao lado do texto que diz que **desejo aos dados principais do cliente da minha organização em repouso para migrar**. Em seguida, clique em **Salvar**.
   
 ![Tela de aceitação de data center](media/dataresidencyflyoutae.jpg)
   
-Você deve ver o texto na seção **opção de residência de dados** alterar para indicar que **sua organização solicitou a movimentação dos dados principais do cliente.** Você também terá uma mensagem de confirmação no centro de mensagens. Isso confirma que você solicitou uma movimentação com êxito. 
+Você deve ver o texto na seção **residência de dados** alterar para indicar que **sua organização solicitou a movimentação de seus dados principais de cliente.** Você também terá uma mensagem de confirmação no centro de mensagens. Isso confirma que você solicitou uma movimentação com êxito. 
 
 
   
