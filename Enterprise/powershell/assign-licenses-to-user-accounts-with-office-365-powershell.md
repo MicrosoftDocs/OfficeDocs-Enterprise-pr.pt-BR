@@ -3,7 +3,7 @@ title: Atribuir licenças a contas de usuários usando o PowerShell do Office 36
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/18/2019
+ms.date: 08/05/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,23 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: Explica como usar o Office 365 PowerShell atribuir uma licença do Office 365 a usuários não licenciados.
-ms.openlocfilehash: 91fe9f3a14663ebb9adb61700de3004edd236e0c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Como usar o Office 365 PowerShell para atribuir uma licença do Office 365 a usuários não licenciados.
+ms.openlocfilehash: c244e60016cb04008e27e2df444703ac7e41db12
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069277"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198643"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Atribuir licenças a contas de usuários usando o PowerShell do Office 365
 
-**Resumo:**  Explica como usar o Office 365 PowerShell atribuir uma licença do Office 365 a usuários não licenciados.
+**Resumo:**  Como usar o Office 365 PowerShell para atribuir uma licença do Office 365 a usuários não licenciados.
   
 Os usuários não podem usar os serviços do Office 365 até que a conta tenha sido atribuída a uma licença de um plano de licenciamento. Você pode usar o Office 365 PowerShell para atribuir licenças rapidamente a contas não licenciadas. 
 
+>[!Note]
+>As contas de usuário devem ser atribuídas a um local. Você pode fazer isso a partir das propriedades de uma conta de usuário no centro de administração do Microsoft 365 ou no PowerShell.
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
@@ -44,6 +47,20 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
 Em seguida, obtenha o nome de entrada da conta para a qual você deseja adicionar uma licença, também conhecido como o nome de usuário principal (UPN).
+
+Em seguida, verifique se a conta de usuário tem um local de uso atribuído.
+
+```
+Get-AzureADUser -ObjectID <user sign-in name (UPN)> | Select DisplayName, UsageLocation
+```
+
+Se não houver nenhum local de uso atribuído, você poderá atribuir um com estes comandos:
+
+```
+$userUPN="<user sign-in name (UPN)>"
+$userLoc="<ISO 3166-1 alpha-2 country code>"
+Set-AzureADUser -ObjectID $userUPN -UsageLocation $userLoc
+```
 
 Por fim, especifique o nome de entrada do usuário e o nome do plano de licença e execute esses comandos.
 
@@ -68,7 +85,7 @@ Para localizar as contas não licenciadas em sua organização, execute este com
 ```
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
-    
+
 Você só pode atribuir licenças a contas de usuário que tenham a propriedade **UsageLocation** definida para um código de país 3166-1 do país de 2 Alpha válido. Por exemplo, US para os Estados Unidos e FR para a França. Alguns serviços do Office 365 não estão disponíveis em determinados países. Para obter mais informações, consulte [about License Restrictions](https://go.microsoft.com/fwlink/p/?LinkId=691730).
     
 Para localizar contas que não tenham um valor **UsageLocation** , execute este comando.

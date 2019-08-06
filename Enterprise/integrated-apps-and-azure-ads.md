@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Saiba como os aplicativos integrados do O365 são registrados e administrados no Azure AD
-ms.openlocfilehash: 01bd932ed12e040a0e6dae517d7b4fd360b5da80
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c52b4beefaefd4a115c132c6f82e7f1d20564b46
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067247"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782521"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Aplicativos integrados e Azure AD para administradores do Office 365
 
@@ -32,7 +32,7 @@ Você precisa fazer estes dois procedimentos antes de gerenciar seus aplicativos
   
 |**Pré-requisitos**|**Comments**|
 |:-----|:-----|
-|[Registre a sua assinatura gratuita do Active Directory do Azure](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Cada assinatura paga do Office 365 vem com uma assinatura gratuita do Azure Active Directory. Você pode usar o Azure AD para gerenciar seus aplicativos e para criar e gerenciar contas de usuário e de grupo. Para ativar esta assinatura e acessar o portal de gerenciamento do Azure, você precisa concluir um processo de registro de uma única vez. Posteriormente, você pode ir para o Azure AD no centro de administração do Office 365.  <br/> |
+|[Registre a sua assinatura gratuita do Active Directory do Azure](https://go.microsoft.com/fwlink/?LinkId=617127) <br/> |Cada assinatura paga do Office 365 vem com uma assinatura gratuita do Azure Active Directory. Você pode usar o Azure AD para gerenciar seus aplicativos e para criar e gerenciar contas de usuário e de grupo. Para ativar esta assinatura e acessar o portal de gerenciamento do Azure, você precisa concluir um processo de registro de uma única vez. Posteriormente, você pode ir para o Azure AD no centro de administração do Microsoft 365.  <br/> |
 |[Ativando ou desativando aplicativos integrados](https://support.office.com/article/7e453a40-66df-44ab-92a1-96786cb7fb34#__toc379982114) <br/> |Você deve ativar aplicativos integrados para seus usuários para permitir que aplicativos de terceiros acessem suas informações do Office 365 e para registrar aplicativos no Azure AD. Por exemplo, quando alguém usa um aplicativo de terceiros, esse aplicativo pode pedir permissão para acessar seu calendário e editar arquivos que estão em uma pasta do OneDrive for Business.  <br/> |
    
 O gerenciamento de aplicativos do Office 365 requer que você tenha conhecimento dos aplicativos no Azure AD. Estes artigos ajudam a fornecer o plano de fundo necessário.

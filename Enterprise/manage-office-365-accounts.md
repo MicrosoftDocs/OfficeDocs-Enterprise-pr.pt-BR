@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Saiba quais ferramentas usar para gerenciar seus usuários do Office 365 e como o que você pode usar depende de como você gerencia as identidades do usuário. '
-ms.openlocfilehash: 007de5844badbaad2c5061c69cae33523438805f
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102439"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490734"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Ferramentas para gerenciar contas do Office 365
 
@@ -53,7 +53,7 @@ Ao decidir o modo como sua organização criará e gerenciará contas, considere
   
 - O software de sincronização de diretório precisa ser instalado em servidores dentro do seu ambiente local para conectar as identidades entre o Office 365 e seu diretório local.
     
-- Qualquer opção de sincronização de diretório, incluindo as opções de SSO, requer que seus atributos de diretório local atendam aos padrões. As informações específicas de quais atributos são usados no seu diretório e qual limpeza (se houver) é necessária são descritas em preparar-se [para provisionar usuários por meio da sincronização de diretórios com o Office 365](prepare-for-directory-synchronization.md). Confira [instalar e executar a ferramenta IdFix do Office 365](install-and-run-idfix.md) para obter instruções sobre como usar o IdFix para automatizar a limpeza de diretório. 
+- Qualquer opção de sincronização de diretório, incluindo as opções de SSO, requer que seus atributos de diretório local atendam aos padrões. As informações específicas de quais atributos são usados no seu diretório e qual limpeza (se houver) é necessária são descritas em preparar-se [para provisionar usuários por meio da sincronização de diretórios com o Office 365](prepare-for-directory-synchronization.md). Consulte [baixar e executar a ferramenta IdFix do Office 365](install-and-run-idfix.md) para obter instruções sobre como usar o IdFix para automatizar a limpeza de diretório. 
     
 - Planejar como você vai criar contas do Office 365.
     

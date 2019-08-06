@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
-ms.openlocfilehash: 37f90ba5c008a4e0b562526d10185e01d07e4918
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067167"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782471"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
@@ -115,7 +115,7 @@ Entendemos que você ainda pode exigir o processamento manual para alterações 
 Para obter informações sobre um modelo e exemplo de fluxo da Microsoft, consulte [use Microsoft Flow para receber um email para alterações nos endereços IP e URLs do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
-## <a name="office-365-network-endpoints-faq"></a>PERGUNTAS FREQUENTEs sobre pontos de extremidade de rede do Office 365
+## <a name="office-365-network-endpoints-faq"></a>Perguntas frequentes sobre pontos de extremidade de rede do Office 365
 
 Perguntas frequentes sobre o administrador sobre a conectividade do Office 365:
   
@@ -194,7 +194,7 @@ O pacote do Office 365 é dividido nas principais áreas de serviço. Eles podem
 |**Exchange** <br/> |Proteção do Exchange Online e do Exchange Online <br/> |
 |**SharePoint** <br/> |SharePoint Online e OneDrive for Business <br/> |
 |**Skype for Business Online e Microsoft Teams** <br/> |Skype for Business e Microsoft Teams <br/> |
-|**Comum** <br/> |Office 365 Pro Plus, Office Online, Azure AD e outros pontos de extremidade de rede comuns <br/> |
+|**Comum** <br/> |Office 365 Pro Plus, Office em um navegador, Azure AD e outros pontos de extremidade de rede comuns <br/> |
 
 Além dos serviços básicos da Internet, há serviços de terceiros que são usados apenas para integrar a funcionalidade. Embora sejam necessários para integração, eles são marcados como opcionais no artigo de pontos de extremidade do Office 365, o que significa que a funcionalidade principal do serviço continuará funcionando se o ponto de extremidade não estiver acessível. Qualquer ponto de extremidade de rede necessário terá o atributo Required definido como true. Qualquer ponto de extremidade de rede opcional terá o atributo Required definido como false e o atributo Notes detalhará a funcionalidade ausente que você deverá esperar se a conectividade for bloqueada.
   

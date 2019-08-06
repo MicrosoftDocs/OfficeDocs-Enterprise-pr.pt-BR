@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Fornece instruções sobre como usar o IdFix para preparar e limpar o diretório local antes de sincronizar com o Office 365.
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162364"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490784"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparar atributos de diretório para sincronizarem com o Office 365 usando a ferramenta IdFix
 Este tópico contém instruções detalhadas sobre como executar a ferramenta IdFix, alguns erros comuns que você pode encontrar, sugestões de correção, exemplos e práticas recomendadas para o que fazer se você tiver um grande número de erros.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Correção de erros no seu diretório usando a GUI do IdFix
+
 [Execute a ferramenta IdFix do Office 365](install-and-run-idfix.md) para procurar problemas no seu diretório e, em seguida, corrija os erros na GUI, conforme descrito neste tópico. Se uma tabela em branco for retornada pela ferramenta, nenhum erro foi descoberto. Se houver muitos problemas em seu diretório, pode ser difícil quando a ferramenta retornar os erros. Uma maneira de resolver isso é corrigir todos os erros de um tipo primeiro e, em seguida, passar para o próximo tipo. 
   
 1. Antes de começar a fazer alterações, dê uma olhada nas recomendações apresentadas pelo IdFix.

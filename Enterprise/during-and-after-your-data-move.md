@@ -3,7 +3,7 @@ title: Durante e após a migração dos dados
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 07/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
+ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067727"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786226"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -38,7 +38,7 @@ Assista ao centro de mensagens do Office 365 para confirmação quando se move p
 |Coréia do Sul  <br/> |31 de outubro de 2018  <br/> |
 |Reino Unido  <br/> |15 de setembro de 2019  <br/> |
 |França  <br/> |15 de setembro de 2020  <br/> |
-|Emirados Árabes Unidos  <br/> |Apresentados  <br/> |
+|Emirados Árabes Unidos  <br/> |1 de fevereiro de 2022  <br/> |
 |África do Sul  <br/> |Apresentados  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
@@ -51,8 +51,8 @@ Alguns usuários abrem uma pasta de email compartilhada de outra caixa de correi
   
 |**Configuração**|**Descrição**|
 |:-----|:-----|
-|O usuário tem permissão de pasta de caixa de correio para outra caixa de correio  <br/> |Potencialmente limitado.  <br/> Se o usuário A e A caixa de correio B não estiverem na mesma Geografia durante a movimentação do locatário, o usuário A não poderá abrir a pasta da caixa de correio B no Outlook Web Access se O usuário apenas tiver permissão para uma pasta específica na caixa de correio B.  <br/> Para adicionar uma pasta compartilhada, clique com o botão direito do mouse no nome do usuário no painel de navegação esquerdo e selecione **Adicionar pasta compartilhada**.  <br/> |
-|Usuário com permissão de caixa de correio completa para outra caixa de correio  <br/> |Totalmente suportado.  <br/> Se O usuário A tem permissão de "acesso total" para a caixa de correio B, O usuário A pode clicar na pasta compartilhada no painel de navegação à esquerda no Outlook Web Access para abrir uma janela mostrando a caixa de correio B.  Um usuário pode abrir uma caixa de correio compartilhada usando o Outlook Web Access durante a movimentação sem qualquer impacto adverso. A limitação só se aplica ao compartilhamento no nível de pasta em uma caixa de correio.           |
+|O usuário tem permissão de pasta de caixa de correio para outra caixa de correio  <br/> |Potencialmente limitado.  <br/> Se o usuário A e A caixa de correio B não estiverem na mesma Geografia durante a movimentação do locatário, o usuário A não poderá abrir a pasta da caixa de correio B no Outlook Web Access se o usuário apenas tiver permissão para uma pasta específica na caixa de correio B.  <br/> Para adicionar uma pasta compartilhada, clique com o botão direito do mouse no nome do usuário no painel de navegação esquerdo e selecione **Adicionar pasta compartilhada**.  <br/> |
+|Usuário com permissão de caixa de correio completa para outra caixa de correio  <br/> |Totalmente suportado.  <br/> Se o usuário A tem permissão de "acesso total" para a caixa de correio B, o usuário A pode clicar na pasta compartilhada no painel de navegação à esquerda no Outlook Web Access para abrir uma janela mostrando a caixa de correio B.  Um usuário pode abrir uma caixa de correio compartilhada usando o Outlook Web Access durante a movimentação sem qualquer impacto adverso. A limitação só se aplica ao compartilhamento no nível de pasta em uma caixa de correio.           |
    
 ### <a name="public-folders"></a>Pastas públicas
 
@@ -74,7 +74,7 @@ Quando o SharePoint Online é movido, os dados dos seguintes serviços também s
     
 - Serviços de vídeo do Office 365
     
-- Office Online
+- Office no navegador s
     
 - Office 365 ProPlus
     

@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Este artigo é para administradores. Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usuário deseja refazê-los, mas não pode recuperá-los. Você pode ser capaz de recuperar os itens removidos se eles não foram removidos permanentemente da caixa de correio do usuário. '
-ms.openlocfilehash: d4be48d6166d970572dd1cb343ccd83f22330e12
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203650"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782611"
 ---
 <a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
@@ -48,7 +48,7 @@ A primeira etapa é atribuir as permissões necessárias no Exchange Online para
     
 2. Selecione o ícone ![do inicializador de aplicativos o ícone do inicializador de aplicativos no Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo e clique em **administrador**.
     
-3. Na navegação à esquerda no centro de administração do Office 365, expanda **centros de administração**e clique em **Exchange**.
+3. Na navegação à esquerda no centro de administração do Microsoft 365, expanda **centros de administração**e clique em **Exchange**.
     
     ![Lista do centro de administração](media/7d308eb7-ba63-4156-a845-3770facc5de4.PNG)
   
@@ -85,7 +85,7 @@ Quando você executa uma pesquisa de descoberta eletrônica in-loco, a pasta ite
     
 2. Selecione o ícone ![do inicializador de aplicativos o ícone do inicializador de aplicativos no Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo e clique em **administrador**.
     
-3. Na navegação à esquerda no centro de administração do Office 365, expanda **administrador**e clique em **Exchange**.
+3. Na navegação à esquerda no centro de administração do Microsoft 365, expanda **administrador**e clique em **Exchange**.
     
 4. No centro de administração do Exchange, clique em **Gerenciamento de conformidade**, clique **em &amp; bloqueio de descoberta eletrônica in-loco**e](media/8ee52980-254b-440b-99a2-18d068de62d3.gif), em seguida, clique em **novo**![ícone de adição.
     

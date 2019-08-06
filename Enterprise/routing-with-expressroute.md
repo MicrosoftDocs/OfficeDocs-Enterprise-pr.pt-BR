@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para entender corretamente o tráfego de roteamento para o Office 365 usando o Azure ExpressRoute, você precisará de uma compreensão dos requisitos de roteamento principal do ExpressRoute e dos domínios de roteamento e circuitos do ExpressRoute. Eles formam os conceitos básicos para usar o ExpressRoute em que os clientes do Office 365 confiarão.
-ms.openlocfilehash: 60277e9d9f2a5b2fc92465b57b5aa08148b604f7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070997"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722710"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Como rotear com o ExpressRoute para Office 365
 
@@ -90,11 +90,11 @@ Outros aplicativos, como o vídeo do Office 365, são um aplicativo do Office 36
 
 Cada um dos recursos do Office 365 que estão disponíveis usando o emparelhamento da Microsoft estão listados no [artigo de pontos de extremidade do office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) por tipo de aplicativo e FQDN. O motivo para usar o FQDN nas tabelas é permitir que os clientes gerenciem o tráfego usando arquivos PAC ou outras configurações de proxy, consulte nosso guia para [gerenciar pontos de extremidade do Office 365](https://aka.ms/manageo365endpoints) para arquivos PAC de exemplo.
   
-Em algumas situações, utilizamos um domínio curinga onde um ou mais subFQDNss são anunciados de forma diferente do domínio curinga de nível superior. Isso geralmente ocorre quando o caractere curinga representa uma longa lista de servidores que são todos anunciadas para o ExpressRoute e a Internet, enquanto um pequeno subconjunto de destinos é anunciado apenas para a Internet ou vice-versa. Confira as tabelas abaixo para entender onde estão as diferenças.
+Em algumas situações, utilizamos um domínio curinga onde um ou mais subfqdnss são anunciados de forma diferente do domínio curinga de nível superior. Isso geralmente ocorre quando o caractere curinga representa uma longa lista de servidores que são todos anunciadas para o ExpressRoute e a Internet, enquanto um pequeno subconjunto de destinos é anunciado apenas para a Internet ou vice-versa. Confira as tabelas abaixo para entender onde estão as diferenças.
   
-Esta tabela exibe os FQDNs curinga que são anunciados para a Internet e para o Azure ExpressRoute junto com os subFQDNs que são anunciados apenas para a Internet.
+Esta tabela exibe os FQDNs curinga que são anunciados para a Internet e para o Azure ExpressRoute junto com os subfqdns que são anunciados apenas para a Internet.
 
-|**Domínio curinga anunciado para o ExpressRoute e circuitos da Internet**|**SubFQDN anunciado somente para circuitos da Internet**|
+|**Domínio curinga anunciado para o ExpressRoute e circuitos da Internet**|**Subfqdn anunciado somente para circuitos da Internet**|
 |:-----|:-----|
 |\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
 |\*. officeapps.live.com  <br/> |nexusRules.officeapps.live.com  <br/> nexus.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> cdn.odc.officeapps.live.com  <br/> ols.officeapps.live.com  <br/> ocsredir.officeapps.live.com  <br/> ocws.officeapps.live.com  <br/> ocsa.officeapps.live.com  <br/> |
@@ -107,9 +107,9 @@ Normalmente, os arquivos de PAC se destinam a enviar solicitações de rede para
 
 3. Inclua outros pontos de extremidade de rede ou regras abaixo dessas duas entradas, enviando o tráfego para o proxy.
 
-Esta tabela exibe os domínios curinga que são anunciados para circuitos da Internet somente junto com os subFQDNss anunciados para o Azure ExpressRoute e circuitos de Internet. Para o seu arquivo de PAC acima, os FQDNs na coluna dois da tabela abaixo são listados como anunciados para o ExpressRoute no link referenciado, o que significa que eles seriam incluídos no segundo grupo de entradas no arquivo.
+Esta tabela exibe os domínios curinga que são anunciados para circuitos da Internet somente junto com os subfqdnss anunciados para o Azure ExpressRoute e circuitos de Internet. Para o seu arquivo de PAC acima, os FQDNs na coluna dois da tabela abaixo são listados como anunciados para o ExpressRoute no link referenciado, o que significa que eles seriam incluídos no segundo grupo de entradas no arquivo.
 
-|**Domínio curinga anunciado somente para circuitos da Internet**|**SubFQDN anunciado para o ExpressRoute e circuitos da Internet**|
+|**Domínio curinga anunciado somente para circuitos da Internet**|**Subfqdn anunciado para o ExpressRoute e circuitos da Internet**|
 |:-----|:-----|
 |\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
@@ -230,7 +230,7 @@ Aqui está um link curto que você pode usar para voltar: [https://aka.ms/erorou
   
 ## <a name="related-topics"></a>Tópicos Relacionados
 
-[Conectividade de rede para Office 365](network-connectivity.md)
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
   
 [Microsoft Azure ExpressRoute para Office 365](azure-expressroute.md)
   

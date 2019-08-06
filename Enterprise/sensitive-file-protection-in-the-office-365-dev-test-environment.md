@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumo: Configure e demonstre como o gerenciamento de direitos de informação do Office 365 protege seus arquivos confidenciais, mesmo quando eles são publicados no conjunto de sites do SharePoint Online errado.'
-ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070887"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782491"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365
 
@@ -98,7 +98,7 @@ Em seguida, crie um grupo de executivos privados e adicione as novas contas exec
     
   - Se você estiver usando o ambiente de desenvolvimento/teste do Office Enterprise 365 simulado, use o portal do Azure para se conectar à máquina virtual do CLIENT1 e, em seguida, entre no CLIENT1.
     
-2. Na guia **Microsoft Office Home** , clique em **administrador do > grupos de >** e clique em **Adicionar um grupo**.
+2. Na guia **Microsoft Office Home** , clique em **administrador > grupos >** e, em seguida, clique em **Adicionar um grupo**.
     
 3. Em **Adicionar um grupo**, selecione **grupo do Office 365** para o tipo de grupo, digite **executivos** em **nome** e **ID do grupo**, selecione **privado** para **privacidade**e clique em **selecionar proprietário**.
     
@@ -128,7 +128,7 @@ Em seguida, você cria um conjunto de sites executivos e permite que apenas os m
     
 2. Na guia **centro de administração do Office** , clique em **centros de administração > SharePoint**.
     
-3. Na guia **centro de administração do SharePoint** , clique em **novo conjunto de sites privados >**.
+3. Na guia **centro de administração do SharePoint** , clique em **novo > conjunto de sites particulares**.
     
 4. No painel novo conjunto de sites, digite **executivos** em **título**, executivos na caixa URL, especifique o nome da conta de administrador global no **administrador**e clique em **OK**.
     
@@ -172,7 +172,7 @@ Em seguida, você entra com uma conta executiva e cria um documento no conjunto 
     
 4. Digite o nome da conta do **CEO** e sua senha e clique em **entrar**.
     
-5. Em uma nova guia do navegador, digite a URL do conjunto de sites executivos ( **https://**\<Organization name>**. SharePoint.com/sites/Executives**).
+5. Em uma nova guia do navegador, digite a URL para o conjunto de sites executivos (nome da organização do **https://**\<>**. SharePoint.com/sites/Executives**).
     
 6. Clique em **documentos**, clique em **novo** e em **documento do Word**.
     
@@ -190,7 +190,7 @@ Em seguida, Baixe uma cópia local do documento SensitiveData-BeforeIRM. docx e,
     
 3. Armazene o documento **SensitiveData-BeforeIRM. docx** na pasta criada na etapa 1.
     
-4. Em uma nova guia do navegador, digite a URL do conjunto de sites de vendas ( **https://**\<Organization name>**. SharePoint.com/sites/Sales**).
+4. Em uma nova guia do navegador, digite a URL do conjunto de sites de vendas (nome da organização do **https://**\<>**. SharePoint.com/sites/Sales**).
     
 5. Clique na pasta **documentos** do **conjunto de sites de vendas**.
     
@@ -228,7 +228,7 @@ Para preparar o Office 365 para as fases 3 e 4, habilite o IRM para o SharePoint
     
 3. Na página de **entrada do Office 365** , clique no nome da conta de administrador global, digite sua senha e clique em **entrar**.
     
-4. Na guia **Microsoft Office Home** , clique em **administrador do _GT_ de administração do SharePoint >**.
+4. Na guia **Microsoft Office Home** , clique em **centro de administração de > de administração > SharePoint**.
     
 5. Na guia **centro de administração do SharePoint** , clique em **configurações**.
     
@@ -316,7 +316,7 @@ Em seguida, agindo como um usuário normal, você tenta acessar o documento **Se
     
 6. Na página **documentos** , abra o documento **SensitiveData-AfterIRM. docx** .
     
-    Você deve ver uma mensagem que diz "o Word online não pode abrir este documento porque ele está protegido pelo gerenciamento de direitos de informação (IRM)". 
+    Você deve ver uma mensagem afirmando que "o Word não pode abrir este documento porque ele está protegido pelo gerenciamento de direitos de informação (IRM)". 
     
 7. Clique em **Editar no Word**. Você será solicitado a confirmar se deseja abrir o arquivo. Clique em **Sim**.
     

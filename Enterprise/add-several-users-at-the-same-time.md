@@ -24,28 +24,27 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Saiba como adicionar vários usuários ao Office 365 para empresas de uma lista em uma planilha ou outro arquivo formatado por CSV. Assista a um vídeo sobre o YouTube que explica como adicionar contas ao Office 365. No final desse processo, cada usuário com uma conta terá uma caixa de correio do Office 365. '
-ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068687"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198653"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Adicionar vários usuários ao mesmo tempo para o Office 365 – Ajuda da administração
 
 É necessário que cada pessoa na sua equipe tenha uma conta de usuário para poder entrar e acessar os serviços do Office 365, como o email e o Office. Se houver muitas pessoas, é possível adicionar todas as contas de uma só vez a partir de uma planilha do Excel ou de outro arquivo salvo em formato CSV. [Não sabe o que é o formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Adicionar vários usuários ao Office 365 no Centro de administração do Office 365
+## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Adicionar vários usuários ao Office 365 no centro de administração do Microsoft 365
 
 1. Entre no Office 365 com uma conta corporativa ou de estudante. 
     
-2. No Centro de administração do Office 365, escolha **Usuários** \> **Usuários ativos**.
+2. No centro de administração, escolha usuários **ativos**do **usuário** \> .
     
-    ![In the Admin center choose Users and then Active users](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![No centro de administração, escolha usuários e, em seguida, usuários ativos](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. Na lista suspensa **Mais**, escolha **Importar vários usuários**.
     
-4. No painel **Importar vários usuários**, opcionalmente, você pode baixar um arquivo CSV de exemplo com ou sem dados de exemplo preenchidos. 
+3. No painel **Importar vários usuários**, opcionalmente, você pode baixar um arquivo CSV de exemplo com ou sem dados de exemplo preenchidos. 
     
     ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
   
@@ -63,15 +62,15 @@ ms.locfileid: "34068687"
   
   ```
 
-5. Insira um caminho de arquivo na caixa ou escolha **Procurar** para navegar até o local do arquivo CSV. Em seguida, escolha **Verificar**.
+4. Insira um caminho de arquivo na caixa ou escolha **Procurar** para navegar até o local do arquivo CSV. Em seguida, escolha **Verificar**.
     
     ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
     Se houver algum problema com o arquivo, o problema será exibido no painel. Você também pode baixar um arquivo de log.
     
-6. Na caixa de diálogo **Definir opções do usuário**, você pode definir o status de entrada e escolher a licença de produto que será atribuída a todos os usuários. 
+5. Na caixa de diálogo **Definir opções do usuário**, você pode definir o status de entrada e escolher a licença de produto que será atribuída a todos os usuários. 
     
-7. Na caixa de diálogo **Exibir seu resultado**, você pode optar por enviar os resultados a si mesmo ou a outros usuários (as senhas estarão em texto sem formatação), pode ver quantos usuários foram criados e se precisa comprar mais licenças para atribuir a alguns dos novos usuários. 
+6. Na caixa de diálogo **Exibir seu resultado**, você pode optar por enviar os resultados a si mesmo ou a outros usuários (as senhas estarão em texto sem formatação), pode ver quantos usuários foram criados e se precisa comprar mais licenças para atribuir a alguns dos novos usuários. 
     
 ## <a name="watch-the-video"></a>Ver o vídeo
 <a name="bk_preview"> </a>
@@ -146,7 +145,7 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
     
 - ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>Para adicionar vários usuários ao Office 365 no antigo Centro de administração do Office 365
+## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Adicionar vários usuários ao Office 365 no centro de administração antigo
 
 1. Baixe [esta planilha de exemplo](https://www.microsoft.com/en-us/download/details.aspx?id=45485) e abra-a no Excel. 
     
@@ -162,13 +161,13 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
     
 2. Entre no Office 365 com uma conta corporativa ou de estudante. 
     
-3. Vá para o centro de administração do Office 365.
+3. Vá para o centro de administração.
     
 4. Para que as pessoas possam usar serviços do Office 365, elas precisam ter uma licença atribuída. Antes de continuar, convém verificar se você possui licenças suficientes para todos os usuários listados na sua planilha. Escolha **Cobrança** \> **Assinaturas** para ver se há licenças suficientes. Se você precisar comprar mais licenças, escolha ** Alterar a quantidade de licenças **. Ou você pode executar o assistente, atribuir as licenças que você possui, comprar outras licenças mais tarde e executar o assistente novamente. 
     
 5. Agora, vá para o assistente Adicionar usuários em massa: escolha **Usuários** \> **Usuários Ativos**. Escolha ![O ícone para adicionar vários usuários ao Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png) conforme mostrado na figura a seguir. 
     
-    ![Uma imagem da seção de usuários do Centro de administração do Office 365](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
+    ![Uma imagem da seção usuários do centro de administração](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
   
     O assistente Adicionar usuários em massa aparecerá e o guiará pelas etapas para adicionar um grupo de usuários ao Office 365. 
     
@@ -188,7 +187,7 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
     
     ![Etapa 4 do Assistente de Adição de Usuários em Massa - Licenças](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
   
-    Você pode escolher **Comprar mais licenças**, mas você sairá do assistente para Adicionar usuários em massa e irá para a **Cobrança** no Centro de administração do Office 365. Após comprar mais licenças, você terá que esperar alguns minutos para que o pedido seja processado e para que você possa iniciar o assistente para Adicionar usuários em massa desde o começo. 
+    Você pode escolher **comprar mais licenças**, mas sairá do assistente de adição de usuários em massa e vá para **cobrança** no centro de administração do Microsoft 365. Após comprar mais licenças, você terá que esperar alguns minutos para que o pedido seja processado e para que você possa iniciar o assistente para Adicionar usuários em massa desde o começo. 
     
     Se você não comprar mais licenças, não serão criadas contas para todas as pessoas listadas na sua planilha. 
     

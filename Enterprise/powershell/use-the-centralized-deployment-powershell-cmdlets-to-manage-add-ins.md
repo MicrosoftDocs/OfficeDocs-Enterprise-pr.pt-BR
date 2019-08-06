@@ -15,16 +15,16 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use os cmdlets do PowerShell de implantação centralizada para ajudá-lo a implantar e gerenciar suplementos do Office para sua organização do Office 365.
-ms.openlocfilehash: 404085d79827664437f3ad327fac4a99166adcf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071137"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782581"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos
 
-Como um administrador do Office 365, você pode implantar suplementos do Office para usuários por meio do recurso de implantação centralizada (consulte [Manage Deployment of Office 365 Add-ins no centro de administração do office 365](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Além de implantar os suplementos do Office por meio do centro de administração do Office 365, você também pode usar o Microsoft PowerShell. [Baixe](https://go.microsoft.com/fwlink/p/?linkid=850850) os cmdlets do PowerShell de implantação centralizada no centro de download da Microsoft. 
+Como um administrador do Office 365, você pode implantar suplementos do Office para usuários por meio do recurso de implantação centralizada (consulte [Manage Deployment of Office 365 Add-ins no centro de administração](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f)). Além de implantar os suplementos do Office por meio do centro de administração, você também pode usar o Microsoft PowerShell. [Baixe](https://go.microsoft.com/fwlink/p/?linkid=850850) os cmdlets do PowerShell de implantação centralizada no centro de download da Microsoft. 
   
 ## <a name="what-do-you-want-to-do"></a>O que você deseja fazer?
 

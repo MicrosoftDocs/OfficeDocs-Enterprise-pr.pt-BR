@@ -15,18 +15,18 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Resumo: Use o Office 365 PowerShell para configurar propriedades de várias contas de usuário ou individuais em seu locatário do Office 365.'
-ms.openlocfilehash: 3fdf5c4c5dbb4c44a3c91d343bd77810a1411a20
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069231"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782601"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurar propriedades da conta de usuário com o Office 365 PowerShell
 
  **Resumo:** Use o Office 365 PowerShell para configurar propriedades de várias contas de usuário ou individuais em seu locatário do Office 365.
   
-Embora você possa usar o centro de administração do Office 365 para configurar as propriedades das contas de usuário do seu locatário do Office 365, você também pode usar o Office 365 PowerShell e fazer algumas coisas que o centro de administração do Office 365 não pode.
+Embora você possa usar o centro de administração do Microsoft 365 para configurar as propriedades das contas de usuário do seu locatário do Office 365, você também pode usar o Office 365 PowerShell e realizar algumas coisas que o centro de administração não pode.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
@@ -38,35 +38,35 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
 
 Você identifica a conta com o parâmetro **-ObjectID** e define ou altera propriedades específicas com parâmetros adicionais. Veja a seguir uma lista dos parâmetros mais comuns.
   
-- -Department "\<Department name>"
+- -Department "\<nome do departamento>"
     
-- -DisplayName "\<name> de usuário completo"
+- -DisplayName "\<nome de usuário completo>"
     
-- -FacsimilieTelephoneNumber "\<fax number>"
+- -FacsimilieTelephoneNumber "\<número de fax>"
     
-- -Exname>va\<"usuário primeiro"
+- -Exnamename\<"nome de usuário>"
     
-- -Sobrenome "\<último usuário name>"
+- -Sobrenome "\<último nome do usuário>"
     
-- – "\<Telefone celular number>"
+- – "\<Número de telefone celular>" móvel
     
-- -JobTitle "\<trabalho title>"
+- -JobTitle "\<título do trabalho>"
     
-- -PreferredLanguage "\<language>"
+- -PreferredLanguage "\<idioma>"
     
-- -StreetAddress "\<rua address>"
+- -StreetAddress "\<endereço>"
     
-- -City "\<City name>"
+- -City "\<nome da cidade>"
     
-- -State "\<estado name>"
+- -State "\<nome do estado>"
     
-- -PostalCode "\<code> postal"
+- -PostalCode "\<> de código postal"
     
-- -País "\<país name>"
+- -País "\<nome do país>"
     
-- -TelephoneNumber "\<number> de telefone do Office"
+- -TelephoneNumber "\<número de telefone do Office>"
     
-- -UsageLocation "\<2 caracteres de país ou região code>"
+- -UsageLocation "\<código de país ou região de 2 caracteres>"
     
     Este é o código de país ou região ISO 3166-1 alfa-2 (a2) de duas letras.
     
@@ -87,7 +87,7 @@ Este comando instrui o Office 365 PowerShell a:
 - Exibe apenas a propriedade nome principal do usuário para cada conta ( **Select-Object userPrincipalName** ).
 - Exibir uma tela por vez ( **mais** ).
     
-Este comando listará todas as suas contas. Se você deseja exibir o nome principal de usuário para uma conta com base no seu nome de exibição (nome e sobrenome), preencha a variável de **$username** abaixo (removendo os \< caracteres e >) e execute os seguintes comandos:
+Este comando listará todas as suas contas. Se você deseja exibir o nome principal de usuário para uma conta com base no seu nome de exibição (nome e sobrenome), preencha a variável de **$username** abaixo (removendo os \< caracteres e >) e, em seguida, execute os seguintes comandos:
   
 ```
 $userName="<Display name>"
@@ -151,37 +151,37 @@ Para configurar as propriedades de uma conta de usuário específica, use o cmdl
 
 Você identifica a conta com o parâmetro **-userPrincipalName** e define ou altera propriedades específicas com parâmetros adicionais. Veja a seguir uma lista dos parâmetros mais comuns.
   
-- -City "\<City name>"
+- -City "\<nome da cidade>"
     
-- -País "\<país name>"
+- -País "\<nome do país>"
     
-- -Department "\<Department name>"
+- -Department "\<nome do departamento>"
     
-- -DisplayName "\<name> de usuário completo"
+- -DisplayName "\<nome de usuário completo>"
     
-- – Fax "\<fax number>"
+- – Fax "\<número de fax>"
     
-- -FirstName "\<User First name>"
+- -FirstName "\<nome do usuário>"
     
-- -LastName "\<última name> do usuário"
+- -LastName "\<último nome do usuário>"
     
-- -MobilePhone "\<telefone celular number>"
+- -MobilePhone "\<número de telefone celular>"
     
-- – Office "\<Office location>"
+- -Office "\<local do Office>"
     
-- -PhoneNumber "\<number> de telefone do Office"
+- -PhoneNumber "\<número de telefone do Office>"
     
-- -PostalCode "\<code> postal"
+- -PostalCode "\<> de código postal"
     
-- -PreferredLanguage "\<language>"
+- -PreferredLanguage "\<idioma>"
     
-- -State "\<estado name>"
+- -State "\<nome do estado>"
     
-- -StreetAddress "\<rua address>"
+- -StreetAddress "\<endereço>"
     
-- -Title "\<título name>"
+- -Title "\<nome do título>"
     
-- -UsageLocation "\<2 caracteres de país ou região code>"
+- -UsageLocation "\<código de país ou região de 2 caracteres>"
     
     Este é o código de país ou região ISO 3166-1 alfa-2 (a2) de duas letras.
     
@@ -203,7 +203,7 @@ Este comando instrui o Office 365 PowerShell a:
     
 - Exibir uma tela por vez ( **mais** ).
     
-Este comando listará todas as suas contas. Se você deseja exibir o nome principal de usuário para uma conta com base no seu nome de exibição (nome e sobrenome), preencha a variável de **$username** abaixo (removendo os \< caracteres e >) e execute os seguintes comandos:
+Este comando listará todas as suas contas. Se você deseja exibir o nome principal de usuário para uma conta com base no seu nome de exibição (nome e sobrenome), preencha a variável de **$username** abaixo (removendo os \< caracteres e >) e, em seguida, execute os seguintes comandos:
   
 ```
 $userName="<Display name>"

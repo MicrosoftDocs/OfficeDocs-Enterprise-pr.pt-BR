@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber como o Office 365 usa redes de distribuição de conteúdo (CDNs) para melhorar o desempenho.
-ms.openlocfilehash: 8694f8aa4caf6161d221d1375d97ad5b72fb1818
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068017"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722660"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo (CDNs)
 
@@ -48,6 +48,11 @@ CDNs ajuda a melhorar o desempenho do serviço de nuvem de várias maneiras:
 ## <a name="the-office-365-cdn"></a>A CDN do Office 365
 
 A rede interna de distribuição de conteúdo (CDN) do Office 365 permite que os administradores do Office 365 ofereçam um melhor desempenho para as páginas do SharePoint Online da sua organização, armazenando ativos estáticos mais próximos dos navegadores que os solicitam, o que ajuda a acelerar baixa e reduz a latência. A CDN do Office 365 usa o [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para melhorar a compactação e a velocidade de download.
+
+> [!NOTE]
+> Restrições para o uso da CDN do Office 365:
+> + A CDN do Office 365 só está disponível para locatários na nuvem de **produção** (internacional). Os locatários nas nuvens do governo dos EUA, da China e da Alemanha não suportam atualmente a CDN do Office 365.
+> + A CDN do Office 365 atualmente não suporta locatários configurados com domínios personalizados ou "personalizado". Se você tiver adicionado um domínio ao seu locatário usando as instruções no tópico [Adicionar um domínio ao Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), a CDN do Office 365 retornará erros quando você tentar acessar o conteúdo da CDN.
 
 A CDN do Office 365 é composta por várias CDNs que permitem que você hospede ativos estáticos em vários locais ou _origens_e sirva-os de redes globais de alta velocidade. Dependendo do tipo de conteúdo você quiser hospedar na CDN do Office 365, você pode adicionar origens **públicas**, origens **privadas** ou ambas.
 
@@ -182,7 +187,7 @@ Aqui está um link curto que você pode usar para voltar: [https://aka.ms/o365cd
 
 [Princípios de conectividade de rede do Office 365](https://aka.ms/o365networkingprinciples)
 
-[Conectividade de rede para Office 365](network-connectivity.md)
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
 
 [Gerenciar pontos de extremidade do Office 365](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 

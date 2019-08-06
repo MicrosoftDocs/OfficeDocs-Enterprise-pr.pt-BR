@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Resumo: explica como os computadores cliente se conectam aos locatários do Office 365, dependendo do local do computador cliente e do datacenter de locatário do Office 365.'
-ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068197"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722690"
 ---
 # <a name="client-connectivity"></a>Conectividade de cliente
 
@@ -130,4 +130,4 @@ Aqui está um link curto que você pode usar para voltar: [https://aka.ms/o365cl
 
 [Gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Conectividade de rede para Office 365](network-connectivity.md)
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
