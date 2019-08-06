@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: O Microsoft Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade e intellgence e análise. Esta página fornece orientações para administradores e profissionais de ti que estão implantando, Configurando e gerenciando serviços do Office 365 em organizações empresariais.
+description: O Microsoft Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade, inteligência e análise. Esta página fornece orientações para administradores e profissionais de ti que estão implantando, Configurando e gerenciando serviços do Office 365 em organizações empresariais.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -14,15 +14,15 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487120"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490724"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>O Microsoft&nbsp;Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade e intellgence e análise. Esta página fornece links para diretrizes para administradores e profissionais de ti que estão implantando, configurando&nbsp;e gerenciando serviços do Office 365 em organizações empresariais.</p>
+<p>O Microsoft&nbsp;Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade, inteligência e análise. Esta página fornece links para diretrizes para administradores e profissionais de ti que estão implantando, configurando&nbsp;e gerenciando serviços do Office 365 em organizações empresariais.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
