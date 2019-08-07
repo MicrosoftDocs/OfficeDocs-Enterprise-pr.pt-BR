@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 9df81d14cbd18246bf10e66002d9042a3b3d9384
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070427"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782511"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -148,9 +148,9 @@ A tabela a seguir descreve como você pode combinar várias ofertas da nuvem da 
 |**Office 365** <br/> |N/D  <br/> |Adicione uma assinatura do Azure na sua organização no portal do Azure.  <br/> |Adicionar uma assinatura do Intune/EMS para sua organização no centro de administração do Microsoft 365.  <br/> |Adicionar uma assinatura do Dynamics 365 para sua organização no centro de administração do Microsoft 365.  <br/> |
 |**Azure** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |N/D  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
 |**Intune/EMS** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |N/D  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
-|**Dynamics 365** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |N/D  <br/> |
+|**Dynamics 365** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |NA  <br/> |
    
-Uma maneira fácil de adicionar assinaturas de serviços baseados em SaaS da Microsoft para sua organização é por meio do centro de administração do Office 365:
+Uma maneira fácil de adicionar assinaturas de serviços baseados em SaaS da Microsoft para sua organização é por meio do centro de administração:
   
 1. Entre no centro de administração do Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com)) com sua conta de administrador global.
     
@@ -158,7 +158,7 @@ Uma maneira fácil de adicionar assinaturas de serviços baseados em SaaS da Mic
     
 3. Na página **Serviços de compra**, compre as novas assinaturas.
     
-O centro de administração do Office 365 atribui a organização e o locatário do Azure AD de sua assinatura do Office 365 para novas assinaturas das ofertas de SaaS baseadas em nuvem.
+O centro de administração atribui a organização e o locatário do Azure AD de sua assinatura do Office 365 para novas assinaturas das ofertas de SaaS baseadas em nuvem.
   
 Para adicionar uma assinatura do Azure com a mesma organização e locatário do Azure AD à sua assinatura do Office 365:
   
@@ -168,9 +168,9 @@ Para adicionar uma assinatura do Azure com a mesma organização e locatário do
     
 3. Na página **Adicionar assinatura**, selecione uma oferta e complete as informações de pagamento e o contrato.
     
-Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e deseja acessar o locatário do Azure AD do Office 365 de sua assinatura do Azure, confira as instruções em [Associar um locatário do Office 365 com uma assinatura do Azure](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
-  
-## <a name="see-also"></a>Confira também
+Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e deseja acessar o locatário do Azure AD do Office 365 de sua assinatura do Azure, confira as instruções em [Associar ou adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+ 
+## <a name="see-also"></a>Confira Também
 
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
