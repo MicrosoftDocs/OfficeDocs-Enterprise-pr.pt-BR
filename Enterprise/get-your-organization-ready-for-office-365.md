@@ -3,6 +3,7 @@ title: Plano para o Office 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Obtenha acesso aos recursos para planejar sua implantação corporativa do Office 365.
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249469"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302683"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Plano para o Office 365 Enterprise
 
@@ -38,7 +39,7 @@ O [FastTrack para Office 365](https://docs.microsoft.com/fasttrack/O365-fasttrac
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>Fazer isso sozinho planejamento para o Office 365
 
-Para planejar o Office 365 sozinho, determine as decisões de design corretas para estas áreas:
+Para planejar o Office 365 sozinho, percorra as decisões de planejamento e design para estas áreas:
 
 - Seu locatário do Office 365
 
@@ -56,7 +57,12 @@ Para planejar o Office 365 sozinho, determine as decisões de design corretas pa
 
   Inclui informações de migração para os produtos de cliente e servidor do Office 2007 e do Office 2010. Inicie [aqui](plan-upgrade-previous-versions-office.md).
 
-Você também pode entrar em sua assinatura e usar os [comunicados de implantação para os serviços do Office 365](deployment-advisors-for-office-365.md).
+>[!Note]
+>Você também pode usar esse processo para sua assinatura do [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) .
+>
+
+Você também pode entrar em sua assinatura do Office 365 e usar os [comunicados de implantação para os serviços do Office 365](deployment-advisors-for-office-365.md).
+
 
 
 <!--

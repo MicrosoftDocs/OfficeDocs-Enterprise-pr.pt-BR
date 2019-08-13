@@ -3,7 +3,7 @@ title: Roteiro de fim do suporte do Exchange 2010
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 1/31/2018
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: O Exchange 2010 está se aproximando do fim do suporte. Use este mapa de planejamento como um guia para preparar a atualização para o Exchange Online ou uma versão mais recente do Exchange Server no local.
-ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: a08ef80d2e6081adbc62b4c534ef185dcaff611f
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067567"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302743"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2010
 
@@ -44,13 +44,17 @@ Com o Exchange 2010 alcançando o fim do suporte, esse é um excelente momento p
 - Migre seus servidores Exchange 2010 para o Exchange 2016 em seus servidores locais.
 
 > [!IMPORTANT]
-> Se sua organização optar por migrar caixas de correio para o Office 365, mas pretende manter o dirSync ou o Azure AD Connect in-loco para continuar Gerenciando contas de usuário do Active Directory local, você precisará manter pelo menos um servidor Exchange local. Se o último servidor do Exchange for removido, você não poderá fazer alterações nos destinatários do Exchange no Exchange Online. Isso ocorre porque a fonte de autoridade permanece no Active Directory local e as alterações precisam ser feitas ali. Neste cenário, você tem as seguintes opções:
+> Se sua organização optar por migrar caixas de correio para o Office 365, mas pretende manter o DirSync ou o Azure AD Connect in-loco para continuar Gerenciando contas de usuário do Active Directory local, você precisará manter pelo menos um servidor Exchange local. Se o último servidor do Exchange for removido, você não poderá fazer alterações nos destinatários do Exchange no Exchange Online. Isso ocorre porque a fonte de autoridade permanece no Active Directory local e as alterações precisam ser feitas ali. Neste cenário, você tem as seguintes opções:
 
 - (**Recomendado**) Se você puder migrar suas caixas de correio para o Office 365 e atualizar seus servidores em 14 de janeiro de 2020, use o Exchange 2010 para se conectar ao Office 365 e migrar caixas de correio. Em seguida, migre o Exchange 2010 para o Exchange 2016 e encerre os servidores do Exchange 2010 restantes.
 - Se você não conseguir concluir a migração de caixa de correio e a atualização do servidor local em 14 de janeiro de 2020, atualize seus servidores locais do Exchange 2010 para o Exchange 2016 primeiro e, em seguida, use o Exchange 2016 para se conectar ao Office 365 e migrar caixas de correio.
 
 > [!NOTE]
 > Embora um pouco mais complicado, você também pode migrar caixas de correio para o Office 365 enquanto migra seus servidores locais do Exchange 2010 para o Exchange 2016.
+
+Estes são os três caminhos que você pode executar para evitar o fim do suporte para o Exchange Server 2010.
+
+![Caminhos de atualização do Exchange Server 2010](./media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 As seções a seguir exploram cada opção em mais detalhes.
 
@@ -144,12 +148,12 @@ Se você estiver pensando em realizar uma migração híbrida completa, aqui est
 - Os usuários não precisam configurar um novo perfil do Outlook na maioria de seus dispositivos (alguns telefones Android antigos podem precisar de um novo perfil) e não precisam baixar novamente seus emails.
 
 > [!IMPORTANT]
-> Se sua organização optar por migrar caixas de correio para o Office 365, mas pretende manter o dirSync ou o Azure AD Connect in-loco para continuar Gerenciando contas de usuário do Active Directory local, você precisará manter pelo menos um servidor Exchange local. Se o último servidor do Exchange for removido, você não poderá fazer alterações nos destinatários do Exchange no Exchange Online. Isso ocorre porque a fonte de autoridade permanece no Active Directory local e as alterações precisam ser feitas ali.
+> Se sua organização optar por migrar caixas de correio para o Office 365, mas pretende manter o DirSync ou o Azure AD Connect in-loco para continuar Gerenciando contas de usuário do Active Directory local, você precisará manter pelo menos um servidor Exchange local. Se o último servidor do Exchange for removido, você não poderá fazer alterações nos destinatários do Exchange no Exchange Online. Isso ocorre porque a fonte de autoridade permanece no Active Directory local e as alterações precisam ser feitas ali.
 
 Se uma migração híbrida completa for adequada para você, dê uma olhada nos seguintes recursos para ajudá-lo com a migração:
 
 - [Assistente de implantação do Exchange](https://aka.ms/exdeploy)
-- [Implantações híbridas do Exchange Server](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
+- [Implantações Híbridas do Exchange Server](https://technet.microsoft.com/en-us/library/jj200581%28v=exchg.150%29.aspx)
 - [Assistente de Configuração Híbrida](https://technet.microsoft.com/en-us/library/hh529921%28v=exchg.150%29.aspx)
 - [Perguntas frequentes do Assistente de Configuração Híbrida](https://technet.microsoft.com/en-us/library/mt488940%28v=exchg.150%29.aspx)
 - [Pré-requisitos de implantação híbrida](https://technet.microsoft.com/en-us/library/hh534377%28v=exchg.150%29.aspx)
