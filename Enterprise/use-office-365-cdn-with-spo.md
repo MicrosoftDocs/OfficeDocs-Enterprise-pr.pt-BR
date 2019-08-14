@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017311"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385189"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -29,7 +29,7 @@ Você pode usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 integr
 > [!NOTE]
 > Restrições para o uso da CDN do Office 365:
 > + A CDN do Office 365 só está disponível para locatários na nuvem de **produção** (internacional). Os locatários nas nuvens do governo dos EUA, da China e da Alemanha não suportam atualmente a CDN do Office 365.
-> + A CDN do Office 365 atualmente não suporta locatários configurados com domínios personalizados ou "personalizado". Se você tiver adicionado um domínio ao seu locatário usando as instruções no tópico [Adicionar um domínio ao Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), a CDN do Office 365 retornará erros quando você tentar acessar o conteúdo da CDN.
+> + A CDN do Office 365 atualmente não suporta locatários configurados com domínios personalizados ou "personalizado". Se você tiver adicionado um domínio a qualquer componente em seu locatário do Office 365 usando as instruções no tópico [Adicionar um domínio ao Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), a CDN do Office 365 retornará erros quando você tentar acessar o conteúdo da CDN.
 
 A CDN do Office 365 é composta por várias CDNs que permitem que você hospede ativos estáticos em vários locais ou _origens_e sirva-os de redes globais de alta velocidade. Dependendo do tipo de conteúdo você quiser hospedar na CDN do Office 365, você pode adicionar origens **públicas**, origens **privadas** ou ambas. Veja [escolher se cada origem deve ser pública ou privada](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) para obter mais informações sobre a diferença entre origens públicas e privadas.
 
