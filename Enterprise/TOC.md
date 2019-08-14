@@ -72,17 +72,14 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # Testar o Office 365
-## [Guias de laboratório de teste de adoção da nuvem](cloud-adoption-test-lab-guides-tlgs.md)
+## [Testar o Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
 ## [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
 ### [Sincronização de diretório](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Autenticação multifator](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Identidade federada](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Proteção Avançada contra Ameaças](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [Descoberta Eletrônica Avançada](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [Proteção de arquivos confidenciais](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [Rotulação e classificação de dados](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
-## [Rede virtual simulada entre locais no Azure](simulated-cross-premises-virtual-network-in-azure.md)
+### [Proteção avançada contra ameaças](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+## [Rede virtual simulada entre redes local e online no Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [Implantar Office 365 Enterprise](setup-overview-for-enterprises.md)
 
