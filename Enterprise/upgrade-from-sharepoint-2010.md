@@ -3,7 +3,7 @@ title: Atualizando do SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: O suporte para o SharePoint 2010 e o SharePoint Server 2010 termina em 13 de outubro de 2020. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
-ms.openlocfilehash: c3860e8229c8633ea605228d7d3553d0f673a7d3
-ms.sourcegitcommit: d3f8df9439e9cd15333f01b5cde2001fb4b74113
+ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35643053"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491320"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Atualizando do SharePoint 2010
 
@@ -178,6 +178,16 @@ Uma boa maneira de ver como funciona um farm híbrido do SharePoint é criar um 
   
 > [!NOTE]
 > Lembre-se de que seu farm do SharePoint Server 2010 primeiro precisará ser atualizado, no local, para o SharePoint Server 2013 ou o SharePoint Server 2016 para usar a opção híbrida. O SharePoint Foundation 2010 e o SharePoint Foundation 2013 não podem criar conexões híbridas com o SharePoint Online. 
+
+## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumo das opções de cliente e servidores do Office 2010 e do Windows 7
+
+Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para o cliente e servidores do Office 2010 e Windows 7, baixe o [cartaz de fim de serviço](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Este cartaz de uma página é uma maneira rápida de entender os vários caminhos que você pode tomar para impedir que os produtos de servidor e cliente do Office 2010 e o Windows 7 atinjam o final do serviço, com caminhos e suporte de opções preferidos no Microsoft 365 Enterprise realçado.
+
+Você pode imprimir este cartaz em formatos de carta, ofício ou tablóide (11 x 17).
   
 ## <a name="related-topics"></a>Tópicos relacionados
 

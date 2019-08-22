@@ -3,7 +3,7 @@ title: Recursos para ajudá-lo a atualizar de clientes e servidores do Office 20
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2019
+ms.date: 08/21/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: O suporte está terminando em breve para os aplicativos cliente e servidores do Office 2010, e os acordos de suporte personalizados não estão disponíveis. Use este artigo para começar a planejar sua atualização agora.
-ms.openlocfilehash: 3cd345f60c534ef8c2a464e4f9535f5f691a9110
-ms.sourcegitcommit: c718aae17c8046d5e1ef67f82ffa10e54e1eb23f
+ms.openlocfilehash: b75aea4775f2471827f472e726ccae8657a22278
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35613447"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491330"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2010
 
@@ -42,7 +42,13 @@ Enquanto você estiver planejando a atualização, este é um excelente momento 
 
 - O Office 365 ProPlus, incluído no Office 365 E3 e E5 e no Microsoft 365 Enterprise, é o conjunto de aplicativos cliente do Office que você instala no seu dispositivo local. Eles são atualizados com novos recursos de produtividade e segurança em uma base contínua do Microsoft Cloud.
 
-Use este artigo como ponto de partida para revisar suas opções.
+Para obter um resumo das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, baixe o [cartaz do fim do serviço](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+
+Este cartaz de uma página é uma maneira rápida de entender os vários caminhos que você pode tomar para impedir que os produtos de servidor e cliente do Office 2010 e o Windows 7 atinjam o final do serviço, com caminhos e suporte de opções preferidos no Microsoft 365 Enterprise realçado.
+
+Você pode imprimir este cartaz em formatos de carta, ofício ou tablóide (11 x 17).
       
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Planejamento de atualização de cliente e servidor do Office 2010
   
