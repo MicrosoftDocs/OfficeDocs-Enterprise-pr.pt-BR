@@ -1,7 +1,7 @@
 ---
 title: Como configurar o Skype for Business no local para usar a autenticação moderna híbrida
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/4/2018
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras, está disponível para o Skype for Business Server local e o Exchange Server local, bem como para o Split-Domain híbridas do Skype for Business.
-ms.openlocfilehash: a6f1b64aade9cd7c2fa5b44e18e1075008676f90
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 5db33a39ff58ae2aa21968c2f092c8ac29af5681
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067987"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493328"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Skype for Business no local para usar a autenticação moderna híbrida
 
