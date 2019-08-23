@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre as configurações de compartilhamento de convidados disponíveis no Microsoft 365.
-ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782271"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493338"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referência das configurações de compartilhamento de convidado do Microsoft 365
 
@@ -72,6 +72,8 @@ O centro de administração do Microsoft 365 tem configurações no nível da or
 |:-----|:-----|:-----|
 |Permitir que os membros do grupo fora da organização acessem o conteúdo do grupo|Habilitado|Quando definida como **Habilitado**, convidados podem acessar o conteúdo de grupos. Quando definido como **Desabilitado**, eles não podem. Essa configuração deve estar **Habilitada** para qualquer cenário em que os usuários convidados estejam interagindo com o Teams ou grupos do Office 365.|
 |Permitir que os proprietários do grupo adicionem pessoas fora da organização aos grupos|Habilitado|Quando está **Habilitado**, proprietários dos grupos do Office 365 ou do Teams podem convidar novos convidados ao grupo. Quando está **Desabilitado**, os proprietários só poderão convidar convidados que já estejam no diretório.|
+
+Essas configurações estão no nível da organização. Confira o artigo [Criar configurações de um grupo específico](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) para obter informações sobre como alterar essas configurações no nível de grupo usando o PowerShell.
 
 ## <a name="teams"></a>Teams
 
