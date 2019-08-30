@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Suporte do aplicativo cliente do Office 365 para autenticação moderna.
-ms.openlocfilehash: 603cc34e449b11efcacb8802c21cd3b4d08f37bb
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d5d17f3395b7eec736403c75b4e2b571c1123fe7
+ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704191"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36672931"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Suporte ao aplicativo cliente do Office 365-autenticação moderna
 
@@ -30,8 +30,8 @@ Saiba mais sobre [autenticação](https://docs.microsoft.com/azure/active-direct
 
  - Área de trabalho do Windows 10
  - Aplicativos modernos do Windows 10
- - Navegadores da Web
- - Android
+ - Navegadores da Web<sup>1</sup>
+ - Android<sup>2</sup>
  - iOS
  - macOS
 
@@ -45,14 +45,18 @@ As versões mais recentes dos seguintes clientes suportam a autenticação moder
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Ícone do Access](media/o365-access-64x64.png) <br> [Acesso](https://products.office.com/access) | ![Ícone do Azure](media/o365-azure-64x64.png) <br> [Portal <br> do Azure](https://azure.microsoft.com/features/azure-portal/) | ![Ícone do portal da empresa](media/o365-microsoft-64x64.png) <br> [Portal <br> da empresa](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Ícone do Delve](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Ícone do Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) 
 | ![Ícone de borda](media/o365-edge-64x64.png) <br> [Vertical](https://www.microsoft.com/windows/microsoft-edge) | ![Ícone do Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Ícone de fluxo](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Ícone de formulários](media/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Ícone de Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) 
-| ![Ícone de administração do Office 365](media/o365-o365admin-64x64.png) <br> [Administração do <br> Office 365](https://products.office.com/business/manage-office-365-admin-app) | ![Ícone de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Ícone do OneDrive for Business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Ícone do OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Ícone do Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
-| ![Ícone do Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Ícone do PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Ícone do PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Ícone de projeto](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Ícone do SharePoint](media/o365-sharepoint-64x64.png) <br> [Do](https://products.office.com/sharepoint) 
-| ![Ícone do Skype for Business](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![Ícone de StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)| ![Ícone de notas auto-adesivas](media/o365-stickynotes-64x64.png) <br> [Notas auto-adesivas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Ícone de fluxo](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Ícone de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) 
-| ![Ícone do teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Ícone de tarefas pendentes](media/o365-todo-64x64.png) <br> [Tarefa pendente](https://todo.microsoft.com) | ![Ícone do Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Ícone do Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Ícone do Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) 
-| ![Ícone do Yammer](media/o365-yammer-64x64.png) <br> [Notificador do Yammer <br>](https://products.office.com/yammer/yammer-overview) |  |
+| ![Ícone de Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Ícone de administração do Office 365](media/o365-o365admin-64x64.png) <br> [Administração do <br> Office 365](https://products.office.com/business/manage-office-365-admin-app) | ![Ícone de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Ícone do OneDrive for Business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Ícone do OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) 
+| ![Ícone do Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Ícone do Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Ícone do PowerApps](media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![Ícone do PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Ícone do PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
+| ![Ícone de projeto](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Ícone do Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Ícone do SharePoint](media/o365-sharepoint-64x64.png) <br> [Do](https://products.office.com/sharepoint) | ![Ícone do Skype for Business](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business<sup>1</sup>](https://www.skype.com/business/) | ![Ícone de StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
+| ![Ícone de notas auto-adesivas](media/o365-stickynotes-64x64.png) <br> [Notas auto-adesivas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Ícone de fluxo](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Ícone de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Ícone do teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Ícone de tarefas pendentes](media/o365-todo-64x64.png) <br> [Tarefa pendente](https://todo.microsoft.com) 
+| ![Ícone do Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Ícone de quadro de comunicações](media/o365-whiteboard-64x64.png) <br> [Quadro de comunicações<sup>1</sup>,<sup>2</sup>](https://whiteboard.microsoft.com/) | ![Ícone do Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Ícone do Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Ícone do Yammer](media/o365-yammer-64x64.png) <br> [Notificador do Yammer <br>](https://products.office.com/yammer/yammer-overview) |  |
 
 ## <a name="supported-powershell-modules"></a>Módulos do PowerShell suportados
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Ícone do Azure](media/o365-azure-ad-64x64.png) <br> [PowerShell do <br> Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Ícone do Exchange](media/o365-exchange-64x64.png) <br> [PowerShell do <br> Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Ícone do SharePoint](media/o365-sharepoint-64x64.png) <br> [PowerShell do <br> SharePoint Online](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)
+| ![Ícone do Azure](media/o365-azure-64x64.png) <br> [PowerShell do <br> Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Ícone do Exchange](media/o365-exchange-64x64.png) <br> [PowerShell do <br> Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![Ícone do SharePoint](media/o365-sharepoint-64x64.png) <br> [PowerShell do <br> SharePoint Online](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)
+
+> [!NOTE]
+> <sup>1</sup> suporte para whiteboard e Skype for Business no aplicativo Web disponível em breve. <br>
+> <sup>2</sup> o suporte para o whiteboard no Android estará disponível em breve.
