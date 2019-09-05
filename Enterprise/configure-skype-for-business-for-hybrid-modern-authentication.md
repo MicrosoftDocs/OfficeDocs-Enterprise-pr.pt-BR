@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras, está disponível para o Skype for Business Server local e o Exchange Server local, bem como para o Split-Domain híbridas do Skype for Business.
-ms.openlocfilehash: 5db33a39ff58ae2aa21968c2f092c8ac29af5681
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
+ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493328"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36759679"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Skype for Business no local para usar a autenticação moderna híbrida
 
@@ -140,7 +140,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Verifique se os novos registros foram adicionados executando o comando Get-MsolServicePrincipal da etapa 2 novamente e examinando a saída. Compare a lista/captura de tela antes da nova lista de SPNs (você também pode capturar a nova lista para seus registros). Se você tiver êxito, verá as duas novas URLs na lista. Indo em nosso exemplo, a lista de SPNs agora incluirá as URLs https://lyncweb01.contoso.com específicas e https://lyncwebext01.contoso.com/.
+4. Verifique se os novos registros foram adicionados executando o comando Get-MsolServicePrincipal da etapa 2 novamente e examinando a saída. Compare a lista/captura de tela antes da nova lista de SPNs (você também pode capturar a nova lista para seus registros). Se você tiver êxito, verá as duas novas URLs na lista. Indo em nosso exemplo, a lista de SPNs agora incluirá as URLs https://lyncwebint01.contoso.com específicas e https://lyncwebext01.contoso.com/.
     
 ### <a name="create-the-evosts-auth-server-object"></a>Criar o objeto de servidor de autenticação EvoSTS
 
