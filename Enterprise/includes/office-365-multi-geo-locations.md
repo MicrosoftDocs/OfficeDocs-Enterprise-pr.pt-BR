@@ -10,4 +10,6 @@
 |Japão                        |JPN     |Datacenters no sudeste ou leste da Ásia|
 |República da Coreia                        |KOR     |Datacenters no sudeste ou leste da Ásia|
 |América do Norte                |NAM     |Datacenters nos Estados Unidos                    |
+|África do Sul                 |ZAF     |(Em breve)                     |
+|Emirados Árabes Unidos         |ARE     |(Em breve)                     |
 |Reino Unido               |GBR     |Datacenters na Europa                |
