@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: O suporte para ends para o Project Server 2010 termina em 13 de outubro de 2020. Use este artigo como um guia para atualizar para o Project online ou uma versão mais recente do Project Server no local.
-ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491310"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782438"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Project Server 2010
 
@@ -200,14 +200,14 @@ Outros recursos:
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumo das opções de cliente e servidores do Office 2010 e do Windows 7
 
-Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para o cliente e servidores do Office 2010 e Windows 7, baixe o [cartaz de fim de serviço](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf).
+Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, confira o [cartaz de fim de suporte](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Este cartaz de uma página é uma maneira rápida de entender os vários caminhos que você pode tomar para impedir que os produtos de servidor e cliente do Office 2010 e o Windows 7 atinjam o final do serviço, com caminhos e suporte de opções preferidos no Microsoft 365 Enterprise realçado.
+Este cartaz de uma página é uma maneira rápida de entender os vários caminhos que você pode tomar para impedir que os produtos de cliente e de servidor do Office 2010 e o Windows 7 atinjam o fim do suporte, com caminhos e suporte de opções preferidos no Microsoft 365 Enterprise realçado.
 
-Você pode imprimir este cartaz em formatos de carta, ofício ou tablóide (11 x 17).
-    
+Você também pode [baixar](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) este cartaz e imprimi-lo em formatos carta, ofício ou tablóide (11 x 17).
+   
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Atualizando do SharePoint 2010](upgrade-from-sharepoint-2010.md)
