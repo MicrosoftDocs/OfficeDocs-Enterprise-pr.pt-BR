@@ -13,18 +13,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: Suporte do aplicativo cliente do Office 365 para autenticação moderna.
-ms.openlocfilehash: d5d17f3395b7eec736403c75b4e2b571c1123fe7
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: 29abfdc5a9974b3e581e08556b675a725a6076dc
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672931"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817257"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Suporte ao aplicativo cliente do Office 365-autenticação moderna
 
 A autenticação moderna permite o logon baseado na biblioteca de autenticação do Active Directory (ADAL) para aplicativos clientes do Office em diferentes plataformas. Isso permite que os recursos de entrada, como a autenticação multifator (MFA), o cartão inteligente e a autenticação baseada em certificado.
 
-Saiba mais sobre [autenticação](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) multifator e [autenticação baseada em certificado](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
+Saiba mais sobre [autenticação multifator](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) e [autenticação baseada em certificado](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started).
 
 ## <a name="supported-platforms"></a>Plataformas com suporte
 
@@ -48,7 +48,7 @@ As versões mais recentes dos seguintes clientes suportam a autenticação moder
 | ![Ícone de Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Ícone de administração do Office 365](media/o365-o365admin-64x64.png) <br> [Administração do <br> Office 365](https://products.office.com/business/manage-office-365-admin-app) | ![Ícone de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Ícone do OneDrive for Business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Ícone do OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) 
 | ![Ícone do Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Ícone do Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Ícone do PowerApps](media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![Ícone do PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Ícone do PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Ícone de projeto](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Ícone do Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Ícone do SharePoint](media/o365-sharepoint-64x64.png) <br> [Do](https://products.office.com/sharepoint) | ![Ícone do Skype for Business](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business<sup>1</sup>](https://www.skype.com/business/) | ![Ícone de StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
-| ![Ícone de notas auto-adesivas](media/o365-stickynotes-64x64.png) <br> [Notas auto-adesivas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Ícone de fluxo](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Ícone de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Ícone do teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Ícone de tarefas pendentes](media/o365-todo-64x64.png) <br> [Tarefa pendente](https://todo.microsoft.com) 
+| ![Ícone de notas auto-adesivas](media/o365-stickynotes-64x64.png) <br> [Notas auto-adesivas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Ícone de fluxo](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Ícone de Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Ícone do teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Ícone de tarefas pendentes](media/o365-todo-64x64.png) <br> [Para fazer](https://todo.microsoft.com) 
 | ![Ícone do Visio](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Ícone de quadro de comunicações](media/o365-whiteboard-64x64.png) <br> [Quadro de comunicações<sup>1</sup>,<sup>2</sup>](https://whiteboard.microsoft.com/) | ![Ícone do Word](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Ícone do Yammer](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Ícone do Yammer](media/o365-yammer-64x64.png) <br> [Notificador do Yammer <br>](https://products.office.com/yammer/yammer-overview) |  |
 
 ## <a name="supported-powershell-modules"></a>Módulos do PowerShell suportados
