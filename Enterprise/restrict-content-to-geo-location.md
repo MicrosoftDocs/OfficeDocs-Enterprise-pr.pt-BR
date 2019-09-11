@@ -1,5 +1,5 @@
 ---
-title: Restringir o conteúdo para uma localização geográfica
+title: Restringir o conteúdo do site do SharePoint a um local geográfico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,14 +10,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como restringir os sites do SharePoint em um local geográfico especificado em um ambiente de multigeográfico.
-ms.openlocfilehash: 42c382abd254afcf74dd6bdd15e4c69f65b64f85
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 9319ed6229acc7cda48cc52b3a27681c53f1359c
+ms.sourcegitcommit: 7bb48195079ce14aabfa0384771b17db0e4908b9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070987"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "36828475"
 ---
-# <a name="restrict-content-to-a-geo-location"></a>Restringir o conteúdo para uma localização geográfica
+# <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Restringir o conteúdo do site do SharePoint a um local geográfico
 
 Em algumas circunstâncias você pode optar por impor que um site e o conteúdo do arquivo permaneça na localização geográfica onde o site foi criado, impedindo que o site movido ou impedindo o cache de conteúdo do arquivo do site em outro local geográfico.
 
