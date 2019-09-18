@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um site do SharePoint.
-ms.openlocfilehash: 23f55e22d4c85dcd168c403f50b35f574be9ac07
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992380"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017309"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar com convidados em um site
 
@@ -72,28 +72,6 @@ Para definir as configurações de compartilhamento de nível da organização d
 2. No centro de administração do SharePoint, na navegação à esquerda, clique em **compartilhamento**.
 3. Verifique se o compartilhamento externo do SharePoint está definido como **qualquer pessoa** ou **novo convidado existente**.
 4. Se você tiver feito alterações, clique em **salvar**.
-
-
-## <a name="sharepoint-organization-level-default-link-settings"></a>Configurações de link padrão de nível de organização do SharePoint
-
-As configurações padrão de link de arquivo e pasta determinam qual opção de link é mostrada para o usuário por padrão ao compartilhar um arquivo ou uma pasta. Os usuários podem alterar o tipo de link para uma das outras opções antes de compartilhar, se desejado.
-
-Tenha em mente que essa configuração afeta todas as equipes e sites do SharePoint em sua organização.
-
-Escolha o tipo de link selecionado por padrão quando os usuários compartilham arquivos e pastas:
-
-- **Qualquer pessoa com o link** -escolha essa opção se você espera compartilhar muitos arquivos e pastas com usuários anônimos. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento anônimo acidental, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
-- **Somente as pessoas da sua organização** -escolha esta opção se você espera que a maioria dos compartilhamento de arquivos e pastas seja com pessoas dentro da sua organização.
-- **Pessoas específicas** -considere essa opção se você espera que um grande volume de compartilhamento de arquivos e pastas com convidados. Esse tipo de link funciona com convidados e exige a autenticação.
- 
-![Captura de tela das configurações de compartilhamento de arquivos e pastas da organização do SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
-
-
-Para definir as configurações de link padrão de nível de organização do SharePoint
-
-1. Navegue até a página de compartilhamento no centro de administração do SharePoint.
-2. Em **links de arquivo e pasta**, selecione o link de compartilhamento padrão que você deseja usar.
-3. Se você tiver feito alterações, clique em **salvar**.
 
 ## <a name="create-a-site"></a>Criar um site
 

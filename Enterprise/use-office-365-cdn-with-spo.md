@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: 80f13afb751775010a613be41b7f9fa6dec40c72
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385189"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017329"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -111,7 +111,7 @@ Tenha em mente que quanto maior o número de origens, maior o impacto no tempo e
 ### <a name="choose-whether-each-origin-should-be-public-or-private"></a>Escolha se cada origem deve ser pública ou privada
 <a name="CDNOriginChoosePublicPrivate"> </a>
 
-Quando você identifica uma origem, especifica se ela deve ser publicada ou __ _privada_. O acesso aos ativos da CDN em origens públicas é anônimo, e o conteúdo da CDN em origens privadas é protegido por tokens gerados dinamicamente para maior segurança. Independentemente da opção que você escolher, a Microsoft faz todo o trabalho pesado quando se trata da administração da CDN propriamente dita. Além disso, você pode mudar de ideia depois, depois de configurar a CDN e identificar suas origens.
+Quando você identifica uma origem, especifica se ela deve ser _publicada ou_ _privada_. O acesso aos ativos da CDN em origens públicas é anônimo, e o conteúdo da CDN em origens privadas é protegido por tokens gerados dinamicamente para maior segurança. Independentemente da opção que você escolher, a Microsoft faz todo o trabalho pesado quando se trata da administração da CDN propriamente dita. Além disso, você pode mudar de ideia depois, depois de configurar a CDN e identificar suas origens.
 
 As opções pública e privada fornecem ganhos de desempenho semelhantes, mas cada um tem atributos e vantagens exclusivos.
 
@@ -277,7 +277,7 @@ A propriedade _IncludeFileExtensions_ contém a lista de extensões de arquivo q
 
 A propriedade _ExcludeRestrictedSiteClassifications_ contém as classificações de site que você deseja excluir da CDN. Por exemplo, você pode excluir sites marcados como **confidenciais** , de modo que o conteúdo de sites com essa classificação aplicada não será atendido da CDN.
 
-A propriedade _ExcludeIfNoScriptDisabled_ exclui o conteúdo da CDN com base nas configurações de atributo noscript no nível do site. __ Por padrão, o __ atributo noscript é definido como **habilitado** para sites _modernos_ e **desabilitado** para sites _clássicos_ . Isso depende de suas configurações de locatário.
+A propriedade _ExcludeIfNoScriptDisabled_ exclui o conteúdo da CDN com base nas configurações de atributo _noscript_ no nível do site. Por padrão, o atributo _noscript_ é definido como **habilitado** para sites _modernos_ e **desabilitado** para sites _clássicos_ . Isso depende de suas configurações de locatário.
 
 Para obter mais informações sobre esses cmdlets, consulte [set-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) e [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
   
@@ -648,7 +648,7 @@ O diagrama a seguir ilustra o fluxo de trabalho quando o SharePoint recebe uma s
 
 O acesso a ativos em origens privadas na CDN do Office 365 é concedido por tokens gerados pelo SharePoint Online. Os usuários que já têm permissão para acessar a pasta ou a biblioteca designada pela origem recebem tokens automaticamente que permitem que o usuário acesse o arquivo com base em seu nível de permissão. Esses tokens de acesso são válidos por 30 a 90 minutos após serem gerados para ajudar a evitar ataques de repetição de token.
 
-Depois que o token de acesso é gerado, o SharePoint Online retorna um URI personalizado ao cliente contendo dois __ parâmetros de autorização (token de autorização de borda) e _OAT_ (token de autorização de origem). A estrutura de cada token é _< ' tempo de expiração no formato de hora da época ' >__< ' assinatura segura ' >_. Por exemplo:
+Depois que o token de acesso é gerado, o SharePoint Online retorna um URI personalizado ao cliente contendo dois _parâmetros de_ autorização (token de autorização de borda) e _OAT_ (token de autorização de origem). A estrutura de cada token é _< ' tempo de expiração no formato de hora da época ' >__< ' assinatura segura ' >_. Por exemplo:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -684,6 +684,8 @@ Você também pode usar as ferramentas de desenvolvedor do navegador para exibir
 Você não pode testar URLs de CDN diretamente em um navegador da Web, pois deve ter um referenciador proveniente do SharePoint Online. No entanto, se você adicionar a URL de ativo da CDN a uma página do SharePoint e, em seguida, abrir a página em um navegador, verá o ativo da CDN renderizado na página.
 
 Para obter mais informações sobre como usar as ferramentas de desenvolvedor no navegador do Microsoft Edge, consulte [ferramentas de desenvolvedor do Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).
+
+Para um vídeo hospedado no [canal do YouTube de padrões e práticas](https://aka.ms/sppnp-videos) que demonstra que sua CDN está funcionando, confira [verificar o uso da CDN e garantir a conectividade de rede ideal](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
 
 ### <a name="why-are-assets-from-a-new-origin-unavailable"></a>Por que os ativos de uma nova origem não estão disponíveis?
 Os ativos em novas origens não estarão disponíveis para uso imediatamente, pois levará tempo para o registro se propagar através da CDN e para que os ativos sejam carregados da origem para o armazenamento de CDN. O tempo necessário para que os ativos estejam disponíveis na CDN depende do número de ativos e dos arquivos.

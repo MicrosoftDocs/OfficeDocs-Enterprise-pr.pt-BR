@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Saiba como realizar tarefas comuns de gerenciamento para grupos do Office 365 no Microsoft PowerShell.
-ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069017"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017336"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Gerenciar Grupos do Office 365 com o PowerShell
 
@@ -48,7 +48,7 @@ Se você deseja habilitar seus grupos do Office 365 para "enviar como", use os c
 
 ([Você também pode fazer isso no centro de administração do Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
-Use o script a seguir, substituindo * \<GroupAlias\> * com o alias do grupo que você deseja atualizar e * \<useralias\> * com o alias do usuário a quem você deseja conceder permssions. [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para executar esse script.
+Use o script a seguir, substituindo * \<\> GroupAlias* com o alias do grupo que você deseja atualizar e * \<useralias\> * com o alias do usuário a quem você deseja conceder permssions. [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para executar esse script.
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
@@ -87,7 +87,7 @@ Exemplo:
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-Depois de executar o cmdlet acima do Active Directory do Azure para definir sua classificação, execute o cmdlet [set-](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) unificado, se quiser definir a classificação de um grupo específico. 
+Depois de executar o cmdlet acima do Active Directory do Azure para definir sua classificação, execute o cmdlet [set-unificado](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Set-UnifiedGroup) , se quiser definir a classificação de um grupo específico. 
   
 ```
 Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact> 
@@ -122,7 +122,7 @@ Se não quiser que os usuários de outra organização enviem emails para um gru
 Execute o cmdlet Set-unificado para atualizar essa configuração, da seguinte maneira:
 
 ```
-Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
+Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
 ## <a name="add-mailtips-to-the-office-365-groups"></a>Adicionar dicas de correio aos grupos do Office 365
