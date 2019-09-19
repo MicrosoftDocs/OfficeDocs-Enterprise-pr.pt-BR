@@ -124,7 +124,7 @@
 #### [Configurar a sincronização de diretórios](set-up-directory-synchronization.md)
 ### [Atribuir licenças às contas de usuário](assign-licenses-to-user-accounts.md)
 
-## [3. Implementar recursos de segurança](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. Implementar recursos de segurança](https://docs.microsoft.com/Office365/SecurityCompliance/security-best-practices)
 
 ## 4. Implantar o software do cliente
 ### [Implantar o Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
@@ -204,6 +204,11 @@
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
 ### Colaborar com convidados
 #### [Referência de compartilhamento de convidado](microsoft-365-guest-settings.md)
+#### Soluções de compartilhamento de convidados
+##### [Visão geral da colaboração do convidado](collaborating-with-people-outside-your-organization.md)
+##### [Colaborar em documentos](collaborate-on-documents.md)
+##### [Colaborar em um site](collaborate-in-a-site.md)
+##### [Colabore em equipe](collaborate-as-a-team.md)
 
 ## Dispositivos
 ### [Escolher entre MDM ou Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
