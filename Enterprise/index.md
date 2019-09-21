@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: 9be2aa25a0b59d9a13a9cee3a1b1b59f240f2030
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 265de12a2f1156355873d6798a61a0438f6764a1
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490724"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067106"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>O Microsoft&nbsp;Office 365 fornece serviços avançados de nuvem online que permitem colaboração, segurança e conformidade, mobilidade, inteligência e análise. Esta página fornece links para diretrizes para administradores e profissionais de ti que estão implantando, configurando&nbsp;e gerenciando serviços do Office 365 em organizações empresariais.</p>
@@ -292,6 +292,8 @@ ms.locfileid: "34490724"
                     <div class="cardText">
                         <h3>Microsoft 365</h3>
                         <p><a href="https://docs.microsoft.com/microsoft-365">Saiba mais sobre o Microsoft 365.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/compliance/">Saiba mais sobre o Microsoft 365 Compliance.</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/">Saiba mais sobre o Microsoft 365 Security.</a></p>
                     </div>
                 </div>
             </div>
