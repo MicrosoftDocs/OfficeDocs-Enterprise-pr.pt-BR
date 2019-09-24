@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um documento no SharePoint e no OneDrive.
-ms.openlocfilehash: c0c74f2457e9b25b37355c58ed18f120261e3364
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: ebb887e4fc337b4c0e94e85e0a08e87be0e74490
+ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992400"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37108221"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar com convidados em um documento
 
-Se você precisar colaborar com convidados em documentos do SharePoint ou do OneDrive, você pode enviar um link de compartilhamento para o documento. Neste artigo, veremos as etapas de configuração do Microsoft 365 necessárias para configurar links de compartilhamento para o SharePoint e o OneDrive.
+Se você precisar colaborar com convidados em documentos do SharePoint ou do OneDrive, você pode enviar um link de compartilhamento para o documento. Neste artigo, veremos as etapas de configuração do Microsoft 365 necessárias para configurar links de compartilhamento para o SharePoint e o OneDrive para as necessidades da sua organização.
 
 ## <a name="azure-organizational-relationships-settings"></a>Configurações de relações organizacionais do Azure
 
@@ -44,7 +44,7 @@ Para que os convidados tenham acesso a um documento no SharePoint ou no OneDrive
 
 As configurações de nível de organização para o SharePoint determinam as configurações disponíveis para sites individuais do SharePoint. As configurações do site não podem ser mais permissivas do que as configurações no nível da organização. A configuração de nível de organização para o OneDrive determina o nível de compartilhamento disponível nas bibliotecas do OneDrive dos usuários.
 
-Para o SharePiont e o OneDrive, se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. 
+Para o SharePoint e o OneDrive, se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. Os links de *qualquer pessoa* são o modo mais fácil de compartilhar: convidados podem abrir o link sem autenticação e são livres para passá-los para outros.
 
 Para o SharePoint, escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
 
