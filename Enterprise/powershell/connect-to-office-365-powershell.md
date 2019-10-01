@@ -3,7 +3,7 @@ title: Conectar-se ao PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 09/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas do centro de administração a partir da linha de comando.'
-ms.openlocfilehash: aea7cb638cb866374af6b33d6d1848a7cb6d304c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c5bf5204d8ca1c8db35635f080031838e9fbea03
+ms.sourcegitcommit: 86a740dccf273d679a8938e11e60d2a497c01689
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069087"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "37328149"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -46,7 +46,10 @@ A partir da data deste artigo, o Azure Active Directory PowerShell para o módul
     
   - Windows 10, Windows 8.1, Windows 8 ou Windows 7 Service Pack 1 (SP1) 
     
-  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 ou Windows Server 2008 R2 SP1
+  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2 SP1
+
+    > [!NOTE]
+    > Você deve usar a versão 5.1 ou posterior do PowerShell. Para Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, e Windows Server 2008 R2 SP1, baixe e instale o [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616). 
     
     > [!NOTE]
     >Use uma versão de 64 bits do Windows, pois o suporte para a versão de 32 bits do Módulo Microsoft Azure Active Directory para Windows PowerShell foi descontinuada em outubro de 2014.
