@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Saiba como otimizar as páginas do site de publicação clássico e moderno no SharePoint Online, limitando o número de chamadas para pontos de extremidade de serviço do SharePoint Online.
-ms.openlocfilehash: d44cb2273d550cea3a9ec7bfb1ffaeb10bbdd333
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 1e355aee6d55e3e45238cdf09853ddebb922ae53
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028198"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375499"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Otimizar chamadas de página em páginas do site de publicação clássico e moderno do SharePoint Online
 
@@ -46,7 +46,7 @@ Os resultados possíveis incluem:
 - **Atenção necessária** (vermelho): a página ultrapassa o número da linha de base de chamadas
 - **Nenhuma ação necessária** (verde): a página contém menos do que o número da linha de base de chamadas
 
-Se o resultado das Solicitações para o SharePoint aparecer na seção Atenção necessária, você poderá clicar no resultado para obter detalhes, incluindo o número total de chamadas na página e uma lista de URLs.
+Se o resultado das **Solicitações para o SharePoint** aparecer na seção **Atenção necessária**, você poderá clicar no resultado para obter detalhes, incluindo o número total de chamadas na página e uma lista de URLs.
 
 ![Solicitações para resultados do SharePoint](media/modern-portal-optimization/pagediag-requests.png)
 
@@ -71,7 +71,7 @@ Antes de fazer as revisões das páginas para corrigir problemas de desempenho, 
 
 [Ajustar o desempenho do Office 365](tune-office-365-performance.md)
 
-[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/pt-BR/sharepoint/modern-experience-performance.md)
+[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
 
