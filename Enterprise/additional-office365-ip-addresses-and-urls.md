@@ -3,7 +3,7 @@ title: Pontos de extremidade adicionais não incluídos no endereço IP do Offic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/24/2019
+ms.date: 10/03/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: b674d5d9de64431207f6a31289cb4f5fa463616f
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: da69876f4b189d11e46ee6a01d87fecde03480ca
+ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203580"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "37388159"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
@@ -55,7 +55,7 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 9  | Usado para configurar o [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant), usando o [Assistente de Configuração do Exchange Híbrido](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> Observação: esses pontos de extremidade só são necessários para configurar o Exchange híbrido  | domains.live.com em portas TCP 80 e 443, exigido apenas para o Assistente de Configuração do Exchange 2010 SP3 Híbrido.<BR> <BR> Endereços de IP DoD GCC High: 40.118.209.192/32; 168.62.190.41/32 <BR> <BR> Comercial em todo o mundo e GCC: *. *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | Somente o tráfego de servidor de saída |
 | 10  | O serviço de detecção automática é usado em cenários do [Exchange Híbrido](https://docs.microsoft.com/exchange/exchange-deployment-assistant) com [Autenticação Híbrida Moderna com Outlook para iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Servidor Exchange local do cliente em TCP 443 | Tráfego do servidor de entrada |
 | 11  | O Skype for Business no Office 2016 inclui o compartilhamento de tela baseado em vídeo que usa portas UDP. Os clientes mais antigos do Skype for Business no Office 2013 e em versões anteriores usavam a porta 443 RDP em vez da TCP. | Porta 443 TCP aberta para 52.112.0.0/14 | Versões de cliente mais antigas do Skype for Business no Office 2013 e em versões anteriores |
-| 12  | Conectividade entre o servidor híbrido local do Skype for Business e o Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14 portas UDP: 50.000 a 59.999 <BR>  Portas TCP: 50.000 a 59.999 | Conectividade de saída de servidor local no Skype for Business |
+| 12  | Conectividade entre o servidor híbrido local do Skype for Business e o Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14  <BR> Portas UDP 50.000-59.999 <BR>  Portas TCP 50.000-59.999; 5061 | Conectividade de saída de servidor local no Skype for Business |
 | 13  | O PSTN na nuvem sem conectividade híbrida local requer conectividade aberta ao host local. Para saber mais sobre as configurações híbridas do Skype for Business Online  | Confira [Planejar conectividade híbrida entre o Skype for Business Server e o Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Entrada híbrida local do Skype for Business |
 | 14  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
 | 15  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, é necessário habilitar os cookies primários e de terceiros, adicionar os FQDNs do Teams aos Sites Confiáveis, além de todo o pacote de FQDNs, CDNs e telemetria relacionados na linha 14. Para saber mais, confira o artigo [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sites confiáveis |
