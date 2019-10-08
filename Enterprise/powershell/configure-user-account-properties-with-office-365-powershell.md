@@ -3,7 +3,7 @@ title: Configurar propriedades da conta de usuário com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 10/07/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Resumo: Use o Office 365 PowerShell para configurar propriedades de várias contas de usuário ou individuais em seu locatário do Office 365.'
-ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
+ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782601"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "37411510"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Configurar propriedades da conta de usuário com o Office 365 PowerShell
 
@@ -71,7 +71,11 @@ Você identifica a conta com o parâmetro **-ObjectID** e define ou altera propr
     Este é o código de país ou região ISO 3166-1 alfa-2 (a2) de duas letras.
     
 Consulte [set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) para parâmetros adicionais.
-  
+
+>[!Note]
+> Você define a propriedade de **email** com o parâmetro **-OtherMails** .
+>
+ 
 Para exibir o nome principal do usuário para suas contas de usuário, execute o seguinte comando.
   
 ```
@@ -186,7 +190,11 @@ Você identifica a conta com o parâmetro **-userPrincipalName** e define ou alt
     Este é o código de país ou região ISO 3166-1 alfa-2 (a2) de duas letras.
     
 Consulte [set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx) para parâmetros adicionais.
-  
+
+>[!Note]
+> Você define a propriedade de **email** com o parâmetro **-AlternateEmailAddresses** .
+>
+ 
 Para ver os nomes principais de usuário de todos os seus usuários, execute o seguinte comando.
   
 ```
