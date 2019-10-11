@@ -3,7 +3,7 @@ title: Assinaturas, licenças, contas e locatários para ofertas de nuvem da Mic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/12/2018
+ms.date: 10/08/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 29b9954467e2d6dd7ece2e33376f28882152693c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782511"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428128"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -31,21 +31,12 @@ ms.locfileid: "35782511"
 A Microsoft fornece uma hierarquia de organizações, assinaturas, licenças e contas de usuário para o uso consistente de identidades e cobrança para todas as ofertas de nuvem:
   
 - Microsoft Office 365
-    
-    Confira os [planos de negócios e preços](https://products.office.com/business/compare-office-365-for-business-plans) para saber mais.
-    
 - Microsoft Azure
-    
-    Confira os [preços do Azure](https://azure.microsoft.com/pricing/) para saber mais.
-    
 - Microsoft Intune e Enterprise Mobility + Security (EMS)
-    
-    Confira os [preços do Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing) para saber mais.
-    
 - Microsoft Dynamics 365
-    
-    Confira os [preços do Dynamics 365](https://dynamics.microsoft.com/) para saber mais.
-    
+
+[Microsoft 365](https://docs.microsoft.com/microsoft-365/) combina o Office 365, o EMS e o Windows 10 Enterprise em uma única assinatura e o conjunto de serviços integrados.
+
 ## <a name="elements-of-the-hierarchy"></a>Elementos da hierarquia
 
 Aqui estão os elementos da hierarquia:
@@ -56,22 +47,23 @@ Uma organização representa uma entidade de negócios que usa ofertas de nuvem 
   
 ### <a name="subscriptions"></a>Assinaturas
 
-Uma assinatura é um contrato com a Microsoft para usar uma ou mais plataformas ou serviços em nuvem da Microsoft, pelos quais se acumulam encargos com base em uma taxa de licença por usuário ou no consumo de recursos baseado em nuvem. As ofertas em nuvem de Software como Serviço (SaaS) da Microsoft (Office 365, Intune/EMS e do Dynamics 365) cobram taxas de licença por usuário. As ofertas em nuvem de Plataforma como Serviço (PaaS) e Infraestrutura como Serviço (IaaS) (Azure) da Microsoft são cobradas com base no consumo de recursos em nuvem.
-  
+Uma assinatura é um contrato com a Microsoft para usar uma ou mais plataformas ou serviços de nuvem da Microsoft, para as quais as cobranças se acumulam com base em uma taxa de licença por usuário ou no consumo de recursos baseado na nuvem. 
+
+- As ofertas de nuvem baseadas no Software como Serviço (Saas) da Microsoft (Office 365, Intune/EMS e Dynamics 365) cobram taxas de licença por usuário. 
+- As ofertas de nuvem de Plataforma como um Serviço (PaaS) e Infraestrutura como um Serviço (IaaS) da Microsoft (Azure) cobram com base no consumo de recursos na nuvem.
+ 
 Você também pode usar uma assinatura de avaliação, mas a assinatura expira após um quantidade específica de horas ou tarifas de consumo. Você pode converter uma assinatura de avaliação para uma assinatura paga.
   
-As organizações podem ter várias assinaturas para ofertas de nuvem da Microsoft. A Figura 1 mostra um exemplo.
-  
+As organizações podem ter várias assinaturas para ofertas de nuvem da Microsoft. A Figura 1 mostra uma única organização com várias assinaturas do Office 365, uma assinatura do Intune, outra assinatura do Dynamics 365 e várias assinaturas do Azure.
+
 **Figura 1: Exemplo de várias assinaturas de uma organização**
 
 ![Um exemplo de organização com várias assinaturas para ofertas de nuvem da Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
 
   
-A Figura 1 mostra uma única organização com várias assinaturas do Office 365, uma assinatura do Intune, outra assinatura do Dynamics 365 e várias assinaturas do Azure.
-  
 ### <a name="licenses"></a>Licenças
 
-Para ofertas da nuvem de SaaS da Microsoft, uma licença permite que uma determinada conta de usuário use a oferta de serviços de nuvem. Será cobrada uma taxa mensal fixa como parte da sua assinatura. Os administradores de atribuem licenças às contas de usuários individuais na assinatura. Por exemplo, na Figura 2, a Contoso Corporation tem uma assinatura do Office 365 Enterprise E5 com 100 licenças, o que permite que até 100 contas de usuários individuais usem os serviços e recursos do Enterprise E5.
+Para as ofertas de nuvem SaaS da Microsoft, uma licença permite que uma conta de usuário específica use os serviços da oferta na nuvem. Você será cobrado com uma taxa mensal fixa como parte da sua assinatura. Os administradores podem atribuir licenças a contas de usuários individuais na assinatura. Por exemplo, na Figura 2, a Contoso Corporation tem uma assinatura do Office 365 Enterprise E5 com a 100 licenças, que permite até 100 contas de usuários individuais que usam recursos e serviços do Office 365 Enterprise E5.
   
 **Figura 2: Licenças em assinaturas SaaS para uma organização**
 
@@ -85,7 +77,7 @@ Algumas imagens máquina virtual tem versões de avaliação dos aplicativos ins
   
 ### <a name="user-accounts"></a>Contas de usuário
 
-Contas de usuário para todas as ofertas da nuvem da Microsoft são armazenadas em um locatário do Azure Active Directory (AD) que contém os grupos e as contas de usuários. Um locatário do Azure AD pode ser sincronizado com suas contas existentes do Active Directory Domain Services (AD DS) usando o Azure AD Connect, um serviço baseado no Windows Server, algo conhecido como sincronização de diretórios (DirSync).
+As contas de usuário para todas as ofertas de nuvem da Microsoft são armazenadas em um locatário do Azure Active Directory (Azure AD), que contém contas de usuários e grupos. Um locatário do Azure AD pode ser sincronizado com as contas de Serviços de Domínio Active Directory (AD DS) existentes usando o Azure AD Connect, um serviço baseado no Windows Server. Isso é conhecido como sincronização de diretório (DirSync).
   
 A Figura 3 mostra um exemplo de várias assinaturas de uma organização usando um locatário comum do Azure AD que contém as contas da organização.
   
@@ -129,15 +121,13 @@ Aqui está um exemplo da relação das organizações, assinaturas, licenças e 
     
   - Contas de usuários da organização em um locatário comum do Azure AD.
     
-Várias assinaturas de oferta de nuvem da Microsoft podem usar o mesmo locatário do Azure AD, que atua como um provedor de identidade comum. Um locatário central do Azure AD, que contém as contas sincronizadas do AD DS local, fornece a Identidade como serviço (IDaaS) baseada em nuvem para a sua organização, o que é mostrado na Figura 4.
+Várias assinaturas de oferta do Microsoft Cloud podem usar o mesmo locatário do Azure AD que atua como um provedor de identidade comum. Um locatário do Azure AD central que contém as contas sincronizadas de seu AD DS no local fornece identidade baseada em nuvem como um serviço (IDaaS) para sua organização. 
   
 **Figura 4: IDaaS e contas locais sincronizadas para uma organização**
 
 ![IDaaS ou Identidade como um serviço (IaaS) para a sua organização.](media/Subscriptions/Subscriptions-Fig4.png)
   
 A Figura 4 mostra como um locatário comum do Azure AD é usado por ofertas em nuvem da Microsoft para SaaS, aplicativos PaaS do Azure e máquinas virtuais no IaaS do Azure que usam o Azure AD Domain Services. O Azure AD Connect sincroniza da floresta do AD DS local com o locatário do Azure AD.
-  
-Para saber mais sobre a integração de identidade em ofertas da nuvem da Microsoft em [Identidade do Microsoft Cloud para arquitetos corporativos](https://aka.ms/cloudarchidentity).
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinar as assinaturas de várias ofertas de nuvem da Microsoft
 
@@ -168,15 +158,17 @@ Para adicionar uma assinatura do Azure com a mesma organização e locatário do
     
 3. Na página **Adicionar assinatura**, selecione uma oferta e complete as informações de pagamento e o contrato.
     
-Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e deseja acessar o locatário do Azure AD do Office 365 de sua assinatura do Azure, confira as instruções em [Associar ou adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e deseja acessar o locatário do Azure AD do Office 365 de sua assinatura do Azure, confira as instruções em [Adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
-## <a name="see-also"></a>Confira Também
+## <a name="see-also"></a>Confira também
 
 [Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
-  
-[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
   
 [Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   
 [Soluções híbridas](hybrid-solutions.md)
+
+## <a name="next-step"></a>Próxima etapa
+
+[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
   

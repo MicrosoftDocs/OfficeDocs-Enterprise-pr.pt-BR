@@ -21,14 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Saiba como a autenticação moderna do Office 365 funciona de forma diferente para os aplicativos cliente do Office 2013 e 2016.
-ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491290"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435355"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Como funciona a autenticação moderna para aplicativos cliente do Office 2013 e do Office 2016
+
+*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
 
 Leia este artigo para saber como os aplicativos clientes do Office 2013 e do Office 2016 usam recursos de autenticação modernos com base na configuração de autenticação no locatário do Office 365 para o Exchange Online, o SharePoint Online e o Skype for Business online.
 
@@ -39,14 +41,14 @@ Leia este artigo para saber como os aplicativos clientes do Office 2013 e do Off
 
 Para os serviços do Office 365, o estado padrão da autenticação moderna é:
   
-- Ativado **** para o Exchange Online por padrão. Confira [habilitar ou desabilitar a autenticação moderna no Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) para desativá-la ou fazê-la. 
+- Ativado **para o** Exchange Online por padrão. Confira [habilitar ou desabilitar a autenticação moderna no Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) para desativá-la ou fazê-la. 
     
-- Ativado **** para o SharePoint Online por padrão. 
+- Ativado **para o** SharePoint Online por padrão. 
     
-- Ativado **** para o Skype for Business online por padrão. Consulte [habilitar o Skype for Business online para obter autenticação moderna ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)para desativá-la ou para.
+- Ativado **para o** Skype for Business online por padrão. Consulte [habilitar o Skype for Business online para obter autenticação moderna ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)para desativá-la ou para.
 
 > [!NOTE]
-> Para locatários criados **antes** de 1º de agosto de 2017, a autenticação **** moderna é desativada por padrão para o Exchange Online e para o Skype for Business online.
+> Para locatários criados **antes** de 1º de agosto de 2017, a autenticação moderna é **desativada por padrão** para o Exchange Online e para o Skype for Business online.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Comportamento de entrada dos aplicativos cliente do Office
 
@@ -110,3 +112,5 @@ A tabela a seguir descreve o comportamento de autenticação para os aplicativos
 [Planejar a autenticação multifator para implantações do Office 365 (para administradores do Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [Entrar no Office 365 com verificação em duas etapas (para usuários finais)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

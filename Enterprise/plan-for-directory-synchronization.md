@@ -5,6 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
+ms.date: 05/20/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
@@ -16,17 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descreve a sincronização de diretório com o Office 365, limpeza de serviços de domínio do Active Directory e a ferramenta Azure Active Directory Connect.
-ms.openlocfilehash: 31fcd8baaccabf5d3f4f0cf47c7573c43f7cd40b
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102480"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428108"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identidade híbrida e sincronização de diretório para o Office 365
 
-Dependendo das necessidades de negócios e dos requisitos técnicos, o modelo de identidade híbrida e a sincronização de diretórios é a opção mais comum para clientes corporativos que estão adotando o Office 365. A sincronização de diretórios permite gerenciar identidades em seus serviços de domínio do Active Directory (AD DS) e todas as atualizações de contas de usuário, grupos e contatos são sincronizadas com o locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365.
+*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
 
+Dependendo das necessidades de negócios e dos requisitos técnicos, o modelo de identidade híbrida e a sincronização de diretórios é a opção mais comum para clientes corporativos que estão adotando o Office 365. A sincronização de diretórios permite gerenciar identidades em seus serviços de domínio do Active Directory (AD DS) e todas as atualizações de contas de usuário, grupos e contatos são sincronizadas com o locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365.
 
 >[!Note]
 >Quando as contas de usuário do AD DS são sincronizadas pela primeira vez, elas não recebem automaticamente uma licença do Office 365 e não podem acessar os serviços do Office 365, como email. Você deve atribuir uma licença a essas contas de usuário, individualmente ou dinamicamente por meio da Associação de grupo.
@@ -103,7 +105,7 @@ Sua limpeza de diretório deve se concentrar nas seguintes tarefas:
 
 - Remover os atributos **ProxyAddress** e **userPrincipalName** duplicados.
 - Atualizar atributos **userPrincipalName** em branco e inválidos com atributos **userPrincipalName** válidos.
-- Remover caracteres inválidos e questionáveis em **** excertoname, sobrenome ( **SN** ) **, sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**e **userPrincipalName** atributos. Para obter detalhes sobre como preparar atributos, consulte [lista de atributos que são sincronizados pela ferramenta de sincronização do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Remover caracteres inválidos e questionáveis em **excertoname**, sobrenome ( **SN** ) **, sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**e **userPrincipalName** atributos. Para obter detalhes sobre como preparar atributos, consulte [lista de atributos que são sincronizados pela ferramenta de sincronização do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Estes são os mesmos atributos que o Azure AD Connect sincroniza. 
@@ -143,4 +145,7 @@ A sincronização de diretórios é necessária para os seguintes recursos e fun
 
 Quando estiver pronto para implantar a identidade híbrida, confira [preparar para provisionar usuários](prepare-for-directory-synchronization.md).
   
+## <a name="see-also"></a>Confira também
+
+[Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 

@@ -4,6 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumo: descreve os certificados SSL necessários para o Exchange local e híbrido, SSO usando AD FS, serviços do Exchange Online e serviços Web do Exchange.'
-ms.openlocfilehash: 9b5bcb20272dcaf5c1df39179a4ba4b05fc04a28
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069347"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428088"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Plano para certificados SSL de terceiros para o Office 365
+
+*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
 
  **Resumo:** Descreve os certificados SSL necessários para o Exchange local e híbrido, SSO usando AD FS, serviços do Exchange Online e serviços Web do Exchange. 
   
@@ -46,7 +49,7 @@ Os certificados são necessários para os seguintes componentes do Office 365:
     
 ## <a name="certificates-for-exchange-on-premises"></a>Certificados para o Exchange local
 
-Para obter uma visão geral sobre como usar certificados digitais para fazer a comunicação entre a organização local do Exchange e o Exchange Online protegido, consulte o artigo da TechNet Understanding [Certificate requirements](https://go.microsoft.com/fwlink/p/?LinkID=243657).
+Para obter uma visão geral sobre como usar certificados digitais para fazer a comunicação entre a organização local do Exchange e o Exchange Online protegido, consulte o artigo da TechNet [Understanding Certificate requirements](https://go.microsoft.com/fwlink/p/?LinkID=243657).
   
 ## <a name="certificates-for-single-sign-on"></a>Certificados para logon único
 
@@ -75,6 +78,8 @@ Seu servidor ou servidores híbridos do Exchange de face externa exigem um certi
   
 ## <a name="office-365-certificate-chains"></a>Cadeias de certificados do Office 365
 
-Este artigo descreve os certificados que você pode precisar instalar em sua infraestrutura. Para obter mais informações sobre os certificados instalados em nossos servidores do Office 365, confira cadeias de [certificados do office 365](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
+Este artigo descreve os certificados que você pode precisar instalar em sua infraestrutura. Para obter mais informações sobre os certificados instalados em nossos servidores do Office 365, confira [cadeias de certificados do office 365](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
+## <a name="see-also"></a>Confira também
 
+[Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

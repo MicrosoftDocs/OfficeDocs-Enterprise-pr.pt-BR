@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: O Office 365 foi projetado para permitir que clientes em todo o mundo se conectem ao serviço usando uma conexão com a Internet. À medida que o serviço evolui, a segurança, o desempenho e a confiabilidade do Office 365 são aprimorados com base nos clientes que usam a Internet para estabelecer uma conexão com o serviço.
-ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
-ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
+ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36233421"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428068"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Avaliando a conectividade de rede do Office 365
+
+*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
 
 O Office 365 foi projetado para permitir que clientes em todo o mundo se conectem ao serviço usando uma conexão com a Internet. À medida que o serviço evolui, a segurança, o desempenho e a confiabilidade do Office 365 são aprimorados com base nos clientes que usam a Internet para estabelecer uma conexão com o serviço.
   
@@ -116,3 +118,5 @@ Aqui está um link curto que você pode usar para voltar: [ https://aka.ms/o365n
 [URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
 
 [Rede do Office 365 e ajuste de desempenho](network-planning-and-performance.md)
+
+[Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

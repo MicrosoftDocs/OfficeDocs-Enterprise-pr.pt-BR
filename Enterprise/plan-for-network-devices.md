@@ -16,17 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumo: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722620"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428095"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Plano para dispositivos de rede que se conectam aos serviços do Office 365
 
- **Resumo**: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.
+*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
   
+**Resumo**: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.
+
 Alguns hardwares de rede podem ter limitações quanto ao número de sessões simultâneas suportadas. Para organizações com mais de 2.000 usuários, recomendamos que eles monitorem seus dispositivos de rede para garantir que eles sejam capazes de lidar com o tráfego de serviço adicional do Office 365. O software de monitoramento do protocolo SNMP pode ajudá-lo a fazer isso.
 
 ||
@@ -66,8 +68,10 @@ Fornecemos uma solução NLB baseada em software incorporada ao Windows Server. 
   
 ## <a name="firewalls-and-proxies"></a>Firewalls e proxies
 
-Para obter mais detalhes sobre a configuração de firewalls e proxies para se conectar ao Office 365, leia [Gerenciamento do office 365 pontos de extremidade](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [avaliação da conectividade de rede do Office 365](assessing-network-connectivity.md)e perguntas frequentes sobre os [pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para saber mais sobre dispositivos e circuitos seleções.
+Para obter mais detalhes sobre a configuração de firewalls e proxies para se conectar ao Office 365, leia [Gerenciamento do office 365 pontos de extremidade](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [avaliação da conectividade de rede do Office 365](assessing-network-connectivity.md)e [perguntas frequentes sobre os pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para saber mais sobre dispositivos e circuitos seleções.
   
 ## <a name="see-also"></a>Confira também
 
 [Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
+
+[Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

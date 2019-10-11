@@ -17,14 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
-ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616774"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428138"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planejamento de migração e rede para o Office 365
+
+*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
 
 Este artigo contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
   
@@ -112,3 +114,6 @@ Estes tópicos contêm informações detalhadas de referência de rede do Office
     
 - [Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
  
+## <a name="see-also"></a>Confira também
+
+[Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
