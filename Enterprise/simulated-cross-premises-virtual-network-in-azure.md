@@ -79,7 +79,7 @@ Nesta fase, crie e configure a nova rede virtual XPrem e conecte-se à rede virt
 Primeiro, inicie um prompt do Azure PowerShell em seu computador local.
   
 > [!NOTE]
-> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/pt-BR/powershell/azureps-cmdlets-docs/). 
+> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Em seguida, entre com sua conta do Azure usando este comando.
   

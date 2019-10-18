@@ -45,7 +45,7 @@ Para adicionar um grupo como um administrador geográfico, execute `Add-SPOGeoAd
 
 Para remover um grupo como um administrador geográfico, execute `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Observe que nem todos os grupos de segurança têm um alias de grupo. Se você quiser adicionar um grupo de segurança que tenha um alias, execute [Get-MsolGroup](https://docs.microsoft.com/pt-BR/powershell/module/msonline/get-msolgroup) para recuperar uma lista de grupos, localizar o ObjectID do grupo de segurança e, em seguida, execute:
+Observe que nem todos os grupos de segurança têm um alias de grupo. Se você quiser adicionar um grupo de segurança que tenha um alias, execute [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) para recuperar uma lista de grupos, localizar o ObjectID do grupo de segurança e, em seguida, execute:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -59,4 +59,4 @@ Para remover um grupo usando o ObjectID, execute `Remove-SPOGeoAdministrator -Ob
 
 [Remover SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Configurar um alias (MailNickName) para um grupo de segurança](https://docs.microsoft.com/pt-BR/powershell/module/azuread/set-azureadgroup)
+[Configurar um alias (MailNickName) para um grupo de segurança](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
