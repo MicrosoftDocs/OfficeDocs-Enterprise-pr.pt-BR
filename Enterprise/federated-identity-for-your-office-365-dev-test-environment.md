@@ -3,7 +3,7 @@ title: Identidade federada para seu ambiente de desenvolvimento/teste do Office 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 09/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Resumo: configure a autenticação federada do ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
-ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
+ms.openlocfilehash: c2cb4bcd9085cd8dd91df5de2ad936076d11432c
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37046986"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37207385"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Identidade federada para seu ambiente de desenvolvimento/teste do Office 365
 
@@ -184,18 +184,15 @@ Exiba o endereço IP público do PROXY1 com estes comandos do Azure PowerShell n
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-Em seguida, trabalhe com seu provedor de DNS público e crie um novo registro público de DNS A para **fs.testlab.** \<seu nome de domínio DNS > que resolve o endereço IP exibido pelo comando **Write-Host**. De agora em diante, **fs.testlab.** \<seu nome de domínio DNS > é conhecido como o *FQDN do serviço de federação*.
+Em seguida, trabalhe com seu provedor de DNS público e crie um novo registro público de DNS A para **fs.testlab.** \<seu nome de domínio DNS> que resolve o endereço IP exibido pelo comando **Write-Host**. De agora em diante, o **fs.testlab.** \<seu nome de domínio DNS> é conhecido como o *FQDN do serviço de federação*.
   
 Em seguida, use o [portal do Azure](http://portal.azure.com) para se conectar à máquina virtual DC1 usando as credenciais CORP\\Usuário1 e execute este comando em um prompt de comando do Windows PowerShell de nível de administrador:
   
 ```
-$testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
-$testZoneFile= $testZone + ".dns"
-Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
-Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
+Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
+Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-
-Esses comandos criam um registro DNS A para o seu FQDN do serviço de federação que as máquinas virtuais da rede virtual do Azure podem resolver o endereço IP privado do ADFS1.
+Esses comandos criam um registro DNS A interno para que as máquinas virtuais na rede virtual do Azure possam resolver o FQDN da federação interna para o endereço IP privado do ADFS1.
   
 Esta é a configuração resultante.
   
@@ -414,7 +411,7 @@ Para demonstrar que a autenticação federada está funcionando, faça o seguint
     
 2. Como credenciais de entrada, digite **usuário1@**\<domínio criado na Fase 1 >. 
     
-    Por exemplo, se o domínio de teste for **testlab.contoso.com**, digite **usuário1@testlab.contoso.com**. Pressione a tecla TAB ou deixe que o Office 365 o redirecione automaticamente.
+    Por exemplo, se o domínio de teste for **testlab.contoso.com**, digite usuário1@testlab.contoso.com. Pressione a tecla TAB ou deixe que o Office 365 o redirecione automaticamente.
     
     Agora você deverá ver a página **Sua conexão não é particular** porque você instalou o certificado autoassinado em ADFS1 que seu computador desktop não consegue validar. Em uma implantação de produção com autenticação federada, será necessário usar um certificado de autoridade de certificação confiável e os usuários não verão esta página.
     
