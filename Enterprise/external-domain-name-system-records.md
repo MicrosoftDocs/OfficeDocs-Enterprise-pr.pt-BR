@@ -3,7 +3,7 @@ title: Registros de Sistema de Nomes de Domínio Externos para o Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Resumo: lista de referências de registros DNS a serem usados ao planejar uma implantação do Office 365.'
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387048"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616134"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros de Sistema de Nomes de Domínio Externos para o Office 365
 
@@ -45,7 +45,7 @@ Cada cliente do Office 365 precisa adicionar dois registros ao seu DNS externo. 
 ||||
 |:-----|:-----|:-----|
 |**Registro DNS** <br/> |**Objetivo** <br/> |**Valor a ser usado** <br/> |
-|**CNAME** <br/> **(Suite)** <br/> |Usado pelo Office 365 para direcionar a autenticação para a plataforma de identificação correta. [Mais informações](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Observação:** Este CNAME só se aplica ao Office 365 operado pela 21Vianet.   |**Alias:** msoid  <br/> **Destino:** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(Suite)** <br/> |Usado pelo Office 365 para direcionar a autenticação para a plataforma de identificação correta. [Mais informações](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Observação:** Este CNAME só se aplica ao Office 365 operado pela 21Vianet.   |**Alias:** msoid  <br/> **Destino:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Verificação de domínio)** <br/> |Usado pelo Office 365 somente para verificar se você é o proprietário do seu domínio. Não afeta nada mais.  <br/> |**Host:** @ (ou, para alguns provedores de hospedagem DNS, o nome do seu domínio)  <br/> **Valor do TXT:** _uma cadeia de texto fornecida pelo_ Office 365  <br/> O **assistente de configuração de domínio** do Office 365 fornece os valores usados para criar esse recurso.  <br/> |
 
 
