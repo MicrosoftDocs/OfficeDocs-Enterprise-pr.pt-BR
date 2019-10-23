@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 5c0bd0ad10dc1ddfdcb13d09010c69f4e8b5a75a
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: c6c6aa02701d47c5818f66d2f0e499e7a85cb902
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428128"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616144"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -73,7 +73,7 @@ Para serviços de nuvem baseados em PaaS do Azure, as licenças de software são
   
 Para máquinas virtuais baseadas em IaaS do Azure, talvez seja necessário ter licenças adicionais para usar o software ou aplicativo instalados em uma imagem de máquina virtual. Algumas imagens de máquinas virtuais têm versões licenciadas do software instalado e o custo é incluído na taxa por minuto para o servidor. Os exemplos são as imagens de máquinas virtuais do SQL Server 2014 e do SQL Server 2016. 
   
-Algumas imagens máquina virtual tem versões de avaliação dos aplicativos instalados e precisam de licenças adicionais de aplicativos de software para uso além do período de avaliação. Por exemplo, a imagem de máquina virtual de avaliação do SharePoint Server 2016 inclui uma versão de avaliação pré-instalada do SharePoint Server 2016. Para continuar usando o SharePoint Server 2016 após a data de vencimento da avaliação, é necessário comprar uma licença do SharePoint Server 2016 e licenças de cliente da Microsoft. Esses encargos são separados da assinatura do Azure e a taxa por minuto para executar a máquina virtual ainda se aplica.
+Algumas imagens de máquinas virtuais têm versões de avaliação de aplicativos instaladas e precisam de licenças adicionais de aplicativos de software para uso além do período de avaliação. Por exemplo, a imagem de máquina virtual de avaliação do SharePoint Server 2016 inclui uma versão de avaliação do SharePoint Server 2016 pré-instalada. Para continuar usando o SharePoint Server 2016 após a data de validade da avaliação, é necessário adquirir uma licença do SharePoint Server 2016 e licenças de cliente da Microsoft. Essas cobranças são separadas da assinatura do Azure e a taxa por minuto para executar a máquina virtual ainda se aplica.
   
 ### <a name="user-accounts"></a>Contas de usuário
 
