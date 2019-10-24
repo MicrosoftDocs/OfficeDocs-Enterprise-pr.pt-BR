@@ -3,7 +3,7 @@ title: Redes de fornecimento de conteúdo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 10/22/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber como o Office 365 usa redes de distribuição de conteúdo (CDNs) para melhorar o desempenho.
-ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722660"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643284"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo (CDNs)
 
@@ -37,7 +37,7 @@ CDNs são usados pela maioria dos serviços de nuvem corporativos. Os serviços 
 
 ## <a name="how-do-cdns-make-services-work-faster"></a>Como o CDNs faz os serviços funcionarem mais rapidamente?
 
-Baixar objetos comuns, como ícones repetidamente, pode ocupar a largura de banda da rede que pode ser usada melhor para baixar conteúdo pessoal importante, como emails ou documentos. Como o Office 365 usa uma arquitetura que inclui o CDNs, os ícones, scripts e outros conteúdos genéricos podem ser baixados de servidores mais próximos dos computadores cliente, tornando os downloads mais rápidos. Isso significa acesso mais rápido ao conteúdo pessoal, que é armazenado com segurança nos datacenters do Office 365.
+Baixar objetos comuns, como imagens e ícones de site repetidamente, pode ocupar a largura de banda da rede que pode ser usada melhor para baixar conteúdo pessoal importante, como emails ou documentos. Como o Office 365 usa uma arquitetura que inclui o CDNs, os ícones, scripts e outros conteúdos genéricos podem ser baixados de servidores mais próximos dos computadores cliente, tornando os downloads mais rápidos. Isso significa acesso mais rápido ao conteúdo pessoal, que é armazenado com segurança nos datacenters do Office 365.
 
 CDNs ajuda a melhorar o desempenho do serviço de nuvem de várias maneiras:
 
@@ -50,21 +50,21 @@ CDNs ajuda a melhorar o desempenho do serviço de nuvem de várias maneiras:
 A rede interna de distribuição de conteúdo (CDN) do Office 365 permite que os administradores do Office 365 ofereçam um melhor desempenho para as páginas do SharePoint Online da sua organização, armazenando ativos estáticos mais próximos dos navegadores que os solicitam, o que ajuda a acelerar baixa e reduz a latência. A CDN do Office 365 usa o [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para melhorar a compactação e a velocidade de download.
 
 > [!NOTE]
-> Restrições para o uso da CDN do Office 365:
-> + A CDN do Office 365 só está disponível para locatários na nuvem de **produção** (internacional). Os locatários nas nuvens do governo dos EUA, da China e da Alemanha não suportam atualmente a CDN do Office 365.
-> + A CDN do Office 365 atualmente não suporta locatários configurados com domínios personalizados ou "personalizado". Se você tiver adicionado um domínio ao seu locatário usando as instruções no tópico [Adicionar um domínio ao Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide), a CDN do Office 365 retornará erros quando você tentar acessar o conteúdo da CDN.
+> A CDN do Office 365 só está disponível para locatários na nuvem de **produção** (internacional). Os locatários nas nuvens do governo dos EUA, da China e da Alemanha não suportam atualmente a CDN do Office 365.
 
 A CDN do Office 365 é composta por várias CDNs que permitem que você hospede ativos estáticos em vários locais ou _origens_e sirva-os de redes globais de alta velocidade. Dependendo do tipo de conteúdo você quiser hospedar na CDN do Office 365, você pode adicionar origens **públicas**, origens **privadas** ou ambas.
 
-![Diagrama conceitual da CDN do Office 365] (media/O365-CDN/o365-cdn-flow-transparent.svg "Diagrama conceitual da CDN do Office 365")
+![Diagrama conceitual da CDN do Office 365](media/O365-CDN/o365-cdn-flow-transparent.svg "Diagrama conceitual da CDN do Office 365")
 
 O conteúdo de origens **públicas** dentro da CDN do Office 365 é anonimamente acessível e pode ser acessado por qualquer um que tenha as URLs dos ativos hospedados. Como o acesso ao conteúdo de origens públicas é anônimo, você só deve usá-lo para o armazenamento em cache de conteúdo genérico e não sensível como arquivos javascript, scripts, ícones e imagens. A CDN do Office 365 é usada por padrão para baixar os ativos de recurso genérico, como aplicativos de cliente do Office 365 de uma origem pública.
 
-Origens**privadas** dentro da CDN do Office 365 oferecem acesso privado ao conteúdo do usuário, como as bibliotecas de documentos do SharePoint Online, sites e mídia, por exemplo, vídeos. O acesso ao conteúdo com origens privadas é protegido com tokens gerados dinamicamente, portanto só podem ser acessados por usuários com permissões para a biblioteca ou local armazenamento do documento original. Origens privadas na CDN do Office 365 só podem ser usadas para o conteúdo do SharePoint Online e você só poderá acessar ativos por meio do redirecionamento do seu locatário do SharePoint Online.
+Origens **privadas** dentro da CDN do Office 365 oferecem acesso privado a conteúdo do usuário, como bibliotecas de documentos do SharePoint Online, sites e imagens proprietárias. O acesso ao conteúdo com origens privadas é protegido com tokens gerados dinamicamente, portanto só podem ser acessados por usuários com permissões para a biblioteca ou local armazenamento do documento original. Origens privadas na CDN do Office 365 só podem ser usadas para o conteúdo do SharePoint Online e você só poderá acessar ativos por meio do redirecionamento do seu locatário do SharePoint Online.
 
 O serviço de CDN do Office 365 faz parte da assinatura do SharePoint Online.
 
 Para obter mais informações sobre como usar a CDN do Office 365, consulte [usar a rede de distribuição de conteúdo do office 365 com o SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo).
+
+Para assistir a uma série de vídeos curtos que oferecem informações conceituais e HOWTOs sobre como usar a CDN do Office 365, visite o [canal do YouTube de padrões e práticas do desenvolvedor do SharePoint](https://aka.ms/sppnp-videos).
 
 ## <a name="other-microsoft-cdns"></a>Outros Microsoft CDNs
 
@@ -196,3 +196,5 @@ Aqui está um link curto que você pode usar para voltar: [https://aka.ms/o365cd
 [Usar a rede de distribuição de conteúdo do Office 365 com o SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Central de Confiabilidade da Microsoft](https://www.microsoft.com/trustcenter)
+
+[Ajustar o desempenho do Office 365](tune-office-365-performance.md)
