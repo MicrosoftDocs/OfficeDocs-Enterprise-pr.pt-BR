@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: 39493c4df48af239306d8b22de451d6db6e3bcf9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068067"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643274"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurar a Pesquisa para o Office 365 Multigeográfico
 
@@ -172,11 +172,11 @@ Os aplicativos de pesquisa personalizada obtêm resultados de todas ou algumas l
 
 **Requisito**
 
-Para cada local geográfico, certifique-se de que todos os usuários na organização tiverem o nível de permissão **ler** do site raiz (por exemplo, contoso**APAC**.sharepoint.com/ e a contoso** EU**.sharepoint.com/). [Saiba mais sobre permissões](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Para cada local geográfico, certifique-se de que todos os usuários na organização tiverem o nível de permissão **ler** do site raiz (por exemplo, contoso**APAC**.sharepoint.com/ e a contoso** EU**.sharepoint.com/). [Saiba mais sobre permissões](https://support.office.com/pt-BR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
-EnableMultiGeoSearch, isso é um valor Booleano que especifica se o fan ou deve ser realizado para os índices das outras localizações geográficas do locatário multigeográfico. Definido como **verdadeiro** para realizar o fan out da consulta. **falso** para não realizar o fan out da consulta. O valor padrão é **falso**. Se esse parâmetro não for incluído, o fan out da consulta não é feito em outra localizações geográficas. Se você usa o parâmetro em um ambiente que não é multigeográfico, o parâmetro será ignorado.
+EnableMultiGeoSearch, isso é um valor Booleano que especifica se o fan ou deve ser realizado para os índices das outras localizações geográficas do locatário multigeográfico. Definido como **verdadeiro** para realizar o fan out da consulta. **falso** para não realizar o fan out da consulta. Se você não incluir esse parâmetro, o valor padrão será **falso**, exceto ao fazer uma chamada da API REST em um site que use o modelo do Centro de Pesquisa Corporativo; nesse caso, o valor padrão será **verdadeiro**. Se você usa o parâmetro em um ambiente que não é multigeográfico, o parâmetro será ignorado.
 
 ClientType - Isso é uma cadeia de caracteres. Insira um nome exclusivo do cliente para cada aplicativo de pesquisa. Se esse parâmetro não for incluído, o fan out da consulta não é feito em outra localizações geográficas.
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - Isso é uma lista opcional de localizações geogr
 </tbody>
 </table>
 
-Se você omitir DataLocation ou EndPoint ou se um DataLocation estiver duplicado, a solicitação falhará. [Você pode obter informações sobre o ponto de extremidade das localizações geográficas de um locatário usando o Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery).
+Se você omitir DataLocation ou EndPoint ou se um DataLocation estiver duplicado, a solicitação falhará. [Você pode obter informações sobre o ponto de extremidade das localizações geográficas de um locatário usando o Microsoft Graph](https://docs.microsoft.com/pt-BR/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Dado de resposta
 
