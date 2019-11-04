@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Depois de implantar o Office 365, você pode manter a conectividade do Office 365 usando algumas das ferramentas e técnicas abaixo. É importante que você compreenda as diretrizes oficiais do Serviço de Integridade e Continuidade, assim como nossas melhores práticas, para usar o Office 365 em uma rede lenta. Você também precisará obter o aplicativo de administração do Office 365 e marcar nossa Ajuda Administrativa do Office 365 para empresas como favorita.
-ms.openlocfilehash: ce307e01a3d7da4a24a06e58d293b9598c684d8f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
+ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070047"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37931689"
 ---
 # <a name="monitor-office-365-connectivity"></a>Monitorar a conectividade do Office 365
 
-Depois de implantar o Office 365, você pode manter a conectividade do Office 365 usando algumas das ferramentas e técnicas abaixo. É importante que você compreenda as diretrizes oficiais do [Serviço de Integridade e Continuidade](https://technet.microsoft.com/library/office-365-service-health.aspx), assim como nossas [melhores práticas, para usar o Office 365 em uma rede lenta](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166). Você também precisará obter o [aplicativo de administração do Office 365](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/) e marcar nossa [Ajuda Administrativa do Office 365 para empresas](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791) como favorita.
+Depois de implantar o Office 365, você pode manter a conectividade do Office 365 usando algumas das ferramentas e técnicas abaixo. É importante que você compreenda as diretrizes oficiais do [Serviço de Integridade e Continuidade](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity), assim como nossas [melhores práticas, para usar o Office 365 em uma rede lenta](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166). Você também precisará obter o [aplicativo de administração do Office 365](https://blogs.office.com/2015/03/13/administer-on-the-go-with-the-updated-office-365-admin-app/) e marcar nossa [Ajuda Administrativa do Office 365 para empresas](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791) como favorita.
   
 ## <a name="monitoring-office-365-connectivity"></a>Monitorar a conectividade do Office 365
 

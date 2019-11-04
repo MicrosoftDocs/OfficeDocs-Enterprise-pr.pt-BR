@@ -8,16 +8,22 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um documento no SharePoint e no OneDrive.
-ms.openlocfilehash: ebb887e4fc337b4c0e94e85e0a08e87be0e74490
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 1160e26c0aa23da499b8c0ef96bc5dd5d8e77004
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108221"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920144"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar com convidados em um documento
 
 Se você precisar colaborar com convidados em documentos do SharePoint ou do OneDrive, você pode enviar um link de compartilhamento para o documento. Neste artigo, veremos as etapas de configuração do Microsoft 365 necessárias para configurar links de compartilhamento para o SharePoint e o OneDrive para as necessidades da sua organização.
+
+## <a name="video-demonstration"></a>Demonstração de vídeo
+
+Este vídeo mostra as etapas de configuração descritas neste documento.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE450Vt?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Configurações de relações organizacionais do Azure
 
@@ -25,7 +31,7 @@ O compartilhamento no Microsoft 365 é regido no seu nível mais alto pelas conf
 
 Verifique as configurações de relações organizacionais para garantir que o compartilhamento com convidados não seja bloqueado.
 
-![Captura de tela da página de configurações de relações organizacionais do Active Directory do Azure](media/azure-ad-organizational-relationships-settings.png)
+![Captura de tela da página de configurações das Relações Organizacionais do Azure Active Directory](media/azure-ad-organizational-relationships-settings.png)
 
 Para definir as configurações de relação organizacional
 
@@ -34,7 +40,7 @@ Para definir as configurações de relação organizacional
 3. No painel **visão geral** , clique em **relações organizacionais**.
 4. No painel **relações organizacionais** , clique em **configurações**.
 5. Certifique-se de que **Administradores e usuários na função de convite de convidado podem convidar** e **os membros podem convidar** estão definidos como **Sim**.
-6. Se você tiver feito alterações, clique em **salvar**.
+6. Caso tenha feito alterações, clique em **Salvar**.
 
 Observe as configurações na seção **restrições de colaboração** . Certifique-se de que os domínios dos convidados com os quais você deseja colaborar não estão bloqueados.
 
@@ -44,7 +50,7 @@ Para que os convidados tenham acesso a um documento no SharePoint ou no OneDrive
 
 As configurações de nível de organização para o SharePoint determinam as configurações disponíveis para sites individuais do SharePoint. As configurações do site não podem ser mais permissivas do que as configurações no nível da organização. A configuração de nível de organização para o OneDrive determina o nível de compartilhamento disponível nas bibliotecas do OneDrive dos usuários.
 
-Para o SharePoint e o OneDrive, se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. Os links de *qualquer pessoa* são o modo mais fácil de compartilhar: convidados podem abrir o link sem autenticação e são livres para passá-los para outros.
+Para o SharePoint e o OneDrive, se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. A maneira mais fácil de compartilhar é usando os links de *Qualquer pessoa*: convidados podem abrir o link sem autenticação e também podem repassar para outras pessoas.
 
 Para o SharePoint, escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
 
@@ -54,9 +60,9 @@ Para o SharePoint, escolha a configuração mais permissiva que será necessári
 Para definir as configurações de compartilhamento de nível da organização do SharePoint
 
 1. No centro de administração do Microsoft 365, na navegação à esquerda, em **centros de administração**, clique em **SharePoint**.
-2. No centro de administração do SharePoint, na navegação à esquerda, clique em **compartilhamento**.
+2. No centro de administração do SharePoint, na navegação à esquerda, clique em **Compartilhamento**.
 3. Certifique-se de que o compartilhamento externo do SharePoint ou do OneDrive está definido como **qualquer pessoa** ou **convidado novo e existente**. (Observe que a configuração do OneDrive não pode ser mais permissiva do que a configuração do SharePoint.)
-4. Se você tiver feito alterações, clique em **salvar**.
+4. Caso tenha feito alterações, clique em **Salvar**.
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Configurações de link padrão de nível de organização do SharePoint
 
@@ -70,30 +76,34 @@ Escolha o tipo de link selecionado por padrão quando os usuários compartilham 
 - **Somente as pessoas da sua organização** -escolha esta opção se você espera que a maioria dos compartilhamento de arquivos e pastas seja com pessoas dentro da sua organização.
 - **Pessoas específicas** -considere essa opção se você espera que um grande volume de compartilhamento de arquivos e pastas com convidados. Esse tipo de link funciona com convidados e exige a autenticação.
  
-![Captura de tela das configurações de compartilhamento de arquivos e pastas da organização do SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
+![Captura de tela das configurações de compartilhamento de pastas e arquivos no nível da organização do SharePoint](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 Para definir as configurações de link padrão de nível de organização do OneDrive e SharePoint
 
 1. Navegue até a página de compartilhamento no centro de administração do SharePoint.
 2. Em **links de arquivo e pasta**, selecione o link de compartilhamento padrão que você deseja usar.
-3. Se você tiver feito alterações, clique em **salvar**.
+3. Caso tenha feito alterações, clique em **Salvar**.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configurações de compartilhamento no nível do site do SharePoint
 
 Se você estiver compartilhando arquivos e fodlers que estão em um site do SharePoint, também precisará verificar as configurações de compartilhamento no nível do site para esse site.
 
-![Captura de tela das configurações de compartilhamento externo do site do SharePoint](media/sharepoint-site-external-sharing-settings.png)
+![Captura de tela das configurações de compartilhamento de site externo do SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
 Para definir configurações de compartilhamento no nível do site
-1. No centro de administração do SharePoint, na navegação à esquerda, expanda **sites** e clique em **sites ativos**.
+1. No centro de administração do SharePoint, na navegação à esquerda, expanda a opção **Sites** e clique em **Sites ativos**.
 2. Selecione o site que você acabou de criar.
-3. Na faixa de opções, clique em **compartilhamento**.
+3. Na faixa de opções, clique em **Compartilhamento**.
 4. Verifique se o compartilhamento está definido como **qualquer pessoa** ou **convidado novo e existente**.
-5. Se você tiver feito alterações, clique em **salvar**.
+5. Caso tenha feito alterações, clique em **Salvar**.
 
 ## <a name="invite-users"></a>Convidar usuários
 
 As configurações de compartilhamento de convidados agora estão configuradas, portanto, os usuários agora podem compartilhar arquivos e pastas com convidados. Consulte [compartilhar arquivos e pastas do onedrive](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) e [compartilhar arquivos ou pastas do SharePoint](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) para obter mais informações.
 
 ## <a name="see-also"></a>Confira também
+
+[Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
+
+[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
