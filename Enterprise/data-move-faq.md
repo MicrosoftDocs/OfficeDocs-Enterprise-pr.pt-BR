@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782321"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028885"
 ---
 # <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
@@ -43,7 +43,7 @@ Devido às dependências compartilhadas entre o Exchange Online e o SharePoint O
 Há duas ações que você pode realizar como um administrador de locatários.
 
 - Consentimento.Inscreva-se no programa Office 365 move e receba um prazo comprometido para que seus serviços migrem os dados principais do cliente em repouso para a nova Geografia do datacenter.Confira a página [como solicitar a movimentação de dados](request-your-data-move.md) para obter instruções sobre como aceitar o programa.
-- Nada a fazer.Não execute nenhuma ação, o que faz com que a Microsoft possa mover seus dados de cliente principais em repouso para a sua nova Geografia de datacenter ao longo do tempo, como parte do gerenciamento e otimização de serviços.Seus dados só podem ser movidos para a sua nova Geografia do datacenter, não para qualquer outra geografia.Notificamos por meio do centro de mensagens quando uma movimentação de gerenciamento de serviço é concluída.
+- Não tomar nenhuma medida.Não execute nenhuma ação, o que faz com que a Microsoft possa mover seus dados de cliente principais em repouso para a sua nova Geografia de datacenter ao longo do tempo, como parte do gerenciamento e otimização de serviços.Seus dados só podem ser movidos para a sua nova Geografia do datacenter, não para qualquer outra geografia.Notificamos por meio do centro de mensagens quando uma movimentação de gerenciamento de serviço é concluída.
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>Como certificar-se de que os dados do cliente estão seguros durante a movimentação e que eu não experimentaria tempo de inatividade?
   
@@ -61,7 +61,7 @@ Sim. Depois que uma nova Geografia do datacenter estiver disponível, novos clie
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>Onde está localizado o meus dados principais do cliente?
 
-Os administradores de locatários podem exibir o cartão de local de dados no centro de administração a qualquer momento para confirmar os dados principais do cliente no local restante de cada serviço, especificamente para o locatário.Também publicamos o local do datacenter GEOS, datacenters e local dos dados do cliente do Office 365 nos mapas de datacenters do [ office 365 Interactive](https://office.com/datamaps) como uma referência para os dados de cliente principais padrão atuais em locais REST para novos locatários.  Você pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Microsoft 365.  
+Os administradores de locatários podem exibir o cartão de local de dados no centro de administração a qualquer momento para confirmar os dados principais do cliente no local restante de cada serviço, especificamente para o locatário.Também publicamos o local do datacenter GEOS, datacenters e local dos dados do cliente do Office 365 nos [ mapas de datacenters do office 365 Interactive](https://office.com/datamaps) como uma referência para os dados de cliente principais padrão atuais em locais REST para novos locatários.  Você pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando poderei solicitar uma movimentação?
   
@@ -155,4 +155,4 @@ Sim, seu locatário está qualificado para se inscrever.  Moveremos todas as cai
 
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)
+[Serviços do Azure por região](https://azure.microsoft.com/regions/)

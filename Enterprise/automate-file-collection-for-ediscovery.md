@@ -13,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Resumo: saiba como automatizar a coleta de arquivos dos computadores dos usuários para descoberta eletrônica.'
-ms.openlocfilehash: b54e54e2905407b81d95238afe97c1a542238e06
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 0133da6eecb229ad999043c9dfcb15d98a732829
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068417"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030485"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleta de arquivos para descoberta eletrônica
 
@@ -282,7 +282,7 @@ Write-Host -ForegroundColor Cyan "Finished."
     
 2. Remova os usuários autenticados da **filtragem de segurança**e adicione o grupo responsáveis.
     
-### <a name="pst-import-option-a-script-for-exchange-server-2013"></a>Opção de importação de PST A, script para O Exchange Server 2013
+### <a name="pst-import-option-a-script-for-exchange-server-2013"></a>Opção de importação de PST A, script para o Exchange Server 2013
 
 1.  Copie e cole o seguinte script do Windows PowerShell no bloco de notas:
     
@@ -301,9 +301,9 @@ param ([String]$SourcePath,[String]$MailboxAlias)
 $FolderIdentifier = "zzImportedPSTs_"
 
 # Connect to Exchange remote powershell using the connection Uri below
-# This would be the format http://<exchange server FQDN>/Powershell
+# This would be the format https://<exchange server FQDN>/Powershell
 
-$ConnectionUri = 'http://h10-exch/PowerShell'
+$ConnectionUri = 'https://h10-exch/PowerShell'
 $RemoteEx2013Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ConnectionUri -Authentication Kerberos
 Import-PSSession $RemoteEx2013Session
 
@@ -329,7 +329,7 @@ $AllFiles | ForEach-Object {
 |**Número da linha**|**O que você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
 |3,6  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
-|17.07.06  <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> Verifique se o **$ConnectionURI** aponta para um local http, não para https. Ele não funcionará com https:.          |Obrigatório  <br/> |
+|17.07.06  <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> certifique-se de que o **$ConnectionURI** aponta para um local http, e não HTTPS. Ele não funcionará com https:.          |Obrigatório  <br/> |
    
 4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução \\ \\para o\\compartilhamento de casos de preparação $.
     
@@ -361,7 +361,7 @@ $AllFiles | ForEach-Object {
     
 3. Na caixa **local do arquivo** , digite o caminho e o nome de arquivo do runbook que você deseja importar ou clique nas reticências ( **...**) para navegar até o arquivo que você deseja importar. 
     
-4. Selecione **importar runbooks** e **importar dados criptografados**do Orchestrator. Limpe **contadores**, **agendas**, **variáveis**, **grupos de computadores**, **importe configurações globais**e **substitua as configurações globais existentes**.
+4. Selecione **importar runbooks** e **importar dados criptografados do Orchestrator**. Limpe **contadores**, **agendas**, **variáveis**, **grupos de computadores**, **importe configurações globais**e **substitua as configurações globais existentes**.
     
 5. Clique em **Concluir**.
     
@@ -369,7 +369,7 @@ $AllFiles | ForEach-Object {
     
 1. **Mover arquivo** atividade-define o caminho do **arquivo de origem** para o compartilhamento de arquivo de \\ \\conjunto,\\por exemplo, exemplos de preparação $. Defina a **pasta de destino** para o compartilhamento de arquivo de armazenamento Cold no Azure \\ \\,\\por exemplo, AZFile1 ContentColdStorage. Selecione **criar um arquivo com um nome exclusivo**.
     
-2. **Excluir** atividade da pasta-defina **o caminho:** para o compartilhamento de arquivo da coleção \\ \\, por\\exemplo,\\casos de preparação $ *, e selecione **excluir todos os arquivos e**subpastas. 
+2. **Excluir** atividade da pasta-defina **o caminho:** para o compartilhamento de arquivo da coleção \\ \\, por\\exemplo,\\casos de preparação $ *, e selecione **excluir todos os arquivos e subpastas**. 
     
 7. Implante o runbook **MoveToColdStorage** usando os procedimentos de[implantação de Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615120).
     
@@ -413,7 +413,7 @@ Todas as outras etapas não são específicas desta solução. São tarefas admi
 
 1. Assista ao compartilhamento de arquivo de coleção, \\ \\por exemplo\\, casos\\de preparação $ *, para a pasta de coleção do usuário. O nome da pasta será formatado da seguinte maneira: *yyyyMMddHHmm_UserName* .
     
-2. Quando a coleção estiver concluída, abra a pasta de coleção e navegue até a pasta _Log Na pasta _Log, você verá o seguinte:
+2. Quando a coleção estiver concluída, abra a pasta da coleção e navegue até a pasta _Log. Na pasta _Log, você verá o seguinte:
     
   - Um arquivo XML para cada unidade local no computador do usuário, por exemplo, **um. xml**, **C. xml**. Esses arquivos contêm as unidades de estoque que são nomeadas após e são usadas para a operação do Robocopy.
     
@@ -422,7 +422,7 @@ Todas as outras etapas não são específicas desta solução. São tarefas admi
   
   - Um arquivo de log chamado FileCopyErrors. log para cada execução de coleção. Este arquivo contém uma lista dos arquivos que o Robocopy não pôde copiar para o compartilhamento de coleção de arquivos, por \\ \\exemplo,\\casos de\\preparação $ *. Você precisará revisar esta ação e decidir quais ações tomar para esses arquivos perdidos. Normalmente, você precisará coletar manualmente, se quiser, ou pode decidir que elas não são necessárias e, portanto, podem ser omitidas da coleção.
     
-### <a name="pst-import-option-a-for-exchange-server-2013"></a>Opção de importação de PST A para O Exchange Server 2013
+### <a name="pst-import-option-a-for-exchange-server-2013"></a>Opção de importação de PST A para o Exchange Server 2013
 
 1. Faça logon no servidor que hospeda o compartilhamento de arquivo de conjunto, por exemplo, **preparação**e abra o Windows PowerShell. Para obter mais informações sobre como iniciar o Windows PowerShell, consulte[iniciando o Windows PowerShell no Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
     

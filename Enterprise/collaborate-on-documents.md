@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um documento no SharePoint e no OneDrive.
-ms.openlocfilehash: 1160e26c0aa23da499b8c0ef96bc5dd5d8e77004
-ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
+ms.openlocfilehash: 9ddbae276252c89ecae31a7f2bf5f1a3bf59af0f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "37920144"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029145"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar com convidados em um documento
 
@@ -23,7 +23,7 @@ Se você precisar colaborar com convidados em documentos do SharePoint ou do One
 
 Este vídeo mostra as etapas de configuração descritas neste documento.</br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE450Vt?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
 ## <a name="azure-organizational-relationships-settings"></a>Configurações de relações organizacionais do Azure
 

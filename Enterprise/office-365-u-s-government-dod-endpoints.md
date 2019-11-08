@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Resumo: o Office 365 requer conectividade com a Internet. Os pontos de extremidade abaixo devem ser acessíveis para os clientes que usam apenas os planos de DoD do governo dos EUA do Office 365.'
 hideEdit: true
-ms.openlocfilehash: b58f85298e8bcac6f35ee0029948e6c7fa2a95e4
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: a883348d641ecc2ee22500c8fffc0f891986e7e9
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975847"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038290"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Pontos de extremidade DoD do governo dos EUA do Office 365
 
@@ -53,7 +53,7 @@ As colunas de dados exibidas são:
 
 - **Categoria**: mostra se o conjunto de pontos de extremidade é categorizado como "Otimizar", "Permitir" ou "Padrão". Leia sobre essas categorias e diretrizes para gerenciamento de todos eles em [ https://aka.ms/pnc ](https://aka.ms/pnc). Esta coluna também lista quais conjuntos de ponto de extremidade são necessários para que haja conectividade de rede. Para conjuntos de ponto de extremidade que não são necessários para que haja conectividade de rede, fornecemos notas nesse campo para indicar qual funcionalidade estaria ausente se o conjunto de pontos de extremidade estiver bloqueado. Se você estiver excluindo uma área de serviço inteira, os conjuntos de pontos de extremidade listados como necessários não vão precisar de conectividade.
 
-- **Er**: **Sim** se o conjunto de pontos de extremidade for compatível com o Azure ExpressRoute com prefixos de rota do Office 365. A Comunidade BGP que inclui os prefixos de rota mostrada é alinhada com a área de serviço listada. Quando ER é **não**, isso significa que o ExpressRoute não é suportado para este conjunto de pontos de extremidade. No entanto, não deve ser considerado que nenhuma rota é anunciada para um conjunto de pontos de extremidade em que a ER é **não**. Se você planeja usar o Azure AD Connect, leia a [seção considerações especiais](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) para garantir que você tenha a configuração apropriada do Azure ad Connect.
+- **Er**: **Sim** se o conjunto de pontos de extremidade for compatível com o Azure ExpressRoute com prefixos de rota do Office 365. A Comunidade BGP que inclui os prefixos de rota mostrada é alinhada com a área de serviço listada. Quando ER é **não**, isso significa que o ExpressRoute não é suportado para este conjunto de pontos de extremidade. No entanto, não deve ser considerado que nenhuma rota é anunciada para um conjunto de pontos de extremidade em que a ER é **não**. Se você planeja usar o Azure AD Connect, leia a [seção considerações especiais](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) para garantir que você tenha a configuração apropriada do Azure ad Connect.
 
 - **Endereços**: lista os FQDNs ou nomes de domínio curinga e intervalos de endereços IP para o conjunto de pontos de extremidade. Observe que o intervalo de endereços IP está no formato CIDR e pode incluir vários endereços IP individuais na rede especificada.
  

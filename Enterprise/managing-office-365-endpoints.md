@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
-ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782471"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030605"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
@@ -53,7 +53,7 @@ O arquivo de PAC é implantado em navegadores da Web, no ponto 1, na Figura 1. A
 
 Separadamente se você optar por apenas o roteamento direto para os pontos de extremidade da categoria otimizar, qualquer ponto de extremidade de permissão de categoria necessário enviado para o servidor proxy precisará ser listado no servidor proxy para ignorar o processamento. Por exemplo, as interrupções SSL e a inspeção e a autenticação de proxy são incompatíveis com os pontos de extremidade de categoria optimize e Allow. O servidor proxy é o ponto 2 na Figura 1.
 
-A configuração comum é permitir sem o processamento de todo o tráfego de saída do servidor proxy para os endereços IP de destino do tráfego de rede do Office 365 que atinge o servidor proxy. Para obter informações sobre problemas com o SSL Break e inspecionar, consulte [usando dispositivos de rede de terceiros ou soluções no tráfego do Office 365](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+A configuração comum é permitir sem o processamento de todo o tráfego de saída do servidor proxy para os endereços IP de destino do tráfego de rede do Office 365 que atinge o servidor proxy. Para obter informações sobre problemas com o SSL Break e inspecionar, consulte [usando dispositivos de rede de terceiros ou soluções no tráfego do Office 365](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Há dois tipos de arquivos de PAC que o script Get-PacFile gerará.
 
@@ -125,7 +125,7 @@ Clique no link na parte inferior para indicar se o artigo foi útil ou não e en
   
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>Como determinar o local do meu locatário?
 
- O **local do locatário** é melhor determinado usando nosso mapa de datacenter. [](http://aka.ms/datamaps)
+ O **local do locatário** é melhor determinado usando nosso mapa de [datacenter](https://aka.ms/datamaps).
   
 ### <a name="am-i-peering-appropriately-with-microsoft"></a>Estou trocando apropriadamente à Microsoft?
 
@@ -140,14 +140,14 @@ Só fornecemos endereços IP para os servidores do Office 365 que você deve rot
   
 Confira um IP associado ao Office 365 no qual você deseja obter mais informações?
   
-1. Verifique se o endereço IP está incluído em um intervalo de publicação maior usando uma [calculadora de CIDR](http://jodies.de/ipcalc).
+1. Verifique se o endereço IP está incluído em um intervalo de publicação maior usando uma [calculadora de CIDR](https://jodies.de/ipcalc).
 2. Veja se um parceiro é proprietário do IP com uma [consulta whois](https://dnsquery.org/). Se ele for proprietário da Microsoft, poderá ser um parceiro interno.
-3. Verificar o certificado, em um navegador se conectar ao endereço IP usando *https://\<Endereço_IP\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
+3. Verifique o certificado, em um navegador, conecte-se ao endereço IP usando o *https://\<ip_address\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algumas URLs do Office 365 apontam para registros CNAME em vez de registros no DNS. O que preciso fazer com os registros CNAME?
 
-Computadores clientes precisam de um registro DNS A ou AAAA que inclua um ou mais endereços IP para se conectar a um serviço de nuvem. Algumas URLs incluídas no Office 365 mostram registros CNAME em vez de registros A ou AAAA. Esses registros CNAME são intermediários e pode haver vários em uma cadeia. Eles sempre serão eventualmente resolvidos para um registro A ou AAAA de um endereço IP. Por exemplo, considere a seguinte série de registros DNS, que, em última instância, é resolvida para o endereço IP _IP_1_:
+Computadores clientes precisam de um registro DNS A ou AAAA que inclua um ou mais endereços IP para se conectar a um serviço de nuvem. Algumas URLs incluídas no Office 365 mostram registros CNAME em vez de registros A ou AAAA. Esses registros CNAME são intermediários e pode haver vários em uma cadeia. Eles sempre serão eventualmente resolvidos para um registro A ou AAAA de um endereço IP. Por exemplo, considere a seguinte série de registros DNS, que, por fim, é resolvida para o endereço IP _IP_1_:
 
 ```
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
@@ -155,9 +155,9 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Esses redirecionamentos CNAME são uma parte normal do DNS e são transparentes para o computador cliente e transparentes para servidores proxy. Eles são usados para balanceamento de carga, redes de distribuição de conteúdo, alta disponibilidade e mitigação de incidentes de serviço. A Microsoft não publica os registros CNAME intermediários, eles estão sujeitos a alterações a qualquer momento e não é necessário configurá-los conforme permitido no servidor de proxy.
 
-Um servidor proxy valida a URL inicial que, no exemplo acima, é serviceA.office.com e essa URL seria incluída na publicação do Office 365. O servidor proxy solicita resolução de DNS dessa URL para um endereço IP e receberá IP_1. Ele não valida os registros de redirecionamento de CNAME intermediário.
+Um servidor proxy valida a URL inicial que, no exemplo acima, é serviceA.office.com e essa URL seria incluída na publicação do Office 365. O servidor proxy solicita a resolução de DNS dessa URL para um endereço IP e receberá IP_1 de volta. Ele não valida os registros de redirecionamento de CNAME intermediário.
 
-Não é recomendável que as configurações de código ou a lista de brancas do Office 365 indiretas não sejam suportadas pela Microsoft, e é conhecido por causar problemas de conectividade do cliente. As soluções DNS que bloqueiam o redirecionamento de CNAME ou que, de outra forma, resolvem incorretamente as entradas DNS do Office 365, podem ser resolvidas por meio do encaminhamento DNS condicional (com escopo para os FQDNs do Office 365 usados diretamente) com a recursão de DNS habilitada. Vários produtos de perímetro de rede de terceiros integram nativamente a lista de pontos de extremidade recomendados do Office 365 em suas configurações usando o [endereço IP 365 do Office e o serviço Web de URL](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service).
+Não é recomendável que as configurações de código ou a lista de brancas do Office 365 indiretas não sejam suportadas pela Microsoft, e é conhecido por causar problemas de conectividade do cliente. As soluções DNS que bloqueiam o redirecionamento de CNAME ou que, de outra forma, resolvem incorretamente as entradas DNS do Office 365, podem ser resolvidas por meio do encaminhamento DNS condicional (com escopo para os FQDNs do Office 365 usados diretamente) com a recursão de DNS habilitada. Vários produtos de perímetro de rede de terceiros integram nativamente a lista de pontos de extremidade recomendados do Office 365 em suas configurações usando o [endereço IP 365 do Office e o serviço Web de URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
 
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Por que vejo nomes como nsatc.net ou akadns.net nos nomes de domínio da Microsoft?
 <a name="bkmk_akamai"> </a>
@@ -207,7 +207,7 @@ Restringir o acesso aos nossos serviços de consumidor deve ser feito por sua co
   
 Tenha em mente que bloquear o acesso aos serviços de cliente da Microsoft sozinhos não impedirá a capacidade de alguém de sua rede Exfiltrate informações usando um locatário do Office 365 ou outro serviço.
   
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
 

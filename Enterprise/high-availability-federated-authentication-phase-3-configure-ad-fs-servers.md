@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Resumo: Crie e configure os servidores dos Serviços de Federação do Active Directory (AD FS) para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: 83e6d024676ae608b9f6f856e2ce91c4b0b9a31f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 68410111be6c4d12e27e32e9663592306d733970
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067487"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030735"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Autenticação federada de alta disponibilidade Fase 3: configurar servidores de AD FS
 
@@ -46,7 +46,7 @@ Use o seguinte bloco de comandos do PowerShell para criar as máquinas virtuais 
 Lembre-se de que você definiu a tabela M na [autenticação federada de alta disponibilidade fase 2: configurar os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e as tabelas R, V, S, I e A na [autenticação federada de alta disponibilidade fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Em primeiro lugar, crie um balanceador de carga interno do Azure para os dois servidores do AD FS. Especifique os valores para as variáveis, removendo \< os caracteres e >. Quando tiver fornecido todos os valores apropriados, execute o bloco resultante no prompt de comando do Azure PowerShell ou no ISE do PowerShell.
   

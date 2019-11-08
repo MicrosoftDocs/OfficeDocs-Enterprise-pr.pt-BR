@@ -13,21 +13,22 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma explicação da exclusão de dados no SharePoint Online.
-ms.openlocfilehash: ff219654387a17598f1ada8c866a005d8d4f5449
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 44b05ce6c028e79e489a94157f264fcedd63ea1a
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067179"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035471"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Exclusão de dados do SharePoint Online no Office 365
 
-O SharePoint Online armazena objetos como código abstrato em bancos de dados de aplicativos. Quando um usuário carrega um arquivo no SharePoint Online, esse arquivo é desmontado e traduzido no código do aplicativo e armazenado em várias tabelas em vários bancos de dados. No SharePoint Online, todo o conteúdo que um cliente carrega é dividido em partes, criptografadas (potencialmente com várias chaves AES de 256 bits) e distribuídas no datacenter. Para obter detalhes específicos sobre o processo de fragmentação e criptografia, consulte [Encryption in the Microsoft Cloud](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md). 
+O SharePoint Online armazena objetos como código abstrato em bancos de dados de aplicativos. Quando um usuário carrega um arquivo no SharePoint Online, esse arquivo é desmontado e traduzido no código do aplicativo e armazenado em várias tabelas em vários bancos de dados. No SharePoint Online, todo o conteúdo que um cliente carrega é dividido em partes, criptografadas (potencialmente com várias chaves AES de 256 bits) e distribuídas no datacenter. Para obter detalhes específicos sobre o processo de fragmentação e criptografia, consulte [Encryption in the Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
-No SharePoint Online, os itens são mantidos por 93 dias a partir do momento em que você os exclui do local original. Eles permanecem na lixeira do site o horário inteiro, a menos que alguém os exclua ou esvazia essa lixeira. Nesse caso, os itens vão para a lixeira do conjunto de sites, onde eles permanecem no restante dos 93 dias. Para obter informações sobre como restaurar itens excluídos, consulte [restaurar itens na lixeira de um site do SharePoint](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
+No SharePoint Online, os itens são mantidos por 93 dias a partir do momento em que você os exclui do local original. Eles permanecem na lixeira do site o horário inteiro, a menos que alguém os exclua ou esvazia essa lixeira. Nesse caso, os itens vão para a lixeira do conjunto de sites, onde eles permanecem no restante dos 93 dias. Para obter informações sobre como restaurar itens excluídos, consulte [restaurar itens na lixeira de um site do SharePoint](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 ) e [restaurar itens excluídos da](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b)lixeira do conjunto de sites. O tempo de retenção da lixeira não é configurável no SharePoint Online.
 
 Ao excluir um conjunto de sites, você também está excluindo a hierarquia de sites na coleção e todos os conteúdos dentro deles:
+
 - Documentos e bibliotecas de documentos
 - Lista e dados de lista
 - Definições de configuração do site

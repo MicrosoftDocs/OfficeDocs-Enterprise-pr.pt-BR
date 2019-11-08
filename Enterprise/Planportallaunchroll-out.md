@@ -11,15 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: Este artigo descreve como você pode planejar o lançamento do portal no SharePoint Online e quais etapas executar para um lançamento bem-sucedido
-ms.openlocfilehash: 8985ffb4b477ee70f0bf35489ce48fd72f8e4c86
-ms.sourcegitcommit: 739024fe2862ab646b36e218b57c5cc16ebe7892
+ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422148"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027655"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planejando o plano de distribuição de início do portal no SharePoint Online
-Um portal é o site padrão do SharePoint para sua empresa; em grandes organizações, pode haver vários deles. Se você espera que mais de 20% dos seus usuários dentro da sua organização acessem a página, considere a página do Portal. Isso não deve ser confundido com um site de equipe que seu departamento usa para colaborar e compartilhar documentos dentro da sua equipe.
+Um portal é o site padrão do SharePoint para sua empresa; em grandes organizações, pode haver vários deles. Se você espera que mais de 20% dos usuários da sua organização acessem a página, considere essa página um portal. Isso não deve ser confundido com um site de equipe que seu departamento usa para colaborar e compartilhar documentos dentro da sua equipe.
 
 Este artigo descreve como planejar a implantação e o plano de distribuição para o SharePoint Online. Também fornece abordagens para seguir, pois o teste de carga tradicional não é permitido no SharePoint Online. O SharePoint Online é um serviço de nuvem e os recursos de carga, a integridade e o equilíbrio geral de carga no serviço são gerenciados pela Microsoft.
 
@@ -28,14 +28,14 @@ Para ajudar na criação de um portal bem-sucedido, siga os princípios básicos
 A abordagem de implantação está realçada abaixo.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Visão geral do planejamento de capacidade no SharePoint Online
-Para usar eficientemente a capacidade e lidar com o crescimento inesperado, em qualquer farm, temos automação que controla determinados cenários de uso. Embora o crescimento exato seja imprevisível para qualquer um locatário em qualquer farm, a soma de solicitações agregada é previsível ao longo do tempo. Identificando as tendências de crescimento no SharePoint Online, podemos planejar a expansão futura. Para obter mais informações sobre [planejamento de capacidade e teste de carga do SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
+Para usar eficientemente a capacidade e lidar com o crescimento inesperado, em qualquer farm, temos automação que controla determinados cenários de uso. Embora o crescimento exato seja imprevisível para qualquer um locatário em qualquer farm, a soma de solicitações agregada é previsível ao longo do tempo. Identificando as tendências de crescimento no SharePoint Online, podemos planejar a expansão futura. Para obter mais informações sobre [planejamento de capacidade e teste de carga do SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
 
 Uma parte importante de um lançamento bem-sucedido é a abordagem de "onda" ou "distribuição em fases", detalhada abaixo. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>Posso carregar o SharePoint Online de teste?
 O SharePoint Online é um ambiente multilocatário compartilhado que é balanceado entre farms e a escala é ajustada de acordo com o andamento. O teste de carga de um ambiente, como o SharePoint Online, cuja escala muda continuamente não fornecerá resultados inesperados, mas não é permitido. 
 
-Saiba mais: [planejamento de capacidade e teste de carga do SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+Saiba mais: [planejamento de capacidade e teste de carga do SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>Otimizar páginas seguindo as diretrizes recomendadas
 As páginas de uma implantação local não devem ser movidas como estão no SharePoint Online sem analisá-las em relação às diretrizes recomendadas para o SharePoint Online. A melhor abordagem é sempre otimizar qualquer Home Page para qualquer site ou portal no SharePoint, pois a maioria dos usuários em sua organização acessará como o ponto de partida para seus sites.

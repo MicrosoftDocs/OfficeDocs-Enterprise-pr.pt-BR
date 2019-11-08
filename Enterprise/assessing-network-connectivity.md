@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: O Office 365 foi projetado para permitir que clientes em todo o mundo se conectem ao serviço usando uma conexão com a Internet. À medida que o serviço evolui, a segurança, o desempenho e a confiabilidade do Office 365 são aprimorados com base nos clientes que usam a Internet para estabelecer uma conexão com o serviço.
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428068"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030495"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Avaliando a conectividade de rede do Office 365
 
@@ -41,7 +41,7 @@ Alguns recursos para ajudá-lo a avaliar sua rede:
 
 - Confira [visão geral da conectividade de rede do office 365](office-365-networking-overview.md) para obter informações conceituais sobre a rede do Office 365.
 - Confira os [princípios de conectividade de rede do office 365](https://aka.ms/o365networkingprinciples) para entender os princípios de conectividade para o gerenciamento seguro do tráfego do Office 365 e obter o melhor desempenho possível.
-- Inscreva-se no [Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack) para obter assistência interativa com o planejamento, design e implantação do Office 365. 
+- Inscreva-se no [Microsoft FastTrack](https://www.microsoft.com/fasttrack) para obter assistência interativa com o planejamento, design e implantação do Office 365. 
 - Consulte a seção [ferramenta de integração de rede do Office 365](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) abaixo para executar os testes de conectividade básicos que fornecem orientações específicas sobre as melhorias de conectividade de rede que podem ser feitas entre um determinado local de usuário e o Office 365.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Principais pontos a serem considerados ao planejar sua avaliação de rede para 
 
 - Estamos continuamente otimizando os principais aspectos do Office 365, como disponibilidade, alcance global e desempenho para conectividade baseada na Internet. Por exemplo, muitos serviços do Office 365 aproveitam um conjunto de expansão de nós de borda voltados para a Internet. Esta rede de borda oferece a melhor proximidade e desempenho para conexões vindas pela Internet.
 
-- Ao considerar o uso do Office 365 para qualquer um dos serviços incluídos, como Teams ou recursos de voz, vídeo ou reunião do Skype for Business Online, os clientes devem concluir uma avaliação de rede de ponta a ponta e atender aos requisitos de conectividade usando [o Microsoft FastTrack](https://www.microsoft.com/en-us/fasttrack).
+- Ao considerar o uso do Office 365 para qualquer um dos serviços incluídos, como Teams ou recursos de voz, vídeo ou reunião do Skype for Business Online, os clientes devem concluir uma avaliação de rede de ponta a ponta e atender aos requisitos de conectividade usando [o Microsoft FastTrack](https://www.microsoft.com/fasttrack).
 
 Se você estiver avaliando o Office 365 e não tiver certeza de onde começar com sua avaliação de rede ou se encontrou desafios de design de rede que precisa de ajuda para superar, trabalhe com sua equipe de conta da Microsoft.
 

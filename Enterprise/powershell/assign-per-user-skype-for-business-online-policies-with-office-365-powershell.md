@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumo: Use o Office 365 PowerShell para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.'
-ms.openlocfilehash: 3c6c869874329d7efb6d8c417c797c9f81df6bf8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069287"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031036"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
 
@@ -29,7 +29,7 @@ O uso do Office 365 PowerShell é uma maneira eficiente de atribuir configuraç�
 
 Use estas instruções para configurar a execução dos comandos (pule as etapas que você já concluiu):
   
-1. Baixe e instale o [módulo do conector do Skype for Business online](https://www.microsoft.com/en-us/download/details.aspx?id=39366).
+1. Baixe e instale o [módulo do conector do Skype for Business online](https://www.microsoft.com/download/details.aspx?id=39366).
     
 2. Abra um prompt de comando do Windows PowerShell e execute os seguintes comandos: 
     

@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Saiba como adicionar vários usuários ao Office 365 para empresas de uma lista em uma planilha ou outro arquivo formatado por CSV. Assista a um vídeo sobre o YouTube que explica como adicionar contas ao Office 365. No final desse processo, cada usuário com uma conta terá uma caixa de correio do Office 365. '
-ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
-ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
+ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "36198653"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030725"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Adicionar vários usuários ao mesmo tempo para o Office 365 – Ajuda da administração
 
@@ -96,7 +96,7 @@ ms.locfileid: "36198653"
 
 Um arquivo CSV é um arquivo com valores separados por vírgulas. Você pode criar ou editar um arquivo como esse com qualquer editor de texto ou programa de planilha, como o Excel.
   
-Você pode baixar [esta planilha de exemplo](https://www.microsoft.com/en-us/download/details.aspx?id=45485) como ponto de partida. Lembre-se de que o Office 365 requer títulos de coluna na primeira linha; portanto, não os substitua por outra coisa. 
+Você pode baixar [esta planilha de exemplo](https://www.microsoft.com/download/details.aspx?id=45485) como ponto de partida. Lembre-se de que o Office 365 requer títulos de coluna na primeira linha; portanto, não os substitua por outra coisa. 
   
 Salve o arquivo com um novo nome e especifique o formato CSV.
   
@@ -147,7 +147,7 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
     
 ## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Adicionar vários usuários ao Office 365 no centro de administração antigo
 
-1. Baixe [esta planilha de exemplo](https://www.microsoft.com/en-us/download/details.aspx?id=45485) e abra-a no Excel. 
+1. Baixe [esta planilha de exemplo](https://www.microsoft.com/download/details.aspx?id=45485) e abra-a no Excel. 
     
     A planilha deve incluir **exatamente os mesmos títulos de coluna** que os da planilha de exemplo (Nome de Usuário, Nome, etc...). Se você usar o modelo, considere a opção de manter todos os dados na linha 1 e inserir dados apenas nas linhas 2 e abaixo. 
     

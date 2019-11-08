@@ -11,16 +11,18 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - SPO160
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Contém links para outros artigos que explicam como melhorar o desempenho de tempos de download de página do SharePoint Online.
-ms.openlocfilehash: 4352420637974e07a6c9d5ed843c312ea74729f4
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 8cd8b3b7a957fac7f3ddaed325cf64850b111fea
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375489"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033427"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ajuste o desempenho do SharePoint Online
 
@@ -36,7 +38,7 @@ Use estes artigos para ajustar o desempenho do SharePoint Online.
 
 - [Opções de navegação para o SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Diretrizes de desempenho para os portais do SharePoint Online](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-performance)
+- [Diretrizes de desempenho para os portais do SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Otimização de imagem para o SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -56,7 +58,7 @@ Use estes artigos para ajustar o desempenho do SharePoint Online.
 
 - [Usando o cache de objetos com o SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [Como evitar ficar limitado ou bloqueado no SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Como evitar ficar limitado ou bloqueado no SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
 
 - [Otimizar iFrames nas páginas de portal modernas do SharePoint Online](modern-iframe-optimization.md)
 

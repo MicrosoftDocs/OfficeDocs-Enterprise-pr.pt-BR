@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907634"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032186"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
@@ -34,7 +34,7 @@ Os clientes existentes que têm seus dados principais de cliente armazenados em 
 |:-----|:-----|:-----|:-----|
 |Japão * * * *| Ásia/Pacífico | Japão | Dezembro de 2014 |
 |Austrália, Nova Zelândia, Fiji * * * *| Ásia/Pacífico | Austrália | Março de 2015 |
-|Índia * * * *| Ásia/Pacífico | Índia | Outubro de 2015 |
+|Índia * * * *| Ásia/Pacífico | Índia | outubro de 2015 |
 |Canadá * * * *| América do Norte | Canadá | Maio de 2016 |
 |Reino Unido * * * *| Europa | Reino Unido | Setembro de 2016 |
 |Coréia do Sul * * * *| Ásia/Pacífico | Coréia do Sul | Abril de 2017 |
@@ -44,7 +44,7 @@ Os clientes existentes que têm seus dados principais de cliente armazenados em 
   
 Novos clientes ou locatários do Office 365 criados após a disponibilidade da nova Geografia do datacenter terão seus principais dados de cliente armazenados em repouso na nova Geografia do datacenter automaticamente.
   
-Uma lista completa de todos os GEOS do datacenter, datacenters e o local dos dados do cliente em repouso está disponível como parte dos [mapas](https://office.com/datamaps)de datacenter interativos. 
+Uma lista completa de todos os GEOS do datacenter, datacenters e o local dos dados do cliente em repouso está disponível como parte dos [mapas de datacenter interativos](https://office.com/datamaps). 
   
 ## <a name="data-residency-option"></a>Opção de residência de dados
 
@@ -68,4 +68,4 @@ As movimentações de dados para a nova Geografia do datacenter são concluídas
   
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)
+[Serviços do Azure por região](https://azure.microsoft.com/regions/)

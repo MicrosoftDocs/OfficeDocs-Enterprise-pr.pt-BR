@@ -3,7 +3,7 @@ title: Planejar sua atualização do Office 2007 ou 2010 servidores e clientes
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/09/2019
+ms.date: 09/16/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,24 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos e servidores desatualizados e não suportados. Use estes recursos para começar a usar seu plano.
-ms.openlocfilehash: 444befb11fdbb3578b30f63615b2f6f1e18a3cf9
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782171"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031056"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
 
-Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o fim do suporte. O Exchange 2010 atingirá o fim do suporte em **14 de janeiro de 2020**. Outros produtos e serviços do Office 2010 atingirão o fim do suporte em **13 de outubro de 2020**. Use os recursos desta seção para começar.
-
-- Os produtos e serviços do Office 2007 atingiram o fim do suporte. Confira [Upgrade from clientes e servidores do Office 2007](upgrade-from-office-2007-servers-and-products.md) para obter mais detalhes.
-
-- Para clientes e servidores do Office 2010:
-
-  - O Exchange 2010 atingirá o fim do suporte em **14 de janeiro de 2020**.
-
-  - O Office 2010, o SharePoint 2010 e o Project Server 2010 atingirão o fim do suporte em **13 de outubro de 2020**.
+Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o [fim do suporte](upgrade-from-office-2007-servers-and-products.md). Os produtos e serviços do Office 2010 (incluindo o Office 2010, o Exchange 2010, o SharePoint 2010 e o Project Server 2010) vão atingir o fim do suporte em **13 de outubro de 2020**. Use os recursos desta seção para começar.
 
 Confira [Upgrade from clientes e servidores do Office 2010](upgrade-from-office-2010-servers-and-products.md) para obter mais detalhes.
 
@@ -47,7 +39,7 @@ As organizações têm várias opções para considerar:
     
     |Produtos e serviços do Office 2007  |Produtos e serviços do Office 2010  |
     |---------|---------|
-    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) Placa | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) Placa |
+    |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (área de trabalho) | [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (área de trabalho) |
     |[Exchange 2007](exchange-2007-end-of-support.md) |[Exchange 2010](exchange-2010-end-of-support.md) |
     |[SharePoint 2007](sharepoint-2007-end-of-support.md) |[SharePoint 2010](upgrade-from-sharepoint-2010.md) |
     |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) |
@@ -72,13 +64,13 @@ Se você quiser ajuda para planejar sua atualização, considere uma ou mais das
 
 Se você estiver usando o Office 2007 ou o Office 2010 em casa, considere as seguintes opções de atualização:
 
-- **Use o Office em um navegador gratuitamente.** Criar, exibir e editar arquivos do Office em seu navegador e ter acesso a esses arquivos de praticamente qualquer dispositivo com acesso à Internet. [O Office para a Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclui o [Word para a Web](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel para a Web](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint para Web](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote para Web](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [email](http://go.microsoft.com/fwlink/p/?linkid=746676), [calendário](http://go.microsoft.com/fwlink/p/?linkid=746678)e [onedrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Para começar, visite [Office.com](https://office.com) e entre usando sua conta da [Microsoft](https://account.microsoft.com/account). (Se você não tiver uma conta da Microsoft, poderá criar uma em [Office.com](https://office.com).)
+- **Use o Office em um navegador gratuitamente.** Criar, exibir e editar arquivos do Office em seu navegador e ter acesso a esses arquivos de praticamente qualquer dispositivo com acesso à Internet. [O Office para a Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) inclui o [Word para a Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel para a Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint para Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote para Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [email](https://go.microsoft.com/fwlink/p/?linkid=746676), [calendário](https://go.microsoft.com/fwlink/p/?linkid=746678)e [onedrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Para começar, visite [Office.com](https://office.com) e entre usando sua conta da [Microsoft](https://account.microsoft.com/account). (Se você não tiver uma conta da Microsoft, poderá criar uma em [Office.com](https://office.com).)
 
 - **Experimente o Office 365 para uso doméstico.** Revise os [requisitos](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab)e, em seguida, escolha entre o [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) ou o [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Inicie uma avaliação e veja como o Office 365 funciona para você. Com o Office 365, você desfrutará do armazenamento em nuvem com o OneDrive, receberá 60 minutos de chamadas do Skype para números móveis e fixos a cada mês, e obterá vários outros recursos excelentes. Para saber mais, veja [obter o máximo do Office com o office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
 
-   Com o [fim do suporte para o Windows 7 em 14 de janeiro de 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), as versões do Word, Excel, PowerPoint, Outlook, Publisher e Access fornecidas com o Office 365 Home ou o Office 365 Personal em execução em dispositivos Windows 7 receberão atualizações de segurança, mas nenhum recurso atualizado. Para continuar recebendo atualizações de recursos para esses aplicativos, [atualize seus dispositivos Windows 7 para o Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
+   Com o [fim do suporte para o Windows 7 em 14 de janeiro de 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), as versões do Word, Excel, PowerPoint, Outlook, Publisher e Access fornecidas com o Office 365 Home ou o Office 365 Personal em execução em dispositivos Windows 7 receberão atualizações de segurança, mas não atualizarão recursos. Para continuar recebendo atualizações de recursos para esses aplicativos, [atualize seus dispositivos Windows 7 para o Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
-- **Compre aluno residencial &amp; do Office.** Se você escolher essa opção, fará uma compra única e, em seguida, instalar o Office em seu PC ou Mac do Windows. Isso não é uma assinatura; é uma licença de uso única e permanente para um computador. Veja os [requisitos](http://office.com/systemrequirements)e, em seguida, escolha a versão que você deseja usar.
+- **Compre aluno residencial &amp; do Office.** Se você escolher essa opção, fará uma compra única e, em seguida, instalar o Office em seu PC ou Mac do Windows. Isso não é uma assinatura; é uma licença de uso única e permanente para um computador. Veja os [requisitos](https://office.com/systemrequirements)e, em seguida, escolha a versão que você deseja usar.
 
     - Se seu computador Windows está executando o Windows 10, considere obter o [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
@@ -105,11 +97,11 @@ A Microsoft 365 é a maneira de transformar digitalmente sua empresa com disposi
 
 ## <a name="next-step"></a>Próxima etapa
 
-[Atualização de clientes e servidores do Office 2007](upgrade-from-office-2007-servers-and-products.md)
+[Atualização de servidores e clientes do Office 2007](upgrade-from-office-2007-servers-and-products.md)
 
 ou
 
-[Atualização de clientes e servidores do Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Atualizar de servidores e clientes do Office 2010](upgrade-from-office-2010-servers-and-products.md)
    
 ## <a name="related-topics"></a>Tópicos relacionados
   

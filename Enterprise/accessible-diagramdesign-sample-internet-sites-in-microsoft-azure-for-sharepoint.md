@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
 description: 'Este artigo é uma versão de texto acessível do diagrama chamado amostra de design: sites da Internet no Microsoft Azure para SharePoint 2013.'
-ms.openlocfilehash: 28cf28739c476638b5775d170508001f2a9730ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 52ae615cbdc6a355155e54e36bc6a3d733d84869
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068791"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027625"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama acessível-exemplo de design: sites da Internet no Microsoft Azure para SharePoint 2013
 
@@ -50,13 +50,13 @@ Este cartaz mostra um exemplo de como criar os seguintes aspectos do SharePoint 
 
 Há quatro tipos de contas de usuário nesse design. Cada tipo de conta é associada a um site para acesso e com uma zona que usa um tipo específico de autenticação. 
   
-- Clientes anônimos — clientes anônimos têm acesso por meio de http://www.contoso.comum site como o. A zona que eles usam é a "zona de Internet/anônima", que usa a autenticação anônima.
+- Clientes anônimos — clientes anônimos têm acesso por meio de https://www.contoso.comum site como o. A zona que eles usam é a "zona de Internet/anônima", que usa a autenticação anônima.
     
 - Clientes autenticados – clientes autenticados têm acesso por meio de um site https://secure.contoso.comcomo o. A zona que usa é "extranet Zone/SAML", que usa o Azure Active Directory com a autenticação SAML.
     
-- Autores e desenvolvedores de sites — autores e desenvolvedores de sites têm acesso por meio http://authoring.contoso.com:8000 de http://www.contoso.com:8000sites como ou. A zona que usa é "padrão de zona/Windows integrado", que usa os serviços de domínio do Active Directory (AD DS).
+- Autores e desenvolvedores de sites — autores e desenvolvedores de sites têm acesso por meio https://authoring.contoso.com:8000 de https://www.contoso.com:8000sites como ou. A zona que usa é "padrão de zona/Windows integrado", que usa os serviços de domínio do Active Directory (AD DS).
     
-- Conta de rastreamento de pesquisa — a conta de rastreamento de pesquisa tem acesso http://authoring.contoso.com:8000 por http://www.contoso.com:8000meio de sites como ou. A zona que ela usa é "padrão de zona/Windows integrado", que usa o AD DS com a autenticação NTLM do Windows.
+- Conta de rastreamento de pesquisa — a conta de rastreamento de pesquisa tem acesso https://authoring.contoso.com:8000 por https://www.contoso.com:8000meio de sites como ou. A zona que ela usa é "padrão de zona/Windows integrado", que usa o AD DS com a autenticação NTLM do Windows.
     
 ## <a name="server-farm"></a>Farm de servidores
 
@@ -80,21 +80,21 @@ Observações sobre serviços para sites da Internet:
     
 ## <a name="application-pools-and-web-applications"></a>Pools de aplicativos e aplicativos Web
 
-O grupo padrão no Azure mostra o pool de aplicativos 3, que contém um aplicativo Web chamado contoso sites. Este conjunto de sites baseado em caminho está localizado http://internal:8000em.
+O grupo padrão no Azure mostra o pool de aplicativos 3, que contém um aplicativo Web chamado contoso sites. Este conjunto de sites baseado em caminho está localizado https://internal:8000em.
   
 ## <a name="site-collections-and-sites"></a>Conjuntos de sites e sites
 
 Os conjuntos de sites contidos no pool de aplicativos incluem:
   
-- Conjunto de sites com nome de host 1 para rastreamento (exemplo de localhttp://authoring.contoso.com:8000)
+- Conjunto de sites com nome de host 1 para rastreamento (exemplo de localhttps://authoring.contoso.com:8000)
     
-- Conjunto de sites nomeados por host 2 para consultas ( http://www.contoso.comlocais https://secure.contoso.comde exemplo,http://www.contoso.com:8000)
+- Conjunto de sites nomeados por host 2 para consultas ( https://www.contoso.comlocais https://secure.contoso.comde exemplo,https://www.contoso.com:8000)
     
-- Conjunto de sites nomeado por host 3 para consultas (locais http://assets.contoso.comde https://secureassets.contoso.comexemplo,http://assets.contoso.com:8000)
+- Conjunto de sites nomeado por host 3 para consultas (locais https://assets.contoso.comde https://secureassets.contoso.comexemplo,https://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>Bancos de dados de conteúdo
 
-O exemplo mostra dois bancos de dados de conteúdo. Um é para o conjunto de sites 1 usado para rastreamento (http://authoring.contoso.com:8000). O outro é para os dois conjuntos de sites 2 e 3 usados para consultashttp://www.contoso.com( https://secure.contoso.com, http://www.contoso.com:8000,, http://assets.contoso.comou https://secureassets.contoso.com, http://assets.contoso.com:8000),.
+O exemplo mostra dois bancos de dados de conteúdo. Um é para o conjunto de sites 1 usado para rastreamento (https://authoring.contoso.com:8000). O outro é para os dois conjuntos de sites 2 e 3 usados para consultashttps://www.contoso.com( https://secure.contoso.com, https://www.contoso.com:8000,, https://assets.contoso.comou https://secureassets.contoso.com, https://assets.contoso.com:8000),.
   
 ## <a name="zones-and-urls"></a>Zonas e URLs
 
@@ -106,7 +106,7 @@ A primeira lista de zonas e URLs está relacionada ao conjunto de sites 1 e cont
     
 - Zona-padrão
     
-- URL com balanceamento de carga-http://authoring.contoso.com:8000
+- URL com balanceamento de carga-https://authoring.contoso.com:8000
     
 A segunda lista de zonas e URLs tem três tipos diferentes de usuários em três zonas diferentes. Ele está relacionado ao conjunto de sites 2 e contém as seguintes informações:
   
@@ -116,7 +116,7 @@ Primeira zona:
     
 - Zona-padrão
     
-- URL com balanceamento de carga-http://www.contoso.com:8000
+- URL com balanceamento de carga-https://www.contoso.com:8000
     
 Segunda zona:
   
@@ -124,7 +124,7 @@ Segunda zona:
     
 - Zona-Internet
     
-- URL com balanceamento de carga-http://www.contoso.com
+- URL com balanceamento de carga-https://www.contoso.com
     
 Terceira zona:
   
@@ -142,7 +142,7 @@ Primeira zona:
     
 - Zona-Internet
     
-- URL com balanceamento de carga-http://assets.contoso.com:8000
+- URL com balanceamento de carga-https://assets.contoso.com:8000
     
 Segunda zona:
   
@@ -150,7 +150,7 @@ Segunda zona:
     
 - Zona-Internet
     
-- URL com balanceamento de carga-http://assets.contoso.com
+- URL com balanceamento de carga-https://assets.contoso.com
     
 Terceira zona:
   
@@ -158,6 +158,6 @@ Terceira zona:
     
 - Zona-Extranet
     
-- URL com balanceamento de carga-http://secureassets.contoso.com
+- URL com balanceamento de carga-https://secureassets.contoso.com
     
 

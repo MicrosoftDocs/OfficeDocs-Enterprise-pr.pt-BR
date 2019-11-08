@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar as políticas do Skype for Business online, políticas por usuário e configurações da reunião.'
-ms.openlocfilehash: 80d8308a1c9b32fcafd47d1df2f699141e41accd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782131"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030936"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gerenciar o Skype for Business Online com o Office 365 PowerShell
 
@@ -27,7 +27,7 @@ Uma das principais tarefas de qualquer administrador do Skype for Business onlin
 
 ## <a name="before-you-start"></a>Antes de começar
 
-Baixe e instale o [módulo do conector do Skype for Business online](https://www.microsoft.com/en-us/download/details.aspx?id=39366)e reinicie o computador, se solicitado.
+Baixe e instale o [módulo do conector do Skype for Business online](https://www.microsoft.com/download/details.aspx?id=39366)e reinicie o computador, se solicitado.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Conectar-se usando um nome e senha da conta de administrador do Skype for Business Online
@@ -41,7 +41,7 @@ Baixe e instale o [módulo do conector do Skype for Business online](https://www
   Import-PSSession $sfbSession
   ```
 
-2. Na caixa de diálogo solicitação de credencial do **Windows PowerShell** , digite seu nome e senha da conta de administrador do Skype for Business Online e clique em **OK**.
+2. Na caixa de diálogo **solicitação de credencial do Windows PowerShell** , digite seu nome e senha da conta de administrador do Skype for Business Online e clique em **OK**.
 
 
 ## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>Conectar-se usando uma conta de administrador do Skype for Business online com a autenticação multifator

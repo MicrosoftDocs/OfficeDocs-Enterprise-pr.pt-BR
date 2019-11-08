@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumo: Configure e demonstre o Office 365 Cloud app Security no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782251"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030825"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de Aplicativo na Nuvem para o ambiente de desenvolvimento/teste do Office 365
 
@@ -32,7 +32,7 @@ O Office 365 Cloud app Security, anteriormente conhecido como gerenciamento de s
 Com as instruções deste artigo, você habilita e testa o Cloud app Security na sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -109,7 +109,7 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
   
 ### <a name="demonstrate-email-notification-for-a-change-in-user-account-roles"></a>Demonstrar a notificação por email para uma alteração nas funções da conta do usuário
 
-1. No canto superior direito, clique no ícone usuário e, em seguida, **** clique em sair.
+1. No canto superior direito **, clique no**ícone usuário e, em seguida, clique em sair.
     
 2. Acesse [https://www.office.com](https://www.office.com).
     
@@ -131,9 +131,9 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
     
 11. Na página **usuário 5** , clique em **Editar** para a linha **funções** .
     
-12. Na página **Editar funções de usuário** , clique em **administrador personalizado**, clique em administrador de **Gerenciamento de usuário**e administrador de **senha** , digite **User5@contoso.com** no **endereço de email alternativo**e clique em **Salvar**. Clique em **fechar** duas vezes.
+12. Na página **Editar funções de usuário** , clique em **administrador personalizado**, clique em administrador de **Gerenciamento de usuário**e administrador de **senha** , digite **User5@contoso.com** no **endereço de email alternativo**e clique em **salvar**. Clique em **fechar** duas vezes.
     
-13. Clique no ícone de usuário no canto superior direito e clique em sair ****. 
+13. Clique no ícone de usuário no canto superior direito e clique em sair **.** 
     
 14. Acesse [https://www.office.com](https://www.office.com).
     
@@ -153,7 +153,7 @@ Neste procedimento, você demonstrará como o Cloud app Security cria alertas e 
     
 22. Na guia **Microsoft Office Home** , clique em **email**. Aguarde até 30 minutos. 
     
-    Você deve ver duas novas mensagens de email na caixa de entrada com o título **Microsoft Azure ad Notification Service**. Uma mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de senha** e outra mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de usuários** (igual à função Administrador de gerenciamento de usuários no Centro de administração do Microsoft 365).
+    Você deve ver duas novas mensagens de email na caixa de entrada com o título **Microsoft Azure ad Notification Service**. Uma mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de senha** e outra mensagem indica que a conta do usuário 5 foi adicionada à função de **administrador de usuários** (igual à função Administrador de gerenciamento de usuários no centro de administração do Microsoft 365).
     
 Agora você pode usar esse ambiente para criar novas políticas e experimentar mais com o Office 365 Cloud app Security. Consulte preparar [para o Office 365 Cloud app Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) para obter links para artigos de configuração adicionais.
   

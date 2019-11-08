@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar grupos de sites do SharePoint Online.'
-ms.openlocfilehash: a128823ba125342bd1d209ac8a2bf28334da866d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2deaeb2a39b094b828f75a18d4a2c2f06ca79e47
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068857"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031736"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
@@ -29,7 +29,7 @@ Embora você possa usar o centro de administração do Microsoft 365, você tamb
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Os procedimentos deste artigo exigem que você se conecte ao SharePoint Online. Para obter instruções, consulte [conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Os procedimentos deste artigo exigem que você se conecte ao SharePoint Online. Para obter instruções, consulte [conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 ## <a name="view-sharepoint-online-with-office-365-powershell"></a>Exibir o SharePoint Online com o Office 365 PowerShell
 

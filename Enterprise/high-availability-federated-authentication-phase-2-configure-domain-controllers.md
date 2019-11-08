@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Resumo: Configure os controladores de domínio e o servidor DirSync para a sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: 299723c8f49cddd4a30ba2defc73dd156792f337
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: 5cb7c75f5d66dc37aa9e4b7fdc682c9508eac40e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102519"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028795"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Autenticação federada de alta disponibilidade Fase 2: configurar controladores de domínio
 
@@ -38,7 +38,7 @@ Em primeiro lugar, você precisa preencher a coluna **Nome da máquina virtual**
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png) (primeiro controlador de domínio, DC1 de exemplo)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png) (segundo controlador de domínio, DC2 de exemplo)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(Servidor dirSync, exemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(Servidor DirSync, exemplo DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)(primeiro servidor AD FS, exemplo ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)(segundo servidor AD FS, exemplo ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![](./media/Common-Images/TableLine.png)(primeiro servidor de proxy de aplicativo Web, exemplo WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
@@ -65,7 +65,7 @@ O seguinte bloco de comandos do Azure PowerShell cria as máquinas virtuais para
 Lembre-se de que você definiu as tabelas R, V, S, I e A com A [autenticação federada de alta disponibilidade fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Quando tiver fornecido todos os valores corretos, execute o bloco resultante no prompt do Azure PowerShell ou no Ambiente de Script Integrado (ISE) do PowerShell no computador local.
   
@@ -232,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-dirsync-server"></a>Configurar o servidor DirSync
 
-Use o cliente de área de trabalho remota de sua preferência e crie uma conexão de área de trabalho remota com a máquina virtual do servidor dirSync. Use seu nome de computador ou DNS de intranet e as credenciais da conta de administrador local.
+Use o cliente de área de trabalho remota de sua preferência e crie uma conexão de área de trabalho remota com a máquina virtual do servidor DirSync. Use seu nome de computador ou DNS de intranet e as credenciais da conta de administrador local.
   
 Em seguida, ingresse-o no domínio do AD DS apropriado com estes comandos no prompt do Windows PowerShell.
   

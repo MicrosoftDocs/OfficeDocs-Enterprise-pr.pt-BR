@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: Este artigo é uma versão de texto acessível do diagrama chamado sites da Internet no Microsoft Azure para SharePoint 2013.
-ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cf978dfb95b1f201c342889fc3dda428bb618241
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068637"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028055"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Diagrama acessível-sites da Internet no Microsoft Azure para SharePoint 2013
 
@@ -198,23 +198,23 @@ URLs de aplicativo Web e site raiz
     
 O diagrama a seguir mostra os serviços do pool de aplicativos, como a pesquisa interagindo com conjuntos de sites usando aplicativos da Web. Os conjuntos de sites mostrados incluem: 
   
-- Conjunto de sites baseado em caminho localizado http://internal:8000 em (site raiz). 
+- Conjunto de sites baseado em caminho localizado https://internal:8000 em (site raiz). 
     
 - Rastreamento: conjuntos de sites nomeados por host, localizados em um https://authoring.contoso.com:8000endereço como. 
     
 - Consultas: 2 conjuntos de sites nomeados por host diferentes localizados em endereços como: 
     
-  - http://www.contoso.com 
+  - https://www.contoso.com 
     
   - https://secure.contoso.com 
     
-  - http://www.contoso.com:8000 
+  - https://www.contoso.com:8000 
     
-  - http://assets.contoso.com 
+  - https://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://assets.contoso.com:8000 
+  - https://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Projetar o ambiente do Azure
 

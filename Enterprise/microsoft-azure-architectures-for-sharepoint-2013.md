@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Resumo: as soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um.'
-ms.openlocfilehash: 913910af1acf1353c3ee9b553178c4f0736eb290
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7bc274098f961ccf9aa6aef05f595dfc6e116bec
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070287"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032286"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquiteturas do Microsoft Azure para o SharePoint 2013
 
@@ -54,9 +54,9 @@ Para soluções de intranet e colaboração e cargas de trabalho, considere as s
 
 Embora este artigo use topologias de exemplo do SharePoint, você pode usar esses conceitos de design com qualquer topologia de farm do SharePoint. Antes de projetar o ambiente do Azure, use as seguintes orientações de topologia, arquitetura, capacidade e desempenho para projetar o farm do SharePoint:
   
-- [Design de arquitetura para profissionais de ti do SharePoint 2013](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
+- [Design de arquitetura para profissionais de ti do SharePoint 2013](http://technet.microsoft.com/sharepoint/fp123594.aspx)
     
-- [Planejar o gerenciamento de desempenho e capacidade no SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Planejar o gerenciamento de desempenho e capacidade no SharePoint Server 2013](https://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
 ## <a name="determine-the-active-directory-domain-type"></a>Determinar o tipo de domínio do Active Directory
 
@@ -120,7 +120,7 @@ A tabela a seguir fornece recomendações de configuração para essas máquinas
 |**Item**|**Configuração**|
 |:-----|:-----|
 |Tamanho da máquina virtual no Azure  <br/> |Tamanho a1 ou a2 na camada padrão  <br/> |
-|Sistema operacional  <br/> |Windows Server 2012 R2  <br/> |
+|Sistema operacional  <br/> |Windows Server 2012 R2  <br/> |
 |Função do Active Directory  <br/> |Controlador de domínio do AD DS designado como um servidor de catálogo global. Essa configuração reduz o tráfego de egresso na conexão entre locais.  <br/> Em um ambiente de multidomínio com altas taxas de alteração (isso não é comum), configure os controladores de domínio no local para não sincronizar com os servidores de catálogo global no Azure, para reduzir o tráfego de replicação.  <br/> |
 |Função DNS  <br/> |Instale e configure o serviço de servidor DNS nos controladores de domínio.  <br/> |
 |Discos de dados  <br/> |Coloque o banco de dados do Active Directory, os logs e o SYSVOL em discos de dados adicionais do Azure. Não coloque esses no disco do sistema operacional ou nos discos temporários fornecidos pelo Azure.  <br/> |
@@ -225,7 +225,7 @@ Este diagrama mostra o farm do SharePoint implementado nos serviços de infraest
    
 ## <a name="see-also"></a>Confira também
 
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
   
 [Sites da Internet no Microsoft Azure usando o SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: uma explicação dos controles de isolamento no Office 365.'
-ms.openlocfilehash: 87317d753198b50ce360640c94f042adf27ed06e
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a53826f7f11324986f3df59d9df806ea522cb7d6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067142"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031196"
 ---
 # <a name="office-365-isolation-controls"></a>Controles de isolamento do Office 365 
 
@@ -29,7 +29,7 @@ O Office 365 é composto por vários serviços que fornecem funcionalidade comer
 O Office 365 foi projetado com os seguintes princípios:
 
  - ** [Arquitetura orientada a serviços](https://msdn.microsoft.com/library/aa480021.aspx):** design e desenvolvimento de software na forma de serviços de interoperabilidade que fornecem funcionalidade comercial bem definida.
- - **[Garantia de segurança operacional](http://www.microsoft.com/download/details.aspx?id=40872):** uma estrutura que incorpora o conhecimento obtido através de vários recursos exclusivos da Microsoft, incluindo o [ciclo de vida de desenvolvimento de segurança](https://www.microsoft.com/sdl/default.aspx)da Microsoft, a segurança da [Microsoft O centro de respostas](https://technet.microsoft.com/library/dn440717.aspx)e a percepção profunda do panorama de ameaças do cybersecurity.
+ - **[Garantia de segurança operacional](https://www.microsoft.com/download/details.aspx?id=40872):** uma estrutura que incorpora o conhecimento obtido por meio de vários recursos exclusivos da Microsoft, incluindo o ciclo de [vida do desenvolvimento da segurança](https://www.microsoft.com/sdl/default.aspx)da Microsoft, o [Microsoft Security Response Center](https://technet.microsoft.com/library/dn440717.aspx)e uma profunda percepção do panorama de ameaças do cybersecurity.
 
 Os serviços do Office 365 interoperam entre si, mas foram projetados e implementados para que possam ser implantados e operados como serviços autônomos, independentemente uns dos outros. A Microsoft segregou as obrigações e áreas de responsabilidade do Office 365 para reduzir as oportunidades de modificação não autorizada ou incorreta ou uso indevido dos ativos da organização. O Office 365 Teams tem funções definidas como parte de um mecanismo abrangente de controle de acesso baseado em função.
 

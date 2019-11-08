@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Office 365.
-ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249489"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028865"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de verificação de planejamento de implantação do Office 365
 
 Ao mover uma organização corporativa para o Office 365, é importante planejar exatamente quais etapas você deseja executar, quando executá-las e quem as executará. Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Office 365. As fases e etapas da lista de verificação são alinhadas com as orientações fornecidas pelo [centro de integração](https://go.microsoft.com/fwlink/?LinkId=517115). Sinta-se à vontade para adaptar essa lista de verificação às necessidades da sua organização.
 
 ## <a name="need-help-with-your-deployment"></a>Precisa de ajuda com a implantação?
-Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack](https://fasttrack.microsoft.com/office) ou os conselheiros de [implantação para os serviços do Office 365](deployment-advisors-for-office-365.md).
+Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack](https://fasttrack.microsoft.com/office) ou os [conselheiros de implantação para os serviços do Office 365](deployment-advisors-for-office-365.md).
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Lista de verificação de amostra para uma implantação corporativa do Office 365
 
@@ -51,8 +51,8 @@ Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack
 | Coletar os detalhes sobre os aplicativos integrados a sistemas existentes (aplicativos habilitados para email, fluxo de trabalho, CRM e assim por diante) |||||
 |Tomar decisões importantes de implantação |||||
 | Como você [criará e/ou sincronizará contas](https://go.microsoft.com/fwlink/?LinkId=534819)? |||||
-| Como [as contas de usuário](https://go.microsoft.com/fwlink/?LinkId=534820)serão autenticadas? |||||
-| Você migrará todos os dados e como a migração ocorrerá [](https://go.microsoft.com/fwlink/?LinkId=534823) (emails e [arquivos](https://go.microsoft.com/fwlink/?LinkId=534824))? |||||
+| Como [as contas de usuário serão autenticadas](https://go.microsoft.com/fwlink/?LinkId=534820)? |||||
+| Você migrará todos os dados e como a migração ocorrerá ( [emails](https://go.microsoft.com/fwlink/?LinkId=534823) e [arquivos](https://go.microsoft.com/fwlink/?LinkId=534824))? |||||
 | Haverá uma integração de longo e curto prazo [com os sistemas locais](https://go.microsoft.com/fwlink/?LinkId=534822)? |||||
 | [De quais dispositivos os usuários poderão se conectar](https://go.microsoft.com/fwlink/?LinkId=534821) (remotamente, de dispositivos móveis ou apenas da sua rede)? |||||
 |**Correção de bloqueadores de implantação potenciais** |||||
@@ -78,5 +78,5 @@ Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack
 | Opcionalmente, migrar dados ( [email](https://go.microsoft.com/fwlink/?LinkId=534823), [arquivos](https://go.microsoft.com/fwlink/?LinkId=534824)e assim por diante) |||||
 |Validar funcionalidade e concluir etapas finais |||||
 | Migrar [configurações de DNS para apontar para o Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Informe aos usuários quando eles podem [começar a usar o Office 365](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Informe aos usuários quando eles podem [começar a usar o Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
 | Reconfigurar sistemas clientes para se conectarem ao Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook para Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivos móveis](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

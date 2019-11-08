@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: O ExpressRoute para Office 365 fornece conectividade de camada 3 entre a rede e os datacenters da Microsoft. Os circuitos usam anúncios de rota do Border Gateway Protocol (BGP) dos servidores front-end do Office 365. Da perspectiva de seus dispositivos locais, quando eles precisam selecionar o caminho TCP/IP correto para o Office 365, o Azure ExpressRoute é visto como uma alternativa para a Internet.
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782231"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032116"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Planejamento de rede com o ExpressRoute para Office 365
 
@@ -76,7 +76,7 @@ Todas as nossas recomendações sobre qual tipo de processamento de rede é reco
 
 A proteção da conectividade expressa do Azure começa com os mesmos princípios de proteção da conectividade com a Internet. Muitos clientes optam por implantar os controles de rede e de perímetro ao longo do caminho ExpressRoute conectando sua rede local ao Office 365 e a outras nuvens da Microsoft. Esses controles podem incluir firewalls, proxies de aplicativos, prevenção de perda de dados, detecção de invasão, sistemas de prevenção de invasão e assim por diante. Em muitos casos, os clientes aplicam diferentes níveis de controles ao tráfego iniciado a partir do local para a Microsoft, versus o tráfego iniciado pela Microsoft indo para a rede local do cliente, versus o tráfego iniciado no local para um geral Destino da Internet.
   
-Aqui estão alguns exemplos de integração de segurança com o [modelo de conectividade ExpressRoute](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) que você escolhe implantar.
+Aqui estão alguns exemplos de integração de segurança com o [modelo de conectividade ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) que você escolhe implantar.
 
 |**Opção de integração do ExpressRoute**|**Modelo de perímetro de segurança de rede**|
 |:-----|:-----|
@@ -102,7 +102,7 @@ Veja um exemplo de Woodgrove Bank que compara as diferentes opções de conectiv
   
 ### <a name="example-1-securing-azure-expressroute"></a>Exemplo 1: protegendo o Azure ExpressRoute
   
-O Woodgrove Bank está pensando em implementar o Azure ExpressRoute e depois de planejar a arquitetura ideal para o [Roteamento com o ExpressRoute para Office 365](routing-with-expressroute.md) e após usar as orientações acima para entender os requisitos de largura de banda, eles estão determinando o melhor método para proteger seu perímetro.
+O Woodgrove Bank está pensando em implementar o Azure ExpressRoute e depois de planejar a arquitetura ideal para o [Roteamento com o expressroute para Office 365](routing-with-expressroute.md) e depois de usar as orientações acima para entender os requisitos de largura de banda, eles determinam o melhor método para proteger seu perímetro.
   
 Para o Woodgrove, uma organização multinacional com locais em vários continentes, a segurança deve abranger todos os perímetros. A opção de conectividade ideal para o Woodgrove é uma conexão de vários pontos com vários locais de emparelhamento em todo o mundo para atender às necessidades de seus funcionários em cada continente. Cada continente inclui circuitos do Azure ExpressRoute redundantes dentro do continente e a segurança deve abranger todos eles.
   
@@ -187,7 +187,7 @@ Trabalhe com seu provedor ou provedores para selecionar as melhores opções de 
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 <a name="BKMK_high-availability"> </a>
 
 [Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)

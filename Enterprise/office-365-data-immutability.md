@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Define e explica a imutabilidade dos dados no Office 365.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067172"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035571"
 ---
 # <a name="immutability-in-office-365"></a>Imutabilidade no Office 365
 
@@ -38,12 +38,12 @@ Com os recursos de política de retenção e preservação in-loco do arquivamen
 
 Além disso, a Microsoft desenvolveu recursos complementares para permitir o [arquivamento de dados](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) de outras fontes por meio da integração com soluções de captura e gerenciamento de dados de terceiros. Após a importação dos dados de terceiros, é possível aplicar recursos de conformidade do Office 365 aos dados, incluindo:
 
-- [Retenção de litígio](/microsoft365/compliance/create-a-litigation-hold.md)
-- [Descoberta eletrônica in-loco e retenção](/microsoft365/compliance/manage-legal-investigations.md)
-- [Pesquisa de Conformidade](/microsoft365/compliance/search-for-content.md)
-- [Arquivamento no Local](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [Auditoria de caixa de correio](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [Políticas de retenção](/microsoft365/compliance/retention-policies.md)
+- [Retenção de litígio](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [Descoberta eletrônica in-loco e retenção](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Pesquisa de Conformidade](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [Arquivamento no Local](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [Auditoria de caixa de correio](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [Políticas de retenção](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 Por exemplo, quando uma caixa de correio é colocada em retenção de litígio, os dados de terceiros são preservados. Você pode pesquisar dados de terceiros usando a descoberta eletrônica in-loco ou a pesquisa de conformidade. Ou você pode aplicar políticas de arquivamento e retenção a dados de terceiros, da mesma forma que você pode para os dados da Microsoft. O arquivamento de dados de terceiros no Office 365 ajuda sua organização a manter-se em conformidade com as políticas governamentais e regulamentares.
 

@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Este artigo descreve os sites de opções de navegação com a publicação do SharePoint habilitada no SharePoint Online. A escolha e a configuração de navegação impactam significativamente o desempenho e a escalabilidade de sites no SharePoint Online. Este artigo não se aplica a sites de equipe clássicos.
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385199"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031256"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opções de navegação para o SharePoint Online
 
@@ -99,7 +99,7 @@ Para analisar o desempenho de uma página do SharePoint, use a guia **rede** das
   
 1. Na guia **rede** , clique na página. aspx que está sendo carregada e, em seguida, clique na guia **detalhes** .<br/> ![Captura de tela mostrando a guia de detalhes](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
 2. Clique em **cabeçalhos de resposta**. <br/>![Captura de tela da guia Detalhes](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>O SharePoint retorna algumas informações úteis de diagnóstico em seus cabeçalhos de resposta. 
-3. Uma das informações mais úteis é o **SPRequestDuration** , que é o valor, em milissegundos, quanto tempo uma solicitação levou para ser processada no servidor. A captura de tela a seguir **mostra** subsites está desmarcada para a navegação estrutural. Isso significa que há apenas o link do conjunto de sites na navegação global:<br/>![Captura de tela mostrando tempos de carga como duração da solicitação](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+3. Uma das informações mais úteis é o **SPRequestDuration** , que é o valor, em milissegundos, quanto tempo uma solicitação levou para ser processada no servidor. A captura de tela a seguir **mostra subsites** está desmarcada para a navegação estrutural. Isso significa que há apenas o link do conjunto de sites na navegação global:<br/>![Captura de tela mostrando tempos de carga como duração da solicitação](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
 4. A chave **SPRequestDuration** tem um valor de 245 milissegundos. Isso representa o tempo necessário para retornar a solicitação. Como há apenas um item de navegação no site, este é um bom benchmark para como o SharePoint Online é executado sem uma navegação intensa. A captura de tela a seguir mostra como a adição nos subsites afeta essa chave.<br/>![Captura de tela mostrando uma duração de solicitação de 2502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
 A adição dos subsites aumentou significativamente o tempo necessário para retornar a solicitação de página para este site de exemplo relativamente simples. Hierarquias de sites complexas, incluindo páginas em navegação, e outras opções de configuração e topologia, podem aumentar consideravelmente esse impacto ainda mais.
@@ -456,9 +456,9 @@ Na [implementação de exemplo](#example-replace-the-out-of-the-box-navigation-c
 
 O [código acima](#about-the-javascript-file) tem as seguintes dependências:
 
-- jQueryhttp://jquery.com/
-- KnockoutJS -http://knockoutjs.com/
-- LINQ. js- http://linqjs.codeplex.com/ou github.com/neuecc/LINQ.js
+- jQueryhttps://jquery.com/
+- KnockoutJS -https://knockoutjs.com/
+- LINQ. js- https://linqjs.codeplex.com/ou github.com/neuecc/LINQ.js
 
 A versão atual do LinqJS não contém o método ByHierarchy usado no código acima e quebrará o código de navegação. Para corrigir isso, adicione o seguinte método ao arquivo LINQ. js antes da linha `Flatten: function ()`.
 

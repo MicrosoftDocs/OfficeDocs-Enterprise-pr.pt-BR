@@ -32,12 +32,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Em 10 de outubro de 2017, o suporte terminou para o SharePoint Server 2007. Leia este artigo para saber mais sobre suas opções de atualização, solução de problemas, práticas recomendadas, requisitos do sistema, etapas de atualização e como obter assistência dos parceiros da Microsoft.
-ms.openlocfilehash: 5e5f697f64c520ec1be2b055be0fd42e1742a9ed
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 4054ca5c0b502c2008556021a80d3a939a979bb3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070717"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030906"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do SharePoint Server 2007
 
@@ -69,12 +69,12 @@ Sua primeira parada deve ser o [site de ciclo de vida do produto](https://go.mic
 |**Good**|**Melhor**|**Melhor**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
-||Implantação Híbrida do SharePoint  <br/> |SharePoint Server 2016  <br/> |
-|||Implantação Híbrida do SharePoint  <br/> |
+||SharePoint Híbrido  <br/> |SharePoint Server 2016  <br/> |
+|||SharePoint Híbrido  <br/> |
    
-Se você escolher opções no final da escala (bom o suficiente), lembre-se de que você precisará começar a planejar a atualização muito cedo após a migração do SharePoint Server 2007 ser concluída. (o fim do suporte para o SharePoint Server 2007 é 10 de outubro de 2017. Observe que essas datas estão sujeitas a alterações e verificação do [site de ciclo de vida do produto](https://support.microsoft.com/en-us/lifecycle).
+Se você escolher opções no final da escala (bom o suficiente), lembre-se de que você precisará começar a planejar a atualização muito cedo após a migração do SharePoint Server 2007 ser concluída. (o fim do suporte para o SharePoint Server 2007 é 10 de outubro de 2017. Observe que essas datas estão sujeitas a alterações e verificação do [site de ciclo de vida do produto](https://support.microsoft.com/lifecycle).
   
-## <a name="where-can-i-go-next"></a>Onde posso ir para a próxima?
+## <a name="where-can-i-go-next"></a>O que devo fazer em seguida?
 
 O SharePoint Server pode ser instalado no local em seus próprios servidores ou você pode usar o SharePoint Online, que é um serviço online que faz parte do Microsoft Office 365. Você pode optar por:
   
@@ -104,7 +104,7 @@ Quando você migrar para o Office 365, a movimentação única terá um custo ma
 
 Certifique-se de que o SharePoint Online tem todos os recursos de que você precisa examinando a descrição de serviço associada. Este é o link para todas as descrições de serviço do Office 365:
   
-[Descrições do Serviço do Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
+[Descrições dos Serviços do Office 365](https://go.microsoft.com/fwlink/?linkid=272060)
   
 Não há uma maneira direta de migrar do SharePoint 2007 para o SharePoint Online; a mudança para o SharePoint Online seria feita manualmente. Se você atualizar para o SharePoint Server 2013 ou o SharePoint Server 2016, sua movimentação também pode envolver o uso da API de migração do SharePoint (para migrar informações para o OneDrive for Business, por exemplo).
   

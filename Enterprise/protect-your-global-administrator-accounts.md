@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger o acesso de administrador global à sua assinatura do Office 365.
-ms.openlocfilehash: 353787ccda7ab96583fe75bc423f70d339d3435b
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162394"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031606"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger as contas de administradores globais do Office 365
 
@@ -125,7 +125,7 @@ Após as etapas 1 e 2, use esses métodos adicionais para garantir que sua conta
 
 Para garantir que a execução de tarefas altamente privilegiadas seja o mais segura possível, use uma estação de trabalho privilegiada (pata). Um pata é um computador dedicado que é usado apenas para tarefas de configuração confidenciais, como a configuração do Office 365 que requer uma conta de administrador global. Como este computador não é usado diariamente para navegação na Internet ou email, é melhor proteger contra ataques e ameaças da Internet.
   
-Para obter instruções sobre como configurar um pata, consulte [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
+Para obter instruções sobre como configurar um pata, consulte [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

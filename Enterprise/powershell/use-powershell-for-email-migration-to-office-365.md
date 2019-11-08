@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 'Resumo: saiba como migrar emails para o Office 365 usando o Windows PowerShell.'
-ms.openlocfilehash: bc1b438db0b1868777d3a3faf0c62d80f843097c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: 604144664c2d1c915218f1fe0607f1fadb6238ca
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071177"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030926"
 ---
 # <a name="use-powershell-for-email-migration-to-office-365"></a>Usar o PowerShell para a migração de email para o Office 365
 
@@ -48,9 +48,9 @@ Use o Windows PowerShell para migrar emails para o Office 365.
 [Use o Windows PowerShell para criar relatórios no Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Vantagens de usar o Windows PowerShell para gerenciar o Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
+[Vantagens de usar o Windows PowerShell para gerenciar o Office 365](https://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Referência técnica do Windows PowerShell no Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
+[Referência técnica do Windows PowerShell no Office 365](https://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Licenciamento do Office 365 e Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
+[Licenciamento do Office 365 e Windows PowerShell](https://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 

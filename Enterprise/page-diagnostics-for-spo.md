@@ -3,6 +3,7 @@ title: Usar a ferramenta diagnóstico de página para o SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
+ms.date: 9/19/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,106 +14,140 @@ search.appverid:
 - SPO160
 - MOE150
 - BSA160
-ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
-description: Use a ferramenta diagnóstico de página para SharePoint para analisar suas páginas clássicas em relação às práticas recomendadas para o SharePoint Online.
-ms.openlocfilehash: f61d680ab4470429436cd0bb88925c2f1fc63323
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+description: Use a ferramenta diagnóstico de página para SharePoint para analisar o portal moderno do SharePoint Online e as páginas de publicação clássicas em um conjunto predefinido de critérios de desempenho.
+ms.openlocfilehash: 50a2a98f7af74ef76f080468e940ece6c0f806ab
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616794"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031116"
 ---
-# <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Usar a ferramenta diagnóstico de página para o SharePoint Online
+# <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar a ferramenta diagnóstico de página para SharePoint
 
-Este artigo descreve como você pode usar a ferramenta de diagnóstico de página para analisar suas páginas de publicação clássicas e páginas em sites de equipe clássicos, em um subconjunto de práticas recomendadas no **SharePoint Online**. 
-  
-Os sites de equipe que não têm publicação habilitado não podem usar o CDNs, mas todas as regras restantes são aplicáveis. A publicação adiciona sobrecarga adicional, portanto, não ative a publicação apenas para obter a funcionalidade da CDN, já que afetará negativamente o tempo de carregamento da página.
+Este artigo descreve como usar a **ferramenta diagnóstico de página para SharePoint** para analisar as páginas de site modernas e clássicas do SharePoint Online em um conjunto de critérios de desempenho predefinido.  
 
-**Observe que v 1.05 foi lançado, portanto, atualize sua extensão, caso já tenha sido instalada**. Se você não tiver certeza sobre qual versão você tem, clique no link "sobre" para verificá-la.
+>[!TIP]
+>**A versão 2.0.1 da ferramenta foi lançada**. A versão **2.0.0** e posterior inclui suporte para páginas modernas, além de páginas de site clássicas. Se não tiver certeza sobre qual versão da ferramenta você está usando, você pode selecionar o link **sobre** ou as reticências (...) para verificar sua versão.
+
+A ferramenta diagnóstico de página do SharePoint é uma extensão de navegador para o Chrome e [o Microsoft Edge versão 77 e posterior](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que analisa o portal moderno do SharePoint Online e as páginas do site de publicação clássica. Essa ferramenta só funciona para o SharePoint Online e falhará com um erro se for usada em uma página de site do SharePoint Server.
+
+A ferramenta gera um relatório para cada página analisada mostrando como a página é executada em um conjunto de regras predefinido e exibe informações detalhadas quando os resultados de um teste ficam fora do valor da linha de base. Os administradores e designers do SharePoint Online podem usar a ferramenta para solucionar problemas de desempenho e garantir que as novas páginas sejam otimizadas antes da publicação.
+
+A ferramenta diagnóstico de página foi projetada para analisar somente as páginas do site do SharePoint, e não as páginas do sistema, como *AllItems. aspx* ou *SharePoint. aspx*. Se você tentar executar a ferramenta em uma página do sistema ou em qualquer outra página que não seja do site, receberá uma mensagem de erro informando que a ferramenta não pode ser executada para esse tipo de página.
+
+![Deve ser executado em uma página do SharePoint](media/page-diagnostics-for-spo/pagediag-Error-StartPage.png)
+
+Isso não é um erro na ferramenta, já que não há nenhum valor em avaliar bibliotecas ou páginas do sistema. Navegue até uma página de site do SharePoint para usar a ferramenta. Se esse erro ocorrer em uma página do SharePoint, verifique a página mestra para garantir que as marcas meta do SharePoint não foram removidas.
+
+Para fornecer comentários sobre a ferramenta, selecione as reticências no canto superior direito da ferramenta e, em seguida, selecione [enviar comentários](https://go.microsoft.com/fwlink/?linkid=874109).
+
+![Envie comentários](media/page-diagnostics-for-spo/pagediag-feedback.png)
   
+## <a name="install-the-page-diagnostics-for-sharepoint-tool"></a>Instalar a ferramenta diagnóstico de página para o SharePoint
+
+O procedimento de instalação nesta seção funcionará para os navegadores Chrome e Microsoft Edge.
+
 > [!IMPORTANT]
-> A ferramenta diagnóstico de página não será executada em bibliotecas de documentos ou páginas do sistema, pois a ferramenta foi projetada para examinar as páginas do site do SharePoint. Uma página *AllItems. aspx* é uma página de sistema. Se você tentar executar a ferramenta em uma página do sistema, receberá uma mensagem que diz "este aplicativo deve ser executado somente em páginas do SharePoint." <br/> ![Deve ser executado em uma página do SharePoint](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Isso não é um erro na ferramenta, já que não há nenhum valor em avaliar bibliotecas ou páginas do sistema. Navegue até uma página que não seja do sistema do SharePoint para usar a ferramenta. Se isso ocorrer em uma página do SharePoint, verifique a MasterPage, já que já vimos os clientes removerem as marcas meta do SharePoint e a página não é mais uma página do SharePoint. Se você quiser fazer comentários sobre a ferramenta, clique na guia sobre e siga o [link enviar comentários](https://go.microsoft.com/fwlink/?linkid=874109). 
-  
-## <a name="install-the-page-diagnostic-tool"></a>Instalar a ferramenta de diagnóstico de página
+> A Microsoft não lê dados ou conteúdo de página que é analisado pela ferramenta diagnóstico de página para SharePoint e não capturamos informações pessoais, sites ou informações de download. A única informação registrada pela ferramenta é o nome do locatário, a contagem de regra e se a opção de registro em log de suporte foi habilitada quando a ferramenta é executada. Essas informações são usadas pela Microsoft para entender as tendências modernas de uso do site de publicação e portal e problemas comuns de desempenho para informar os aprimoramentos do produto.
 
-> [!IMPORTANT]
-> A Microsoft não lê os dados ou sites que você visita e não capturamos informações pessoais, sites ou informações de download com essa ferramenta. A única informação registrada pela ferramenta é o nome do locatário, a contagem de regra e se a opção de registro em log de suporte foi utilizada quando a ferramenta é executada. Estas informações são para a Microsoft analisar quais desafios estão sendo enfrentados por nossos clientes e para garantir que o recurso de registro de suporte não esteja sendo usado de forma inválida.
+1. Usando o navegador _Chrome_ ou o _Microsoft Edge versão 77 ou posterior_ , abra o [link para a ferramenta](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) diretamente ou abra a pesquisa no [webstore do navegador Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) e instale a extensão do navegador. Revise a política de privacidade do usuário fornecida na página de descrição da loja. Ao adicionar a ferramenta ao navegador, você verá o aviso de permissões a seguir.
 
-1. Usando um navegador Chrome, abra o [link para a ferramenta](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) diretamente ou abra a pesquisa no webstore do [navegador Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) e instale a extensão do navegador. Revise a política de privacidade do usuário fornecida na página de descrição da loja. Ao adicionar a ferramenta ao navegador, você verá o aviso de permissões a seguir.<br/>![Permissões do repositório Chrome](media/e9fbcef0-1171-43ac-8ea8-c2b5be1b7925.png)<br/>   Este aviso está no local porque uma página pode conter conteúdo de locais fora do SharePoint, dependendo das Web Parts e personalizações na página. Isso significa que a ferramenta lerá as solicitações e respostas quando o botão iniciar for clicado e apenas para a guia ativa do SharePoint, onde a ferramenta está em execução. Essas informações são capturadas localmente pelo navegador da Web e estão disponíveis por meio do link exportar para JSON na ferramenta. **As informações não são enviadas ou capturadas pela Microsoft.** (A ferramenta respeita a política de privacidade da Microsoft acessível [aqui](https://go.microsoft.com/fwlink/p/?linkid=857875)).<br/><br/>A funcionalidade "exportar para JSON" na ferramenta é também por que a permissão "gerenciar seus downloads" é necessária. Siga as diretrizes de privacidade da sua empresa antes de compartilhar o arquivo JSON fora da sua organização, já que os resultados contêm URLs e que podem ser classificados como PII (informações de identificação pessoal).
-    
-2. (Isso é opcional) Se você quiser usar a ferramenta no modo incógnito do Chrome, navegue até a extensão e clique em **permitir no incógnito**.
-    
-3. Navegue até a página de publicação clássica do SharePoint no SharePoint Online que você gostaria de revisar. Nós permitimos o "carregamento de atraso" dos itens nas páginas; Portanto, a **ferramenta não será interrompida automaticamente**. Se você deseja interromper a coleta, clique em **parar**. (Isso é design para atender a todos os cenários de carregamento de página.) Antes de clicar em **parar**, verifique se os dados de rastreamento de rede estão concluídos. Caso contrário, você terá um rastreamento parcial. Além disso, a ferramenta é uma extensão do navegador e abrir várias guias ou o Windows permitirá que apenas uma instância ativa da ferramenta seja executada de uma só vez. Essa é uma limitação das extensões no navegador. 
-  
-4. Clique no logotipo de extensão ![Diagnóstico de página para o logotipo do SharePoint](media/60a3e44d-1b59-483f-b50f-d580044d921a.png) para carregar a ferramenta e será exibida a seguinte janela pop-up de extensão:<br/> ![Pop-up de ferramentas de diagnóstico de página](media/b01fa00e-c5f3-4c37-91f2-6edd096cf87e.png)<br/>Operações de início e parada seguem o conceito básico de quando você clica em iniciar a página será recarregada e a coleta começará.
+    ![Permissões de extensão](media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
-Leia as seções a seguir para saber mais sobre as informações fornecidas na ferramenta.
+    Este aviso está no local porque uma página pode conter conteúdo de locais fora do SharePoint, dependendo das Web Parts e personalizações na página. Isso significa que a ferramenta lerá as solicitações e respostas quando o botão iniciar for clicado e apenas para a guia ativa do SharePoint, onde a ferramenta está em execução. Essas informações são capturadas localmente pelo navegador da Web e estão disponíveis por meio do botão **exportar para JSON** ou **exportar para o Har** na guia de _rastreamento de rede_ da ferramenta. **as informações não são enviadas ou capturadas pela Microsoft.** (A ferramenta respeita a política de privacidade da Microsoft acessível [aqui](https://go.microsoft.com/fwlink/p/?linkid=857875)).
 
-## <a name="what-youll-see-in-the-page-diagnostics-tool"></a>O que você verá na ferramenta diagnóstico de página
-    
-1. O link **about** fornecerá orientações gerais e detalhes sobre a ferramenta, incluindo um link de volta para este artigo. Ele também inclui um link direto para as recomendações de desempenho do SharePoint, um aviso de terceiros e uma opção para fornecer comentários sobre a ferramenta. 
-    
-2. A **ID de correlação, SPRequestDuration, SPIISLatency**, **tempo de carregamento de página**e detalhes de **URL** são informativas e podem ser usadas para alguns fins. 
-    
-  - **** O CorrelationId é um elemento importante quando se trabalha com as equipes de suporte da Microsoft, pois permite que eles recebam dados de diagnóstico adicionais. 
-    
-  - **SPRequestDuration** é o tempo decorrido do servidor para processar a página. Se esse tempo for longo, isso não significa necessariamente que o servidor estava funcionando incorretamente, mas também pode refletir o número de chamadas e a carga enviada pela página para o servidor, por exemplo, navegação estrutural, imagens grandes, muitas chamadas de API podem contribuir para o tempo de servidor mais longo . 
-    
-  - **SPIISLatency** é o tempo, em milissegundos, obtido no servidor Web front-end quando recebe a solicitação para carregar a página. Este é um indicador de latência para iniciar o processamento da página e não inclui o tempo gasto pelo aplicativo Web para responder. 
-    
-  - O **tempo de carregamento da página** é o tempo registrado pela página a partir da hora da solicitação até o momento em que a resposta foi recebida e lida pelo navegador. Qualquer tempo adicional é afetado pelo desempenho do computador e o tempo que ele leva para o navegador ser carregado. 
-    
-  - A **URL** (Uniform Resource Locator) é o endereço da Web da página atual. 
-    
-3. A [guia **diagnóstico** ](#how-to-use-the-diagnostic-tab) listará as regras e, se qualquer uma delas estiver marcada com uma ![Cruz](media/9859ac84-be43-4eae-984c-e0e827f5a228.png)vermelha, haverá problemas identificados na página.<br/>Cada regra tem seu próprio link "mais informações" que você clica se um item está vermelho. Isso o levará para os detalhes por trás dessa regra e como corrigir o problema.<br/>![Diagnóstico vermelho-regra aberta](media/1598f0f7-3103-4613-8787-dfec6fffd40a.png)
+    A permissão _gerenciar seus downloads_ abrange o uso da funcionalidade **exportar para JSON** da ferramenta. Siga as diretrizes de privacidade da sua empresa antes de compartilhar o arquivo JSON fora da sua organização, já que os resultados contêm URLs e que podem ser classificados como PII (informações de identificação pessoal).
+1. Se você quiser usar a ferramenta no modo incógnito ou InPrivate, siga o procedimento para seu navegador:
+    1. No Microsoft Edge, navegue até **extensões** ou digite _Edge://Extensions_ na barra URL e selecione **detalhes** para a extensão. Nas configurações de extensão, marque a caixa de seleção para **permitir no InPrivate**.
+    1. No Chrome, navegue até **extensões** ou digite _Chrome://Extensions_ na barra URL e selecione **detalhes** para a extensão. Nas configurações de extensão, selecione o controle deslizante para **permitir no incógnito**.
+1. Navegue até a página do site do SharePoint no SharePoint Online que você gostaria de revisar. Nós permitimos o "carregamento de atraso" dos itens nas páginas; Portanto, a ferramenta não será interrompida automaticamente (o design para acomodar todos os cenários de carregamento de página). Para interromper a coleta, selecione **parar**. Certifique-se de que a carga da página foi concluída antes de interromper a coleta de dados ou você só Capture um rastreamento parcial.
+1. Clique no botão da barra de ferramentas da extensão ![Diagnóstico de página para o logotipo do SharePoint](media/page-diagnostics-for-spo/pagediag-icon32.png) para carregar a ferramenta e será exibida a seguinte janela pop-up de extensão:
 
-4. Uma [guia **rastreamento de rede** ](#how-to-use-the-network-trace-tab) fornece detalhes sobre solicitações e respostas de compilação de página.
+    ![Pop-up de ferramentas de diagnóstico de página](media/page-diagnostics-for-spo/pagediag-Landing.png)
 
-## <a name="how-to-use-the-diagnostic-tab"></a>Como usar a guia diagnóstico
+Selecione **Iniciar** para começar a coletar dados para análise.
 
-1. **Verificar executando como usuário padrão**  Verificar o desempenho da página não deve ser executado quando estiver conectado como uma conta de serviço, administrador ou administrador de conjunto de sites ou qualquer conta com privilégios elevados. Scripts e funcionalidades adicionais são carregados especificamente para esses tipos de contas, portanto, os resultados não serão uma representação real do desempenho da página.
-    
-2. **Verificar solicitações para o SharePoint**  A quantidade de dados e solicitações feitas no servidor deve ser limitada à medida que uma página sobrecarregada sofrerá um desempenho ruim. Essa verificação verifica o número de solicitações que estão sendo feitas no SharePoint e aconselha quando as solicitações excedem 6 solicitações. A maioria das solicitações deve ser armazenada em cache e, portanto, não é chamada para cada carregamento de página. O cache deve ser configurado e utilizado por pelo menos 15 minutos para reduzir a quantidade de chamadas para uma página por cada usuário. Esse é um problema comum e, na maioria dos casos, os dados só são alterados diariamente, mas a página verifica e busca dados cada vez para cada página para cada usuário que geralmente é desnecessário.
-    
-3. **Verificar usando CDNs**  As redes de distribuição de conteúdo (CDNs) foram fornecidas pela Microsoft e as que mencionamos aqui são as redes de distribuição de conteúdo do SharePoint Online. Há vários tipos disponíveis, bem como diferentes serviços de CDN, como o SharePoint CDNs e, em seguida, CDNs no Azure. [Use as orientações a seguir](https://go.microsoft.com/fwlink/?linkid=873250).
-    
-4. **Verificar tamanhos de imagem grandes**  As imagens devem ser otimizadas para Web por meio da utilização de tipos de Web melhores como PNG. As representações de imagem também devem ser utilizadas e estão disponíveis diretamente no SharePoint. Imagens/renderizações de imagem maiores do que 100kb serão realçadas como não otimizadas para Web. [Use as orientações a seguir para otimizar imagens](https://go.microsoft.com/fwlink/?linkid=873251).
-    
-5. **Verificar a navegação estrutural**  A navegação estrutural foi originalmente projetada para uso no SharePoint local onde o cache de objetos pode ser utilizado. A navegação estrutural não é recomendada para uso no SharePoint Online e deve ser alterada para navegação gerenciada ou um provedor personalizado. [Use as orientações a seguir para otimizar a navegação.](https://go.microsoft.com/fwlink/?linkid=873247)
-    
-6. **Verificar Web part CBQ** (CBQ-conteúdo pela Web Part de consulta)  O conteúdo da Web Part de consulta gera uma alta carga de SQL à medida que atravessa todos os itens na consulta para cada e qualquer carga de página, para cada usuário. Ao contrário de uma instalação local, não há cache disponível para limitar o número de consultas necessárias para preencher esta Web Part. Como tal, CBQ é executado lentamente e impacta o desempenho geral da página, por isso ele não deve ser utilizado. Use a Web Part de pesquisa de conteúdo (CSWP) como substituição para a Web Part de consulta de conteúdo. [Use as orientações a seguir relacionadas à Web Part de pesquisa de conteúdo](https://go.microsoft.com/fwlink/?linkid=873245).
+## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>O que você verá na ferramenta diagnóstico de página para SharePoint
+
+1. O link **sobre** , que se assemelha às elipses (...) no canto superior direito fornecerá orientações gerais e detalhes sobre a ferramenta, incluindo um link de volta para este artigo. Ele também inclui um link direto para as recomendações de desempenho do SharePoint, um aviso de terceiros e uma opção para fornecer comentários sobre a ferramenta.  
+1. A **ID de correlação, SPRequestDuration, SPIISLatency**, **tempo de carregamento de página**e detalhes de **URL** são informativas e podem ser usadas para alguns fins.
+
+    ![Detalhes de diagnóstico de página](media/page-diagnostics-for-spo/pagediag-details.PNG)
+
+   - O **CorrelationId** é um elemento importante ao trabalhar com o suporte da Microsoft, pois ele permite coletar dados de diagnóstico adicionais para a página específica.
+   - **SPRequestDuration** é o tempo necessário para que o SharePoint processe a página. Navegação estrutural, imagens grandes, muitas chamadas de API podem contribuir para durações mais longas.
+   - **SPIISLatency** é o tempo em milissegundos levado para o SharePoint Online começar a carregar a página. Esse valor não inclui o tempo gasto para o aplicativo Web responder.
+   - **Tempo de carregamento da página** é o tempo total registrado pela página a partir da hora da solicitação até o momento em que a resposta foi recebida e renderizada no navegador. Esse valor é afetado por vários fatores, incluindo latência de rede, o desempenho do computador e o tempo necessário para o navegador carregar a página.
+   - A **URL da página** (Uniform Resource Locator) é o endereço da Web da página atual.
+
+1. A guia [**testes de diagnóstico**](#how-to-use-the-diagnostic-tests-tab) exibe os resultados da análise em três categorias; **Nenhuma ação é necessária**, **oportunidades de melhoria** e **atenção requeridas**. Cada resultado de teste é representado por um item em uma destas categorias, conforme descrito na tabela a seguir:
+
+    |Categoria  |Cor  |Descrição  |
+    |---------|---------|---------|
+    |**Atenção requerida** |Vermelho |O resultado do teste fica fora do valor da linha de base e afeta o desempenho da página. Siga as orientações de correção.|
+    |**Oportunidades de aprimoramento** |Amarelo |O resultado do teste fica fora do valor da linha de base e pode estar contribuindo para problemas de desempenho. Critérios específicos de teste podem ser aplicados.|
+    |**Nenhuma ação é necessária** |Verde |O resultado do teste cai dentro do valor da linha de base do teste.|
+
+    ![Diagnóstico de página](media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+
+1. Uma guia [**rastreamento de rede**](#how-to-use-the-network-trace-tab) fornece detalhes sobre solicitações e respostas de compilação de página.
+
+## <a name="how-to-use-the-diagnostic-tests-tab"></a>Como usar a guia testes de diagnóstico
+
+Quando você analisa uma página de portal moderna do SharePoint ou uma página de site de publicação clássica com a ferramenta diagnóstico de página para SharePoint, os resultados são analisados usando regras predefinidas que comparam resultados nos valores de linha de base e exibidos na guia **testes de diagnóstico** . as regras para determinados testes podem usar valores de linha de base diferentes para o portal moderno e sites de publicação clássicos, dependendo
+
+Os resultados do teste que aparecem nas categorias **oportunidades de melhoria** ou **atenção obrigatória** indicam áreas que devem ser revisadas em relação às práticas recomendadas e podem ser selecionadas para exibir informações adicionais sobre o resultado. Os detalhes de cada item incluem um link _saiba mais_ , que o levará diretamente para a orientação apropriada relacionada ao teste. Os resultados do teste que aparecem na categoria **nenhuma ação necessária** indicam conformidade com a regra relevante e não exibem detalhes adicionais quando selecionados.
+
+As informações na guia testes de diagnóstico não mostrarão como projetar páginas, mas destacarão fatores que podem afetar o desempenho da página. Algumas funcionalidades e personalizações de página têm um impacto inevitável no desempenho da página e devem ser examinadas em busca de possíveis remediação ou omissões da página, se o impacto for substancial.
+
+Os resultados vermelhos ou amarelos também podem indicar Web Parts que atualizam os dados com muita frequência. Por exemplo, as notícias corporativas não são atualizadas a cada segundo, mas as Web Parts personalizadas costumam ser criadas para buscar as últimas notícias a cada segundo, em vez de implementar os elementos de cache que podem aprimorar a experiência geral do usuário. Tenha em mente quando incluir Web Parts em uma página que costuma haver maneiras simples de reduzir o impacto do desempenho, avaliando o valor de cada parâmetro disponível para garantir que ele seja definido apropriadamente para o objetivo desejado.
+
+>[!NOTE]
+>Os sites de equipe clássicos que não têm o recurso de publicação habilitado não podem fazer uso do CDNs. Quando você executa a ferramenta nesses sites, espera-se que o teste da CDN falhe e seja ignorado, mas todos os testes restantes são aplicáveis. A funcionalidade adicional do recurso de publicação do SharePoint pode aumentar o tempo de carregamento da página, portanto, ela não deve ser habilitada apenas para permitir a funcionalidade da CDN.
+
+>[!IMPORTANT]
+>As regras de teste são adicionadas e atualizadas regularmente, portanto, confira a versão mais recente da ferramenta para obter detalhes sobre as regras atuais e informações específicas incluídas nos resultados do teste. Você pode verificar a versão Gerenciando suas extensões e a extensão avisará se uma atualização está disponível.
 
 ## <a name="how-to-use-the-network-trace-tab"></a>Como usar a guia rastreamento de rede
-    
-A guia **rastreamento de rede** fornece informações detalhadas sobre as solicitações para criar a página, bem como as respostas recebidas. 
+
+A guia **rastreamento de rede** fornece informações detalhadas sobre as duas solicitações para criar a página e as respostas recebidas do SharePoint.
 
 1. **Procure tempos de carregamento de item sinalizados como vermelho**. O desempenho de cada solicitação e resposta são codificados em cores, com base em seu impacto no desempenho geral da página da seguinte maneira:
-- Verde: \< 500 milhões
-- Amarelo: 500-1000ms
-- Vermelho: \> 1000ms
-<br/>![Rastreamento de rede](media/3cfede99-7d31-4041-888d-7bbc275cadc2.png)<br/> Na imagem mostrada acima, o item vermelho pertence à página padrão. Ele sempre mostrará vermelho, a menos que a \< página seja carregada no 1000ms (menos de 1 segundo).
+    - Verde: \< 500 milhões
+    - Amarelo: 500-1000ms
+    - Vermelho: \> 1000ms
 
-2. **Teste os tempos de carregamento do item**. Em alguns casos, não haverá nenhum indicador de tempo ou de cor porque os itens já foram armazenados em cache pelo navegador. Para testar corretamente, abra a página, limpe o cache do navegador e, em seguida, clique em **Iniciar** como isso forçará uma carga de página "Cold" e será uma reflexão verdadeira da carga inicial da página. Isso deve ser comparado com a carga de página "quente" como isso também ajudará a determinar quais itens estão sendo armazenados em cache na página. 
-    
+    ![Rastreamento de rede](media/page-diagnostics-for-spo/pagediag-networktrace.png)
+
+    Na imagem mostrada acima, o item vermelho pertence à página padrão. Ele sempre mostrará vermelho, a menos que a \< página seja carregada no 1000ms (menos de 1 segundo).
+
+2. **Teste os tempos de carregamento do item**. Em alguns casos, não haverá nenhum indicador de tempo ou de cor porque os itens já foram armazenados em cache pelo navegador. Para testar corretamente, abra a página, limpe o cache do navegador e, em seguida, clique em **Iniciar** como isso forçará uma carga de página "Cold" e será uma reflexão verdadeira da carga inicial da página. Isso deve ser comparado com a carga de página "quente" como isso também ajudará a determinar quais itens estão sendo armazenados em cache na página.
+
 3. **Compartilhar detalhes relevantes com outras pessoas que podem ajudar a investigar problemas**. Para compartilhar os detalhes ou as informações fornecidas na ferramenta com seus desenvolvedores ou um profissional de suporte técnico, clique em **exportar para JSON** (conforme mostrado na imagem acima). Isso permitirá que você baixe os resultados, exibíveis com um visualizador de arquivos JSON.
 
+    Se você optou por usar o recurso de visualização *habilitar exportação para Har* , o tipo de exportação aparecerá como **exportar para Har**.
+
+    ![Rastreamento de rede](media/page-diagnostics-for-spo/pagediag-NetworkTraceHAR.PNG)
+
 > [!IMPORTANT]
-> Esses resultados contêm URLs e que podem ser classificados como PII (informações de identificação pessoal). Certifique-se de seguir as diretrizes da sua organização antes de distribuir essas informações. 
+> Esses resultados contêm URLs e que podem ser classificados como PII (informações de identificação pessoal). Certifique-se de seguir as diretrizes da sua organização antes de distribuir essas informações.
 
 ## <a name="engaging-with-microsoft-support"></a>Contratando o suporte da Microsoft
-   
-Incluímos um **recurso de nível de suporte da Microsoft** que só deve ser utilizado ao trabalhar diretamente em um caso de suporte para desempenho. A utilização desse recurso não fornecerá nenhum benefício quando for usada sem nossa equipe de suporte. Na verdade, a página é executada significativamente mais lentamente e o uso contínuo do recurso pode ser considerado "mau uso" do serviço. Não há informações adicionais ao usar esse recurso na ferramenta, pois as informações adicionais são adicionadas ao registro em log no serviço. 
 
-Nenhuma alteração é visível, exceto que você será notificado de que a habilitou e que o desempenho da página será significativamente reduzido por 2-3 vezes o desempenho mais lento enquanto isso estiver habilitado. Ele só será relevante para a página específica e essa sessão ativa. Por esse motivo, isso deve ser usado com moderação e apenas quando ativamente envolvido com nossa equipe de suporte.
+Incluímos um **recurso de nível de suporte da Microsoft** que só deve ser utilizado ao trabalhar diretamente em um caso de suporte. A utilização desse recurso não fornecerá nenhum benefício quando for usada sem o contrato de equipe de suporte e poderá fazer com que a página seja executada de forma significativamente mais lenta. Não há informações adicionais ao usar esse recurso na ferramenta, pois as informações adicionais são adicionadas ao registro em log no serviço.
+
+Nenhuma alteração é visível, exceto que você será notificado de que a habilitou e o desempenho da página será significativamente reduzido por 2-3 vezes o desempenho mais lento durante a habilitação. Ele só será relevante para a página específica e essa sessão ativa. Por esse motivo, isso deve ser usado com moderação e apenas quando ativamente envolvido no suporte.
 
 ### <a name="to-enable-the-microsoft-support-level-feature"></a>Para habilitar o recurso de nível de suporte da Microsoft
 
-1. Abra a ferramenta diagnóstico de página.
-2. No teclado, pressione ALT-SHIFT-L. Isso exibirá a habilitação do **log de nível de suporte**. 
-3. Marque a caixa de seleção e clique em **Iniciar** para recarregar a página e gerar registro detalhado para obter suporte para análise.<br/>![Opção de suporte habilitada](media/ddef47de-8593-4b28-9346-eb48ebf6cdab.png)
+1. Abra a ferramenta diagnóstico de página para SharePoint.
+2. No teclado, pressione **Alt-Shift-L**. Isso exibirá a caixa de seleção **habilitar o log de suporte** .
+3. Marque a caixa de seleção e clique em **Iniciar** para recarregar a página e gerar o registro em log detalhado.
+
+    ![Opção de suporte habilitada](media/page-diagnostics-for-spo/pagediag-support.png)
   
-Um elemento importante para esse é o CorrelationId como a equipe de suporte utilizará esse número para extrair as informações necessárias. Copie o CorrelationId (na parte superior da ferramenta de diagnóstico de página) e forneça a eles suporte, pois eles não podem executar o trabalho necessário sem a ID completa.
-    
+    Você deve anotar o CorrelationId (exibido na parte superior da ferramenta) e fornecer ao representante de suporte para permitir que eles coletem informações adicionais sobre a sessão de diagnóstico.
+
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Ajustar o desempenho do SharePoint Online](tune-sharepoint-online-performance.md)

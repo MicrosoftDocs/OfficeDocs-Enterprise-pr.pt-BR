@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras, está disponível para o Skype for Business Server local e o Exchange Server local, bem como para o Split-Domain híbridas do Skype for Business.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759679"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029125"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Skype for Business no local para usar a autenticação moderna híbrida
 
@@ -67,7 +67,7 @@ Observe que essas etapas ativam MA para SFB, SFBO, EXCH e EXO--ou seja, todos os
   
 Como você pode ver, há quatro lugares diferentes para ativar MA! Para obter a melhor experiência do usuário, recomendamos que você ative o MA nos quatro desses locais. Se você não conseguir ativar o MA em todos esses locais, ajuste as etapas para ativar o MA somente nos locais necessários para o seu ambiente.
   
-Consulte o [tópico sobre capacidade de suporte para o Skype for Business com ma](https://technet.microsoft.com/en-us/library/mt803262.aspx) para topologias suportadas. 
+Consulte o [tópico sobre capacidade de suporte para o Skype for Business com ma](https://technet.microsoft.com/library/mt803262.aspx) para topologias suportadas. 
   
  **Importante** Verifique se você atendeu a todos os pré-requisitos antes de começar. Você encontrará essas informações [aqui](hybrid-modern-auth-overview.md).
   
@@ -117,7 +117,7 @@ Agora, você precisará executar comandos para adicionar as URLs (coletadas ante
   
  **Observação** Os SPNs (nomes de entidade de serviço) identificam os serviços Web e os associam a um objeto de segurança (como um nome de conta ou grupo) para que o serviço possa atuar em nome de um usuário autorizado. Os clientes que se autenticam em um servidor fazem uso de informações contidas em SPNs. 
   
-1. Primeiro, conecte-se ao AAD com [estas instruções](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0).
+1. Primeiro, conecte-se ao AAD com [estas instruções](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0).
     
 2. Execute este comando, no local, para obter uma lista de URLs de serviços Web do SFB.
 
@@ -174,7 +174,7 @@ Você também deve manter pressionada a tecla CTRL enquanto clica com o botão d
 
 [Link de volta para a visão geral da autenticação moderna](hybrid-modern-auth-overview.md) . 
   
-Você precisa saber como usar a ADAL (autenticação moderna) para os clientes do Skype for Business? Temos as etapas [aqui](https://technet.microsoft.com/en-us/library/mt710548.aspx).
+Você precisa saber como usar a ADAL (autenticação moderna) para os clientes do Skype for Business? Temos as etapas [aqui](https://technet.microsoft.com/library/mt710548.aspx).
   
 Você gostaria de ler essas etapas à medida que elas aparecem para o Exchange Server, no local, executando sem o SFB? Essas etapas estão disponíveis aqui.
   

@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: como o isolamento e o controle de acesso funcionam no Azure Active Directory.'
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067147"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035778"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolamento e controle de acesso do Azure Active Directory
 
 O Azure Active Directory foi projetado para hospedar vários locatários de forma altamente segura através do isolamento lógico de dados. O acesso ao Azure Active Directory é restringido por uma camada de autorização. O Azure Active Directory isola os clientes que usam contêineres de locatário como limites de segurança para proteger o conteúdo de um cliente, de modo que o conteúdo não possa ser acessado ou comprometido por colocatários. Três verificações são realizadas pela camada de autorização do Azure Active Directory:
+
 - O principal está habilitado para acesso ao locatário do Azure Active Directory?
 - O principal está habilitado para acesso aos dados neste locatário?
 - A função do principal neste locatário é autorizada para o tipo de acesso a dados solicitado?

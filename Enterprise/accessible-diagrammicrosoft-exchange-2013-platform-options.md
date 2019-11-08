@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em diagramas técnicos.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068587"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027565"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Diagrama acessível-opções de plataforma do Microsoft Exchange 2013
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em [diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em [diagramas técnicos](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409).
   
 Este cartaz descreve quais responsáveis pelas decisões de negócios (BDMs) e arquitetos precisam saber sobre as implantações do Exchange Online e do Exchange Server e incluem: 
   
@@ -264,7 +264,7 @@ Para saber mais sobre o Exchange Online (Office 365), confira o seguinte:
     
 Para saber mais sobre o Exchange híbrido, confira o seguinte:
   
-- Implantações híbridas do [Exchange 2013](https://aka.ms/ExchangeHybrid). Você deve observar que a licença de servidor híbrido só é necessária para os seguintes cenários: organização do Exchange 2010 com o servidor do Exchange 2013 Hybrid Server e a organização do Exchange 2007 com o Exchange 2013 ou Exchange 2010 Hybrid Server.
+- [Implantações híbridas do Exchange 2013](https://aka.ms/ExchangeHybrid). Você deve observar que a licença de servidor híbrido só é necessária para os seguintes cenários: organização do Exchange 2010 com o servidor do Exchange 2013 Hybrid Server e a organização do Exchange 2007 com o Exchange 2013 ou Exchange 2010 Hybrid Server.
     
 - [Entrada do Office 365](https://aka.ms/HybridKey)
     

@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em diagramas técnicos.
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068429"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030575"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama acessível-SharePoint Server, Exchange, Lync, Office Web Apps-o cenário móvel
 
-**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em [diagramas técnicos](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
+**Resumo:** Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em [diagramas técnicos](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409).
   
 Este cartaz mostra um layout detalhado do aplicativo e do panorama baseado em navegador móvel para o SharePoint Server, Lync, Exchange Server e Office Web Apps. Ele inclui as seguintes informações: 
   
@@ -102,7 +102,7 @@ Essa opção tem os seguintes recursos:
   
 - O Lync 2013 é um aplicativo de comunicações que oferece presença avançada, mensagens instantâneas, reuniões do Lync e chamadas de voz e vídeo pela Internet ou conexão celular.
     
-- A funcionalidade de mensagens INSTANTÂNEAs inclui participar de sessões únicas ou de vários participantes, navegar entre várias sessões de IM e enviar conversas como uma mensagem de email.
+- A funcionalidade de mensagens instantâneas inclui participar de sessões únicas ou de vários participantes, navegar entre várias sessões de IM e enviar conversas como uma mensagem de email.
     
 - Disponível no Windows Phone, Windows 8, iPhone, iPad e Android.
     
@@ -190,7 +190,7 @@ A ilustração a seguir mostra uma implantação de extranet do SharePoint Serve
   
 O SharePoint pode usar a porta TCP 443 (SSL) para comunicação criptografada entre o dispositivo e o proxy reverso. Para acesso externo pela Internet, esta porta precisa ser aberta para tráfego de entrada e saída em qualquer firewall ou roteador. 
   
-Quando um navegador móvel acessa um site do servidor Web front-end, uma solicitação HTTP é feita ao IIS. Na solicitação HTTP, o campo userAGENT contém informações sobre o navegador móvel que está fazendo a solicitação. Essas informações podem ser usadas para as decisões de redirecionamento de navegador para o modo de exibição de uso da caixa de informações, ou uma implementação de site personalizada usando o recurso de canais de dispositivo.
+Quando um navegador móvel acessa um site do servidor Web front-end, uma solicitação HTTP é feita ao IIS. Na solicitação HTTP, o campo UserAgent contém informações sobre o navegador móvel que está fazendo a solicitação. Essas informações podem ser usadas para as decisões de redirecionamento de navegador para o modo de exibição de uso da caixa de informações, ou uma implementação de site personalizada usando o recurso de canais de dispositivo.
   
 Para o SharePoint 2013, o Office Web Apps foi dissociado da instalação e agora é um produto autônomo. Para fornecer acesso ao cliente para o Office Web Apps, incluindo o Mobile, você precisa configurar o SharePoint 2013 para usar a instalação do servidor do Office Web Apps. Você pode fazer isso com o seguinte cmdlet do Shell de gerenciamento do SharePoint 2013:
   

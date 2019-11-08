@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907644"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031586"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -110,6 +110,6 @@ Se os usuários tiverem um dispositivo móvel com o Exchange Server definido com
 
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Serviços do Azure por região](https://azure.microsoft.com/en-us/regions/)
+[Serviços do Azure por região](https://azure.microsoft.com/regions/)
   
 

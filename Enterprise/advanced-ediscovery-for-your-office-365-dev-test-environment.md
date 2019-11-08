@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Resumo: Configure e demonstre a Descoberta Eletrônica Avançada do Office 365 com dados de amostra no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: dbd03c1a75b63f4fdaff49db47c8d415f267aaf3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726227"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030665"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Descoberta Eletrônica Avançada para o ambiente de desenvolvimento/teste do Office 365
 
@@ -30,7 +30,7 @@ A descoberta eletrônica avançada do Office 365 permite que você encontre e an
 Com as instruções neste artigo, você cria um pequeno conjunto de dados para uma disputa de contrato fictícia e o analisa com a Descoberta Eletrônica Avançada.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Fase 1: Criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -53,7 +53,7 @@ Neste procedimento, você criará mensagens de email que, mais tarde, serão ana
     
 2. Na guia **Email do Outlook**, clique em **Novo**.
     
-3. Em **para**, digite o endereço de email da conta usuário6 da sua assinatura de avaliação ( **usuário6 @.**<organization name> **. onmicrosoft.com**).
+3. Em **para**, digite o endereço de email da conta usuário6 da sua assinatura de avaliação ( **user6@.**<organization name> **. onmicrosoft.com**).
     
 4. Para o assunto, digite **Email de teste 1**.
     
@@ -99,7 +99,7 @@ Neste procedimento, você criará dois documentos do Word que, mais tarde, serã
     
 5. Na guia **Conjunto de sites de produção**, em **Documentos**, clique em **Novo > Documento do Word**.
     
-6. Na guia **Word** , digite notas de contestação de contrato com a **Tailspin**, aguarde até que ela seja **salva** no título e, em seguida, feche a guia **Word** .
+6. Na guia **Word** , digite **notas de contestação de contrato**com a Tailspin, aguarde até que ela seja **salva** no título e, em seguida, feche a guia **Word** .
     
 7. Na guia **Conjunto de sites de produção**, você verá **Documento** e **Documento1** na lista de documentos.
     

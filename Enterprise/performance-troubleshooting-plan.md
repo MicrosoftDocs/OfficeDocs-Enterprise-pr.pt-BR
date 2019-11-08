@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Você precisa saber as etapas a serem tomadas para identificar e corrigir o retardo, as interrupções e o desempenho lento entre o SharePoint Online, o OneDrive for Business, o Exchange Online ou o Skype for Business Online e o computador cliente? Antes de ligar para o suporte, este artigo pode ajudá-lo a solucionar problemas de desempenho do Office 365 e até mesmo corrigir alguns dos problemas mais comuns.
-ms.openlocfilehash: afa24144c1595fd55477e45f4368d99bd4274aca
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069577"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031126"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plano de solução de problemas de desempenho do Office 365
 
@@ -42,7 +42,7 @@ Este plano de ação contém duas partes; uma fase de preparação e uma fase de
 - Encontre um computador cliente que possa reproduzir o problema de desempenho. Este computador será usado durante o curso de solução de problemas.
 - Anote as etapas que causam o problema de desempenho para que você esteja pronto para testar.
 - Instale as ferramentas de coleta e gravação de informações:
-  - Instale o [Netmon 3,4](https://www.microsoft.com/en-us/download/details.aspx?id=4865) (ou use uma ferramenta de rastreamento de rede equivalente).
+  - Instale o [Netmon 3,4](https://www.microsoft.com/download/details.aspx?id=4865) (ou use uma ferramenta de rastreamento de rede equivalente).
   - Instale a edição básica gratuita do [HTTPWatch](https://www.httpwatch.com/download/) (ou use uma ferramenta de rastreamento de rede equivalente).
   - Use um gravador de tela ou execute o gravador de passos (PSR. exe) que acompanha o Windows Vista e posterior, para manter um registro das etapas realizadas durante o teste.
 
@@ -192,7 +192,7 @@ Como fazer o Office 365 Outlook online como exemplo, o tráfego começa algo ass
 
 Todas as partes do tráfego são importantes e estão conectadas, mas pequenas partes do rastreamento contêm informações particularmente importantes em termos de solução de problemas de desempenho, portanto, vamos nos concentrar nessas áreas. Além disso, como fizemos a solução de problemas comuns de desempenho do Office 365 na Microsoft para compilar uma lista dos dez principais problemas comuns, nos concentraremos nesses problemas e como usar as ferramentas que temos que fazer a raiz.
   
-Se você ainda não instalou todos os itens prontos, a matriz abaixo faz uso de várias ferramentas. Sempre que possível. Os links são fornecidos aos pontos de instalação. A lista inclui ferramentas comuns de rastreamento de rede como o [Netmon](https://www.microsoft.com/en-us/download/details.aspx?id=4865) e o [Wireshark](https://www.wireshark.org/), mas use qualquer ferramenta de rastreamento com a qual você se sinta confortável e, em que você está acostumado a filtrar o tráfego de rede. Quando você estiver testando, lembre-se:
+Se você ainda não instalou todos os itens prontos, a matriz abaixo faz uso de várias ferramentas. Sempre que possível. Os links são fornecidos aos pontos de instalação. A lista inclui ferramentas comuns de rastreamento de rede como o [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) e o [Wireshark](https://www.wireshark.org/), mas use qualquer ferramenta de rastreamento com a qual você se sinta confortável e, em que você está acostumado a filtrar o tráfego de rede. Quando você estiver testando, lembre-se:
   
 - *Feche seus navegadores e teste apenas um navegador executando* : isso reduzirá o tráfego geral que você captura. Ele faz um rastreamento de menos ocupado.
 - *Libere o cache do resolvedor de DNS no computador cliente* -este será um Tablet limpo quando você começar a usar a captura para um rastreamento mais limpo.
@@ -240,7 +240,7 @@ No Netmon, observe o campo de diferença de horário para uma viagem de ida e vo
 Por exemplo, o filtro no Netmon pode parecer `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`, ou, no Wireshark,. `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12`  
 
 > [!TIP]
-> Não sabe se o endereço IP em seu rastreamento pertence ao seu servidor DNS? Tente procurá-lo na linha de comando. Clique em **Iniciar** \> **executar** \> e **digite cmd**ou pressione a **tecla** \> Windows e digite **cmd**. No prompt, digite `nslookup <the IP address from the network trace>`. Para testar, use nslookup em relação ao endereço IP do seu próprio computador. > para ver uma lista dos intervalos de IP da Microsoft, confira [URLs e intervalos de endereços IP do Office 365](https://technet.microsoft.com/en-us/library/hh373144.aspx).
+> Não sabe se o endereço IP em seu rastreamento pertence ao seu servidor DNS? Tente procurá-lo na linha de comando. Clique em **Iniciar** \> **executar** \> e **digite cmd**ou pressione a **tecla** \> Windows e digite **cmd**. No prompt, digite `nslookup <the IP address from the network trace>`. Para testar, use nslookup em relação ao endereço IP do seu próprio computador. > para ver uma lista dos intervalos de IP da Microsoft, confira [URLs e intervalos de endereços IP do Office 365](https://technet.microsoft.com/library/hh373144.aspx).
 
 Se houver um problema, espere que as compensações de tempo longo sejam exibidas, neste caso (Outlook online), especialmente em TLS: pacotes TLS que mostram a passagem de dados de aplicativo (por exemplo, no Netmon, é possível encontrar `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`pacotes de dados de aplicativos via). Você deve ver uma progressão suave no momento da sessão. Se você vir atrasos longos ao atualizar o Outlook online, isso pode ser causado por um alto grau de redefinições que estão sendo enviadas.
 
@@ -250,7 +250,7 @@ Latência é uma medida que pode mudar muito, dependendo de muitas variáveis, a
 
 Há calculadoras de largura de banda para o Office 365 disponível neste [planejamento de rede e ajuste de desempenho para](network-planning-and-performance.md) a página do Office 365.  
 
-Precisa medir a velocidade da conexão ou a largura de banda da sua conexão de provedor? Experimente este site (ou sites como ele): [speedtest site oficial](https://www.speedtest.net/)e [Pingtest](http://www.pingtest.net/).
+Precisa medir a velocidade da conexão ou a largura de banda da sua conexão de provedor? Experimente este site (ou sites como ele): [speedtest site oficial](https://www.speedtest.net/)e [Pingtest](https://www.pingtest.net/).
 
 #### <a name="tools"></a>Ferramentas
 
@@ -263,7 +263,7 @@ Precisa medir a velocidade da conexão ou a largura de banda da sua conexão de 
 
 Para acompanhar a latência em um rastreamento, você se beneficiará de ter gravado o endereço IP do computador cliente e o endereço IP do servidor DNS no Office 365. Isso se aplica à finalidade da filtragem de rastreamento mais fácil. Se você se conectar por meio de um proxy, precisará do endereço IP do computador cliente, do endereço IP de proxy/egresso e do endereço IP do DNS do Office 365, para facilitar o trabalho.  
 
-Uma solicitação de ping enviada para o outlook.office365.com informará o nome do datacenter que receberá a solicitação, ** mesmo que o ping não possa se conectar para enviar os pacotes ICMP consecutivos de marca registrada. Se você usar o PsPing (uma ferramenta gratuita para download) e especificar a porta (443) e talvez usar IPv4 (-4), receberá um tempo médio de ida e volta para os pacotes enviados. Isso funcionará para outras URLs nos serviços do Office 365, como `psping -4 yourSite.sharepoint.com:443`. Na verdade, você pode especificar um número de pings para obter uma amostra maior para sua média, tente algo como `psping -4 -n 20 yourSite-my.sharepoint.com:443`.  
+Uma solicitação de ping enviada para o outlook.office365.com informará o nome do datacenter que receberá a solicitação, mesmo que *o ping não possa se* conectar para enviar os pacotes ICMP consecutivos de marca registrada. Se você usar o PsPing (uma ferramenta gratuita para download) e especificar a porta (443) e talvez usar IPv4 (-4), receberá um tempo médio de ida e volta para os pacotes enviados. Isso funcionará para outras URLs nos serviços do Office 365, como `psping -4 yourSite.sharepoint.com:443`. Na verdade, você pode especificar um número de pings para obter uma amostra maior para sua média, tente algo como `psping -4 -n 20 yourSite-my.sharepoint.com:443`.  
 
 > [!NOTE]
 > PsPing não envia pacotes ICMP. Ele efetua ping com pacotes TCP por meio de uma porta específica, para que você possa usar qualquer um que você sabe que está aberto. No Office 365, que usa SSL/TLS, tente anexar a porta: 443 ao seu PsPing.
@@ -277,7 +277,7 @@ Aqui estão as etapas a serem executadas para filtrar o Netmon e obter o endere�
 1. Execute o ping `ping outlook.office365.com` na URL e, nos resultados, registre o nome e o endereço IP do servidor DNS para o qual a solicitação ping foi enviada.
 2. Rastreamento de rede abrindo a página ou executando a ação que dá a você o problema de desempenho ou, se você vir uma alta latência no ping, em si, o rastreamento de rede.
 3. Abra o rastreamento no Netmon e o filtro para DNS (esse filtro também funciona no Wireshark, mas é confidencial para `-- dns`o caso). Como você sabe o nome do servidor DNS do seu ping, você também pode filtrar mais speedily no Netmon da seguinte maneira `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`:, que tem a seguinte aparência no Wireshark DNS e frame contém "namnorthwest".<br/>Abra o pacote de resposta e, na janela de detalhes do Netmon **frame** , clique em **DNS** para expandir para obter mais informações. Nas informações de DNS, você encontrará o endereço IP do servidor DNS no qual a solicitação foi enviada no Office 365. Você precisará desse endereço IP para a próxima etapa (a ferramenta PsPing). Remover o filtro, clique com o botão direito do mouse na resposta de DNS em Netmon (**Resumo** \> de quadros **Localizar conversas** \> **DNS**) para ver a consulta DNS e a resposta lado a lado.
-4. No Netmon, observe também a coluna de diferença de horário entre a solicitação de DNS e a resposta. Na próxima etapa, a ferramenta de [PsPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) fácil de instalar e usar é muito útil, pois o ICMP é freqüentemente bloqueado em firewalls, e como o PsPing rastreia a latência de maneira elegante em milissegundos. O PsPing completa uma conexão TCP com um endereço e uma porta (em nosso caso, a porta aberta 443).
+4. No Netmon, observe também a coluna de diferença de horário entre a solicitação de DNS e a resposta. Na próxima etapa, a ferramenta de [PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) fácil de instalar e usar é muito útil, pois o ICMP é freqüentemente bloqueado em firewalls, e como o PsPing rastreia a latência de maneira elegante em milissegundos. O PsPing completa uma conexão TCP com um endereço e uma porta (em nosso caso, a porta aberta 443).
 5. Instale o PsPing.
 6. Abra um prompt de comando ( \> iniciar \> execução digite cmd ou tipo de \> tecla do Windows cmd) e altere o diretório para o diretório onde você instalou o PsPing para executar o comando PsPing. Nos meus exemplos, você pode ver que fiz uma pasta ' perf ' na raiz de C. Você pode fazer o mesmo para acesso rápido.
 7. Digite o comando para que você esteja fazendo o PsPing em relação ao endereço IP do servidor DNS do Office 365 do seu rastreamento anterior do Netmon, incluindo o número da `psping -n 20 132.245.24.82:445`porta, como. Isso fornecerá uma amostra de 20 pings e a média da latência quando o PsPing parar.
@@ -295,7 +295,7 @@ Latência, conforme visto em um rastreamento do Netmon, esses milissegundos extr
 ![Latência geral no Netmon, com a coluna de Intervalo de Tempo padrão do Netmon adicionada ao Resumo do Quadro.](media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
 > [!NOTE]
-> Seu endereço IP pode ser diferente do IPs mostrado aqui, por exemplo, o ping pode retornar algo como 157.56.0.0/16 ou um intervalo semelhante. Para obter uma lista de intervalos usados pelo Office 365, confira [URLs e intervalos de endereços IP do office 365](https://technet.microsoft.com/en-us/library/hh373144.aspx).
+> Seu endereço IP pode ser diferente do IPs mostrado aqui, por exemplo, o ping pode retornar algo como 157.56.0.0/16 ou um intervalo semelhante. Para obter uma lista de intervalos usados pelo Office 365, confira [URLs e intervalos de endereços IP do office 365](https://technet.microsoft.com/library/hh373144.aspx).
 
 Lembre-se de expandir todos os nós (há um botão na parte superior para isso) se você deseja pesquisar, por exemplo, 132,245.
 
@@ -341,7 +341,7 @@ A resolução de nomes funciona melhor e com mais rapidez quando ocorre o mais p
 Se a resolução de nomes DNS estiver ocorrendo no exterior, poderá adicionar segundos à página. Idealmente, a resolução de nome ocorre em 100 ms. Caso contrário, você deve fazer uma investigação adicional.
 
 > [!TIP]
-> Não sabe como a conectividade do cliente funciona no Office 365? Confira o documento de referência de conectividade do cliente [aqui](https://technet.microsoft.com/en-us/library/dn741250.aspx).
+> Não sabe como a conectividade do cliente funciona no Office 365? Confira o documento de referência de conectividade do cliente [aqui](https://technet.microsoft.com/library/dn741250.aspx).
 
 #### <a name="tools"></a>Ferramentas
 
@@ -463,7 +463,7 @@ Ao acessar o SharePoint Online, um usuário viajando o exterior será direcionad
 O Lync Online tem nós ativos em mais de um dC por vez. Quando as solicitações são enviadas para instâncias do Lync Online, o DNS da Microsoft determinará em que parte do mundo a solicitação veio e retornarão endereços IP do dC regional mais próximo onde o Lync Online está ativo.
 
 > [!TIP]
-> Precisa saber mais sobre como os clientes se conectam ao Office 365? Dê uma olhada no artigo de referência de [conectividade do cliente](https://technet.microsoft.com/en-us/library/dn741250.aspx) (e seus gráficos úteis).
+> Precisa saber mais sobre como os clientes se conectam ao Office 365? Dê uma olhada no artigo de referência de [conectividade do cliente](https://technet.microsoft.com/library/dn741250.aspx) (e seus gráficos úteis).
 
 #### <a name="tools"></a>Ferramentas
 
@@ -492,9 +492,9 @@ Abra o prompt de comando no computador cliente (por meio \> de \> Iniciar Execut
 - HTTPWatch
 - Console F12 no navegador
 
-Não abordaremos as ferramentas usadas na solução de problemas específica do aplicativo neste artigo específico da rede. Mas você encontrará recursos que *podem* ser usados [nesta página](https://support.office.com/en-us/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848).
+Não abordaremos as ferramentas usadas na solução de problemas específica do aplicativo neste artigo específico da rede. Mas você encontrará recursos que *podem* ser usados [nesta página](https://support.office.com/article/Network-planning-and-performance-tuning-for-Office-365-e5f1228c-da3c-4654-bf16-d163daee8848).
 
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

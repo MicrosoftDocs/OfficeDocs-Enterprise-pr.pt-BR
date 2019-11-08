@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral do recurso de descoberta eletrônica e outros recursos de pesquisa no Office 365 para o uso de auditoria e transparência.
-ms.openlocfilehash: e9a120f717c04d5e5570e341aa5d3d93f85f80cb
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067181"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032026"
 ---
 # <a name="ediscovery-and-search-features"></a>Recursos de pesquisa e descoberta eletrônica 
 
@@ -28,7 +28,7 @@ O recurso de descoberta eletrônica fornece um único local para administradores
 
 ## <a name="content-search"></a>Pesquisa de Conteúdo
 
-A [pesquisa de conteúdo](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) é uma ferramenta de pesquisa de descoberta eletrônica que oferece recursos aprimorados de escala e desempenho em relação às ferramentas de pesquisa de descoberta eletrônica. Você usa a pesquisa de conteúdo para pesquisar caixas de correio, pastas públicas, sites do SharePoint Online e locais do OneDrive for Business. A pesquisa de conteúdo oferece suporte a pesquisas grandes. Não há limite para o número de caixas de correio e sites que podem ser pesquisados. Também não há limites para o número de pesquisas que são executadas ao mesmo tempo. Após executar uma pesquisa, o número de fontes de conteúdo e um número estimado de resultados de pesquisa são exibidos no painel de detalhes na página de pesquisa. Você pode visualizar os resultados ou exportá-los para um computador local. Se sua organização tiver uma assinatura do Office 365 Enterprise e5, você poderá [preparar os resultados](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) para análise usando os recursos avançados de análise da [descoberta eletrônica avançada do Office 365](http://go.microsoft.com/fwlink/p/?LinkID=620116).
+A [pesquisa de conteúdo](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) é uma ferramenta de pesquisa de descoberta eletrônica que oferece recursos aprimorados de escala e desempenho em relação às ferramentas de pesquisa de descoberta eletrônica. Você usa a pesquisa de conteúdo para pesquisar caixas de correio, pastas públicas, sites do SharePoint Online e locais do OneDrive for Business. A pesquisa de conteúdo oferece suporte a pesquisas grandes. Não há limite para o número de caixas de correio e sites que podem ser pesquisados. Também não há limites para o número de pesquisas que são executadas ao mesmo tempo. Após executar uma pesquisa, o número de fontes de conteúdo e um número estimado de resultados de pesquisa são exibidos no painel de detalhes na página de pesquisa. Você pode visualizar os resultados ou exportá-los para um computador local. Se sua organização tiver uma assinatura do Office 365 Enterprise e5, você poderá [preparar os resultados](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) para análise usando os recursos avançados de análise da [descoberta eletrônica avançada do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=620116).
 
 ## <a name="audit-log-search"></a>Pesquisa de Log de Auditoria
 
@@ -46,7 +46,7 @@ A tabela a seguir detalha algumas das informações exibidas nos relatórios de 
 | CreationTime | Data e hora no tempo universal coordenado (UTC) quando o usuário realizou a atividade. |
 | EventSource | Identifica se um evento ocorreu. Os valores possíveis são SharePoint e ObjectModel. |
 | ID | ID da entrada de relatório. A identificação identifica exclusivamente a entrada de relatório. |
-| Operation | Nome do usuário ou atividade, que corresponde ao valor selecionado em exibir resultados para esta atividade do usuário. |
+| Operação | Nome do usuário ou atividade, que corresponde ao valor selecionado em exibir resultados para esta atividade do usuário. |
 | OrganizationId | GUID do serviço do Office 365 da organização onde o evento ocorreu. |
 | UserAgent | Informações sobre o navegador do usuário, fornecidas pelo navegador. |
 | UserId | O usuário que executou a ação (especificado na Propriedade Operation) que resultou no registro que está sendo registrado em log. |
@@ -54,7 +54,7 @@ A tabela a seguir detalha algumas das informações exibidas nos relatórios de 
 |  | 0 indica um usuário regular. |
 |  | 2 indica um administrador na sua organização do Office 365. |
 |  | 3 indica um administrador de datacenter da Microsoft ou uma conta de sistema de datacenter. |
-| Carga de trabalho | Serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são: |
+| Workload | Serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são: |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |

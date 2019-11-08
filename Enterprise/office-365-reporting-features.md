@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Uma explicação de recursos de relatório no Office 365.
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067121"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031856"
 ---
 # <a name="office-365-reporting-features"></a>Recursos de relatório do Office 365 
 
@@ -78,7 +78,7 @@ Os relatórios de conformidade do MDM fornecem uma visão geral das políticas c
 
 As políticas de DLP ajudam a gerenciar a segurança e o fluxo de informações em uma organização. Você pode configurar políticas para bloquear o acesso a conteúdo, criptografar dados ou notificar os usuários sobre violações de política e política usando dicas de política de DLP no aplicativo. Os relatórios de DLP fornecem informações sobre o número de correspondências de políticas e regras, substituições e falsos positivos.
 
-Use o centro de administração do Microsoft 365 para exibir informações sobre o número de mensagens detectadas por suas políticas de DLP. Os relatórios de DLP fornecem informações sobre correspondências de política e de regra para emails enviados e recebidos. Você também pode exibir o número de correspondências, substituições e falsos positivos de cada política nas últimas 24 horas usando o centro de administração do Exchange. Se você baixar um relatório do Excel, poderá exibir ainda mais detalhes, como quem enviou a mensagem, em que dia e que correspondências de política foram acionadas. Para obter mais informações, consulte [exibir relatórios sobre detecções de política DLP](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx).
+Use o centro de administração do Microsoft 365 para exibir informações sobre o número de mensagens detectadas por suas políticas de DLP. Os relatórios de DLP fornecem informações sobre correspondências de política e de regra para emails enviados e recebidos. Você também pode exibir o número de correspondências, substituições e falsos positivos de cada política nas últimas 24 horas usando o centro de administração do Exchange. Se você baixar um relatório do Excel, poderá exibir ainda mais detalhes, como quem enviou a mensagem, em que dia e que correspondências de política foram acionadas. Para obter mais informações, consulte [exibir relatórios sobre detecções de política DLP](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx).
 
 ## <a name="auditing-in-yammer-enterprise"></a>Auditoria no Yammer Enterprise
 

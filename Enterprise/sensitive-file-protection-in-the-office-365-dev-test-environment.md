@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Resumo: Configure e demonstre como o gerenciamento de direitos de informação do Office 365 protege seus arquivos confidenciais, mesmo quando eles são publicados no conjunto de sites do SharePoint Online errado.'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782491"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031566"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Proteção de arquivos confidenciais no ambiente de desenvolvimento/teste do Office 365
 
@@ -32,7 +32,7 @@ O gerenciamento de direitos de informação (IRM) no Office 365 é um conjunto d
 Com as instruções deste artigo, você habilita e testa o IRM no Office 365 para arquivos que contêm possíveis informações confidenciais em sua assinatura de avaliação do Office 365.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Fase 1: criar seu ambiente de desenvolvimento/teste do Office 365
 
@@ -55,7 +55,7 @@ Use as instruções em [conectar-se ao Office 365 PowerShell](https://technet.mi
     
 - A máquina virtual CLIENT1 (para o ambiente de desenvolvimento/teste corporativo simulado do Office 365).
     
-Na caixa de diálogo solicitação de credencial do **Windows PowerShell** , digite o nome do administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e a senha da sua assinatura de avaliação do Office 365.
+Na caixa de diálogo **solicitação de credencial do Windows PowerShell** , digite o nome do administrador global do Office 365 (exemplo: jdoe@contosotoycompany.onmicrosoft.com) e a senha da sua assinatura de avaliação do Office 365.
   
 Preencha o nome da sua organização (exemplo: contosotoycompany) e o código de país de dois caracteres para seu local e, em seguida, execute os seguintes comandos do prompt do módulo do Windows Azure Active Directory para Windows PowerShell:
   
@@ -92,7 +92,7 @@ Na exibição do comando **New-MsolUser** , anote a senha gerada para a conta CO
   
 Em seguida, crie um grupo de executivos privados e adicione as novas contas executivas a ele.
   
-1. No navegador, vá para o portal do Office em [http://admin.microsoft.com](http://admin.microsoft.com) e entre na sua assinatura de avaliação do Office 365 com sua conta de administrador global.
+1. No navegador, vá para o portal do Office em [https://admin.microsoft.com](https://admin.microsoft.com) e entre na sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
   - Se você estiver usando o ambiente leve de desenvolvimento/teste do Office 365, abra uma sessão particular do Internet Explorer ou seu navegador e entre no computador local.
     
@@ -118,7 +118,7 @@ Em seguida, crie um grupo de executivos privados e adicione as novas contas exec
     
   - Diretor de operações
     
-9. Clique em **salvar**e, em seguida, clique em **fechar**.
+9. Clique em **Salvar** e em **Fechar**.
     
 10. Feche a guia **centro de administração do Office** .
     
@@ -164,9 +164,9 @@ Em seguida, permita que todos acessem o conjunto de sites de vendas.
     
 Em seguida, você entra com uma conta executiva e cria um documento no conjunto de sites executivos.
   
-1. Na guia **Microsoft Office Home** , clique no ícone de usuário no canto superior direito e, em seguida, **** clique em sair.
+1. Na guia **Microsoft Office Home** , clique no ícone de usuário no canto superior direito e **, em seguida**, clique em sair.
     
-2. Acesse [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Acesse [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Na página de **entrada do Office 365** , clique em **usar outra conta**.
     
@@ -202,9 +202,9 @@ Em seguida, Baixe uma cópia local do documento SensitiveData-BeforeIRM. docx e,
     
 Em seguida, você entra como User5 e tenta abrir o documento SensitiveData-BeforeIRM. docx no conjunto de sites de vendas.
   
-1. Na guia **Microsoft Office Home** , clique no ícone de usuário no canto superior direito e, em seguida, **** clique em sair.
+1. Na guia **Microsoft Office Home** , clique no ícone de usuário no canto superior direito e **, em seguida**, clique em sair.
     
-2. Acesse [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Acesse [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Na página de **entrada do Office 365** , clique em **usar outra conta**.
     
@@ -222,9 +222,9 @@ Ao postar o documento SensitiveData-BeforeIRM. docx acidentalmente no conjunto d
   
 Para preparar o Office 365 para as fases 3 e 4, habilite o IRM para o SharePoint Online.
   
-1. Na guia **Microsoft Office Home** , clique no ícone de usuário no canto superior direito e, em seguida, **** clique em sair.
+1. Na guia **Microsoft Office Home** , clique no ícone de usuário no canto superior direito e **, em seguida**, clique em sair.
     
-2. Acesse [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Acesse [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Na página de **entrada do Office 365** , clique no nome da conta de administrador global, digite sua senha e clique em **entrar**.
     
@@ -262,7 +262,7 @@ Primeiro, habilite e configure o IRM para a biblioteca de documentos do conjunto
     
 7. Em **definir configurações de biblioteca de IRM adicionais**, selecione não **permitir que os usuários carreguem documentos que não dão suporte ao IRM**.
     
-8. Em **Configurar direitos de acesso ao documento**, selecione **permitir que** os visualizadores imprimam e **permitir que os visualizadores escrevam em uma cópia do documento baixado**.
+8. Em **Configurar direitos de acesso ao documento**, selecione **permitir que os visualizadores imprimam** e **permitir que os visualizadores escrevam em uma cópia do documento baixado**.
     
 9. Em **definir intervalo de credenciais e proteção de grupo**, selecione **permitir proteção de grupo. Grupo padrão**e, em seguida, digite **executivos**.
     
@@ -278,9 +278,9 @@ Em seguida, agindo como CEO, você carrega um novo documento na pasta de documen
     
 4. Renomeie o novo arquivo **SensitiveData-BeforeIRM-Copy. docx** para **SensitiveData-AfterIRM. docx**.
     
-5. Na guia **Microsoft Office Home** no navegador, clique no ícone de usuário no canto superior direito e, em seguida, clique **** em sair.
+5. Na guia **Microsoft Office Home** no navegador, clique no ícone de usuário no canto superior direito e **, em seguida**, clique em sair.
     
-6. Acesse [http://admin.microsoft.com](http://admin.microsoft.com).
+6. Acesse [https://admin.microsoft.com](https://admin.microsoft.com).
     
 7. Na página de **entrada do Office 365** , clique no nome da conta do CEO, digite sua senha e clique em **entrar**.
     
@@ -304,9 +304,9 @@ Em seguida, agindo como CEO, você carrega um novo documento na pasta de documen
     
 Em seguida, agindo como um usuário normal, você tenta acessar o documento **SensitiveData-AfterIRM. docx** na pasta de documentos Sales.
   
-1. Na guia **Microsoft Office Home** no navegador, clique no ícone de usuário no canto superior direito e, em seguida, clique **** em sair.
+1. Na guia **Microsoft Office Home** no navegador, clique no ícone de usuário no canto superior direito e **, em seguida**, clique em sair.
     
-2. Acesse [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Acesse [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Na página de **entrada do Office 365** , clique no nome da conta User5, digite sua senha e clique em **entrar**.
     

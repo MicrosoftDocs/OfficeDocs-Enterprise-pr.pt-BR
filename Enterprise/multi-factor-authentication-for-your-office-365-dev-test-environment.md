@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Resumo: Configure a autenticação multifator usando mensagens de texto enviadas a um telefone inteligente em um ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6e78d826cd010230218048ef320d8f32430ac02b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069947"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032126"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Autenticação multifator para o ambiente de desenvolvimento/teste do Office 365
 
@@ -38,7 +38,7 @@ Há duas fases para configurar a autenticação multifator para o Office 365 em 
 2. Habilite e teste a autenticação multifator para a conta do usuário 2.
     
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Fase 1: desenvolver seu ambiente de desenvolvimento/teste do Office 365 leve ou em uma empresa simulada
 
@@ -59,17 +59,17 @@ Habilite a autenticação multifator para a conta do usuário 2 com estas etapas
     
 3. Na navegação à esquerda, clique em **Usuários > Usuários ativos**.
     
-4. No painel usuários ativos, clique em **mais > configuração de autenticação**multifator.
+4. No painel usuários ativos, clique em **mais > configuração de autenticação multifator**.
     
 5. Na lista, selecione a conta do **usuário 2** .
     
 6. Na seção **usuário 2** , em **etapas rápidas**, clique em **habilitar**.
     
-7. Na caixa de diálogo **sobre como habilitar a autenticação** multifator, clique em **habilitar autenticação**multifator.
+7. Na caixa de diálogo **sobre como habilitar a autenticação multifator** , clique em **habilitar autenticação multifator**.
     
 8. Na caixa de diálogo **atualizações com êxito** , clique em **fechar**.
     
-9. Na guia **Microsoft Office Home** , clique no ícone da conta de usuário no canto superior direito e clique em **** sair.
+9. Na guia **Microsoft Office Home** , clique no ícone da conta de usuário no canto superior direito e clique em **sair.**
     
 10. Feche a instância do navegador.
     
@@ -77,7 +77,7 @@ Conclua a configuração da conta do usuário 2 para usar uma mensagem de texto 
   
 1. Abra uma nova instância do navegador.
     
-2. Vá para o portal do Office 365[https://www.office.com](https://www.office.com)() e entre com a conta do usuário 2 (Usuário2\<@ Organization name>. onmicrosoft. com) e a senha.
+2. Vá para o portal do Office 365[https://www.office.com](https://www.office.com)() e entre com a conta do usuário 2 (\<user2@ nome da organização>. onmicrosoft.com) e a senha.
     
 3. Após entrar, você será solicitado a configurar a conta para a validação de segurança adicional. Clique em **Configurar agora**.
     

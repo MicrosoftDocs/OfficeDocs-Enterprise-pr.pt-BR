@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Resumo: exiba, liste ou exiba suas contas de usuário de várias maneiras com o Office 365 PowerShell.'
-ms.openlocfilehash: c23e9106873aa32e8daccb1e35a16862e6f9bb7d
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 63756e29bb4d5f3e749cf4d66ef31c98ffac6182
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782061"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031656"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Exibir as contas de usuário com o Office 365 PowerShell
 
@@ -212,7 +212,7 @@ Get-MsolUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  A sintaxe do cmdlet **Where-Object** mostrado nesses exemplos é **onde-Object {$\_.** [nome da propriedade da conta de usuário] [operador de comparação] valor **}**.  [operador de comparação] é **-EQ** para igual a, **-ne** para não é igual a, **-lt** para menor que, **-gt** para maior que e outros.  [value] normalmente é uma cadeia de caracteres (uma sequência de letras, números e outros caracteres), um valor numérico ou **$NULL** para não especificado. Confira [Where-Object](https://technet.microsoft.com/en-us/library/hh849715.aspx) para obter mais informações.
+>  A sintaxe do cmdlet **Where-Object** mostrado nesses exemplos é **onde-Object {$\_.** [nome da propriedade da conta de usuário] [operador de comparação] valor **}**.  [operador de comparação] é **-EQ** para igual a, **-ne** para não é igual a, **-lt** para menor que, **-gt** para maior que e outros.  [value] normalmente é uma cadeia de caracteres (uma sequência de letras, números e outros caracteres), um valor numérico ou **$NULL** para não especificado. Confira [Where-Object](https://technet.microsoft.com/library/hh849715.aspx) para obter mais informações.
   
 Você pode verificar o status bloqueado de uma conta de usuário com o seguinte comando:
   
@@ -224,13 +224,13 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayNam
 
 Por padrão, o cmdlet **Get-MsolUser** exibe três propriedades de contas de usuário:
   
-- Principal
+- UserPrincipalName
     
 - DisplayName
     
 - isLicensed
     
-Se você precisar de propriedades adicionais, como o departamento para o qual o usuário trabalha e o país/região em que o usuário usa os serviços do Office 365, você pode executar **Get-MsolUser** em combinação com o cmdlet **Select-Object** para especificar a lista de contas de usuário Propriedades. Veja um exemplo:
+Se você precisar de propriedades adicionais, como o departamento do qual o usuário trabalha e o país/região em que o usuário usa os serviços do Office 365, você pode executar **Get-MsolUser** em combinação com o cmdlet **Select-Object** para especificar a lista de propriedades da conta de usuário. Veja um exemplo:
   
 ```
 Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
@@ -284,7 +284,7 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-Se você estiver usando a sincronização de diretórios para criar e gerenciar seus usuários do Office 365, poderá exibir a conta local em que um usuário do Office 365 foi projetado. O seguinte pressupõe que o Azure AD Connect tenha sido configurado para usar a âncora de origem padrão de objectGUID (para saber mais sobre como configurar uma âncora de origem, confira [Azure ad Connect: design Concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)) e pressupõe que o módulo do Active Directory para o PowerShell tenha foi instalado (consulte [ferramentas de RSAT](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
+Se você estiver usando a sincronização de diretórios para criar e gerenciar seus usuários do Office 365, poderá exibir a conta local em que um usuário do Office 365 foi projetado. O seguinte pressupõe que o Azure AD Connect tenha sido configurado para usar a âncora de origem padrão de objectGUID (para saber mais sobre como configurar uma âncora de origem, confira [Azure ad Connect: design Concepts](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) e pressupõe que o módulo Active Directory para PowerShell tenha sido instalado (consulte [rsat Tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
 
 ```
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

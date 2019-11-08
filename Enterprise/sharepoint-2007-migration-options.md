@@ -21,12 +21,12 @@ search.appverid:
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 description: O SharePoint Server 2007 atingiu o fim do suporte e é hora de atualizar. Use este artigo para ajudá-lo a criar seu plano.
-ms.openlocfilehash: 98151ecd32f0066f583da1142d6010d46e120a43
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070697"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031546"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Opções de migração do SharePoint 2007 a serem consideradas
 
@@ -59,9 +59,9 @@ Seu conhecimento sobre o que o seu farm faz e é usado é uma força tática qua
 > [!TIP]
 > O Microsoft Office SharePoint Server 2007 também tem uma atualização gradual não abordada aqui. Para ver uma lista de artigos de atualização específicos da etapa, consulte o [mapa de suporte final do SharePoint Server 2007](sharepoint-2007-end-of-support.md). 
   
-Lembre-se de verificar o [ciclo de vida do produto](https://support.microsoft.com/en-us/lifecycle/search) e os requisitos do sistema para qualquer versão do SharePoint para a qual você está atualizando. Isso é necessário para que você se lembre de quando a próxima atualização será necessária (por exemplo, se você pausar em um produto herdado como o SharePoint Server 2010 para planejar mais atualizações, certifique-se de que você conhece o fim da data de suporte) e para ter certeza de que tem o hardware que oferece suporte ao seu plano. 
+Lembre-se de verificar o [ciclo de vida do produto](https://support.microsoft.com/lifecycle/search) e os requisitos do sistema para qualquer versão do SharePoint para a qual você está atualizando. Isso é necessário para que você se lembre de quando a próxima atualização será necessária (por exemplo, se você pausar em um produto herdado como o SharePoint Server 2010 para planejar mais atualizações, certifique-se de que você conhece o fim da data de suporte) e para ter certeza de que tem o hardware que oferece suporte ao seu plano. 
   
-Se você estiver planejando fazer a transição de alguns, ou todos, de seus sites do SharePoint para o Office 365 na nuvem, essa é uma hora para indicar um link para as [descrições de serviço do Office 365](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx). Você precisará das descrições de serviço para saber mais sobre os recursos do SharePoint Online e como eles podem diferir do SharePoint Server local. Atualizar farms funcionais do Microsoft Office SharePoint Server 2007. Se sua instalação tiver sites desfeitos, corrija-os antes de atualizar.
+Se você estiver planejando fazer a transição de alguns, ou todos, de seus sites do SharePoint para o Office 365 na nuvem, essa é uma hora para indicar um link para as [descrições de serviço do Office 365](https://technet.microsoft.com/library/office-365-service-descriptions.aspx). Você precisará das descrições de serviço para saber mais sobre os recursos do SharePoint Online e como eles podem diferir do SharePoint Server local. Atualizar farms funcionais do Microsoft Office SharePoint Server 2007. Se sua instalação tiver sites desfeitos, corrija-os antes de atualizar.
   
 ## <a name="a-note-about-managing-risk"></a>Uma nota sobre o gerenciamento de riscos
 
@@ -76,7 +76,7 @@ Métodos como ' lado a lado ' são importantes no esquema de lógica de atualiza
 Métodos como a atualização in-loco atuarão diretamente no seu farm do Microsoft Office SharePoint Server 2007, fornecendo menos opções fáceis para abandonar um caminho e começar novamente com seu ambiente do pristine. Tanto quanto possível, crie algumas medidas de segurança (como fazer e testar backups do ambiente original). Por exemplo, se o seu farm do Microsoft Office SharePoint Server 2007 for virtual e estiver duplicado para fins de backup e restauração, faça backup e restaure os bancos de dados mais recentes antes da janela de serviço para a atualização. Sabendo que você tem a opção de restaurar backups de banco de dados não só dará uma falha na FailSafe, pode dar tranqüilidade.
   
 > [!TIP]
-> Os documentos de práticas recomendadas para atualização existem para [o Microsoft Office SharePoint server 2007, o](https://technet.microsoft.com/en-us/library/cc261992%28v=office.12%29.aspx) [SharePoint Server 2010](https://technet.microsoft.com/en-us/library/cc261992%28v=office.14%29.aspx), o [SharePoint Server 2013](https://technet.microsoft.com/en-us/library/cc261992%28v=office.15%29.aspx)e o [SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc261992%28v=office.16%29.aspx). Você também pode procurar [parceiros da Microsoft](https://partnercenter.microsoft.com/en-us/pcv/search) que tenham experiência com atualizações ou migrações do Office 365. 
+> Os documentos de práticas recomendadas para atualização existem para [o Microsoft Office SharePoint server 2007, o](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx) [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), o [SharePoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)e o [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx). Você também pode procurar [parceiros da Microsoft](https://partnercenter.microsoft.com/pcv/search) que tenham experiência com atualizações ou migrações do Office 365. 
   
 ## <a name="make-your-plan"></a>Faça seu plano
 
@@ -176,8 +176,8 @@ Geralmente, os principais fatores na escolha de um método são o custo total da
 
 [Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2007](upgrade-from-office-2007-servers-and-products.md)
   
-[Política de ciclo de vida e pesquisa de ciclo de vida Microsoft](https://support.microsoft.com/en-us/lifecycle)
+[Política de ciclo de vida e pesquisa de ciclo de vida Microsoft](https://support.microsoft.com/lifecycle)
   
-[Procurar parceiros da Microsoft que podem ajudar na atualização ou migração](https://partnercenter.microsoft.com/en-us/pcv/search)
+[Procurar parceiros da Microsoft que podem ajudar na atualização ou migração](https://partnercenter.microsoft.com/pcv/search)
   
 

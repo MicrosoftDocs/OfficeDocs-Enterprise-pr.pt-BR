@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Este artigo descreve como usar as técnicas de agrupamento e minificação com o Web Essentials para reduzir o número de solicitações HTTP e reduzir o tempo que leva para carregar páginas no SharePoint Online.
-ms.openlocfilehash: 823011894019e9602d949f1301994d79dc209664
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3303ea49a1308e4ad7b3139547c20b4351fc84b5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616844"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031306"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificação e agrupamento no SharePoint Online
 
@@ -33,7 +33,7 @@ Para arquivos JavaScript e CSS, você também pode usar uma abordagem chamada mi
 Você pode usar software de terceiros, como o Web Essentials, para agrupar arquivos CSS e JavaScript.
   
 > [!IMPORTANT]
-> O Web Essentials é um projeto de terceiros, de código aberto, baseado na Comunidade. O software é uma extensão do Visual Studio 2012 e do Visual Studio 2013 e não tem suporte da Microsoft. Para baixar o Web Essentials, visite o site [http://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)em. 
+> O Web Essentials é um projeto de terceiros, de código aberto, baseado na Comunidade. O software é uma extensão do Visual Studio 2012 e do Visual Studio 2013 e não tem suporte da Microsoft. Para baixar o Web Essentials, visite o site [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)em. 
   
 O Web Essentials oferece duas formas de agrupamento:
   

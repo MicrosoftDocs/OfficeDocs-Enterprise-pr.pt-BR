@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use os cmdlets do PowerShell de implantação centralizada para ajudá-lo a implantar e gerenciar suplementos do Office para sua organização do Office 365.
-ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
-ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
+ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "35834231"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030856"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos
 
@@ -82,7 +82,7 @@ No exemplo a seguir, o cmdlet **New-OrganizationAddIn** especifica o AssetID de 
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Para determinar o valor para o __ parâmetro AssetID, você pode copiá-lo da URL da página da Web da Office Store para o suplemento. AssetIds sempre começa com "WA" seguido por um número. Por exemplo, no exemplo anterior, a origem para o valor AssetID de WA104099688 é a URL da página da Web da Office Store para o suplemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
+Para determinar o valor para o parâmetro _AssetID_ , você pode copiá-lo da URL da página da Web da Office Store para o suplemento. AssetIds sempre começa com "WA" seguido por um número. Por exemplo, no exemplo anterior, a origem para o valor AssetID de WA104099688 é a URL da página da Web da Office Store para o suplemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
   
 Os valores para o parâmetro _locale_ e o parâmetro _ContentMarket_ são idênticos e indicam o país/região para o qual você está tentando instalar o suplemento. O formato é en-US, fr-FR. e assim por diante. 
   
@@ -111,7 +111,7 @@ Get-OrganizationAddIn |Format-List
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Ativar ou desativar um suplemento
 
-Para desativar um suplemento para que os usuários e grupos atribuídos a ele não tenham mais acesso, execute o cmdlet **set-OrganizationAddIn** com o parâmetro _ProductID_ e o parâmetro _Enabled_ definido como `$false`, conforme mostrado no exemplo a seguir .
+Para desativar um suplemento para que os usuários e grupos atribuídos a ele não tenham mais acesso, execute o cmdlet **set-OrganizationAddIn** com o parâmetro _ProductID_ e o parâmetro _Enabled_ definido como `$false`, conforme mostrado no exemplo a seguir.
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
@@ -125,7 +125,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 
 ## <a name="add-or-remove-users-from-an-add-in"></a>Adicionar ou remover usuários de um suplemento
 
-Para adicionar usuários e grupos a um suplemento específico, execute o cmdlet **set-OrganizationAddInAssignments** com os parâmetros _ProductID_, _Add_e Members __ . Separe os endereços de email dos membros com uma vírgula. 
+Para adicionar usuários e grupos a um suplemento específico, execute o cmdlet **set-OrganizationAddInAssignments** com os parâmetros _ProductID_, _Add_e _Members_ . Separe os endereços de email dos membros com uma vírgula. 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
@@ -177,7 +177,7 @@ Recomendamos que você implante primeiro um suplemento personalizado para se cer
 Observe também as seguintes restrições:
 - Todas as URLs devem ser absolutas (incluir http ou HTTPS) e válidas.
 - *DisplayName* não deve exceder 125 caracteres 
-- *DisplayName*, ** Resources e *AppDomains* não devem incluir os seguintes caracteres: 
+- *DisplayName*, *Resources* e *AppDomains* não devem incluir os seguintes caracteres: 
  
     - \<
     -  \>
@@ -189,12 +189,12 @@ Se você quiser personalizar um suplemento implantado, será necessário desinst
 Para personalizar um suplemento, execute o cmdlet **set – OrganizationAddInOverrides** com o *ProductID* como um parâmetro, seguido da marca que você deseja substituir e o novo valor. Para saber como obter o *ProductID* , confira [obter detalhes de um suplemento](#get-details-of-an-add-in) neste artigo. Por exemplo:
 
 ```powershell
- Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "http://site.com/img.jpg" 
+ Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
 Para personalizar várias marcas de um suplemento, adicione essas marcas à linha de comando:
 
 ```powershell
-Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "http://site.com/img.jpg" 
+Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
@@ -219,7 +219,7 @@ Qualquer elemento na <Resources> marca do manifesto pode ser personalizado dinam
 ```
 <Resources>  
     <bt:Images> 
-          <bt:Image id=”img16icon” DefaultValue=”http://site.com/img.jpg” 
+          <bt:Image id=”img16icon” DefaultValue=”https://site.com/img.jpg” 
     </bt:Images> 
 </Resources> 
 ``` 
@@ -261,7 +261,7 @@ Se um suplemento tiver sido implantado, ele deve ser removido do cache em cada c
 1. Navegue até a pasta "usuários" em C:\ 
 1. Vá para a pasta do usuário
 1. Navegue até AppData\Local\Microsoft\Office e selecione a pasta associada à sua versão do Office
-1. Na pasta *WEF* , exclua ** a pasta manifestos.
+1. Na pasta *WEF* , exclua a pasta *manifestos* .
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Obter ajuda detalhada para cada cmdlet
 

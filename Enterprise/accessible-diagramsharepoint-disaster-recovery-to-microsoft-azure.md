@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Este artigo é uma versão de texto acessível do diagrama chamado recuperação de desastre do SharePoint para o Microsoft Azure.
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068517"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038230"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Diagrama acessível-recuperação de desastre do SharePoint para o Microsoft Azure
 
@@ -194,10 +194,9 @@ Há três serviços de nuvem na rede virtual do Azure:
 
 A configuração do AD DS para esta solução constitui um cenário de implantação híbrida no qual o AD DS é implantado parcialmente no local e implantado parcialmente nas máquinas virtuais do Azure. 
   
-Importante — antes de implantar o AD DS no Azure, leia as diretrizes para implantar o Windows Server Active Directory nas máquinas virtuais dohttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Microsoft Azure (. 
+Importante — antes de implantar o AD DS no Azure, leia as diretrizes para implantar o Windows Server Active Directory nas máquinas virtuais dohttps://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)Microsoft Azure (. 
   
-Para obter uma orientação completa sobre como projetar e implantar ambientes do Active http://TechNet.microsoft.comDirectory, consulte. 
-  
+ 
 Essa arquitetura de referência inclui duas máquinas virtuais configuradas como controladores de domínio. Cada uma é configurada da seguinte maneira: 
   
 - Tamanho – pequeno. 

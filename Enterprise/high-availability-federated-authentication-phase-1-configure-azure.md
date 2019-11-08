@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumo: Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.'
-ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067496"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030745"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: configurar o Azure
 
@@ -45,7 +45,7 @@ Antes de começar a configurar componentes do Azure, preencha as tabelas a segui
 |2.  <br/> |Localização da VNet  <br/> |O datacenter do Azure regional que conterá a rede virtual.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Endereço IP do dispositivo VPN  <br/> |O endereço IPv4 público da interface de seu dispositivo VPN na Internet.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Espaço de endereço da VNet  <br/> |O espaço de endereço da rede virtual. Trabalhe com seu departamento de TI para determinar esse espaço de endereço.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Chave compartilhada IPsec  <br/> |Uma cadeia alfanumérica aleatória com 32 caracteres, que será usada para autenticar ambos os lados da conexão VPN site a site. Trabalhe com seu departamento de TI ou de segurança para determinar esse valor de chave. Como alternativa, confira [Criar uma cadeia de caracteres aleatória para uma chave pré-compartilhada IPsec](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Chave compartilhada IPsec  <br/> |Uma cadeia alfanumérica aleatória com 32 caracteres, que será usada para autenticar ambos os lados da conexão VPN site a site. Trabalhe com seu departamento de TI ou de segurança para determinar esse valor de chave. Como alternativa, confira [Criar uma cadeia de caracteres aleatória para uma chave pré-compartilhada IPsec](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabela V: Configuração de rede virtual entre locais**
   
@@ -63,7 +63,7 @@ Trabalhe com seu departamento de TI para determinar esses espaços de endereço 
   
 |**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Objetivo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio dos serviços de domínio do Active Directory (AD DS) e pelas máquinas virtuais (VMs) do servidor dirSync.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio dos serviços de domínio do Active Directory (AD DS) e pelas máquinas virtuais (VMs) do servidor DirSync.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelos VMs do AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelas VMs de proxy do aplicativo Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelas VMs do gateway do Azure.  <br/> |
@@ -109,7 +109,7 @@ Para o conjunto de espaços de endereço da rede local, preencha a Tabela L. Obs
 Agora, vamos começar a criar a infraestrutura do Azure para hospedar sua autenticação federada para o Office 365.
   
 > [!NOTE]
-> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Primeiro, inicie um prompt do Azure PowerShell e faça logon na sua conta.
   
@@ -134,7 +134,7 @@ Para versões mais antigas do Azure PowerShell, use esse comando em vez disso.
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Defina sua assinatura do Azure. Substitua tudo dentro das aspas, incluindo os \< caracteres e >, pelo nome correto.
+Defina sua assinatura do Azure. Substitua tudo dentro das aspas, incluindo os \< caracteres e >, com o nome correto.
   
 ```
 $subscrName="<subscription name>"

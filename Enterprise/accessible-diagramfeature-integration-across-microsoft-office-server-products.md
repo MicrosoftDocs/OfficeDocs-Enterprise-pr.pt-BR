@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e servidor do Office Online.
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782241"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027685"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama acessível-integração de recursos nos produtos do Microsoft Office Server
 
@@ -132,7 +132,7 @@ Gravações de reunião. Esse recurso se aplica a:
 
 Office Web Apps Server é um produto do servidor Office que fornece serviços de edição e visualização de arquivos baseado no navegador para os arquivos do Office . O servidor do Office Web Apps funciona com produtos e serviços que suportam o WOPI (Open Platform Interface Protocol) do aplicativo Web. Esses produtos, conhecidos como hosts, incluem SharePoint 2013, Lync Server 2013, e Exchange Server 2013. 
   
-Para saber mais sobre o Office Web Apps Server, baixe o pôster simplificado de implantação do http://aka.ms/OfficeWebAppsPosterOffice Web Apps em. 
+Para saber mais sobre o Office Web Apps Server, baixe o pôster simplificado de implantação do https://aka.ms/OfficeWebAppsPosterOffice Web Apps em. 
   
 ## <a name="server-to-server-authentication-tab"></a>Guia Autenticação de servidor para servidor
 
@@ -166,7 +166,7 @@ A tabela a seguir lista o ponto de extremidade de metadados JSON para cada servi
     
 - Um Lync Server com um ponto de extremidade de metadados<server name>JSON de https:///Metadata/JSON/1 
     
-- Um servidor do SharePoint com um ponto de extremidade de<web app name>metadados JSON de https:///_layouts/15/Metadata/JSON/1 
+- Um servidor do SharePoint com um ponto de extremidade de<web app name>metadados JSON do https:///_layouts/15/Metadata/JSON/1 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>Exemplo: como a autenticação de servidor para servidor funciona para descoberta eletrônica entre o SharePoint e o Exchange
 
@@ -236,9 +236,9 @@ Os usuários podem carregar imagens com intervalos de pixels de 48 × 48 para 64
     
 Por exemplo, exemplos de scripts de configuração, consulte o artigo de blog de Jens Trier escapa: 
   
-- Usando fotos de alta resolução do Exchange 2013 do SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Usando fotos de alta resolução do Exchange 2013 do SharePoint Server 2013 (https://aka.ms/Bhr4d2) 
     
-- Integração do Exchange 2013 e do Lync Server 2013 (http://aka.ms/Pn08dw) 
+- Integração do Exchange 2013 e do Lync Server 2013 (https://aka.ms/Pn08dw) 
     
 O cartaz também contém códigos QR para esses dois artigos de blog. 
   
@@ -283,7 +283,7 @@ O uso do repositório unificado de contatos (UCS) fornece uma experiência de co
     
 Por exemplo, exemplos de scripts de configuração, consulte o artigo do blog de Jens Trier escapa: 
   
-- Integração do Exchange 2013 e do Lync Server 2013 (http://aka.ms/Oyg7fh) 
+- Integração do Exchange 2013 e do Lync Server 2013 (https://aka.ms/Oyg7fh) 
     
  **Como funciona**
   
@@ -615,7 +615,7 @@ Produtos de servidor:
     
 - SharePoint 2013 
     
-Pré-requisitos 
+Pré-requisitos: 
   
 - Lync 2013 — a gravação da reunião é um recurso do lado do cliente no Lync 2013. 
     
@@ -667,7 +667,7 @@ Para se preparar para publicar gravações de reunião:
     
  **Bibliotecas de ativos digitais**
   
-Bibliotecas de ativos digitais são bibliotecas de ativos que contêm vídeos com determinadas implicações de capacidade e desempenho. Para obter mais informações, consulte Plan Digital Asset Libraries in SharePoint Server 2013 localizado http://aka.ms/O1vq5wem. O cartaz também inclui um código QR para acessar essas informações. 
+Bibliotecas de ativos digitais são bibliotecas de ativos que contêm vídeos com determinadas implicações de capacidade e desempenho. Para obter mais informações, consulte Plan Digital Asset Libraries in SharePoint Server 2013 localizado https://aka.ms/O1vq5wem. O cartaz também inclui um código QR para acessar essas informações. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Gravar e publicar uma reunião usando o cliente Lync
 
@@ -683,10 +683,10 @@ O diagrama mostra um usuário usando o Lync para ingressar em uma reunião. A re
     
 4. Arraste e solte a gravação de reunião na sua biblioteca de ativos do SharePoint. 
     
-5. Opcional: depois que a gravação estiver em sua biblioteca de ativos, você poderá inseri-la em qualquer página do SharePoint. Para obter mais informações sobre esta etapa, confira a entrada de blog do Office 365, crie e publique vídeos de treinamento com o SharePoint http://aka.ms/R61q35e o Lync Online, localizado em. 
+5. Opcional: depois que a gravação estiver em sua biblioteca de ativos, você poderá inseri-la em qualquer página do SharePoint. Para obter mais informações sobre esta etapa, confira a entrada de blog do Office 365, crie e publique vídeos de treinamento com o SharePoint https://aka.ms/R61q35e o Lync Online, localizado em. 
     
  **Miniaturas de vídeo**
   
-As miniaturas de vídeo melhoram a aparência da sua biblioteca de ativos. Para saber mais sobre como criar miniaturas para suas gravações de reunião, confira capturar ou alterar uma miniatura de http://aka.ms/Kupj85vídeo, localizada em. O cartaz também inclui um código QR para acessar essas informações. 
+As miniaturas de vídeo melhoram a aparência da sua biblioteca de ativos. Para saber mais sobre como criar miniaturas para suas gravações de reunião, confira capturar ou alterar uma miniatura de https://aka.ms/Kupj85vídeo, localizada em. O cartaz também inclui um código QR para acessar essas informações. 
   
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Resumo: Configure e demonstre a Proteção Avançada contra Ameaças do Office 365 no seu ambiente de desenvolvimento e teste do Office 365.'
-ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e3efe339550992fba85509cd07a791d916d5d6e7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162414"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030555"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Proteção Avançada contra Ameaças para o ambiente de desenvolvimento/teste do Office 365
 
@@ -74,7 +74,7 @@ Nesta fase, você demonstrará que, antes de configurar políticas de ATP, email
     
 13. No corpo, selecione o texto **este site** e clique no ícone de hiperlink na barra de ferramentas.
     
-14. Em **URL**, digite **http://www.spamlink.contoso.com/**, clique em **OK**e, em seguida, clique em **Enviar**.
+14. Em **URL**, digite **https://www.spamlink.contoso.com/**, clique em **OK**e, em seguida, clique em **Enviar**.
     
 15. Abra uma instância separada do Internet Explorer no modo de navegação privada, vá para o centro de administração do[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 () e entre na sua assinatura de avaliação do Office 365 com sua conta de administrador global.
     
@@ -124,7 +124,7 @@ Nesta fase, você demonstrará como a ATP lida com emails potencialmente mal-int
   
 1. Na instância do Internet Explorer que você usou para enviar o email na fase 2, na navegação à esquerda, clique em **itens enviados.**
     
-2. Clique no email intitulado **suas novas chaves**, clique no ícone de seta para baixo e, em **** seguida, clique em encaminhar.
+2. Clique no email intitulado **suas novas chaves**, clique no ícone de seta para baixo e, em seguida, clique em **encaminhar**.
     
 3. Para a nova mensagem, em **Para**, digite o endereço de email do nome do administrador global do Office 365 da sua assinatura de teste e clique em **Enviar**.
     
@@ -156,7 +156,7 @@ Nesta fase, você demonstrará como a ATP lida com emails potencialmente mal-int
 Agora, você pode usar esse ambiente para criar novas políticas e fazer testes com a ATP.
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ## <a name="see-also"></a>Confira também
 

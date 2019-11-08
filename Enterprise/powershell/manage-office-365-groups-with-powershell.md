@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Saiba como realizar tarefas comuns de gerenciamento para grupos do Office 365 no Microsoft PowerShell.
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017336"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030996"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Gerenciar Grupos do Office 365 com o PowerShell
 
@@ -46,7 +46,7 @@ Use o PowerShell do Azure Active Directory para apontar seus usuários para as d
   
 Se você deseja habilitar seus grupos do Office 365 para "enviar como", use os cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) e [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient) para configurá-lo. Após habilitar essa configuração, os usuários do grupo do Office 365 podem usar o Outlook ou o Outlook na Web para enviar e responder a email como o grupo do Office 365. Os usuários podem ir para o grupo, criar um novo email e alterar o campo "enviar como" para o endereço de email do grupo. 
 
-([Você também pode fazer isso no centro de administração do Exchange](https://docs.microsoft.com/en-us/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
+([Você também pode fazer isso no centro de administração do Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   
 Use o script a seguir, substituindo * \<\> GroupAlias* com o alias do grupo que você deseja atualizar e * \<useralias\> * com o alias do usuário a quem você deseja conceder permssions. [Conectar-se ao PowerShell do Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) para executar esse script.
 
@@ -186,9 +186,9 @@ Os cmdlets a seguir podem ser usados com grupos do Office 365.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Atualizar listas de distribuição para grupos do Office 365](https://docs.microsoft.com/en-us/office365/admin/manage/upgrade-distribution-lists)
+[Atualizar listas de distribuição para grupos do Office 365](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Gerenciar quem pode criar grupos do Office 365](https://docs.microsoft.com/en-us/office365/admin/create-groups/manage-creation-of-groups)
+[Gerenciar quem pode criar grupos do Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Gerenciar o acesso de convidados aos Grupos do Office 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

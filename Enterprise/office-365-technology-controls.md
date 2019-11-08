@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumo: uma visão geral das práticas de controle de tecnologia da Microsoft para o Office 365.'
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067156"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031136"
 ---
 # <a name="office-365-technology-controls"></a>Controles de tecnologia do Office 365 
 
@@ -39,7 +39,7 @@ O Lockbox de cliente do Office 365 ajuda você a cumprir as obrigações de conf
 
 Na rara instância, quando um engenheiro de serviços da Microsoft precisa acessar seus dados, você concede acesso somente aos dados necessários para resolver o problema e por um tempo limitado. Se você rejeitar uma solicitação de acesso, os engenheiros da Microsoft não terão acesso ao seu conteúdo e não poderão concluir as operações de serviço. Se você aprovar a solicitação, os engenheiros da Microsoft têm acesso limitado de just-in-time ao conteúdo por meio de interfaces de gerenciamento restritas e monitoradas.
 
-As ações realizadas pelo engenheiro de suporte são registradas para fins de auditoria e podem ser acessadas por meio da [API de atividade de gerenciamento do Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e do [centro de segurança e conformidade](http://protection.office.com/).
+As ações realizadas pelo engenheiro de suporte são registradas para fins de auditoria e podem ser acessadas por meio da [API de atividade de gerenciamento do Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e do [centro de segurança e conformidade](https://protection.office.com/).
 
 >[!NOTE]
 > O Lockbox do cliente está disponível no [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) como uma compra de complemento. Para saber mais, consulte [Solicitações do Sistema de Proteção de Dados do Cliente do Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
@@ -60,7 +60,7 @@ Os servidores do Office 365 restringem sessões simultâneas a uma sessão por a
 
 As restrições de uso e os requisitos de conexão e configuração do pessoal do Office 365 são estabelecidos pelas políticas de grupo do Active Directory. Essas políticas incluem as seguintes características:
 
-- TSGs Use apenas a criptografia validada pelo [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2.
+- TSGs Use apenas a criptografia validada pelo [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2.
 - As sessões do TSG desconectam após 30 minutos de inatividade.
 - As sessões do TSG fazem logoff automaticamente após 24 horas.
 

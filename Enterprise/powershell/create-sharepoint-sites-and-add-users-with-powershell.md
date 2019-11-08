@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Use o Office 365 PowerShell para criar novos sites do SharePoint Online e, em seguida, adicione usuários e grupos a esses sites.'
-ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069097"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031026"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Criar sites do SharePoint Online e adicionar usuários com o Office 365 PowerShell
 
@@ -28,7 +28,7 @@ Ao usar o Office 365 PowerShell para criar sites do SharePoint Online e adiciona
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Os procedimentos neste tópico exigem que você se conecte ao SharePoint Online. Para obter instruções, consulte [conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Os procedimentos neste tópico exigem que você se conecte ao SharePoint Online. Para obter instruções, consulte [conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Etapa 1: criar novos conjuntos de sites usando o Office 365 PowerShell
 
@@ -60,7 +60,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Em ** que myalias é igual ao seu alias de usuário.<br/>
+<br/>Em que *myalias* é igual ao seu alias de usuário.<br/>
 
 2. Aguarde até que o prompt do Windows PowerShell reapareça. Pode demorar um minuto ou dois.<br/>
 
@@ -144,7 +144,7 @@ Set-ExecutionPolicy Bypass
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>Em ** que myalias é igual ao nome de usuário.<br/>
+<br/>Em que *myalias* é igual ao nome de usuário.<br/>
 
 5. Aguarde a solicitação de retorno do prompt antes de prosseguir. Os grupos aparecerão de acordo com a criação dos mesmos. Então você verá a repetição da lista do grupo de acordo com os usuários que são agregados.
 

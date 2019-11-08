@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Discute por que a otimização de rede é importante para serviços SaaS, a meta da rede do Office 365 e como o SaaS requer redes diferentes de outras cargas de trabalho.
-ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017281"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031886"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Visão geral da conectividade de rede do Office 365
 
@@ -31,7 +31,7 @@ Neste artigo, você aprenderá sobre as metas da rede do Office 365 e por que a 
 
 O objetivo final da rede 365 do Office é otimizar a experiência do usuário final, habilitando o acesso menos restritivo entre os clientes e os pontos de extremidade do Office 365 mais próximos. A qualidade da experiência do usuário final está diretamente relacionada ao desempenho e à capacidade de resposta do aplicativo que o usuário está usando. Por exemplo, o Microsoft Teams depende de baixa latência para que as chamadas telefônicas de usuário, conferências e colaborações de tela compartilhada estejam sem problemas e o Outlook dependa de uma grande conectividade de rede para recursos de pesquisa instantânea que aproveitam a indexação do lado do servidor e o AI poderosos.
 
-O objetivo principal no design de rede deve ser minimizar a latência reduzindo o tempo de ida e volta (RTT) de máquinas clientes para a rede global da Microsoft, o backbone de rede pública da Microsoft que faz a conexão de todos os datacenters da Microsoft com baixa latência , pontos de entrada de aplicativos de nuvem de alta disponibilidade espalhados pelo mundo. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+O objetivo principal no design de rede deve ser minimizar a latência reduzindo o tempo de ida e volta (RTT) de máquinas clientes para a rede global da Microsoft, o backbone de rede pública da Microsoft que faz a conexão de todos os datacenters da Microsoft com baixa latência , pontos de entrada de aplicativos de nuvem de alta disponibilidade espalhados pelo mundo. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Otimizar o desempenho de rede do Office 365 não precisa ser complicado. Você pode obter o melhor desempenho possível, seguindo alguns princípios fundamentais:
 
@@ -53,13 +53,13 @@ Estamos facilitando a identificação do tráfego de rede do Office 365 e simpli
 
 - Novas categorias de pontos de extremidade de rede para diferenciar o tráfego de rede altamente crítico do tráfego de rede que não é afetado por latências de Internet. Há apenas algumas URLs e endereços IP de suporte na categoria "otimizar" mais importante.
 - Serviços Web para uso de scripts ou configuração direta de dispositivos e gerenciamento de alterações da identificação de rede do Office 365. As alterações estão disponíveis no serviço Web ou no formato RSS ou em email usando um modelo de fluxo da Microsoft.
-- [Programa de parceria de rede do office 365](http://aka.ms/Office365NPP) com parceiros da Microsoft que oferecem dispositivos ou serviços que seguem os princípios de conectividade de rede do Office 365 e que possuem uma configuração simples.
+- [Programa de parceria de rede do office 365](https://aka.ms/Office365NPP) com parceiros da Microsoft que oferecem dispositivos ou serviços que seguem os princípios de conectividade de rede do Office 365 e que possuem uma configuração simples.
 
 ## <a name="securing-office-365-connections"></a>Protegendo conexões do Office 365
 
 O objetivo da segurança de rede tradicional é reforçar o perímetro da rede corporativa contra invasão e explorações mal-intencionadas. A maioria das redes corporativas impõe a segurança de rede para o tráfego da Internet usando tecnologias como servidores proxy, firewalls, interrupção SSL e inspecionar, inspeção de pacote profunda e sistemas de prevenção contra perda de dados. Essas tecnologias oferecem uma redução de risco importante para solicitações de Internet genéricas, mas podem reduzir drasticamente o desempenho, a escalabilidade e a qualidade da experiência do usuário final quando aplicadas aos pontos de extremidade do Office 365.
 
-O Office 365 ajuda a atender às necessidades da sua organização quanto à segurança do conteúdo e à conformidade de uso de dados com recursos internos de segurança e governança projetados especificamente para os recursos e cargas de trabalho do Office 365. Para obter mais informações sobre segurança e conformidade do Office 365, consulte o [mapa de segurança do office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap). Para obter mais informações sobre as recomendações e a posição de suporte da Microsoft sobre soluções avançadas de rede que executam processamento avançado no tráfego do Office 365, consulte [usando dispositivos de rede de terceiros ou soluções no tráfego do office 365](https://support.microsoft.com/en-us/help/2690045).
+O Office 365 ajuda a atender às necessidades da sua organização quanto à segurança do conteúdo e à conformidade de uso de dados com recursos internos de segurança e governança projetados especificamente para os recursos e cargas de trabalho do Office 365. Para obter mais informações sobre segurança e conformidade do Office 365, consulte o [mapa de segurança do office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Para obter mais informações sobre as recomendações e a posição de suporte da Microsoft sobre soluções avançadas de rede que executam processamento avançado no tráfego do Office 365, consulte [usando dispositivos de rede de terceiros ou soluções no tráfego do office 365](https://support.microsoft.com/help/2690045).
 
 ## <a name="why-is-office-365-networking-different"></a>Por que a rede do Office 365 é diferente?
 
@@ -77,12 +77,12 @@ Reduzir o caminho de rede para os pontos de entrada do Office 365, permitindo qu
 
 A arquitetura de egresso local tem os seguintes benefícios para o tráfego de rede do Office 365 sobre o modelo tradicional:
   
-- Oferece o melhor desempenho do Office 365, otimizando o tamanho da rota. As conexões de usuário final são direcionadas dinamicamente para o ponto de entrada mais próximo do Office 365 pela infraestrutura de _porta frontal de serviço distribuído_ da rede global da Microsoft, e o tráfego é então roteado internamente para os pontos de extremidade de dados e serviço no Microsoft ' s alta disponibilidade de baixa latência
+- Oferece o melhor desempenho do Office 365, otimizando o tamanho da rota. As conexões de usuário final são direcionadas dinamicamente para o ponto de entrada mais próximo do Office 365 pela infraestrutura de _porta frontal de serviço distribuído_ da rede global da Microsoft, e o tráfego é então roteado internamente para os pontos de extremidade de dados e serviços na fibra escura de alta disponibilidade de latência de alta baixa da Microsoft.
 - Reduz a carga na infraestrutura de rede corporativa, permitindo o egresso local do tráfego do Office 365, ignorando proxies e dispositivos de inspeção de tráfego.
 - Protege as conexões em ambas as extremidades, aproveitando os recursos de segurança do ponto de extremidade do cliente e da nuvem, evitando a aplicação de tecnologias de segurança de rede redundantes.
 
 > [!NOTE]
-> A infraestrutura de _porta frontal de serviço distribuído_ é a borda de rede altamente disponível e escalonável da rede global da Microsoft com locais geograficamente distribuídos. Ela termina as conexões de usuário final e as roteia com eficiência dentro da rede global da Microsoft. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> A infraestrutura de _porta frontal de serviço distribuído_ é a borda de rede altamente disponível e escalonável da rede global da Microsoft com locais geograficamente distribuídos. Ela termina as conexões de usuário final e as roteia com eficiência dentro da rede global da Microsoft. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Para obter mais informações sobre a compreensão e a aplicação de princípios de conectividade de rede do Office 365, consulte [Office 365 princípios de conectividade de rede](office-365-network-connectivity-principles.md).
 
@@ -90,7 +90,7 @@ Para obter mais informações sobre a compreensão e a aplicação de princípio
 
 Otimizar o desempenho da rede do Office 365 é muito bem a remover impedimentos desnecessários. Ao tratar as conexões do Office 365 como tráfego confiável, você pode evitar que a latência seja introduzida pela inspeção de pacote e concorrência para a largura de banda do proxy. Permitir conexões locais entre máquinas clientes e pontos de extremidade do Office 365 permite que o tráfego seja direcionado dinamicamente através da rede global da Microsoft.
 
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
 
@@ -114,6 +114,6 @@ Otimizar o desempenho da rede do Office 365 é muito bem a remover impedimentos 
 
 [Ferramenta de integração de rede do Office 365](https://aka.ms/netonboard)
 
-[Como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog de rede do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

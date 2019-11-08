@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: O ExpressRoute para Office 365 oferece um caminho de roteamento alternativo para alcançar muitos serviços do Office 365 sem precisar de todo o tráfego para saída na Internet. Embora a conexão com a Internet com o Office 365 ainda seja necessária, as rotas específicas que a Microsoft anuncia por meio do BGP para a sua rede tornam o circuito direto do ExpressRoute preferencial, a menos que haja outras configurações na sua rede. As três áreas comuns que você pode querer configurar para gerenciar esse roteamento incluem filtragem de prefixo, segurança e conformidade.
-ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067127"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027545"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gerenciar o ExpressRoute para conectividade do Office 365
 
@@ -90,7 +90,7 @@ Há vários cenários opcionais que exigem que a Microsoft inicie conexões à s
 
 - [BCS do SharePoint híbrido](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- Federação [híbrida do Skype for Business](https://technet.microsoft.com/en-us/library/jj205403.aspx) e/ou [Skype for Business](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- Federação [híbrida do Skype for Business](https://technet.microsoft.com/library/jj205403.aspx) e/ou [Skype for Business](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Skype for Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
@@ -102,7 +102,7 @@ Não confiamos no caminho de roteamento que você usa para qualquer um dos nosso
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
   
