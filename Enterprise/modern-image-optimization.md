@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar as imagens nas páginas de site moderno do SharePoint Online.
-ms.openlocfilehash: 3884758dfb2f2a81a0a6ac10abcf51932abec666
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: dafa31f95babfe0389fd77bf4a25b5a346cf3474
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028228"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032266"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Otimizar imagens nas páginas de site moderno do SharePoint Online
 
@@ -30,11 +30,11 @@ Este artigo vai ajudá-lo a entender como otimizar imagens nas páginas de site 
 Para saber mais sobre como otimizar imagens em sites de publicação clássicos, confira [Otimização de imagem do SharePoint Online](image-optimization-for-sharepoint-online.md)..
 
 >[!NOTE]
->Para obter mais informações sobre o desempenho dos portais modernos do SharePoint Online, confira [Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/pt-BR/sharepoint/modern-experience-performance).
+>Para obter mais informações sobre o desempenho dos portais modernos do SharePoint Online, confira [Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>Usar a ferramenta Diagnóstico de página do SharePoint para analisar a otimização de imagens
 
-A **ferramenta Diagnóstico de página do SharePoint** é uma extensão de navegador para o Chrome e o [Microsoft Edge versão 77 ou posterior](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8), que você pode usar para analisar as páginas do site de publicação moderna e clássica do SharePoint. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de página do SharePoint, acesse [Usar a ferramenta Diagnóstico de página do SharePoint Online](page-diagnostics-for-spo.md).
+A **ferramenta Diagnóstico de página do SharePoint** é uma extensão de navegador para o Chrome e o [Microsoft Edge versão 77 ou posterior](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), que você pode usar para analisar as páginas do site de publicação moderna e clássica do SharePoint. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de página do SharePoint, acesse [Usar a ferramenta Diagnóstico de página do SharePoint Online](page-diagnostics-for-spo.md).
 
 Ao analisar um site moderno do SharePoint com a ferramenta Diagnóstico de página do SharePoint, você pode ver as informações sobre imagens grandes no painel _Testes de diagnóstico_.
 
@@ -53,7 +53,7 @@ Se uma página contiver imagens com tamanho superior a 300 KB, selecione o resul
 
 Antes de fazer as revisões das páginas para corrigir problemas de desempenho, anote o tempo de carregamento da página nos resultados da análise. Execute a ferramenta novamente após a revisão para ver se o novo resultado está dentro do padrão da linha de base e verifique o tempo de carregamento da nova página para ver se melhorou.
 
-![Resultados de tempo de carregamento da página](media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados do tempo de carregamento da página](media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >O tempo de carregamento da página pode variar de acordo com vários fatores, como a carga da rede, hora do dia e outras condições transitórias. Você deve testar o tempo de carregamento da página algumas vezes antes e depois de fazer as alterações para ajudá-lo a calcular uma média dos resultados.
@@ -64,7 +64,7 @@ Antes de fazer as revisões das páginas para corrigir problemas de desempenho, 
 
 [Ajustar o desempenho do Office 365](tune-office-365-performance.md)
 
-[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/pt-BR/sharepoint/modern-experience-performance.md)
+[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
 

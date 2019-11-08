@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba mais sobre o Office 365 multigeográfico, como a funcionalidade multigeográfica funciona e quais localizações geográficas estão disponíveis para o armazenamento de dados.
-ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 216ff8e80970630356c36d50beda25f93ec706da
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069417"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031756"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Plano para o Office 365 multigeográfico
 
@@ -25,7 +25,7 @@ Em uma configuração multigeográfica, o locatário do Office 365 consiste em u
 
 Vejamos alguns termos chave da multigeografia que o ajudarão a entender os conceitos básicos da configuração:
 
--   **Locatário** – A representação de uma organização no Office 365 que geralmente tem um ou mais domínios associados (por exemplo, http://contoso.sharepoint.com). 
+-   **Locatário** – A representação de uma organização no Office 365 que geralmente tem um ou mais domínios associados (por exemplo, https://contoso.sharepoint.com). 
 
 -   **Localizações geográficas** – Localizações geográficas disponíveis para hospedar os dados em um locatário do Office 365.
 
@@ -64,7 +64,7 @@ Cada usuário deve ter um *local de dados preferencial* (PDL) definido para que 
 
 Crie uma lista dos seus usuários e inclua o nome UPN e o código de local para o local de dados preferencial adequado. Inclua o seu usuário de teste e o seu grupo piloto inicial para começar. Você precisará dessa lista para os procedimentos de configuração.
 
-Se os usuários serão sincronizados com um sistema do Active Directory local ao Azure Active Directory, você deve definir o local de dados preferencial como um atributo Active Directory e sincronizá-lo usando o Azure Active Directory Connect. Você não pode configurar o local de dados preferencial diretamente para os usuários sincronizados usando o Azure AD PowerShell. As etapas para configurar o PDL no Active Directory e sincronizá-lo são descritas em [Sincronização do Azure Active Directory Connect: Configurar o local dos dados preferencial para recursos do Office 365](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Se os usuários serão sincronizados com um sistema do Active Directory local ao Azure Active Directory, você deve definir o local de dados preferencial como um atributo Active Directory e sincronizá-lo usando o Azure Active Directory Connect. Você não pode configurar o local de dados preferencial diretamente para os usuários sincronizados usando o Azure AD PowerShell. As etapas para configurar o PDL no Active Directory e sincronizá-lo são descritas em [Sincronização do Azure Active Directory Connect: Configurar o local dos dados preferencial para recursos do Office 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 A administração de um locatário multigeográfico pode variar de um locatário que não seja de multigeografia, pois muitos dos serviços e configurações do SharePoint e do OneDrive detectam a multigeografia. Recomendamos que leia [Administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md) antes de prosseguir com a configuração.
 

@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
-ms.collection: Strat_SP_gtc
+ms.collection:
+- Strat_SP_gtc
+- SPO_Content
 localization_priority: Priority
 description: Saiba mais sobre as cotas de armazenamento do SharePoint em ambientes multigeográficos.
-ms.openlocfilehash: a9ccc32940293dcd11e2f3b89607950f7b6ae3f0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d4049312a2da64f16d2637ffd37adf98f2282287
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070747"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033377"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Cotas de armazenamento do SharePoint em ambientes multigeográficos
 
@@ -27,7 +29,7 @@ A cota de armazenamento do SharePoint de qualquer localização geográfica pode
 
 ## <a name="configure-a-storage-quota-for-a-geo-location"></a>Definir uma cota de armazenamento para uma localização geográfica
 
-Use o [Módulo do Microsoft SharePoint Online](https://www.microsoft.com/en-us/download/details.aspx?id=35588 ) e conecte-se a uma localização central para alocar a cota de armazenamento de uma localização geográfica. 
+Use o [Módulo do Microsoft SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588 ) e conecte-se a uma localização central para alocar a cota de armazenamento de uma localização geográfica. 
 
 Para alocar uma Cota de Armazenamento para um localização, execute o cmdlet:
 

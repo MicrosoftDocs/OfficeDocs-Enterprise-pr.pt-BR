@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre as configurações de compartilhamento de convidados disponíveis no Microsoft 365.
-ms.openlocfilehash: 59e51a7118a226bb9c17e9529a517bf681b69849
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4cba1f087828d33fb53b084e792664ecd11d3e63
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493338"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032316"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referência das configurações de compartilhamento de convidado do Microsoft 365
 
@@ -60,7 +60,7 @@ O centro de administração do Microsoft 365 tem configurações no nível da or
 
 |**Configuração**|**Padrão**|**Descrição**|
 |:-----|:-----|:-----|
-|Permitir que os usuários adicionem novos convidados à organização|Habilitado|Quando definido como **Sim**, os membros do Azure AD podem convidar convidados por meio do Azure AD. Quando definido como **Não**, não podem. Quando definido como **Sim**, os membros do Grupo do Office 365 podem convidar convidados com a aprovação do proprietário. Quando definido como **Não**, os membros do Grupo do Office 365 podem convidar convidados com a aprovação do proprietário, mas os proprietários devem ser administradores globais para aprovar. <br><br>Observe que a frase **membros podem convidar** se refere aos membros no Azure AD (em vez de convidados) e não aos membros do site ou do grupo no Microsoft 365. <br><br>Isso é idêntico à configuração **Membros podem convidar** nas configurações das relações organizacionais do Azure Active Directory.|
+|Permitir que os usuários adicionem novos convidados à organização|Habilitado|Quando definido como **Sim**, os membros do Azure AD podem convidar convidados por meio do Azure AD. Quando definido como **Não**, não podem. Quando definido como **Sim**, os membros do Grupo do Office 365 podem convidar convidados com a aprovação do proprietário. Quando definido como **Não**, os membros do Grupo do Office 365 podem convidar convidados com a aprovação do proprietário, mas os proprietários devem ser administradores globais para aprovar. <br><br>Observe que a frase **Membros podem convidar** se refere aos membros no Azure AD (em vez de convidados) e não aos membros do site ou do grupo no Microsoft 365. <br><br>Isso é idêntico à configuração **Membros podem convidar** nas configurações das relações organizacionais do Azure Active Directory.|
 
 ### <a name="office-365-groups"></a>Grupos do Office 365
 

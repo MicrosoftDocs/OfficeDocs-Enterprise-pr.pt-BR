@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: A URL do serviço Web e endereço IP do Office 365 ajudam a identificar e diferenciar melhor o tráfego de rede do Office 365, tornando mais fácil para você avaliar, configurar e manter-se atualizado com as alterações.
-ms.openlocfilehash: 90de20f28e271e3fb174a883eb9cda3fb1228fb4
-ms.sourcegitcommit: 6db61b95b1b5b4312dd6bc42bec6597e359b1bd7
+ms.openlocfilehash: 2dd725c39446d7e9cdad6b7e870bf7353ff1f8e3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36212976"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031206"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>URL do serviço Web e endereço IP do Office 365
 
@@ -156,9 +156,9 @@ Este URI mostra um RSS feed das versões publicadas que contêm links para a lis
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<rss version="2.0" xmlns:a10="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:a10="https://www.w3.org/2005/Atom">
 <channel>
-<link>http://aka.ms/o365ip</link>
+<link>https://aka.ms/o365ip</link>
 <description/>
 <language>en-us</language>
 <lastBuildDate>Thu, 02 Aug 2018 00:00:00 Z</lastBuildDate>
@@ -601,7 +601,7 @@ Você pode usar alguns métodos diferentes para obter notificações por email q
 
 - Para usar uma solução Microsoft Flow, consulte [Usar o Microsoft Flow para receber um email de alterações com em endereços IP e URLs do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Para implantar um Aplicativo Lógico do Azure usando um modelo ARM, confira [Notificação de atualização do Office 365 (v1.1)](https://aka.ms/ipurlws-updates-template).
-- Para escrever um script usando o PowerShell, confira [Send-MailMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Para escrever um script usando o PowerShell, confira [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exportando um arquivo Proxy PAC
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Resumo: Criar uma intranet simplificada como um ambiente de desenvolvimento/teste no Microsoft Azure.'
-ms.openlocfilehash: f6a9f2f2742b56ffb5f8a7521a14bfe48d3adc22
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 3f6851ba9ed1220fc7a55fb440b687528c81c938
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162434"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030475"
 ---
 # <a name="base-configuration-devtest-environment"></a>Ambiente de desenvolvimento/teste para a Configuração Base
 
@@ -104,7 +104,7 @@ Se você ainda não tem a assinatura do Azure, inscreva-se para uma avaliação 
 ![Guias do Laboratório de Teste da Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 ### <a name="step-1-create-the-virtual-network"></a>Etapa 1: Criar rede virtual
 
@@ -113,7 +113,7 @@ Nesta etapa, você a rede virtual TestLab no Azure.
 Primeiro, abra um prompt no Azure PowerShell.
   
 > [!NOTE]
-> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Consulte a [introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> O comando a seguir define o uso da versão mais recente do Azure PowerShell. Consulte a [introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Entre na sua conta do Azure usando o comando a seguir.
   
@@ -400,7 +400,7 @@ Esta é sua configuração final.
 A Configuração Base no Azure agora está pronta para o desenvolvimento e os teste do aplicativo ou para criar ambientes de teste adicionais. 
   
 > [!TIP]
-> Clique [aqui](http://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
+> Clique [aqui](https://aka.ms/catlgstack) para exibir um mapa visual de todos os artigos da pilha da Guia do Laboratório de Teste do Office 365.
   
 <a name="mincost"> </a>
 ## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Minimizar os custos de máquinas virtuais do teste ambiente no Azure

@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: e2f3aa9888e3c41c445e4ceeab491a3c5a617a14
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 50656a103fd27bfc4a61fb04d26779dd0972a2d4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643274"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029135"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurar a Pesquisa para o Office 365 Multigeográfico
 
@@ -85,7 +85,7 @@ Alguns recursos de pesquisa que talvez você conheça funcionam diferente em um 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">A pesquisa multigeográfica não dá suporte a bucketing dinâmico para refinadores numéricos.</td>
-<td align="left">Use o <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">parâmetro "Discretizar"</a> para refinadores numéricos.</td>
+<td align="left">Use o <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parâmetro "Discretizar"</a> para refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">IDs do documento</td>
@@ -172,7 +172,7 @@ Os aplicativos de pesquisa personalizada obtêm resultados de todas ou algumas l
 
 **Requisito**
 
-Para cada local geográfico, certifique-se de que todos os usuários na organização tiverem o nível de permissão **ler** do site raiz (por exemplo, contoso**APAC**.sharepoint.com/ e a contoso** EU**.sharepoint.com/). [Saiba mais sobre permissões](https://support.office.com/pt-BR/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Para cada local geográfico, certifique-se de que todos os usuários na organização tiverem o nível de permissão **ler** do site raiz (por exemplo, contoso**APAC**.sharepoint.com/ e a contoso** EU**.sharepoint.com/). [Saiba mais sobre permissões](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - Isso é uma lista opcional de localizações geogr
 </tbody>
 </table>
 
-Se você omitir DataLocation ou EndPoint ou se um DataLocation estiver duplicado, a solicitação falhará. [Você pode obter informações sobre o ponto de extremidade das localizações geográficas de um locatário usando o Microsoft Graph](https://docs.microsoft.com/pt-BR/sharepoint/dev/solution-guidance/multigeo-discovery).
+Se você omitir DataLocation ou EndPoint ou se um DataLocation estiver duplicado, a solicitação falhará. [Você pode obter informações sobre o ponto de extremidade das localizações geográficas de um locatário usando o Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Dado de resposta
 

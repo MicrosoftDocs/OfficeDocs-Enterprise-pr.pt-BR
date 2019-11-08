@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 description: Saiba como adicionar ou remover um administrador geográfica no Office 365 Multi-Geo.
-ms.openlocfilehash: 767dcf5284e93b9a2e908d4ec837f034b29cb6db
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d10340b7fe42016710ec953f5b45110e9ea8b901
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068467"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030565"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Adicionar ou remover um administrador geográfico no Office 365 Multi-Geo
 
@@ -45,7 +45,7 @@ Para adicionar um grupo como um administrador geográfico, execute `Add-SPOGeoAd
 
 Para remover um grupo como um administrador geográfico, execute `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Observe que nem todos os grupos de segurança têm um alias de grupo. Se você quiser adicionar um grupo de segurança que tenha um alias, execute [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) para recuperar uma lista de grupos, localizar o ObjectID do grupo de segurança e, em seguida, execute:
+Observe que nem todos os grupos de segurança têm um alias de grupo. Se você quiser adicionar um grupo de segurança que tenha um alias, execute [Get-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/get-msolgroup) para recuperar uma lista de grupos, localizar o ObjectID do grupo de segurança e, em seguida, execute:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -59,4 +59,4 @@ Para remover um grupo usando o ObjectID, execute `Remove-SPOGeoAdministrator -Ob
 
 [Remover SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Configurar um alias (MailNickName) para um grupo de segurança](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[Configurar um alias (MailNickName) para um grupo de segurança](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup)

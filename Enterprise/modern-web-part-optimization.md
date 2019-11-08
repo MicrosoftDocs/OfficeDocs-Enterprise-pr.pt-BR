@@ -3,7 +3,7 @@ title: Otimizar o desempenho de Web Parts em páginas de site moderno do SharePo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 11/6/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,26 +16,23 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online.
-ms.openlocfilehash: 2fabfa44e29ac70d587ec2b6b95943a7c65632aa
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 776f80691b8679fdae04993763304ecf4867d3c5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028238"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032226"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online
-
->[!TIP]
->Para saber mais sobre como otimizar iFrames nas páginas de site do SharePoint, confira [Otimizar iFrames em páginas de site de publicação clássico e moderno do SharePoint Online](modern-iframe-optimization.md).
 
 As páginas de site moderno do SharePoint Online contêm Web Parts que podem contribuir para os tempos totais de carregamento de página. Este artigo ajudará você a entender como determinar de que modo as Web Parts em suas páginas afetam a latência percebida pelo usuário e como corrigir problemas comuns.
 
 >[!NOTE]
->Para obter mais informações sobre o desempenho dos portais modernos do SharePoint Online, confira [Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/pt-BR/sharepoint/modern-experience-performance).
+>Para obter mais informações sobre o desempenho dos portais modernos do SharePoint Online, confira [Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usar a ferramenta Diagnóstico de Página para SharePoint para analisar Web Parts
 
-A **ferramenta Diagnóstico de Página para SharePoint** é uma extensão de navegador para o Chrome e o [Microsoft Edge versão 77 ou posterior](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8) que você pode usar para analisar as páginas de site de publicação moderno e clássico do SharePoint. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de Página para SharePoint, acesse [Usar a ferramenta Diagnóstico de Página para SharePoint Online](page-diagnostics-for-spo.md).
+A **ferramenta Diagnóstico de Página para SharePoint** é uma extensão de navegador para o Chrome e o [Microsoft Edge versão 77 ou posterior](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que você pode usar para analisar as páginas de site de publicação moderno e clássico do SharePoint. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de Página para SharePoint, acesse [Usar a ferramenta Diagnóstico de Página para SharePoint Online](page-diagnostics-for-spo.md).
 
 Ao analisar uma página de site do SharePoint com a ferramenta Diagnóstico de Página para SharePoint, você pode ver informações sobre Web Parts que excedem a métrica de linha de base no resultado de **As Web Parts estão afetando o tempo de carregamento da página**, no painel _Testes de diagnóstico_.
 
@@ -72,7 +69,7 @@ Há três categorias de possíveis causas do desempenho ruim de uma Web Part. Us
   - Mova os cenários menos frequentes e o código do modo de edição (como o painel de propriedades) para partes separadas usando a instrução _ import()_.
   - Examine as dependências do arquivo _package.json_ para remover completamente qualquer código morto. Mova todas as dependência apenas de teste/build para devDependencies.
   - É necessário usar a CDN do Office 365 para baixar o recurso estático ideal. As origens da CDN pública são preferíveis para arquivos _js/css_. Para saber mais sobre como usar a CDN do Office 365, confira [Usar a CDN (Rede de Distribuição de Conteúdo) do Office 365 com o SharePoint Online](use-office-365-cdn-with-spo.md).
-  - Reutilize estruturas como _importações do React_ e do _Fabric_, que vêm como parte da Estrutura do SharePoint (SPFx). Para saber mais, confira [Visão geral da Estrutura do SharePoint](https://docs.microsoft.com/pt-BR/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Reutilize estruturas como _importações do React_ e do _Fabric_, que vêm como parte da Estrutura do SharePoint (SPFx). Para saber mais, confira [Visão geral da Estrutura do SharePoint](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Verifique se você está usando a versão mais recente da Estrutura do SharePoint e atualize para novas versões quando elas estiverem disponíveis.
 - Busca/cache de dados
   - Se a Web Part contar com chamadas adicionais do servidor para buscar dados para exibição, verifique se as APIs do servidor são rápidas e/ou implemente cache do lado do cliente (por exemplo, use _localStorage_ ou _IndexDB_ para conjuntos maiores).
@@ -88,7 +85,7 @@ Há três categorias de possíveis causas do desempenho ruim de uma Web Part. Us
 
 Antes de fazer as revisões das páginas para corrigir problemas de desempenho, anote o tempo de carregamento da página nos resultados da análise. Execute a ferramenta novamente após a revisão para ver se o novo resultado está dentro do padrão da linha de base e verifique o tempo de carregamento da nova página para ver se melhorou.
 
-![Resultados de tempo de carregamento da página](media/modern-portal-optimization/pagediag-page-load-time.png)
+![Resultados do tempo de carregamento da página](media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >O tempo de carregamento da página pode variar de acordo com vários fatores, como a carga da rede, hora do dia e outras condições transitórias. Você deve testar o tempo de carregamento da página algumas vezes antes e depois de fazer as alterações para ajudá-lo a calcular uma média dos resultados.
@@ -99,7 +96,7 @@ Antes de fazer as revisões das páginas para corrigir problemas de desempenho, 
 
 [Ajustar o desempenho do Office 365](tune-office-365-performance.md)
 
-[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/pt-BR/sharepoint/modern-experience-performance.md)
+[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
 

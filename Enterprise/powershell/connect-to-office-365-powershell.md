@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas do centro de administração a partir da linha de comando.'
-ms.openlocfilehash: c5bf5204d8ca1c8db35635f080031838e9fbea03
-ms.sourcegitcommit: 86a740dccf273d679a8938e11e60d2a497c01689
+ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328149"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031746"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -36,7 +36,7 @@ Existem duas versões do módulo do PowerShell usadas para se conectar ao Office
 A partir da data deste artigo, o Azure Active Directory PowerShell para o módulo do Graph não substituiu completamente a funcionalidade dos cmdlets do Módulo Microsoft Azure Active Directory para o módulo do Windows PowerShell para a administração de usuários, grupos e licenças. Em muitos casos, é necessário usar as duas versões. As duas versões podem ser instaladas com segurança no mesmo computador.
 
 > [!TIP]
-> **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/pt-BR/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
+> **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
@@ -150,7 +150,7 @@ Caso você receba erros, verifique os seguintes requisitos:
     
   - Para Windows 7 ou Windows Server 2008 R2, confira [Não é possível abrir o Módulo Azure Active Directory para Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 
-  - Para Windows 10, Windows 8.1 e Windows 8, confira [Instalar o .NET Framework 3.5 no Windows 10, Windows 8.1 e Windows 8](https://docs.microsoft.com/pt-BR/dotnet/framework/install/dotnet-35-windows-10)
+  - Para Windows 10, Windows 8.1 e Windows 8, confira [Instalar o .NET Framework 3.5 no Windows 10, Windows 8.1 e Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
 - **Sua versão do Módulo Microsoft Azure Active Directory para Windows PowerShell deve estar desatualizada.** Para verificar, execute o seguinte comando no Office 365 PowerShell ou no Módulo Microsoft Azure Active Directory para Windows PowerShell:

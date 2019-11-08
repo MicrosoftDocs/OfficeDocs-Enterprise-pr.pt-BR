@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Resumo: implante o Azure AD Connect em uma máquina virtual no Azure para sincronizar as contas entre o diretório local e o locatário do Azure AD da sua assinatura do Office 365.'
-ms.openlocfilehash: 8b521746946c3f1be077fe49bf12be6a72125738
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: cb908de04aa38972744077bd1359b94babca7290
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068022"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038280"
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Implantar a sincronização de diretórios do Office 365 no Microsoft Azure
 
@@ -100,7 +100,7 @@ A lista a seguir descreve as opções de design feitas para essa solução.
     
 - Na rede local, existem servidores DNS e um controlador de domínio.
     
-- O Azure AD Connect realiza a sincronização de hash de senha, em vez de logon único. Você não precisa implantar uma infraestrutura de AD FS (Serviços de Federação do Active Directory). Para saber mais sobre as opções de sincronização de hash de senha e logon único, confira [Escolher o método de autenticação correto para sua solução de identidade híbrida do Azure Active Directory](http://aka.ms/auth-options).
+- O Azure AD Connect realiza a sincronização de hash de senha, em vez de logon único. Você não precisa implantar uma infraestrutura de AD FS (Serviços de Federação do Active Directory). Para saber mais sobre as opções de sincronização de hash de senha e logon único, confira [Escolher o método de autenticação correto para sua solução de identidade híbrida do Azure Active Directory](https://aka.ms/auth-options).
     
 Há opções adicionais de design que você pode considerar ao implantar essa solução em seu ambiente. Elas incluem o seguinte:
   
@@ -147,7 +147,7 @@ Criar a máquina virtual no Azure usando as instruções [Criar sua primeira má
     
 Para conferir se o servidor de sincronização de diretório está usando o DNS corretamente, verifique o DNS interno para garantir que um registro de endereço (A) foi adicionado à máquina virtual com o respectivo endereço IP. 
   
-Use as instruções em [Conectar-se à máquina virtual e fazer login](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on) para conectar-se ao servidor de sincronização de diretório com uma Conexão de Área de Trabalho Remota. Depois de entrar, ingresse na máquina virtual do domínio local AD DS.
+Use as instruções em [Conectar-se à máquina virtual e fazer login](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) para conectar-se ao servidor de sincronização de diretório com uma Conexão de Área de Trabalho Remota. Depois de entrar, ingresse na máquina virtual do domínio local AD DS.
   
 Para que o Azure AD Connect acesse os recursos da Internet, você deve configurar o servidor de sincronização de diretório para usar o servidor proxy da rede local. Entre em contato com o administrador da rede para etapas de configuração adicionais para executar.
   
@@ -161,7 +161,7 @@ Esta figura mostra a máquina virtual do servidor de sincronização de diretór
 
 Faça o procedimento a seguir:
   
-1. Conecte-se ao servidor de sincronização de diretório usando uma Conexão de Área de Trabalho Remota com uma conta de domínio do AD DS que tenha privilégios de administrador local. Confira [Conectar-se à máquina virtual e fazer login](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on).
+1. Conecte-se ao servidor de sincronização de diretório usando uma Conexão de Área de Trabalho Remota com uma conta de domínio do AD DS que tenha privilégios de administrador local. Confira [Conectar-se à máquina virtual e fazer login](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon).
     
 2. No servidor de sincronização de diretório, abra o artigo [Configurar a sincronização de diretórios no Office 365](set-up-directory-synchronization.md) e siga as instruções para a sincronização de diretórios com a sincronização de hash de senha.
     

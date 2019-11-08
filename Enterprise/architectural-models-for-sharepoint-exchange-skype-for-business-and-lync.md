@@ -11,18 +11,19 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Resumo: obtenha os cartazes de TI que descrevem os modelos de arquitetura, implantação e opções de plataforma para o SharePoint, o Exchange, o Skype for Business e o Lync.'
-ms.openlocfilehash: ed4aca3728d12b1a7828b003f0da219d67da6de3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce12d0a807c71e88d2f989f1b24ce033a63b8b70
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068407"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038260"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -108,7 +109,7 @@ Esses novos cartazes de TI para o SharePoint 2016 e o Skype for Business 2015 of
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Miniatura do cartaz de bancos de dados do SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Este cartaz de TI é um guia de referência rápida para bancos de dados do SharePoint Server 2016. Cada banco de dados contém os seguintes detalhes: <br/><br/> - Tamanho <br/> - Diretrizes de escala <br/> - Padrões I/O <br/> - Requisitos <br/><br/>  A primeira página contém os bancos de dados do sistema do SharePoint e aplicativos de serviço com vários bancos de dados. A segunda página mostra todos os aplicativos de serviço com bancos de dados simples. <br/><br/>  Para saber mais sobre os bancos de dados para SharePoint Server 2016, confira [Tipos e descrições de bancos de dados no SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx) <br/> |
+|[![Miniatura do cartaz de bancos de dados do SharePoint Server 2016](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Este cartaz de TI é um guia de referência rápida para bancos de dados do SharePoint Server 2016. Cada banco de dados contém os seguintes detalhes: <br/><br/> - Tamanho <br/> - Diretrizes de escala <br/> - Padrões I/O <br/> - Requisitos <br/><br/>  A primeira página contém os bancos de dados do sistema do SharePoint e aplicativos de serviço com vários bancos de dados. A segunda página mostra todos os aplicativos de serviço com bancos de dados simples. <br/><br/>  Para saber mais sobre os bancos de dados para SharePoint Server 2016, confira [Tipos e descrições de bancos de dados no SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions) <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Modelos de arquitetura para o Microsoft Skype for Business 2015
@@ -138,7 +139,7 @@ Estes cartazes de TI para o SharePoint 2013, o Exchange 2013 e o Lync 2013 ofere
 
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura de opções de plataforma do SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Para tomadores de decisões de negócios (BDMs) e arquitetos, este modelo descreve as opções de plataforma do SharePoint 2013, do SharePoint no Office 365, híbrido local com Office 365, Azure e implantações somente locais. Ele inclui uma visão geral de cada arquitetura, recomendações, requisitos de licença, e listas de tarefas de arquitetos e profissionais de TI para cada plataforma. Também são destacadas várias soluções do SharePoint no Windows Azure.<br/><br/>Para uma versão acessível deste cartaz em texto, confira [Diagrama acessível, opções de plataforma para Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Imagem em miniatura de opções de plataforma do SharePoint 2013](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Para tomadores de decisões de negócios (BDMs) e arquitetos, este modelo descreve as opções de plataforma do SharePoint 2013, do SharePoint no Office 365, híbrido local com Office 365, Azure e implantações somente locais. Ele inclui uma visão geral de cada arquitetura, recomendações, requisitos de licença, e listas de tarefas de arquitetos e profissionais de TI para cada plataforma. Também são destacadas várias soluções do SharePoint no Windows Azure.<br/><br/>Para uma versão acessível deste cartaz em texto, confira [Diagrama acessível, opções de plataforma para Microsoft SharePoint 2013](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Opções de plataforma para o Exchange 2013

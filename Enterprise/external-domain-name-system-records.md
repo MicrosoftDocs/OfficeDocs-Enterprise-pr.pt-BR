@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Resumo: lista de referências de registros DNS a serem usados ao planejar uma implantação do Office 365.'
-ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: ec05958eaf40fe988245eae808cc78bf60c06136
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616134"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028815"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros de Sistema de Nomes de Domínio Externos para o Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "37616134"
   
 |||
 |:-----|:-----|
-|![Domínio](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Deseja ver uma lista personalizada de registros DNS para sua organização do Office 365? ** Encontre [ as informações necessárias para criar registros DNS do Office 365](https://support.office.microsoft.com/pt-BR/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) para seu domínio no Office 365.  <br/> **Precisa de ajuda passo a passo para adicionar esses registros ao host de DNS de seu domínio, como GoDaddy ou eNom? ** [Encontre links de instruções passo a passo para vários hosts DNS conhecidos](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Ainda deseja usar a lista de referências para sua implantação personalizada?** A lista abaixo deve ser usada como uma referência para sua implantação personalizada do Office 365. Será necessário selecionar quais registros se aplicam à sua organização e preencher os valores apropriados. <br/> **Volte para o** [Planejamento de rede e ajuste de desempenho para o Office 365](https://aka.ms/tune).  <br/> |
+|![Domínio](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Deseja ver uma lista personalizada de registros DNS para sua organização do Office 365? ** Encontre [ as informações necessárias para criar registros DNS do Office 365](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) para seu domínio no Office 365.  <br/> **Precisa de ajuda passo a passo para adicionar esses registros ao host de DNS de seu domínio, como GoDaddy ou eNom? ** [Encontre links de instruções passo a passo para vários hosts DNS conhecidos](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Ainda deseja usar a lista de referências para sua implantação personalizada?** A lista abaixo deve ser usada como uma referência para sua implantação personalizada do Office 365. Será necessário selecionar quais registros se aplicam à sua organização e preencher os valores apropriados. <br/> **Volte para o** [Planejamento de rede e ajuste de desempenho para o Office 365](https://aka.ms/tune).  <br/> |
 
 Geralmente, os registros SPF e MX são os mais difíceis de entender. Atualizamos nossa orientação para registros SPF no final deste artigo. O mais importante é lembrar que _você pode ter apenas um único registro SPF para seu domínio_. Você pode ter vários registros MX, mas isso costuma causar problemas de entrega de emails. Ter um único registro MX que direciona os emails para um sistema de email elimina muitos desses possíveis problemas.
   
@@ -103,7 +103,7 @@ O SharePoint Online requer apenas um registro DNS se sua organização usa o Sha
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> A SPF foi projetada para ajudar a evitar a falsificação, mas existem técnicas de falsificação que a SPF não ajuda a proteger. Para proteger contra essas técnicas, depois de configurar a SPF, você também deve configurar o DKIM e o DMARC para o Office 365. Para começar, confira [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/pt-BR/library/mt695945%28v=exchg.150%29.aspx). A seguir, veja [Use DMARC to validate email in Office 365](https://technet.microsoft.com/pt-BR/library/mt734386%28v=exchg.150%29.aspx).
+> A SPF foi projetada para ajudar a evitar a falsificação, mas existem técnicas de falsificação que a SPF não ajuda a proteger. Para proteger contra essas técnicas, depois de configurar a SPF, você também deve configurar o DKIM e o DMARC para o Office 365. Para começar, confira [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). A seguir, veja [Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
   
 Os registros SPF são registros TXT que ajudam a impedir que outras pessoas usem seu domínio para enviar spam ou outros emails mal-intencionados. Os registros SPF (sender policy framework) identificam os servidores autorizados a enviar emails de seu domínio.
   
