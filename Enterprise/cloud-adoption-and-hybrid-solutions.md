@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490047"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029175"
 ---
 <h1>Soluções de nuvem empresarial</h1>
 <p>Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais.</p>
@@ -31,7 +31,7 @@ ms.locfileid: "33490047"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-architecture2.svg" alt="A cloud and a ruler" />
+                            <img src="https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg" alt="A cloud and a ruler" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -50,7 +50,7 @@ ms.locfileid: "33490047"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/process-flow.svg" alt="A flow chart" />
+                            <img src="https://docs.microsoft.com/office/media/icons/process-flow.svg" alt="A flow chart" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -69,7 +69,7 @@ ms.locfileid: "33490047"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/cloud-devtest.svg" alt="A cloud with test tubes" />
+                            <img src="https://docs.microsoft.com/office/media/icons/cloud-devtest.svg" alt="A cloud with test tubes" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -88,7 +88,7 @@ ms.locfileid: "33490047"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/hybrid.svg" alt="A building, a cloud, and two arrows" />
+                            <img src="https://docs.microsoft.com/office/media/icons/hybrid.svg" alt="A building, a cloud, and two arrows" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -107,7 +107,7 @@ ms.locfileid: "33490047"
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/en-us/office/media/icons/lock-protected.svg" alt="A padlock" />
+                            <img src="https://docs.microsoft.com/office/media/icons/lock-protected.svg" alt="A padlock" />
                         </div>
                     </div>
                     <div class="cardText">
