@@ -13,13 +13,14 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - M365-analytics
+- SPO_Content
 description: Uma visão geral dos recursos de auditoria e relatórios no Office 365, no Microsoft 365 e no serviço Assurance.
-ms.openlocfilehash: 545c1224a5c7fc181028be555b14deeff6048ca9
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 991eb807ee297ea9dc912be53d99c80247220c1b
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035631"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076225"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Auditoria e relatórios nos serviços em nuvem da Microsoft
 

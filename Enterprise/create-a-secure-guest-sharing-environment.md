@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Priority
 description: Aprenda a criar um ambiente de compartilhamento de convidados seguro no Microsoft 365.
-ms.openlocfilehash: 97aa0cf11159af483c307de8bdb2c3b15e704d36
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108246"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077704"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Criar um ambiente de compartilhamento de convidados seguro
 

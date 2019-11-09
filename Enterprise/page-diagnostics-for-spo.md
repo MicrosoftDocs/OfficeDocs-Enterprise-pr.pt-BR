@@ -8,19 +8,21 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - SPO160
 - MOE150
 - BSA160
 description: Use a ferramenta diagnóstico de página para SharePoint para analisar o portal moderno do SharePoint Online e as páginas de publicação clássicas em um conjunto predefinido de critérios de desempenho.
-ms.openlocfilehash: 50a2a98f7af74ef76f080468e940ece6c0f806ab
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0f22c84599f227bd6efcf315a546b39aad77b1c1
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031116"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078140"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar a ferramenta diagnóstico de página para SharePoint
 

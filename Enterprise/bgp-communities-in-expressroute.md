@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,18 +18,18 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'Conectar-se ao Office 365 usando o Azure ExpressRoute é baseado em anúncios de BGP de sub-redes IP específicas que representam redes nas quais os pontos de extremidade do Office 365 estão implantados. Devido à natureza global do Office 365 e ao número de serviços que constituem o Office 365, os clientes geralmente precisam gerenciar os anúncios que eles aceitam em sua rede. Reduzir o número de sub-redes IP; chamado de prefixos IP no restante deste artigo, para alinhar-se com a terminologia de gerenciamento de rede do BGP, atende às seguintes metas finais para os clientes:'
-ms.openlocfilehash: 37fef66aeccc0fcd2102463384ebc2341b9c37e8
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782341"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077930"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Usando comunidades BGP no ExpressRoute para cenários do Office 365
 
 Conectar-se ao Office 365 usando o Azure ExpressRoute é baseado em anúncios de BGP de sub-redes IP específicas que representam redes nas quais os pontos de extremidade do Office 365 estão implantados. Devido à natureza global do Office 365 e ao número de serviços que constituem o Office 365, os clientes geralmente precisam gerenciar os anúncios que eles aceitam em sua rede. Reduzir o número de sub-redes IP; chamado de prefixos IP no restante deste artigo, para alinhar-se com a terminologia de gerenciamento de rede do BGP, atende às seguintes metas finais para os clientes:
   
-- **Gerenciar o número de prefixos IP anunciados aceitos** -clientes que possuem uma infraestrutura de rede interna ou uma operadora de rede que suporta apenas um número limitado de prefixos IP e clientes que têm uma operadora de rede que cobra por aceitar prefixos acima de um número limitado, você deve avaliar o número total de prefixos já anunciados para sua rede e selecionar quais aplicativos do Office 365 são mais adequados para o ExpressRoute.
+- **Gerenciar o número de prefixos IP anunciados aceitos** -clientes que possuem uma infraestrutura de rede interna ou uma operadora de rede que suporta apenas um número limitado de prefixos IP e clientes que têm uma operadora de rede que encargos por aceitar prefixos acima de um número limitado devem avaliar o número total de prefixos já anunciados para a sua rede e selecionar 365 quais
 
 - **Gerenciar a quantidade de largura de banda necessária no circuito do Azure ExpressRoute** -os clientes podem querer controlar o envelope de largura de banda dos serviços do Office 365 sobre o caminho ExpressRoute vs. Internet Path. Isso permite que os clientes Reserve largura de banda do ExpressRoute para aplicativos específicos como o Skype for Business e roteiam os aplicativos do Office 365 restantes no caminho da Internet.
 

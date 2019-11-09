@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: interactive-tutorial
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Saiba mais sobre as recomendações de desempenho para sites modernos no SharePoint Online.
-ms.openlocfilehash: 2ff7f76a943563644403f3df2b6b0a6ee9b28d53
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031266"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078396"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limites do site de portal moderno do SharePoint Online
 

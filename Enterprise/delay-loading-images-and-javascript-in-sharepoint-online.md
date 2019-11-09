@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Este artigo descreve como você pode diminuir o tempo de carregamento das páginas do SharePoint online usando o JavaScript para atrasar o carregamento de imagens e aguardando o carregamento de JavaScript não essencial até que a página seja carregada.
-ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616779"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077664"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Atraso no carregamento de imagens e JavaScript no SharePoint Online
 

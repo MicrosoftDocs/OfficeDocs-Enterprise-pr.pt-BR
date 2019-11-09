@@ -12,13 +12,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 description: 'Resumo: uma explicação do isolamento e controle de acesso dentro dos vários aplicativos do Office 365.'
-ms.openlocfilehash: 541aef20e885f6d7fbd505ffe2fe32a8525999d4
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5855828faafaf12e609e93a1a4f0ec7419e0a9d6
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067135"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078160"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controle de acesso no Office 365
 

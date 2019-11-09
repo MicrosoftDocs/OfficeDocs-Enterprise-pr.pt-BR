@@ -11,17 +11,18 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar o peso da página nas páginas do site moderno do SharePoint Online.
-ms.openlocfilehash: 3079298781116c2664217f87715303c99e4d26b6
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 75bc6227cf77d355dcd6b3a4ce1afa9388b32c58
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032246"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078000"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Otimizar o peso da página nas páginas do site moderno do SharePoint Online.
 

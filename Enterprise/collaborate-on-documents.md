@@ -6,14 +6,15 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
+ms.collection: SPO_Content
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um documento no SharePoint e no OneDrive.
-ms.openlocfilehash: 9ddbae276252c89ecae31a7f2bf5f1a3bf59af0f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029145"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076165"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar com convidados em um documento
 
@@ -103,6 +104,7 @@ Para definir configurações de compartilhamento no nível do site
 As configurações de compartilhamento de convidados agora estão configuradas, portanto, os usuários agora podem compartilhar arquivos e pastas com convidados. Consulte [compartilhar arquivos e pastas do onedrive](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) e [compartilhar arquivos ou pastas do SharePoint](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) para obter mais informações.
 
 ## <a name="see-also"></a>Confira também
+
 
 [Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
 

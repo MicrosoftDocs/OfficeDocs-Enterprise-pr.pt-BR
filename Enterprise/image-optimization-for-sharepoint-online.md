@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Saiba como usar rendições e sprites para melhorar o desempenho da imagem em seus sites de publicação clássicos do SharePoint Online.
-ms.openlocfilehash: 54b0131da2f926dd26c003f139138389190aa0eb
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a3dbfeaa238f8c12f8ecc3afaa3a45942d665599
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027585"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077614"
 ---
 # <a name="image-optimization-for-sharepoint-online-classic-publishing-sites"></a>Otimização de imagem para sites de publicação clássicas do SharePoint Online
 

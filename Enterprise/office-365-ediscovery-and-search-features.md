@@ -12,13 +12,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- SPO_Content
 description: Uma visão geral do recurso de descoberta eletrônica e outros recursos de pesquisa no Office 365 para o uso de auditoria e transparência.
-ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032026"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076205"
 ---
 # <a name="ediscovery-and-search-features"></a>Recursos de pesquisa e descoberta eletrônica 
 

@@ -6,17 +6,19 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft SharePoint 2013.
-ms.openlocfilehash: 4a0b068ffb8abbe11c2286f3daa70c5f62295425
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: aeb17825efa26260422bd1407dfa71920838011d
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068597"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077544"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Diagrama acessível – opções de plataforma do Microsoft SharePoint 2013
 

@@ -15,7 +15,9 @@ f1_keywords:
 - AppDefToBDC
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 search.appverid:
 - MET150
 - OFU120
@@ -32,12 +34,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Em 10 de outubro de 2017, o suporte terminou para o SharePoint Server 2007. Leia este artigo para saber mais sobre suas opções de atualização, solução de problemas, práticas recomendadas, requisitos do sistema, etapas de atualização e como obter assistência dos parceiros da Microsoft.
-ms.openlocfilehash: 4054ca5c0b502c2008556021a80d3a939a979bb3
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 55511852997f9781f9c05d0a846aac7cb1c72309
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030906"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078090"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do SharePoint Server 2007
 

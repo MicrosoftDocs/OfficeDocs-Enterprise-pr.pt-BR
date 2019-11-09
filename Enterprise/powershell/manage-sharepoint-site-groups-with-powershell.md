@@ -12,14 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - PowerShell
 - Ent_Office_Other
+- SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar grupos de sites do SharePoint Online.'
-ms.openlocfilehash: 2deaeb2a39b094b828f75a18d4a2c2f06ca79e47
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: eedbfbecea0f488b96cfe7a87a2b4851352f4fac
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031736"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077980"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Manage SharePoint Online site groups with Office 365 PowerShell
 
