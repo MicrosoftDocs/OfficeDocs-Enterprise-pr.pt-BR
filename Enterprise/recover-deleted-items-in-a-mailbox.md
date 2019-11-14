@@ -16,14 +16,13 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Este artigo é para administradores. Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usuário deseja refazê-los, mas não pode recuperá-los. Você pode ser capaz de recuperar os itens removidos se eles não foram removidos permanentemente da caixa de correio do usuário. '
-ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782611"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308596"
 ---
-<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
 
 **Este artigo é para administradores. Você está tentando recuperar itens excluídos em sua própria caixa de correio?** Tente uma das seguintes opções:
@@ -37,7 +36,7 @@ Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usu�
 Aqui estão as etapas para recuperar itens excluídos na caixa de correio de um usuário. Quanto tempo isso levará? A primeira vez pode levar 20 ou 30 minutos para concluir todas as etapas, dependendo de quantos itens você está tentando recuperar.
   
 > [!NOTE]
-> Você precisa ser um **administrador do Exchange** ou um **Administrador Global** no Office 365 ou ser membro do grupo de função gerenciamento da organização no Exchange Online para executar as etapas neste artigo. Para saber mais, veja [Sobre as funções de administrador do Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Você precisa ser um **administrador do Exchange** ou um **Administrador Global** no Office 365 ou ser membro do grupo de função gerenciamento da organização no Exchange Online para executar as etapas neste artigo. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Etapa 1: atribuir permissões de descoberta eletrônica por conta própria
 <a name="step1"> </a>
@@ -74,7 +73,7 @@ A primeira etapa é atribuir as permissões necessárias no Exchange Online para
 > [!CAUTION]
 > Os membros do grupo de função gerenciamento de descoberta podem acessar o conteúdo de mensagens confidenciais. Isso inclui pesquisar todas as caixas de correio em sua organização, Visualizar os resultados da pesquisa (e outros itens de caixa de correio), copiar os resultados para uma caixa de correio de descoberta e exportar os resultados da pesquisa para um arquivo PST. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-2-search-the-users-mailbox-for-deleted-items"></a>Etapa 2: Pesquisar itens excluídos na caixa de correio do usuário
 <a name="step2"> </a>
@@ -93,7 +92,7 @@ Quando você executa uma pesquisa de descoberta eletrônica in-loco, a pasta ite
   
 5. Na página **nome e descrição** , digite um nome para a pesquisa (como o nome do usuário para o qual você está recuperando o email), uma descrição opcional e clique em **Avançar**.
     
-6. Na página **caixas de correio** , clique **em especificar caixas de correio a serem pesquisadas**e, em seguida, clique em **Adicionar**![ícone](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)de adição.
+6. Na página **caixas de correio** , clique **em especificar caixas de correio a serem pesquisadas**e, em](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)seguida, clique em **Adicionar**![ícone de adição.
     
     ![Clique em especificar caixas de correio para pesquisar na pesquisa de uma caixa de correio do especialmente](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
@@ -119,10 +118,10 @@ Quando você executa uma pesquisa de descoberta eletrônica in-loco, a pasta ite
 |![Number 4 in a pink circle.](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |Pesquisar mensagens recebidas ou enviadas para pessoas específicas.  <br/> |
 |![Número cinco em um círculo rosa.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Procure todos os tipos de mensagem ou selecione os específicos.  <br/> |
    
-    > [!TIP]
-    >  Here's a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. >  If you not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. >  If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. >  If you know who sent the missing email, use the **From** box to specify this sender. >  If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
+   > [!TIP]
+   >  Veja algumas dicas sobre como criar uma consulta de pesquisa para localizar itens ausentes. Tente obter o máximo de informações do usuário para ajudá-lo a criar uma consulta de pesquisa para que você possa encontrar o que está procurando. Se você não tiver certeza de como localizar uma mensagem ausente, considere o uso da opção **incluir todo o conteúdo** . Os resultados da pesquisa incluirão todos os itens na pasta itens recuperáveis do usuário, incluindo a pasta oculta (chamada de pasta limpezas) que contêm itens que foram removidos pelo usuário. Em seguida, você pode ir para a etapa 3, copiar os resultados para uma caixa de correio de descoberta e examinar a mensagem na pasta oculta. Se você souber aproximadamente quando a mensagem ausente foi originalmente enviada ou recebida pelo usuário, use as opções **especificar data de início** e **especificar data de término** para fornecer um intervalo de datas. Isso retornará todas as mensagens enviadas ou recebidas pelo usuário dentro desse intervalo de datas. A especificação de um intervalo de datas é uma ótima maneira de restringir os resultados da pesquisa. Se você souber quem enviou o email ausente, use a caixa **de** para especificar esse remetente. Se você deseja restringir os resultados da pesquisa para diferentes tipos de itens de caixa de correio, clique em **Selecionar tipos de mensagem**, clique em **selecionar os tipos de mensagem para pesquisa**e escolha um tipo de mensagem específico a ser pesquisado. Por exemplo, você pode pesquisar apenas itens de calendário ou contatos. Aqui está uma captura de tela dos diferentes tipos de mensagens que você pode pesquisar; o padrão é Pesquisar todos os tipos de mensagem. 
   
-    Click **Next** when you've completed the **Search query** page. 
+   Clique em **Avançar** quando você tiver concluído a página de **consulta de pesquisa** . 
     
 10. Na página **configurações de bloqueio in-loco** , clique em **concluir** para iniciar a pesquisa. Para recuperar emails excluídos, não há motivo para colocar a caixa de correio do usuário em espera. 
     
@@ -136,7 +135,7 @@ Quando você executa uma pesquisa de descoberta eletrônica in-loco, a pasta ite
   
 13. Se não encontrar o que você está procurando, você poderá revisar seus critérios de pesquisa selecionando a pesquisa, ****![clicando em Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar ícone e, em seguida, clicando em **consulta de pesquisa**. Altere o critério de pesquisa e execute a pesquisa novamente.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Opcion Etapa 3: copiar os resultados da pesquisa para uma caixa de correio de descoberta
 <a name="step3"> </a>
@@ -181,7 +180,7 @@ Se não for possível localizar itens visualizando os resultados da pesquisa ou 
     > [!TIP]
     > Se um usuário não conseguir localizar um item excluído usando a ferramenta itens recuperáveis, mas esse item ainda for recuperável (o que significa que ele não foi removido permanentemente da caixa de correio), é mais do que provavelmente localizado na pasta limpezas. Portanto, certifique-se de examinar a pasta limpezas do item excluído que você está tentando recuperar para um usuário. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-4-export-the-search-results-to-a-pst-file"></a>Etapa 4: exportar os resultados da pesquisa para um arquivo PST
 <a name="step4"> </a>
@@ -208,7 +207,7 @@ Após localizar o item que você está tentando recuperar para um usuário, a pr
     
     A **ferramenta de exportação de PST de descoberta eletrônica** exibe informações de status sobre o processo de exportação. Quando a exportação estiver concluída, você poderá acessar o arquivo no local onde foi baixado. 
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-5-restore-the-recovered-items-to-the-users-mailbox"></a>Etapa 5: restaurar os itens recuperados para a caixa de correio do usuário
 <a name="step5"> </a>
@@ -271,11 +270,12 @@ Você precisa usar o aplicativo da área de trabalho do Outlook para restaurar u
     
 ![Selecionar uma pasta para mover outros tipos de itens](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
-    Note that calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 
+   > [!NOTE]
+   > Itens de calendário, contatos e tarefas estão localizados diretamente na pasta limpezas e não em uma subpasta Calendário, contatos ou tarefas. No entanto, você pode classificar por **tipo** para agrupar tipos semelhantes de itens. 
     
 8. Quando tiver terminado a recuperação de itens excluídos, clique com o botão direito do mouse no arquivo PST na barra de navegação à esquerda e selecione **fechar "nome do arquivo pst"**.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="more-information"></a>Mais informações
 <a name="moreinfo"> </a>
@@ -296,6 +296,6 @@ Você precisa usar o aplicativo da área de trabalho do Outlook para restaurar u
     
   - [Restaurar mensagens de email excluídas no Outlook.com](https://go.microsoft.com/fwlink/p/?LinkID=623435)
     
-[Voltar ao início](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 
