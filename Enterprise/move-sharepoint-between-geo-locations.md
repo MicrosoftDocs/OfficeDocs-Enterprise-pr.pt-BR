@@ -11,12 +11,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba como mover um site do SharePoint para uma localização geográfica diferente.
-ms.openlocfilehash: 3ba95215860646691e511b17d509dbbc49a5a75a
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: 77f5adee161739d8896004988b8a4d6ba0151ef1
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033437"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626141"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover um site do SharePoint para uma localização geográfica diferente
 
@@ -71,7 +71,7 @@ A movimentação geográfica do site do SharePoint requer que você se conecte e
 
 Por exemplo, se a URL do site é https://contosohealthcare.sharepoint.com/sites/Turbines, conecte a URL de Administrador do SharePoint no https://contosohealthcare-admin.sharepoint.com:
 
-`connect-sposervice -url https://contosohealthcare-admin.sharepoint.com`
+`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
 
 ![](media/move-onedrive-between-geo-locations-image1.png)
  

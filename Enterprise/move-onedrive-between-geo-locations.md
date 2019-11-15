@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033447"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626161"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -55,11 +55,11 @@ Para executar uma movimentação geográfica do OneDrive, primeiro o administrad
 
 Ao usar cmdlets de movimentação geográfica, conecte-se ao Serviço de SPO na localização geográfica atual do OneDrive do usuário, usando a seguinte sintaxe:
 
-`connect-sposervice -url https://<tenantName>-admin.sharepoint.com`
+`Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
 Por exemplo: para mover o OneDrive do usuário 'Carlos@contosoenergy.onmicrosoft.com', conecte-se ao Centro de administração do SharePoint EUR, pois o OneDrive do usuário está na localização geográfica EUR:
 
-`connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Captura de tela da janela do PowerShell mostrando o cmdlet connect-sposervice](media/move-onedrive-between-geo-locations-image1.png)
 
