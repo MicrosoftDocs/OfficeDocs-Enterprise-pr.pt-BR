@@ -13,14 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Um breve resumo dos cmdlets usados para migrações de caixa de correio do Office 365.
-ms.openlocfilehash: bdd4d6eb68a8727dc26a693f2716ed602e7a5a60
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 03075fdab50ed5dd315d4f9b988032e40f4cbc85
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067132"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38035541"
 ---
 # <a name="office-365-mailbox-migrations"></a>Migrações de caixas de correio do Office 365
+
 Com uma implantação híbrida baseada no Exchange, os clientes podem optar por mover caixas de correio locais do Exchange para uma organização do [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) ou mover caixas de correio do Exchange Online para uma organização [local do Exchange](https://docs.microsoft.com/Exchange/exchange-server) . Os lotes de migração são usados ao mover caixas de correio entre as organizações locais e do Exchange Online.
 
 Os clientes podem rever as estatísticas e outras informações sobre as migrações de caixa de correio com os seguintes cmdlets:
