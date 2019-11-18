@@ -71,15 +71,7 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# Testar o Office 365
-## [Testar o Office 365](cloud-adoption-test-lab-guides-tlgs.md)
-## [Configuração básica do ambiente de desenvolvimento/teste](base-configuration-dev-test-environment.md) 
-## [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
-### [Sincronização de diretório](dirsync-for-your-office-365-dev-test-environment.md)
-### [Autenticação multifator](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [Identidade federada](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Proteção avançada contra ameaças](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-## [Rede virtual simulada entre redes local e online no Azure](simulated-cross-premises-virtual-network-in-azure.md)
+# [Testar o Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 
 # [Implantar Office 365 Enterprise](setup-overview-for-enterprises.md)
 
@@ -198,7 +190,7 @@
 ### [Desativar a sincronização de diretórios](turn-off-directory-synchronization.md)
 
 ## Usuários
-### [Centro de ajuda da administração do Office 365](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Centro de ajuda da administração do Office 365](https://docs.microsoft.com/office365/admin/admin-home)
 ### [Ferramentas para gerenciar contas de usuários](manage-office-365-accounts.md)
 ### [Adicionar vários usuários ao mesmo tempo](add-several-users-at-the-same-time.md)
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
