@@ -3,7 +3,6 @@ title: Adicionar vários usuários ao mesmo tempo para o Office 365 - Ajuda da a
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
-ms.date: 6/29/2018
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,30 +23,30 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Saiba como adicionar vários usuários ao Office 365 para empresas de uma lista em uma planilha ou outro arquivo formatado por CSV. Assista a um vídeo sobre o YouTube que explica como adicionar contas ao Office 365. No final desse processo, cada usuário com uma conta terá uma caixa de correio do Office 365. '
-ms.openlocfilehash: a719b2626eada8abe225a6951af4a2d292667856
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030725"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702212"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Adicionar vários usuários ao mesmo tempo para o Office 365 – Ajuda da administração
 
 É necessário que cada pessoa na sua equipe tenha uma conta de usuário para poder entrar e acessar os serviços do Office 365, como o email e o Office. Se houver muitas pessoas, é possível adicionar todas as contas de uma só vez a partir de uma planilha do Excel ou de outro arquivo salvo em formato CSV. [Não sabe o que é o formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
   
+> [!NOTE] 
+> Se não estiver usando o novo centro de administração do Microsoft 365, você poderá ativá-lo selecionando a alternância **Experimentar o novo centro de administração** localizado na parte superior da Home Page.
+
 ## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Adicionar vários usuários ao Office 365 no centro de administração do Microsoft 365
 
 1. Entre no Office 365 com uma conta corporativa ou de estudante. 
     
 2. No centro de administração, escolha usuários **ativos**do **usuário** \> .
+
+3. Selecione **adicionar vários usuários**.
+
+4. No painel **Importar vários usuários**, opcionalmente, você pode baixar um arquivo CSV de exemplo com ou sem dados de exemplo preenchidos. 
     
-    ![No centro de administração, escolha usuários e, em seguida, usuários ativos](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
-  
-    
-3. No painel **Importar vários usuários**, opcionalmente, você pode baixar um arquivo CSV de exemplo com ou sem dados de exemplo preenchidos. 
-    
-    ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
-  
     A planilha deve incluir **exatamente os mesmos títulos de coluna** que os da planilha de exemplo (Nome de Usuário, Nome, etc...). Se você usar o modelo, abra-o em uma ferramenta de edição de texto, como o Bloco de Notas, e considere a opção de manter todos os dados na linha 1 e inserir dados apenas nas linhas 2 e abaixo. 
     
     A planilha também precisa incluir valores de nome de usuário (por exemplo, carlos@contoso.com) e um nome para exibição (por exemplo, Carlos Lima) para cada usuário. 
@@ -62,9 +61,7 @@ ms.locfileid: "38030725"
   
   ```
 
-4. Insira um caminho de arquivo na caixa ou escolha **Procurar** para navegar até o local do arquivo CSV. Em seguida, escolha **Verificar**.
-    
-    ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
+5. Insira um caminho de arquivo na caixa ou escolha **Procurar** para navegar até o local do arquivo CSV. Em seguida, escolha **Verificar**.
   
     Se houver algum problema com o arquivo, o problema será exibido no painel. Você também pode baixar um arquivo de log.
     
@@ -143,70 +140,5 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
 
 - **Verifique se o arquivo está formatado corretamente.** Verifique se os títulos das colunas correspondem àqueles do arquivo de exemplo. Você deverá seguir as regras de tamanho de caracteres e verificar se cada campo está separado por uma vírgula. 
     
-- ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
+- **Se você não vir os novos usuários no Office 365 imediatamente, aguarde alguns minutos.** Pode demorar um pouco para que as alterações entrem em todos os serviços do Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Adicionar vários usuários ao Office 365 no centro de administração antigo
-
-1. Baixe [esta planilha de exemplo](https://www.microsoft.com/download/details.aspx?id=45485) e abra-a no Excel. 
-    
-    A planilha deve incluir **exatamente os mesmos títulos de coluna** que os da planilha de exemplo (Nome de Usuário, Nome, etc...). Se você usar o modelo, considere a opção de manter todos os dados na linha 1 e inserir dados apenas nas linhas 2 e abaixo. 
-    
-    A planilha também precisa incluir os valores para o nome de usuário (por exemplo, carlos@contoso.com) e um nome para exibição (por exemplo, Carlos Lima) para cada usuário. Para deixar os outros campos em branco, insira um espaço e uma vírgula no campo, conforme mostrado na figura abaixo. 
-    
-    ![Um modelo de arquivo CVS com linhas em branco especificadas](media/9c596ba1-1053-4687-a46c-c9359e9818c9.png)
-  
-    Se você tiver pessoas trabalhando em diferentes países/regiões, precisará criar uma planilha para os usuários em cada país/região. Por exemplo, uma planilha que lista todas as pessoas que vivem nos EUA e outra que lista todos os que vivem no Japão. Isso é necessário porque a disponibilidade dos serviços do Office 365 varia em cada região. 
-    
-    **Dica:** antes de adicionar um grande número de usuários ao Office 365, talvez você queira praticar com uma planilha de exemplo. Por exemplo, edite a planilha de exemplo com dados de alguns dos seus usuários, talvez 5 ou 10, e salve o arquivo com um novo nome. Execute as etapas descritas neste procedimento, verifique os resultados, exclua as novas contas e comece novamente. Dessa forma, você pode praticar como obter todos os dados corretos para a sua situação. Confira também [Dicas para formatar a sua planilha](add-several-users-at-the-same-time.md#__toc314595848).
-    
-2. Entre no Office 365 com uma conta corporativa ou de estudante. 
-    
-3. Vá para o centro de administração.
-    
-4. Para que as pessoas possam usar serviços do Office 365, elas precisam ter uma licença atribuída. Antes de continuar, convém verificar se você possui licenças suficientes para todos os usuários listados na sua planilha. Escolha **Cobrança** \> **Assinaturas** para ver se há licenças suficientes. Se você precisar comprar mais licenças, escolha ** Alterar a quantidade de licenças **. Ou você pode executar o assistente, atribuir as licenças que você possui, comprar outras licenças mais tarde e executar o assistente novamente. 
-    
-5. Agora, vá para o assistente Adicionar usuários em massa: escolha **Usuários** \> **Usuários Ativos**. Escolha ![O ícone para adicionar vários usuários ao Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png) conforme mostrado na figura a seguir. 
-    
-    ![Uma imagem da seção usuários do centro de administração](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
-  
-    O assistente Adicionar usuários em massa aparecerá e o guiará pelas etapas para adicionar um grupo de usuários ao Office 365. 
-    
-6. Na Etapa 1, Selecione um arquivo CSV, especifique a sua própria planilha conforme mostrado na figura a seguir.
-    
-    ![Etapa 1 do Assistente de Adição de Usuários em Massa - Selecionar Arquivo CSV](media/aeb837ed-1f86-427d-b038-c643c383829c.png)
-  
-7. Na Etapa 2, Verificação, o assistente informa se o conteúdo da planilha está formatado corretamente.
-    
-    ![Etapa 2 do Assistente de Adição de Usuários em Massa - Verificação](media/3fd3cd2c-44d4-4593-b02c-b87c176affb3.png)
-  
-8. Na Etapa 3, Configurações, escolha **Permitidos** para que as pessoas listadas na sua planilha possam usar o Office 365. Escolha também o país/região em que essas pessoas usarão o Office 365. Lembre-se, se algumas pessoas em sua organização forem usar o Office 365 em outro país, crie uma planilha separada com os nomes delas e execute o assistente Adicionar usuários em massa novamente para adicioná-los. 
-    
-    ![Etapa 3 do Assistente de Adição de Usuários em Massa - Configurações](media/ff12ad34-5d8b-4e89-a02f-d827a94095b3.png)
-  
-9. A página de atribuição de licenças informa quantas licenças estão disponíveis. 
-    
-    ![Etapa 4 do Assistente de Adição de Usuários em Massa - Licenças](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
-  
-    Você pode escolher **comprar mais licenças**, mas sairá do assistente de adição de usuários em massa e vá para **cobrança** no centro de administração do Microsoft 365. Após comprar mais licenças, você terá que esperar alguns minutos para que o pedido seja processado e para que você possa iniciar o assistente para Adicionar usuários em massa desde o começo. 
-    
-    Se você não comprar mais licenças, não serão criadas contas para todas as pessoas listadas na sua planilha. 
-    
-    Vamos ver o que acontece se nós não comprarmos mais licenças e continuarmos com o assistente Adicionar usuários em massa.
-    
-10. Na Etapa 5 - Enviar resultados, digite os endereços de email das pessoas que você deseja que recebam um email listando  *todos*  os nomes de usuário e senhas temporárias do Office 365 para as pessoas na planilha. 
-    
-    ![Etapa 5 do Assistente de Adição de Usuários em Massa - Enviar Resultados](media/5beeb825-4ba7-4ae0-bfb5-a1f8a785ebdb.png)
-  
-    O seguinte email é enviado a todos os endereços de email especificados na Etapa 5 - Enviar resultados. Esse email indica que contas foram criadas. Observe que não foram criadas contas para algumas pessoas porque não havia licenças suficientes. 
-    
-    ![Email de exemplo com informações de credenciais do usuário](media/0a40c612-2078-4b5b-813e-f99bc53635a6.png)
-  
-    Você pode comprar outras licenças mais tarde e executar novamente o assistente Adicionar usuários em massa com a mesma planilha. O assistente ignora os usuários que já têm contas; o relatório de resultados mostrará "nome de usuário duplicado" para indicar que alguém com aquelas informações já possui uma conta.
-    
-11. A página final do assistente o assistente Adicionar usuários em massa lista os nomes de usuário e senhas temporárias, conforme mostrado na figura a seguir.
-    
-    ![Etapa 6 do Assistente de Adição de Usuários em Massa - Enviar Resultados](media/0cd43832-071b-4b33-b57a-5d07959985ad.png)
-  
-12. Após adicionar usuários ao Office 365, você deve fornecer a eles as informações de conta do Office 365. Use seu processo normal para comunicar as novas senhas.
-    
-
