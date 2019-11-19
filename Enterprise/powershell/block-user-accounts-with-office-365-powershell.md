@@ -14,12 +14,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: Explica como usar o Office 365 PowerShell para bloquear e desbloquear o acesso às contas do Office 365.
-ms.openlocfilehash: a2edecf7bc47d39aa9aeb965c7b2834e37820a36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 3cc063fac2fa7795ba924b7b937efc9afe6594a1
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069207"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38706978"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Bloquear contas de usuários com o Office 365 PowerShell
 
@@ -35,7 +35,7 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
 
 Use a seguinte sintaxe para bloquear uma conta de usuário individual:
   
-```
+```powershell
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
@@ -44,19 +44,19 @@ Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $fa
   
 Esse exemplo bloqueia o acesso à conta de usuário ricardoc@litwareinc.com.
   
-```
+```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
 ```
 
 Para desbloquear essa conta de usuário, execute o seguinte comando:
   
-```
+```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $true
 ```
 
 Para exibir o UPN da conta de usuário com base no nome de exibição do usuário, use os seguintes comandos:
   
-```
+```powershell
 $userName="<display name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 
@@ -64,14 +64,14 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 Este exemplo exibe o UPN da conta de usuário para o usuário chamado Carlos Lima.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Para bloquear uma conta com base no nome de exibição do usuário, use os seguintes comandos:
   
-```
+```powershell
 $userName="<display name>"
 Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName -AccountEnabled $false
 
@@ -79,7 +79,7 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 A qualquer momento, você pode verificar o status bloqueado de uma conta de usuário com o seguinte comando:
   
-```
+```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
@@ -87,7 +87,7 @@ Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,Ac
 
 Para bloquear o acesso a várias contas de usuário, crie um arquivo de texto que contenha um nome de logon de conta em cada linha como esta:
     
-  ```
+  ```powershell
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
@@ -97,13 +97,13 @@ Nos seguintes comandos, o arquivo de texto de exemplo é C:\Meus Documents\Accou
   
 Para bloquear o acesso às contas listadas no arquivo de texto, execute o seguinte comando:
     
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
 Para desbloquear as contas listadas no arquivo de texto, execute o seguinte comando:
     
-```
+```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
 ```
 
@@ -116,25 +116,25 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
 
 Use a seguinte sintaxe para bloquear o acesso a uma conta de usuário individual:
   
-```
+```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 Esse exemplo bloqueia o acesso à conta de usuário ricardoc@litwareinc.com.
   
-```
+```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
 ```
 
 Para desbloquear a conta do usuário, execute o seguinte comando:
   
-```
+```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
 A qualquer momento, você pode verificar o status bloqueado de uma conta de usuário com o seguinte comando:
   
-```
+```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
@@ -142,7 +142,7 @@ Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayN
 
 Primeiro, crie um arquivo de texto que contenha uma conta em cada linha como esta:
     
-  ```
+  ```powershell
 akol@contoso.com
 tjohnston@contoso.com
 kakers@contoso.com
@@ -151,12 +151,12 @@ Nos seguintes comandos, o arquivo de texto de exemplo é C:\Meus Documents\Accou
     
 Para bloquear o acesso às contas listadas no arquivo de texto, execute o seguinte comando:
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }
   ```
 Para desbloquear as contas listadas no arquivo de texto, execute o seguinte comando:
     
-  ```
+  ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $false }
   ```
 

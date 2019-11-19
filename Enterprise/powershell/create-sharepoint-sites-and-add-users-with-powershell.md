@@ -14,12 +14,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Use o Office 365 PowerShell para criar novos sites do SharePoint Online e, em seguida, adicione usuários e grupos a esses sites.'
-ms.openlocfilehash: 17f3a6a6444ced647723f417145c6466dd8d284b
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: abe8f76de07c230c0d1484ccfb57b3b9a7bf8d34
+ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077990"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38707018"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Criar sites do SharePoint Online e adicionar usuários com o Office 365 PowerShell
 
@@ -41,7 +41,7 @@ O cmdlet do Office 365 PowerShell importa o arquivo. csv e o canaliza para um lo
 
 1. Abra o bloco de notas e cole o seguinte bloco de texto:<br/>
 
-```
+```powershell
 Owner,StorageQuota,Url,ResourceQuota,Template,TimeZoneID,Name
 owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/TeamSite01,25,EHS#1,10,Contoso Team Site
 owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,BLOG#0,10,Contoso Blog
@@ -58,7 +58,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ### <a name="run-the-windows-powershell-command"></a>Execute o comando do Windows PowerShell:
 
 1. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione ENTER:<br/>
-```
+```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
 <br/>Em que *myalias* é igual ao seu alias de usuário.<br/>
@@ -67,7 +67,7 @@ Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SP
 
 3. No prompt do Windows PowerShell, digite ou copie e cole o seguinte cmdlet e pressione ENTER:<br/>
 
-```
+```powershell
 Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
@@ -85,7 +85,7 @@ Os procedimentos a seguir indicam que você criou com sucesso os conjuntos de si
 ### <a name="create-csv-and-ps1-files"></a>Criando arquivos .csv e .ps1
 
 1. Abra o bloco de notas e cole o seguinte bloco de texto:<br/>
-```
+```powershell
 Site,Group,PermissionLevels
 https://tenant.sharepoint.com/sites/contosotest,Contoso Project Leads,Full Control
 https://tenant.sharepoint.com/sites/contosotest,Contoso Auditors,View Only
@@ -102,7 +102,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 
 3. Abra uma nova instância do bloco de notas e cole o seguinte bloco de texto:<br/>
 
-```
+```powershell
 Group,LoginName,Site
 Contoso Project Leads,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
 Contoso Auditors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/contosotest
@@ -119,7 +119,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 
 5. Abra uma nova instância do bloco de notas e cole o seguinte bloco de texto:<br/>
 
-```
+```powershell
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
@@ -133,7 +133,7 @@ Agora você está pronto para executar o script UsersAndGroup.ps1 para adicionar
 
 1. Retorne ao shell de gerenciamento do SharePoint Online<br/>
 2. No prompt do Windows PowerShell, digite ou copie e cole a seguinte linha e pressione ENTER:<br/>
-```
+```powershell
 Set-ExecutionPolicy Bypass
 ```
 <br/>
@@ -142,7 +142,7 @@ Set-ExecutionPolicy Bypass
 
 4. No prompt do Windows PowerShell, digite ou copie e cole o seguinte e pressione ENTER:<br/>
 
-```
+```powershell
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>Em que *myalias* é igual ao nome de usuário.<br/>
