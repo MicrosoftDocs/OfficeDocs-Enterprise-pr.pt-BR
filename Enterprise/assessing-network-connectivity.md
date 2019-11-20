@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: O Office 365 foi projetado para permitir que clientes em todo o mundo se conectem ao serviço usando uma conexão com a Internet. À medida que o serviço evolui, a segurança, o desempenho e a confiabilidade do Office 365 são aprimorados com base nos clientes que usam a Internet para estabelecer uma conexão com o serviço.
-ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030495"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745714"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Avaliando a conectividade de rede do Office 365
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 O Office 365 foi projetado para permitir que clientes em todo o mundo se conectem ao serviço usando uma conexão com a Internet. À medida que o serviço evolui, a segurança, o desempenho e a confiabilidade do Office 365 são aprimorados com base nos clientes que usam a Internet para estabelecer uma conexão com o serviço.
   

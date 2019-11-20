@@ -17,18 +17,20 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: Em 10 de outubro de 2017, o suporte terminou para o Project Server 2007, Project Portfolio Server e Project 2007. Use este artigo para planejar sua atualização agora.
-ms.openlocfilehash: 620b5ae3e23c3b4bdba9c429def81eebedbd32a3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: c21d9d1c2539f66587243f04d4d874649d6bf460
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071047"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746234"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do Project Server 2007
 
-O suporte está terminando para os servidores e aplicativos do Office 2007 no 2017 e você precisa considerar os planos para a migração. Se você estiver usando o Project Server 2007 no momento, observe que ele e outros produtos relacionados terão as seguintes datas de fim de suporte:
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+
+O suporte terminou para os servidores e aplicativos do Office 2007 no 2017 e você precisa considerar os planos de migração. Se você estiver usando o Project Server 2007 no momento, observe que ele e outros produtos relacionados tinham as seguintes datas de fim de suporte:
   
-|**Product**|**data do fim da suporte**|
+|**Product**|**Data do fim da suporte**|
 |:-----|:-----|
 |Project Server 2007  <br/> |10 de outubro de 2017  <br/> |
 |Project Portfolio Server 2007  <br/> |10 de outubro de 2017  <br/> |
@@ -39,7 +41,7 @@ Para obter mais informações sobre os servidores do Office 2007 que estão cheg
   
 ## <a name="what-does-end-of-support-mean"></a>O que significa o fim do suporte?
 
-O Project Server, como quase todos os produtos da Microsoft, tem um ciclo de vida de suporte durante o qual fornecemos novos recursos, correções de erros, correções de segurança e assim por diante. Esse ciclo de vida normalmente dura 10 anos a partir da data da versão inicial do produto, e o final desse ciclo de vida é conhecido como o fim do suporte do produto. Como o Project Server 2007 atingiu o fim do suporte em 10 de outubro de 2017, a Microsoft não fornecerá mais:
+O Project Server, como quase todos os produtos da Microsoft, tem um ciclo de vida de suporte durante o qual fornecemos novos recursos, correções de erros, correções de segurança e assim por diante. Esse ciclo de vida normalmente dura 10 anos a partir da data da versão inicial do produto, e o final desse ciclo de vida é conhecido como o fim do suporte do produto. Como o Project Server 2007 atingiu o fim do suporte em 10 de outubro de 2017, a Microsoft não fornece mais:
   
 - Suporte técnico para problemas que podem ocorrer.
     
@@ -135,9 +137,9 @@ Embora detalhes sobre como atualizar podem ser encontrados na atualização para
   
 - **Atualização de anexação de banco de dados:** Este método atualiza apenas o conteúdo para o seu ambiente, e não as definições de configuração. É necessário se você estiver atualizando do Office Project Server 2007 implantado no hardware que suporta apenas um sistema operacional de servidor de 32 bits. Há dois tipos de métodos de atualização de anexação de banco de dados: 
     
-  - **Atualização completa** de anexação de banco de dados-migra os dados de projeto armazenados nos bancos de dados do Office project Server 2007, além dos dados de site do Microsoft Project Web App (PWA) armazenados em um banco de dados de conteúdo do SharePoint. 
+  - **Atualização completa de anexação de banco** de dados-migra os dados de projeto armazenados nos bancos de dados do Office project Server 2007, além dos dados de site do Microsoft Project Web App (PWA) armazenados em um banco de dados de conteúdo do SharePoint. 
     
-  - **Atualização principal** de anexação de banco de dados: migra somente os dados de projeto armazenados nos bancos de dados do Project Server. 
+  - **Atualização principal de anexação de banco** de dados: migra somente os dados de projeto armazenados nos bancos de dados do Project Server. 
     
 - **Atualização**in-loco: os dados de configuração do farm e todo o conteúdo do farm são atualizados no hardware existente, em uma ordem fixa. Quando você inicia o processo de atualização in-loco, a instalação leva todo o farm offline, e os sites do Microsoft Project Web App não estão disponíveis até que a atualização seja concluída e, em seguida, a instalação reinicia o servidor. Depois de começar uma atualização in-loco, você não pode pausar a atualização ou reverter para a versão anterior. É altamente recomendável criar uma imagem espelhada do ambiente de produção e fazer a atualização in-loco para esse ambiente, e não o ambiente de produção. 
     

@@ -14,14 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Discute por que a otimização de rede é importante para serviços SaaS, a meta da rede do Office 365 e como o SaaS requer redes diferentes de outras cargas de trabalho.
-ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031886"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747703"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Visão geral da conectividade de rede do Office 365
+
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 O Office 365 é uma nuvem de software (SaaS) distribuída que oferece cenários de produtividade e colaboração por meio de um conjunto variado de micro serviços e aplicativos. Os componentes do cliente do Office 365 como o Outlook, o Word e o PowerPoint são executados nos computadores dos usuários e se conectam a outros componentes do Office 365 executados nos datacenters da Microsoft. O fator mais significativo que determina a qualidade da experiência do usuário final do Office 365 é a confiabilidade da rede e baixa latência entre os clientes do Office 365 e as portas frontais do serviço do Office 365.
 
@@ -90,7 +92,7 @@ Para obter mais informações sobre a compreensão e a aplicação de princípio
 
 Otimizar o desempenho da rede do Office 365 é muito bem a remover impedimentos desnecessários. Ao tratar as conexões do Office 365 como tráfego confiável, você pode evitar que a latência seja introduzida pela inspeção de pacote e concorrência para a largura de banda do proxy. Permitir conexões locais entre máquinas clientes e pontos de extremidade do Office 365 permite que o tráfego seja direcionado dinamicamente através da rede global da Microsoft.
 
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
 

@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365.'
-ms.openlocfilehash: 8bb877cba8bb06762ee56fa8c022be78d1c011c3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071167"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747527"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração em estágios para o Office 365
 
- **Resumo:** saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365.
-  
 Você pode migrar o conteúdo de caixas de correio de usuários de um sistema de email de origem para o Office 365 ao longo do tempo usando uma migração em estágios.
   
 Este artigo o orienta ao longo das tarefas envolvidas para uma migração em estágios de email usando o PowerShell do Exchange Online. O tópico [O que você precisa saber sobre uma migração de email em estágios para o Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536487) fornece uma visão geral do processo de migração. Quando você estiver familiarizado com o conteúdo daquele artigo, use este para começar a migrar caixas de correio de um sistema de email para outro.
@@ -63,11 +61,11 @@ Antes de migrar as caixas de correio para o Office 365 usando uma migração em 
     
 - Execute os seguintes comandos no PowerShell do Exchange Online:
     
-  ```
+  ```powershell
   $Credentials = Get-Credential
   ```
 
-  ```
+  ```powershell
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
@@ -118,7 +116,7 @@ Aqui está um exemplo do formato do arquivo CSV. Neste exemplo, três caixas de 
   
 A primeira linha, ou linha de cabeçalho, do arquivo CSV lista os nomes dos atributos ou campos especificados nas linhas a seguir. Cada nome de atributo é separado por uma vírgula.
   
-```
+```powershell
 EmailAddress,Password,ForceChangePassword 
 pilarp@contoso.com,Pa$$w0rd,False 
 tobyn@contoso.com,Pa$$w0rd,False 
@@ -141,11 +139,11 @@ Para obter uma lista completa dos comandos de migração, confira [Cmdlets de mo
   
 Para criar um ponto de extremidade de migração do Outlook em Qualquer Lugar chamado "StagedEndpoint" no PowerShell do Exchange Online, execute os seguintes comandos:
   
-```
+```powershell
 $Credentials = Get-Credential
 ```
 
-```
+```powershell
 New-MigrationEndpoint -ExchangeOutlookAnywhere -Name StagedEndpoint -Autodiscover -EmailAddress administrator@contoso.com -Credentials $Credentials
 ```
 
@@ -158,7 +156,7 @@ Para saber mais sobre o cmdlet **New-MigrationEndpoint**, confira[New-MigrationE
 
 No PowerShell do Exchange Online, execute o seguinte comando para exibir informações sobre o ponto de extremidade de migração "StagedEndpoint":
   
-```
+```powershell
 Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,UseAutoDiscover,Max*
 ```
 
@@ -167,13 +165,13 @@ Get-MigrationEndpoint StagedEndpoint | Format-List EndpointType,ExchangeServer,U
 
 Você pode usar o cmdlet **New-MigrationBatch** no PowerShell do Exchange Online para criar um lote de migração de uso em uma migração de transferência. É possível criar um lote de migração e iniciá-lo automaticamente incluindo o parâmetro _AutoStart_. Como alternativa, você pode criar o lote de migração e iniciá-lo manualmente mais tarde usando o cmdlet **Start-MigrationBatch**. Este exemplo cria um lote de migração chamado "StagedBatch1" e utiliza o ponto de extremidade de migração criado na etapa anterior.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint -AutoStart
 ```
 
 Este exemplo também cria um lote de migração chamado "StagedBatch1" e utiliza o ponto de extremidade de migração criado na etapa anterior. Como o parâmetro  _AutoStart_ não está incluído, o lote de migração deve ser iniciado manualmente no painel de migração ou usando o cmdlet **Start-MigrationBatch**. Como dito anteriormente, apenas um lote de migração de transferência pode existir de cada vez.
   
-```
+```powershell
 New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 ```
 
@@ -181,13 +179,13 @@ New-MigrationBatch -Name StagedBatch1 -SourceEndpoint StagedEndpoint
 
 Execute o seguinte comando no PowerShell do Exchange Online para exibir informações sobre o "StagedBatch1":
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List
 ```
 
 Você também pode verificar se o lote foi iniciado executando o seguinte comando:
   
-```
+```powershell
 Get-MigrationBatch -Identity StagedBatch1 | Format-List Status
 ```
 
@@ -215,7 +213,7 @@ Para saber mais e para baixar os scripts que você pode executar para converter 
   
 Para excluir o lote de migração "StagedBatch1" no PowerShell do Exchange Online, execute o comando a seguir.
   
-```
+```powershell
 Remove-MigrationBatch -Identity StagedBatch1
 ```
 
@@ -225,7 +223,7 @@ Para saber mais sobre o cmdlet **Remove-MigrationBatch**, confira[Remove-Migrati
 
 Execute o seguinte comando no PowerShell do Exchange Online para exibir informações sobre o "IMAPBatch1":
   
-```
+```powershell
 Get-MigrationBatch StagedBatch1
 ```
 

@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Sua assinatura do Office 365 inclui uma assinatura do Azure AD. Integre o Office 365 com o Azure AD se você quiser sincronização de senha ou logon único com seu ambiente local.
-ms.openlocfilehash: 00edf54a6b20e7ed0ab17fb452b342ddf8b454b3
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 44231420ee92c37f14874d6fb0f9e926d8d4369d
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435365"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745784"
 ---
 # <a name="azure-integration-with-office-365"></a>Integração do Azure ao Office 365
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 O Office 365 usa o Azure Active Directory (Azure AD) para gerenciar as identidades de usuário em segundo plano. Sua assinatura do Office 365 inclui uma assinatura gratuita do Azure AD para que você possa integrar o Office 365 ao Azure AD se quiser sincronizar senhas ou configurar o logon único com seu ambiente local. Você também pode comprar recursos avançados para gerenciar melhor suas contas.
   

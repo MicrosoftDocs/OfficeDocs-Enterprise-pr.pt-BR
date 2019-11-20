@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Resumo: você deve ser capaz de usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e em outros casos por necessidade.'
-ms.openlocfilehash: be117dd2e4eaa7f3e2e95cd0d2444bd5b813bccb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 66782a9165c76c7e1d506e40fa1cacd6db0c6724
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071147"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747440"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Por que você precisa usar o Office 365 PowerShell
 
- **Resumo:** entenda por que usar o Office 365 PowerShell para gerenciar o Office 365, em alguns casos, com mais eficiência e, em outros casos, por necessidade.
-  
 Com o centro de administração do Microsoft 365, você não só pode gerenciar suas licenças e contas de usuário do Office 365, mas também pode gerenciar os produtos de servidor do Office 365: Exchange, Skype for Business Online e SharePoint Online. No entanto, você também pode gerenciar esses elementos com os comandos do Office 365 PowerShell, tirando proveito de um ambiente de linha de comando e de linguagem de script para velocidade, automação e capacidade adicional.
   
 Neste artigo, mostraremos a você as seguintes maneiras em que você pode usar o Office 365 PowerShell para gerenciar o Office 365.
@@ -41,7 +39,7 @@ Neste artigo, mostraremos a você as seguintes maneiras em que você pode usar o
     
 Antes de começar, saiba que o Office 365 PowerShell é um conjunto de módulos para o Windows PowerShell, um ambiente de linha de comando para plataformas e serviços baseados em Windows. Esse ambiente cria uma linguagem de shell de comando que pode ser estendida com módulos adicionais e fornece uma maneira de executar comandos simples ou complexos, ou scripts. Por exemplo, depois de instalar os módulos do Office 365 PowerShell e entrar com sua assinatura do Office 365, você poderá executar esse comando para listar todas as caixas de correio do usuário para o Microsoft Exchange Online:
   
-```
+```powershell
 Get-Mailbox
 ```
 
@@ -81,7 +79,7 @@ Para muitas finalidades, isso exibe as informações que você precisa saber. No
     
 Você deve repetir este procedimento para cada usuário. Quando há muitos usuários, isso pode ser uma tarefa entediante. Com o Office 365 PowerShell, você pode exibir essas informações para todos os usuários com o seguinte comando:
   
-```
+```powershell
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
@@ -90,7 +88,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
   
 Este é um exemplo de exibição:
   
-```
+```powershell
 DisplayName                               UsageLocation
 -----------                               -------------
 Bonnie Kearney                            GB
@@ -106,13 +104,13 @@ David Longmuir                            BR
   
 Porque o Office 365 PowerShell dá suporte a uma linguagem de shell de comando, você pode manipular ainda mais as informações obtidas do comando **Get-MSolUser**. Por exemplo, talvez você queira classificar esses usuários por sua localização, agrupar todos os usuários brasileiros, todos os usuários dos Estados Unidos etc. Este é o comando:
   
-```
+```powershell
 Get-MsolUser | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
 ```
 
 Este é um exemplo de exibição:
   
-```
+```powershell
 DisplayName                                 UsageLocation
 -----------                                 -------------
 David Longmuir                              BR
@@ -128,13 +126,13 @@ Brian Johnson (TAILSPIN)                    US
   
 Você também pode usar a filtragem adicional. Por exemplo, se você quiser ver informações sobre usuários baseados no Brasil, use este comando:
   
-```
+```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq "BR"} | Select DisplayName, UsageLocation 
 ```
 
 Este é um exemplo de exibição:
   
-```
+```powershell
 DisplayName                                           UsageLocation
 -----------                                           -------------
 David Longmuir                                        BR
@@ -148,13 +146,13 @@ Fabrice Canel                                         BR
   
 Se você tiver um domínio muito grande, com dezenas de milhares de usuários, alguns dos exemplos que mostramos neste artigo podem levar a "limitação". Isso significa que, com base em coisas como poder de computação e largura de banda de rede disponível, você está tentando um pouco demais de uma só vez. Por causa disso, grandes organizações podem desejar dividir alguns dos comandos do Office 365 PowerShell em dois comandos. Por exemplo, este comando retorna todas as contas de usuário e mostra o nome e o local de cada usuário:
   
-```
+```powershell
 Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 Isso funciona bem com domínios menores. Em uma grande organização, no entanto, talvez você precise dividi-lo em dois comandos: um comando para armazenar as informações da conta do usuário em uma variável e outro comando para exibir as informações necessárias. Veja um exemplo:
   
-```
+```powershell
 $x = Get-MsolUser
 $x | Select DisplayName, UsageLocation
 ```
@@ -182,7 +180,7 @@ Com essas configurações, você pode adicionar um toque de personalização e p
     
 Essas configurações não estão disponíveis no Centro de administração do Skype for Business online. No entanto, você pode controlá-las no Office 365 PowerShell. Veja um comando que desabilita essas três configurações:
   
-```
+```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConferenceRecording $False -DesignateAsPresenter "None"
 ```
 
@@ -194,7 +192,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
   
 Se você mudar de ideia e desejar restaurar essas configurações padrão (todas são ativadas), execute este comando:
   
-```
+```powershell
 Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $True -AllowConferenceRecording $True -DesignateAsPresenter "Company"
 ```
 
@@ -226,7 +224,7 @@ Pode demorar muito tempo para você fazer isso em uma centena de sites.
   
 A alternativa é usar o Office 365 PowerShell e o comando a seguir para remover Paulo Araújo de todos os sites:
   
-```
+```powershell
 Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwareinc.com"}
 ```
 
@@ -240,7 +238,7 @@ Como estamos dizendo para o Office 365 para remover Ken Araújo de todos os site
   
 Este é outro exemplo de operação em massa. Use este comando para adicionar Mila Moraes, uma nova administradora do SharePoint, para todos os sites na organização:
   
-```
+```powershell
 Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.com" -Group "Members"}
 ```
 
@@ -259,13 +257,13 @@ No entanto, existem limitações no que você pode fazer no Centro de administra
   
 Com o Office 365 PowerShell, você pode obter uma lista de caixas de correio de todas as pessoas que vivem nas cidades de Belo Horizonte ou Curitiba com este comando:
   
-```
+```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and ($_.City -eq "San Diego" -or $_.City -eq "Bloomington")} | Select DisplayName, City
 ```
 
 Este é um exemplo de exibição:
   
-```
+```powershell
 DisplayName                              City
 -----------                              ----
 Alex Darrow                              San Diego
@@ -279,13 +277,13 @@ Rob Young                                Bloomington
   
 Este é o comando para listar todas as caixas de correio de quem mora em qualquer lugar, exceto Belo Horizonte:
   
-```
+```powershell
 Get-User | Where {$_.RecipientTypeDetails -eq "UserMailbox" -and $_.City -ne "Bloomington"} | Select DisplayName, City
 ```
 
 Este é um exemplo de exibição:
   
-```
+```powershell
 DisplayName                               City
 -----------                               ----
 MOD Administrator                         Redmond
@@ -317,7 +315,7 @@ Você pode rastrear esse usuário no centro de administração do Microsoft 365 
     
 Como todos esses três nomes terminam em "es", você pode dizer ao Office 365 PowerShell para exibir todos os usuários cujos nomes terminam em "es". Este é o comando:
   
-```
+```powershell
 Get-User -Filter '{LastName -like "*son"}'
 ```
 
@@ -334,7 +332,7 @@ Para salvar essas informações em um arquivo, você deve copiá-lo e colá-lo e
   
 Felizmente, você pode usar o Office 365 PowerShell para exibir não apenas uma lista, mas para salvá-la em um arquivo que pode ser facilmente importado para o Excel. Este é um exemplo do comando para salvar dados do usuário do Skype for Business online em valores separados por vírgula (CSV), um arquivo que pode ser facilmente importado como uma tabela em uma planilha do Excel:
   
-```
+```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Export-Csv -Path "C:\Logs\SfBUsers.csv" -NoTypeInformation
 ```
 
@@ -349,7 +347,7 @@ Você também pode usar opções para salvar a lista como um arquivo XML ou como
   
 Você também pode enviar a saída de um comando do Office 365 PowerShell que exibe uma lista diretamente para a impressora padrão no Windows. Este é um exemplo de comando:
   
-```
+```powershell
 Get-CsOnlineUser | Select DisplayName, UserPrincipalName, UsageLocation | Out-Printer
 ```
 
@@ -384,7 +382,7 @@ A alternativa é usar um script do Office 365 PowerShell para compilar esse rela
   
 O script de exemplo a seguir é mais complicado do que os comandos que vimos até agora neste artigo. Mas, mostra a possibilidade de usar o Office 365 PowerShell para criar modos de exibição de informações que são muito difíceis de serem feitos de outra maneira. Aqui está o script que pode compilar e exibir a lista necessária:
   
-```
+```powershell
 $x = Get-MsolUser
 
 foreach ($i in $x)
@@ -401,7 +399,7 @@ $x | Select DisplayName, IsLicensed, IsMailboxEnabled, EnabledforSfB
 
 Este é um exemplo de exibição:
   
-```
+```powershell
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
 Bonnie Kearney          True         True               True

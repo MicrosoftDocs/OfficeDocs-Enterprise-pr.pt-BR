@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumo: use o Office 365 PowerShell para criar relatórios que você não pode produzir no centro de administração do Microsoft 365.'
-ms.openlocfilehash: e620ecffc89bd5b93de7b608be55bf68721b80af
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 4303f03c282c84972428ab8e5010aa316f40c90a
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031676"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746254"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Use o Windows PowerShell para criar relatórios no Office 365
 
- **Resumo:** use o Office 365 PowerShell para criar relatórios que você não pode produzir no centro de administração do Microsoft 365.
-  
 Há muitos relatórios diferentes disponíveis no centro de administração do Microsoft 365. No entanto, esses relatórios não apresentam todas as informações e, às vezes, você precisa de mais. É aí que você precisa do Office 365 PowerShell
   
 Estes artigos descrevem como usar o Office 365 PowerShell para obter informações do locatário do Office 365:
@@ -58,8 +56,6 @@ Estes artigos descrevem como usar o Office 365 PowerShell para obter informaçõ
   - [Display Exchange Online reports with Office 365 PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
 ## <a name="see-also"></a>Confira também
-
-#### 
 
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   

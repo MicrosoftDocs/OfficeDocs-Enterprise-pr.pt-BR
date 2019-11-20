@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descreve a sincronização de diretório com o Office 365, limpeza de serviços de domínio do Active Directory e a ferramenta Azure Active Directory Connect.
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428108"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747081"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identidade híbrida e sincronização de diretório para o Office 365
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Dependendo das necessidades de negócios e dos requisitos técnicos, o modelo de identidade híbrida e a sincronização de diretórios é a opção mais comum para clientes corporativos que estão adotando o Office 365. A sincronização de diretórios permite gerenciar identidades em seus serviços de domínio do Active Directory (AD DS) e todas as atualizações de contas de usuário, grupos e contatos são sincronizadas com o locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365.
 
@@ -44,7 +44,7 @@ Há dois tipos de autenticação ao usar o modelo de identidade híbrida:
 
 - Autenticação federada
 
-  O Azure AD redireciona o computador cliente solicitando a autenticação para entrar em contato com outro provedor de identidade.
+  O Azure AD redireciona o computador cliente que solicita autenticação para entrar em contato com outro provedor de identidade.
 
 ### <a name="managed-authentication"></a>Autenticação gerenciada
 
@@ -52,11 +52,11 @@ Há dois tipos de autenticação gerenciada:
 
 - Sincronização de hash de senha (PHS)
 
-  O Azure AD executa a própria autenticação.
+  O Azure AD realiza a própria autenticação.
 
 - Autenticação de passagem (PTA)
 
-  O Azure AD tem o AD DS executando a autenticação.
+  O Azure AD faz o AD DS executar a autenticação.
 
 
 #### <a name="password-hash-synchronization"></a>Sincronização de hash de senha
@@ -105,7 +105,7 @@ Sua limpeza de diretório deve se concentrar nas seguintes tarefas:
 
 - Remover os atributos **ProxyAddress** e **userPrincipalName** duplicados.
 - Atualizar atributos **userPrincipalName** em branco e inválidos com atributos **userPrincipalName** válidos.
-- Remover caracteres inválidos e questionáveis em **excertoname**, sobrenome ( **SN** ) **, sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**e **userPrincipalName** atributos. Para obter detalhes sobre como preparar atributos, consulte [lista de atributos que são sincronizados pela ferramenta de sincronização do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Remover caracteres inválidos e questionáveis nos atributos **repassado**, sobrenome ( **SN** ), **sAMAccountName**, **DisplayName**, **mail**, **proxyAddresses**, **mailNickname**e **userPrincipalName** . Para obter detalhes sobre como preparar atributos, consulte [lista de atributos que são sincronizados pela ferramenta de sincronização do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Estes são os mesmos atributos que o Azure AD Connect sincroniza. 

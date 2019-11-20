@@ -16,20 +16,18 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
-ms.openlocfilehash: 18444f76f312c75bc95645d17c48c996f1a3bfc7
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 8ee2c834063ea80388662c1f36f4524715f98a58
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782031"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747450"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
-**Resumo:** explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
-  
 Todas as assinaturas do Office 365 consistem nos seguintes elementos:
 
-- **Planos** de licenciamento Eles também são conhecidos como planos de licença ou planos do Office 365. Os planos de licenciamento definem os serviços do Office 365 que estão disponíveis para os usuários. Sua assinatura do Office 365 pode conter vários planos de licenciamento. Um plano de licenciamento de exemplo seria o Office 365 Enterprise E3.
+- **Planos de licenciamento** Eles também são conhecidos como planos de licença ou planos do Office 365. Os planos de licenciamento definem os serviços do Office 365 que estão disponíveis para os usuários. Sua assinatura do Office 365 pode conter vários planos de licenciamento. Um plano de licenciamento de exemplo seria o Office 365 Enterprise E3.
     
 - **Serviços** do Eles também são conhecidos como planos de serviço. Os serviços são os produtos, recursos e recursos do Office 365 que estão disponíveis em cada plano de licenciamento, por exemplo, o Exchange Online e o Office Professional Plus. Os usuários podem receber várias licenças de diferentes planos de licenciamento que garantem o acesso a diferentes serviços.
     
@@ -44,7 +42,7 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
   
 Para exibir informações resumidas sobre seus planos de licenciamento atuais e as licenças disponíveis para cada plano, execute o seguinte comando:
   
-```
+```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
@@ -58,40 +56,40 @@ Os resultados contêm as seguintes informações:
     
 Para exibir detalhes sobre os serviços do Office 365 que estão disponíveis em todos os seus planos de licença, primeiro exiba uma lista de seus planos de licença.
 
-````
+```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
-````
+```
 
 Em seguida, armazene as informações dos planos de licença em uma variável.
 
-````
+```powershell
 $licenses = Get-AzureADSubscribedSku
-````
+```
 
 Em seguida, exiba os serviços em um plano de licença específico.
 
-````
+```powershell
 $licenses[<index>].ServicePlans
-````
+```
 
 \<index> é um número inteiro que especifica o número da linha do plano de licença a partir da `Get-AzureADSubscribedSku | Select SkuPartNumber` exibição do comando, menos 1.
 
 Por exemplo, se a exibição do `Get-AzureADSubscribedSku | Select SkuPartNumber` comando for:
 
-````
+```powershell
 SkuPartNumber
 -------------
 WIN10_VDA_E5
 EMSPREMIUM
 ENTERPRISEPREMIUM
 FLOW_FREE
-````
+```
 
 Em seguida, o comando para exibir os serviços do plano de licença do ENTERPRISEPREMIUM é:
 
-````
+```powershell
 $licenses[2].ServicePlans
-````
+```
 
 ENTERPRISEPREMIUM é a terceira linha. Portanto, o valor de índice é (3-1) ou 2.
 
@@ -107,7 +105,7 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
     
 Para exibir informações resumidas sobre seus planos de licenciamento atuais e as licenças disponíveis para cada plano, execute o seguinte comando:
   
-```
+```powershell
 Get-MsolAccountSku
 ```
 
@@ -123,7 +121,7 @@ Os resultados contêm as seguintes informações:
     
 Para exibir detalhes sobre os serviços do Office 365 disponíveis em todos os planos de licenciamento, execute o seguinte comando:
   
-```
+```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
@@ -137,7 +135,7 @@ A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigá
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |Escritório  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plano 2 do Exchange Online  <br/> |
    
@@ -145,13 +143,13 @@ Para obter uma lista completa de planos de licença (também conhecidos como nom
 
 Para exibir detalhes sobre os serviços do Office 365 disponíveis em um plano de licenciamento específico, use a sintaxe a seguir.
   
-```
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
 Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano de licenciamento do litwareinc: ENTERPRISEPACK (Office 365 Enterprise E3).
   
-```
+```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
@@ -161,7 +159,6 @@ Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>Confira também
-
 
 [Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

@@ -13,14 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos e servidores desatualizados e não suportados. Use estes recursos para começar a usar seu plano.
-ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 2eee3efccfce79bcab7f2d179e13f46fbfc7a501
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38031056"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747054"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
+
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o [fim do suporte](upgrade-from-office-2007-servers-and-products.md). Os produtos e serviços do Office 2010 (incluindo o Office 2010, o Exchange 2010, o SharePoint 2010 e o Project Server 2010) vão atingir o fim do suporte em **13 de outubro de 2020**. Use os recursos desta seção para começar.
 

@@ -16,23 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Resumo: descreve o suporte a IPv6 nos componentes do Microsoft Office 365 e nas ofertas governamentais do Office 365.'
-ms.openlocfilehash: 2c73f5191cf46ddcb036e9077b855ebf752a2f55
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067227"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745724"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Suporte a IPv6 nos serviços do Office 365
 
- **Resumo**: descreve o suporte a IPv6 nos componentes do Microsoft Office 365 e nas ofertas governamentais do Office 365.
-  
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+
 O Office 365 oferece suporte a IPv6 e IPv4; no entanto, nem todos os recursos do Office 365 estão totalmente habilitados com IPv6. Isso significa que você deve usar IPv4 e IPv6 para se conectar ao Office 365. Se estiver filtrando o tráfego de saída para o Office 365, a lista completa de endereços IPv6 compatíveis com o Office 365 pode ser encontrada no artigo [office 365 URLs and IP address Ranges](urls-and-ip-address-ranges.md). Depois que a rede estiver configurada e os endereços IPv6 apropriados forem permitidos, você poderá baixar o [plano de teste do IPv6 do Office 365](https://go.microsoft.com/fwlink/?LinkId=293447) no centro de download da Microsoft.
   
-||
-|:-----|
-| Este artigo faz parte do [planejamento de rede e do ajuste de desempenho do Office 365](https://aka.ms/tune).|
-
 ## <a name="ipv6-support-in-office-365-subscription-service"></a>Suporte a IPv6 no serviço de assinatura do Office 365
 
 ### <a name="exchange-online-and-ipv6"></a>Exchange Online e IPv6

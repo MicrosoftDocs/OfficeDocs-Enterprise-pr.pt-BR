@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Saiba como a autenticação moderna do Office 365 funciona de forma diferente para os aplicativos cliente do Office 2013 e 2016.
-ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435355"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747984"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Como funciona a autenticação moderna para aplicativos cliente do Office 2013 e do Office 2016
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Leia este artigo para saber como os aplicativos clientes do Office 2013 e do Office 2016 usam recursos de autenticação modernos com base na configuração de autenticação no locatário do Office 365 para o Exchange Online, o SharePoint Online e o Skype for Business online.
 

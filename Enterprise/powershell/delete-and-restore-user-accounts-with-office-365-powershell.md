@@ -15,19 +15,16 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Saiba como usar o Office 365 PowerShell para excluir contas de usuários do Office 365.
-ms.openlocfilehash: dd7e5052f8933955267302a5d03870017702a7fb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069037"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746424"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Deletar contas de usuários usando o Office 365 PowerShell
 
-**Resumo:** Saiba como usar o Office 365 PowerShell para excluir e restaurar contas de usuários do Office 365.
-  
 Você pode usar o PowerShell do Office 365 para excluir uma conta de usuário.
-
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
@@ -35,13 +32,13 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
 
 Após a conexão, use a seguinte sintaxe para remover uma conta de usuário individual:
   
-```
+```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
 Este exemplo remove a conta de usuário ricardoc@litwareinc.com.
   
-```
+```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
@@ -50,21 +47,21 @@ Remove-AzureADUser -ObjectID fabricec@litwareinc.com
   
 Para exibir o nome da conta com base no nome do usuário, use os seguintes comandos:
   
-```
+```powershell
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Este exemplo exibe o nome da conta do usuário Carlos Lima.
   
-```
+```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
 Para remover uma conta com base no nome de exibição do usuário, use os seguintes comandos:
   
-```
+```powershell
 $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
@@ -78,25 +75,25 @@ Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-po
 
 Para excluir uma conta de usuário, use a seguinte sintaxe:
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 Este exemplo exclui a conta de usuário BrendaF@litwareinc.com.
   
-```
+```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
 Para restaurar uma conta de usuário excluída no período de tolerância de 30 dias, use a seguinte sintaxe:
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 Este exemplo restaura a conta excluída BrendaF@litwareinc.com.
   
-```
+```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
@@ -104,7 +101,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
   
 - Para ver a lista de usuários excluídos que pode ser restaurados, execute o seguinte comando:
     
-  ```
+  ```powershell
   Get-MsolUser -All -ReturnDeletedUsers
   ```
 

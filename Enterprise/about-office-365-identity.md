@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Saiba como a identidade do usuário é gerenciada no Office 365.
-ms.openlocfilehash: b1c1e8f9a56f2bdaa927ef3d096c1c614de647bb
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428078"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745664"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelos de identidade do Office 365 e o Active Directory do Azure
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 O Office 365 usa o Azure Active Directory (Azure AD), um serviço de autenticação e identidade do usuário baseado na nuvem que está incluído em sua assinatura do Office 365, para gerenciar identidades e autenticação para o Office 365. Obter sua infraestrutura de identidade configurada corretamente é vital para gerenciar o acesso de usuário do Office 365 e permissões para sua organização.
 
@@ -97,7 +97,7 @@ Se você precisar do modelo de identidade somente na nuvem, confira [identidades
 Se você precisar do modelo de identidade híbrida, consulte [sincronização de diretório](plan-for-directory-synchronization.md).
   
 
-## <a name="video-training"></a>Treinamento em vídeo
+## <a name="video-training"></a>Treinamentos em vídeo
 
 Consulte o curso de vídeo [Office 365: gerenciar identidades usando o Azure ad Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), trazido para você pelo LinkedIn Learning.
 

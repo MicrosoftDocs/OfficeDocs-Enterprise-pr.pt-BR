@@ -34,14 +34,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Em 10 de outubro de 2017, o suporte terminou para o SharePoint Server 2007. Leia este artigo para saber mais sobre suas opções de atualização, solução de problemas, práticas recomendadas, requisitos do sistema, etapas de atualização e como obter assistência dos parceiros da Microsoft.
-ms.openlocfilehash: 55511852997f9781f9c05d0a846aac7cb1c72309
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078090"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747310"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do SharePoint Server 2007
+
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Em **10 de outubro de 2017**, o Microsoft Office SharePoint Server 2007 atingiu o fim do suporte. Se você não iniciou sua migração do SharePoint Server 2007 para o Office 365 ou uma versão mais recente do SharePoint Server local, agora é hora de começar a planejar. Este artigo detalha os recursos para ajudar as pessoas a migrar dados para o SharePoint Online ou a atualizar seu SharePoint Server local. 
   

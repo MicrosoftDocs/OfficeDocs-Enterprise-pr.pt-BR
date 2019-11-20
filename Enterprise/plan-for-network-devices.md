@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumo: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.'
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428095"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747064"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Plano para dispositivos de rede que se conectam aos serviços do Office 365
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
   
 **Resumo**: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.
 
@@ -68,7 +68,7 @@ Fornecemos uma solução NLB baseada em software incorporada ao Windows Server. 
   
 ## <a name="firewalls-and-proxies"></a>Firewalls e proxies
 
-Para obter mais detalhes sobre a configuração de firewalls e proxies para se conectar ao Office 365, leia [Gerenciamento do office 365 pontos de extremidade](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [avaliação da conectividade de rede do Office 365](assessing-network-connectivity.md)e [perguntas frequentes sobre os pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para saber mais sobre dispositivos e circuitos seleções.
+Para obter mais detalhes sobre a configuração de firewalls e proxies para se conectar ao Office 365, leia [Gerenciamento do office 365 pontos de extremidade](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [avaliação da conectividade de rede do Office 365](assessing-network-connectivity.md)e [perguntas frequentes sobre os pontos de extremidade do Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) para saber mais sobre dispositivos e seleção de circuitos.
   
 ## <a name="see-also"></a>Confira também
 

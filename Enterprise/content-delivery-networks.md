@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber como o Office 365 usa redes de distribuição de conteúdo (CDNs) para melhorar o desempenho.
-ms.openlocfilehash: 38c4af58ea7e655a5941557ea1e3b035f15b9074
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077654"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745834"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo (CDNs)
+
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 CDNs ajudar a manter o Office 365 rápido e confiável para usuários finais. Os serviços de nuvem, como o Office 365, usam CDNs para armazenar em cache ativos estáticos mais próximos dos navegadores que os solicitam para acelerar os downloads e reduzir a latência de usuário final percebida. As informações neste tópico vão ajudá-lo a aprender sobre redes de distribuição de conteúdo (CDNs) e como elas são usadas pelo Office 365.
 

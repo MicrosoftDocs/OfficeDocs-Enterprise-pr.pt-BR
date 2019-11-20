@@ -14,14 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: A protocolo de autenticação moderna (HMA) híbrida é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras e está disponível para implantações híbridas locais do Exchange Server.
-ms.openlocfilehash: 69a806fc1026832492f7bab96982509a83a82329
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493308"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746214"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Exchange Server no local para usar a autenticação moderna híbrida
+
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 A protocolo de autenticação moderna (HMA) híbrida é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras e está disponível para implantações híbridas locais do Exchange Server.
   
@@ -86,7 +88,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | 
 
 Anote (e captura de tela para comparação posterior) a saída desse comando, que deve incluir uma URL https:// *autodiscover.yourdomain.com* e https:// *mail.yourdomain.com* , mas que basicamente consiste em SPNs que começam com 00000002-0000-0ff1-ce00-000000000000/. Se houver https://URLs de seu local que estão ausentes, precisaremos adicionar esses registros específicos a essa lista. 
   
-3. Se você não vir seus registros internos e externos de MAPI/HTTP, EWS, ActiveSync, OAB e descoberta automática nesta lista, você deve adicioná-los usando o comando a seguir (as URLs de`mail.corp.contoso.com`exemplo são '`owa.contoso.com`' e ' ', mas você **substituirá os URLs de exemplo por seu próprio** ) : <br/>
+3. Se você não vir seus registros internos e externos de MAPI/HTTP, EWS, ActiveSync, OAB e descoberta automática nesta lista, você deve adicioná-los usando o comando a seguir (as URLs de`mail.corp.contoso.com`exemplo são '`owa.contoso.com`' e ' ', mas você **substituirá as URLs de exemplo por suas próprias** ): <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -151,7 +153,7 @@ Depois de habilitar a HMA, o próximo login de um cliente usará o novo fluxo de
   
 Você também deve manter pressionada a tecla CTRL enquanto clica com o botão direito do mouse no ícone do cliente Outlook (também na bandeja de notificações do Windows) e clique em "status da conexão". Procure o endereço SMTP do cliente em relação a um tipo "Authn" de "portador\*", que representa o token de portador usado no OAuth.
   
- **Observação** Precisa configurar o Skype for Business com a HMA? Você precisará de dois artigos: um que [](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)lista as topologias suportadas e uma que mostra [como fazer a configuração](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ **Observação** Precisa configurar o Skype for Business com a HMA? Você precisará de dois artigos: um que lista as [topologias suportadas](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)e uma que mostra [como fazer a configuração](configure-skype-for-business-for-hybrid-modern-authentication.md).
   
 
 ## <a name="related-topics"></a>Tópicos relacionados

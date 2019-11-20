@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar suas propriedades de conta de usuário do Skype for Business online com políticas.'
-ms.openlocfilehash: 51e402922b2a357ef29e9b2628eb25fc252e5437
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1d4f6bc52932bb7315fdd769788b5b3108423424
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031726"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748521"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gerenciar Skype para políticas Business Online com o Office 365 PowerShell
 
- **Resumo:** Use o Office 365 PowerShell para gerenciar suas propriedades de conta de usuário do Skype for Business online com políticas.
-  
 Para gerenciar muitas propriedades da conta de usuário do Skype for Business Online, você deve especificá-las como propriedades de políticas com o Office 365 PowerShell.
   
 ## <a name="before-you-begin"></a>Antes de começar
@@ -33,7 +31,7 @@ Use estas instruções para configurar a execução dos comandos (pule as etapas
     
 2. Abra um prompt de comando do Windows PowerShell e execute os seguintes comandos: 
     
-```
+```powershell
 Import-Module SkypeOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -46,13 +44,13 @@ Quando solicitado, insira o nome da conta e a senha do administrador do Skype fo
 
 Muitas propriedades da conta de usuário do Skype for Business online são configuradas usando políticas. As políticas são apenas coleções de configurações que podem ser aplicadas a um ou mais usuários. Para ver como a política foi configurada, você pode executar este comando de exemplo para a política FederationAndPICDefault:
   
-```
+```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
 Por sua vez, você deve obter algo semelhante a este:
   
-```
+```powershell
 Identity                          : Tag:FederationAndPICDefault
 Description                       :
 EnableFederationAccess            : True
@@ -78,7 +76,7 @@ Se você quiser saber se alguém pode se comunicar com os usuários de fora da o
     
 Por exemplo, você pode fazer isso usando este comando:
   
-```
+```powershell
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
@@ -98,14 +96,14 @@ Para gerenciar as políticas do Skype for Business online com o PowerShell, conf
   
 Por exemplo, para examinar todas as políticas de voz disponíveis para uso, execute este comando:
   
-```
+```powershell
 Get-CsVoicePolicy
 ```
 
 > [!NOTE]
 > Isso retorna uma lista de todas as políticas de voz disponíveis para você. No entanto, tenha em mente que nem todas as políticas podem ser atribuídas a todos os usuários. Isso se deve a várias restrições envolvendo o licenciamento e localização geográfica. (O que é chamado de "[local de uso](https://msdn.microsoft.com/library/azure/dn194136.aspx).") Se você quiser saber as políticas de acesso externo e as políticas de conferência que podem ser atribuídas a um usuário específico, use comandos semelhantes a estes: 
 
-```
+```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
 Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 ```
@@ -116,13 +114,11 @@ Em alguns casos, as propriedades das políticas não são usadas com o Office 36
   
 Com o Skype for Business Online, os usuários devem ser gerenciados por uma política de algum tipo. Se uma propriedade válida relacionada à política estiver em branco, isso significa que o usuário em questão está sendo gerenciado por uma política global, que é uma política aplicada automaticamente a um usuário, a menos que seja especificamente atribuída uma política por usuário. Como não vemos uma política de cliente listada para uma conta de usuário, ela é gerenciada pela política global. Você pode determinar a política de cliente global com este comando:
   
-```
+```powershell
 Get-CsClientPolicy -Identity "Global"
 ```
 
 ## <a name="see-also"></a>Confira também
-
-#### 
 
 [Gerenciar o Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   

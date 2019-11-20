@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar as políticas do Skype for Business online, políticas por usuário e configurações da reunião.'
-ms.openlocfilehash: 48b10038e396953469f4b0732103671cbc6b0d75
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ac3933b3a208f41db5c569de3455ce1244133927
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030936"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747561"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gerenciar o Skype for Business Online com o Office 365 PowerShell
 
- **Resumo:** use o Office 365 PowerShell para gerenciar as políticas do Skype for Business Online, políticas por usuário e configurações de reunião.
-  
 Uma das principais tarefas de qualquer administrador do Skype for Business online é gerenciar políticas. Embora você possa executar algumas dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis no Office 365 PowerShell. 
 
 ## <a name="before-you-start"></a>Antes de começar
@@ -34,7 +32,7 @@ Baixe e instale o [módulo do conector do Skype for Business online](https://www
 
 1. Abra um prompt de comando do Windows PowerShell e execute os seguintes comandos: 
     
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $userCredential = Get-Credential
   $sfbSession = New-CsOnlineSession -Credential $userCredential
@@ -48,7 +46,7 @@ Baixe e instale o [módulo do conector do Skype for Business online](https://www
 
 1. Abra um prompt de comando do Windows PowerShell e execute os seguintes comandos:
 
-  ```
+  ```powershell
   Import-Module SkypeOnlineConnector
   $sfbSession = New-CsOnlineSession
   Import-PSSession $sfbSession

@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: Em 11 de abril de 2017, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para o Office 365 ou o Exchange 2016, agora é hora de iniciar o planejamento.
-ms.openlocfilehash: df870d05c6f5139c4274c1654cd3b4304103a98e
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028845"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746224"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2007
+
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Em **11 de abril de 2017**, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para o Office 365 ou o Exchange 2016, agora é hora de iniciar o planejamento. 
   
@@ -187,7 +189,7 @@ Se uma migração híbrida completa for adequada para você, dê uma olhada nos 
   
 - [Assistente de implantação do Exchange](https://aka.ms/exdeploy)
     
-- [Implantações Híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
+- [Implantações híbridas do Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx)
     
 - [Assistente de Configuração Híbrida](https://technet.microsoft.com/library/hh529921%28v=exchg.150%29.aspx)
     

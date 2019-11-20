@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365.
-ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435405"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745734"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Rota Expressa do Azure para Office 365
 
-*Este artigo aplica-se ao Office 365 Enterprise e ao Microsoft 365 Enterprise*
+*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365. Os serviços de infraestrutura e plataforma em execução no Azure geralmente se beneficiam com a abordagem de desempenho e arquitetura da rede. Recomendamos o ExpressRoute para o Azure nesses casos. Software como uma oferta de serviço como o Office 365 e o Dynamics 365 foram criados para serem acessados com segurança e confiança através da Internet. Você pode ler sobre o desempenho e a segurança da Internet e quando você pode considerar o Azure ExpressRoute para Office 365 no artigo [avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md).
 
@@ -70,7 +70,7 @@ Os serviços que não estão incluídos no ExpressRoute para Office 365 são dow
 
 ## <a name="implementing-expressroute-for-office-365"></a>Como implementar o ExpressRoute para o Office 365
 
-A implementação do ExpressRoute requer o envolvimento de proprietários de aplicativos e de rede e exige um planejamento cuidadoso para determinar a nova [arquitetura de roteamento de rede](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), os requisitos de largura de banda, onde a segurança será implementada, alta disponibilidade e assim por diante. Para implementar o ExpressRoute, você precisará:
+A implementação do ExpressRoute requer o envolvimento dos proprietários de rede e de aplicativos e requer um planejamento cuidadoso para determinar a nova [arquitetura de roteamento de rede](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), os requisitos de largura de banda, onde a segurança será implementada, alta disponibilidade e assim por diante. Para implementar o ExpressRoute, você precisará:
 
 1. Entenda totalmente que a necessidade do ExpressRoute atende ao seu planejamento de conectividade do Office 365. Entenda quais aplicativos usarão a Internet ou o ExpressRoute e planeje totalmente a capacidade de rede, a segurança e as necessidades de alta disponibilidade no contexto de uso da Internet e do tráfego do ExpressRoute para Office 365.
 
