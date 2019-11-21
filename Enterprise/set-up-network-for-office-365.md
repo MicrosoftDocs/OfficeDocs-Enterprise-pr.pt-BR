@@ -3,7 +3,7 @@ title: Configure sua rede para o Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Resumo: Confira estes artigos para entender a rede do Office 365.'
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722680"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747410"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Configure sua rede para o Office 365
 
-**Resumo: **Confira estes artigos para entender a rede do Office 365.
-  
-Uma parte importante da sua integração do Office 365 é garantir que suas conexões de rede e Internet sejam configuradas para o melhor acesso. Configurar sua rede local para acessar uma nuvem globalmente distribuída tipo Software Como Serviço (SaaS) é diferente de uma rede tradicional que é otimizada para o tráfego para centros de dados locais. 
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
-Use estes artigos para entender as diferenças importantes e para modificar os dispositivos de borda, computadores clientes e a rede local para oferecer o melhor desempenho ao usuário.
+Uma parte importante da integração do Office 365 é garantir que suas conexões de rede e Internet estejam configuradas para acesso otimizado. A configuração da sua rede local para acessar uma nuvem SaaS (Software como Serviço) distribuída globalmente é diferente de uma rede tradicional que é otimizada para o tráfego de datacenters locais e uma conexão de Internet central. 
+
+Use estes artigos para entender as principais diferenças e modificar seus dispositivos de borda, computadores clientes e rede local para obter o melhor desempenho para seus usuários locais.
 
 ## <a name="how-office-365-networking-works"></a>Como funciona a rede do Office 365
 
@@ -50,7 +50,7 @@ Se você é um fornecedor de equipamentos de rede, junte-se ao [Programa de Parc
 
 Pontos de extremidade são o conjunto de endereços IP de destino, nomes de domínio do DNS e URLs do tráfego do Office 365 na Internet. 
 
-Para otimizar o desempenho dos serviços do Office 365 baseados em nuvem, estes pontos de extremidade precisam de um tratamento especial por parte de seus navegadores clientes e dos dispositivos em sua rede de borda. Estes dispositivos incluem firewalls, dispositivos SSL Break and Inspect e de inspeção de pacotes e sistemas de prevenção de perda de dados.
+Para otimizar o desempenho dos serviços baseados em nuvem do Office 365, alguns pontos de extremidade precisam de tratamento especial pelos navegadores clientes e pelos dispositivos da rede de borda. Esses dispositivos incluem firewalls, SSL Break and Inspect e dispositivos de inspeção de pacotes e sistemas de prevenção de perda de dados.
 
 Confira [Gerenciar pontos de extremidade do Office 365](managing-office-365-endpoints.md) para saber mais.
 
