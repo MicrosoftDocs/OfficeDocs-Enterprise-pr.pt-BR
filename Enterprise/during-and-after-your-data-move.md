@@ -1,9 +1,9 @@
 ---
 title: Durante e após a migração dos dados
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626131"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756570"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -91,7 +91,7 @@ Depois de concluir a movimentação de seus dados do SharePoint Online, você po
     
 - Estamos removendo as cópias de trans-codificadas do datacenter anterior e as transcodificando novamente no novo datacenter.
     
-### <a name="search"></a>Pesquisar
+### <a name="search"></a>Pesquisa
 
 Durante a transferência dos dados do SharePoint Online, migramos o índice de pesquisa e as configurações de pesquisa para um novo local. Até que tenhamos **concluído** a movimentação de seus dados do SharePoint Online, continuamos a atender seus usuários do índice no local original. No novo local, a pesquisa inicia automaticamente o rastreamento do conteúdo após a conclusão da movimentação de seus dados do SharePoint Online. A partir deste ponto e em diante, atendemos aos seus usuários a partir do índice migrado. Alterações no conteúdo que ocorreram após a migração não estão incluídas no índice migrado até que o rastreamento as escolha. A maioria dos clientes não percebe que os resultados estão menos atualizados logo após a conclusão da movimentação de seus dados do SharePoint Online, mas alguns clientes podem ter uma atualização reduzida nas primeiras 24-48 horas 
   
@@ -123,10 +123,6 @@ Todos os usuários serão desconectados do software cliente Skype for Business d
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>O Skype for Business se move que envolve um provedor de audioconferência de terceiros
 Serviços complementares de provedor de conferência de áudio de terceiros para o Skype for Business não estão disponíveis para usuários hospedados em novos data centers específicos geográficos.  Os clientes existentes que usam um serviço de provedor de audioconferência de terceiros não devem solicitar uma movimentação para um novo data center específico em geografia.  Novos clientes implantados nos novos data centers específicos de Geografia precisarão solicitar uma mudança para um centro de dados regional para usar um provedor de audioconferência de terceiros.
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Dados de outros serviços, incluindo o Teams, o Yammer e o Power BI
-
-Só movemos dados do cliente para o Exchange Online, o SharePoint Online e o Skype for Business. Não movemos dados para outros serviços. Não há alteração ou impacto para você como cliente ou usuário desses outros serviços. O processo de movimentação não influencia eles e o local de seus dados do cliente permanece inalterado.
   
 ## <a name="related-topics"></a>Tópicos relacionados 
  

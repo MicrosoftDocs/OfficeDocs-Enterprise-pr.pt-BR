@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Resumo: descreve os certificados SSL necessários para o Exchange local e híbrido, SSO usando AD FS, serviços do Exchange Online e serviços Web do Exchange.'
-ms.openlocfilehash: 92425793d616f642fb78331a965b1a4a2dff071f
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747683"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756610"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Plano para certificados SSL de terceiros para o Office 365
 
 *Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
- **Resumo:** Descreve os certificados SSL necessários para o Exchange local e híbrido, SSO usando AD FS, serviços do Exchange Online e serviços Web do Exchange. 
-  
 Para criptografar comunicações entre seus clientes e o ambiente do Office 365, os certificados SSL (Secure Socket Layer) de terceiros devem ser instalados nos seus servidores de infraestrutura.
 
 ||

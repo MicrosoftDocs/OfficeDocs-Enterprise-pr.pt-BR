@@ -1,9 +1,9 @@
 ---
 title: Perguntas frequentes gerais sobre migração de dados
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028885"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756580"
 ---
 # <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
@@ -29,7 +29,7 @@ Os clientes comerciais existentes do Office 365 que selecionaram um país qualif
 
 ## <a name="how-do-we-define-core-customer-data"></a>Como definir os dados principais do cliente?
  
-Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos [termos do Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkID=249048): 
+Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos [termos do Microsoft Online Services](https://aka.ms/ost): 
 - Conteúdo de caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email)
 - Conteúdo do site do SharePoint Online e os arquivos armazenados nesse site
 - Arquivos carregados no OneDrive for Business 
