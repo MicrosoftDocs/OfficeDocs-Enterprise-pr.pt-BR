@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Resumo: conheça os principais conceitos de arquitetura de nuvens relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Office ProPlus.'
-ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702252"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756600"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
@@ -106,8 +106,8 @@ O que os arquitetos de TI precisam saber sobre redes para plataformas e serviço
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Este modelo contém: <ul><li> Expandindo sua rede para conectividade de nuvem </li><li> Elementos comuns de conectividade de nuvem da Microsoft </li><li> ExpressRoute para conectividade de nuvem da Microsoft </li><li> Criação de rede para o Microsoft IaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
-   
+|[![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | Este modelo contém: <ul><li> Expandindo sua rede para conectividade de nuvem </li><li> Elementos comuns de conectividade de nuvem da Microsoft </li><li> ExpressRoute para conectividade de nuvem da Microsoft </li><li> Criação de rede para o Microsoft IaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
+
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
 
@@ -115,7 +115,7 @@ O que os arquitetos de TI precisam saber sobre nuvem híbrida dos serviços e pl
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Mais idiomas](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Este modelo contém: <ul><li> Ofertas de nuvem da Microsoft (SaaS, Azure PaaS e Azure IaaS) e seus elementos em comum </li><li> Arquitetura de nuvem híbrida para as ofertas de nuvem da Microsoft </li><li> Cenários de nuvem híbrida para o Microsoft SaaS (Office 365), Azure PaaS e Azure IaaS </li></ul><br/>|
+|[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Este modelo contém: <ul><li> Ofertas de nuvem da Microsoft (SaaS, Azure PaaS e Azure IaaS) e seus elementos em comum </li><li> Arquitetura de nuvem híbrida para as ofertas de nuvem da Microsoft </li><li> Cenários de nuvem híbrida para o Microsoft SaaS (Office 365), Azure PaaS e Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comuns e recursos da Microsoft que protegem sua organização
