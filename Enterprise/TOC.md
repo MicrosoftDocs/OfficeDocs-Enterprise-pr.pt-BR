@@ -158,11 +158,11 @@
 #### [Conectar uma rede local a uma rede virtual do Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Implantar um servidor de sincronização de diretório no IaaS do Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [Autenticação federada de alta disponibilidade Fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [Autenticação federada de alta disponibilidade Fase 2: configurar controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [Autenticação federada de alta disponibilidade Fase 3: configurar servidores de AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [Autenticação federada de alta disponibilidade Fase 4: configurar proxies de aplicativos Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [Autenticação federada de alta disponibilidade Fase 5: configurar a autenticação federada para o Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [Fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [Fase 2: configurar os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [Fase 3: configurar servidores do AD FS](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [Fase 4: configurar proxies de aplicativos Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [Fase 5: configurar a autenticação federada](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Gerenciar o Office 365
 
