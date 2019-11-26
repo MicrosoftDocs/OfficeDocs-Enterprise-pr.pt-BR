@@ -3,7 +3,7 @@ title: Autenticação federada de alta disponibilidade fase 4 configurar proxies
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,30 +12,31 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumo: Configure os servidores proxy de aplicativo Web para a autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: 276d28835cbedf7d2eb87b80304fbb0e4e9de2c3
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0ab2526209bc9c59fdce839e0f50451b23d78b04
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793313"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257490"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Autenticação federada de alta disponibilidade Fase 4: configurar proxies de aplicativos Web
 
- **Resumo:** Configure os servidores proxy de aplicativo Web para a autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.
-  
 Nessa fase de implantação da alta disponibilidade para a autenticação federada do Office 365 nos serviços de infraestrutura do Azure, você cria um balanceador de carga interno e dois servidores AD FS.
   
-Você deve concluir essa fase antes de passar para [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Consulte [implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas as fases.
+Você deve concluir essa fase antes de passar para a [fase 5: configurar a autenticação federada para o Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Consulte [implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas as fases.
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Criar o balanceador de carga voltado para a Internet no Azure
 
 Você deve criar um balanceador de carga voltado para a Internet para que o Azure distribua o tráfego de autenticação de cliente de entrada proveniente da Internet uniformemente entre os dois servidores proxy de aplicativos Web.
   
 > [!NOTE]
-> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [introdução ao PowerShell do Azure](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Quando tiver fornecido os valores de localização e grupo de recursos, execute o bloco resultante no prompt de comando do Azure PowerShell ou no ISE do PowerShell.
   
+> [!TIP]
+> Para gerar blocos de comando prontos para executar do PowerShell com base em suas configurações personalizadas, use esta [pasta de trabalho de configuração do Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 ```powershell
 # Set up key variables
 $locName="<your Azure location>"
@@ -91,7 +92,7 @@ Observe que o seguinte comando do Azure PowerShell define valores de uso das tab
     
 - Tabela A, para seus conjuntos de disponibilidade
     
-Lembre-se de que você definiu a tabela M na [autenticação federada de alta disponibilidade fase 2: configurar os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e as tabelas R, V, S, I e A na [autenticação federada de alta disponibilidade fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Lembre-se de que você definiu a tabela M na [fase 2: configurar controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e tabelas R, V, S, I e A na [fase 1: configurar o Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 Quando tiver fornecido todos os valores apropriados, execute o bloco resultante no prompt de comando do Azure PowerShell ou no ISE do PowerShell.
   
@@ -157,7 +158,7 @@ Veja a seguir a configuração resultante da conclusão bem-sucedida dessa fase,
   
 ## <a name="next-step"></a>Próxima etapa
 
-Use o [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para continuar configurando essa carga de trabalho.
+[Fase 5: configurar a autenticação federada para o Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) para continuar Configurando essa carga de trabalho.
   
 ## <a name="see-also"></a>Confira também
 

@@ -3,7 +3,7 @@ title: Autenticação federada de alta disponibilidade fase 1 configurar o Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,18 +12,16 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumo: Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.'
-ms.openlocfilehash: b6c872e46f39391e5e80caa399140adb044e773d
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: ca53c4584b21aab03e9383ac4eef1f321c3f4939
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793293"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257576"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Autenticação federada de alta disponibilidade Fase 1: configurar o Azure
 
- **Resumo:** Configurar a infraestrutura do Microsoft Azure para hospedar a autenticação federada de alta disponibilidade do Office 365.
-  
-Nesta fase, você cria os grupos de recursos, a rede virtual (VNet) e os conjuntos de disponibilidade no Azure que hospedarão as máquinas virtuais nas etapas 2, 3 e 4. Você deve concluir essa fase antes de passar para a [autenticação federada de alta disponibilidade fase 2: configurar os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte [implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas as fases.
+Nesta fase, você cria os grupos de recursos, a rede virtual (VNet) e os conjuntos de disponibilidade no Azure que hospedarão as máquinas virtuais nas etapas 2, 3 e 4. Você deve concluir essa fase antes de passar para [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte [implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas as fases.
   
 O Azure deve ser provisionado com estes componentes básicos:
   
@@ -63,7 +61,7 @@ Trabalhe com seu departamento de TI para determinar esses espaços de endereço 
   
 |**Item**|**Nome da sub-rede**|**Espaço de endereço da sub-rede**|**Objetivo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio dos serviços de domínio do Active Directory (AD DS) e pelas máquinas virtuais (VMs) do servidor DirSync.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelo controlador de domínio dos serviços de domínio do Active Directory (AD DS) e máquinas virtuais (VMs) do servidor de sincronização de diretórios.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelos VMs do AD FS.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelas VMs de proxy do aplicativo Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |A sub-rede usada pelas VMs do gateway do Azure.  <br/> |
@@ -76,7 +74,7 @@ Em seguida, preencha a Tabela I para os endereços IP estáticos atribuídos a m
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Endereço IP estático do primeiro controlador de domínio  <br/> |O quarto endereço IP possível para o espaço de endereço da sub-rede definido no Item 1 da Tabela S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Endereço IP estático do segundo controlador de domínio  <br/> |O quinto endereço IP possível para o espaço de endereço da sub-rede definido no Item 1 da Tabela S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Endereço IP estático do servidor DirSync  <br/> |O sexto endereço IP possível para o espaço de endereço da sub-rede definido no Item 1 da Tabela S.   <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Endereço IP estático do servidor de sincronização de diretório  <br/> |O sexto endereço IP possível para o espaço de endereço da sub-rede definido no Item 1 da Tabela S.   <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |Endereço IP estático do balanceador de carga internos para os servidores do AD FS  <br/> |O quarto endereço IP possível para o espaço de endereço da sub-rede definido no Item 2 da Tabela S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |5.  <br/> |Endereço IP estático do primeiro servidor do AD FS  <br/> |O quinto endereço IP possível para o espaço de endereço da sub-rede definido no Item 2 da Tabela S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |6.  <br/> |Endereço IP estático do segundo servidor do AD FS  <br/> |O sexto endereço IP possível para o espaço de endereço da sub-rede definido no Item 2 da Tabela S.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -109,14 +107,17 @@ Para o conjunto de espaços de endereço da rede local, preencha a Tabela L. Obs
 Agora, vamos começar a criar a infraestrutura do Azure para hospedar sua autenticação federada para o Office 365.
   
 > [!NOTE]
-> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> [!OBSERVAçãO] O comando a seguir define o uso da versão mais recente do Azure PowerShell. Confira [introdução ao PowerShell do Azure](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
 Primeiro, inicie um prompt do Azure PowerShell e faça logon na sua conta.
   
 ```powershell
 Connect-AzAccount
 ```
-  
+
+> [!TIP]
+> Para gerar blocos de comando prontos para executar do PowerShell com base em suas configurações personalizadas, use esta [pasta de trabalho de configuração do Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+
 Para obter o nome de sua assinatura, use este comando.
   
 ```powershell
@@ -303,7 +304,7 @@ Esta é a configuração resultante da conclusão bem-sucedida dessa fase.
   
 ## <a name="next-step"></a>Próxima etapa
 
-Use o [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar com a configuração dessa carga de trabalho.
+Use a [fase 2: configurar os controladores de domínio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar com a configuração dessa carga de trabalho.
   
 ## <a name="see-also"></a>Confira também
 

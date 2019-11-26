@@ -3,7 +3,7 @@ title: Autenticação federada de alta disponibilidade fase 5 configurar a auten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Resumo: Configure o Azure AD Connect para sua autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: dcd66ee6a650081e4ad27f9023fe98082a7ccd43
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067317"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254550"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Autenticação federada de alta disponibilidade Fase 5: configurar a autenticação federada para o Office 365
 
- **Resumo:** Configure o Azure AD Connect para a autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.
- 
 Nesta fase final da implantação da autenticação federada de alta disponibilidade para o Office 365 nos serviços de infraestrutura do Azure, você obtém e instala um certificado emitido por uma autoridade de certificação pública, verifica sua configuração e instala e executa o Azure AD Conecte-se ao servidor de sincronização de diretório. O Azure AD Connect configura sua assinatura do Office 365 e seus serviços de Federação do Active Directory (AD FS) e servidores de proxy de aplicativo Web para autenticação federada.
   
 Consulte [implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) para todas as fases.
@@ -105,7 +103,7 @@ A ferramenta Azure AD Connect configura os servidores do AD FS, os servidores de
     
 17. Quando solicitado, digite a senha do certificado e clique em **OK**.
     
-18. Verifique se o **nome** do requerente e o **nome do serviço de Federação** estão definidos para o FQDN do serviço de Federação e clique em **Avançar**.
+18. Verifique se o **nome do requerente** e o **nome do serviço de Federação** estão definidos para o FQDN do serviço de Federação e clique em **Avançar**.
     
 19. Na página **servidores do AD FS** , digite o nome do seu primeiro servidor AD FS (tabela M-item 4-coluna nome da máquina virtual) e clique em **Adicionar**.
     

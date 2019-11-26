@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Saiba como atribuir licenças a contas de usuário e desabilitar planos de serviço específicos ao mesmo tempo usando o Office 365 PowerShell.
-ms.openlocfilehash: 16e24a61aea1298b2c24a251d61c414c355dead7
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747653"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257390"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Desabilitar o acesso aos serviços na atribuição de licenças de usuário
 
@@ -69,6 +69,10 @@ Em seguida, execute este comando para ver suas assinaturas atuais:
 Get-MsolAccountSku
 ```
 
+>[!Note]
+>O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>
+
 Na exibição do `Get-MsolAccountSku` comando:
   
 - **AccountSkuId** é uma assinatura da sua organização na \<OrganizationName>:\<assinatura> formato. O \<organizationname> é o valor que você forneceu quando você registrou no Office 365 e é exclusivo para sua organização. O \<valor de> da assinatura é para uma assinatura específica. Por exemplo, para litwareinc: ENTERPRISEPACK, o nome da organização é litwareinc e o nome da assinatura é ENTERPRISEPACK (Office 365 Enterprise E3).
@@ -101,7 +105,7 @@ A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigá
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
-| `SHAREPOINTWAC` <br/> |Escritório   <br/> |
+| `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plano 2 do Exchange Online  <br/> |
    

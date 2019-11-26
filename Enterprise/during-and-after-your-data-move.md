@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756570"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250497"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -54,14 +54,6 @@ Alguns usuários abrem uma pasta de email compartilhada de outra caixa de correi
 |:-----|:-----|
 |O usuário tem permissão de pasta de caixa de correio para outra caixa de correio  <br/> |Potencialmente limitado.  <br/> Se o usuário A e A caixa de correio B não estiverem na mesma Geografia durante a movimentação do locatário, o usuário A não poderá abrir a pasta da caixa de correio B no Outlook Web Access se o usuário apenas tiver permissão para uma pasta específica na caixa de correio B.  <br/> Para adicionar uma pasta compartilhada, clique com o botão direito do mouse no nome do usuário no painel de navegação esquerdo e selecione **Adicionar pasta compartilhada**.  <br/> |
 |Usuário com permissão de caixa de correio completa para outra caixa de correio  <br/> |Totalmente suportado.  <br/> Se o usuário A tem permissão de "acesso total" para a caixa de correio B, o usuário A pode clicar na pasta compartilhada no painel de navegação à esquerda no Outlook Web Access para abrir uma janela mostrando a caixa de correio B.  Um usuário pode abrir uma caixa de correio compartilhada usando o Outlook Web Access durante a movimentação sem qualquer impacto adverso. A limitação só se aplica ao compartilhamento no nível de pasta em uma caixa de correio.           |
-   
-### <a name="public-folders"></a>Pastas públicas
-
-Se a caixa de correio de pasta pública estiver temporariamente em uma geografia de datacenter diferente do usuário que está tentando acessá-la, o usuário não poderá acessar a caixa de correio de pasta pública. 
-  
-### <a name="online-archives"></a>Arquivos mortos online
-
-Enquanto a movimentação estiver em andamento, os usuários que se conectam via Outlook para Mac talvez não consigam se conectar à sua caixa de correio de arquivo morto online. É suportado o acesso à caixa de correio de arquivo morto para usuários que se conectam ao Outlook e Outlook Web Access.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 

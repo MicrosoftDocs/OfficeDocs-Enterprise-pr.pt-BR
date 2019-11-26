@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Saiba como usar o Office 365 PowerShell para criar contas de usuários no Office 365.
-ms.openlocfilehash: 9d4aee35a1fc78753087b6eb6695e96966794000
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 618459cbf226a9a7cef0e03c7126d791f2ca8bc8
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707048"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257410"
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Criar contas de usuários usando o Office 365 PowerShell
 
@@ -70,6 +70,10 @@ Para criar uma conta individual, use a seguinte sintaxe:
 ```powershell
 New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last name> -UserPrincipalName <sign-in name> -UsageLocation <ISO 3166-1 alpha-2 country code> -LicenseAssignment <licensing plan name> [-Password <Password>]
 ```
+
+>[!Note]
+>O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>
 
 Para listar os nomes do plano de licenciamento disponível, use este comando:
 

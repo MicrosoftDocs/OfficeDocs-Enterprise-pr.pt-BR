@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Resumo: Use o Windows PowerShell para o Office 365 para gerenciar as locações do cliente.'
-ms.openlocfilehash: b38c1862a0cf2db4a751d1690686baeead8ae9ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: a45fb7b888d7e591f6765150525f0b50c72ddc5c
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781851"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257586"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Gerenciar locatários do Office 365 com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
  **Resumo:** use o Windows PowerShell para o Office 365 para gerenciar os locatários do cliente.
   
-O Windows PowerShell permite que os parceiros de distribuição e provedor de soluções em nuvem (CSP) administrem e reportem facilmente as configurações de locação do cliente que não estão disponíveis no centro de administração do Microsoft 365. Observe que as permissões "Administrar em Nome de" (AOBO) são necessárias para a conta de administrador do parceiro para se conectar às locações dos clientes.
+O Windows PowerShell permite que os parceiros de distribuição e provedor de soluções em nuvem (CSP) administrem e reportem facilmente as configurações de locação do cliente que não estão disponíveis no centro de administração do Microsoft 365. Observe que as permissões de administrar em nome de (AOBO) são necessárias para que a conta de administrador do parceiro se conecte ao seu cliente locações.
   
 Os Parceiros com Permissão de Acesso Delegada (DAP) são parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). Muitas vezes, eles são provedores de rede ou de telecomunicações para outras empresas. Eles reúnem assinaturas do Office 365 em suas ofertas de serviço aos seus clientes. Quando eles vendem uma assinatura do Office 365, recebem automaticamente permissões de Administrar Em Nome de (AOBO) para as locações de cliente para que possam administrar e relatar todas as suas locações de cliente.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
@@ -47,6 +47,10 @@ Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
 Uma lista de todos os locatários do cliente será exibida pela **TenantId**.
+
+>[!Note]
+>O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>
   
 ### <a name="get-a-tenant-id-by-using-the-domain-name"></a>Obter uma ID de Locatário usando o nome de domínio
 

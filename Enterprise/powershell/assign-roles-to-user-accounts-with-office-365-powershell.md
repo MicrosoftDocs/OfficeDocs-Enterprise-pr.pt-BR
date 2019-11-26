@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Resumo: Use o Office 365 PowerShell para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 29c23e88d9b7bc2fc0030d467336e38ed413a4ab
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707028"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257440"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
 
@@ -94,6 +94,10 @@ Se você estiver acostumado a trabalhar com os nomes de exibição das contas de
   ```
 
     Este comando lista o nome de exibição de suas contas de usuário, classificados pelo nome de exibição, uma tela por vez. Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** . Veja um exemplo:
+
+   >[!Note]
+   >O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+   >
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More

@@ -15,12 +15,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Saiba como usar o Office 365 PowerShell para excluir contas de usuários do Office 365.
-ms.openlocfilehash: b7c30ec422475a4cf11b28249e8a20d64a3c90a4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e62c06981a861580804dde852ad3da7bd729fdbe
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746424"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257642"
 ---
 # <a name="delete-user-accounts-with-office-365-powershell"></a>Deletar contas de usuários usando o Office 365 PowerShell
 
@@ -35,6 +35,10 @@ Após a conexão, use a seguinte sintaxe para remover uma conta de usuário indi
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
+
+>[!Note]
+>O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>
 
 Este exemplo remove a conta de usuário ricardoc@litwareinc.com.
   
