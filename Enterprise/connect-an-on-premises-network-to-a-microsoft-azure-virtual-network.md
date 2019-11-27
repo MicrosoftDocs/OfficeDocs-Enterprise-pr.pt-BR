@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumo: Aprenda a configurar uma rede virtual Azure entre locais para cargas de trabalho de servidor do Office com uma conexão VPN site a site.'
-ms.openlocfilehash: 3506b1b4c6a88567bf216957f5e083c9e99156ba
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 34d7b7310fd0828732e288f090314b8689953b50
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793331"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254590"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar uma rede local a uma rede virtual do Microsoft Azure
 
@@ -207,7 +207,7 @@ Esta é a configuração resultante.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Fase 2: criar a rede virtual entre locais no Azure
 <a name="Phase2"></a>
 
-Primeiro, abra um prompt do Azure PowerShell. Se você não instalou o Azure PowerShell, confira [Introdução aos cmdlets do Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
+Primeiro, abra um prompt do Azure PowerShell. Se o Azure PowerShell ainda não estiver instalado, confira [Introdução ao Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
 
  
 Em seguida, entre com sua conta do Azure usando este comando.

@@ -3,7 +3,7 @@ title: Conectar-se ao PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/30/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,17 +15,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas do centro de administração a partir da linha de comando.'
-ms.openlocfilehash: e80af8b4174a4d3ac423e887b7f3c2fd9ee73375
-ms.sourcegitcommit: 21901808f112dd1d8d01617c4be37911efc379f8
+ms.openlocfilehash: 3e31bfb68614ceb7c10f4b45e141928169121006
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38707038"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257400"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
- **Resumo:** conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas de administração da linha de comando.
-  
 O Office 365 PowerShell permite gerenciar as configurações do Office 365 da linha de comando. Conectar-se ao Office 365 PowerShell é um processo simples em que você instala o software necessário e se conecta à sua organização do Office 365. 
 
 Existem duas versões do módulo do PowerShell usadas para se conectar ao Office 365 e administrar contas de usuários, grupos e licenças:
@@ -105,6 +103,10 @@ Depois de se conectar, você poderá usar os novos cmdlets do [Azure Active Dire
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Conecte com o Módulo Microsoft Azure Active Directory para Windows PowerShell
 
 Os comandos no Módulo Microsoft Azure Active Directory para Windows PowerShell têm **Msol** no nome do cmdlet.
+
+>[!Note]
+>O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
+>
     
 ### <a name="step-1-install-required-software"></a>Etapa 1: instalar o software necessário
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: c6c6aa02701d47c5818f66d2f0e499e7a85cb902
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: 3e10ed7752fc4763aef77c7cb683532cf0d5c2ce
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616144"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254580"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -77,7 +77,7 @@ Algumas imagens de máquinas virtuais têm versões de avaliação de aplicativo
   
 ### <a name="user-accounts"></a>Contas de usuário
 
-As contas de usuário para todas as ofertas de nuvem da Microsoft são armazenadas em um locatário do Azure Active Directory (Azure AD), que contém contas de usuários e grupos. Um locatário do Azure AD pode ser sincronizado com as contas de Serviços de Domínio Active Directory (AD DS) existentes usando o Azure AD Connect, um serviço baseado no Windows Server. Isso é conhecido como sincronização de diretório (DirSync).
+As contas de usuário para todas as ofertas de nuvem da Microsoft são armazenadas em um locatário do Azure Active Directory (Azure AD), que contém contas de usuários e grupos. Um locatário do Azure AD pode ser sincronizado com as contas de Serviços de Domínio Active Directory (AD DS) existentes usando o Azure AD Connect, um serviço baseado no Windows Server. Isso é conhecido como sincronização de diretório.
   
 A Figura 3 mostra um exemplo de várias assinaturas de uma organização usando um locatário comum do Azure AD que contém as contas da organização.
   
