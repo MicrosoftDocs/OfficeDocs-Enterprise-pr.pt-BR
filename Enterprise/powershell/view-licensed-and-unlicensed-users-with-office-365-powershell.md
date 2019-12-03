@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Explica como usar o Office 365 PowerShell para exibir as contas de usuários licenciados e não licenciados.
-ms.openlocfilehash: 3869be5a0f7527f516248e7e1ef0333707f49305
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f56a3fe7ece50c5f7fb345ccc0b843cacf185d28
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748409"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655853"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Exibir usuários licenciados e não licenciados com o Office 365 PowerShell
 
@@ -54,6 +54,10 @@ Para exibir a lista de todas as contas de usuário e seu status de licenciamento
 ```powershell
 Get-MsolUser -All
 ```
+
+>[!Note]
+>O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
+>
 
 Para visualizar a lista de todas as contas de usuários não licenciados em sua organização, execute o seguinte comando:
   
