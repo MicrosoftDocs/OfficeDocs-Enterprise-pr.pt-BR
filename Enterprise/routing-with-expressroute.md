@@ -3,7 +3,7 @@ title: Como rotear com o ExpressRoute para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para entender corretamente o tráfego de roteamento para o Office 365 usando o Azure ExpressRoute, você precisará de uma compreensão dos requisitos de roteamento principal do ExpressRoute e dos domínios de roteamento e circuitos do ExpressRoute. Eles formam os conceitos básicos para usar o ExpressRoute em que os clientes do Office 365 confiarão.
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031576"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813891"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Como rotear com o ExpressRoute para Office 365
+
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Para entender corretamente o tráfego de roteamento para o Office 365 usando o Azure ExpressRoute, você precisará de uma compreensão dos [requisitos de roteamento](https://azure.microsoft.com/documentation/articles/expressroute-routing/) principal do expressroute e dos [domínios de roteamento e circuitos do expressroute](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Eles formam os conceitos básicos para usar o ExpressRoute em que os clientes do Office 365 confiarão.
   
@@ -73,19 +75,18 @@ Para que a Microsoft encaminhe de volta à sua rede para esses fluxos de tráfeg
 
 2) Use pools de IP NAT separados por circuito ExpressRoute e separado para os seus circuitos de Internet.
 
-3) Lembre-se de que qualquer rota anunciada para a Microsoft atrai o tráfego de rede de qualquer servidor na rede da Microsoft, não apenas aqueles para os quais as rotas são anunciadas para a sua rede pelo ExpressRoute. Apenas anunciar rotas para servidores em que os cenários de roteamento são definidos e bem compreendidos pela equipe. Anunciar prefixos de rota de endereço IP separado em cada um dos vários circuitos do ExpressRoute da sua rede. 
+3) Lembre-se de que qualquer rota anunciada para a Microsoft atrai o tráfego de rede de qualquer servidor na rede da Microsoft, não apenas aqueles para os quais as rotas são anunciadas para a sua rede pelo ExpressRoute. Apenas anunciar rotas para servidores em que os cenários de roteamento são definidos e bem compreendidos pela equipe. Anunciar prefixos de rota de endereço IP separado em cada um dos vários circuitos do ExpressRoute da sua rede.
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Decidindo quais aplicativos e recursos direcionam o ExpressRoute
 
 Ao configurar um relacionamento de emparelhamento usando o domínio de roteamento de emparelhamento da Microsoft e são aprovados para o acesso apropriado, você poderá ver todos os serviços de PaaS e SaaS disponíveis no ExpressRoute. Os serviços do Office 365 projetados para o ExpressRoute podem ser gerenciados com [comunidades de BGP](https://aka.ms/bgpexpressroute365) ou [filtros de rota](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal).
   
 Outros aplicativos, como o vídeo do Office 365, são um aplicativo do Office 365; no entanto, o vídeo do Office 365 é composto por três componentes diferentes, o portal, o serviço de streaming e a rede de distribuição de conteúdo. O portal reside no SharePoint Online, o serviço de streaming reside nos serviços de mídia do Azure e a rede de distribuição de conteúdo reside dentro da CDN do Azure. A tabela a seguir descreve esses componentes.
-  
-| |
+
 |**Componente**|**Aplicativo subjacente**|**Incluído na Comunidade BGP do SharePoint Online?**|**Usar**|
 |:-----|:-----|:-----|:-----|
 |Portal de vídeo do Office 365  <br/> |SharePoint Online  <br/> |Sim  <br/> |Configuração, carregar  <br/> |
-|Serviço de streaming de vídeo do Office 365  <br/> |Serviços de mídia do Azure  <br/> |Não  <br/> |Serviço de streaming, usado no evento o vídeo não está disponível na CDN  <br/> |
+|Serviço de streaming de vídeo do Office 365  <br/> |Serviços de Mídia do Azure  <br/> |Não  <br/> |Serviço de streaming, usado no evento o vídeo não está disponível na CDN  <br/> |
 |Rede de distribuição de conteúdo de vídeo do Office 365  <br/> |CDN do Azure  <br/> |Não  <br/> |Fonte principal de download/streaming de vídeo. [Saiba mais sobre a rede de vídeo do Office 365](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e).  <br/> |
 
 Cada um dos recursos do Office 365 que estão disponíveis usando o emparelhamento da Microsoft estão listados no [artigo de pontos de extremidade do office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) por tipo de aplicativo e FQDN. O motivo para usar o FQDN nas tabelas é permitir que os clientes gerenciem o tráfego usando arquivos PAC ou outras configurações de proxy, consulte nosso guia para [gerenciar pontos de extremidade do Office 365](https://aka.ms/manageo365endpoints) para arquivos PAC de exemplo.
@@ -111,7 +112,7 @@ Esta tabela exibe os domínios curinga que são anunciados para circuitos da Int
 
 |**Domínio curinga anunciado somente para circuitos da Internet**|**Subfqdn anunciado para o ExpressRoute e circuitos da Internet**|
 |:-----|:-----|
-|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. office.com  <br/> |\*. outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. outlook.com  <br/> |\*. protection.outlook.com  <br/> \*. mail.protection.outlook.com  <br/> descoberta automática-\<locatário\>. Outlook.com  <br/> |

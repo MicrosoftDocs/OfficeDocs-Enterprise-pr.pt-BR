@@ -3,6 +3,7 @@ title: Identidades somente na nuvem do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como criar usuários e grupos quando sua assinatura do Office 365 está usando identidades somente na nuvem.
-ms.openlocfilehash: 7a2aaf7705378da3cbd91b415f07d10b6e039293
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34164606"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813409"
 ---
 # <a name="office-365-cloud-only-identities"></a>Identidades somente na nuvem do Office 365
+
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Com a identidade somente na nuvem, todos os usuários, grupos e contatos são armazenados no locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365. Estes são os componentes básicos da identidade somente na nuvem.
  
@@ -53,12 +56,12 @@ Você pode usar grupos no Azure AD para várias finalidades que simplificam o ge
 
 Você pode criar novos ***usuários*** com:
 
-- [O centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+- [O Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 Você pode criar novos ***grupos*** com:
 
-- [O centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
+- [O Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 

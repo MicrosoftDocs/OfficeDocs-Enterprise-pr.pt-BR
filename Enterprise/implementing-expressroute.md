@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: O ExpressRoute para Office 365 fornece um caminho de roteamento alternativo para vários serviços do Office 365 voltados para a Internet. A arquitetura do ExpressRoute para Office 365 baseia-se no anúncio de prefixos IP públicos de serviços do Office 365 que já estão acessíveis pela Internet para seus circuitos do ExpressRoute provisionados para a redistribuição subsequente desses prefixos IP em sua rede. Com o ExpressRoute, você habilita efetivamente vários caminhos de roteamento diferentes, através da Internet e do ExpressRoute, para muitos serviços do Office 365. Esse estado de roteamento na rede pode representar uma alteração significativa na forma como sua topologia de rede interna é projetada.
-ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722720"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813479"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Como implementar o ExpressRoute para o Office 365
+
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 O ExpressRoute para Office 365 fornece um caminho de roteamento alternativo para vários serviços do Office 365 voltados para a Internet. A arquitetura do ExpressRoute para Office 365 baseia-se no anúncio de prefixos IP públicos de serviços do Office 365 que já estão acessíveis pela Internet para seus circuitos do ExpressRoute provisionados para a redistribuição subsequente desses prefixos IP em sua rede. Com o ExpressRoute, você habilita efetivamente vários caminhos de roteamento diferentes, através da Internet e do ExpressRoute, para muitos serviços do Office 365. Esse estado de roteamento na rede pode representar uma alteração significativa na forma como sua topologia de rede interna é projetada.
   
@@ -43,7 +45,7 @@ Esperamos que os seguintes pré-requisitos sejam concluídos antes que este guia
 
 3. Você já leu e entendeu a [documentação do expressroute](https://azure.microsoft.com/documentation/services/expressroute/) , e sua rede interna é capaz de atender aos pré-requisitos do expressroute até o fim.
 
-4. Sua equipe leu todas as orientações e documentações públicas em [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert)e observados a série de treinamentos do [Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer) no canal 9 para obter uma compreensão dos detalhes técnicos críticos, incluindo:
+4. Sua equipe leu todas as orientações e documentações públicas em [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365), [https://aka.ms/ert](https://aka.ms/ert)e observados a série de [treinamentos do Azure ExpressRoute para Office 365](https://channel9.msdn.com/series/aer) no canal 9 para obter uma compreensão dos detalhes técnicos críticos, incluindo:
 
       - As dependências da Internet dos serviços SaaS.
 
@@ -89,7 +91,7 @@ Seu catálogo de tráfego de rede deve conter listagens de todas as conexões de
 
 - Fluxos de tráfego de rede de entrada são todos os cenários em que uma conexão é iniciada da nuvem da Microsoft para um host local. Essas conexões normalmente precisam passar por firewall e outra infraestrutura de segurança que a política de segurança do cliente requer para fluxos de origem externa.
 
-Leia a seção garantindo a **simetria do roteiro** do artigo de [Roteamento com o ExpressRoute para Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) para determinar quais serviços enviarão tráfego de entrada e procure a coluna marcada **para o Office 365** no [Office 365 ](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)artigo de referência de pontos de extremidade para determinar o restante das informações de conectividade.
+Leia a seção **garantindo a simetria do roteiro** do artigo de [Roteamento com o ExpressRoute para Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) para determinar quais serviços enviarão tráfego de entrada e procure a coluna marcada **para o Office 365** no artigo de referência de [pontos de extremidade do Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) para determinar o restante das informações de conectividade.
   
 Para cada serviço que requer uma conexão de saída, convém descrever a conectividade planejada para o serviço, incluindo roteamento de rede, configuração de proxy, inspeção de pacote e necessidades de largura de banda.
   
@@ -566,7 +568,7 @@ Tenha em mente que durante a implantação do Office 365 com uma conexão Expres
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
   

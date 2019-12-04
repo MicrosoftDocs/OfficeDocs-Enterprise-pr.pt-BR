@@ -24,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como se preparar para provisionar usuários para o Office 365 usando a sincronização de diretórios e os benefícios de longo prazo de usar esse método.
-ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250507"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814179"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparar a sincronização de diretórios para o Office 365
+
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Os benefícios para a identidade híbrida e a sincronização de diretórios que a organização incluem:
   
@@ -99,7 +101,7 @@ Os atributos que você precisa preparar estão listados aqui:
   - Se o atributo existir no objeto do usuário, ele será sincronizado com o Office 365, mas o Office 365 não o exigirá ou o usará.
   - Número máximo de caracteres: 64
     
-- **Email**
+- **mala**
     
   - O valor do atributo deve ser exclusivo no diretório.
     

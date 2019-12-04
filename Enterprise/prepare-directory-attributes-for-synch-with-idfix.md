@@ -16,14 +16,17 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Fornece instruções sobre como usar o IdFix para preparar e limpar o diretório local antes de sincronizar com o Office 365.
-ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490784"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814609"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Preparar atributos de diretório para sincronizarem com o Office 365 usando a ferramenta IdFix
+
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+
 Este tópico contém instruções detalhadas sobre como executar a ferramenta IdFix, alguns erros comuns que você pode encontrar, sugestões de correção, exemplos e práticas recomendadas para o que fazer se você tiver um grande número de erros.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Correção de erros no seu diretório usando a GUI do IdFix
@@ -32,7 +35,7 @@ Este tópico contém instruções detalhadas sobre como executar a ferramenta Id
   
 1. Antes de começar a fazer alterações, dê uma olhada nas recomendações apresentadas pelo IdFix.
     
-2. Examine a lista de erros que IdFix retornou. Você pode classificar os erros por tipo de erro clicando em **erro** na parte superior da coluna que lista os tipos de erro. Se mais de um erro estiver associado a um único atributo, os erros serão combinados em uma linha. Onde for possível, IdFix apresentará uma recomendação para uma correção na coluna **atualização** . A correção é baseada em uma verificação de outros atributos associados a um objeto. Embora eles geralmente sejam melhor do que o que já está no diretório, somente você pode decidir o que é realmente preciso. 
+2. Examine a lista de erros que IdFix retornou. Você pode classificar os erros por tipo de erro clicando em **ERRO** na parte superior da coluna que lista os tipos de erro. Se mais de um erro estiver associado a um único atributo, os erros serão combinados em uma linha. Onde for possível, IdFix apresentará uma recomendação para uma correção na coluna **atualização** . A correção é baseada em uma verificação de outros atributos associados a um objeto. Embora eles geralmente sejam melhor do que o que já está no diretório, somente você pode decidir o que é realmente preciso. 
     
 3. Se o IdFix tiver uma sugestão para uma correção de um erro de duplicação, a correção será identificada por um dos três sinalizadores no início do valor na coluna **Atualizar** , por exemplo `[E]john.doe@contoso.com`,. Se você aceitar a sugestão, quando aplicar a alteração, o sinalizador não será inserido no diretório. Somente o valor após o sinalizador de sugestão será aplicado, por exemplo, `john.doe@contoso.com`. Se você quiser aceitar a sugestão, selecione a ação correspondente na coluna **ação** . Os sinalizadores indicam ações da seguinte maneira: 
     
@@ -70,12 +73,12 @@ Para corrigir um erro, selecione uma opção na lista suspensa **ação** . A ta
 |**COMANDO** | Essa opção só estará disponível se você tiver restaurado de um log de transações. Se você selecionar **desfazer**, o valor do atributo será restaurado para o valor original. ||
 |**FAIL** | Esse valor só será retornado se um valor de **atualização** tiver um conflito desconhecido com as regras do AD DS. Nesse caso, você pode editar o valor na coluna **atualização** novamente se souber o que é a falha. Pode ser necessário analisar os valores no objeto usando o ADSI Edit. Para obter mais informações, consulte [ADSI Edit (Adsiedit. msc)](https://go.microsoft.com/fwlink/p/?LinkId=401170). ||
 
-Após escolher uma **ação** para um erro ou lote de erros, clique em **aplicar**. Quando você clica em **aplicar**, a ferramenta faz as alterações no diretório. Você pode fornecer correções para vários erros antes de clicar em **aplicar** e o IdFix todos serão alterados ao mesmo tempo.
+Após escolher uma **ação** para um erro ou lote de erros, clique em **aplicar**. Quando você clica em **Aplicar**, a ferramenta faz todas as alterações no diretório. Você pode fornecer correções para vários erros antes de clicar em **aplicar** e o IdFix todos serão alterados ao mesmo tempo.
 
-Execute o IdFix novamente para garantir que as correções que você fez não introduziu novos erros. Você pode repetir essas etapas quantas vezes for necessário. É uma boa ideia passar pelo processo algumas vezes antes de sincronizar.
+Execute o IdFix novamente para garantir que as correções que você fez não introduziu novos erros. Você pode repetir essas etapas quantas vezes precisar. É uma boa ideia executar esse processo algumas vezes antes de sincronizar.
     
 ## <a name="changing-the-rule-set-used-by-idfix"></a>Alterar o conjunto de regras usado pelo IdFix
-Por padrão, o IdFix usa o conjunto de regras multilocatário para testar as entradas no seu diretório. Este é o conjunto de regras correto para a maioria dos clientes do Office 365 =. No entanto, se você for um cliente do Office 365 dedicado ou ITAR (leis internacionais de tráfego de braços), poderá configurar o IdFix para usar o conjunto de regras dedicado. Se você não tiver certeza sobre o tipo de cliente que você está, pode ignorar esta etapa com segurança. Para definir o conjunto de regras como dedicado, clique no ícone de engrenagem na barra de menus e, em seguida, clique em **dedicado**.
+Por padrão, o IdFix usa a regra de Multilocatário definida para testar as entradas em seu diretório. Este é o conjunto de regras correto para a maioria dos clientes do Office 365 =. No entanto, se você for um cliente do Office 365 dedicado ou ITAR (leis internacionais de tráfego de braços), poderá configurar o IdFix para usar o conjunto de regras dedicado. Se você não tem certeza do tipo de cliente que você é, ignore esta etapa. Para definir o conjunto de regras como dedicado, clique no ícone de engrenagem na barra de menus e, em seguida, clique em **dedicado**.
   
 ## <a name="changing-the-scope-of-the-search-used-by-idfix"></a>Alterar o escopo da pesquisa usada pelo IdFix
 Por padrão, o IdFix pesquisa todo o diretório. Se quiser, você pode configurar a ferramenta para pesquisar em uma subárvore específica. Para fazer isso, na barra de menus, clique no ícone de filtro e insira uma subárvore válida.
