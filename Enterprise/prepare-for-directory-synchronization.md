@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como se preparar para provisionar usuários para o Office 365 usando a sincronização de diretórios e os benefícios de longo prazo de usar esse método.
-ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 4b602be99239d1e66b149929bd73142252f6cba6
+ms.sourcegitcommit: 19e306dcc32f32387202f799d5f7ef82bae926b0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814179"
+ms.locfileid: "39825183"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparar a sincronização de diretórios para o Office 365
 
@@ -57,10 +57,7 @@ Antes de sincronizar o AD DS com seu locatário do Azure AD, você precisa limpa
 No AD DS, conclua as seguintes tarefas de limpeza para cada conta de usuário à qual a licença do Office 365 será atribuída:
   
 1. Verifique se um endereço de email válido e exclusivo no atributo **proxyAddresses** . 
-
-  >[!Note]
-  >Um caractere til (~) nos endereços de email será ignorado. Isso pode levar a erros de sincronização de diretório falsos positivos sobre o proxyAddresses duplicado.
-    
+  
 2. Remova os valores duplicados no atributo **proxyAddresses** . 
     
 3.  Se possível, assegure um valor válido e exclusivo para o atributo **userPrincipalName** no objeto **User** do usuário. Para obter a melhor experiência de sincronização, verifique se o UPN do AD DS corresponde ao UPN do Azure AD. Se um usuário não tiver um valor para o atributo **userPrincipalName** , o objeto de **usuário** deverá conter um valor válido e exclusivo para o atributo **sAMAccountName** . Remova os valores duplicados no atributo **userPrincipalName** . 
@@ -101,7 +98,7 @@ Os atributos que você precisa preparar estão listados aqui:
   - Se o atributo existir no objeto do usuário, ele será sincronizado com o Office 365, mas o Office 365 não o exigirá ou o usará.
   - Número máximo de caracteres: 64
     
-- **mala**
+- **email**
     
   - O valor do atributo deve ser exclusivo no diretório.
     
