@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029175"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39857979"
 ---
 <h1>Soluções de nuvem empresarial</h1>
 <p>Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais.</p>
@@ -123,9 +123,5 @@ ms.locfileid: "38029175"
 
 ---
 
-<h2>Fale conosco</h2>
-<ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">De qual conteúdo sobre adoção da nuvem você precisa?</a><br>Estamos criando conteúdo para adoção da nuvem que engloba diversas plataformas e serviços de nuvem da Microsoft. Para solicitar um conteúdo específico ou dar opiniões sobre nosso conteúdo de adoção da nuvem, envie um email para cloudadopt@microsoft.com.</li><br>
-    <li><a href="https://aka.ms/caab">Participe do debate sobre a adoção da nuvem</a><br>Se você gosta de soluções em nuvem, considere ingressar no Cloud Adoption Advisory Board (CAAB) para se conectar com uma comunidade maior e vibrante de desenvolvedores de conteúdo da Microsoft, profissionais do setor e clientes de todo o mundo. Para participar, adicione-se como membro do espaço CAAB (Cloud Adoption Advisory Board) da Microsoft Tech Community e envie um email rápido para <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Qualquer pessoa pode ler o conteúdo relacionado à comunidade no <a href="https://blogs.technet.com/b/solutions_advisory_board/">blog</a> do CAAB. No entanto, os membros do CAAB recebem convites para webinars particulares que descrevem novas soluções e recursos de adoção da nuvem.</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Obtenha a arte que você vê aqui</a><br>Se você quiser uma cópia editável da arte vista neste artigo, teremos o maior prazer em enviá-la. Envie sua solicitação por email, incluindo a URL e o título da arte, para cloudadopt@microsoft.com</li>
-</ul>
+
+
