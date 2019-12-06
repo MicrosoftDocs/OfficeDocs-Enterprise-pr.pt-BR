@@ -3,7 +3,7 @@ title: Desabilitar o acesso aos serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 12/04/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,22 +15,24 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Use o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para os usuários.
-ms.openlocfilehash: 711f48dd2caad6fc2b438010405b126be203bd54
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 9668175010b2581bcdd40988f605f68eea30520d
+ms.sourcegitcommit: 572375d69c438bd1eae012e6e98039be0a126a6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257596"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39872239"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Desabilitar o acesso aos serviços com o PowerShell do Office 365
 
 Quando uma conta do Office 365 recebe uma licença de um plano de licenciamento, os serviços do Office 365 são disponibilizados para o usuário dessa licença. No entanto, você pode controlar os serviços do Office 365 que o usuário pode acessar. Por exemplo, mesmo que a licença permita acesso ao serviço do SharePoint Online, você pode desabilitar o acesso a ele. Você pode usar o PowerShell para desabilitar o acesso a qualquer número de serviços para um plano de licenciamento específico para:
 
 - Uma conta individual
-    
 - Um grupo de contas.
-    
 - Todas as contas em sua organização.
+
+>[!Note]
+>Há dependências do serviço do Office 365 que podem impedir você de desabilitar um serviço especificado quando outros serviços dependem dele.
+>
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.
 
@@ -43,7 +45,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
 >[!Note]
->O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
 >
 
 Para obter mais informações, consulte [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
@@ -57,74 +59,77 @@ Um script do PowerShell está disponível e automatiza os procedimentos descrito
   
 Para desabilitar um conjunto específico de serviços do Office 365 para os usuários para um plano de licenciamento específico, execute as seguintes etapas:
   
-1. Identifique os serviços indesejáveis no plano de licenciamento usando a seguinte sintaxe:
+#### <a name="step-1-identify-the-undesirable-services-in-the-licensing-plan-by-using-the-following-syntax"></a>Etapa 1: identificar os serviços indesejáveis no plano de licenciamento usando a seguinte sintaxe:
     
-  ```powershell
-  $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
-  ```
+```powershell
+$LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
+```
 
-  O exemplo a seguir cria um objeto **licenseoptions** que desabilita os serviços do Office e do SharePoint Online no plano de licenciamento chamado `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).
+O exemplo a seguir cria um objeto **licenseoptions** que desabilita os serviços do Office e do SharePoint Online no plano de licenciamento chamado `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).
     
-  ```powershell
-  $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
-  ```
+```powershell
+$LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
+```
 
-2. Use o objeto **LicenseOptions** da Etapa 1 em um ou mais usuários.
+#### <a name="step-2-use-the-licenseoptions-object-from-step-1-on-one-or-more-users"></a>Etapa 2: usar o objeto **licenseoptions** da etapa 1 em um ou mais usuários.
     
-  - Para criar uma nova conta que tem serviços desabilitados, use a seguinte sintaxe:
+Para criar uma nova conta que tem serviços desabilitados, use a seguinte sintaxe:
     
-  ```powershell
-  New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
-  ```
+```powershell
+New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
+```
 
-  O exemplo a seguir cria uma nova conta para o Leonor Marques que atribui a licença e desabilita os serviços descritos na etapa 1.
+O exemplo a seguir cria uma nova conta para o Leonor Marques que atribui a licença e desabilita os serviços descritos na etapa 1.
     
-  ```powershell
-  New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
-  ```
+```powershell
+New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
+```
 
-  Para obter mais informações sobre a criação de contas de usuário no Office 365 PowerShell, consulte [Create User Accounts with office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
+Para obter mais informações sobre a criação de contas de usuário no Office 365 PowerShell, consulte [Create User Accounts with office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
     
-  - Para desabilitar os serviços de um usuário licenciado existente, use a seguinte sintaxe:
+Para desabilitar os serviços de um usuário licenciado existente, use a seguinte sintaxe:
     
-  ```powershell
-  Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
-  ```
+```powershell
+Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
+```
 
-  Este exemplo desabilita os serviços do usuário BrendaF@litwareinc.com.
+Este exemplo desabilita os serviços do usuário BrendaF@litwareinc.com.
     
-  ```powershell
-  Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
-  ```
+```powershell
+Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
+```
 
-  - Para desabilitar os serviços descritos na etapa 1 para todos os usuários licenciados existentes, especifique o nome do seu plano do Office 365 na exibição do cmdlet **Get-MsolAccountSku** (como **litwareinc: ENTERPRISEPACK**) e, em seguida, execute os seguintes comandos:
+Para desabilitar os serviços descritos na etapa 1 para todos os usuários licenciados existentes, especifique o nome do seu plano do Office 365 na exibição do cmdlet **Get-MsolAccountSku** (como **litwareinc: ENTERPRISEPACK**) e, em seguida, execute os seguintes comandos:
     
-  ```powershell
-  $acctSKU="<AccountSkuId>"
-  $AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-  $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
-  ```
+```powershell
+$acctSKU="<AccountSkuId>"
+$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
+$AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
+```
 
-  Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _All_ , somente as primeiras 500 contas de usuário serão retornadas.
+ Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _All_ , somente as primeiras 500 contas de usuário serão retornadas.
 
-
-  - Para desabilitar os serviços para um grupo de usuários existentes, use um dos seguintes métodos para identificar os usuários:
+Para desabilitar os serviços para um grupo de usuários existentes, use um dos seguintes métodos para identificar os usuários:
     
-  - **Filtrar as contas com base em um atributo de conta existente** Para fazer isso, use a seguinte sintaxe:
-    
-  ```powershell
-  $x = Get-MsolUser -All <FilterableAttributes>
-  $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
-  ```
+**Método 1. Filtrar as contas com base em um atributo de conta existente** 
 
-  O exemplo a seguir desabilita os serviços para usuários no departamento de vendas nos Estados Unidos.
+Para isso, use a seguinte sintaxe:
     
-  ```powershell
-  $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
-  $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
-  ```
+```powershell
+$x = Get-MsolUser -All <FilterableAttributes>
+$x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
+```
 
-  - **Usar uma lista de contas específicas** Para fazer isso, execute as seguintes etapas:
+O exemplo a seguir desabilita os serviços para usuários no departamento de vendas nos Estados Unidos.
+    
+```powershell
+$USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
+$USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
+```
+
+**Método 2: usar uma lista de contas específicas** 
+
+Para fazer isso, execute as seguintes etapas:
     
 1. Crie um arquivo de texto que contenha uma conta em cada linha da seguinte forma:
     
