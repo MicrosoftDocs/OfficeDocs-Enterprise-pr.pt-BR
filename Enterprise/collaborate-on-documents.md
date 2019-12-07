@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um documento no SharePoint e no OneDrive.
-ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076165"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886490"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Colaborar com convidados em um documento
 
@@ -51,7 +51,7 @@ Para que os convidados tenham acesso a um documento no SharePoint ou no OneDrive
 
 As configurações de nível de organização para o SharePoint determinam as configurações disponíveis para sites individuais do SharePoint. As configurações do site não podem ser mais permissivas do que as configurações no nível da organização. A configuração de nível de organização para o OneDrive determina o nível de compartilhamento disponível nas bibliotecas do OneDrive dos usuários.
 
-Para o SharePoint e o OneDrive, se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. A maneira mais fácil de compartilhar é usando os links de *Qualquer pessoa*: convidados podem abrir o link sem autenticação e também podem repassar para outras pessoas.
+Para o SharePoint e o OneDrive, se você quiser permitir compartilhamento de arquivos e pastas não autenticados, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. A maneira mais fácil de compartilhar é usando os links de *Qualquer pessoa*: convidados podem abrir o link sem autenticação e também podem repassar para outras pessoas.
 
 Para o SharePoint, escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
 
@@ -73,7 +73,7 @@ Tenha em mente que essa configuração afeta os sites do SharePoint em sua organ
 
 Escolha o tipo de link selecionado por padrão quando os usuários compartilham arquivos e pastas:
 
-- **Qualquer pessoa com o link** -escolha essa opção se você espera compartilhar muitos arquivos e pastas com usuários anônimos. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento anônimo acidental, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
+- **Qualquer pessoa com o link** -escolha essa opção se você quiser fazer muito do compartilhamento de arquivos e pastas não autenticados. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento acidental não autenticado, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
 - **Somente as pessoas da sua organização** -escolha esta opção se você espera que a maioria dos compartilhamento de arquivos e pastas seja com pessoas dentro da sua organização.
 - **Pessoas específicas** -considere essa opção se você espera que um grande volume de compartilhamento de arquivos e pastas com convidados. Esse tipo de link funciona com convidados e exige a autenticação.
  
@@ -105,7 +105,6 @@ As configurações de compartilhamento de convidados agora estão configuradas, 
 
 ## <a name="see-also"></a>Confira também
 
+[Práticas recomendadas para o compartilhamento de arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
 
-[Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
-
-[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
+[Limitar a exposição acidental aos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados no Microsoft Teams.
-ms.openlocfilehash: a3e34431b97e8f565d61470ddd55797981b837c8
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029165"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886520"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar com convidados em uma equipe
 
@@ -87,7 +87,7 @@ O conteúdo de equipes, como arquivos, pastas e listas, é armazenado no SharePo
 
 As configurações de nível de organização determinam quais configurações estão disponíveis para sites individuais, incluindo sites associados ao Teams. As configurações do site não podem ser mais permissivas do que as configurações no nível da organização.
 
-Se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. Escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
+Se você quiser permitir o compartilhamento de arquivos e pastas com pessoas não autenticadas, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. Escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
 
 ![Captura de tela das configurações de compartilhamento no nível da organização do SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -108,7 +108,7 @@ Tenha em mente que essa configuração afeta todas as equipes e sites do SharePo
 
 Escolha o tipo de link selecionado por padrão quando os usuários compartilham arquivos e pastas:
 
-- **Qualquer pessoa com o link** -escolha essa opção se você espera compartilhar muitos arquivos e pastas com usuários anônimos. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento anônimo acidental, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
+- **Qualquer pessoa com o link** -escolha essa opção se você espera compartilhar muitos arquivos e pastas com pessoas não autenticadas. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento acidental não autenticado, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
 - **Somente as pessoas da sua organização** -escolha esta opção se você espera que a maioria dos compartilhamento de arquivos e pastas seja com pessoas dentro da sua organização.
 - **Pessoas específicas** -considere essa opção se você espera que um grande volume de compartilhamento de arquivos e pastas com convidados. Esse tipo de link funciona com convidados e exige a autenticação.
  
@@ -167,9 +167,9 @@ Para convidar convidados para uma equipe
 
 ## <a name="see-also"></a>Confira também
 
-[Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
+[Práticas recomendadas para o compartilhamento de arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
 
-[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
+[Limitar a exposição acidental aos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
 [Criar um ambiente de compartilhamento seguro de convidados](create-a-secure-guest-sharing-environment.md))
 

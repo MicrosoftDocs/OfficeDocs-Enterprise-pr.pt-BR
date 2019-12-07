@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um site do SharePoint.
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029155"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886480"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar com convidados em um site
 
@@ -67,7 +67,7 @@ Para que os convidados tenham acesso aos sites do SharePoint, as configurações
 
 As configurações de nível de organização determinam quais configurações estão disponíveis para sites individuais. As configurações do site não podem ser mais permissivas do que as configurações no nível da organização.
 
-Se você quiser permitir o compartilhamento de arquivos e pastas com usuários anônimos, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. Escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
+Se você quiser permitir o compartilhamento de arquivos e pastas não autenticados, escolha **qualquer pessoa**. Se você quiser garantir que todos os convidados devem se autenticar, escolha **novos e existentes convidados**. Escolha a configuração mais permissiva que será necessária para qualquer site em sua organização.
 
 ![Captura de tela das configurações de compartilhamento no nível da organização do SharePoint](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ Vamos convidar os usuários mais tarde. Em seguida, é importante verificar as c
 
 Verifique as configurações de compartilhamento no nível do site para garantir que elas permitam o tipo de acesso que você deseja para este site. Por exemplo, se você definir as configurações de nível de organização como **qualquer pessoa**, mas quiser que todos os convidados autentiquem esse site, verifique se as configurações de compartilhamento no nível do site estão definidas para **convidados novos e existentes**.
 
-Observe que o site não pode ser compartilhado com usuários anônimos (configuração de**qualquer pessoa** ), mas arquivos e pastas individuais podem.
+Observe que o site não pode ser compartilhado com pessoas não autenticadas (configuração de**qualquer pessoa** ), mas arquivos e pastas individuais podem.
 
 ![Captura de tela das configurações de compartilhamento de site externo do SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,9 +129,9 @@ Para convidar convidados para um site
 
 ## <a name="see-also"></a>Confira também
 
-[Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
+[Práticas recomendadas para o compartilhamento de arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
 
-[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
+[Limitar a exposição acidental aos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
 [Criar um ambiente de compartilhamento seguro de convidados](create-a-secure-guest-sharing-environment.md))
 

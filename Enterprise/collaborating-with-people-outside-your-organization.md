@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Saiba como configurar o Office 365 para colaboração com usuários convidados.
-ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 1af8a1c810047e4f91b0bda31934742884f6645e
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076175"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886440"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar com pessoas de fora da sua organização
 
@@ -26,9 +26,8 @@ Por padrão, no Microsoft 365, o compartilhamento de convidados está habilitado
 
 ## <a name="see-also"></a>Confira também
 
+[Práticas recomendadas para o compartilhamento de arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
 
-[Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
-
-[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
+[Limitar a exposição acidental aos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
 [Criar um ambiente de compartilhamento seguro de convidados](create-a-secure-guest-sharing-environment.md))
