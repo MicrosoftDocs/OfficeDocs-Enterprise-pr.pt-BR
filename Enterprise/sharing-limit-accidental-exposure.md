@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Saiba como limitar a exposição acidental de informações ao compartilhar arquivos com convidados.
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108241"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886470"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Limitar a exposição acidental de arquivos em compartilhamentos com convidados
 
@@ -21,13 +21,13 @@ Ao compartilhar arquivos e pastas com convidados, há várias opções para redu
 
 ## <a name="use-best-practices-for-anyone-links"></a>Usar as práticas recomendadas para links para Qualquer pessoa
 
-Se as pessoas em sua organização precisarem fazer o compartilhamento anônimo e você estiver preocupado que convidados não autenticados façam modificações de conteúdo, leia as [Práticas recomendadas para compartilhamento anônimo](best-practices-anonymous-sharing.md) para obter diretrizes sobre como trabalhar com o compartilhamento anônimo em sua organização.
+Se as pessoas em sua organização precisarem fazer compartilhamentos não autenticados, mas você está preocupado que convidados não autenticados façam modificações no conteúdo, leia [Práticas recomendadas para compartilhamento não autenticado](best-practices-anonymous-sharing.md) para obter diretrizes sobre como trabalhar com o compartilhamento não autenticado em sua organização.
 
 ## <a name="turn-off-anyone-links"></a>Desativar links para Qualquer pessoa
 
 Recomenda-se deixar os links para *Qualquer pessoa* habilitados para o conteúdo apropriado porque essa é a maneira mais fácil de compartilhar, além de poder ajudar a reduzir o risco de usuários que buscam soluções diferentes e fora do controle do departamento de TI. Os links para *Qualquer pessoa* podem ser encaminhados a outras pessoas, mas o acesso aos arquivos só estará disponível para os usuários que tiverem o link.
 
-Caso você queira que os convidados sempre façam sua autenticação ao acessar o conteúdo no SharePoint, Grupos ou no Teams, você pode desativar o compartilhamento a *Qualquer pessoa*. Isso impedirá o compartilhamento de conteúdo anonimamente pelos usuários.
+Caso você queira que os convidados sempre façam sua autenticação ao acessar o conteúdo no SharePoint, Grupos ou no Teams, você pode desativar o compartilhamento a *Qualquer pessoa*. Isso impedirá usuários de compartilharem conteúdo não autenticado.
 
 Mesmo desabilitando os links para *Qualquer pessoa*, os usuários continuarão podendo fazer compartilhamentos facilmente com convidados usando links para *Pessoas específicas*. Nesse caso, todos os convidados precisarão se autenticar para poder acessar o conteúdo compartilhado.
 

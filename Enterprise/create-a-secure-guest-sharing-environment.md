@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
 description: Aprenda a criar um ambiente de compartilhamento de convidados seguro no Microsoft 365.
-ms.openlocfilehash: 727b635c0ed13a9dcf85bb93092ab9a002740e99
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 51e9d8c8d09d5ee687fc47a1c382da383d1cf231
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077704"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886510"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Criar um ambiente de compartilhamento de convidados seguro
 
@@ -308,7 +308,7 @@ Para criar uma política de arquivo baseada em rótulos
 12. Para a mensagem de notificação personalizada, digite *Esse arquivo é altamente confidencial. A política da empresa proíbe o compartilhamento com os convidados*.
 13. Clique em **Criar**.
 
-É importante observar que essa política remove o acesso a arquivos compartilhados usando um link para *Pessoas específicas*. Isso não remove o acesso de (*Quaisquer*) links anônimos. Ele também não removerá o acesso se o convidado for um membro do site ou da equipe como um todo. Se você planeja ter documentos altamente confidenciais em um site ou uma equipe com membros convidados, considere o uso de [canais privados no Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)e apenas permita os membros de sua organização nos canais privados.
+É importante observar que essa política remove o acesso a arquivos compartilhados usando um link para *Pessoas específicas*. Isso não remove o acesso de links (*Qualquer pessoa*) não autenticados. Ele também não removerá o acesso se o convidado for um membro do site ou da equipe como um todo. Se você planeja ter documentos altamente confidenciais em um site ou uma equipe com membros convidados, considere o uso de [canais privados no Teams](https://support.office.com/article/60ef929a-4d68-418b-bf4f-5784db184ec9)e apenas permita os membros de sua organização nos canais privados.
 
 ## <a name="test-the-solution"></a>Testar a solução
 
@@ -320,6 +320,6 @@ Você pode usar as ferramentas descritas neste artigo em várias combinações p
 
 ## <a name="see-also"></a>Confira Também
 
-[Limitar a exposição acidental aos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
+[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
-[Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos](best-practices-anonymous-sharing.md)
+[Práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)

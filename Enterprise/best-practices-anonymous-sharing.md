@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para o compartilhamento anônimo
+title: Práticas recomendadas para compartilhamentos não autenticados
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,26 +7,26 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
-description: Aprenda as práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos.
-ms.openlocfilehash: f6263fe09a677094055f79a4ff38ec9d41f48898
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+description: Aprenda as práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados.
+ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108237"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886500"
 ---
-# <a name="best-practices-for-sharing-files-and-folders-with-anonymous-users"></a>Práticas recomendadas para compartilhar arquivos e pastas com usuários anônimos
+# <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados
 
-O compartilhamento anônimo (links de *Qualquer pessoa*) pode ser conveniente e útil em vários cenários. A maneira mais fácil de compartilhar é usando os links de *Qualquer pessoa*: convidados podem abrir o link sem autenticação e também podem repassar para outras pessoas.
+O compartilhamento não autenticado (links de *Qualquer pessoa*) pode ser conveniente e útil em vários cenários. A maneira mais fácil de compartilhar é usando os links de *Qualquer pessoa*: convidados podem abrir o link sem autenticação e também podem repassar para outras pessoas.
 
-Geralmente nem todo o conteúdo em uma organização é apropriado para o compartilhamento anônimo. Este artigo aborda as opções disponíveis para ajudá-lo a criar um ambiente no qual os usuários podem compartilhar arquivos e pastas anonimamente, mas com proteções para ajudar a proteger o conteúdo da sua organização.
+Geralmente nem todo conteúdo de uma organização é apropriado para o compartilhamento não autenticado. Este artigo aborda as opções disponíveis para ajudá-lo a criar um ambiente no qual os usuários podem compartilhar arquivos e pastas não autenticados, mas com proteções para ajudar a proteger o conteúdo da sua organização.
 
 > [!NOTE]
-> Para que o compartilhamento anônimo funcione, habilite-o para a sua organização e para o site ou a equipe individual que poderá usá-lo. Confira [Colaborar com pessoas de fora da sua organização](collaborating-with-people-outside-your-organization.md) para ver o cenário que você deseja habilitar.
+> Para que o compartilhamento não autenticado funcione, habilite-o para a sua organização e para a equipe ou site individual que irão usá-lo. Confira [Colaborar com pessoas de fora da sua organização](collaborating-with-people-outside-your-organization.md) para ver o cenário que você deseja habilitar.
 
 ## <a name="set-an-expiration-date-for-anyone-links"></a>Definir uma data de vencimento para links de Qualquer pessoa
 
-Os arquivos geralmente são armazenados em sites, grupos e equipes por longos períodos de tempo. Às vezes existem políticas de retenção de dados que exigem a retenção dos arquivos por anos. Se esses arquivos forem compartilhados anonimamente, é possível que ocorra algum acesso inesperado ou alterações nos arquivos no futuro. Para reduzir essa possibilidade, você pode configurar um tempo de expiração para os links de *Qualquer pessoa*.
+Os arquivos geralmente são armazenados em sites, grupos e equipes por longos períodos de tempo. Às vezes existem políticas de retenção de dados que exigem a retenção dos arquivos por anos. Se esses arquivos forem compartilhados com pessoal não autorizado, é possível que ocorra algum acesso inesperado ou alterações nos arquivos futuramente. Para reduzir essa possibilidade, você pode configurar um tempo de expiração para os links de *Qualquer pessoa*.
 
 Quando o link de *Qualquer pessoa* expira, não pode mais ser usado para acessar o conteúdo.
 
@@ -43,9 +43,9 @@ Observe que, depois que um link de *Qualquer pessoa* expira, é possível compar
 
 Por padrão, os links *Qualquer pessoa* de um arquivo permitem que as pessoas editem esse arquivo e os links de *Qualquer pessoa* para uma pasta permitem que as pessoas editem e visualizem arquivos, e carreguem novos arquivos para a pasta. Você pode alterar essas permissões para arquivos e pastas, independentemente de serem somente leitura.
 
-Caso queira permitir o compartilhamento anônimo, mas esteja preocupado com a possibilidade de que usuários não autenticados modifiquem o conteúdo da sua organização, considere definir as permissões de arquivos e pastas como **Exibir**.
+Caso queira permitir o compartilhamento não autenticado, mas esteja preocupado com a possibilidade de que usuários não autenticados modifiquem o conteúdo da sua organização, considere definir as permissões de arquivos e pastas como **Exibir**.
 
-Para definir permissões para links anônimos
+Definir permissões para links de Qualquer pessoa
 1. Abra o Centro de administração do SharePoint Online.
 2. Na barra de navegação esquerda, clique em **Compartilhamento**.
 3. Em **Configurações avançadas para links de "Qualquer pessoa"**, selecione as permissões dos arquivos e pastas que você deseja usar.</br>
@@ -55,9 +55,9 @@ Com os links de *Qualquer pessoa* definidos como **Exibir**, os usuários ainda 
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Definir o tipo de link padrão para funcionar apenas para pessoas em sua organização
 
-Quando o compartilhamento *Qualquer pessoa* está habilitado para a sua organização, o link de compartilhamento padrão costuma ser definido como **Qualquer pessoa**. Embora isso possa ser conveniente para os usuários, ele pode aumentar o risco de compartilhamento anônimo não intencional. Se um usuário se esquecer de alterar o tipo de link ao compartilhar um documento confidencial, poderá criar acidentalmente um link de compartilhamento que não exige autenticação.
+Quando o compartilhamento *Qualquer pessoa* está habilitado para a sua organização, o link de compartilhamento padrão costuma ser definido como **Qualquer pessoa**. Embora isso possa ser conveniente para os usuários, poderá aumentar o risco de compartilhamento não autenticado e sem intenção. Se um usuário se esquecer de alterar o tipo de link ao compartilhar um documento confidencial, poderá criar acidentalmente um link de compartilhamento que não exige autenticação.
 
-Você pode atenuar esse risco alterando a configuração de link padrão de um determinado link para que só funcione para pessoas da sua organização. Os usuários que queiram compartilhar anonimamente devem selecionar especificamente essa opção.
+Você pode atenuar esse risco alterando a configuração de link padrão de um determinado link para que só funcione para pessoas da sua organização. Os usuários que queiram compartilhar com pessoas não autenticadas teriam que selecionar especificamente essa opção.
 
 Para definir o link padrão de compartilhamento de arquivos e pastas
 1. No centro de administração do SharePoint, na navegação à esquerda, clique em **Compartilhamento**.
