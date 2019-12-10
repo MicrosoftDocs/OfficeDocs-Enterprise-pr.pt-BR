@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: Este artigo descreve como você pode planejar o lançamento do portal no SharePoint Online e quais etapas executar para um lançamento bem-sucedido
-ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077564"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919123"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planejando o plano de distribuição de início do portal no SharePoint Online
-Um portal é o site padrão do SharePoint para sua empresa; em grandes organizações, pode haver vários deles. Se você espera que mais de 20% dos usuários da sua organização acessem a página, considere essa página um portal. Isso não deve ser confundido com um site de equipe que seu departamento usa para colaborar e compartilhar documentos dentro da sua equipe.
+Um portal é um site do SharePoint em sua intranet que tem um grande número de visualizadores de site que consomem conteúdo no site. Em grandes organizações, pode haver vários deles; por exemplo, um portal da empresa e um portal de RH. Normalmente portais têm relativamente poucas pessoas que criam e criam o site e seu conteúdo. A maioria dos visitantes do portal só lê e consome o conteúdo.
 
 Este artigo descreve como planejar a implantação e o plano de distribuição para o SharePoint Online. Também fornece abordagens para seguir, pois o teste de carga tradicional não é permitido no SharePoint Online. O SharePoint Online é um serviço de nuvem e os recursos de carga, a integridade e o equilíbrio geral de carga no serviço são gerenciados pela Microsoft.
 
