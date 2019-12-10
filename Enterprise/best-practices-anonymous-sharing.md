@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Aprenda as práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados.
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886500"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919133"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados
 
-O compartilhamento não autenticado (links de *Qualquer pessoa*) pode ser conveniente e útil em vários cenários. A maneira mais fácil de compartilhar é usando os links de *Qualquer pessoa*: convidados podem abrir o link sem autenticação e também podem repassar para outras pessoas.
+O compartilhamento não autenticado (links de *Qualquer pessoa*) pode ser conveniente e útil em vários cenários. *Qualquer pessoa* a maneira mais fácil de compartilhar é usando links: as pessoas podem abrir o link sem autenticação e podem repassar para outras pessoas.
 
 Geralmente nem todo conteúdo de uma organização é apropriado para o compartilhamento não autenticado. Este artigo aborda as opções disponíveis para ajudá-lo a criar um ambiente no qual os usuários podem compartilhar arquivos e pastas não autenticados, mas com proteções para ajudar a proteger o conteúdo da sua organização.
 
@@ -51,7 +51,7 @@ Definir permissões para links de Qualquer pessoa
 3. Em **Configurações avançadas para links de "Qualquer pessoa"**, selecione as permissões dos arquivos e pastas que você deseja usar.</br>
    ![Captura de tela das configurações de permissões do link de Qualquer pessoa no nível da organização do SharePoint](media/sharepoint-organization-anyone-link-permissions.png)
 
-Com os links de *Qualquer pessoa* definidos como **Exibir**, os usuários ainda podem compartilhar arquivos e pastas com convidados e conceder permissões de edição usando os links para *Pessoas específicas*. Esses links exigem que os convidados façam autenticação e você pode controlar e auditar as atividades de convidados em arquivos e pastas compartilhadas por esses links.
+Com os links de *Qualquer pessoa* definidos como **Exibir**, os usuários ainda podem compartilhar arquivos e pastas com convidados e conceder permissões de edição usando os links para *Pessoas específicas*. Esses links exigem que as pessoas de fora da sua organização se autentiquem como convidados, você pode controlar e auditar as atividades dos convidados em arquivos e pastas compartilhadas por esses links.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Definir o tipo de link padrão para funcionar apenas para pessoas em sua organização
 

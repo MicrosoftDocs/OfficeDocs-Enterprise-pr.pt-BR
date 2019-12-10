@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre as configurações de compartilhamento de convidados disponíveis no Microsoft 365.
-ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076395"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919375"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referência das configurações de compartilhamento de convidado do Microsoft 365
 
-Este artigo é uma referência para as diversas configurações que podem afetar o compartilhamento de convidados das cargas de trabalho do Microsoft 365: Teams, Grupos do Office 365, SharePoint e OneDrive. Essas configurações estão localizadas nos centros de administração do Azure Active Directory, Microsoft 365, Teams e SharePoint.
+Este artigo é uma referência para as diversas configurações que podem afetar o compartilhamento, com pessoas de fora da sua organização, das cargas de trabalho do Microsoft 365: Teams, Grupos do Office 365, SharePoint e OneDrive. Essas configurações estão localizadas nos centros de administração do Azure Active Directory, Microsoft 365, Teams e SharePoint.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
