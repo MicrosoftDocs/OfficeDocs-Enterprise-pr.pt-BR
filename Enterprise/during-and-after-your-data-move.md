@@ -3,7 +3,7 @@ title: Durante e após a migração dos dados
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250497"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959276"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -30,7 +30,7 @@ Movimentação de dados é uma operação de back-end com impacto mínimo para o
 Assista ao centro de mensagens do Office 365 para confirmação quando se move para cada um dos Exchange Online, SharePoint Online e Skype for Business concluído. Conforme mostrado na tabela abaixo, pode levar até 24 meses, após o final do período de registro, para concluir todos os dados solicitados são movidos para todos os clientes em uma geografia específica. Se você vir problemas com o seu locatário após a movimentação, entre em contato com o [suporte do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obter assistência. 
   
 
-|**Clientes com endereço de cobrança no**|**Todas as movimentações concluídas por**|
+|**Clientes com país de inscrição no**|**Todas as movimentações concluídas por**|
 |:-----|:-----|
 |Austrália, Nova Zelândia, Fiji  <br/> |31 de outubro de 2017  <br/> |
 |Japão  <br/> |31 de outubro de 2018  <br/> |
@@ -41,6 +41,8 @@ Assista ao centro de mensagens do Office 365 para confirmação quando se move p
 |França  <br/> |15 de setembro de 2020  <br/> |
 |Emirados Árabes Unidos  <br/> |1 de fevereiro de 2022  <br/> |
 |África do Sul  <br/> |1 de fevereiro de 2022  <br/> |
+|Suíça, Liechtenstein  <br/> |1º de julho de 2022  <br/> |
+|Alemanha  <br/> |Liga  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 

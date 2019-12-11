@@ -3,7 +3,7 @@ title: Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o Shar
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: bb60e129f988041a7d763c1558a9ee3c86f75226
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: de4982047e7a92d7df477128274e0037fbc86d42
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813509"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962478"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -670,7 +670,7 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 É importante observar que o SharePoint Online não suporta permissões no nível do item para ativos em origens privadas. Por exemplo, para um arquivo localizado em `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, os usuários têm acesso efetivo ao arquivo de acordo com as seguintes condições:
 
-|User  |Permissions  |Acesso efetivo  |
+|Usuário  |Permissões  |Acesso efetivo  |
 |---------|---------|---------|
 |Usuário 1     |Tem acesso à Pasta1         |Pode acessar o image1. jpg da CDN         |
 |Usuário 2     |Não tem acesso à Pasta1         |Não é possível acessar image1. jpg da CDN         |
@@ -688,9 +688,9 @@ Depois de adicionar links aos ativos da CDN a uma página, você pode confirmar 
 Você também pode usar as ferramentas de desenvolvedor do navegador para exibir a URL de cada ativo em uma página ou usar uma ferramenta de rastreamento de rede de terceiros.
 
 > [!NOTE]
-> Se você usar uma ferramenta de rede como o Fiddler para testar seus ativos fora do processamento do ativo de uma página do SharePoint, você deve adicionar manualmente o cabeçalho referenciado `https://yourdomain.sharepoint.com`"referenciador" à solicitação GET, onde a URL é a URL raiz do seu locatário do SharePoint Online.
+> Se você usar uma ferramenta de rede como o Fiddler para testar seus ativos fora da renderização do ativo de uma página do SharePoint, você deve adicionar manualmente o cabeçalho referenciador "refer `https://yourdomain.sharepoint.com`:" à solicitação GET, onde a URL é a URL raiz do seu locatário do SharePoint Online.
 
-Você não pode testar URLs de CDN diretamente em um navegador da Web, pois deve ter um referenciador proveniente do SharePoint Online. No entanto, se você adicionar a URL de ativo da CDN a uma página do SharePoint e, em seguida, abrir a página em um navegador, verá o ativo da CDN renderizado na página.
+Você não pode testar URLs de CDN diretamente em um navegador da Web, pois é necessário ter um referenciador proveniente do SharePoint Online. No entanto, se você adicionar a URL de ativo da CDN a uma página do SharePoint e, em seguida, abrir a página em um navegador, verá o ativo da CDN renderizado na página.
 
 Para obter mais informações sobre como usar as ferramentas de desenvolvedor no navegador do Microsoft Edge, consulte [ferramentas de desenvolvedor do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 

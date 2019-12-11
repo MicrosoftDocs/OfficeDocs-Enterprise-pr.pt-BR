@@ -3,7 +3,7 @@ title: Movendo dados principais para o novo Office 365 datacenter GEOS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: 3cccd9d5cb3f961a3621bf6f54104c2e1e3b8ece
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756540"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962448"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
@@ -30,7 +30,7 @@ Principais dados do cliente é um termo que se refere a um subconjunto de dados 
   
 Os clientes existentes que têm seus dados principais de cliente armazenados em uma geografia do datacenter já existente não são afetados pelo lançamento de uma nova Geografia de datacenter. Não apresentamos recursos exclusivos, recursos ou certificações de conformidade com a nova Geografia do datacenter. Como cliente em qualquer uma dessas duas GEOS, você terá os mesmos controles de qualidade de serviço, desempenho e segurança que fazia antes. Oferecemos clientes existentes listados na tabela abaixo de uma opção para solicitar a migração inicial dos dados principais do cliente da sua organização em repouso para a nova Geografia do datacenter.
   
-|Clientes com endereço de cobrança em * * * *|Geo do datacenter anterior * * * *|Nova Geografia do datacenter * * * *|Geo disponível desde * * * *|
+|Clientes com o país de inscrição do locatário em * * * *|Geo do datacenter anterior * * * *|Nova Geografia do datacenter * * * *|Geo disponível desde * * * *|
 |:-----|:-----|:-----|:-----|
 |Japão * * * *| Ásia/Pacífico | Japão | Dezembro de 2014 |
 |Austrália, Nova Zelândia, Fiji * * * *| Ásia/Pacífico | Austrália | Março de 2015 |
@@ -41,8 +41,15 @@ Os clientes existentes que têm seus dados principais de cliente armazenados em 
 |França * * * *| Europa | França | Março de 2018 |
 |Emirados Árabes Unidos * * * *| Europa | Emirados Árabes Unidos | Junho de 2019 |
 |África do Sul * * * *| Europa | África do Sul | Julho de 2019 |
+|Suíça, Liechtenstein * * * *| Europa | Suíça | Dezembro de 2019 |
+|Alemanha * * * *| Europa | Alemanha | Dezembro de 2019 |
   
 Novos clientes ou locatários do Office 365 criados após a disponibilidade da nova Geografia do datacenter terão seus principais dados de cliente armazenados em repouso na nova Geografia do datacenter automaticamente.
+
+
+>[!Note]
+>Lançamos a região do datacenter da Alemanha em dezembro de 2019. Os novos clientes do Office 365 com um endereço de inscrição em alemão associado ao seu locatário terão seus dados principais do cliente armazenados em repouso na Alemanha. Planejamos oferecer migração da Europa para a Alemanha para clientes do alemão no futuro. Atualmente, os clientes do Microsoft Cloud Alemanha/Alemanha podem solicitar a migração para os serviços do Office 365 nas novas regiões do datacenter alemão. Confira [como optar por migrar do Microsoft Cloud Alemanha (Microsoft Cloud Alemanha) para os serviços do Office 365 nas novas regiões do datacenter alemão](https://aka.ms/office365germanymoveoptin) para obter mais informações.
+>
   
 Uma lista completa de todos os GEOS do datacenter, datacenters e o local dos dados do cliente em repouso está disponível como parte dos [mapas de datacenter interativos](https://office.com/datamaps). 
   

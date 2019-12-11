@@ -3,7 +3,7 @@ title: Como solicitar a migração dos dados
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756590"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962458"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -28,7 +28,7 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
   
 ## <a name="when-can-i-request-a-move"></a>Quando posso solicitar uma movimentação?
 
-|**Clientes com endereço de cobrança no**|**Início do período da solicitação**|**Prazo da solicitação**|
+|**Clientes com país de inscrição no**|**Início do período da solicitação**|**Prazo da solicitação**|
 |:-----|:-----|:-----|
 |Japão  <br/> |1 de agosto de 2016  <br/> |31 de outubro de 2016  <br/> |
 |Austrália, Nova Zelândia, Fiji  <br/> |1 de agosto de 2016  <br/> |31 de outubro de 2016  <br/> |
@@ -39,10 +39,12 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
 |França  <br/> |14 de março de 2018  <br/> |15 de setembro de 2018  <br/> |
 |Emirados Árabes Unidos  <br/> |15 de julho de 2019  <br/> |31 de janeiro de 2020  <br/> |
 |África do Sul  <br/> |25 de julho de 2019  <br/> |31 de janeiro de 2020  <br/> |
+|Suíça, Liechtenstein  <br/> |10 de dezembro de 2019  <br/> |30 de junho de 2020  <br/> |
+|Alemanha  <br/> |Liga  <br/> |Liga  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Como solicitar uma movimentação
 
-Os clientes qualificados verão uma página em seu [centro de administração](https://aka.ms/365admin), que lhes permitirá solicitar que seus principais dados do cliente sejam movidos para sua nova região de datacenter.  
+Os clientes qualificados verão uma página no [centro de administração do Microsoft 365](https://aka.ms/365admin), que lhes permitirá solicitar que seus principais dados do cliente sejam movidos para sua nova região de datacenter.  
   
 Para acessar a página no centro de administração do Microsoft 365, no painel de navegação à esquerda, expanda **configurações**e clique em **perfil da organização**.
   
