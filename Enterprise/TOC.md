@@ -152,6 +152,8 @@
 #### [Como solicitar a migração dos dados](request-your-data-move.md)
 #### [Durante e após a migração dos dados](during-and-after-your-data-move.md)
 #### [Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
+#### [Microsoft Cloud Deutschland: programa de migração do Office 365](ms-cloud-germany-transition.md)
+#### [Microsoft Cloud Deutschland: aceitar a migração](ms-cloud-germany-migration-opt-in.md)
 
 ### Soluções híbridas
 #### [Usar o Azure Active Directory para a autenticação do SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
@@ -189,7 +191,7 @@
 ##### [Colaborar em um site](collaborate-in-a-site.md)
 ##### [Colabore em equipe](collaborate-as-a-team.md)
 #### Segurança de compartilhamento de convidados
-##### [Compartilhamento anônimo](best-practices-anonymous-sharing.md)
+##### [compartilhamento não autenticado](best-practices-anonymous-sharing.md)
 ##### [Limitar a exposição acidental](sharing-limit-accidental-exposure.md)
 ##### [Ambiente seguro de compartilhamento de convidados](create-a-secure-guest-sharing-environment.md)
 
