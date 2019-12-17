@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Saiba como a identidade do usuário é gerenciada no Office 365.
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745664"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071873"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Modelos de identidade do Office 365 e o Active Directory do Azure
 
-*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 O Office 365 usa o Azure Active Directory (Azure AD), um serviço de autenticação e identidade do usuário baseado na nuvem que está incluído em sua assinatura do Office 365, para gerenciar identidades e autenticação para o Office 365. Obter sua infraestrutura de identidade configurada corretamente é vital para gerenciar o acesso de usuário do Office 365 e permissões para sua organização.
 
@@ -59,7 +59,7 @@ Uma identidade somente na nuvem usa contas de usuário que existem somente no Az
 
 Estes são os componentes básicos da identidade somente na nuvem.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![Componentes básicos da identidade somente na nuvem](./media/about-office-365-identity/cloud-only-identity.png)
 
 Os usuários locais e remotos (online) usam suas contas de usuário e senhas do Azure AD para acessar os serviços de nuvem do Office 365. O Azure AD autentica as credenciais do usuário com base em suas contas de usuário e senhas armazenadas.
 
@@ -76,7 +76,7 @@ Ao implementar a identidade híbrida, seu AD DS local é a fonte autoritativa de
 
 Estes são os componentes da identidade híbrida.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Componentes da identidade híbrida](./media/about-office-365-identity/hybrid-identity.png)
 
 O locatário do Azure AD tem uma cópia das contas do AD DS. Nessa configuração, os usuários locais e remotos que acessam o Microsoft 365 Cloud Services são autenticados no Azure AD.
 

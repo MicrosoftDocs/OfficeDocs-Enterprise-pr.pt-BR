@@ -16,12 +16,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica como usar o Office 365 PowerShell para remover as licenças do Office 365 que foram previamente atribuídas aos usuários.
-ms.openlocfilehash: 1147b59c948d3d09349de42a637f522df04f8687
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: cb0d5a17cc40b4c7e1f4d0fbcb14d4851c612ef5
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257380"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072473"
 ---
 # <a name="remove-licenses-from-user-accounts-with-office-365-powershell"></a>Remover licenças de contas de usuários com o Office 365 PowerShell
 
@@ -75,7 +75,7 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 ```
 
 >[!Note]
->O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
 >
 
 Este exemplo remove a `litwareinc:ENTERPRISEPACK` licença (Office 365 Enterprise E3) da conta de usuário BelindaN@litwareinc.com.
@@ -144,15 +144,9 @@ Outra maneira de liberar uma licença é excluir a conta de usuário. Para obter
   
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-
-    
-## <a name="new-to-office-365"></a>Começando a usar o Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 

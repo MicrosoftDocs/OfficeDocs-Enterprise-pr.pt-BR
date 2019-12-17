@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração em estágios para o Office 365.'
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747527"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072303"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração em estágios para o Office 365
 
@@ -57,7 +57,7 @@ Antes de migrar as caixas de correio para o Office 365 usando uma migração em 
   
 - Use o Outlook fora de sua rede corporativa para se conectar a sua caixa de correio local do Exchange.
     
-- Use o [Analisador de Conectividade Remota do Microsoft Exchange](https://www.testexchangeconnectivity.com/) para testar as configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou os testes de descoberta automática do Outlook.
+- Use o [analisador de conectividade remota da Microsoft](https://https://testconnectivity.microsoft.com/) para testar suas configurações de conexão. Use o Outlook em Qualquer Lugar (RPC sobre HTTP) ou os testes de Descoberta Automática do Outlook.
     
 - Execute os seguintes comandos no PowerShell do Exchange Online:
     
@@ -199,12 +199,6 @@ Depois de migrar com êxito um lote de caixas de correio, é necessário permiti
 Como não concluiu suas migrações, você ainda não está pronto para direcionar todos os usuários para o Office 365 e seus emails. Então, o que fazer com as pessoas que têm ambas? Você pode alterar as caixas de correio locais que já migrou para usuários habilitados para email. Ao mudar de uma caixa de correio para um usuário habilitado para email, você pode direcionar o usuário para o Office 365 para acessar o email em vez de ir para a caixa de correio local. 
   
 Outro motivo importante para converter as caixas de correio locais em usuários habilitados para email é manter os endereços proxy das caixas de correio do Office 365 copiando endereços proxy para usuários habilitados para email. Isso permite que você gerencie os usuários baseados em nuvem de sua organização local utilizando o Active Directory. Além disso, se você decidir desprogramar sua organização do Exchange Server local após todas as caixas de correio serem migradas para o Office 365, os endereços de proxy que você copiou para os usuários habilitados para email permanecerão em seu Active Directory local.
-  
-Para saber mais e para baixar os scripts que você pode executar para converter as caixas de correio em usuários habilitados para email, confira o seguinte:
-  
-- [Converter caixas de correio do Exchange 2007 em usuários habilitados para email](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [Converter caixas de correio do Exchange 2003 em usuários habilitados para email](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Etapa 6: excluir um lote de migração em estágios
 <a name="BK_Endpoint"> </a>

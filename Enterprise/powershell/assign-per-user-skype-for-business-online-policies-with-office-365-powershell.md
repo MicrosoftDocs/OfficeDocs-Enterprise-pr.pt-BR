@@ -12,17 +12,15 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumo: Use o Office 365 PowerShell para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.'
-ms.openlocfilehash: 2252a6df4298bb36a669404aefac3b14eaa23b7f
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e425c3f0bc6253550b1be2081df89e535da811f4
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031036"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072253"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
 
- **Resumo:** Use o Office 365 PowerShell para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.
-  
 O uso do Office 365 PowerShell é uma maneira eficiente de atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.
   
 ## <a name="before-you-begin"></a>Antes de começar
@@ -33,12 +31,13 @@ Use estas instruções para configurar a execução dos comandos (pule as etapas
     
 2. Abra um prompt de comando do Windows PowerShell e execute os seguintes comandos: 
     
-  ```
-  Import-Module LyncOnlineConnector
+```powershell
+Import-Module LyncOnlineConnector
 $userCredential = Get-Credential
 $sfbSession = New-CsOnlineSession -Credential $userCredential
 Import-PSSession $sfbSession
-  ```
+```
+
 Quando solicitado, insira o nome da conta e a senha do administrador do Skype for Business online.
     
 ## <a name="updating-external-communication-settings-for-a-user-account"></a>Atualizando configurações de comunicação externa para uma conta de usuário
@@ -54,13 +53,13 @@ Suponha que você queira alterar as configurações de comunicação externa em 
   
 Então, como determinar qual política de acesso externo atribuirá a Alex? O comando a seguir retorna todas as políticas de acesso externo em que EnableFederationAccess é definido como True e EnablePublicCloudAccess como False:
   
-```
+```powershell
 Get-CsExternalAccessPolicy | Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
 O que o comando faz é retornar todas as políticas que atendem a dois critérios: a propriedade EnableFederationAccess é definida como true e a política EnablePublicCloudAccess é definida como false. Por sua vez, esse comando retorna uma política que atende aos nossos critérios (FederationOnly). Veja um exemplo:
   
-```
+```powershell
 Identity                          : Tag:FederationOnly
 Description                       :
 EnableFederationAccess            : True
@@ -75,7 +74,7 @@ EnableOutsideAccess               : True
   
 Agora que você sabe qual política será atribuída a Alex, podemos atribuir essa política usando o cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974) . Veja um exemplo:
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
@@ -83,7 +82,7 @@ Atribuir uma política é muito simples: basta especificar a identidade do usuá
   
 E quando se trata de políticas e atribuições de política, você não está limitado a trabalhar com as contas de usuário uma vez. Por exemplo, suponha que você precise de uma lista de todos os usuários que têm permissão para se comunicar com parceiros federados e com usuários do Windows Live. Já sabemos que esses usuários foram atribuídos à política de acesso de usuário externo FederationAndPICDefault. Como sabemos que, você pode exibir uma lista de todos os usuários executando um comando simples. Este é o comando:
   
-```
+```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
 ```
 
@@ -91,7 +90,7 @@ Em outras palavras, isso nos mostra todos os usuários cuja propriedade External
   
 Para configurar todas as contas de usuário para usar essa mesma política, use este comando:
   
-```
+```powershell
 Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 ```
 
@@ -99,7 +98,7 @@ Este comando usa Get-CsOnlineUser para retornar uma coleção de todos os usuár
   
 Como um exemplo adicional, suponha que você tenha anteriormente atribuído a Alex a política FederationAndPICDefault e agora já alterou sua mente e gostaria que ele fosse gerenciado pela política de acesso externo global. Você não pode atribuir explicitamente a política global a qualquer pessoa. Ela só será usada se nenhuma política por usuário for atribuída. Portanto, se quisermos que Alex seja gerenciado pela política global, você precisará *cancelar a atribuição* de qualquer política por usuário atribuída anteriormente a ele. Este é um exemplo de comando:
   
-```
+```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 ```
 
@@ -108,8 +107,6 @@ Este comando define o nome da política de acesso externo atribuída a Alex como
 Para desabilitar uma conta de usuário usando o Windows PowerShell, use os cmdlets do Azure Active Directory para remover a licença do Skype for Business online de Alex. Para obter mais informações, consulte [desabilitar o acesso aos serviços com o Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
   
 ## <a name="see-also"></a>Confira também
-
-#### 
 
 [Gerenciar o Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   

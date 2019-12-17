@@ -3,7 +3,7 @@ title: Atribuir funções a contas de usuário com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/30/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Resumo: Use o Office 365 PowerShell para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 5af8c514cbe8d102716d2d6b45e8ebdbdb5b1507
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 999b44f56e2652c0d6d2d746a3ed204be9d1f69c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257440"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072523"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
 
@@ -52,7 +52,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-Veja um exemplo de um conjunto de comandos concluído:
+Veja um exemplo de um conjunto de comandos concluído que atribui a função de administrador de serviços do SharePoint à conta belindan@contoso.com:
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -79,7 +79,7 @@ Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-pow
   
 ### <a name="for-a-single-role-change"></a>Para uma alteração de função única
 
-As formas mais comuns de uma conta de usuário específica são com seu nome de exibição ou seu nome de email, também conhecido como nome principal de usuário (UPN) do nome de entrada.
+As formas mais comuns de uma conta de usuário específica são com seu nome de exibição ou seu nome de email, também conhecido como nome de logon ou nome UPN.
 
 #### <a name="display-names-of-user-accounts"></a>Exibir nomes de contas de usuário
 
@@ -96,7 +96,7 @@ Se você estiver acostumado a trabalhar com os nomes de exibição das contas de
     Este comando lista o nome de exibição de suas contas de usuário, classificados pelo nome de exibição, uma tela por vez. Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** . Veja um exemplo:
 
    >[!Note]
-   >O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+   >O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
    >
     
   ```powershell
@@ -177,9 +177,9 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-### <a name="for-multiple-role-changes"></a>Para várias alterações de função
+### <a name="multiple-role-changes"></a>Várias alterações de função
 
-Determine o seguinte:
+Para várias alterações de função, determine o seguinte:
   
 - Quais contas de usuário você deseja configurar. Você pode usar os métodos da seção anterior para coletar o conjunto de nomes de exibição ou UPNs.
     
@@ -225,9 +225,8 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-
 ## <a name="see-also"></a>Confira também
 
-- [Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)

@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger o acesso de administrador global à sua assinatura do Office 365.
-ms.openlocfilehash: a428f3d70e87744c33c5fb5187dc869f3b2029e1
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814599"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072203"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger as contas de administradores globais do Office 365
 
@@ -49,7 +49,7 @@ Há relativamente poucas tarefas administrativas, como a atribuição de funçõ
   
 1. Determine o conjunto de contas de usuário que foram atribuídas à função de administrador global. Você pode fazer isso com o Azure Active Directory (Azure AD), comando PowerShell para Graph:
   
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
@@ -75,7 +75,7 @@ O resultado deve ser:
   
 - As únicas contas de usuários que possuem a função de administrador global em sua assinatura fazem parte do novo conjunto de contas de administradores globais dedicadas. Verifique isso com o seguinte comando do PowerShell:
     
-  ```
+  ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 

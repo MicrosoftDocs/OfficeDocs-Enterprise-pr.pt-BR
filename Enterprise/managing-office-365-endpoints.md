@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
-ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38030605"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072483"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
@@ -70,7 +70,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Há vários parâmetros que podem ser passados para o script:
 
-|**Parâmetro**|**Description**|
+|**Parâmetro**|**Descrição**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |Isso é obrigatório e é um GUID passado para o serviço Web que representa a máquina cliente que está fazendo a chamada. <br/> |
 |**Instância** <br/> |A instância de serviço do Office 365 que assume como padrão em todo o mundo. Também passado para o serviço Web. <br/> |
@@ -140,7 +140,7 @@ Só fornecemos endereços IP para os servidores do Office 365 que você deve rot
   
 Confira um IP associado ao Office 365 no qual você deseja obter mais informações?
   
-1. Verifique se o endereço IP está incluído em um intervalo de publicação maior usando uma [calculadora de CIDR](https://jodies.de/ipcalc).
+1. Verifique se o endereço IP está incluído em um intervalo de publicação maior usando uma [calculadora de CIDR](https://www.ipaddressguide.com/cidr).
 2. Veja se um parceiro é proprietário do IP com uma [consulta whois](https://dnsquery.org/). Se ele for proprietário da Microsoft, poderá ser um parceiro interno.
 3. Verifique o certificado, em um navegador, conecte-se ao endereço IP usando o *https://\<ip_address\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
 

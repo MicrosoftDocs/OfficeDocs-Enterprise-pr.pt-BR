@@ -3,7 +3,7 @@ title: Conectar-se a todos os serviços do Office 365 usando uma única janela d
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/28/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,15 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Resumo: Conecte o Windows PowerShell a todos os serviços do Office 365 em uma única janela do Windows PowerShell.'
-ms.openlocfilehash: c8390b3d704fa9df64f147a942891308b1ed825f
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: ec24914367450e4ff464b3399be9cb2e626dd254
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257420"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072503"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell
 
- **Resumo:** Em vez de gerenciar diferentes serviços do Office 365 em janelas de console do PowerShell separadas, você pode se conectar a todos os serviços do Office 365 e gerenciá-los em uma única janela do console.
-  
 Quando você usa o PowerShell para gerenciar o Office 365, é possível ter até cinco sessões do Windows PowerShell diferentes abertas ao mesmo tempo que corresponde ao centro de administração do Microsoft 365, ao SharePoint Online, ao Exchange Online, ao Skype for Business &amp; online e ao centro de conformidade de segurança. Com cinco métodos de conexão diferentes em sessões separadas do Windows PowerShell, sua área de trabalho pode ter a seguinte aparência:
   
 ![Cinco consoles do Windows PowerShell em execução ao mesmo tempo](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
@@ -41,7 +39,7 @@ Isso não é ideal para gerenciar o Office 365 porque não é possível trocar d
 
 Antes de poder gerenciar todo o Office 365 de uma única instância do Windows PowerShell, considere os seguintes pré-requisitos:
   
-- O Office 365conta comercial ou escolar que você usa para esses procedimentos precisa ser um membro de uma função de administrador do Office 365. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Isso é um requisito para o Office 365 PowerShell, não necessariamente para todos os outros serviços do Office 365.
+- O Office 365conta comercial ou escolar que você usa para esses procedimentos precisa ser um membro de uma função de administrador do Office 365. Para saber mais, veja [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Isso é um requisito para o Office 365 PowerShell, não necessariamente para todos os outros serviços do Office 365.
     
 - Você pode usar as seguintes versões de 64 bits do Windows:
     
@@ -100,7 +98,7 @@ Aqui estão as etapas para se conectar a todos os serviços em uma única janela
  ```
 
 >[!Note]
->O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
 >
 
 4. Execute estes comandos para se conectar ao SharePoint Online. Substitua _ \<domainhost>_ pelo valor real do seu domínio. Por exemplo, para "litwareinc.onmicrosoft.com", o valor de _ \<>domainhost_ é "litwareinc".
@@ -222,5 +220,5 @@ Observe que, em ambos os casos, você deve se conectar usando sessões separadas
 
 - [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md)
 - [Gerenciar o SharePoint Online com o Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
-- [Gerenciar contas de usuário e licenças usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
 - [Use o Windows PowerShell para criar relatórios no Office 365](use-windows-powershell-to-create-reports-in-office-365.md)

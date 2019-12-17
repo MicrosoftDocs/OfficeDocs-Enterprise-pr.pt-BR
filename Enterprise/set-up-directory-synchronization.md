@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Saiba como configurar a sincronização de diretório entre o Office 365 e o seu Active Directory local.
-ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814589"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072143"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurar a sincronização de diretório no Office 365
 
@@ -35,7 +35,7 @@ O Office 365 usa um inquilino do Azure Active Directory (Azure AD) para armazena
 
 Se você tiver um Active Directory Domain Services (AD DS) local, poderá sincronizar suas contas de usuário, grupos e contatos do AD DS com o inquilino do Azure AD de sua assinatura do Office 365. Esta é uma identidade híbrida do Office 365. Estes são seus componentes.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Componentes da sincronização de diretórios para o Office 365](./media/about-office-365-identity/hybrid-identity.png)
 
 O Azure AD Connect é executado em um servidor local e sincroniza seu AD DS com o locatário do Azure AD. Juntamente com a sincronização de diretórios, você também pode especificar estas opções de autenticação:
 

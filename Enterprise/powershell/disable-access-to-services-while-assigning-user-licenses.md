@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Saiba como atribuir licenças a contas de usuário e desabilitar planos de serviço específicos ao mesmo tempo usando o Office 365 PowerShell.
-ms.openlocfilehash: 06b6de4ea6d96dd2c9510770042bd2a2f1260876
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: cbf19005ac78599a280ff1dd1b007242731e39db
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257390"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072183"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Desabilitar o acesso aos serviços na atribuição de licenças de usuário
 
@@ -70,7 +70,7 @@ Get-MsolAccountSku
 ```
 
 >[!Note]
->O PowerShell Core não é compatível com o módulo Microsoft Azure Active Directory para o módulo e cmdlets do Windows PowerShell com o **MSol** em seu nome. Para continuar usando esses cmdlets, você deve executá-los do Windows PowerShell.
+>O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
 >
 
 Na exibição do `Get-MsolAccountSku` comando:
@@ -105,7 +105,7 @@ A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigá
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office   <br/> |
+| `SHAREPOINTWAC` <br/> |Escritório   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plano 2 do Exchange Online  <br/> |
    
@@ -192,7 +192,7 @@ Este bloco de comando do PowerShell:
   
 [Desabilitar o acesso ao Sway com o Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md)
   
-[Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 

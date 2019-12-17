@@ -3,7 +3,7 @@ title: Exibir licenças e serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 12/16/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: Explica como usar o Office 365 PowerShell para visualizar informações sobre os planos de licenciamento, serviços e licenças disponíveis na sua organização do Office 365.
-ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
-ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
+ms.openlocfilehash: d212a79be127dabae52993cb8cfd21fb848b3aad
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "39655843"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072153"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Exibir licenças e serviços com o PowerShell do Office 365
 
@@ -40,13 +40,13 @@ Você pode usar o Office 365 PowerShell para visualizar detalhes sobre os planos
 
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-Para exibir informações resumidas sobre seus planos de licenciamento atuais e as licenças disponíveis para cada plano, execute o seguinte comando:
+Para exibir informações resumidas sobre seus planos de licenciamento atuais e as licenças disponíveis para cada plano, execute este comando:
   
 ```powershell
 Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
 ```
 
-Os resultados contêm as seguintes informações:
+Os resultados contêm:
   
 - **SkuPartNumber:** Mostra os planos de licenciamento disponíveis para sua organização. Por exemplo, `ENTERPRISEPACK` é o nome do plano de licença para o Office 365 Enterprise E3.
     
@@ -115,7 +115,7 @@ Get-MsolAccountSku
 
 Os resultados contêm as seguintes informações:
   
-- **AccountSkuId** Mostre os planos de licenciamento disponíveis para a sua organização usando a sintaxe `<CompanyName>:<LicensingPlan>`.  _<CompanyName>_ é o valor que você forneceu ao se inscrever no Office 365 e é exclusivo da sua organização. O valor do _<LicensingPlan>_ é o mesmo para todos. Por exemplo, no valor `litwareinc:ENTERPRISEPACK`, o nome da empresa é  `litwareinc` e o nome do plano de licenciamento `ENTERPRISEPACK`, que é o nome do sistema para o Office 365 Enterprise E3.
+- **AccountSkuId:** Mostre os planos de licenciamento disponíveis para sua organização usando a `<CompanyName>:<LicensingPlan>`sintaxe.  CompanyName>é o valor que você forneceu quando você registrou no Office 365 e é exclusivo para sua organização. _ \<_ O valor de _ \<>LicensingPlan_ é o mesmo para todos. Por exemplo, no valor `litwareinc:ENTERPRISEPACK`, o nome da empresa é `litwareinc`e o nome `ENTERPRISEPACK`do plano de licenciamento, que é o nome do sistema do Office 365 Enterprise E3.
     
 - **ActiveUnits:** Número de licenças que você comprou para um plano de licenciamento específico.
     
@@ -139,7 +139,7 @@ A tabela a seguir mostra os planos de serviço do Office 365 e seus nomes amigá
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office  <br/> |
+| `SHAREPOINTWAC` <br/> |Escritório  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Plano 2 do Exchange Online  <br/> |
    
@@ -157,14 +157,9 @@ Este exemplo mostra os serviços do Office 365 que estão disponíveis no plano 
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus
 ```
 
-
-## <a name="new-to-office-365"></a>Começando a usar o Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar licenças e contas de usuário usando o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
 [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   

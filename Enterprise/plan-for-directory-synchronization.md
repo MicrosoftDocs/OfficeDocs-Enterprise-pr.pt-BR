@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descreve a sincronização de diretório com o Office 365, limpeza de serviços de domínio do Active Directory e a ferramenta Azure Active Directory Connect.
-ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747081"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072533"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identidade híbrida e sincronização de diretório para o Office 365
 
-*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Dependendo das necessidades de negócios e dos requisitos técnicos, o modelo de identidade híbrida e a sincronização de diretórios é a opção mais comum para clientes corporativos que estão adotando o Office 365. A sincronização de diretórios permite gerenciar identidades em seus serviços de domínio do Active Directory (AD DS) e todas as atualizações de contas de usuário, grupos e contatos são sincronizadas com o locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365.
 
@@ -63,7 +63,7 @@ Há dois tipos de autenticação gerenciada:
 
 Com a sincronização de hash de senha (PHS), você sincroniza suas contas de usuário do AD DS com o Office 365 e gerencia seus usuários no local. Hashes de senhas de usuário são sincronizados do AD DS para o Azure AD para que os usuários tenham a mesma senha no local e na nuvem. Essa é a maneira mais simples de habilitar a autenticação para identidades do AD DS no Azure AD. 
 
-![](./media/plan-for-directory-synchronization/phs-authentication.png)
+![Sincronização de hash de senha (PHS)](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 Quando as senhas são alteradas ou redefinidas no local, os novos hashes de senha são sincronizados com o Azure AD para que os usuários sempre possam usar a mesma senha para recursos de nuvem e recursos locais. As senhas do usuário nunca são enviadas para o Azure AD ou armazenadas no Azure AD em texto não criptografado. Alguns recursos premium do Azure AD, como proteção de identidade, exigem PHS independentemente do método de autenticação selecionado.
   
@@ -73,7 +73,7 @@ Consulte [escolher PHS](https://docs.microsoft.com/azure/security/azure-ad-choos
 
 A autenticação de passagem (PTA) fornece uma validação de senha simples para os serviços de autenticação do Azure AD usando um agente de software executado em um ou mais servidores locais para validar os usuários diretamente com o AD DS. Com a autenticação de passagem (PTA), você sincroniza contas de usuário do AD DS com o Office 365 e gerencia seus usuários no local. 
 
-![](./media/plan-for-directory-synchronization/pta-authentication.png)
+![Autenticação de passagem (PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
 O PTA permite que os usuários entrem em recursos e aplicativos locais e do Office 365 usando sua conta e senha local. Essa configuração valida senhas de usuários diretamente em seu AD DS local sem armazenar hashes de senha no Azure AD. 
 
