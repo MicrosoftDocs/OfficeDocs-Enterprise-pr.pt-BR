@@ -3,7 +3,7 @@ title: Conectar-se ao PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Resumo: conecte-se à sua organização do Office 365, usando o Office 365 PowerShell para realizar tarefas do centro de administração a partir da linha de comando.'
-ms.openlocfilehash: 3e31bfb68614ceb7c10f4b45e141928169121006
-ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
+ms.openlocfilehash: 42f092acb3074a449986e366fc6dfc0088ef9eef
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39257400"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072263"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -28,19 +28,14 @@ O Office 365 PowerShell permite gerenciar as configurações do Office 365 da li
 
 Existem duas versões do módulo do PowerShell usadas para se conectar ao Office 365 e administrar contas de usuários, grupos e licenças:
 
-- O Azure Active Directory PowerShell para Graph (inclui **AzureAD** no nome dos cmdlets) 
+- O Azure Active Directory PowerShell para Graph (inclui **AzureAD** no nome dos cmdlets)
 - O Módulo Microsoft Azure Active Directory para Windows PowerShell (inclui **MSol** no nome dos cmdlets) 
 
 A partir da data deste artigo, o Azure Active Directory PowerShell para o módulo do Graph não substituiu completamente a funcionalidade dos cmdlets do Módulo Microsoft Azure Active Directory para o módulo do Windows PowerShell para a administração de usuários, grupos e licenças. Em muitos casos, é necessário usar as duas versões. As duas versões podem ser instaladas com segurança no mesmo computador.
 
-> [!TIP]
-> **Novo no PowerShell? ** Veja um [vídeo de visão geral do PowerShell](https://support.office.com/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), apresentado pelo LinkedIn Learning. 
-  
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
-- Tempo estimado para conclusão: 5 minutos
-    
-- Você pode usar as seguintes versões do Windows:
+Você pode usar as seguintes versões do Windows:
     
   - Windows 10, Windows 8.1, Windows 8 ou Windows 7 Service Pack 1 (SP1) 
     
@@ -52,7 +47,7 @@ A partir da data deste artigo, o Azure Active Directory PowerShell para o módul
     > [!NOTE]
     >Use uma versão de 64 bits do Windows, pois o suporte para a versão de 32 bits do Módulo Microsoft Azure Active Directory para Windows PowerShell foi descontinuada em outubro de 2014.
     
--  Esses procedimentos são destinados aos usuários membros de uma função de administrador do Office 365. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+Esses procedimentos são destinados aos usuários membros de uma função de administrador do Office 365. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Conecte-se ao Azure Active Directory PowerShell para o módulo do Graph.
@@ -81,7 +76,7 @@ Se solicitado a instalar um módulo de um repositório não confiável, digite *
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: conectar-se ao Azure AD da sua assinatura do Office 365
 
-Para se conectar ao Azure AD da sua assinatura do Office 365 com um nome de conta e senha, ou com *autenticação multifator (MFA)*, execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
+Para se conectar ao Azure AD da sua assinatura do Office 365 com um nome de conta e senha, ou com autenticação multifator (MFA), execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
 
 |||
 |:-------|:-----|
@@ -96,8 +91,7 @@ Na caixa de diálogo **Entrar na sua conta**, digite seu nome de usuário e senh
 
 Se você estiver usando uma MFA, siga as instruções das caixas de diálogo adicionais para fornecer mais informações de autenticação, como um código de verificação.
 
-
-Depois de se conectar, você poderá usar os novos cmdlets do [Azure Active Directory PowerShell para o módulo do Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
+Depois de se conectar, você pode usar os cmdlets do [módulo do Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory).
   
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Conecte com o Módulo Microsoft Azure Active Directory para Windows PowerShell
@@ -123,7 +117,7 @@ Essas etapas precisam ser executadas apenas uma vez em seu computador e não tod
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Etapa 2: conectar-se ao Azure AD da sua assinatura do Office 365
 
-Para se conectar ao Azure AD da sua assinatura do Office 365 com um nome de conta e senha, ou com *autenticação multifator (MFA)*, execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
+Para se conectar ao Azure AD da sua assinatura do Office 365 com um nome de conta e senha, ou com autenticação multifator (MFA), execute um destes comandos de um prompt de comando do Windows PowerShell (não é necessário ser privilegiado).
 
 |||
 |:-------|:-----|
@@ -171,6 +165,3 @@ Caso você receba erros, verifique os seguintes requisitos:
 - [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 - [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 - [Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
-
