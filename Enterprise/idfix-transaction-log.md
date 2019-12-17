@@ -16,30 +16,30 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.
-ms.openlocfilehash: 22ea5af87b1bbcaa96f88e3746a50f1411a01b9a
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: af1ce72760d9a94438eeead50474094ca0e3a2bd
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813419"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072163"
 ---
-# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="77e8f-103">Log de transações IdFix do Office 365</span><span class="sxs-lookup"><span data-stu-id="77e8f-103">Office 365 IdFix transaction log</span></span>
+# <a name="office-365-idfix-transaction-log"></a><span data-ttu-id="be3e9-103">Log de transações IdFix do Office 365</span><span class="sxs-lookup"><span data-stu-id="be3e9-103">Office 365 IdFix transaction log</span></span>
 
-<span data-ttu-id="77e8f-104">*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="77e8f-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
+<span data-ttu-id="be3e9-104">*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="be3e9-104">*This article applies to both Office 365 Enterprise and Microsoft 365 Enterprise.*</span></span>
 
-<span data-ttu-id="77e8f-105">Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.</span><span class="sxs-lookup"><span data-stu-id="77e8f-105">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
+<span data-ttu-id="be3e9-105">Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do IdFix do Office 365.</span><span class="sxs-lookup"><span data-stu-id="be3e9-105">Provides an example and describes the naming convention and default log level of the Office 365 IdFix transaction log.</span></span>
   
-## <a name="idfix-transaction-log-location"></a><span data-ttu-id="77e8f-106">Local do log de transações do IdFix</span><span class="sxs-lookup"><span data-stu-id="77e8f-106">IdFix transaction log location</span></span>
+## <a name="idfix-transaction-log-location"></a><span data-ttu-id="be3e9-106">Local do log de transações do IdFix</span><span class="sxs-lookup"><span data-stu-id="be3e9-106">IdFix transaction log location</span></span>
 
-<span data-ttu-id="77e8f-107">A ferramenta IdFix do Office 365 cria um novo log de transações cada vez que você clica em **aplicar** no IdFix e aplica as alterações à floresta do Active Directory.</span><span class="sxs-lookup"><span data-stu-id="77e8f-107">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="77e8f-108">O log de transações é salvo na mesma pasta onde você instalou o IdFix.</span><span class="sxs-lookup"><span data-stu-id="77e8f-108">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="77e8f-109">Por padrão, essa pasta é C:\Deployment Tools\IDFix.</span><span class="sxs-lookup"><span data-stu-id="77e8f-109">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="77e8f-110">O nome do arquivo de log de transações usa um formato de carimbo de data e hora, por exemplo, Verbose 6-1-2018 6-17-22 PM indica um arquivo que foi gerado em 1º de junho de 2018 às 6:17:22 PM.</span><span class="sxs-lookup"><span data-stu-id="77e8f-110">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="77e8f-111">Verbose indica o nível de log.</span><span class="sxs-lookup"><span data-stu-id="77e8f-111">Verbose indicates the logging level.</span></span> 
+<span data-ttu-id="be3e9-107">A ferramenta IdFix do Office 365 cria um novo log de transações cada vez que você clica em **aplicar** no IdFix e aplica as alterações à floresta do Active Directory.</span><span class="sxs-lookup"><span data-stu-id="be3e9-107">The Office 365 IdFix tool creates a new transaction log each time you click **Apply** in IdFix and apply changes to the Active Directory forest.</span></span> <span data-ttu-id="be3e9-108">O log de transações é salvo na mesma pasta onde você instalou o IdFix.</span><span class="sxs-lookup"><span data-stu-id="be3e9-108">The transaction log is saved in the same folder where you installed IdFix.</span></span> <span data-ttu-id="be3e9-109">Por padrão, essa pasta é C:\Deployment Tools\IDFix.</span><span class="sxs-lookup"><span data-stu-id="be3e9-109">By default, this folder is C:\Deployment Tools\IDFix.</span></span> <span data-ttu-id="be3e9-110">O nome do arquivo de log de transações usa um formato de carimbo de data e hora, por exemplo, Verbose 6-1-2018 6-17-22 PM indica um arquivo que foi gerado em 1º de junho de 2018 às 6:17:22 PM.</span><span class="sxs-lookup"><span data-stu-id="be3e9-110">The transaction log file name uses a date and time stamp format, for example, Verbose 6-1-2018 6-17-22 PM indicates a file that was generated at June 1, 2018 at 6:17:22 PM.</span></span> <span data-ttu-id="be3e9-111">Verbose indica o nível de log.</span><span class="sxs-lookup"><span data-stu-id="be3e9-111">Verbose indicates the logging level.</span></span> 
   
-## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="77e8f-112">Nível de log do log de transações do IdFix</span><span class="sxs-lookup"><span data-stu-id="77e8f-112">IdFix transaction log logging level</span></span>
+## <a name="idfix-transaction-log-logging-level"></a><span data-ttu-id="be3e9-112">Nível de log do log de transações do IdFix</span><span class="sxs-lookup"><span data-stu-id="be3e9-112">IdFix transaction log logging level</span></span>
 
-<span data-ttu-id="77e8f-113">A palavra Verbose no nome do arquivo de log de transações indica o nível de log no arquivo.</span><span class="sxs-lookup"><span data-stu-id="77e8f-113">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="77e8f-114">Verbose significa que a quantidade máxima de informações é capturada no log.</span><span class="sxs-lookup"><span data-stu-id="77e8f-114">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="77e8f-115">Este é o nível de log padrão.</span><span class="sxs-lookup"><span data-stu-id="77e8f-115">This is the default logging level.</span></span> <span data-ttu-id="77e8f-116">No momento, não é possível alterar o nível de log.</span><span class="sxs-lookup"><span data-stu-id="77e8f-116">At this time, you cannot change the logging level.</span></span>
+<span data-ttu-id="be3e9-113">A palavra Verbose no nome do arquivo de log de transações indica o nível de log no arquivo.</span><span class="sxs-lookup"><span data-stu-id="be3e9-113">The word verbose in the transaction log file name indicates the level of logging in the file.</span></span> <span data-ttu-id="be3e9-114">Verbose significa que a quantidade máxima de informações é capturada no log.</span><span class="sxs-lookup"><span data-stu-id="be3e9-114">Verbose means that the maximum amount of information is captured in the log.</span></span> <span data-ttu-id="be3e9-115">Este é o nível de log padrão.</span><span class="sxs-lookup"><span data-stu-id="be3e9-115">This is the default logging level.</span></span> <span data-ttu-id="be3e9-116">No momento, não é possível alterar o nível de log.</span><span class="sxs-lookup"><span data-stu-id="be3e9-116">At this time, you cannot change the logging level.</span></span>
   
-## <a name="idfix-transaction-log-format"></a><span data-ttu-id="77e8f-117">Formato de log de transações do IdFix</span><span class="sxs-lookup"><span data-stu-id="77e8f-117">IdFix transaction log format</span></span>
+## <a name="idfix-transaction-log-format"></a><span data-ttu-id="be3e9-117">Formato de log de transações do IdFix</span><span class="sxs-lookup"><span data-stu-id="be3e9-117">IdFix transaction log format</span></span>
 
-<span data-ttu-id="77e8f-118">O IdFix grava os resultados de cada ação de **atualização** em um log de transações, conforme mostrado no exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="77e8f-118">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
+<span data-ttu-id="be3e9-118">O IdFix grava os resultados de cada ação de **atualização** em um log de transações, conforme mostrado no exemplo a seguir:</span><span class="sxs-lookup"><span data-stu-id="be3e9-118">IdFix writes the results of each **UPDATE** action to a transaction log as shown in the following example:</span></span>
   
 ```
 5/22/2018 6:36:44 AM Initialized - IdFix version 1.07 - Multi-Tenant
@@ -68,5 +68,4 @@ ms.locfileid: "39813419"
 5/22/2018 6:37:57 AM Update: [CN=user000001,OU=e2k10OU1,DC=e2k10,DC=com][user][mailnickname][character][user?^|000001][user000001][UNDO]
 5/22/2018 6:37:57 AM Update: [CN=user000008,OU=e2k10OU1,DC=e2k10,DC=com][user][targetAddress][duplicate][smtp:user000008@customer.com][][UNDO]
 5/22/2018 6:37:57 AM COMPLETE
-
 ```
