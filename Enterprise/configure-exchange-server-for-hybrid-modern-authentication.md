@@ -14,16 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: A protocolo de autenticação moderna (HMA) híbrida é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras e está disponível para implantações híbridas locais do Exchange Server.
-ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746214"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085166"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Exchange Server no local para usar a autenticação moderna híbrida
 
-*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 A protocolo de autenticação moderna (HMA) híbrida é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras e está disponível para implantações híbridas locais do Exchange Server.
   
@@ -154,10 +154,13 @@ Depois de habilitar a HMA, o próximo login de um cliente usará o novo fluxo de
 Você também deve manter pressionada a tecla CTRL enquanto clica com o botão direito do mouse no ícone do cliente Outlook (também na bandeja de notificações do Windows) e clique em "status da conexão". Procure o endereço SMTP do cliente em relação a um tipo "Authn" de "portador\*", que representa o token de portador usado no OAuth.
   
  **Observação** Precisa configurar o Skype for Business com a HMA? Você precisará de dois artigos: um que lista as [topologias suportadas](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)e uma que mostra [como fazer a configuração](configure-skype-for-business-for-hybrid-modern-authentication.md).
+ 
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>Usar autenticação moderna híbrida com o Outlook para iOS e Android
+
+Se você for um cliente local usando o Exchange Server no TCP 443, leia os seguintes intervalos IP: <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> 
   
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Visão geral da autenticação moderna híbrida e pré-requisitos para usá-lo com o Skype for Business e servidores do Exchange locais](hybrid-modern-auth-overview.md) 
   
-

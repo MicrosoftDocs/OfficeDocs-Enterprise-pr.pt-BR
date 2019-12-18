@@ -3,7 +3,7 @@ title: Exibir licença da conta e detalhes do serviço com o Office 365 PowerShe
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Explica como usar o Office 365 PowerShell para determinar os serviços do Office 365 que foram atribuídos aos usuários.
-ms.openlocfilehash: 08e44476ea746b7e8298355e3adc5d0401261acd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: d56457f00e63d20b9d87e1f90e0e8d12587fcc1f
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072283"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261424"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell
 
@@ -77,7 +77,7 @@ Get-MsolAccountSku
 Em seguida, execute este comando para listar os serviços que estão disponíveis em cada plano de licenciamento e a ordem em que eles estão listados (o número de índice).
 
 ```powershell
-(Get-MsolAccountSku | where {$_.AccountSkuId -eq '<AccountSkuId>'}).ServiceStatus
+(Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
   
 Use este comando para listar as licenças atribuídas a um usuário e a ordem em que elas estão listadas (o número de índice).
@@ -85,11 +85,6 @@ Use este comando para listar as licenças atribuídas a um usuário e a ordem em
 ```powershell
 Get-MsolUser -UserPrincipalName <user account UPN> | Format-List DisplayName,Licenses
 ```
-
->[!Note]
->Se você usar o cmdlet **Get-MsolUser** sem usar o parâmetro _All_, somente as primeiras 500 contas serão retornadas.
->
-   
 
 ### <a name="to-view-services-for-a-user-account"></a>Para exibir os serviços de uma conta de usuário
 
@@ -114,8 +109,8 @@ Este exemplo mostra os serviços aos quais a usuária BrendaF@litwareinc.com tem
 Para exibir todos os serviços de um usuário que tenha *várias licenças*atribuídas, use a seguinte sintaxe:
 
 ```powershell
-$userAccountUPN="<user account UPN>"
-$AllLicenses=(Get-MsolUser -UserPrincipalName $userAccountUPN).Licenses
+$userUPN="<user account UPN>"
+$AllLicenses=(Get-MsolUser -UserPrincipalName $userUPN).Licenses
 $licArray = @()
 for($i = 0; $i -lt $AllLicenses.Count; $i++)
 {

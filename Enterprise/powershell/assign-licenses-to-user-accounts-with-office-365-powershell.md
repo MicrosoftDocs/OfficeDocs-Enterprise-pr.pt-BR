@@ -3,7 +3,7 @@ title: Atribuir licenças a contas de usuários usando o PowerShell do Office 36
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/26/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,17 +18,15 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Como usar o Office 365 PowerShell para atribuir uma licença do Office 365 a usuários não licenciados.
-ms.openlocfilehash: d78bd36807a87cced3fdc8ac8bc06e6886970861
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ea2c889834c70095474fbc2957768746d92fe8cc
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072543"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261334"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Atribuir licenças a contas de usuários usando o PowerShell do Office 365
 
-**Resumo:**  Como usar o Office 365 PowerShell para atribuir uma licença do Office 365 a usuários não licenciados.
-  
 Os usuários não podem usar os serviços do Office 365 até que a conta tenha sido atribuída a uma licença de um plano de licenciamento. Você pode usar o Office 365 PowerShell para atribuir licenças rapidamente a contas não licenciadas. 
 
 >[!Note]
@@ -78,7 +76,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 Primeiro, [conectar-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Execute o comando **Get-MsolAccountSku** para exibir os planos de licenciamento disponíveis e o número de licenças disponíveis em cada plano da sua organização. O número de licenças disponíveis em cada plano é **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obter mais informações sobre planos de licenciamento, licenças e serviços, consulte [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
+Execute o `Get-MsolAccountSku` comando para exibir os planos de licenciamento disponíveis e o número de licenças disponíveis em cada plano da sua organização. O número de licenças disponíveis em cada plano é **ActiveUnits** - **WarningUnits** - **ConsumedUnits**. Para obter mais informações sobre planos de licenciamento, licenças e serviços, consulte [Exibir licenças e serviços com o Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).
 
 >[!Note]
 >O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome. Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.
@@ -126,7 +124,7 @@ Este exemplo atribui uma licença do plano de licenciamento do **litwareinc: ENT
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
-Para atribuir uma licença a vários usuários não licenciados, execute este comando.
+Para atribuir uma licença a todos os usuários não licenciados, execute este comando.
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLicense -AddLicenses "<AccountSkuId>"

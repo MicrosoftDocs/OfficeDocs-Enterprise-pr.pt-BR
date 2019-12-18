@@ -3,7 +3,7 @@ title: Desabilitar o acesso aos serviços com o PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/04/2019
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Use o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para os usuários.
-ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 7f50d3bbe08f02ee1149ca10859c9583b10f5e2d
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072193"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261414"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Desabilitar o acesso aos serviços com o PowerShell do Office 365
 
@@ -156,17 +156,9 @@ Para desabilitar os serviços do Office 365 para usuários enquanto você estive
 
 
 ## <a name="see-also"></a>Confira também
-<a name="SeeAlso"> </a>
 
-Confira os seguintes tópicos adicionais sobre como gerenciar usuários com o Office 365 PowerShell:
+[Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-- [Excluir e restaurar contas de usuários usando o Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Excluir e restaurar contas de usuários usando o Office 365 PowerShell](delete-and-restore-user-accounts-with-office-365-powershell.md)
-    
-- [Bloquear contas de usuários com o Office 365 PowerShell](block-user-accounts-with-office-365-powershell.md)
-    
-- [Atribuir licenças a contas de usuários usando o PowerShell do Office 365](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-    
-- [Criar contas de usuários usando o Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
-    
+[Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+  
+[Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)

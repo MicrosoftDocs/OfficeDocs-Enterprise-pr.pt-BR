@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados em um site do SharePoint.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919254"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261354"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar com convidados em um site
 
@@ -121,7 +121,7 @@ Para convidar usuários internos para um grupo
 
 Os usuários convidados não podem ser adicionados do site. Você precisa adicioná-los usando o Outlook na Web.
 
-Para convidar convidados para um site
+Para convidar convidados para um grupo
 1. No Outlook na Web, em **grupos**, clique no grupo em que você deseja adicionar membros.
 2. Abra o cartão de visita do grupo e, em **mais opções** (...), clique em **adicionar membros**.
 3. Digite os endereços de email dos convidados que você deseja convidar e clique em **Adicionar**.
@@ -133,5 +133,7 @@ Para convidar convidados para um site
 
 [Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
-[Criar um ambiente de compartilhamento seguro de convidados](create-a-secure-guest-sharing-environment.md))
+[Criar um ambiente seguro de compartilhamento para convidados](create-a-secure-guest-sharing-environment.md)
+
+[Criar uma extranet B2B com convidados gerenciados](b2b-extranet.md)
 

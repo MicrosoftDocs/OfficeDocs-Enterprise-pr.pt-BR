@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'Conectar-se ao Office 365 usando o Azure ExpressRoute é baseado em anúncios de BGP de sub-redes IP específicas que representam redes nas quais os pontos de extremidade do Office 365 estão implantados. Devido à natureza global do Office 365 e ao número de serviços que constituem o Office 365, os clientes geralmente precisam gerenciar os anúncios que eles aceitam em sua rede. Reduzir o número de sub-redes IP; chamado de prefixos IP no restante deste artigo, para alinhar-se com a terminologia de gerenciamento de rede do BGP, atende às seguintes metas finais para os clientes:'
-ms.openlocfilehash: e9b9d78df4898c1bb212b62444e5a9911a0e548c
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077930"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085176"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Usando comunidades BGP no ExpressRoute para cenários do Office 365
 
@@ -40,10 +40,10 @@ Para ajudar os clientes com essas metas, os prefixos IP do Office 365 anunciados
 
 |**Serviço**|**Valor da Comunidade BGP**|**Anotações**|
 |:-----|:-----|:-----|
-|câmbio\*  <br/> |12076:5010  <br/> |Inclui serviços do Exchange e do EOP\*  <br/> |
-|do\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online  <br/> |
-|outros serviços do Office 365\*  <br/> |12076:5100  <br/> |Inclui o Azure Active Directory (cenários de sincronização de diretório e autenticação), bem como os serviços de portal do Office 365  <br/> |
+|Exchange Online\*  <br/> |12076:5010  <br/> |Inclui serviços do Exchange e do EOP\*  <br/> |
+|SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
+|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business online & serviços do Microsoft Teams  <br/> |
+|Outros serviços do Office 365\*  <br/> |12076:5100  <br/> |Inclui o Azure Active Directory (cenários de sincronização de diretório e autenticação), bem como os serviços de portal do Office 365  <br/> |
 |\*O escopo dos cenários de serviço incluídos no ExpressRoute está documentado no artigo de [pontos de extremidade do Office 365](https://aka.ms/o365endpoints) .  <br/> \*\*Os serviços adicionais e os valores da Comunidade BGP podem ser adicionados no futuro. [Consulte a lista atual de comunidades de BGP](https://azure.microsoft.com/documentation/articles/expressroute-routing/).  <br/> |
 
 ## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>Quais são os cenários mais comuns para usar comunidades BGP?
@@ -79,7 +79,7 @@ Para garantir o tráfego de rede associado aos serviços de nuvem da Microsoft d
 
 |**Marca de comunidade BGP usada**|**Funcionalidade roteável sobre o Azure ExpressRoute**|**Rotas da Internet necessárias**|
 |:-----|:-----|:-----|
-|Exchange, Skype for Business, SharePoint, &amp; outros serviços  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Proteção do &amp; Exchange Online do Exchange Online  <br/> SharePoint Online &amp; onedrive for Business  <br/> Sinalização SIP do Skype, downloads, voz, vídeo e compartilhamento de área de trabalho  <br/> Portal do Office 365, autenticação do Office &amp; 365, Office em um navegador  <br/> | Solicitações de DNS, &amp; CRL, CDN  <br/>  Todos os outros serviços do Office 365 não suportados especificamente no Azure ExpressRoute  <br/>  Todos os outros serviços do Microsoft Cloud  <br/> |
+|Exchange, Skype for Business & Microsoft Teams, SharePoint &amp; , outros serviços  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Proteção do &amp; Exchange Online do Exchange Online  <br/> SharePoint Online &amp; onedrive for Business  <br/> Sinalização SIP do Skype, downloads, voz, vídeo e compartilhamento de área de trabalho  <br/> Portal do Office 365, autenticação do Office &amp; 365, Office em um navegador  <br/> | Solicitações de DNS, &amp; CRL, CDN  <br/>  Todos os outros serviços do Office 365 não suportados especificamente no Azure ExpressRoute  <br/>  Todos os outros serviços do Microsoft Cloud  <br/> |
 
 ## <a name="key-planning-considerations-to-using-bgp-communities"></a>Principais considerações de planejamento para usar comunidades BGP
 
@@ -91,7 +91,7 @@ Os clientes que optam por aproveitar as comunidades de BGP para influenciar como
 
 - O Azure ExpressRoute não dá suporte a ações na rede da Microsoft com base nas comunidades de BGP atribuídas pelo cliente.
 
-- Os prefixos IP usados pelo Office 365are apenas marcados com valores de comunidade BGP específicos de serviço, comunidades BGP específicas de local não são suportadas. Os serviços do Office 365 são globais por natureza, não há suporte para a filtragem de prefixos com base no local do locatário ou dados dentro da nuvem do Office 365. A abordagem recomendada é configurar sua rede para coordenar o caminho de rede mais curto ou preferencial do local da rede do usuário para a rede global da Microsoft, independentemente do local físico do endereço IP do serviço do Office 365 Eles estão solicitando.
+- Os prefixos IP usados pelo Office 365 são marcados apenas com valores de comunidade de BGP específicos de serviço, comunidades BGP específicas de local não são suportadas. Os serviços do Office 365 são globais por natureza, não há suporte para a filtragem de prefixos com base no local do locatário ou dados dentro da nuvem do Office 365. A abordagem recomendada é configurar sua rede para coordenar o caminho de rede mais curto ou preferencial do local da rede do usuário para a rede global da Microsoft, independentemente do local físico do endereço IP do serviço do Office 365 Eles estão solicitando.
 
 - Os prefixos IP incluídos em cada valor de comunidade BGP representam uma sub-rede que contém endereços IP para o aplicativo do Office 365 associado ao valor. Em alguns casos, mais de um aplicativo do Office 365 tem endereços IP dentro de uma sub-rede que resultam em um prefixo IP existente em mais de um valor de comunidade. Isso é esperado, embora raramente, o comportamento devido à fragmentação de alocação e não afeta a contagem de prefixo ou as metas de gerenciamento de largura de banda. Os clientes são incentivados a usar a abordagem "permitir o que é necessário" em vez de "negar o que não é necessário" ao aproveitar as vantagens de comunidades BGP para o Office 365 para minimizar o efeito.
 

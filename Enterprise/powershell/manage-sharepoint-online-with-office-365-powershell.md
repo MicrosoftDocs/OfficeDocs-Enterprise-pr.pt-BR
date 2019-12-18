@@ -3,7 +3,7 @@ title: Gerenciar o SharePoint Online com o Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,18 +15,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: use o Office 365 PowerShell para gerenciar usuários, grupos e grupos de sites do SharePoint Online.'
-ms.openlocfilehash: 26bfa4399ef3535098788cfa067272352532045a
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 6223c500d1fce4b0f20a35ca3e36295fd3e10454
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077970"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261404"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Gerenciar o SharePoint Online com o Office 365 PowerShell
 
- **Resumo:** use o Office 365 PowerShell para gerenciar usuários, grupos e grupos de sites do SharePoint Online.
-  
-Uma das principais tarefas de qualquer administrador do SharePoint Online é gerenciar sites, grupos de sites e usuários. Embora você possa executar algumas dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis no Office 365 PowerShell. Para mais informações, confira os seguintes tópicos:
+Uma das principais tarefas de qualquer administrador do SharePoint Online é gerenciar sites, grupos de sites e usuários. Embora você possa executar algumas dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis no Office 365 PowerShell. Para obter mais informações, consulte estes tópicos:
 
 - [Conectar ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
@@ -41,4 +39,3 @@ Uma das principais tarefas de qualquer administrador do SharePoint Online é ger
 - [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 
 - [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-

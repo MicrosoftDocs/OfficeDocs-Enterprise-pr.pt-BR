@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados no Microsoft Teams.
-ms.openlocfilehash: 9920bb57f31a36dcc4f903e2f26eccbf41a522db
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
+ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886520"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40085196"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar com convidados em uma equipe
 
@@ -108,7 +108,7 @@ Tenha em mente que essa configuração afeta todas as equipes e sites do SharePo
 
 Escolha o tipo de link selecionado por padrão quando os usuários compartilham arquivos e pastas:
 
-- **Qualquer pessoa com o link** -escolha essa opção se você espera compartilhar muitos arquivos e pastas com pessoas não autenticadas. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento acidental não autenticado, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
+- **Qualquer pessoa com o link** -escolha essa opção se você quiser fazer muito do compartilhamento não autenticado de arquivos e pastas. Se você quiser permitir links de *qualquer pessoa* , mas estiver preocupado com o compartilhamento acidental não autenticado, considere uma das outras opções como padrão. Esse tipo de link só estará disponível se você tiver habilitado o compartilhamento de **qualquer pessoa** .
 - **Somente as pessoas da sua organização** -escolha esta opção se você espera que a maioria dos compartilhamento de arquivos e pastas seja com pessoas dentro da sua organização.
 - **Pessoas específicas** -considere essa opção se você espera que um grande volume de compartilhamento de arquivos e pastas com convidados. Esse tipo de link funciona com convidados e exige a autenticação.
  
@@ -167,10 +167,10 @@ Para convidar convidados para uma equipe
 
 ## <a name="see-also"></a>Confira também
 
-[Práticas recomendadas para o compartilhamento de arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
+[Práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
 
-[Limitar a exposição acidental aos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
+[Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
 [Criar um ambiente de compartilhamento seguro de convidados](create-a-secure-guest-sharing-environment.md))
 
-
+[Criar uma extranet B2B com convidados gerenciados](b2b-extranet.md)
