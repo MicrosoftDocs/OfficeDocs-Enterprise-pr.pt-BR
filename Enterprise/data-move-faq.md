@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756580"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923843"
 ---
 # <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
@@ -50,6 +50,14 @@ Há duas ações que você pode realizar como um administrador de locatários.
 Movimentação de dados é uma operação de serviço de back-end com impacto mínimo para os usuários finais. Os recursos que podem ser afetados são listados [durante e após a movimentação dos dados](during-and-after-your-data-move.md). Respeitamos o contrato de [nível de serviço (SLA) dos serviços online da Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=523897) para disponibilidade, portanto, não há nada que os clientes precisem preparar ou monitorar durante a movimentação. 
   
 Todos os serviços do Office 365 executam as mesmas versões nos datacenters, para que você possa ter a funcionalidade consistente. Seu serviço é totalmente suportado durante todo o processo.
+
+## <a name="what-is-in-scope-for-teams-migration"></a>Qual é o escopo da migração do teams?
+
+Além do Exchange Online, do SharePoint Online e do OneDrive for Business; A Microsoft migrará os dados do teams para o datacenter local.  
+- Mensagens de chat de equipes, incluindo mensagens privadas e mensagens de canal. 
+- Imagens de equipes usadas em chats. 
+
+Os arquivos do teams são armazenados no SharePoint Online e os arquivos de chat do Microsoft Teams são armazenados no OneDrive for Business.  Correio de voz, calendário, histórico de chat e contatos são armazenados no Exchange Online.  Em muitos casos, o Exchange Online, o SharePoint Online e o OneDrive for Business já são usados pelo cliente na geografia do datacenter local e também fazem parte do programa de migração do Office 365 para países qualificados do cliente.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Qual é o impacto de ter diferentes serviços localizados em diferentes GEOS?
 

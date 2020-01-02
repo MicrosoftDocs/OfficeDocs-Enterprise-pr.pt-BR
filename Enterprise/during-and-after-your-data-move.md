@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959276"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923853"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -32,18 +32,21 @@ Assista ao centro de mensagens do Office 365 para confirmação quando se move p
 
 |**Clientes com país de inscrição no**|**Todas as movimentações concluídas por**|
 |:-----|:-----|
-|Austrália, Nova Zelândia, Fiji  <br/> |31 de outubro de 2017  <br/> |
-|Japão  <br/> |31 de outubro de 2018  <br/> |
-|Índia  <br/> |31 de outubro de 2018  <br/> |
-|Canadá  <br/> |30 de junho de 2019  <br/> |
-|Coréia do Sul  <br/> |31 de outubro de 2018  <br/> |
-|Reino Unido  <br/> |15 de setembro de 2019  <br/> |
-|França  <br/> |15 de setembro de 2020  <br/> |
-|Emirados Árabes Unidos  <br/> |1 de fevereiro de 2022  <br/> |
-|África do Sul  <br/> |1 de fevereiro de 2022  <br/> |
+|Austrália, Nova Zelândia, Fiji  <br/> |1º de julho de 2022  <br/> |
+|Japão  <br/> |1º de julho de 2022  <br/> |
+|Índia  <br/> |1º de julho de 2022  <br/> |
+|Canadá  <br/> |1º de julho de 2022  <br/> |
+|Coréia do Sul  <br/> |1º de julho de 2022  <br/> |
+|Reino Unido  <br/> |1º de julho de 2022  <br/> |
+|França  <br/> |1º de julho de 2022  <br/> |
+|Emirados Árabes Unidos  <br/> |1º de julho de 2022  <br/> |
+|África do Sul  <br/> |1º de julho de 2022  <br/> |
 |Suíça, Liechtenstein  <br/> |1º de julho de 2022  <br/> |
 |Alemanha  <br/> |Liga  <br/> |
-   
+
+> [!NOTE]
+> Os clientes nos países qualificados do Office 365 podem optar pela migração de dados do serviço de chat do Microsoft Teams a partir de 1º de janeiro de 2020 até 30 de junho de 2020, que também sinalizará a migração para qualquer outra carga de trabalho qualificada.  Os clientes que optaram por migrar antes de 2020 podem esperar que o Exchange Online e o SharePoint Online/OneDrive for Business sejam movidos para concluir pelo prazo original, enquanto o Microsoft Teams concluirá em 1º de julho de 2022 para todos os clientes. 
+
 ## <a name="exchange-online"></a>Exchange Online
 
 Como leva tempo para mover cada usuário para a nova Geografia do datacenter para um único locatário, alguns usuários ainda estarão na região antiga do datacenter durante a movimentação, enquanto outros estarão na nova Geografia do datacenter. Isso significa que alguns recursos que envolvem o acesso a várias caixas de correio podem não funcionar totalmente durante um período do processo de movimentação, que pode durar semanas. Esses recursos são descritos nas seções a seguir.
@@ -85,7 +88,7 @@ Depois de concluir a movimentação de seus dados do SharePoint Online, você po
     
 - Estamos removendo as cópias de trans-codificadas do datacenter anterior e as transcodificando novamente no novo datacenter.
     
-### <a name="search"></a>Pesquisa
+### <a name="search"></a>Pesquisar
 
 Durante a transferência dos dados do SharePoint Online, migramos o índice de pesquisa e as configurações de pesquisa para um novo local. Até que tenhamos **concluído** a movimentação de seus dados do SharePoint Online, continuamos a atender seus usuários do índice no local original. No novo local, a pesquisa inicia automaticamente o rastreamento do conteúdo após a conclusão da movimentação de seus dados do SharePoint Online. A partir deste ponto e em diante, atendemos aos seus usuários a partir do índice migrado. Alterações no conteúdo que ocorreram após a migração não estão incluídas no índice migrado até que o rastreamento as escolha. A maioria dos clientes não percebe que os resultados estão menos atualizados logo após a conclusão da movimentação de seus dados do SharePoint Online, mas alguns clientes podem ter uma atualização reduzida nas primeiras 24-48 horas 
   
@@ -102,7 +105,11 @@ Os seguintes recursos de pesquisa são afetados:
 - Descoberta eletrônica: os itens que foram alterados durante a migração não são mostrados até que o rastreamento escolha as alterações.
     
 - Proteção contra perda de dados (DLP): as políticas não são impostas em itens que são alterados até que o rastreamento escolha as alterações.
-    
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Os clientes nos países qualificados do Office 365 podem aceitar a migração de dados do serviço de chat do Microsoft Teams a partir de 1º de janeiro de 2020.  
+
 ## <a name="skype-for-business"></a>Skype for Business
 
 Todos os usuários serão desconectados do software cliente Skype for Business durante o recorte. A entrada automática reconectará os usuários dentro de dois minutos.

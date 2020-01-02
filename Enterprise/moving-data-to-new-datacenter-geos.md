@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962448"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923863"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
@@ -26,7 +26,8 @@ Continuaremos a abrir a nova GEOS do datacenter para o Office 365 para serviços
 Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente, incluindo: 
 - Conteúdo de caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email)
 - Conteúdo do site do SharePoint Online e os arquivos armazenados nesse site
-- Arquivos carregados no OneDrive for Business 
+- Arquivos carregados no OneDrive for Business
+- Mensagens de chat de equipes, incluindo mensagens privadas, mensagens de canal e imagens usadas em chats
   
 Os clientes existentes que têm seus dados principais de cliente armazenados em uma geografia do datacenter já existente não são afetados pelo lançamento de uma nova Geografia de datacenter. Não apresentamos recursos exclusivos, recursos ou certificações de conformidade com a nova Geografia do datacenter. Como cliente em qualquer uma dessas duas GEOS, você terá os mesmos controles de qualidade de serviço, desempenho e segurança que fazia antes. Oferecemos clientes existentes listados na tabela abaixo de uma opção para solicitar a migração inicial dos dados principais do cliente da sua organização em repouso para a nova Geografia do datacenter.
   
