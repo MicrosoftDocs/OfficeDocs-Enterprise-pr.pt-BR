@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Veja o status de integridade dos serviços do Office 365 antes de ligar para o suporte para ver se há uma interrupção ativa do serviço.
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931703"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122580"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço do Office 365
 
@@ -55,7 +55,7 @@ Se você não conseguir entrar no portal de serviço, poderá usar a [página st
 
 A guia **todos os serviços** (o modo de exibição padrão) mostra todos os serviços e seu estado de integridade atual. Um ícone e a coluna **status** indicam o estado de cada serviço. Para filtrar o modo de exibição para serviços que estão experimentando um incidente, selecione a guia **incidentes** na parte superior da página. Selecionar a guia **avisos** mostrará apenas os serviços que atualmente têm um comunicado Postado. A guia **histórico** mostra o histórico de incidentes e avisos que foram resolvidos.
 
-Se você estiver tendo um problema que não aparece na lista, selecione **relatar um problema**, preencha o formato curto para nos dizer sobre o problema e selecione **Enviar**.
+Se você estiver enfrentando um problema com um serviço do Office 365 e não o vir listado na página **integridade do serviço** , fale conosco selecionando **relatar um problema**e preenchimento de forma curta. Examinaremos os dados relacionados e os relatórios de outras organizações para ver o grau de disseminação do problema e se ele se originou com nosso serviço. Se tiver feito isso, vamos adicioná-lo como um novo incidente ou comunicado na página **integridade do serviço** , onde você pode controlar a resolução. Se você não vê-lo aparece na lista em cerca de 30 minutos, considere o suporte de contato para resolver o problema.
 
 > [!TIP]
 > Você também pode usar o [aplicativo de administração do Office 365](https://go.microsoft.com/fwlink/p/?linkid=627216) no seu dispositivo móvel para visualizar a integridade do serviço, o que é uma ótima maneira de se manter atualizado com as notificações por push. 

@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: A protocolo de autenticação moderna (HMA) híbrida é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras e está disponível para implantações híbridas locais do Exchange Server.
-ms.openlocfilehash: f5bbbffb3d21ab5eebfb7704318c08abe75f064b
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1a8bed186acd8da9c5f223120c5e58e8bfd445b4
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085166"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122560"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Exchange Server no local para usar a autenticação moderna híbrida
 
@@ -164,3 +164,5 @@ Se você for um cliente local usando o Exchange Server no TCP 443, leia os segui
 
 [Visão geral da autenticação moderna híbrida e pré-requisitos para usá-lo com o Skype for Business e servidores do Exchange locais](hybrid-modern-auth-overview.md) 
   
+Forçar os usuários do Outlook a autenticação moderna  
+[Requisitos de configuração de autenticação moderna para transição do Office 365 dedicada/ITAR para o vNext](modern-authentication-configuration.md)

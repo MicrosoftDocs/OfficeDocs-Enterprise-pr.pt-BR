@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Saiba como colaborar com convidados no Microsoft Teams.
-ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085196"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122590"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar com convidados em uma equipe
 
@@ -171,6 +171,6 @@ Para convidar convidados para uma equipe
 
 [Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
-[Criar um ambiente de compartilhamento seguro de convidados](create-a-secure-guest-sharing-environment.md))
+[Criar um ambiente de compartilhamento de convidados seguro](create-a-secure-guest-sharing-environment.md)
 
 [Criar uma extranet B2B com convidados gerenciados](b2b-extranet.md)

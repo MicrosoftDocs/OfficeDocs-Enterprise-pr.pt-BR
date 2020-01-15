@@ -21,16 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Saiba como a autenticação moderna do Office 365 funciona de forma diferente para os aplicativos cliente do Office 2013 e 2016.
-ms.openlocfilehash: 8fde952201b01a235794ddcd59abeed402a368d4
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747984"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122570"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Como funciona a autenticação moderna para aplicativos cliente do Office 2013 e do Office 2016
 
-*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Leia este artigo para saber como os aplicativos clientes do Office 2013 e do Office 2016 usam recursos de autenticação modernos com base na configuração de autenticação no locatário do Office 365 para o Exchange Online, o SharePoint Online e o Skype for Business online.
 
@@ -73,6 +73,7 @@ A tabela a seguir descreve o comportamento de autenticação para os aplicativos
   
 |Versão do aplicativo cliente do Office * * * *|Chave do registro presente? * * * *|Autenticação moderna em? * * * *|Comportamento de autenticação com autenticação moderna ativada para o locatário (padrão) * * * *|Comportamento de autenticação com autenticação moderna desativada para o locatário * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2016  <br/> |Não <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sim  <br/> |Força a autenticação moderna no Outlook 2010, 2013 ou 2016 <br/> [Mais informações](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Força a autenticação moderna no cliente do Outlook.<br/> |
 |Office 2016  <br/> |Não, ou EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |
 |Office 2016  <br/> |Sim, EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |
 |Office 2016  <br/> |Sim, EnableADAL = 0  <br/> |Não  <br/> |Autenticação básica  <br/> |Autenticação básica  <br/> |
@@ -107,7 +108,7 @@ A tabela a seguir descreve o comportamento de autenticação para os aplicativos
    
 ## <a name="see-also"></a>Confira também
 
-[Habilitar a autenticação moderna do Office 2013 em dispositivos Windows](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Habilitar a Autenticação Moderna do Office 2013 em dispositivos Windows.](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Planejar a autenticação multifator para implantações do Office 365 (para administradores do Office 365)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
