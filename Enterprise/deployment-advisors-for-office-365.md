@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere o planejamento e a configuração do Office 365 ou Microsoft 365 com os consultores de implantação.
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072363"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627857"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Comunicados de implantação para o Office 365 ou serviços do Microsoft 365
 
@@ -168,7 +168,7 @@ Consulte este guia para obter as etapas para instalar o Office em um computador 
 | **Sejam** |  [Guia rápido de início do Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-O supervisor de implantação do Office 365 ProPlus percorre as etapas para ajudar os usuários a instalar o Office 365 ProPlus diretamente do portal do Office 365 online ou para implantar o Office 365 PROPLUS para seus usuários a partir de um local local. Estão incluídas instruções para usar o System Center Configuration Manager, um script de inicialização de política de grupo, uma imagem de disco do sistema operacional ou uma ativação compartilhada de serviços de área de trabalho remota (RDS).
+O supervisor de implantação do Office 365 ProPlus percorre as etapas para ajudar os usuários a instalar o Office 365 ProPlus diretamente do portal do Office 365 online ou para implantar o Office 365 PROPLUS para seus usuários a partir de um local local. Estão incluídas instruções para usar o Microsoft Endpoint Configuration Manager, um script de inicialização de política de grupo, uma imagem de disco do sistema operacional ou uma ativação compartilhada de serviços de área de trabalho remota (RDS).
 
 |||
 |:-------|:-----|

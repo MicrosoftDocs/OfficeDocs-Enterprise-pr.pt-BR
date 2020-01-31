@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre as configurações de compartilhamento de convidados disponíveis no Microsoft 365.
-ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919375"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627869"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referência das configurações de compartilhamento de convidado do Microsoft 365
 
@@ -55,7 +55,7 @@ O centro de administração do Microsoft 365 tem configurações no nível da or
 
 ### <a name="sharing"></a>Compartilhamento
 
-**Navegação:** [Centro de administração do Microsoft 365](https://admin.microsoft.com) > Segurança e Privacidade > Compartilhamento
+**Navegação:**[Centro de administração do Microsoft 365](https://admin.microsoft.com) > Configurações > Configurações> Segurança e Privacidade > Compartilhamento
 
 ![Captura de tela da configuração de segurança e privacidade do compartilhamento de convidado no centro de administração do Microsoft 365](media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -65,7 +65,7 @@ O centro de administração do Microsoft 365 tem configurações no nível da or
 
 ### <a name="office-365-groups"></a>Grupos do Office 365
 
-**Navegação:** [Centro de administração do Microsoft 365](https://admin.microsoft.com) > Configurações > Serviços e suplementos > Grupos do Office 365
+**Navegação:**[Centro de administração do Microsoft 365](https://admin.microsoft.com) > Configurações > Configurações> Grupos do Office 365
 
 ![Captura de tela das configurações de convidado dos Grupos do Office 365 no centro de administração do Microsoft 365](media/office-365-groups-guest-settings.png)
 
@@ -196,11 +196,13 @@ Essas duas configurações podem ser usadas ao mesmo tempo. Se um usuário tiver
 
 **Função do Administrador:** administrador do SharePoint
 
+Como essas configurações estão sujeitas às configurações de toda a organização do SharePoint, a configuração de compartilhamento efetiva do site poderá mudar se a configuração no nível da organização mudar. Se escolher uma configuração aqui e o nível da organização for definido posteriormente como um valor mais restritivo, esse site funcionará nesse valor mais restritivo. Por exemplo, se escolher **Qualquer pessoa** e a configuração no nível da organização for configurada posteriormente como **Convidados novos e existentes**, então esse site permitirá convidados novos e existentes. Se a configuração no nível da organização for definida novamente como **Qualquer pessoa**, esse site permitirá novamente os links para *Qualquer pessoa*.
+
 ### <a name="site-sharing"></a>Compartilhamento do site
 
 Você pode definir as permissões de compartilhamento de convidado para cada site do SharePoint. Essa configuração se aplica ao compartilhamento do site e ao compartilhamento de arquivo e pasta. (O compartilhamento de *Qualquer pessoa* não está disponível no compartilhamento do site. Se escolher **Qualquer pessoa**, os usuários poderão compartilhar arquivos e pastas usando os links para *Qualquer pessoa* e o site em si com convidados novos e existentes.
 
-**Navegação:** Centro de administração do SharePoint > Sites Ativos > Selecionar o site > Compartilhamento
+**Navegação:** Centro de administração do SharePoint > sites ativos > selecione site > guia políticas > Editar compartilhamento externo
 
 ![Captura de tela das configurações de compartilhamento de site externo do SharePoint](media/sharepoint-site-external-sharing-settings.png)
 
@@ -208,7 +210,22 @@ Você pode definir as permissões de compartilhamento de convidado para cada sit
 |:-----|:-----|:-----|
 |O conteúdo do site pode ser compartilhado com|Varia por tipo de site (veja a tabela abaixo)|Indica o tipo de compartilhamento externo permitido para esse site. As opções disponíveis aqui estão sujeitas às configurações de compartilhamento no nível da organização para o SharePoint.|
 
-Como essas configurações estão sujeitas às configurações de toda a organização do SharePoint, a configuração de compartilhamento efetiva do site poderá mudar se a configuração no nível da organização mudar. Se escolher uma configuração aqui e o nível da organização for definido posteriormente como um valor mais restritivo, esse site funcionará nesse valor mais restritivo. Por exemplo, se escolher **Qualquer pessoa** e a configuração no nível da organização for configurada posteriormente como **Convidados novos e existentes**, então esse site permitirá convidados novos e existentes. Se a configuração no nível da organização for definida novamente como **Qualquer pessoa**, esse site permitirá novamente os links para *Qualquer pessoa*.
+### <a name="site-file-and-folder-link-settings"></a>Configurações de link de pasta e arquivo do site
+
+Você pode definir padrões para o tipo de link e permissões e configurações de expiração para os links *Qualquer* pessoa para cada site. Quando definidas no nível do site, essas configurações substituem as configurações no nível da organização. Observe que, se os links de *Qualquer pessoa* estiverem desabilitados no nível da organização, *Qualquer pessoa* não será um tipo de link disponível no nível do site.
+
+**Navegação:** Centro de administração do SharePoint > sites ativos > selecione site > guia políticas > Editar compartilhamento externo
+
+![Captura de tela das configurações de compartilhamento de links no nível do site do SharePoint](media/sharepoint-site-link-sharing-settings.png)
+
+|**Configuração**|**Padrão**|**Descrição**|
+|:-----|:-----|:-----|
+|Limitar o compartilhamento por domínio|Desabilitado|Essa configuração permite especificar uma lista de domínios permitidos ou bloqueados para compartilhamento. Quando domínios permitidos são especificados, convites de compartilhamento só poderão ser enviados para esses domínios. Quando domínios negados são especificados, convites de compartilhamento não poderão ser enviados para esses domínios.<br><br> Essa configuração não pode ser usada para substituir restrições de domínio definidas na organização ou no nível do Azure AD.|
+|Tipo de link padrão de compartilhamento|Igual à configuração de nível da organização|Essa configuração permite especificar o link de compartilhamento padrão apresentado aos usuários neste site. A opção *Igual à configuração no nível da organização* é definida por uma combinação do nível de settings.te da organização e do compartilhamento do site.|
+|Configurações avançadas para os links "Qualquer pessoa"|Igual à configuração de nível da organização|Especifica o número de dias em que um link para *Qualquer pessoa* criado para um arquivo deste site que deve expirar. Os links expirados não podem ser renovados. Crie um novo link se precisar continuar compartilhar além do prazo de expiração.|
+|Permissão de vínculo padrão|Igual à configuração de nível da organização|Essa configuração permite especificar a permissão padrão (exibir ou editar) para links de compartilhamento criados para arquivos neste site.|
+
+### <a name="default-site-sharing-settings"></a>Configurações de compartilhamento de site padrão
 
 A tabela a seguir exibe a configuração de compartilhamento padrão para cada tipo de site.
 

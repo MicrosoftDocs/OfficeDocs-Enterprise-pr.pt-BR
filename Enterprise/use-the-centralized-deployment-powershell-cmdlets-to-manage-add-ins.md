@@ -1,9 +1,9 @@
 ---
 title: Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos
-ms.author: twerner
-author: twernermsft
-manager: scotv
-ms.date: 5/31/2017
+ms.author: kvice
+author: kelleyvice-msft
+manager: laurawi
+ms.date: 1/24/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use os cmdlets do PowerShell de implantação centralizada para ajudá-lo a implantar e gerenciar suplementos do Office para sua organização do Office 365.
-ms.openlocfilehash: 72f7ad69f1154c65ee5f6bd608770461ae775257
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0577a4d69d7b6d32164e66613a9d38a71d9766e4
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030856"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570868"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos
 
@@ -106,7 +106,7 @@ Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 Para obter detalhes completos de todos os suplementos, além dos usuários e grupos atribuídos, canalize a saída do cmdlet **Get-OrganizationAddIn** para o cmdlet Format-List, conforme mostrado no exemplo a seguir.
   
 ```powershell
-Get-OrganizationAddIn |Format-List
+foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
 ## <a name="turn-on-or-turn-off-an-add-in"></a>Ativar ou desativar um suplemento
@@ -168,53 +168,54 @@ Para excluir um suplemento, execute o cmdlet **Remove-OrganizationAddIn** com o 
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>Personalizar suplementos da Microsoft Store para sua organização
+<!--
+## Customize Microsoft Store add-ins for your organization
 
-Você deve personalizar o suplemento antes de implantá-lo em sua organização. Os suplementos mais antigos do que a versão 1,1 não são suportados por este recurso. 
+You must customize the add-in before you deploy it to your organization. Add-ins older than version 1.1 are not supported by this feature. 
 
-Recomendamos que você implante primeiro um suplemento personalizado para se certificar de que ele funcione conforme o esperado antes de implantá-lo em toda a organização.
+We recommend that you deploy a customized add-in  to yourself first to make sure it works as expected before you deploy it to your entire organization.
 
-Observe também as seguintes restrições:
-- Todas as URLs devem ser absolutas (incluir http ou HTTPS) e válidas.
-- *DisplayName* não deve exceder 125 caracteres 
-- *DisplayName*, *Resources* e *AppDomains* não devem incluir os seguintes caracteres: 
+Note also the following restrictions:
+- All URLs must be absolute (include http or https) and valid.
+- *DisplayName* must not exceed 125 characters 
+- *DisplayName*, *Resources* and *AppDomains* must not include the following characters: 
  
     - \<
     -  \>
     -  ;
     -  =   
 
-Se você quiser personalizar um suplemento implantado, será necessário desinstalá-lo no centro de administração e, em seguida, consulte [remover um suplemento do cache local](#remove-an-add-in-from-local-cache) para obter etapas para removê-lo de cada computador no qual foi implantado.
+If you want to customize an add-in that has been deployed, you have to uninstall it in the admin center, and see [remove an add-in from local cache](#remove-an-add-in-from-local-cache) for steps to remove it from each computer it has been deployed to.
 
-Para personalizar um suplemento, execute o cmdlet **set – OrganizationAddInOverrides** com o *ProductID* como um parâmetro, seguido da marca que você deseja substituir e o novo valor. Para saber como obter o *ProductID* , confira [obter detalhes de um suplemento](#get-details-of-an-add-in) neste artigo. Por exemplo:
+To customize an add-in, run the **Set –OrganizationAddInOverrides** cmdlet with the *ProductId* as a parameter, followed by the tag you want to overwrite and the new value. To find out how to get the *ProductId* see [get details of an add-in](#get-details-of-an-add-in) in this article. For example:
 
 ```powershell
  Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -IconUrl "https://site.com/img.jpg" 
 ```
-Para personalizar várias marcas de um suplemento, adicione essas marcas à linha de comando:
+To customize multiple tags for an add-in, add those tags to the commandline:
 
 ```powershell
 Set-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 -Hosts h1, 2 -DisplayName "New DocuSign W" -IconUrl "https://site.com/img.jpg" 
 ```
 
 > [!IMPORTANT]
-> Você deve aplicar várias marcas personalizadas a um suplemento como um comando. Se você personalizar as marcas um por um, somente a última personalização será aplicada. Além disso, se você personalizar uma marca por engano, você deve remover todas as personalizações e começar novamente.
+> You must apply multiple customized tags to one add-in as one command. If you customize tags one by one, only the last customization will be applied. Additionally, if you customize a tag by mistake, you must remove all customizations and start over.
 
-### <a name="tags-you-can-customize"></a>Marcas que você pode personalizar
+### Tags you can customize
 
-| Tag                  | Descrição          |
+| Tag                  | Description          |
 | :------------------- | :------------------- |
-| \<> IconURL   </br>| A URL da imagem usada como o ícone do suplemento (no centro de administração). </br> |
-| \<> DisplayName| O título do suplemento (no centro de administração).|
-| \<Hospeda>| Lista de aplicativos que oferecerão suporte ao suplemento.|
-| \<> SourceLocation | A URL de origem à qual o suplemento será conectado.| 
-| \<> AppDomains | Uma lista de domínios com os quais o suplemento pode se conectar. | 
-| \<> SupportURL| A URL que os usuários podem usar para acessar a ajuda e suporte. | 
-| \<Recursos>  | Essa marca contém vários elementos, incluindo títulos, dicas de ferramentas e ícones de tamanhos diferentes.| 
+| \<IconURL>   </br>| The URL of the image used as the add-in’s icon (in admin center). </br> |
+| \<DisplayName>| The title of the add-in  (in admin center).|
+| \<Hosts>| List of apps that will support the add-in.|
+| \<SourceLocation> | The source URL that the add-in will connect to.| 
+| \<AppDomains> | A list of domains that the add-in can connect with. | 
+| \<SupportURL>| The URL users can use to access help and support. | 
+| \<Resources>  | This tag contains a number of elements including titles, tooltips, and icons of different sizes.| 
 |
-### <a name="customize-resources-tag"></a>Marca personalizar recursos
+### Customize Resources tag
 
-Qualquer elemento na <Resources> marca do manifesto pode ser personalizado dinamicamente. Primeiro, você precisa verificar o manifesto para localizar a ID do elemento ao qual você deseja atribuir um novo valor. A <Resources> marca tem a seguinte aparência:
+Any element in the <Resources> tag of the manifest can be customized dynamically. You first need to check the manifest to find the element id to which you want to assign a new value. The <Resources> tag looks like this:
 
 ```
 <Resources>  
@@ -223,45 +224,47 @@ Qualquer elemento na <Resources> marca do manifesto pode ser personalizado dinam
     </bt:Images> 
 </Resources> 
 ``` 
-Nesse caso, a ID do elemento para a imagem é "img16icon" e o valor associado a ela é "http:<i></i>//site. <i> </i>com/img. jpg. "
+In this case, the element id for the image is “img16icon” and the value associated with it is “http:<i></i>//site.<i></i>com/img.jpg.”
 
-Depois de identificar os elementos que você deseja personalizar, use o seguinte comando no PowerShell para atribuir novos valores aos elementos:
+Once you have identified the elements you want to customize, use the following command in Powershell to assign new values to the elements:
 
 ```powershell
 Set-OrganizationAddInOverrides -Resources @{“ElementID” = “New Value”; “NextElementID” = “Next New Value”} 
 ```
 
-Você pode personalizar tantos elementos com o comando quanto necessário.
+You can customize as many elements with the command as you need to.
 
-### <a name="remove-customization-from-an-add-in"></a>Remover a personalização de um suplemento
+### Remove customization from an add-in
 
-A única opção disponível atualmente para excluir personalizações é excluir todas elas de uma só vez:
+The only option currently available for deleting customizations is to delete all of them at once:
 
 ```powershell
 Remove-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="view-add-in-customizations"></a>Exibir personalizações de suplementos
+### View add-in customizations
 
-Para exibir uma lista de personalizações aplicadas, execute o cmdlet **Get-OrganizationAddInOverrides** . Se **Get-OrganizationAddInOverrides** for executado sem um *ProductID* , uma lista de todos os suplementos com substituições aplicadas será retornada.  
+To view a list of applied customizations, run the **Get-OrganizationAddInOverrides** cmdlet. If **Get-OrganizationAddInOverrides** is run without a *ProductId* then a list of all add-ins with applied overrides are returned.  
 
 ```powershell
 Get-OrganizationAddInOverrides 
 ```
-Se ProductId for especificado, uma lista de substituições aplicada a esse suplemento será retornada. 
+If ProductId is specified, then a list of overrides applied to that add-in is returned. 
 
 ```powershell
 Get-OrganizationAddInOverrides -ProductId 5b31b349-2c41-4f94-b720-6ee40349d391 
 ```
 
-### <a name="remove-an-add-in-from-local-cache"></a>Remover um suplemento do cache local
+### Remove an add-in from local cache
 
-Se um suplemento tiver sido implantado, ele deve ser removido do cache em cada computador antes que ele possa ser personalizado. Para remive um suplemento do cache:
+If an add-in has been deployed, it has to be removed from the cache in each computer before it can be customized. To remive an add-in from cache:
 
-1. Navegue até a pasta "usuários" em C:\ 
-1. Vá para a pasta do usuário
-1. Navegue até AppData\Local\Microsoft\Office e selecione a pasta associada à sua versão do Office
-1. Na pasta *WEF* , exclua a pasta *manifestos* .
+1. Navigate to the “Users” folder in C:\ 
+1. Go to your user folder
+1. Navigate to AppData\Local\Microsoft\Office and select the folder associated with your version of Office
+1. In the *Wef* folder delete the *Manifests* folder.
+
+-->
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Obter ajuda detalhada para cada cmdlet
 

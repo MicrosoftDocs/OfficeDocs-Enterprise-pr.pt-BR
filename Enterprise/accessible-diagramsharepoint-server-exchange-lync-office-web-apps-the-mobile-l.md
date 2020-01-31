@@ -10,12 +10,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Este artigo é uma versão de texto acessível do diagrama chamado opções de plataforma do Microsoft Exchange 2013, disponível em diagramas técnicos.
-ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1440558a3c462ae71189fb42d492e0292c256c19
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030575"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627847"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Diagrama acessível-SharePoint Server, Exchange, Lync, Office Web Apps-o cenário móvel
 
@@ -154,7 +154,7 @@ Fora do uso do Office Mobile, os usuários podem exibir documentos do Office em 
     
 ### <a name="device-management-and-software-distribution"></a>Gerenciamento de dispositivos e distribuição de software
 
-A Microsoft tem novas ofertas para gerenciamento de dispositivos em várias marcas de dispositivo. O Windows Intune é uma plataforma de gerenciamento baseada na nuvem para dispositivos móveis. Ele pode ser usado sozinho para gerenciar seus dispositivos ou juntamente com o Gerenciador de configuração do System Center 2012 R2 e administrado dentro desse console. Alguns benefícios dessa operação conjunta incluem:
+A Microsoft tem novas ofertas para gerenciamento de dispositivos em várias marcas de dispositivo. O Windows Intune é uma plataforma de gerenciamento baseada na nuvem para dispositivos móveis. Ele pode ser usado sozinho para gerenciar seus dispositivos ou juntamente com o Microsoft Endpoint Configuration Manager e administrado dentro desse console. Alguns benefícios dessa operação conjunta incluem:
   
 - Imposição e gerenciamento de políticas em vários dispositivos, incluindo Windows RT, Windows 8,1, Windows Phone 8, iOS e Android
     
@@ -168,15 +168,15 @@ A Microsoft tem novas ofertas para gerenciamento de dispositivos em várias marc
     
 - Gerenciamento de um console familiar do Configuration Manager
     
-Um diagrama de acompanhamento mostra como você pode usar o System Center 2012 R2 Configuration Manager e o Windows Intune para gerenciamento de dispositivos.
+Um diagrama de acompanhamento mostra como você pode usar o Gerenciador de configurações e o Windows Intune para gerenciamento de dispositivos.
   
- **Considerações para usar o System Center 2012 R2 Configuration Manager e o Windows Intune:**
+ **Considerações para usar o Configuration Manager e o Windows Intune:**
   
-- Ao usar o Gerenciador de configuração do System Center 2012 R2 e o Windows Intune, você pode gerenciar e administrar todos os dispositivos em sua organização em um único console.
+- Ao usar o Configuration Manager e o Windows Intune, você pode gerenciar e administrar todos os dispositivos em sua organização em um único console.
     
 - Para conectar o Gerenciador de configurações ao Windows Intune, você precisa de uma assinatura do Windows Intune e a função de servidor do site do conector do Windows Intune deve ser implantada em um servidor no seu ambiente do Configuration Manager.
     
-- O System Center 2012 R2 Configuration Manager oferece gerenciamento e distribuição de software para seus PCs locais.
+- O Microsoft Endpoint Configuration Manager oferece gerenciamento e distribuição de software para seus PCs locais.
     
 - Dispositivos modernos gerenciados receberão a imposição de política e a distribuição de software do Windows Intune. Os tipos de dispositivos suportados incluem: Windows RT, Windows 8,1, Windows Phone 8, iOS, Android.
     
