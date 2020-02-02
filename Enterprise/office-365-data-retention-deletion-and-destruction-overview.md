@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Uma visão geral das políticas da Microsoft para o Office 365 em relação à retenção, exclusão e destruição de dados.
-ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 93093e3688d0f8ae399a4e021deaaf4b7ed5cecf
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37975826"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658328"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retenção, exclusão e destruição de dados no Office 365
 
@@ -47,7 +47,7 @@ Para uma avaliação gratuita, sua conta é movida para um status de cortesia po
 
 Para qualquer assinatura, um assinante pode entrar em contato com o suporte da Microsoft e solicitar o provisionamento acelerado de assinatura. Nesse processo, todos os dados do usuário são excluídos três dias após o administrador inserir o código de bloqueio fornecido pela Microsoft. Isso inclui dados no SharePoint Online e no Exchange Online em retenção ou armazenados em caixas de correio inativas.
 
-Para obter mais informações sobre o provisionamento acelerado, confira [cancelar o Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
+Para obter mais informações sobre o provisionamento acelerado, confira [cancelar o Office 365](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/cancel-your-subscription).
 
 ## <a name="related-links"></a>Links relacionados
 

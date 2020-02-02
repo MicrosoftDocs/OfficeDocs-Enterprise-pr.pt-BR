@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Uma explicação da exclusão de dados no SharePoint Online.
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078150"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658318"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Exclusão de dados do SharePoint Online no Office 365
 
@@ -36,6 +36,8 @@ Ao excluir um conjunto de sites, você também está excluindo a hierarquia de s
 - Informações de função e segurança relacionadas ao site ou seus subsites
 - Subsites do site de nível superior, seu conteúdo e informações de usuário
 
-Se você excluir acidentalmente um conjunto de sites, ele poderá ser restaurado por um administrador global ou do SharePoint usando o centro de administração do SharePoint. 
+Se você excluir acidentalmente um conjunto de sites, ele poderá ser restaurado por um administrador global ou do SharePoint usando o centro de administração do SharePoint.
+
+Os conjuntos de sites excluídos são mantidos por 93 dias. Após 93 dias, sites e todos os seus conteúdos e configurações são excluídos permanentemente, incluindo listas, bibliotecas, páginas e subsites.
 
 A exclusão fixa ocorre quando um usuário limpa itens excluídos da lixeira do conjunto de sites, quando os períodos de retenção e backup expiram ou quando um administrador exclui permanentemente um conjunto de sites usando o [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quando um usuário exclui (permanentemente exclui ou limpa) o conteúdo do SharePoint Online, todas as chaves de criptografia dos blocos excluídos também são excluídas. Os blocos nos discos que armazenaram anteriormente os fragmentos excluídos são marcados como não usados e estão disponíveis para reutilização.
