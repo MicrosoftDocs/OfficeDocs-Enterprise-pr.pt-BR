@@ -195,6 +195,7 @@
 ##### [Limitar a exposição acidental](sharing-limit-accidental-exposure.md)
 ##### [Ambiente seguro de compartilhamento de convidados](create-a-secure-guest-sharing-environment.md)
 #### [Criar uma extranet B2B](b2b-extranet.md)
+### [Limitar o compartilhamento](microsoft-365-limit-sharing.md)
 
 ## Dispositivos
 ### [Escolher entre MDM ou Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
