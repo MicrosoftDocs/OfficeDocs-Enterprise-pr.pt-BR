@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Depois de implantar o Office 365, você pode manter a conectividade do Office 365 usando algumas das ferramentas e técnicas abaixo. É importante que você compreenda as diretrizes oficiais do Serviço de Integridade e Continuidade, assim como nossas melhores práticas, para usar o Office 365 em uma rede lenta. Você também precisará obter o aplicativo de administração do Office 365 e marcar nossa Ajuda Administrativa do Office 365 para empresas como favorita.
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931689"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721962"
 ---
 # <a name="monitor-office-365-connectivity"></a>Monitorar a conectividade do Office 365
 
@@ -37,7 +37,7 @@ Depois de implantar o Office 365, você pode manter a conectividade do Office 36
 |**Usar o Azure AD Connect Health com o AD FS** <br/> |Se você estiver usando AD FS para logon único com o Office 365, convém começar [usando o Azure AD Connect Health para monitorar a infraestrutura de AD FS](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/).  <br/> |
 |**Monitorar programaticamente o Office 365** <br/> |Confira nossa orientação sobre a [API de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
-Aqui está um link curto que você pode usar para voltar: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+Aqui está um link curto que você pode usar para voltar: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
 ## <a name="see-also"></a>Confira também
 
