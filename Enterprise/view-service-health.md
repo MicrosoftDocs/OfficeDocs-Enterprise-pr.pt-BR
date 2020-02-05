@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Veja o status de integridade dos serviços do Office 365 antes de ligar para o suporte para ver se há uma interrupção ativa do serviço.
-ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 4dace633b4f68f3f9361096a4bd99296b8b807b2
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122580"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721972"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço do Office 365
 
@@ -114,6 +114,7 @@ Na maioria das vezes, os serviços serão exibidos como íntegros sem mais infor
 |**Recuperação estendida** | Esse status indica que uma ação corretiva está em andamento para restaurar o serviço para a maioria dos usuários, mas levará algum tempo para alcançar todos os sistemas afetados. Você também poderá ver esse status se tivermos feito uma correção temporária para reduzir o impacto enquanto aguardamos para aplicar uma correção permanente. |
 |**Investigação suspensa** | Se a nossa investigação detalhada de um problema potencial resultar em uma solicitação de informações adicionais de clientes para nos permitir investigar mais, você verá esse status. Se precisarmos de você para prosseguir, informaremos quais dados ou logs precisamos. |
 |**Serviço restaurado** | Confirmamos que a ação corretiva solucionou o problema subjacente, e o serviço foi restaurado para um estado íntegro. Para descobrir o que deu errado, confira os detalhes do problema. |
+|**Falso positivo** | Após uma investigação detalhada, confirmamos que o serviço está íntegro e funcionando conforme projetado. Nenhum impacto no serviço foi observado ou a causa do incidente se originou fora do serviço. |
 |**Relatório de pós-incidente publicado** | Publicamos um relatório de incidente de postagem para um problema específico que inclui informações de causa raiz e próximas etapas para garantir que um problema semelhante não ocorra. |
 
 ### <a name="history"></a>Histórico

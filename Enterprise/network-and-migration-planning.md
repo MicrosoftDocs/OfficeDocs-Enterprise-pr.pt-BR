@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747781"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721952"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planejamento de migração e rede para o Office 365
 
-*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Este artigo contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
   
@@ -59,8 +59,6 @@ Para estimar a largura de banda, use as seguintes etapas:
 <a name="calculators"> </a>
 
  **Ferramentas de rede.** Teste e valide a largura de banda da Internet para determinar as restrições de download, carregamento e latência. Essas ferramentas ajudarão você a determinar os recursos de sua rede para a migração e depois que você estiver totalmente implantado. 
-  
-- [Analisador de mensagens da Microsoft](https://technet.microsoft.com/library/jj649776.aspx): o Message Analyzer é uma ferramenta eficaz para a solução de problemas de rede. O Message Analyzer captura, exibe e analisa o tráfego de mensagens baseado em protocolo e mensagens do sistema. O Message Analyzer também permite importar, agregar e analisar dados de arquivos de log e de rastreamento.
     
 - [Analisador de conectividade remota da Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=517243): testa a conectividade no seu ambiente do Exchange Online.
     

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Ajuda a planejar os requisitos de largura de banda de rede do Microsoft Office 365. Depois de implantado, retorne para ajustar e solucionar problemas de desempenho do Office 365.
-ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38032136"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721942"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Planejamento de rede e ajuste de desempenho para Office 365
 Antes de implantar o pela primeira vez ou migrar para o Office 365, você pode usar as informações nesses tópicos para estimar a largura de banda necessária e, em seguida, testar e verificar se você tem largura de banda suficiente para implantar ou migrar para o Office 365. Para obter uma visão geral, consulte: [Network and Migration Planning for Office 365](network-and-migration-planning.md).
@@ -35,7 +35,7 @@ Antes de implantar o pela primeira vez ou migrar para o Office 365, você pode u
 
 Após a implantação do Office 365, é possível otimizar o desempenho usando os tópicos desta seção. Se você tiver degradação de desempenho, também poderá usar esses tópicos para solucionar problemas.
   
- **[Ajuste o desempenho do office 365](tune-office-365-performance.md)**: para obter informações sobre como usar a conversão de endereços de rede com o Office 365, confira [suporte a NAT com o Office 365](nat-support-with-office-365.md). Além disso, dê uma olhada nas [10 dicas principais para otimizar e solucionar problemas de sua conectividade de rede do Office 365](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) em Paul Collinge. 
+ **[Ajuste o desempenho do office 365](tune-office-365-performance.md)**: para obter informações sobre como usar a conversão de endereços de rede com o Office 365, confira [suporte a NAT com o Office 365](nat-support-with-office-365.md). Além disso, dê uma olhada nas [10 dicas principais para otimizar e solucionar problemas de sua conectividade de rede do Office 365](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity). 
   
  **[Ajustar o desempenho do Exchange Online](tune-exchange-online-performance.md)**: Use estes artigos para ajustar o desempenho do Exchange Online. 
   
