@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: A URL do serviço Web e endereço IP do Office 365 ajudam a identificar e diferenciar melhor o tráfego de rede do Office 365, tornando mais fácil para você avaliar, configurar e manter-se atualizado com as alterações.
-ms.openlocfilehash: 2dd725c39446d7e9cdad6b7e870bf7353ff1f8e3
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0a12b4dda9e4c931a34797aa2fc59803b97ddd36
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031206"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721922"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>URL do serviço Web e endereço IP do Office 365
 
@@ -527,7 +527,8 @@ Esse é um script do Python, testado com o Python 3.6.3 no Windows 10, que você
 
 ```python
 import json
-import os
+import tempfile
+from pathlib import Path
 import urllib.request
 import uuid
 # helper to call the webservice and parse the response
@@ -538,9 +539,9 @@ def webApiGet(methodName, instanceName, clientRequestId):
     with urllib.request.urlopen(request) as response:
         return json.loads(response.read().decode())
 # path where client ID and latest version number will be stored
-datapath = os.environ['TEMP'] + '\endpoints_clientid_latestversion.txt'
+datapath = Path(tempfile.gettempdir() + '/endpoints_clientid_latestversion.txt')
 # fetch client ID and version if data exists; otherwise create new file
-if os.path.exists(datapath):
+if datapath.exists():
     with open(datapath, 'r') as fin:
         clientRequestId = fin.readline().strip()
         latestVersion = fin.readline().strip()
