@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: uma explicação dos controles de isolamento no Office 365.'
-ms.openlocfilehash: a53826f7f11324986f3df59d9df806ea522cb7d6
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e5ce9f2b581c49f3c08803034bc526b2fdb91a9a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031196"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844442"
 ---
 # <a name="office-365-isolation-controls"></a>Controles de isolamento do Office 365 
 

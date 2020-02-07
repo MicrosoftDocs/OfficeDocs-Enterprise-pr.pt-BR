@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: uma explicação do isolamento de locatário na pesquisa do Office 365.'
-ms.openlocfilehash: b35e26edc41689cfb6fded28249f71fbb72ffd11
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035758"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844412"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Isolamento de locatário na pesquisa do Office 365
 

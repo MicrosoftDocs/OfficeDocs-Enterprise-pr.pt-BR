@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -20,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Saiba como configurar a sincronização de diretório entre o Office 365 e o seu Active Directory local.
-ms.openlocfilehash: 505dde1a371d269f157ec076b75ca1bc5962c9da
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: d549d2b56ef1d642e5dfc16b747e6eb909dd7337
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072143"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844042"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Configurar a sincronização de diretório no Office 365
 

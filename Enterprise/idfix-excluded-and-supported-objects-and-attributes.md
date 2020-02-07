@@ -10,18 +10,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Lista os atributos que são excluídos e suportados pela ferramenta IdFix.
-ms.openlocfilehash: e57507688fe1efd21bb629b4fad297129eff55d6
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 0203f47864dc4222cd2f95a4e67b2f10bec44f71
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813921"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840138"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Objetos e atributos excluídos e suportados pelo IdFix
 

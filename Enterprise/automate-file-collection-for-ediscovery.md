@@ -10,17 +10,19 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Resumo: saiba como automatizar a coleta de arquivos dos computadores dos usuários para descoberta eletrônica.'
-ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077714"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844732"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatizar a coleta de arquivos para descoberta eletrônica
 
@@ -330,8 +332,8 @@ $AllFiles | ForEach-Object {
     
 |**Número da linha**|**O que você precisa alterar**|**Obrigatório/opcional**|
 |:-----|:-----|:-----|
-|3,6  <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
-|17.07.06  <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> certifique-se de que o **$ConnectionURI** aponta para um local http, e não HTTPS. Ele não funcionará com https:.          |Obrigatório  <br/> |
+|12   <br/> |**$FolderIdentifier** marca as pastas de caixa de correio nas quais os PSTs são importados. Altere isso se necessário. <br/> |Opcional  <br/> |
+|17   <br/> |**$ConnectionURI** precisa ser definido para seu próprio servidor. <br/> > [!IMPORTANT]> certifique-se de que o **$ConnectionURI** aponta para um local http, e não HTTPS. Ele não funcionará com https:.          |Obrigatório  <br/> |
    
 4. Verifique se a conta de subsistema confiável do Exchange tem permissões de leitura, gravação e execução \\ \\para o\\compartilhamento de casos de preparação $.
     

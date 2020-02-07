@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: 'Resumo: uma explicação do isolamento e controle de acesso dentro dos vários aplicativos do Office 365.'
-ms.openlocfilehash: 5855828faafaf12e609e93a1a4f0ec7419e0a9d6
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078160"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844402"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controle de acesso no Office 365
 

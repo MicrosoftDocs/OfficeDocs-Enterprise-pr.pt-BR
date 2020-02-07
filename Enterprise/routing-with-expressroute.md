@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Para entender corretamente o tráfego de roteamento para o Office 365 usando o Azure ExpressRoute, você precisará de uma compreensão dos requisitos de roteamento principal do ExpressRoute e dos domínios de roteamento e circuitos do ExpressRoute. Eles formam os conceitos básicos para usar o ExpressRoute em que os clientes do Office 365 confiarão.
-ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813891"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844052"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Como rotear com o ExpressRoute para Office 365
 
@@ -229,7 +231,7 @@ O roteamento seletivo com o ExpressRoute pode ser necessário por vários motivo
 
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/erorouting](https://aka.ms/erorouting)
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
   

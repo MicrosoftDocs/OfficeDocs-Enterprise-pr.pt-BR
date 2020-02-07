@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
+f1.keywords:
+- NOCSH
 description: Este artigo é uma versão de texto acessível do diagrama chamado integração de recursos nos produtos do Microsoft Office Server-SharePoint Server, Exchange Server, Lync Server e servidor do Office Online.
-ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 37339c2c4a8a8cf08b3b0b2772e274383c5a4bdd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027685"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843882"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Diagrama acessível-integração de recursos nos produtos do Microsoft Office Server
 

@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Os aplicativos do Office para Mac oferecem uma experiência de aplicativo nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em vários cenários, incluindo Estados quando não há acesso à rede disponível. Quando um computador está conectado a uma rede, os aplicativos se conectam automaticamente a uma série de serviços baseados na Web para fornecer funcionalidade aprimorada. Este artigo descreve quais pontos de extremidade e URLs os aplicativos tentam alcançar e os serviços fornecidos. Essas informações são úteis para solucionar problemas de configuração de rede e definir uma política para servidores proxy de rede. Os detalhes neste artigo destinam-se a complementar a URL do Office 365 e o artigo de intervalos de endereços.
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781951"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844542"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitações de rede do Office para Mac
 
@@ -274,7 +276,7 @@ Para restabelecer a funcionalidade completa do usuário, defina a preferência c
   
 O Office para Mac envia informações de telemetria de volta para a Microsoft em intervalos regulares. Os dados são carregados para o ponto de extremidade ' Nexus '. Os dados de telemetria ajudam a equipe de engenharia a avaliar a integridade e todos os comportamentos inesperados de cada aplicativo do Office. Há duas categorias de telemetria:
   
-- **** A pulsação contém informações de versão e licença. Esses dados são enviados imediatamente após o início do aplicativo. 
+- A **pulsação** contém informações de versão e licença. Esses dados são enviados imediatamente após o início do aplicativo. 
     
 - O **uso** contém informações sobre como os aplicativos estão sendo usados e erros não fatais. Esses dados são enviados a cada 60 minutos. 
     

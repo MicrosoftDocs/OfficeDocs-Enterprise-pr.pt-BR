@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
+f1.keywords:
+- NOCSH
 description: Um breve resumo sobre a API da atividade de gerenciamento do Office 365.
-ms.openlocfilehash: eb7da1aaade80bd689ba6ec518272d9e0d2d4d05
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 97f582aa19a523a8b94a17b13efd6a518b067036
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067130"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842618"
 ---
 # <a name="office-365-management-activity-api"></a>API da Atividade de Gerenciamento do Office 365
 

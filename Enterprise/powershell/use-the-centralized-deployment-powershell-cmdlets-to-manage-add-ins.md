@@ -13,14 +13,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+f1.keywords:
+- NOCSH
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Use os cmdlets do PowerShell de implantação centralizada para ajudá-lo a implantar e gerenciar suplementos do Office para sua organização do Office 365.
-ms.openlocfilehash: 3d6495646c6ce0a1d15f2d911f1fa8af92e3c2c6
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 586b66ac3632a5d86a63014a50f3c605b1c005e7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782581"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844152"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos
 
@@ -98,7 +100,7 @@ No exemplo a seguir, o cmdlet New-OrganizationAddIn especifica o AssetID de um s
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Para determinar o valor para o __ parâmetro AssetID, você pode copiá-lo da URL da página da Web da Office Store para o suplemento. AssetIds sempre começa com "WA" seguido por um número. Por exemplo, no exemplo anterior, a origem para o valor AssetID de WA104099688 é a URL da página da Web da Office Store para o suplemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
+Para determinar o valor para o parâmetro _AssetID_ , você pode copiá-lo da URL da página da Web da Office Store para o suplemento. AssetIds sempre começa com "WA" seguido por um número. Por exemplo, no exemplo anterior, a origem para o valor AssetID de WA104099688 é a URL da página da Web da Office Store para o suplemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
   
 Os valores para o parâmetro _locale_ e o parâmetro _ContentMarket_ são idênticos e indicam o país/região para o qual você está tentando instalar o suplemento. O formato é en-US, fr-FR. e assim por diante. 
   
@@ -144,7 +146,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $
 ## <a name="add-or-remove-users-from-an-add-in"></a>Adicionar ou remover usuários de um suplemento
 <a name="BKMK_AddRemove"> </a>
 
-Para adicionar usuários e grupos a um suplemento específico, execute o cmdlet Set-OrganizationAddInAssignments com os parâmetros _ProductID_, _Add_e Members __ . Separe os endereços de email dos membros com uma vírgula. 
+Para adicionar usuários e grupos a um suplemento específico, execute o cmdlet Set-OrganizationAddInAssignments com os parâmetros _ProductID_, _Add_e _Members_ . Separe os endereços de email dos membros com uma vírgula. 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'

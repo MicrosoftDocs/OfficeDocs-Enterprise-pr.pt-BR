@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
+f1.keywords:
+- NOCSH
 description: Este artigo contém informações para melhorar o desempenho de download de mensagens no Outlook na Web.
-ms.openlocfilehash: 8437cde7ec2afa091ad1881a8cfc0d77f783d819
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 49b570da9092ce4fc857757a7da72b2a81fd0090
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814579"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843902"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Usar Lean pop-ups para reduzir a memória usada ao ler mensagens de email
 

@@ -14,15 +14,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Estas etapas de visão geral foram projetadas para ajudá-lo a configurar sua rede, criar suas identidades, implantar o Office 365 ProPlus, migrar seus dados e ajudar as pessoas da sua organização a começar a usar o Office 365.
-ms.openlocfilehash: e9af8d1ad617d617450946966967ab797eeffa07
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748062"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844012"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Implantar o Office 365 Enterprise em sua organização
 

@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
+f1.keywords:
+- NOCSH
 description: 'Este artigo é para administradores. Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usuário deseja refazê-los, mas não pode recuperá-los. Você pode ser capaz de recuperar os itens removidos se eles não foram removidos permanentemente da caixa de correio do usuário. '
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308596"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845122"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
 
@@ -36,12 +38,12 @@ Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usu�
 Aqui estão as etapas para recuperar itens excluídos na caixa de correio de um usuário. Quanto tempo isso levará? A primeira vez pode levar 20 ou 30 minutos para concluir todas as etapas, dependendo de quantos itens você está tentando recuperar.
   
 > [!NOTE]
-> Você precisa ser um **administrador do Exchange** ou um **Administrador Global** no Office 365 ou ser membro do grupo de função gerenciamento da organização no Exchange Online para executar as etapas neste artigo. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Você precisa ser um **administrador do Exchange** ou um **Administrador Global** no Office 365 ou ser membro do grupo de função gerenciamento da organização no Exchange Online para executar as etapas neste artigo. Para saber mais, veja [Sobre as funções de administrador do Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Etapa 1: atribuir permissões de descoberta eletrônica por conta própria
 <a name="step1"> </a>
 
-A primeira etapa é atribuir as permissões necessárias no Exchange Online para que você possa usar a ferramenta de descoberta eletrônica in-loco para pesquisar a caixa de correio de um usuário. Você só precisa fazer isso uma vez. Se você precisar pesquisar outra caixa de correio no futuro, ignore esta etapa.
+A primeira etapa é atribuir as permissões necessárias no Exchange Online para que você possa usar a ferramenta de descoberta eletrônica in-loco para pesquisar a caixa de correio de um usuário. Isso só precisa ser feito uma vez. Se você precisar pesquisar outra caixa de correio no futuro, ignore esta etapa.
   
 1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) com sua conta corporativa ou de estudante. 
     

@@ -7,13 +7,15 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Saiba como colaborar com convidados em um site do SharePoint.
-ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261354"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845062"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar com convidados em um site
 
@@ -84,7 +86,7 @@ Para definir as configurações de compartilhamento de nível da organização d
 A próxima etapa é criar o site que você planeja usar para colaborar com convidados.
 
 Para criar um site
-1. No centro de administração do SharePoint, em **sites**, clique em **sites ativos**.
+1. No centro de administração do SharePoint, em **sites**, clique **sites ativos**.
 2. Clique em **Criar**.
 3. Clique em **site de equipe**.
 4. Digite um nome de site e insira um nome para o proprietário do grupo (proprietário do site).
@@ -133,7 +135,7 @@ Para convidar convidados para um grupo
 
 [Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
-[Criar um ambiente seguro de compartilhamento para convidados](create-a-secure-guest-sharing-environment.md)
+[Criar um ambiente de compartilhamento de convidados seguro](create-a-secure-guest-sharing-environment.md)
 
 [Criar uma extranet B2B com convidados gerenciados](b2b-extranet.md)
 

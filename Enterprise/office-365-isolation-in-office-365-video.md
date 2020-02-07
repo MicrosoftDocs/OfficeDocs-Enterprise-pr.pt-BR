@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: uma explicação do isolamento de locatário no Office 365 video.'
-ms.openlocfilehash: c9be942e10debeb729cda87a88131c17d736d4a2
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035581"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843645"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolamento de locatário no Vídeo do Office 365
 

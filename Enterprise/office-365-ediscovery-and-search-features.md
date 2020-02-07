@@ -13,13 +13,15 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+f1.keywords:
+- NOCSH
 description: Uma visão geral do recurso de descoberta eletrônica e outros recursos de pesquisa no Office 365 para o uso de auditoria e transparência.
-ms.openlocfilehash: 9c0c9b7c054a59ed87ce65432c73df563594b2a2
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 16cb8ac4703142b73d4f56bce9390743495d3fc2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076205"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843642"
 ---
 # <a name="ediscovery-and-search-features"></a>Recursos de pesquisa e descoberta eletrônica 
 
@@ -42,12 +44,12 @@ A tabela a seguir detalha algumas das informações exibidas nos relatórios de 
 | Propriedade | Descrição |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | Date | Data e hora do evento |
-| Usuário | Usuário que executou a ação |
+| User | Usuário que executou a ação |
 | ClientIP | Endereço IPv4 ou IPv6 do dispositivo usado quando a atividade foi registrada. |
 | CreationTime | Data e hora no tempo universal coordenado (UTC) quando o usuário realizou a atividade. |
 | EventSource | Identifica se um evento ocorreu. Os valores possíveis são SharePoint e ObjectModel. |
 | ID | ID da entrada de relatório. A identificação identifica exclusivamente a entrada de relatório. |
-| Operação | Nome do usuário ou atividade, que corresponde ao valor selecionado em exibir resultados para esta atividade do usuário. |
+| Operation | Nome do usuário ou atividade, que corresponde ao valor selecionado em exibir resultados para esta atividade do usuário. |
 | OrganizationId | GUID do serviço do Office 365 da organização onde o evento ocorreu. |
 | UserAgent | Informações sobre o navegador do usuário, fornecidas pelo navegador. |
 | UserId | O usuário que executou a ação (especificado na Propriedade Operation) que resultou no registro que está sendo registrado em log. |
@@ -55,7 +57,7 @@ A tabela a seguir detalha algumas das informações exibidas nos relatórios de 
 |  | 0 indica um usuário regular. |
 |  | 2 indica um administrador na sua organização do Office 365. |
 |  | 3 indica um administrador de datacenter da Microsoft ou uma conta de sistema de datacenter. |
-| Workload | Serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são: |
+| Carga de trabalho | Serviço do Office 365 em que a atividade ocorreu. Os valores possíveis para esta propriedade são: |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |

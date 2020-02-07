@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: uma visão geral das práticas de controle de tecnologia da Microsoft para o Office 365.'
-ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: ff6816b5d5734309f29a7a88bb8c034967ecd115
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031136"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841958"
 ---
 # <a name="office-365-technology-controls"></a>Controles de tecnologia do Office 365 
 

@@ -9,15 +9,17 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: 'Resumo: as soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um.'
-ms.openlocfilehash: d2e3302b9ea47b842f870e76f023499a92162eca
-ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
+ms.openlocfilehash: ff5837030384a7f10dc36bb9c436394a19521254
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39858019"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844902"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquiteturas do Microsoft Azure para o SharePoint 2013
 
@@ -120,7 +122,7 @@ A tabela a seguir fornece recomendações de configuração para essas máquinas
 |**Item**|**Configuração**|
 |:-----|:-----|
 |Tamanho da máquina virtual no Azure  <br/> |Tamanho a1 ou a2 na camada padrão  <br/> |
-|Sistema operacional  <br/> |Windows Server 2012 R2  <br/> |
+|Sistema operacional  <br/> |Windows Server 2012 R2  <br/> |
 |Função do Active Directory  <br/> |Controlador de domínio do AD DS designado como um servidor de catálogo global. Essa configuração reduz o tráfego de egresso na conexão entre locais.  <br/> Em um ambiente de multidomínio com altas taxas de alteração (isso não é comum), configure os controladores de domínio no local para não sincronizar com os servidores de catálogo global no Azure, para reduzir o tráfego de replicação.  <br/> |
 |Função DNS  <br/> |Instale e configure o serviço de servidor DNS nos controladores de domínio.  <br/> |
 |Discos de dados  <br/> |Coloque o banco de dados do Active Directory, os logs e o SYSVOL em discos de dados adicionais do Azure. Não coloque esses no disco do sistema operacional ou nos discos temporários fornecidos pelo Azure.  <br/> |

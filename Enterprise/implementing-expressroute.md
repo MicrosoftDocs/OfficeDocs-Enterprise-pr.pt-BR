@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: O ExpressRoute para Office 365 fornece um caminho de roteamento alternativo para vários serviços do Office 365 voltados para a Internet. A arquitetura do ExpressRoute para Office 365 baseia-se no anúncio de prefixos IP públicos de serviços do Office 365 que já estão acessíveis pela Internet para seus circuitos do ExpressRoute provisionados para a redistribuição subsequente desses prefixos IP em sua rede. Com o ExpressRoute, você habilita efetivamente vários caminhos de roteamento diferentes, através da Internet e do ExpressRoute, para muitos serviços do Office 365. Esse estado de roteamento na rede pode representar uma alteração significativa na forma como sua topologia de rede interna é projetada.
-ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813479"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840178"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Como implementar o ExpressRoute para o Office 365
 
@@ -568,7 +570,7 @@ Tenha em mente que durante a implantação do Office 365 com uma conexão Expres
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
-## <a name="related-topics"></a>Tópicos relacionados
+## <a name="related-topics"></a>Tópicos Relacionados
 
 [Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
   

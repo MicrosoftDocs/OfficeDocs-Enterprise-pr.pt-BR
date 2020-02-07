@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Define e explica a imutabilidade dos dados no Office 365.
-ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 8e52d1be87bff163b2d1cfc9233de08861104681
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035571"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844512"
 ---
 # <a name="immutability-in-office-365"></a>Imutabilidade no Office 365
 

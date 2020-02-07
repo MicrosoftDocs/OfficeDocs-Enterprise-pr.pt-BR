@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
+f1.keywords:
+- NOCSH
 description: Configurar serviços e aplicativos do Office 365 Enterprise
-ms.openlocfilehash: 15c6086e90ad982c61c70fab95add2a20ca6473d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7935b9684e275497acfdbe8d2595fb28d9be5759
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067928"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840708"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Configurar serviços e aplicativos do Office 365 Enterprise
 

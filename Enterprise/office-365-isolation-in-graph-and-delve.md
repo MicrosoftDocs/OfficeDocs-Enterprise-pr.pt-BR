@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: uma explicação do isolamento de locatário no Office Graph e no Delve.'
-ms.openlocfilehash: e0ae47804c1ce488073567bbaa1a3e7e72c9516a
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: c9e054494e6d71d84a19350bc38e0d3981fede45
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035591"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844432"
 ---
 # <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Isolamento de locatário no Office Graph e Delve
 

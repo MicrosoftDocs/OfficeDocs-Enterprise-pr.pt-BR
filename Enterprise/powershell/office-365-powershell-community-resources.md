@@ -9,15 +9,17 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 'Resumo: Obter ajuda do Office 365 PowerShell a partir desses locais da comunidade.'
-ms.openlocfilehash: baff3cbb05999810039ff257e106c0862684c0cf
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: fdf35bfb98f027090a79bac97bbd69e0b7c9bb96
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962468"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844192"
 ---
 # <a name="office-365-powershell-community-resources"></a>Recursos da comunidade do Office 365 PowerShell
 

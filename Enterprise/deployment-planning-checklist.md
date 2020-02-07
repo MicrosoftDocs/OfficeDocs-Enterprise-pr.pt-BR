@@ -11,6 +11,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Office 365.
-ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028865"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840508"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Lista de verificação de planejamento de implantação do Office 365
 
@@ -36,7 +38,7 @@ Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Tarefas de implantação/Events** <br/> |**Data de início** <br/> |**Data de término** <br/> |**Resources** <br/> |**Dependências** <br/> |
+|**Tarefas de implantação/Events** <br/> |**Data de início** <br/> |**Data de término** <br/> |**Recursos** <br/> |**Dependências** <br/> |
 |**Determinar seus objetivos de implantação** <br/> |||||
 | Com seus participantes internos e externos:<br>  -Concordo no escopo e na linha do tempo <br>  -Concordo no mecanismo de controle do projeto  <br>  – Desenvolver critérios de êxito e uma introdução de [comunicação](https://fasttrack.microsoft.com/office) / [com o Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventariar o ambiente atual e tomar decisões importantes de implantação** |||||

@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
+f1.keywords:
+- NOCSH
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 6c5b576b0d099f4a46aca63a72390d27ae39984b
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
+ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923873"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844102"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 

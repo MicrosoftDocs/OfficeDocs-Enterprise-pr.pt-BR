@@ -12,6 +12,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Resumo: explica como os computadores cliente se conectam aos locatários do Office 365, dependendo do local do computador cliente e do datacenter de locatário do Office 365.'
-ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 0a5a7351b3d756763f05a8136e7ce6bc16f8f881
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077674"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843822"
 ---
 # <a name="client-connectivity"></a>Conectividade de cliente
 

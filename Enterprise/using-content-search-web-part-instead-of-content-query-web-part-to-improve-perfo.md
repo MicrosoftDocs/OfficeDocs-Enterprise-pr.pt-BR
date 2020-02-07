@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: Este artigo descreve como aumentar o desempenho substituindo a Web Part de consulta de conteúdo pela Web Part de pesquisa de conteúdo no SharePoint Server 2013 e no SharePoint Online.
-ms.openlocfilehash: e2a3a1dd5a0010fcf1bbf61a039ca1d23292f70d
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 16d8e976a96487752a78b91a783041448621a275
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38077940"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843922"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Usando a Web Part de pesquisa de conteúdo em vez da Web Part de consulta de conteúdo para melhorar o desempenho no SharePoint Online
 

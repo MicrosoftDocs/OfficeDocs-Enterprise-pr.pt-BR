@@ -8,6 +8,8 @@ audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Recursos para planejar e gerenciar o Office 365 para sua organização corporativa.
-ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067687"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840398"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Organizações corporativas e o Office 365
 
@@ -106,7 +108,7 @@ Experiências de aprendizado online individualizadas para profissionais de ti do
   
 [Formas de migrar várias contas de email para o Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
   
-[Atualização de clientes e servidores do Office 2010](upgrade-from-office-2010-servers-and-products.md)
+[Atualizar de servidores e clientes do Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
 [Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
   

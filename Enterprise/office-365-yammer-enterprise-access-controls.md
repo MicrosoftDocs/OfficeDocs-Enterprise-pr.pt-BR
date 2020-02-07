@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: um breve resumo sobre os controles de acesso corporativo do Yammer no ambiente de produção.'
-ms.openlocfilehash: 19910ec0771b3034e7a290190ae7045ffc8651cf
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 9b88ff0f8c480dd3726246e47714d9468509ef08
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067152"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841788"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Controles de acesso do Yammer Enterprise 
 

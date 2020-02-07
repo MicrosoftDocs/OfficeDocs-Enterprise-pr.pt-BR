@@ -11,15 +11,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 'Resumo: use estes artigos para implantar soluções de segurança com ofertas da nuvem da Microsoft.'
-ms.openlocfilehash: a160902ea74f32e99e4135e2e5ef8ce2e53c2d52
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 18025e12a050180f9ff5e6ad5413c4c457c3154d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070907"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845002"
 ---
 # <a name="security-solutions"></a>Soluções de segurança
 

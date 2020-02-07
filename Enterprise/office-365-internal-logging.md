@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Uma explicação sobre como o log interno para o Office 365 Engineering Teams funciona.
-ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: 4303b0a927413c791b6b8718fd905f8918c497e1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035521"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844452"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Log interno de engenharia do Office 365
 

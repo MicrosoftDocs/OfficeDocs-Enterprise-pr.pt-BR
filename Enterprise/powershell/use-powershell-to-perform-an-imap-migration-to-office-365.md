@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 'Resumo: Saiba como usar o Windows PowerShell para executar uma migração IMAP para o Office 365.'
-ms.openlocfilehash: 411c60f78284c4d7405cd0a1b1d737f99155c1d3
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 271e8b235279d1661ba95ae75f070d8ce6d2496d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072463"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841278"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Usar o PowerShell para realizar uma migração IMAP para o Office 365
 

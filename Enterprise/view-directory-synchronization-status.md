@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -17,18 +19,18 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Saiba como desativar a sincronização de diretórios. Você também pode exibir seu status.
-ms.openlocfilehash: 4204d72719e928982b2b6222fb971d62c0f1f8d6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 74e2eee0086e4f8098221f4aaa30d408091a6a0f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070407"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840978"
 ---
 # <a name="view-directory-synchronization-status-in-office-365"></a>Visualizar o status de sincronização de diretório no Office 365
 
 Se você integrou o Active Directory local ao Azure AD sincronizando seu ambiente local com o Office 365, você também pode verificar o status da sua sincronização.
   
-## <a name="view-directory-synchronization-status"></a>Exibir status de sincronização de diretório
+## <a name="view-directory-synchronization-status"></a>Exibir o status da sincronização de diretórios
 
 - Entre no centro de [Administração do Microsoft 365](https://admin.microsoft.com) e escolha **status DirSync** na página inicial.
 - Como alternativa, você pode ir para **** \> **usuários ativos**do usuário e, na **página usuários ativos** , escolha **mais** \> **sincronização de diretórios**. No painel de **sincronização de diretórios** , escolha **ir para gerenciamento DirSync**.

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: 'Resumo: como o isolamento e o controle de acesso funcionam no Azure Active Directory.'
-ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
-ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
+ms.openlocfilehash: ac8ea9cf0550517f4d4d8c6eac10812700bb668b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38035778"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844462"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolamento e controle de acesso do Azure Active Directory
 

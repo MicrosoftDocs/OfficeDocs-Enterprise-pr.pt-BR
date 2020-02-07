@@ -10,13 +10,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: Este artigo é uma versão de texto acessível do diagrama chamado fluxo de descoberta eletrônica local.
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068527"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843852"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Diagrama de fluxo de descoberta eletrônica no local acessível
 
@@ -100,7 +102,7 @@ O farm de serviços do SharePoint 2013 contém os seguintes componentes:
     
 - Banco de dados de índice de pesquisa 
     
-- Banco de dados SSA admin_db. A tabela Actions neste banco de dados contém: reter liberação GetStatus 
+- SSA admin_db banco de dados. A tabela Actions neste banco de dados contém: reter liberação GetStatus 
     
 - Proxy do EWS 
     
@@ -108,7 +110,7 @@ Quando o proxy SSA no farm de aplicativos corporativos do SharePoint envia uma c
   
 - Se a solicitação for uma consulta, o SSA consulta o índice de pesquisa. A resposta de descoberta é retornada para o SSA e, em seguida, para o usuário por meio do EDC. 
     
-- Se a solicitação for uma ação de gravação, o serviço SSA enviará a ação Write para o adaptador SSA admin_db. 
+- Se a solicitação for uma ação de gravação, o serviço SSA enviará a ação Write para o admin_db SSA. 
     
 - Uma solicitação de resultados de rastreamento e resposta é enviada do adaptador SSA para o farm de conteúdo do SharePoint 2013 e uma resposta é retornada ao SSA. 
     
@@ -118,9 +120,9 @@ Quando o proxy SSA no farm de aplicativos corporativos do SharePoint envia uma c
     
 - Uma solicitação de ação/status do Exchange é enviada do adaptador SSA para o proxy EWS, que envia uma solicitação de ação/status de consulta do Exchange para o serviço Web do Exchange no servidor Exchange 2013. 
     
-- Uma consulta/resposta de status é enviada do SSA para o adaptador SSA admin_db e é retornada ao SSA. 
+- Uma consulta/resposta de status é enviada do SSA para o SSA admin_db e é retornada ao SSA. 
     
-- Uma consulta/resposta de ação pendente é enviada do SSA para o adaptador SSA admin_db e é retornada ao SSA. 
+- Uma ação/resposta pendente é enviada do SSA para o adaptador SSA admin_db e é retornada ao SSA. 
     
 #### <a name="sharepoint-2013-content-farm"></a>Farm de conteúdo do SharePoint 2013
 

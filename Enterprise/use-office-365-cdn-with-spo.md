@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: 829903919d0a6222b213fe08a610ff6ebe9b985d
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 7194f5e73c2799a40b750032b736e2b7c7bd2c10
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721932"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841068"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -993,10 +995,10 @@ Quando você habilita a CDN do Office 365 para origens públicas, o serviço CDN
 
 Se a origem */clientsideassets estiver ausente, as soluções da estrutura do SharePoint falharão, e nenhuma mensagem de aviso ou de erro será gerada. Essa origem pode estar faltando porque a CDN foi habilitada com o parâmetro _-NoDefaultOrigins_ definido como **$true**ou porque a origem foi excluída manualmente.
 
-Você pode verificar se a origem de */CLIENTSIDEASSETS está presente com o seguinte comando do PowerShell:
+Você pode verificar quais origens estão presentes com o seguinte comando do PowerShell:
 
 ``` powershell
-Get-SPOTenantCdnOrigin -CdnType Public -OriginUrl */CLIENTSIDEASSETS
+Get-SPOTenantCdnOrigins -CdnType Public
 ```
 
 Ou você pode verificar com a CLI do Office 365:
@@ -1028,6 +1030,6 @@ Você pode optar por trabalhar com a CDN do Office 365 usando o módulo do Power
 
 [Redes de Distribuição de Conteúdo](https://aka.ms/o365cdns)
 
-[Planejamento de rede e ajuste de desempenho para o Office 365](https://aka.ms/tune)
+[Planejamento de rede e ajuste de desempenho para Office 365](https://aka.ms/tune)
 
 [Série de desempenho do SharePoint-série de vídeo de CDN do Office 365](https://www.youtube.com/playlist?list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA)

@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-analytics
+f1.keywords:
+- NOCSH
 description: Uma explicação de recursos de relatório no Office 365.
-ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031856"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41842028"
 ---
 # <a name="office-365-reporting-features"></a>Recursos de relatório do Office 365 
 
@@ -74,7 +76,7 @@ Você gerencia e protege dispositivos móveis conectados à sua organização do
 
 Os relatórios de conformidade do MDM fornecem uma visão geral das políticas configuradas por uma organização para proteger dispositivos móveis que acessam dados do Office 365. O relatório permite a filtragem de dispositivos por status de conformidade, violações relatadas, dispositivos bloqueados e quantos dispositivos foram apagados como resultado de políticas de segurança. Para saber mais, consulte [Overview of Mobile Device Management for Office 365](https://support.office.com/article/Overview-of-Mobile-Device-Management-for-Office-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a).
 
-## <a name="data-loss-prevention"></a>Prevenção contra perda de dados
+## <a name="data-loss-prevention"></a>Prevenção contra Perda de Dados
 
 As políticas de DLP ajudam a gerenciar a segurança e o fluxo de informações em uma organização. Você pode configurar políticas para bloquear o acesso a conteúdo, criptografar dados ou notificar os usuários sobre violações de política e política usando dicas de política de DLP no aplicativo. Os relatórios de DLP fornecem informações sobre o número de correspondências de políticas e regras, substituições e falsos positivos.
 

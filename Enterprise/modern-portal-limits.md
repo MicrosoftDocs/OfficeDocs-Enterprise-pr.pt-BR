@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 description: Saiba mais sobre as recomendações de desempenho para sites modernos no SharePoint Online.
-ms.openlocfilehash: e868b765fe46d8f6ee26443d6e75d31a39bb3281
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078396"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844782"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limites do site de portal moderno do SharePoint Online
 

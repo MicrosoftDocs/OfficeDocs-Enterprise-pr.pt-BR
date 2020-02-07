@@ -8,6 +8,8 @@ ms.topic: article
 ms.date: 10/08/2019
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -19,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Saiba como integrar o Office 365 com os serviços de diretório existentes.
-ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 61feabb4d62b4b67538f45a3f827c746197b55d3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747157"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844492"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Integração do Office 365 com ambientes locais
 
-*Este artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
 Você pode integrar o Office 365 com os serviços de diretório existentes e com uma instalação local do Exchange Server, do Skype for Business Server 2015 ou do SharePoint Server.
   

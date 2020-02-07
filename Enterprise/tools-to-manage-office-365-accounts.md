@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Saiba quais ferramentas usar para gerenciar seus usuários do Office 365 e como o que você pode usar depende de como você gerencia as identidades do usuário. '
-ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490764"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843942"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Ferramentas para gerenciar contas do Office 365
 
@@ -39,7 +41,7 @@ Onde e como você pode gerenciar suas contas de usuário depende do modelo de id
 
 - [Office 365 Identity](about-office-365-identity.md) -Create and Manage Users in the Admin Center, você também pode usar o Windows PowerShell ou o Azure Active Directory para gerenciar seus usuários.
 - [Sincronização de hash de senha com logon único contínuo](about-office-365-identity.md) -a maneira mais simples de habilitar a autenticação para objetos de diretório local no Azure AD. Com a sincronização de hash de senha (PHS), você sincroniza seus objetos de conta de usuário do Active Directory local com o Office 365 e gerencia seus usuários no local. 
-- [Autenticação de passagem com logon único contínuo](about-office-365-identity.md) -fornece uma validação de senha simples para os serviços de autenticação do Azure ad usando um agente de software em execução em um ou mais servidores locais para validar os usuários diretamente com o seu Active Directory local. 
+- [Autenticação de passagem com logon único contínuo](about-office-365-identity.md) -fornece uma validação de senha simples para os serviços de autenticação do Azure ad usando um agente de software em execução em um ou mais servidores locais para validar os usuários diretamente com o Active Directory local. 
 
 ### <a name="federated-authentication"></a>Autenticação federada
 

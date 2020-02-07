@@ -9,19 +9,21 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Office_Other
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: 'Resumo: Encontre os tópicos de referência do cmdlet do Office 365 PowerShell para o Azure Active Directory, o Exchange Online, o SharePoint Online, o Skype for Business Online e a conformidade do & de segurança.'
-ms.openlocfilehash: 5b8833b426e08417e23bea6e94b7c5a201bf40ff
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Resumo: Encontre os tópicos de referência do cmdlet do Office 365 PowerShell para o Azure Active Directory, o Exchange Online, o SharePoint Online, o Skype for Business Online e a segurança & conformidade.'
+ms.openlocfilehash: 0fe0f87bdb2110630706e276092012af86ff5044
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069197"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841638"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Referências de cmdlet para serviços do Office 365
 
- **Resumo:** Encontre os tópicos de referência do cmdlet do Windows 365 PowerShell para o Azure Active Directory, o Exchange Online, o SharePoint Online, o Skype for Business Online e a conformidade do & de segurança.
+ **Resumo:** Encontre os tópicos de referência do cmdlet do Windows 365 PowerShell para o Azure Active Directory, o Exchange Online, o SharePoint Online, o Skype for Business Online e a segurança & conformidade.
   
 Os tópicos de referência do cmdlet para os vários serviços do Office 365 fornecem informações detalhadas e instruções sobre como usar cada cmdlet. Além disso, cada serviço do Office 365 que tenha suporte para o PowerShell requer instruções de conexão diferentes.
   

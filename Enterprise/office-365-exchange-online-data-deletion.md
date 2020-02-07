@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Como as exclusões de dados suaves e difíceis são tratadas no Exchange Online.
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067188"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843632"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Exclusão de dados do Exchange Online no Office 365
 No Exchange Online, há dois tipos de exclusões: exclusões suaves e exclusões graves. Isso se aplica a caixas de correio e itens em uma caixa de correio.
@@ -31,7 +33,7 @@ Uma caixa de correio de usuário excluída por software é uma caixa de correio 
 
 Uma caixa de correio de usuário excluída por hardware é uma caixa de correio excluída de uma das seguintes maneiras:
 - A caixa de correio do usuário foi excluída por mais de 30 dias e o usuário do Azure Active Directory associado foi excluído de forma permanente. Todo o conteúdo da caixa de correio, como emails, contatos e arquivos, é excluído permanentemente.
-- A conta de usuário associada à caixa de correio do usuário foi excluída do Azure Active Directory. A caixa de correio do usuário agora é excluída de forma reversível no Exchange Online e permanece em um estado de exclusão reversível por 30 dias. Se, no período de 30 dias, um novo usuário do Azure Active Directory é sincronizado da conta de destinatário original com o mesmo **ExchangeGuid** ou **ArchiveGuid**, e essa nova conta é licenciada para o Exchange Online, isso resultará em uma exclusão difícil de a caixa de correio do usuário original. Todo o conteúdo da caixa de correio, como emails, contatos e arquivos, é excluído permanentemente.
+- A conta de usuário associada à caixa de correio do usuário foi excluída do Azure Active Directory. A caixa de correio do usuário agora é excluída de forma reversível no Exchange Online e permanece em um estado de exclusão reversível por 30 dias. Se, no período de 30 dias, um novo usuário do Azure Active Directory é sincronizado da conta de destinatário original com o mesmo **ExchangeGuid** ou **ArchiveGuid**e essa nova conta é licenciada para o Exchange Online, isso resultará em uma exclusão difícil da caixa de correio do usuário original. Todo o conteúdo da caixa de correio, como emails, contatos e arquivos, é excluído permanentemente.
 - Uma caixa de correio excluída por software é excluída usando **Remove-Mailbox-PermanentlyDelete**.
 
 Os cenários de exclusão acima supõem que a caixa de correio do usuário não está em nenhum dos Estados de espera, como retenção de litígio ou bloqueio de descoberta eletrônica. Se houver algum tipo de bloqueio na caixa de correio, a caixa de correio não poderá ser excluída. Para todos os tipos de destinatários do usuário de email, todas as configurações de [retenção](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) são ignoradas e não têm efeito sobre exclusões ou exclusões reversível.

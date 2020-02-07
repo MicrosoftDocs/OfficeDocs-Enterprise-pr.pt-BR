@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
+f1.keywords:
+- NOCSH
 description: 'Resumo: saiba como criar um laboratório de teste integrado que contenha um servidor que executa o Exchange Server 2013, um servidor que executa o Lync Server 2013 e um servidor que executa o SharePoint Server 2013.'
-ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6041f47520f7a02efe08d05835ca0f15dfd6633a
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070397"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841098"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Guia do laboratório de teste: configurar um laboratório de teste do Exchange, Lync e SharePoint integrado
 
@@ -58,7 +60,7 @@ Para obter informações sobre como configurar esse laboratório de teste no Hyp
   
 ## <a name="see-also"></a>Confira também
 
-[Guias do Laboratório de Teste](https://go.microsoft.com/fwlink/p/?LinkId=202817)
+[Guias de laboratório de teste](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 
 
 
