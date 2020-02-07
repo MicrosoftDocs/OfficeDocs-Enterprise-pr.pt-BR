@@ -12,17 +12,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar as imagens nas páginas de site moderno do SharePoint Online.
-ms.openlocfilehash: 68e2f79e1f768cfc93feb4f26f8b2fbeca5d6b83
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: b1bb8bab7ee9d5f0972a476e37c35e8c14748bfb
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814219"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843742"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>Otimizar imagens nas páginas de site moderno do SharePoint Online
 

@@ -7,15 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
+f1.keywords:
+- NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Saiba como configurar o Office 365 multigeográfico.
-ms.openlocfilehash: 8e845a7d1c3a8d83189a77c5fc7a6e8d3358a425
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 6768aaa552ee75bb5dad523df0efc2384f0241ee
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076385"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844602"
 ---
 # <a name="office-365-multi-geo-tenant-configuration"></a>Configuração de um locatário do Office 365 multigeográfico
 

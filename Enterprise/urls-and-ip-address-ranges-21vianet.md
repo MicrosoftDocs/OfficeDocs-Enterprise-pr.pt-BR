@@ -16,14 +16,16 @@ search.appverid:
 - GPA150
 - GEA150
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
+f1.keywords:
+- NOCSH
 description: Este artigo se aplica ao Office 365 operado pela 21Vianet na China. Este artigo lista as URLs e intervalos de endereços IP usados pelo Office 365 operado pela 21Vianet.
 hideEdit: true
-ms.openlocfilehash: de2333dcfbd932bf4b8286de15a12c0081807301
-ms.sourcegitcommit: 22fa825e9bcd1e167d0b931941f30b8622b93cb4
+ms.openlocfilehash: 5be41a4dd7e1bfc61641ef2403f0495a8ee60813
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41677856"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843952"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>Intervalos de URLs e endereços IP do Office 365 operados pela 21Vianet
 
