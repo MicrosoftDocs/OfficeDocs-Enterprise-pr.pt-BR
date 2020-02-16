@@ -1,5 +1,6 @@
 ---
 title: Configurar a pesquisa para o Office 365 Multigeográfico
+ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: cd71cffa4b265555d06f84129b56519778abe7c5
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840728"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974003"
 ---
 # <a name="configure-search-for-office-365-multi-geo"></a>Configurar a Pesquisa para o Office 365 Multigeográfico
 

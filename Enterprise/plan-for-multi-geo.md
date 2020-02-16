@@ -1,5 +1,6 @@
 ---
 title: Plano para o Office 365 multigeográfico
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -14,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba mais sobre o Office 365 multigeográfico, como a funcionalidade multigeográfica funciona e quais localizações geográficas estão disponíveis para o armazenamento de dados.
-ms.openlocfilehash: 375bcb6b19aa989f246652d27b4f0d8641a7a04c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f3bc2b43181bb4479c0f3b9c65ed4bcd5b1f9b38
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844282"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974223"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Plano para o Office 365 multigeográfico
 

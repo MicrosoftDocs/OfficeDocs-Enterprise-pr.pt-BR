@@ -1,5 +1,6 @@
 ---
 title: Adicionar ou remover um administrador geográfico
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -11,12 +12,12 @@ localization_priority: Priority
 f1.keywords:
 - NOCSH
 description: Saiba como adicionar ou remover um administrador geográfica no Office 365 Multi-Geo.
-ms.openlocfilehash: 0e0ce9166d7e290ea0f038bf8d4f20c132be2bc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4225cd73aa243fadde21e5bd2d248fe54f738e33
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840788"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974193"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Adicionar ou remover um administrador geográfico no Office 365 Multi-Geo
 

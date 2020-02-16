@@ -1,5 +1,6 @@
 ---
 title: Mover um site do OneDrive para um local geográfico diferente
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -14,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: 4b07e0610abdd38a760422eeca50b3cb76e51bf7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844812"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974013"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 

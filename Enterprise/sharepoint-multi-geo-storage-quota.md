@@ -1,5 +1,6 @@
 ---
 title: Cotas de armazenamento do SharePoint em ambientes multigeográficos
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -14,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba mais sobre as cotas de armazenamento do SharePoint em ambientes multigeográficos.
-ms.openlocfilehash: 1e9c24cac43f5376fcef35782b3b024ab10cef58
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: b04c05f911e6ba4c5362e64dc6db4bf711ed78aa
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843982"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41974203"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Cotas de armazenamento do SharePoint em ambientes multigeográficos
 

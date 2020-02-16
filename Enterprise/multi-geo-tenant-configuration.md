@@ -1,5 +1,6 @@
 ---
 title: Configuração de um locatário do Office 365 multigeográfico
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Saiba como configurar o Office 365 multigeográfico.
-ms.openlocfilehash: 6768aaa552ee75bb5dad523df0efc2384f0241ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bba1260283b4e610b88c00c7d531e44c79acd58d
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844602"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973973"
 ---
 # <a name="office-365-multi-geo-tenant-configuration"></a>Configuração de um locatário do Office 365 multigeográfico
 
