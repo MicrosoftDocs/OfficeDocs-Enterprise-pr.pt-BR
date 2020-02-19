@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844102"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106222"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
@@ -37,7 +37,7 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
 |Índia  <br/> |1º de janeiro de 2020  <br/> |30 de junho de 2020  <br/> |
 |Canadá  <br/> |1º de janeiro de 2020  <br/> |30 de junho de 2020  <br/> |
 |Reino Unido  <br/> |1º de janeiro de 2020  <br/> |30 de junho de 2020  <br/> |
-|Coréia do Sul  <br/> |1º de janeiro de 2020  <br/> |30 de junho de 2020  <br/> |
+|Coreia do Sul  <br/> |1º de janeiro de 2020  <br/> |30 de junho de 2020  <br/> |
 |França  <br/> |1º de janeiro de 2020  <br/> |30 de junho de 2020  <br/> |
 |Emirados Árabes Unidos  <br/> |15 de julho de 2019  <br/> |30 de junho de 2020  <br/> |
 |África do Sul  <br/> |25 de julho de 2019  <br/> |30 de junho de 2020  <br/> |
@@ -48,13 +48,8 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
 
 Os clientes qualificados verão uma página no [centro de administração do Microsoft 365](https://aka.ms/365admin), que lhes permitirá solicitar que seus principais dados do cliente sejam movidos para sua nova região de datacenter.  
   
-Para acessar a página no centro de administração do Microsoft 365, no painel de navegação à esquerda, expanda **configurações**e clique em **perfil da organização**.
-  
-![Menu configurações com perfil organizacional realçado](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-Na página **perfil da organização** , role para baixo até a seção **opção de residência de dados** . 
-  
-![Cartão de residência de dados](media/dataresidencyae.jpg)
+Para acessar a página no centro de administração do Microsoft 365, no painel de navegação à esquerda, expanda **configurações**e clique em **configurações**.
+Selecione o **perfil de organização**de guia e, em seguida, selecione a opção **Data Residency**.
   
 **Talvez você não veja esta seção se uma das seguintes opções se aplicar**:
 - Seu locatário não está qualificado para o programa Office 365 move.  A qualificação é determinada pelo país de inscrição do locatário.

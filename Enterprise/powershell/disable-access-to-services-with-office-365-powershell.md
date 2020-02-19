@@ -17,12 +17,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Use o Office 365 PowerShell para desabilitar o acesso aos serviços do Office 365 para os usuários.
-ms.openlocfilehash: eb6099ce5a41d0ea0d09aba0b737be00912ffbdc
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 17927b6d7e402aff66c059e159ae81a950667ad1
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841553"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106212"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Desabilitar o acesso aos serviços com o PowerShell do Office 365
 
@@ -105,7 +105,7 @@ Para desabilitar os serviços descritos na etapa 1 para todos os usuários licen
     
 ```powershell
 $acctSKU="<AccountSkuId>"
-$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
+$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses.AccountSku.SkuPartNumber -contains ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
 $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
 ```
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Resumo: Use o Office 365 PowerShell para gerenciar as políticas do Skype for Business online, políticas por usuário e configurações da reunião.'
-ms.openlocfilehash: 699f799e823df6192a65147210130ae6493f52eb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844222"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106202"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Gerenciar o Skype for Business Online com o Office 365 PowerShell
 
@@ -44,7 +44,7 @@ Baixe e instale o [módulo do conector do Skype for Business online](https://www
 2. Na caixa de diálogo **solicitação de credencial do Windows PowerShell** , digite seu nome e senha da conta de administrador do Skype for Business Online e clique em **OK**.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>Conectar-se usando uma conta de administrador do Skype for Business online com a autenticação multifator
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>Conectar-se usando uma conta de administrador do Skype for Business online com a autenticação multifator
 
 1. Abra um prompt de comando do Windows PowerShell e execute os seguintes comandos:
 
