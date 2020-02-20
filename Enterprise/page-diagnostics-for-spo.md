@@ -3,7 +3,7 @@ title: Usar a ferramenta diagnóstico de página para o SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/19/2019
+ms.date: 2/18/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,21 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use a ferramenta diagnóstico de página para SharePoint para analisar o portal moderno do SharePoint Online e as páginas de publicação clássicas em um conjunto predefinido de critérios de desempenho.
-ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841778"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155581"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar a ferramenta diagnóstico de página para SharePoint
 
 Este artigo descreve como usar a **ferramenta diagnóstico de página para SharePoint** para analisar as páginas de site modernas e clássicas do SharePoint Online em um conjunto de critérios de desempenho predefinido.  
 
 >[!TIP]
->**A versão 2.0.1 da ferramenta foi lançada**. A versão **2.0.0** e posterior inclui suporte para páginas modernas, além de páginas de site clássicas. Se não tiver certeza sobre qual versão da ferramenta você está usando, você pode selecionar o link **sobre** ou as reticências (...) para verificar sua versão.
+>**A versão 2.0.2 da ferramenta foi liberada**. A versão **2.0.0** e posterior inclui suporte para páginas modernas, além de páginas de site clássicas. Se não tiver certeza sobre qual versão da ferramenta você está usando, você pode selecionar o link **sobre** ou as reticências (...) para verificar sua versão. Sempre atualize para a versão mais recente ao usar a ferramenta.
 
-A ferramenta diagnóstico de página do SharePoint é uma extensão de navegador para o Chrome e [o Microsoft Edge versão 77 e posterior](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que analisa o portal moderno do SharePoint Online e as páginas do site de publicação clássica. Essa ferramenta só funciona para o SharePoint Online e falhará com um erro se for usada em uma página de site do SharePoint Server.
+A ferramenta diagnóstico de página do SharePoint é uma extensão de navegador para o novo Microsofthttps://www.microsoft.com/edge) Edge (e navegadores Chrome que analisa o portal moderno do SharePoint Online e as páginas do site de publicação clássica. Essa ferramenta só funciona no SharePoint Online e não pode ser usada em uma página de sistema do SharePoint.
 
 A ferramenta gera um relatório para cada página analisada mostrando como a página é executada em um conjunto de regras predefinido e exibe informações detalhadas quando os resultados de um teste ficam fora do valor da linha de base. Os administradores e designers do SharePoint Online podem usar a ferramenta para solucionar problemas de desempenho e garantir que as novas páginas sejam otimizadas antes da publicação.
 
@@ -52,9 +52,9 @@ Para fornecer comentários sobre a ferramenta, selecione as reticências no cant
 O procedimento de instalação nesta seção funcionará para os navegadores Chrome e Microsoft Edge.
 
 > [!IMPORTANT]
-> A Microsoft não lê dados ou conteúdo de página que é analisado pela ferramenta diagnóstico de página para SharePoint e não capturamos informações pessoais, sites ou informações de download. A única informação registrada pela ferramenta é o nome do locatário, a contagem de regra e se a opção de registro em log de suporte foi habilitada quando a ferramenta é executada. Essas informações são usadas pela Microsoft para entender as tendências modernas de uso do site de publicação e portal e problemas comuns de desempenho para informar os aprimoramentos do produto.
+> A Microsoft não lê dados ou conteúdo de página que é analisado pela ferramenta diagnóstico de página para SharePoint e não capturamos informações pessoais, sites ou informações de download. As únicas informações identificáveis registradas na Microsoft pela ferramenta são o nome do locatário, as contagens de regras que falharam e a data e a hora em que a ferramenta foi executada. Essas informações são usadas pela Microsoft para entender melhor as tendências de uso do site de publicação e portal e problemas comuns de desempenho.
 
-1. Usando o navegador _Chrome_ ou o _Microsoft Edge versão 77 ou posterior_ , abra o [link para a ferramenta](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) diretamente ou abra a pesquisa no [webstore do navegador Chrome](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) e instale a extensão do navegador. Revise a política de privacidade do usuário fornecida na página de descrição da loja. Ao adicionar a ferramenta ao navegador, você verá o aviso de permissões a seguir.
+1. Instale a ferramenta diagnóstico de página para o SharePoint para **Microsoft Edge** [(extensão de borda)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) ou **Chrome** [(extensão Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi). Revise a política de privacidade do usuário fornecida na página de descrição da loja. Ao adicionar a ferramenta ao navegador, você verá o aviso de permissões a seguir.
 
     ![Permissões de extensão](media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
@@ -73,7 +73,10 @@ Selecione **Iniciar** para começar a coletar dados para análise.
 
 ## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>O que você verá na ferramenta diagnóstico de página para SharePoint
 
-1. O link **sobre** , que se assemelha às elipses (...) no canto superior direito fornecerá orientações gerais e detalhes sobre a ferramenta, incluindo um link de volta para este artigo. Ele também inclui um link direto para as recomendações de desempenho do SharePoint, um aviso de terceiros e uma opção para fornecer comentários sobre a ferramenta.  
+1. Clique nas reticências (...) no canto superior direito da ferramenta para localizar os seguintes links:
+   1. O link **recursos adicionais** fornece orientações gerais e detalhes sobre a ferramenta, incluindo um link de volta para este artigo.
+   1. O link **fornecer feedback** fornece um link para o site de _voz do usuário de colaboração e sites do SharePoint_ .
+   1. O link **about** inclui a versão atualmente instalada da ferramenta e um link direto para o aviso de terceiros da ferramenta.  
 1. A **ID de correlação, SPRequestDuration, SPIISLatency**, **tempo de carregamento de página**e detalhes de **URL** são informativas e podem ser usadas para alguns fins.
 
     ![Detalhes de diagnóstico de página](media/page-diagnostics-for-spo/pagediag-details.PNG)
@@ -116,12 +119,12 @@ Os resultados vermelhos ou amarelos também podem indicar Web Parts que atualiza
 
 A guia **rastreamento de rede** fornece informações detalhadas sobre as duas solicitações para criar a página e as respostas recebidas do SharePoint.
 
-1. **Procure tempos de carregamento de item sinalizados como vermelho**. O desempenho de cada solicitação e resposta são codificados em cores, com base em seu impacto no desempenho geral da página da seguinte maneira:
+1. **Procure tempos de carregamento de item sinalizados como vermelho**. Cada solicitação e resposta é codificada por cores para indicar seu impacto no desempenho geral da página usando as seguintes métricas de latência:
     - Verde: \< 500 milhões
     - Amarelo: 500-1000ms
     - Vermelho: \> 1000ms
 
-    ![Rastreamento de rede](media/page-diagnostics-for-spo/pagediag-networktrace.png)
+    ![Rastreamento de rede](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     Na imagem mostrada acima, o item vermelho pertence à página padrão. Ele sempre mostrará vermelho, a menos que a \< página seja carregada no 1000ms (menos de 1 segundo).
 
