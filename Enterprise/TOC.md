@@ -81,6 +81,7 @@
 #### [Solicitações de rede do Office para Mac](network-requests-in-office-2016-for-mac.md)
 #### [URL do serviço Web e endereço IP do Office 365](office-365-ip-web-service.md)
 #### [Pontos de extremidade adicionais não incluídos nos serviços Web](additional-office365-ip-addresses-and-urls.md)
+### [Otimização de desempenho do Office 365 para usuários da China](office-365-networking-china.md)
 ### [Redes de distribuição de conteúdo](content-delivery-networks.md)
 ### [Suporte a IPv6 nos serviços do Office 365](ipv6-support.md)
 ### [Suporte a NAT com o Office 365](nat-support-with-office-365.md)
@@ -154,6 +155,7 @@
 #### [Perguntas frequentes gerais sobre migração de dados](data-move-faq.md)
 #### [Microsoft Cloud Deutschland: programa de migração do Office 365](ms-cloud-germany-transition.md)
 #### [Microsoft Cloud Deutschland: aceitar a migração](ms-cloud-germany-migration-opt-in.md)
+#### [Os dados dos clientes nos datacenters do Office 365](o365-data-locations.md)
 
 ### Soluções híbridas
 #### [Usar o Azure Active Directory para a autenticação do SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
