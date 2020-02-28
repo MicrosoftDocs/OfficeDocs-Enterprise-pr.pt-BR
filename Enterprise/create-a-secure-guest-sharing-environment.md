@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Aprenda a criar um ambiente de compartilhamento de convidados seguro no Microsoft 365.
-ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 978e7f0e2f81f8e7f97ee73b8e490922afcf1c0a
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155570"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316030"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Criar um ambiente de compartilhamento de convidados seguro
 
@@ -332,3 +332,5 @@ Há algumas opções adicionais no Microsoft 365 e no Azure Active Directory que
 [Limitar a exposição acidental dos arquivos ao compartilhar com convidados](sharing-limit-accidental-exposure.md)
 
 [Práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
+
+[Crie uma extranet B2B com convidados gerenciados](b2b-extranet.md)

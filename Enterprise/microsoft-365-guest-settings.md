@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre as configurações de compartilhamento de convidados disponíveis no Microsoft 365.
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844962"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316040"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referência das configurações de compartilhamento de convidado do Microsoft 365
 
@@ -238,6 +237,9 @@ A tabela a seguir exibe a configuração de compartilhamento padrão para cada t
 |Sites conectados ao grupo (inclusive no Teams)|**Convidados novos e existentes** se a configuração de Grupos do Office 365 **Permitir que os proprietários de grupos adicionem pessoas de fora da organização aos grupos** estiver **Habilitada**. Caso contrário, **Somente convidados existentes**|
 |Comunicação|**Somente pessoas em sua organização**|
 |Sites modernos sem grupo (site de equipe #STS3)|**Somente pessoas em sua organização**|
+
+> [!NOTE]
+> O site de comunicação raiz (tenant-name.sharepoint.com) possui uma configuração de compartilhamento padrão **Qualquer pessoa**.
 
 ## <a name="see-also"></a>Confira também
 

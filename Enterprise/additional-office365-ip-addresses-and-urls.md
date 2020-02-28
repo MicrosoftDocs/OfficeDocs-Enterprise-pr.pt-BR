@@ -3,7 +3,7 @@ title: Pontos de extremidade adicionais não incluídos no endereço IP do Offic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 2/27/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: 150e57c569a5305251d1bed2989bc4c87af988d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 5e763b00f8b43b652809df994e933228dd7e1dfb
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844682"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315960"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
@@ -66,6 +66,7 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 18  | Use o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar contas de usuários locais com o Azure AD. | Consulte [Portas e Protocolos de Identidade Híbrida Necessários](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Solucionar problemas de conectividade do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalação do Agente de Integridade do Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Somente o tráfego de servidor de saída |
 | 19  | Microsoft Stream (necessário o token de usuário do Azure AD). <BR> Office 365 no Mundo (incluindo o GCC) | *.cloudapp.net <BR> *.api.microsoftstream.com <BR> *.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> Porta TCP 443  | Tráfego do servidor de entrada |
 | 20  | Use o servidor MFA para solicitações de autenticação multifator; as novas instalações e configurações do servidor com o AD DS (Active Directory Domain Services). | Confira a [Introdução ao Servidor de Autenticação Multifator do Azure](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Somente o tráfego de servidor de saída |
+| 21  | Notificações de Alteração do Microsoft Graph | Os desenvolvedores podem aproveitar as [notificações de alteração](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) para se inscreverem em eventos no Microsoft Graph. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, Nuvem pública: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud para o governo dos EUA: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Alemanha: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud China operado por 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> Porta TCP 443 <BR> Observação: Os desenvolvedores podem especificar portas diferentes ao criar as assinaturas.  | Tráfego do servidor de entrada |
 |||||
 
 ## <a name="related-topics"></a>Tópicos Relacionados
@@ -81,4 +82,3 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 [Intervalos de IP do Datacenter do Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653)
   
 [Grupos de notícias públicos da Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)
-
