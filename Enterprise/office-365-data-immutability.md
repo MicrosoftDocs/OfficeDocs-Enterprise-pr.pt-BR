@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Define e explica a imutabilidade dos dados no Office 365.
-ms.openlocfilehash: 8e52d1be87bff163b2d1cfc9233de08861104681
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844512"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42315990"
 ---
 # <a name="immutability-in-office-365"></a>Imutabilidade no Office 365
 

@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Saiba como adicionar vários usuários ao Office 365 para empresas de uma lista em uma planilha ou outro arquivo formatado por CSV. Assista a um vídeo sobre o YouTube que explica como adicionar contas ao Office 365. No final desse processo, cada usuário com uma conta terá uma caixa de correio do Office 365. '
-ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844642"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316010"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Adicionar vários usuários ao mesmo tempo para o Office 365 – Ajuda da administração
 
@@ -115,7 +115,7 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
     
 |**Rótulo da coluna de dados do usuário**|**Comprimento máximo de caracteres**|
 |:-----|:-----|
-|Nome de Usuário (Obrigatório)  <br/> |79 incluindo o sinal (@), no formato de nome@domínio.\<extensão\>. O alias do usuário não pode exceder 30 caracteres e o nome de domínio não pode exceder 48 caracteres.  <br/> |
+|Nome de Usuário (Obrigatório)  <br/> |79 incluindo o sinal (@), no formato de nome@domínio.\<extensão\>. O alias do usuário não pode exceder 50 caracteres e o nome de domínio não pode exceder 48 caracteres.  <br/> |
 |Nome  <br/> |64  <br/> |
 |Sobrenome  <br/> |64  <br/> |
 |Nome de Exibição (obrigatório)  <br/> |256  <br/> |
