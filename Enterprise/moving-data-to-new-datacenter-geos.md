@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844762"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417046"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Movendo dados principais para o novo Office 365 datacenter GEOS
 
@@ -33,19 +33,19 @@ Principais dados do cliente é um termo que se refere a um subconjunto de dados 
   
 Os clientes existentes que têm seus dados principais de cliente armazenados em uma geografia do datacenter já existente não são afetados pelo lançamento de uma nova Geografia de datacenter. Não apresentamos recursos exclusivos, recursos ou certificações de conformidade com a nova Geografia do datacenter. Como cliente em qualquer uma dessas duas GEOS, você terá os mesmos controles de qualidade de serviço, desempenho e segurança que fazia antes. Oferecemos clientes existentes listados na tabela abaixo de uma opção para solicitar a migração inicial dos dados principais do cliente da sua organização em repouso para a nova Geografia do datacenter.
   
-|Clientes com o país de inscrição do locatário em * * * *|Geo do datacenter anterior * * * *|Nova Geografia do datacenter * * * *|Geo disponível desde * * * *|
+|**Clientes com país de inscrição do locatário no**|**Geo do datacenter anterior**|**Nova Geografia do datacenter**|**Geo disponível desde que**|
 |:-----|:-----|:-----|:-----|
-|Japão * * * *| Ásia/Pacífico | Japão | Dezembro de 2014 |
-|Austrália, Nova Zelândia, Fiji * * * *| Ásia/Pacífico | Austrália | Março de 2015 |
-|Índia * * * *| Ásia/Pacífico | Índia | Outubro de 2015 |
-|Canadá * * * *| América do Norte | Canadá | Maio de 2016 |
-|Reino Unido * * * *| Europa | Reino Unido | Setembro de 2016 |
-|Coréia do Sul * * * *| Ásia/Pacífico | Coréia do Sul | Abril de 2017 |
-|França * * * *| Europa | França | Março de 2018 |
-|Emirados Árabes Unidos * * * *| Europa | Emirados Árabes Unidos | Junho de 2019 |
-|África do Sul * * * *| Europa | África do Sul | Julho de 2019 |
-|Suíça, Liechtenstein * * * *| Europa | Suíça | Dezembro de 2019 |
-|Alemanha * * * *| Europa | Alemanha | Dezembro de 2019 |
+|**Japão**| Ásia/Pacífico | Japão | Dezembro de 2014 |
+|**Austrália, Nova Zelândia, Fiji**| Ásia/Pacífico | Austrália | Março de 2015 |
+|**Índia **| Ásia/Pacífico | Índia | Outubro de 2015 |
+|**Canadá**| América do Norte | Canadá | Maio de 2016 |
+|**Reino Unido**| Europa | Reino Unido | Setembro de 2016 |
+|**Coreia do Sul**| Ásia/Pacífico | Coreia do Sul | Abril de 2017 |
+|**França **| Europa | França | Março de 2018 |
+|**Emirados Árabes Unidos**| Europa | Emirados Árabes Unidos | Junho de 2019 |
+|**África do Sul**| Europa | África do Sul | Julho de 2019 |
+|**Suíça, Liechtenstein**| Europa | Suíça | Dezembro de 2019 |
+|**Alemanha**| Europa | Alemanha | Dezembro de 2019 |
   
 Novos clientes ou locatários do Office 365 criados após a disponibilidade da nova Geografia do datacenter terão seus principais dados de cliente armazenados em repouso na nova Geografia do datacenter automaticamente.
 
