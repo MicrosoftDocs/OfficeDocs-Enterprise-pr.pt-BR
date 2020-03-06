@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Saiba como colaborar com convidados em um site do SharePoint.
-ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c1c34fded910701275a80aa0740a746a2458156
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845062"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549110"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Colaborar com convidados em um site
 
@@ -129,7 +128,7 @@ Para convidar convidados para um grupo
 3. Digite os endereços de email dos convidados que você deseja convidar e clique em **Adicionar**.
 4. Clique em **Fechar**.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Confira Também
 
 [Práticas recomendadas para compartilhar arquivos e pastas com usuários não autenticados](best-practices-anonymous-sharing.md)
 
@@ -137,5 +136,5 @@ Para convidar convidados para um grupo
 
 [Criar um ambiente de compartilhamento de convidados seguro](create-a-secure-guest-sharing-environment.md)
 
-[Criar uma extranet B2B com convidados gerenciados](b2b-extranet.md)
+[Crie uma extranet B2B com convidados gerenciados](b2b-extranet.md)
 

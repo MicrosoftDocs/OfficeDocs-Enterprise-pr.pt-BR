@@ -1,5 +1,5 @@
 ---
-title: Criar uma extranet B2B com convidados gerenciados
+title: Crie uma extranet B2B com convidados gerenciados
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Saiba como criar um site de extranet B2B ou uma equipe com usuários convidados gerenciados de uma organização de parceiro.
-ms.openlocfilehash: 930c11489921fa5c32d1ba1ab16161f201006c91
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cdf4470920a307d569fcfd650f40c77f4a5423a4
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844992"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549060"
 ---
-# <a name="create-a-b2b-extranet-with-managed-guests"></a>Criar uma extranet B2B com convidados gerenciados
+# <a name="create-a-b2b-extranet-with-managed-guests"></a>Crie uma extranet B2B com convidados gerenciados
 
 Você pode usar o [Gerenciamento de direitos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) para criar uma extranet B2B para colaborar com uma organização parceira que usa o Azure Active Directory. Isso permite que os usuários se autoregistrem no site da extranet ou na equipe e recebam acesso por meio de um fluxo de trabalho de aprovação.
 
