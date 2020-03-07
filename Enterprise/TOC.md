@@ -187,13 +187,13 @@
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
 ### Colaborar com convidados
 #### [Referência de compartilhamento de convidado](microsoft-365-guest-settings.md)
-#### Soluções de compartilhamento de convidados
+#### Cenários de compartilhamento de convidados
 ##### [Visão geral da colaboração do convidado](collaborating-with-people-outside-your-organization.md)
 ##### [Colaborar em documentos](collaborate-on-documents.md)
 ##### [Colaborar em um site](collaborate-in-a-site.md)
 ##### [Colabore em equipe](collaborate-as-a-team.md)
 #### Segurança de compartilhamento de convidados
-##### [compartilhamento não autenticado](best-practices-anonymous-sharing.md)
+##### [Compartilhamento não autenticado](best-practices-anonymous-sharing.md)
 ##### [Limitar a exposição acidental](sharing-limit-accidental-exposure.md)
 ##### [Ambiente seguro de compartilhamento de convidados](create-a-secure-guest-sharing-environment.md)
 #### [Criar uma extranet B2B](b2b-extranet.md)
