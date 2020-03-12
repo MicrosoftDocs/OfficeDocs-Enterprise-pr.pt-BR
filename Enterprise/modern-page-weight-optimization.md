@@ -3,7 +3,7 @@ title: Otimizar o peso da página nas páginas do site moderno do SharePoint Onl
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar o peso da página nas páginas do site moderno do SharePoint Online.
-ms.openlocfilehash: 15266a15752a9cf55a842f5209894d945f595e64
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c694e7ed2524e6e8e161a3ad844dd3d1cfc3a116
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844802"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603781"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Otimizar o peso da página nas páginas do site moderno do SharePoint Online.
 
@@ -37,7 +37,10 @@ Este artigo vai ajudá-lo a entender como reduzir o peso da página em suas pág
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Usar a ferramenta Diagnóstico de Página do SharePoint para analisar o peso da página
 
-A **ferramenta Diagnóstico de Página do SharePoint** é uma extensão de navegador para o Chrome e o [Microsoft Edge versão 77 ou posterior](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), que você pode usar para analisar as páginas do site de publicação moderna e clássica do SharePoint. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de Página do SharePoint, acesse [Usar a ferramenta Diagnóstico de Página do SharePoint Online](page-diagnostics-for-spo.md).
+A ferramenta Diagnóstico de Página para SharePoint é uma extensão do navegador para os novos navegadores Microsoft Edge (https://www.microsoft.com/edge) e Chrome que analisam o portal moderno do SharePoint Online e as páginas clássicas de site de publicação. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de Página para SharePoint, acesse [Usar a ferramenta Diagnóstico de Página para SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>A ferramenta de Diagnóstico de Página só funciona com o SharePoint Online e não pode ser usada em uma página do sistema do SharePoint.
 
 Ao analisar uma página de site do SharePoint com a ferramenta Diagnóstico de Página para SharePoint, você pode ver informações sobre a página **Peso da página em 500kB** resultado do painel dos _Testes de Diagnóstico _. O resultado será exibido em verde se o peso da página estiver abaixo do valor da linha de base e vermelho se o peso da página exceder o valor da linha de base.
 
