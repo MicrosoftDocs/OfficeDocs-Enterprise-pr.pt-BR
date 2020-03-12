@@ -3,7 +3,7 @@ title: Otimizar o desempenho de Web Parts em páginas de site moderno do SharePo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online.
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844822"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603740"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online
 
@@ -35,14 +35,17 @@ As páginas de site moderno do SharePoint Online contêm Web Parts que podem con
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usar a ferramenta Diagnóstico de Página para SharePoint para analisar Web Parts
 
-A **ferramenta Diagnóstico de Página para SharePoint** é uma extensão de navegador para o Chrome e o [Microsoft Edge versão 77 ou posterior](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) que você pode usar para analisar as páginas de site de publicação moderno e clássico do SharePoint. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de Página para SharePoint, acesse [Usar a ferramenta Diagnóstico de Página para SharePoint Online](page-diagnostics-for-spo.md).
+A ferramenta Diagnóstico de Página para SharePoint é uma extensão do navegador para os novos navegadores Microsoft Edge (https://www.microsoft.com/edge) e Chrome que analisam o portal moderno do SharePoint Online e as páginas clássicas do site de publicação. A ferramenta fornece um relatório para cada página analisada que mostra o desempenho da página em relação a um conjunto definido de critérios de desempenho. Para instalar e saber mais sobre a ferramenta Diagnóstico de Página para SharePoint, acesse [Usar a ferramenta Diagnóstico de Página para SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>A ferramenta de Diagnóstico de Página só funciona com o SharePoint Online e não pode ser usada em uma página do sistema do SharePoint.
 
 Ao analisar uma página de site do SharePoint com a ferramenta Diagnóstico de Página para SharePoint, você pode ver informações sobre Web Parts que excedem a métrica de linha de base no resultado de **As Web Parts estão afetando o tempo de carregamento da página**, no painel _Testes de diagnóstico_.
 
 Os resultados possíveis incluem:
 
-- **Requer atenção** (vermelho): qualquer Web Part _personalizada_ que demora mais de **dois** segundos para ser carregada. O tempo total de carregamento, conforme exibido nos resultados de teste, é dividido por carregamento do módulo, carga lenta, inicialização e renderização.
-- **Oportunidades de melhoria** (amarelo): os itens que podem estar afetando o tempo de carregamento da página são mostrados nesta seção e devem ser examinados e monitorados. Isso pode incluir Web Parts OOTB (“prontas para uso”) da Microsoft. Os resultados de todas as Web Parts da Microsoft mostradas nesta seção são automaticamente relatados à Microsoft, portanto, **nenhuma ação é necessária**. Você só precisará registrar um tíquete de suporte para investigação se estiver enfrentando um desempenho muito lento na página e **todas as Web Parts da Microsoft** na página aparecerem nos resultados na seção **Oportunidades de melhoria**. Uma atualização futura da ferramenta Diagnóstico de Página detalhará ainda mais os resultados com base na configuração específica da Web Part da Microsoft.
+- **Atenção necessária** (vermelha): Qualquer web part _personalizada_ visível no visor (parte visível da tela da página que é carregada primeiro) que leva mais de **dois** segundos para carregar. Quaisquer web parts _personalizadas_ fora da janela de exibição que levam mais de **quatro** segundos para carregar. O tempo total de carregamento é exibido nos resultados do teste e é dividido por carga do módulo, carga lenta, inicialização e renderização.
+- **Oportunidades de melhoria** (amarelo): os itens que podem estar afetando o tempo de carregamento da página são mostrados nesta seção e devem ser examinados e monitorados. Isso pode incluir Web Parts OOTB (“prontas para uso”) da Microsoft. Os resultados de todas as Web Parts da Microsoft mostradas nesta seção são automaticamente relatados à Microsoft, portanto, **nenhuma ação é necessária**. Você só precisará registrar um tíquete de suporte para investigação se estiver enfrentando um desempenho muito lento na página e **todas as Web Parts da Microsoft** na página aparecerem nos resultados na seção **Oportunidades de melhoria**. Observe que uma futura atualização da ferramenta Diagnóstico de Página para SharePoint detalhará ainda mais os resultados com base na configuração específica da web part da Microsoft.
 - **Nenhuma ação necessária** (verde): nenhuma Web Part está demorando mais de **dois** segundos para retornar dados.
 
 Se o resultado de **As Web Parts estão afetando o tempo de carregamento da página** aparecer na seção **Requer atenção** ou **Oportunidades de melhoria**, clique no resultado para ver detalhes sobre quais Web Parts estão com carregamento lento. Futuras atualizações da ferramenta Diagnóstico de Página para SharePoint podem incluir atualizações de regras de análise, portanto, garanta que você sempre tenha a versão mais recente da ferramenta.
