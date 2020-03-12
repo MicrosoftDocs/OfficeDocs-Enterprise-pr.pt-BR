@@ -3,7 +3,7 @@ title: Usar a ferramenta diagnóstico de página para o SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use a ferramenta diagnóstico de página para SharePoint para analisar o portal moderno do SharePoint Online e as páginas de publicação clássicas em um conjunto predefinido de critérios de desempenho.
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155581"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603730"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar a ferramenta diagnóstico de página para SharePoint
 
 Este artigo descreve como usar a **ferramenta diagnóstico de página para SharePoint** para analisar as páginas de site modernas e clássicas do SharePoint Online em um conjunto de critérios de desempenho predefinido.  
 
 >[!TIP]
->**A versão 2.0.2 da ferramenta foi liberada**. A versão **2.0.0** e posterior inclui suporte para páginas modernas, além de páginas de site clássicas. Se não tiver certeza sobre qual versão da ferramenta você está usando, você pode selecionar o link **sobre** ou as reticências (...) para verificar sua versão. Sempre atualize para a versão mais recente ao usar a ferramenta.
+>A versão **2.0.0** e posterior inclui suporte para páginas modernas, além de páginas de site clássicas. Se não tiver certeza sobre qual versão da ferramenta você está usando, você pode selecionar o link **sobre** ou as reticências (...) para verificar sua versão. **Sempre atualize para a versão mais recente** ao usar a ferramenta.
 
 A ferramenta diagnóstico de página do SharePoint é uma extensão de navegador para o novo Microsofthttps://www.microsoft.com/edge) Edge (e navegadores Chrome que analisa o portal moderno do SharePoint Online e as páginas do site de publicação clássica. Essa ferramenta só funciona no SharePoint Online e não pode ser usada em uma página de sistema do SharePoint.
 
@@ -161,4 +161,8 @@ Nenhuma alteração é visível, exceto que você será notificado de que a habi
 
 [Ajustar o desempenho do Office 365](tune-office-365-performance.md)
 
+[Desempenho na experiência moderna do SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
+
+[Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online](use-office-365-cdn-with-spo.md)

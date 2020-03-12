@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: O Exchange 2010 está se aproximando do fim do suporte. Use este mapa de planejamento como um guia para preparar a atualização para o Exchange Online ou uma versão mais recente do Exchange Server no local.
-ms.openlocfilehash: b8e9e1b94c08ec58294f88a7b5607b18c9f44a99
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5118d0abf02464b47bfb4a368d42b0921c19ec5
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840378"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605566"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2010
 
@@ -236,5 +236,3 @@ Se você tiver problemas durante a migração para o Office 365 e não estiver u
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-office-2010-servers-and-products)
-
-[Grupo de aposentadoria do Office (comunidade de tecnologia da Microsoft)](https://go.microsoft.com/fwlink/?linkid=842065)

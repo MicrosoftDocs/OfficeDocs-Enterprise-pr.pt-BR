@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: O suporte está terminando em breve para os aplicativos cliente e servidores do Office 2010, e os acordos de suporte personalizados não estão disponíveis. Use este artigo para começar a planejar sua atualização agora.
-ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 29f1074a4ca0ab520ad29bc480178d2af535b72a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841028"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605556"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2010
 
@@ -66,8 +66,6 @@ Se você estiver usando produtos e aplicativos do Office 2010 em casa, confira [
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Grupo de aposentadoria do Office (comunidade de tecnologia da Microsoft)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [Vídeo: o que é o Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Política de ciclo de vida da Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)

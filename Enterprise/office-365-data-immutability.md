@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Define e explica a imutabilidade dos dados no Office 365.
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315990"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605626"
 ---
 # <a name="immutability-in-office-365"></a>Imutabilidade no Office 365
 
@@ -58,4 +58,4 @@ Especificamente:
 - O arquivamento no Office 365 permite aos usuários combinar diferentes políticas de retenção e ações de bloqueio para criar políticas de retenção granulares. Essas políticas definem o tipo ou o local dos itens preservados e a duração da preservação.
 - O recurso de bloqueio de preservação permite que os usuários escolham se desejam tornar a política uma política restritiva. Uma política restritiva proíbe que qualquer pessoa tenha a capacidade de remover, desabilitar ou fazer qualquer alteração na política de retenção. Isso significa que, quando o bloqueio de preservação estiver habilitado, ele não poderá ser desabilitado, e nenhum mecanismo existirá sob o qual qualquer dado dos responsáveis existentes que foram coletados pelas políticas de retenção em vigor poderá ser substituído, modificado, apagado ou excluído durante o período de preservação. Além disso, o período de retenção definido pelo bloqueio de preservação não pode ser reduzido ou reduzido. No entanto, ele pode ser estendido, no caso de um requisito legal para continuar a retenção dos dados armazenados, conforme observado acima. O bloqueio de preservação garante que ninguém, nem mesmo administradores ou aqueles com certos controles de acesso, possam alterar as configurações ou substituir ou apagar os dados que foram armazenados, disponibilizar o arquivamento no Office 365 em linha com as orientações definidas na versão 2003 de seg Regra 17a-4.
 
-Para entender como o Office 365 ajuda você a cumprir as obrigações normativas, especificamente em relação aos requisitos da regra 17a-4, consulte este [White Paper](https://go.microsoft.com/fwlink/?linkid=830440) que abrange o arquivamento do Exchange Online, o SharePoint Online, o onedrive for Business e o Skype for Business. O White Paper também fornece uma análise detalhada dos recursos de arquivamento e funcionalidades do Office 365 em relação a cada um dos requisitos na regra 17a-4 da SEC e demonstra aos clientes regulamentados como o arquivamento do Office 365 pode permitir que eles atendam a esses atende.
+Para entender como o Office 365 ajuda você a cumprir as obrigações normativas, especificamente em relação aos requisitos da regra 17a-4, consulte o [White Paper](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) que abrange o arquivamento do Exchange Online, o SharePoint Online, o onedrive for Business e o Skype for Business. O White Paper também fornece uma análise detalhada dos recursos de arquivamento e funcionalidades do Office 365 em relação a cada um dos requisitos na regra 17a-4 da SEC e demonstra aos clientes regulamentados como o arquivamento do Office 365 pode permitir que eles atendam a esses atende.
