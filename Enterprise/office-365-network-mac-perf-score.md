@@ -3,7 +3,7 @@ title: Avaliação de rede do Office 365 (versão prévia)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,41 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Avaliação de rede do Office 365 (versão prévia)
-ms.openlocfilehash: f919eeb2771095502865b4a5079b91eb8d7efe36
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 24ecea73d9ecb6ae73b26e42a25749c846e3a281
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106235"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890350"
 ---
 # <a name="office-365-network-assessment-preview"></a>Avaliação de rede do Office 365 (versão prévia)
 
-A avaliação de rede do Office 365 indica o impacto da experiência do usuário relativa da conectividade de rede do cliente. O impacto de qualquer conectividade de rede de propriedade da Microsoft é excluído disso para permitir que os clientes otimizem os designs de rede para os quais são responsáveis.
+Na página de conectividade do centro de administração do 365 da Microsoft para a Microsoft 365, as **avaliações de rede** expostam uma agregação de muitas métricas de desempenho de rede em um instantâneo da integridade da rede corporativa, representado por um valor de pontos de 1-100. As avaliações de rede têm o escopo para o locatário inteiro e para cada localização geográfica a partir da qual os usuários se conectam ao seu locatário, fornecendo aos administradores do Office 365 uma maneira fácil de obter instantaneamente uma Gestalt da integridade da rede da empresa e rapidamente fazer para baixo em um relatório detalhado de qualquer local do escritório global.
 
-Ela é calculada a partir de medições que afetam a experiência do usuário em cargas de trabalho principais do Office 365 e mostradas como uma porcentagem com um intervalo de 0 a 100.
+O valor de pontos de avaliação de rede é uma medição média da latência, largura de banda, velocidade de download e métricas de qualidade de conexão compiladas ao vivo no momento em que são exibidas. As métricas de desempenho para redes de propriedade da Microsoft são excluídas dessas medidas para garantir que os resultados da avaliação sejam inequívocas e específicos da rede corporativa.
 
-Uma pontuação de rede muito baixa sugere que os clientes do Office 365 terão problemas significativos de conexão ou de resposta restante do usuário. Uma pontuação de 80% representa a conectividade de rede em que você não espera receber queixas de usuário sobre sua experiência de usuário do Office 365 devido ao seu desempenho de rede. À medida que são feitas melhorias na conectividade de rede, essa Pontuação aumenta junto com a experiência do usuário.
+![Valor de avaliação de rede](Media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+
+Um valor de avaliação de rede muito baixo sugere que os clientes do Office 365 terão problemas significativos para se conectar ao locatário ou manter uma experiência de usuário responsiva, enquanto um valor alto indica uma rede configurada corretamente com poucos desempenhos contínuos problemas. Um valor de 80% representa uma linha de base saudável onde você não deve receber queixas regulares do usuário sobre a conectividade ou a capacidade de resposta do Office 365 devido ao desempenho da rede. Conforme são feitas melhorias de conectividade de rede iterativa, esse valor aumentará junto com a experiência do usuário.
 
 >[!IMPORTANT]
->Recomendações de desempenho de rede, ideias e avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para locatários do Office 365 que foram registrados no programa de visualização de recurso.
+>Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Office 365 que foram registrados no programa de visualização de recurso.
+
+## <a name="network-assessment-panel"></a>Painel de avaliação de rede
+
+Cada avaliação de rede, com escopo para o locatário ou para um local específico do Office, mostra um painel com detalhes sobre a avaliação. Este painel mostra um gráfico de barras da avaliação como uma porcentagem e como o total de pontos para cada carga de trabalho do componente, incluindo apenas as cargas de trabalho onde os dados de medição foram recebidos. Para uma avaliação de rede de local do Office, também mostramos um benchmark que é a mediana de todos os clientes do Office 365 que relataram dados na mesma cidade que o seu local do Office.
+
+![Exemplo de valor de avaliação de rede](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
+
+A **divisão de avaliação** no painel mostra a avaliação de cada uma das cargas de trabalho do componente.
+
+O **histórico de avaliação** mostra os últimos 30 dias da avaliação e o benchmark.
+
+## <a name="tenant-network-assessments-and-office-location-network-assessments"></a>Avaliações de rede de locatários e avaliações de rede de local do escritório
+
+Uma avaliação de rede mede o design do perímetro de rede de um local do escritório para a rede da Microsoft. Aprimoramentos no perímetro da rede são mais bem executados em cada local do escritório ou onde a conectividade de rede é agregada pode haver melhorias que afetam vários locais.
+
+Mostramos um valor de avaliação de rede para o locatário completo do Office 365 na página de visão geral do desempenho da rede e um valor específico para cada local do escritório detectado na página de resumo desse local.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -44,19 +62,6 @@ Para o SharePoint Online, a velocidade de download disponível para o usuário a
 
 Para o Microsoft Teams, a qualidade da rede é medida como latência de UDP, tremulação de UDP e perda de pacotes UDP. O UDP é usado para a chamada e conferência de áudio e conectividade de mídia de vídeo para o Microsoft Teams. Isso pode ser afetado pelos mesmos fatores para a latência e velocidade de download, além de falhas de conectividade no suporte a UDP de uma rede, pois o UDP é configurado separadamente para o protocolo TCP mais comum.
 
-## <a name="tenant-network-score-and-office-location-network-score"></a>Pontuação de rede de locatário e pontuação de rede de local do escritório
-
-Uma pontuação de rede mede o design do perímetro de rede de um local do escritório para a rede da Microsoft. Aprimoramentos no perímetro da rede são mais bem executados em cada local do escritório ou onde a conectividade de rede é agregada pode haver melhorias que afetam vários locais.
-Mostramos uma pontuação de rede para todo o locatário do Office 365 na página de visão geral do desempenho da rede e uma pontuação de rede específica para cada local do escritório detectado na página de resumo desse local.
-
-## <a name="network-score-panel"></a>Painel de Pontuação de rede
-
-Cada Pontuação de rede se para o locatário ou para um local específico do escritório mostra um painel com detalhes sobre a pontuação. Este painel mostra um gráfico de barras da pontuação tanto como uma porcentagem quanto como o total de pontos para cada carga de trabalho do componente, incluindo apenas as cargas de trabalho onde os dados de medição foram recebidos. Para uma pontuação de rede de local de escritório, também mostramos um benchmark que é a mediana de todos os clientes do Office 365 que relataram dados na mesma cidade que o seu local do Office.
-
-A divisão de pontuação no painel mostra a pontuação de cada uma das cargas de trabalho do componente.
-
-O histórico de Pontuação mostra os últimos 30 dias da pontuação e o benchmark.
-
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)](office-365-network-mac-perf-overview.md)
@@ -64,3 +69,5 @@ O histórico de Pontuação mostra os últimos 30 dias da pontuação e o benchm
 [Informações de desempenho de rede do Office 365 (versão prévia)](office-365-network-mac-perf-insights.md)
 
 [Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Privacidade e termos de uso do Office 365 Network insights (visualização)](office-365-network-mac-perf-privacy.md)

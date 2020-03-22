@@ -3,7 +3,7 @@ title: Ferramenta de integração de rede do Office 365 no centro de administra�
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106237"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890394"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)
 
@@ -30,7 +30,7 @@ Os insights de rede no centro de administração do Microsoft 365 são baseados 
 Recomendamos que eles sejam usados em conjunto, em que o status de qualidade de rede pode ser avaliado para cada localização do Office no centro de administração do Microsoft 365 e mais específicos podem ser encontrados após a implantação do teste com base na ferramenta de integração de rede do Office 365.
 
 >[!IMPORTANT]
->Recomendações de desempenho de rede, ideias e avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para locatários do Office 365 que foram registrados no programa de visualização de recurso.
+>Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Office 365 que foram registrados no programa de visualização de recurso.
 
 ## <a name="the-advanced-tests-client-application"></a>O aplicativo cliente de testes avançados
 

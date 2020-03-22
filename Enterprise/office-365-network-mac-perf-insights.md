@@ -1,9 +1,9 @@
 ---
-title: Informações de desempenho de rede do Office 365 (versão prévia)
+title: Office 365 Network insights (visualização)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/20/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,72 +13,133 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Informações de desempenho de rede do Office 365 (versão prévia)
-ms.openlocfilehash: 2e57ffabec5b2172cb36f10135406ddda95bc1c5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Office 365 Network insights (visualização)
+ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106242"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890591"
 ---
-# <a name="office-365-network-performance-insights-preview"></a>Informações de desempenho de rede do Office 365 (versão prévia)
+# <a name="office-365-network-insights-preview"></a>Office 365 Network insights (visualização)
 
-As páginas de desempenho da rede do centro de administração do Microsoft 365 mostram as insights de rede do Office 365 que podem ajudar na criação de perímetros de rede para seus locais do Office. Há cinco insights de rede específicos que podem ser mostradas para cada local do escritório.
+O **insights de rede** é uma métrica de desempenho ao vivo coletada do seu locatário do Office 365 e está disponível para visualização apenas por usuários administrativos em seu locatário. As ideias são exibidas no centro de administração do Microsoft 365 em <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+
+As ideias destinam-se a ajudar na criação de perímetros de rede para seus locais do Office. Cada informação fornece detalhes ao vivo sobre as características de desempenho para um problema comum específico para cada localização geográfica onde os usuários acessam seu locatário.
+
+Há cinco insights de rede específicos que podem ser mostradas para cada local do escritório:
+
+- [Saída de rede de rebocada](#backhauled-network-egress)
+- [Melhor desempenho detectado para clientes próximos de você](#better-performance-detected-for-customers-near-you)
+- [Uso de uma porta frontal de serviço do Exchange Online não ideal](#use-of-a-non-optimal-exchange-online-service-front-door)
+- [Uso de uma porta frontal não ideal do SharePoint Online Service](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Baixa velocidade de download da porta frontal do SharePoint](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Recomendações de desempenho de rede, ideias e avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para locatários do Office 365 que foram registrados no programa de visualização de recurso.
+>Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Office 365 que foram registrados no programa de visualização de recurso.
 
 ## <a name="backhauled-network-egress"></a>Saída de rede de rebocada
 
-A distância entre o local do usuário e a saída da rede é maior que 500 milhas (800 quilômetros) e espera-se que isso afete o desempenho. É recomendada a saída local mais próxima do usuário.
-
-Isso identifica que a distância entre o local do escritório e a egresso da rede é maior que 500 milhas. O local do Office é identificado por um local de máquina cliente ofuscado e o local de egresso de rede é identificado usando o endereço IP reverso para os bancos de dados de local. O local do escritório pode ser impreciso se os serviços de localização do Windows estiverem desabilitados nos computadores. O local de egresso de rede pode ser impreciso se as informações do banco de dados de endereço IP reverso não forem precisas.
-
-Os detalhes dessa informação incluem o local do escritório, o local de egresso da rede e a distância entre eles.
-
-Para esta percepção, recomendamos que a saída da rede fique mais próxima do local do escritório, para que a conectividade possa ser roteada de maneira ideal para a rede da Microsoft na Internet e para as portas frontais do serviço do Office 365. Após o fechamento de egresso da rede para usuários, os locais do Office também podem melhorar o desempenho no futuro, já que a Microsoft expande tanto os pontos de presença de rede quanto as portas de serviço do Office 365 no futuro.
+Esta percepção será exibida se o serviço de insights de rede detectar que a distância de um determinado local de usuário para a saída da rede é maior que 500 milhas (800 quilômetros), indicando que o tráfego do Office 365 está sendo repassado para uma borda de Internet comum dispositivo ou proxy.
 
 Esta percepção é abreviada como "egresso" em alguns modos de exibição de resumo.
 
+![Saída de rede de rebocada](Media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+
+### <a name="what-does-this-mean"></a>Cenário
+
+Isso identifica que a distância entre o local do escritório e a egresso da rede é maior que 500 milhas (800 quilômetros). O local do Office é identificado por um local de máquina cliente ofuscado e o local de egresso de rede é identificado usando o endereço IP reverso para os bancos de dados de local. O local do escritório pode ser impreciso se os serviços de localização do Windows estiverem desabilitados nos computadores. O local de egresso de rede pode ser impreciso se as informações do banco de dados de endereço IP reverso não forem precisas.
+
+Os detalhes desta percepção incluem o local do escritório, porcentagem estimada do usuário do locatário total no local, o local de egresso da rede atual, relevância do local de egresso, a distância entre o local e o ponto de saída atual, a data em que o a condição foi detectada pela primeira vez e a data em que a condição foi resolvida.
+
+### <a name="what-should-i-do"></a>O que devo fazer?
+
+Para esta percepção, recomendamos que a saída da rede fique mais próxima do local do escritório, de forma que a conectividade possa ser roteada de maneira ideal para a rede global da Microsoft e para a porta frontal de serviço mais próxima do Office 365. Após o fechamento de egresso da rede para usuários, os locais do Office também podem melhorar o desempenho no futuro, já que a Microsoft expande tanto os pontos de presença de rede quanto as portas de serviço do Office 365 no futuro.
+
+Para obter mais informações sobre como resolver esse problema, confira [conexões de rede de saída localmente](office-365-network-connectivity-principles.md#egress-network-connections-locally) nos [princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md).
+
 ## <a name="better-performance-detected-for-customers-near-you"></a>Melhor desempenho detectado para clientes próximos de você
 
-Como um número significativo de clientes em sua área de metrô têm melhor desempenho do que os usuários em sua organização neste local do escritório.
-
-Isso examina o desempenho agregado dos clientes do Office 365 na mesma cidade que este local do escritório.
-
-![Desempenho de rede relativo](Media/m365-mac-perf/m365-mac-perf-relative-perf.png)
-
-Calculamos a porcentagem dos clientes do Office 365 na mesma cidade em buckets de desempenho melhores. Se esse número for 10% de mais, mostraremos a visão da rede.
+Esta percepção será exibida se o serviço de insights de rede detectar que um número significativo de clientes em sua área de metrô tem melhor desempenho do que os usuários em sua organização nesse local do escritório.
 
 Esta percepção é abreviada como "pares" em alguns modos de exibição de resumo.
 
+![Desempenho de rede relativo](Media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+
+### <a name="what-does-this-mean"></a>Cenário
+
+Essa percepção examina o desempenho agregado dos clientes do Office 365 na mesma cidade que este local do escritório. Esta percepção será exibida se a latência média de seus usuários for 10% maior do que a latência média dos locatários vizinhos.
+
+### <a name="what-should-i-do"></a>O que devo fazer?
+
+Pode haver vários motivos para esta condição, incluindo latência na rede corporativa ou no provedor de Internet, afunilamentos ou problemas de design de arquitetura. Examine a latência entre cada salto na rota entre a rede do Office e a porta frontal atual do Office 365. Para obter mais informações, consulte [princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md).
+
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Uso de uma porta frontal de serviço do Exchange Online não ideal
 
-O usuário não está se conectando a uma das melhores portas de serviço do Office 365 e isso deve afetar o desempenho.
-
-Listamos as portas frontais do serviço do Exchange Online que são adequadas para uso da cidade de local do escritório com bom desempenho. Se o teste atual mostrar o uso de uma porta frontal do serviço do Exchange Online que não está nessa lista, chamamos essa recomendação.
-
-O uso de uma porta de entrada de serviço do Exchange Online não ideal pode ser causado pelo backhaul de rede antes da saída da rede corporativa, caso recomendamos a saída de rede local e direta. Também pode ser causado pelo uso de um servidor de resolvedor de DNS recursivo remoto, caso recomendamos alinhar o servidor do resolvedor de DNS recursivo com a saída da rede.
+Esta percepção será exibida se o serviço de insights de rede detectar que os usuários em um local específico não estão se conectando a uma porta de entrada ideal do Exchange Online Service.
 
 Esta percepção é abreviada como "roteamento" em alguns modos de exibição de resumo.
 
-## <a name="use-of-non-optimal-sharepoint-online-service-front-door"></a>Uso da porta frontal do serviço do SharePoint Online não ideal
+![Porta frontal não ideal](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-O usuário não está se conectando à porta frontal mais próxima do serviço do SharePoint Online. Espera-se que isso esteja afetando o desempenho.
+### <a name="what-does-this-mean"></a>Cenário
 
-Identificamos a porta frontal do serviço do SharePoint Online à qual o cliente de teste está se conectando. Em seguida, para a cidade do local do escritório, comparamos isso à porta frontal do serviço do SharePoint Online esperado para essa cidade. Se não coincidir, fazemos essa recomendação.
+Listamos as portas frontais do serviço do Exchange Online que são adequadas para uso da cidade de local do escritório com bom desempenho. Se o teste atual mostrar o uso de uma porta frontal do serviço do Exchange Online que não está nessa lista, chamamos essa recomendação.
+
+### <a name="what-should-i-do"></a>O que devo fazer?
+
+O uso de uma porta de entrada de serviço do Exchange Online não ideal pode ser causado pelo backhaul de rede antes da saída da rede corporativa, caso recomendamos a saída de rede local e direta. Também pode ser causado pelo uso de um servidor de resolvedor de DNS recursivo remoto, caso recomendamos alinhar o servidor do resolvedor de DNS recursivo com a saída da rede.
+
+## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>Uso de uma porta frontal não ideal do SharePoint Online Service
+
+Esta percepção será exibida se o serviço de insights de rede detectar que os usuários em um local específico não estão se conectando à porta frontal mais próxima do SharePoint Online Service.
 
 Esta percepção é abreviada como "AFD" em alguns modos de exibição de resumo.
 
+![Porta frontal não ideal](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+
+### <a name="what-does-this-mean"></a>Cenário
+
+Identificamos a porta frontal do serviço do SharePoint Online à qual o cliente de teste está se conectando. Em seguida, para a cidade do local do escritório, comparamos isso à porta frontal do serviço do SharePoint Online esperado para essa cidade. Se não coincidir, fazemos essa recomendação.
+
+### <a name="what-should-i-do"></a>O que devo fazer?
+
+O uso de uma porta de entrada de serviço do SharePoint Online não ideal pode ser causado pelo backhaul de rede antes da saída da rede corporativa, caso recomendamos a saída de rede local e direta. Também pode ser causado pelo uso de um servidor de resolvedor de DNS recursivo remoto, caso recomendamos alinhar o servidor do resolvedor de DNS recursivo com a saída da rede.
+
 ## <a name="low-download-speed-from-sharepoint-front-door"></a>Baixa velocidade de download da porta frontal do SharePoint
 
-Sub-rede ideal a velocidade de download detectou que impacta quanto tempo leva para carregar documentos do OneDrive for Business.
+Esta percepção será exibida se o serviço de insights de rede detectar essa largura de banda entre o local específico do Office e o SharePoint Online for menor que 1 MBps.
+
+Esta percepção é abreviada como "throughput" em alguns modos de exibição de resumo.
+
+### <a name="what-does-this-mean"></a>Cenário
 
 A velocidade de download que um usuário pode obter do SharePoint Online e do OneDrive for Business Service Doors é medida em megabytes por segundo (MBps). Se esse valor for menor que 1 MBps, forneceremos esta percepção.
 
-Para melhorar a velocidade de download que um usuário pode obter largura de banda pode precisar ser aumentada. Como alternativa, pode haver congestionamento de rede entre máquinas de usuário no local do escritório e na porta frontal do serviço do SharePoint Online. Isso às vezes é chamado de perda congestionada e restringe a velocidade de download disponível para os usuários, mesmo se houver largura de banda suficiente disponível.
+### <a name="what-should-i-do"></a>O que devo fazer?
 
-Esta percepção é abreviada como "throughput" em alguns modos de exibição de resumo.
+Para melhorar as velocidades de download, a largura de banda pode precisar ser aumentada. Como alternativa, pode haver congestionamento de rede entre máquinas de usuário no local do escritório e na porta frontal do serviço do SharePoint Online. Isso às vezes é chamado de perda congestionada e restringe a velocidade de download disponível para os usuários, mesmo se houver largura de banda suficiente disponível.
+
+## <a name="china-user-optimal-network-egress"></a>Saída de rede ideal para o usuário da China
+
+Esta percepção será exibida se sua organização tiver usuários na China se conectarem ao seu locatário do Office 365 em outros locais geográficos. 
+
+### <a name="what-does-this-mean"></a>Cenário
+
+Se sua organização tem conectividade de WAN privada, recomendamos configurar um circuito de WAN de rede de seus locais do Office na China que têm a saída da rede para a Internet em qualquer um dos seguintes locais:
+
+- Hong-Kong
+- Japão
+- Taiwan
+- Coreia do Sul
+- Cingapura
+- Malásia
+
+O egresso de Internet mais distante dos usuários do que esses locais reduzirá o desempenho e o egresso na China pode causar problemas de alta latência e conectividade devido a um congestionamento entre bordas.
+
+### <a name="what-should-i-do"></a>O que devo fazer?
+
+Para obter mais informações sobre como reduzir problemas de desempenho relacionados a essa percepção, consulte [Office 365 global locatário Performance Optimization for China Users](https://docs.microsoft.com/office365/enterprise/office-365-networking-china).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
