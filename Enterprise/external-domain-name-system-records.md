@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Resumo: lista de referências de registros DNS a serem usados ao planejar uma implantação do Office 365.'
-ms.openlocfilehash: 00f4181b08a7af4435b06aa143d3741c220023d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840358"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890340"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros de Sistema de Nomes de Domínio Externos para o Office 365
 
@@ -79,6 +79,9 @@ Os clientes de email que estão usando a Federação do Exchange também terão 
 <a name="BKMK_ReqdCore"> </a>
 
 Há etapas específicas a serem seguidas quando você usa [URLs e intervalos de endereços IP do Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) para garantir que sua rede esteja configurada corretamente.
+
+> [!NOTE]
+> Esses registros DNS também se aplicam ao Teams, especialmente em um cenário híbrido do Teams e do Skype for Business Online, onde podem surgir certos problemas de federação.
   
 ||||
 |:-----|:-----|:-----|
