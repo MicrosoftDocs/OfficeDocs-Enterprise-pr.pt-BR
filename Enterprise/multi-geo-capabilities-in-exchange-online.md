@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre os recursos multigeográficos no Exchange Online.
-ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974833"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890543"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos multigeográficos no Exchange Online
 
@@ -58,3 +58,5 @@ O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure ad
   **Observação**: o compartilhamento de pastas de caixa de correio multigeográfica tem suporte no Outlook no Windows.
 
 - As pastas públicas têm suporte nas organizações multigeográficas. No entanto, as pastas públicas devem permanecer na localização multigeográfica central. Você não pode mover pastas públicas para locais geográficos de satélite.
+
+- Em um ambiente de várias regiões, não há suporte para a auditoria de caixas de correio de várias regiões. Por exemplo, se um usuário receber permissões para acessar uma caixa de correio compartilhada em um local geográfico diferente, as ações de caixa de correio executadas por esse usuário não serão registradas no log de auditoria da caixa de correio da caixa de correio compartilhada. Para saber mais, consulte [Gerenciar a auditoria da caixa de correio](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
