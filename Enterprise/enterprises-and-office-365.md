@@ -1,7 +1,7 @@
 ---
 title: Organizações corporativas e o Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/8/2017
 audience: ITPro
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Recursos para planejar e gerenciar o Office 365 para sua organização corporativa.
-ms.openlocfilehash: 97ffc7aee647918750a04b2b4761b189e2cebeb1
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
+ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840398"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42979543"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Organizações corporativas e o Office 365
 
@@ -106,7 +106,7 @@ Experiências de aprendizado online individualizadas para profissionais de ti do
   
 [Implantar o novo cliente de sincronização do OneDrive para Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
   
-[Formas de migrar várias contas de email para o Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
+[Maneiras de migrar várias contas de email para o Office 365](https://support.office.com/article/0a4913fe-60fb-498f-9155-a86516418842)
   
 [Atualizar de servidores e clientes do Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
