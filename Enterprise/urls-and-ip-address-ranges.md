@@ -3,7 +3,7 @@ title: 'URLs e intervalos de endereço IP do Office 365 '
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/25/2020
+ms.date: 03/30/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,17 +24,20 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Resumo: o Office 365 requer conectividade com a Internet. Os pontos de extremidade abaixo devem estar acessíveis para os clientes que usam os planos do Office 365, incluindo a Government Community Cloud (GCC).'
 hideEdit: true
-ms.openlocfilehash: 403e431f8706b0e27a8a1079f2409ffcd677a28e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 48f838a54a5239c43c1001d92588a931ab20fac2
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979523"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058974"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URLs e intervalos de endereço IP do Office 365 
 
  **Resumo:** o Office 365 requer conectividade com a Internet. Os pontos de extremidade abaixo devem estar acessíveis para os clientes que usam os planos do Office 365, incluindo a Government Community Cloud (GCC).
   
+> [!NOTE]
+> Como parte da resposta da Microsoft à situação do COVID-19, a Microsoft declarou moratória temporária em algumas mudanças planejadas de endereços IP e URLs. Essa moratória pretende fornecer confiança e simplicidade às equipes de TI de clientes para implementação de otimizações de rede recomendadas para cenários de trabalho em casa do Office 365. De 24 de março de 2020 até 30 de junho de 2020, essa moratória interromperá alterações nos principais serviços do Office 365 (Exchange Online, SharePoint Online e Microsoft Teams) para intervalos de IP e URLs incluídas na categoria Otimizar. As alterações dentro de outras categorias de ponto de extremidade ocorrerão normalmente. Durante esse período, os clientes podem usar as definições de ponto de extremidade do serviço da categoria Otimizar, do Office 365, de uma maneira estática para executar otimizações de rede direcionadas (por exemplo, reservas de largura de banda ou configuração de VPN de túnel dividido) com risco mínimo para a conectividade do Office 365 devido a alterações na rede de nuvem. Para garantir que não haja interrupções no serviço no final do período de moratória, a Microsoft recomenda que os clientes implemente os processos de automação e/ou de gerenciamento de alterações para pontos de extremidade do serviço do Office 365 usando as diretrizes fornecidas em [Gerenciando pontos de extremidade do Office 365](managing-office-365-endpoints.md).
+
 > [!NOTE]
 > A Microsoft lançou um serviço web baseado em REST para as entradas de endereço IP e FQDN desta página. Esse novo serviço ajudará você a configurar e atualizar dispositivos de perímetro de rede como firewalls e servidores proxy. Você pode baixar a lista de pontos de extremidade, a versão atual da lista ou alterações específicas. Este serviço substitui o documento XML desta página, que foi preterido em 2 de outubro de 2018. Para experimentar o novo serviço, acesse [serviço Web](office-365-ip-web-service.md).
   
