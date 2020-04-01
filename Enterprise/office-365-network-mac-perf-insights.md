@@ -3,7 +3,7 @@ title: Office 365 Network insights (visualização)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 Network insights (visualização)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890591"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081703"
 ---
 # <a name="office-365-network-insights-preview"></a>Office 365 Network insights (visualização)
 
@@ -40,7 +40,7 @@ Há cinco insights de rede específicos que podem ser mostradas para cada local 
 
 ## <a name="backhauled-network-egress"></a>Saída de rede de rebocada
 
-Esta percepção será exibida se o serviço de insights de rede detectar que a distância de um determinado local de usuário para a saída da rede é maior que 500 milhas (800 quilômetros), indicando que o tráfego do Office 365 está sendo repassado para uma borda de Internet comum dispositivo ou proxy.
+Esta percepção será exibida se o serviço de insights de rede detectar que a distância de um determinado local de usuário para a saída da rede é maior que 500 milhas (800 quilômetros), indicando que o tráfego do Office 365 está sendo repassado para um proxy ou dispositivo de borda Internet comum.
 
 Esta percepção é abreviada como "egresso" em alguns modos de exibição de resumo.
 
@@ -50,7 +50,7 @@ Esta percepção é abreviada como "egresso" em alguns modos de exibição de re
 
 Isso identifica que a distância entre o local do escritório e a egresso da rede é maior que 500 milhas (800 quilômetros). O local do Office é identificado por um local de máquina cliente ofuscado e o local de egresso de rede é identificado usando o endereço IP reverso para os bancos de dados de local. O local do escritório pode ser impreciso se os serviços de localização do Windows estiverem desabilitados nos computadores. O local de egresso de rede pode ser impreciso se as informações do banco de dados de endereço IP reverso não forem precisas.
 
-Os detalhes desta percepção incluem o local do escritório, porcentagem estimada do usuário do locatário total no local, o local de egresso da rede atual, relevância do local de egresso, a distância entre o local e o ponto de saída atual, a data em que o a condição foi detectada pela primeira vez e a data em que a condição foi resolvida.
+Os detalhes desta percepção incluem o local do escritório, porcentagem estimada do usuário do locatário total no local, o local de egresso da rede atual, relevância do local de egresso, a distância entre o local e o ponto de saída atual, a data em que a condição foi detectada pela primeira vez e a data em que a condição foi resolvida.
 
 ### <a name="what-should-i-do"></a>O que devo fazer?
 
@@ -148,3 +148,5 @@ Para obter mais informações sobre como reduzir problemas de desempenho relacio
 [Avaliação de rede do Office 365 (versão prévia)](office-365-network-mac-perf-score.md)
 
 [Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Serviços de local de conectividade de rede do Office 365 (versão prévia)](office-365-network-mac-location-services.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Como baixar e executar a ferramenta IdFix do Office 365 para ajudar a limpar seu Active Directory Domain Services (AD DS) antes de sincronizá-lo com o Office 365.
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844612"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068773"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Baixar e executar a ferramenta IdFix do Office 365
 
@@ -74,15 +74,15 @@ Siga estas instruções.
   
 1. Faça logon no computador em que você deseja executar a ferramenta IdFix.
     
-2. Vá para o site de download da Microsoft para obter a [Ferramenta de Correção de Erros de DirSync do IdFix](https://go.microsoft.com/fwlink/?linkid=867219).
+2. Vá para o site da [ferramenta de correção de erros do IdFix DirSync](https://github.com/microsoft/idfix) .
     
-3. Baixe e abra o arquivo zip.
+3. Clique em **Iniciar** na seção **início do ClickOnce** para baixar o arquivo zip. Abra o arquivo zip.
     
-3. Na janela **IdFix**, escolha **Extrair** e, em seguida, **Extrair tudo**. Por padrão, o IdFix é extraído para `C:\Users\<your user name>\Documents\IdFix`. 
+4. Na janela **IdFix**, escolha **Extrair** e, em seguida, **Extrair tudo**. Por padrão, o IdFix é extraído para `C:\Users\<your user name>\Documents\IdFix`. 
     
-6. Escolha **Extrair**.
+5. Escolha **Extrair**.
 
-Essas instruções foram feitas com o Internet Explorer em um servidor executando o Windows Server 2016.  Se você estiver usando uma versão diferente do Windows ou um navegador diferente, suas etapas podem variar.
+Suas etapas podem variar com base na sua versão do Windows e no navegador da Internet.
     
 ## <a name="run-the-idfix-tool"></a>Executar a ferramenta IdFix
 
