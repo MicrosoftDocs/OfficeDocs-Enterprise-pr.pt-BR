@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como se preparar para provisionar usuários para o Office 365 usando a sincronização de diretórios e os benefícios de longo prazo de usar esse método.
-ms.openlocfilehash: 948db4d5dca8d5deb9844ff9a7ec652653a5ab6b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d2eab22e360ae26543db1774c3b174647f30bcd6
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841168"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093435"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Preparar a sincronização de diretórios para o Office 365
 
@@ -113,7 +113,7 @@ Os atributos que você precisa preparar estão listados aqui:
   - O valor do atributo deve ser exclusivo no diretório.
   
     > [!NOTE]
-    > Sublinhados ("_") no nome sincronizado indica que o valor original desse atributo contém caracteres inválidos. O valor original pode conter letras, números e os caracteres!, #, $,%, &, ', \*, +,-,/, =,?, ^, _, ', {, |,} e ~. Para obter mais informações sobre este atributo, consulte [atributo de alias do Exchange](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+    > Sublinhados ("_") no nome sincronizado indica que o valor original desse atributo contém caracteres inválidos. Para obter mais informações sobre este atributo, consulte [atributo de alias do Exchange](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
     >
       
 - **proxyAddresses**
@@ -151,7 +151,7 @@ Os atributos que você precisa preparar estão listados aqui:
   - Caracteres inválidos \< \> : \ (); , [ ] "
   - Todos os endereços SMTP (Simple Mail Transport Protocol) devem estar em conformidade com os padrões de mensagens de email.
     
-- **Principal**
+- **userPrincipalName**
     
   - O atributo **userPrincipalName** deve estar no formato de entrada no estilo da Internet, onde o nome do usuário é seguido pelo sinal de arroba (@) e um nome de domínio: por exemplo, User@contoso.com. Todos os endereços SMTP (Simple Mail Transport Protocol) devem estar em conformidade com os padrões de mensagens de email.
   - O número máximo de caracteres para o atributo **userPrincipalName** é 113. Um número específico de caracteres é permitido antes e depois do sinal de arroba (@), da seguinte maneira: 
