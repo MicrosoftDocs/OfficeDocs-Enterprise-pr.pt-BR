@@ -3,7 +3,7 @@ title: Implementando o tunelamento dividido de VPN para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como implementar o tunelamento dividido de VPN para o Office 365
-ms.openlocfilehash: a0abc94d32887867ae11a0e3c768538bc223b583
-ms.sourcegitcommit: 7eb8b3b55a348eac8f03c97533b5d89388ed0ada
+ms.openlocfilehash: 5cc8a4ecc124090c50e600a5edcec6d7362e6cf5
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117917"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131440"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementando o tunelamento dividido de VPN para Office 365
 
@@ -331,6 +331,8 @@ A porta 80 só é usada para itens como redirecionar para uma sessão de porta 4
 [Otimização de desempenho do Office 365 para usuários da China](office-365-networking-china.md)
 
 [Maneiras alternativas para profissionais de segurança e TI alcançarem controles de segurança modernos nos cenários atuais de trabalho remoto (blog da equipe de segurança da Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Melhorar o desempenho da VPN na Microsoft: usar perfis VPN do Windows 10 para permitir conexões automáticas](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Trabalhando no VPN: Como a Microsoft mantém sua força de trabalho remota conectada](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
