@@ -3,7 +3,7 @@ title: Implementando o tunelamento dividido de VPN para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 4/8/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como implementar o tunelamento dividido de VPN para o Office 365
-ms.openlocfilehash: 5cc8a4ecc124090c50e600a5edcec6d7362e6cf5
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: 72cdef3da872f7886963be80cf2b092a19e017eb
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131440"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185762"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementando o tunelamento dividido de VPN para Office 365
 
@@ -268,6 +268,7 @@ Se você precisar de mais dados para solucionar problemas ou estiver solicitando
 
 Esta seção fornece links de guias detalhados para implementar o tunelamento dividido para o tráfego do Office 365 dos parceiros mais comuns neste espaço. Adicionaremos outras guias conforme elas estiverem disponíveis.
 
+- **Cliente VPN do Windows 10**: [Otimização do tráfego do Office 365 para trabalhadores remotos com o cliente VPN nativo do Windows 10](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco AnyConnect**: [Otimizar o túnel dividido AnyConnect para o Office 365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [Otimizar o tráfego do Office 365 por meio de tunelamento dividido VPN com exclusão de rota de acesso](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **As redes F5 BIG-IP APM**: [Otimizar o tráfego do Office 365 no acesso remoto por meio de VPNs ao usar BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
