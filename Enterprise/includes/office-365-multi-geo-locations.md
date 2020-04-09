@@ -10,7 +10,7 @@
 |Japão                        |JPN     |Datacenters no sudeste ou leste da Ásia|
 |República da Coreia                        |KOR     |Datacenters no sudeste ou leste da Ásia|
 |América do Norte                |NAM     |Datacenters nos Estados Unidos                    |
-|África do Sul                 |ZAF     |(Em breve)                     |
-|Suíça                  |SWE     |(Em breve)                     |
-|Emirados Árabes Unidos         |ARE     |(Em breve)                     |
+|África do Sul                 |ZAF     |(Localização dos dados de descoberta eletrônica em breve)|
+|Suíça                  |CHE     |(Localização dos dados de descoberta eletrônica em breve)|
+|Emirados Árabes Unidos         |ARE     |(Localização dos dados de descoberta eletrônica em breve)|
 |Reino Unido               |GBR     |Datacenters na Europa                |
