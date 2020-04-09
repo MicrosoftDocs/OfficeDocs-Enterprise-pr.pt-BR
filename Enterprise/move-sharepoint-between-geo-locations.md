@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Saiba como mover um site do SharePoint para uma localização geográfica diferente.
-ms.openlocfilehash: cf7d0bb73013c776b8cd67579aca334114820743
-ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
+ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43175039"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185712"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover um site do SharePoint para uma localização geográfica diferente
 
@@ -190,17 +190,6 @@ O cliente OneNote win32 e o Aplicativo (Universal) UWP detectarão automaticamen
 ### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (aplicáveis a sites conectados a um Grupo do Office 365)
 
 Quando a movimentação geográfica do site do SharePoint estiver concluída, os usuários terão acesso a seus arquivos de sites do Grupo do Office 365 no aplicativo do Teams. Além disso, os arquivos compartilhados por chats do Teams pelo seu site antes da movimentação geográfica continuarão a funcionar quando a movimentação for concluída.
-
-Problemas conhecidos:
-
-|Problema|Solução alternativa|
-|:----|:---------|
-|Os arquivos presentes na guia Arquivos antes da movimentação geográfica não podem ser abertos no Teams.|Abra o arquivo no SharePoint.|
-|Os arquivos compartilhados em conversas anteriores à movimentação geográfica não serão abertos na área de trabalho do Teams.|Abra o arquivo na guia Arquivos.|
-|A guia Arquivos do canal pode não abrir na primeira visita após a movimentação geográfica.|Visite a guia Arquivos novamente.|
-|O upload de arquivo na conversa do canal pode não funcionar após a movimentação do site.|Carregue arquivos por meio da guia Arquivos.|
-|A pesquisa de arquivos no Teams não exibirá resultados após a movimentação geográfica.|Procure arquivos na guia Arquivos.|
-|A exibição do Microsoft Teams no Aplicativo Arquivos (navegação à esquerda) pode não mostrar arquivos até que a guia Arquivos do site movido geograficamente seja atualizada.|Visite a guia Arquivos do site que foi movido.|
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Aplicativo Móvel do SharePoint (iOS/Android)
 
