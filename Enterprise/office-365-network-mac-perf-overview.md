@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Visão geral das recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)
-ms.openlocfilehash: f2ff012d20c799925c571d8065e28859c4c81f71
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081713"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185772"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)
 
-O centro de administração do Microsoft 365 agora inclui as métricas de desempenho ao vivo coletadas do seu locatário do Office 365 e está disponível para visualização apenas por usuários administrativos em seu locatário. as **informações de rede e as recomendações de desempenho** e as avaliações de **rede** são exibidas no centro de administração <https://portal.microsoft.com/adminportal/home#/networkperformance>do Microsoft 365 em. Você pode encontrar a página no painel de navegação em **Health | Desempenho da rede**.
+O centro de administração do Microsoft 365 agora inclui métricas de desempenho ao vivo coletadas do seu locatário do Microsoft 365 e disponíveis para visualização apenas por usuários administrativos em seu locatário. as **informações de rede e as recomendações de desempenho** e as avaliações de **rede** são exibidas no centro de administração <https://portal.microsoft.com/adminportal/home#/networkperformance>do Microsoft 365 em. Você pode encontrar a página no painel de navegação em **Health | Desempenho da rede**.
 
 ![Página desempenho da rede](Media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -41,32 +41,32 @@ Os exemplos de medidas e locais do Office devem começar a aparecer 24 horas ap�
 
 ## <a name="how-do-i-use-this-information"></a>Como usar essas informações?
 
-Os **insights de rede**, suas recomendações de desempenho relacionadas e avaliações de rede têm a finalidade de ajudar na criação de perímetros de rede para seus locais do Office. Cada informação fornece detalhes ao vivo sobre as características de desempenho para um problema comum específico para cada localização geográfica onde os usuários acessam seu locatário. **Recomendações de desempenho** para cada percepção de rede oferecem alterações de design específicas de arquitetura de rede que você pode fazer para melhorar a experiência do usuário relacionada à conectividade de rede do Office 365. A avaliação de rede mostra como a conectividade de rede impacta a experiência do usuário, permitindo a comparação de diferentes conexões de rede de local de usuário.
+Os **insights de rede**, suas recomendações de desempenho relacionadas e avaliações de rede têm a finalidade de ajudar na criação de perímetros de rede para seus locais do Office. Cada informação fornece detalhes ao vivo sobre as características de desempenho para um problema comum específico para cada localização geográfica onde os usuários acessam seu locatário. **Recomendações de desempenho** para cada percepção de rede oferecem alterações de design específicas de arquitetura de rede que você pode fazer para melhorar a experiência do usuário relacionada à conectividade de rede do Microsoft 365. A avaliação de rede mostra como a conectividade de rede impacta a experiência do usuário, permitindo a comparação de diferentes conexões de rede de local de usuário.
 
-As **avaliações de rede** separam uma agregação de muitas métricas de desempenho de rede em um instantâneo da integridade da rede corporativa, representado por um valor de pontos de 1-100. As avaliações de rede têm escopo para o locatário inteiro e para cada localização geográfica a partir da qual os usuários se conectam ao seu locatário, fornecendo aos administradores do Office 365 uma maneira fácil de obter instantaneamente uma Gestalt da integridade da rede da empresa e rapidamente detalhar um relatório detalhado para qualquer local global do escritório.
+As **avaliações de rede** separam uma agregação de muitas métricas de desempenho de rede em um instantâneo da integridade da rede corporativa, representado por um valor de pontos de 1-100. As avaliações de rede têm o escopo para o locatário inteiro e para cada localização geográfica a partir da qual os usuários se conectam ao seu locatário, fornecendo aos administradores da Microsoft 365 uma maneira fácil de obter instantaneamente um Gestalt da integridade da rede da empresa e rapidamente se aprofundam em um relatório detalhado de qualquer local do escritório global.
 
-As empresas complexas com vários locais do Office e arquiteturas de perímetro de rede não triviais podem se beneficiar dessas informações durante a integração inicial com o Office 365 ou para corrigir problemas de desempenho de rede descobertos com o aumento do uso. Em geral, isso não é necessário para pequenas empresas que usam o Office 365 ou qualquer empresa que já tenha conectividade de rede simples e direta. Empresas com mais de 500 usuários e vários locais do Office são mais beneficiadas.
+As empresas complexas com vários locais do Office e arquiteturas de perímetro de rede não triviais podem se beneficiar dessas informações durante a integração inicial com o Microsoft 365 ou para corrigir problemas de desempenho de rede descobertos com o aumento do uso. Em geral, isso não é necessário para pequenas empresas que usam o Microsoft 365 ou qualquer empresa que já tenha conectividade de rede simples e direta. Empresas com mais de 500 usuários e vários locais do Office são mais beneficiadas.
 
 >[!IMPORTANT]
->Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Office 365 que foram registrados no programa de visualização de recurso.
+>Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Microsoft 365 que foram registrados no programa de visualização de recurso.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Desafios de conectividade de rede corporativa
 
 ![Rede de cliente para nuvem](Media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-Muitas empresas têm configurações de perímetro de rede que cresceram com o passar do tempo e foram basicamente projetadas para acomodar o acesso ao site da Internet para funcionários, onde a maioria dos sites não é conhecida e não é confiável. O foco predominante e necessário é evitar ataques de malware e pesca desses sites desconhecidos. Essa estratégia de configuração de rede, embora útil para fins de segurança, pode levar à degradação do desempenho do usuário do Office 365 e da experiência do usuário.
+Muitas empresas têm configurações de perímetro de rede que cresceram com o passar do tempo e foram basicamente projetadas para acomodar o acesso ao site da Internet para funcionários, onde a maioria dos sites não é conhecida e não é confiável. O foco predominante e necessário é evitar ataques de malware e pesca desses sites desconhecidos. Essa estratégia de configuração de rede, embora útil para fins de segurança, pode levar à degradação do desempenho do usuário do Microsoft 365 e da experiência do usuário.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Como podemos resolver esses desafios
 
-As empresas podem melhorar a experiência geral do usuário e proteger seu ambiente, seguindo os [princípios de conectividade do Office 365](https://aka.ms/pnc) e usando o recurso de desempenho de rede do centro de administração do Microsoft 365. Na maioria dos casos, seguir esses princípios gerais terá um impacto positivo significativo sobre a latência do usuário final, a confiabilidade do serviço e o desempenho geral do Office 365.
+As empresas podem melhorar a experiência geral do usuário e proteger seu ambiente, seguindo os [princípios de conectividade do Office 365](https://aka.ms/pnc) e usando o recurso de desempenho de rede do centro de administração do Microsoft 365. Na maioria dos casos, seguir esses princípios gerais terá um impacto positivo significativo sobre a latência do usuário final, a confiabilidade do serviço e o desempenho geral do Microsoft 365.
 
-Às vezes, a Microsoft é solicitada a investigar problemas de desempenho da rede com o Office 365 para clientes de grandes empresas, e essas muitas vezes têm uma causa raiz relacionada à infraestrutura de egresso da rede do cliente. Quando uma causa raiz comum de um problema de perímetro de rede do cliente for encontrada, procuraremos a identificação de medidas de teste simples que a identificam. Um teste com um limite de medida que identifica um problema específico é importante porque podemos testar a mesma medição em qualquer local, diga se essa causa raiz está presente e compartilhe-a como uma percepção de rede com o administrador.
+Às vezes, a Microsoft é solicitada a investigar problemas de desempenho da rede com o Microsoft 365 para clientes de grandes empresas, e essas muitas vezes têm uma causa raiz relacionada à infraestrutura de egresso da rede do cliente. Quando uma causa raiz comum de um problema de perímetro de rede do cliente for encontrada, procuraremos a identificação de medidas de teste simples que a identificam. Um teste com um limite de medida que identifica um problema específico é importante porque podemos testar a mesma medição em qualquer local, diga se essa causa raiz está presente e compartilhe-a como uma percepção de rede com o administrador.
 
 Alguns insights de rede simplesmente indicarão um problema que precisa de investigação adicional. Uma percepção de rede onde temos testes suficientes para mostrar uma ação de correção específica para corrigir a causa raiz é listada como uma **ação recomendada**. Essas recomendações, com base em métricas de Live, que revelam valores que estão fora de um limite pré-determinado, são muito mais valiosas que o Conselho geral de práticas recomendadas, uma vez que eles são específicos para seu ambiente e mostrarão o aprimoramento real depois que as alterações recomendadas forem feitas.
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Visão geral do desempenho da rede no centro de administração do Microsoft 365
 
-A Microsoft tem medidas de rede existentes de vários clientes da Web e da área de trabalho do Office que dão suporte à operação do Office 365. Essas medidas estão sendo usadas agora para fornecer insights de design de arquitetura de rede e uma avaliação de desempenho de rede que são mostrados na página **desempenho da rede** no centro de administração do Microsoft 365.
+A Microsoft tem medidas de rede existentes de vários clientes da Web e da área de trabalho do Office que dão suporte à operação do Microsoft 365. Essas medidas estão sendo usadas agora para fornecer insights de design de arquitetura de rede e uma avaliação de desempenho de rede que são mostrados na página **desempenho da rede** no centro de administração do Microsoft 365.
 
 Por padrão, as informações aproximadas de local associadas às medições de rede identificam a cidade onde os dispositivos cliente estão localizados. A avaliação de rede em cada local é mostrada com cores e o número relativo de usuários em cada local é representado pelo tamanho do círculo.
 
@@ -122,16 +122,16 @@ No arquivo CSV o local da cidade descoberto aA é rotulado como **cidade**, e um
 
 ## <a name="faq"></a>Perguntas frequentes
 
-### <a name="what-is-an-office-365-service-front-door"></a>O que é uma porta frontal de serviço do Office 365?
+### <a name="what-is-a-microsoft-365-service-front-door"></a>O que é uma porta frontal de serviço do Microsoft 365?
 
-A porta frontal do serviço do Office 365 é um ponto de entrada na rede global da Microsoft, onde os clientes e serviços do Office terminam suas conexões de rede. Para obter uma conexão de rede ideal com o Office 365, é recomendável que sua conexão de rede seja encerrada na porta frontal mais próxima do Office 365 na sua cidade ou metro.
+O Microsoft 365 Service front door é um ponto de entrada na rede global da Microsoft, onde os clientes e serviços do Office terminam suas conexões de rede. Para uma conexão de rede ideal para o Microsoft 365, é recomendável que sua conexão de rede seja encerrada na porta frontal mais próxima do Microsoft 365 em sua cidade ou metro.
 
 >[!NOTE]
->A porta frontal do serviço do Office 365 não tem relação direta com o produto de serviço do Azure front door disponível no Azure Marketplace.
+>O Microsoft 365 Service front door não tem relação direta com o produto de serviço do Azure front door disponível no Azure Marketplace.
 
-### <a name="what-is-an-optimal-office-365-service-front-door"></a>Qual é a melhor porta de serviço do Office 365?
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qual é a melhor porta de serviço do Microsoft 365?
 
-Uma das melhores portas de serviço do Office 365 é uma das mais próximas à saída da sua rede, geralmente na cidade ou na área de metrô. Use a [ferramenta de integração de rede do office 365](office-365-network-mac-perf-onboarding-tool.md) para determinar o local de sua porta de entrada de serviço do Office 365 no uso e a porta frontal de serviço ideal. Se a ferramenta determina que sua porta frontal de uso é ideal, então, você está se conectando de forma ideal à rede global da Microsoft.
+Uma das melhores portas de serviço do Microsoft 365 é aquela mais próxima à sua rede de egresso, geralmente na cidade ou na área de metrô. Use a [ferramenta de integração de rede do microsoft 365](office-365-network-mac-perf-onboarding-tool.md) para determinar o local em que você usa a porta de entrada do Microsoft 365 Service e a porta frontal de serviço ideal. Se a ferramenta determina que sua porta frontal de uso é ideal, então, você está se conectando de forma ideal à rede global da Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>O que é um local de egresso na Internet?
 
@@ -139,10 +139,10 @@ O local de egresso de Internet é o local onde o tráfego de rede sai da rede co
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Office 365 Network insights (visualização)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 Network insights (versão prévia)](office-365-network-mac-perf-insights.md)
 
-[Avaliação de rede do Office 365 (versão prévia)](office-365-network-mac-perf-score.md)
+[Avaliação de rede do Microsoft 365 (versão prévia)](office-365-network-mac-perf-score.md)
 
-[Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
+[Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Serviços de local de conectividade de rede do Office 365 (versão prévia)](office-365-network-mac-location-services.md)
+[Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)](office-365-network-mac-location-services.md)
