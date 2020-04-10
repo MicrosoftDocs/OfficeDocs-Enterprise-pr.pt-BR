@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uma explicação de recursos de relatório no Office 365.
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842028"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206548"
 ---
 # <a name="office-365-reporting-features"></a>Recursos de relatório do Office 365 
 
@@ -30,7 +30,7 @@ O recurso de relatórios do Office 365 fornece vários relatórios de auditoria 
 
 ## <a name="office-365-reports-dashboard"></a>Painel de relatórios do Office 365
 
-O painel de relatórios no centro de administração do Microsoft 365 Preview exibe a atividade de uso no Office 365. Os administradores globais do Office 365, ou um administrador do Exchange Online, do SharePoint Online ou do Skype for Business, podem obter informações detalhadas sobre o uso desse serviço. Por exemplo, o número de usuários em um determinado serviço do Office 365, o número de usuários que ativaram o Office Professional Plus e o volume de emails que está fluindo pela organização. Os relatórios estão disponíveis para os últimos 7, 30, 90 e 180 dias.
+O painel de relatórios no centro de administração do Microsoft 365 Preview exibe a atividade de uso no Office 365. Os administradores globais do Office 365, ou um administrador do Exchange Online, do SharePoint Online ou do Skype for Business, podem obter informações detalhadas sobre o uso desse serviço. Por exemplo, o número de usuários em um determinado serviço do Office 365, o número de usuários que ativaram o Office 365 ProPlus e quanta email está fluindo pela organização. Os relatórios estão disponíveis para os últimos 7, 30, 90 e 180 dias.
 
 Os seguintes relatórios estão disponíveis:
 
