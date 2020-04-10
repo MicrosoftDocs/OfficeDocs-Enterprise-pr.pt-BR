@@ -1,9 +1,9 @@
 ---
-title: Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)
+title: Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/08/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)
-ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)
+ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081693"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185732"
 ---
-# <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)
+# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)
 
-A ferramenta de integração de rede do Office 365 está localizada <https://connectivity.office.com>em. É uma ferramenta do adjunct para as informações de rede e informações de Pontuação de rede disponíveis no centro de administração do Microsoft 365 sob o **| Menu desempenho da rede** .
+A ferramenta de integração de rede do Microsoft 365 está localizada <https://connectivity.office.com>em. É uma ferramenta do adjunct para as informações de rede e informações de Pontuação de rede disponíveis no centro de administração do Microsoft 365 sob o **| Menu desempenho da rede** .
 
-Os insights de rede no centro de administração do Microsoft 365 são baseados nas medidas no produto do seu locatário do Office 365. Em comparação, os insights de rede da ferramenta de integração de rede do Office 365 são executados localmente na ferramenta. Os testes que podem ser realizados no produto são limitados e executando testes locais para o usuário podem ser coletados, resultando em insights mais aprofundados. Considere que o insights de rede no centro de administração do Microsoft 365 mostrará que há um problema de rede para uso do Office 365 em um local específico do escritório. A ferramenta de integração de rede do Office 365 pode ajudar a identificar a causa raiz do problema que leva a uma ação recomendada de melhoria do desempenho da rede.
+Os insights de rede no centro de administração do Microsoft 365 são baseados nas medidas no produto do Microsoft 365 locatário. Em comparação, as insights de rede da ferramenta de integração de rede do Microsoft 365 são executadas localmente na ferramenta. Os testes que podem ser realizados no produto são limitados e executando testes locais para o usuário podem ser coletados, resultando em insights mais aprofundados. Considere que o insights de rede no centro de administração do Microsoft 365 mostrará que há um problema de rede para uso do Microsoft 365 em um local específico do escritório. A ferramenta de integração de rede do Microsoft 365 pode ajudar a identificar a causa raiz do problema que leva a uma ação recomendada de melhoria do desempenho da rede.
 
-Recomendamos que eles sejam usados em conjunto, em que o status de qualidade de rede pode ser avaliado para cada localização do Office no centro de administração do Microsoft 365 e mais específicos podem ser encontrados após a implantação do teste com base na ferramenta de integração de rede do Office 365.
+Recomendamos que eles sejam usados em conjunto, em que o status de qualidade de rede pode ser avaliado para cada localização do Office no centro de administração do Microsoft 365 e mais específicos podem ser encontrados após a implantação do teste com base na ferramenta de integração de rede 365 da Microsoft.
 
 >[!IMPORTANT]
->Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Office 365 que foram registrados no programa de visualização de recurso.
+>Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Microsoft 365 que foram registrados no programa de visualização de recurso.
 
 ## <a name="the-advanced-tests-client-application"></a>O aplicativo cliente de testes avançados
 
-Há duas partes na ferramenta de integração de rede do Office 365. Há um aplicativo cliente do <https://connectivity.office.com> Windows que pode ser baixado. O cliente baixável executa testes avançados de conectividade de rede e a maioria dos testes exige que isso seja executado.
+Há duas partes na ferramenta de integração de rede do Microsoft 365. Há um aplicativo cliente do <https://connectivity.office.com> Windows que pode ser baixado. O cliente baixável executa testes avançados de conectividade de rede e a maioria dos testes exige que isso seja executado.
 
 Você pode executar o teste de cliente avançado no site da Web e ele preencherá os resultados de volta para a página da Web à medida que ele é executado.
 
@@ -54,7 +54,7 @@ O local de egresso de rede é mostrado no modo de exibição de mapa e conectado
 
 O local procurado do endereço IP de egresso da rede pode não ser preciso, e isso levaria a um resultado falso desse teste. Para validar se esse erro está ocorrendo para um endereço IP específico, você pode usar sites locais de endereço IP da rede acessível publicamente.
 
-A implementação da saída local e direta da rede do usuário locais do Office para a Internet é recomendada para a conectividade de rede do Office 365. Os aprimoramentos de egresso local e direto são a melhor maneira de abordar esta percepção de rede.
+A implementação da saída local e direta da rede do usuário locais do Office para a Internet é recomendada para a conectividade de rede do Microsoft 365. Os aprimoramentos de egresso local e direto são a melhor maneira de abordar esta percepção de rede.
 
 ## <a name="exchange-online-service-front-door"></a>Porta frontal do serviço do Exchange Online
 
@@ -66,7 +66,7 @@ Calculamos uma possível melhoria na latência de TCP para a porta frontal do se
 
 ## <a name="comparison-of-performance-of-customers-in-the-area"></a>Comparação de desempenho de clientes na área
 
-A latência de TCP da rede do local do escritório do usuário para a porta do serviço do Exchange Online é comparada a outros clientes do Office 365 na mesma área de metrô. Uma visão da rede é mostrada se 10% ou mais clientes na mesma área de metrô têm melhor desempenho.
+A latência de TCP da rede do local do escritório do usuário para a porta do serviço do Exchange Online é comparada a outros clientes do Microsoft 365 na mesma área de metrô. Uma visão da rede é mostrada se 10% ou mais clientes na mesma área de metrô têm melhor desempenho.
 
 Essa visão da rede é gerada com base no modo como todos os usuários em uma cidade têm acesso à mesma infraestrutura de telecomunicações e à mesma proximidade aos circuitos da Internet e à rede da Microsoft.
 
@@ -92,11 +92,11 @@ Esta visão da rede afetará especificamente a seleção da porta frontal do ser
 
 ## <a name="dns-lookup-of-exchange-online-front-end-server-and-sharepoint-online-front-end-server"></a>Pesquisa de DNS do servidor front-end do Exchange Online e do servidor front-end do SharePoint Online
 
-Eles mostram o registro DNS da porta frontal do serviço para essas duas cargas de trabalho do Office 365. Eles são fornecidos apenas para informações e não há idéias de rede associada.
+Eles mostram o registro DNS da porta frontal de serviço para essas duas cargas de trabalho do Microsoft 365. Eles são fornecidos apenas para informações e não há idéias de rede associada.
 
 ## <a name="proxy-server-identification"></a>Identificação do servidor proxy
 
-Identificamos os servidores proxy configurados na máquina local. Identificamos se qualquer um deles está configurado no caminho de rede para otimizar o tráfego de rede do Office 365. Identificamos a distância do local do escritório do usuário para os servidores proxy. A distância é testada primeiro pelo ping ICMP e, se isso falhar, testaremos com o ping TCP e, se isso falhar, Pesquisaremos o endereço IP do servidor proxy em um banco de dados de localização de endereços IP. Mostraremos uma visão da rede se o servidor proxy for mais de 500 milhas (800 quilômetros) longe do local do escritório do usuário.
+Identificamos os servidores proxy configurados na máquina local. Identificamos se qualquer um deles está configurado no caminho de rede para otimizar categoria de tráfego de rede do Microsoft 365. Identificamos a distância do local do escritório do usuário para os servidores proxy. A distância é testada primeiro pelo ping ICMP e, se isso falhar, testaremos com o ping TCP e, se isso falhar, Pesquisaremos o endereço IP do servidor proxy em um banco de dados de localização de endereços IP. Mostraremos uma visão da rede se o servidor proxy for mais de 500 milhas (800 quilômetros) longe do local do escritório do usuário.
 
 ## <a name="media-quality-checks"></a>Verificações de qualidade de mídia
 
@@ -106,13 +106,13 @@ Estes são os testes de protocolo UDP usados pela funcionalidade de conferência
 
 ## <a name="tcp-connectivity-tests"></a>Testes de conectividade TCP
 
-Testamos a conectividade HTTP do local do escritório do usuário em todos os pontos de extremidade necessários para a rede do Office 365. Eles são publicados em [https://aka.ms/o365ip](https://aka.ms/o365ip). Uma visão da rede é mostrada para qualquer ponto de extremidade de rede necessário que não possa ser conectado.
+Testamos a conectividade HTTP do local do escritório do usuário para todos os pontos de extremidade de rede do Microsoft 365 necessários. Eles são publicados em [https://aka.ms/o365ip](https://aka.ms/o365ip). Uma visão da rede é mostrada para qualquer ponto de extremidade de rede necessário que não possa ser conectado.
 
 A conectividade é bloqueada por um servidor proxy, firewall ou outro dispositivo de segurança de rede no perímetro de rede corporativa ou em uso como um proxy de nuvem.
 
 ## <a name="ssl-interception-tests"></a>Testes de interceptação SSL
 
-Testamos o certificado SSL em cada ponto de extremidade de rede necessário do Office 365 que esteja na categoria otimizar ou permitir [https://aka.ms/o365ip](https://aka.ms/o365ip), conforme definido em. Se algum teste não localizar um certificado SSL da Microsoft, a rede criptografada conectada deve ter sido interceptada por um dispositivo de rede intermediário. Uma visão da rede é mostrada em qualquer ponto de extremidade de rede criptografada interceptada.
+Testamos o certificado SSL em cada ponto de extremidade de rede do Microsoft 365 necessário, que está na categoria otimizar ou [https://aka.ms/o365ip](https://aka.ms/o365ip)permitir, conforme definido em. Se algum teste não localizar um certificado SSL da Microsoft, a rede criptografada conectada deve ter sido interceptada por um dispositivo de rede intermediário. Uma visão da rede é mostrada em qualquer ponto de extremidade de rede criptografada interceptada.
 
 Quando é encontrado um certificado SSL que não é fornecido pela Microsoft, mostramos o FQDN para o teste e o proprietário do certificado SSL em uso. Este proprietário de certificado SSL pode ser um fornecedor de servidor proxy ou pode ser um certificado de AutoAssinatura empresarial.
 
@@ -120,12 +120,34 @@ Quando é encontrado um certificado SSL que não é fornecido pela Microsoft, mo
 
 Esta seção mostra os resultados de um traceroute do ICMP para a porta frontal do serviço do Exchange Online, a porta frontal do serviço do SharePoint Online e a porta frontal do serviço do Microsoft Teams. Ele é fornecido apenas para informações e não há nenhuma percepção de rede associada.
 
+## <a name="faq"></a>Perguntas frequentes
+
+Aqui estão as respostas para algumas das nossas perguntas frequentes.
+
+### <a name="is-this-tool-released-and-supported-by-microsoft"></a>Essa ferramenta é lançada e tem suporte da Microsoft?
+
+No momento, é uma prova de conceito e planejamos fornecer atualizações regularmente até que cheguemos ao status de lançamento de disponibilidade geral com o suporte da Microsoft. Forneça comentários para nos ajudar a melhorar o. Estamos planejando publicar um guia de integração de rede mais detalhado do Office 365 como parte dessa ferramenta, que é personalizada para a organização pelos resultados do teste.
+
+### <a name="what-is-microsoft-365-service-front-door"></a>O que é o Microsoft 365 Service front door?
+
+O Microsoft 365 Service front door é um ponto de entrada na rede global da Microsoft, onde os clientes e serviços do Office terminam suas conexões de rede. Para uma conexão de rede ideal para o Microsoft 365, é recomendável que sua conexão de rede seja encerrada na porta frontal mais próxima do Microsoft 365 em sua cidade ou metro.
+
+Observação: o Microsoft 365 Service front door não tem relação direta com o produto "serviço de porta frontal do Azure" disponível no Azure Marketplace.
+
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qual é a melhor porta de serviço do Microsoft 365?
+
+Uma das melhores portas de serviço do Microsoft 365 é aquela mais próxima à sua rede de egresso, geralmente na cidade ou na área de metrô. Use a ferramenta de desempenho de rede do Microsoft 365 para determinar o local da sua porta de entrada de serviço do Microsoft 365 e a porta frontal de serviço ideal. Se a ferramenta determina que sua porta frontal de uso é ideal, então, você está se conectando de forma ideal à rede global da Microsoft.
+
+### <a name="what-is-an-internet-egress-location"></a>O que é um local de egresso na Internet?
+
+O local de egresso de Internet é o local onde o tráfego de rede sai da rede corporativa e se conecta à Internet. Isso também é identificado como o local onde você tem um dispositivo NAT (conversão de endereço de rede) e, em geral, onde você se conecta com um provedor de serviços de Internet (ISP). Se você vir uma longa distância entre o local e o local de saída da Internet, isso poderá identificar um backhaul WAN significativo.
+
 ## <a name="related-topics"></a>Tópicos relacionados
 
 [Recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)](office-365-network-mac-perf-overview.md)
 
-[Informações de desempenho de rede do Office 365 (versão prévia)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 Network Performance insights (versão prévia)](office-365-network-mac-perf-insights.md)
 
-[Avaliação de rede do Office 365 (versão prévia)](office-365-network-mac-perf-score.md)
+[Avaliação de rede do Microsoft 365 (versão prévia)](office-365-network-mac-perf-score.md)
 
-[Serviços de local de conectividade de rede do Office 365 (versão prévia)](office-365-network-mac-location-services.md)
+[Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)](office-365-network-mac-location-services.md)

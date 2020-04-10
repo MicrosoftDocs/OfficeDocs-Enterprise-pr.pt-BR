@@ -1,5 +1,5 @@
 ---
-title: Serviços de local de conectividade de rede do Office 365 (versão prévia)
+title: Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Serviços de local de conectividade de rede do Office 365 (versão prévia)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081803"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185722"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Serviços de local de conectividade de rede do Office 365 (versão prévia)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)
 
-O centro de administração do Microsoft 365 agora mostra as **recomendações de rede e o desempenho**, que são métricas de desempenho ao vivo coletadas do seu locatário do Office 365 e disponíveis para visualização apenas por usuários administrativos em seu locatário. A conectividade de rede organizacional é projetada por local do escritório por meio de um local de egresso de rede para a Internet. A conectividade de cliente do Office 365 usa essa rota e, em seguida, através da Internet para os servidores de porta frontal do serviço Microsoft. Identificar os locais do Office é a chave para poder mostrar esses insights de rede.
+O centro de administração do Microsoft 365 agora mostra as **recomendações de rede e o desempenho**, que são métricas de desempenho ao vivo coletadas do seu locatário do Microsoft 365 e disponíveis para visualização apenas por usuários administrativos em seu locatário. A conectividade de rede organizacional é projetada por local do escritório por meio de um local de egresso de rede para a Internet. A conectividade do cliente Microsoft 365 usa essa rota e, em seguida, através da Internet para os servidores de porta frontal do serviço Microsoft. Identificar os locais do Office é a chave para poder mostrar esses insights de rede.
 
 ## <a name="location-in-network-measurements"></a>Local em medições de rede
 
