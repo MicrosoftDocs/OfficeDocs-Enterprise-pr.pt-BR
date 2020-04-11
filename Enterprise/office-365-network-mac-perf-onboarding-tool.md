@@ -3,7 +3,7 @@ title: Ferramenta de integração de rede do Microsoft 365 no centro de administ
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185732"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225694"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)
 
 A ferramenta de integração de rede do Microsoft 365 está localizada <https://connectivity.office.com>em. É uma ferramenta do adjunct para as informações de rede e informações de Pontuação de rede disponíveis no centro de administração do Microsoft 365 sob o **| Menu desempenho da rede** .
+
+>[!NOTE]
+>A ferramenta de integração oferece suporte a locatários no WW Commercial ou GCC moderado, mas não GCC alta, DoD, Alemanha ou China.
 
 Os insights de rede no centro de administração do Microsoft 365 são baseados nas medidas no produto do Microsoft 365 locatário. Em comparação, as insights de rede da ferramenta de integração de rede do Microsoft 365 são executadas localmente na ferramenta. Os testes que podem ser realizados no produto são limitados e executando testes locais para o usuário podem ser coletados, resultando em insights mais aprofundados. Considere que o insights de rede no centro de administração do Microsoft 365 mostrará que há um problema de rede para uso do Microsoft 365 em um local específico do escritório. A ferramenta de integração de rede do Microsoft 365 pode ajudar a identificar a causa raiz do problema que leva a uma ação recomendada de melhoria do desempenho da rede.
 
