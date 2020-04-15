@@ -3,7 +3,7 @@ title: Atualizando do SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -18,23 +18,23 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: O suporte para o SharePoint 2010 e o SharePoint Server 2010 termina em 13 de outubro de 2020. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
-ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: O suporte termina para o SharePoint 2010 e o SharePoint Server 2010 em 13 de abril de 2021. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
+ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979483"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503839"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Atualizando do SharePoint 2010
 
 *Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
-O Microsoft SharePoint 2010 e o SharePoint Server 2010 atingirão o fim do suporte em **13 de outubro de 2020**. Este artigo detalha os recursos para ajudá-lo a migrar seus dados existentes do SharePoint Server 2010 para o SharePoint Online no Office 365 ou atualizar seu ambiente local do SharePoint Server 2010.
+O Microsoft SharePoint 2010 e o SharePoint Server 2010 atingirão o fim do suporte em **13 de abril de 2021**. Este artigo detalha os recursos para ajudá-lo a migrar seus dados existentes do SharePoint Server 2010 para o SharePoint Online no Office 365 ou atualizar seu ambiente local do SharePoint Server 2010.
   
 ## <a name="what-is-end-of-support"></a>O que é o fim do suporte?
 
-Quando o software do SharePoint Server 2010 e do SharePoint Foundation 2010 atinge o final do seu ciclo de vida de suporte (o tempo durante o qual a Microsoft fornece novos recursos, correções de erros, correções de segurança e assim por diante), isso é chamado de ' fim de suporte ' do software ou, às vezes, seu ' aposentadoria '. Após o fim do suporte (ou EOS) de um produto, nada é realmente desligado ou pára de funcionar; no entanto, no final do suporte ao software, a Microsoft não fornece mais:
+Quando o software do SharePoint Server 2010 e do SharePoint Foundation 2010 atinge o final do seu ciclo de vida de suporte (o tempo durante o qual a Microsoft fornece novos recursos, correções de erros, correções de segurança e assim por diante), isso é chamado de ' fim de suporte ' do software ou, às vezes, de ' aposentadoria '. Após o fim do suporte (ou EOS) de um produto, nada é realmente desligado ou pára de funcionar; no entanto, no final do suporte ao software, a Microsoft não fornece mais:
   
 - Suporte técnico para problemas que podem ocorrer;
     
@@ -109,7 +109,7 @@ Se você atualizar para o SharePoint Server 2013 ou o SharePoint Server 2016 e d
 |**Vantagem do SharePoint Online**|**Desvantagem do SharePoint Online**|
 |:-----|:-----|
 |A Microsoft fornece hardware SPO e toda a administração de hardware.  <br/> |Os recursos disponíveis podem ser diferentes entre o SharePoint Server local e o SPO.  <br/> |
-|Você é o administrador global da sua assinatura e pode atribuir administradores a sites do SPO.  <br/> |Algumas ações disponíveis para um administrador de farm no SharePoint Server local não existem (ou não são necessárias) na função de administrador do SharePoint no Office 365, mas a administração do SharePoint, a administração do conjunto de sites e a propriedade do site são locais sua organização.  <br/> |
+|Você é o administrador global da sua assinatura e pode atribuir administradores a sites do SPO.  <br/> |Algumas ações disponíveis para um administrador de farm no SharePoint Server local não existem (ou não são necessárias) na função de administrador do SharePoint no Office 365, mas a administração do SharePoint, a administração do conjunto de sites e a propriedade do site são locais para sua organização.  <br/> |
 |A Microsoft aplica patches, correções e atualizações para o hardware e software subjacentes (incluindo os SQL Servers nos quais o SharePoint Online é executado).  <br/> |Como não há acesso ao sistema de arquivos subjacente no serviço, algumas personalizações são limitadas.  <br/> |
 |A Microsoft publica [contratos de nível de serviço](https://go.microsoft.com/fwlink/?linkid=843153) e se move rapidamente para resolver incidentes de nível de serviço.  <br/> |O backup e a restauração e outras opções de recuperação são automatizados pelo serviço no SharePoint Online-os backups são substituídos se não forem usados.  <br/> |
 |O teste de segurança e o ajuste de desempenho do servidor são realizados continuamente no serviço da Microsoft.  <br/> |As alterações na interface do usuário e em outros recursos do SharePoint são instaladas pelo serviço e podem precisar ser ativadas ou desativadas.  <br/> |
@@ -180,7 +180,7 @@ Se você decidir que um farm híbrido do SharePoint Server é sua meta de migra�
   
 Familiarize-se com os tipos existentes de híbridos e como configurar a conexão entre seu farm local do SharePoint e sua assinatura do Office 365.
   
-Uma boa maneira de ver como funciona um farm híbrido do SharePoint é criar um [ambiente de desenvolvimento/teste do Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Após ter uma assinatura de avaliação ou comprada do Office 365, você estará no caminho para criar os conjuntos de sites, Webs e bibliotecas de documentos no SharePoint Online para os quais você pode migrar dados (manualmente, usando a API de migração ou-se quiser migrar meus Conteúdo do site para o OneDrive for Business – por meio do assistente híbrido).
+Uma boa maneira de ver como funciona um farm híbrido do SharePoint é criar um [ambiente de desenvolvimento/teste do Office 365](https://go.microsoft.com/fwlink/?linkid=843152). Após ter uma assinatura de avaliação ou comprada do Office 365, você estará prestes a criar os conjuntos de sites, Webs e bibliotecas de documentos no SharePoint Online para os quais você pode migrar dados (manualmente, por meio da API de migração ou-se quiser migrar o conteúdo do meu site para o OneDrive for Business por meio do assistente híbrido).
   
 > [!NOTE]
 > Lembre-se de que seu farm do SharePoint Server 2010 primeiro precisará ser atualizado, no local, para o SharePoint Server 2013 ou o SharePoint Server 2016 para usar a opção híbrida. O SharePoint Foundation 2010 e o SharePoint Foundation 2013 não podem criar conexões híbridas com o SharePoint Online. 

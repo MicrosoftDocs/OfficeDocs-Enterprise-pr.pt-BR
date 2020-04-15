@@ -3,7 +3,7 @@ title: Planejar sua atualização do Office 2007 ou 2010 servidores e clientes
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos e servidores desatualizados e não suportados. Use estes recursos para começar a usar seu plano.
-ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605606"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503799"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
 
 *Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
-Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o [fim do suporte](upgrade-from-office-2007-servers-and-products.md). Os produtos e serviços do Office 2010 (incluindo o Office 2010, o Exchange 2010, o SharePoint 2010 e o Project Server 2010) vão atingir o fim do suporte em **13 de outubro de 2020**. Use os recursos desta seção para começar.
+Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o [fim do suporte](upgrade-from-office-2007-servers-and-products.md). O Office 2010 e o Exchange 2010 atingirão o fim do suporte em **13 de outubro de 2020**. O SharePoint 2010 e o Project Server 2010 atingirão o fim do suporte em **13 de abril de 2021**. Use os recursos desta seção para começar.
 
 Confira [Upgrade from clientes e servidores do Office 2010](upgrade-from-office-2010-servers-and-products.md) para obter mais detalhes.
 
@@ -88,7 +88,7 @@ Você também pode optar por não atualizar no momento. Seus aplicativos do Offi
 
 A [Microsoft 365](https://www.microsoft.com/microsoft-365) é a combinação do Office 365, Windows 10 e Enterprise Mobility + Security (EMS) que oferece uma solução completa e inteligente para permitir que todas as pessoas sejam criativas e trabalhem juntas de forma segura. 
   
-Embora você possa migrar seus servidores e clientes do Office 2007 ou do Office 2010 para o Office 365, a Microsoft 365 inclui as licenças e os recursos para ajudar a garantir que sua organização esteja trabalhando no sistema operacional Windows mais recente e que seus dispositivos, incluindo Windows, iOS e Android – são registrados e mantidos protegidos com políticas que exigem autenticação e proteção de dados. Além disso, o Windows 10 e o software cliente do Office 365 ProPlus são atualizados de forma contínua para incluir os recursos e as atualizações de segurança mais recentes.
+Embora você possa migrar seus servidores e clientes do Office 2007 ou do Office 2010 para o Office 365, a Microsoft 365 inclui as licenças e os recursos para ajudar a garantir que sua organização esteja trabalhando no sistema operacional Windows mais recente e que seus dispositivos, incluindo Windows, iOS e Android, sejam registrados e mantidos protegidos com políticas que exijam autenticação e proteção de dados. Além disso, o Windows 10 e o software cliente do Office 365 ProPlus são atualizados de forma contínua para incluir os recursos e as atualizações de segurança mais recentes.
   
 A Microsoft 365 é a maneira de transformar digitalmente sua empresa com dispositivos e experiências de produtividade em constante melhoria, habilitado e protegido pela Microsoft Cloud.
   
