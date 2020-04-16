@@ -3,7 +3,7 @@ title: Implementando o tunelamento dividido de VPN para Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/9/2020
+ms.date: 4/14/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como implementar o tunelamento dividido de VPN para o Office 365
-ms.openlocfilehash: 3ac4d1243e28e8081439c98baf181ba9fb5fb2b3
-ms.sourcegitcommit: f12f95866df3a7bbf866e1d21a839be7fbdf9470
+ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43203845"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516482"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementando o tunelamento dividido de VPN para Office 365
 
@@ -273,6 +273,7 @@ Esta seção fornece links de guias detalhados para implementar o tunelamento di
 - **Palo Alto GlobalProtect**: [Otimizar o tráfego do Office 365 por meio de tunelamento dividido VPN com exclusão de rota de acesso](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **As redes F5 BIG-IP APM**: [Otimizar o tráfego do Office 365 no acesso remoto por meio de VPNs ao usar BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Citrix Gateway**: [Otimização do túnel dividido Citrix Gateway VPN do Office365](https://docs.citrix.com/pt-BR/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure**: [Túnel VPN: como configurar o túnel dividido para excluir aplicativos do Office 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 
 ## <a name="faq"></a>Perguntas frequentes
 
