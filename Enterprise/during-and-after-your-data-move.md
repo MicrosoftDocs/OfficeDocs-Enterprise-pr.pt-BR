@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: 58c4b407062c5472e9c5908d34b084a2d192227d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: a53d2253889cbbdb344c457c135086a1115de436
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840368"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516442"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -29,7 +29,7 @@ Movimentação de dados é uma operação de back-end com impacto mínimo para o
 > [!NOTE]
 > As movimentações ocorrem em horários diferentes de cada serviço. Como resultado, você verá a funcionalidade reduzida descrita para cada serviço em um momento diferente. 
   
-Assista ao centro de mensagens do Office 365 para confirmação quando se move para cada um dos Exchange Online, SharePoint Online e Skype for Business concluído. Conforme mostrado na tabela abaixo, pode levar até 24 meses, após o final do período de registro, para concluir todos os dados solicitados são movidos para todos os clientes em uma geografia específica. Se você vir problemas com o seu locatário após a movimentação, entre em contato com o [suporte do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obter assistência. 
+Assista ao centro de mensagens do Microsoft 365 para confirmação quando se move para cada um dos Exchange Online, SharePoint Online, Teams e Skype for Business concluído. Conforme mostrado na tabela abaixo, pode levar até 24 meses, após o final do período de registro, para concluir todos os dados solicitados são movidos para todos os clientes em uma geografia específica. Se você vir problemas com o seu locatário após a movimentação, entre em contato com o [suporte do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obter assistência. 
   
 
 |**Clientes com país de inscrição no**|**Todas as movimentações concluídas por**|
@@ -38,16 +38,14 @@ Assista ao centro de mensagens do Office 365 para confirmação quando se move p
 |Japão  <br/> |1º de julho de 2022  <br/> |
 |Índia  <br/> |1º de julho de 2022  <br/> |
 |Canadá  <br/> |1º de julho de 2022  <br/> |
-|Coréia do Sul  <br/> |1º de julho de 2022  <br/> |
+|Coreia do Sul  <br/> |1º de julho de 2022  <br/> |
 |Reino Unido  <br/> |1º de julho de 2022  <br/> |
 |França  <br/> |1º de julho de 2022  <br/> |
 |Emirados Árabes Unidos  <br/> |1º de julho de 2022  <br/> |
 |África do Sul  <br/> |1º de julho de 2022  <br/> |
 |Suíça, Liechtenstein  <br/> |1º de julho de 2022  <br/> |
 |Alemanha  <br/> |Liga  <br/> |
-
-> [!NOTE]
-> Os clientes nos países qualificados do Office 365 podem optar pela migração de dados do serviço de chat do Microsoft Teams a partir de 1º de janeiro de 2020 até 30 de junho de 2020, que também sinalizará a migração para qualquer outra carga de trabalho qualificada.  Os clientes que optaram por migrar antes de 2020 podem esperar que o Exchange Online e o SharePoint Online/OneDrive for Business sejam movidos para concluir pelo prazo original, enquanto o Microsoft Teams concluirá em 1º de julho de 2022 para todos os clientes. 
+|Noruega  <br/> |1 de novembro de 2022  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -110,9 +108,16 @@ Os seguintes recursos de pesquisa são afetados:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Os clientes nos países qualificados do Office 365 podem aceitar a migração de dados do serviço de chat do Microsoft Teams a partir de 1º de janeiro de 2020.  
+Além do Exchange Online, do SharePoint Online e do OneDrive for Business, a Microsoft migrará os dados do teams para o datacenter local.
+
+- Mensagens de chat de equipes, incluindo mensagens privadas e mensagens de canal.
+- Imagens de equipes usadas em chats.
+
+Os arquivos do teams são armazenados no SharePoint Online e os arquivos de chat do Microsoft Teams são armazenados no OneDrive for Business. Correio de voz, calendário, histórico de chat e contatos são armazenados no Exchange Online. Em muitos casos, o Exchange Online, o SharePoint Online e o OneDrive for Business já são usados pelo cliente na geografia do datacenter local e também fazem parte do programa de migração do Microsoft 365 para países qualificados do cliente.
 
 ## <a name="skype-for-business"></a>Skype for Business
+
+As movimentações do Skype for Business estão disponíveis para a Austrália, Japão, Índia, Canadá, Reino Unido e Coréia do Sul.
 
 Todos os usuários serão desconectados do software cliente Skype for Business durante o recorte. A entrada automática reconectará os usuários dentro de dois minutos.
   
@@ -136,4 +141,3 @@ Serviços complementares de provedor de conferência de áudio de terceiros para
 [Nova GEOS de datacenter do Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Serviços do Azure por região](https://azure.microsoft.com/regions/)
-

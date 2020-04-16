@@ -13,20 +13,20 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final do seu país para que os dados do cliente de seus serviços do Office 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final para o seu país para que os dados do cliente de seus serviços do Microsoft 365 participantes sejam movidos para a nova geografia.
+ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106222"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516562"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
 > [!NOTE]
-> As informações nesta página só se aplicam aos clientes que tinham locatários do Office 365 antes dos novos datacenters em sua geografia. 
+> As informações nesta página aplicam-se apenas aos clientes que tinham locatários do Microsoft 365 existentes antes dos novos datacenters em sua geografia. 
   
-Os clientes existentes do Office 365 estão qualificados para solicitar a migração inicial de todos os dados do cliente principais da sua organização em repouso.  
+Os clientes do Microsoft 365 existentes estão qualificados para solicitar a migração de todos os dados do cliente principais da sua organização em repouso.  
   
 ## <a name="when-can-i-request-a-move"></a>Quando posso solicitar uma movimentação?
 
@@ -43,6 +43,7 @@ Os clientes existentes do Office 365 estão qualificados para solicitar a migra�
 |África do Sul  <br/> |25 de julho de 2019  <br/> |30 de junho de 2020  <br/> |
 |Suíça, Liechtenstein  <br/> |10 de dezembro de 2019  <br/> |30 de junho de 2020  <br/> |
 |Alemanha  <br/> |Liga  <br/> |Liga  <br/> |
+|Noruega  <br/> |15 de abril de 2020  <br/> |31 de outubro de 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Como solicitar uma movimentação
 
@@ -55,7 +56,7 @@ Selecione o **perfil de organização**de guia e, em seguida, selecione a opçã
 - Seu locatário não está qualificado para o programa Office 365 move.  A qualificação é determinada pelo país de inscrição do locatário.
 - Todos os dados principais do cliente em repouso já estão localizados na nova Geografia (consulte a seção local dos dados da página). 
   
-Se sua organização tiver requisitos de residência de dados e você precisar solicitar a migração inicial, clique em **aceitar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa Office 365 move. Selecione o botão de alternância ao lado do texto que diz que **desejo aos dados principais do cliente da minha organização em repouso para migrar**. Em seguida, clique em **Salvar**.
+Se sua organização tiver requisitos de residência de dados e você precisar solicitar migração, clique em **aceitar** no canto superior direito da seção. Uma nova seção será exibida no lado direito da tela explicando os detalhes do programa Microsoft 365 move. Selecione o botão de alternância ao lado do texto que diz que **desejo aos dados principais do cliente da minha organização em repouso para migrar**. Em seguida, clique em **Salvar**.
   
 ![Tela de aceitação de data center](media/dataresidencyflyoutae.jpg)
   
@@ -71,35 +72,7 @@ As movimentações podem levar até 24 meses do prazo da solicitação para que 
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-A partir de janeiro de 2020, os clientes nos países do Office 365 qualificados podem optar por migrar dados do serviço de chat do Microsoft Teams.  As linhas do ponto de adesão foram reabertas ou estendidas para todos os países qualificados para que os clientes tenham uma oportunidade de considerar o programa de migração inicial com o Microsoft Teams no escopo.   
-
-## <a name="optional-actions-before-you-request-a-move"></a>Ações opcionais antes de solicitar uma movimentação
-
-Execute as seguintes etapas, conforme apropriado.
-  
-### <a name="if-you-use-an-ip-based-firewall-add-allow-rules-for-the-new-ip-addresses"></a>Se você usar um firewall baseado em IP, adicione regras de permissão para os novos endereços IP
-
-Recomendamos o uso da filtragem de DNS para firewalls em vez de endereços IP. Não há novas entradas DNS necessárias.
-  
-Se você usar um firewall baseado em IP para conectividade com a Internet, deverá adicionar regras de permissão para os novos endereços IP para a geografia do datacenter de destino. Os endereços IP para novos GEOS de datacenter, além de novos servidores, são adicionados de forma contínua às [URLs e intervalos de endereços IP do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=229631).
-  
-Consulte a documentação do firewall para obter informações sobre como adicionar regras de permissão (também conhecida como lista branca).
-  
-Após adicionar endereços IP, convém testar a conectividade com a nova Geografia do datacenter. Para fazer isso, recomendamos criar um [novo locatário gratuito de avaliação de 30 dias](https://go.microsoft.com/fwlink/?LinkId=522463) assim que a nova Geografia do datacenter estiver disponível. 
-  
-### <a name="test-using-a-new-tenant"></a>Testar usando um novo locatário
-
-Se quiser testar a conectividade antes da movimentação, você pode configurar um [novo locatário gratuito de avaliação de 30 dias](https://go.microsoft.com/fwlink/?LinkId=522463) depois que a nova Geografia do datacenter estiver disponível e usá-la para experimentar o Office 365 hospedado na nova Geografia do datacenter. 
-  
-O locatário de avaliação não pode ser combinado com seu locatário existente:
-  
-- Os usuários devem usar uma conta de avaliação separada para o teste.
-    
-- Não é possível mover dados entre locatários.
-    
-### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Notificar os usuários para atualizar configurações do Exchange desatualizadas em dispositivos móveis
-
-Se os usuários tiverem um dispositivo móvel com o Exchange Server definido como **m.Outlook.com** ou **podxxxxx.Outlook.com**, recomendamos que eles alternem para o **Outlook.office365.com**, seguindo as instruções em [configurar um dispositivo móvel para sincronizar com sua conta](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+A partir de janeiro de 2020, os clientes nos países do Office 365 qualificados podem optar por migrar dados do serviço de chat do Microsoft Teams.  As linhas do ponto de adesão foram reabertas ou estendidas para todos os países qualificados para oferecer aos clientes uma oportunidade de considerar o programa de migração com o Microsoft Teams no escopo. Os clientes que anteriormente optaram por uma mudança de residência de dados também terão o Teams mudar para sua geografia local de datacenter.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
