@@ -1,7 +1,7 @@
 ---
 title: Movendo dados principais para o novo Microsoft 365 datacenter GEOS
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'Nova GEOS de datacenter adicione capacidade e calcule recursos para dar suporte à demanda contínua do cliente e crescimento de uso. Além disso, o novo GEOS de datacenter oferece residências de dados geográficos para dados essenciais do cliente. Principais dados do cliente é um termo que se refere a um subconjunto de dados do cliente definido nos termos do Microsoft Online Services: conteúdo da caixa de correio do Exchange Online (corpo de email, entradas de calendário e conteúdo de anexos de email) e conteúdo do site do SharePoint Online e os arquivos armazenados nesse site e arquivos carregados no OneDrive for Business.'
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516542"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547719"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Movendo dados principais para o novo Microsoft 365 datacenter GEOS
 
@@ -37,7 +37,7 @@ Os clientes existentes que têm seus dados principais de cliente armazenados em 
 |:-----|:-----|:-----|:-----|
 |**Japão**| Ásia/Pacífico | Japão | Dezembro de 2014 |
 |**Austrália, Nova Zelândia, Fiji**| Ásia/Pacífico | Austrália | Março de 2015 |
-|**Índia **| Ásia/Pacífico | Índia | outubro de 2015 |
+|**Índia **| Ásia/Pacífico | Índia | Outubro de 2015 |
 |**Canadá**| América do Norte | Canadá | Maio de 2016 |
 |**Reino Unido**| Europa | Reino Unido | Setembro de 2016 |
 |**Coreia do Sul**| Ásia/Pacífico | Coreia do Sul | Abril de 2017 |
