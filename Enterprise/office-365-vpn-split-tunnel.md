@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Diretrizes para o uso de túnel dividido de VPN com o Office 365 para otimizar a conectividade do Office 365 para usuários remotos.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131430"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547649"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Otimizar a conectividade do Office 365 para usuários remotos usando o túnel dividido de VPN
 <!---
@@ -32,7 +32,7 @@ ms.locfileid: "43131430"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-Para os clientes que conectam os dispositivos de funcionários remotos à rede corporativa ou à infraestrutura de nuvem através de VPN, a Microsoft recomenda que os principais cenários do Office 365, **Microsoft Teams**, **SharePoint Online** e **Exchange Online** sejam roteados através de uma configuração de _túnel dividido de VPN_. Isso se torna especialmente importante como estratégia de primeira linha para facilitar a produtividade contínua dos funcionários durante eventos em larga escala de trabalho em casa, como a pandemia de COVID-19.
+Para os clientes que conectam os dispositivos de funcionários remotos à rede corporativa ou à infraestrutura de nuvem através de VPN, a Microsoft recomenda que os principais cenários do Office 365, **Microsoft Teams**, **SharePoint Online** e **Exchange Online** sejam roteados através de uma configuração de _túnel dividido de VPN_. Isso se torna especialmente importante como a estratégia de primeira linha para facilitar a produtividade contínua dos funcionários durante eventos de trabalho em casa em larga escala, como a crise da COVID-19.
 
 ![Configuração de VPN de túnel dividido](media/vpn-split-tunnelling/vpn-model-2.png)
 
