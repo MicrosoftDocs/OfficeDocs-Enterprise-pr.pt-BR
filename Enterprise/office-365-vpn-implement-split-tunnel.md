@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como implementar o tunelamento dividido de VPN para o Office 365
-ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516482"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547659"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementando o tunelamento dividido de VPN para Office 365
 
@@ -41,7 +41,7 @@ O uso de tunelamento forçado de VPNs para conectar-se a aplicativos de nuvem de
 
 Esse problema vem crescendo há alguns anos, com vários clientes relatando uma mudança significativa de padrões de tráfego de rede. O tráfego que estava acostumado a permanecer no local agora se conecta aos pontos de extremidade na nuvem externa. Vários clientes da Microsoft relatam que, anteriormente, cerca de 80% do tráfego de rede era para alguma fonte interna (representada pela linha pontilhada no diagrama acima). Em 2020, esse número agora está aproximadamente em 20% ou menos, já que eles mudaram as principais cargas de trabalho para a nuvem, essas tendências não são incomuns em outras empresas. Com o tempo, à medida que a jornada na nuvem progride, o modelo acima se torna cada vez mais complicado e insustentável, impedindo que uma organização se movimente durante a mudança para a nuvem.
 
-A pandemia mundial do COVID-19 escalou esse problema para exigir correção imediata. A necessidade de garantir a segurança dos funcionários gerou demandas sem precedentes na TI corporativa para oferecer suporte à produtividade do trabalho em casa em grande escala. O Microsoft Office 365 está bem posicionado para ajudar os clientes a preencher essa demanda, mas a alta simultaneidade de usuários trabalhando de casa gera um grande volume de tráfego do Office 365 que, se roteado por meio de um tunelamento forçado de VPN e perímetros de rede local, causa uma rápida saturação, acima da capacidade de infraestrutura VPN. Nesta nova realidade, usar a VPN para acessar o Office 365 já não é mais um obstáculo de desempenho, mas uma parede sólida que não só afeta o Office 365, mas as operações de negócios críticas que ainda precisam contar com o VPN para operar.
+A crise mundial do COVID-19 escalou esse problema para exigir correção imediata. A necessidade de garantir a segurança dos funcionários gerou demandas sem precedentes na TI corporativa para oferecer suporte à produtividade do trabalho em casa em grande escala. O Microsoft Office 365 está bem posicionado para ajudar os clientes a preencher essa demanda, mas a alta simultaneidade de usuários trabalhando de casa gera um grande volume de tráfego do Office 365 que, se roteado por meio de um tunelamento forçado de VPN e perímetros de rede local, causa uma rápida saturação, acima da capacidade de infraestrutura VPN. Nesta nova realidade, usar a VPN para acessar o Office 365 já não é mais um obstáculo de desempenho, mas uma parede sólida que não só afeta o Office 365, mas as operações de negócios críticas que ainda precisam contar com o VPN para operar.
 
 A Microsoft está trabalhando com os clientes e com o setor mais amplo há muitos anos para fornecer soluções eficazes e modernas para esses problemas dentro de nossos próprios serviços, além de se alinhar com a práticas recomendadas do setor. [Os princípios de conectividade](https://aka.ms/pnc) do serviço do Office 365 foram projetados para funcionar de forma eficiente para usuários remotos, embora ainda permitam que uma organização mantenha a segurança e o controle sobre a conectividade. Essas soluções também podem ser implementadas com mais rapidez, com um trabalho limitado, o que resulta em um impacto significativo considerável sobre os problemas descritos acima.
 

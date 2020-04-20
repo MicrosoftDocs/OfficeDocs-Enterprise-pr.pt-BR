@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: Locais dos dados do Office 365'
-ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 71c286b3dc7fbbaa842183dcaa23c863e46f809a
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516532"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547729"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Obtenha informações sobre os compromissos contratuais para o local de armazena
 Para locais dos dados do Azure Active Directory, acesse [Mapa de Dados do AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Devido às circunstâncias sem precedentes em torno do COVID-19 e à necessidade de gerenciar a demanda por serviços online na Europa, se a sua organização for uma instituição educacional, poderemos provisionar o seu locatário do Office 365 na União Europeia (UE), Associação de Livre Comércio Europeia (AELC), Reino Unido (UK), Estados Unidos (EUA) ou Canadá (CA), ou transferir seus dados para todos os centros de dados na UE, AELC, UK, EUA ou CA. Isso significa que seus dados podem estar armazenados em repouso na UE, AELC, UK, EUA ou CA.Nosso compromisso com a conformidade, a privacidade e a segurança permanecem inalterados enquanto implementamos medidas necessárias e prudentes para manter a disponibilidade do serviço.  Atenderemos a todas as leis aplicáveis quanto à transferências de dados.
+Devido às circunstâncias sem precedentes em torno da crise do COVID-19 e à necessidade de gerenciar a demanda por serviços online na Europa, se sua organização for uma instituição educacional, poderemos provisionar o seu locatário do Office 365 na União Europeia (UE), Associação de Livre Comércio Europeia ( EFTA), Reino Unido (Reino Unido), Estados Unidos (EUA) ou Canadá (CA) ou transferir seus dados para quaisquer centros de dados na UE, EFTA, Reino Unido, EUA ou Canadá.Isso significa que seus dados podem estar armazenados em repouso na UE, AELC, UK, EUA ou CA.Nosso compromisso com a conformidade, a privacidade e a segurança permanecem inalterados enquanto implementamos medidas necessárias e prudentes para manter a disponibilidade do serviço.  Atenderemos a todas as leis aplicáveis quanto à transferências de dados.
 
 
 
