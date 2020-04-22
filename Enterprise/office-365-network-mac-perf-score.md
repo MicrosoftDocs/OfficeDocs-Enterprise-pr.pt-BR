@@ -3,7 +3,7 @@ title: Avaliação de rede do Microsoft 365 (versão prévia)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Avaliação de rede do Microsoft 365 (versão prévia)
-ms.openlocfilehash: 2ee18f50e841982e8f677964d2e7e57d95a209d8
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 3554c86b94e6b24cf82231da640b7e010fe07c11
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185742"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612891"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Avaliação de rede do Microsoft 365 (versão prévia)
 
@@ -68,6 +68,6 @@ Para o Microsoft Teams, a qualidade da rede é medida como latência de UDP, tre
 
 [Microsoft 365 Network Performance insights (versão prévia)](office-365-network-mac-perf-insights.md)
 
-[Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
+[Teste de conectividade do Microsoft 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)](office-365-network-mac-location-services.md)

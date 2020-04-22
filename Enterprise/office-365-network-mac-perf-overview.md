@@ -3,7 +3,7 @@ title: Recomendações de desempenho de rede no centro de administração do Mic
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Visão geral das recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185772"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612931"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)
 
@@ -131,7 +131,7 @@ O Microsoft 365 Service front door é um ponto de entrada na rede global da Micr
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Qual é a melhor porta de serviço do Microsoft 365?
 
-Uma das melhores portas de serviço do Microsoft 365 é aquela mais próxima à sua rede de egresso, geralmente na cidade ou na área de metrô. Use a [ferramenta de integração de rede do microsoft 365](office-365-network-mac-perf-onboarding-tool.md) para determinar o local em que você usa a porta de entrada do Microsoft 365 Service e a porta frontal de serviço ideal. Se a ferramenta determina que sua porta frontal de uso é ideal, então, você está se conectando de forma ideal à rede global da Microsoft.
+Uma das melhores portas de serviço do Microsoft 365 é aquela mais próxima à sua rede de egresso, geralmente na cidade ou na área de metrô. Use o [teste de conectividade do microsoft 365](office-365-network-mac-perf-onboarding-tool.md) para determinar o local da porta de entrada do Microsoft 365 Service e da porta frontal de serviço ideal. Se a ferramenta determina que sua porta frontal de uso é ideal, então, você está se conectando de forma ideal à rede global da Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>O que é um local de egresso na Internet?
 
@@ -143,6 +143,6 @@ O local de egresso de Internet é o local onde o tráfego de rede sai da rede co
 
 [Avaliação de rede do Microsoft 365 (versão prévia)](office-365-network-mac-perf-score.md)
 
-[Ferramenta de integração de rede do Microsoft 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
+[Teste de conectividade do Microsoft 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)](office-365-network-mac-location-services.md)

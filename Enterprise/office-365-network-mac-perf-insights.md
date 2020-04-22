@@ -1,9 +1,9 @@
 ---
-title: Office 365 Network insights (visualização)
+title: Microsoft 365 Network insights (versão prévia)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 Network insights (visualização)
-ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 Network insights (versão prévia)
+ms.openlocfilehash: 0146019d1424cda696104d68eeda32ce28a26391
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081703"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612901"
 ---
-# <a name="office-365-network-insights-preview"></a>Office 365 Network insights (visualização)
+# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network insights (versão prévia)
 
-O **insights de rede** é uma métrica de desempenho ao vivo coletada do seu locatário do Office 365 e está disponível para visualização apenas por usuários administrativos em seu locatário. As ideias são exibidas no centro de administração do Microsoft 365 em <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+As **insights de rede** são métricas de desempenho ao vivo coletadas do seu locatário do Microsoft 365 e disponíveis para visualização apenas por usuários administrativos em seu locatário. As ideias são exibidas no centro de administração do Microsoft 365 em <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
 As ideias destinam-se a ajudar na criação de perímetros de rede para seus locais do Office. Cada informação fornece detalhes ao vivo sobre as características de desempenho para um problema comum específico para cada localização geográfica onde os usuários acessam seu locatário.
 
@@ -36,11 +36,11 @@ Há cinco insights de rede específicos que podem ser mostradas para cada local 
 - [Baixa velocidade de download da porta frontal do SharePoint](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Office 365 que foram registrados no programa de visualização de recurso.
+>Os insights de rede, as recomendações de desempenho e as avaliações no centro de administração do Microsoft 365 estão atualmente no status de visualização e só estão disponíveis para os locatários do Microsoft 365 que foram registrados no programa de visualização de recurso.
 
 ## <a name="backhauled-network-egress"></a>Saída de rede de rebocada
 
-Esta percepção será exibida se o serviço de insights de rede detectar que a distância de um determinado local de usuário para a saída da rede é maior que 500 milhas (800 quilômetros), indicando que o tráfego do Office 365 está sendo repassado para um proxy ou dispositivo de borda Internet comum.
+Esta percepção será exibida se o serviço de insights de rede detectar que a distância de um determinado local de usuário para a saída da rede é maior que 500 milhas (800 quilômetros), indicando que o tráfego da Microsoft 365 está sendo repassado para um dispositivo ou proxy de borda Internet comum.
 
 Esta percepção é abreviada como "egresso" em alguns modos de exibição de resumo.
 
@@ -54,7 +54,7 @@ Os detalhes desta percepção incluem o local do escritório, porcentagem estima
 
 ### <a name="what-should-i-do"></a>O que devo fazer?
 
-Para esta percepção, recomendamos que a saída da rede fique mais próxima do local do escritório, de forma que a conectividade possa ser roteada de maneira ideal para a rede global da Microsoft e para a porta frontal de serviço mais próxima do Office 365. Após o fechamento de egresso da rede para usuários, os locais do Office também podem melhorar o desempenho no futuro, já que a Microsoft expande tanto os pontos de presença de rede quanto as portas de serviço do Office 365 no futuro.
+Para esta percepção, recomendamos que a saída da rede fique mais próxima do local do escritório, para que a conectividade possa ser roteada de maneira ideal para a rede global da Microsoft e para a porta mais próxima do serviço do Microsoft 365. Após o fechamento de egresso da rede para usuários, os locais do Office também permitem um desempenho aprimorado no futuro, já que a Microsoft expande tanto os pontos de presença de rede quanto as portas frontais de serviço do Microsoft 365 no futuro.
 
 Para obter mais informações sobre como resolver esse problema, confira [conexões de rede de saída localmente](office-365-network-connectivity-principles.md#egress-network-connections-locally) nos [princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md).
 
@@ -68,11 +68,11 @@ Esta percepção é abreviada como "pares" em alguns modos de exibição de resu
 
 ### <a name="what-does-this-mean"></a>Cenário
 
-Essa percepção examina o desempenho agregado dos clientes do Office 365 na mesma cidade que este local do escritório. Esta percepção será exibida se a latência média de seus usuários for 10% maior do que a latência média dos locatários vizinhos.
+Essa percepção examina o desempenho agregado dos clientes do Microsoft 365 na mesma cidade que este local do escritório. Esta percepção será exibida se a latência média de seus usuários for 10% maior do que a latência média dos locatários vizinhos.
 
 ### <a name="what-should-i-do"></a>O que devo fazer?
 
-Pode haver vários motivos para esta condição, incluindo latência na rede corporativa ou no provedor de Internet, afunilamentos ou problemas de design de arquitetura. Examine a latência entre cada salto na rota entre a rede do Office e a porta frontal atual do Office 365. Para obter mais informações, consulte [princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md).
+Pode haver vários motivos para esta condição, incluindo latência na rede corporativa ou no provedor de Internet, afunilamentos ou problemas de design de arquitetura. Examine a latência entre cada salto na rota entre a rede do Office e a porta frontal do Microsoft 365 atual. Para obter mais informações, consulte [princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md).
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Uso de uma porta frontal de serviço do Exchange Online não ideal
 
@@ -122,7 +122,7 @@ Para melhorar as velocidades de download, a largura de banda pode precisar ser a
 
 ## <a name="china-user-optimal-network-egress"></a>Saída de rede ideal para o usuário da China
 
-Esta percepção será exibida se sua organização tiver usuários na China se conectarem ao seu locatário do Office 365 em outros locais geográficos. 
+Esta percepção será exibida se sua organização tiver usuários na China se conectarem ao seu locatário do Microsoft 365 em outros locais geográficos. 
 
 ### <a name="what-does-this-mean"></a>Cenário
 
@@ -145,8 +145,8 @@ Para obter mais informações sobre como reduzir problemas de desempenho relacio
 
 [Recomendações de desempenho de rede no centro de administração do Microsoft 365 (versão prévia)](office-365-network-mac-perf-overview.md)
 
-[Avaliação de rede do Office 365 (versão prévia)](office-365-network-mac-perf-score.md)
+[Avaliação de rede do Microsoft 365 (versão prévia)](office-365-network-mac-perf-score.md)
 
-[Ferramenta de integração de rede do Office 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
+[Teste de conectividade do Microsoft 365 no centro de administração do M365 (versão prévia)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Serviços de local de conectividade de rede do Office 365 (versão prévia)](office-365-network-mac-location-services.md)
+[Serviços de local de conectividade de rede da Microsoft 365 (versão prévia)](office-365-network-mac-location-services.md)

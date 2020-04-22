@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descreve a sincronização de diretório com o Office 365, limpeza de serviços de domínio do Active Directory e a ferramenta Azure Active Directory Connect.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841758"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580928"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Identidade híbrida e sincronização de diretório para o Office 365
 
@@ -69,7 +69,7 @@ Com a sincronização de hash de senha (PHS), você sincroniza suas contas de us
 
 Quando as senhas são alteradas ou redefinidas no local, os novos hashes de senha são sincronizados com o Azure AD para que os usuários sempre possam usar a mesma senha para recursos de nuvem e recursos locais. As senhas do usuário nunca são enviadas para o Azure AD ou armazenadas no Azure AD em texto não criptografado. Alguns recursos premium do Azure AD, como proteção de identidade, exigem PHS independentemente do método de autenticação selecionado.
   
-Consulte [escolher PHS](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para saber mais.
+Consulte [escolher PHS](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) para saber mais.
   
 #### <a name="pass-through-authentication"></a>Autenticação de passagem
 
@@ -81,15 +81,15 @@ O PTA permite que os usuários entrem em recursos e aplicativos locais e do Offi
 
 PTA também é para organizações com um requisito de segurança para impor imediatamente os Estados de conta de usuário local, as diretivas de senha e o horário de logon. 
   
-Consulte [escolher PTA](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para saber mais.
+Consulte [escolher PTA](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) para saber mais.
   
 ### <a name="federated-authentication"></a>Autenticação federada
 
 A autenticação federada é principalmente para grandes organizações corporativas com requisitos de autenticação mais complexos. As identidades do AD DS são sincronizadas com o Office 365 e as contas de usuários são gerenciadas no local. Com a autenticação federada, os usuários têm a mesma senha no local e na nuvem, e não precisam entrar novamente para usar o Office 365. 
 
-A autenticação federada pode dar suporte a requisitos de autenticação adicionais, como a autenticação com base em Smartcard ou uma autenticação multifator de terceiros, e normalmente é necessária quando as organizações têm um requisito de autenticação não com suporte nativo pelo Azure AD.
+A autenticação federada pode dar suporte a requisitos de autenticação adicionais, como a autenticação com base em Smartcard ou uma autenticação multifator de terceiros e geralmente é necessária quando as organizações têm um requisito de autenticação não suportado nativamente pelo Azure AD.
  
-Consulte [escolhendo autenticação federada](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) para saber mais.
+Consulte [escolhendo autenticação federada](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) para saber mais.
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Provedores de autenticação e identidade de terceiros
 

@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Discute por que a otimização de rede é importante para serviços SaaS, a meta da rede do Office 365 e como o SaaS requer redes diferentes de outras cargas de trabalho.
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844352"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612881"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Visão geral da conectividade de rede do Office 365
 
@@ -33,9 +33,9 @@ Neste artigo, você aprenderá sobre as metas da rede do Office 365 e por que a 
 
 ## <a name="office-365-networking-goals"></a>Metas de rede do Office 365
 
-O objetivo final da rede 365 do Office é otimizar a experiência do usuário final, habilitando o acesso menos restritivo entre os clientes e os pontos de extremidade do Office 365 mais próximos. A qualidade da experiência do usuário final está diretamente relacionada ao desempenho e à capacidade de resposta do aplicativo que o usuário está usando. Por exemplo, o Microsoft Teams depende de baixa latência para que as chamadas telefônicas de usuário, conferências e colaborações de tela compartilhada estejam sem problemas e o Outlook dependa de uma grande conectividade de rede para recursos de pesquisa instantânea que aproveitam a indexação do lado do servidor e o AI poderosos.
+O objetivo final da rede 365 do Office é otimizar a experiência do usuário final, habilitando o acesso menos restritivo entre os clientes e os pontos de extremidade do Office 365 mais próximos. A qualidade da experiência do usuário final está diretamente relacionada ao desempenho e à capacidade de resposta do aplicativo que o usuário está usando. Por exemplo, o Microsoft Teams depende de baixa latência para que as chamadas telefônicas de usuário, conferências e colaborações de tela compartilhada estejam sem problemas e o Outlook dependa da grande conectividade de rede para recursos de pesquisa instantânea que aproveitam os recursos de indexação do servidor e AI.
 
-O objetivo principal no design de rede deve ser minimizar a latência reduzindo o tempo de ida e volta (RTT) de máquinas clientes para a rede global da Microsoft, o backbone de rede pública da Microsoft que faz a conexão de todos os datacenters da Microsoft com baixa latência , pontos de entrada de aplicativos de nuvem de alta disponibilidade espalhados pelo mundo. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+O objetivo principal no design de rede deve ser minimizar a latência, reduzindo o tempo de ida e volta (RTT) de máquinas clientes para a rede global da Microsoft, o backbone de rede pública da Microsoft que faz a conexão de todos os datacenters da Microsoft com a baixa latência e pontos de entrada do aplicativo de nuvem de alta disponibilidade espalhados pelo mundo. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Otimizar o desempenho de rede do Office 365 não precisa ser complicado. Você pode obter o melhor desempenho possível, seguindo alguns princípios fundamentais:
 
@@ -49,7 +49,7 @@ Para obter mais informações sobre os princípios de conectividade de rede do O
 
 Os princípios de arquitetura de rede tradicionais para cargas de trabalho do cliente/servidor são projetados em torno da pressuposição de que o tráfego entre os clientes e os pontos de extremidade não é estendido fora do perímetro da rede corporativa. Além disso, em muitas redes corporativas, todas as conexões de saída da Internet atravessam a rede corporativa e saem de um local central.
 
-Nas arquiteturas de rede tradicionais, a maior latência para o tráfego de Internet genérico é uma compensação necessária para manter a segurança do perímetro de rede, e a otimização de desempenho para o tráfego da Internet geralmente envolve a atualização ou a expansão do equipamento em pontos de saída de rede. No entanto, essa abordagem não aborda os requisitos para o desempenho ideal da rede de serviços SaaS como o Office 365.
+Nas arquiteturas de rede tradicionais, a maior latência para o tráfego de Internet genérico é uma compensação necessária para manter a segurança do perímetro de rede, e a otimização de desempenho para o tráfego da Internet geralmente envolve a atualização ou o dimensionamento do equipamento em pontos de saída de rede. No entanto, essa abordagem não aborda os requisitos para o desempenho ideal da rede de serviços SaaS como o Office 365.
 
 ## <a name="identifying-office-365-network-traffic"></a>Identificando o tráfego de rede do Office 365
 
@@ -116,7 +116,7 @@ Otimizar o desempenho da rede do Office 365 é muito bem a remover impedimentos 
 
 [Redes de Distribuição de Conteúdo](content-delivery-networks.md)
 
-[Ferramenta de integração de rede do Office 365](https://aka.ms/netonboard)
+[Teste de conectividade do Microsoft 365](https://aka.ms/netonboard)
 
 [Como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

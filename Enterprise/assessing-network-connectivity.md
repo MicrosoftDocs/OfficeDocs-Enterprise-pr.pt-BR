@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: O Office 365 foi projetado para permitir que clientes em todo o mundo se conectem ao serviço usando uma conexão com a Internet. À medida que o serviço evolui, a segurança, o desempenho e a confiabilidade do Office 365 são aprimorados com base nos clientes que usam a Internet para estabelecer uma conexão com o serviço.
-ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c818cc959910e57f25f20ef6d1c4d3992a2330a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844692"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612861"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Avaliando a conectividade de rede do Office 365
 
@@ -44,7 +44,7 @@ Alguns recursos para ajudá-lo a avaliar sua rede:
 - Confira [visão geral da conectividade de rede do office 365](office-365-networking-overview.md) para obter informações conceituais sobre a rede do Office 365.
 - Confira os [princípios de conectividade de rede do office 365](https://aka.ms/o365networkingprinciples) para entender os princípios de conectividade para o gerenciamento seguro do tráfego do Office 365 e obter o melhor desempenho possível.
 - Inscreva-se no [Microsoft FastTrack](https://www.microsoft.com/fasttrack) para obter assistência interativa com o planejamento, design e implantação do Office 365. 
-- Consulte a seção [ferramenta de integração de rede do Office 365](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) abaixo para executar os testes de conectividade básicos que fornecem orientações específicas sobre as melhorias de conectividade de rede que podem ser feitas entre um determinado local de usuário e o Office 365.
+- Consulte a seção de [teste de conectividade do Microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) abaixo para executar os testes de conectividade básicos que fornecem orientações específicas sobre as melhorias de conectividade de rede que podem ser feitas entre um determinado local de usuário e o Office 365.
 
 > [!NOTE]
 > A autorização da Microsoft é necessária para usar o ExpressRoute para o Office 365. A Microsoft revisa cada solicitação de cliente e autoriza apenas o ExpressRoute para o uso do Office 365 quando o requisito normativo de um cliente exige conectividade direta. Se você tiver esses requisitos, forneça o trecho de texto e o link da Web para a regulamentação que você interpreta para indicar que a conectividade direta é necessária no [formulário de solicitação do ExpressRoute para Office 365](https://aka.ms/O365ERReview) para começar a análise da Microsoft. Assinaturas não autorizadas tentando criar filtros de roteamento para o Office 365 receberão uma [mensagem de erro](https://support.microsoft.com/kb/3181709).
@@ -59,9 +59,9 @@ Principais pontos a serem considerados ao planejar sua avaliação de rede para 
 
 Se você estiver avaliando o Office 365 e não tiver certeza de onde começar com sua avaliação de rede ou se encontrou desafios de design de rede que precisa de ajuda para superar, trabalhe com sua equipe de conta da Microsoft.
 
-## <a name="the-office-365-network-onboarding-tool"></a>A ferramenta de integração de rede do Office 365
+## <a name="the-microsoft-365-connectivity-test"></a>O teste de conectividade 365 da Microsoft
 
-A [ferramenta de integração de rede do Office 365](https://aka.ms/netonboard) é uma ferramenta de avaliação de rede de verificação de conceito (VDC) que executa testes de conectividade básicos em seu locatário do Office 365 e faz recomendações de design de rede específicas para o desempenho ideal do Office 365. A ferramenta realça as escolhas de design de perímetro de rede corporativa comuns, que são úteis para a navegação na Web da Internet, mas afetam o desempenho de aplicativos SaaS grandes, como o Office 365.
+O [teste de conectividade do Microsoft 365](https://aka.ms/netonboard) é uma ferramenta de avaliação de rede de verificação de conceito (VDC) que executa testes de conectividade básicos em seu locatário do Office 365 e faz recomendações de design de rede específicas para o desempenho ideal do Office 365. A ferramenta realça as escolhas de design de perímetro de rede corporativa comuns, que são úteis para a navegação na Web da Internet, mas afetam o desempenho de aplicativos SaaS grandes, como o Office 365.
 
 A ferramenta de integração de rede faz o seguinte:
 
@@ -103,7 +103,7 @@ O aplicativo para download de testes avançados fornece as seguintes informaçõ
 - Testes de conectividade para vários pontos de extremidade específicos do recurso
 - Diagnóstico de caminho de rede que inclui dados de tracert e latência para o Exchange Online, SharePoint Online e serviços do teams
 
-Você pode ler sobre a ferramenta de integração de rede do Office 365 e fornecer comentários na [ferramenta de integração de rede do office 365 atualizada com a nova](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) postagem do blog de recomendações de design de rede. As informações sobre atualizações futuras para esta ferramenta e outras atualizações de rede do Office 365 serão publicadas no blog de [rede do office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
+Você pode ler sobre o teste de conectividade do 365 da Microsoft e fornecer comentários na atualização atualizada do blog de [teste de conectividade 365 da Microsoft com novas recomendações de design de rede](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) . As informações sobre atualizações futuras para esta ferramenta e outras atualizações de rede do Office 365 serão publicadas no blog de [rede do office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
   
 Aqui está um link curto que você pode usar para voltar: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
