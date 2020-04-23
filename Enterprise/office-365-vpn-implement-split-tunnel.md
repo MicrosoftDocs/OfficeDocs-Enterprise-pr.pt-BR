@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como implementar o tunelamento dividido de VPN para o Office 365
-ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612921"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementando o tunelamento dividido de VPN para Office 365
 
@@ -248,7 +248,7 @@ Você também pode saber mais sobre os controles de segurança modernos em cená
 
 Quando a política estiver em vigor, confirme se ela está funcionando conforme o esperado. Há várias maneiras de testar se a trajetória está corretamente configurada para usar a conexão de Internet local:
 
-- Execute a [Ferramenta de integração de rede do Office 365](https://aka.ms/netonboard) que executará testes de conectividade para você, incluindo rastreamento de rotas, como acima. Também adicionamos os testes de VPN a essas ferramentas, e isso também devem fornecer outras ideias.
+- Execute o [Teste de conectividade do Microsoft 365](https://aka.ms/netonboard) que executará testes de conectividade para você, incluindo rastreamento de rotas, como o acima. Também adicionamos os testes de VPN a essas ferramentas, e isso também devem fornecer outras ideias.
 
 - Um rastreamento simples para um nó de extremidade no escopo do túnel dividido deve mostrar o caminho percorrido, por exemplo:
 

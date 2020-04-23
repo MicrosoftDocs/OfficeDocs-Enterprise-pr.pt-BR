@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Diretrizes para o uso de túnel dividido de VPN com o Office 365 para otimizar a conectividade do Office 365 para usuários remotos.
-ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: ac3964146b23ac03bc5bd104c7cd359e94a1a06b
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547649"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612851"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Otimizar a conectividade do Office 365 para usuários remotos usando o túnel dividido de VPN
 <!---
@@ -115,4 +115,4 @@ Em muitos casos, esta implementação pode ser alcançada em questão de horas, 
 
 [Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
 
-[Ferramenta de integração de rede do Office 365](https://aka.ms/netonboard)
+[Teste de conectividade do Microsoft 365](https://aka.ms/netonboard)
