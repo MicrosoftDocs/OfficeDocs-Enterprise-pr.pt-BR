@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: use estes Guias de Laboratório de Teste (TLGs) para configurar demonstração, prova de conceito ou ambientes de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 133f31dd46555ac7d80c2fcc5f3756da967cb331
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845022"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793684"
 ---
 # <a name="test-office-365-with-test-lab-guides-tlgs"></a>Testar o Office 365 com os Guias de Laboratório de Teste (TLGs)
 
@@ -52,6 +52,6 @@ Para obter mais TLGs que se apliquem ao Office 365 e ao Microsoft 365, clique [a
     
 ## <a name="see-also"></a>Confira também
 
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
   
 [Soluções híbridas](hybrid-solutions.md)

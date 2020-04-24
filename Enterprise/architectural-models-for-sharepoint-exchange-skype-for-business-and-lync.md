@@ -20,12 +20,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Resumo: obtenha os cartazes de TI que descrevem os modelos de arquitetura, implantação e opções de plataforma para o SharePoint, o Exchange, o Skype for Business e o Lync.'
-ms.openlocfilehash: eb5aefb46fa46eda1be71db76b533743a4b73669
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 3b0eb977754b86d626153d38d0d79e718dedfcdc
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844722"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793694"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync
 
@@ -197,7 +197,7 @@ Estes cartazes de TI mostram soluções baseadas em Azure usando o SharePoint Se
 ## <a name="see-also"></a>Confira também
 
 
-[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
   
