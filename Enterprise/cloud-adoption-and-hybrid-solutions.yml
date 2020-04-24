@@ -1,0 +1,32 @@
+### YamlMime:Landing
+title: Documentação de soluções de nuvem corporativa
+summary: Solucionar problemas de negócios usando o Microsoft Cloud. Encontre informações sobre as mais recentes soluções de nuvem híbridas e de segurança, adoção em nuvem e muito mais.
+metadata:
+  title: Documentação de soluções de nuvem corporativa | Microsoft docs
+  description: Solucione problemas de negócios usando o Microsoft Cloud. Encontre as informações mais recentes sobre soluções de nuvem híbridas e de segurança, adoção de nuvem e muito mais.
+  ms.service: o365-solutions
+  ms.topic: landing-page
+  author: chenhao2020
+  ms.author: v-chenha
+  ms.date: 03/18/2020
+  ms.openlocfilehash: c5743dc8df8ba5487faf1e44609d766dcb49bac4
+  ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+  ms.translationtype: MT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 04/23/2020
+  ms.locfileid: "43794046"
+landingContent:
+- title: Soluções de nuvem empresarial
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Recursos de arquitetura de TI do Microsoft Cloud
+      url: /office365/enterprise/microsoft-cloud-it-architecture-resources
+    - text: Modelos de arquitetura
+      url: /office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync
+    - text: Guias do laboratório de teste
+      url: /office365/enterprise/cloud-adoption-test-lab-guides-tlgs
+    - text: Soluções híbridas
+      url: /office365/enterprise/hybrid-solutions
+    - text: Soluções de segurança
+      url: /office365/enterprise/security-solutions

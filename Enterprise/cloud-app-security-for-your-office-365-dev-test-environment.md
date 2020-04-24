@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Resumo: Configure e demonstre o Office 365 Cloud app Security no seu ambiente de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840798"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793714"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Segurança de Aplicativo na Nuvem para o ambiente de desenvolvimento/teste do Office 365
 
  **Resumo:** Configure e demonstre o Office 365 Cloud app Security no seu ambiente de desenvolvimento/teste do Office 365.
   
-O Office 365 Cloud app Security, anteriormente conhecido como gerenciamento de segurança avançada do Office 365, permite que você crie políticas que monitoram e informam sobre atividades suspeitas em sua assinatura do Office 365, para que você possa investigar e realizar a possível correção ação. Para obter mais informações, consulte [Overview of Cloud app Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+O Office 365 Cloud app Security, anteriormente conhecido como gerenciamento de segurança avançado do Office 365, permite que você crie políticas que monitoram e informam sobre atividades suspeitas em sua assinatura do Office 365, para que você possa investigar e realizar possíveis ações de correção. Para obter mais informações, consulte [Overview of Cloud app Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Com as instruções deste artigo, você habilita e testa o Cloud app Security na sua assinatura de avaliação do Office 365.
   
@@ -165,7 +165,7 @@ Agora você pode usar esse ambiente para criar novas políticas e experimentar m
   
 [Ambiente de desenvolvimento/teste do Office 365](office-365-dev-test-environment.md)
   
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
 
 [Visão geral do Cloud app Security no Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumo: Configure os servidores proxy de aplicativo Web para a autenticação federada de alta disponibilidade para o Office 365 no Microsoft Azure.'
-ms.openlocfilehash: 9dedf8197cc24f82d516b75ecf29caca6d1f09b4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac7b43daea832d4283404605fbb8ccb46e6cc76c
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840158"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793804"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Autenticação federada de alta disponibilidade Fase 4: configurar proxies de aplicativos Web
 
@@ -168,5 +168,5 @@ Veja a seguir a configuração resultante da conclusão bem-sucedida dessa fase,
   
 [Identidade federada para seu ambiente de desenvolvimento e teste do Office 365](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
 

@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumo: usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como criar e implementar esta solução.'
-ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d448ae31c31238f1cf5ef97ff79e6ec97fda60a1
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841178"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793704"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de desastres do SharePoint Server 2013 no Microsoft Azure
 
@@ -409,7 +409,7 @@ Você deve iniciar um rastreamento completo para cada fonte de conteúdo para re
   
 Para iniciar um rastreamento completo, conclua as seguintes etapas:
   
-1. Na administração central do SharePoint 2013, vá para **** > **aplicativos** > de serviço de gerenciamento de aplicativos**gerenciar aplicativos de serviço**e clique no aplicativo de serviço de pesquisa que você deseja rastrear.
+1. Na administração central do SharePoint 2013, vá para **Application Management** > **aplicativos** > de serviço de gerenciamento de aplicativos**gerenciar aplicativos de serviço**e clique no aplicativo de serviço de pesquisa que você deseja rastrear.
     
 2. Na página **Administração da pesquisa** , clique em **fontes de conteúdo**, aponte para a fonte de conteúdo que você deseja, clique na seta e, em seguida, clique em **Iniciar rastreamento completo**.
     
@@ -646,7 +646,7 @@ Ipconfig /flushdns
   
 ## <a name="see-also"></a>Confira também
 
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.md)
+[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
 
 
 
