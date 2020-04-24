@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: Locais dos dados do Office 365'
-ms.openlocfilehash: 7f7804c74eaf6122b59385abd79934157ae47062
-ms.sourcegitcommit: b2d1dbc42ceafad1b583df59c1b4be55e35beb44
+ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772472"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798812"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 As tabelas abaixo mostram onde os dados do cliente são armazenados em repouso para os serviços do Office 365 em todos os locais de nuvem global da Microsoft. Expanda o local do endereço de cobrança do seu país/região para descobrir onde os dados do cliente de cada serviço seriam armazenados.
 
-Os clientes podem exibir informações específicas dos locais dos dados do locatário no Centro de Administração do Office 365 em **Configurações | Perfil da organização | Cartão do local dos dados**.
+Os clientes devem exibir informações específicas dos locais dos dados do locatário no Centro de Administração do Office 365 em **Configurações | Perfil da organização | Cartão do local dos dados**.
 
 Os novos locatários do Office 365 são padronizados para a localização geográfica baseada no país/região da transação associada à primeira assinatura do locatário.
 
@@ -230,7 +230,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 2 – Pacífico Asiático |
 | SharePoint Online | Geografia Global 2 – Pacífico Asiático |
 | Skype for Business | Geografia Global 2 – Pacífico Asiático |
-| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
+| Microsoft Teams | Estados Unidos |
 | Office Online &amp; Mobile | Geografia Global 2 – Pacífico Asiático |
 | EOP | Geografia Global 2 – Pacífico Asiático |
 | MyAnalytics | Geografia Global 2 – Pacífico Asiático |
@@ -391,7 +391,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -874,7 +874,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 2 – Pacífico Asiático |
 | SharePoint Online | Geografia Global 2 – Pacífico Asiático |
 | Skype for Business | Geografia Global 2 – Pacífico Asiático |
-| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Geografia Global 2 – Pacífico Asiático |
 | EOP | Geografia Global 2 – Pacífico Asiático |
 | MyAnalytics | Geografia Global 2 – Pacífico Asiático |
@@ -1771,7 +1771,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 3 – Américas |
 | SharePoint Online | Geografia Global 3 – Américas |
 | Skype for Business | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Geografia Global 3 – Américas |
 | EOP | Geografia Global 3 – Américas |
 | MyAnalytics | Geografia Global 3 – Américas |
@@ -1828,29 +1828,6 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | Stream | Geografia Global 2 – Pacífico Asiático |
 | Quadro de comunicações | Estados Unidos |
 | Formulários | Estados Unidos |
-| Workplace Analytics | Estados Unidos |
-</p></details>
-
-## <a name="federated-states-of-micronesia"></a>Estados Federados da Micronésia
-<details><summary>Clique para expandir</summary><p>
-
-| Serviço | Local |
-| --- | --- |
-| Exchange Online | Geografia Global 1 – EMEA |
-| OneDrive for Business | Geografia Global 1 – EMEA |
-| SharePoint Online | Geografia Global 1 – EMEA |
-| Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
-| Office Online &amp; Mobile | Geografia Global 1 – EMEA |
-| EOP | Geografia Global 1 – EMEA |
-| MyAnalytics | Geografia Global 1 – EMEA |
-| Planner | Geografia Global 1 – EMEA |
-| Sway | Estados Unidos |
-| Yammer | Geografia Global 1 – EMEA |
-| Serviços do OneNote | Geografia Global 1 – EMEA |
-| Stream | Geografia Global 1 – EMEA |
-| Quadro de comunicações | Estados Unidos |
-| Formulários | Geografia Global 1 – EMEA |
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
@@ -2047,7 +2024,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -2162,7 +2139,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype for Business | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | MyAnalytics | Estados Unidos |
@@ -2806,7 +2783,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -2944,7 +2921,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -3979,7 +3956,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -4025,7 +4002,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 2 – Pacífico Asiático |
 | SharePoint Online | Geografia Global 2 – Pacífico Asiático |
 | Skype for Business | Geografia Global 2 – Pacífico Asiático |
-| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Geografia Global 2 – Pacífico Asiático |
 | EOP | Geografia Global 2 – Pacífico Asiático |
 | MyAnalytics | Geografia Global 2 – Pacífico Asiático |
@@ -4278,7 +4255,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -4462,7 +4439,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype for Business | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | MyAnalytics | Estados Unidos |
@@ -4485,7 +4462,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype for Business | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | MyAnalytics | Estados Unidos |
@@ -4761,7 +4738,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype for Business | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | MyAnalytics | Estados Unidos |
@@ -4899,7 +4876,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Estados Unidos |
 | SharePoint Online | Estados Unidos |
 | Skype for Business | Estados Unidos |
-| Microsoft Teams | Estados Unidos |
+| Microsoft Teams | Geografia Global 1 – EMEA |
 | Office Online &amp; Mobile | Estados Unidos |
 | EOP | Estados Unidos |
 | MyAnalytics | Estados Unidos |
@@ -5106,7 +5083,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -5336,7 +5313,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
@@ -5589,7 +5566,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | OneDrive for Business | Geografia Global 1 – EMEA |
 | SharePoint Online | Geografia Global 1 – EMEA |
 | Skype for Business | Geografia Global 1 – EMEA |
-| Microsoft Teams | Geografia Global 1 – EMEA |
+| Microsoft Teams | Geografia Global 2 – Pacífico Asiático |
 | Office Online &amp; Mobile | Geografia Global 1 – EMEA |
 | EOP | Geografia Global 1 – EMEA |
 | MyAnalytics | Geografia Global 1 – EMEA |
