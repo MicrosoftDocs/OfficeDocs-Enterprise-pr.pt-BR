@@ -17,24 +17,24 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Diretrizes para o uso de túnel dividido de VPN com o Office 365 para otimizar a conectividade do Office 365 para usuários remotos.
-ms.openlocfilehash: ac3964146b23ac03bc5bd104c7cd359e94a1a06b
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612851"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803977"
 ---
-# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Otimizar a conectividade do Office 365 para usuários remotos usando o túnel dividido de VPN
+# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Otimizar a conectividade do Office 365 dos usuários remotos usando o túnel dividido da VPN
 <!---
 >[!NOTE]
 >This topic is part of a set of topics that address Office 365 optimization for remote users.
->- For VPN split tunnel implementation guidance, see [Implementing VPN split tunnelling for Office 365](office-365-vpn-implement-split-tunnel.md).
+>- For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
 Para os clientes que conectam os dispositivos de funcionários remotos à rede corporativa ou à infraestrutura de nuvem através de VPN, a Microsoft recomenda que os principais cenários do Office 365, **Microsoft Teams**, **SharePoint Online** e **Exchange Online** sejam roteados através de uma configuração de _túnel dividido de VPN_. Isso se torna especialmente importante como a estratégia de primeira linha para facilitar a produtividade contínua dos funcionários durante eventos de trabalho em casa em larga escala, como a crise da COVID-19.
 
-![Configuração de VPN de túnel dividido](media/vpn-split-tunnelling/vpn-model-2.png)
+![Configuração de VPN de túnel dividido](media/vpn-split-tunneling/vpn-model-2.png)
 
 _Figura 1: uma solução VPN de túnel dividido com exceções definidas do Office 365, enviada diretamente para o serviço. Todo o tráfego restante atravessa o túnel VPN, independentemente do destino._
 
@@ -46,7 +46,7 @@ A essência dessa abordagem é fornecer um método simples para as empresas dimi
 
 - Pode ser configurado, testado e implementado rapidamente pelos clientes, sem requisitos adicionais de infraestrutura ou aplicativos
 
-  Dependendo da plataforma VPN e da arquitetura de rede, a implementação pode levar apenas algumas horas. Para obter mais informações, confira [Implementar o túnel divido de VPN](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunnelling).
+  Dependendo da plataforma VPN e da arquitetura de rede, a implementação pode levar apenas algumas horas. Para obter mais informações, confira [Implementar o túnel divido de VPN](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
 - Preserva a postura de segurança das implementações de VPN do cliente, não alterando a forma como outras conexões são roteadas, incluindo o tráfego da Internet
 
@@ -59,13 +59,13 @@ A essência dessa abordagem é fornecer um método simples para as empresas dimi
 >[!TIP]
 >A Microsoft recomenda a configuração de VPN de túnel dividido em intervalos de IP dedicados e documentados para serviços do Office 365. As configurações de túnel dividido de FQDN ou baseadas no AppID, embora possível em determinadas plataformas de cliente VPN, podem não abranger todos os cenários essenciais do Office 365 e podem entrar em conflito com regras de roteamento VPN baseadas em IP. Por esse motivo, a Microsoft não recomenda usar os FQDNs do Office 365 para configurar a VPN de túnel dividido. O uso da configuração de FQDN pode ser útil em outros cenários relacionados, como personalizações de arquivos .pac ou para implementar um proxy ignorável.
 
-Para obter diretrizes completas de implementação, confira [Implementando o túnel dividido de VPN para Office 365](office-365-vpn-implement-split-tunnel.md).
+Para obter diretrizes completas de implementação, confira [Implementar o túnel dividido de VPN para Office 365](office-365-vpn-implement-split-tunnel.md).
 
 ## <a name="the-vpn-split-tunnel-strategy"></a>A estratégia de túnel dividido VPN
 
 Geralmente, as redes corporativas tradicionais são projetadas para trabalhar de forma segura no mundo da nuvem, em que os dados, os serviços e os aplicativos mais importantes estão hospedados no local e podem ser conectados diretamente à rede corporativa interna, como a maioria dos usuários. Assim, a infraestrutura de rede é construída em torno desses elementos, em que as filiais estão conectadas à sede através de redes _MPLS (Multiprotocol Label Switching)_, e os usuários remotos se conectam à rede corporativa através de uma VPN para acessar os pontos de extremidade locais e a Internet. Nesse modelo, todo o tráfego de usuários remotos passa pela rede corporativa e é direcionado para o serviço de nuvem por meio de um ponto de saída comum.
 
-![Configuração de VPN forçada](media/vpn-split-tunnelling/vpn-model-1.png)
+![Configuração de VPN forçada](media/vpn-split-tunneling/vpn-model-1.png)
 
 _Figura 2: uma solução de VPN comum para usuários remotos onde todo o tráfego é forçado de volta para a rede corporativa, independentemente do destino_
 
@@ -88,13 +88,13 @@ Este conjunto de pontos de extremidade com um escopo apertado pode ser dividido 
 
 Elementos de segurança como DLP, proteção antivírus, autenticação e controle de acesso podem ser entregues de forma muito mais eficiente em relação a esses pontos de extremidades em diferentes camadas dentro do serviço. Como também desviamos a maior parte do volume de tráfego da solução VPN, isto libera a capacidade do VPN para o tráfego crítico do negócio que ainda depende dele. Isso também deve eliminar a necessidade, em muitos casos, de passar por um longo e dispendioso programa de atualização para lidar com essa nova maneira de operar.
 
-![Configuração de VPN de túnel dividido](media/vpn-split-tunnelling/vpn-model-2.png)
+![Configuração de VPN de túnel dividido](media/vpn-split-tunneling/vpn-model-2.png)
 
 _Figura 3: uma solução VPN de túnel dividido com exceções definidas do Office 365, enviada diretamente para o serviço. Todo o restante tráfego é forçado a voltar para a rede corporativa, independentemente do destino._
 
-Do ponto de vista da segurança, a Microsoft tem uma série de recursos de segurança que podem ser usados para fornecer segurança semelhante, ou mesmo melhor do que aquela entregue pela inspeção inline por pilhas de segurança locais. A postagem do blog da equipe de segurança da Microsoft [Maneiras alternativas para profissionais de segurança e TI alcançarem controles de segurança modernos nos cenários atuais de trabalho remoto](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/), tem um resumo claro dos recursos disponíveis e você encontrará uma orientação mais detalhada neste artigo. Você também pode ler sobre a implementação da Microsoft de túneis divididos de VPN em [Trabalhando no VPN: como a Microsoft mantém sua força de trabalho remota conectada](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
+Do ponto de vista da segurança, a Microsoft tem uma série de recursos de segurança que podem ser usados para fornecer segurança semelhante, ou mesmo melhor do que aquela entregue pela inspeção inline por pilhas de segurança locais. A postagem do blog da equipe de segurança da Microsoft [Maneiras alternativas para profissionais de segurança e TI alcançarem controles de segurança modernos nos cenários atuais de trabalho remoto](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/), tem um resumo claro dos recursos disponíveis e você encontrará uma orientação mais detalhada neste artigo. Você também pode ler sobre a implementação da Microsoft de túneis divididos de VPN em [Trabalhando com VPN: como a Microsoft mantém sua força de trabalho remota conectada](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
-Em muitos casos, esta implementação pode ser alcançada em questão de horas, permitindo uma solução rápida de um dos problemas mais urgentes que as organizações enfrentam à medida que mudam rapidamente para o trabalho remoto em escala real. Para obter orientações sobre a implementação de túneis divididos de VPN, confira [Implementando o túnel dividido de VPN para Office 365](office-365-vpn-implement-split-tunnel.md).
+Em muitos casos, esta implementação pode ser alcançada em questão de horas, permitindo uma solução rápida de um dos problemas mais urgentes que as organizações enfrentam à medida que mudam rapidamente para o trabalho remoto em escala real. Para obter orientações sobre a implementação de túneis divididos de VPN, confira [Implementar o túnel dividido de VPN para Office 365](office-365-vpn-implement-split-tunnel.md).
 
 >[!NOTE]
 >A Microsoft tem o compromisso de suspender as alterações feitas para **Otimizar** os pontos de extremidade do Office 365 até pelo menos **30 de junho de 2020**, permitindo que os clientes se concentrem em outros desafios, em vez de manter a lista de permissões dos pontos de extremidade, uma vez implementada inicialmente.
