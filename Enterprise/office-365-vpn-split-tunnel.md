@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Diretrizes para o uso de túnel dividido de VPN com o Office 365 para otimizar a conectividade do Office 365 para usuários remotos.
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803977"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901214"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Otimizar a conectividade do Office 365 dos usuários remotos usando o túnel dividido da VPN
 <!---
@@ -75,11 +75,12 @@ A crise da COVID-19 agravou esse problema, exigindo soluções imediatas pela ma
 
 Para o serviço do Office 365, a Microsoft desenvolveu os requisitos de conectividade para esse serviço tendo esse problema em mente, onde um focado conjunto de pontos de extremidade, fortemente controlado e relativamente estático pode ser otimizado de forma muito simples e rápida. De modo que ofereça alto desempenho aos usuários que acessam o serviço e reduzir a carga sobre a infraestrutura de VPN, para que ela possa ser usada pelo tráfego que ainda o requer.
 
-O Office 365 categoriza os pontos de extremidade necessários para o Office 365 em três categorias: **Optimizar**, **Permitir** e **Padrão**. **Otimizar** os pontos de extremidade é o nosso foco aqui e têm as seguintes características:
+O Office 365 categoriza os pontos de extremidade necessários para o Office 365 em três categorias: **Otimizar**, **Permitir** e **Padrão**. **Otimizar** os pontos de extremidade é o nosso foco aqui e têm as seguintes características:
 
 - São pontos de extremidade de propriedade e gerenciados peça Microsoft, hospedados na infraestrutura da Microsoft
+- São dedicados às cargas de trabalho principais do Office 365, como Exchange Online, SharePoint Online, Skype for Business Online e Microsoft Teams
 - Tem IPs fornecidos
-- Baixa taxa de alteração e espera-se que permaneça menor em número (atualmente 20 sub-redes de IP)
+- Baixa taxa de alteração e espera-se que permaneça menor em número (20 sub-redes de IP)
 - São sensíveis a alto volume e/ou latência
 - É possível ter os elementos de segurança necessários no serviço, em vez de embutido na rede
 - Representam aproximadamente 70-80% do volume de tráfego para o serviço do Office 365
