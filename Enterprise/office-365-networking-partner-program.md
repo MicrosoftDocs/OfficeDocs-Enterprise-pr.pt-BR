@@ -3,7 +3,7 @@ title: Programa de Parceiros de Redes do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/20/2018
+ms.date: 04/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,34 +16,27 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: O programa de parceria de rede do Office 365 permite que seu dispositivo se torne certificado como trabalhar com o Office 365.
 hideEdit: true
-ms.openlocfilehash: dc87d0a0f2dc6e39c1d1e03d3a5bb22fc499b540
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 43e6a302084fead71e1778b13dac835cc16f7183
+ms.sourcegitcommit: 93d0cc401c9d910e115072c0229232765fbad75e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842599"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939586"
 ---
 # <a name="office-365-networking-partner-program"></a>Programa de Parceiros de Redes do Office 365
 
-Moderno, escalonável, software como um serviço (SaaS) preparado para a nuvem, a conectividade de rede é fundamental para uma transformação digital bem-sucedida com o Microsoft Office 365.  
+A conectividade de rede tem um impacto direto na capacidade dos usuários de trabalhar rapidamente, colaborar de forma eficaz e simplificar os processos de negócios com o Office 365. Para os clientes em qualquer estágio de sua transformação digital, o design de rede é um aspecto crucial que deve ser abordado proativamente antes que os problemas afetem negativamente a experiência do usuário. 
 
-À medida que os clientes adotam o Office 365 para produtividade comercial, a Microsoft observou uma tendência comum de que o desempenho da rede e a experiência de colaboração resultante do usuário final no Office 365 seja diretamente influenciado pelas soluções de rede no caminho entre o usuário e Office 365.  
+Como os clientes adotam o Office 365 para produtividade comercial, a Microsoft observou uma tendência comum de que o desempenho da rede e a experiência de colaboração do usuário final resultante seja diretamente influenciado pelas soluções de rede no caminho entre o usuário e o Office 365. Para ajudar os parceiros a projetar soluções de rede ideais e a ajudar os clientes a tomar decisões informadas sobre essas soluções, construímos o programa de parceria de rede do Office 365. 
 
-Os clientes que começam sua jornada na nuvem são frequentemente desafiados com a transição das arquiteturas de rede e segurança de redes corporativas centradas no datacenter, do Hub, do spoke e do datacenter. E os clientes que se conectam ao Office 365 sobre redes legadas podem enfrentar problemas de desempenho ao usar os recursos de colaboração avançados no Office 365. A meta final dos clientes do Office 365 é modernizar e otimizar suas redes corporativas para oferecer uma experiência colaborativa de alto nível para seus funcionários e parceiros, simplificar o gerenciamento de ti e reduzir custos. 
+O programa de parceria de rede do Office 365 aprofunda nossa colaboração com os parceiros de rede e identifica os principais produtos e soluções que seguem os requisitos de rede do Office 365, recomendações e práticas recomendadas. O objetivo do programa de parceria de rede do Office 365 é facilitar a capacidade do cliente de aprimorar a experiência do Office 365 por meio da fácil descoberta de soluções de parceiros validadas que demonstram de forma consistente o alinhamento para os principais princípios da conectividade ideal do Office 365 em implantações de clientes.
 
-Para modernizar as redes corporativas para uma excelente conectividade com o Office 365, os clientes freqüentemente dependem de provedores de soluções de rede, serviços de segurança local ou em nuvem e integradores de sistema para planejar, projetar e implementar a conectividade de rede para a nuvem serviço. Os clientes normalmente perguntam à Microsoft se sua arquitetura e soluções de rede funcionam com o Office 365 e se eles se alinham com os [princípios de conectividade de rede da Microsoft para o Office 365](https://aka.ms/PNC).  
+Para modernizar as redes corporativas para uma excelente conectividade com o Office 365, os clientes freqüentemente dependem de provedores de soluções de rede, de serviços de segurança locais ou em nuvem, e de integradores de sistema para planejar, projetar e implementar a conectividade de rede para serviços de nuvem. Os clientes normalmente perguntam à Microsoft se sua arquitetura e soluções de rede funcionam com o Office 365 e se eles se alinham com os [princípios de conectividade de rede da Microsoft para o Office 365](https://aka.ms/PNC). 
 
-A Microsoft está comprometida em ajudar nossos clientes a criar e otimizar sua conectividade de arquitetura de rede para a melhor experiência do Office 365. A equipe do Office 365 está trabalhando com muitos parceiros da indústria de rede para ajudar a garantir que os principais princípios para a conectividade ideal estejam incorporados de forma nativa em seus produtos e soluções de rede. 
+O programa de parceria de rede do Office 365 ajuda a responder a essas perguntas e demonstra o compromisso da Microsoft de ajudar nossos clientes a criar e otimizar suas arquiteturas de rede para a melhor experiência do Office 365. A equipe do Office 365 está trabalhando com muitos parceiros da indústria de rede para ajudar a garantir que os principais princípios para a conectividade ideal estejam incorporados de forma nativa em seus produtos e soluções de rede.
 
-Com isso, vamos thrilled para anunciar o programa de parceria de rede do Office 365, com o objetivo de aprofundar a colaboração com os parceiros de rede e identificar os principais produtos e soluções que seguem os requisitos de rede do Office 365 da Microsoft, recomendações e práticas recomendadas. 
+O programa de parceria de rede do Office 365 designa soluções de rede qualificadas como "Works with Office 365". Somente dispositivos ou soluções que atendam aos requisitos rigorosos de teste da Microsoft, têm experiências contínuas com a configuração e demonstram uma experiência de rede de alta qualidade quando usado com o Office 365 receberá a designação "Works with Office 365". Essas soluções de parceiros validadas estão listadas na [página programa de parceria de rede do Office 365](https://www.microsoft.com/microsoft-365/partners/O365networkingpartners), juntamente com detalhes da solução e links para saber mais.
 
-O programa de parceria de rede do Microsoft Office 365 designa soluções de rede qualificadas como "Works with Office 365".  
+Se você for um cliente do Office 365, poderá tornar o seu provedor de soluções de rede ciente desse programa através desta [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP)página em.
 
-Somente dispositivos ou soluções que atendam aos requisitos rigorosos de teste da Microsoft, têm experiências contínuas com a configuração e demonstram uma experiência de rede de alta qualidade quando usado com o Office 365 receberá a designação "Works with Office 365".  
-
-No momento, vários provedores de soluções de rede estão trabalhando com a Microsoft para atender aos requisitos para receber a designação "Works with Office 365". Detalhes sobre como configurar essas soluções para obter a melhor conectividade e desempenho do Office 365 serão publicados nesta página.  
-
-Se você for um cliente do Office 365, poderá tornar o seu provedor de soluções de rede ciente desse programa através [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP)desse link.
-
-Para fornecedores de soluções de rede que desejem consultar o programa de parceria de rede do Office 365, [preencha este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u) e vamos tocar. Agradecemos seu interesse e estamos ansiosos para uma linda parceria. 
-
+Para fornecedores de soluções de rede que desejem consultar o programa de parceria de rede do Office 365, preencha [este formulário](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyMNEapKtzJHu98R0YXYz1RUN0QxSUVEWTdRVTdIV1RTWjIzOVk0QkE4US4u). Agradecemos seu interesse e estamos ansiosos para uma linda parceria.
