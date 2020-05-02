@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,30 +19,30 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Resumo: Use o Office 365 PowerShell para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 3b57862d78d8699da033ed016338a449650e7140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8cd3bd27f95c9d4191c24c7febc85c8fb2fb0118
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841668"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004734"
 ---
-# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a><span data-ttu-id="73e25-103">Atribuir funções a contas de usuário com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="73e25-103">Assign roles to user accounts with Office 365 PowerShell</span></span>
+# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a><span data-ttu-id="984b9-103">Atribuir funções a contas de usuário com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="984b9-103">Assign roles to user accounts with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="73e25-104">Você pode atribuir funções de forma rápida e fácil às contas de usuário usando o Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-104">You can quickly and easily assign roles to user accounts using Office 365 PowerShell.</span></span>
+<span data-ttu-id="984b9-104">Você pode atribuir funções de forma rápida e fácil às contas de usuário usando o Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-104">You can quickly and easily assign roles to user accounts using Office 365 PowerShell.</span></span>
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="73e25-105">Use o PowerShell do Azure Active Directory para o módulo do gráfico</span><span class="sxs-lookup"><span data-stu-id="73e25-105">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="984b9-105">Use o PowerShell do Azure Active Directory para o módulo do gráfico</span><span class="sxs-lookup"><span data-stu-id="984b9-105">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="73e25-106">Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) usando uma conta de administrador global.</span><span class="sxs-lookup"><span data-stu-id="73e25-106">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) using a global administrator account.</span></span>
+<span data-ttu-id="984b9-106">Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) usando uma conta de administrador global.</span><span class="sxs-lookup"><span data-stu-id="984b9-106">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) using a global administrator account.</span></span>
   
-<span data-ttu-id="73e25-107">Em seguida, determine o nome de entrada da conta de usuário que você deseja adicionar a uma função (exemplo: fredsm@contoso.com).</span><span class="sxs-lookup"><span data-stu-id="73e25-107">Next, determine the sign-in name of the user account that you want to add to a role (example: fredsm@contoso.com).</span></span> <span data-ttu-id="73e25-108">Isso também é conhecido como nome de usuário principal (UPN).</span><span class="sxs-lookup"><span data-stu-id="73e25-108">This is also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="984b9-107">Em seguida, determine o nome de entrada da conta de usuário que você deseja adicionar a uma função (exemplo: fredsm@contoso.com).</span><span class="sxs-lookup"><span data-stu-id="984b9-107">Next, determine the sign-in name of the user account that you want to add to a role (example: fredsm@contoso.com).</span></span> <span data-ttu-id="984b9-108">Isso também é conhecido como nome de usuário principal (UPN).</span><span class="sxs-lookup"><span data-stu-id="984b9-108">This is also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="73e25-109">Em seguida, determine o nome da função.</span><span class="sxs-lookup"><span data-stu-id="73e25-109">Next, determine the name of the role.</span></span> <span data-ttu-id="73e25-110">Use essa [lista de permissões de função de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="73e25-110">Use this [list of administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span></span>
+<span data-ttu-id="984b9-109">Em seguida, determine o nome da função.</span><span class="sxs-lookup"><span data-stu-id="984b9-109">Next, determine the name of the role.</span></span> <span data-ttu-id="984b9-110">Use essa [lista de permissões de função de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span><span class="sxs-lookup"><span data-stu-id="984b9-110">Use this [list of administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).</span></span>
 
 >[!Note]
-><span data-ttu-id="73e25-111">Preste atenção nas anotações deste artigo.</span><span class="sxs-lookup"><span data-stu-id="73e25-111">Pay attention to the notes in this article.</span></span> <span data-ttu-id="73e25-112">Alguns nomes de função são diferentes para o Azure AD PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-112">Some role names are different for Azure AD PowerShell.</span></span> <span data-ttu-id="73e25-113">Por exemplo, a função "administrador do SharePoint" no centro de administração do Microsoft 365 é chamada de "administrador de serviços do SharePoint" para o Azure AD PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-113">For example, the "SharePoint Administrator" role in the Microsoft 365 admin center is named "SharePoint Service Administrator" for Azure AD PowerShell.</span></span>
+><span data-ttu-id="984b9-111">Preste atenção nas anotações deste artigo.</span><span class="sxs-lookup"><span data-stu-id="984b9-111">Pay attention to the notes in this article.</span></span> <span data-ttu-id="984b9-112">Alguns nomes de função são diferentes para o Azure AD PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-112">Some role names are different for Azure AD PowerShell.</span></span> <span data-ttu-id="984b9-113">Por exemplo, a função "administrador do SharePoint" no centro de administração do Microsoft 365 é chamada de "administrador de serviços do SharePoint" para o Azure AD PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-113">For example, the "SharePoint Administrator" role in the Microsoft 365 admin center is named "SharePoint Service Administrator" for Azure AD PowerShell.</span></span>
 >
 
-<span data-ttu-id="73e25-114">Em seguida, preencha os nomes de entrada e de função e execute esses comandos.</span><span class="sxs-lookup"><span data-stu-id="73e25-114">Next, fill in the sign-in and role names and run these commands.</span></span>
+<span data-ttu-id="984b9-114">Em seguida, preencha os nomes de entrada e de função e execute esses comandos.</span><span class="sxs-lookup"><span data-stu-id="984b9-114">Next, fill in the sign-in and role names and run these commands.</span></span>
   
 ```powershell
 $userName="<sign-in name of the account>"
@@ -54,7 +56,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-<span data-ttu-id="73e25-115">Veja um exemplo de um conjunto de comandos concluído que atribui a função de administrador de serviços do SharePoint à conta belindan@contoso.com:</span><span class="sxs-lookup"><span data-stu-id="73e25-115">Here is an example of a completed command set that assigns the SharePoint Service Administrator role to the belindan@contoso.com account:</span></span>
+<span data-ttu-id="984b9-115">Veja um exemplo de um conjunto de comandos concluído que atribui a função de administrador de serviços do SharePoint à conta belindan@contoso.com:</span><span class="sxs-lookup"><span data-stu-id="984b9-115">Here is an example of a completed command set that assigns the SharePoint Service Administrator role to the belindan@contoso.com account:</span></span>
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -68,54 +70,54 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-<span data-ttu-id="73e25-116">Para exibir a lista de nomes de usuário para uma função específica, use estes comandos.</span><span class="sxs-lookup"><span data-stu-id="73e25-116">To display the list of user names for a specific role, use these commands.</span></span>
+<span data-ttu-id="984b9-116">Para exibir a lista de nomes de usuário para uma função específica, use estes comandos.</span><span class="sxs-lookup"><span data-stu-id="984b9-116">To display the list of user names for a specific role, use these commands.</span></span>
 
 ```powershell
 $roleName="<role name>"
 Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADDirectoryRoleMember | Ft DisplayName
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="73e25-117">Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-117">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="984b9-117">Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-117">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="73e25-118">Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) usando uma conta de administrador global.</span><span class="sxs-lookup"><span data-stu-id="73e25-118">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) using a global administrator account.</span></span>
+<span data-ttu-id="984b9-118">Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) usando uma conta de administrador global.</span><span class="sxs-lookup"><span data-stu-id="984b9-118">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) using a global administrator account.</span></span>
   
-### <a name="for-a-single-role-change"></a><span data-ttu-id="73e25-119">Para uma alteração de função única</span><span class="sxs-lookup"><span data-stu-id="73e25-119">For a single role change</span></span>
+### <a name="for-a-single-role-change"></a><span data-ttu-id="984b9-119">Para uma alteração de função única</span><span class="sxs-lookup"><span data-stu-id="984b9-119">For a single role change</span></span>
 
-<span data-ttu-id="73e25-120">As formas mais comuns de uma conta de usuário específica são com seu nome de exibição ou seu nome de email, também conhecido como nome de logon ou nome UPN.</span><span class="sxs-lookup"><span data-stu-id="73e25-120">The most common ways of specific user account is with its display name or its email name, also known its sign-in name or user principal name (UPN).</span></span>
+<span data-ttu-id="984b9-120">As formas mais comuns de uma conta de usuário específica são com seu nome de exibição ou seu nome de email, também conhecido como nome de logon ou nome UPN.</span><span class="sxs-lookup"><span data-stu-id="984b9-120">The most common ways of specific user account is with its display name or its email name, also known its sign-in name or user principal name (UPN).</span></span>
 
-#### <a name="display-names-of-user-accounts"></a><span data-ttu-id="73e25-121">Exibir nomes de contas de usuário</span><span class="sxs-lookup"><span data-stu-id="73e25-121">Display names of user accounts</span></span>
+#### <a name="display-names-of-user-accounts"></a><span data-ttu-id="984b9-121">Exibir nomes de contas de usuário</span><span class="sxs-lookup"><span data-stu-id="984b9-121">Display names of user accounts</span></span>
 
-<span data-ttu-id="73e25-122">Se você estiver acostumado a trabalhar com os nomes de exibição das contas de usuário, determine o seguinte:</span><span class="sxs-lookup"><span data-stu-id="73e25-122">If you are used to working with the display names of user accounts, determine the following:</span></span>
+<span data-ttu-id="984b9-122">Se você estiver acostumado a trabalhar com os nomes de exibição das contas de usuário, determine o seguinte:</span><span class="sxs-lookup"><span data-stu-id="984b9-122">If you are used to working with the display names of user accounts, determine the following:</span></span>
   
-- <span data-ttu-id="73e25-123">A conta de usuário que você deseja configurar.</span><span class="sxs-lookup"><span data-stu-id="73e25-123">The user account that you want to configure.</span></span>
+- <span data-ttu-id="984b9-123">A conta de usuário que você deseja configurar.</span><span class="sxs-lookup"><span data-stu-id="984b9-123">The user account that you want to configure.</span></span>
     
-    <span data-ttu-id="73e25-124">Para especificar a conta de usuário, você deve determinar seu nome de exibição.</span><span class="sxs-lookup"><span data-stu-id="73e25-124">To specify the user account, you must determine its Display Name.</span></span> <span data-ttu-id="73e25-125">Para obter uma lista completa de contas, use este comando:</span><span class="sxs-lookup"><span data-stu-id="73e25-125">To get a complete list accounts, use this command:</span></span>
+    <span data-ttu-id="984b9-124">Para especificar a conta de usuário, você deve determinar seu nome de exibição.</span><span class="sxs-lookup"><span data-stu-id="984b9-124">To specify the user account, you must determine its Display Name.</span></span> <span data-ttu-id="984b9-125">Para obter uma lista completa de contas, use este comando:</span><span class="sxs-lookup"><span data-stu-id="984b9-125">To get a complete list accounts, use this command:</span></span>
     
   ```powershell
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    <span data-ttu-id="73e25-126">Este comando lista o nome de exibição de suas contas de usuário, classificados pelo nome de exibição, uma tela por vez.</span><span class="sxs-lookup"><span data-stu-id="73e25-126">This command lists the Display Name of your user accounts, sorted by the Display Name, one screen at a time.</span></span> <span data-ttu-id="73e25-127">Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** .</span><span class="sxs-lookup"><span data-stu-id="73e25-127">You can filter the list to a smaller set by using the **Where** cmdlet.</span></span> <span data-ttu-id="73e25-128">Veja um exemplo:</span><span class="sxs-lookup"><span data-stu-id="73e25-128">Here is an example:</span></span>
+    <span data-ttu-id="984b9-126">Este comando lista o nome de exibição de suas contas de usuário, classificados pelo nome de exibição, uma tela por vez.</span><span class="sxs-lookup"><span data-stu-id="984b9-126">This command lists the Display Name of your user accounts, sorted by the Display Name, one screen at a time.</span></span> <span data-ttu-id="984b9-127">Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** .</span><span class="sxs-lookup"><span data-stu-id="984b9-127">You can filter the list to a smaller set by using the **Where** cmdlet.</span></span> <span data-ttu-id="984b9-128">Veja um exemplo:</span><span class="sxs-lookup"><span data-stu-id="984b9-128">Here is an example:</span></span>
 
    >[!Note]
-   ><span data-ttu-id="73e25-129">O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome.</span><span class="sxs-lookup"><span data-stu-id="73e25-129">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="73e25-130">Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-130">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+   ><span data-ttu-id="984b9-129">O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Directory para módulo e cmdlets do Windows PowerShell com **MSol** no nome.</span><span class="sxs-lookup"><span data-stu-id="984b9-129">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="984b9-130">Para continuar usando esses cmdlets, você deve executá-los a partir do Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-130">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
    >
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    <span data-ttu-id="73e25-131">Este comando lista apenas as contas de usuário para as quais o nome de exibição começa com "John".</span><span class="sxs-lookup"><span data-stu-id="73e25-131">This command lists only the user accounts for which the Display Name starts with "John".</span></span>
+    <span data-ttu-id="984b9-131">Este comando lista apenas as contas de usuário para as quais o nome de exibição começa com "John".</span><span class="sxs-lookup"><span data-stu-id="984b9-131">This command lists only the user accounts for which the Display Name starts with "John".</span></span>
     
-- <span data-ttu-id="73e25-132">A função que você deseja atribuir.</span><span class="sxs-lookup"><span data-stu-id="73e25-132">The role you want to assign.</span></span>
+- <span data-ttu-id="984b9-132">A função que você deseja atribuir.</span><span class="sxs-lookup"><span data-stu-id="984b9-132">The role you want to assign.</span></span>
     
-    <span data-ttu-id="73e25-133">Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:</span><span class="sxs-lookup"><span data-stu-id="73e25-133">To display the list of available roles that you can assign to user accounts, use this command:</span></span>
+    <span data-ttu-id="984b9-133">Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:</span><span class="sxs-lookup"><span data-stu-id="984b9-133">To display the list of available roles that you can assign to user accounts, use this command:</span></span>
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-<span data-ttu-id="73e25-134">Depois de determinar o nome de exibição da conta e o nome da função, use estes comandos para atribuir a função à conta:</span><span class="sxs-lookup"><span data-stu-id="73e25-134">Once you have determined the Display Name of the account and the Name of the role, use these commands to assign the role to the account:</span></span>
+<span data-ttu-id="984b9-134">Depois de determinar o nome de exibição da conta e o nome da função, use estes comandos para atribuir a função à conta:</span><span class="sxs-lookup"><span data-stu-id="984b9-134">Once you have determined the Display Name of the account and the Name of the role, use these commands to assign the role to the account:</span></span>
   
 ```powershell
 $dispName="<The Display Name of the account>"
@@ -123,9 +125,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-<span data-ttu-id="73e25-135">Copie os comandos e cole-os no bloco de notas.</span><span class="sxs-lookup"><span data-stu-id="73e25-135">Copy the commands and paste them into Notepad.</span></span> <span data-ttu-id="73e25-136">Para as variáveis **$dispName** e **$roleName** , substitua o texto da descrição por seus valores, remova \< os caracteres e > e deixe as aspas.</span><span class="sxs-lookup"><span data-stu-id="73e25-136">For the **$dispName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters, and leave the quotes.</span></span> <span data-ttu-id="73e25-137">Copie as linhas modificadas e cole-as em sua janela do módulo do Microsoft Azure Active Directory para Windows PowerShell para executá-las.</span><span class="sxs-lookup"><span data-stu-id="73e25-137">Copy the modified lines and paste them into your Windows Azure Active Directory Module for Windows PowerShell window to run them.</span></span> <span data-ttu-id="73e25-138">Como alternativa, você pode usar o ambiente de script integrado (ISE) do Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-138">Alternately, you can use the Windows PowerShell Integrated Script Environment (ISE).</span></span>
+<span data-ttu-id="984b9-135">Copie os comandos e cole-os no bloco de notas.</span><span class="sxs-lookup"><span data-stu-id="984b9-135">Copy the commands and paste them into Notepad.</span></span> <span data-ttu-id="984b9-136">Para as variáveis **$dispName** e **$roleName** , substitua o texto da descrição por seus valores, remova \< os caracteres e > e deixe as aspas.</span><span class="sxs-lookup"><span data-stu-id="984b9-136">For the **$dispName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters, and leave the quotes.</span></span> <span data-ttu-id="984b9-137">Copie as linhas modificadas e cole-as em sua janela do módulo do Microsoft Azure Active Directory para Windows PowerShell para executá-las.</span><span class="sxs-lookup"><span data-stu-id="984b9-137">Copy the modified lines and paste them into your Windows Azure Active Directory Module for Windows PowerShell window to run them.</span></span> <span data-ttu-id="984b9-138">Como alternativa, você pode usar o ambiente de script integrado (ISE) do Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-138">Alternately, you can use the Windows PowerShell Integrated Script Environment (ISE).</span></span>
   
-<span data-ttu-id="73e25-139">Veja um exemplo de um conjunto de comandos concluído:</span><span class="sxs-lookup"><span data-stu-id="73e25-139">Here is an example of a completed command set:</span></span>
+<span data-ttu-id="984b9-139">Veja um exemplo de um conjunto de comandos concluído:</span><span class="sxs-lookup"><span data-stu-id="984b9-139">Here is an example of a completed command set:</span></span>
   
 ```powershell
 $dispName="Scott Wallace"
@@ -133,35 +135,35 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-#### <a name="sign-in-names-of-user-accounts"></a><span data-ttu-id="73e25-140">Nomes de entrada de contas de usuário</span><span class="sxs-lookup"><span data-stu-id="73e25-140">Sign-in names of user accounts</span></span>
+#### <a name="sign-in-names-of-user-accounts"></a><span data-ttu-id="984b9-140">Nomes de entrada de contas de usuário</span><span class="sxs-lookup"><span data-stu-id="984b9-140">Sign-in names of user accounts</span></span>
 
-<span data-ttu-id="73e25-141">Se você estiver acostumado a trabalhar com os nomes de entrada ou UPNs de contas de usuário, determine o seguinte:</span><span class="sxs-lookup"><span data-stu-id="73e25-141">If you are used to working with the sign-in names or UPNs of user accounts, determine the following:</span></span>
+<span data-ttu-id="984b9-141">Se você estiver acostumado a trabalhar com os nomes de entrada ou UPNs de contas de usuário, determine o seguinte:</span><span class="sxs-lookup"><span data-stu-id="984b9-141">If you are used to working with the sign-in names or UPNs of user accounts, determine the following:</span></span>
   
-- <span data-ttu-id="73e25-142">O UPN da conta do usuário.</span><span class="sxs-lookup"><span data-stu-id="73e25-142">The user account's UPN.</span></span>
+- <span data-ttu-id="984b9-142">O UPN da conta do usuário.</span><span class="sxs-lookup"><span data-stu-id="984b9-142">The user account's UPN.</span></span>
     
-    <span data-ttu-id="73e25-143">Se você ainda não souber o UPN, use este comando:</span><span class="sxs-lookup"><span data-stu-id="73e25-143">If you don't already know the UPN, use this command:</span></span>
+    <span data-ttu-id="984b9-143">Se você ainda não souber o UPN, use este comando:</span><span class="sxs-lookup"><span data-stu-id="984b9-143">If you don't already know the UPN, use this command:</span></span>
     
   ```powershell
   Get-MsolUser -All | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    <span data-ttu-id="73e25-144">Este comando lista o UPN de suas contas de usuário, classificados pelo UPN, uma tela por vez.</span><span class="sxs-lookup"><span data-stu-id="73e25-144">This command lists the UPN of your user accounts, sorted by the UPN, one screen at a time.</span></span> <span data-ttu-id="73e25-145">Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** .</span><span class="sxs-lookup"><span data-stu-id="73e25-145">You can filter the list to a smaller set by using the **Where** cmdlet.</span></span> <span data-ttu-id="73e25-146">Veja um exemplo:</span><span class="sxs-lookup"><span data-stu-id="73e25-146">Here is an example:</span></span>
+    <span data-ttu-id="984b9-144">Este comando lista o UPN de suas contas de usuário, classificados pelo UPN, uma tela por vez.</span><span class="sxs-lookup"><span data-stu-id="984b9-144">This command lists the UPN of your user accounts, sorted by the UPN, one screen at a time.</span></span> <span data-ttu-id="984b9-145">Você pode filtrar a lista em um conjunto menor usando o cmdlet **Where** .</span><span class="sxs-lookup"><span data-stu-id="984b9-145">You can filter the list to a smaller set by using the **Where** cmdlet.</span></span> <span data-ttu-id="984b9-146">Veja um exemplo:</span><span class="sxs-lookup"><span data-stu-id="984b9-146">Here is an example:</span></span>
     
   ```powershell
   Get-MsolUser -All | Where DisplayName -like "John*" | Sort UserPrincipalName | Select UserPrincipalName | More
   ```
 
-    <span data-ttu-id="73e25-147">Este comando lista apenas as contas de usuário para as quais o nome de exibição começa com "John".</span><span class="sxs-lookup"><span data-stu-id="73e25-147">This command lists only the user accounts for which the Display Name starts with "John".</span></span>
+    <span data-ttu-id="984b9-147">Este comando lista apenas as contas de usuário para as quais o nome de exibição começa com "John".</span><span class="sxs-lookup"><span data-stu-id="984b9-147">This command lists only the user accounts for which the Display Name starts with "John".</span></span>
     
-- <span data-ttu-id="73e25-148">A função que você deseja atribuir.</span><span class="sxs-lookup"><span data-stu-id="73e25-148">The role you want to assign.</span></span>
+- <span data-ttu-id="984b9-148">A função que você deseja atribuir.</span><span class="sxs-lookup"><span data-stu-id="984b9-148">The role you want to assign.</span></span>
     
-    <span data-ttu-id="73e25-149">Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:</span><span class="sxs-lookup"><span data-stu-id="73e25-149">To display the list of available roles that you can assign to user accounts, use this command:</span></span>
+    <span data-ttu-id="984b9-149">Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:</span><span class="sxs-lookup"><span data-stu-id="984b9-149">To display the list of available roles that you can assign to user accounts, use this command:</span></span>
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-<span data-ttu-id="73e25-150">Depois de ter o UPN da conta e o nome da função, use estes comandos para atribuir a função à conta:</span><span class="sxs-lookup"><span data-stu-id="73e25-150">Once you have the UPN of the account and the name of the role, use these commands to assign the role to the account:</span></span>
+<span data-ttu-id="984b9-150">Depois de ter o UPN da conta e o nome da função, use estes comandos para atribuir a função à conta:</span><span class="sxs-lookup"><span data-stu-id="984b9-150">Once you have the UPN of the account and the name of the role, use these commands to assign the role to the account:</span></span>
   
 ```powershell
 $upnName="<The UPN of the account>"
@@ -169,9 +171,9 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-<span data-ttu-id="73e25-151">Copie os comandos e cole-os no bloco de notas.</span><span class="sxs-lookup"><span data-stu-id="73e25-151">Copy the commands and paste them into Notepad.</span></span> <span data-ttu-id="73e25-152">Para as variáveis **$upnName** e **$roleName** , substitua o texto da descrição por seus valores, remova \< os caracteres e > e deixe as aspas.</span><span class="sxs-lookup"><span data-stu-id="73e25-152">For the **$upnName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters, and leave the quotes.</span></span> <span data-ttu-id="73e25-153">Copie as linhas modificadas e cole-as em sua janela do módulo do Microsoft Azure Active Directory para Windows PowerShell para executá-las.</span><span class="sxs-lookup"><span data-stu-id="73e25-153">Copy the modified lines and paste them into your Windows Azure Active Directory Module for Windows PowerShell window to run them.</span></span> <span data-ttu-id="73e25-154">Como alternativa, você pode usar o Windows PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="73e25-154">Alternately, you can use the Windows PowerShell ISE.</span></span>
+<span data-ttu-id="984b9-151">Copie os comandos e cole-os no bloco de notas.</span><span class="sxs-lookup"><span data-stu-id="984b9-151">Copy the commands and paste them into Notepad.</span></span> <span data-ttu-id="984b9-152">Para as variáveis **$upnName** e **$roleName** , substitua o texto da descrição por seus valores, remova \< os caracteres e > e deixe as aspas.</span><span class="sxs-lookup"><span data-stu-id="984b9-152">For the **$upnName** and **$roleName** variables, replace the description text with their values, remove the \< and > characters, and leave the quotes.</span></span> <span data-ttu-id="984b9-153">Copie as linhas modificadas e cole-as em sua janela do módulo do Microsoft Azure Active Directory para Windows PowerShell para executá-las.</span><span class="sxs-lookup"><span data-stu-id="984b9-153">Copy the modified lines and paste them into your Windows Azure Active Directory Module for Windows PowerShell window to run them.</span></span> <span data-ttu-id="984b9-154">Como alternativa, você pode usar o Windows PowerShell ISE.</span><span class="sxs-lookup"><span data-stu-id="984b9-154">Alternately, you can use the Windows PowerShell ISE.</span></span>
   
-<span data-ttu-id="73e25-155">Veja um exemplo de um conjunto de comandos concluído:</span><span class="sxs-lookup"><span data-stu-id="73e25-155">Here is an example of a completed command set:</span></span>
+<span data-ttu-id="984b9-155">Veja um exemplo de um conjunto de comandos concluído:</span><span class="sxs-lookup"><span data-stu-id="984b9-155">Here is an example of a completed command set:</span></span>
   
 ```powershell
 $upnName="scottw@contoso.com"
@@ -179,23 +181,23 @@ $roleName="SharePoint Service Administrator"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-### <a name="multiple-role-changes"></a><span data-ttu-id="73e25-156">Várias alterações de função</span><span class="sxs-lookup"><span data-stu-id="73e25-156">Multiple role changes</span></span>
+### <a name="multiple-role-changes"></a><span data-ttu-id="984b9-156">Várias alterações de função</span><span class="sxs-lookup"><span data-stu-id="984b9-156">Multiple role changes</span></span>
 
-<span data-ttu-id="73e25-157">Para várias alterações de função, determine o seguinte:</span><span class="sxs-lookup"><span data-stu-id="73e25-157">For multiple role changes, determine the following:</span></span>
+<span data-ttu-id="984b9-157">Para várias alterações de função, determine o seguinte:</span><span class="sxs-lookup"><span data-stu-id="984b9-157">For multiple role changes, determine the following:</span></span>
   
-- <span data-ttu-id="73e25-158">Quais contas de usuário você deseja configurar.</span><span class="sxs-lookup"><span data-stu-id="73e25-158">Which user accounts that you want to configure.</span></span> <span data-ttu-id="73e25-159">Você pode usar os métodos da seção anterior para coletar o conjunto de nomes de exibição ou UPNs.</span><span class="sxs-lookup"><span data-stu-id="73e25-159">You can use the methods in the previous section to gather the set of display names or UPNs.</span></span>
+- <span data-ttu-id="984b9-158">Quais contas de usuário você deseja configurar.</span><span class="sxs-lookup"><span data-stu-id="984b9-158">Which user accounts that you want to configure.</span></span> <span data-ttu-id="984b9-159">Você pode usar os métodos da seção anterior para coletar o conjunto de nomes de exibição ou UPNs.</span><span class="sxs-lookup"><span data-stu-id="984b9-159">You can use the methods in the previous section to gather the set of display names or UPNs.</span></span>
     
-- <span data-ttu-id="73e25-160">Quais funções você deseja atribuir a cada conta de usuário.</span><span class="sxs-lookup"><span data-stu-id="73e25-160">Which roles you want to assign to each user account.</span></span>
+- <span data-ttu-id="984b9-160">Quais funções você deseja atribuir a cada conta de usuário.</span><span class="sxs-lookup"><span data-stu-id="984b9-160">Which roles you want to assign to each user account.</span></span>
     
-    <span data-ttu-id="73e25-161">Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:</span><span class="sxs-lookup"><span data-stu-id="73e25-161">To display the list of available roles that you can assign to user accounts, use this command:</span></span>
+    <span data-ttu-id="984b9-161">Para exibir a lista de funções disponíveis que você pode atribuir às contas de usuário, use este comando:</span><span class="sxs-lookup"><span data-stu-id="984b9-161">To display the list of available roles that you can assign to user accounts, use this command:</span></span>
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-<span data-ttu-id="73e25-162">Em seguida, crie um arquivo de texto de valor separado por vírgula (CSV) que tenha os campos nome de exibição ou UPN e nome da função.</span><span class="sxs-lookup"><span data-stu-id="73e25-162">Next, create a comma-separated value (CSV) text file that has the display name or UPN and role name fields.</span></span> <span data-ttu-id="73e25-163">Você pode fazer isso facilmente com o Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="73e25-163">You can do this easily with Microsoft Excel.</span></span>
+<span data-ttu-id="984b9-162">Em seguida, crie um arquivo de texto de valor separado por vírgula (CSV) que tenha os campos nome de exibição ou UPN e nome da função.</span><span class="sxs-lookup"><span data-stu-id="984b9-162">Next, create a comma-separated value (CSV) text file that has the display name or UPN and role name fields.</span></span> <span data-ttu-id="984b9-163">Você pode fazer isso facilmente com o Microsoft Excel.</span><span class="sxs-lookup"><span data-stu-id="984b9-163">You can do this easily with Microsoft Excel.</span></span>
 
-<span data-ttu-id="73e25-164">Veja um exemplo de nomes de exibição:</span><span class="sxs-lookup"><span data-stu-id="73e25-164">Here is an example for display names:</span></span>
+<span data-ttu-id="984b9-164">Veja um exemplo de nomes de exibição:</span><span class="sxs-lookup"><span data-stu-id="984b9-164">Here is an example for display names:</span></span>
   
 ```powershell
 DisplayName,RoleName
@@ -203,7 +205,7 @@ DisplayName,RoleName
 "Scott Wallace","SharePoint Service Administrator"
 ```
 
-<span data-ttu-id="73e25-165">Em seguida, preencha o local do arquivo CSV e execute os comandos resultantes no prompt de comando do PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-165">Next, fill in the location of the CSV file and run the resulting commands at the PowerShell command prompt.</span></span>
+<span data-ttu-id="984b9-165">Em seguida, preencha o local do arquivo CSV e execute os comandos resultantes no prompt de comando do PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-165">Next, fill in the location of the CSV file and run the resulting commands at the PowerShell command prompt.</span></span>
   
 ```powershell
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
@@ -211,7 +213,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-<span data-ttu-id="73e25-166">Veja um exemplo de UPNs:</span><span class="sxs-lookup"><span data-stu-id="73e25-166">Here is an example for UPNs:</span></span>
+<span data-ttu-id="984b9-166">Veja um exemplo de UPNs:</span><span class="sxs-lookup"><span data-stu-id="984b9-166">Here is an example for UPNs:</span></span>
   
 ```powershell
 UserPrincipalName,RoleName
@@ -219,7 +221,7 @@ UserPrincipalName,RoleName
 "scottw@contoso.com","SharePoint Service Administrator"
 ```
 
-<span data-ttu-id="73e25-167">Em seguida, preencha o local do arquivo CSV e execute os comandos resultantes no prompt de comando do PowerShell.</span><span class="sxs-lookup"><span data-stu-id="73e25-167">Next, fill in the location of the CSV file and run the resulting commands at the PowerShell command prompt.</span></span>
+<span data-ttu-id="984b9-167">Em seguida, preencha o local do arquivo CSV e execute os comandos resultantes no prompt de comando do PowerShell.</span><span class="sxs-lookup"><span data-stu-id="984b9-167">Next, fill in the location of the CSV file and run the resulting commands at the PowerShell command prompt.</span></span>
   
 ```powershell
 $fileName="<path and file name of the input CSV file that has the role changes, example: C:\admin\RoleUpdates.CSV>"
@@ -227,8 +229,8 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="73e25-168">Confira também</span><span class="sxs-lookup"><span data-stu-id="73e25-168">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="984b9-168">Confira também</span><span class="sxs-lookup"><span data-stu-id="984b9-168">See also</span></span>
 
-- [<span data-ttu-id="73e25-169">Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="73e25-169">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [<span data-ttu-id="73e25-170">Gerenciar o Office 365 com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="73e25-170">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
-- [<span data-ttu-id="73e25-171">Introdução ao Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="73e25-171">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+- [<span data-ttu-id="984b9-169">Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="984b9-169">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [<span data-ttu-id="984b9-170">Gerenciar o Office 365 com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="984b9-170">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+- [<span data-ttu-id="984b9-171">Introdução ao Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="984b9-171">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
