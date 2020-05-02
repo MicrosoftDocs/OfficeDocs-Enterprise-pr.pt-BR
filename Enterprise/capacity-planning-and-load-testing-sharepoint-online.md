@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Este artigo descreve como você pode implantar o no SharePoint Online sem executar testes de carga tradicionais, pois ele não é permitido.
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844702"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004604"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Planejamento de capacidade e teste de carregamento do SharePoint Online
 Este artigo descreve como você pode implantar o no SharePoint Online sem testes de carga tradicionais, já que o teste de carga não é permitido no SharePoint Online. O SharePoint Online é um serviço de nuvem e os recursos de carga, a integridade e o equilíbrio geral de carga no serviço são gerenciados pela Microsoft.
@@ -41,6 +43,6 @@ A capacidade é mais do que simplesmente adicionar mais hardware de forma contí
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>Por que você não pode carregar testar o SharePoint Online
 Com ambientes locais, o teste de carga é usado para validar a suposição de escala e, finalmente, encontrar o ponto de ruptura de um farm; por saturating-lo com Load. 
 
-Com o SharePoint Online, precisamos fazer coisas de forma diferente porque a escala é relativamente fluida e ajusta, acelera e controla a carga, com base em determinadas heurísticas. Sendo um ambiente de vários locatários de grande escala, devemos proteger todos os locatários no mesmo farm, portanto, aceleraremos automaticamente qualquer teste de carga. No entanto, se você tentar carregar o teste, além de ser limitado, receberá resultados disappointing e potencialmente enganosos, pois o farm que você testou hoje provavelmente terá sofrido alterações de escala durante a janela de teste ou em horas após o teste, como as ações de escala e de balanceamento de farm são executadas em uma base contínua.
+Com o SharePoint Online, precisamos fazer coisas de forma diferente porque a escala é relativamente fluida e ajusta, acelera e controla a carga, com base em determinadas heurísticas. Sendo um ambiente de vários locatários de grande escala, devemos proteger todos os locatários no mesmo farm, portanto, aceleraremos automaticamente qualquer teste de carga. No entanto, se você tentar carregar o teste, além de ser limitado, receberá resultados de disappointing e potencialmente enganosos, pois o farm que você testou hoje provavelmente terá sofrido alterações de escala durante a janela de teste ou dentro de horas após o teste, pois as ações de escala e de balanceamento de farm serão realizadas de forma contínua.
 
 Em vez de tentar carregar o SharePoint de teste como um serviço, em vez de se concentrar em seguir as práticas recomendadas e siga as orientações de [criação, inicialização e manutenção de um portal saudável](https://go.microsoft.com/fwlink/?linkid=2105838) .

@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: Este artigo explica a diferença entre o uso do cache de objetos no SharePoint Server 2013 local e no SharePoint Online.
-ms.openlocfilehash: 24d58b692667c897d2f25d41d4216a74382a5390
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e489a5f5c9438a773b7aa790ccb25d9c558729d3
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841038"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004184"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Usando o cache de objetos com o SharePoint Online
 

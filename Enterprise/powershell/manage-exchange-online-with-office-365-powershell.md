@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -16,16 +18,16 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Resumo: use o Office 365 PowerShell para gerenciar o Microsoft Exchange Online, incluindo a exibição da configuração de caixa de correio e de relatórios avançados.'
-ms.openlocfilehash: 535a53e10d1eb11e5db4e31edd6c4c3f856b3914
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 25cd466ae1c7fca7bb8bd4e44036588df28403ef
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841468"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004614"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Gerenciar o Exchange Online com o Office 365 PowerShell
 
-Uma das principais tarefas de qualquer administrador do Microsoft Exchange Online é gerenciar caixas de correio e obter relatórios sobre elas. Embora você possa realizar algumas dessas tarefas no centro de administração do Exchange, outras tarefas são muito mais rápidas e fáceis no Office 365 PowerShell. Para obter mais informações, consulte os seguintes tópicos:
+Uma das principais tarefas de qualquer administrador do Microsoft Exchange Online é gerenciar caixas de correio e obter relatórios sobre elas. Embora você possa realizar algumas dessas tarefas no centro de administração do Exchange, outras tarefas são muito mais rápidas e fáceis no Office 365 PowerShell. Para mais informações, confira os seguintes tópicos:
   
 - [Usar o Exchange Online PowerShell para exibir informações de caixa de correio do Office 365](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     

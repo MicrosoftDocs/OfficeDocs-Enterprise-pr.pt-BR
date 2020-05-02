@@ -7,18 +7,20 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Resumo: Use o Windows PowerShell remoto para Microsoft Exchange Online para recuperar os relatórios de locatários individuais do cliente.'
-ms.openlocfilehash: eea97a32b2f595a633a618146fc02fd9c1b8936a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e3e6b0ac86e2ee6479378d2eecc0c8b3cfbb6096
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841298"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004544"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Recuperar dados de relatório do locatário do cliente com o Windows PowerShell para parceiros com permissões de acesso delegado (DAP)
 
