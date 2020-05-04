@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365.
-ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844922"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009356"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Rota Expressa do Azure para Office 365
 
@@ -68,7 +68,7 @@ A tabela a seguir lista os serviços do Office 365 que são compatíveis com o E
 
 <sup>1</sup> Cada um desses aplicativos tem requisitos de conectividade com a Internet que não têm suporte no ExpressRoute, consulte o artigo sobre os [pontos de extremidade do Office 365](https://aka.ms/o365endpoints) para obter mais informações.
 
-Os serviços que não estão incluídos no ExpressRoute para Office 365 são downloads de cliente do Office 365 ProPlus, entrada do provedor de identidade local e serviço do Office 365 (operado por 21 vianet) na China.
+Os serviços que não estão incluídos no ExpressRoute para o Office 365 são aplicativos da Microsoft 365 para downloads de cliente corporativo, entrada do provedor de identidade local e serviço do Office 365 (operado pelo 21 vianet) na China.
 
 ## <a name="implementing-expressroute-for-office-365"></a>Como implementar o ExpressRoute para o Office 365
 

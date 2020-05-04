@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere o planejamento e a configuração do Office 365 ou Microsoft 365 com os consultores de implantação.
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840528"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009386"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Comunicados de implantação para o Office 365 ou serviços do Microsoft 365
 
@@ -159,23 +159,23 @@ Se você tiver o Gmail, precisará migrar seus contatos do Gmail e itens de cale
 
 ## <a name="file-creation-storage-and-sharing"></a>Criação, armazenamento e compartilhamento de arquivos
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps para Grandes Empresas
 
-O Office 365 ProPlus leva seus usuários em funcionamento nas versões mais recentes do Office e os mantêm atualizados.
+O Microsoft 365 Apps for Enterprise (anteriormente chamado Office 365 ProPlus) obtém seus usuários em funcionamento nas versões mais recentes do Office e os mantêm atualizados.
 
 Consulte este guia para obter as etapas para instalar o Office em um computador ou Mac para sua empresa, incluindo dicas para a introdução de todos os usuários do Office.
 
 |||
 |:-------|:-----|
-| **Sejam** |  [Guia rápido de início do Office 365 ProPlus](https://aka.ms/OPPquickstartguide) <BR> |
+| **Sejam** |  [Guia de início rápido do Microsoft 365 aplicativos para Enterprise](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-O supervisor de implantação do Office 365 ProPlus percorre as etapas para ajudar os usuários a instalar o Office 365 ProPlus diretamente do portal do Office 365 online ou para implantar o Office 365 PROPLUS para seus usuários a partir de um local local. Estão incluídas instruções para usar o Microsoft Endpoint Configuration Manager, um script de inicialização de política de grupo, uma imagem de disco do sistema operacional ou uma ativação compartilhada de serviços de área de trabalho remota (RDS).
+O Office Deployment Advisor percorre as etapas para ajudar os usuários a instalar o Microsoft 365 aplicativos para empresas diretamente do portal do Office 365 online ou para a implantação de aplicativos do Microsoft 365 para empresas para seus usuários a partir de um local local. Estão incluídas instruções para usar o Microsoft Endpoint Configuration Manager, um script de inicialização de política de grupo, uma imagem de disco do sistema operacional ou uma ativação compartilhada de serviços de área de trabalho remota (RDS).
 
 |||
 |:-------|:-----|
-| **Sejam** | [Supervisor de implantação do Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
-| **Gerenciador** | [Experiência do Office como serviço de assinatura](https://aka.ms/qo45jf) <BR> [Visão geral do Office 365 ProPlus](https://aka.ms/r359zr) | 
+| **Sejam** | [Supervisor de implantação do Office](https://aka.ms/o365proplusdeploy) | 
+| **Gerenciador** | [Experiência do Office como serviço de assinatura](https://aka.ms/qo45jf) <BR> [Visão geral dos aplicativos do Microsoft 365 para empresas](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ Para começar rapidamente com o OneDrive for Business para armazenamento de arqu
 
 |||
 |:-------|:-----|
-| **Sejam** | [Supervisor de implantação do Office 365 ProPlus](https://aka.ms/o365proplusdeploy) | 
+| **Sejam** | [Supervisor de implantação do Office](https://aka.ms/o365proplusdeploy) | 
 | **Gerenciador** | [Vantagem integrada do OneDrive for Business](https://aka.ms/f66hqa) <BR> [Bem-vindo ao OneDrive: vindo de outro provedor de armazenamento em nuvem](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -227,7 +227,7 @@ Se você optar por configurar a entrada federada com os serviços de Federação
 >O Azure AD Connect substitui versões antigas das ferramentas de integração de identidades, como DirSync e sincronização do Azure AD, e é usada principalmente para adicionar usuários e outros dados ao Azure AD para Office 365.
 >
 
-### <a name="azure-ad"></a>Azure AD
+### <a name="azure-ad"></a>Microsoft Azure AD
 
 Para configurar recursos, como gerenciamento de acesso baseado em grupo, redefinição de senha de autoatendimento para aplicativos de nuvem e proxy de aplicativo do Azure AD para publicar aplicativos Web no local, use este guia de configuração.
   
@@ -236,7 +236,7 @@ Para configurar recursos, como gerenciamento de acesso baseado em grupo, redefin
 | **Sejam** |  [Guia de instalação do Azure AD Basic](https://aka.ms/azureadbasic) |
 |||
 
-Para habilitar os vários recursos do Azure AD Premium, que fornece recursos de gerenciamento de identidades como autenticação multifator, logon único (SSO), registro de dispositivo, gerenciamento de senhas e autoatendimento e monitoramento de segurança, use este guia .
+Para habilitar os vários recursos do Azure AD Premium, que fornece recursos de gerenciamento de identidades como autenticação multifator, logon único (SSO), registro de dispositivo, gerenciamento de senhas e autoatendimento e monitoramento de segurança, use este guia.
   
 |||
 |:-------|:-----|

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: Este artigo descreve como você pode diminuir o tempo de carregamento das páginas do SharePoint online usando o JavaScript para atrasar o carregamento de imagens e aguardando o carregamento de JavaScript não essencial até que a página seja carregada.
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004594"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009346"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Atraso no carregamento de imagens e JavaScript no SharePoint Online
 
 Este artigo descreve como você pode diminuir o tempo de carregamento das páginas do SharePoint online usando o JavaScript para atrasar o carregamento de imagens e aguardando o carregamento de JavaScript não essencial até que a página seja carregada.
   
-As imagens podem afetar negativamente as velocidades de carga de página no SharePoint Online. Por padrão, a maioria dos navegadores da Internet modernos buscam imagens ao carregar uma página HTML. Isso pode fazer com que a página seja desnecessariamente lenta para carregar se as imagens não estiverem visíveis na tela até que o usuário Role para baixo. As imagens podem impedir que o navegador carregue a parte visível da página. Para contornar esse problema, você pode usar o JavaScript para ignorar primeiro o carregamento das imagens. Além disso, carregar JavaScript não essencial pode reduzir muito o tempo de carregamento em suas páginas do SharePoint. Este tópico descreve alguns métodos que você pode usar para melhorar o tempo de carregamento de página com JavaScript no SharePoint Online.
+As imagens podem afetar negativamente as velocidades de carga de página no SharePoint Online. Por padrão, a maioria dos navegadores da Internet modernos buscam imagens ao carregar uma página HTML. Isso pode fazer com que a página seja desnecessariamente lenta para carregar se as imagens não estiverem visíveis na tela até que o usuário Role para baixo. As imagens podem impedir que o navegador carregue a parte visível da página. Para contornar esse problema, você pode usar o JavaScript para ignorar primeiro o carregamento das imagens. Além disso, carregar JavaScript não essencial pode reduzir o tempo de download em suas páginas do SharePoint. Este tópico descreve alguns métodos que você pode usar para melhorar o tempo de carregamento de página com JavaScript no SharePoint Online.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Melhorar o tempo de carregamento da página atrasando o carregamento de imagens nas páginas do SharePoint online usando o JavaScript
 
@@ -121,7 +121,7 @@ Não perca o artigo e o exemplo de código sobre a [injeção de JavaScript](htt
   
 ## <a name="see-also"></a>Confira também
 
-[Navegadores com suporte no Office 2013 e no Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Navegadores com suporte no Office 2013 e aplicativos da Microsoft 365 para empresas](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Como: aplicar uma página mestra a um site no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
