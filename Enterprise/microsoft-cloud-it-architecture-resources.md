@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 'Resumo: conheça os principais conceitos de arquitetura de nuvens relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Office ProPlus.'
-ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
-ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
+description: 'Resumo: conheça os principais conceitos de arquitetura de nuvem relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Microsoft 365 Apps para empresas.'
+ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43037798"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009366"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
- **Resumo:** conheça os principais conceitos da Microsoft de arquitetura de nuvem para identidade, segurança, redes e híbrida. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Office ProPlus.
+ **Resumo:** conheça os principais conceitos de arquitetura de nuvem relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Microsoft 365 Apps para empresas.
   
 Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os serviços em nuvem da Microsoft, incluindo o Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
   
@@ -224,11 +224,11 @@ Para saber mais, confira o artigo neste cartaz: [Soluções de telefonia da Micr
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Implantar uma área de trabalho segura e moderna com a Microsoft
 
-O que os arquitetos de TI precisam saber sobre implantação e gerenciamento de atualizações para o Office 365 ProPlus no Windows 10.
+O que os arquitetos de TI precisam saber sobre implantação e gerenciamento de atualizações para o Microsoft 365 Apps para empresas (anteriormente denominado Office 365 ProPlus) no Windows 10.
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Miniatura do modelo Implantar uma área de trabalho segura e moderna com a Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Este modelo contém: <ul><li>  Implantação do Windows 10 e Office ProPlus da nuvem da Microsoft </li><li>  Implementar o Windows 10 e Office ProPlus com o System Center Configuration Manager </li><li>  Gerenciamento de atualizações do Windows 10 e Office ProPlus da nuvem da Microsoft </li><li>  Gerenciar as atualizações do Windows 10 e Office ProPlus com o Microsoft Endpoint Configuration Manager </li><li>  Recursos adicionais de proteção do Windows 10 </li></ul><br/> |
+|[![Miniatura do modelo Implantar uma área de trabalho segura e moderna com a Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Este modelo contém: <ul><li>  Implantação do Windows 10 e do Microsoft 365 para empresas da nuvem da Microsoft </li><li>  Implantação do Windows 10 e do Microsoft 365 Apps para empresas com o Gerenciador de Configurações do Microsoft Endpoint </li><li>  Gerenciamento de atualizações do Windows 10 e do Microsoft 365 Apps para empresas da nuvem da Microsoft </li><li>  Gerenciamento de atualizações do Windows 10 e do Microsoft 365 Apps para empresas com o Gerenciador de Configurações do Microsoft Endpoint </li><li>  Recursos adicionais de proteção do Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Confira também
 
