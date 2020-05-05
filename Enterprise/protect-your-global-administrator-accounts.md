@@ -3,7 +3,7 @@ title: Proteger as contas de administradores globais do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 05/04/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,17 +19,14 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger o acesso de administrador global à sua assinatura do Office 365.
-ms.openlocfilehash: fcd4d69df967ad592af52a36a55008463b6f30e2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979363"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013404"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger as contas de administradores globais do Office 365
-
-> [!NOTE]
-> Uma conta de administrador global pode ser criada sem adicionar nenhuma licença.
 
 *Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
@@ -45,8 +42,7 @@ A Microsoft fornece recursos para ajudar a proteger sua organização, mas elas 
     
 2. Configure a autenticação multifator para suas contas de administrador global do Office 365, e use a forma mais segura de autenticação secundária.
     
-> [!NOTE]
-> Embora este artigo se concentre nas contas de administrador global, você deve considerar se as contas adicionais têm permissões amplas para acessar os dados em sua assinatura, como administrador de descoberta eletrônica ou administrador de segurança ou conformidade contas, devem ser protegidas da mesma maneira. 
+> [! NOTEs] embora este artigo se concentre em contas de administrador global, você deve considerar se as contas adicionais com permissões amplas para acessar os dados em sua assinatura, como administrador de descoberta eletrônica ou contas de administrador de segurança ou conformidade, devem ser protegidas da mesma maneira. <br > Uma conta de administrador global pode ser criada sem adicionar nenhuma licença.
   
 ## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Etapa 1. Criar contas de administrador global do Office 365 exclusivas e usá-las somente quando necessário
 
@@ -60,7 +56,7 @@ Há relativamente poucas tarefas administrativas, como a atribuição de funçõ
 
 2. Entre em sua assinatura do Office 365 com uma conta de usuário que tenha sido atribuída à função de administrador global.
     
-3. Crie pelo menos um e até um máximo de cinco contas de usuário de administrador global dedicadas. **Use senhas fortes pelo menos 12 caracteres.** Consulte [criar uma senha forte](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) para obter mais informações. Armazene as senhas das novas contas em um local seguro. 
+3. Crie até um máximo de quatro contas de usuário de administrador global dedicadas. **Use senhas fortes pelo menos 12 caracteres.** Consulte [criar uma senha forte](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) para obter mais informações. Armazene as senhas das novas contas em um local seguro. 
     
 4. Atribua a função de administrador global a cada uma das novas contas de usuário de administrador global dedicadas.
     
@@ -91,13 +87,15 @@ Desse momento em diante, você entra com as contas de administrador global dedic
 > [!NOTE]
 > Isso requer etapas adicionais para sair como sua conta de usuário diária e entrar com uma conta de administrador global dedicada. Mas isso só precisa ser feito ocasionalmente para operações de administrador global. Considere a recuperação de sua assinatura do Office 365 após uma violação de conta de administrador global exigir muito mais etapas.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>Etapa 2. Configurar a autenticação multifator para suas contas de administrador global do Office 365 exclusiva e usar a forma mais forte de autenticação secundária
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-additional-verification"></a>Etapa 2. Configurar a autenticação multifator para suas contas de administrador global do Office 365 exclusiva e usar a forma mais segura de verificação adicional
 
-A MFA (autenticação multifator) requer informações adicionais além do nome da conta e senha. O Office 365 suporta estes métodos de verificação:
+A MFA (autenticação multifator) requer informações adicionais além do nome da conta e senha. O Office 365 oferece suporte a estes métodos adicionais de verificação:
   
+- O aplicativo Microsoft Authenticator
+
 - Uma chamada telefônica
     
-- Uma senha gerada aleatoriamente
+- Um código de verificação gerado aleatoriamente enviado por meio de uma mensagem de texto
     
 - Um cartão inteligente (físico ou virtual)
     
@@ -107,15 +105,15 @@ Se você é uma pequena empresa que está usando contas de usuário armazenadas 
   
 1. [Configurar a MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. [Configurar a verificação em duas etapas para o Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) para configurar cada conta de administrador global dedicada para chamada telefônica ou mensagem de texto como o método de verificação. 
+2. [Configure o MFA para o Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) para configurar cada conta de administrador global dedicada para chamada telefônica ou mensagem de texto como o método de verificação. 
     
 Se você é uma organização maior que usa um modelo de identidade híbrida do Office 365, você tem mais opções de verificação. Se você já tiver a infraestrutura de segurança em vigor para um método de autenticação secundário mais seguro, use estas etapas:
   
 1. [Configurar a MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
     
-2. [Configure a verificação em duas etapas para o Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) para configurar cada conta de administrador global dedicada para o método de verificação apropriado. 
+2. [Configure o MFA para o Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) para configurar cada conta de administrador global dedicada para o método de verificação apropriado. 
     
-Se a infraestrutura de segurança para o método de verificação mais forte desejado não estiver em vigor e estiver funcionando para o Office 365 MFA, é altamente recomendável que você configure contas de administrador global dedicadas com a MFA usando uma chamada telefônica ou uma mensagem de texto código de verificação enviado a um telefone inteligente para suas contas de administrador global como medida de segurança provisória. Não deixe suas contas de administrador global dedicadas sem a proteção adicional fornecida pela MFA.
+Se a infraestrutura de segurança para o método de verificação mais forte desejado não estiver em vigor e estiver funcionando para o Office 365 MFA, é altamente recomendável que você configure contas de administrador global dedicadas com a MFA usando uma chamada telefônica ou um código de verificação de mensagem de texto enviado a um telefone inteligente para suas contas de administrador global como uma medida de segurança provisória. Não deixe suas contas de administrador global dedicadas sem a proteção adicional fornecida pela MFA.
   
 Para saber mais, consulte as informações sobre como [planejar a autenticação multifator para implantações do Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan).
   
@@ -138,16 +136,15 @@ Para obter instruções sobre como configurar um pata, consulte [https://aka.ms/
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-Em vez de ter suas contas de administrador global atribuídas permanentemente à função de administrador global, você pode usar o gerenciamento de identidade privilegiada do Azure AD para habilitar a atribuição sob demanda e Just-in-time da função de administrador global quando é necessários.
+Em vez de ter suas contas de administrador global atribuídas permanentemente à função de administrador global, você pode usar o gerenciamento de identidade privilegiada do Azure AD para habilitar a atribuição sob demanda e Just-in-time da função de administrador global quando for necessário.
   
 Em vez de suas contas de administrador global serem um administrador permanente, elas se tornam administradores qualificados. A função de administrador global está inativa até que alguém precise dela. Em seguida, conclua um processo de ativação para adicionar a função de administrador global à conta de administrador global para uma quantidade de tempo predeterminada. Quando o tempo expira, o PIM remove a função de administrador global da conta de administrador global.
   
 Usar o PIM e esse processo reduz significativamente a quantidade de tempo que suas contas de administrador global estão vulneráveis a ataques e uso por usuários mal-intencionados.
+
+O PIM está disponível com o Azure AD Premium P2, que acompanha o Microsoft 365 Enterprise E5 ou Enterprise Mobility + Security (EMS) e5, ou você pode adquirir licenças individuais para suas contas de administrador global.
   
 Para obter mais informações, consulte [Azure ad Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
-  
-> [!NOTE]
-> O PIM está disponível com o Azure AD Premium P2, que acompanha o Microsoft 365 Enterprise E5 ou Enterprise Mobility + Security (EMS) e5, ou você pode adquirir licenças individuais para suas contas de administrador global. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Software de gerenciamento de eventos e informações de segurança (SIEM) para log do Office 365
 
