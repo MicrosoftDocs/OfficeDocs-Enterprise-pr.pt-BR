@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 'Resumo: conheça os principais conceitos de arquitetura de nuvem relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Microsoft 365 Apps para empresas.'
-ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: 'Resumo: conheça os principais conceitos de arquitetura de nuvem relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft.'
+ms.openlocfilehash: e5d1ba6b69dc092df72ead30da620f6007843f5c
+ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009366"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44013424"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
- **Resumo:** conheça os principais conceitos de arquitetura de nuvem relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft. Saiba como implantar uma área de trabalho moderna e segura com o Windows 10 e o Microsoft 365 Apps para empresas.
+ **Resumo:** conheça os principais conceitos de arquitetura de nuvem relacionados à segurança, redes, implantação híbrida e identidade da Microsoft. Examine as recomendações indicadas para a proteção de arquivos, identidades e dispositivos ao usar a nuvem da Microsoft.
   
 Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os serviços em nuvem da Microsoft, incluindo o Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluções híbridas no local e em nuvem. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
   
@@ -52,7 +52,6 @@ Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os 
     - [Proteção de Informações do Office 365 para o RGPD](#office-365-information-protection-for-gdpr)
     - [Diretrizes de segurança da Microsoft para campanhas políticas, instituições sem fins lucrativos e outras organizações do Agile](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
     - [Soluções de telefonia da Microsoft](#microsoft-telephony-solutions) 
-    - [Implantar uma área de trabalho segura e moderna com a Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
 Dê sua opinião! Envie um email para [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
 
@@ -221,15 +220,6 @@ A Microsoft oferece suporte a várias opções conforme você começa sua jornad
 
 Para saber mais, confira o artigo neste cartaz: [Soluções de telefonia da Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Implantar uma área de trabalho segura e moderna com a Microsoft
-
-O que os arquitetos de TI precisam saber sobre implantação e gerenciamento de atualizações para o Microsoft 365 Apps para empresas (anteriormente denominado Office 365 ProPlus) no Windows 10.
-  
-|**Item**|**Descrição**|
-|:-----|:-----|
-|[![Miniatura do modelo Implantar uma área de trabalho segura e moderna com a Microsoft](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Este modelo contém: <ul><li>  Implantação do Windows 10 e do Microsoft 365 para empresas da nuvem da Microsoft </li><li>  Implantação do Windows 10 e do Microsoft 365 Apps para empresas com o Gerenciador de Configurações do Microsoft Endpoint </li><li>  Gerenciamento de atualizações do Windows 10 e do Microsoft 365 Apps para empresas da nuvem da Microsoft </li><li>  Gerenciamento de atualizações do Windows 10 e do Microsoft 365 Apps para empresas com o Gerenciador de Configurações do Microsoft Endpoint </li><li>  Recursos adicionais de proteção do Windows 10 </li></ul><br/> |
-   
 ## <a name="see-also"></a>Confira também
 
 [Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
