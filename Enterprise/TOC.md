@@ -132,7 +132,7 @@
 
 ## Implantação avançada
 
-### [Office 365 multigeográfico](office-365-multi-geo.md)
+### [Microsoft 365 Multi-Geo](office-365-multi-geo.md)
 #### [OneDrive e SharePoint Online com multigeográfico](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
 #### [Exchange Multi-geográfica](multi-geo-capabilities-in-exchange-online.md)
 #### [Plano para multigeográfico](plan-for-multi-geo.md)
@@ -147,7 +147,7 @@
 ##### [Mover um Site do SharePoint](move-sharepoint-between-geo-locations.md)
 ##### [Adicionar ou remover um administrador geográfico](add-a-sharepoint-geo-admin.md)
 ##### [Restringir o conteúdo para uma localização geográfica](restrict-content-to-geo-location.md)
-##### [Configurar a descoberta eletrônica do Office 365 multigeográfico](multi-geo-ediscovery-configuration.md)
+##### [Configurar a descoberta eletrônica do Microsoft 365 Multi-Geo](multi-geo-ediscovery-configuration.md)
 ##### [Criar um grupo com uma PDL específica](multi-geo-add-group-with-pdl.md)
 ##### [Excluir uma localização geográfica](delete-a-geo-location.md)
 ##### [Ativando as funcionalidades multigeográficas do SharePoint em sua localização geográfica por satélite](enabling-SP-multigeo-satellite-geolocation.md)
@@ -189,20 +189,6 @@
 ### [Ferramentas para gerenciar contas de usuários](manage-office-365-accounts.md)
 ### [Adicionar vários usuários ao mesmo tempo](add-several-users-at-the-same-time.md)
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
-
-### Colaborar com convidados
-#### [Referência de compartilhamento de convidado](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### Cenários de compartilhamento de convidados
-##### [Visão geral da colaboração do convidado](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Colaborar em documentos](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Colaborar em um site](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Colabore em equipe](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### Segurança de compartilhamento de convidados
-##### [Compartilhamento não autenticado](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Limitar a exposição acidental](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Ambiente seguro de compartilhamento de convidados](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [Criar uma extranet B2B](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-### [Limitar o compartilhamento](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## Dispositivos
 ### [Escolher entre MDM ou Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
