@@ -13,12 +13,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre a experiência do usuário do SharePoint e do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: 75d24ac7a89ff2dfe66af713fdae7ece21ebda3c
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 21858989f853b2a8c87808e38763068631173f7f
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974213"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057747"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiência do usuário em um ambiente multigeográfico
 
@@ -32,7 +32,7 @@ A caixa de correio do Exchange do usuário é provisionada para o local de dados
 
 Sites do Hub do SharePoint aprimora a descoberta e a interação com o conteúdo para funcionários, ao criar uma representação consistente e completa de projetos, departamentos ou regiões. Em um ambiente multigeográfico, sites de locais de satélite podem facilmente ser associadas com um site do hub independentemente da localização geográfica do site do hub. Os usuários podem pesquisar e obter resultados em hub em uma experiência de pesquisa única, independentemente da localização geográfica dos sites.
 
-## <a name="office-365-app-launcher"></a>Inicializador de aplicativos do Office 365
+## <a name="microsoft-365-app-launcher"></a>Inicializador de aplicativos do Microsoft 365
 
 O inicializador de aplicativos é ciente da multigeografia e direcionará cada bloco para a localização geográfica apropriada da carga de trabalho. Os blocos do SharePoint e OneDrive apontarão o usuário para a localização correspondente à localização geográfica provisionada pelo usuário. Isso significa que se o usuário tiver o OneDrive em uma localização central, o bloco do SharePoint apontará para SP Home na localização central, mas o site do grupo não será provisionado na localização correspondente ao PDL. 
 

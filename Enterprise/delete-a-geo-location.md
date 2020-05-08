@@ -12,20 +12,20 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Saiba como excluir uma localização de satélite no Office 365 Multi-geográfico.
-ms.openlocfilehash: 702f42eb9211d6c3c4f59812c6894855b169f587
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Aprenda a excluir uma localização por satélite no Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 840c1bf494ddcd7e6558b134655b5cb708bf6e7b
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974860"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057637"
 ---
-# <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Excluir um local de satélite no Office 365 Multi-geográfico
+# <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Exclua uma localização por satélite no Microsoft 365 Multi-Geo.
 
 Se você não precisa mais de uma localização de satélite, exclua-a do seu locatário no centro de administração do SharePoint.
 
 > [!WARNING]
-> Todos os dados de usuário na localização de satélite serão excluídos permanentemente. Isso inclui todos o conteúdo do OneDrive for Business, sites do SharePoint e caixas de correio do Exchange incluindo caixas de correio do Grupo do Office 365. Você deve migrar todos os dados para outra localização de satélite ou para a localização central antes de excluir a localização de satélite. Não é possível desfazer a ação.
+> Todos os dados de usuário na localização de satélite serão excluídos permanentemente. Isso inclui todo o conteúdo do OneDrive para negócios, sites do SharePoint e caixas de correio do Exchange incluindo caixas de correio do grupo do Microsoft 365. Você deve migrar todos os dados para outra localização de satélite ou para a localização central antes de excluir a localização de satélite. Não é possível desfazer a ação.
 
 Somente os administradores globais podem excluir localizações de satélites.
 

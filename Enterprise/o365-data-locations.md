@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: Locais dos dados do Office 365'
-ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798812"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058011"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -84,7 +84,7 @@ O Office 365 usa tecnologias do lado do serviço que criptografam os dados do cl
 
 Confira a página [Produtos disponíveis por região](https://go.microsoft.com/fwlink/p/?linkid=2093451) para localizar informações de residência de dados do Microsoft Azure.
 
-### <a name="what-are-multi-geo-capabilities-in-office-365"></a>O que são Multi-Geo Capabilities no Office 365?
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>O que são recursos multigeográficos no Microsoft 365?
 
 O [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) permite que um único locatário do Office 365 abranja várias regiões do data center do Office 365 e oferece aos clientes a capacidade de armazenar seus principais dados do cliente do Office 365 por usuário, em regiões selecionadas.
 
@@ -113,7 +113,7 @@ Para data centers específicos de país/região, o seguinte define as cidades on
 | País/Região | Cidade |
 | --- | --- |
 | Austrália | Nova Gales do Sul, Vitória |
-| Canadá | Quebec (Cidade), Toronto |
+| Canadá | Cidade de Quebec, Toronto |
 | União Europeia | Áustria, Finlândia, França, Irlanda, Países Baixos |
 | França | Paris, Marseille |
 | Alemanha | Frankfurt, Berlim |
@@ -727,7 +727,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
-## <a name="boliva"></a>Bolívia
+## <a name="bolivia"></a>Bolívia
 <details><summary>Clique para expandir</summary><p>
 
 | Serviço | Local |
@@ -4039,7 +4039,7 @@ Os novos locatários do Office 365 têm como padrão o Geo, com base no país/re
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
-## <a name="papaua-new-guinea"></a>Papaua Nova Guiné
+## <a name="papua-new-guinea"></a>Papua Nova Guiné
 <details><summary>Clique para expandir</summary><p>
 
 | Serviço | Local |

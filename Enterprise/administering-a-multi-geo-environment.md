@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba como administrar o SharePoint e os serviços do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974023"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057657"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrar um ambiente multigeográfico
 
-Veja aqui um resumo de como os serviços do Office 365 em um ambiente multigeográfico.
+A seguir, veja como os serviços do Microsoft 365 funcionam em um ambiente com várias regiões geográficas.
 
 ## <a name="audit-log-search"></a>Pesquisa de log de auditoria
 
-Um [Log de auditoria](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado para todas as localizações via satélite está disponível na página de pesquisa do log de auditoria do Office 365. Você pode ver todas as entradas do log de auditoria nas localizações geográficas, por exemplo, atividades dos usuários das localizações NAM e EUR serão exibidos em um modo de exibição de organograma e você poderá aplicar os filtros existentes para ver atividades de usuários específicos.
+Um [Log de auditoria](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) unificado para todas as localizações por satélite está disponível na página de pesquisa do log de auditoria do Microsoft 365. Você pode ver todas as entradas do log de auditoria nas localizações geográficas, por exemplo, atividades dos usuários das localizações NAM e EUR serão exibidos em um modo de exibição de organograma e você poderá aplicar os filtros existentes para ver atividades de usuários específicos.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Repositório Seguro, Aplicativos
 
@@ -36,7 +36,7 @@ A BCS, o Repositório Seguro e os Aplicativos têm instâncias geográficas em c
 
 ## <a name="ediscovery"></a>Descoberta eletrônica 
 
-Por padrão, um Administrador ou Gerente de Descoberta Eletrônica de um locatário multigeográfico só poderá realizar a descoberta eletrônica na localização central desse locatário. O administrador global do Office 365 deve atribuir permissões de gerente de Descoberta Eletrônica para permitir que outras pessoas possam realizá-la e atribuir o parâmetro "Região" no Filtro de Segurança e Conformidade deles, para especificar a região como uma localização no satélite para a realização da Descoberta. Caso contrário, a Descoberta Eletrônica não será realizada para nenhuma localização no satélite. Para configurar o Filtro de Segurança de Conformidade para uma Região, consulte [Configurar a Descoberta Eletrônica Multigeográfica do Office 365](multi-geo-ediscovery-configuration.md).
+Por padrão, um Administrador ou Gerente de Descoberta Eletrônica de um locatário multigeográfico só poderá realizar a descoberta eletrônica na localização central desse locatário. O administrador global do Microsoft 365 deve atribuir permissões ao eDiscovery Manager para permitir que outras pessoas executem o eDiscovery e atribuam o parâmetro "Região" no Filtro de segurança de conformidade aplicável para especificar a região de execução do eDiscovery como localização por satélite, caso contrário, nenhum eDiscovery será executado pela localização por satélite. Para configurar o Filtro de segurança de conformidade de uma região, consulte [Configurar o eDiscovery Multigeográfico do Microsoft 365](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Caixas de correio do Exchange
 
@@ -64,7 +64,7 @@ O [Centro de Administração do OneDrive](https://admin.onedrive.com) tem uma gu
 
 ## <a name="security-and-compliance-admin-center"></a>Centro de Administração de Conformidade e Segurança
 
-Há um centro de conformidade central para o locatário multigeográfico: [Centro de Conformidade e Segurança do Office 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Há um centro de conformidade central para um locatário multigeográfico: [Centro de conformidade e segurança do Microsoft 365](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
 ## <a name="sharepoint-storage-quota"></a>Cota de armazenamento do SharePoint
 
@@ -98,7 +98,7 @@ Atualmente, este aplicativo está disponível nas seguintes regiões:
 - Europa
 - Pacífico Asiático
 
-No entanto, o Stream ainda não está disponível nos seguintes regiões com suporte, no momento, para o Office 365 Video, portanto para dessas instâncias locais usaremos o RMS da região compatível mais próxima.
+Porém, atualmente, o Stream ainda não está disponível nas seguintes regiões com suporte para o Microsoft 365 Video, portanto, para essas instâncias locais, usaremos o RMS que está na região suportada mais próxima.
 
 - Austrália
 - Canadá

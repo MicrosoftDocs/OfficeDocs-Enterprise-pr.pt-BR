@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974013"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058001"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
-Com a movimentação geográfica do OneDrive, você pode mover o OneDrive de um usuário para um local geográfico diferente. A movimentação geográfica do OneDrive é executada pelo administrador do SharePoint Online ou pelo administrador global do Office 365. Antes de iniciar a movimentação geográfica do OneDrive, notifique o usuário cujo OneDrive está sendo movido e recomende que ele feche todos os arquivos durante a movimentação. (Se o usuário tiver um documento aberto usando o cliente do Office durante a movimentação, quando ela for concluída, o documento precisará ser salvo em um novo local). A movimentação poderá agendada para um momento futuro, se desejado.
+Com a movimentação geográfica do OneDrive, você pode mover o OneDrive de um usuário para um local geográfico diferente. A movimentação geográfica do OneDrive é realizada pelo administrador do SharePoint Online ou pelo administrador global do Microsoft 365. Antes de iniciar uma movimentação geográfica do OneDrive, não se esqueça de notificar o usuário cujo OneDrive está sendo movido e recomendamos que feche todos os arquivos pela duração da movimentação (Se o usuário tiver um documento aberto usando o cliente do Office durante a movimentação, após a conclusão da movimentação, o documento precisará ser salvo no novo local). A movimentação poderá ser agendada para um horário futuro, se desejado.
 
 O serviço do OneDrive usa o Armazenamento de Blobs do Azure para armazenar conteúdo. O blob de armazenamento associado ao OneDrive do usuário será movido da origem para a localização geográfica de destino dentro de 40 dias após o destino estar disponível para o usuário do OneDrive. O acesso ao OneDrive do usuário será restaurado assim que o OneDrive de destino estiver disponível.
 
-Durante a janela de movimentação geográfica do OneDrive (cerca de duas a seis horas), o OneDrive do usuário é definido como somente leitura. O usuário ainda pode acessar os arquivos por meio do cliente de sincronização do OneDrive ou o site do OneDrive no SharePoint Online. Após a conclusão da movimentação geográfica do OneDrive, o usuário será automaticamente conectado ao OneDrive na localização geográfica destino quando navegar para o OneDrive no inicializador de aplicativos do Office 365. O cliente de sincronização começará automaticamente a sincronizar do novo local.
+Durante a janela de movimentação geográfica do OneDrive (entre 2 e 6 horas), o OneDrive do usuário é definido como somente leitura. O usuário ainda pode acessar os arquivos pelo cliente de sincronização do OneDrive ou pelo site do OneDrive no SharePoint Online. Após a conclusão da movimentação geográfica do OneDrive, o usuário será automaticamente conectado ao seu OneDrive na localização geográfica destinada quando navegar para o OneDrive no inicializador de aplicativos do Microsoft 365. O cliente de sincronização começará automaticamente a sincronizar do novo local.
 
 Os procedimentos deste artigo exigem o [Módulo PowerShell do Microsoft SharePoint Online](https://www.microsoft.com/download/details.aspx?id=35588).
 
@@ -163,7 +163,7 @@ Os usuários do OneDrive deverão enfrentar um mínimo de interrupção se o One
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Enquanto a movimentação está em andamento, o OneDrive do usuário é definido como somente leitura. Após a movimentação ser concluída, o usuário é direcionado para o OneDrive na nova localização geográfica quando ele navega para o OneDrive, o inicializador de aplicativos do Office 365 ou um navegador da Web.
+Enquanto a movimentação estiver em andamento, o OneDrive do usuário é definido como somente leitura. Após a movimentação ser concluída, o usuário é direcionado ao seu OneDrive na nova localização geográfica quando ele navegar para o OneDrive, ao inicializador de aplicativos do Microsoft 365 ou por navegador da Web.
 
 ### <a name="permissions-on-onedrive-content"></a>Permissões sobre o conteúdo do OneDrive
 

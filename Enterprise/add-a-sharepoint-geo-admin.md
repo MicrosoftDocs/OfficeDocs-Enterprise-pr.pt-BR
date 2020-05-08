@@ -11,15 +11,15 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords:
 - NOCSH
-description: Saiba como adicionar ou remover um administrador geográfica no Office 365 Multi-Geo.
-ms.openlocfilehash: 4225cd73aa243fadde21e5bd2d248fe54f738e33
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Saiba como adicionar ou remover um administrador geográfico no Microsoft 365 Multi-Geo.
+ms.openlocfilehash: f2cb71f26216d859c00cefb10661608178e19315
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974193"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057697"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Adicionar ou remover um administrador geográfico no Office 365 Multi-Geo
+# <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Adicionar ou remover um administrador geográfico no Microsoft 365 Multi-Geo.
 
 Você pode configurar administradores separados para cada localização geográfica que há em seu locatário. Esses administradores terão acesso às configurações do SharePoint Online e do OneDrive específicas para sua localização geográfica.
 
@@ -43,7 +43,7 @@ Para remover um usuário como um administrador geográfico de um local, execute 
 
 ### <a name="adding-a-group-as-a-geo-admin"></a>Adicionar um grupo como um administrador geográfico
 
-Você pode adicionar um grupo de segurança ou de um grupo de segurança habilitado por email como um administrador geográfico. (Grupos de distribuição e Grupos do Office 365 não são suportados.)
+Você pode adicionar um grupo de segurança ou um grupo de segurança habilitado para e-mails como administrador geográfico. (Grupos de distribuição e grupos do Microsoft 365 não são suportados.)
 
 Para adicionar um grupo como um administrador geográfico, execute `Add-SPOGeoAdministrator -GroupAlias <alias>`
 
