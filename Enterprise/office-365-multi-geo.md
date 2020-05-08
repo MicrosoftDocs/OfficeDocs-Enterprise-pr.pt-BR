@@ -1,5 +1,5 @@
 ---
-title: Office 365 multigeográfico
+title: Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,61 +12,61 @@ f1.keywords:
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Expanda a sua presença do Office 365 para várias regiões geográficas com o Office 365 multigeográfico.
-ms.openlocfilehash: ca0fac66549b91fe25cc5d86f9dd0be310fb38b5
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+description: Expanda sua presença no Microsoft 365 para várias regiões geográficas com o Microsoft 365 Multi-Geo.
+ms.openlocfilehash: d69d8adb83eb639589efec0863b2e15966339b58
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42416996"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057727"
 ---
-# <a name="office-365-multi-geo"></a>Office 365 multigeográfico
+# <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
-Com o Office 365 multigeográfico, sua organização poderá expandir sua presença do Office 365 para várias regiões geográficas e/ou os países em seu locatário existente. Entre em contato com sua equipe de conta da Microsoft para inscrever sua empresa multinacional para o Office 365 multigeográfico.
+Com o Microsoft 365 Multi-Geo, sua organização pode expandir sua presença no Microsoft 365 para várias regiões geográficas e/ou países do seu locatário existente. Entre em contato com sua equipe de contas da Microsoft para inscrever sua empresa multinacional no Microsoft 365 Multi-Geo.
   
-Com o Office 365 multigeográfico, você pode provisionar e armazenar dados em repouso nas localizações geográficas escolhidas para atender aos requisitos de residência de dados e, ao mesmo tempo, dar vazão à sua implantação global a partir de experiências de produtividade modernas para a sua força de trabalho.
+Com o Microsoft 365 Multi-Geo, você pode provisionar e armazenar dados em repouso nos locais geográficos escolhidos para atender aos requisitos de residência de dados e, ao mesmo tempo, desbloquear sua distribuição global de experiências modernas de produtividade à sua força de trabalho.
 
-#### <a name="video-introducing-office-365-multi-geo"></a>Vídeo: Apresentando o Office 365 multigeográfico
+#### <a name="video-introducing-microsoft-365-multi-geo"></a>Vídeo: apresentando o Microsoft 365 Multi-Geo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
-Em um ambiente multigeográfico, seu locatário do Office 365 consiste em um local central (onde a assinatura do Office 365 originalmente foi provisionada) e um ou mais locais do satélite. Em um locatário multigeográfico, as informações sobre localizações geográficas, grupos e informações do usuário são dominadas no Azure Active Directory (AAD). Como as informações de locatário são dominadas centralmente e sincronizadas em cada localização geográfica, compartilhamento e experiências envolvendo qualquer pessoa da sua empresa contêm percepção global.
+Em um ambiente de várias regiões, o locatário do Microsoft 365 consiste de um local central (onde sua assinatura do Microsoft 365 foi originalmente provisionada) e um ou mais locais de satélite. Em um locatário multigeográfico, as informações sobre localizações geográficas, grupos e informações do usuário são dominadas no Azure Active Directory (AAD). Como as informações de locatário são dominadas centralmente e sincronizadas em cada localização geográfica, compartilhamento e experiências envolvendo qualquer pessoa da sua empresa contêm percepção global.
 
 ![Captura de tela do menu do centro de administração do SharePoint](media/multi-geo-world-map.png)
 
-Observe que o Office 365 multigeográfico não foi desenvolvido para otimizar o desempenho, foi projetado para atender aos requisitos de residência de dados. Para saber mais sobre a otimização do desempenho do Office 365, confira [Planejamento de rede e ajuste de desempenho do Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou fale com o suporte.
+Observe que o Microsoft 365 Multi-Geo não foi projetado para otimização de desempenho, ele foi projetado para atender aos requisitos da residência de dados. Para obter mais informações sobre otimização de desempenho do Microsoft 365, consulte [Planejamento de rede e ajuste de desempenho do Microsoft 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) ou entre em contato com seu grupo de suporte.
 
 ## <a name="terminology"></a>Terminologia
 
-Aqui estão os principais termos usados para descrever o Office 365 multigeográfico:
+Aqui estão os principais termos usados na descrição do Microsoft 365 Multi-Geo:
 
 - **Uma localização central** -a localização geográfica onde seu locatário foi originalmente provisionado.
 - **Administrador geográfico**, um administrador que pode administrar um ou mais locais do satélite especificado.
 - **Geocódigo** -um código de três letras de uma localização geográfica determinada.
 - **Localização geográfica** – uma localização geográfica pode ser usada em um locatário multigeográfico para hospedar dados, incluindo caixas de correio do Exchange e o OneDrive e sites do SharePoint.
 - **Preferenciais de dados local (PDL)** a propriedade do usuário definido pelo administrador que indica onde a localização geográfica onde a caixa de correio do Exchange usuários e do OneDrive devem ser provisionadas. A PDL determina também onde os sites do SharePoint criados pelo usuário estão provisionados.
-- **Localização de satélite** – As localizações geográficas em que as cargas de trabalho geográficas do Office 365 (SharePoint, OneDrive e Exchange) estão habilitadas em um locatário multigeográfico.
-- **Locatário** – – a representação de uma organização no Office 365 que geralmente tem um ou mais domínios associados (por exemplo, contoso.com).
+- **Localização do satélite** – As localizações geográficas onde as cargas de trabalho do Microsoft 365 com reconhecimento geográfico (SharePoint, OneDrive e Exchange) são ativadas em um inquilino com várias geografias.
+- **Locatário** – A representação de uma organização no Microsoft 365 que normalmente possui um ou mais domínios associados a ela (por exemplo, contoso.com).
 
-## <a name="office-365-multi-geo-availability"></a>Disponibilidade do Office 365 multigeográfico
+## <a name="microsoft-365-multi-geo-availability"></a>Disponibilidade do Microsoft 365 Multi-Geo
 
-A multigeografia do Office 365 atualmente é oferecida nos países e regiões seguintes:
+Atualmente, o Microsoft 365 Multi-Geo é oferecido nessas regiões e países:
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ## <a name="getting-started"></a>Introdução
 
 Siga estas etapas para iniciar com o multigeográfico:
 
-1. Trabalhe com a sua equipe de conta para adicionar o plano de serviço _Funcionalidades multigeográficas do Office 365_. Elas orientarão você ra adicionar o número de licenças necessárias. O recurso multigeográfico está disponível para clientes do Contrato Enterprise (EA) com um mínimo de 500 assinaturas do Office 365.
+1. Trabalhe com sua equipe de conta para adicionar os _Recursos de várias áreas geográficas no plano de serviço do Microsoft 365_. Elas orientarão você ra adicionar o número de licenças necessárias. O recurso de várias áreas geográficas está disponível para clientes da EA com no mínimo 250 assinaturas do Microsoft 365.
 
-   Antes de começar a usar o Office 365 multigeográfico, a Microsoft precisa configurar seu locatário do Exchange Online para suporte multigeográfico. Esse processo de configuração único é disparado após você solicitar o plano de serviço *Funcionalidades Multigeográficas no Office 365* e as licenças aparecem em seu locatário. Você receberá notificações no [Centro de mensagens do Office 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) depois que as licenças multigeográficas são aplicadas e você pode começar configurar e usar recursos do Office 365 multigeográfico.
+   Antes de começar a usar o Microsoft 365 Multi-Geo, a Microsoft precisa configurar seu locatário do Exchange Online do suporte multigeográfico. Esse processo de configuração única é acionado após o pedido do *Plano de serviços do Recursos Geográficos no Microsoft 365*, sendo que as licenças são exibidas no seu locatário. Você receberá notificações no [Centro de mensagens do Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) assim que suas licenças do Multi-Geo forem aplicadas e, em seguida, você poderá começar a configurar e usar seus recursos do Microsoft 365 Multi-Geo.
 
 2. Leia [planejar o ambiente multigeográfico](plan-for-multi-geo.md).
 
 3. Saiba mais sobre [administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md) e [como seus usuários terão o ambiente](multi-geo-user-experience.md).
 
-4. Quando estiver pronto para configurar o Office 365 Multigeográfico, [configurar seu locatário multigeográfico](multi-geo-tenant-configuration.md).
+4. Quando você estiver pronto para configurar o Microsoft 365 Multi-Geo, [configure seu locatário para multigeográfico](multi-geo-tenant-configuration.md).
 
 5. [Configurar pesquisa](configure-search-for-multi-geo.md).
 

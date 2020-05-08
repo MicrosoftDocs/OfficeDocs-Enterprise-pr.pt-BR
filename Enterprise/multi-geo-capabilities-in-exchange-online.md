@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Saiba mais sobre os recursos multigeográficos no Exchange Online.
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890543"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057971"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos multigeográficos no Exchange Online
 
@@ -45,11 +45,11 @@ O Exchange Online sincroniza a propriedade **PreferredDataLocation** do Azure ad
 
 - Se o código **PreferredDataLocation** estiver incorreto (por exemplo, um tipo de NAN, em vez de NAM), a caixa de correio será provisionada na localização geográfica central.
 
-**Observação**: os recursos multigeográficos e as reuniões hospedadas regionalmente do Skype for Business Online usam a propriedade **PreferredDataLocation** em objetos de usuário para localizar os serviços. Se você configurar valores do **PreferredDataLocation** em objetos de usuário para reuniões hospedadas regionalmente, a caixa de correio para esses usuários será movida automaticamente para a localização geográfica especificada após a habilitação do recurso multigéografico no locatário do Office 365.
+**Observação**: os recursos multigeográficos e as reuniões hospedadas regionalmente do Skype for Business Online usam a propriedade **PreferredDataLocation** em objetos de usuário para localizar os serviços. Se você configurar os valores **PreferredDataLocation** nos objetos de usuário das reuniões hospedadas regionalmente, a caixa de correio desses usuários será automaticamente movida ao local geográfico especificado após a habilitação múltipla ser ativada no locatário do Microsoft 365.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Limitações de recursos para a funcionalidade multigeográfica no Exchange Online
 
-- Os recursos de segurança e de conformidade (por exemplo, auditoria e a descoberta eletrônica) que estão disponíveis no centro de administração do Exchange (EAC) não estão disponíveis em organizações multigeográficas. Em vez disso, você precisa usar o [Centro de Conformidade e Segurança do Office 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e de conformidade.
+- Os recursos de segurança e de conformidade (por exemplo, auditoria e a descoberta eletrônica) que estão disponíveis no centro de administração do Exchange (EAC) não estão disponíveis em organizações multigeográficas. Em vez disso, você precisa usar o [Centro de Conformidade e Segurança do Microsoft 365](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) para configurar recursos de segurança e de conformidade.
 
 - Os usuários do Outlook para Mac podem perder temporariamente o acesso à pasta de arquivo morto online enquanto você move caixa de correio para uma nova localização geográfica. Isso ocorre quando as caixas de correio principal e de arquivo morto do usuário estão em localizações geográficas diferentes, porque as movimentações de caixas de correio geográficas cruzadas podem ser concluídas em diferentes horários.
 

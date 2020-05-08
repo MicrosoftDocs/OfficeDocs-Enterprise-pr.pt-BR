@@ -1,5 +1,5 @@
 ---
-title: Configurar a pesquisa para o Office 365 Multigeográfico
+title: Configurar a pesquisa do Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974003"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057667"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Configurar a Pesquisa para o Office 365 Multigeográfico
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar a Pesquisa do Microsoft 365 Multi-Geo
 
 Em um ambiente multigeográfico, cada localização geográfica tem seu próprio índice de pesquisa e Centro de pesquisa. Quando um usuário pesquisa, é realizado o fan out para todos os índices e os resultados retornados são mesclados.
 
@@ -102,7 +102,7 @@ Alguns recursos de pesquisa que talvez você conheça funcionam diferente em um 
 </tr>
 <tr class="even">
 <td align="left">Pesquisa híbrida</td>
-<td align="left">Em um ambiente do SharePoint híbrido com <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">pesquisa híbrida de nuvem</a>,  o conteúdo local é adicionado ao índice do Office 365 da localização central.</td>
+<td align="left">Em um ambiente do SharePoint híbrido com <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">pesquisa híbrida de nuvem</a>, o conteúdo local é adicionado ao índice do Microsoft 365 da localização central.</td>
 <td align="left"></td>
 </tr>
 </tbody>

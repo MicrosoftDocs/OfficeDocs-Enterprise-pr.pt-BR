@@ -1,5 +1,5 @@
 ---
-title: Configuração de um locatário do Office 365 multigeográfico
+title: Configuração do locatário do Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 localization_priority: Priority
-description: Saiba como configurar o Office 365 multigeográfico.
-ms.openlocfilehash: bba1260283b4e610b88c00c7d531e44c79acd58d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Aprenda a configurar o Microsoft 365 Multi-Geo.
+ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973973"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057717"
 ---
-# <a name="office-365-multi-geo-tenant-configuration"></a>Configuração de um locatário do Office 365 multigeográfico
+# <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuração do locatário do Microsoft 365 Multi-Geo
 
-Antes de configurar seu locatário do Office 365 multigeográfico, certifique-se de que você leu o [Plano para o Office 365 multigeográfico](plan-for-multi-geo.md). Para seguir as etapas neste artigo, você precisará de uma lista de localizações geográficas que você deseja habilitar como locais de satélite e os usuários de teste que você deseja provisionar para esses locais.
+Antes de configurar seu locatário do Microsoft 365 Multi-Ge, certifique-se de que você leu o [Plano do Microsoft 365 Multi-Geo](plan-for-multi-geo.md). Para seguir as etapas neste artigo, você precisará de uma lista de localizações geográficas que você deseja habilitar como locais de satélite e os usuários de teste que você deseja provisionar para esses locais.
 
-## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Adicionar recursos multigeográficos no plano do Office 365 para seu locatário
+## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>Adicionar o plano Recursos Multi-Geográficos no Microsoft 365 ao seu locatário
 
-Para usar o Office 365 multigeográfico, é necessário o plano _Funcionalidades Multigeográficas no Office 365_. Trabalhar com sua equipe de conta para adicionar este plano para seu locatário. Sua equipe de conectará você com o especialista de licenciamento apropriado e fará a configuração do seu locatário.
+Para usar o Microsoft 365 Multi-Geo, você precisa dos _Recursos Multi-Geo no plano do Microsoft 365_. Trabalhar com sua equipe de conta para adicionar este plano para seu locatário. Sua equipe de conectará você com o especialista de licenciamento apropriado e fará a configuração do seu locatário.
 
-Observe que o plano de _Funcionalidades Multigeográficas no Office 365_ é um plano de serviços de nível de usuário. Você precisa de uma licença para cada usuário que deseja hospedar em um local de satélite. Você pode adicionar mais licenças ao longo do tempo ao adicionar usuários em locais de satélite.
+Observe que o plano de _Funcionalidades Multigeográficas no Microsoft 365_ é um plano de serviços de nível de usuário. Você precisa de uma licença para cada usuário que quiser hospedar em um local de satélite. Você pode adicionar mais licenças ao longo do tempo ao adicionar usuários nos locais de satélite.
 
-Depois que o locatário for provisionado com o plano  _Funcionalidades Multigeográficas no Office 365_, a guia **Localizaões geográficas** será disponibilizada no OneDrive e no Centro de administração do SharePoint.
+Depois que seu locatário for provisionado com os _Recursos de várias regiões no plano do Microsoft 365_, a guia **Locais geográficos** ficará disponível nos centros de administração do OneDrive e do SharePoint.
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>Adicionar locais de satélites ao seu locatário
 
 Você deve adicionar um local de satélite para cada localização geográfica onde você deseja armazenar dados. As localizações geográficas disponíveis são mostrados na tabela a seguir:
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ![Captura de tela da página de localizações geográficas do centro de administração do SharePoint](media/sharepoint-multi-geo-admin-center.png)
 
@@ -74,7 +74,7 @@ Há dois tipos de objetos de usuário no Azure Active Directory: usuários somen
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Sincronizar o local de dados preferencial do usuário usando o Azure Active Directory Connect 
 
-Se os usuários da empresa são sincronizados de um sistema local do AD (Active Directory) ao AAD (Azure Active Directory), o PreferredDataLocation deve ser preenchido no AD e sincronizado com o AAD. Siga o processo em [Sincronização do Azure AD Connect: configurar o local preferencial de dados para recursos do Office 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) para configurar a sincronização do local preferencial de dados do Active Directory local com o Azure Active Directory.
+Se os usuários da empresa são sincronizados de um sistema local do Active Directory ao Azure Active Directory, o PreferredDataLocation deve ser preenchido no AD e sincronizado ao AAD. Siga o processo em [Sincronização do Azure Active Directory Connect: configurar o local preferencial de dados dos recursos do Microsoft 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) para configurar a sincronização do local preferencial de dados do Active Directory local com o Azure Active Directory.
 
 Recomendamos que você inclua o Local de Dados Preferencial do usuário na configuração como parte do fluxo de trabalho de criação de usuário padrão.
 
@@ -83,7 +83,7 @@ Recomendamos que você inclua o Local de Dados Preferencial do usuário na confi
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Configurar Local de Dados Preferencial para usuários somente na nuvem 
 
-Se os usuários da empresa não estiverem sincronizados a partir de um sistema do Active Directory local para o Azure Active Directory, o que significa que são criados no Office 365 ou no Azure Active Directory, o PDL deverá ser definido usando o PowerShell do Azure Active Directory.
+Se os usuários da sua empresa não forem sincronizados de um sistema Active Directory local com o Azure Active Directory, significando que eles são criados no Microsoft 365 ou no Azure Active Directory, a PDL deverá ser definida usando o Azure Active Directory PowerShell.
 
 Os procedimentos desta seção exigem o [Módulo do Microsoft Azure Active Directory para o Módulo do Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0). Se você já tiver instalado o PowerShell do Azure Active Directory, não se esqueça de atualizar para a versão mais recente.
 
@@ -130,13 +130,13 @@ Além disso, recursos de pesquisa multigeográfica podem ser configurados para o
 
 Examine [Configurar a pesquisa para o OneDrive for Business com a funcionalidade multigeográfica](configure-search-for-multi-geo.md) para obter instruções, incluindo limitações e diferenças.
 
-## <a name="validating-the-office-365-multi-geo-configuration"></a>Validar a configuração do Office 365 multigeográfico
+## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>Validar a configuração do Microsoft 365 Multi-Geo
 
-Veja a seguir alguns casos de uso básico que você pode incluir em seu plano de validação antes de implementar o Office 365 multigeográficolargamente em sua empresa. Depois de concluir esses testes e os casos de uso mais relevantes para sua empresa, você pode optar por prosseguir e adicionar os usuários em seu grupo piloto inicial.
+Abaixo estão alguns casos de uso básicos que você pode incluir no seu plano de validação antes de lançar amplamente o Microsoft 365 Multi-Geo na sua empresa. Depois de concluir esses testes e os casos de uso mais relevantes para sua empresa, você pode optar por prosseguir e adicionar os usuários em seu grupo piloto inicial.
 
 **OneDrive for Business**
 
-Selecione o OneDrive no inicializador de aplicativos do Office 365 e confirme que você será direcionado automaticamente para a localização geográfica apropriada do usuário com base no PDL do usuário. OneDrive for Business agora vai começar a provisionar nesse local. Uma vez provisionado, tente carregar e baixar alguns documentos.
+Selecione o OneDrive no iniciador de aplicativos do Microsoft 365 e confirme se você é direcionado automaticamente para o local geográfico apropriado para o usuário, com base na PDL do usuário. OneDrive for Business agora vai começar a provisionar nesse local. Uma vez provisionado, tente carregar e baixar alguns documentos.
 
 **Aplicativo móvel do OneDrive**
 
