@@ -1,5 +1,5 @@
 ---
-title: Teste de conectividade do Microsoft 365 no centro de administração do M365 (versão prévia)
+title: Teste de conectividade do 365 da Microsoft (versão prévia) no centro de administração do Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Teste de conectividade do Microsoft 365 no centro de administração do M365 (versão prévia)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612871"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208792"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Teste de conectividade do Microsoft 365 no centro de administração do M365 (versão prévia)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Teste de conectividade do Microsoft 365 no centro de administração do Microsoft 365 (versão prévia)
 
-O teste de conectividade 365 da Microsoft está <https://connectivity.office.com>localizado em. É uma ferramenta do adjunct para as informações de rede e informações de Pontuação de rede disponíveis no centro de administração do Microsoft 365 sob o **| Menu desempenho da rede** .
+O teste de conectividade 365 da Microsoft está localizado em <https://connectivity.office.com> . É uma ferramenta do adjunct para as informações de rede e informações de Pontuação de rede disponíveis no centro de administração do Microsoft 365 sob o **| Menu desempenho da rede** .
 
 >[!NOTE]
 >A ferramenta de integração oferece suporte a locatários no WW Commercial ou GCC moderado, mas não GCC alta, DoD, Alemanha ou China.
@@ -37,7 +37,7 @@ Recomendamos que eles sejam usados em conjunto, onde o status de qualidade da re
 
 ## <a name="the-advanced-tests-client-application"></a>O aplicativo cliente de testes avançados
 
-Há duas partes no teste de conectividade 365 da Microsoft. Há um aplicativo cliente do <https://connectivity.office.com> Windows que pode ser baixado. O cliente baixável executa testes avançados de conectividade de rede e a maioria dos testes exige que isso seja executado.
+Há duas partes no teste de conectividade 365 da Microsoft. Há <https://connectivity.office.com> um aplicativo cliente do Windows que pode ser baixado. O cliente baixável executa testes avançados de conectividade de rede e a maioria dos testes exige que isso seja executado.
 
 Você pode executar o teste de cliente avançado no site da Web e ele preencherá os resultados de volta para a página da Web à medida que ele é executado.
 
@@ -103,19 +103,19 @@ Identificamos os servidores proxy configurados na máquina local. Identificamos 
 
 ## <a name="media-quality-checks"></a>Verificações de qualidade de mídia
 
-Este teste instala e executa a ferramenta de avaliação de rede do Skype for Business e interpreta os resultados. A ferramenta pode ser encontrada em [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885).
+Este teste instala e executa a ferramenta de avaliação de rede do Skype for Business e interpreta os resultados. A ferramenta pode ser encontrada em [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) .
 
 Estes são os testes de protocolo UDP usados pela funcionalidade de conferência e conferência de áudio e vídeo do Microsoft Teams. Testamos a perda de pacotes UDP, latência de rede UDP, tremulação de UDP e reordenação de pacotes UDP. Uma visão da rede será mostrada se qualquer um deles estiver acima do intervalo permitido.
 
 ## <a name="tcp-connectivity-tests"></a>Testes de conectividade TCP
 
-Testamos a conectividade HTTP do local do escritório do usuário para todos os pontos de extremidade de rede do Microsoft 365 necessários. Eles são publicados em [https://aka.ms/o365ip](https://aka.ms/o365ip). Uma visão da rede é mostrada para qualquer ponto de extremidade de rede necessário que não possa ser conectado.
+Testamos a conectividade HTTP do local do escritório do usuário para todos os pontos de extremidade de rede do Microsoft 365 necessários. Eles são publicados em [https://aka.ms/o365ip](https://aka.ms/o365ip) . Uma visão da rede é mostrada para qualquer ponto de extremidade de rede necessário que não possa ser conectado.
 
 A conectividade é bloqueada por um servidor proxy, firewall ou outro dispositivo de segurança de rede no perímetro de rede corporativa ou em uso como um proxy de nuvem.
 
 ## <a name="ssl-interception-tests"></a>Testes de interceptação SSL
 
-Testamos o certificado SSL em cada ponto de extremidade de rede do Microsoft 365 necessário, que está na categoria otimizar ou [https://aka.ms/o365ip](https://aka.ms/o365ip)permitir, conforme definido em. Se algum teste não localizar um certificado SSL da Microsoft, a rede criptografada conectada deve ter sido interceptada por um dispositivo de rede intermediário. Uma visão da rede é mostrada em qualquer ponto de extremidade de rede criptografada interceptada.
+Testamos o certificado SSL em cada ponto de extremidade de rede do Microsoft 365 necessário, que está na categoria otimizar ou permitir, conforme definido em [https://aka.ms/o365ip](https://aka.ms/o365ip) . Se algum teste não localizar um certificado SSL da Microsoft, a rede criptografada conectada deve ter sido interceptada por um dispositivo de rede intermediário. Uma visão da rede é mostrada em qualquer ponto de extremidade de rede criptografada interceptada.
 
 Quando é encontrado um certificado SSL que não é fornecido pela Microsoft, mostramos o FQDN para o teste e o proprietário do certificado SSL em uso. Este proprietário de certificado SSL pode ser um fornecedor de servidor proxy ou pode ser um certificado de AutoAssinatura empresarial.
 
