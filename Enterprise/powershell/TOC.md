@@ -46,7 +46,7 @@
 ### [Adicionar um domínio a uma locação do cliente com o Windows PowerShell para os parceiros com acesso delegado](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Conectar-se ao Exchange Online por meio do Windows PowerShell remoto para parceiros com acesso delegado](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Recuperar dados de relatórios do cliente por meio do Windows PowerShell para parceiros com Acesso Delegado](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
+## [Gerenciar o Microsoft Teams](manage-microsoft-teams-with-office-365-powershell.md)
 ## [Gerenciar o Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Gerenciar as políticas do Skype for Business Online](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Atribuir as políticas do Skype for Business Online a cada usuário](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
-
