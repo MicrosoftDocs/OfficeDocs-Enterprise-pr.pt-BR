@@ -3,7 +3,7 @@ title: Proteger as contas de administradores globais do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Proteger o acesso de administrador global à sua assinatura do Office 365.
-ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
+ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
+ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013404"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44253288"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Proteger as contas de administradores globais do Office 365
 
@@ -101,6 +101,10 @@ A MFA (autenticação multifator) requer informações adicionais além do nome 
     
 - Um dispositivo biométrico
     
+>[!Note]
+>Para organizações que precisam cumprir os padrões do Instituto Nacional de padrões e tecnologia (NIST), o uso de um telefonema ou de métodos de verificação adicionais baseados em mensagem de texto é restrito. Clique [aqui](https://pages.nist.gov/800-63-FAQ/#q-b01) para obter os detalhes.
+>
+
 Se você é uma pequena empresa que está usando contas de usuário armazenadas apenas na nuvem (modelo de identidade somente na nuvem), use estas etapas para configurar a MFA usando uma chamada telefônica ou um código de verificação de mensagem de texto enviado a um telefone inteligente:
   
 1. [Configurar a MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -132,7 +136,7 @@ Após as etapas 1 e 2, use esses métodos adicionais para garantir que sua conta
 
 Para garantir que a execução de tarefas altamente privilegiadas seja o mais segura possível, use uma estação de trabalho privilegiada (pata). Um pata é um computador dedicado que é usado apenas para tarefas de configuração confidenciais, como a configuração do Office 365 que requer uma conta de administrador global. Como este computador não é usado diariamente para navegação na Internet ou email, é melhor proteger contra ataques e ameaças da Internet.
   
-Para obter instruções sobre como configurar um pata, consulte [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
+Para obter instruções sobre como configurar um pata, consulte [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

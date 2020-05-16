@@ -1,5 +1,5 @@
 ---
-title: Como verificar a integridade do serviço do Office 365
+title: Como verificar a integridade do serviço Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,43 +24,53 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Veja o status de integridade dos serviços do Office 365 antes de ligar para o suporte para ver se há uma interrupção ativa do serviço.
-ms.openlocfilehash: 2d5b12e4443395d5a9a16fd6934ca68a99601416
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Veja o status de integridade dos serviços do Microsoft 365 antes de ligar para o suporte para ver se há uma interrupção ativa do serviço.
+ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
+ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843962"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44266671"
 ---
-# <a name="how-to-check-office-365-service-health"></a>Como verificar a integridade do serviço do Office 365
+# <a name="how-to-check-microsoft-365-service-health"></a>Como verificar a integridade do serviço Microsoft 365
 
 [![Rótulo para informar que o centro de administração está mudando e você pode encontrar mais detalhes em aka.ms/aboutM365preview.](media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
 
-Você pode exibir a integridade de seus serviços da Microsoft, incluindo o Office na Web, o Yammer, o Microsoft Dynamics CRM e os serviços de nuvem do Microsoft Intune, na página **integridade do serviço** do Office 365 no [centro de administração](https://go.microsoft.com/fwlink/p/?linkid=2024339). Se tiver problemas com um serviço em nuvem, poderá verificar a integridade do serviço para determinar se é um problema conhecido com uma resolução em andamento, antes de chamar o suporte ou perder tempo na solução de problemas.
+Você pode exibir a integridade de seus serviços da Microsoft, incluindo o Office na Web, o Yammer, o Microsoft Dynamics CRM e os serviços de nuvem de gerenciamento de dispositivo móvel, na página **integridade do serviço** no centro de [administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339). Se tiver problemas com um serviço em nuvem, poderá verificar a integridade do serviço para determinar se é um problema conhecido com uma resolução em andamento, antes de chamar o suporte ou perder tempo na solução de problemas.
 
 Se você não conseguir entrar no portal de serviço, poderá usar a [página status do serviço](https://status.office365.com) para verificar se há problemas conhecidos, impedindo o login no locatário.
   
 ### <a name="how-to-check-service-health"></a>Como verificar a integridade do serviço
 
-1. Vá para o centro de administração [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339)em e entre com uma conta de administrador.
+1. Vá para o centro de administração do Microsoft 365 em [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) e entre com uma conta de administrador.
 
     > [!NOTE]
-    > As pessoas às quais a função de administrador global ou do serviço é atribuída podem visualizar a integridade do serviço. Para permitir que os administradores do Exchange, SharePoint e Skype for Business visualizem a integridade do serviço, eles também devem receber a função de administrador do serviço. Para obter mais informações sobre as funções que podem exibir a integridade do serviço, consulte [about admin Roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
+    > As pessoas às quais a função de administrador global ou do serviço é atribuída podem visualizar a integridade do serviço. Para permitir que os administradores do Exchange, SharePoint e Skype for Business visualizem a integridade do serviço, eles também devem receber a função de administrador do serviço. Para obter mais informações sobre as funções que podem exibir a integridade do serviço, consulte [about admin Roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center).
   
-2. Se você não estiver usando o novo centro de administração, na Home Page, marque a opção **Experimente o novo centro de administração** alternar no canto superior direito.
+2. Se você não estiver usando o novo centro de administração, na **Home** Page, marque a opção **Experimente o novo centro de administração** alternar no canto superior direito.
 
-3. Para exibir a integridade do serviço, no centro de administração, vá para**integridade do serviço**de **integridade** > ou selecione o cartão de **integridade do serviço** no **painel inicial**. O cartão de painel indica se há um problema de serviço ativo e links para a página de **integridade do serviço** detalhada.
+3. Para exibir a integridade do serviço, no centro de administração, **Health**vá para  >  **integridade do serviço**de integridade ou selecione o cartão de **integridade do serviço** no **painel inicial**. O cartão de painel indica se há um problema de serviço ativo e links para a página de **integridade do serviço** detalhada.
   
 4. Na página **integridade do serviço** , o estado de integridade de cada serviço de nuvem é mostrado em um formato de tabela.
 
    ![View of current issues in service health](media/service-health-all-services.png)
 
-A guia **todos os serviços** (o modo de exibição padrão) mostra todos os serviços e seu estado de integridade atual. Um ícone e a coluna **status** indicam o estado de cada serviço. Para filtrar o modo de exibição para serviços que estão experimentando um incidente, selecione a guia **incidentes** na parte superior da página. Selecionar a guia **avisos** mostrará apenas os serviços que atualmente têm um comunicado Postado. A guia **histórico** mostra o histórico de incidentes e avisos que foram resolvidos.
+A guia **todos os serviços** (o modo de exibição padrão) mostra todos os serviços e seu estado de integridade atual. Um ícone e a coluna **status** indicam o estado de cada serviço. 
 
-Se você estiver enfrentando um problema com um serviço do Office 365 e não o vir listado na página **integridade do serviço** , fale conosco selecionando **relatar um problema**e preenchimento de forma curta. Examinaremos os dados relacionados e os relatórios de outras organizações para ver o grau de disseminação do problema e se ele se originou com nosso serviço. Se tiver feito isso, vamos adicioná-lo como um novo incidente ou comunicado na página **integridade do serviço** , onde você pode controlar a resolução. Se você não vê-lo aparece na lista em cerca de 30 minutos, considere o suporte de contato para resolver o problema.
+Para filtrar o modo de exibição para serviços que estão experimentando um incidente, selecione a guia **incidentes** na parte superior da página. Selecionar a guia **avisos** mostrará apenas os serviços que atualmente têm um comunicado Postado. 
+
+A guia **histórico** mostra o histórico de incidentes e avisos que foram resolvidos.
+
+Se você estiver enfrentando um problema com um serviço do Microsoft 365 e não vê-lo listado na página **integridade do serviço** , fale conosco selecionando **relatar um problema**e preenchimento de forma curta. Examinaremos os dados relacionados e os relatórios de outras organizações para ver o grau de disseminação do problema e se ele se originou com nosso serviço. Se tiver feito isso, vamos adicioná-lo como um novo incidente ou comunicado na página **integridade do serviço** , onde você pode controlar a resolução. Se você não vê-lo aparece na lista em cerca de 30 minutos, considere o suporte de contato para resolver o problema.
+
+Para inscrever-se para receber notificações por email de novos incidentes que afetam as alterações de locatário e de status de um incidente ativo, selecione **preferências**, clique em **enviar-me notificações do serviço Heath no email**e especifique:
+
+- Até dois endereços de email.
+- Se você deseja notificações para incidentes ou comunicados
+- Os serviços para os quais você deseja a notificação
 
 > [!TIP]
-> Você também pode usar o [aplicativo de administração do Office 365](https://go.microsoft.com/fwlink/p/?linkid=627216) no seu dispositivo móvel para visualizar a integridade do serviço, o que é uma ótima maneira de se manter atualizado com as notificações por push. 
+> Você também pode usar o [aplicativo de administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216) em seu dispositivo móvel para exibir a integridade do serviço, que é uma ótima maneira de se manter atualizado com as notificações por push. 
   
 ### <a name="view-details-of-posted-service-health"></a>Exibir detalhes da integridade do serviço postado
 
@@ -96,7 +106,7 @@ Como as explicações de integridade do serviço são postadas em tempo real, el
 Na maioria das vezes, os serviços serão exibidos como íntegros sem mais informações. Quando um serviço está com um problema, ele é identificado como um aviso ou um incidente e mostra um status atual.
   
 > [!TIP]
-> Os eventos de manutenção planejados não são exibidos na integridade do serviço. Você pode acompanhar os eventos de manutenção planejados atualizando-se com o **Centro de Mensagens**. Filtre para mensagens categorizadas como Preparar-se para a mudança para descobrir quando a mudança acontecerá, seu efeito e como se preparar para isso. Confira mais detalhes no [Centro de Mensagens no Office 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093).
+> Os eventos de manutenção planejados não são exibidos na integridade do serviço. Você pode acompanhar os eventos de manutenção planejados atualizando-se com o **Centro de Mensagens**. Filtre para mensagens categorizadas como Preparar-se para a mudança para descobrir quando a mudança acontecerá, seu efeito e como se preparar para isso. Confira [o centro de mensagens no Microsoft 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) para obter mais detalhes.
   
 ### <a name="incidents-and-advisories"></a>Incidentes e avisos
 
@@ -131,12 +141,8 @@ Uma lista de todas as mensagens de integridade de serviço postadas no cronogram
   
 Expanda qualquer linha para exibir mais detalhes sobre o problema.
   
-Para obter mais informações sobre nosso compromisso com o tempo de atividade, consulte [operações transparentes do Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
-  
-## <a name="leave-feedback"></a>Deixar comentários
+Para obter mais informações sobre nosso compromisso com o tempo de atividade, consulte [operações transparentes do Microsoft 365](https://go.microsoft.com/fwlink/?linkid=848695).
 
-Nosso objetivo é garantir que as informações que fornecemos a você sobre um problema em andamento sejam oportunas, precisas e úteis. Para nos dizer como estamos trabalhando, selecione uma classificação por estrelas. Depois de nos dar uma pontuação de 1 a 5 estrelas, você pode fazer comentários sobre qualquer detalhe específico. Usaremos seus comentários para ajustar o nosso sistema de integridade do serviço.
-  
 ## <a name="see-also"></a>Confira também
 
 [Relatórios de atividades no centro de administração do Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
