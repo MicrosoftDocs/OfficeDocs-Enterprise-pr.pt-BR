@@ -30,7 +30,6 @@
 ## Suporte ao cliente do Office 365
 ### [Autenticação baseada em certificado](office-365-client-support-certificate-based-authentication.md)
 ### [Acesso condicional](office-365-client-support-conditional-access.md)
-### [Escolher entre MDM ou Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Gerenciamento de aplicativos móveis](office-365-client-support-mobile-application-management.md)
 ### [Autenticação moderna](office-365-client-support-modern-authentication.md)
 ### [Logon único](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
 
 ## Dispositivos
-### [Escolher entre MDM ou Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [Gerenciar configurações de acesso do dispositivo](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## Cargas de trabalho
