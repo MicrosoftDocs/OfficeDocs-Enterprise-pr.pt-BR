@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumo: Use o Office 365 PowerShell para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.'
-ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
-ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
+ms.openlocfilehash: 89b3ab5ce571c9812e2b4f3d3aef7066a7babb08
+ms.sourcegitcommit: 0c2d4cfb4d1b21ea93bcc6eb52421548db34b1e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43146806"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374440"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
 
@@ -110,7 +110,7 @@ Para desabilitar uma conta de usuário usando o Windows PowerShell, use os cmdle
 
 ## <a name="managing-large-numbers-of-users"></a>Gerenciando um grande número de usuários
 
-Para gerenciar grandes números de usuários (1000 ou mais), você precisa em lotes os comandos por meio de um bloco de script usando o cmdlet [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Nos exemplos anteriores, cada vez que um cmdlet é executado, ele deve configurar a chamada e, em seguida, aguardar o resultado antes de enviá-lo de volta.  Ao usar um bloco de script, isso permite que os cmdlets sejam executados remotamente e, depois de concluídos, enviem os dados de volta. 
+Para gerenciar grandes números de usuários (1000 ou mais), você precisa em lotes os comandos por meio de um bloco de script usando o cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Nos exemplos anteriores, cada vez que um cmdlet é executado, ele deve configurar a chamada e, em seguida, aguardar o resultado antes de enviá-lo de volta.  Ao usar um bloco de script, isso permite que os cmdlets sejam executados remotamente e, depois de concluídos, enviem os dados de volta. 
 
 ```powershell
 Import-Module LyncOnlineConnector
