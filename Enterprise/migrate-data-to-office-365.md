@@ -16,12 +16,12 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 description: Se você tiver optado por não implantar o FastTrack e estiver pronto para migrar dados para o Office 365, este é o lugar para começar.
-ms.openlocfilehash: 4389d5531b21b892408ba7941900ee7aceb55474
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44038429ecf3b927db408679f8651d4055113a48
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844882"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419339"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Migrar os dados de sua organização para o Office 365 Enterprise
 
@@ -29,7 +29,7 @@ ms.locfileid: "41844882"
 
 Nossas [instruções básicas de configuração](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) ajudam você a fazer com que todos possam usar os serviços e aplicativos do Office 365 o mais rápido possível. Isso é possível porque são ignorados os cenários híbridos e os métodos mais avançados de migração para o Office 365. 
   
-Se quiser ajuda para configurar o Office 365, o [FastTrack](https://fasttrack.microsoft.com/office) é a maneira mais fácil de implantar o Office 365, e você também pode entrar e usar os [Consultores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md).
+Se você quiser obter ajuda para instalar o Office 365, o [FastTrack](https://fasttrack.microsoft.com/office) é a maneira mais fácil de implantar o Office 365, você também pode entrar e usar os [guias de configuração para os serviços do Office 365](setup-guides-for-office-365.md).
 
 ## <a name="migrate-email-to-office-365"></a>Migrar emails para o Office 365
 - Migrar com a implantação híbrida do Exchange usando o [Assistente de implantação do Exchange](https://technet.microsoft.com/exdeploy2013). (Administrador)

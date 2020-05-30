@@ -18,12 +18,12 @@ ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
 description: Configurar serviços e aplicativos do Office 365 Enterprise
-ms.openlocfilehash: 45fb283894e68e40d38bc42667f5ac9e5d45b579
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: e0b0be9b4b99f5a652145e9f2991181769a9df19
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009316"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419319"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Configurar serviços e aplicativos do Office 365 Enterprise
 
@@ -31,7 +31,7 @@ ms.locfileid: "44009316"
 
 Nossas [instruções de configuração básica](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) ajudam você fazer com que todos usem os aplicativos e serviços do Office 365 o mais rápido possível. Às vezes, é preferível configurar esses recursos antes que as pessoas comecem a usá-los. Por exemplo, se você desejar configurar o roteamento de correio, armazenamento de arquivos ou as políticas de compartilhamento. 
   
-Se quiser ajuda para obter o Office 365, use o ** [FastTrack](https://fasttrack.microsoft.com/office) ** ou os [Consultores de implantação de serviços do Office 365](deployment-advisors-for-office-365.md).
+Se você quiser obter ajuda para instalar o Office 365, use o **[FastTrack](https://fasttrack.microsoft.com/office)** ou os [guias de configuração para os serviços do Office 365](setup-guides-for-office-365.md).
   
 |**Serviços e aplicativos**|**Recursos**|
 |:-----|:-----|

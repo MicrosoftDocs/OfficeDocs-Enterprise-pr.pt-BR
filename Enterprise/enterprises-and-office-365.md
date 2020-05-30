@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Recursos para planejar e gerenciar o Office 365 para sua organização corporativa.
-ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 51687e07abfafa7959166cfcd1a59b3a1af7bc20
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979543"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419389"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Organizações corporativas e o Office 365
 
@@ -44,7 +44,7 @@ Planejar, configurar e migrar dados para o Office 365 com a ajuda do FastTrack.
   
 ![Símbolos de segurança e conformidade](media/f96c2cdf-d151-4f44-bb11-20bb7f366a21.png)
   
- **Conformidade &amp; de segurança**
+ **Conformidade de segurança &amp;**
   
 Proteger seus dados e cumprir padrões legais ou normativos.
   
@@ -102,7 +102,7 @@ Experiências de aprendizado online individualizadas para profissionais de ti do
   
 ## <a name="featured-articles"></a>Artigos em destaque
 
-[Contatar o suporte para produtos empresariais – Ajuda para Administradores](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+[Entre em contato com o suporte para produtos para empresas - ajuda para administradores](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
   
 [Implantar o novo cliente de sincronização do OneDrive para Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)
   
@@ -110,7 +110,7 @@ Experiências de aprendizado online individualizadas para profissionais de ti do
   
 [Atualizar de servidores e clientes do Office 2010](upgrade-from-office-2010-servers-and-products.md)
   
-[Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
+[Guias de configuração para os serviços do Office 365](setup-guides-for-office-365.md)
   
  **Treinamento para usuários finais**
   

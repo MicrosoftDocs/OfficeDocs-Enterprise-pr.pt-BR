@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Resumo: descreve as considerações de capacidade de rede, aceleradores de WAN e dispositivos de balanceamento de carga usados para se conectar ao Office 365.'
-ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841718"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419365"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Plano para dispositivos de rede que se conectam aos serviços do Office 365
 
@@ -74,6 +74,6 @@ Para obter mais detalhes sobre a configuração de firewalls e proxies para se c
   
 ## <a name="see-also"></a>Confira também
 
-[Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
+[Guias de configuração para os serviços do Office 365](setup-guides-for-office-365.md)
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

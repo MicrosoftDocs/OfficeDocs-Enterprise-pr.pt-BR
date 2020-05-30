@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
-ms.openlocfilehash: 0601775beb3f7e42d3e18de7b85406c02df2f4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844572"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419379"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planejamento de migração e rede para o Office 365
 
@@ -77,7 +77,7 @@ Aprofundar-se nas práticas recomendadas para obter mais informações sobre a m
     
 3. Melhorar o desempenho da migração de email Gerenciando cuidadosamente o agendamento de atualizações do Windows. Você pode atualizar seus computadores clientes em lotes e garantir que todos os computadores clientes sejam atualizados antes de migrar para o Office 365 para regulamentar o uso da largura de banda da rede. Para saber mais, confira [atualizar e configurar manualmente as áreas de trabalho para o Office 365 para as atualizações mais recentes](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. O tráfego de rede do Office 365 funciona melhor quando é tratado como um serviço de Internet confiável e tem permissão para ignorar a maior parte da filtragem e verificação tradicionais que algumas organizações colocam no tráfego de rede para serviços de Internet não confiáveis. Isso geralmente inclui remover o processamento de saída, como a autenticação de usuário de proxy e a inspeção de pacotes, além de garantir a egresso local à Internet com a conversão de endereço de rede (NAT) adequada e a capacidade de largura de banda suficiente para lidar com o aumento solicitações de rede. Confira o [Gerenciamento de pontos de extremidade do office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)para obter orientação adicional sobre como configurar sua rede para lidar com o Office 365 como um serviço de Internet confiável na sua rede.
+4. O tráfego de rede do Office 365 funciona melhor quando é tratado como um serviço de Internet confiável e tem permissão para ignorar a maior parte da filtragem e verificação tradicionais que algumas organizações colocam no tráfego de rede para serviços de Internet não confiáveis. Isso geralmente inclui a remoção do processamento de saída, como a autenticação de usuário de proxy e a inspeção de pacotes, e a garantia de egresso local para a Internet com a conversão adequada de endereço de rede (NAT) e capacidade de largura de banda suficiente para lidar com as solicitações de rede aumentadas. Confira o [Gerenciamento de pontos de extremidade do office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)para obter orientação adicional sobre como configurar sua rede para lidar com o Office 365 como um serviço de Internet confiável na sua rede.
     
 1. Verifique se o [Gerenciamento de pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a). O tráfego adicional indo para o Office 365 resulta em um aumento de conexões de proxy de saída, bem como um aumento no tráfego seguro sobre TLS/SSL.
     
@@ -98,8 +98,6 @@ Estes tópicos contêm informações detalhadas de referência de rede do Office
   
 - [Gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-- [Conectividade de cliente](client-connectivity.md)
-    
 - [Redes de distribuição de conteúdo](content-delivery-networks.md)
     
 - [Registros de Sistema de Nomes de Domínio Externos para o Office 365](external-domain-name-system-records.md)
@@ -112,7 +110,7 @@ Estes tópicos contêm informações detalhadas de referência de rede do Office
     
 - [Planejar dispositivos de rede que se conectam aos serviços do Office 365](plan-for-network-devices.md)
     
-- [Supervisores de implantação para serviços do Office 365](deployment-advisors-for-office-365.md)
+- [Guias de configuração para os serviços do Office 365](setup-guides-for-office-365.md)
  
 ## <a name="see-also"></a>Confira também
 
