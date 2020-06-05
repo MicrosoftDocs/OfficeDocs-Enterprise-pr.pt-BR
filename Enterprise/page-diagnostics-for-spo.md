@@ -3,7 +3,7 @@ title: Usar a ferramenta diagnóstico de página para o SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use a ferramenta diagnóstico de página para SharePoint para analisar o portal moderno do SharePoint Online e as páginas de publicação clássicas em um conjunto predefinido de critérios de desempenho.
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603730"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561797"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar a ferramenta diagnóstico de página para SharePoint
 
-Este artigo descreve como usar a **ferramenta diagnóstico de página para SharePoint** para analisar as páginas de site modernas e clássicas do SharePoint Online em um conjunto de critérios de desempenho predefinido.  
+Este artigo descreve como usar a **ferramenta diagnóstico de página para SharePoint** para analisar as páginas de site modernas e clássicas do SharePoint Online em um conjunto de critérios de desempenho predefinido.
+
+A ferramenta diagnóstico de página para SharePoint pode ser instalada para:
+
+- **Microsoft Edge** [(extensão de borda)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(ramal Chrome)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >A versão **2.0.0** e posterior inclui suporte para páginas modernas, além de páginas de site clássicas. Se não tiver certeza sobre qual versão da ferramenta você está usando, você pode selecionar o link **sobre** ou as reticências (...) para verificar sua versão. **Sempre atualize para a versão mais recente** ao usar a ferramenta.
 
-A ferramenta diagnóstico de página do SharePoint é uma extensão de navegador para o novo Microsofthttps://www.microsoft.com/edge) Edge (e navegadores Chrome que analisa o portal moderno do SharePoint Online e as páginas do site de publicação clássica. Essa ferramenta só funciona no SharePoint Online e não pode ser usada em uma página de sistema do SharePoint.
+A ferramenta Diagnóstico de Página para SharePoint é uma extensão do navegador para os novos navegadores Microsoft Edge (https://www.microsoft.com/edge) e Chrome que analisam o portal moderno do SharePoint Online e as páginas clássicas de site de publicação. Essa ferramenta só funciona no SharePoint Online e não pode ser usada em uma página de sistema do SharePoint.
 
 A ferramenta gera um relatório para cada página analisada mostrando como a página é executada em um conjunto de regras predefinido e exibe informações detalhadas quando os resultados de um teste ficam fora do valor da linha de base. Os administradores e designers do SharePoint Online podem usar a ferramenta para solucionar problemas de desempenho e garantir que as novas páginas sejam otimizadas antes da publicação.
 
@@ -126,7 +131,7 @@ A guia **rastreamento de rede** fornece informações detalhadas sobre as duas s
 
     ![Rastreamento de rede](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    Na imagem mostrada acima, o item vermelho pertence à página padrão. Ele sempre mostrará vermelho, a menos que a \< página seja carregada no 1000ms (menos de 1 segundo).
+    Na imagem mostrada acima, o item vermelho pertence à página padrão. Ele sempre mostrará vermelho, a menos que a página seja carregada no \< 1000ms (menos de 1 segundo).
 
 2. **Teste os tempos de carregamento do item**. Em alguns casos, não haverá nenhum indicador de tempo ou de cor porque os itens já foram armazenados em cache pelo navegador. Para testar corretamente, abra a página, limpe o cache do navegador e, em seguida, clique em **Iniciar** como isso forçará uma carga de página "Cold" e será uma reflexão verdadeira da carga inicial da página. Isso deve ser comparado com a carga de página "quente" como isso também ajudará a determinar quais itens estão sendo armazenados em cache na página.
 
