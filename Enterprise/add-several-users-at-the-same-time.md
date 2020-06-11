@@ -1,5 +1,5 @@
 ---
-title: Adicionar vários usuários ao mesmo tempo para o Office 365 - Ajuda da administração
+title: Adicionar vários usuários ao mesmo tempo para o Microsoft 365-ajuda para administradores
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,26 +24,26 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'Saiba como adicionar vários usuários ao Office 365 para empresas de uma lista em uma planilha ou outro arquivo formatado por CSV. Assista a um vídeo sobre o YouTube que explica como adicionar contas ao Office 365. No final desse processo, cada usuário com uma conta terá uma caixa de correio do Office 365. '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: 'Saiba como adicionar vários usuários ao Microsoft 365 para empresas de uma lista em uma planilha ou outro arquivo formatado por CSV. Assista a um vídeo sobre o YouTube que explica como adicionar contas ao Microsoft 365. No final desse processo, cada usuário com uma conta terá uma caixa de correio do Microsoft 365. '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901204"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699238"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Adicionar vários usuários ao mesmo tempo para o Office 365 – Ajuda da administração
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Adicionar vários usuários ao mesmo tempo para o Microsoft 365-ajuda para administradores
 
-É necessário que cada pessoa na sua equipe tenha uma conta de usuário para poder entrar e acessar os serviços do Office 365, como o email e o Office. Se houver muitas pessoas, é possível adicionar todas as contas de uma só vez a partir de uma planilha do Excel ou de outro arquivo salvo em formato CSV. [Não sabe o que é o formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
+Cada pessoa em sua equipe precisa de uma conta de usuário antes de poder entrar e acessar os serviços do Microsoft 365, como emails e Office. Se houver muitas pessoas, é possível adicionar todas as contas de uma só vez a partir de uma planilha do Excel ou de outro arquivo salvo em formato CSV. [Não sabe o que é o formato CSV?](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
 > Se não estiver usando o novo centro de administração do Microsoft 365, você poderá ativá-lo selecionando a alternância **Experimentar o novo centro de administração** localizado na parte superior da Home Page.
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Adicionar vários usuários ao Office 365 no centro de administração do Microsoft 365
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Adicionar vários usuários no centro de administração do Microsoft 365
 
-1. Entre no Office 365 com uma conta corporativa ou de estudante. 
+1. Entre no Microsoft 365 com a sua conta corporativa ou de estudante. 
     
-2. No centro de administração, escolha usuários **ativos**do **usuário** \> .
+2. No centro de administração, escolha usuários ativos do **usuário** \> **Active users**.
 
 3. Selecione **adicionar vários usuários**.
 
@@ -74,13 +74,13 @@ ms.locfileid: "43901204"
 ## <a name="next-steps"></a>Próximas etapas
 <a name="bk_preview"> </a>
 
-- Agora que essas pessoas têm contas, elas precisam [baixar e instalar ou reinstalar o office 365 ou o office 2016 em um PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada pessoa de sua equipe pode instalar o Office 365 em até 5 PCs ou Macs. 
+- Agora que essas pessoas têm contas, elas precisam [baixar e instalar ou reinstalar o Microsoft 365 ou o Office 2016 em um PC ou Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Cada pessoa em sua equipe pode instalar o Microsoft 365 em até 5 PCs ou Macs. 
     
 - Cada pessoa também pode [configurar os aplicativos do Office e o email em um dispositivo móvel](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) em até 5 tablets e 5 telefones, como iPhones, iPads e telefones e tablets Android. Dessa forma, elas podem editar arquivos do Office em qualquer lugar. 
     
-    Consulte [Configurar o Office 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para obter uma lista completa das etapas de configuração. 
+    Consulte [set up Microsoft 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para obter uma lista completa das etapas de configuração. 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Mais informações sobre como adicionar usuários ao Office 365
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Mais informações sobre como adicionar usuários ao Microsoft 365
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>Não sabe o que é o formato CSV?
@@ -88,7 +88,7 @@ ms.locfileid: "43901204"
 
 Um arquivo CSV é um arquivo com valores separados por vírgulas. Você pode criar ou editar um arquivo como esse com qualquer editor de texto ou programa de planilha, como o Excel.
   
-Você pode baixar [esta planilha de exemplo](https://www.microsoft.com/download/details.aspx?id=45485) como ponto de partida. Lembre-se de que o Office 365 requer títulos de coluna na primeira linha; portanto, não os substitua por outra coisa. 
+Você pode baixar [esta planilha de exemplo](https://www.microsoft.com/download/details.aspx?id=45485) como ponto de partida. Lembre-se de que o Microsoft 365 requer títulos de coluna na primeira linha, portanto não os substitua por outra coisa. 
   
 Salve o arquivo com um novo nome e especifique o formato CSV.
   
@@ -101,7 +101,7 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Dicas para formatar a sua planilha
 <a name="__toc314595848"> </a>
 
-- **Preciso dos mesmos títulos de coluna como mostrado na planilha de exemplo?** Sim. A planilha de exemplo contém títulos de coluna na primeira linha. Esses títulos são obrigatórios. Para cada usuário que você desejar adicionar ao Office 365, crie uma linha sob o título. Se você adicionar, mudar ou excluir qualquer um dos títulos de coluna, o Office 365 poderá não ser capaz de criar os usuários com base nas informações do arquivo. 
+- **Preciso dos mesmos títulos de coluna como mostrado na planilha de exemplo?** Sim. A planilha de exemplo contém títulos de coluna na primeira linha. Esses títulos são obrigatórios. Para cada usuário que você deseja adicionar ao Microsoft 365, crie uma linha sob o título. Se você adicionar, alterar ou excluir qualquer um dos títulos de coluna, o Microsoft 365 pode não conseguir criar usuários a partir das informações no arquivo. 
     
 - **E se eu não tiver todas as informações necessárias sobre cada usuário?** O nome de usuário e o nome para exibição são obrigatórios, e não será possível adicionar um novo usuário sem essas informações. Caso não tenha alguma outra informação, como o fax, use um espaço e uma vírgula para indicar que o campo deve permanecer em branco. 
     
@@ -115,7 +115,7 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
     
 |**Rótulo da coluna de dados do usuário**|**Comprimento máximo de caracteres**|
 |:-----|:-----|
-|Nome de Usuário (Obrigatório)  <br/> |79 incluindo o sinal (@), no formato de nome@domínio.\<extensão\>. O alias do usuário não pode exceder 50 caracteres e o nome de domínio não pode exceder 48 caracteres.  <br/> |
+|Nome de Usuário (Obrigatório)  <br/> |79 incluindo o sinal de arroba (@), no formato name@domain. \<extension\> . O alias do usuário não pode exceder 50 caracteres e o nome de domínio não pode exceder 48 caracteres.  <br/> |
 |Nome  <br/> |64  <br/> |
 |Sobrenome  <br/> |64  <br/> |
 |Nome de Exibição (obrigatório)  <br/> |256  <br/> |
@@ -131,15 +131,15 @@ Ao salvar o arquivo, você provavelmente receberá um aviso de que alguns recurs
 |CEP  <br/> |40  <br/> |
 |País ou Região  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>Ainda com problemas ao adicionar usuários ao Office 365?
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>Ainda está tendo problemas ao adicionar usuários ao Microsoft 365?
 
 - **Verifique se o arquivo está formatado corretamente.** Verifique se os títulos das colunas correspondem àqueles do arquivo de exemplo. Você deverá seguir as regras de tamanho de caracteres e verificar se cada campo está separado por uma vírgula. 
     
-- **Se você não vir os novos usuários no Office 365 imediatamente, aguarde alguns minutos.** Pode demorar um pouco para que as alterações entrem em todos os serviços do Office 365. 
+- **Se você não vir os novos usuários no Microsoft 365 imediatamente, aguarde alguns minutos.** Pode demorar um pouco para que as alterações entrem em todos os serviços no Microsoft 365. 
     
 ## <a name="related-articles"></a>Artigos relacionados
 
-[Adicionar usuários individualmente ou em massa ao Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Adicionar usuários individualmente ou em massa ao Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 

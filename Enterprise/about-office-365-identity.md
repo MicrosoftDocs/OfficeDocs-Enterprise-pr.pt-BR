@@ -1,10 +1,10 @@
 ---
-title: Modelos de identidade do Office 365 e o Active Directory do Azure
+title: Modelos de identidade do Microsoft 365 e Active Directory do Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 05/20/2019
+ms.date: 06/09/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,27 +20,27 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Saiba como a identidade do usuário é gerenciada no Office 365.
-ms.openlocfilehash: a44f3073895ef1c8172a6ab5637f50cd9c6ac186
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Saiba como a identidade do usuário é gerenciada no Microsoft 365.
+ms.openlocfilehash: 44777f206b61b01dc8a66817f549120af827bbc3
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843802"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698948"
 ---
-# <a name="office-365-identity-models-and-azure-active-directory"></a>Modelos de identidade do Office 365 e o Active Directory do Azure
+# <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelos de identidade do Microsoft 365 e Active Directory do Azure
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
-O Office 365 usa o Azure Active Directory (Azure AD), um serviço de autenticação e identidade do usuário baseado na nuvem que está incluído em sua assinatura do Office 365, para gerenciar identidades e autenticação para o Office 365. Obter sua infraestrutura de identidade configurada corretamente é vital para gerenciar o acesso de usuário do Office 365 e permissões para sua organização.
+O Microsoft 365 usa o Azure Active Directory (Azure AD), um serviço de autenticação e identidade do usuário baseado na nuvem que está incluído na assinatura do Microsoft 365, para gerenciar identidades e autenticação para o Microsoft 365. Obter sua infraestrutura de identidade configurada corretamente é vital para gerenciar o acesso de usuário e permissões do Microsoft 365 para sua organização.
 
-Antes de começar, Assista a este vídeo para obter uma visão geral dos modelos de identidade e autenticação para o Office 365 e para o Microsoft 365.
+Antes de começar, assista a este vídeo para ter uma visão geral dos modelos de identidade e autenticação do Microsoft 365.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Sua primeira opção de planejamento é o modelo de identidade do Office 365.
+Sua primeira opção de planejamento é o modelo de identidade do Microsoft 365.
 
-## <a name="office-365-identity-models"></a>Modelos de identidade do Office 365
+## <a name="microsoft-365-identity-models"></a>Modelos de identidade do Microsoft 365
 
 Para planejar contas de usuário, primeiro você precisa entender os dois modelos de identidade no Microsoft 365. Você pode manter as identidades da sua organização apenas na nuvem ou pode manter suas identidades do AD DS (serviços de domínio Active Directory) locais e usá-las para autenticação quando os usuários acessarem os serviços de nuvem do Microsoft 365.  
 
@@ -49,7 +49,7 @@ Estes são os dois tipos de identidade e seus benefícios e melhores necessidade
 |||
 |:-------|:-----|:-----|
 |  | **Identidade somente na nuvem** | **Identidade híbrida** |
-| **Definição** | A conta de usuário existe somente no locatário do Azure Active Directory (Azure AD) para sua assinatura do Microsoft 365. | A conta de usuário existe no AD DS e uma cópia também está no locatário do Azure AD para sua assinatura do Microsoft 365. A conta de usuário no Azure AD também pode incluir uma versão de hash da senha da conta de usuário. |
+| **Definição** | A conta de usuário existe somente no locatário do Azure Active Directory (Azure AD) para sua assinatura do Microsoft 365. | A conta de usuário existe no AD DS e uma cópia também está no locatário do Azure AD para sua assinatura do Microsoft 365. A conta de usuário no Azure AD também pode incluir uma versão de hash da senha da conta de usuário do AD DS já codificada. |
 | **Como o Microsoft 365 autentica as credenciais do usuário** | O locatário do Azure AD para sua assinatura do Microsoft 365 realiza a autenticação com a conta de identidade de nuvem. | O locatário do Azure AD para sua assinatura do Microsoft 365 manipula o processo de autenticação ou redireciona o usuário para outro provedor de identidade. |
 | **Melhor para** | Organizações que não têm ou precisam de um AD DS local. | Organizações que usam o AD DS ou outro provedor de identidade. |
 | **Melhor benefício** | Simples de usar. Não é necessária nenhuma ferramenta ou servidor de diretório extra. | Os usuários podem usar as mesmas credenciais ao acessar recursos locais ou baseados em nuvem. |
@@ -63,10 +63,10 @@ Estes são os componentes básicos da identidade somente na nuvem.
  
 ![Componentes básicos da identidade somente na nuvem](./media/about-office-365-identity/cloud-only-identity.png)
 
-Os usuários locais e remotos (online) usam suas contas de usuário e senhas do Azure AD para acessar os serviços de nuvem do Office 365. O Azure AD autentica as credenciais do usuário com base em suas contas de usuário e senhas armazenadas.
+Os usuários locais e remotos (online) usam suas contas de usuário e senhas do Azure AD para acessar os serviços de nuvem da Microsoft 365. O Azure AD autentica as credenciais do usuário com base em suas contas de usuário e senhas armazenadas.
 
 ### <a name="administration"></a>Administração
-Como as contas de usuário são armazenadas apenas no Azure AD, você gerencia identidades de nuvem com ferramentas como o [centro de administração do Microsoft 365](https://admin.microsoft.com) e o Windows PowerShell com o módulo PowerShell do Azure Active Directory para Graph. 
+Como as contas de usuário são armazenadas apenas no Azure AD, você gerencia identidades de nuvem com ferramentas como o [centro de administração do Microsoft 365](https://admin.microsoft.com) e o [Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-user-accounts-and-licenses-with-office-365-powershell). 
 
 ## <a name="hybrid-identity"></a>Identidade híbrida
 
@@ -90,18 +90,14 @@ O locatário do Azure AD tem uma cópia das contas do AD DS. Nessa configuraçã
 
 Como as contas de usuário originais e autoritativas são armazenadas no AD DS local, você gerencia suas identidades com as mesmas ferramentas que o AD DS, como a ferramenta usuários e computadores do Active Directory. 
 
-Você não usa o centro de administração do Microsoft 365 ou o Windows PowerShell para gerenciar contas de usuário sincronizadas no Azure AD.
+Você não usa o centro de administração do Microsoft 365 ou o Office 365 PowerShell para gerenciar contas de usuário sincronizadas no Azure AD.
 
 ## <a name="next-step"></a>Próxima etapa
 
-Se você precisar do modelo de identidade somente na nuvem, confira [identidades somente na nuvem](cloud-only-identities.md).
+Se você precisar do modelo de identidade somente na nuvem, confira [identidade somente na nuvem](cloud-only-identities.md).
 
-Se você precisar do modelo de identidade híbrida, consulte [sincronização de diretório](plan-for-directory-synchronization.md).
-  
+Se você precisar do modelo de identidade híbrida, consulte [identidade híbrida](plan-for-directory-synchronization.md).
 
-## <a name="video-training"></a>Treinamentos em vídeo
-
-Consulte o curso de vídeo [Office 365: gerenciar identidades usando o Azure ad Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), trazido para você pelo LinkedIn Learning.
 
 ## <a name="see-also"></a>Confira também
 

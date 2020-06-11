@@ -1,9 +1,9 @@
 ---
-title: Identidades somente na nuvem do Office 365
+title: Identidade somente na nuvem do Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 06/09/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Descreve como criar usuários e grupos quando sua assinatura do Office 365 está usando identidades somente na nuvem.
-ms.openlocfilehash: 0c066ca22f372c10b04c60f9bd44cf24300b6492
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Descreve como criar usuários e grupos quando sua assinatura do Microsoft 365 estiver usando a identidade somente de nuvem.
+ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844662"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698918"
 ---
-# <a name="office-365-cloud-only-identities"></a>Identidades somente na nuvem do Office 365
+# <a name="microsoft-365-cloud-only-identity"></a>Identidade somente na nuvem do Microsoft 365
 
 *Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
 
-Com a identidade somente na nuvem, todos os usuários, grupos e contatos são armazenados no locatário do Azure Active Directory (Azure AD) da sua assinatura do Office 365. Estes são os componentes básicos da identidade somente na nuvem.
+Com a identidade somente na nuvem, todos os usuários, grupos e contatos são armazenados no locatário do Azure Active Directory (Azure AD) da sua assinatura do Microsoft 365. Estes são os componentes básicos da identidade somente na nuvem.
  
 ![Os componentes básicos da identidade somente na nuvem](./media/about-office-365-identity/cloud-only-identity.png)
 
@@ -45,28 +45,30 @@ Os usuários e suas contas de usuário nas organizações podem ser categorizado
 
 - As contas do locatário representam os usuários em sua organização para os quais você atribui uma licença para os serviços de nuvem
 
-- As contas B2B (Business to Business) representam os usuários de fora da sua organização que você convida para participar da colaboração, fazem o estoque dos tipos de usuários para sua organização. Quais são os agrupamentos? Por exemplo, você pode agrupar usuários por função ou finalidade de alto nível em sua organização.
+- As contas entre empresas (B2B) representam usuários de fora da sua organização que você convida para colaborar
+
+Faça o estoque dos tipos de usuários em sua organização. Quais são os agrupamentos? Por exemplo, você pode agrupar usuários por função ou finalidade de alto nível em sua organização.
 
 Além disso, alguns serviços de nuvem podem ser compartilhados com usuários de fora de sua organização que não tenham contas de usuário. Você também precisará identificar esses grupos de usuários.
 
 Você pode usar grupos no Azure AD para várias finalidades que simplificam o gerenciamento de seu ambiente de nuvem. Por exemplo, com grupos do Azure AD, você pode:
 
-- Use o licenciamento baseado em grupo para atribuir licenças do Office 365 às contas de usuário automaticamente assim que elas forem adicionadas.
-- Adicionar contas de usuário para grupos específicos de forma dinâmica com base em atributos das contas de usuário, como o departamento.
-- Provisionar usuários automaticamente para aplicativos de Software como um Serviço (SaaS) e para proteger o acesso a esses aplicativos com a autenticação multifator e outras regras de acesso condicional.
+- Use o licenciamento baseado em grupo para atribuir licenças para o Microsoft 365 às contas de usuário automaticamente assim que elas forem adicionadas como membros.
+- Adicionar contas de usuário a grupos específicos de forma dinâmica com base nos atributos da conta de usuário, como nome do departamento.
+- Provisionar automaticamente os usuários para aplicativos de software como serviço (SaaS) e para proteger o acesso a esses aplicativos com a autenticação multifator (MFA) e outras regras de acesso condicional.
 - Provisione permissões e níveis de acesso para sites de equipe do SharePoint Online.
 
-Você pode criar novos ***usuários*** com:
+Você cria novos ***usuários*** com:
 
 - [O Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
-Você pode criar novos ***grupos*** com:
+Você cria novos ***grupos*** com:
 
 - [O Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
-## <a name="next-step-for-cloud-only-identities"></a>Próxima etapa para identidades somente na nuvem
+## <a name="next-step-for-cloud-only-identity"></a>Próxima etapa para identidade somente na nuvem
 
 [Atribuir licenças às contas de usuário](assign-licenses-to-user-accounts.md)
