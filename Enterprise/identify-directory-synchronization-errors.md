@@ -1,5 +1,5 @@
 ---
-title: Exibir erros de sincronização de diretório no Office 365
+title: Exibir erros de sincronização de diretório no Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,24 +21,24 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Saiba como exibir os erros de sincronização de diretório no centro de administração do Microsoft 365.
-ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840168"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711641"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>Exibir erros de sincronização de diretório no Office 365
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Exibir erros de sincronização de diretório no Microsoft 365
 
 Você pode exibir os erros de sincronização de diretório no [centro de administração do Microsoft 365](https://admin.microsoft.com). Somente os erros de objeto do usuário são exibidos. Para exibir erros usando o PowerShell, consulte [identificar objetos com DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-Após a exibição, confira [corrigir problemas de sincronização de diretório para o Office 365](fix-problems-with-directory-synchronization.md) para corrigir quaisquer problemas identificados.
+Após a exibição, confira [corrigir problemas de sincronização de diretório para o Microsoft 365](fix-problems-with-directory-synchronization.md) para corrigir quaisquer problemas identificados.
   
 ## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Exibir erros de sincronização de diretório no centro de administração
 
 Para exibir qualquer erro no centro de administração:
   
-1. Entre no Office 365 com uma conta corporativa ou de estudante. 
+1. Entre no Microsoft 365 com a sua conta corporativa ou de estudante. 
     
 2. Vá até o [centro de administração](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     

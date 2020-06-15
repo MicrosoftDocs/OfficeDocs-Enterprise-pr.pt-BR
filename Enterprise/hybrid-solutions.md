@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Resumo: use estes artigos para implantar cargas de trabalho do Office Server no Microsoft Azure.'
-ms.openlocfilehash: 5106a509cd5be05b9988f6d4b27c1947deede588
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793784"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711561"
 ---
 # <a name="hybrid-solutions"></a>Soluções híbridas
 
@@ -29,15 +29,15 @@ ms.locfileid: "43793784"
   
 Com o Microsoft Azure, agora você pode implantar algumas cargas de trabalho do Office Server que foram normalmente implantadas no local em serviços de infraestrutura do Azure.
   
-Para infraestrutura de identidade do Office 365 no Azure:
+Para a infraestrutura de identidade do Microsoft 365 no Azure:
 
 - [Usar o Azure AD para a autenticação do SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [Implantar a sincronização de diretório do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [Implantar a sincronização de diretórios do Microsoft 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Conectar uma rede local a uma rede virtual do Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Implantar a autenticação federada de alta disponibilidade para o Office 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Implantar a autenticação federada de alta disponibilidade para o Microsoft 365 no Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 Para cargas de trabalho do SharePoint Server 2013 no Azure:
   
@@ -54,8 +54,6 @@ Para cargas de trabalho do SharePoint Server 2013 no Azure:
   
 [Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Guias do Laboratório de Teste (TLGs) para adoção de nuvem](cloud-adoption-test-lab-guides-tlgs.md)
+[Guias de laboratório de teste do Microsoft 365 para Enterprise (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Modelos de arquitetura para SharePoint, Exchange, Skype for Business e Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
-
-

@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Movimentação de dados é uma operação de back-end com impacto mínimo para os usuários finais. Nenhuma ação é necessária enquanto a Microsoft transfere cada serviço e dados associados para seu locatário para uma nova Geografia de datacenter. A transferência e a validação de dados ocorrem em segundo plano com o mínimo de impacto para os usuários.
-ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009296"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711914"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e após a migração dos dados
 
@@ -29,7 +29,7 @@ Movimentação de dados é uma operação de back-end com impacto mínimo para o
 > [!NOTE]
 > As movimentações ocorrem em horários diferentes de cada serviço. Como resultado, você verá a funcionalidade reduzida descrita para cada serviço em um momento diferente. 
   
-Assista ao centro de mensagens do Microsoft 365 para confirmação quando se move para cada um dos Exchange Online, SharePoint Online, Teams e Skype for Business concluído. Conforme mostrado na tabela abaixo, pode levar até 24 meses, após o final do período de registro, para concluir todos os dados solicitados são movidos para todos os clientes em uma geografia específica. Se você vir problemas com o seu locatário após a movimentação, entre em contato com o [suporte do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obter assistência. 
+Assista ao centro de mensagens do Microsoft 365 para confirmação quando se move para cada um dos Exchange Online, SharePoint Online, Teams e Skype for Business concluído. Conforme mostrado na tabela abaixo, pode levar até 24 meses, após o final do período de registro, para concluir todos os dados solicitados são movidos para todos os clientes em uma geografia específica. Se você vir problemas com o seu locatário após a movimentação, entre em contato com o [suporte](https://go.microsoft.com/fwlink/p/?LinkID=522459) para obter assistência. 
   
 
 |**Clientes com país de inscrição no**|**Todas as movimentações concluídas por**|
@@ -88,7 +88,7 @@ Depois de concluir a movimentação de seus dados do SharePoint Online, você po
     
 - Estamos removendo as cópias de trans-codificadas do datacenter anterior e as transcodificando novamente no novo datacenter.
     
-### <a name="search"></a>Pesquisa
+### <a name="search"></a>Pesquisar
 
 Durante a transferência dos dados do SharePoint Online, migramos o índice de pesquisa e as configurações de pesquisa para um novo local. Até que tenhamos **concluído** a movimentação de seus dados do SharePoint Online, continuamos a atender seus usuários do índice no local original. No novo local, a pesquisa inicia automaticamente o rastreamento do conteúdo após a conclusão da movimentação de seus dados do SharePoint Online. A partir deste ponto e em diante, atendemos aos seus usuários a partir do índice migrado. Alterações no conteúdo que ocorreram após a migração não estão incluídas no índice migrado até que o rastreamento as escolha. A maioria dos clientes não percebe que os resultados estão menos atualizados logo após a conclusão da movimentação de seus dados do SharePoint Online, mas alguns clientes podem ter uma atualização reduzida nas primeiras 24-48 horas 
   

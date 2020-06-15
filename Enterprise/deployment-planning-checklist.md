@@ -1,5 +1,5 @@
 ---
-title: Lista de verificação de planejamento de implantação do Office 365
+title: Lista de verificação de planejamento de implantação do Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,28 +19,28 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
-description: Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Office 365.
-ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+description: Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Microsoft 365.
+ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419359"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711894"
 ---
-# <a name="deployment-planning-checklist-for-office-365"></a>Lista de verificação de planejamento de implantação do Office 365
+# <a name="deployment-planning-checklist-for-microsoft-365"></a>Lista de verificação de planejamento de implantação do Microsoft 365
 
-Ao mover uma organização corporativa para o Office 365, é importante planejar exatamente quais etapas você deseja executar, quando executá-las e quem as executará. Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Office 365. As fases e etapas da lista de verificação são alinhadas com as orientações fornecidas pelo [centro de integração](https://go.microsoft.com/fwlink/?LinkId=517115). Sinta-se à vontade para adaptar essa lista de verificação às necessidades da sua organização.
+Ao mover uma organização corporativa para a Microsoft 365, é importante planejar exatamente quais etapas você deseja executar, quando executá-las e quem as executará. Esta lista de verificação ajudará sua organização a planejar e preparar uma migração para o Microsoft 365. Sinta-se à vontade para adaptar essa lista de verificação às necessidades da sua organização.
 
 ## <a name="need-help-with-your-deployment"></a>Precisa de ajuda com a implantação?
-Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack](https://fasttrack.microsoft.com/office) ou os [guias de configuração dos serviços do Office 365](setup-guides-for-office-365.md).
+Você deseja obter ajuda para configurar o Microsoft 365? Considere usar o [FastTrack](https://fasttrack.microsoft.com/microsoft-365) ou os [guias de configuração dos serviços do Microsoft 365](setup-guides-for-office-365.md).
 
-## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Lista de verificação de amostra para uma implantação corporativa do Office 365
+## <a name="sample-checklist-for-a-microsoft-365-enterprise-deployment"></a>Lista de verificação de amostra para uma implantação do Microsoft 365 Enterprise
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Tarefas de implantação/Events** <br/> |**Data de início** <br/> |**Data de término** <br/> |**Recursos** <br/> |**Dependências** <br/> |
 |**Determinar seus objetivos de implantação** <br/> |||||
-| Com seus participantes internos e externos:<br>  -Concordo no escopo e na linha do tempo <br>  -Concordo no mecanismo de controle do projeto  <br>  – Desenvolver critérios de êxito e uma introdução de [comunicação](https://fasttrack.microsoft.com/office)  /  [com o Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Com seus participantes internos e externos:<br>  -Concordo no escopo e na linha do tempo <br>  -Concordo no mecanismo de controle do projeto  <br>  – Desenvolver critérios de êxito e uma introdução de [comunicação](https://fasttrack.microsoft.com/microsoft-365)  /  [com o Microsoft 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventariar o ambiente atual e tomar decisões importantes de implantação** |||||
 |Inventariar seu ambiente atual |||||
 | Coletar o número de contas de usuário (nomes de login, endereços de email) |||||
@@ -64,8 +64,8 @@ Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack
 | Preparar sua rede ( [orientações e ferramentas](https://aka.ms/tune)) |||||
 | Atualizar versões de software cliente ( [guia](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
 | Se você tiver o Active Directory Rights Management Services: preparar seu ambiente ( [orientação](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
-|**Configurar os serviços do Office 365 para trabalhar na sua organização** |||||
-|Configurar sua assinatura do Office 365 |||||
+|**Configurar os serviços do Microsoft 365 para trabalhar em sua organização** |||||
+|Configurar sua assinatura do Microsoft 365 |||||
 |[Verificar os domínios que você deseja usar com sua assinatura](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
 | Definir [configurações de aplicativo](https://go.microsoft.com/fwlink/?LinkId=534829) (email, mensagens instantâneas, reuniões online, colaboração na Web, armazenamento de arquivos, Yammer) |||||
 | Opcionalmente [preparar para a sincronização de diretório](https://go.microsoft.com/fwlink/?LinkId=534830) |||||
@@ -76,9 +76,9 @@ Você deseja obter ajuda para instalar o Office 365? Considere usar o [FastTrack
 | Informar os usuários sobre as [alterações futuras e como elas serão afetadas](https://fasttrack.microsoft.com/office) |||||
 |**Distribuir para os usuários** |||||
 |Configurar contas e caixas de correio |||||
-| Adicionar seus usuários e [atribuir licenças aos usuários no Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
+| Adicionar seus usuários e [atribuir licenças aos usuários no Microsoft 365 for Business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | Opcionalmente, migrar dados ( [email](https://go.microsoft.com/fwlink/?LinkId=534823), [arquivos](https://go.microsoft.com/fwlink/?LinkId=534824)e assim por diante) |||||
 |Validar funcionalidade e concluir etapas finais |||||
-| Migrar [configurações de DNS para apontar para o Office 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Informe aos usuários quando eles podem [começar a usar o Office 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
-| Reconfigurar sistemas clientes para se conectarem ao Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook para Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivos móveis](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
+| Migrar [configurações de DNS para apontar para o Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
+| Informe aos usuários quando eles podem [começar a usar o Microsoft 365](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) |||||
+| Reconfigurar sistemas clientes para se conectar ao Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook para Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [dispositivos móveis](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||
