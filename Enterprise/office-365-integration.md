@@ -1,5 +1,5 @@
 ---
-title: Integração do Office 365 com ambientes locais
+title: Integração do Microsoft 365 com ambientes locais
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,41 +20,41 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: Saiba como integrar o Office 365 com os serviços de diretório existentes.
-ms.openlocfilehash: 61feabb4d62b4b67538f45a3f827c746197b55d3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Saiba como integrar o Microsoft 365 com os serviços de diretório existentes.
+ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844492"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736029"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Integração do Office 365 com ambientes locais
+# <a name="microsoft-365-integration-with-on-premises-environments"></a>Integração do Microsoft 365 com ambientes locais
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
-Você pode integrar o Office 365 com os serviços de diretório existentes e com uma instalação local do Exchange Server, do Skype for Business Server 2015 ou do SharePoint Server.
+Você pode integrar o Microsoft 365 com os serviços de diretório existentes e com uma instalação local do Exchange Server, do Skype for Business Server 2015 ou do SharePoint Server.
   
  - Ao se integrar aos serviços de diretório, você pode sincronizar e gerenciar contas de usuário para ambos os ambientes. Você também pode adicionar a sincronização de hash de senha ou SSO (logon único) para que os usuários possam fazer logon em ambos os ambientes com suas credenciais locais.
- - Ao se integrar aos produtos do servidor local, você cria um ambiente híbrido. Um ambiente híbrido pode ajudar à medida que você migra usuários ou informações para o Office 365, ou você pode continuar a ter alguns usuários ou algumas informações no local e alguns na nuvem. Para obter mais informações sobre ambientes híbridos, consulte [Hybrid Cloud Overview](https://docs.microsoft.com/Office365/Enterprise/hybrid-cloud-overview).
+ - Ao se integrar aos produtos do servidor local, você cria um ambiente híbrido. Um ambiente híbrido pode ajudar à medida que você migra usuários ou informações para a Microsoft 365, ou pode continuar a ter alguns usuários ou algumas informações no local e alguns na nuvem. Para obter mais informações sobre ambientes híbridos, consulte [Hybrid Cloud Overview](https://docs.microsoft.com/Office365/Enterprise/hybrid-cloud-overview).
 
-Você também pode usar os supervisor do Azure Active Directory (Azure AD) para obter orientação de instalação personalizada (você deve estar conectado ao Office 365):
+Você também pode usar os supervisor do Azure Active Directory (Azure AD) para obter orientação de instalação personalizada (você deve estar conectado ao Microsoft 365):
 
-- [Supervisor de conexão do Azure AD](https://aka.ms/aadconnectpwsync)
+- [Sincronizar usuários do diretório da sua organização](https://aka.ms/aadconnectpwsync)
 - [Supervisor de implantação do AD FS](https://aka.ms/adfsguidance)
-- [Orientação da configuração do Azure AD Premium](https://aka.ms/aadpguidance)
+- [Guia de instalação do Azure AD](https://aka.ms/aadpguidance)
    
 ## <a name="before-you-begin"></a>Antes de começar
 
-Antes de integrar o Office 365 e um ambiente local, você também precisará participar do [planejamento de rede e do ajuste de desempenho](network-planning-and-performance.md). Você também vai querer entender os modelos de [identidade](about-office-365-identity.md)disponíveis. 
+Antes de integrar o Microsoft 365 e um ambiente local, você também precisará participar do [planejamento de rede e do ajuste de desempenho](network-planning-and-performance.md). Você também vai querer entender os modelos de [identidade](about-office-365-identity.md)disponíveis. 
 
-Confira [onde gerenciar contas do office 365](manage-office-365-accounts.md) para obter uma lista de ferramentas que você pode usar para gerenciar usuários e contas do Office 365. 
+Confira [onde gerenciar contas da microsoft 365](manage-office-365-accounts.md) para obter uma lista de ferramentas que você pode usar para gerenciar usuários e contas do Microsoft 365. 
   
-## <a name="integrate-office-365-with-directory-services"></a>Integrar o Office 365 com os serviços de diretório
-Se você tiver contas de usuário existentes em um diretório local, não será necessário recriar todas essas contas no Office 365 e correr o risco de introdução a diferenças ou erros entre os ambientes. A sincronização de diretórios ajuda você a espelhar essas contas entre seus ambientes online e local. Com a sincronização de diretórios, os usuários não precisam se lembrar de novas informações para cada ambiente, e você não precisa criar ou atualizar contas duas vezes. Você precisará [preparar o diretório local](prepare-for-directory-synchronization.md) para a sincronização de diretórios, é possível fazer isso manualmente ou usar a [ferramenta IdFix](install-and-run-idfix.md) (IdFix Tool só funciona com os serviços de domínio do Active Directory [AD DS]). 
+## <a name="integrate-microsoft-365-with-directory-services"></a>Integrar o Microsoft 365 com os serviços de diretório
+Se você tiver contas de usuário existentes em um diretório local, não será necessário recriar todas essas contas no Microsoft 365 e correr o risco de introdução a diferenças ou erros entre os ambientes. A sincronização de diretórios ajuda você a espelhar essas contas entre seus ambientes online e local. Com a sincronização de diretórios, os usuários não precisam se lembrar de novas informações para cada ambiente, e você não precisa criar ou atualizar contas duas vezes. Você precisará [preparar o diretório local](prepare-for-directory-synchronization.md) para a sincronização de diretórios, é possível fazer isso manualmente ou usar a [ferramenta IdFix](install-and-run-idfix.md) (IdFix Tool só funciona com os serviços de domínio do Active Directory [AD DS]). 
   
 ![Usar a sincronização de diretórios para manter as informações de conta de usuário local e online sincronizadas](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   
-Se quiser que os usuários possam fazer logon no Office 365 com suas credenciais locais, você também pode configurar o SSO. Com o SSO, o Office 365 é configurado para confiar no ambiente local para autenticação do usuário.
+Se quiser que os usuários possam fazer logon no Microsoft 365 com suas credenciais locais, você também pode configurar o SSO. Com o SSO, a Microsoft 365 é configurada para confiar no ambiente local para autenticação do usuário.
   
 ![Com o logon único, a mesma conta está disponível nos ambientes local e online](media/d76235f2-8a53-405e-b8ef-dfa4cfc208b8.png)
   
@@ -62,15 +62,15 @@ Diferentes técnicas de gerenciamento de contas de usuário fornecem experiênci
  
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication"></a>Sincronização de diretório com ou sem sincronização de hash de senha ou autenticação de passagem
 
-Um usuário faz logon no seu ambiente local com a conta de usuário (domínio \ nome_de_usuário). Quando eles acessam o Office 365, eles devem fazer logon novamente com sua conta corporativa ou de estudante (user@domain.com). O nome de usuário é o mesmo em ambos os ambientes. Quando você adiciona a sincronização de hash de senha ou a autenticação de passagem, o usuário tem a mesma senha para ambos os ambientes, mas precisará fornecer essas credenciais novamente ao fazer logon no Office 365. A sincronização de diretórios com sincronização de hash de senha é o cenário de sincronização de diretório mais comumente usado.
+Um usuário faz logon no seu ambiente local com a conta de usuário (domínio \ nome_de_usuário). Quando eles acessam o Microsoft 365, eles devem fazer logon novamente com sua conta corporativa ou de estudante (user@domain.com). O nome de usuário é o mesmo em ambos os ambientes. Quando você adiciona a sincronização de hash de senha ou a autenticação de passagem, o usuário tem a mesma senha para os dois ambientes, mas precisará fornecer essas credenciais novamente ao fazer logon no Microsoft 365. A sincronização de diretórios com sincronização de hash de senha é o cenário de sincronização de diretório mais comumente usado.
 
-Para configurar a sincronização de diretórios, use o Azure Active Directory Connect. Para obter instruções, leia [Configurar a sincronização de diretório para o Office 365](set-up-directory-synchronization.md)e o [Azure ad Connect com as configurações expressas](https://go.microsoft.com/fwlink/p/?LinkId=698537).
+Para configurar a sincronização de diretórios, use o Azure Active Directory Connect. Para obter instruções, leia [Configurar a sincronização de diretório para o Microsoft 365 e o](set-up-directory-synchronization.md) [Azure ad Connect com as configurações expressas](https://go.microsoft.com/fwlink/p/?LinkId=698537).
 
-Saiba mais sobre como [preparar a sincronização de diretório para o Office 365](prepare-for-directory-synchronization.md) e [integração de seus identificações locais com o Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=518101).
+Saiba mais sobre [a preparação para a sincronização de diretório para o Microsoft 365](prepare-for-directory-synchronization.md) e [integração de seus identificações locais com o Azure Active Directory](https://go.microsoft.com/fwlink/?LinkId=518101).
 
 ### <a name="directory-synchronization-with-sso"></a>Sincronização de diretórios com SSO
 
-Um usuário faz logon no seu ambiente local com a conta de usuário. Quando eles acessam o Office 365, eles são conectados automaticamente ou fazem logon usando as mesmas credenciais que usam para seu ambiente local (domínio \ nome de usuário).
+Um usuário faz logon no seu ambiente local com a conta de usuário. Quando eles acessam o Microsoft 365, eles são conectados automaticamente ou fazem logon usando as mesmas credenciais que usam para seu ambiente local (domínio \ nome de usuário).
 
 Para configurar o SSO, você também usa o Azure AD Connect. Para obter instruções, leia [instalação personalizada do Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkID=698430).
 
@@ -80,7 +80,7 @@ Saiba mais sobre o [logon único para aplicativos no Azure Active Directory](htt
 
 O Azure AD Connect substitui versões antigas das ferramentas de integração de identidades como DirSync e sincronização do Azure AD. Para obter mais informações, consulte [o que é a identidade híbrida com o Azure Active Directory?](https://go.microsoft.com/fwlink/p/?LinkId=527969). Se você deseja atualizar da sincronização do Azure Active Directory para o Azure AD Connect, consulte [as instruções de atualização](https://go.microsoft.com/fwlink/p/?LinkId=733240). 
 
-Confira também a [implantação da sincronização de diretórios do Office 365 no Microsoft Azure](https://go.microsoft.com/fwlink/?LinkId=517887).
+Confira também a [implantação da sincronização de diretórios do microsoft 365 no Microsoft Azure](https://go.microsoft.com/fwlink/?LinkId=517887).
 
 ## <a name="see-also"></a>Confira também
 

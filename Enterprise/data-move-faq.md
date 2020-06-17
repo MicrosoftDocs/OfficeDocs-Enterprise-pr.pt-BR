@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: Veja a seguir respostas para perguntas gerais sobre a movimentação de dados principais para uma nova Geografia de datacenter.
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516552"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735839"
 ---
 # <a name="data-move-general-faq"></a>Perguntas frequentes gerais sobre migração de dados
 
@@ -64,7 +64,7 @@ Sim. Depois que uma nova Geografia do datacenter estiver disponível, os novos c
   
  ## <a name="where-is-my-core-customer-data-located"></a>Onde estão localizados os dados principais do cliente?
 
-Os administradores de locatários podem exibir o cartão de local de dados no centro de administração a qualquer momento para confirmar os dados principais do cliente no local restante de cada serviço, especificamente para o locatário.Também publicamos o local do datacenter GEOS, datacenters e local dos dados do cliente do Office 365 nos [ mapas de datacenters do office 365 Interactive](https://office.com/datamaps) como uma referência para os dados de cliente principais padrão atuais em locais REST para novos locatários.  Você pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Microsoft 365.  
+Os administradores de locatários podem exibir o cartão de local de dados no centro de administração a qualquer momento para confirmar os dados principais do cliente no local restante de cada serviço, especificamente para o locatário.Também publicamos o local do datacenter GEOS, datacenters e local dos dados do cliente do Office 365 nos [mapas de datacenters do office 365 Interactive](https://office.com/datamaps) como uma referência para os dados de cliente principais padrão atuais em locais REST para novos locatários.  Você pode verificar o local dos dados do cliente em repouso por meio da seção local de dados em seu perfil de organização no centro de administração do Microsoft 365.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Quando poderei solicitar uma movimentação?
   
@@ -72,7 +72,7 @@ Confira a página [como solicitar sua movimentação de dados](request-your-data
   
 ## <a name="how-can-i-request-to-be-moved"></a>Como posso solicitar que eu possa ser movido?
   
-Os clientes qualificados verão uma página no [portal de administração do Office 365](https://portal.office.com/). Confira [como solicitar a movimentação de dados](request-your-data-move.md) para obter instruções sobre como solicitar uma movimentação. 
+Os clientes qualificados verão uma página em seu [centro de administração do Microsoft 365](https://admin.microsoft.com/). Confira [como solicitar a movimentação de dados](request-your-data-move.md) para obter instruções sobre como solicitar uma movimentação. 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>Posso alterar minha seleção depois de solicitar uma movimentação?
   
@@ -80,7 +80,7 @@ Não é possível removê-lo do processo depois de enviar sua solicitação.
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>O que acontece se eu não solicitar uma movimentação antes do prazo?
   
-Podemos aceitar solicitações em uma base de exceção para conceder ao locatário um prazo de confirmação para concluir a movimentação.   Entre em contato com o [suporte do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para fazer a solicitação.
+Podemos aceitar solicitações em uma base de exceção para conceder ao locatário um prazo de confirmação para concluir a movimentação.  Entre em contato com o [suporte do Office 365](https://go.microsoft.com/fwlink/p/?LinkID=522459) para fazer a solicitação.
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>E se eu quiser mover meus dados para obter melhor desempenho da rede?
   

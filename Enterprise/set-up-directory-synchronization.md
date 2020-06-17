@@ -1,9 +1,9 @@
 ---
-title: Configurar a sincronização de diretório no Office 365
+title: Configurar a sincronização de diretórios para o Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 06/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -21,23 +21,23 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
-description: Saiba como configurar a sincronização de diretório entre o Office 365 e o seu Active Directory local.
-ms.openlocfilehash: d549d2b56ef1d642e5dfc16b747e6eb909dd7337
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Saiba como configurar a sincronização de diretórios entre o Microsoft 365 e o Active Directory local.
+ms.openlocfilehash: 775ff04976c92d7e937ddc018e0e1dd617c8fca3
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844042"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735980"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Configurar a sincronização de diretório no Office 365
+# <a name="set-up-directory-synchronization-for-microsoft-365"></a>Configurar a sincronização de diretórios para o Microsoft 365
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
-O Office 365 usa um inquilino do Azure Active Directory (Azure AD) para armazenar e gerenciar identidades para autenticação e permissões para acessar recursos baseados em nuvem. 
+A Microsoft 365 usa um locatário do Azure Active Directory (Azure AD) para armazenar e gerenciar identidades para autenticação e permissões para acessar recursos baseados em nuvem. 
 
-Se você tiver um Active Directory Domain Services (AD DS) local, poderá sincronizar suas contas de usuário, grupos e contatos do AD DS com o inquilino do Azure AD de sua assinatura do Office 365. Esta é uma identidade híbrida do Office 365. Estes são seus componentes.
+Se você tiver um Active Directory Domain Services (AD DS) local, poderá sincronizar suas contas de usuário, grupos e contatos do AD DS com o locatário do Azure AD da sua assinatura do Microsoft 365. Esta é uma identidade híbrida para o Microsoft 365. Estes são seus componentes.
 
-![Componentes da sincronização de diretórios para o Office 365](./media/about-office-365-identity/hybrid-identity.png)
+![Componentes da sincronização de diretórios para o Microsoft 365](./media/about-office-365-identity/hybrid-identity.png)
 
 O Azure AD Connect é executado em um servidor local e sincroniza seu AD DS com o locatário do Azure AD. Juntamente com a sincronização de diretórios, você também pode especificar estas opções de autenticação:
 
@@ -57,12 +57,12 @@ Confira [Identidades híbridas](plan-for-directory-synchronization.md) para obte
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Revisar os pré-requisitos para o Azure AD Connect
 
-Você recebe uma assinatura gratuita do Azure AD com a sua assinatura do Office 365. Ao configurar a sincronização de diretórios, você instalará o Azure AD Connect em um dos servidores locais.
+Você Obtém uma assinatura gratuita do Azure AD com sua assinatura do Microsoft 365. Ao configurar a sincronização de diretórios, você instalará o Azure AD Connect em um dos servidores locais.
   
-Para o Office 365, é necessário:
+Para o Microsoft 365, você precisará:
   
 - Verificar o seu domínio local. O assistente do Azure AD Connect orientará você sobre isso.
-- Obtenha os nomes de usuário e senhas para as contas de administrador do seu locatário do Office 365 e do AD DS.
+- Obtenha os nomes de usuário e senhas das contas de administrador do seu locatário do Microsoft 365 e do AD DS.
 
 Para o servidor local no qual você instala o Azure AD Connect, será necessário:
   
@@ -80,7 +80,7 @@ Também é possível examinar o [histórico de versões de lançamento](https://
 
 Antes de começar, verifique se você tem:
 
-- O nome de usuário e senha de um administrador global do Office 365
+- O nome de usuário e a senha de um administrador global do Microsoft 365
 - O nome de usuário e senha de um administrador de domínio do AD DS
 - Qual método de autenticação (PHS, PTA, federado)
 - Se você deseja usar o [Logon Único Contínuo (SSO) do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
@@ -95,7 +95,7 @@ Siga estas etapas:
 
 ## <a name="3-finish-setting-up-domains"></a>3. Concluir a configuração dos domínios
 
-Siga as etapas em [Criar registros DNS para o Office 365 ao gerenciar seus registros DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) para concluir a configuração dos seus domínios.
+Siga as etapas em [criar registros DNS para o Microsoft 365 ao gerenciar seus registros DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) para concluir a configuração dos seus domínios.
 
 ## <a name="next-step"></a>Próxima etapa
 

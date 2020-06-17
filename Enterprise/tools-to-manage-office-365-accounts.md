@@ -20,18 +20,18 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Saiba quais ferramentas usar para gerenciar seus usuários do Office 365 e como o que você pode usar depende de como você gerencia as identidades do usuário. '
-ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 46a17dc1e5e9337b9f1d8a03f5903acc96dad74b
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843942"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735649"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Ferramentas para gerenciar contas do Office 365
 
 Você pode gerenciar os usuários do Office 365 de várias maneiras diferentes, dependendo da sua configuração. Você pode gerenciar usuários no [centro de administração do Microsoft 365](https://admin.microsoft.com), no Windows PowerShell, no diretório local ou no portal de administração do Azure Active Directory.
 
-Assim que você adquirir o Office 365, o centro de administração e o Windows PowerShell podem ser usados para gerenciar contas. Ao gerenciar identidades de nuvem, cada pessoa em sua organização tem uma ID de usuário e senha separada para o Office 365. Se você deseja integrar com sua infraestrutura local e ter contas de usuário sincronizadas com o Office 365, você pode usar o Azure Active Directory Connect para fornecer sincronização de identidades e, opcionalmente, fornecer sincronização de senha ou completa funcionalidade de logon único.
+Assim que você adquirir o Office 365, o centro de administração e o Windows PowerShell podem ser usados para gerenciar contas. Ao gerenciar identidades de nuvem, cada pessoa em sua organização tem uma ID de usuário e senha separada para o Office 365. Se você deseja integrar com sua infraestrutura local e ter contas de usuário sincronizadas com o Office 365, você pode usar o Azure Active Directory Connect para fornecer a sincronização de identidades e, opcionalmente, fornecer a sincronização de senha ou a funcionalidade completa de logon único.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planejar para onde e como você irá gerenciar suas contas de usuário
 
@@ -72,4 +72,4 @@ Independentemente de como você pretende adicionar as contas de usuário ao Offi
 Se você optar por adicionar e gerenciar todos os seus usuários por meio do centro de administração, você especificará o local e atribuirá licenças ao mesmo tempo que a criação da conta do Office 365. Como resultado, não é necessário o planejamento.
 
 > [!IMPORTANT]
-> A criação de contas no Office 365 sem a atribuição de uma licença (para o SharePoint Online, por exemplo) significa que o proprietário da conta pode exibir o portal do Office 365, mas não pode acessar qualquer um dos serviços dentro da assinatura da sua empresa. Depois de atribuir um local e a licença, a conta é replicada para o serviço ou serviços que você atribuiu. O usuário pode entrar em sua conta e usar os serviços que você atribuiu a eles.
+> A criação de contas no Office 365 sem a atribuição de uma licença (para o SharePoint Online, por exemplo) significa que o proprietário da conta pode exibir o centro de administração do Microsoft 365, mas não pode acessar qualquer um dos serviços dentro da assinatura da empresa. Depois de atribuir um local e a licença, a conta é replicada para o serviço ou serviços que você atribuiu. O usuário pode entrar em sua conta e usar os serviços que você atribuiu a eles.

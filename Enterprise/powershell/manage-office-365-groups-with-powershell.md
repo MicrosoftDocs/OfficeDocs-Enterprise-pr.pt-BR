@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Saiba como realizar tarefas comuns de gerenciamento para grupos do Office 365 no Microsoft PowerShell.
-ms.openlocfilehash: 5868c875645685b10197ab05fd233940b73b0e88
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711834"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736019"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Gerenciar Grupos do Office 365 com o PowerShell
  
@@ -148,7 +148,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-display-name-of-the-office-365-group"></a>Alterar o nome de exibição do grupo do Office 365
 
-Nome para exibição especifica o nome do grupo do Office 365. Você pode ver esse nome no seu centro de administração do Exchange ou no portal de administração do Office 365. Você pode editar o nome de exibição do grupo ou atribuir um nome para exibição a um grupo existente do Office 365 executando o comando Set-Unified Group:
+Nome para exibição especifica o nome do grupo do Office 365. Você pode ver esse nome no centro de administração do Exchange ou no centro de administração do Microsoft 365. Você pode editar o nome de exibição do grupo ou atribuir um nome para exibição a um grupo existente do Office 365 executando o comando Set-Unified Group:
 
 ```
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

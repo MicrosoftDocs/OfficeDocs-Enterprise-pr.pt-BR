@@ -21,34 +21,34 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Saiba o que fazer se você tiver um domínio não routale associado aos seus usuários locais antes de sincronizar com o Office 365.
-ms.openlocfilehash: 056ff528e0ba03795fecb76543db021f9a89b87e
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: Saiba o que fazer se você tiver um domínio não routale associado aos seus usuários locais antes de sincronizar com o Microsoft 365.
+ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208762"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44736009"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar um domínio não roteável para sincronização de diretório
-Ao sincronizar seu diretório local com o Office 365, você precisa ter um domínio verificado no Azure Active Directory (Azure AD). Somente os nomes principais de usuário (UPN) associados ao domínio local são sincronizados. No entanto, qualquer UPN que contenha um domínio não roteável, por exemplo. local (como billa@contoso. local), será sincronizado com um domínio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
+Ao sincronizar seu diretório local com o Microsoft 365, você precisa ter um domínio verificado no Azure Active Directory (Azure AD). Somente os nomes principais de usuário (UPN) associados ao domínio local são sincronizados. No entanto, qualquer UPN que contenha um domínio não roteável, por exemplo. local (como billa@contoso. local), será sincronizado com um domínio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
 
-Se você usa atualmente um domínio. local para suas contas de usuário nos serviços de domínio do Active Directory (AD DS), recomenda-se alterá-lo para usar um domínio verificado (como o billa@contoso.com) a fim de sincronizar corretamente com seu domínio do Office 365.
+Se você usa atualmente um domínio. local para suas contas de usuário nos serviços de domínio do Active Directory (AD DS), recomenda-se alterá-lo para usar um domínio verificado (como o billa@contoso.com) a fim de sincronizar corretamente com seu domínio do Microsoft 365.
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>E se eu só tiver um domínio. local local?
 
 A ferramenta mais recente que você pode usar para sincronizar seu AD DS com o Azure AD é chamada Azure AD Connect. Para obter mais informações, consulte [integrando suas identidades locais com o Azure ad](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
-O Azure AD Connect sincroniza o UPN e a senha dos usuários para que os usuários possam entrar com as mesmas credenciais que usam no local. No entanto, o Azure AD Connect sincroniza apenas os usuários em domínios verificados pelo Office 365. Isso significa que o domínio também é verificado pelo Azure AD porque as identidades do Office 365 são gerenciadas pelo Azure AD. Em outras palavras, o domínio deve ser um domínio válido da Internet (por exemplo,. com,. org, .net,. us, etc.). Se o AD DS interno usar apenas um domínio não roteável (por exemplo,. local), isso não poderá corresponder ao domínio verificado que você tem no Office 365. Você pode corrigir esse problema alterando seu domínio primário no AD DS local ou adicionando um ou mais sufixos UPN.
+O Azure AD Connect sincroniza o UPN e a senha dos usuários para que os usuários possam entrar com as mesmas credenciais que usam no local. No entanto, o Azure AD Connect sincroniza apenas os usuários em domínios verificados pelo Microsoft 365. Isso significa que o domínio também é verificado pelo Azure AD porque as identidades do Microsoft 365 são gerenciadas pelo Azure AD. Em outras palavras, o domínio deve ser um domínio válido da Internet (por exemplo,. com,. org, .net,. us, etc.). Se o AD DS interno usar apenas um domínio não roteável (por exemplo,. local), isso não poderá corresponder ao domínio verificado que você tem no Microsoft 365. Você pode corrigir esse problema alterando seu domínio primário no AD DS local ou adicionando um ou mais sufixos UPN.
   
 ### <a name="change-your-primary-domain"></a>**Alterar seu domínio primário**
 
-Altere o domínio primário para um domínio verificado no Office 365, por exemplo, contoso.com. Todos os usuários que têm o domínio contoso. local é atualizado para o contoso.com. Para obter instruções, consulte [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Esse é um processo muito envolvido, no entanto, e uma solução mais fácil é descrita na seção a seguir.
+Altere o domínio primário para um domínio verificado no Microsoft 365, por exemplo, contoso.com. Todos os usuários que têm o domínio contoso. local é atualizado para o contoso.com. Para obter instruções, consulte [How Domain Rename Works](https://go.microsoft.com/fwlink/p/?LinkId=624174). Esse é um processo muito envolvido, no entanto, e uma solução mais fácil é descrita na seção a seguir.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Adicionar sufixos UPN e atualizar seus usuários para eles**
 
-Você pode resolver o problema. local registrando novos sufixos de UPN ou sufixos no AD DS para corresponder ao domínio (ou domínios) que você verificou no Office 365. Depois de registrar o novo sufixo, você atualizará os UPNs do usuário para substituir o. local pelo novo nome de domínio, por exemplo, para que uma conta de usuário se pareça com billa@contoso.com.
+Você pode resolver o problema. local registrando novos sufixos de UPN ou sufixos no AD DS para corresponder ao domínio (ou domínios) que você verificou no Microsoft 365. Depois de registrar o novo sufixo, você atualizará os UPNs do usuário para substituir o. local pelo novo nome de domínio, por exemplo, para que uma conta de usuário se pareça com billa@contoso.com.
   
-Depois de atualizar os UPNs para usar o domínio verificado, você estará pronto para sincronizar seu AD DS local com o Office 365.
+Depois de atualizar os UPNs para usar o domínio verificado, você estará pronto para sincronizar seu AD DS local com o Microsoft 365.
   
  **Etapa 1: Adicionar o novo sufixo UPN**
   

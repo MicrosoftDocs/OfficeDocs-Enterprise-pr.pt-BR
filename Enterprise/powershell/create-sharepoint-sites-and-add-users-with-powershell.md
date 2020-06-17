@@ -18,16 +18,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Use o Office 365 PowerShell para criar novos sites do SharePoint Online e, em seguida, adicione usuários e grupos a esses sites.'
-ms.openlocfilehash: 1fc9192ed27bfd097ac770b53837fb8ba2eb062d
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 8011a7e3f61e6b26d4606bfdae67152a1d894840
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004694"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735699"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Criar sites do SharePoint Online e adicionar usuários com o Office 365 PowerShell
 
-Ao usar o Office 365 PowerShell para criar sites do SharePoint Online e adicionar usuários, você pode executar tarefas com rapidez e repetidamente do que no centro de administração do Microsoft 356. Você também pode executar tarefas que não são possíveis de realizar no centro de administração do Office 356. 
+Ao usar o Office 365 PowerShell para criar sites do SharePoint Online e adicionar usuários, você pode executar tarefas com rapidez e repetidamente do que no centro de administração do Microsoft 365. Você também pode executar tarefas que não são possíveis de realizar no centro de administração do Office 365. 
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -52,7 +52,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 <br/>Onde *locatário* é o nome do seu locatário e *proprietário* é o nome de usuário do usuário em seu locatário para o qual você deseja conceder a função de administrador do conjunto de sites principal.<br/>(Você pode pressionar CTRL + H ao usar o bloco de notas para substituir em massa mais rápido.)<br/>
 
-2. Salve o arquivo na área de trabalho como **SiteCollections. csv**.<br/>
+2. Salve o arquivo na área de trabalho como **SiteCollections.csv**.<br/>
 
 > [!TIP]
 > Antes de usar este ou qualquer outro arquivo de script. csv ou do Windows PowerShell, é uma boa prática garantir que não haja caracteres estranhos ou não imprimíveis. Abra o arquivo no Word, e na faixa de opções, clique no ícone do parágrafo  para mostrar caracteres não imprimíveis. Não deve haver caracteres estranhos não imprimíveis. Por exemplo, não deve haver marcas do parágrafo no final do arquivo.
@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>Etapa 2: Adicionar usuários ou grupos
 
-Agora você criará usuários e irá adicioná-los ao grupo do site. Então você usará um arquivo csv. para fazer o carregamento em massa de novos grupos e usuários.
+Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
 
 Os seguintes procedimentos continuam a usar os sites de exemplo TeamSite01, Blog01, Project01 e Community01.
 
@@ -101,7 +101,7 @@ https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Contr
 ```
 <br/>Onde *locatário* é igual ao nome do locatário.<br/>
 
-2. Salve o arquivo em sua área de trabalho como **GroupsAndPermissions. csv**.<br/>
+2. Salve o arquivo em sua área de trabalho como **GroupsAndPermissions.csv**.<br/>
 
 3. Abra uma nova instância do bloco de notas e cole o seguinte bloco de texto:<br/>
 
@@ -118,7 +118,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 ```
 <br/>Onde *locatário* é igual ao nome do locatário e *username* é igual ao nome de usuário de um usuário existente.<br/>
 
-4. Salve o arquivo na sua área de trabalho como **users. csv**.<br/>
+4. Salve o arquivo em sua área de trabalho como **Users.csv**.<br/>
 
 5. Abra uma nova instância do bloco de notas e cole o seguinte bloco de texto:<br/>
 
@@ -128,7 +128,7 @@ Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Gro
 ```
 <br/>Em que myalias é igual ao nome de usuário do usuário que está conectado no momento.<br/>
 
-6. Salve o arquivo em sua área de trabalho como **UsersAndGroups. ps1**. Este é um script simples do Windows PowerShell.
+6. Salve o arquivo em sua área de trabalho como **UsersAndGroups.ps1**. Este é um script simples do Windows PowerShell.
 
 Agora você está pronto para executar o script UsersAndGroup.ps1 para adicionar usuários e grupos a vários conjuntos de sites.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>Em que *myalias* é igual ao nome de usuário.<br/>
 
-5. Aguarde a solicitação de retorno do prompt antes de prosseguir. Os grupos aparecerão de acordo com a criação dos mesmos. Então você verá a repetição da lista do grupo de acordo com os usuários que são agregados.
+5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
 
 ## <a name="see-also"></a>Confira também
 
