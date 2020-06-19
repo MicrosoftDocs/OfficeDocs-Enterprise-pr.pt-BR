@@ -8,7 +8,7 @@
 ### [Assinaturas, licenças e locatários](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### Planeje sua rede
-#### [Avaliando a conectividade da rede Microsoft 365](assessing-network-connectivity.md)
+#### [Avaliando a conectividade de rede do Microsoft 365](assessing-network-connectivity.md)
 #### [Plano para dispositivos de rede conectados aos serviços Microsoft 365](plan-for-network-devices.md)
 #### [Planejamento de rede e migração para Microsoft 365](network-and-migration-planning.md)
 
@@ -65,10 +65,10 @@
 ## 1. Configure sua rede
 ### [Configurar rede corporativa](set-up-network-for-office-365.md)
 ### [Adicionar um domínio](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
-### [Visão geral da conectividade da rede Microsoft 365](office-365-networking-overview.md)
-### [Princípios de Conectividade da Rede Microsoft 365](office-365-network-connectivity-principles.md)
+### [Visão geral da conectividade de rede do Microsoft 365](office-365-networking-overview.md)
+### [Princípios de conectividade de rede do Microsoft 365](office-365-network-connectivity-principles.md)
 ### [Planejamento de rede e ajuste de desempenho para o Microsoft 365](network-planning-and-performance.md)
-### [Avaliando a conectividade da rede Microsoft 365](assessing-network-connectivity.md)
+### [Avaliando a conectividade de rede do Microsoft 365](assessing-network-connectivity.md)
 ### [Programa de Parceiros de Redes do Office 365](office-365-networking-partner-program.md)
 ### Endereços IP e URLs do Office 365
 #### [Pontos de extremidade do Office 365](office-365-endpoints.md)
@@ -97,8 +97,8 @@
 #### [Pontos de extremidade do US Government DoD](office-365-u-s-government-dod-endpoints.md)
 #### [Pontos de extremidade do US Government GCC High](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Cadeias de criptografia do Office 365-DOD e GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [ Suporte IPv6 nos serviços do Microsoft 365](ipv6-support.md)
-### [ Suporte NAT com o Microsoft 365](nat-support-with-office-365.md)
+### [Suporte para IPv6 nos serviços do Microsoft 365](ipv6-support.md)
+### [Suporte para NAT com o Microsoft 365](nat-support-with-office-365.md)
 ### Trabalhando com o ExpressRoute para o Microsoft 365
 #### [ExpressRoute para o Microsoft 365](azure-expressroute.md)
 #### [Implementando o ExpressRoute para o Microsoft 365](implementing-expressroute.md)
@@ -194,7 +194,7 @@
 ### [Desativar a sincronização de diretórios](turn-off-directory-synchronization.md)
 
 ## Usuários
-### [Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/admin-home)
+### [Ajuda do centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/admin-home)
 ### [Ferramentas para gerenciar contas de usuários](manage-office-365-accounts.md)
 ### [Adicionar vários usuários ao mesmo tempo](add-several-users-at-the-same-time.md)
 ### [Recuperar itens excluídos em uma caixa de correio de usuário](recover-deleted-items-in-a-mailbox.md)
