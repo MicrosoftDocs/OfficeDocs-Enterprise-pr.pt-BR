@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: O suporte termina para o SharePoint 2010 e o SharePoint Server 2010 em 13 de abril de 2021. Use este artigo como um guia para atualizar para o SharePoint Online ou uma versão mais recente do SharePoint Server no local.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532285"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774446"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Atualizando do SharePoint 2010
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 O Microsoft SharePoint 2010 e o SharePoint Server 2010 atingirão o fim do suporte em **13 de abril de 2021**. Este artigo detalha os recursos para ajudá-lo a migrar seus dados existentes do SharePoint Server 2010 para o SharePoint Online no Office 365 ou atualizar seu ambiente local do SharePoint Server 2010.
   
@@ -128,7 +128,7 @@ A partir da versão mais recente do produto local do SharePoint (SharePoint Serv
   
 |||
 |:-----|:-----|
-||Caminho de atualização serial * * * *: SharePoint Server **\>** 2010 sharepoint Server **\>** 2013 SharePoint Server 2016 |
+||Caminho de atualização serial * * * *: SharePoint Server 2010 **\>** SharePoint server 2013 **\>** sharepoint Server 2016 |
    
 Se você optar por seguir o caminho completo do SharePoint 2010 para o SharePoint Server 2016, isso levará tempo e planejamento. As atualizações envolvem um custo em termos de hardware atualizado (Lembre-se de que os SQL Servers também devem ser atualizados), software e administração. Além disso, as personalizações talvez precisem ser atualizadas ou até abandonadas. Verifique se você coleta anotações em todas as suas personalizações críticas antes de atualizar seu farm do SharePoint Server.
   
@@ -162,15 +162,15 @@ Comece comparando os requisitos de hardware e software. Se você não atender ao
   
 - **Requisitos de hardware/software para**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - Limites **e limites de software para**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **A visão geral do processo de atualização para**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252) | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Criar uma solução híbrida do SharePoint entre o SharePoint Online e o SharePoint Server no local
 

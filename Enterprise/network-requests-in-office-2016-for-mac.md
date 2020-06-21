@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Os aplicativos do Office para Mac oferecem uma experiência de aplicativo nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em vários cenários, incluindo Estados quando não há acesso à rede disponível. Quando um computador está conectado a uma rede, os aplicativos se conectam automaticamente a uma série de serviços baseados na Web para fornecer funcionalidade aprimorada. Este artigo descreve quais pontos de extremidade e URLs os aplicativos tentam alcançar e os serviços fornecidos. Essas informações são úteis para solucionar problemas de configuração de rede e definir uma política para servidores proxy de rede. Os detalhes neste artigo destinam-se a complementar a URL do Office 365 e o artigo de intervalos de endereços.
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844542"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774946"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitações de rede do Office para Mac
 
@@ -52,7 +52,7 @@ Os pontos de extremidade de rede a seguir são usados para baixar o programa de 
   
 |**URL**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |CEP  <br/> |O serviço de link avançado do portal de instalação do Office 365 para os pacotes de instalação mais recentes.  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |CEP  <br/> |Serviço de link avançado do portal de instalação do Microsoft 365 para os pacotes de instalação mais recentes.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |PLANILHA  <br/> |Local dos pacotes de instalação na rede de distribuição de conteúdo.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |PLANILHA  <br/> |Local dos pacotes de instalação na rede de distribuição de conteúdo.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |CEP  <br/> |Ponto de extremidade de controle de gerenciamento para o Microsoft AutoUpdate  <br/> |
@@ -86,7 +86,7 @@ Os pontos de extremidade de rede a seguir são contatados na primeira inicializa
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |CEP  <br/> |Serviço de suporte no aplicativo.  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |CEP  <br/> |Serviço de detecção de conta de email.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |CEP  <br/> |Descoberta automática do Outlook  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |CEP  <br/> |Ponto de extremidade do Outlook para o serviço do Office 365.  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |CEP  <br/> |Ponto de extremidade do Outlook para o Microsoft 365 Service.  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |CEP  <br/> |Ícones para suplementos do Outlook.  <br/> |
    
 > [!NOTE]
@@ -103,10 +103,10 @@ Os pontos de extremidade de rede a seguir são contatados ao entrar no armazenam
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |CEP  <br/> |Serviço de autorização do Windows  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Serviço de logon do Office 365 (OrgID)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Serviço de login 365 da Microsoft (OrgID)  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Serviço de login da conta da Microsoft (MSA)  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |Auxiliar de serviço de logon da conta da Microsoft (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |PLANILHA  <br/> |Identidade visual de login do Office 365 (OrgID)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |PLANILHA  <br/> |Microsoft 365 login branding (OrgID)  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Documento e locais do localizador de armazenamento  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Serviço de documento usado mais recentemente (MRU)  <br/> |
    
@@ -115,7 +115,7 @@ Os pontos de extremidade de rede a seguir são contatados ao entrar no armazenam
   
  **Ativação do produto**
   
-Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365 e às ativações de licença de varejo. Especificamente, isso não se aplica a instalações de licença de volume.
+Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo. Especificamente, isso não se aplica a instalações de licença de volume.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -123,7 +123,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365
    
  **Conteúdo novidades**
   
-Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Office 365.
+Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -131,7 +131,7 @@ Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Of
    
  **Pesquisador**
   
-Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Office 365.
+Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -139,9 +139,9 @@ Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Of
 |```https://cdn.entity.osi.office.net/```  <br/> |Rar  <br/> |CS  <br/> |Conteúdo estático do pesquisador  <br/> |
 |```https://www.bing.com/```  <br/> |Rar  <br/> |CS  <br/> |Provedor de conteúdo do pesquisador  <br/> |
    
- **Pesquisa Inteligente**
+ **Pesquisa inteligente**
   
-Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365 e às ativações de licença de varejo/volume.
+Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -153,15 +153,15 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365
    
  **Designer do PowerPoint**
   
-Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Office 365.
+Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Serviço Web do PowerPoint designer  <br/> |
    
- **Iniciador Rápido do PowerPoint**
+ **Iniciador rápido do PowerPoint**
   
-Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Office 365.
+Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ Os pontos de extremidade de rede a seguir se aplicam somente à assinatura do Of
    
  **Enviar um Smiley/rosto triste**
   
-Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365 e às ativações de licença de varejo/volume.
+Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365
    
  **Contatar o suporte**
   
-Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365 e às ativações de licença de varejo/volume.
+Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365
    
  **Salvar como PDF**
   
-Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365 e às ativações de licença de varejo/volume.
+Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365
    
  **Aplicativos do Office (também conhecidos como suplementos)**
   
-Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365 e às ativações de licença de varejo/volume quando os suplementos de aplicativo do Office são confiáveis.
+Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume quando os suplementos de aplicativo do Office são confiáveis.
   
 |**URL**|**Apps**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Office 365
    
  **Links seguros**
   
-O ponto de extremidade de rede a seguir se aplica a todos os aplicativos do Office somente para a assinatura do Office 365.
+O ponto de extremidade de rede a seguir se aplica a todos os aplicativos do Office somente para a assinatura do Microsoft 365.
   
 |**URL**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ O ponto de extremidade de rede a seguir se aplica a todos os aplicativos do Offi
    
  **Relatórios de falhas**
   
-O ponto de extremidade de rede a seguir se aplica a todos os aplicativos do Office para a assinatura do Office 365 e as ativações de licença de varejo/volume. Quando um processo falha inesperadamente, um relatório é gerado e enviado ao serviço Watson.
+O ponto de extremidade de rede a seguir se aplica a todos os aplicativos do Office para a assinatura do Microsoft 365 e as ativações de licença de varejo/volume. Quando um processo falha inesperadamente, um relatório é gerado e enviado ao serviço Watson.
   
 |**URL**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ O Office para Mac envia informações de telemetria de volta para a Microsoft em
     
 - O **uso** contém informações sobre como os aplicativos estão sendo usados e erros não fatais. Esses dados são enviados a cada 60 minutos. 
     
-A Microsoft leva sua privacidade muito séria. Você pode ler sobre a política de coleta de dados [https://privacy.microsoft.com](https://privacy.microsoft.com)da Microsoft em. Para impedir que os aplicativos enviem a telemetria de "uso", a preferência **SendAllTelemetryEnabled** pode ser ajustada. A preferência é por aplicativo e pode ser definida por meio de perfis de configuração do macOS ou manualmente do terminal: 
+A Microsoft leva sua privacidade muito séria. Você pode ler sobre a política de coleta de dados da Microsoft em [https://privacy.microsoft.com](https://privacy.microsoft.com) . Para impedir que os aplicativos enviem a telemetria de "uso", a preferência **SendAllTelemetryEnabled** pode ser ajustada. A preferência é por aplicativo e pode ser definida por meio de perfis de configuração do macOS ou manualmente do terminal: 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -309,7 +309,7 @@ Em alguns casos, o conteúdo de um documento fará com que o aplicativo falhe. S
 > [!NOTE]
 > Se **SendAllTelemetryEnabled** estiver definido como **false**, todos os relatórios de falha desse processo serão desabilitados. Para habilitar o relatório de falhas sem enviar telemetria de uso, é possível definir a seguinte preferência:```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
-### <a name="updates"></a>Updates
+### <a name="updates"></a>Atualizações
   
 A Microsoft lança atualizações do Office para Mac em intervalos regulares (normalmente uma vez por mês). Recomendamos que os usuários e administradores de ti mantenham as máquinas atualizadas para garantir que as correções de segurança mais recentes estejam instaladas. Nos casos em que os administradores de ti desejam controlar de perto e gerenciar atualizações de máquina, a preferência a seguir pode ser definida para impedir que o processo de atualização automática detecte automaticamente e ofereça atualizações de produtos:
   

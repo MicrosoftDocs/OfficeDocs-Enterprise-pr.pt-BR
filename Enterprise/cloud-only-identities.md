@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como criar usuários e grupos quando sua assinatura do Microsoft 365 estiver usando a identidade somente de nuvem.
-ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698918"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774826"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Identidade somente na nuvem do Microsoft 365
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 Com a identidade somente na nuvem, todos os usuários, grupos e contatos são armazenados no locatário do Azure Active Directory (Azure AD) da sua assinatura do Microsoft 365. Estes são os componentes básicos da identidade somente na nuvem.
  
@@ -49,7 +49,7 @@ Os usuários e suas contas de usuário nas organizações podem ser categorizado
 
 Faça o estoque dos tipos de usuários em sua organização. Quais são os agrupamentos? Por exemplo, você pode agrupar usuários por função ou finalidade de alto nível em sua organização.
 
-Além disso, alguns serviços de nuvem podem ser compartilhados com usuários de fora de sua organização que não tenham contas de usuário. Você também precisará identificar esses grupos de usuários.
+Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
 Você pode usar grupos no Azure AD para várias finalidades que simplificam o gerenciamento de seu ambiente de nuvem. Por exemplo, com grupos do Azure AD, você pode:
 

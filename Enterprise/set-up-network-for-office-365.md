@@ -1,5 +1,5 @@
 ---
-title: Configure sua rede para o Office 365
+title: Configurar sua rede para o Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,45 +18,45 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
-description: 'Resumo: Confira estes artigos para entender a rede do Office 365.'
-ms.openlocfilehash: c1976a6b1ae5bff0b5f6f909ee9ab8495f371653
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: 'Resumo: consulte estes artigos para entender a rede para o Microsoft 365.'
+ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844022"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735650"
 ---
-# <a name="set-up-your-network-for-office-365"></a>Configure sua rede para o Office 365
+# <a name="set-up-your-network-for-microsoft-365"></a>Configurar sua rede para o Microsoft 365
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
-Uma parte importante da integração do Office 365 é garantir que suas conexões de rede e Internet estejam configuradas para acesso otimizado. A configuração da sua rede local para acessar uma nuvem SaaS (Software como Serviço) distribuída globalmente é diferente de uma rede tradicional que é otimizada para o tráfego de datacenters locais e uma conexão de Internet central. 
+An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
 
 Use estes artigos para entender as principais diferenças e modificar seus dispositivos de borda, computadores clientes e rede local para obter o melhor desempenho para seus usuários locais.
 
-## <a name="how-office-365-networking-works"></a>Como funciona a rede do Office 365
+## <a name="how-microsoft-365-networking-works"></a>Como funciona a rede Microsoft 365
 
-Confira estes artigos para obter uma visão geral de conectividade do Office 365:
+Consulte estes artigos para obter uma visão geral da conectividade do Microsoft 365:
 
-- [Visão geral da conectividade de rede do Office 365](office-365-networking-overview.md)
-- [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
-- [Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
+- [Visão geral da conectividade de rede do Microsoft 365](office-365-networking-overview.md)
+- [Princípios de conectividade de rede do Microsoft 365](office-365-network-connectivity-principles.md)
+- [Avaliando a conectividade de rede do Microsoft 365](assessing-network-connectivity.md)
 
-Para conselhos sobre como aprimorar o desempenho, confira [Planejamento de rede e ajuste de desempenho do Office 365](network-planning-and-performance.md).
+Para obter conselhos sobre como melhorar o desempenho, consulte [planejamento de rede e ajuste de desempenho para o Microsoft 365](network-planning-and-performance.md).
 
-## <a name="support-office-365-networking-as-a-network-equipment-vendor"></a>Suporte de rede do Office 365 como fornecedor de equipamentos de rede
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Suporte para redes Microsoft 365 como um fornecedor de equipamento de rede
 
-Se você é um fornecedor de equipamentos de rede, junte-se ao [Programa de Parceiros de Rede do Office 365](office-365-networking-partner-program.md). Inscreva-se no programa para integrar princípios de conectividade de rede do Office 365 aos seus produtos e soluções. 
+If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
 
 ## <a name="office-365-endpoints"></a>Pontos de extremidade do Office 365
 
 Pontos de extremidade são o conjunto de endereços IP de destino, nomes de domínio do DNS e URLs do tráfego do Office 365 na Internet. 
 
-Para otimizar o desempenho dos serviços baseados em nuvem do Office 365, alguns pontos de extremidade precisam de tratamento especial pelos navegadores clientes e pelos dispositivos da rede de borda. Esses dispositivos incluem firewalls, SSL Break and Inspect e dispositivos de inspeção de pacotes e sistemas de prevenção de perda de dados.
+To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
 
 Confira [Gerenciar pontos de extremidade do Office 365](managing-office-365-endpoints.md) para saber mais.
 
-Atualmente, há cinco nuvens diferentes do Office 365. Esta tabela leva você à lista de pontos de extremidade de cada um deles.
+There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
 
 |||
 |:-------|:-----|
@@ -75,15 +75,15 @@ Para pontos de extremidade adicionais, confira estes artigos:
 - [Solicitações de rede do Office 2016 para Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-office-365-networking"></a>Outros tópicos de rede do Office 365
+## <a name="additional-topics-for-microsoft-365-networking"></a>Tópicos adicionais para a rede 365 da Microsoft
 
-Confira estes artigos para tópicos especializados na rede do Office 365:
+Consulte estes artigos sobre tópicos especializados na rede Microsoft 365:
 
 - [Redes de distribuição de conteúdo](content-delivery-networks.md)
 - [Suporte a IPv6 nos serviços do Office 365](ipv6-support.md)
 - [Suporte a NAT com o Office 365](nat-support-with-office-365.md)
 
-## <a name="expressroute-for-office-365"></a>ExpressRoute para Office 365
+## <a name="expressroute-for-microsoft-365"></a>ExpressRoute para o Microsoft 365
 
 Confira estes artigos para obter informações sobre o uso do ExpressRoute para tráfego do Office 365:
 

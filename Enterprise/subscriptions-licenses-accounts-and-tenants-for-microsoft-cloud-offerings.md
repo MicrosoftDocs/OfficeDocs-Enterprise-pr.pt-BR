@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: 65922f3ab8a88056ebc63d12cc0dcad37d6c49c8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: ad4307b2725fa37f6b28540b92895fc78f097c6c
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843972"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735959"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
@@ -45,7 +45,7 @@ Aqui estão os elementos da hierarquia:
   
 ### <a name="organization"></a>Organização
 
-Uma organização representa uma entidade de negócios que usa ofertas de nuvem da Microsoft, geralmente identificadas por um ou mais nomes de domínio do Sistema de Nomes de Domínio (DNS), como contoso.com. A organização é um contêiner para assinaturas.
+An organization represents a business entity that is using Microsoft cloud offerings, typically identified by one or more public Domain Name System (DNS) domain names, such as contoso.com. The organization is a container for subscriptions.
   
 ### <a name="subscriptions"></a>Assinaturas
 
@@ -54,7 +54,7 @@ Uma assinatura é um contrato com a Microsoft para usar uma ou mais plataformas 
 - As ofertas de nuvem baseadas no Software como Serviço (Saas) da Microsoft (Office 365, Intune/EMS e Dynamics 365) cobram taxas de licença por usuário. 
 - As ofertas de nuvem de Plataforma como um Serviço (PaaS) e Infraestrutura como um Serviço (IaaS) da Microsoft (Azure) cobram com base no consumo de recursos na nuvem.
  
-Você também pode usar uma assinatura de avaliação, mas a assinatura expira após um quantidade específica de horas ou tarifas de consumo. Você pode converter uma assinatura de avaliação para uma assinatura paga.
+You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
   
 As organizações podem ter várias assinaturas para ofertas de nuvem da Microsoft. A Figura 1 mostra uma única organização com várias assinaturas do Office 365, uma assinatura do Intune, outra assinatura do Dynamics 365 e várias assinaturas do Azure.
 
@@ -73,9 +73,9 @@ Para as ofertas de nuvem SaaS da Microsoft, uma licença permite que uma conta d
   
 Para serviços de nuvem baseados em PaaS do Azure, as licenças de software são integradas ao preço do serviço.
   
-Para máquinas virtuais baseadas em IaaS do Azure, talvez seja necessário ter licenças adicionais para usar o software ou aplicativo instalados em uma imagem de máquina virtual. Algumas imagens de máquinas virtuais têm versões licenciadas do software instalado e o custo é incluído na taxa por minuto para o servidor. Os exemplos são as imagens de máquinas virtuais do SQL Server 2014 e do SQL Server 2016. 
+For Azure IaaS-based virtual machines, additional licenses to use the software or application installed on a virtual machine image might be required. Some virtual machine images have licensed versions of software installed and the cost is included in the per-minute rate for the server. Examples are the virtual machine images for SQL Server 2014 and SQL Server 2016. 
   
-Algumas imagens de máquinas virtuais têm versões de avaliação de aplicativos instaladas e precisam de licenças adicionais de aplicativos de software para uso além do período de avaliação. Por exemplo, a imagem de máquina virtual de avaliação do SharePoint Server 2016 inclui uma versão de avaliação do SharePoint Server 2016 pré-instalada. Para continuar usando o SharePoint Server 2016 após a data de validade da avaliação, é necessário adquirir uma licença do SharePoint Server 2016 e licenças de cliente da Microsoft. Essas cobranças são separadas da assinatura do Azure e a taxa por minuto para executar a máquina virtual ainda se aplica.
+Some virtual machine images have trial versions of applications installed and need additional software application licenses for use beyond the trial period. For example, the SharePoint Server 2016 Trial virtual machine image includes a trial version of SharePoint Server 2016 pre-installed. To continue using SharePoint Server 2016 after the trial expiration date, you must purchase a SharePoint Server 2016 license and client licenses from Microsoft. These charges are separate from the Azure subscription and the per-minute rate to run the virtual machine still applies.
   
 ### <a name="user-accounts"></a>Contas de usuário
 
@@ -89,11 +89,11 @@ A Figura 3 mostra um exemplo de várias assinaturas de uma organização usando 
   
 ### <a name="tenants"></a>Locatários
 
-Para ofertas de nuvem de SaaS, o locatário é o local regional que engloba os servidores que fornecem serviços de nuvem. Por exemplo, a Contoso Corporation escolheu a região europeia para hospedar seus locatários do Office 365, do EMS e do Dynamics 365 para os 15.000 trabalhadores da sede de Paris.
+For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Office 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
   
-Serviços de PaaS do Azure e as cargas de trabalho baseadas em máquina virtual hospedadas na infraestrutura como serviço do Azure podem ter locatários em qualquer datacenter do Azure do mundo. Especifique o datacenter do Azure, ou o local, ao criar o serviço ou o aplicativo de PaaS do Azure ou o elemento de uma carga de trabalho de IaaS.
+Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-Um locatário do Azure AD é uma instância específica do Azure AD que contém contas e grupos. Assinaturas pagas ou de avaliação do Office 365, do Dynamics 365 ou do Intune/EMS incluem um locatário gratuito do Azure AD. Este locatário do Azure AD não inclui outros serviços do Azure e não é igual a uma assinatura paga ou de avaliação do Azure.
+An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Office 365, Dynamics 365, or Intune/EMS include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
   
 ### <a name="summary-of-the-hierarchy"></a>Resumo da hierarquia
 
@@ -129,7 +129,7 @@ Várias assinaturas de oferta do Microsoft Cloud podem usar o mesmo locatário d
 
 ![IDaaS ou Identidade como um serviço (IaaS) para a sua organização.](media/Subscriptions/Subscriptions-Fig4.png)
   
-A Figura 4 mostra como um locatário comum do Azure AD é usado por ofertas em nuvem da Microsoft para SaaS, aplicativos PaaS do Azure e máquinas virtuais no IaaS do Azure que usam o Azure AD Domain Services. O Azure AD Connect sincroniza da floresta do AD DS local com o locatário do Azure AD.
+Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud offerings, Azure PaaS apps, and virtual machines in Azure IaaS that use Azure AD Domain Services. Azure AD Connect synchronizes the on-premises AD DS forest with the Azure AD tenant.
   
 ## <a name="combining-subscriptions-for-multiple-microsoft-cloud-offerings"></a>Combinar as assinaturas de várias ofertas de nuvem da Microsoft
 

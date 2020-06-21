@@ -25,16 +25,16 @@ ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
 description: O SharePoint Server 2007 atingiu o fim do suporte e é hora de atualizar. Use este artigo para ajudá-lo a criar seu plano.
-ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841148"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774986"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Opções de migração do SharePoint 2007 a serem consideradas
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 O Microsoft SharePoint 2007 e o SharePoint Server 2007 chegaram ao fim do suporte. É hora de atualizar! Este artigo fornece informações sobre as opções de migração.
   
@@ -54,9 +54,9 @@ Há vários métodos para atualizar um ambiente do SharePoint Server. Se você t
     
 - Mover dados manualmente entre conjuntos de sites ou bibliotecas
     
-- Atualização do assistente do FastTrack para o Office 365 ([supervisor de implantação do SharePoint Online](https://aka.ms/spoguidance))
+- Atualização do assistente do FastTrack para o Microsoft 365 ([supervisor de implantação do SharePoint Online](https://aka.ms/spoguidance))
     
-- API de migração para o SharePoint Online (SPO) no Office 365
+- API de migração para o SharePoint Online (SPO) no Microsoft 365
     
 O que funciona melhor para você?
   
@@ -67,7 +67,7 @@ Seu conhecimento sobre o que o seu farm faz e é usado é uma força tática qua
   
 Lembre-se de verificar o [ciclo de vida do produto](https://support.microsoft.com/lifecycle/search) e os requisitos do sistema para qualquer versão do SharePoint para a qual você está atualizando. Isso é necessário para que você se lembre de quando a próxima atualização será necessária (por exemplo, se você pausar em um produto herdado como o SharePoint Server 2010 para planejar mais atualizações, certifique-se de que você conhece o fim da data de suporte) e para ter certeza de que tem o hardware que oferece suporte ao seu plano. 
   
-Se você estiver planejando fazer a transição de alguns, ou todos, de seus sites do SharePoint para o Office 365 na nuvem, essa é uma hora para indicar um link para as [descrições de serviço do Office 365](https://technet.microsoft.com/library/office-365-service-descriptions.aspx). Você precisará das descrições de serviço para saber mais sobre os recursos do SharePoint Online e como eles podem diferir do SharePoint Server local. Atualizar farms funcionais do Microsoft Office SharePoint Server 2007. Se sua instalação tiver sites desfeitos, corrija-os antes de atualizar.
+Se você estiver planejando fazer a transição de alguns, ou todos, de seus sites do SharePoint para o Microsoft 365 na nuvem, essa é uma hora para indicar um link para as [descrições de serviço do Microsoft 365 e do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library). Você precisará das descrições de serviço para saber mais sobre os recursos do SharePoint Online e como eles podem diferir do SharePoint Server local. Atualizar farms funcionais do Microsoft Office SharePoint Server 2007. Se sua instalação tiver sites desfeitos, corrija-os antes de atualizar.
   
 ## <a name="a-note-about-managing-risk"></a>Uma nota sobre o gerenciamento de riscos
 
@@ -75,18 +75,18 @@ Métodos como ' lado a lado ' são importantes no esquema de lógica de atualiza
   
 1. Você tem um local para fazer backups dos seus bancos de dados do Microsoft Office SharePoint Server 2007 para atualizá-los separadamente usando anexar banco de dados.
     
-2. Se você descobrir que apenas um pequeno número de bibliotecas de documentos críticas e outras informações estão em uso no seu farm do Microsoft Office SharePoint Server 2007, você pode optar por mover manualmente os dados do Microsoft Office SharePoint Server 2007 para o SharePoint Server 2010 ou apenas sites e Webs específicos para a próxima versão (o que pode facilitar o trabalho).
+2. Se você descobrir que apenas um pequeno número de bibliotecas de documentos críticas e outras informações estão em uso no seu farm do Microsoft Office SharePoint Server 2007, você pode optar por mover manualmente os dados do Microsoft Office SharePoint Server 2007 para o SharePoint Server 2010 ou fazer apenas sites e Webs específicos para a próxima versão (o que pode facilitar o trabalho).
     
 3. Quanto menos você fizer para o farm de servidores do Microsoft Office SharePoint Server 2007, diretamente, mais seguro serão os dados que o farm contém conforme você atualiza.
     
 Métodos como a atualização in-loco atuarão diretamente no seu farm do Microsoft Office SharePoint Server 2007, fornecendo menos opções fáceis para abandonar um caminho e começar novamente com seu ambiente do pristine. Tanto quanto possível, crie algumas medidas de segurança (como fazer e testar backups do ambiente original). Por exemplo, se o seu farm do Microsoft Office SharePoint Server 2007 for virtual e estiver duplicado para fins de backup e restauração, faça backup e restaure os bancos de dados mais recentes antes da janela de serviço para a atualização. Sabendo que você tem a opção de restaurar backups de banco de dados não só dará uma falha na FailSafe, pode dar tranqüilidade.
   
 > [!TIP]
-> Os documentos de práticas recomendadas para atualização existem para [o Microsoft Office SharePoint server 2007, o](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx) [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), o [SharePoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)e o [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx). Você também pode procurar [parceiros da Microsoft](https://partnercenter.microsoft.com/pcv/search) que tenham experiência com atualizações ou migrações do Office 365. 
+> Os documentos de práticas recomendadas para atualização existem para [o Microsoft Office SharePoint server 2007, o](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx) [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), o [SharePoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)e o [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx). Você também pode procurar [parceiros da Microsoft](https://partnercenter.microsoft.com/pcv/search) que tenham experiência com atualizações ou migrações do Microsoft 365. 
   
 ## <a name="make-your-plan"></a>Faça seu plano
 
-Se for necessário atualizar, você precisará de um plano e ele não se ajustar a todos esses casos. Seu plano pode ser tão simples quanto ' criar uma assinatura do Office 365 com o SharePoint Online, registrar um domínio e redirecionar as pessoas para salvar seus arquivos nesse local. E pode não ser. Essa decisão é sua e está inativa para o que você e seus usuários realmente precisam.
+Se for necessário atualizar, você precisará de um plano e ele não se ajustar a todos esses casos. Seu plano pode ser tão simples quanto ' criar uma assinatura do Microsoft 365 com o SharePoint Online, registrar um domínio e redirecionar as pessoas para salvar seus arquivos nesse local. E pode não ser. Essa decisão é sua e está inativa para o que você e seus usuários realmente precisam.
   
 > [!NOTE]
 > É arriscado executar em software, cujo ciclo de vida terminou. Os produtos sem suporte não são mais corrigidos quando os problemas são encontrados. Isso também significa que, se surgirem novas ameaças à segurança, não haverá patches ou correções de segurança porque os produtos de fim de ciclo de vida não são mais suportados. Evite essa situação! 
@@ -109,15 +109,15 @@ Portanto, o que os usuários dizem é mais importante em relação ao seu farm d
     
 - Personalizações
     
-Se você executar algo essencial à sua empresa a partir do seu farm do SharePoint, digamos que ele atue como um grande catálogo de dados críticos sobre os requisitos de serviço do cliente, você pode colocar uma marcação ao lado de ' aplicativos críticos ', mas também a ' disponibilidade '--ou seja, sua empresa seria impactado se você não podia usar o SharePoint por um tempo. Da mesma forma, você pode verificar ' personalizações ' porque os serviços críticos que seu farm oferece são baseados em código personalizado, definições de site ou várias personalizações que funcionam juntas.
+Se você executar algo essencial à sua empresa a partir do seu farm do SharePoint, digamos que ele atue como um grande catálogo de dados críticos sobre os requisitos de serviço de cliente, você pode colocar uma marcação ao lado de "aplicativos críticos", mas também a ' disponibilidade '--ou seja, sua empresa será afetada se você não puder usar o SharePoint por algum tempo. Da mesma forma, você pode verificar ' personalizações ' porque os serviços críticos que seu farm oferece são baseados em código personalizado, definições de site ou várias personalizações que funcionam juntas.
   
-Se o SharePoint atender a essas necessidades sem que você tenha que fazer nada fora do uso do que é integrado ao software e, em geral, você o atualize e execute a administração e a manutenção normais, talvez tenha escolhido o "SharePoint interno", que também pode ser o seu motivo para sentar uma versão mais antiga do SharePoint. Em outras palavras, ela já faz o que você precisa e não precisou atualizar até agora, no Microsoft Office SharePoint Server 2007 fim do suporte.
+Se o SharePoint atender a essas necessidades sem que você tenha que fazer nada fora do uso do que é integrado ao software e, em geral, você a atualize e execute a administração e a manutenção normais, talvez tenha escolhido ' SharePoint interno '--isso também pode ser o motivo de participar de uma versão mais antiga do SharePoint. Em outras palavras, ela já faz o que você precisa e não precisou atualizar até agora, no Microsoft Office SharePoint Server 2007 fim do suporte.
   
 Ao listar itens com marcadores, você cria critérios para a atualização. Em outras palavras, qualquer atualização teria que atender a essa barra para ser considerada. Isso oferece uma maneira de descartar métodos que não atendam às suas necessidades no momento.
   
 ### <a name="a-simple-sample-plan"></a>Um plano de amostra simples
 
-Talvez seja necessário ter um consenso mais amplo com liderança e outros administradores no caminho que a atualização do SharePoint terá. Os administradores do SharePoint Server costumam cooperar com os administradores do Microsoft SQL Server, trabalhar com equipes de segurança e de rede e muito mais. Onde há muitos participantes, talvez seja necessário criar um contrato para, ou ajustar, seu plano de atualização e migração. Por exemplo, se você migrar dados para que parte da sua empresa use o SharePoint Online no Office 365, provavelmente precisará ser ajuste de desempenho ou teste dentro da sua rede. Teams afetados devem ser informados antes do tempo.
+Talvez seja necessário ter um consenso mais amplo com liderança e outros administradores no caminho que a atualização do SharePoint terá. Os administradores do SharePoint Server costumam cooperar com os administradores do Microsoft SQL Server, trabalhar com equipes de segurança e de rede e muito mais. Onde há muitos participantes, talvez seja necessário criar um contrato para, ou ajustar, seu plano de atualização e migração. Por exemplo, se você migrar dados para que parte da sua empresa use o SharePoint Online no Microsoft 365, provavelmente precisará de ajuste de desempenho ou teste dentro da sua rede. Teams afetados devem ser informados antes do tempo.
   
 Em minha amostra simples, mostrarei uma proposta de administrador do SharePoint e, em seguida, listamos o plano que todos os participantes participaram. Para maior clareza, documente seus contratos e decisões.
   
@@ -146,8 +146,8 @@ Minha lista de marcadores "mais importante":
 |Sim <br/> |**Não** <br/> |
 |Atualizar bancos de dados com anexação de banco de dados  <br/> |Atualização in-loco  <br/> |
 |Atualização com farms lado a lado  <br/> |Atualização híbrida  <br/> |
-|API de migração para o SPO no Office 365 (para dados de site pessoal)  <br/> |SharePoint híbrido (ainda não necessário)  <br/> |
-|Algumas migrações manuais de dados para o SharePoint Online para dados críticos  <br/> |Atualização do assistente do FastTrack para o Office 365  <br/> |
+|API de migração para o SPO no Microsoft 365 (para dados de site pessoal)  <br/> |SharePoint híbrido (ainda não necessário)  <br/> |
+|Algumas migrações manuais de dados para o SharePoint Online para dados críticos  <br/> |Atualização do assistente do FastTrack para o Microsoft 365  <br/> |
    
  **Meu plano proposto:**
   
@@ -157,7 +157,7 @@ Atualização no local, com as versões do SharePoint lado a lado, algumas virtu
     
 - Considere a [assistência do FastTrack](https://fasttrack.microsoft.com) se quiser atualizar para o SharePoint Online aqui. 
     
-- Determine se os conjuntos de sites podem ser descarregados para uma assinatura do Office 365. (O Office 365 atende a vários [padrões de conformidade](https://technet.microsoft.com/library/office-365-compliance.aspx). O Office 365 tem [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) e pode fazer [suspensões](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) através do centro de conformidade.) 
+- Determine se os conjuntos de sites podem ser descarregados para uma assinatura do Microsoft 365. (A Microsoft 365 atende a vários [padrões de conformidade](https://technet.microsoft.com/library/office-365-compliance.aspx). O Microsoft 365 tem [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) e pode fazer [suspensões](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) através do centro de conformidade.) 
     
 Caso contrário, continue com uma atualização lado a lado para o SharePoint Server 2016.
   

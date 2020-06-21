@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do Microsoft 365 IdFix.
-ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 199d765d640a30fa163f74e6b6029b228b41a63d
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711551"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774506"
 ---
 # <a name="microsoft-365-idfix-transaction-log"></a>Log de transações do Microsoft 365 IdFix
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 Fornece um exemplo e descreve a Convenção de nomenclatura e o nível de log padrão do log de transações do Microsoft 365 IdFix.
   

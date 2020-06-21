@@ -1,7 +1,7 @@
 ---
-title: Controles de tecnologia do Office 365
-ms.author: robmazz
-author: robmazz
+title: Controles de tecnologia da Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: uma visão geral das práticas de controle de tecnologia da Microsoft para o Office 365.'
-ms.openlocfilehash: ff6816b5d5734309f29a7a88bb8c034967ecd115
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: uma visão geral das práticas de controle de tecnologia da Microsoft para o Microsoft 365.'
+ms.openlocfilehash: ef17d00cdeac4a5c7fa9dd1b2d5b5a644bb62ddb
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841958"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774846"
 ---
-# <a name="office-365-technology-controls"></a>Controles de tecnologia do Office 365 
+# <a name="microsoft-365-technology-controls"></a>Controles de tecnologia da Microsoft 365 
 
 A Microsoft usa várias ferramentas e tecnologias para controlar, gerenciar e auditar o acesso aos dados do cliente em seus serviços online. Eles se aplicam ao Exchange Online, SharePoint Online, Lockbox e Lockbox de cliente, autenticação multifator e muito mais. O Yammer usa controles similares descritos nos [controles de acesso corporativo do Yammer](office-365-yammer-enterprise-access-controls.md).
 
-Os engenheiros do Office 365 têm zero acesso de pé aos dados do cliente do Office 365. Os engenheiros devem passar por um processo de aprovação da Microsoft antes que ocorra o acesso aos dados do cliente para operações de serviço. Se o cliente licenciar o recurso de lockbox de cliente para o Exchange Online e o SharePoint Online, o acesso aos dados do cliente requer a aprovação do cliente. Após a aprovação, as contas administrativas específicas de serviço são o acesso just-in-time provisionado para tarefas exigidas pela solicitação de serviço.
+Os engenheiros da Microsoft 365 têm zero acesso de pé aos dados do cliente da Microsoft 365. Os engenheiros devem passar por um processo de aprovação da Microsoft antes que ocorra o acesso aos dados do cliente para operações de serviço. Se o cliente licenciar o recurso de lockbox de cliente para o Exchange Online e o SharePoint Online, o acesso aos dados do cliente requer a aprovação do cliente. Após a aprovação, as contas administrativas específicas de serviço são o acesso just-in-time provisionado para tarefas exigidas pela solicitação de serviço.
 
 ## <a name="lockbox-and-customer-lockbox"></a>Lockbox e Lockbox de cliente
 
@@ -37,18 +37,18 @@ Embora seja raro, um cliente pode solicitar assistência da Microsoft que expõe
 
 O Lockbox processa as solicitações que concedem aos engenheiros a capacidade de executar funções operacionais e administrativas dentro do serviço. Os engenheiros enviam solicitações por meio de Lockbox, e o Microsoft Manager deve aprovar a solicitação antes que o engenheiro possa acessar dados do cliente. Após a aprovação do gerente, o engenheiro tem acesso limitado por tempo e com escopo limitado aos dados do cliente para trabalhar no problema do cliente.
 
-O Lockbox de cliente do Office 365 ajuda você a cumprir as obrigações de conformidade, caso precise de procedimentos em vigor para autorização explícita de acesso a dados. Isso é um requisito para alguns padrões de conformidade, como FedRAMP e HIPAA. O Lockbox do cliente insere você no processo de aprovação de Lockbox e fornece a capacidade de controlar a autorização do Microsoft Access para o conteúdo do Exchange Online ou do SharePoint Online para operações de serviço.
+O Lockbox de cliente do Microsoft 365 ajuda você a cumprir as obrigações de conformidade, caso precise de procedimentos em vigor para autorização explícita de acesso a dados. Isso é um requisito para alguns padrões de conformidade, como FedRAMP e HIPAA. O Lockbox do cliente insere você no processo de aprovação de Lockbox e fornece a capacidade de controlar a autorização do Microsoft Access para o conteúdo do Exchange Online ou do SharePoint Online para operações de serviço.
 
 Na rara instância, quando um engenheiro de serviços da Microsoft precisa acessar seus dados, você concede acesso somente aos dados necessários para resolver o problema e por um tempo limitado. Se você rejeitar uma solicitação de acesso, os engenheiros da Microsoft não terão acesso ao seu conteúdo e não poderão concluir as operações de serviço. Se você aprovar a solicitação, os engenheiros da Microsoft têm acesso limitado de just-in-time ao conteúdo por meio de interfaces de gerenciamento restritas e monitoradas.
 
-As ações realizadas pelo engenheiro de suporte são registradas para fins de auditoria e podem ser acessadas por meio da [API de atividade de gerenciamento do Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) e do [centro de segurança e conformidade](https://protection.office.com/).
+As ações realizadas pelo engenheiro de suporte são registradas para fins de auditoria e podem ser acessadas por meio da [API de atividade de gerenciamento do Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis) e do [centro de segurança e conformidade](https://protection.office.com/).
 
 >[!NOTE]
-> O Lockbox do cliente está disponível no [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) como uma compra de complemento. Para saber mais, consulte [Solicitações do Sistema de Proteção de Dados do Cliente do Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+> O Lockbox do cliente está disponível no [Microsoft 365 E5](https://products.office.com/business/office-365-enterprise-e5-business-software) como uma compra complementar. Para obter mais informações, consulte [solicitações de lockbox do cliente Microsoft 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
 
 ## <a name="just-in-time-access"></a>Acesso just-in-time
 
-A Microsoft usa o princípio de acesso just-in-time (JIT) para o Office 365 para reduzir os riscos de violação de credenciais e ataques laterais. O JIT remove o acesso administrativo persistente aos serviços e substitui os direitos por meio da capacidade de elevar essas funções sob demanda. A remoção dos direitos de acesso persistente dos administradores garante que as credenciais estejam disponíveis somente quando forem necessárias e reduzem os riscos de roubo de credenciais.
+A Microsoft usa o princípio de acesso just-in-time (JIT) para a Microsoft 365 para reduzir os riscos de violação de credenciais e ataques laterais. O JIT remove o acesso administrativo persistente aos serviços e substitui os direitos por meio da capacidade de elevar essas funções sob demanda. A remoção dos direitos de acesso persistente dos administradores garante que as credenciais estejam disponíveis somente quando forem necessárias e reduzem os riscos de roubo de credenciais.
 
 O modelo de acesso JIT exige que os engenheiros solicitem privilégios elevados por um período limitado para realizar tarefas administrativas. Além disso, os engenheiros usam contas temporárias criadas com senhas complexas geradas por máquina e recebem apenas as funções que permitem executar tarefas necessárias. Por exemplo, o acesso administrativo concedido pela lockbox é limitado por tempo e a quantidade de tempo que o acesso concedido depende da função solicitada. Um engenheiro especifica a duração do tempo de acesso necessário na solicitação para o sistema de lockbox. O sistema de lockbox rejeita solicitações quando o tempo solicitado excede o tempo máximo permitido para a elevação. Após a expiração, o acesso administrativo é removido e a conta temporária expira.
 
@@ -58,9 +58,9 @@ Quando autorizado e aprovado para acesso, os engenheiros recebem uma senha admin
 
 Os engenheiros usam duas interfaces de gerenciamento para executar tarefas administrativas: área de trabalho remota através de gateways de serviço de terminal seguros (TSGs) e PowerShell remoto. Dentro dessas interfaces de gerenciamento, as políticas de software e os controles de acesso colocam restrições significativas em quais aplicativos são executados e quais comandos e cmdlets estão disponíveis.
 
-Os servidores do Office 365 restringem sessões simultâneas a uma sessão por administrador de equipe por serviço, por servidor. TSGs permitir apenas uma única sessão simultânea para os usuários e não permitir várias sessões. Usando uma única sessão por servidor, o TSGs permite que os administradores da equipe de serviço do Office 365 se conectem a vários servidores simultaneamente para que os administradores possam efetivamente realizar suas tarefas. Os administradores da equipe de serviço não têm nenhuma permissão no TSGs. O TSG é usado apenas para impor os requisitos de criptografia e autenticação multifator (MFA). Depois que o administrador da equipe de serviço se conecta a um servidor específico por meio de um TSG, o servidor específico impõe um limite de sessão de um por administrador.
+Os servidores da Microsoft 365 restringem sessões simultâneas a uma sessão por administrador de equipe por serviço, por servidor. TSGs permitir apenas uma única sessão simultânea para os usuários e não permitir várias sessões. Usando uma única sessão por servidor, o TSGs permite que os administradores da equipe de serviço do Microsoft 365 se conectem a vários servidores simultaneamente para que os administradores possam efetivamente realizar suas tarefas. Os administradores da equipe de serviço não têm nenhuma permissão no TSGs. O TSG é usado apenas para impor os requisitos de criptografia e autenticação multifator (MFA). Depois que o administrador da equipe de serviço se conecta a um servidor específico por meio de um TSG, o servidor específico impõe um limite de sessão de um por administrador.
 
-As restrições de uso e os requisitos de conexão e configuração do pessoal do Office 365 são estabelecidos pelas políticas de grupo do Active Directory. Essas políticas incluem as seguintes características:
+As restrições de uso e os requisitos de conexão e configuração do pessoal do Microsoft 365 são estabelecidos pelas políticas de grupo do Active Directory. Essas políticas incluem as seguintes características:
 
 - TSGs Use apenas a criptografia validada pelo [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2.
 - As sessões do TSG desconectam após 30 minutos de inatividade.
@@ -68,6 +68,6 @@ As restrições de uso e os requisitos de conexão e configuração do pessoal d
 
 As conexões com o TSGs também exigem o MFA usando um cartão inteligente físico separado e uma conta separada das credenciais corporativas da Microsoft da engenharia. Os engenheiros são emitidos diferentes cartões inteligentes para várias plataformas e as plataformas de gerenciamento de segredos garantem o armazenamento seguro de credenciais. TSGs usar as políticas de grupo do Active Directory para controlar quem pode fazer logon em servidores remotos, o número de sessões permitidas e as configurações de tempo limite de ociosidade. Políticas adicionais limitam o acesso a aplicativos permitidos e restringem o acesso à Internet.
 
-Além do acesso remoto usando o TSGs especialmente configurado, o Exchange Online permite que os usuários com a função de operações do engenheiro de serviço acessem determinada funcionalidade administrativa em servidores de produção usando o PowerShell remoto. Para fazer isso, o usuário deve estar autorizado para acesso somente leitura (depuração) ao ambiente de produção do Office 365. O escalonamento de privilégio é habilitado da mesma forma que está habilitado para o TSGs usando o processo de lockbox.
+Além do acesso remoto usando o TSGs especialmente configurado, o Exchange Online permite que os usuários com a função de operações do engenheiro de serviço acessem determinada funcionalidade administrativa em servidores de produção usando o PowerShell remoto. Para fazer isso, o usuário deve estar autorizado para acesso somente leitura (depuração) ao ambiente de produção do Microsoft 365. O escalonamento de privilégio é habilitado da mesma forma que está habilitado para o TSGs usando o processo de lockbox.
 
 Para acesso remoto, cada datacenter tem um IP virtual com balanceamento de carga que serve como um único ponto de acesso. Os cmdlets remotos do PowerShell disponíveis são baseados no nível de privilégio identificado na declaração de acesso obtida durante a autenticação. Esses cmdlets fornecem a única funcionalidade administrativa acessível por usuários que se conectam usando este método. O PowerShell remoto limita o escopo dos comandos disponíveis para o engenheiro e se baseia no nível de acesso concedido por meio do processo de lockbox. Por exemplo, no Exchange Online, o Get-Mailbox pode estar disponível, mas Set-Mailbox não.
