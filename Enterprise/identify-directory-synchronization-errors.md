@@ -21,42 +21,34 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Saiba como exibir os erros de sincronização de diretório no centro de administração do Microsoft 365.
-ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 57ca9ce125679931adcca93621474cec9ee9b82f
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711641"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842063"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Exibir erros de sincronização de diretório no Microsoft 365
 
-Você pode exibir os erros de sincronização de diretório no [centro de administração do Microsoft 365](https://admin.microsoft.com). Somente os erros de objeto do usuário são exibidos. Para exibir erros usando o PowerShell, consulte [identificar objetos com DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Você pode exibir os erros de sincronização de diretório no centro de administração do Microsoft 365. Somente os erros de objeto do usuário são exibidos. Para exibir erros com o PowerShell, confira [identificar objetos com o DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
+## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>Exibir erros de sincronização de diretório no centro de administração do Microsoft 365
+
+Para exibir qualquer erro no centro de administração do Microsoft 365:
+  
+1. Entre no centro de [Administração do Microsoft 365](https://admin.microsoft.com) com uma conta de administrador global. 
+    
+2. Na **Home** Page, você verá o cartão de **Gerenciamento de usuários** . 
+    
+    ![A placa de gerenciamento de usuário no centro de administração do Microsoft 365](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+  
+3. No cartão, escolha **erros de sincronização** no **Azure ad Connect** para ver os erros na página **erros de sincronização de diretório** .   
+    
+    ![Um exemplo da página de erros de sincronização de diretório](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+
+4. Escolha qualquer um dos erros para exibir o painel de detalhes com informações sobre o erro e dicas sobre como corrigi-lo.
+
+   ![Exemplo de detalhes de um erro de sincronização de diretório](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+  
 Após a exibição, confira [corrigir problemas de sincronização de diretório para o Microsoft 365](fix-problems-with-directory-synchronization.md) para corrigir quaisquer problemas identificados.
-  
-## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Exibir erros de sincronização de diretório no centro de administração
 
-Para exibir qualquer erro no centro de administração:
-  
-1. Entre no Microsoft 365 com a sua conta corporativa ou de estudante. 
-    
-2. Vá até o [centro de administração](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
-    
-3. Na **Home** Page, você verá o bloco **status DirSync** . 
-    
-    ![O bloco de Status do DirSync na visualização do centro de administração](media/060006e9-de61-49d5-8979-e77cda198e71.png)
-  
-4. No bloco, escolha **status DirSync** para ir para a página **status de sincronização de diretório** . 
-    
-    Na parte inferior da página, você pode ver se há erros DirSync.
-    
-    ![Na página status de sincronização de diretório, você pode ver se há erros de objeto DirSync](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
-  
-    Escolha encontramos **erros de objeto DirSync** para ir para um modo de exibição detalhado dos erros de sincronização de diretório. 
-    
-    > [!NOTE]
-    > Você também pode acessar a página **erros DirSync** se escolher erros de **objeto DirSync** no bloco de **status DirSync** . 
-  
-![Página de erros DirSync](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
-  
-5. Na página **erros DirSync** , escolha qualquer um dos erros listados para exibir o painel de detalhes com informações sobre o erro e dicas sobre como corrigi-lo. 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Sua assinatura do Microsoft 365 inclui uma assinatura do Azure AD. Integre o Microsoft 365 com o Azure AD se você quiser sincronização de senha ou logon único com seu ambiente local.
-ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: d6ef9d05d66709d360c625fd3b47ad142bdde7a0
+ms.sourcegitcommit: 3349fdaff646f5f7d92c22565402dfc22c12d2ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774836"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842053"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Integração do Azure com o Microsoft 365
 
@@ -40,7 +40,7 @@ Você pode usar os consultores de implantação do Azure AD para uma experiênci
 
  - [Supervisor de conexão do Azure AD](https://aka.ms/aadconnectpwsync)
  - [Supervisor de implantação do AD FS](https://aka.ms/adfsguidance)
- - [Guia de instalação do Azure AD Premium](https://aka.ms/aadpguidance)
+ - [Guia de instalação do Azure AD](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-microsoft-365-identity-management"></a>Edições do Azure Active Directory e gerenciamento de identidade do Microsoft 365
 
