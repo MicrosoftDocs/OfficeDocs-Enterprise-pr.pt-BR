@@ -18,38 +18,38 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 f1.keywords:
 - NOCSH
 description: Use os cmdlets do PowerShell de implantação centralizada para ajudá-lo a implantar e gerenciar suplementos do Office para sua organização do Office 365.
-ms.openlocfilehash: ef438c52421fc7473c6bbab344dcc0f8e08f4e78
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 52445b2f2ff6d9fdf3f5997e1c76adbd1808e56f
+ms.sourcegitcommit: 12a22fa9224ab2a29330ee0aabecff28d577d7e6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840988"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861118"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="61a86-103">Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos</span><span class="sxs-lookup"><span data-stu-id="61a86-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a><span data-ttu-id="642ce-103">Usar os cmdlets do PowerShell de Implantação Centralizada para gerenciar suplementos</span><span class="sxs-lookup"><span data-stu-id="642ce-103">Use the Centralized Deployment PowerShell cmdlets to manage add-ins</span></span>
 
-<span data-ttu-id="61a86-104">Como um administrador global da Microsoft 365 ou do Exchange, você pode implantar suplementos do Office para usuários por meio do recurso de implantação centralizada (Confira [implantar suplementos do Office no centro de administração](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span><span class="sxs-lookup"><span data-stu-id="61a86-104">As a Microsoft 365 global, or Exchange admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span></span> <span data-ttu-id="61a86-105">Além de implantar os suplementos do Office por meio do centro de administração do Microsoft 365, você também pode usar o Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="61a86-105">In addition to deploying Office add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="61a86-106">Instale o [módulo de implantação de suplemento centralizado do O365 para o Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span><span class="sxs-lookup"><span data-stu-id="61a86-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
+<span data-ttu-id="642ce-104">Como um administrador global do Microsoft 365, você pode implantar suplementos do Office para usuários por meio do recurso de implantação centralizada (Confira [implantar suplementos do Office no centro de administração](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span><span class="sxs-lookup"><span data-stu-id="642ce-104">As a Microsoft 365 global admin, you can deploy Office add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)).</span></span> <span data-ttu-id="642ce-105">Além de implantar os suplementos do Office por meio do centro de administração do Microsoft 365, você também pode usar o Microsoft PowerShell.</span><span class="sxs-lookup"><span data-stu-id="642ce-105">In addition to deploying Office add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell.</span></span> <span data-ttu-id="642ce-106">Instale o [módulo de implantação de suplemento centralizado do O365 para o Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span><span class="sxs-lookup"><span data-stu-id="642ce-106">Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).</span></span> 
 
-<span data-ttu-id="61a86-107">Depois de baixar o módulo, abra uma janela do Windows PowerShell regular e execute o seguinte cmdlet:</span><span class="sxs-lookup"><span data-stu-id="61a86-107">After you download the module, open a regular Windows PowerShell window and run the following cmdlet:</span></span>
+<span data-ttu-id="642ce-107">Depois de baixar o módulo, abra uma janela do Windows PowerShell regular e execute o seguinte cmdlet:</span><span class="sxs-lookup"><span data-stu-id="642ce-107">After you download the module, open a regular Windows PowerShell window and run the following cmdlet:</span></span>
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="61a86-108">Conectar-se usando suas credenciais de administrador</span><span class="sxs-lookup"><span data-stu-id="61a86-108">Connect using your admin credentials</span></span>
+## <a name="connect-using-your-admin-credentials"></a><span data-ttu-id="642ce-108">Conectar-se usando suas credenciais de administrador</span><span class="sxs-lookup"><span data-stu-id="642ce-108">Connect using your admin credentials</span></span>
 
-<span data-ttu-id="61a86-109">Antes de poder usar os cmdlets de implantação centralizada, você precisa entrar.</span><span class="sxs-lookup"><span data-stu-id="61a86-109">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
+<span data-ttu-id="642ce-109">Antes de poder usar os cmdlets de implantação centralizada, você precisa entrar.</span><span class="sxs-lookup"><span data-stu-id="642ce-109">Before you can use the Centralized Deployment cmdlets, you need to sign in.</span></span>
   
-1. <span data-ttu-id="61a86-110">Inicie o PowerShell.</span><span class="sxs-lookup"><span data-stu-id="61a86-110">Start PowerShell.</span></span>
+1. <span data-ttu-id="642ce-110">Inicie o PowerShell.</span><span class="sxs-lookup"><span data-stu-id="642ce-110">Start PowerShell.</span></span>
     
-2. <span data-ttu-id="61a86-111">Conecte-se ao PowerShell usando as credenciais de administrador da sua empresa.</span><span class="sxs-lookup"><span data-stu-id="61a86-111">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="61a86-112">Execute o cmdlet a seguir.</span><span class="sxs-lookup"><span data-stu-id="61a86-112">Run the following cmdlet.</span></span>
+2. <span data-ttu-id="642ce-111">Conecte-se ao PowerShell usando as credenciais de administrador da sua empresa.</span><span class="sxs-lookup"><span data-stu-id="642ce-111">Connect to PowerShell by using your company admin credentials.</span></span> <span data-ttu-id="642ce-112">Execute o cmdlet a seguir.</span><span class="sxs-lookup"><span data-stu-id="642ce-112">Run the following cmdlet.</span></span>
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. <span data-ttu-id="61a86-113">Na página **Inserir credenciais** , digite suas credenciais de administrador global do Office 365.</span><span class="sxs-lookup"><span data-stu-id="61a86-113">In the **Enter Credentials** page, enter your Office 365 global admin credentials.</span></span> <span data-ttu-id="61a86-114">Como alternativa, você pode inserir suas credenciais diretamente no cmdlet.</span><span class="sxs-lookup"><span data-stu-id="61a86-114">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
+3. <span data-ttu-id="642ce-113">Na página **Inserir credenciais** , digite suas credenciais de administrador global do Office 365.</span><span class="sxs-lookup"><span data-stu-id="642ce-113">In the **Enter Credentials** page, enter your Office 365 global admin credentials.</span></span> <span data-ttu-id="642ce-114">Como alternativa, você pode inserir suas credenciais diretamente no cmdlet.</span><span class="sxs-lookup"><span data-stu-id="642ce-114">Alternately, you can enter your credentials directly into the cmdlet.</span></span> 
     
-    <span data-ttu-id="61a86-115">Execute o cmdlet a seguir especificando suas credenciais de administrador de empresa como um objeto PSCredential.</span><span class="sxs-lookup"><span data-stu-id="61a86-115">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
+    <span data-ttu-id="642ce-115">Execute o cmdlet a seguir especificando suas credenciais de administrador de empresa como um objeto PSCredential.</span><span class="sxs-lookup"><span data-stu-id="642ce-115">Run the following cmdlet specifying your company admin credentials as a PSCredential object.</span></span>
     
   ```powershell
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -58,113 +58,113 @@ ms.locfileid: "41840988"
   ```
 
 > [!NOTE]
-> <span data-ttu-id="61a86-116">Para obter mais informações sobre como usar o PowerShell, confira [conectar-se ao Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span><span class="sxs-lookup"><span data-stu-id="61a86-116">For more information about using PowerShell, see [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span></span> 
+> <span data-ttu-id="642ce-116">Para obter mais informações sobre como usar o PowerShell, confira [conectar-se ao Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span><span class="sxs-lookup"><span data-stu-id="642ce-116">For more information about using PowerShell, see [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585).</span></span> 
   
-## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="61a86-117">Carregar um manifesto de suplemento</span><span class="sxs-lookup"><span data-stu-id="61a86-117">Upload an add-in manifest</span></span>
+## <a name="upload-an-add-in-manifest"></a><span data-ttu-id="642ce-117">Carregar um manifesto de suplemento</span><span class="sxs-lookup"><span data-stu-id="642ce-117">Upload an add-in manifest</span></span>
 
-<span data-ttu-id="61a86-118">Execute o cmdlet **New-OrganizationAdd-in** para carregar um manifesto de suplemento a partir de um caminho, que pode ser um local de arquivo ou uma URL.</span><span class="sxs-lookup"><span data-stu-id="61a86-118">Run the **New-OrganizationAdd-In** cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="61a86-119">O exemplo a seguir mostra um local de arquivo para o valor do parâmetro _ManifestPath_ .</span><span class="sxs-lookup"><span data-stu-id="61a86-119">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
+<span data-ttu-id="642ce-118">Execute o cmdlet **New-OrganizationAdd-in** para carregar um manifesto de suplemento a partir de um caminho, que pode ser um local de arquivo ou uma URL.</span><span class="sxs-lookup"><span data-stu-id="642ce-118">Run the **New-OrganizationAdd-In** cmdlet to upload an add-in manifest from a path, which can be either a file location or URL.</span></span> <span data-ttu-id="642ce-119">O exemplo a seguir mostra um local de arquivo para o valor do parâmetro _ManifestPath_ .</span><span class="sxs-lookup"><span data-stu-id="642ce-119">The following example shows a file location for the value of the  _ManifestPath_ parameter.</span></span> 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-<span data-ttu-id="61a86-120">Você também pode executar o cmdlet **New-OrganizationAdd-in** para carregar um suplemento e atribuí-lo a usuários ou grupos diretamente usando o parâmetro _Members_ , conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="61a86-120">You can also run the **New-OrganizationAdd-In** cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="61a86-121">Separe os endereços de email dos membros com uma vírgula.</span><span class="sxs-lookup"><span data-stu-id="61a86-121">Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="642ce-120">Você também pode executar o cmdlet **New-OrganizationAdd-in** para carregar um suplemento e atribuí-lo a usuários ou grupos diretamente usando o parâmetro _Members_ , conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="642ce-120">You can also run the **New-OrganizationAdd-In** cmdlet to upload an add-in and assign it to users or groups directly by using the  _Members_ parameter, as shown in the following example.</span></span> <span data-ttu-id="642ce-121">Separe os endereços de email dos membros com uma vírgula.</span><span class="sxs-lookup"><span data-stu-id="642ce-121">Separate the email addresses of members with a comma.</span></span> 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="61a86-122">Carregar um suplemento da Office Store</span><span class="sxs-lookup"><span data-stu-id="61a86-122">Upload an add-in from the Office Store</span></span>
+## <a name="upload-an-add-in-from-the-office-store"></a><span data-ttu-id="642ce-122">Carregar um suplemento da Office Store</span><span class="sxs-lookup"><span data-stu-id="642ce-122">Upload an add-in from the Office Store</span></span>
 
-<span data-ttu-id="61a86-123">Execute o cmdlet **New-OrganizationAddIn** para carregar um manifesto da Office Store.</span><span class="sxs-lookup"><span data-stu-id="61a86-123">Run the **New-OrganizationAddIn** cmdlet to upload a manifest from the Office Store.</span></span>
+<span data-ttu-id="642ce-123">Execute o cmdlet **New-OrganizationAddIn** para carregar um manifesto da Office Store.</span><span class="sxs-lookup"><span data-stu-id="642ce-123">Run the **New-OrganizationAddIn** cmdlet to upload a manifest from the Office Store.</span></span>
   
-<span data-ttu-id="61a86-124">No exemplo a seguir, o cmdlet **New-OrganizationAddIn** especifica o AssetID de um suplemento para um local dos Estados Unidos e o mercado de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="61a86-124">In the following example, the **New-OrganizationAddIn** cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
+<span data-ttu-id="642ce-124">No exemplo a seguir, o cmdlet **New-OrganizationAddIn** especifica o AssetID de um suplemento para um local dos Estados Unidos e o mercado de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="642ce-124">In the following example, the **New-OrganizationAddIn** cmdlet specifies the AssetId for an add-in for a United States location and content market.</span></span>
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-<span data-ttu-id="61a86-125">Para determinar o valor para o parâmetro _AssetID_ , você pode copiá-lo da URL da página da Web da Office Store para o suplemento.</span><span class="sxs-lookup"><span data-stu-id="61a86-125">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="61a86-126">AssetIds sempre começa com "WA" seguido por um número.</span><span class="sxs-lookup"><span data-stu-id="61a86-126">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="61a86-127">Por exemplo, no exemplo anterior, a origem para o valor AssetID de WA104099688 é a URL da página da Web da Office Store para o suplemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span><span class="sxs-lookup"><span data-stu-id="61a86-127">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
+<span data-ttu-id="642ce-125">Para determinar o valor para o parâmetro _AssetID_ , você pode copiá-lo da URL da página da Web da Office Store para o suplemento.</span><span class="sxs-lookup"><span data-stu-id="642ce-125">To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in.</span></span> <span data-ttu-id="642ce-126">AssetIds sempre começa com "WA" seguido por um número.</span><span class="sxs-lookup"><span data-stu-id="642ce-126">AssetIds always begin with "WA" followed by a number.</span></span> <span data-ttu-id="642ce-127">Por exemplo, no exemplo anterior, a origem para o valor AssetID de WA104099688 é a URL da página da Web da Office Store para o suplemento: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .</span><span class="sxs-lookup"><span data-stu-id="642ce-127">For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).</span></span>
   
-<span data-ttu-id="61a86-128">Os valores para o parâmetro _locale_ e o parâmetro _ContentMarket_ são idênticos e indicam o país/região para o qual você está tentando instalar o suplemento.</span><span class="sxs-lookup"><span data-stu-id="61a86-128">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="61a86-129">O formato é en-US, fr-FR.</span><span class="sxs-lookup"><span data-stu-id="61a86-129">The format is en-US, fr-FR.</span></span> <span data-ttu-id="61a86-130">e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="61a86-130">and so forth.</span></span> 
+<span data-ttu-id="642ce-128">Os valores para o parâmetro _locale_ e o parâmetro _ContentMarket_ são idênticos e indicam o país/região para o qual você está tentando instalar o suplemento.</span><span class="sxs-lookup"><span data-stu-id="642ce-128">The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from.</span></span> <span data-ttu-id="642ce-129">O formato é en-US, fr-FR.</span><span class="sxs-lookup"><span data-stu-id="642ce-129">The format is en-US, fr-FR.</span></span> <span data-ttu-id="642ce-130">e assim por diante.</span><span class="sxs-lookup"><span data-stu-id="642ce-130">and so forth.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="61a86-131">Os suplementos carregados da Office Store serão atualizados automaticamente em alguns dias da última atualização disponível na Office Store.</span><span class="sxs-lookup"><span data-stu-id="61a86-131">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="642ce-131">Os suplementos carregados da Office Store serão atualizados automaticamente em alguns dias da última atualização disponível na Office Store.</span><span class="sxs-lookup"><span data-stu-id="642ce-131">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="get-details-of-an-add-in"></a><span data-ttu-id="61a86-132">Obter detalhes de um suplemento</span><span class="sxs-lookup"><span data-stu-id="61a86-132">Get details of an add-in</span></span>
+## <a name="get-details-of-an-add-in"></a><span data-ttu-id="642ce-132">Obter detalhes de um suplemento</span><span class="sxs-lookup"><span data-stu-id="642ce-132">Get details of an add-in</span></span>
 
-<span data-ttu-id="61a86-133">Execute o cmdlet **Get-OrganizationAddIn** conforme mostrado abaixo para obter detalhes de todos os suplementos carregados no locatário, incluindo a ID de produto de um suplemento.</span><span class="sxs-lookup"><span data-stu-id="61a86-133">Run the **Get-OrganizationAddIn** cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
+<span data-ttu-id="642ce-133">Execute o cmdlet **Get-OrganizationAddIn** conforme mostrado abaixo para obter detalhes de todos os suplementos carregados no locatário, incluindo a ID de produto de um suplemento.</span><span class="sxs-lookup"><span data-stu-id="642ce-133">Run the **Get-OrganizationAddIn** cmdlet as shown below to get details of all add-ins uploaded to the tenant, included an add-in's product ID.</span></span>
   
 ```powershell
 Get-OrganizationAddIn
 ```
 
-<span data-ttu-id="61a86-134">Execute o cmdlet **Get-OrganizationAddIn** com um valor para o parâmetro _ProductID_ para especificar o suplemento para o qual você deseja recuperar detalhes.</span><span class="sxs-lookup"><span data-stu-id="61a86-134">Run the **Get-OrganizationAddIn** cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
+<span data-ttu-id="642ce-134">Execute o cmdlet **Get-OrganizationAddIn** com um valor para o parâmetro _ProductID_ para especificar o suplemento para o qual você deseja recuperar detalhes.</span><span class="sxs-lookup"><span data-stu-id="642ce-134">Run the **Get-OrganizationAddIn** cmdlet with a value for the  _ProductId_ parameter to specify which add-in you want to retrieve details for.</span></span> 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-<span data-ttu-id="61a86-135">Para obter detalhes completos de todos os suplementos, além dos usuários e grupos atribuídos, canalize a saída do cmdlet **Get-OrganizationAddIn** para o cmdlet Format-List, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="61a86-135">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the **Get-OrganizationAddIn** cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
+<span data-ttu-id="642ce-135">Para obter detalhes completos de todos os suplementos, além dos usuários e grupos atribuídos, canalize a saída do cmdlet **Get-OrganizationAddIn** para o cmdlet Format-List, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="642ce-135">To get full details of all the add-ins plus the assigned users and groups, pipe the output of the **Get-OrganizationAddIn** cmdlet to the Format-List cmdlet, as shown in the following example.</span></span>
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="61a86-136">Ativar ou desativar um suplemento</span><span class="sxs-lookup"><span data-stu-id="61a86-136">Turn on or turn off an add-in</span></span>
+## <a name="turn-on-or-turn-off-an-add-in"></a><span data-ttu-id="642ce-136">Ativar ou desativar um suplemento</span><span class="sxs-lookup"><span data-stu-id="642ce-136">Turn on or turn off an add-in</span></span>
 
-<span data-ttu-id="61a86-137">Para desativar um suplemento para que os usuários e grupos atribuídos a ele não tenham mais acesso, execute o cmdlet **set-OrganizationAddIn** com o parâmetro _ProductID_ e o parâmetro _Enabled_ definido como `$false`, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="61a86-137">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
+<span data-ttu-id="642ce-137">Para desativar um suplemento para que os usuários e grupos atribuídos a ele não tenham mais acesso, execute o cmdlet **set-OrganizationAddIn** com o parâmetro _ProductID_ e o parâmetro _Enabled_ definido `$false` como, conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="642ce-137">To turn off an add-in so users and groups that are assigned to it will no longer have access, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_ parameter and the  _Enabled_ parameter set to  `$false`, as shown in the following example.</span></span>
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-<span data-ttu-id="61a86-138">Para ativar um suplemento novamente, execute o mesmo cmdlet com o parâmetro _Enabled_ definido como `$true`.</span><span class="sxs-lookup"><span data-stu-id="61a86-138">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
+<span data-ttu-id="642ce-138">Para ativar um suplemento novamente, execute o mesmo cmdlet com o parâmetro _Enabled_ definido como `$true` .</span><span class="sxs-lookup"><span data-stu-id="642ce-138">To turn an add-in back on, run the same cmdlet with the  _Enabled_ parameter set to  `$true`.</span></span>
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="61a86-139">Adicionar ou remover usuários de um suplemento</span><span class="sxs-lookup"><span data-stu-id="61a86-139">Add or remove users from an add-in</span></span>
+## <a name="add-or-remove-users-from-an-add-in"></a><span data-ttu-id="642ce-139">Adicionar ou remover usuários de um suplemento</span><span class="sxs-lookup"><span data-stu-id="642ce-139">Add or remove users from an add-in</span></span>
 
-<span data-ttu-id="61a86-140">Para adicionar usuários e grupos a um suplemento específico, execute o cmdlet **set-OrganizationAddInAssignments** com os parâmetros _ProductID_, _Add_e _Members_ .</span><span class="sxs-lookup"><span data-stu-id="61a86-140">To add users and groups to a specific add-in, run the **Set-OrganizationAddInAssignments** cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="61a86-141">Separe os endereços de email dos membros com uma vírgula.</span><span class="sxs-lookup"><span data-stu-id="61a86-141">Separate the email addresses of members with a comma.</span></span> 
+<span data-ttu-id="642ce-140">Para adicionar usuários e grupos a um suplemento específico, execute o cmdlet **set-OrganizationAddInAssignments** com os parâmetros _ProductID_, _Add_e _Members_ .</span><span class="sxs-lookup"><span data-stu-id="642ce-140">To add users and groups to a specific add-in, run the **Set-OrganizationAddInAssignments** cmdlet with the  _ProductId_,  _Add_, and  _Members_ parameters.</span></span> <span data-ttu-id="642ce-141">Separe os endereços de email dos membros com uma vírgula.</span><span class="sxs-lookup"><span data-stu-id="642ce-141">Separate the email addresses of members with a comma.</span></span> 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="61a86-142">Para remover usuários e grupos, execute o mesmo cmdlet usando o parâmetro _Remove_ .</span><span class="sxs-lookup"><span data-stu-id="61a86-142">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
+<span data-ttu-id="642ce-142">Para remover usuários e grupos, execute o mesmo cmdlet usando o parâmetro _Remove_ .</span><span class="sxs-lookup"><span data-stu-id="642ce-142">To remove users and groups, run the same cmdlet using the  _Remove_ parameter.</span></span> 
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-<span data-ttu-id="61a86-143">Para atribuir um suplemento a todos os usuários no locatário, execute o mesmo cmdlet usando o parâmetro _AssignToEveryone_ com o valor definido como `$true`.</span><span class="sxs-lookup"><span data-stu-id="61a86-143">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
+<span data-ttu-id="642ce-143">Para atribuir um suplemento a todos os usuários no locatário, execute o mesmo cmdlet usando o parâmetro _AssignToEveryone_ com o valor definido como `$true` .</span><span class="sxs-lookup"><span data-stu-id="642ce-143">To assign an add-in to all users on the tenant, run the same cmdlet using the  _AssignToEveryone_ parameter with the value set to  `$true`.</span></span>
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-<span data-ttu-id="61a86-144">Para não atribuir um suplemento a todos e reverter para os usuários e grupos atribuídos anteriormente, você pode executar o mesmo cmdlet e desativar o parâmetro _AssignToEveryone_ definindo seu valor como `$false`.</span><span class="sxs-lookup"><span data-stu-id="61a86-144">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
+<span data-ttu-id="642ce-144">Para não atribuir um suplemento a todos e reverter para os usuários e grupos atribuídos anteriormente, você pode executar o mesmo cmdlet e desativar o parâmetro _AssignToEveryone_ definindo seu valor como `$false` .</span><span class="sxs-lookup"><span data-stu-id="642ce-144">To not assign an add-in to everyone and revert to the previously assigned users and groups, you can run the same cmdlet and turn off the  _AssignToEveryone_ parameter by setting its value to  `$false`.</span></span>
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a><span data-ttu-id="61a86-145">Atualizar um suplemento</span><span class="sxs-lookup"><span data-stu-id="61a86-145">Update an add-in</span></span>
+## <a name="update-an-add-in"></a><span data-ttu-id="642ce-145">Atualizar um suplemento</span><span class="sxs-lookup"><span data-stu-id="642ce-145">Update an add-in</span></span>
 
-<span data-ttu-id="61a86-146">Para atualizar um suplemento de um manifesto, execute o cmdlet **set-OrganizationAddIn** com os parâmetros _ProductID_, _ManifestPath_e _locale_ , conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="61a86-146">To update an add-in from a manifest, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
+<span data-ttu-id="642ce-146">Para atualizar um suplemento de um manifesto, execute o cmdlet **set-OrganizationAddIn** com os parâmetros _ProductID_, _ManifestPath_e _locale_ , conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="642ce-146">To update an add-in from a manifest, run the **Set-OrganizationAddIn** cmdlet with the  _ProductId_,  _ManifestPath_, and  _Locale_ parameters, as shown in the following example.</span></span> 
   
 ```powershell
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> <span data-ttu-id="61a86-147">Os suplementos carregados da Office Store serão atualizados automaticamente em alguns dias da última atualização disponível na Office Store.</span><span class="sxs-lookup"><span data-stu-id="61a86-147">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
+> <span data-ttu-id="642ce-147">Os suplementos carregados da Office Store serão atualizados automaticamente em alguns dias da última atualização disponível na Office Store.</span><span class="sxs-lookup"><span data-stu-id="642ce-147">Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.</span></span> 
   
-## <a name="delete-an-add-in"></a><span data-ttu-id="61a86-148">Excluir um suplemento</span><span class="sxs-lookup"><span data-stu-id="61a86-148">Delete an add-in</span></span>
+## <a name="delete-an-add-in"></a><span data-ttu-id="642ce-148">Excluir um suplemento</span><span class="sxs-lookup"><span data-stu-id="642ce-148">Delete an add-in</span></span>
 
-<span data-ttu-id="61a86-149">Para excluir um suplemento, execute o cmdlet **Remove-OrganizationAddIn** com o parâmetro _ProductID_ , conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="61a86-149">To delete an add-in, run the **Remove-OrganizationAddIn** cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
+<span data-ttu-id="642ce-149">Para excluir um suplemento, execute o cmdlet **Remove-OrganizationAddIn** com o parâmetro _ProductID_ , conforme mostrado no exemplo a seguir.</span><span class="sxs-lookup"><span data-stu-id="642ce-149">To delete an add-in, run the **Remove-OrganizationAddIn** cmdlet with the  _ProductId_ parameter, as shown in the following example.</span></span> 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -268,9 +268,9 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 -->
 
-## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="61a86-150">Obter ajuda detalhada para cada cmdlet</span><span class="sxs-lookup"><span data-stu-id="61a86-150">Get detailed help for each cmdlet</span></span>
+## <a name="get-detailed-help-for-each-cmdlet"></a><span data-ttu-id="642ce-150">Obter ajuda detalhada para cada cmdlet</span><span class="sxs-lookup"><span data-stu-id="642ce-150">Get detailed help for each cmdlet</span></span>
 
-<span data-ttu-id="61a86-151">Você pode examinar a ajuda detalhada para cada cmdlet usando o cmdlet Get-Help.</span><span class="sxs-lookup"><span data-stu-id="61a86-151">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="61a86-152">Por exemplo, o cmdlet a seguir fornece informações detalhadas sobre o cmdlet Remove-OrganizationAddIn.</span><span class="sxs-lookup"><span data-stu-id="61a86-152">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
+<span data-ttu-id="642ce-151">Você pode examinar a ajuda detalhada para cada cmdlet usando o cmdlet Get-Help.</span><span class="sxs-lookup"><span data-stu-id="642ce-151">You can look at detailed help for each cmdlet by using the Get-help cmdlet.</span></span> <span data-ttu-id="642ce-152">Por exemplo, o cmdlet a seguir fornece informações detalhadas sobre o cmdlet Remove-OrganizationAddIn.</span><span class="sxs-lookup"><span data-stu-id="642ce-152">For example, the following cmdlet provides detailed information about the Remove-OrganizationAddIn cmdlet.</span></span>
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
