@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Resumo: uma explicação do isolamento e controle de acesso dentro dos vários aplicativos do Office 365.'
-ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
+ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844402"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892120"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controle de acesso no Office 365
 
@@ -41,7 +41,7 @@ O conteúdo da caixa de correio do usuário inclui:
 
 - Emails e anexos de email
 - Informações de calendário e disponibilidade
-- Contatos
+- Contacts
 - Tarefas
 - Observações
 - Grupos
@@ -70,3 +70,33 @@ Um *SubscriptionId* exclusivo é usado para cada locatário. Todos os sites de c
 O SharePoint Online usa o SQL Server e o armazenamento do Azure para armazenamento de metadados de conteúdo. A chave de partição para o repositório de conteúdo é *SiteId* no SQL. Ao executar uma consulta SQL, o SharePoint Online usa um *SiteId* verificado como parte de uma verificação de *SubscriptionId* no nível do locatário.
 
 O SharePoint Online armazena conteúdo de arquivo criptografado em BLOBs do Microsoft Azure. Cada farm do SharePoint Online tem sua própria conta do Microsoft Azure e todos os BLOBs salvos no Azure são criptografados individualmente com uma chave armazenada no repositório de conteúdo do SQL. A chave de criptografia protegida no código pela camada de autorização e não exposta diretamente ao usuário final. O SharePoint Online tem monitoramento em tempo real para detectar quando uma solicitação HTTP lê ou grava dados para mais de um locatário. A identidade da solicitação *SubscriptionId* é controlada em relação à *SubscriptionId* do recurso acessado. As solicitações para acessar recursos de mais de um locatário nunca devem acontecer por usuários finais. As solicitações de serviço em um ambiente de vários locatários são a única exceção. Por exemplo, o rastreador de pesquisa recebe alterações de conteúdo para todo o banco de dados de uma só vez. Isso geralmente envolve a consulta de sites de mais de um locatário em uma única solicitação de serviço, que é feita por motivos de eficiência.
+
+## <a name="teams"></a>Teams
+
+Seus dados do teams são armazenados de forma diferente, dependendo do tipo de conteúdo. 
+
+Confira a [sessão de debates do Ignite na arquitetura do Microsoft Teams](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) para uma discussão aprofundada.
+
+### <a name="core-teams-customer-data"></a>Dados do cliente de Teams principais
+
+Se seu locatário estiver provisionado na Austrália, no Canadá, na União Européia, na França, na Alemanha, na Índia, no Japão, na África do Sul, na Coréia do Sul, na Suíça (que inclui o Liechtenstein), os Emirados Árabes Unidos, o Reino Unido ou os Estados Unidos, a Microsoft armazena os seguintes dados do cliente em repouso apenas dentro desse local:
+
+- Chats de equipes, conversas de canal e de equipe, imagens, mensagens de caixa postal e contatos.
+- O conteúdo do site do SharePoint Online e os arquivos armazenados neste site.
+- Arquivos carregados no OneDrive para trabalho ou escola.
+
+#### <a name="chat-channel-messages-team-structure"></a>Chat, mensagens de canal, estrutura da equipe
+
+Cada equipe do teams tem o respaldo de um grupo do Microsoft 365 e do seu site do SharePoint e da caixa de correio do Exchange. Chats privados (incluindo chats de grupo), mensagens enviadas como parte de uma conversa em um canal e a estrutura de equipes e canais são armazenadas em um serviço de chat em execução no Azure. Os dados também são armazenados em uma pasta oculta nas caixas de correio de usuário e de grupo para habilitar recursos de proteção de informações.
+
+#### <a name="voicemail-and-contacts"></a>Caixa postal e contatos
+
+As caixa postal são armazenadas no Exchange. Os contatos são armazenados no armazenamento de dados de nuvem baseado no Exchange. O Exchange e o armazenamento em nuvem baseado no Exchange já fornecem residências de dados em cada um dos GEOS de datacenter mundiais. Para todas as equipes, a caixa postal e os contatos são armazenados no país da Austrália, Canadá, França, Alemanha, Índia, Japão, Emirados Árabes Unidos, Reino Unido, África do Sul, Coréia do Sul, Suíça (que inclui o Liechtenstein) e os Estados Unidos. Para todos os outros países, os arquivos são armazenados no local US, Europe ou Ásia-Pacífico com base na afinidade de locatários.
+
+#### <a name="images-and-media"></a>Imagens e mídia
+
+Mídia usada em chats (exceto GIFs Giphy que não são armazenadas, mas que são um link de referência para a URL de serviço do Giphy original, Giphy é um serviço não-Microsoft) é armazenada em um serviço de mídia baseado no Azure implantado nos mesmos locais que o serviço de chat.
+
+#### <a name="files"></a>Arquivos
+
+Arquivos (incluindo o OneNote e o wiki) que alguém compartilha em um canal é armazenado no site do SharePoint da equipe. Arquivos compartilhados em um chat privado ou chat durante uma reunião ou chamada são carregados e armazenados na conta do OneDrive for Work ou School do usuário que compartilha o arquivo. O Exchange, o SharePoint e o OneDrive já fornecem residências de dados em cada um dos GEOS de datacenter mundiais. Portanto, para clientes existentes, todos os arquivos, blocos de anotações do OneNote, conteúdo wiki do Teams e caixas de correio que fazem parte da experiência do teams já estão armazenados no local com base em sua afinidade de locatário. Os arquivos são armazenados no país da Austrália, do Canadá, da França, da Alemanha, da Índia, do Japão, dos Emirados Árabes Unidos, do Reino Unido, da África do Sul, da Coréia do Sul e da Suíça (que inclui o Liechtenstein). Para todos os outros países, os arquivos são armazenados no local US, Europe ou Ásia Pacífico com base na afinidade de locatários.
