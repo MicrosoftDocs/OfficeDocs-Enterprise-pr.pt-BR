@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uma visão geral do recurso de descoberta eletrônica e outros recursos de pesquisa do Microsoft 365 para o uso de auditoria e transparência.
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774936"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906184"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Visão geral da descoberta eletrônica e recursos de pesquisa do Microsoft 365 
 
@@ -35,7 +35,7 @@ A [pesquisa de conteúdo](https://support.office.com/article/Run-a-Content-Searc
 
 ## <a name="audit-log-search"></a>Pesquisa de log de auditoria
 
-Além de controlar as alterações na sua organização do Microsoft 365, você pode exibir relatórios de auditoria e exportar logs de auditoria. Depois que a auditoria estiver habilitada para um locatário do Microsoft 365, as atividades de usuário e administrativas serão registradas nos logs de eventos e tornadas pesquisáveis. Por exemplo, você pode usar o registro em log de auditoria de caixa de correio para rastrear ações executadas em uma caixa de correio por usuários diferentes do proprietário da caixa de correio. Os gerentes de conformidade podem usar os recursos de pesquisa e de filtro para atividades específicas do usuário. Por exemplo, para identificar os usuários que visualizaram ou baixaram um documento específico, se os administradores executaram atividades de gerenciamento de usuário ou para exibir alterações na configuração do locatário nos últimos 90 dias. Os resultados da pesquisa contêm informações legais valiosas sobre atividades específicas conduzidas por um usuário ou um administrador. Consulte [Pesquisar o log de auditoria](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) para obter uma descrição das atividades administrativas e de usuário registradas no Microsoft 365.
+Além de controlar as alterações na sua organização do Microsoft 365, você pode exibir relatórios de auditoria e exportar logs de auditoria. Depois que a auditoria estiver habilitada para o locatário do Microsoft 365, as atividades de usuário e administrativas serão registradas nos logs de eventos e tornadas pesquisáveis. Por exemplo, você pode usar o registro em log de auditoria de caixa de correio para rastrear ações executadas em uma caixa de correio por usuários diferentes do proprietário da caixa de correio. Os gerentes de conformidade podem usar os recursos de pesquisa e de filtro para atividades específicas do usuário. Por exemplo, para identificar os usuários que visualizaram ou baixaram um documento específico, se os administradores executaram atividades de gerenciamento de usuário ou para exibir alterações na configuração do locatário nos últimos 90 dias. Os resultados da pesquisa contêm informações legais valiosas sobre atividades específicas conduzidas por um usuário ou um administrador. Consulte [Pesquisar o log de auditoria](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) para obter uma descrição das atividades administrativas e de usuário registradas no Microsoft 365.
 
 Os eventos do SharePoint Online e do OneDrive for Business são exibidos no log dentro de 30 minutos de ocorrência. Os eventos do Exchange Online aparecem nos logs de auditoria dentro de 24 horas de ocorrência. Eventos de logon do Azure AD estão disponíveis em minutos de ocorrência e outros eventos de diretório do Azure AD estão disponíveis dentro de 24 horas de ocorrência. É possível exportar as entradas nos resultados de pesquisa do log de auditoria para análise adicional. Um máximo de 50.000 entradas de pesquisa de log de auditoria única são exportadas. Para exportar mais entradas desse limite, reduza o intervalo de datas ou execute várias pesquisas de log de auditoria.
 

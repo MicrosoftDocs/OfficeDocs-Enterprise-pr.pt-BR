@@ -3,7 +3,7 @@ title: Assinaturas, licenças, contas e locatários para ofertas de nuvem da Mic
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/08/2019
+ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -19,25 +19,20 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Resumo: entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.'
-ms.openlocfilehash: ad4307b2725fa37f6b28540b92895fc78f097c6c
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735959"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906248"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft
 
- **Resumo:** entenda as relações das organizações, assinaturas, licenças, contas de usuário e locatários para ofertas de nuvem da Microsoft.
-  
 A Microsoft fornece uma hierarquia de organizações, assinaturas, licenças e contas de usuário para o uso consistente de identidades e cobrança para todas as ofertas de nuvem:
   
-- Microsoft Office 365
+- Microsoft 365 e Microsoft Office 365
 - Microsoft Azure
-- Microsoft Intune e Enterprise Mobility + Security (EMS)
 - Microsoft Dynamics 365
-
-[Microsoft 365](https://docs.microsoft.com/microsoft-365/) combina o Office 365, o EMS e o Windows 10 Enterprise em uma única assinatura e o conjunto de serviços integrados.
 
 ## <a name="elements-of-the-hierarchy"></a>Elementos da hierarquia
 
@@ -51,21 +46,20 @@ An organization represents a business entity that is using Microsoft cloud offer
 
 Uma assinatura é um contrato com a Microsoft para usar uma ou mais plataformas ou serviços de nuvem da Microsoft, para as quais as cobranças se acumulam com base em uma taxa de licença por usuário ou no consumo de recursos baseado na nuvem. 
 
-- As ofertas de nuvem baseadas no Software como Serviço (Saas) da Microsoft (Office 365, Intune/EMS e Dynamics 365) cobram taxas de licença por usuário. 
+- As ofertas de nuvem baseadas em software (SaaS) da Microsoft (Microsoft 365 e Dynamics 365) cobram taxas de licença por usuário. 
 - As ofertas de nuvem de Plataforma como um Serviço (PaaS) e Infraestrutura como um Serviço (IaaS) da Microsoft (Azure) cobram com base no consumo de recursos na nuvem.
  
 You can also use a trial subscription, but the subscription expires after a specific amount of time or consumption charges. You can convert a trial subscription to a paid subscription.
   
-As organizações podem ter várias assinaturas para ofertas de nuvem da Microsoft. A Figura 1 mostra uma única organização com várias assinaturas do Office 365, uma assinatura do Intune, outra assinatura do Dynamics 365 e várias assinaturas do Azure.
+As organizações podem ter várias assinaturas para ofertas de nuvem da Microsoft. A Figura 1 mostra uma única organização com várias assinaturas do Microsoft 365, uma assinatura do Dynamics 365 e várias assinaturas do Azure.
 
 **Figura 1: Exemplo de várias assinaturas de uma organização**
 
 ![Um exemplo de organização com várias assinaturas para ofertas de nuvem da Microsoft.](media/Subscriptions/Subscriptions-Fig1.png)
-
   
 ### <a name="licenses"></a>Licenças
 
-Para as ofertas de nuvem SaaS da Microsoft, uma licença permite que uma conta de usuário específica use os serviços da oferta na nuvem. Você será cobrado com uma taxa mensal fixa como parte da sua assinatura. Os administradores podem atribuir licenças a contas de usuários individuais na assinatura. Por exemplo, na Figura 2, a Contoso Corporation tem uma assinatura do Office 365 Enterprise E5 com a 100 licenças, que permite até 100 contas de usuários individuais que usam recursos e serviços do Office 365 Enterprise E5.
+Para as ofertas de nuvem SaaS da Microsoft, uma licença permite que uma conta de usuário específica use os serviços da oferta na nuvem. Você será cobrado com uma taxa mensal fixa como parte da sua assinatura. Os administradores podem atribuir licenças a contas de usuários individuais na assinatura. Para o exemplo na Figura 2, a Contoso Corporation tem uma assinatura do Microsoft 365 E5 com licenças 100, que permite até 100 contas de usuário individuais para usar os recursos e serviços do Microsoft 365 e5.
   
 **Figura 2: Licenças em assinaturas SaaS para uma organização**
 
@@ -89,11 +83,11 @@ A Figura 3 mostra um exemplo de várias assinaturas de uma organização usando 
   
 ### <a name="tenants"></a>Locatários
 
-For SaaS cloud offerings, the tenant is the regional location that houses the servers providing cloud services. For example, the Contoso Corporation chose the European region to host its Office 365, EMS, and Dynamics 365 tenants for the 15,000 workers in their Paris headquarters.
+Para ofertas de nuvem SaaS, o locatário é o local regional que abriga os servidores que fornecem serviços em nuvem. Por exemplo, a Contoso Corporation escolheu a região Européia para hospedar seus locatários do Microsoft 365, EMS e Dynamics 365 para os trabalhadores do 15.000 na sede de Paris.
   
 Azure PaaS services and virtual machine-based workloads hosted in Azure IaaS can have tenancy in any Azure datacenter across the world. You specify the Azure datacenter, known as the location, when you create the Azure PaaS app or service or element of an IaaS workload.
   
-An Azure AD tenant is a specific instance of Azure AD containing accounts and groups. Paid or trial subscriptions of Office 365, Dynamics 365, or Intune/EMS include a free Azure AD tenant. This Azure AD tenant does not include other Azure services and is not the same as an Azure trial or paid subscription.
+Um locatário do Azure AD é uma instância específica do Azure AD que contém contas e grupos. Assinaturas pagas ou de avaliação do Microsoft 365 ou Dynamics 365 incluem um locatário gratuito do Azure AD. Este locatário do Azure AD não inclui outros serviços do Azure e não é o mesmo que uma assinatura de avaliação ou paga do Azure.
   
 ### <a name="summary-of-the-hierarchy"></a>Resumo da hierarquia
 
@@ -111,11 +105,9 @@ Aqui está um exemplo da relação das organizações, assinaturas, licenças e 
   
 - Uma organização identificada pelo nome de domínio público.
     
-  - Uma assinatura do Office 365 Enterprise E3 com licenças de usuário.
+  - Uma assinatura do Microsoft 365 E3 com licenças de usuário.
     
-    Uma assinatura do Office 365 Enterprise E5 com licenças de usuário.
-    
-    Uma assinatura EMS com licenças de usuário.
+    Uma assinatura do Microsoft 365 E5 com licenças de usuário.
     
     Uma assinatura Dynamics 365 com licenças de usuário.
     
@@ -135,12 +127,11 @@ Figure 4 shows how a common Azure AD tenant is used by Microsoft's SaaS cloud of
 
 A tabela a seguir descreve como você pode combinar várias ofertas da nuvem da Microsoft com base em assinaturas que você já tenha para um tipo de oferta da nuvem (os rótulos que estão na primeira coluna) e como adicionar uma assinatura em uma oferta diferente da nuvem (que está em várias colunas).
   
-||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
+||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |N/D  <br/> |Adicione uma assinatura do Azure na sua organização no portal do Azure.  <br/> |Adicionar uma assinatura do Intune/EMS para sua organização no centro de administração do Microsoft 365.  <br/> |Adicionar uma assinatura do Dynamics 365 para sua organização no centro de administração do Microsoft 365.  <br/> |
-|**Azure** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |N/D  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
-|**Intune/EMS** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |N/D  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
-|**Dynamics 365** <br/> |Adicione uma assinatura do Office 365 para sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |Adicione uma assinatura do Intune/EMS para sua organização.  <br/> |NA  <br/> |
+|**Microsoft 365** <br/> |N/D  <br/> |Adicione uma assinatura do Azure na sua organização no portal do Azure.  <br/> |Adicionar uma assinatura do Dynamics 365 para sua organização no centro de administração do Microsoft 365.  <br/> |
+|**Azure** <br/> |Você adiciona uma assinatura do Microsoft 365 à sua organização.  <br/> |N/D  <br/> |Adicione uma assinatura do Dynamics 365 para sua organização.  <br/> |
+|**Dynamics 365** <br/> |Você adiciona uma assinatura do Microsoft 365 à sua organização.  <br/> |Adicione uma assinatura do Azure para sua organização no portal do Azure.  <br/> |NA  <br/> |
    
 Uma maneira fácil de adicionar assinaturas de serviços baseados em SaaS da Microsoft para sua organização é por meio do centro de administração:
   
@@ -150,17 +141,17 @@ Uma maneira fácil de adicionar assinaturas de serviços baseados em SaaS da Mic
     
 3. Na página **Serviços de compra**, compre as novas assinaturas.
     
-O centro de administração atribui a organização e o locatário do Azure AD de sua assinatura do Office 365 para novas assinaturas das ofertas de SaaS baseadas em nuvem.
+O centro de administração atribui a organização e o locatário do Azure AD da sua assinatura do Microsoft 365 às novas assinaturas para ofertas de nuvem baseadas em SaaS.
   
-Para adicionar uma assinatura do Azure com a mesma organização e locatário do Azure AD à sua assinatura do Office 365:
+Para adicionar uma assinatura do Azure com a mesma organização e o locatário do Azure AD como sua assinatura do Microsoft 365:
   
-1. Entre no portal do Azure ([https://portal.azure.com](https://portal.azure.com)) com sua conta de administrador global do Office 365.
+1. Entre no portal do Azure ( [https://portal.azure.com](https://portal.azure.com) ) com sua conta de administrador global do Microsoft 365.
     
 2. Na navegação à esquerda, clique em **Assinaturas** e depois em **Adicionar**.
     
 3. Na página **Adicionar assinatura**, selecione uma oferta e complete as informações de pagamento e o contrato.
     
-Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e deseja acessar o locatário do Azure AD do Office 365 de sua assinatura do Azure, confira as instruções em [Adicionar uma assinatura do Azure ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Se você comprou as assinaturas do Azure e do Microsoft 365 separadamente e deseja acessar o locatário do Microsoft 365 Azure AD da sua assinatura do Azure, Confira as instruções em [Adicionar uma assinatura do Azure existente ao seu locatário do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Confira também
 
@@ -172,5 +163,5 @@ Se você tiver comprado separadamente assinaturas do Azure e do Office 365 e des
 
 ## <a name="next-step"></a>Próxima etapa
 
-[Avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md)
+[Avaliando a conectividade de rede do Microsoft 365](assessing-network-connectivity.md)
   

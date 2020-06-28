@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: O suporte está terminando em breve para os aplicativos cliente e servidores do Office 2010, e os acordos de suporte personalizados não estão disponíveis. Use este artigo para começar a planejar sua atualização agora.
-ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 570386c2f12a098ee2ccb355b5d0fa20bc32aaee
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775100"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906234"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2010
 
@@ -38,11 +38,11 @@ O Office 2010 e o Exchange 2010 atingirão o fim do suporte em **13 de outubro d
 
 O SharePoint 2010 e o Project Server 2010 atingirão o fim do suporte em **13 de abril de 2021**.
 
-Durante o planejamento da atualização, esse é um excelente momento para a migração para o Office 365 ou o Microsoft 365. 
+Durante o planejamento da atualização, esse é um excelente momento para a migração para o Microsoft 365. 
 
-- O Office 365 tem serviços baseados em nuvem para produtos de servidor do Office 2010, como o Exchange Server e o SharePoint Server e serviços como o Teams e o OneDrive for Business. 
+- A Microsoft 365 tem serviços baseados em nuvem para produtos de servidor do Office 2010, como o Exchange Server e o SharePoint Server e serviços como o Teams e o OneDrive for Business. 
 
-- O Microsoft 365 Apps for Enterprise (anteriormente chamado Office 365 ProPlus), incluído no Office 365 E3 e no Microsoft 365 Enterprise, é o conjunto de aplicativos cliente do Office que você instala no seu dispositivo local. Eles são atualizados com novos recursos de produtividade e segurança em uma base contínua do Microsoft Cloud.
+- O Microsoft 365 Apps for Enterprise (anteriormente chamado Office 365 ProPlus), incluído no Microsoft 365 E3 e e5, é o conjunto de aplicativos cliente do Office que você instala no seu dispositivo local. Eles são atualizados com novos recursos de produtividade e segurança em uma base contínua do Microsoft Cloud.
 
 Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, confira o [cartaz de fim de suporte](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
@@ -68,7 +68,7 @@ Se você estiver usando produtos e aplicativos do Office 2010 em casa, confira [
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Vídeo: o que é o Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Vídeo: o que é o Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Política de ciclo de vida da Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
