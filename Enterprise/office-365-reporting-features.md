@@ -1,7 +1,7 @@
 ---
 title: Recursos de relatório do Microsoft 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uma explicação dos recursos de relatório no Microsoft 365.
-ms.openlocfilehash: 1b8a75504712a46faa8b6fff8dfe20f3f3c6cf79
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774456"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997781"
 ---
 # <a name="microsoft-365-reporting-features"></a>Recursos de relatório do Microsoft 365 
 

@@ -1,7 +1,7 @@
 ---
 title: Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
-ms.author: markjjo
-author: markjjo
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
 description: 'Este artigo é para administradores. Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usuário deseja refazê-los, mas não pode recuperá-los. Você pode ser capaz de recuperar os itens removidos se eles não foram removidos permanentemente da caixa de correio do usuário. '
-ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845122"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998305"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
 
@@ -38,16 +38,16 @@ Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usu�
 Aqui estão as etapas para recuperar itens excluídos na caixa de correio de um usuário. Quanto tempo isso levará? A primeira vez pode levar 20 ou 30 minutos para concluir todas as etapas, dependendo de quantos itens você está tentando recuperar.
   
 > [!NOTE]
-> Você precisa ser um **administrador do Exchange** ou um **Administrador Global** no Office 365 ou ser membro do grupo de função gerenciamento da organização no Exchange Online para executar as etapas neste artigo. Para saber mais, veja [Sobre as funções de administrador do Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Você precisa ser um **administrador do Exchange** ou um **Administrador Global** no Microsoft 365 ou ser membro do grupo de função gerenciamento da organização no Exchange Online para executar as etapas neste artigo. Para obter mais informações, consulte [Sobre as funções de administrador do Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Etapa 1: atribuir permissões de descoberta eletrônica por conta própria
 <a name="step1"> </a>
 
 A primeira etapa é atribuir as permissões necessárias no Exchange Online para que você possa usar a ferramenta de descoberta eletrônica in-loco para pesquisar a caixa de correio de um usuário. Isso só precisa ser feito uma vez. Se você precisar pesquisar outra caixa de correio no futuro, ignore esta etapa.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) com sua conta corporativa ou de estudante. 
+1. [Onde entrar no Microsoft 365 for Business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) com sua conta corporativa ou de estudante. 
     
-2. Selecione o ícone ![do inicializador de aplicativos o ícone do inicializador de aplicativos no Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo e clique em **administrador**.
+2. Selecione o ícone do inicializador ![ de aplicativos o ícone do inicializador de aplicativos no Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo e clique em **administrador**.
     
 3. Na navegação à esquerda no centro de administração do Microsoft 365, expanda **centros de administração**e clique em **Exchange**.
     
@@ -55,11 +55,11 @@ A primeira etapa é atribuir as permissões necessárias no Exchange Online para
   
 4. No centro de administração do Exchange, clique em **permissões**e, em seguida, clique em **funções de administrador**.
     
-5. No modo de exibição de lista, selecione **Gerenciamento de descoberta**e ****![clique em Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)ícone de edição.
+5. No modo de exibição de lista, selecione **Gerenciamento de descoberta**e clique em **Editar** ![ ícone de edição ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
     ![Adicione a si mesmo ao grupo de função gerenciamento de descoberta no Eat](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. Em **grupo de função**, **em Membros**, clique em **Adicionar**![ícone](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)de adição.
+6. Em **grupo de função**, em **Membros**, clique em **Adicionar** ![ ícone de adição ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
 7. Em **selecionar Membros**, selecione-se na lista de nomes, clique em **Adicionar**e, em seguida, clique em **OK**.
     
@@ -68,7 +68,7 @@ A primeira etapa é atribuir as permissões necessárias no Exchange Online para
   
 8. Em **grupo de funções**, clique em **salvar**.
     
-9. Saia do Office 365.
+9. Saia do Microsoft 365.
     
     Você deve sair antes de iniciar a próxima etapa para que as novas permissões entrem em vigor.
     
@@ -82,19 +82,19 @@ A primeira etapa é atribuir as permissões necessárias no Exchange Online para
 
 Quando você executa uma pesquisa de descoberta eletrônica in-loco, a pasta itens recuperáveis na caixa de correio que você pesquisa é automaticamente incluída na pesquisa. A pasta itens recuperáveis é onde os itens excluídos permanentemente são armazenados até serem limpos (permanentemente removidos) da caixa de correio. Portanto, se um item não tiver sido removido, você deverá ser capaz de encontrá-lo usando a ferramenta de descoberta eletrônica in-loco.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) com sua conta corporativa ou de estudante. 
+1. [Onde entrar no Microsoft 365 for Business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) com sua conta corporativa ou de estudante. 
     
-2. Selecione o ícone ![do inicializador de aplicativos o ícone do inicializador de aplicativos no Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo e clique em **administrador**.
+2. Selecione o ícone do inicializador ![ de aplicativos o ícone do inicializador de aplicativos no Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) no canto superior esquerdo e clique em **administrador**.
     
 3. Na navegação à esquerda no centro de administração do Microsoft 365, expanda **administrador**e clique em **Exchange**.
     
-4. No centro de administração do Exchange, clique em **Gerenciamento de conformidade**, clique **em &amp; bloqueio de descoberta eletrônica in-loco**e](media/8ee52980-254b-440b-99a2-18d068de62d3.gif), em seguida, clique em **novo**![ícone de adição.
+4. No centro de administração do Exchange, clique em **Gerenciamento de conformidade**, clique **em &amp; bloqueio de descoberta eletrônica in-loco**e, em seguida, clique em **novo** ![ ícone de adição ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![No Eat, na página Gerenciamento de conformidade, clique em descoberta eletrônica in-loco e bloqueio](media/9d9ff0f5-b9be-45b8-8b5e-6037a856b0a8.png)
   
 5. Na página **nome e descrição** , digite um nome para a pesquisa (como o nome do usuário para o qual você está recuperando o email), uma descrição opcional e clique em **Avançar**.
     
-6. Na página **caixas de correio** , clique **em especificar caixas de correio a serem pesquisadas**e, em](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)seguida, clique em **Adicionar**![ícone de adição.
+6. Na página **caixas de correio** , clique em **especificar caixas de correio a serem pesquisadas**e, em seguida, clique em **Adicionar** ![ ícone de adição ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![Clique em especificar caixas de correio para pesquisar na pesquisa de uma caixa de correio do especialmente](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
@@ -129,26 +129,26 @@ Quando você executa uma pesquisa de descoberta eletrônica in-loco, a pasta ite
     
     Depois que você iniciar a pesquisa, o Exchange exibirá uma estimativa do tamanho total e do número de itens que será retornado pela pesquisa com base nos critérios que você especificou.
     
-11. Selecione a pesquisa que você acabou de criar ****![e clique](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) em atualizar atualização para atualizar as informações exibidas no painel de detalhes. O status da **estimativa com êxito** indica que a pesquisa foi concluída. O Exchange também exibe uma estimativa do número total de itens (e seu tamanho) encontrado pela pesquisa com base nos critérios de pesquisa que você especificou na etapa 9. 
+11. Selecione a pesquisa que você acabou de criar e clique em **Atualizar** ![ atualização ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) para atualizar as informações exibidas no painel de detalhes. O status da **estimativa com êxito** indica que a pesquisa foi concluída. O Exchange também exibe uma estimativa do número total de itens (e seu tamanho) encontrado pela pesquisa com base nos critérios de pesquisa que você especificou na etapa 9. 
     
 12. No painel de detalhes, clique em **Visualizar resultados da pesquisa** para exibir os itens que foram encontrados. Isso pode ajudar a identificar o (s) item (ns) que você está procurando. Se encontrar o (s) item (ns) que você está tentando recuperar, vá para a etapa 4 para exportar os resultados da pesquisa para um arquivo PST. 
     
     ![Clique em Visualizar resultados da pesquisa para exibir o item que você está tentando recuperar](media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
   
-13. Se não encontrar o que você está procurando, você poderá revisar seus critérios de pesquisa selecionando a pesquisa, ****![clicando em Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar ícone e, em seguida, clicando em **consulta de pesquisa**. Altere o critério de pesquisa e execute a pesquisa novamente.
+13. Se não encontrar o que você está procurando, você poderá revisar seus critérios de pesquisa selecionando a pesquisa, clicando em **Editar** ![ Editar ícone ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) e, em seguida, clicando em **consulta de pesquisa**. Altere o critério de pesquisa e execute a pesquisa novamente.
     
 [Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Opcion Etapa 3: copiar os resultados da pesquisa para uma caixa de correio de descoberta
 <a name="step3"> </a>
 
-Se não for possível localizar itens visualizando os resultados da pesquisa ou se quiser ver quais itens estão na pasta itens recuperáveis do usuário, você pode copiar os resultados da pesquisa para uma caixa de correio especial (chamada de caixa de correio de descoberta) e abrir essa caixa de correio no Outlook na Web t o exibir os itens reais. O melhor motivo para copiar os resultados da pesquisa é que você possa exibir os itens na pasta itens recuperáveis do usuário. Mais do que provavelmente, o item que você está tentando recuperar está localizado na subpasta limpezas. 
+Se não for possível localizar itens visualizando os resultados da pesquisa ou se quiser ver quais itens estão na pasta itens recuperáveis do usuário, você pode copiar os resultados da pesquisa para uma caixa de correio especial (chamada de caixa de correio de descoberta) e abrir essa caixa de correio no Outlook na Web para exibir os itens reais. O melhor motivo para copiar os resultados da pesquisa é que você possa exibir os itens na pasta itens recuperáveis do usuário. Mais do que provavelmente, o item que você está tentando recuperar está localizado na subpasta limpezas. 
   
-1. No centro de administração do Exchange, vá para **Gerenciamento** \> **de conformidade e descoberta &amp; eletrônica in-loco**.
+1. No centro de administração do Exchange, vá para **Gerenciamento de conformidade** e \> **descoberta &amp; eletrônica in-loco**.
     
 2. Na lista de pesquisas, selecione a pesquisa que você criou na etapa 2.
     
-3. Clique ****![em pesquisa](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)de pesquisa e, em seguida, clique em **copiar resultados da pesquisa** na lista suspensa. 
+3. Clique **Search**em ![ pesquisa ](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) de pesquisa e, em seguida, clique em **copiar resultados da pesquisa** na lista suspensa. 
     
     ![Clique em Pesquisar e, em seguida, clique em copiar resultados da pesquisa](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -161,13 +161,13 @@ Se não for possível localizar itens visualizando os resultados da pesquisa ou 
     ![Copiar os resultados da pesquisa para a caixa de correio de pesquisa de descoberta padrão](media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
   
     > [!NOTE]
-    > A caixa de correio de pesquisa de descoberta é uma caixa de correio de descoberta padrão criada automaticamente na sua organização do Office 365. 
+    > A caixa de correio de pesquisa de descoberta é uma caixa de correio de descoberta padrão criada automaticamente na sua organização do Microsoft 365. 
   
 6. De volta à página **copiar resultados da pesquisa** , clique em **copiar** para iniciar o processo para copiar os resultados da pesquisa para a caixa de correio de pesquisa de descoberta. 
     
     ![Clique em copiar para copiar os resultados da pesquisa para a caixa de correio de pesquisa de descoberta](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. Clique ****![em atualizar](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) atualização para atualizar as informações sobre o status de cópia exibido no painel de detalhes. 
+7. Clique em **Atualizar** ![ atualização ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) para atualizar as informações sobre o status de cópia exibido no painel de detalhes. 
     
 8. Quando a cópia estiver concluída, clique em **abrir** para abrir a caixa de correio de pesquisa de descoberta para exibir os resultados da pesquisa. 
     
@@ -189,7 +189,7 @@ Se não for possível localizar itens visualizando os resultados da pesquisa ou 
 
 Após localizar o item que você está tentando recuperar para um usuário, a próxima etapa é exportar os resultados da pesquisa executada na etapa 2 para um arquivo PST. O usuário usará esse arquivo PST na próxima etapa para restaurar o item excluído à caixa de correio.
   
-1. No centro de administração do Exchange, vá para **Gerenciamento** \> **de conformidade e descoberta &amp; eletrônica in-loco**.
+1. No centro de administração do Exchange, vá para **Gerenciamento de conformidade** e \> **descoberta &amp; eletrônica in-loco**.
     
 2. Na lista de pesquisas, selecione a pesquisa que você criou na etapa 2.
     
@@ -239,7 +239,7 @@ Você precisa usar o aplicativo da área de trabalho do Outlook para restaurar u
   
 1. No Outlook 2013 ou no Outlook 2016, clique na guia **arquivo** . 
     
-2. Clique **em &amp; abrir exportação**e, em seguida, clique em **Abrir arquivo de dados do Outlook**.
+2. Clique em **abrir &amp; exportação**e, em seguida, clique em **Abrir arquivo de dados do Outlook**.
     
 3. Navegue até o local onde você salvou o arquivo PST enviado pelo administrador.
     

@@ -1,7 +1,7 @@
 ---
-title: Controle de acesso e isolamento do Office 365 no Office 365
-ms.author: robmazz
-author: robmazz
+title: Isolamento e controle de acesso no Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: 'Resumo: uma explicação do isolamento e controle de acesso dentro dos vários aplicativos do Office 365.'
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: 'Resumo: uma explicação do isolamento e controle de acesso dentro dos vários aplicativos do Microsoft 365.'
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892120"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998785"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Isolamento e controle de acesso no Office 365
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolamento e controle de acesso no Microsoft 365
 
-O Azure Active Directory e o Office 365 usam um modelo de dados altamente complexo que inclui dezenas de serviços, centenas de entidades, milhares de relações e dezenas de milhares de atributos. Em um nível alto, o Azure Active Directory e os diretórios de serviço são os contêineres de locatários e destinatários mantidos em sincronia usando protocolos de replicação baseados em estado. Além das informações de diretório mantidas no Azure Active Directory, cada uma das cargas de trabalho de serviço tem sua própria infraestrutura de serviços de diretório.
+O Azure active directo Ry (Azure AD) e o Microsoft 365 usam um modelo de dados altamente complexo que inclui dezenas de serviços, centenas de entidades, milhares de relações e dezenas de milhares de atributos. Em um nível alto, o Azure AD e os diretórios de serviço são os contêineres de locatários e destinatários mantidos em sincronia usando protocolos de replicação baseados em estado. Além das informações de diretório mantidas no Azure AD, cada uma das cargas de trabalho de serviço tem sua própria infraestrutura de serviços de diretório.
  
-![Sincronização de dados do locatário do Office 365](media/office-365-isolation-tenant-data-sync.png)
+![Sincronização de dados do Microsoft 365 locatário](media/office-365-isolation-tenant-data-sync.png)
 
-Dentro desse modelo, não há uma única fonte de dados de diretório. Sistemas específicos possuem partes individuais de dados, mas nenhum sistema único armazena todos os dados. Os serviços do Office 365 cooperar com o Azure Active Directory neste modelo de dados. O Azure Active Directory é o "sistema de verdade" para dados compartilhados, que normalmente são pequenos e estáticos usados por todos os serviços. O modelo federado usado no Office 365 e no Azure Active Directory fornece a exibição compartilhada dos dados.
+Dentro desse modelo, não há uma única fonte de dados de diretório. Sistemas específicos possuem partes individuais de dados, mas nenhum sistema único armazena todos os dados. Os serviços 365 da Microsoft cooperar com o Azure AD neste modelo de dados. O Azure AD é o "sistema de verdade" para dados compartilhados, que normalmente são pequenos e estáticos usados por todos os serviços. O modelo federado usado no Microsoft 365 e no Azure AD fornece a exibição compartilhada dos dados.
 
-O Office 365 usa o armazenamento físico e o armazenamento em nuvem do Azure. O Exchange Online (incluindo o Exchange Online Protection) e o Skype for Business usam seu próprio armazenamento para dados do cliente. O SharePoint Online usa o armazenamento do SQL Server e o armazenamento do Azure, portanto, a necessidade de isolamento adicional dos dados do cliente no nível de armazenamento.
+O Microsoft 365 usa o armazenamento físico e o armazenamento em nuvem do Azure. O Exchange Online (incluindo o Exchange Online Protection) e o Skype for Business usam seu próprio armazenamento para dados do cliente. O SharePoint Online usa o armazenamento do SQL Server e o armazenamento do Azure, portanto, a necessidade de isolamento adicional dos dados do cliente no nível de armazenamento.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -47,7 +47,7 @@ O conteúdo da caixa de correio do usuário inclui:
 - Grupos
 - Dados de inferência
 
-Cada banco de dados de caixa de correio no Exchange Online contém caixas de correio de vários locatários. Um código de autorização protege cada caixa de correio, incluindo dentro de uma locação. Por padrão, somente o usuário atribuído tem acesso a uma caixa de correio. A lista de controle de acesso (ACL) que protege uma caixa de correio contém uma identidade autenticada pelo Azure Active Directory no nível do locatário. As caixas de correio de cada locatário estão limitadas às identidades autenticadas no provedor de autenticação do locatário, que inclui apenas os usuários desse locatário. O conteúdo no locatário A não pode ser obtido por usuários no locatário B, a menos que explicitamente aprovado pelo locatário A.
+Cada banco de dados de caixa de correio no Exchange Online contém caixas de correio de vários locatários. Um código de autorização protege cada caixa de correio, incluindo dentro de uma locação. Por padrão, somente o usuário atribuído tem acesso a uma caixa de correio. A lista de controle de acesso (ACL) que protege uma caixa de correio contém uma identidade autenticada pelo Azure AD no nível do locatário. As caixas de correio de cada locatário estão limitadas às identidades autenticadas no provedor de autenticação do locatário, que inclui apenas os usuários desse locatário. O conteúdo no locatário A não pode ser obtido por usuários no locatário B, a menos que explicitamente aprovado pelo locatário A.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -63,7 +63,7 @@ O SharePoint Online tem vários mecanismos independentes que oferecem isolamento
 
 Se um usuário puder obter acesso direto ao armazenamento que contém os dados, o conteúdo não poderá ser interpretado por um humano ou qualquer sistema que não seja o SharePoint Online. Esses mecanismos incluem controle de acesso de segurança e propriedades. Todos os recursos do SharePoint Online são protegidos pelo código de autorização e pela política RBAC, incluindo dentro de um locatário. A lista de controle de acesso (ACL) que protege um recurso contém uma identidade autenticada no nível do locatário. Os dados do SharePoint Online para um locatário são limitados às identidades autenticadas pelo provedor de autenticação para o locatário.
 
-Além das ACLs, uma propriedade de nível de locatário que especifica o provedor de autenticação (que é o Azure Active Directory específico do locatário), é gravada uma vez e não pode ser alterada depois de definida. Depois que a propriedade locatário do provedor de autenticação tiver sido definida para um locatário, ela não poderá ser alterada usando as APIs expostas a um locatário.
+Além das ACLs, uma propriedade de nível de locatário que especifica o provedor de autenticação (que é o Azure AD específico do locatário), é escrita uma vez e não pode ser alterada depois de definida. Depois que a propriedade locatário do provedor de autenticação tiver sido definida para um locatário, ela não poderá ser alterada usando as APIs expostas a um locatário.
 
 Um *SubscriptionId* exclusivo é usado para cada locatário. Todos os sites de clientes pertencem a um locatário e recebem uma *assinatura* exclusiva para o locatário. A propriedade *SubscriptionId* em um site é escrita uma vez e é permanente. Uma vez atribuída a um locatário, um site não pode ser movido para outro locatário. *SubscriptionId* é a chave usada para criar o escopo de segurança para o provedor de autenticação e está vinculada ao locatário.
 

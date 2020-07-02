@@ -1,7 +1,7 @@
 ---
-title: Destruição de dados do Office 365
-ms.author: robmazz
-author: robmazz
+title: Destruição de dados do Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Uma visão geral das políticas da Microsoft sobre a reciclagem, a alienação ou a destruição de drives e servidores de disco do Office 365 Data Center.
-ms.openlocfilehash: 2ad73206309751729f776081d66d6c6d5daf1308
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Uma visão geral das políticas da Microsoft sobre a reciclagem, a alienação ou a destruição de drives e servidores de disco do Microsoft 365 Data Center.
+ms.openlocfilehash: 8e0725f449dd999c0f892543883a775695969dc9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843682"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998435"
 ---
-# <a name="office-365-data-destruction"></a>Destruição de dados do Office 365
+# <a name="microsoft-365-data-destruction"></a>Destruição de dados do Microsoft 365
 
 ## <a name="physical-data-destruction"></a>Destruição de dados físicos
 
-A Microsoft tem políticas padrão de manipulação de dados que resolvem a reciclagem e a eliminação de drives de disco e falharam ou aposentaram servidores. Antes de reutilizar quaisquer drives de disco do Office 365, a Microsoft executa um processo de limpeza física consistente com o National Institute of Standards and Technology Special 800-88 publication [[diretrizes do NIST SP 800-88 para a limpeza de mídia](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Como todos os drives de disco no Office 365 são criptografados usando a criptografia de nível de volume do BitLocker, a eliminação compatível com o NIST SP 800-88 não é tecnicamente necessária. No entanto, a Microsoft executa esse processo.
+A Microsoft tem políticas padrão de manipulação de dados que resolvem a reciclagem e a eliminação de drives de disco e falharam ou aposentaram servidores. Antes de reutilizar quaisquer drives de disco do Microsoft 365, a Microsoft executa um processo de limpeza física consistente com o National Institute of Standards and Technology Special 800-88 publication [[diretrizes do NIST SP 800-88 para a limpeza de mídia](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf)). Como todos os drives de disco no Microsoft 365 são criptografados usando a criptografia de nível de volume do BitLocker, a eliminação compatível com o NIST SP 800-88 não é tecnicamente necessária. No entanto, a Microsoft executa esse processo.
 
-Os discos com falha usados nos datacenters do Office 365 são destruídos fisicamente e auditados por meio do processo ISO. O tipo de ativo determina os meios apropriados de alienação. Para discos rígidos que não podem ser apagados, a Microsoft usa um processo de destruição para destruir a mídia e renderizar a recuperação de informações impossível. Por exemplo, os discos são destruídos fisicamente, pulverized ou incinerated. A Microsoft mantém todos os registros da destruição e executa um processo de limpeza semelhante nos servidores reutilizados no Office 365. Essas diretrizes englobam a limpeza eletrônica e física.
+Os discos com falha usados nos datacenters do Microsoft 365 são destruídos fisicamente e auditados por meio do processo ISO. O tipo de ativo determina os meios apropriados de alienação. Para discos rígidos que não podem ser apagados, a Microsoft usa um processo de destruição para destruir a mídia e renderizar a recuperação de informações impossível. Por exemplo, os discos são destruídos fisicamente, pulverized ou incinerated. A Microsoft mantém todos os registros da destruição e executa um processo de limpeza semelhante nos servidores reutilizados no Microsoft 365. Essas diretrizes englobam a limpeza eletrônica e física.
 
 Cada datacenter usa um processo de destruição física local para descartar seus discos. Os compartimentos seguros para mídia de armazenamento designada para eliminação de disco estão em cada área do datacenter. Cada estação de compartimento seguro tem vigilância de monitoramento de vídeo. Depois que um compartimento de descarte atinge aproximadamente 50% de capacidade, a equipe de serviços de site contata a equipe de segurança física para coordenar a remoção. Equipe de serviços de site e um escritório de segurança remova o compartimento de descarte seguro e coloque-o em uma área de armazenamento segura designada. Políticas e procedimentos que regem o tratamento de dados que ostentam dispositivos durante o descarte são testados rotineiramente, incluindo procedimentos para garantir a condição de maquinação aprovada para destruição.
 

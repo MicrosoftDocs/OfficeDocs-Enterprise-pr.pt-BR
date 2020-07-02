@@ -1,7 +1,7 @@
 ---
-title: Defesa contra ataques de negação de serviço no Office 365
-ms.author: robmazz
-author: robmazz
+title: Proteção contra ataques de negação de serviço no Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uma visão geral dos ataques de negação de serviço (DoS).
-ms.openlocfilehash: 16378800fc7bb61b8f78e2c4c51eb7940cb45d17
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 2cbe5eb86402fd7b7888f39440a58935604c90eb
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843583"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998415"
 ---
-# <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Defesa contra ataques de negação de serviço no Office 365
+# <a name="defend-against-denial-of-service-attacks-in-microsoft-365"></a>Proteção contra ataques de negação de serviço no Microsoft 365
 
 ## <a name="introduction"></a>Introdução
 
@@ -31,7 +31,7 @@ A Microsoft fornece uma infraestrutura confiável para mais de 200 serviços em 
 - Microsoft Azure
 - Microsoft Bing
 - Microsoft Dynamics 365
-- Microsoft Office 365
+- Microsoft 365 e Office 365
 - Microsoft OneDrive
 - Skype
 - Xbox Live

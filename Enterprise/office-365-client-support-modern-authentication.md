@@ -1,7 +1,7 @@
 ---
-title: Suporte ao aplicativo cliente do Office 365 — autenticação moderna
-ms.author: robmazz
-author: robmazz
+title: Suporte ao aplicativo cliente Microsoft 365 — autenticação moderna
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Suporte do aplicativo cliente do Office 365 para autenticação moderna.
-ms.openlocfilehash: b86b486717f6a20b496c24a5c84757f8d52e5ed0
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Suporte ao aplicativo cliente Microsoft 365 para autenticação moderna.
+ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619357"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998489"
 ---
-# <a name="office-365-client-app-support---modern-authentication"></a>Suporte ao aplicativo cliente do Office 365-autenticação moderna
+# <a name="microsoft-365-client-app-support---modern-authentication"></a>Suporte ao aplicativo cliente Microsoft 365-autenticação moderna
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 A autenticação moderna permite o logon baseado na biblioteca de autenticação do Active Directory (ADAL) para aplicativos clientes do Office em diferentes plataformas. Isso permite que os recursos de entrada, como a autenticação multifator (MFA), o cartão inteligente e a autenticação baseada em certificado.
 
@@ -39,7 +39,7 @@ Saiba mais sobre [autenticação multifator](https://docs.microsoft.com/azure/ac
  - iOS
  - macOS
 
-Para obter mais informações sobre suporte a plataformas no Office 365, consulte [System Requirements for Office 365](https://products.office.com/office-system-requirements).
+Para obter mais informações sobre o suporte à plataforma no Microsoft 365, consulte [System Requirements for Microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clientes com suporte
 
@@ -49,7 +49,7 @@ As versões mais recentes dos seguintes clientes suportam a autenticação moder
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Ícone do Access](media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Ícone do Azure](media/o365-azure-64x64.png) <br> [Portal do Azure <br>](https://azure.microsoft.com/features/azure-portal/) | ![Ícone do portal da empresa](media/o365-microsoft-64x64.png) <br> [Portal da empresa <br>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Ícone do Delve](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Ícone do Dynamics 365](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) 
 | ![Ícone de borda](media/o365-edge-64x64.png) <br> [Borda](https://www.microsoft.com/windows/microsoft-edge) | ![Ícone do Excel](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Ícone do Forms](media/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Ícone do Kaizala](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Ícone de Office.com](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
-| ![Ícone de administração do Office 365](media/o365-o365admin-64x64.png) <br> [Administração do Office 365 <br>](https://products.office.com/business/manage-office-365-admin-app) | ![Ícone de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Ícone do OneDrive for Business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Ícone do OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Ícone do Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
+| ![Ícone de administração do Office 365](media/o365-o365admin-64x64.png) <br> [Administrador 365 da Microsoft <br>](https://products.office.com/business/manage-office-365-admin-app) | ![Ícone de lente](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![Ícone do OneDrive for Business](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![Ícone do OneNote](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Ícone do Outlook](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
 | ![Ícone do Planner](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![Ícone do PowerApps](media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![Ícone de automatização de energia](media/o365-flow-64x64.png) <br> [<br>Automatização de energia](https://flow.microsoft.com) | ![Ícone do PowerBI](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![Ícone do PowerPoint](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Ícone do Project](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Ícone do Publisher](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![Ícone do SharePoint](media/o365-sharepoint-64x64.png) <br> [Do](https://products.office.com/sharepoint) | ![Ícone do Skype for Business](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business<sup>1</sup>](https://www.skype.com/business/) | ![Ícone do StaffHub](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
 | ![Ícone de notas auto-adesivas](media/o365-stickynotes-64x64.png) <br> [Notas auto-adesivas](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Ícone do Stream](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Ícone do Sway](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Ícone do Teams](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Ícone de tarefas pendentes](media/o365-todo-64x64.png) <br> [To Do](https://todo.microsoft.com) 
@@ -65,6 +65,6 @@ As versões mais recentes dos seguintes clientes suportam a autenticação moder
 > <sup>1</sup> suporte para whiteboard e Skype for Business no aplicativo Web disponível em breve. <br>
 > <sup>2</sup> o suporte para o whiteboard no Android estará disponível em breve.
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

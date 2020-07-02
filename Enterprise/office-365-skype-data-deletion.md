@@ -1,7 +1,7 @@
 ---
 title: Exclusão de dados do Skype for Business do Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uma explicação da exclusão de dados no Skype for Business.
-ms.openlocfilehash: 33fbb91d2fbfd0e3133bfa2cca2118643b702d95
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7c94c5d1ddfb5a8056e139d664627dd1e7bed0de
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844302"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997791"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Exclusão de dados do Skype for Business no Office 365
 
-O Skype for Business oferece arquivamento de mensagens instantâneas ponto a ponto, mensagens instantâneas entre várias pessoas e atividades de carregamento de conteúdo em reuniões. O recurso de arquivamento requer o Exchange e é controlado pelo atributo de Bloqueio In-loco da caixa de correio do Exchange do usuário, que arquiva tanto o email quanto o conteúdo do Skype for Business.
+Skype for Business provides archiving of peer-to-peer instant messages, multiparty instant messages, and content upload activities in meetings. The archiving capability requires Exchange and is controlled by the user's Exchange mailbox In-Place Hold attribute, which archives both email and Skype for Business contents.
 
-Todo o arquivamento no Skype for Business é considerado "arquivamento de nível do usuário" porque é possível habilitá-lo ou desabilitá-lo para um ou mais usuários ou grupos de usuários específicos criando, configurando e aplicando uma política de arquivamento de nível do usuário para esses usuários. Não há controle direto das configurações de arquivamento de dentro do Centro de administração do Skype for Business.
+All archiving in Skype for Business is considered "user-level archiving" because you enable or disable it for one or more specific users or groups of users by creating, configuring, and applying a user-level archiving policy for those users. There is no direct control of archiving settings from within the Skype for Business admin center.
 
 Os seguintes tipos de conteúdo não são arquivados no Skype for Business:
 

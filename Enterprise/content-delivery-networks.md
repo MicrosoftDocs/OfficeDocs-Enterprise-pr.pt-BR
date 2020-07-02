@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber como o Office 365 usa redes de distribuição de conteúdo (CDNs) para melhorar o desempenho.
-ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840628"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997467"
 ---
-# <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo (CDNs)
+# <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 CDNs ajudar a manter o Office 365 rápido e confiável para usuários finais. Os serviços de nuvem, como o Office 365, usam CDNs para armazenar em cache ativos estáticos mais próximos dos navegadores que os solicitam para acelerar os downloads e reduzir a latência de usuário final percebida. As informações neste tópico vão ajudá-lo a aprender sobre redes de distribuição de conteúdo (CDNs) e como elas são usadas pelo Office 365.
 
@@ -37,7 +37,7 @@ CDNs ajudar a manter o Office 365 rápido e confiável para usuários finais. Os
 
 Uma CDN é uma rede geograficamente distribuída que consiste em servidores de arquivos e proxy em datacenters conectados por redes de backbone de alta velocidade. CDNs são usados para reduzir a latência e tempos de carregamento para um conjunto especificado de arquivos e objetos em um site ou serviço. Uma CDN pode ter milhares de pontos de extremidade para manutenção ideal de solicitações de entrada de qualquer local.
 
-CDNs são comumente usados para fornecer downloads mais rápidos de conteúdo genérico para um site ou serviço, como arquivos JavaScript, ícones e imagens, e também pode fornecer acesso privado a conteúdo do usuário, como arquivos em bibliotecas de documentos do SharePoint Online, arquivos de mídia de fluxo contínuo e código personalizado.
+CDNs são comumente usados para fornecer downloads mais rápidos de conteúdo genérico para um site ou serviço, como arquivos JavaScript, ícones e imagens, e também pode fornecer acesso privado a conteúdo do usuário, como arquivos em bibliotecas de documentos do SharePoint Online, arquivos de mídia de fluxo e código personalizado.
 
 CDNs são usados pela maioria dos serviços de nuvem corporativos. Os serviços de nuvem, como o Office 365, têm milhões de clientes baixando uma mistura de conteúdo proprietário (como emails) e conteúdo genérico (como ícones) ao mesmo tempo. É mais eficiente colocar as imagens que todos usam, como ícones, o mais próximo possível do computador do usuário. Não é prático que todos os serviços de nuvem criem datacenters CDN que armazenem esse conteúdo genérico em todas as áreas metropolitanas ou até mesmo em cada Hub de Internet principal em todo o mundo, de forma que alguns desses CDNs sejam compartilhados.
 
@@ -53,7 +53,7 @@ CDNs ajuda a melhorar o desempenho do serviço de nuvem de várias maneiras:
 
 ## <a name="the-office-365-cdn"></a>A CDN do Office 365
 
-A rede interna de distribuição de conteúdo (CDN) do Office 365 permite que os administradores do Office 365 ofereçam um melhor desempenho para as páginas do SharePoint Online da sua organização, armazenando ativos estáticos mais próximos dos navegadores que os solicitam, o que ajuda a acelerar baixa e reduz a latência. A CDN do Office 365 usa o [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para melhorar a compactação e a velocidade de download.
+A rede interna de distribuição de conteúdo (CDN) do Office 365 permite que os administradores do Office 365 ofereçam melhor desempenho para as páginas do SharePoint Online da sua organização, armazenando ativos estáticos mais próximos dos navegadores que os solicitam, o que ajuda a acelerar os downloads e a reduzir a latência. A CDN do Office 365 usa o [protocolo http/2](https://en.wikipedia.org/wiki/HTTP/2) para melhorar a compactação e a velocidade de download.
 
 > [!NOTE]
 > A CDN do Office 365 só está disponível para locatários na nuvem de **produção** (internacional). Os locatários nas nuvens do governo dos EUA, da China e da Alemanha não suportam atualmente a CDN do Office 365.
@@ -88,7 +88,7 @@ Para obter informações sobre o módulo PowerShell CDN do Azure, consulte [Mana
 
 ### <a name="microsoft-ajax-cdn"></a>CDN do Microsoft Ajax
 
-A **CDN do AJAX** da Microsoft é uma CDN somente leitura que oferece várias bibliotecas de desenvolvimento populares, incluindo jQuery (e todas as outras bibliotecas), ASP.NET AJAX, Bootstrap, Knockout. js e outras.
+A **CDN do AJAX** da Microsoft é uma CDN somente leitura que oferece várias bibliotecas de desenvolvimento populares, incluindo jQuery (e todas as outras bibliotecas), ASP.NET AJAX, Bootstrap, Knockout.js e outras.
   
 Para incluir esses scripts em seu projeto, basta substituir qualquer referência a essas bibliotecas disponíveis publicamente com referências ao endereço da CDN, em vez de incluí-lo em seu próprio projeto. Por exemplo, use o seguinte código para vincular ao jQuery:
 
@@ -128,11 +128,11 @@ O CDNs em uso pelo Office 365 está sempre sujeito a alterações e, em muitos c
 |---------|---------|---------|---------|
 |CDN do Office 365     |Akamai         |Ativos genéricos em origens públicas, conteúdo de usuário do SharePoint em origens privadas         |[Usar a rede de distribuição de conteúdo do Office 365 com o SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |CDN do Azure     |Microsoft         |Código personalizado, soluções da estrutura do SharePoint         |[CDN do Microsoft Azure](https://azure.microsoft.com/documentation/services/cdn/)         |
-|CDN do Microsoft AJAX (somente leitura)     |Microsoft         |Bibliotecas comuns para AJAX, jQuery, ASP.NET, Bootstrap, Knockout. js, etc.         |[CDN do Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
+|CDN do Microsoft AJAX (somente leitura)     |Microsoft         |Bibliotecas comuns para AJAX, jQuery, ASP.NET, Bootstrap, Knockout.js, etc.         |[CDN do Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview)         |
 
 ## <a name="what-performance-gains-does-a-cdn-provide"></a>Quais ganhos de desempenho uma CDN oferece?
 
-Há muitos fatores envolvidos na medição de diferenças específicas de desempenho entre os dados baixados diretamente do Office 365 e os dados baixados de uma CDN específica, como seu local em relação ao locatário e ao ponto de extremidade da CDN mais próximo, o número de ativos em uma página que são atendidos pela CDN e alterações transitórias na largura de banda e latência da rede. No entanto, um teste A/B simples pode ajudar a mostrar a diferença no tempo de download para um arquivo específico.
+Há muitos fatores envolvidos na medição de diferenças específicas de desempenho entre os dados baixados diretamente do Office 365 e os dados baixados de uma CDN específica, como seu local em relação ao seu locatário e ao ponto de extremidade da CDN mais próximo, o número de ativos em uma página que são atendidos pela CDN e alterações transitórias na latência e largura de banda da rede. No entanto, um teste A/B simples pode ajudar a mostrar a diferença no tempo de download para um arquivo específico.
 
 As capturas de tela a seguir ilustram a diferença na velocidade de download entre o local do arquivo nativo no Office 365 e o mesmo arquivo hospedado na [rede de distribuição de conteúdo do Microsoft Ajax](https://docs.microsoft.com/aspnet/ajax/cdn/overview). Essas capturas de tela são da guia **rede** nas ferramentas de desenvolvedor do Internet Explorer 11. Essas capturas de tela mostram a latência na biblioteca popular jQuery. Para exibir essa tela, no Internet Explorer, pressione **F12** e selecione a guia **rede** que é simbolizada com um ícone de Wi-Fi.
   

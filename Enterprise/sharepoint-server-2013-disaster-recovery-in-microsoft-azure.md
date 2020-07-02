@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Resumo: usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como criar e implementar esta solução.'
-ms.openlocfilehash: d448ae31c31238f1cf5ef97ff79e6ec97fda60a1
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793704"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998163"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de desastres do SharePoint Server 2013 no Microsoft Azure
 
- **Resumo:** Usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm local do SharePoint. Este artigo descreve como criar e implementar esta solução.
+ Usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm local do SharePoint. Este artigo descreve como criar e implementar esta solução.
 
  **Assista ao vídeo visão geral da recuperação de desastre do SharePoint Server 2013**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
@@ -385,7 +385,7 @@ where prm.primary_database in ( ' + @PriDB + ' )')
 
 ### <a name="restore-the-backups"></a>Restaurar os backups
 
-Os backups devem ser restaurados na ordem em que foram criados. Antes de poder restaurar um backup de log de transação específico, primeiro você deve restaurar os seguintes backups anteriores sem reverter transações não confirmadas (ou `WITH NORECOVERY`seja, usando):
+Os backups devem ser restaurados na ordem em que foram criados. Antes de poder restaurar um backup de log de transação específico, primeiro você deve restaurar os seguintes backups anteriores sem reverter transações não confirmadas (ou seja, usando `WITH NORECOVERY` ):
   
 - O backup completo do banco de dados e o último backup diferencial – restaura esses backups, se houver algum, antes do backup de log de transação específico. Antes do backup do banco de dados completo ou diferencial mais recente ter sido criado, o banco de dados estava usando o modelo de recuperação completa ou o modelo de recuperação de log em massa.
     
@@ -401,15 +401,15 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > Quando você usa o T-SQL explicitamente, especifique **WITH NORECOVERY** ou **with Recovery** em cada instrução RESTORE para eliminar ambigüidade — isso é muito importante ao escrever scripts. Após a restauração dos backups completos e diferenciais, os logs de transações podem ser restaurados no SQL Server Management Studio. Além disso, como o envio de logs já foi interrompido, o banco de dados de conteúdo está em um estado de espera, portanto, você deve alterar o estado para acesso total.
   
-No SQL Server Management Studio, clique com o botão direito do mouse no banco de dados do **WSS_Content** , aponte para**restauração**de **tarefas** > e clique em **log de transações** (se você não tiver restaurado o backup completo, isso não estará disponível). Para obter mais informações, consulte[Restore a Transaction log backup (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+No SQL Server Management Studio, clique com o botão direito do mouse no banco de dados do **WSS_Content** , aponte para restauração de **tarefas**  >  **Restore**e clique em **log de transações** (se você não tiver restaurado o backup completo, isso não estará disponível). Para obter mais informações, consulte[Restore a Transaction log backup (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
   
 ### <a name="crawl-the-content-source"></a>Rastrear a fonte de conteúdo
 
-Você deve iniciar um rastreamento completo para cada fonte de conteúdo para restaurar o serviço de pesquisa. Observe que você perde algumas informações de análise do farm local, como recomendações de pesquisa. Antes de iniciar os rastreamentos completos, use o cmdlet **Restore-SPEnterpriseSearchServiceApplication** do Windows PowerShell e especifique o banco de dados de administração de pesquisa enviado e replicado, **Search_Service__DB_<GUID>**. Este cmdlet fornece a configuração de pesquisa, o esquema, as propriedades gerenciadas, as regras e as fontes e cria um conjunto padrão de outros componentes.
+Você deve iniciar um rastreamento completo para cada fonte de conteúdo para restaurar o serviço de pesquisa. Observe que você perde algumas informações de análise do farm local, como recomendações de pesquisa. Antes de iniciar os rastreamentos completos, use o cmdlet **Restore-SPEnterpriseSearchServiceApplication** do Windows PowerShell e especifique o banco de dados de administração de pesquisa enviado e replicado, **Search_Service__DB_ <GUID> **. Este cmdlet fornece a configuração de pesquisa, o esquema, as propriedades gerenciadas, as regras e as fontes e cria um conjunto padrão de outros componentes.
   
 Para iniciar um rastreamento completo, conclua as seguintes etapas:
   
-1. Na administração central do SharePoint 2013, vá para **Application Management** > **aplicativos** > de serviço de gerenciamento de aplicativos**gerenciar aplicativos de serviço**e clique no aplicativo de serviço de pesquisa que você deseja rastrear.
+1. Na administração central do SharePoint 2013, vá para aplicativos de serviço de **Gerenciamento de aplicativos**  >  **Service Applications**  >  **gerenciar aplicativos de serviço**e clique no aplicativo de serviço de pesquisa que você deseja rastrear.
     
 2. Na página **Administração da pesquisa** , clique em **fontes de conteúdo**, aponte para a fonte de conteúdo que você deseja, clique na seta e, em seguida, clique em **Iniciar rastreamento completo**.
     
@@ -424,13 +424,13 @@ A tabela a seguir mostra como recuperar serviços que têm bancos de dados envia
 
 |**Restaurar esses serviços dos bancos de dados enviados por log**|**Esses serviços têm bancos de dados, mas recomendamos que você inicie esses serviços sem restaurar os bancos de dados**|**Esses serviços não armazenam dados em bancos de dados; iniciar esses serviços após o failover**|
 |:-----|:-----|:-----|
-| Serviço de Tradução Automática <br/>  Serviço de Metadados Gerenciados <br/>  Serviço de Repositório Seguro <br/>  Perfil de usuário. (Apenas o perfil e os bancos de dados de marcação social têm suporte. Não há suporte para o banco de dados de sincronização.) <br/>  Serviço de Configurações de Assinatura do Microsoft SharePoint Foundation <br/> | Coleta de Dados de Uso e Integridade <br/>  Serviço de Controle de Sessão <br/>  Automação do Word <br/> | Serviços do Excel <br/>  Serviços do PerformancePoint <br/>  Conversão do PowerPoint <br/>  Serviço de Gráficos do Visio <br/>  Gerenciamento de Trabalho <br/> |
+| Serviço de Tradução Automática <br/>  Serviço de Metadados Gerenciados <br/>  Serviço de Repositório Seguro <br/>  Perfil de usuário. (Apenas o perfil e os bancos de dados de marcação social têm suporte. Não há suporte para o banco de dados de sincronização.) <br/>  Serviço de Configurações de Assinatura do Microsoft SharePoint Foundation <br/> | Coleta de Dados de Uso e Integridade <br/>  Serviço de Controle de Sessão <br/>  Automação do Word <br/> | Serviços do Excel <br/>  Serviços do PerformancePoint <br/>  Conversão do PowerPoint <br/>  Serviço de Gráfico do Visio <br/>  Gerenciamento de Trabalho <br/> |
    
 O exemplo a seguir mostra como restaurar o serviço de metadados gerenciados a partir de um banco de dados.
   
 Isso usa o banco de dados Managed_Metadata_DB existente. Este banco de dados é enviado por log, mas não há nenhum aplicativo de serviço ativo no farm secundário, portanto, ele precisa ser conectado depois que o aplicativo de serviço está no local.
   
-Primeiro, use `New-SPMetadataServiceApplication`e especifique a `DatabaseName` opção com o nome do banco de dados restaurado.
+Primeiro, use `New-SPMetadataServiceApplication` e especifique a `DatabaseName` opção com o nome do banco de dados restaurado.
   
 Em seguida, configure o novo aplicativo de serviço de metadados gerenciados no servidor secundário, da seguinte maneira:
   
@@ -448,9 +448,9 @@ Você deve criar manualmente registros DNS para apontar para seu farm do SharePo
   
 Na maioria dos casos em que você tem vários servidores Web front-end, faz sentido aproveitar o recurso de balanceamento de carga de rede no Windows Server 2012 ou um balanceador de carga de hardware para distribuir solicitações entre os servidores Web-front-end em seu farm. O balanceamento de carga de rede também pode ajudar a reduzir o risco por meio da distribuição de solicitações para outros servidores se um dos servidores Web-front-end falhar. 
   
-Normalmente, quando você configura o balanceamento de carga de rede, seu cluster recebe um único endereço IP. Em seguida, crie um registro de host DNS no provedor de DNS para sua rede que aponte para o cluster. (Para este projeto, colocamos um servidor DNS no Azure para resiliência em caso de uma falha no datacenter local.) Por exemplo, você pode criar um registro DNS, no Gerenciador DNS no Active Directory, por exemplo, chamado `https://sharepoint.contoso.com`, que aponta para o endereço IP do seu cluster com balanceamento de carga.
+Normalmente, quando você configura o balanceamento de carga de rede, seu cluster recebe um único endereço IP. Em seguida, crie um registro de host DNS no provedor de DNS para sua rede que aponte para o cluster. (Para este projeto, colocamos um servidor DNS no Azure para resiliência em caso de uma falha no datacenter local.) Por exemplo, você pode criar um registro DNS, no Gerenciador DNS no Active Directory, por exemplo, chamado `https://sharepoint.contoso.com` , que aponta para o endereço IP do seu cluster com balanceamento de carga.
   
-Para acesso externo ao seu farm do SharePoint, você pode criar um registro de host em um servidor DNS externo com a mesma URL que os clientes usam na sua intranet ( `https://sharepoint.contoso.com`por exemplo,) que aponta para um endereço IP externo em seu firewall. (Uma prática recomendada, usando esse exemplo, é configurar o DNS dividido para que o servidor DNS interno seja autoritativo `contoso.com` e roteia as solicitações diretamente para o cluster de farm do SharePoint, em vez de rotear as solicitações de DNS para seu servidor de DNS externo). Em seguida, você pode mapear o endereço IP externo para o endereço IP interno do seu cluster local para que os clientes encontrem os recursos que estão procurando.
+Para acesso externo ao seu farm do SharePoint, você pode criar um registro de host em um servidor DNS externo com a mesma URL que os clientes usam na sua intranet (por exemplo, `https://sharepoint.contoso.com` ) que aponta para um endereço IP externo em seu firewall. (Uma prática recomendada, usando esse exemplo, é configurar o DNS dividido para que o servidor DNS interno seja autoritativo `contoso.com` e roteia as solicitações diretamente para o cluster de farm do SharePoint, em vez de rotear as solicitações de DNS para seu servidor de DNS externo). Em seguida, você pode mapear o endereço IP externo para o endereço IP interno do seu cluster local para que os clientes encontrem os recursos que estão procurando.
   
 A partir daqui, você pode ter alguns cenários diferentes de recuperação de desastres:
   
@@ -458,7 +458,7 @@ A partir daqui, você pode ter alguns cenários diferentes de recuperação de d
   
  **Cenário de exemplo: o datacenter local é perdido completamente.** Esse cenário pode ocorrer devido a um desastre natural, como fogo ou inundação. Nesse caso, para uma empresa, provavelmente você terá um datacenter secundário hospedado em outra região, bem como sua sub-rede do Azure que tenha seus próprios serviços de diretório e DNS. Como no cenário de desastre anterior, você pode redirecionar seus registros DNS internos e externos para apontar para o farm do Azure SharePoint. Novamente, observe que a propagação do registro DNS pode levar algum tempo.
   
-Se você estiver usando conjuntos de sites nomeados por host, conforme recomendado em [implantação e arquitetura de conjunto de sites nomeados por host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), você pode ter vários conjuntos de sites hospedados pelo mesmo aplicativo Web no seu farm do SharePoint, com `https://sales.contoso.com` nomes `https://marketing.contoso.com`DNS exclusivos (por exemplo, e). Nesse caso, você pode criar registros DNS para cada conjunto de sites que apontem para o endereço IP do cluster. Depois que uma solicitação alcança seus servidores Web-front-end do SharePoint, elas tratam de roteamento de cada solicitação para o conjunto de sites apropriado.
+Se você estiver usando conjuntos de sites nomeados por host, conforme recomendado em [implantação e arquitetura de conjunto de sites nomeados por host (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment), você pode ter vários conjuntos de sites hospedados pelo mesmo aplicativo Web no seu farm do SharePoint, com nomes DNS exclusivos (por exemplo, `https://sales.contoso.com` e `https://marketing.contoso.com` ). Nesse caso, você pode criar registros DNS para cada conjunto de sites que apontem para o endereço IP do cluster. Depois que uma solicitação alcança seus servidores Web-front-end do SharePoint, elas tratam de roteamento de cada solicitação para o conjunto de sites apropriado.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Ambiente de verificação de conceito da Microsoft
 
@@ -483,9 +483,9 @@ A tabela a seguir descreve as configurações de unidade para as máquinas virtu
 
 |**Letra da unidade**|**Tamanho**|**Nome do diretório**|**Path**|
 |:-----|:-----|:-----|:-----|
-|C  <br/> |80  <br/> |Unidade do sistema  <br/> |<DriveLetter>:\\Arquivos\\de programas Microsoft SQL Server\\  <br/> |
-|E  <br/> |80  <br/> |Unidade de log (40 GB)  <br/> |<DriveLetter>:\\Arquivos\\de programa do Microsoft\\SQL Server MSSQL10_50\\.\\MSSQLSERVER MSSQL Data  <br/> |
-|S  <br/> |80  <br/> |Página (36 GB)  <br/> |<DriveLetter>:\\Arquivos\\de programa dados do\\Microsoft\\SQL Server MSSQL  <br/> |
+|C  <br/> |80  <br/> |Unidade do sistema  <br/> |<DriveLetter>: \\ Arquivos de programas \\ Microsoft SQL Server\\  <br/> |
+|E  <br/> |80  <br/> |Unidade de log (40 GB)  <br/> |<DriveLetter>: \\ Arquivos de programa \\ do Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ Data  <br/> |
+|S  <br/> |80  <br/> |Página (36 GB)  <br/> |<DriveLetter>: \\ Arquivos de programa \\ dados do Microsoft SQL Server \\ MSSQL \\  <br/> |
    
 A tabela a seguir descreve as configurações de unidade para as máquinas virtuais do Hyper-V criadas e configuradas para servir como os servidores de banco de dados local. Na página **configuração do mecanismo de banco** de dados, acesse a guia **diretórios de dados** para definir e confirmar as configurações mostradas na tabela a seguir.
   
@@ -493,11 +493,11 @@ A tabela a seguir descreve as configurações de unidade para as máquinas virtu
 
 |**Letra da unidade**|**Tamanho**|**Nome do diretório**|**Path**|
 |:-----|:-----|:-----|:-----|
-|C  <br/> |80  <br/> |Diretório raiz de dados  <br/> |<DriveLetter>:\\Arquivos\\de programas Microsoft SQL Server\\  <br/> |
-|E  <br/> |500  <br/> |Diretório do banco de dados do usuário  <br/> |<DriveLetter>:\\Arquivos\\de programa do Microsoft\\SQL Server MSSQL10_50\\.\\MSSQLSERVER MSSQL Data  <br/> |
-|S  <br/> |500  <br/> |Diretório de log do banco de dados do usuário  <br/> |<DriveLetter>:\\Arquivos\\de programa do Microsoft\\SQL Server MSSQL10_50\\.\\MSSQLSERVER MSSQL Data  <br/> |
-|G  <br/> |500  <br/> |Diretório Temp DB  <br/> |<DriveLetter>:\\Arquivos\\de programa do Microsoft\\SQL Server MSSQL10_50\\.\\MSSQLSERVER MSSQL Data  <br/> |
-|H  <br/> |500  <br/> |Diretório de log do banco de BD Temp  <br/> |<DriveLetter>:\\Arquivos\\de programa do Microsoft\\SQL Server MSSQL10_50\\.\\MSSQLSERVER MSSQL Data  <br/> |
+|C  <br/> |80  <br/> |Diretório raiz de dados  <br/> |<DriveLetter>: \\ Arquivos de programas \\ Microsoft SQL Server\\  <br/> |
+|E  <br/> |500  <br/> |Diretório do banco de dados do usuário  <br/> |<DriveLetter>: \\ Arquivos de programa \\ do Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ Data  <br/> |
+|S  <br/> |500  <br/> |Diretório de log do banco de dados do usuário  <br/> |<DriveLetter>: \\ Arquivos de programa \\ do Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ Data  <br/> |
+|G  <br/> |500  <br/> |Diretório Temp DB  <br/> |<DriveLetter>: \\ Arquivos de programa \\ do Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ Data  <br/> |
+|H  <br/> |500  <br/> |Diretório de log do banco de BD Temp  <br/> |<DriveLetter>: \\ Arquivos de programa \\ do Microsoft SQL Server \\ MSSQL10_50. MSSQLSERVER \\ MSSQL \\ Data  <br/> |
    
 ### <a name="setting-up-the-test-environment"></a>Configurando o ambiente de teste
 
@@ -538,7 +538,7 @@ Criamos o farm e ingressamos em servidores adicionais na seguinte ordem:
     
 - Provisionar SP-WFE1 e SP-WFE2 para hospedar o cache distribuído. 
     
-Usamos o parâmetro _skipRegisterAsDistributedCachehost_ quando executamos o **psconfig. exe** na linha de comando. Para obter mais informações, consulte [Plan for feeds and the Distributed cache Service in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+Usamos o parâmetro _skipRegisterAsDistributedCachehost_ quando executamos **psconfig.exe** na linha de comando. Para obter mais informações, consulte [Plan for feeds and the Distributed cache Service in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 Repetimos as seguintes etapas no ambiente de recuperação:
   
@@ -556,7 +556,7 @@ A tabela a seguir descreve as máquinas virtuais, as sub-redes e os conjuntos de
   
 **Tabela: infraestrutura de farm de recuperação**
 
-|**Nome do servidor**|**Função**|**Configuração**|**-**|**Conjunto de disponibilidade**|
+|**Nome do servidor**|**Função**|**Configuração**|**Sub-rede**|**Conjunto de disponibilidade**|
 |:-----|:-----|:-----|:-----|:-----|
 |spDRAD  <br/> |Controlador de domínio com Active Directory  <br/> |Dois processadores  <br/> De 512 MB a 4 GB de RAM  <br/> 1 disco rígido de 127 GB  <br/> |SP-ADservers  <br/> ||
 |AZ-SP-FS  <br/> |Servidor de arquivos com compartilhamentos para backups e um ponto de extremidade para DFSR  <br/> | Configuração de a5: <br/>  Dois processadores <br/>  14 GB de RAM <br/>  1 disco rígido de 127 GB <br/>  1 disco rígido de 135 GB <br/>  1 disco rígido de 127 GB <br/>  1 disco rígido de 150 GB <br/> |SP-databaseservers  <br/> |DATA_SET  <br/> |
@@ -564,7 +564,7 @@ A tabela a seguir descreve as máquinas virtuais, as sub-redes e os conjuntos de
 |AZ-APP1, AZ-APP2, AZ-APP3  <br/> |Servidores de aplicativos  <br/> | Configuração de a5: <br/>  Dois processadores <br/>  14 GB de RAM <br/>  1 disco rígido de 127 GB <br/> |SP-ApplicationServers  <br/> |APP_SET  <br/> |
 |AZ-SQL-HA1, AZ-SQL-HA2  <br/> |Servidores de banco de dados e réplicas primárias e secundárias para grupos de disponibilidade AlwaysOn  <br/> | Configuração de a5: <br/>  Dois processadores <br/>  14 GB de RAM <br/> |SP-databaseservers  <br/> |DATA_SET  <br/> |
    
-### <a name="operations"></a>Operações
+### <a name="operations"></a>Operations
 
 Depois que a equipe de teste estabilize os ambientes de farm e os testes funcionais concluídos, eles iniciaram as seguintes tarefas de operações necessárias para configurar o ambiente de recuperação local:
   
@@ -602,7 +602,7 @@ Certifique-se de que a conta de pool de aplicativos usada pelo aplicativo Web te
   
 ### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>Os conjuntos de termos personalizados não estão disponíveis no conjunto de sites
 
-Verifique se há uma associação de aplicativo de serviço ausente entre seu conjunto de sites de conteúdo e seu hub de tipo de conteúdo. Além disso, na tela de propriedades de **metadados gerenciados <site collection name> -conexão** , certifique-se de que essa opção está habilitada: **este aplicativo de serviço é o local de armazenamento padrão para conjuntos de termos específicos de coluna.**
+Verifique se há uma associação de aplicativo de serviço ausente entre seu conjunto de sites de conteúdo e seu hub de tipo de conteúdo. Além disso, na tela de propriedades de **metadados gerenciados- <site collection name> conexão** , certifique-se de que essa opção está habilitada: **este aplicativo de serviço é o local de armazenamento padrão para conjuntos de termos específicos de coluna.**
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>O comando Get-ADForest do Windows PowerShell gera o erro "o termo ' Get-ADForest ' não é reconhecido como o nome de um cmdlet, uma função, um arquivo de script ou um programa operável."
 
@@ -614,7 +614,7 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>A criação do grupo de disponibilidade falha ao iniciar a sessão ' AlwaysOn_health '<server name>XEvent em ' '
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>A criação do grupo de disponibilidade falha ao iniciar a sessão ' AlwaysOn_health ' XEvent em ' <server name> '
 
 Certifique-se de que ambos os nós do seu cluster de failover estejam no status "up" e não "pausado" ou "interrompido". 
   

@@ -1,7 +1,7 @@
 ---
-title: Exclusão de dados do Exchange Online do Office 365
-ms.author: robmazz
-author: robmazz
+title: Exclusão de dados do Exchange Online da Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como as exclusões de dados suaves e difíceis são tratadas no Exchange Online.
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843632"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998315"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Exclusão de dados do Exchange Online no Office 365
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Exclusão de dados do Exchange Online no Microsoft 365
+
 No Exchange Online, há dois tipos de exclusões: exclusões suaves e exclusões graves. Isso se aplica a caixas de correio e itens em uma caixa de correio.
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>Caixas de correio excluídas de forma reversível e excluída

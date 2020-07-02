@@ -1,7 +1,7 @@
 ---
-title: Exclusão de dados do SharePoint Online para o Office 365
-ms.author: robmazz
-author: robmazz
+title: Exclusão de dados do SharePoint Online da Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Uma explicação da exclusão de dados no SharePoint Online.
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842038"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997811"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Exclusão de dados do SharePoint Online no Office 365
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Exclusão de dados do SharePoint Online no Microsoft 365
 
 O SharePoint Online armazena objetos como código abstrato em bancos de dados de aplicativos. Quando um usuário carrega um arquivo no SharePoint Online, esse arquivo é desmontado e traduzido no código do aplicativo e armazenado em várias tabelas em vários bancos de dados. No SharePoint Online, todo o conteúdo que um cliente carrega é dividido em partes, criptografadas (potencialmente com várias chaves AES de 256 bits) e distribuídas no datacenter. Para obter detalhes específicos sobre o processo de fragmentação e criptografia, consulte [Encryption in the Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
@@ -40,6 +40,6 @@ Ao excluir um conjunto de sites, você também está excluindo a hierarquia de s
 
 Se você excluir acidentalmente um conjunto de sites, ele poderá ser restaurado por um administrador global ou do SharePoint usando o centro de administração do SharePoint.
 
-Os conjuntos de sites excluídos são mantidos por 93 dias. Após 93 dias, sites e todos os seus conteúdos e configurações são excluídos permanentemente, incluindo listas, bibliotecas, páginas e subsites.
+Os conjuntos de sites excluídos são mantidos por 93 dias. Após 93 dias, sites e todo o conteúdo e as configurações serão excluídos permanentemente, incluindo listas, bibliotecas, páginas e subsites.
 
 A exclusão fixa ocorre quando um usuário limpa itens excluídos da lixeira do conjunto de sites, quando os períodos de retenção e backup expiram ou quando um administrador exclui permanentemente um conjunto de sites usando o [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Quando um usuário exclui (permanentemente exclui ou limpa) o conteúdo do SharePoint Online, todas as chaves de criptografia dos blocos excluídos também são excluídas. Os blocos nos discos que armazenaram anteriormente os fragmentos excluídos são marcados como não usados e estão disponíveis para reutilização.

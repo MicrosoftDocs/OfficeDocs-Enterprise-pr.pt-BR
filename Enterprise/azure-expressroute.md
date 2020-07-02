@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365.
-ms.openlocfilehash: cf280ff386893f98844e5653ceed180339f701a6
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009356"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997945"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Rota Expressa do Azure para Office 365
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365. Os serviços de infraestrutura e plataforma em execução no Azure geralmente se beneficiam com a abordagem de desempenho e arquitetura da rede. Recomendamos o ExpressRoute para o Azure nesses casos. Software como uma oferta de serviço como o Office 365 e o Dynamics 365 foram criados para serem acessados com segurança e confiança através da Internet. Você pode ler sobre o desempenho e a segurança da Internet e quando você pode considerar o Azure ExpressRoute para Office 365 no artigo [avaliando a conectividade de rede do Office 365](assessing-network-connectivity.md).
 
@@ -124,6 +124,6 @@ Pronto para se inscrever no [ExpressRoute para o Office 365](https://aka.ms/ert)
 
 [Rede do Office 365 e ajuste de desempenho](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

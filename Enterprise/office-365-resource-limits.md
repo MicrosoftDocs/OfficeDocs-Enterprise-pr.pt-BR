@@ -1,7 +1,7 @@
 ---
-title: Limites de recursos do Office 365
-ms.author: robmazz
-author: robmazz
+title: Limites de recursos do Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,19 +14,19 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: informações sobre os limites de recursos para os vários aplicativos no Office 365.'
-ms.openlocfilehash: 55fa8d90c6f83c84a1e43f32cf7cd0eeafbf1274
-ms.sourcegitcommit: ed4482ad35274b79d44d0f9a17be3e52d5ad0492
+description: 'Resumo: informações sobre os limites de recursos para os vários aplicativos no Microsoft 365.'
+ms.openlocfilehash: c3f10be1e64cb5d355d319a603cc0c1d2f238dc7
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43666322"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997848"
 ---
 # <a name="resource-limits"></a>Limites de recurso
 
-Os limites de recursos são impostos usando cotas (limites) e limitação. O Azure Active Directory e os serviços individuais do Office 365 usam ambos. Os limites são específicos de serviço e mudam com o tempo à medida que novos recursos são adicionados. Para obter detalhes sobre os limites atuais para os vários serviços, consulte os seguintes tópicos:
+Os limites de recursos são impostos usando cotas (limites) e limitação. O Azure Active Directory (Azure AD) e os serviços individuais da Microsoft 365 usam ambos. Os limites são específicos de serviço e mudam com o tempo à medida que novos recursos são adicionados. Para obter detalhes sobre os limites atuais para os vários serviços, consulte os seguintes tópicos:
 
-- [Limites e restrições de serviços do Active Directory do Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
+- [Limites e restrições do serviço do Azure AD](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Limites do Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx)
 - [Limites do Exchange Online Protection](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)
 - [Limites e limites de software do SharePoint Online](https://support.office.com/article/SharePoint-Online-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)
@@ -34,8 +34,8 @@ Os limites de recursos são impostos usando cotas (limites) e limitação. O Azu
 - [API REST do Yammer e limites de taxa](https://developer.yammer.com/docs/rest-api-rate-limits)
 - [Limites de tamanho de arquivo no Sway](https://support.office.com/article/File-size-limits-in-Sway-4db21bc6-b42b-499f-9272-66e089db109f)
 
-Além desses limites, vários mecanismos de limitação são usados no Azure Active Directory e no Office 365. A limitação do serviço é especialmente importante, Considerando que os recursos de rede nos datacenters da Microsoft são otimizados para o amplo conjunto de clientes que usam os serviços. Os mecanismos de limitação incluem:
+Além desses limites, vários mecanismos de limitação são usados no Azure AD e no Microsoft 365. A limitação do serviço é especialmente importante, Considerando que os recursos de rede nos datacenters da Microsoft são otimizados para o amplo conjunto de clientes que usam os serviços. Os mecanismos de limitação incluem:
 
-- O Azure Active Directory e o Office 365 recurso de limitação de nível de usuário, que limitam o número de transações ou chamadas simultâneas (por script ou código) que podem ser realizadas por um único usuário.
+- O Azure AD e o Microsoft 365 recurso de limitação de nível de usuário, que limitam o número de transações ou chamadas simultâneas (por script ou código) que podem ser realizadas por um único usuário.
 - Uma política padrão de limitação do PowerShell é atribuída a cada locatário na criação de locatário. Essas configurações afetam outros itens, como o número máximo de sessões simultâneas do PowerShell que podem ser abertas por um único administrador.
 - Cada cliente do Exchange Online tem uma política de serviços Web do Exchange (EWS) padrão ajustada para operações do cliente EWS e limitação que se aplica a todos os clientes do Outlook.

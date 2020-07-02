@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 'Resumo: use estes artigos para implantar soluções de segurança com ofertas da nuvem da Microsoft.'
-ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: cc32383a2a8e9d0849e68bf7305b19edb067cb11
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711824"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998173"
 ---
 # <a name="security-solutions"></a>Soluções de segurança
 
- **Resumo:** use estes artigos para implantar soluções de segurança com ofertas da nuvem da Microsoft.
-  
 Aqui estão soluções para acesso seguro, colaboração e dados com o Microsoft Office 365, o Microsoft Azure, o Microsoft Dynamics 365 e o pacote Microsoft Enterprise Mobility + Security (EMS):
 
 - [Proteção de Informações do Office 365 para o RGPD](office-365-information-protection-for-gdpr.md)

@@ -1,7 +1,7 @@
 ---
-title: Isolamento de locatário do Office 365 no Office 365 Search
-ms.author: robmazz
-author: robmazz
+title: Isolamento de locatário no Microsoft 365 Search
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: uma explicação do isolamento de locatário na pesquisa do Office 365.'
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: uma explicação do isolamento de locatário na pesquisa do Microsoft 365.'
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844412"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998251"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Isolamento de locatário na pesquisa do Office 365
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Isolamento de locatário no Microsoft 365 Search
 
 A pesquisa do SharePoint Online usa um modelo de separação de locatários que equilibra a eficiência de estruturas de dados compartilhadas com proteção contra vazamento de informações entre locatários. Com esse modelo, impedimos os recursos de pesquisa de:
 
@@ -56,7 +56,7 @@ A prefixação de termos de ID de locatário ocorre somente no índice de texto 
 
 A pesquisa controla o acesso a documentos por meio de ACLs salvas no índice de pesquisa. Cada item é indexado com um conjunto de termos em um campo de ACL especial. O campo ACL contém um termo por grupo ou usuário que pode exibir o documento. Cada consulta é aumentada com uma lista de termos de ACE (entrada de controle de acesso), uma para cada grupo ao qual o usuário autenticado pertence.
 
-Por exemplo, uma consulta como "<*guid*>. *foo e tenantid*: <*GUID*> "torna-se:" <> *GUID* . *foo e tenantid*: <*GUID*> *e* (*docacls:*<*ACE1*> *ou docacls*: <*ACE2*> *ou docacls*: <*ace3*> *...*) "
+Por exemplo, uma consulta como "<*guid*>. *foo e tenantid*: <*GUID*> "torna-se:" <> *GUID* . *foo e tenantid*: <*GUID* >  *e* (*docacls:* < *ACE1* >  *ou docacls*: <*ACE2* >  *ou docacls*: <*ace3* >  *...*) "
 
 Como os identificadores de usuário e de grupo e as ACEs são exclusivos, isso fornece um nível extra de segurança entre os locatários para documentos que são visíveis apenas para alguns usuários. O mesmo é o caso da ACE especial "todos exceto usuários externos" que concede acesso a usuários regulares no locatário. No entanto, como as ACEs de "todos" são as mesmas para todos os locatários, a separação de locatários para documentos públicos depende da filtragem da ID do locatário. As ACEs de negação também são suportadas. O aumento da consulta adiciona uma cláusula que remove um documento do resultado quando há uma correspondência com uma ACE de negação.
 

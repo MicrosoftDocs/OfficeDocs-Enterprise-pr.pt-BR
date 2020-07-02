@@ -1,7 +1,7 @@
 ---
-title: Limites de locatário de monitoramento e teste do Office 365
-ms.author: robmazz
-author: robmazz
+title: Limites de locatário de monitoramento e teste do Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,43 +14,43 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: uma explicação de como a Microsoft monitora e testa os limites de locatário do Office 365.'
-ms.openlocfilehash: 757e80296e63e5379474448c0d89763371472aa2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: uma explicação de como a Microsoft monitora e testa os limites do locatário para o Microsoft 365.'
+ms.openlocfilehash: 4511b7cce47cdad76cdcce89dcd6f9d14a7f0a4b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842628"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998650"
 ---
 # <a name="monitoring-and-testing-tenant-boundaries"></a>Monitorando e testando limites do locatário
 
 A Microsoft monitora continuamente e testa explicitamente os pontos fracos e as vulnerabilidades nos limites do locatário, incluindo o monitoramento de invasão, tentativas de violação de permissão e consumo de recursos. Também usamos vários sistemas internos para monitorar continuamente a utilização inadequada dos recursos, o que, se for detectado, acionará a limitação interna.
 
-O Office 365 tem sistemas de monitoramento internos que monitoram continuamente qualquer falha e orientam a recuperação automatizada quando uma falha é detectada. Os sistemas do Office 365 analisam desvios no comportamento do serviço e iniciam processos de auto-recuperação incorporados no sistema. O Office 365 também usa monitoramento externo no qual o monitoramento é realizado de vários locais, a partir de serviços confiáveis de terceiros (para verificação de SLA independente) e nossos próprios datacenters para gerar alertas. Para diagnósticos, temos logs extensivos, auditoria e rastreamento. Rastreamento e monitoramento granulares nos ajuda a isolar problemas e realizar análise rápida e eficaz de causa raiz.
+O Microsoft 365 tem sistemas de monitoramento internos que monitoram continuamente qualquer falha e orientam a recuperação automatizada quando uma falha é detectada. Os sistemas Microsoft 365 analisam desvios no comportamento do serviço e iniciam processos de auto-recuperação internos que estão incorporados ao sistema. O Microsoft 365 também usa o monitoramento externo no qual o monitoramento é realizado de vários locais, tanto de serviços confiáveis de terceiros (para verificação de SLA independente) e de nossos próprios datacenters para gerar alertas. Para diagnósticos, temos logs extensivos, auditoria e rastreamento. Rastreamento e monitoramento granulares nos ajuda a isolar problemas e realizar análise rápida e eficaz de causa raiz.
 
-Embora o Office 365 tenha ações de recuperação automatizadas, sempre que possível, os engenheiros de chamada da Microsoft estão disponíveis 24x7 para investigar todos os escalonamentos de segurança de gravidade 1, e as revisões post-mortem de cada incidente de serviço contribui para o aprendizado contínuo e avanço. Essa equipe inclui engenheiros de suporte, desenvolvedores de produtos, gerentes de programas, gerentes de produtos e liderança sênior. Nossos profissionais on-Call fornecem um backup oportuno e muitas vezes podem automatizar as ações de recuperação, para que, na próxima vez que um evento ocorra, ele possa ser reparado automaticamente.
+Embora o Microsoft 365 tenha ações de recuperação automatizadas, sempre que possível, os engenheiros de chamada da Microsoft estão disponíveis 24x7 para investigar todos os escalonamentos de segurança de gravidade 1, e as revisões post-mortem de cada incidente de serviço contribui para o aprendizado e aprimoramento contínuos. Essa equipe inclui engenheiros de suporte, desenvolvedores de produtos, gerentes de programas, gerentes de produtos e liderança sênior. Nossos profissionais on-Call fornecem um backup oportuno e muitas vezes podem automatizar as ações de recuperação, para que, na próxima vez que um evento ocorra, ele possa ser reparado automaticamente.
 
-A Microsoft executa uma revisão completa de incidentes cada vez que um incidente de segurança do Office 365 ocorre independentemente da magnitude do impacto. Uma revisão pós-incidente consiste em uma análise do que aconteceu, como respondemos e como impedimos incidentes semelhantes no futuro. No interesse da transparência e da responsabilidade, compartilhamos a análise de pós-incidente para qualquer incidente de serviço importante com clientes afetados. Para obter detalhes específicos, confira o [Gerenciamento de incidentes de segurança do Office 365](https://aka.ms/Office365SIM).
+A Microsoft executa uma revisão completa de incidentes a cada vez que um incidente de segurança do Microsoft 365 ocorre independentemente da magnitude do impacto. Uma revisão pós-incidente consiste em uma análise do que aconteceu, como respondemos e como impedimos incidentes semelhantes no futuro. No interesse da transparência e da responsabilidade, compartilhamos a análise de pós-incidente para qualquer incidente de serviço importante com clientes afetados. Para obter detalhes específicos, confira o [Gerenciamento de incidentes de segurança do Office 365](https://aka.ms/Office365SIM).
 
 ## <a name="assume-breach-methodology"></a>Supor metodologia de violação
 
-Com base na análise detalhada de tendências de segurança, a Microsoft defende e destaca a necessidade de investimentos adicionais em processos de segurança reativas e tecnologias que se concentram na detecção e resposta a ameaças emergentes, em vez de apenas a prevenção de essas ameaças. Devido às alterações no panorama de ameaças e na análise detalhada, a Microsoft refinou sua estratégia de segurança para além de evitar brechas de segurança para uma melhor maneira de lidar com violações quando ocorrerem: uma estratégia que considera os principais eventos de segurança não como uma questão de If, mas quando.
+Com base na análise detalhada de tendências de segurança, a Microsoft defende e destaca a necessidade de investimentos adicionais em processos de segurança reativos e tecnologias que se concentram na detecção e resposta a ameaças emergentes, em vez de apenas a prevenção dessas ameaças. Devido às alterações no panorama de ameaças e na análise detalhada, a Microsoft refinou sua estratégia de segurança para além de evitar brechas de segurança para uma melhor maneira de lidar com violações quando ocorrerem, uma estratégia que considera os principais eventos de segurança não como uma questão de If, mas quando.
 
 Embora as práticas de [brechas de pressuposto](https://www.microsoft.com/TrustCenter/Security/default.aspx) da Microsoft tenham sido realizadas por muitos anos, muitos clientes não sabem do trabalho que está sendo feito nos bastidores para reforçar a nuvem da Microsoft. Supor que a violação é um pensamento que orienta os investimentos em segurança, decisões de design e práticas de segurança operacional. Suponha que a violação seja colocada em aplicativos, serviços, identidades e redes, tratando-os de todos eles, internos e externos, como inseguro e que já foram comprometidos. Embora a estratégia de brechas de supor não tenha sido originada de uma violação real de qualquer serviço de nuvem ou de empresa da Microsoft, foi um reconhecimento de que muitas organizações, no setor, estavam sendo violados apesar de todas as tentativas de evitá-lo. Ao mesmo tempo em que evitar violações é uma parte crucial das operações da organização, essas práticas devem ser continuamente testadas e aumentadas para lidar efetivamente com os adversários modernos e ameaças persistentes avançadas. Para qualquer organização preparar-se para uma violação, ela deve primeiro criar e manter procedimentos de resposta de segurança robustos, repetíveis e totalmente testados.
 
 Embora os processos de segurança de violação, como a modelagem de ameaças, as revisões de código e o teste de segurança sejam muito úteis como parte do [ciclo de vida do desenvolvimento da segurança](https://www.microsoft.com/securityengineering/sdl/), supomos que a violação forneça várias vantagens que ajudam a considerar a segurança geral ao exercer e medir recursos reativos no caso de uma violação.
 
-Na Microsoft, definimos para fazer isso por meio de exercícios de jogos de guerra permanentes e testes de penetração no local de nossos planos de resposta de segurança com o objetivo de melhorar nossa capacidade de detecção e resposta. A Microsoft regularamente simula violações do mundo real, realiza o monitoramento contínuo de segurança e o gerenciamento de incidentes de segurança de práticas para validar e aprimorar a segurança do Office 365, Azure e outros serviços de nuvem da Microsoft.
+Na Microsoft, definimos para fazer isso por meio de exercícios de jogos de guerra permanentes e testes de penetração no local de nossos planos de resposta de segurança com o objetivo de melhorar nossa capacidade de detecção e resposta. A Microsoft regularamente simula violações do mundo real, realiza o monitoramento contínuo de segurança e o gerenciamento de incidentes de segurança de práticas para validar e aprimorar a segurança do Microsoft 365, Azure e outros serviços de nuvem da Microsoft.
 
 A Microsoft executa sua estratégia de segurança de brechas usando dois grupos principais:
 - Equipes vermelhas (invasores)
 - Equipes azuis (defensores)
 
-A equipe do Microsoft Azure e do Office 365 separaram equipes vermelhas em tempo integral e equipes azuis.
+O Microsoft Azure e o Microsoft 365 Teams separam equipes vermelha de tempo integral e equipes azuis.
 
-Chamado de "[equipe vermelha](https://go.microsoft.com/fwlink/?linkid=518599)", a abordagem é testar sistemas e operações do Azure e do Office 365 usando a mesma tática, técnicas e procedimentos que os adversários reais, contra a infraestrutura de produção ao vivo, sem o foreknowledge das equipes de engenharia ou operações. Isso testa os recursos de detecção e resposta de segurança da Microsoft e ajuda a identificar vulnerabilidades de produção, erros de configuração, suposições inválidas e outros problemas de segurança de forma controlada. Cada violação de equipe vermelha é seguida pela divulgação completa entre as duas equipes para identificar lacunas, lidar com as descobertas e melhorar a resposta à violação.
+Chamado de "[equipe vermelha](https://go.microsoft.com/fwlink/?linkid=518599)", a abordagem é testar sistemas e operações do Azure e Microsoft 365 usando a mesma tática, técnicas e procedimentos que os adversários reais, contra a infraestrutura de produção ao vivo, sem o foreknowledge das equipes de engenharia ou operações. Isso testa os recursos de detecção e resposta de segurança da Microsoft e ajuda a identificar vulnerabilidades de produção, erros de configuração, suposições inválidas e outros problemas de segurança de forma controlada. Cada violação de equipe vermelha é seguida pela divulgação completa entre as duas equipes para identificar lacunas, lidar com as descobertas e melhorar a resposta à violação.
 
-**Observação**: nenhum dado do cliente é direcionado deliberadamente durante a equipe vermelha ou o teste de penetração do site. Os testes são relacionados à infraestrutura e plataformas do Office 365 e do Azure, bem como aos próprios locatários, aplicativos e dados da Microsoft. Os locatários, aplicativos e conteúdo do cliente hospedados no Office 365 ou no Azure nunca são direcionados.
+**Observação**: nenhum dado do cliente é direcionado deliberadamente durante a equipe vermelha ou o teste de penetração do site. Os testes são relacionados à infraestrutura e plataformas do Microsoft 365 e do Azure, bem como aos próprios locatários, aplicativos e dados da Microsoft. Os locatários, aplicativos e conteúdo do cliente hospedados no Microsoft 365 ou no Azure nunca são direcionados.
 
 ## <a name="red-teams"></a>Equipes vermelhas
 

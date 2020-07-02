@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: O Exchange 2010 está se aproximando do fim do suporte. Use este mapa de planejamento como um guia para preparar a atualização para o Exchange Online ou uma versão mais recente do Exchange Server no local.
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979334"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998039"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2010
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 Em **13 de outubro de 2020**, o Exchange Server 2010 atingirá o fim do suporte. Se você ainda não começou sua migração do Exchange 2010 para o Office 365 ou o Exchange 2016, agora é hora de iniciar o planejamento.
 
@@ -146,8 +146,8 @@ As migrações híbridas completas são melhores para as organizações que espe
 Se você estiver pensando em realizar uma migração híbrida completa, aqui estão alguns pontos a considerar:
 
 - As migrações híbridas completas não são adequadas a todos os tipos de organizações. Devido à complexidade de migrações híbridas completas, as organizações com menos de algumas cem caixas de correio não costumam ver benefícios que justificam o esforço e o custo necessário para definir um. Se isso soa como sua organização, recomendamos enfaticamente que você considere a substituição ou as migrações híbridas mínimas;
-- Você precisará configurar a sincronização de diretório usando o Azure Active Directory Connect (AADConnect) entre seus servidores do Active Directory local e o Office 365;
-- Os usuários poderão fazer logon em sua caixa de correio do Office 365 usando o mesmo nome de usuário e senha que eles usam ao fazer logon na rede local (requer o Azure Active Directory Connect com sincronização de senha e/ou serviços de Federação do Active Directory);
+- Você precisará configurar a sincronização de diretórios usando o Azure Active Directory (Azure AD) se conectar entre seus servidores locais do Active Directory e o Office 365;
+- Os usuários poderão fazer logon em sua caixa de correio do Office 365 usando o mesmo nome de usuário e senha que eles usam ao fazer logon na rede local (requer o Azure AD Connect com sincronização de senha e/ou serviços de Federação do Active Directory);
 - Você precisará de uma licença do Office 365 que inclua o Exchange Online para cada caixa de correio de usuário que você migrar;
 - Os usuários não precisam configurar um novo perfil do Outlook na maioria de seus dispositivos (alguns telefones Android antigos podem precisar de um novo perfil) e não precisam baixar novamente seus emails.
 
@@ -164,7 +164,7 @@ Se uma migração híbrida completa for adequada para você, dê uma olhada nos 
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Atualizar para uma versão mais recente do Exchange Server local
 
-Embora acreditemos que você possa obter o melhor valor e a experiência do usuário migrando totalmente para o Office 365, também entendemos que algumas organizações precisam manter alguns servidores do Exchange locais. Isso pode ter ocorrido por causa dos requisitos normativos, para garantir que os dados não sejam armazenados em um Datacenter localizado em outro país ou que você tenha configurações ou requisitos exclusivos que não podem ser atendidos na nuvem ou pode simplesmente ser que você precise do Exchange para gerenciar caixas de correio em nuvem porque você ainda usa o Active Directory local. Em qualquer caso em que você escolher ou precisar manter o Exchange local, você deve garantir que seu ambiente do Exchange 2010 seja atualizado para pelo menos o Exchange 2013 ou Exchange 2016 e o Exchange 2010 seja removido antes da data de término do suporte.
+Embora acreditemos que você possa obter o melhor valor e a experiência do usuário migrando totalmente para o Office 365, também entendemos que algumas organizações precisam manter alguns servidores do Exchange locais. Isso pode ter ocorrido por causa dos requisitos normativos, para garantir que os dados não sejam armazenados em um Datacenter localizado em outro país ou que você tenha configurações ou requisitos exclusivos que não podem ser atendidos na nuvem, ou pode simplesmente ser que você precise do Exchange para gerenciar caixas de correio na nuvem, pois ainda usa o Active Directory no local. Em qualquer caso em que você escolher ou precisar manter o Exchange local, você deve garantir que seu ambiente do Exchange 2010 seja atualizado para pelo menos o Exchange 2013 ou Exchange 2016 e o Exchange 2010 seja removido antes da data de término do suporte.
 
 Para obter a melhor experiência, recomendamos que você atualize seu ambiente local restante para o Exchange 2016. Você não precisa instalar o Exchange Server 2013 se quiser ir diretamente do Exchange Server 2010 para o Exchange Server 2016.
 

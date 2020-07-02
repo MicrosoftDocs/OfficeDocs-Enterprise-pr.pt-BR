@@ -1,7 +1,7 @@
 ---
-title: Resiliência de dados no Office 365
-ms.author: robmazz
-author: robmazz
+title: Resiliência de dados no Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Entenda a resiliência de dados no Microsoft Office 365.
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Entenda a resiliência de dados no Microsoft Microsoft 365.
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843672"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998465"
 ---
-# <a name="data-resiliency-in-office-365"></a>Resiliência de dados no Office 365
+# <a name="data-resiliency-in-microsoft-365"></a>Resiliência de dados no Microsoft 365
 
 ## <a name="introduction"></a>Introdução
 
@@ -39,9 +39,9 @@ A criação de resiliência e recuperação começa com a suposição de que a i
 
 Atualmente, os clientes esperam uma inovação contínua da Microsoft sem comprometer a qualidade, e essa é uma das razões pelas quais os serviços e software da Microsoft são criados com a resiliência e a capacidade de recuperação em mente. 
 
-## <a name="office-365-data-resiliency-principles"></a>Princípios de resiliência de dados do Office 365
+## <a name="microsoft-365-data-resiliency-principles"></a>Princípios de resiliência de dados do Microsoft 365
 
-Resiliência refere-se à capacidade de um serviço baseado em nuvem de resistir a certos tipos de falhas e ainda permanecer totalmente funcional da perspectiva dos clientes. Resiliência de dados significa que não importa quais falhas ocorram no Office 365, os dados críticos do cliente permanecem intactos e não são afetados. Para esse fim, os serviços do Office 365 foram projetados em torno de cinco princípios de resiliência específicos:
+Resiliência refere-se à capacidade de um serviço baseado em nuvem de resistir a certos tipos de falhas e ainda permanecer totalmente funcional da perspectiva dos clientes. Resiliência de dados significa que não importa quais falhas ocorram no Microsoft 365, os dados críticos do cliente permanecem intactos e não são afetados. Para esse fim, os serviços do Microsoft 365 foram projetados em torno de cinco princípios de resiliência específicos:
 
 - Há dados críticos e não críticos. Dados não críticos (por exemplo, se uma mensagem foi lida) podem ser descartados em situações raras de falha. Dados críticos (por exemplo, dados do cliente, como mensagens de email) devem ser protegidos com custo extremo. Como meta de design, as mensagens de email entregues são sempre críticas, e as coisas como se uma mensagem foi lida não são críticas. 
 - As cópias dos dados dos clientes devem ser separadas em diferentes zonas de falha ou tantos domínios de falha quanto possível (por exemplo, datacenters, acessíveis por credenciais únicas (processo, servidor ou operador)) para fornecer falha no isolamento. 
@@ -49,7 +49,7 @@ Resiliência refere-se à capacidade de um serviço baseado em nuvem de resistir
 - Os dados do cliente devem estar protegidos contra corrupção. Ele deve ser ativamente examinado ou monitorado, reparável e recuperável. 
 - A maioria dos resultados de perda de dados de ações do cliente permite que os clientes se recuperem por conta própria usando uma GUI que permite restaurar itens excluídos acidentalmente. 
  
-Por meio da criação de nossos serviços em nuvem para esses princípios, em conjunto com um teste e validação robustos, o Office 365 é capaz de atender e exceder os requisitos dos clientes, garantindo uma plataforma para inovação contínua e melhorias. 
+Por meio da criação de nossos serviços em nuvem para esses princípios, em conjunto com um teste e validação robustos, a Microsoft 365 é capaz de atender e exceder os requisitos dos clientes ao mesmo tempo em que garante uma plataforma para inovação contínua e melhorias. 
 
 ## <a name="related-links"></a>Links relacionados
 

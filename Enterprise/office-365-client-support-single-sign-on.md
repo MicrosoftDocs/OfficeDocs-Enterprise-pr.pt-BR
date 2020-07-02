@@ -1,7 +1,7 @@
 ---
-title: Suporte ao aplicativo cliente do Office 365 — logon único
-ms.author: robmazz
-author: robmazz
+title: Suporte ao aplicativo cliente Microsoft 365 — logon único
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Suporte do aplicativo cliente do Office 365 para logon único.
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Suporte de aplicativo cliente Microsoft 365 para logon único.
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619327"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998509"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Suporte ao aplicativo cliente do Office 365 — logon único
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Suporte ao aplicativo cliente Microsoft 365 — logon único
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 O logon único (SSO) adiciona segurança e conveniência quando os usuários entram em aplicativos no Azure Active Directory (Azure AD). Com o logon único, os usuários entram uma vez com uma conta para acessar dispositivos que ingressaram no domínio, recursos da empresa, aplicativos de software como um serviço (SaaS) e aplicativos da Web.
 
@@ -39,7 +39,7 @@ Saiba mais sobre o [logon único](https://docs.microsoft.com/azure/active-direct
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Para obter mais informações sobre suporte a plataformas no Office 365, consulte [System Requirements for Office 365](https://products.office.com/office-system-requirements).
+Para obter mais informações sobre o suporte à plataforma no Microsoft 365, consulte [System Requirements for Microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Clientes com suporte
 
@@ -66,6 +66,6 @@ As versões mais recentes dos seguintes clientes suportam o logon único:
 > <sup>3</sup> o suporte para o whiteboard no Android estará disponível em breve. <br>
 > <sup>4</sup> suporte para o Outlook, Teams e portal da empresa no MacOS disponível em breve. <br>
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

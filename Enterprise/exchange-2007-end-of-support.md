@@ -13,16 +13,16 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: Em 11 de abril de 2017, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para o Office 365 ou o Exchange 2016, agora é hora de iniciar o planejamento.
-ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: a0dd549c4a9be5721dae66111e8cdd5a569b2b9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605646"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996545"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2007
 
-*Esse artigo se aplica ao Office 365 Enterprise e ao Microsoft 365 Enterprise.*
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 Em **11 de abril de 2017**, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para o Office 365 ou o Exchange 2016, agora é hora de iniciar o planejamento. 
   
@@ -179,9 +179,9 @@ Se você estiver pensando em realizar uma migração híbrida completa, aqui est
     
 - O Office 365 precisará se conectar ao "servidor híbrido" usando o Outlook Anywhere pela porta TCP 443;
     
-- Você precisará configurar a sincronização de diretório usando o Azure Active Directory Connect (AADConnect) entre seus servidores do Active Directory local e o Office 365;
+- Você precisará configurar a sincronização de diretórios usando o Azure Active Directory (Azure AD) se conectar entre seus servidores locais do Active Directory e o Office 365;
     
-- Os usuários poderão fazer logon em sua caixa de correio do Office 365 usando o mesmo nome de usuário e senha que eles usam ao fazer logon na rede local (requer o Azure Active Directory Connect com sincronização de senha e/ou serviços de Federação do Active Directory);
+- Os usuários poderão fazer logon em sua caixa de correio do Office 365 usando o mesmo nome de usuário e senha que eles usam ao fazer logon na rede local (requer o Azure AD Connect com sincronização de senha e/ou serviços de Federação do Active Directory);
     
 - Você precisará de uma licença do Office 365 que inclua o Exchange Online para cada caixa de correio de usuário que você migrar;
     
@@ -219,7 +219,7 @@ Recomendamos que você considere inicialmente que você migrará para o Exchange
 |:-----|:-----|
 |Datas de fim de suporte  <br/> | Como o Exchange 2007, cada versão do Exchange tem seu próprio fim de data de suporte:  <br/> **Exchange 2010** -janeiro de 2020  <br/> **Exchange 2013** -abril de 2023  <br/> **Exchange 2016** -outubro de 2025  <br/>  Antes do fim da data de suporte, mais cedo você precisará executar outra migração. Janeiro de 2020 é muito mais próximo do que você imagina!  <br/> |
 |Caminho de migração para o Exchange 2010 e 2013  <br/> |Aqui estão as fases gerais para migrar para o Exchange 2010 ou o Exchange 2013:  <br/> Instalar o Exchange 2010 ou 2013 em seus serviços de movimentação de organização do Exchange 2007 existente e outra infraestrutura para o Exchange 2010 ou 2013 mover caixas de correio e pastas públicas para o Exchange 2010 ou 2013 encerrar servidores Exchange 2007 restantes |
-|Caminho de migração para o Exchange 2016  <br/> |Aqui estão as fases gerais de migração para o Exchange 2016:  <br/> Instale o Exchange 2013 em seus serviços de movimentação de organização do Exchange 2007 existentes e outra infraestrutura para o Exchange 2013 mover caixas de correio e pastas públicas para o Exchange 2013 encerrar os servidores do Exchange 2007 restantes instalar o Exchange 2016 em seus existentes Organização do Exchange 2013. Mover caixas de correio, pastas públicas, serviços e outras infra-estruturas para o Exchange 2016 (ordem não importa). Encerrar os servidores do Exchange 2013 restantes [!NOTE] >> migrar do Exchange 2013 para o Exchange 2016 é simples. Ambas as versões têm quase os mesmos requisitos de hardware. Isso e o fato de que essas versões são tão compatíveis, significa que você pode recriar um servidor que comprou o Exchange 2013 e instalar o Exchange 2016 nele. E, com as movimentações de caixa de correio online, a maioria dos usuários nunca perceberá que a caixa de correio está sendo movida do servidor e depois novamente após você tê-la reconstruída com o Exchange 2016.           |
+|Caminho de migração para o Exchange 2016  <br/> |Aqui estão as fases gerais de migração para o Exchange 2016:  <br/> Instale o Exchange 2013 em seus serviços de movimentação de organização do Exchange 2007 existentes e outra infraestrutura para o Exchange 2013 mover caixas de correio e pastas públicas para o Exchange 2013 encerrar os servidores do Exchange 2007. Instale o Exchange 2016 em sua organização existente do Exchange 2013. Mover caixas de correio, pastas públicas, serviços e outras infra-estruturas para o Exchange 2016 (ordem não importa). Encerrar os servidores do Exchange 2013 restantes > [!NOTE]> migrar do exchange 2013 para o exchange 2016 é simples. Ambas as versões têm quase os mesmos requisitos de hardware. Isso e o fato de que essas versões são tão compatíveis, significa que você pode recriar um servidor que comprou o Exchange 2013 e instalar o Exchange 2016 nele. E, com as movimentações de caixa de correio online, a maioria dos usuários nunca perceberá que a caixa de correio está sendo movida do servidor e depois novamente após você tê-la reconstruída com o Exchange 2016.           |
 |Coexistência de versões  <br/> | Ao migrar para:  <br/> **Exchange 2016** O Exchange 2016 não pode ser instalado em uma organização que inclui um servidor Exchange 2007. Primeiro, você precisará migrar para o Exchange 2010 ou 2013 (é altamente recomendável o Exchange 2013), remover todos os servidores do Exchange 2007 e migrar para o Exchange 2016.  <br/> **Exchange 2010 ou exchange 2013** Você pode instalar o Exchange 2010 ou o Exchange 2013 em uma organização existente do Exchange 2007. Isso permite que você instale um ou mais servidores do Exchange 2010 ou 2013 e realize sua migração.  <br/> |
 |Hardware de servidor  <br/> | Os requisitos de hardware do servidor foram alterados do Exchange 2007. Você precisará certificar-se de que o hardware que você vai usar é compatível. Você pode saber mais sobre os requisitos de hardware para cada versão aqui:  <br/> [Requisitos de sistema do Exchange 2016](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Requisitos de sistema do Exchange 2013](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Requisitos de sistema do Exchange 2010](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Você descobrirá que com os aprimoramentos significativos no desempenho do Exchange e com a capacidade de armazenamento e o aumento de energia em servidores mais recentes, provavelmente precisará de menos servidores para suportar o mesmo número de caixas de correio.  <br/> |
 |Versão do sistema operacional  <br/> | As versões mínimas de sistema operacional com suporte para cada versão são:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Você pode encontrar mais informações sobre o suporte do sistema operacional na [matriz de suporte do Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
