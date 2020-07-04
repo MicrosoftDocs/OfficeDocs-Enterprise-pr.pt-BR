@@ -3,7 +3,7 @@ title: Conectar-se ao PowerShell do Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 06/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conecte-se à sua organização do Office 365 usando o PowerShell do Office 365 para realizar tarefas do centro de administração a partir da linha de comando.
-ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
-ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
-ms.translationtype: HT
+ms.openlocfilehash: 0906da2b8773973236bc8cb6ef273d1a14528bfd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170609"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997417"
 ---
 # <a name="connect-to-office-365-powershell"></a>Conectar-se ao PowerShell do Office 365
 
@@ -47,7 +47,7 @@ Você pode usar as seguintes versões do Windows:
     > Para o módulo do PowerShell do Azure Active Directory para Graph, você deve usar o PowerShell versão 5.1 ou posterior. Para o módulo do PowerShell do Azure Active Directory para módulo do Windows PowerShell, você deve usar o PowerShell versão 5.1 ou posterior até o PowerShell versão 6. Você não pode usar o PowerShell versão 7. Para Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, e Windows Server 2008 R2 SP1, baixe e instale o [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616). 
     
     > [!NOTE]
-    > Use uma versão de 64 bits do Windows, pois o suporte para a versão de 32 bits do Módulo Microsoft Azure Active Directory para Windows PowerShell foi descontinuada em outubro de 2014.
+    > Use a 64-bit version of Windows. Support for the 32-bit version the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in October of 2014.
     
 Esses procedimentos são destinados aos usuários membros de uma função de administrador do Office 365. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
@@ -64,7 +64,7 @@ Para os procedimentos que exigem os novos cmdlets no Azure Active Directory Powe
 
 ### <a name="step-1-install-required-software"></a>Etapa 1: instalar o software necessário
 
-Essas etapas precisam ser executadas apenas uma vez em seu computador e não toda vez em que você se conectar. No entanto, você provavelmente precisará instalar a versão mais recente do software periodicamente.
+These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
   
 1. Abra um prompt de comando elevado do Windows PowerShell (execute o Windows PowerShell como administrador).
     
@@ -106,9 +106,9 @@ O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Di
     
 ### <a name="step-1-install-required-software"></a>Etapa 1: instalar o software necessário
 
-Essas etapas precisam ser executadas apenas uma vez em seu computador e não toda vez em que você se conectar. No entanto, você provavelmente precisará instalar a versão mais recente do software periodicamente.
+These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
   
-1.  Instale a versão de 64 bits do Assistente de Conexão do Microsoft Online Services: [Assistente de Conexão do Microsoft Online Services para profissionais de TI RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Se você não estiver executando o Windows 10, instale a versão de 64 bits do assistente de conexão do Microsoft Online Services: [Assistente de conexão do Microsoft Online Services para profissionais de ti RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
 2. Instale o Módulo Microsoft Azure Active Directory para Windows PowerShell seguindo estas etapas:
     
@@ -136,7 +136,7 @@ Se você estiver usando uma MFA, siga as instruções das caixas de diálogo adi
 
 ### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
 
-Se você não recebeu um erro, a conexão foi estabelecida. Um teste rápido é executar um cmdlet Office 365, por exemplo, **Get-MsolUser**, e ver os resultados.
+If you don't receive any errors, you connected successfully. A quick test is to run an Office 365 cmdlet—for example, **Get-MsolUser** —and see the results.
   
 Caso você receba erros, verifique os seguintes requisitos:
   
@@ -151,13 +151,13 @@ Caso você receba erros, verifique os seguintes requisitos:
   - Para Windows 10, Windows 8.1 e Windows 8, confira [Instalar o .NET Framework 3.5 no Windows 10, Windows 8.1 e Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
-- **Sua versão do Módulo Microsoft Azure Active Directory para Windows PowerShell deve estar desatualizada.** Para verificar, execute o seguinte comando no Office 365 PowerShell ou no Módulo Microsoft Azure Active Directory para Windows PowerShell:
+- **Your version of the Microsoft Azure Active Directory Module for Windows PowerShell might be out of date.** To check, run the following command in Office 365 PowerShell or the Microsoft Azure Active Directory Module for Windows PowerShell:
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Se o número da versão retornado for menor que o valor 1.0.8070.2, desinstale o Módulo Microsoft Azure Active Directory para Windows PowerShell e instale a versão mais recente usando o link da Etapa 1.
+    Se o número da versão retornado for menor do que o valor 1.0.8070.2, desinstale o módulo Microsoft Azure Active Directory para Windows PowerShell e instale da etapa 1 acima.
 
 - **Se você receber um erro de conexão, confira este tópico:** ["Connect-MsolService: ocorreu exceção do tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
