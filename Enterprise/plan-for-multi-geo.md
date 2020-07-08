@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Saiba mais sobre o Microsoft 365 Multi-Geo, como a funcionalidade multigeográfica funciona e quais localizações geográficas estão disponíveis para armazenar dados.
-ms.openlocfilehash: 41a17cf4506b62ae588afa750d6f9e3a8c99191d
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 8f06c43b9a622e06959ab12fa0e055c8653ca61c
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057707"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052454"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plano do Microsoft 365 Multi-Geo
 
@@ -57,7 +57,7 @@ Você pode configurar qualquer uma das seguintes localizações para ser de sat�
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
-Ao configurar a multigeografia, considere aproveitar a oportunidade para consolidar sua infraestrutura local ao migrar para o Microsoft 365. Por exemplo, se você tiver fazendas locais em Cingapura e na Malásia, poderá consolidá-las na localização por satélite da APC, pois os requisitos da residência de dados fornecidos permitem que você faça isso.
+When you configure multi-geo, consider taking the opportunity to consolidate your on-premises infrastructure while migrating to Microsoft 365. For example, if you have on-premises farms in Singapore and Malaysia, then you can consolidate them to the APC satellite location, provided data residency requirements allow you to do so.
 
 ## <a name="best-practices"></a>Práticas recomendadas
 
@@ -65,13 +65,13 @@ Recomendamos que você crie um usuário de teste no Microsoft 365 para fazer alg
 
 Depois de concluir os testes com o usuário de teste, selecione um grupo piloto – talvez do departamento de TI – para ser o primeiro a usar o OneDrive e o Exchange em uma nova localização geográfica. Para esse primeiro grupo, selecione os usuários que ainda não tem do OneDrive. É recomendável não mais do que cinco pessoas neste grupo inicial e expanda-o gradualmente seguindo uma abordagem de implantação em lote.
 
-Cada usuário deve ter um *local de dados preferido* (PDL) definido para que o Microsoft 365 possa determinar em qual local geográfico provisionar seu OneDrive. O local de dados preferido do usuário deve corresponder a uma das localizações por satélite escolhidas ou ao local central. Embora o campo PDL não seja obrigatório, recomendamos que um PDL seja definido para todos os usuários. As cargas de trabalho de um usuário sem uma PDL serão provisionadas no local central.
+Each user should have a *preferred data location* (PDL) set so that Microsoft 365 can determine in which geo location to provision their OneDrive. The user's preferred data location must match one of your chosen satellite locations or your central location. While the PDL field is not mandatory, we recommend that a PDL be set for all users. Workloads of a user without a PDL will be provisioned in the central location.
 
-Crie uma lista dos seus usuários e inclua o nome UPN e o código de local para o local de dados preferencial adequado. Inclua o seu usuário de teste e o seu grupo piloto inicial para começar. Você precisará dessa lista para os procedimentos de configuração.
+Create a list of your users, and include their user principal name (UPN) and the location code for the appropriate preferred data location. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
 Se os usuários serão sincronizados com um sistema do Active Directory local ao Azure Active Directory, você deve definir o local de dados preferencial como um atributo Active Directory e sincronizá-lo usando o Azure Active Directory Connect. Você não pode configurar o local de dados preferencial diretamente para os usuários sincronizados usando o Azure AD PowerShell. As etapas para configurar a PDL no Active Directory e sincronizá-lo são abordadas na sincronização do [Azure Active Directory Connect: Configurar o local de dados preferido dos recursos do Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
-A administração de um locatário multigeográfico pode variar de um locatário que não seja de multigeografia, pois muitos dos serviços e configurações do SharePoint e do OneDrive detectam a multigeografia. Recomendamos que leia [Administrar um ambiente multigeográfico](administering-a-multi-geo-environment.md) antes de prosseguir com a configuração.
+The administration of a multi-geo tenant can differ from a non-multi-geo tenant, as many of the SharePoint and OneDrive settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 
 Leia em [Experiência do usuário em um ambiente multigeográfico](multi-geo-user-experience.md) detalhes sobre a experiência dos usuários finais em um ambiente multigeográfico.
 
