@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Resumo: Configure os servidores proxy de aplicativo Web para a autenticação federada de alta disponibilidade para o Microsoft 365 no Microsoft Azure.'
-ms.openlocfilehash: 4d6e2991c3293952c38e994728e6eca7ea5f5b35
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 005497f9da7986fb4538b4d4c9699e55fe26fa65
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711884"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102489"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Autenticação federada de alta disponibilidade Fase 4: configurar proxies de aplicativos Web
 
@@ -37,7 +37,7 @@ Você deve criar um balanceador de carga voltado para a Internet para que o Azur
 Quando tiver fornecido os valores de localização e grupo de recursos, execute o bloco resultante no prompt de comando do Azure PowerShell ou no ISE do PowerShell.
   
 > [!TIP]
-> Para gerar blocos de comando prontos para executar do PowerShell com base em suas configurações personalizadas, use esta [pasta de trabalho de configuração do Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx). 
+> Para gerar blocos de comando prontos para executar do PowerShell com base em suas configurações personalizadas, use esta [pasta de trabalho de configuração do Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 ```powershell
 # Set up key variables
@@ -64,13 +64,13 @@ Você precisa determinar o nome DNS para identificar o nome do seu serviço de f
   
 Depois que você tiver o FQDN do serviço de federação, crie para ele um registro A de domínio DNS público que seja resolvido para o endereço IP público do balanceador de carga voltado para a Internet do Azure.
   
-|**Nome**|**Tipo**|**TTL**|**Valor**|
+|**Nome**|**Type**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |FQDN do serviço de federação  <br/> |A  <br/> |3600  <br/> |endereço IP público do balanceador de carga voltado para a Internet do Azure (exibido pelo comando **Write-Host** na seção anterior) <br/> |
    
 Este é um exemplo:
   
-|**Nome**|**Tipo**|**TTL**|**Valor**|
+|**Nome**|**Type**|**TTL**|**Valor**|
 |:-----|:-----|:-----|:-----|
 |fs.contoso.com  <br/> |A  <br/> |3600  <br/> |131.107.249.117  <br/> |
    
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Como essas máquinas virtuais são para um aplicativo de intranet, elas não recebem um endereço IP público ou um rótulo de nome de domínio DNS, nem estão expostas à Internet. No entanto, isso também significa que você não pode se conectar a eles no portal do Azure. A opção **Conectar** não está disponível quando você visualiza as propriedades da máquina virtual. Use o acessório Conexão de Área de Trabalho Remota ou outra ferramenta de Área de Trabalho Remota para se conectar à máquina virtual usando seu endereço IP privado ou o nome DNS da intranet e as credenciais da conta de administrador local.
+> Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name and the credentials of the local administrator account.
   
 Veja a seguir a configuração resultante da conclusão bem-sucedida dessa fase, com nomes de computador de espaço reservado.
   

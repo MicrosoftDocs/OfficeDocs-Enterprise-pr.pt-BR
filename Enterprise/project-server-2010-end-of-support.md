@@ -18,12 +18,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: O suporte para ends para o Project Server 2010 termina em 13 de abril de 2021. Use este artigo como um guia para atualizar para o Project online ou uma versão mais recente do Project Server no local.
-ms.openlocfilehash: e9bbe47c93b9e73e37abd352f02872149d28ce90
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: cd209b51c94abe1a32b5d48bde79a3d1a443a092
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775060"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102589"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Project Server 2010
 
@@ -229,9 +229,9 @@ Outros recursos:
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumo das opções de cliente e servidores do Office 2010 e do Windows 7
 
-Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, confira o [cartaz de fim de suporte](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
+Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, confira o [cartaz de fim de suporte](./downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Imagem do pôster sobre o fim do suporte para clientes e servidores do Office 2010 e do Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Imagem do pôster sobre o fim do suporte para clientes e servidores do Office 2010 e do Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este cartaz de uma página é uma maneira rápida de entender os vários caminhos que você pode tomar para impedir que os produtos de cliente e de servidor do Office 2010 e o Windows 7 atinjam o fim do suporte, com caminhos e suporte de opções preferidos no Microsoft 365 Enterprise realçado.
 

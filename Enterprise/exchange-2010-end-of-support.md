@@ -13,12 +13,12 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: O Exchange 2010 está se aproximando do fim do suporte. Use este mapa de planejamento como um guia para preparar a atualização para o Exchange Online ou uma versão mais recente do Exchange Server no local.
-ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: 61f10ef84274f1b4022937bb0edc19695822aef9
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052464"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102529"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2010
 
@@ -216,9 +216,9 @@ Você pode usar os seguintes recursos para ajudá-lo com a migração:
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Resumo das opções de cliente e servidores do Office 2010 e do Windows 7
 
-Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, confira o [cartaz de fim de suporte](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
+Para obter um resumo visual das opções de atualização, migração e movimentação para a nuvem para clientes e servidores do Office 2010 e Windows 7, confira o [cartaz de fim de suporte](./downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Imagem do pôster sobre o fim do suporte para clientes e servidores do Office 2010 e do Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Imagem do pôster sobre o fim do suporte para clientes e servidores do Office 2010 e do Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 Este cartaz de uma página é uma maneira rápida de entender os vários caminhos que você pode tomar para impedir que os produtos de cliente e de servidor do Office 2010 e o Windows 7 atinjam o fim do suporte, com caminhos e suporte de opções preferidos no Microsoft 365 Enterprise realçado.
 
