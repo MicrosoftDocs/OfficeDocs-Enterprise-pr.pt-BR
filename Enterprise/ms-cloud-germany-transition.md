@@ -3,7 +3,7 @@ title: 'Migração do Microsoft Cloud Alemanha (Microsoft Cloud Deutschland) par
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: Entenda a migração dos serviços do Microsoft Cloud Alemanha (Microsoft Cloud Deutschland) para o Office 365 na nova região de datacenter alemã.'
-ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
+ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998556"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092880"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migração do Microsoft Cloud Alemanha (Microsoft Cloud Deutschland) para os serviços do Office 365 nas novas regiões de datacenter alemãs 
 
@@ -60,6 +60,8 @@ Durante a migração do Microsoft Cloud Alemanha para as regiões de datacenter 
 - Dynamics 365 / Power Platform
 
 Os pré-requisitos e o impacto da migração para esses serviços estão descritos no artigo [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn).
+
+O Vídeo do Office 365 será desativado em 1 de março de 2021. Se você optar por migrar o locatário do Office 365 para as novas regiões de datacenter alemãs, o Vídeo do Office 365 não terá suporte após a migração do SharePoint Online ser concluída. [Saiba mais](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Como se preparar para a migração para os serviços do Office 365 nas novas regiões de datacenter alemãs. 
 
@@ -102,6 +104,11 @@ Após a conclusão da migração do OneDrive for Business para a região alemã,
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 
 Os clientes existentes do Skype for Business Online farão a transição para o Microsoft Teams. Confira [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home) para obter mais informações.
+
+### <a name="office-365-video"></a>Vídeo do Office 365
+O conteúdo do Vídeo do Office 365 será migrado como parte da migração do SharePoint Online. No entanto, o Vídeo do Office 365 será desativado e não terá mais suporte após a migração do SharePoint Online para as novas regiões de datacenter alemãs ser concluída. Os vídeos que estiverem no Vídeo do Office 365 não serão reproduzidos na interface do usuário do Vídeo do Office 365 após a migração do SharePoint.
+
+O Microsoft Stream não será implantado no Microsoft Deutschland e, no momento, não temos um cronograma para implantar o Microsoft Stream nas novas regiões de datacenter alemãs. Como resultado, não será fornecido nesta região nenhuma ferramenta de migração do Vídeo do Office 365 para o Microsoft Stream. Para preservar seu conteúdo, você precisará baixar ou mover o conteúdo manualmente antes de 1 de março de 2021. [Saiba mais](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 
 ## <a name="key-differences-between-microsoft-cloud-germany-microsoft-cloud-deutschland-and-office-365-services-in-the-new-german-datacenter-regions"></a>Principais diferenças entre os serviços Microsoft Cloud Alemanha (Microsoft Cloud Deutschland) e Office 365 nas novas regiões de datacenter alemãs 

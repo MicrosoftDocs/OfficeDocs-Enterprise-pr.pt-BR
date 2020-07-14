@@ -18,16 +18,16 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Summary: Learn core cloud architecture concepts for Microsoft identity, security, networking, and hybrid. Review prescriptive recommendations for protecting files, identities, and devices when using Microsoft's cloud."
-ms.openlocfilehash: c1d41fa4ca098a913c7fea039765f916614c7f9c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: 1798e56139262e2328487b6a998d860bc095b6fc
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997893"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102609"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Recursos de arquitetura de TI do Microsoft Cloud
 
-Essas ferramentas e cartazes de arquitetura fornecem informações sobre os serviços de nuvem da Microsoft, incluindo o Microsoft 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluções de nuvem e locais híbridas. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
+Esses cartazes e ferramentas de arquitetura proporcionam informações sobre os serviços de nuvem da Microsoft, incluindo Microsoft 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 e soluções híbridas no local e em nuvem. Os arquitetos e os tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança. 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
@@ -67,7 +67,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 <a name="cloudarch"></a>
 ## Série Microsoft Cloud para arquitetos corporativos
 
-Estes cartazes da arquitetura de nuvem fornecem informações sobre os serviços de nuvem da Microsoft, incluindo o Microsoft 365, o Active Directory do Azure, o Microsoft Intune, o Microsoft Dynamics CRM Online e as soluções de nuvem e locais híbridas. Os arquitetos e tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança.
+Esses cartazes de arquitetura em nuvem fornecem informações sobre os serviços de nuvem da Microsoft, incluindo Microsoft 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online e soluções híbridas no local e em nuvem. Os arquitetos e os tomadores de decisões da TI podem usar esses recursos para determinar as soluções ideais para suas cargas de trabalho e para tomar decisões em relação aos principais componentes de infraestrutura, como a identidade e a segurança.
 
 <!--  
 <a name="platformoptions"></a>
@@ -106,7 +106,7 @@ O que os arquitetos de TI precisam saber sobre redes para plataformas e serviço
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | Este modelo contém: <ul><li> Expandindo sua rede para conectividade de nuvem </li><li> Elementos comuns de conectividade de nuvem da Microsoft </li><li> ExpressRoute para conectividade de nuvem da Microsoft </li><li> Criação de rede para o Microsoft IaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
+|[![Imagem em miniatura do modelo de sistema de rede em nuvem da Microsoft](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_networking.vsdx) <br/> | Este modelo contém: <ul><li> Expandindo sua rede para conectividade de nuvem </li><li> Elementos comuns de conectividade de nuvem da Microsoft </li><li> ExpressRoute para conectividade de nuvem da Microsoft </li><li> Criação de rede para o Microsoft IaaS, Azure PaaS e Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Nuvem híbrida da Microsoft para arquitetos corporativos
@@ -115,7 +115,7 @@ O que os arquitetos de TI precisam saber sobre nuvem híbrida dos serviços e pl
   
 |**Item**|**Descrição**|
 |:-----|:-----|
-|[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Este modelo contém: <ul><li> Ofertas de nuvem da Microsoft (SaaS, Azure PaaS e Azure IaaS) e seus elementos em comum </li><li> Arquitetura de nuvem híbrida para as ofertas de nuvem da Microsoft </li><li> Cenários de nuvem híbrida para Microsoft SaaS (Microsoft 365), Azure PaaS e Azure IaaS </li></ul><br/>|
+|[![Imagem em miniatura do modelo híbrido em nuvem da Microsoft](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_hybrid.vsdx)  | Este modelo contém: <ul><li> Ofertas de nuvem da Microsoft (SaaS, Azure PaaS e Azure IaaS) e seus elementos em comum </li><li> Arquitetura de nuvem híbrida para as ofertas de nuvem da Microsoft </li><li> Cenários de nuvem híbrida para o Microsoft SaaS (Microsoft 365), Azure PaaS e Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Ataques comuns e recursos da Microsoft que protegem sua organização
