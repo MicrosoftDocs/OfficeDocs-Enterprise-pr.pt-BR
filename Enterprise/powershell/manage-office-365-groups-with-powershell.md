@@ -1,5 +1,5 @@
 ---
-title: Gerenciar Grupos do Office 365 com o PowerShell
+title: Gerenciar os grupos do Microsoft 365 com o PowerShell
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -17,33 +17,33 @@ search.appverid:
 - BSA160
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
-description: Saiba como realizar tarefas comuns de gerenciamento para grupos do Office 365 no Microsoft PowerShell.
-ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: Saiba como realizar tarefas comuns de gerenciamento para os grupos do Microsoft 365 no Microsoft PowerShell.
+ms.openlocfilehash: e0758ca928a30c06da33f0b213ada51f69bf65e1
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052474"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117253"
 ---
-# <a name="manage-office-365-groups-with-powershell"></a>Gerenciar Grupos do Office 365 com o PowerShell
+# <a name="manage-microsoft-365-groups-with-powershell"></a>Gerenciar os grupos do Microsoft 365 com o PowerShell
  
 Este artigo fornece as etapas para realizar tarefas comuns de gerenciamento para grupos no Microsoft PowerShell. Ele também lista os cmdlets do PowerShell para grupos. Para obter informações sobre como gerenciar sites do SharePoint, confira [gerenciar sites do SharePoint online usando o PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
-## <a name="link-to-your-office-365-groups-usage-guidelines"></a>Link para suas diretrizes de uso de grupos do Office 365
+## <a name="link-to-your-microsoft-365-groups-usage-guidelines"></a>Link para suas diretrizes de uso de grupos do Microsoft 365
 <a name="BK_LinkToGuideLines"> </a>
 
 Quando os usuários [criarem ou editarem um grupo no Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), você poderá mostrar um link para as diretrizes de uso da sua organização. Por exemplo, se você precisar adicionar um prefixo ou sufixo específico a um nome de grupo.
   
-Use o PowerShell do Azure Active Directory (Azure AD) para apontar seus usuários para as diretrizes de uso da sua organização para grupos do Office 365. Confira os [cmdlets do Azure Active Directory para definir as configurações de grupo](https://go.microsoft.com/fwlink/?LinkID=827484) e siga as etapas em **criar configurações no nível do diretório** para definir o hiperlink de diretriz de uso. Depois de executar o cmdlet do Azure AD, o usuário verá o link para suas diretrizes ao criar ou editar um grupo no Outlook. 
+Use o PowerShell do Azure Active Directory (Azure AD) para apontar seus usuários para as diretrizes de uso da sua organização para os grupos do Microsoft 365. Confira os [cmdlets do Azure Active Directory para definir as configurações de grupo](https://go.microsoft.com/fwlink/?LinkID=827484) e siga as etapas em **criar configurações no nível do diretório** para definir o hiperlink de diretriz de uso. Depois de executar o cmdlet AAD, o usuário verá o link para suas diretrizes ao criar ou editar um grupo no Outlook. 
   
 ![Criar um novo grupo com o link de diretrizes de uso](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
 ![Clique em diretrizes de uso de grupo para ver as diretrizes de grupos do Office 365](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
   
-## <a name="allow-users-to-send-as-the-office-365-group"></a>Permitir que os usuários enviem como o grupo do Office 365
+## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>Permitir que os usuários enviem como o grupo Microsoft 365
 <a name="BK_LinkToGuideLines"> </a>
   
-Se você deseja habilitar seus grupos do Office 365 para "enviar como", use os cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) e [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) para configurá-lo. Após habilitar essa configuração, os usuários do grupo do Office 365 podem usar o Outlook ou o Outlook na Web para enviar e responder a email como o grupo do Office 365. Os usuários podem ir para o grupo, criar um novo email e alterar o campo "enviar como" para o endereço de email do grupo. 
+Se você deseja habilitar seus grupos do Microsoft 365 para "enviar como", use os cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) e [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) para configurá-lo. Após habilitar essa configuração, os usuários do grupo do Microsoft 365 podem usar o Outlook ou o Outlook na Web para enviar e responder a email como o grupo do Microsoft 365. Os usuários podem ir para o grupo, criar um novo email e alterar o campo "enviar como" para o endereço de email do grupo. 
 
 ([Você também pode fazer isso no centro de administração do Exchange](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group).)
   

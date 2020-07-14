@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Contém links para informações sobre planejamento e teste de rede e migração para o Office 365.
-ms.openlocfilehash: fbf8046fb5f386dfceb3a59dbc384e578fe3a519
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 530e07aeb2f3420f0c752f2b254913a42c73f8ee
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998546"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117263"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Planejamento de migração e rede para o Office 365
 
@@ -53,7 +53,7 @@ Para estimar a largura de banda, use as seguintes etapas:
     
 2. Determine quais serviços e recursos do Office 365 estarão disponíveis para uso dos clientes. Provavelmente, você terá grupos de pessoas com diferentes serviços ou perfis de uso.
     
-3. Meça o uso da rede para um grupo piloto de clientes. Verifique se os clientes pilotos são representativos dos diferentes perfis de pessoas na organização, bem como os diferentes locais geográficos. Você pode fazer uma verificação cruzada de seus resultados em relação às nossas calculadoras antigas para o [Exchange ](https://go.microsoft.com/fwlink/p/?LinkId=321550)e [Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=321551) ou o [estudo de caso](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) que realizamos em nossa própria rede. 
+3. Meça o uso da rede para um grupo piloto de clientes. Verifique se os clientes pilotos são representativos dos diferentes perfis de pessoas na organização, bem como os diferentes locais geográficos. Você pode fazer uma verificação cruzada de seus resultados em relação às nossas calculadoras antigas para o [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) e [Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=321551) ou o [estudo de caso](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) que realizamos em nossa própria rede. 
     
 4. Use as medidas do grupo piloto para extrapolar as necessidades de toda a organização e testar novamente para validar as estimativas antes de fazer qualquer alteração em sua rede.
     
@@ -112,6 +112,6 @@ Estes tópicos contêm informações detalhadas de referência de rede do Office
     
 - [Guias de configuração para os serviços do Office 365](setup-guides-for-office-365.md)
  
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
