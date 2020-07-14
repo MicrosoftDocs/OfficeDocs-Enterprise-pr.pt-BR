@@ -13,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Expanda sua presença no Microsoft 365 para várias regiões geográficas com o Microsoft 365 Multi-Geo.
-ms.openlocfilehash: af1036ce2e8512a13cbf1867bb75a18aff3ac0a2
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: a49ba9b9b5109972a6b0a631d34d14acb189f484
+ms.sourcegitcommit: 6b12e3ab76809d5632923def7ee367cd48ef3ccc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052574"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45117273"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -47,6 +47,15 @@ Aqui estão os principais termos usados na descrição do Microsoft 365 Multi-Ge
 - **Preferenciais de dados local (PDL)** a propriedade do usuário definido pelo administrador que indica onde a localização geográfica onde a caixa de correio do Exchange usuários e do OneDrive devem ser provisionadas. A PDL determina também onde os sites do SharePoint criados pelo usuário estão provisionados.
 - **Localização do satélite** – As localizações geográficas onde as cargas de trabalho do Microsoft 365 com reconhecimento geográfico (SharePoint, OneDrive e Exchange) são ativadas em um inquilino com várias geografias.
 - **Locatário** – A representação de uma organização no Microsoft 365 que normalmente possui um ou mais domínios associados a ela (por exemplo, contoso.com).
+
+## <a name="licensing"></a>Licenciamento
+
+O Microsoft 365 Multi-Geo está disponível como um complemento para os seguintes planos de assinatura do Microsoft 365 para os clientes da EA, com um mínimo de 250 assinaturas do Microsoft 365 em seus locatários e um mínimo de 5% desses usuários usando várias regiões. Entre em contato com a equipe de conta Microsoft para obter mais detalhes.
+
+- Microsoft 365 F1, E1, E3 ou E5
+- Exchange Online Plano 1 ou Plano 2
+- OneDrive for Business Plano 1 ou Plano 2
+- SharePoint Online Plano 1 ou Plano 2
 
 ## <a name="microsoft-365-multi-geo-availability"></a>Disponibilidade do Microsoft 365 Multi-Geo
 
