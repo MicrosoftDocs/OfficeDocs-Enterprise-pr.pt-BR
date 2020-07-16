@@ -3,7 +3,7 @@ title: Redes de fornecimento de conteúdo
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/22/2019
+ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Use essas informações para saber como o Office 365 usa redes de distribuição de conteúdo (CDNs) para melhorar o desempenho.
-ms.openlocfilehash: 21dc32da619a8f5f7521d07213156f2ab86fc876
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d63d784804640b1dda3394d129f905b01fa4b972
+ms.sourcegitcommit: f12be5137553cc41d8bd43e9e6cfbce84215a763
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997467"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146509"
 ---
 # <a name="content-delivery-networks-cdns"></a>Redes de distribuição de conteúdo
 
@@ -77,6 +77,9 @@ Para assistir a uma série de vídeos curtos que oferecem informações conceitu
 Embora não seja uma parte da CDN do Office 365, você pode usar essas CDNs em seu locatário do Office 365 para acessar bibliotecas de desenvolvimento do SharePoint, código personalizado e outros propósitos que estão fora do escopo da CDN do Office 365.
 
 ### <a name="azure-cdn"></a>CDN do Azure
+
+>[!NOTE]
+>A partir do terceiro trimestre de 2020, o SharePoint Online começará a armazenar em cache os vídeos na CDN do Azure para suportar a reprodução e a confiabilidade de vídeo aprimoradas Vídeos populares serão transmitidos do ponto de extremidade da CDN mais próximo ao usuário. Esses dados permanecerão no limite de conformidade da Microsoft 365. Este é um serviço gratuito para todos os locatários e não requer nenhuma ação de cliente para configurar.
 
 Você pode usar a **CDN do Azure** para implantar sua própria instância de CDN para hospedar Web Parts, bibliotecas e outros ativos de recursos personalizados, o que permite aplicar chaves de acesso ao seu armazenamento CDN e exercer maior controle sobre a configuração da CDN. O uso da CDN do Azure não é gratuito e exige uma assinatura do Azure.
 
