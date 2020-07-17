@@ -80,7 +80,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 ## <a name="step-2-add-users-and-groups"></a>Etapa 2: Adicionar usuários ou grupos
 
-Now you’re going to create users and add them to a site collection group. You will then use a .csv file to bulk upload new groups and users.
+Agora você criará usuários e irá adicioná-los ao grupo do site. Então você usará um arquivo csv. para fazer o carregamento em massa de novos grupos e usuários.
 
 Os seguintes procedimentos continuam a usar os sites de exemplo TeamSite01, Blog01, Project01 e Community01.
 
@@ -150,7 +150,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
 <br/>Em que *myalias* é igual ao nome de usuário.<br/>
 
-5. Wait for the prompt to return before moving on. You will first see the groups appear as they are created. Then you will see the group list repeated as users are added.
+5. Aguarde a solicitação de retorno do prompt antes de prosseguir. Os grupos aparecerão de acordo com a criação dos mesmos. Então você verá a repetição da lista do grupo de acordo com os usuários que são agregados.
 
 ## <a name="see-also"></a>Confira também
 

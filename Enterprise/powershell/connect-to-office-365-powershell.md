@@ -47,7 +47,7 @@ Você pode usar as seguintes versões do Windows:
     > Para o módulo do PowerShell do Azure Active Directory para Graph, você deve usar o PowerShell versão 5.1 ou posterior. Para o módulo do PowerShell do Azure Active Directory para módulo do Windows PowerShell, você deve usar o PowerShell versão 5.1 ou posterior até o PowerShell versão 6. Você não pode usar o PowerShell versão 7. Para Windows 8.1, Windows 8, Windows 7 Service Pack 1 (SP1), Windows Server 2012 R2, Windows Server 2012, e Windows Server 2008 R2 SP1, baixe e instale o [Windows Management Framework 5.1](https://www.microsoft.com/download/details.aspx?id=54616). 
     
     > [!NOTE]
-    > Use a 64-bit version of Windows. Support for the 32-bit version the Microsoft Azure Active Directory Module for Windows PowerShell was discontinued in October of 2014.
+    > Use uma versão de 64 bits do Windows, pois o suporte para a versão de 32 bits do Módulo Microsoft Azure Active Directory para Windows PowerShell foi descontinuada em outubro de 2014.
     
 Esses procedimentos são destinados aos usuários membros de uma função de administrador do Office 365. Para saber mais, confira [Sobre as funções de administrador do Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
@@ -64,7 +64,7 @@ Para os procedimentos que exigem os novos cmdlets no Azure Active Directory Powe
 
 ### <a name="step-1-install-required-software"></a>Etapa 1: instalar o software necessário
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Essas etapas precisam ser executadas apenas uma vez em seu computador e não toda vez em que você se conectar. No entanto, você provavelmente precisará instalar a versão mais recente do software periodicamente.
   
 1. Abra um prompt de comando elevado do Windows PowerShell (execute o Windows PowerShell como administrador).
     
@@ -106,7 +106,7 @@ O PowerShell Core não é compatível com o módulo do Microsoft Azure Active Di
     
 ### <a name="step-1-install-required-software"></a>Etapa 1: instalar o software necessário
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Essas etapas precisam ser executadas apenas uma vez em seu computador e não toda vez em que você se conectar. No entanto, você provavelmente precisará instalar a versão mais recente do software periodicamente.
   
 1.  Se você não estiver executando o Windows 10, instale a versão de 64 bits do assistente de conexão do Microsoft Online Services: [Assistente de conexão do Microsoft Online Services para profissionais de ti RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
@@ -136,7 +136,7 @@ Se você estiver usando uma MFA, siga as instruções das caixas de diálogo adi
 
 ### <a name="how-do-you-know-this-worked"></a>Como saber se funcionou?
 
-If you don't receive any errors, you connected successfully. A quick test is to run an Office 365 cmdlet—for example, **Get-MsolUser** —and see the results.
+Se você não recebeu um erro, a conexão foi estabelecida. Um teste rápido é executar um cmdlet Office 365, por exemplo, **Get-MsolUser**, e ver os resultados.
   
 Caso você receba erros, verifique os seguintes requisitos:
   
@@ -151,7 +151,7 @@ Caso você receba erros, verifique os seguintes requisitos:
   - Para Windows 10, Windows 8.1 e Windows 8, confira [Instalar o .NET Framework 3.5 no Windows 10, Windows 8.1 e Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
-- **Your version of the Microsoft Azure Active Directory Module for Windows PowerShell might be out of date.** To check, run the following command in Office 365 PowerShell or the Microsoft Azure Active Directory Module for Windows PowerShell:
+- **Sua versão do Módulo Microsoft Azure Active Directory para Windows PowerShell deve estar desatualizada.** Para verificar, execute o seguinte comando no Office 365 PowerShell ou no Módulo Microsoft Azure Active Directory para Windows PowerShell:
     
   ```powershell
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion

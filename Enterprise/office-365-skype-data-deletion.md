@@ -24,9 +24,9 @@ ms.locfileid: "44997791"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Exclusão de dados do Skype for Business no Office 365
 
-Skype for Business provides archiving of peer-to-peer instant messages, multiparty instant messages, and content upload activities in meetings. The archiving capability requires Exchange and is controlled by the user's Exchange mailbox In-Place Hold attribute, which archives both email and Skype for Business contents.
+O Skype for Business oferece arquivamento de mensagens instantâneas ponto a ponto, mensagens instantâneas entre várias pessoas e atividades de carregamento de conteúdo em reuniões. O recurso de arquivamento requer o Exchange e é controlado pelo atributo de Bloqueio In-loco da caixa de correio do Exchange do usuário, que arquiva tanto o email quanto o conteúdo do Skype for Business.
 
-All archiving in Skype for Business is considered "user-level archiving" because you enable or disable it for one or more specific users or groups of users by creating, configuring, and applying a user-level archiving policy for those users. There is no direct control of archiving settings from within the Skype for Business admin center.
+Todo o arquivamento no Skype for Business é considerado "arquivamento de nível do usuário" porque é possível habilitá-lo ou desabilitá-lo para um ou mais usuários ou grupos de usuários específicos criando, configurando e aplicando uma política de arquivamento de nível do usuário para esses usuários. Não há controle direto das configurações de arquivamento de dentro do Centro de administração do Skype for Business.
 
 Os seguintes tipos de conteúdo não são arquivados no Skype for Business:
 

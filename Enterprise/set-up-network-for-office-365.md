@@ -30,7 +30,7 @@ ms.locfileid: "44735650"
 
 *Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
-An important part of your Microsoft 365 onboarding is to ensure that your network and Internet connections are set up for optimized access. Configuring your on-premises network to access a globally distributed Software-as-a-Service (SaaS) cloud is different from a traditional network that is optimized for traffic to on-premises datacenters and a central Internet connection. 
+Uma parte importante da integração com o Microsoft 365 é garantir que as conexões de rede e Internet sejam configuradas para acesso otimizado. Configurar sua rede local para acessar uma nuvem de software (SaaS) distribuída globalmente é diferente de uma rede tradicional que é otimizada para o tráfego para os datacenters locais e uma conexão central com a Internet. 
 
 Use estes artigos para entender as principais diferenças e modificar seus dispositivos de borda, computadores clientes e rede local para obter o melhor desempenho para seus usuários locais.
 
@@ -46,17 +46,17 @@ Para obter conselhos sobre como melhorar o desempenho, consulte [planejamento de
 
 ## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Suporte para redes Microsoft 365 como um fornecedor de equipamento de rede
 
-If you are a network equipment vendor, join the [Office 365 Networking Partner Program](office-365-networking-partner-program.md). Enroll in the program to build Office 365 network connectivity principles into your products and solutions. 
+Se você é um fornecedor de equipamentos de rede, junte-se ao [Programa de Parceiros de Rede do Office 365](office-365-networking-partner-program.md). Inscreva-se no programa para integrar princípios de conectividade de rede do Office 365 aos seus produtos e soluções. 
 
 ## <a name="office-365-endpoints"></a>Pontos de extremidade do Office 365
 
 Pontos de extremidade são o conjunto de endereços IP de destino, nomes de domínio do DNS e URLs do tráfego do Office 365 na Internet. 
 
-To optimize performance to Office 365 cloud-based services, some endpoints need special handling by your client browsers and the devices in your edge network. These devices include firewalls, SSL Break and Inspect and packet inspection devices, and data loss prevention systems.
+Para otimizar o desempenho dos serviços baseados em nuvem do Office 365, alguns pontos de extremidade precisam de tratamento especial pelos navegadores clientes e pelos dispositivos da rede de borda. Esses dispositivos incluem firewalls, SSL Break and Inspect e dispositivos de inspeção de pacotes e sistemas de prevenção de perda de dados.
 
 Confira [Gerenciar pontos de extremidade do Office 365](managing-office-365-endpoints.md) para saber mais.
 
-There are currently five different Office 365 clouds. This table takes you to the list of endpoints for each one.
+Atualmente, há cinco nuvens diferentes do Office 365. Esta tabela leva você à lista de pontos de extremidade de cada um deles.
 
 |||
 |:-------|:-----|
