@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Acelere o planejamento e a configuração do Microsoft 365 ou do Office 365 com guias de configuração.
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735969"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201625"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guias de configuração para os serviços Microsoft 365 e Office 365
 
@@ -103,6 +103,15 @@ O **Guia de configuração do trabalho remoto** fornece às organizações as di
 | **Sejam** | [Guia de instalação do trabalho remoto](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Guia de instalação da área de trabalho virtual do Windows
+
+A área de trabalho virtual do Windows é um serviço abrangente de virtualização de área de trabalho e aplicativo em execução na nuvem. É a única infraestrutura de área de trabalho virtual (VDI) que oferece gerenciamento simplificado, Windows 10 de várias sessões, otimizações para aplicativos Microsoft 365 e suporte para ambientes de serviços de área de trabalho remota (RDS). Implante e dimensione suas áreas de trabalho e aplicativos do Windows para o Azure em minutos e obtenha recursos internos de segurança e conformidade. O **Guia de instalação da área de trabalho virtual do Windows** fornece aos administradores recursos de planejamento e os pré-requisitos para implantação, orientação de instalação e recursos adicionais. 
+
+|||
+|:-------|:-----|
+| **Sejam** | [Guia de instalação da área de trabalho virtual do Windows](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>Guias de segurança
 
 ### <a name="azure-ad-setup-guide"></a>Guia de instalação do Azure AD
@@ -112,6 +121,15 @@ O **Guia de instalação do Azure ad** fornece informações para garantir que s
 |||
 |:-------|:-----|
 | **Sejam** | [Guia de instalação do Azure AD](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>Planejar sua implantação com senha
+
+Atualize para uma abordagem de entrada alternativa que permite que os usuários acessem seus dispositivos com segurança com um dos seguintes métodos de autenticação sem senha: Windows Hello for Business, Microsoft Authenticator app ou chaves de segurança. Use este assistente para descobrir os melhores métodos de autenticação de senha para usar e receber orientações sobre como implantá-los.
+
+|||
+|:-------|:-----|
+| **Sejam** | [Planejar sua implantação com senha](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Supervisor de proteção avançada contra ameaças do Microsoft defender (ATP)

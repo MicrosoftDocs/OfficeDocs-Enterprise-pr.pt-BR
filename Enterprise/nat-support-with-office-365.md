@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Resumo: fornece detalhes sobre como aproximar o número correto de clientes que você pode usar por endereço IP em sua organização usando a conversão de endereços de rede (NAT).'
-ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998536"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201605"
 ---
 # <a name="nat-support-with-office-365"></a>Suporte NAT com o Office 365
 
@@ -40,7 +40,7 @@ Para fornecer acesso à Internet para dispositivos em um espaço de endereço IP
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Por que você precisa ter tantas conexões abertas para o Office 365 ao mesmo tempo?
 
-O Outlook pode abrir oito ou mais conexões (em situações em que há suplementos, calendários compartilhados, caixas de correio, etc.). Como há um máximo de 64.000 portas disponíveis em um dispositivo NAT baseado no Windows, pode haver no máximo 8.000 usuários atrás de um endereço IP antes que as portas sejam esgotadas. Observe que, se os clientes estiverem usando dispositivos baseados no sistema operacional não Windows para NAT, o total de portas disponíveis dependerá do tipo de dispositivo ou software NAT que está sendo usado. Neste cenário, o número máximo de portas pode ser menor que 64.000. A disponibilidade de portas também é afetada por outros fatores, como o Windows, restringindo 4.000 portas para seu próprio uso, o que reduz o número total de portas disponíveis para 60, 000. pode haver outros aplicativos, como o Internet Explorer, que podem se conectar ao mesmo tempo, exigindo portas adicionais.
+O Outlook pode abrir oito ou mais conexões (em situações em que há suplementos, calendários compartilhados, caixas de correio, etc.). Como há um máximo de 64.000 portas disponíveis em um dispositivo NAT baseado no Windows, pode haver no máximo 8.000 usuários atrás de um endereço IP antes que as portas sejam esgotadas. Observe que, se os clientes estiverem usando dispositivos baseados no sistema operacional não Windows para NAT, o total de portas disponíveis dependerá do tipo de dispositivo ou software NAT que está sendo usado. Neste cenário, o número máximo de portas pode ser menor que 64.000. A disponibilidade de portas também é afetada por outros fatores, como o Windows, restringindo 4.000 portas para seu próprio uso, o que reduz o número total de portas disponíveis para 60.000. Pode haver outros aplicativos, como o Internet Explorer, que podem se conectar ao mesmo tempo, exigindo portas adicionais.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Calculando o máximo de dispositivos suportados por trás de um único endereço IP público com o Office 365
 
@@ -76,7 +76,7 @@ Use a fórmula anterior para calcular o número máximo de usuários por endere�
   
 Há vários métodos para distribuir a carga do cliente entre endereços IP públicos adicionais. As estratégias disponíveis dependem dos recursos da solução de gateway corporativo. A solução mais simples é segmentar o espaço de endereço do usuário e "atribuir" estaticamente um número de endereços IP a cada gateway. Outra alternativa que muitos dispositivos de gateway oferecem é a capacidade de usar um pool de endereços IP. O benefício do pool de endereços é que ele é muito mais dinâmico e é menos provável de exigir ajuste à medida que a sua base de usuários cresce.
   
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Gerenciar pontos de extremidade do Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
