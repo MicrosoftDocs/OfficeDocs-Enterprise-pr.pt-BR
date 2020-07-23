@@ -1,5 +1,5 @@
 ---
-title: Preparar um domínio não roteável para sincronização de diretório
+title: Preparar um domínio não roteável para sincronização de diretórios
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Saiba o que fazer se você tiver um domínio não routale associado aos seus usuários locais antes de sincronizar com o Microsoft 365.
-ms.openlocfilehash: 148d7e1abdeeeea11c838697bbc957e2937ea7f8
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a9fe6f21dd1e2d9ade6288a083f700fccac4e6e4
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736009"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263593"
 ---
-# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar um domínio não roteável para sincronização de diretório
+# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Preparar um domínio não roteável para sincronização de diretórios
 Ao sincronizar seu diretório local com o Microsoft 365, você precisa ter um domínio verificado no Azure Active Directory (Azure AD). Somente os nomes principais de usuário (UPN) associados ao domínio local são sincronizados. No entanto, qualquer UPN que contenha um domínio não roteável, por exemplo. local (como billa@contoso. local), será sincronizado com um domínio. onmicrosoft.com (como billa@contoso.onmicrosoft.com). 
 
 Se você usa atualmente um domínio. local para suas contas de usuário nos serviços de domínio do Active Directory (AD DS), recomenda-se alterá-lo para usar um domínio verificado (como o billa@contoso.com) a fim de sincronizar corretamente com seu domínio do Microsoft 365.

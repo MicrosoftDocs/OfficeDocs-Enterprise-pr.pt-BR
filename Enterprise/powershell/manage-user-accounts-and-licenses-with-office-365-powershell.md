@@ -1,9 +1,9 @@
 ---
-title: Gerenciar contas de usuário e licenças usando o Office 365 PowerShell
+title: Gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/06/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,17 +15,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 'Resumo: saiba como gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell.'
-ms.openlocfilehash: e43272196556bcfb09fb7a41a5b2cd40e2056928
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: saiba como gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell.'
+ms.openlocfilehash: 26da0d13ecc9c14be4abe059943bd91d88126f1e
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841308"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230407"
 ---
-# <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a>Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell
+# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell
 
-Uma das tarefas principais de qualquer administrador do Office 365 é gerenciar contas de usuário, licenças e grupo. Embora você possa realizar a maioria dos aspectos dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis com o Office 365 PowerShell. 
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Uma das tarefas principais de qualquer administrador do Microsoft 365 é o gerenciamento de contas de usuário, licenças e grupos. Embora você possa realizar a maioria dos aspectos dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis com o PowerShell. 
 
 Para obter mais informações, consulte estes tópicos.
 
@@ -50,5 +52,5 @@ Para obter mais informações, consulte estes tópicos.
 
 ## <a name="groups"></a>Grupos
 - [Manter associação de grupo](maintain-group-membership-with-office-365-powershell.md)
-- [Gerenciar grupos do Office 365](manage-office-365-groups-with-powershell.md)
+- [Gerenciar grupos do Microsoft 365](manage-office-365-groups-with-powershell.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Testar o Office 365 com os Guias de Laboratório de Teste (TLGs)
+title: Testar o Microsoft 365 com guias de laboratório de teste (TLGs)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumo: use estes Guias de Laboratório de Teste (TLGs) para configurar demonstração, prova de conceito ou ambientes de desenvolvimento/teste do Office 365.'
-ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
-ms.translationtype: HT
+description: 'Resumo: Use estes guias de laboratório de teste (TLGs) para configurar demonstração, prova de conceito ou ambientes de desenvolvimento/teste para o Microsoft 365.'
+ms.openlocfilehash: 32204f3b3ca2cc51d3d0eea9a3d1ef6dfa65228d
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793684"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230007"
 ---
-# <a name="test-office-365-with-test-lab-guides-tlgs"></a>Testar o Office 365 com os Guias de Laboratório de Teste (TLGs)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Testar o Microsoft 365 com guias de laboratório de teste (TLGs)
 
 Os TLGs ajudam você a conhecer rapidamente os produtos da Microsoft. Eles são ótimos para situações nas quais você precisa avaliar uma tecnologia ou configuração antes de decidir se ela serve para você e antes de começar a criação, o planejamento e a distribuição para os usuários. A experiência prática no estilo "criei por conta própria e funciona" ajuda a entender os requisitos de implantação de um novo produto ou solução para poder planejar melhor sua hospedagem em produção.
   
@@ -34,17 +34,17 @@ Os TLGs também criam ambientes representativos de desenvolvimento/teste de apli
   
 ![Guias do Laboratório de Teste da Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
-## <a name="office-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Office 365
+## <a name="microsoft-365-devtest-environment"></a>Ambiente de desenvolvimento/teste do Microsoft 365
 
-Use estes artigos para compilar seu ambiente de desenvolvimento/teste do Office 365:
+Use estes artigos para criar seu ambiente de desenvolvimento/teste do Microsoft 365:
   
 - [A configuração de base leve](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
     
-    Crie uma assinatura do Office 365 Enterprise E5.
+    Crie uma assinatura de avaliação do Microsoft 365 Enterprise e5.
 
 - [A configuração base de empresa simulada](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
     
-    Crie uma intranet simplificada em execução nos serviços de infraestrutura do Microsoft Azure e uma assinatura de avaliação do Office 365 Enterprise E5. 
+    Criar uma intranet simplificada em execução nos serviços de infraestrutura do Microsoft Azure e uma assinatura de avaliação do Microsoft 365 Enterprise e5. 
 
     Isso é opcional e necessário se você quiser criar uma configuração empresarial simulada para identidade híbrida.
     

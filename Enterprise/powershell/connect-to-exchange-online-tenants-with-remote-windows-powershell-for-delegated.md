@@ -16,14 +16,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Resumo: use o Windows PowerShell remoto para se conectar ao Exchange Online utilizando o valor DelegatedOrg.'
-ms.openlocfilehash: 4a9f08325fc56308b27467423b047375985562c5
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: f04632f9e7b5e8dec476a5381550020e5d8a1521
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997367"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230827"
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Conectar-se aos locatários do Exchange Online com o Windows PowerShell remoto para parceiros com permissões de acesso delegado (DAP)
+
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
 
 > [!IMPORTANT]
 > Os procedimentos neste tópico servem apenas para parceiros de permissão de acesso delegado (DAP). Se você não for um parceiro DAP, não use os procedimentos neste tópico. 

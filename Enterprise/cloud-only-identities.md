@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como criar usuários e grupos quando sua assinatura do Microsoft 365 estiver usando a identidade somente de nuvem.
-ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 0c2568d7be3f7a7b476d4cf918f00baf238da5ad
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774826"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230017"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Identidade somente na nuvem do Microsoft 365
 
@@ -61,12 +61,12 @@ Você pode usar grupos no Azure AD para várias finalidades que simplificam o ge
 Você cria novos ***usuários*** com:
 
 - [O Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
+- [PowerShell para Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/create-user-accounts-with-office-365-powershell)
 
 Você cria novos ***grupos*** com:
 
 - [O Centro de administração do Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+- [PowerShell para Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
 
 
 ## <a name="next-step-for-cloud-only-identity"></a>Próxima etapa para identidade somente na nuvem

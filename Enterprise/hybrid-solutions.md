@@ -3,7 +3,7 @@ title: Soluções híbridas
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Resumo: use estes artigos para implantar cargas de trabalho do Office Server no Microsoft Azure.'
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998009"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229947"
 ---
 # <a name="hybrid-solutions"></a>Soluções híbridas
 
-Com o Microsoft Azure, agora você pode implantar algumas cargas de trabalho do Office Server que foram normalmente implantadas no local em serviços de infraestrutura do Azure.
+Com o Microsoft Azure, você pode implantar algumas cargas de trabalho do Office Server que normalmente foram implantadas no local nos serviços de infraestrutura do Azure.
   
 Para a infraestrutura de identidade do Microsoft 365 no Azure:
 
@@ -50,7 +50,7 @@ Para cargas de trabalho do SharePoint Server 2013 no Azure:
 
 [Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
   
-[Recursos de arquitetura de TI do Microsoft](microsoft-cloud-it-architecture-resources.md)
+[Recursos de arquitetura de TI do Microsoft Cloud](microsoft-cloud-it-architecture-resources.md)
   
 [Guias de laboratório de teste do Microsoft 365 para Enterprise (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   

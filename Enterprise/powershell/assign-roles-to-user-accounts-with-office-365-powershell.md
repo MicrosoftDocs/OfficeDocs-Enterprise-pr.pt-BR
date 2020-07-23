@@ -1,9 +1,9 @@
 ---
-title: Atribuir funções a contas de usuário com o Office 365 PowerShell
+title: Atribuir funções a contas de usuário do Microsoft 365 com o PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Resumo: Use o Office 365 PowerShell para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 9a28ff27138b689ed0325580af956a90d7eb7982
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+description: 'Resumo: Use o PowerShell para Microsoft 365 para atribuir funções a contas de usuário.'
+ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698908"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230867"
 ---
-# <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Atribuir funções a contas de usuário com o Office 365 PowerShell
+# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Atribuir funções a contas de usuário do Microsoft 365 com o PowerShell
 
-Você pode atribuir funções de forma rápida e fácil às contas de usuário usando o Office 365 PowerShell.
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Você pode atribuir funções de forma rápida e fácil às contas de usuário usando o PowerShell para o Microsoft 365.
 
 >[!Note]
 >Para atribuir funções a contas de usuário com o centro de administração do Microsoft 365, consulte [estas instruções](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
@@ -36,7 +38,7 @@ Você pode atribuir funções de forma rápida e fácil às contas de usuário u
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use o PowerShell do Azure Active Directory para o módulo do gráfico
 
-Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) usando uma conta de administrador global.
+Primeiro, [Conecte-se ao seu locatário do Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) usando uma conta de administrador global.
   
 Em seguida, determine o nome de entrada da conta de usuário que você deseja adicionar a uma função (exemplo: fredsm@contoso.com). Isso também é conhecido como nome de usuário principal (UPN).
 
@@ -83,7 +85,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use o Módulo Microsoft Azure Active Directory para Windows PowerShell.
 
-Primeiro, [Conecte-se ao seu locatário do Office 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) usando uma conta de administrador global.
+Primeiro, [Conecte-se ao seu locatário do Microsoft 365](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) usando uma conta de administrador global.
   
 ### <a name="for-a-single-role-change"></a>Para uma alteração de função única
 
@@ -235,6 +237,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>Confira também
 
-- [Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
-- [Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+- [Gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Introdução ao PowerShell para o Microsoft 365](getting-started-with-office-365-powershell.md)

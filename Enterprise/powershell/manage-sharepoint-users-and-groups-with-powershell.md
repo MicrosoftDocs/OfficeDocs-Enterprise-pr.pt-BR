@@ -1,9 +1,9 @@
 ---
-title: Gerenciar usuários e grupos do SharePoint Online com o Office 365 PowerShell
+title: Gerenciar usuários e grupos do SharePoint Online com o PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/17/2019
+ms.date: 07/17/2020
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -18,17 +18,19 @@ ms.custom:
 - Ent_Office_Other
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Resumo: Use o Office 365 PowerShell para gerenciar usuários, grupos e sites do SharePoint Online.'
-ms.openlocfilehash: c820fd009635a8a9b27f28d858d345794bea6334
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: 'Resumo: Use o PowerShell para Microsoft 365 para gerenciar usuários, grupos e sites do SharePoint Online.'
+ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004114"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230467"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Gerenciar usuários e grupos do SharePoint Online com o Office 365 PowerShell
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gerenciar usuários e grupos do SharePoint Online com o PowerShell
 
-Se você for um administrador do SharePoint Online que trabalha com grandes listas de contas de usuário ou grupos e deseja uma maneira mais fácil de gerenciá-los, você pode usar o Office 365 PowerShell. 
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Se você for um administrador do SharePoint Online que trabalha com grandes listas de contas de usuário ou grupos e deseja uma maneira mais fácil de gerenciá-los, você pode usar o PowerShell para o Microsoft 365. 
 
 Antes de começar, os procedimentos neste tópico exigem que você se conecte ao SharePoint Online. Para obter instruções, consulte [conectar-se ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -112,7 +114,7 @@ $group = "<group name name, such as Auditors>"
 $level = "<permission level, such as View Only>"
 New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sharepoint.com/sites/$site
 ```
-Propriedades de grupo, como níveis de permissão, podem ser atualizadas posteriormente usando `Set-SPOSiteGroup` o cmdlet.
+Propriedades de grupo, como níveis de permissão, podem ser atualizadas posteriormente usando o `Set-SPOSiteGroup` cmdlet.
 
 Por exemplo, vamos adicionar o grupo auditores com permissões somente para exibição no conjunto de sites do ContosoTest no locatário da Contoso:
 
@@ -130,7 +132,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 No entanto, usando os arquivos do Shell de gerenciamento do SharePoint Online e CSV, isso é rápido e fácil. Nesta tarefa, você usará o Windows PowerShell para remover um usuário de um grupo de segurança de um conjunto de sites. Neste caso, você usará um arquivo CSV e removerá muitos usuários de sites diferentes. 
 
-Vamos usar o cmdlet "Remove-marido" para remover um único usuário do Office 365 de um grupo de conjuntos de sites para que possamos ver a sintaxe do comando. A sintaxe é a seguinte:
+Vamos usar o cmdlet "Remove-marido" para remover um único usuário do Microsoft 365 de um grupo de conjunto de sites para que possamos ver a sintaxe do comando. A sintaxe é a seguinte:
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -277,9 +279,9 @@ Este relatório é muito simples, e você pode adicionar mais códigos para cria
 
 [Conectar ao PowerShell do SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Gerenciar o SharePoint Online com o Office 365 PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+[Gerenciar o SharePoint Online com o PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
-[Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Introdução ao PowerShell para o Microsoft 365](getting-started-with-office-365-powershell.md)
 

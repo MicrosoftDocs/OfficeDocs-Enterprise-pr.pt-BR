@@ -1,9 +1,9 @@
 ---
-title: Gerenciar Skype para políticas Business Online com o Office 365 PowerShell
+title: Gerenciar as políticas do Skype for Business online com o PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/26/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Resumo: Use o Office 365 PowerShell para gerenciar suas propriedades de conta de usuário do Skype for Business online com políticas.'
-ms.openlocfilehash: aed7e3929a41dec69803a5b73bdf29fb23b4ba05
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: Use o PowerShell para gerenciar as propriedades da conta de usuário do Skype for Business online com políticas.'
+ms.openlocfilehash: 4310de23d47025468ea78a597f6379b51deaaa96
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841328"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230427"
 ---
-# <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Gerenciar Skype para políticas Business Online com o Office 365 PowerShell
+# <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gerenciar as políticas do Skype for Business online com o PowerShell
 
-Para gerenciar muitas propriedades da conta de usuário do Skype for Business Online, você deve especificá-las como propriedades de políticas com o Office 365 PowerShell.
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Para gerenciar muitas propriedades da conta de usuário do Skype for Business Online, você deve especificá-las como propriedades de políticas com o PowerShell para o Microsoft 365.
   
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -112,7 +114,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 O parâmetro ApplicableTo limita os dados retornados para políticas que podem ser atribuídas ao usuário especificado (por exemplo, Antônio Teixeira). Dependendo das restrições de licenciamento e local de uso, isso pode representar um subconjunto de todas as políticas disponíveis. 
   
-Em alguns casos, as propriedades das políticas não são usadas com o Office 365, enquanto outras podem ser gerenciadas pela equipe de suporte da Microsoft. 
+Em alguns casos, as propriedades das políticas não são usadas com o Microsoft 365, enquanto outras podem ser gerenciadas pela equipe de suporte da Microsoft. 
   
 Com o Skype for Business Online, os usuários devem ser gerenciados por uma política de algum tipo. Se uma propriedade válida relacionada à política estiver em branco, isso significa que o usuário em questão está sendo gerenciado por uma política global, que é uma política aplicada automaticamente a um usuário, a menos que seja especificamente atribuída uma política por usuário. Como não vemos uma política de cliente listada para uma conta de usuário, ela é gerenciada pela política global. Você pode determinar a política de cliente global com este comando:
   
@@ -122,9 +124,9 @@ Get-CsClientPolicy -Identity "Global"
 
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar o Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Gerenciar o Skype for Business online com o PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Introdução ao PowerShell para o Microsoft 365](getting-started-with-office-365-powershell.md)
 

@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Resumo: Aprenda a configurar uma rede virtual Azure entre locais para cargas de trabalho de servidor do Office com uma conexão VPN site a site.'
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840648"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230067"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Conectar uma rede local a uma rede virtual do Microsoft Azure
 
 Uma rede virtual entre locais do Azure está conectada à sua rede local, ampliando sua rede para incluir sub-redes e máquinas virtuais hospedadas em serviços na infraestrutura do Azure. Esta conexão permite que os computadores na sua rede local acessem diretamente máquinas virtuais no Azure e vice-versa. 
 
-Por exemplo, um servidor de sincronização de diretórios em execução em uma máquina virtual do Azure precisa consultar seus controladores de domínio locais para alterações nas contas e sincronizar essas alterações com sua assinatura do Office 365. Este artigo mostra como configurar uma rede virtual do Azure entre locais usando uma conexão VPN (virtual private network) site a site pronta para hospedar máquinas virtuais do Azure.
+Por exemplo, um servidor de sincronização de diretório executando em uma máquina virtual do Azure precisa consultar seus controladores de domínio no local para alterações nas contas e sincronizar essas alterações com sua assinatura do Microsoft 365. Este artigo mostra como configurar uma rede virtual do Azure entre locais usando uma conexão VPN (rede virtual privada) de site a site que está pronta para hospedar máquinas virtuais do Azure.
 
 ## <a name="overview"></a>Visão geral
 
@@ -335,4 +335,4 @@ Esta é a configuração resultante.
   
 ## <a name="next-step"></a>Próxima etapa
   
-[Implantar a sincronização de diretórios do Office 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Implantar a sincronização de diretórios do Microsoft 365 no Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

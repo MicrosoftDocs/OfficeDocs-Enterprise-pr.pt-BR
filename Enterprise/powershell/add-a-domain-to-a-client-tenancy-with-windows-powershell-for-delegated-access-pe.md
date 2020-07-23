@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
-description: 'Resumo: Use o Windows PowerShell para Microsoft 365 para adicionar um nome de domínio alternativo a um locatário existente do cliente.'
-ms.openlocfilehash: 6ba706c1fc0b2e2b43687ac582a40f36a2a3387c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Resumo: Use o PowerShell para Microsoft 365 para adicionar um nome de domínio alternativo a um locatário do cliente existente.'
+ms.openlocfilehash: d5a6c7326684c74d3b05e7b4a1e88c2a37e99ca0
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997357"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229777"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Adicionar um domínio a uma locação do cliente com o Windows PowerShell para parceiros com permissão de acesso delegado (DAP)
 
-Você pode criar e associar novos domínios à locação do cliente com o Windows PowerShell para o Microsoft 365 mais rápido do que usar o centro de administração do Microsoft 365.
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Você pode criar e associar novos domínios à locação do cliente com o PowerShell para a Microsoft 365 mais rápido do que usar o centro de administração do Microsoft 365.
   
 Os Parceiros com Permissão de Acesso Delegada (DAP) são parceiros da Agregação e dos Provedores de Soluções em Nuvem (CSP). Muitas vezes, eles são provedores de rede ou de telecomunicações para outras empresas. Eles agrupam assinaturas do Microsoft 365 em suas ofertas de serviço para seus clientes. Ao vender uma assinatura do Microsoft 365, elas recebem automaticamente as permissões de administração em nome de (AOBO) para o cliente locações, para que possam administrar e relatar o locações do cliente.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>O que você precisa saber antes de começar?
 
-Os procedimentos neste tópico exigem que você se conecte ao Windows PowerShell para Office 365. Para obter instruções, veja [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md).
+Os procedimentos neste tópico exigem que você se conecte para [se conectar ao Microsoft 365 com o PowerShell](connect-to-office-365-powershell.md).
   
 Você também precisa ter as credenciais de administrador de locatários do parceiro.
   

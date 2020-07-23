@@ -1,9 +1,9 @@
 ---
-title: Gerenciar o Microsoft Teams com o Office 365 PowerShell
+title: Gerenciar o Microsoft Teams com o PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Resumo: Use o Office 365 PowerShell para gerenciar o Microsoft Teams.'
-ms.openlocfilehash: 0f15d71558ddb5166090b067da06e0a6321a2b99
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: 'Resumo: Use o PowerShell para gerenciar o Microsoft Teams.'
+ms.openlocfilehash: 8958c6ec6f0c17c21461cbee4cb1a6441ceed8d6
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209114"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230607"
 ---
-# <a name="manage-microsoft-teams-with-office-365-powershell"></a>Gerenciar o Microsoft Teams com o Office 365 PowerShell
+# <a name="manage-microsoft-teams-with-powershell"></a>Gerenciar o Microsoft Teams com o PowerShell
 
-Você pode gerenciar o Microsoft Teams com o Office 365 PowerShell.
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Você pode gerenciar o Microsoft Teams com o PowerShell.
   
 Primeiro, instale o [módulo do Microsoft Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/).
     
@@ -79,11 +81,11 @@ Disconnect-MicrosoftTeams
 ```
 
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Visão geral do teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   
-[Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Introdução ao PowerShell para o Microsoft 365](getting-started-with-office-365-powershell.md)
 

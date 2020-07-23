@@ -1,9 +1,9 @@
 ---
-title: Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
+title: Atribuir políticas do Skype for Business online por usuário com o PowerShell para o Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Resumo: Use o Office 365 PowerShell para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.'
-ms.openlocfilehash: 0b95c993c3795bdbe9a68e23e107ea745c15f71b
-ms.sourcegitcommit: 88ede20888e2db0bb904133c0bd97726d6d65ee2
+description: 'Resumo: Use o PowerShell para Microsoft 365 para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.'
+ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44719962"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229837"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Atribuir Skype de por usuário para políticas de negócios Online com o Office 365 PowerShell
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Atribuir políticas do Skype for Business online por usuário com o PowerShell para o Microsoft 365
 
-O uso do Office 365 PowerShell é uma maneira eficiente de atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+O uso do PowerShell para Microsoft 365 é uma maneira eficiente de atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.
   
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -136,8 +138,8 @@ Isso encontrará 500 usuários por vez que não têm uma política de cliente. E
   
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar o Skype for Business Online com o Office 365 PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Gerenciar o Skype for Business online com o PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Introdução ao Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Introdução ao PowerShell para o Microsoft 365](getting-started-with-office-365-powershell.md)

@@ -1,9 +1,9 @@
 ---
-title: Introdução ao Office 365 PowerShell
+title: Introdução ao PowerShell para o Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/13/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,45 +15,47 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 'Resumo: compreenda a importância do Office 365 PowerShell, conecte-se aos seus locatários do Office 365 e receba ajuda.'
-ms.openlocfilehash: 6942f44569ce5b21abc9bd1cc12a6266ad23038c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: compreenda a importância do PowerShell para a Microsoft 365, conecte-se ao seu locatário do Microsoft 365 e Obtenha ajuda.'
+ms.openlocfilehash: 6ef7217d24dc865b3053fb7f7bf66acc79384200
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844232"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230667"
 ---
-# <a name="getting-started-with-office-365-powershell"></a>Introdução ao Office 365 PowerShell
+# <a name="getting-started-with-powershell-for-microsoft-365"></a>Introdução ao PowerShell para o Microsoft 365
 
-Com o Office 365 PowerShell, você pode gerenciar o Office 365 com scripts e comandos para simplificar seu trabalho diário. Saiba porque os recursos do Office 365 PowerShell são cruciais para o gerenciamento do Office 365, como se conectar com sua assinatura do Office 365, criar relatórios e obter informações adicionais e de ajuda na comunidade do Office 365.
+*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+
+Com o PowerShell para Microsoft 365, você pode gerenciar o Microsoft 365 com comandos e scripts para simplificar seu trabalho diário. Saiba por que as habilidades do PowerShell para Microsoft 365 são cruciais para gerenciar o Microsoft 365, como se conectar à sua assinatura do Microsoft 365, criar relatórios e obter informações adicionais e ajuda da comunidade Microsoft 365.
   
 Selecione o artigo de acordo com suas necessidades:
   
-- [Por que você precisa usar o Office 365 PowerShell](why-you-need-to-use-office-365-powershell.md)
+- [Por que você precisa usar o PowerShell para Microsoft 365](why-you-need-to-use-office-365-powershell.md)
     
-    Inicie aqui se o Office 365 PowerShell for totalmente novo para você e conheça os seis motivos pelos quais você precisa usar o Office 365 PowerShell. 
+    Inicie aqui se você estiver totalmente novo no PowerShell para a Microsoft 365 e saiba seis motivos pelos quais você precisa usar o PowerShell para o Microsoft 365. 
     
-- [Conectar-se ao PowerShell do Office 365](connect-to-office-365-powershell.md)
+- [Conectar o Microsoft 365 com o PowerShell](connect-to-office-365-powershell.md)
     
-    Inicie aqui para se conectar com sua assinatura do Office 365 usando o Office 365 PowerShell e realizar tarefas administrativas da linha de comando
+    Inicie aqui para se conectar à sua assinatura do Microsoft 365 usando o PowerShell para Microsoft 365 e realizar tarefas administrativas da linha de comando.
     
-- [Conectar-se a todos os serviços do Office 365 usando uma única janela do Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Conectar-se a todos os serviços do Microsoft 365 usando uma única janela do Windows PowerShell](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
     
-    Gerencie o Office 365 em janelas separadas de contas e licenças do Skype for Business online, SharePoint Online, Microsoft Exchange Online e Office 365. Se preferir, gerencie em uma única janela. Este tópico mostra como fazer isso.
+    Você pode gerenciar o Microsoft 365 em janelas separadas para Skype for Business Online, SharePoint Online, Microsoft Exchange Online e Microsoft 365 contas e licenças. Se preferir, gerencie em uma única janela. Este tópico mostra como fazer isso.
     
-- [Use o Windows PowerShell para criar relatórios no Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
+- [Usar o Windows PowerShell para criar relatórios no Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)
     
-    Inicie aqui se você tiver instalado os módulos do Office 365 PowerShell e deseja saber mais sobre como usar comandos de automação para criar relatórios com rapidez. 
+    Inicie aqui se você tiver instalado os módulos do PowerShell para o Microsoft 365 e deseja saber mais sobre como usar comandos de automação para criar relatórios rapidamente. 
     
-- [Referências de cmdlet para serviços do Office 365](cmdlet-references-for-office-365-services.md)
+- [Referências de cmdlet para serviços do Microsoft 365](cmdlet-references-for-office-365-services.md)
     
-    Comece aqui para localizar os tópicos que descrevem os cmdlets dos módulos do Office 365 PowerShell.
+    Comece aqui para localizar os tópicos que descrevem os cmdlets para os módulos do PowerShell para o Microsoft 365.
     
-- [Recursos da comunidade do Office 365 PowerShell](office-365-powershell-community-resources.md)
+- [PowerShell para recursos da comunidade Microsoft 365](office-365-powershell-community-resources.md)
     
-    Comece aqui para conectar-se aos locais da comunidade do PowerShell e receber ajuda ou informações contínuas sobre como usar o Office 365 PowerShell.
+    Comece aqui para se conectar aos locais da Comunidade do PowerShell e obter ajuda ou informações contínuas sobre como usar o PowerShell para o Microsoft 365.
     
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar o Office 365 com o Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
 

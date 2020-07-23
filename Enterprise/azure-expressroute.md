@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Saiba como o Azure ExpressRoute é usado com o Office 365 e como planejar o projeto de implementação de rede que será necessário se você estiver implantando o Azure ExpressRoute para uso com o Office 365.
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997945"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230027"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Rota Expressa do Azure para Office 365
 
@@ -64,9 +64,9 @@ A tabela a seguir lista os serviços do Office 365 que são compatíveis com o E
 |Exchange Online<sup>1</sup> <br/> Proteção do Exchange Online<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project online<sup>1</sup> <br/> |
-|Portal e compartilhado<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> AAD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|Portal e compartilhado<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Cada um desses aplicativos tem requisitos de conectividade com a Internet que não têm suporte no ExpressRoute, consulte o artigo sobre os [pontos de extremidade do Office 365](https://aka.ms/o365endpoints) para obter mais informações.
+<sup>1</sup> cada um desses aplicativos tem requisitos de conectividade com a Internet não suportados no ExpressRoute, consulte o artigo sobre os [pontos de extremidade do Office 365](https://aka.ms/o365endpoints) para obter mais informações.
 
 Os serviços que não estão incluídos no ExpressRoute para o Office 365 são aplicativos da Microsoft 365 para downloads de cliente corporativo, entrada do provedor de identidade local e serviço do Office 365 (operado pelo 21 vianet) na China.
 
@@ -90,7 +90,7 @@ A implementação do ExpressRoute requer o envolvimento dos proprietários de re
 
 8. Opcionalmente, [implementar QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) e avaliar a expansão regional.
 
-<sup>1</sup> Considerações importantes sobre o desempenho. As decisões aqui podem afetar drasticamente a latência, o que é crítico para aplicativos como o Skype for Business.
+<sup>1</sup> considerações importantes de desempenho. As decisões aqui podem afetar drasticamente a latência, o que é crítico para aplicativos como o Skype for Business.
 
 Para obter referências adicionais, use o [Guia de roteamento](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) além da [documentação do ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
@@ -112,7 +112,7 @@ Pronto para se inscrever no [ExpressRoute para o Office 365](https://aka.ms/ert)
 
 [Como implementar o ExpressRoute para Office 365](implementing-expressroute.md)
 
-[Usando comunidades BGP no ExpressRoute para cenários do Office 365 (versão prévia)](bgp-communities-in-expressroute.md)
+[Usando comunidades BGP no ExpressRoute para cenários do Office 365](bgp-communities-in-expressroute.md)
 
 [Qualidade da mídia e desempenho de conectividade de rede no Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
@@ -124,6 +124,6 @@ Pronto para se inscrever no [ExpressRoute para o Office 365](https://aka.ms/ert)
 
 [Rede do Office 365 e ajuste de desempenho](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
