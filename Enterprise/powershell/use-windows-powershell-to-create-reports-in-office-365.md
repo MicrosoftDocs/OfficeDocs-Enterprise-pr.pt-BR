@@ -1,9 +1,9 @@
 ---
-title: Use o Windows PowerShell para criar relatórios no Office 365
+title: Usar o PowerShell para criar relatórios para o Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/22/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -11,59 +11,61 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Office_Other
+ms.custom: ''
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 'Resumo: use o Office 365 PowerShell para criar relatórios que você não pode produzir no centro de administração do Microsoft 365.'
-ms.openlocfilehash: 3a20c47e462bb522e1fb98ba28fb8c7cee89408c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Resumo: Use o PowerShell para Microsoft 365 para criar relatórios que você não pode produzir no centro de administração do Microsoft 365.'
+ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841238"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229797"
 ---
-# <a name="use-windows-powershell-to-create-reports-in-office-365"></a><span data-ttu-id="63971-103">Use o Windows PowerShell para criar relatórios no Office 365</span><span class="sxs-lookup"><span data-stu-id="63971-103">Use Windows PowerShell to create reports in Office 365</span></span>
+# <a name="use-powershell-to-create-reports-for-microsoft-365"></a><span data-ttu-id="3e0d9-103">Usar o PowerShell para criar relatórios para o Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3e0d9-103">Use PowerShell to create reports for Microsoft 365</span></span>
 
-<span data-ttu-id="63971-104">Há muitos relatórios diferentes disponíveis no centro de administração do Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="63971-104">There are many different reports available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="63971-105">No entanto, esses relatórios não apresentam todas as informações e, às vezes, você precisa de mais.</span><span class="sxs-lookup"><span data-stu-id="63971-105">However, these reports only provide so much information and sometimes you need more.</span></span> <span data-ttu-id="63971-106">É aí que você precisa do Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-106">That's when you need Office 365 PowerShell</span></span>
-  
-<span data-ttu-id="63971-107">Estes artigos descrevem como usar o Office 365 PowerShell para obter informações do locatário do Office 365:</span><span class="sxs-lookup"><span data-stu-id="63971-107">These articles that describe how to use Office 365 PowerShell to obtain information from your Office 365 tenant:</span></span>
-  
-- <span data-ttu-id="63971-108">Introdução aos relatórios usando o Office 365 PowerShell:</span><span class="sxs-lookup"><span data-stu-id="63971-108">Getting started with reporting using Office 365 PowerShell:</span></span>
-    
-  - [<span data-ttu-id="63971-109">O Office 365 PowerShell pode revelar informações adicionais que você não consegue ver com o Centro de administração</span><span class="sxs-lookup"><span data-stu-id="63971-109">Office 365 PowerShell can reveal additional information that you cannot see with the Admin center</span></span>](https://technet.microsoft.com/library/dn568034.aspx#reveal)
-    
-  - [<span data-ttu-id="63971-110">O Office 365 PowerShell é ótimo para a filtragem de dados</span><span class="sxs-lookup"><span data-stu-id="63971-110">Office 365 PowerShell is great at filtering data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#filter)
-    
-  - [<span data-ttu-id="63971-111">Com o Office 365 PowerShell, é mais fácil imprimir ou salvar dados</span><span class="sxs-lookup"><span data-stu-id="63971-111">Office 365 PowerShell makes it easy to print or save data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#printsave)
-    
-- <span data-ttu-id="63971-112">Relatórios de contas de usuário e licenças:</span><span class="sxs-lookup"><span data-stu-id="63971-112">Reports for user accounts and licenses:</span></span>
-    
-  - [<span data-ttu-id="63971-113">Exibir licenças e serviços com o PowerShell do Office 365</span><span class="sxs-lookup"><span data-stu-id="63971-113">View licenses and services with Office 365 PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
-    
-  - [<span data-ttu-id="63971-114">Exibir usuários licenciados e não licenciados com o PowerShell do Office 365</span><span class="sxs-lookup"><span data-stu-id="63971-114">View licensed and unlicensed users with Office 365 PowerShell</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-    
-  - [<span data-ttu-id="63971-115">Exibir licença da conta e detalhes do serviço com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-115">View account license and service details with Office 365 PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
-    
-  - [<span data-ttu-id="63971-116">Exibir as contas de usuário com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-116">View user accounts with Office 365 PowerShell</span></span>](view-user-accounts-with-office-365-powershell.md)
-    
-- <span data-ttu-id="63971-117">Relatórios do SharePoint Online:</span><span class="sxs-lookup"><span data-stu-id="63971-117">Reports for SharePoint Online:</span></span>
-    
-  - [<span data-ttu-id="63971-118">Gerenciar usuários e grupos do SharePoint Online com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-118">Manage SharePoint Online users and groups with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
-    
-  - [<span data-ttu-id="63971-119">Manage SharePoint Online site groups with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-119">Manage SharePoint Online site groups with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
-    
-- <span data-ttu-id="63971-120">Relatórios do Exchange Online:</span><span class="sxs-lookup"><span data-stu-id="63971-120">Reports for Exchange Online:</span></span>
-    
-  - [<span data-ttu-id="63971-121">Display Exchange Online mailbox information with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-121">Display Exchange Online mailbox information with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
-    
-  - [<span data-ttu-id="63971-122">Display Exchange Online reports with Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-122">Display Exchange Online reports with Office 365 PowerShell</span></span>](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
-    
-## <a name="see-also"></a><span data-ttu-id="63971-123">Confira também</span><span class="sxs-lookup"><span data-stu-id="63971-123">See also</span></span>
+<span data-ttu-id="3e0d9-104">*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="3e0d9-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-[<span data-ttu-id="63971-124">Gerenciar o Office 365 com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-124">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+<span data-ttu-id="3e0d9-105">Há muitos relatórios diferentes disponíveis no centro de administração do Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="3e0d9-105">There are many different reports available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="3e0d9-106">No entanto, esses relatórios não apresentam todas as informações e, às vezes, você precisa de mais.</span><span class="sxs-lookup"><span data-stu-id="3e0d9-106">However, these reports only provide so much information and sometimes you need more.</span></span> <span data-ttu-id="3e0d9-107">É quando você precisa do PowerShell para o Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3e0d9-107">That's when you need PowerShell for Microsoft 365</span></span>
   
-[<span data-ttu-id="63971-125">Introdução ao Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-125">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+<span data-ttu-id="3e0d9-108">Estes artigos descrevem como usar o PowerShell para a Microsoft 365 para obter informações do seu locatário do Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="3e0d9-108">These articles that describe how to use PowerShell for Microsoft 365 to obtain information from your Microsoft 365 tenant:</span></span>
   
-[<span data-ttu-id="63971-126">Gerenciar o SharePoint Online com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-126">Manage SharePoint Online with Office 365 PowerShell</span></span>](manage-sharepoint-online-with-office-365-powershell.md)
+- <span data-ttu-id="3e0d9-109">Introdução aos relatórios usando o PowerShell para o Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="3e0d9-109">Getting started with reporting using PowerShell for Microsoft 365:</span></span>
+    
+  - [<span data-ttu-id="3e0d9-110">O PowerShell para Microsoft 365 pode revelar informações adicionais que você não consegue ver com o centro de administração</span><span class="sxs-lookup"><span data-stu-id="3e0d9-110">PowerShell for Microsoft 365 can reveal additional information that you cannot see with the Admin center</span></span>](https://technet.microsoft.com/library/dn568034.aspx#reveal)
+    
+  - [<span data-ttu-id="3e0d9-111">O PowerShell para Microsoft 365 é ótimo para filtrar dados</span><span class="sxs-lookup"><span data-stu-id="3e0d9-111">PowerShell for Microsoft 365 is great at filtering data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#filter)
+    
+  - [<span data-ttu-id="3e0d9-112">O PowerShell para Microsoft 365 facilita a impressão ou a gravação de dados</span><span class="sxs-lookup"><span data-stu-id="3e0d9-112">PowerShell for Microsoft 365 makes it easy to print or save data</span></span>](https://technet.microsoft.com/library/dn568034.aspx#printsave)
+    
+- <span data-ttu-id="3e0d9-113">Relatórios de contas de usuário e licenças:</span><span class="sxs-lookup"><span data-stu-id="3e0d9-113">Reports for user accounts and licenses:</span></span>
+    
+  - [<span data-ttu-id="3e0d9-114">Exibir licenças e serviços do Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-114">View Microsoft 365 licenses and services with PowerShell</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+    
+  - [<span data-ttu-id="3e0d9-115">Exibir usuários licenciados e não licenciados da Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-115">View Microsoft 365 licensed and unlicensed users with PowerShell</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+    
+  - [<span data-ttu-id="3e0d9-116">Exibir a licença de conta e os detalhes de serviço do Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-116">View Microsoft 365 account license and service details with PowerShell</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
+    
+  - [<span data-ttu-id="3e0d9-117">Exibir contas de usuário do Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-117">View Microsoft 365 user accounts with PowerShell</span></span>](view-user-accounts-with-office-365-powershell.md)
+    
+- <span data-ttu-id="3e0d9-118">Relatórios do SharePoint Online:</span><span class="sxs-lookup"><span data-stu-id="3e0d9-118">Reports for SharePoint Online:</span></span>
+    
+  - [<span data-ttu-id="3e0d9-119">Introdução ao Shell de Gerenciamento do SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="3e0d9-119">Get started with SharePoint Online Management Shell</span></span>](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+    
+  - [<span data-ttu-id="3e0d9-120">Gerenciar grupos de sites do SharePoint Online com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-120">Manage SharePoint Online site groups with PowerShell</span></span>](https://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+    
+- <span data-ttu-id="3e0d9-121">Relatórios do Exchange Online:</span><span class="sxs-lookup"><span data-stu-id="3e0d9-121">Reports for Exchange Online:</span></span>
+    
+  - [<span data-ttu-id="3e0d9-122">Exibir informações de caixa de correio do Exchange Online com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-122">Display Exchange Online mailbox information with PowerShell</span></span>](https://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+    
+  - [<span data-ttu-id="3e0d9-123">Exibir relatórios do Exchange Online com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-123">Display Exchange Online reports with PowerShell</span></span>](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+    
+## <a name="see-also"></a><span data-ttu-id="3e0d9-124">Confira também</span><span class="sxs-lookup"><span data-stu-id="3e0d9-124">See also</span></span>
+
+[<span data-ttu-id="3e0d9-125">Gerenciar o Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-125">Manage Microsoft 365 with PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="63971-127">Gerenciar contas de usuário, licenças e grupos com o Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="63971-127">Manage user accounts, licenses, and groups with Office 365 PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[<span data-ttu-id="3e0d9-126">Introdução ao PowerShell para o Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="3e0d9-126">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-office-365-powershell.md)
+  
+[<span data-ttu-id="3e0d9-127">Gerenciar o SharePoint Online com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-127">Manage SharePoint Online with PowerShell</span></span>](manage-sharepoint-online-with-office-365-powershell.md)
+  
+[<span data-ttu-id="3e0d9-128">Gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="3e0d9-128">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
