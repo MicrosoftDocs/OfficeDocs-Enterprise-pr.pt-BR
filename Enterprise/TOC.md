@@ -15,6 +15,7 @@
 ### Planeje suas identidades
 #### [Modelos de identidade](about-office-365-identity.md)
 #### [Identidade híbrida](plan-for-directory-synchronization.md)
+#### [Ferramentas para gerenciar contas do Microsoft 365](tools-to-manage-office-365-accounts.md)
 
 ### [Plano para certificados SSL de terceiros no Microsoft 365](plan-for-third-party-ssl-certificates.md)
 ### [Guias de configuração para os serviços Microsoft 365 e Office 365](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [Identidade somente na nuvem](cloud-only-identities.md)
 ### Identidades híbridas
 #### [Preparar-se para a sincronização de diretórios](prepare-for-directory-synchronization.md)
+#### [Preparar um domínio não roteável para sincronização de diretórios](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### Use a ferramenta IdFix
 ##### [Preparar os atributos do diretório com a ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [Baixar e executar a ferramenta IdFix](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Os dados dos clientes nos datacenters do Office 365](o365-data-locations.md)
 
 ### Soluções híbridas
+#### [Visão geral](hybrid-solutions.md)
 #### [Usar o Azure Active Directory para a autenticação do SharePoint Server 2016](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Conectar uma rede local a uma rede virtual do Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Implantar um servidor de sincronização de diretório no IaaS do Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Isolamento de locatário no Microsoft 365 Video](office-365-isolation-in-office-365-video.md)
 ### [Isolamento de locatário no Microsoft Graph e Delve](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell para Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Conformidade com o Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Segurança do Microsoft 365](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 para Empresas](https://www.microsoft.com/microsoft-365/business)
