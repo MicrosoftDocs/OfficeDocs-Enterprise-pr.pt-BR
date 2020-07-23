@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Saiba como mover um site do SharePoint para uma localização geográfica diferente.
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057991"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201615"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover um site do SharePoint para uma localização geográfica diferente
 
@@ -27,7 +27,7 @@ Com a mudança geográfica do site do SharePoint, é possível migrar os sites d
 Os seguintes tipos de sites podem ser movidos entre a localizações geográficas:
 
 - Sites conectados ao grupo do Microsoft 365
-- Sites modernas sem uma associação ao grupo do Microsoft 365
+- Sites modernos sem uma associação com um Grupo do Microsoft 365
 - Site Clássico do SharePoint
 - Sites de comunicação
 
@@ -112,11 +112,11 @@ Para começar a mover site, execute:
 
 ![Captura de tela da janela do PowerShell mostrando Start-SPOSiteContentMove cmdlet](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Iniciar a movimentação geográfica do site do SharePoint para um site conectado a um Grupo do Microsoft 365
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Iniciar uma movimentação geográfica do site do SharePoint para um site conectado a um Grupo do Microsoft 365
 
-Para mover um site conectado a um grupo do Microsoft 365, o administrador global deve primeiro alterar o atributo de Local e data preferencial (PDL) para o grupo do Microsoft 365.
+Para mover um site conectado a um Grupo do Office 365, o administrador global ou administrador do SharePoint devem, primeiro, alterar o atributo Local e Data Preferenciais (PDL) do grupo do Office 365.
 
-Para definir o PDL de um grupo do Microsoft 365:
+Para configurar o PDL de um Grupo do Microsoft 365:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
