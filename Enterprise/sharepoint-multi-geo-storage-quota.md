@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Saiba mais sobre as cotas de armazenamento do SharePoint em ambientes multigeográficos.
-ms.openlocfilehash: b04c05f911e6ba4c5362e64dc6db4bf711ed78aa
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
-ms.translationtype: HT
+ms.openlocfilehash: f0463797dd3471f349e60d8f029b7ae2fa4b65a6
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974203"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433732"
 ---
 # <a name="sharepoint-storage-quotas-in-multi-geo-environments"></a>Cotas de armazenamento do SharePoint em ambientes multigeográficos
 

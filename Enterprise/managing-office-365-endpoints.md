@@ -17,16 +17,16 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substanciais ou processamento de tráfego de rede. Para garantir que os computadores em redes como esses possam acessar o Office 365, os administradores de rede e de proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados a rotas diretas, bypass de proxy e/ou regras de firewall e arquivos de PAC para garantir que as solicitações de rede possam acessar o Office 365.
-ms.openlocfilehash: f1e614412c1ef789ba5f0b81e124fdfebf361f94
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: MT
+ms.openlocfilehash: 335cfd3f27762c249cc9af88b169a9f0bb59bda7
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845032"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433552"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
-A maioria das organizações corporativas que têm vários locais do Office e uma WAN de conexão precisará precisar de configuração para a conectividade de rede do Office 365. Você pode otimizar sua rede enviando todas as solicitações de rede do Office 365 confiáveis diretamente através do firewall, ignorando a inspeção ou o processamento de qualquer nível de pacote adicional. Isso reduz a latência e seus requisitos de capacidade de perímetro. A identificação do tráfego de rede do Office 365 é a primeira etapa para fornecer o melhor desempenho para seus usuários. Para obter mais informações sobre a conectividade de rede do Office 365, consulte [office 365 princípios de conectividade de rede](office-365-network-connectivity-principles.md).
+A maioria das organizações corporativas que têm vários locais do Office e uma WAN de conexão precisará de configuração para a conectividade de rede do Office 365. Você pode otimizar sua rede enviando todas as solicitações de rede do Office 365 confiáveis diretamente através do firewall, ignorando a inspeção ou o processamento de qualquer nível de pacote adicional. Isso reduz a latência e seus requisitos de capacidade de perímetro. A identificação do tráfego de rede do Office 365 é a primeira etapa para fornecer o melhor desempenho para seus usuários. Para obter mais informações sobre a conectividade de rede do Office 365, consulte [office 365 princípios de conectividade de rede](office-365-network-connectivity-principles.md).
 
 A Microsoft recomenda que você acesse os pontos de extremidade de rede do Office 365 e altere-os usando o [endereço IP 365 do Office e o serviço Web de URL](office-365-ip-web-service.md).
 
@@ -72,7 +72,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 
 Há vários parâmetros que podem ser passados para o script:
 
-|**Parâmetro**|**Descrição**|
+|**Parâmetro**|**Description**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |Isso é obrigatório e é um GUID passado para o serviço Web que representa a máquina cliente que está fazendo a chamada. <br/> |
 |**Instância** <br/> |A instância de serviço do Office 365 que assume como padrão em todo o mundo. Também passado para o serviço Web. <br/> |
@@ -145,7 +145,7 @@ Confira um IP associado ao Office 365 no qual você deseja obter mais informaç�
 1. Verifique se o endereço IP está incluído em um intervalo de publicação maior usando uma calculadora de CIDR, como estas para [IPv4](https://www.ipaddressguide.com/cidr) ou [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Por exemplo, 40.96.0.0/13 inclui o endereço IP 40.103.0.1, apesar de 40,96 não corresponder a 40,103.
 2. Veja se um parceiro é proprietário do IP com uma [consulta whois](https://dnsquery.org/). Se ele for proprietário da Microsoft, poderá ser um parceiro interno. Muitos pontos de extremidade de rede do parceiro estão listados como pertencentes à categoria _padrão_ , para a qual os endereços IP não são publicados.
 3. O endereço IP pode não fazer parte do Office 365 ou de uma dependência. A publicação de ponto de extremidade de rede do Office 365 não inclui todos os pontos de extremidade da rede da Microsoft.
-4. Verifique o certificado, em um navegador, conecte-se ao endereço IP usando o *https://\<ip_address\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
+4. Verifique o certificado, em um navegador, conecte-se ao endereço IP usando o *https:// \<IP_ADDRESS\> * , verifique os domínios listados no certificado para entender quais domínios estão associados ao endereço IP. Se for um endereço IP de propriedade da Microsoft e não na lista de endereços IP do Office 365, é provável que o endereço IP esteja associado a uma CDN da Microsoft, como o *MSOCDN.net* ou outro domínio da Microsoft, sem informações de IP publicadas. Se você encontrar o domínio no certificado, um onde afirmamos listar o endereço IP, informe-nos.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Algumas URLs do Office 365 apontam para registros CNAME em vez de registros no DNS. O que preciso fazer com os registros CNAME?
@@ -167,9 +167,9 @@ Não é recomendável que as configurações de código ou a lista de brancas do
 
 O Office 365 e outros serviços da Microsoft usam vários serviços de terceiros, como Akamai e MarkMonitor, para melhorar a experiência do Office 365. Para manter a melhor experiência possível, podemos alterar esses serviços no futuro. Domínios de terceiros podem hospedar conteúdo, como uma CDN, ou podem hospedar um serviço, como um serviço de gerenciamento de tráfego geográfico. Alguns dos serviços em uso no momento incluem:
   
-[MarkMonitor](https://www.markmonitor.com/) está em uso quando você vê as solicitações que incluem * \*. nsatc.net* . Este serviço fornece proteção e monitoramento de nomes de domínio para proteção contra comportamentos mal-intencionados.
+[MarkMonitor](https://www.markmonitor.com/) está em uso quando você vê as solicitações que incluem * \* . nsatc.net* . Este serviço fornece proteção e monitoramento de nomes de domínio para proteção contra comportamentos mal-intencionados.
   
-[ExactTarget](https://www.marketingcloud.com/) está em uso quando você vê as solicitações para * \*. exacttarget.com* . Este serviço oferece gerenciamento e monitoramento de links de email contra comportamentos mal-intencionados.
+[ExactTarget](https://www.marketingcloud.com/) está em uso quando você vê as solicitações para * \* . exacttarget.com* . Este serviço oferece gerenciamento e monitoramento de links de email contra comportamentos mal-intencionados.
   
 O [Akamai](https://www.akamai.com/) está em uso quando você vê solicitações que incluem um dos FQDNs a seguir. Este serviço oferece serviços de rede de distribuição de conteúdo e DNS geográfico.
   

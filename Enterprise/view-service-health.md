@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Veja o status de integridade dos serviços do Microsoft 365 antes de ligar para o suporte para ver se há uma interrupção ativa do serviço.
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266671"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433882"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Como verificar a integridade do serviço Microsoft 365
 
@@ -68,6 +68,9 @@ Para inscrever-se para receber notificações por email de novos incidentes que 
 - Até dois endereços de email.
 - Se você deseja notificações para incidentes ou comunicados
 - Os serviços para os quais você deseja a notificação
+
+> [!NOTE]
+> Cada administrador pode ter suas preferências definidas e o limite acima de dois endereços de email é por conta de administrador.
 
 > [!TIP]
 > Você também pode usar o [aplicativo de administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=627216) em seu dispositivo móvel para exibir a integridade do serviço, que é uma ótima maneira de se manter atualizado com as notificações por push. 
@@ -145,4 +148,5 @@ Para obter mais informações sobre nosso compromisso com o tempo de atividade, 
 
 ## <a name="see-also"></a>Confira também
 
-[Relatórios de atividades no centro de administração do Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Relatórios de atividades no centro](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ de administração do Microsoft 365 [Preferências do centro de mensagens](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

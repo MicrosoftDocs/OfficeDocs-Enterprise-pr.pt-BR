@@ -14,17 +14,17 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Os clientes existentes do Office 365 precisarão enviar uma solicitação antes do prazo final para o seu país para que os dados do cliente de seus serviços do Microsoft 365 participantes sejam movidos para a nova geografia.
-ms.openlocfilehash: dae2c7e4f2fc529a32af6127b4f054f9c3d01344
-ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
+ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278064"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433752"
 ---
 # <a name="how-to-request-your-data-move"></a>Como solicitar a migração dos dados
 
 > [!NOTE]
-> As informações nesta página aplicam-se apenas aos clientes que tinham locatários do Microsoft 365 existentes antes dos novos datacenters em sua geografia. 
+> As informações nesta página aplicam-se apenas aos clientes que tinham locatários do Microsoft 365 existentes antes dos novos datacenters em sua geografia. A qualificação de migração também depende da data de provisionamento de carga de trabalho específica, portanto, a data de criação do locatário pode nem sempre ser a única data que importa.
   
 Os clientes do Microsoft 365 existentes estão qualificados para solicitar a migração de todos os dados do cliente principais da sua organização em repouso.  
   

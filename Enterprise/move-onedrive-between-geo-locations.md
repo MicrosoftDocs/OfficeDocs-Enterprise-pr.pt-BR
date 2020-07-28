@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Saiba como migrar um site do OneDrive para um local geográfico diferente.
-ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 699c9502c7257e5908e79d591170b51a563c4999
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058001"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433872"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Mover um site do OneDrive para um local geográfico diferente 
 
@@ -199,4 +199,8 @@ Após a conclusão da movimentação geográfica do OneDrive, o usuário precisa
 
 ### <a name="existing-followed-groups-and-sites"></a>Grupos e sites seguidos existentes
 
-Os grupos e sites seguidos serão mostrados no OneDrive for Business do usuário, independentemente da localização geográfica. Sites e grupos hospedados em outra localização geográfica serão abertos em uma guia separada.
+Os sites e grupos seguidos serão exibidos no OneDrive do usuário independentemente da localização geográfica. Sites e grupos hospedados em outro local geográfico serão abertos em uma guia separada.
+
+### <a name="delve-geo-url-updates"></a>Atualizações da URL geográfica do Delve
+
+Os usuários serão enviados para a geografia do Delve correspondente à sua PDL somente depois que o OneDrive tiver sido movido para a nova geografia.

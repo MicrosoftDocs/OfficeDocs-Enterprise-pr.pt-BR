@@ -10,15 +10,15 @@ ms.service: o365-solutions
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 f1.keywords: NOCSH
 description: Saiba como mover um site do SharePoint para uma localização geográfica diferente.
-ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
-ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
-ms.translationtype: HT
+ms.openlocfilehash: 88c739e69f27df72cba3757f224ccd1a916d3148
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201615"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433862"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Mover um site do SharePoint para uma localização geográfica diferente
 

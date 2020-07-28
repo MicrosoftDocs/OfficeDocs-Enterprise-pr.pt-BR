@@ -10,15 +10,15 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: Saiba como configurar o eDiscovery no Microsoft 365 Multi-Geo.
-ms.openlocfilehash: a956a38f00590161c04009b472a4a8a9d2e89d2b
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 7257e5e9a5a7154d574743e3e515e49e9dc714b2
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057951"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433822"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuração do Microsoft 365 Multi-Geo eDiscovery
 

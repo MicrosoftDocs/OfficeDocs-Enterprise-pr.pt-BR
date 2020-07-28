@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Saiba como administrar a configuração multigeográfica doExchange Online com o Microsoft PowerShell.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352941"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433502"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administrar caixas de correio do Exchange Online em um ambiente multigeográfico
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **Observação:** se o código de localização geográfica no nome do banco de dados não corresponde ao valor **MailboxRegion**, a caixa de correio será automaticamente colocada na fila de mudança e movida para a localização geográfica especificada pelo valor ** MailboxRegion** (O Exchange Online procura uma incompatibilidade entre esses valores de propriedade).
+> [!NOTE]
+> Se o código de localização geográfica no nome do banco de dados não corresponder ao valor de **MailboxRegion** , a caixa de correio será automaticamente colocada em uma fila de realocação e movida para o local geográfico especificado pelo valor **MailboxRegion** (o Exchange Online procura por uma incompatibilidade entre esses valores de propriedade).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Mover uma caixa de correio apenas nuvem existente para uma localização geográfica específica
 
@@ -133,17 +134,16 @@ Por exemplo, para configurar o valor **PreferredDataLocation** para a área geog
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Observações**:
-
-- Como mencionamos anteriormente é possível usar este procedimento para objetos sincronizados do usuário do Active Directory no local. Você precisa alterar o valor **PreferredDataLocation** no Active Directory e sincronizá-lo usando o AAD Connect. Para obter mais informações, consulte [Sincronização do Azure Active Directory Connect: Configurar o local preferencial dos dados dos recursos do Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-
-- O tempo que leva para relocar uma caixa de correio para uma nova localização geográfica depende de vários fatores:
-
-  - O tamanho e tipo de caixa de correio.
-
-  - O número de caixas de correio sendo movidas.
-
-  - Disponibilidade de recursos de movimentação.
+> [!NOTE]
+> - Como mencionado anteriormente, você não pode usar este procedimento para objetos de usuário sincronizados do Active Directory local. Você precisa alterar o valor **PreferredDataLocation** no Active Directory e sincronizá-lo usando o AAD Connect. Para obter mais informações, consulte [Sincronização do Azure Active Directory Connect: Configurar o local preferencial dos dados dos recursos do Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> 
+> - O tempo que leva para relocar uma caixa de correio para uma nova localização geográfica depende de vários fatores:
+> 
+>   - O tamanho e tipo de caixa de correio.
+> 
+>   - O número de caixas de correio sendo movidas.
+> 
+>   - Disponibilidade de recursos de movimentação.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Mover caixas de correio desabilitadas que estão em Retenção de Litígio
 

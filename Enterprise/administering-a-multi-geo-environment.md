@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Priority
+localization_priority: Normal
 description: Saiba como administrar o SharePoint e os serviços do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: a4e467edebbcfbb0288b698f3e7d5bcf589cdd69
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057657"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433522"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrar um ambiente multigeográfico
 

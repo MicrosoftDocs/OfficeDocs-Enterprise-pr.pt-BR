@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Saiba como restringir os sites do SharePoint em um local geográfico especificado em um ambiente de multigeográfico.
-ms.openlocfilehash: ca63f46ba45d1b3ddfdf4f676b678d62387b801f
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
-ms.translationtype: HT
+ms.openlocfilehash: 1b1b072709ee54b2a18255798995650fc9f9942e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973953"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433472"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Restringir o conteúdo do site do SharePoint a um local geográfico
 
