@@ -1,12 +1,12 @@
 ---
-title: Correção de problemas com a sincronização de diretórios para o Microsoft 365
+title: Como corrigir problemas de sincronização de diretórios do Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -19,58 +19,58 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descreve causas comuns de problemas com a sincronização de diretórios no Office 365 e fornece alguns métodos para ajudar a solucionar problemas.
-ms.openlocfilehash: d9e390a7230499f724ebbdae592264a850dd9418
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: fac0c477f3c68271a2f0f8c4e2a09fc051fe1ce4
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998029"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502646"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Correção de problemas com a sincronização de diretórios para o Microsoft 365
+# <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Como corrigir problemas de sincronização de diretórios do Microsoft 365
 
 Com a sincronização de diretórios, você pode continuar a gerenciar os usuários e grupos locais, e sincronizar acréscimos, eliminações e alterações com a nuvem. Mas a configuração é um pouco complicada e algumas vezes pode ser difícil identificar a origem dos problemas. Temos recursos para ajudá-lo a identificar os possíveis problemas e corrigi-los.
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>Como saber se algo está errado?
 
-A primeira indicação de que algo está errado é quando o bloco de status DirSync no centro de administração do Microsoft 365 indica que há um problema.
+O primeiro sinal de que algo está errado é quando o bloco de Status do DirSync no Centro de Administração do Microsoft 365 indica que há um problema.
   
-Você também receberá um email (para o email alternativo e para o email do administrador) da Microsoft 365 que indica que seu locatário encontrou erros de sincronização de diretório. Para obter detalhes, consulte [identificar erros de sincronização de diretório no Microsoft 365](identify-directory-synchronization-errors.md).
+Você também receberá um email (no endereço de email alternativo e no seu email de administrador) do Microsoft 365 que indica que seu locatário encontrou erros de sincronização de diretório. Para obter mais detalhes, confira o artigo [Como identificar erros de sincronização de diretório no Microsoft 365](identify-directory-synchronization-errors.md).
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Como usar a ferramenta Azure Active Directory Connect?
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Como faço para obter a ferramenta Azure Active Directory Connect?
 
-No [centro de administração do Microsoft 365](https://admin.microsoft.com), navegue até usuários ativos do **usuário** \> **Active users**. Clique no menu **mais** (três pontos) e selecione **sincronização de diretório**. 
+No [Centro de Administração do Microsoft 365](https://admin.microsoft.com), vá para **Usuários** \> **Usuários ativos**. Clique em **Mais** no menu (três pontos) e selecione **Sincronização do diretório**. 
   
-Siga as [instruções no assistente](set-up-directory-synchronization.md) para baixar o Azure AD Connect. 
+Siga as [instruções do assistente](set-up-directory-synchronization.md) para baixar o Azure AD Connect. 
   
-Se você ainda estiver usando a sincronização do Azure Active Directory (Azure AD), confira [como solucionar problemas de mensagens de erro do assistente de instalação e configuração da ferramenta de sincronização do Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=396717) (DirSync) no Microsoft 365 para obter informações sobre os requisitos do sistema para instalar o DirSync, as permissões necessárias e como solucionar erros comuns. 
+Se ainda estiver usando a Sincronização (DirSync) do Azure Active Directory (Azure AD), confira o artigo [Como solucionar problemas de instalação da Ferramenta de Sincronização do Azure Active Directory e mensagens de erro do Assistente de Configuração no Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) para saber mais sobre os requisitos do sistema para instalar o DirSync, as permissões necessárias e como solucionar erros comuns. 
   
-Para atualizar do Azure AD Sync para o Azure AD Connect, consulte [as instruções de atualização](https://go.microsoft.com/fwlink/p/?LinkId=733240).
+Para atualizar o Azure AD Sync para o Azure AD Connect, confira as [instruções de atualização](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Resolver causas comuns de problemas com a sincronização de diretórios no Microsoft 365
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-microsoft-365"></a>Como resolver as causas mais comuns de problemas de sincronização de diretórios no Microsoft 365
 
-### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Os objetos sincronizados não são exibidos ou atualizados online, ou estou recebendo relatórios de erros de sincronização do serviço.**
+### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>Os objetos sincronizados não estão aparecendo nem sendo atualizados online, ou estou recebendo relatórios de erros de sincronização enviados pelo Serviço.
 
 - [Sincronização de identidades e resiliência do atributo duplicada](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Tenho um alerta no centro de administração ou estou recebendo emails automáticos informando que não houve eventos de sincronização recentes**
+### <a name="i-have-an-alert-in-the-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>Recebi um alerta no centro de administração ou estou recebendo emails automáticos informando que não ocorreram eventos de sincronização recentes
 - [Solucionar problemas de conectividade com o Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Contas e permissões do Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=820598)
 - [Sincronização do Azure AD Connect: como gerenciar a conta de serviço do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [A sincronização do diretório com o Azure Active Directory para ou você é alertado de que a sincronização não aconteceu há mais de um dia](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**As senhas não estão sincronizando ou estou vendo um alerta no centro de administração de que não houve sincronização de hash de senhas recentes**
-- [Implementação de sincronização de hash de senha com a sincronização do Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>As senhas criptografadas não estão sendo sincronizadas ou estou vendo um alerta no centro de administração informando que não ocorreu nenhuma sincronização recente da criptografia de senhas
+- [Como implementar a sincronização da criptografia de senha com a sincronização do Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Estou vendo um alerta de cota de objeto excedida**
-- Temos uma cota interna de objetos para ajudar a proteger o serviço. Se você tiver muitos objetos em seu diretório que precisam ser sincronizados com o Microsoft 365, será necessário [entrar em contato com o suporte para produtos de negócios](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para aumentar sua cota.
+### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>Estou vendo um alerta informando que a cota de Objetos foi excedida
+- Temos uma cota de objetos integrada para ajudar a proteger o serviço. Se você tiver um número excessivo de objetos em seu diretório e precisar sincronizar com o Microsoft 365, precisará [Entrar em contato com o suporte de produtos empresariais](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) para aumentar sua cota.
 
-### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Preciso saber quais são os atributos sincronizados**
-- É possível encontrar uma lista de todos os atributos que estão sincronizados entre o local e a nuvem [aqui](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+### <a name="i-need-to-know-which-attributes-are-synchronized"></a>Preciso saber quais atributos são sincronizados
+- Você pode encontrar uma lista de todos os atributos que são sincronizados entre o local e a nuvem [aqui](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
-### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Não consigo gerenciar ou remover os objetos que foram sincronizados na nuvem**
+### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>Não consigo gerenciar nem remover os objetos que foram sincronizados para a nuvem
 - Você está pronto para gerenciar objetos somente na nuvem? Ou existe um objeto que foi excluído localmente, mas está preso na nuvem? Confira [Como solucionar erros durante a sincronização](https://go.microsoft.com/fwlink/p/?linkid=842044) e este [artigo sobre suporte](https://go.microsoft.com/fwlink/p/?LinkId=396720) para obter orientação sobre como resolver esses problemas.
 
-### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**Recebi uma mensagem de erro informando que minha empresa excedeu o número de objetos que podem ser sincronizados**
+### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>Recebi uma mensagem de erro informando que minha empresa excedeu o número de objetos que podem ser sincronizados
 - Leia mais sobre o problema [aqui](https://go.microsoft.com/fwlink/p/?LinkId=396721).
    
 ## <a name="other-resources"></a>Outros recursos
@@ -91,6 +91,6 @@ Para atualizar do Azure AD Sync para o Azure AD Connect, consulte [as instruçõ
     
 ## <a name="diagnostic-tools"></a>Ferramentas de diagnóstico
 
-[IDFix ferramenta](prepare-directory-attributes-for-synch-with-idfix.md) é usada para executar a descoberta e a correção de objetos Identity e seus atributos em um ambiente do Active Directory local em preparação para a migração para o Microsoft 365. O IDFix destina-se aos administradores do Active Directory responsáveis pela sincronização de diretórios com o serviço do Microsoft 365. 
+A [ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md) é usada para executar a descoberta e correção de objetos de identidade e seus atributos em um ambiente local do Active Directory que está sendo preparado para migrar para o Microsoft 365. A IdFix destina-se aos administradores do Active Directory responsáveis pela sincronização do diretório com o serviço do Microsoft 365. 
 
 [Baixar a ferramenta IdFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) no Centro de Download da Microsoft.
