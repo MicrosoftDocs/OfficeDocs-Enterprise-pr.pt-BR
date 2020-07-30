@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Resumo: o novo serviço Web de ponto de extremidade não inclui uma quantidade pequena de pontos de extremidade para cenários específicos.'
 hideEdit: true
-ms.openlocfilehash: 4d67d67c3f1c0eb6aa8079dbbdc0d964274af48b
-ms.sourcegitcommit: 93d0cc401c9d910e115072c0229232765fbad75e
+ms.openlocfilehash: 9c57feb143b52bc84bd1d636f639712cf3c04cd3
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939596"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433542"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Pontos de extremidade adicionais não incluídos no endereço IP do Office 365 e no serviço Web de URL
 
@@ -43,9 +43,8 @@ Alguns pontos de extremidade de rede foram publicados anteriormente e não foram
 
 Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos que você precise do cenário específico descrito.
 
-|||||
+| Linha | Objetivo | Destino | Tipo |
 |:-----|:-----|:-----|:-----|
-| **Linha** | **Objetivo** | **Destino** | **Tipo** |
 | 1  | [Serviço de importação](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) para PST e ingestão de arquivos | Confira o [Serviço de Importação](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) para requisitos adicionais. | Cenários excepcionais de saída |
 | 2  | [Assistente de Recuperação e Suporte da Microsoft para o Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Tráfego do servidor de saída |
 | 3  | Azure AD Connect (com opção de SSO) – WinRM e PowerShell remoto | Ambiente de STS do cliente (servidor do AD FS e Proxy do AD FS) \| portas TCP 80 e 443 | Tráfego do servidor de entrada |
@@ -61,7 +60,7 @@ Exceto pelo DNS, todos estes são opcionais para a maioria dos clientes, a menos
 | 13  | O PSTN na nuvem sem conectividade híbrida local requer conectividade aberta ao host local. Para saber mais sobre as configurações híbridas do Skype for Business Online  | Confira [Planejar conectividade híbrida entre o Skype for Business Server e o Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). | Entrada híbrida local do Skype for Business |
 | 14  | **FQDNs de autenticação e identidade** <br> O FDQN ```secure.aadcdn.microsoftonline-p.com```precisa estar no Internet Explorer (IE) ou na Zona de Sites Confiáveis de Borda para funcionar. |  | Sites confiáveis |
 | 15  |  **FDQNs do Microsoft Teams** <br> Se estiver usando o Internet Explorer ou o Microsoft Edge, é necessário habilitar os cookies primários e de terceiros, adicionar os FQDNs do Teams aos Sites Confiáveis, além de todo o pacote de FQDNs, CDNs e telemetria relacionados na linha 14. Para saber mais, confira o artigo [Problemas conhecidos do Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Sites confiáveis |
-| 16  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todos os FDQNs ".sharepoint.com" com "\<locatário>" devem estar na zona de Sites Confiáveis do Internet Explorer ou do Microsoft Edge do cliente para funcionar. Além de todo o pacote de FDQNs, CDNs e telemetria relacionados na linha 14, é necessário também adicionar esses pontos de extremidade. |  | Sites confiáveis |
+| 16  |  **FDQNs do SharePoint Online e do OneDrive for Business** <br> Todos os FQDNs do ".sharepoint.com" com o "\<tenant>" no FQDN devem estar no IE do seu cliente ou na Zona de Sites Confiáveis do Edge para funcionar. Além de todo o pacote de FQDNs, CDNs e telemetria listados na linha 14, também é necessário adicionar esses pontos de extremidade. |  | Sites confiáveis |
 | 17  | **Yammer**  <br> O Yammer só está disponível no navegador e exige que o usuário esteja autenticado através de um proxy. Todos os FQDNs do Yammer devem estar no IE ou Zona de Sites confiáveis de Borda do cliente para funcionar. |  | Sites confiáveis |
 | 18  | Use o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) para sincronizar contas de usuários locais com o Azure AD. | Consulte [Portas e Protocolos de Identidade Híbrida Necessários](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Solucionar problemas de conectividade do Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) e [Instalação do Agente de Integridade do Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Somente o tráfego de servidor de saída |
 | 19  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) com 21 ViaNet na China para sincronizar contas de usuários locais com o Azure AD. | \*digicert.com:80 <BR> \*entrust.net:80 <BR> \*chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>Consulte também [Solucionar problemas de ingresso com problemas de conectividade com o Azure AD](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Somente o tráfego de servidor de saída |
