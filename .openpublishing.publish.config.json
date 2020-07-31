@@ -1,18 +1,6 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "OfficeDocs-Enterprise",
-      "build_source_folder": "Enterprise",
-      "build_output_subfolder": "OfficeDocs-Enterprise",
-      "locale": "pt-br",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
       "docset_name": "OfficeDocs-O365Enterprise",
       "build_source_folder": "Enterprise",
       "build_output_subfolder": "OfficeDocs-O365Enterprise",
@@ -47,7 +35,8 @@
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "_repo.en-us",
@@ -65,8 +54,8 @@
       "Pdf"
     ],
     "live-sxs": [
-    "Publish",
-    "Pdf"
+      "Publish",
+      "Pdf"
     ],
     "master": [
       "Publish",
@@ -74,7 +63,7 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "Targets": {
+  "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
