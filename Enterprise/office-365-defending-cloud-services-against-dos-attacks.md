@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como a Microsoft defende seus serviços em nuvem contra ataques de negação de serviço (DoS).
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998325"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529084"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Defendendo os serviços de nuvem da Microsoft 365 contra ataques de negação de serviço
 
-## <a name="introduction"></a>Introdução
 Os datacenters da Microsoft são protegidos por segurança de defesa profunda que inclui isolamento de perímetro, câmeras de vídeo, equipe de segurança e entradas seguras que usam biometria, SmartCard e autenticação multifator. A segurança de proteção em camadas continua através de cada área do recurso e de cada unidade de servidor físico. A [infraestrutura de nuvem da Microsoft e o grupo de operações](https://www.microsoft.com/cloud-platform/global-datacenters) oferecem a infraestrutura principal e as tecnologias fundamentais para nossos serviços em nuvem. Nossos data centers estão em conformidade com os padrões do setor para segurança física e confiabilidade e são gerenciados, monitorados e administrados pela equipe de operações da Microsoft.
 
 Para proteger ainda mais nossos serviços em nuvem, a Microsoft fornece um sistema de defesa contra DDoS que faz parte dos processos de monitoramento contínuo e teste de penetração do Microsoft Azure. O sistema de defesa de DDoS do Azure é projetado para não apenas resistir a ataques de fora, mas também de outros locatários do Azure. O Azure usa técnicas de detecção e atenuação padrão, como cookies SYN, limitação de taxa e limites de conexão para proteção contra ataques de DDoS.
