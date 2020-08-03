@@ -1,5 +1,5 @@
 ---
-title: Visão geral da conectividade de rede do Microsoft 365
+title: Visão Geral da Conectividade de Rede do Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Discute por que a otimização de rede é importante para serviços SaaS, a meta da rede 365 da Microsoft e como o SaaS requer redes diferentes de outras cargas de trabalho.
-ms.openlocfilehash: bc754337eea5e04d6851509114763004b53a19a7
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 6dc1ea91607dc43d4e24546f938f4f7ee3af8b3a
+ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997821"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533496"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Visão geral da conectividade de rede do Microsoft 365
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 A Microsoft 365 é uma nuvem de software (SaaS) distribuída que oferece cenários de produtividade e colaboração por meio de um conjunto variado de micro serviços e aplicativos. Os componentes do cliente do Microsoft 365 como o Outlook, o Word e o PowerPoint são executados nos computadores dos usuários e se conectam a outros componentes do Microsoft 365 executados nos datacenters da Microsoft. O fator mais significativo que determina a qualidade da experiência do usuário final da Microsoft 365 é a confiabilidade da rede e baixa latência entre os clientes do Microsoft 365 e as portas frontais de serviço do Microsoft 365.
 
@@ -35,7 +35,7 @@ Neste artigo, você aprenderá sobre as metas da rede do Microsoft 365 e por que
 
 O objetivo final da rede 365 da Microsoft é otimizar a experiência do usuário final, habilitando o acesso menos restritivo entre os clientes e os pontos de extremidade do Microsoft 365 mais próximos. A qualidade da experiência do usuário final está diretamente relacionada ao desempenho e à capacidade de resposta do aplicativo que o usuário está usando. Por exemplo, o Microsoft Teams depende de baixa latência para que as chamadas telefônicas de usuário, conferências e colaborações de tela compartilhada estejam sem problemas e o Outlook dependa da grande conectividade de rede para recursos de pesquisa instantânea que aproveitam os recursos de indexação do servidor e AI.
 
-O objetivo principal no design de rede deve ser minimizar a latência, reduzindo o tempo de ida e volta (RTT) de máquinas clientes para a rede global da Microsoft, o backbone de rede pública da Microsoft que faz a conexão de todos os datacenters da Microsoft com a baixa latência e pontos de entrada do aplicativo de nuvem de alta disponibilidade espalhados pelo mundo. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+O objetivo principal no design de rede deve ser minimizar a latência, reduzindo o tempo de ida e volta (RTT) de máquinas clientes para a rede global da Microsoft, o backbone de rede pública da Microsoft que faz a conexão de todos os datacenters da Microsoft com a baixa latência e pontos de entrada do aplicativo de nuvem de alta disponibilidade espalhados pelo mundo. Você pode saber mais sobre a Rede Global da Microsoft no [Como a Microsoft cria uma rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Otimizar o desempenho da rede Microsoft 365 não precisa ser complicado. Você pode obter o melhor desempenho possível, seguindo alguns princípios fundamentais:
 
@@ -61,7 +61,7 @@ Estamos facilitando a identificação do tráfego de rede do Microsoft 365 e tor
 
 ## <a name="securing-microsoft-365-connections"></a>Protegendo conexões do Microsoft 365
 
-O objetivo da segurança de rede tradicional é reforçar o perímetro da rede corporativa contra invasão e explorações mal-intencionadas. A maioria das redes corporativas impõe a segurança de rede para o tráfego da Internet usando tecnologias como servidores proxy, firewalls, interrupção SSL e inspecionar, inspeção de pacote profunda e sistemas de prevenção contra perda de dados. Essas tecnologias oferecem uma redução de risco importante para solicitações de Internet genéricas, mas podem reduzir drasticamente o desempenho, a escalabilidade e a qualidade da experiência do usuário final quando aplicadas aos pontos de extremidade do Microsoft 365.
+O objetivo da segurança de rede tradicional é otimizar o perímetro da rede corporativa contra invasões e explorações maliciosas. A maioria das redes corporativas impõe a segurança de rede para o tráfego da Internet usando tecnologias como servidores proxy, firewalls, interrupção SSL e inspecionar, inspeção de pacote profunda e sistemas de prevenção contra perda de dados. Essas tecnologias oferecem redução de risco importantes para solicitações de Internet genéricas, mas podem reduzir significativamente o desempenho, a capacidade de expansão e a qualidade da experiência do usuário final quando aplicada aos pontos de extremidade do Microsoft 365.
 
 A Microsoft 365 ajuda a atender às necessidades da sua organização quanto à segurança do conteúdo e à conformidade de uso de dados com recursos internos de segurança e governança projetados especificamente para os recursos e cargas de trabalho do Microsoft 365. Para obter mais informações sobre segurança e conformidade do Microsoft 365, consulte o [mapa de segurança do Office 365](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Para obter mais informações sobre as recomendações e a posição de suporte da Microsoft sobre soluções de rede avançadas que executam o processamento avançado no tráfego do Microsoft 365, consulte [usando dispositivos de rede de terceiros ou soluções no tráfego do Office 365](https://support.microsoft.com/help/2690045).
 
@@ -75,18 +75,18 @@ Determinados problemas comuns de desempenho são criados quando o tráfego do Mi
 - As conexões de egresso de um local central derrotam os recursos de roteamento dinâmico da rede global do Microsoft 365, adicionando latência e tempo de ida e volta
 - Descriptografar o tráfego de rede do Microsoft 365 protegido por SSL e criptografá-lo novamente pode causar erros de protocolo e ter risco de segurança
 
-Reduzir o caminho de rede para os pontos de entrada do Microsoft 365, permitindo que o tráfego de saída do cliente seja o mais próximo possível do local geográfico pode melhorar o desempenho de conectividade e a experiência do usuário final no Microsoft 365. Também pode ajudar a reduzir o impacto de alterações futuras na arquitetura de rede no desempenho e na confiabilidade do Microsoft 365. O modelo de conectividade ideal é sempre fornecer egresso de rede no local do usuário, independentemente se isso está na rede corporativa ou locais remotos, como casa, hotéis, lanchonetes e aeroportos. O tráfego da Internet genérico e o tráfego de rede corporativa baseado em WAN seriam roteados separadamente e não usam o modelo de egresso direta local. Esse modelo de egresso direta local é representado no diagrama abaixo.
+Reduzir o caminho de rede para os pontos de entrada do Microsoft 365, permitindo que o tráfego de saída do cliente seja o mais próximo possível do local geográfico pode melhorar o desempenho de conectividade e a experiência do usuário final no Microsoft 365. Também pode ajudar a reduzir o impacto de alterações futuras na arquitetura de rede no desempenho e na confiabilidade do Microsoft 365. O modelo de conectividade ideal é sempre fornecer egresso de rede no local do usuário, independentemente se isso está na rede corporativa ou locais remotos, como casa, hotéis, lanchonetes e aeroportos. O tráfego da Internet genérico e o tráfego de rede corporativa baseado em WAN seriam roteados separadamente e não usam o modelo de egresso direta local. Esse modelo de saída direta local é representado no diagrama a seguir.
 
 ![Arquitetura de rede de saída local](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 A arquitetura de egresso local tem os seguintes benefícios para o tráfego de rede do Microsoft 365 em relação ao modelo tradicional:
   
-- Oferece o melhor desempenho da Microsoft 365, otimizando o tamanho da rota. As conexões de usuário final são direcionadas dinamicamente para o ponto de entrada mais próximo da Microsoft 365 pela infraestrutura de _porta frontal de serviço distribuído_ da rede global da Microsoft, e o tráfego é então roteado internamente para os pontos de extremidade de dados e serviço na fibra escura de alta disponibilidade de baixa latência da Microsoft.
+- Oferece o melhor desempenho do Microsoft 365, melhorando o comprimento da rota. As conexões de usuário final são direcionadas dinamicamente para o ponto de entrada mais próximo da Microsoft 365 pela infraestrutura de _porta frontal de serviço distribuído_ da rede global da Microsoft, e o tráfego é então roteado internamente para os pontos de extremidade de dados e serviço na fibra de alta disponibilidade de latência ultra baixa da Microsoft.
 - Reduz a carga na infraestrutura de rede corporativa, permitindo o egresso local para o tráfego do Microsoft 365, ignorando proxies e dispositivos de inspeção de tráfego.
 - Protege as conexões em ambas as extremidades, aproveitando os recursos de segurança do ponto de extremidade do cliente e da nuvem, evitando a aplicação de tecnologias de segurança de rede redundantes.
 
 > [!NOTE]
-> A infraestrutura de _porta frontal de serviço distribuído_ é a borda de rede altamente disponível e escalonável da rede global da Microsoft com locais geograficamente distribuídos. Ela termina as conexões de usuário final e as roteia com eficiência dentro da rede global da Microsoft. Você pode saber mais sobre a rede global da Microsoft em [como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> A infraestrutura de _porta frontal de serviço distribuído_ é a borda de rede altamente disponível e escalonável da rede global da Microsoft com locais geograficamente distribuídos. Ela termina as conexões de usuário final e as roteia com eficiência dentro da rede global da Microsoft. Você pode saber mais sobre a Rede Global da Microsoft no [Como a Microsoft cria uma rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Para obter mais informações sobre a compreensão e a aplicação dos princípios de conectividade de rede da Microsoft 365, consulte [microsoft 365 Network Connectivity principless](office-365-network-connectivity-principles.md).
 
@@ -116,6 +116,6 @@ Otimizar o desempenho da rede Microsoft 365 é muito bem possível para remover 
 
 [Teste de conectividade do Microsoft 365](https://aka.ms/netonboard)
 
-[Como a Microsoft cria sua rede global rápida e confiável](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Como a Microsoft cria sua rede global confiável e rápida](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog de rede do Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

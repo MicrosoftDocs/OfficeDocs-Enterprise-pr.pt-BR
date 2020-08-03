@@ -23,18 +23,18 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Saiba como a autenticação moderna da 365 Microsoft funciona de forma diferente para os aplicativos cliente do Office 2013 e 2016.
-ms.openlocfilehash: 22f9bf521fc5da367cb8f8d6f02a004baf42a866
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.openlocfilehash: 469dd665a3f427db3e2ae3731945e53b900f05e9
+ms.sourcegitcommit: 92bbb6d005d005952a9e2055661fcdccfdd0567b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102599"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533486"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Como funciona a autenticação moderna para os aplicativos cliente do Office 2013, Office 2016 e Office 2019
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
-Leia este artigo para saber como os aplicativos clientes do Office 2013 e do Office 2016 usam recursos de autenticação modernos com base na configuração de autenticação no Microsoft 365 locatário para Exchange Online, SharePoint Online e Skype for Business online.
+Leia este artigo para saber como os aplicativos clientes do Office 2013, Office 2016 e Office 2019 usam recursos de autenticação modernos com base na configuração de autenticação no Microsoft 365 locatário para Exchange Online, SharePoint Online e Skype for Business online.
 
 > [!NOTE]
 > Aplicativos clientes herdados, como o Office 2010 e o Office para Mac 2011, não oferecem suporte à autenticação moderna e só podem ser usados com a autenticação básica.
@@ -60,14 +60,14 @@ Para habilitar a autenticação moderna para os dispositivos com Windows (por ex
   
 |**Chave do Registro**|**Type**|**Valor** |
 |:-------|:------:|--------:|
-|Hkcu\software\microsoft\office\15.0 \common\identity\enableadal com  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
   
 Leia [como usar a Adal (autenticação moderna) com o Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=785431) para saber como ela funciona com o Skype for Business. 
   
 Os clientes do Office 2016 e do Office 2019 dão suporte à autenticação moderna por padrão, e nenhuma ação é necessária para que o cliente use esses novos fluxos. No entanto, é necessária uma ação explícita para usar a autenticação herdada.
   
-Clique nos links abaixo para ver como a autenticação de cliente do Office 2013 e Office 2016 funciona com os serviços do Microsoft 365, dependendo se a autenticação moderna está ativada ou não.
+Clique nos links abaixo para ver como o Office 2013, o Office 2016 e a autenticação de cliente do Office 2019 funcionam com os serviços do Microsoft 365, dependendo se a autenticação moderna está ativada ou não.
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -78,15 +78,15 @@ Clique nos links abaixo para ver como a autenticação de cliente do Office 2013
 <a name="BK_EchangeOnline"> </a>
 ### <a name="exchange-online"></a>Exchange Online
 
-A tabela a seguir descreve o comportamento de autenticação para os aplicativos cliente do Office 2013 ou do Office 2016 quando eles se conectam ao Exchange Online com ou sem a autenticação moderna.
+A tabela a seguir descreve o comportamento de autenticação para os aplicativos cliente do Office 2013, Office 2016 e Office 2019 quando eles se conectam ao Exchange Online com ou sem a autenticação moderna.
   
 |Versão do aplicativo cliente do Office * * * *|Chave do registro presente? * * * *|Autenticação moderna em? * * * *|Comportamento de autenticação com autenticação moderna ativada para o locatário (padrão) * * * *|Comportamento de autenticação com autenticação moderna desativada para o locatário * * * *|
 |:-----|:-----|:-----|:-----|:-----|
-|Office 2019  <br/> |Não <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sim  <br/> |Força a autenticação moderna no Outlook 2010, 2013 ou 2019 <br/> [Mais informações](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Força a autenticação moderna no cliente do Outlook.<br/> |
+|Office 2019  <br/> |Não <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sim  <br/> |Força a autenticação moderna no Outlook 2013, 2016 ou 2019. <br/> [Mais informações](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Força a autenticação moderna no cliente do Outlook.<br/> |
 |Office 2019  <br/> |Não, ou EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |
 |Office 2019  <br/> |Sim, EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |
 |Office 2019  <br/> |Sim, EnableADAL = 0  <br/> |Não  <br/> |Autenticação básica  <br/> |Autenticação básica  <br/> |
-|Office 2016  <br/> |Não <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sim  <br/> |Força a autenticação moderna no Outlook 2010, 2013 ou 2016 <br/> [Mais informações](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Força a autenticação moderna no cliente do Outlook.<br/> |
+|Office 2016  <br/> |Não <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Sim  <br/> |Força a autenticação moderna no 2013, 2016 ou 2019. <br/> [Mais informações](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Força a autenticação moderna no cliente do Outlook.<br/> |
 |Office 2016  <br/> |Não, ou EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |
 |Office 2016  <br/> |Sim, EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, a autenticação básica será usada. O servidor recusa a autenticação moderna quando o locatário não está habilitado.  <br/> |
 |Office 2016  <br/> |Sim, EnableADAL = 0  <br/> |Não  <br/> |Autenticação básica  <br/> |Autenticação básica  <br/> |
@@ -96,7 +96,7 @@ A tabela a seguir descreve o comportamento de autenticação para os aplicativos
 <a name="BK_SharePointOnline"> </a>
 ### <a name="sharepoint-online"></a>SharePoint Online
 
-A tabela a seguir descreve o comportamento de autenticação para os aplicativos cliente do Office 2013 ou do Office 2016 quando eles se conectam ao SharePoint Online com ou sem a autenticação moderna.
+A tabela a seguir descreve o comportamento de autenticação para os aplicativos cliente do Office 2013, Office 2016 e Office 2019 quando eles se conectam ao SharePoint Online com ou sem a autenticação moderna.
   
 |Versão do aplicativo cliente do Office * * * *|Chave do registro presente? * * * *|Autenticação moderna em? * * * *|Comportamento de autenticação com autenticação moderna ativada para o locatário (padrão) * * * *|Comportamento de autenticação com autenticação moderna desativada para o locatário * * * *|
 |:-----|:-----|:-----|:-----|:-----|
@@ -112,7 +112,7 @@ A tabela a seguir descreve o comportamento de autenticação para os aplicativos
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 <a name="BK_SFBO"> </a>
 
-A tabela a seguir descreve o comportamento de autenticação para os aplicativos cliente do Office 2013 ou do Office 2016 quando eles se conectam ao Skype for Business online com ou sem a autenticação moderna.
+A tabela a seguir descreve o comportamento de autenticação para os aplicativos cliente do Office 2013, Office 2016 e Office 2019 quando eles se conectam ao Skype for Business online com ou sem a autenticação moderna.
   
 |Versão do aplicativo cliente do Office * * * *|Chave do registro presente? * * * *|Autenticação moderna em? * * * *|Comportamento de autenticação com autenticação moderna ativada para o locatário * * * *|Comportamento de autenticação com autenticação moderna desativada para o locatário (padrão) * * * *|
 |:-----|:-----|:-----|:-----|:-----|
@@ -125,7 +125,7 @@ A tabela a seguir descreve o comportamento de autenticação para os aplicativos
 |Office 2013  <br/> |Não  <br/> |Não  <br/> |Assistente de conexão do Microsoft Online apenas.  <br/> |Assistente de conexão do Microsoft Online apenas.  <br/> |
 |Office 2013  <br/> |Sim, EnableADAL = 1  <br/> |Sim  <br/> |A autenticação moderna é tentada primeiro. Se o servidor recusar uma conexão de autenticação moderna, o assistente de conexão do Microsoft Online será usado. O servidor recusa a autenticação moderna quando os locatários do Skype for Business online não estão habilitados.  <br/> |Assistente de conexão do Microsoft Online apenas.  <br/> |
    
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Também consulte
 
 [Habilitar a Autenticação Moderna do Office 2013 em dispositivos Windows.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 
