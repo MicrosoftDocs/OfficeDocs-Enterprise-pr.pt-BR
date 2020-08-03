@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Resumo: Use o PowerShell para Microsoft 365 para gerenciar usuários, grupos e sites do SharePoint Online.'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230467"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542812"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Gerenciar usuários e grupos do SharePoint Online com o PowerShell
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Se você for um administrador do SharePoint Online que trabalha com grandes listas de contas de usuário ou grupos e deseja uma maneira mais fácil de gerenciá-los, você pode usar o PowerShell para o Microsoft 365. 
 
@@ -67,9 +67,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Para usar esses comandos, substitua substituir tudo dentro das aspas, incluindo os caracteres < e >, com os nomes corretos.
+Para usar esses comandos, substitua tudo dentro das aspas, incluindo os caracteres < e >, com os nomes corretos.
 
-Por exemplo, este conjunto de comandos adiciona o Opal Martins (nome de usuário opalc) a lista de administradores de conjunto de sites no conjunto de sites do ContosoTest no locatário da Contoso:
+Por exemplo, este conjunto de comandos adiciona o Opal Martins (nome de usuário opalc) à lista de administradores de conjunto de sites no conjunto de sites do ContosoTest no aluguel da Contoso:
 
 ```powershell
 $tenant = "contoso"
@@ -284,4 +284,3 @@ Este relatório é muito simples, e você pode adicionar mais códigos para cria
 [Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Introdução ao PowerShell para o Microsoft 365](getting-started-with-office-365-powershell.md)
-
