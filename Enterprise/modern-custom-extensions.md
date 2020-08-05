@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda como otimizar o desempenho de extensões personalizadas nas páginas do site modernas do SharePoint Online.
-ms.openlocfilehash: bdc05c4e786d07a18c49766bf37aca7f4fde56da
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: dbf0c3cba009a102bf37dd65f14e8cb882303cfe
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603811"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548853"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Otimizar o desempenho da extensão personalizada nas páginas do site modernas do SharePoint Online
 
@@ -37,14 +37,15 @@ A ferramenta Diagnóstico de Página para SharePoint é uma extensão do navegad
 >[!NOTE]
 >A ferramenta de Diagnóstico de Página só funciona com o SharePoint Online e não pode ser usada em uma página do sistema do SharePoint.
 
-Ao analisar uma página de site do SharePoint com a ferramenta Diagnóstico de Página para SharePoint, você pode ver informações sobre extensões personalizadas que excedem a métrica de linha de base no resultado **As extensões estão afetando o tempo de carregamento da página**, no painel _Testes de diagnóstico_.
+Ao analisar uma página de site do SharePoint com a ferramenta Diagnóstico de Página para SharePoint, você pode visualizar informações sobre extensões personalizadas que excedem a métrica de linha de base em**As extensões estão afetando o tempo de carregamento** e/ou em **Excesso de extensões usadas** resultam no painel _Testes de diagnóstico_ 
 
 Os resultados possíveis incluem:
 
-- **Atenção necessária** (vermelho): Qualquer extensão _personalizada_ que leva mais do que **um** segundo para carregar. O tempo total de carregamento, conforme exibido nos resultados de teste, é dividido por carregamento do módulo, carga lenta, inicialização e renderização.
+- **Atenção necessária** (vermelho): Qualquer extensão _personalizada_ que leva mais do que **um** segundo para carregar. O tempo total de carregamento, conforme exibido nos resultados de teste, é dividido por carregamento do módulo, carga lenta, inicialização e renderização. Além disso, se houver muitas extensões em uma página, elas poderão afetar o tempo de carregamento da página e isso será destacado se **sete** ou mais extensões forem usadas na página.
+- **Oportunidades de melhoria** (amarelo) Se **cinco** ou mais extensões forem usadas, elas serão destacadas nesta seção como um aviso até que sete ou mais sejam usadas, e então serão destacadas como Atenção Necessária.
 - **Nenhuma ação é necessária** (verde): Nenhuma extensão está levando mais de um segundo para carregar.
 
-Se uma extensão estiver afetando o tempo de carregamento da página, o resultado será exibido na seção **Atenção necessária** dos resultados. Clique no resultado para ver detalhes sobre qual extensão está carregando lentamente. Futuras atualizações da ferramenta Diagnóstico de Página para SharePoint podem incluir atualizações de regras de análise, portanto, garanta que você sempre tenha a versão mais recente da ferramenta.
+Se uma extensão estiver afetando o tempo de carregamento da página ou se houver muitas extensões na página, o resultado será exibido na seção **Atenção necessária** dos resultados. Clique no resultado para ver os detalhes sobre qual extensão está carregando lentamente ou se muitas extensões foram destacadas. Futuras atualizações da ferramenta Diagnóstico de Página para SharePoint podem incluir atualizações de regras de análise, portanto, garanta que você sempre tenha a versão mais recente da ferramenta.
 
 ![Resultados do tempo de carregamento da página](media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
