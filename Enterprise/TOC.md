@@ -112,11 +112,6 @@
 ### Identidades híbridas
 #### [Preparar-se para a sincronização de diretórios](prepare-for-directory-synchronization.md)
 #### [Preparar um domínio não roteável para sincronização de diretórios](prepare-a-non-routable-domain-for-directory-synchronization.md)
-#### Use a ferramenta IdFix
-##### [Preparar os atributos do diretório com a ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [Baixar e executar a ferramenta IdFix](install-and-run-idfix.md)
-##### [Objetos e atributos excluídos e compatíveis com a IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-##### [Log de transações da IdFix](idfix-transaction-log.md)
 #### [Configurar a sincronização de diretórios](set-up-directory-synchronization.md)
 ### [Atribuir licenças às contas de usuário](assign-licenses-to-user-accounts.md)
 
