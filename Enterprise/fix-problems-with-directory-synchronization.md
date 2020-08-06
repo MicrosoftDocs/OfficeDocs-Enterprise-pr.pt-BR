@@ -19,12 +19,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Descreve causas comuns de problemas com a sincronização de diretórios no Office 365 e fornece alguns métodos para ajudar a solucionar problemas.
-ms.openlocfilehash: fac0c477f3c68271a2f0f8c4e2a09fc051fe1ce4
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.openlocfilehash: faf0f061b8f2798054e63f3338b8076c0ec88f73
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502646"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570964"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-microsoft-365"></a>Como corrigir problemas de sincronização de diretórios do Microsoft 365
 
@@ -89,8 +89,3 @@ Para atualizar o Azure AD Sync para o Azure AD Connect, confira as [instruções
     
 - [Usar o PowerShell para corrigir endereços de email duplicados](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
-## <a name="diagnostic-tools"></a>Ferramentas de diagnóstico
-
-A [ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md) é usada para executar a descoberta e correção de objetos de identidade e seus atributos em um ambiente local do Active Directory que está sendo preparado para migrar para o Microsoft 365. A IdFix destina-se aos administradores do Active Directory responsáveis pela sincronização do diretório com o serviço do Microsoft 365. 
-
-[Baixar a ferramenta IdFix](https://go.microsoft.com/fwlink/p/?LinkId=396718) no Centro de Download da Microsoft.
