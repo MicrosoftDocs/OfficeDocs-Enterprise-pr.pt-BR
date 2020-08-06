@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online.
-ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
-ms.translationtype: HT
+ms.openlocfilehash: ffa4937f734a803b34af277fb697bc991f0d0d3c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603740"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571014"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online
 

@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda como otimizar o desempenho de extensões personalizadas nas páginas do site modernas do SharePoint Online.
-ms.openlocfilehash: dbf0c3cba009a102bf37dd65f14e8cb882303cfe
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
-ms.translationtype: HT
+ms.openlocfilehash: d4e5e492e0573c54f40b1f9e040859037a97965c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548853"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571164"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Otimizar o desempenho da extensão personalizada nas páginas do site modernas do SharePoint Online
 

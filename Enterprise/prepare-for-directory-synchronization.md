@@ -1,5 +1,5 @@
 ---
-title: Preparar a sincronização de diretórios para o Microsoft 365
+title: Preparar-se para a sincronização de diretórios com o Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Descreve como se preparar para provisionar usuários para a Microsoft 365 usando a sincronização de diretórios e os benefícios de longo prazo de usar esse método.
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735689"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570994"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparar a sincronização de diretórios para o Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Preparar-se para a sincronização de diretórios com o Microsoft 365
 
 *Este artigo se aplica ao Microsoft 365 Enterprise e ao Microsoft 365 Enterprise.*
 
@@ -76,7 +76,7 @@ No AD DS, conclua as seguintes tarefas de limpeza para cada conta de usuário à
   - Telefone celular
   - Número do fax
   - Endereço
-  - City
+  - Cidade
   - Estado
   - CEP
   - País
@@ -166,8 +166,6 @@ Os atributos que você precisa preparar estão listados aqui:
   - Domínios roteáveis devem ser usados; por exemplo, domínios locais ou internos não podem ser usados.
   - Unicode é convertido em caracteres de sublinhado.
   - **userPrincipalName** não pode conter valores duplicados no diretório. 
-
-Consulte [preparar atributos de diretório com a ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md) para usar a ferramenta IdFix para identificar erros nos atributos do AD DS.
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Prepare o atributo userPrincipalName
 
@@ -189,9 +187,6 @@ Se você já configurou a sincronização de diretórios, o UPN do usuário para
   
 Consulte também [como preparar um domínio não roteável (como o domínio. local) para a sincronização de diretórios](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-
 ## <a name="next-steps"></a>Próximas etapas
 
-Consulte [preparar atributos de diretório com a ferramenta IdFix](prepare-directory-attributes-for-synch-with-idfix.md) para ajudá-lo a corrigir erros nos atributos do AD DS antes da sincronização de diretório.
-
-Se você corrigiu todos os erros de atributo identificados com a ferramenta IdFix e tiver concluído as etapas 1 a 5 acima, consulte [set up Directory Synchronization](set-up-directory-synchronization.md).
+Se você tiver concluído as etapas de 1 a 5 acima, consulte [set up Directory Synchronization](set-up-directory-synchronization.md).

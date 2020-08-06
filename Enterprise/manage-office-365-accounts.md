@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Saiba quais ferramentas usar para gerenciar seus usuários do Microsoft 365. '
-ms.openlocfilehash: 324a95e111812180cefffe98f2d7ec3c64e956b1
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ba73d899dee002fa08f373faaed4d772da546b13
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230227"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571024"
 ---
 # <a name="tools-to-manage-microsoft-365-accounts"></a>Ferramentas para gerenciar contas do Microsoft 365
 
@@ -57,18 +57,18 @@ Ao decidir o modo como sua organização criará e gerenciará contas, considere
   
 - O software de sincronização de diretório precisa ser instalado em servidores dentro do seu ambiente local para conectar as identidades entre o Microsoft 365 e o AD DS.
     
-- Qualquer opção de sincronização de diretório, incluindo as opções de SSO, requer que seus atributos do AD DS atendam aos padrões. As informações específicas de quais atributos são usados no seu diretório e qual limpeza (se houver) é necessária são descritas em preparar-se [para provisionar usuários por meio da sincronização de diretório para o Microsoft 365](prepare-for-directory-synchronization.md). Consulte [baixar e executar a ferramenta de correção de ID da Microsoft 365](install-and-run-idfix.md) para obter instruções sobre como usar a correção de ID para automatizar a limpeza de diretório. 
+- Qualquer opção de sincronização de diretório, incluindo as opções de SSO, requer que seus atributos do AD DS atendam aos padrões. As informações específicas de quais atributos são usados no seu diretório e qual limpeza (se houver) é necessária são descritas em preparar-se [para provisionar usuários por meio da sincronização de diretório para o Microsoft 365](prepare-for-directory-synchronization.md). 
     
 - Planejar como você vai criar contas do Microsoft 365.
     
     A tabela a seguir lista as diferentes ferramentas de gerenciamento de contas.
     
-|**Opção**|**Anotações**|
+|**Opção**|**Observações**|
 |:-----|:-----|
 |Centro de administração  <br/> |[Adicionar usuários individualmente ou em massa](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) <br/>  Fornece uma interface Web simples para adicionar e alterar contas de usuário.  <br/>  Não pode ser usado para alterar usuários se a sincronização de diretórios estiver habilitada (a atribuição de local e licença pode ser definida).  <br/>  Não pode ser usado com opções de SSO.  <br/> |
 |Windows PowerShell  <br/> |[Gerenciar o Microsoft 365 com o Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Permite adicionar usuários a usuários em massa usando um script do Windows PowerShell.  <br/>  Pode ser usado para atribuir local e licenças a contas, independentemente de como as contas são criadas.  <br/> |
 |Importação em massa  <br/> |[Adicionar vários usuários ao mesmo tempo](add-several-users-at-the-same-time.md) <br/>  Permite importar um arquivo CSV para adicionar um grupo de usuários ao Microsoft 365.  <br/>  Não pode ser usado com opções de SSO.  <br/> |
-|Microsoft Azure AD  <br/> |Você Obtém uma edição gratuita do Azure AD com sua assinatura do Microsoft 365. Você pode executar funções como redefinição de senha de autoatendimento para usuários em nuvem e a personalização das páginas de entrada e do painel de acesso usando a edição gratuita. Para obter funcionalidades aprimoradas, você pode atualizar para o Basic Edition, o Azure AD Premium P1 ou o Azure AD Premium P2. Consulte [Azure ad Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) para obter a lista de recursos com suporte.  <br/> |
+|Azure AD  <br/> |Você Obtém uma edição gratuita do Azure AD com sua assinatura do Microsoft 365. Você pode executar funções como redefinição de senha de autoatendimento para usuários em nuvem e a personalização das páginas de entrada e do painel de acesso usando a edição gratuita. Para obter funcionalidades aprimoradas, você pode atualizar para o Basic Edition, o Azure AD Premium P1 ou o Azure AD Premium P2. Consulte [Azure ad Editions](https://go.microsoft.com/fwlink/p/?LinkId=698465) para obter a lista de recursos com suporte.  <br/> |
 |Sincronização de diretório  <br/> |[Integração de suas identidades locais com o Azure AD](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  Para a sincronização de diretórios com ou sem a sincronização de senha, use o [Azure ad Connect com as configurações expressas](https://go.microsoft.com/fwlink/p/?LinkID=698537).  <br/>  Para várias florestas e opções de SSO, use a [instalação personalizada do Azure ad Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Fornece a infraestrutura necessária para habilitar o SSO.  <br/>  Obrigatório para vários cenários híbridos:  <br/>  Migração em estágios  <br/>  Híbrida do Exchange  <br/>  Sincroniza os grupos de segurança e habilitado para email do AD DS.  <br/> |
    
 - Independentemente de como você pretende adicionar as contas de usuário ao Microsoft 365, precisa gerenciar vários recursos de conta, como atribuir licenças, especificar o local e assim por diante. Esses recursos podem ser gerenciados de longo prazo no centro de administração ou você também pode [criar contas de usuário com o PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=717083).
@@ -76,7 +76,7 @@ Ao decidir o modo como sua organização criará e gerenciará contas, considere
     Se você optar por adicionar e gerenciar todos os seus usuários por meio do centro de administração, você especificará o local e atribuirá licenças ao mesmo tempo que a criação da conta da Microsoft 365. Como resultado, não é necessário o planejamento.
     
     > [!IMPORTANT]
-    > A criação de contas no Microsoft 365 sem a atribuição de uma licença (para o SharePoint Online, por exemplo) significa que o proprietário da conta pode exibir o centro de administração do Microsoft 365, mas não pode acessar qualquer um dos serviços dentro da assinatura da empresa. Depois de atribuir um local e a licença, a conta é replicada para o serviço ou serviços que você atribuiu. O usuário pode entrar em sua conta e usar os serviços que você atribuiu a eles. 
+    > A criação de contas no Microsoft 365 sem a atribuição de uma licença (para o SharePoint Online, por exemplo) significa que o proprietário da conta pode exibir o centro de 365 da Microsoft, mas não pode acessar qualquer um dos serviços dentro da assinatura da empresa. Depois de atribuir um local e a licença, a conta é replicada para o serviço ou serviços que você atribuiu. O usuário pode entrar em sua conta e usar os serviços que você atribuiu a eles. 
   
 ## <a name="next-steps"></a>Próximas etapas
 

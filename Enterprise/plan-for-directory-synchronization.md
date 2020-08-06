@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Descreve a sincronização de diretórios com o Microsoft 365, limpeza de serviços de domínio do Active Directory e a ferramenta Azure Active Directory Connect.
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711864"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571154"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Identidade híbrida e sincronização de diretórios para o Microsoft 365
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Dependendo das necessidades de negócios e dos requisitos técnicos, o modelo de identidade híbrida e a sincronização de diretórios é a opção mais comum para clientes corporativos que estão adotando o Microsoft 365. A sincronização de diretórios permite gerenciar identidades em seus serviços de domínio do Active Directory (AD DS) e todas as atualizações de contas de usuário, grupos e contatos são sincronizadas com o locatário do Azure Active Directory (Azure AD) de sua assinatura do Microsoft 365.
 
@@ -97,13 +97,11 @@ Os objetos de diretório no local podem ser sincronizados com o Microsoft 365 e 
   
 Consulte a [lista de compatibilidade de Federação do Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) para saber mais.
   
-## <a name="ad-ds-cleanup"></a>Limpeza do AD DS
+## <a name="ad-ds-preparation"></a>Preparação do AD DS
 
 Para ajudar a garantir uma transição contínua para o Microsoft 365 usando a sincronização, você deve preparar sua floresta do AD DS antes de começar sua implantação de sincronização de diretório do Microsoft 365.
   
-Ao [Configurar a sincronização de diretórios](set-up-directory-synchronization.md), uma das etapas é [baixar e executar a ferramenta IdFix](install-and-run-idfix.md). Você pode usar a ferramenta IdFix para ajudar com a [limpeza de diretório](prepare-directory-attributes-for-synch-with-idfix.md).
-  
-Sua limpeza de diretório deve se concentrar nas seguintes tarefas:
+A preparação do diretório deve se concentrar nas seguintes tarefas:
 
 - Remover os atributos **ProxyAddress** e **userPrincipalName** duplicados.
 - Atualizar atributos **userPrincipalName** em branco e inválidos com atributos **userPrincipalName** válidos.

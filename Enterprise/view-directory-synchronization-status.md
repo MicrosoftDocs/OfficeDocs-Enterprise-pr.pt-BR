@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Saiba como desativar a sincronização de diretórios. Você também pode exibir seu status.
-ms.openlocfilehash: d6f3a9f1f4e069716501f58e188daedacbf7e597
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 4c2f0baf6d3657e3eb9974ff7d4f8109e52e603b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906194"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571034"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Exibir o status de sincronização do diretório no Microsoft 365
 
@@ -50,5 +50,4 @@ Se houver um problema com a sincronização de diretório, os erros também ser�
 |**Sincronização de senha habilitada** | True ou false. Especifica se a sincronização de hash de senha deve ser sincronizada entre o seu locatário do Microsoft 365 e no local. |
 |**Última sincronização de senha** | Última vez em que a sincronização de hash de senha foi executada. Exibirá um aviso e um link para uma ferramenta de solução de problemas se a última sincronização tiver mais de três dias. |
 |**Versão do cliente de sincronização de diretório** | Contém um link de download se uma nova versão do Azure AD Connect foi liberada. |
-|**Ferramenta IDFix** | Link de download para o [IDFix](install-and-run-idfix.md), uma ferramenta que você pode usar para verificar se você localizou o Active Directory. |
 |**Conta de serviço de sincronização de diretório** | Exibe o nome da sua conta de serviço de sincronização de diretório do Microsoft 365. |
