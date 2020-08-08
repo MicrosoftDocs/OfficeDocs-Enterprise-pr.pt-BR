@@ -7,7 +7,7 @@ ms.date: 6/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Como implementar o túnel dividido de VPN para o Office 365
-ms.openlocfilehash: 86b38761568888f0d1a2b5423c6e03e388a207ba
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: 8d34935ad3c7eb7a7dd500c71de2651fd1b20a19
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052484"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592225"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementando o túnel dividido de VPN para Office 365
 

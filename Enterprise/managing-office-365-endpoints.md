@@ -7,7 +7,7 @@ ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Algumas redes corporativas restringem o acesso a locais genéricos da Internet ou incluem backhaul substancial ou processamento de tráfego de rede. Para garantir que computadores em redes como essas possam acessar o Office 365, os administradores de rede e proxy precisam gerenciar a lista de FQDNs, URLs e endereços IP que compõem a lista de pontos de extremidade do Office 365. Eles precisam ser adicionados às regras de rota direta, bypass de proxy e/ou firewall e aos arquivos de PAC para garantir que as solicitações de rede sejam capazes de acessar o Office 365.
-ms.openlocfilehash: f1d5d0f858e021bdeeae6d3045a64a9d97df4ffb
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: 35f07538bd55386dc245286822eab9e14e70a3cf
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502626"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592155"
 ---
 # <a name="managing-office-365-endpoints"></a>Gerenciar pontos de extremidade do Office 365
 
