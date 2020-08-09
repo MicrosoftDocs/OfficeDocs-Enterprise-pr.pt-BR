@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Resumo: lista de referências de registros DNS a serem usados ao planejar uma implantação do Office 365.'
-ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
-ms.translationtype: MT
+ms.openlocfilehash: d9bd097538e0aaab19e8b2a6eeb989c3a16492db
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46570974"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592185"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros de Sistema de Nomes de Domínio Externos para o Office 365
 
@@ -129,9 +129,9 @@ Para cenários em que você não está usando apenas o email do Exchange Online 
 |:-----|:-----|:-----|:-----|
 |1  <br/> |Todos os sistemas de email (obrigatório)  <br/> |Todos os registros SPF começam com esse valor  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (comum)  <br/> |Usar apenas com o Exchange Online  <br/> |include:spf.protection.outlook.com  <br/> |
-|3D  <br/> |Sistema de email de terceiros (menos comum)  <br/> ||include:\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Sistema de email local (menos comum)  <br/> |Usar se você estiver usando o Exchange Online Protection ou o Exchange Online e outro sistema de email  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> O valor entre colchetes (\<\>) deve ser outros sistemas de email que enviarão emails para seu domínio.  <br/> |
-|5   <br/> |Todos os sistemas de email (obrigatório)  <br/> ||-tudo  <br/> |
+|3  <br/> |Sistema de email de terceiros (menos comum)  <br/> ||include:\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |Sistema de email local (menos comum)  <br/> |Usar se você estiver usando o Exchange Online Protection ou o Exchange Online e outro sistema de email  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> include:\<mail.contoso.com\>  <br/> O valor entre colchetes (\<\>) deve ser outros sistemas de email que enviarão emails para seu domínio.  <br/> |
+|5  <br/> |Todos os sistemas de email (obrigatório)  <br/> ||-tudo  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Exemplo: adicionar a um registro SPF existente
 <a name="bkmk_addtospf"> </a>
