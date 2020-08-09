@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumo: locais de dados do Microsoft 365'
-ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
-ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.openlocfilehash: 9d69b51a257978c557944951eabb099f76b9011e
+ms.sourcegitcommit: c779ded7647cb84f8daafc25565d3edac2917e83
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45263690"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46587993"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,12 +41,12 @@ Obtenha informações sobre os compromissos contratuais para o local de armazena
 Para locais dos dados do Azure Active Directory, acesse [Mapa de Dados do AAD](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Devido às circunstâncias atípicas em torno da crise do COVID-19 e à necessidade de gerenciar a demanda por serviços online na Europa, se sua organização for uma instituição educacional, poderemos provisionar o seu locatário do Microsoft 365 na União Europeia (UE), Associação de Livre Comércio Europeia (EFTA), Reino Unido, Estados Unidos (EUA) ou Canadá, ou então transferir seus dados para quaisquer centros de dados na UE, EFTA, Reino Unido, EUA ou Canadá.Isso significa que seus dados podem estar armazenados em repouso na UE, AELC, UK, EUA ou CA.Nosso compromisso com a conformidade, a privacidade e a segurança permanecem inalterados enquanto implementamos medidas necessárias e prudentes para manter a disponibilidade do serviço.  Atenderemos a todas as leis aplicáveis quanto à transferências de dados.
+Devido a circunstâncias sem precedentes em torno de COVID-19 e a necessidade de gerenciar a demanda de serviços online, se sua organização é uma instituição educacional na Europa, poderemos provisionar seu locatário do Office 365 no, transferir seus dados para o e armazenar seus dados em repouso na União Europeia.  Se sua organização é uma instituição educacional na Índia, poderemos provisionar seu locatário do Office 365, transferir seus dados para, e armazenar seus dados em repouso na Índia, Europa ou nos Estados Unidos.  Se sua organização é uma instituição educacional na África do Sul, poderemos provisionar seu locatário do Office 365, transferir seus dados para, e armazenar seus dados em repouso na África do Sul ou Europa. Nosso compromisso com a conformidade, privacidade e a segurança permanecem inalterados enquanto implementamos medidas necessárias e prudentes para manter a disponibilidade do serviço. Atenderemos a todas as leis aplicáveis quanto à transferências de dados.
 
 
 
 
-## <a name="faq"></a>Perguntas frequentes
+## <a name="faq"></a>PERGUNTAS FREQÜENTES
 
 ### <a name="how-does-microsoft-define-data"></a>Como a Microsoft define os dados?
 
@@ -2602,7 +2602,7 @@ Os novos locatários do Microsoft 365 têm como padrão a área geográfica base
 | SharePoint Online | União Europeia |
 | Skype for Business | União Europeia |
 | Microsoft Teams | União Europeia |
-| Office Online &amp; Mobile | União Europeia |
+| Office Online &amp; Dispositivo Móvel | União Europeia |
 | EOP | União Europeia |
 | Intune | União Europeia |
 | MyAnalytics | União Europeia |
@@ -3549,7 +3549,7 @@ Os novos locatários do Microsoft 365 têm como padrão a área geográfica base
 | Stream | Geografia Global 1 – EMEA |
 | Quadro de comunicações | Estados Unidos |
 | Formulários | Estados Unidos |
-| Análise do local de trabalho | Estados Unidos |
+| Workplace Analytics | Estados Unidos |
 </p></details>
 
 ## <a name="mexico"></a>México
@@ -5451,7 +5451,7 @@ Os novos locatários do Microsoft 365 têm como padrão a área geográfica base
 ## <a name="tonga"></a>Tonga
 <details><summary>Clique para expandir</summary><p>
 
-| Fornecer manutenção | Local |
+| Serviço | Local |
 | --- | --- |
 | Exchange Online | Geografia Global 2 – Pacífico Asiático |
 | OneDrive for Business | Geografia Global 2 – Pacífico Asiático |
