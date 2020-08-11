@@ -14,43 +14,44 @@ f1.keywords:
 ms.custom:
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 'Resumo: saiba como gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell.'
-ms.openlocfilehash: 26da0d13ecc9c14be4abe059943bd91d88126f1e
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Neste artigo, saiba como gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell.
+ms.openlocfilehash: b5a2d43ad4dee3a70f934f9fc52b93e7c99f3644
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230407"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605877"
 ---
-# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a><span data-ttu-id="e9875-103">Gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="e9875-103">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>
+# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a><span data-ttu-id="9da6a-103">Gerenciar contas de usuário, licenças e grupos do Microsoft 365 com o PowerShell</span><span class="sxs-lookup"><span data-stu-id="9da6a-103">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>
 
-<span data-ttu-id="e9875-104">*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="e9875-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="9da6a-104">*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*</span><span class="sxs-lookup"><span data-stu-id="9da6a-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="e9875-105">Uma das tarefas principais de qualquer administrador do Microsoft 365 é o gerenciamento de contas de usuário, licenças e grupos.</span><span class="sxs-lookup"><span data-stu-id="e9875-105">One of the primary tasks of any Microsoft 365 administrator is managing user accounts, licenses, and groups.</span></span> <span data-ttu-id="e9875-106">Embora você possa realizar a maioria dos aspectos dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis com o PowerShell.</span><span class="sxs-lookup"><span data-stu-id="e9875-106">Although you can accomplish most aspects of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier with PowerShell.</span></span> 
+<span data-ttu-id="9da6a-105">Uma das tarefas principais de qualquer administrador do Microsoft 365 é o gerenciamento de contas de usuário, licenças e grupos.</span><span class="sxs-lookup"><span data-stu-id="9da6a-105">One of the primary tasks of any Microsoft 365 administrator is managing user accounts, licenses, and groups.</span></span> <span data-ttu-id="9da6a-106">Embora você possa realizar a maioria dos aspectos dessas tarefas no centro de administração do Microsoft 365, outras tarefas são muito mais rápidas e fáceis com o PowerShell.</span><span class="sxs-lookup"><span data-stu-id="9da6a-106">Although you can accomplish most aspects of these tasks in the Microsoft 365 admin center, other tasks are much quicker and easier with PowerShell.</span></span> 
 
-<span data-ttu-id="e9875-107">Para obter mais informações, consulte estes tópicos.</span><span class="sxs-lookup"><span data-stu-id="e9875-107">For more information, see these topics.</span></span>
+<span data-ttu-id="9da6a-107">Para obter mais informações, consulte estes tópicos.</span><span class="sxs-lookup"><span data-stu-id="9da6a-107">For more information, see these topics.</span></span>
 
-## <a name="user-accounts"></a><span data-ttu-id="e9875-108">Contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-108">User accounts</span></span>
+## <a name="user-accounts"></a><span data-ttu-id="9da6a-108">Contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-108">User accounts</span></span>
 
-- [<span data-ttu-id="e9875-109">Criar contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-109">Create user accounts</span></span>](create-user-accounts-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-110">Exibir contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-110">View user accounts</span></span>](view-user-accounts-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-111">Configurar as propriedades de conta de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-111">Configure user account properties</span></span>](configure-user-account-properties-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-112">Atribuir funções a contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-112">Assign roles to user accounts</span></span>](assign-roles-to-user-accounts-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-113">Excluir e restaurar contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-113">Delete and restore user accounts</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-114">Bloquear contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-114">Block user accounts</span></span>](block-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-109">Criar contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-109">Create user accounts</span></span>](create-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-110">Exibir contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-110">View user accounts</span></span>](view-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-111">Configurar as propriedades de conta de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-111">Configure user account properties</span></span>](configure-user-account-properties-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-112">Atribuir funções a contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-112">Assign roles to user accounts</span></span>](assign-roles-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-113">Excluir e restaurar contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-113">Delete and restore user accounts</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-114">Bloquear contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-114">Block user accounts</span></span>](block-user-accounts-with-office-365-powershell.md)
 
-## <a name="licenses-and-services"></a><span data-ttu-id="e9875-115">Licenças e serviços</span><span class="sxs-lookup"><span data-stu-id="e9875-115">Licenses and services</span></span>
-- [<span data-ttu-id="e9875-116">Exibir licenças e serviços</span><span class="sxs-lookup"><span data-stu-id="e9875-116">View licenses and services</span></span>](view-licenses-and-services-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-117">Exibir usuários licenciados e não licenciados</span><span class="sxs-lookup"><span data-stu-id="e9875-117">View licensed and unlicensed users</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-118">Atribuir licenças às contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-118">Assign licenses to user accounts</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-119">Exibir detalhes da licença e serviço da conta</span><span class="sxs-lookup"><span data-stu-id="e9875-119">View account license and service details</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-120">Desabilitar o acesso aos serviços</span><span class="sxs-lookup"><span data-stu-id="e9875-120">Disable access to services</span></span>](disable-access-to-services-with-office-365-powershell.md)
-  - [<span data-ttu-id="e9875-121">Desabilitar o acesso ao Sway</span><span class="sxs-lookup"><span data-stu-id="e9875-121">Disable access to Sway</span></span>](disable-access-to-sway-with-office-365-powershell.md)
-  - [<span data-ttu-id="e9875-122">Desabilitar o acesso aos serviços na atribuição de licenças de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-122">Disable access to services while assigning user licenses</span></span>](disable-access-to-services-while-assigning-user-licenses.md)
-- [<span data-ttu-id="e9875-123">Remover licenças de contas de usuário</span><span class="sxs-lookup"><span data-stu-id="e9875-123">Remove licenses from user accounts</span></span>](remove-licenses-from-user-accounts-with-office-365-powershell.md)
+## <a name="licenses-and-services"></a><span data-ttu-id="9da6a-115">Licenças e serviços</span><span class="sxs-lookup"><span data-stu-id="9da6a-115">Licenses and services</span></span>
+- [<span data-ttu-id="9da6a-116">Exibir licenças e serviços</span><span class="sxs-lookup"><span data-stu-id="9da6a-116">View licenses and services</span></span>](view-licenses-and-services-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-117">Exibir usuários licenciados e não licenciados</span><span class="sxs-lookup"><span data-stu-id="9da6a-117">View licensed and unlicensed users</span></span>](view-licensed-and-unlicensed-users-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-118">Atribuir licenças às contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-118">Assign licenses to user accounts</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-119">Exibir detalhes da licença e serviço da conta</span><span class="sxs-lookup"><span data-stu-id="9da6a-119">View account license and service details</span></span>](view-account-license-and-service-details-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-120">Desabilitar o acesso aos serviços</span><span class="sxs-lookup"><span data-stu-id="9da6a-120">Disable access to services</span></span>](disable-access-to-services-with-office-365-powershell.md)
+  - [<span data-ttu-id="9da6a-121">Desabilitar o acesso ao Sway</span><span class="sxs-lookup"><span data-stu-id="9da6a-121">Disable access to Sway</span></span>](disable-access-to-sway-with-office-365-powershell.md)
+  - [<span data-ttu-id="9da6a-122">Desabilitar o acesso aos serviços na atribuição de licenças de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-122">Disable access to services while assigning user licenses</span></span>](disable-access-to-services-while-assigning-user-licenses.md)
+- [<span data-ttu-id="9da6a-123">Remover licenças de contas de usuário</span><span class="sxs-lookup"><span data-stu-id="9da6a-123">Remove licenses from user accounts</span></span>](remove-licenses-from-user-accounts-with-office-365-powershell.md)
 
-## <a name="groups"></a><span data-ttu-id="e9875-124">Grupos</span><span class="sxs-lookup"><span data-stu-id="e9875-124">Groups</span></span>
-- [<span data-ttu-id="e9875-125">Manter associação de grupo</span><span class="sxs-lookup"><span data-stu-id="e9875-125">Maintain group membership</span></span>](maintain-group-membership-with-office-365-powershell.md)
-- [<span data-ttu-id="e9875-126">Gerenciar grupos do Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e9875-126">Manage Microsoft 365 groups</span></span>](manage-office-365-groups-with-powershell.md)
+## <a name="groups"></a><span data-ttu-id="9da6a-124">Grupos</span><span class="sxs-lookup"><span data-stu-id="9da6a-124">Groups</span></span>
+- [<span data-ttu-id="9da6a-125">Manter associação de grupo</span><span class="sxs-lookup"><span data-stu-id="9da6a-125">Maintain group membership</span></span>](maintain-group-membership-with-office-365-powershell.md)
+- [<span data-ttu-id="9da6a-126">Gerenciar grupos do Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="9da6a-126">Manage Microsoft 365 groups</span></span>](manage-office-365-groups-with-powershell.md)
 
