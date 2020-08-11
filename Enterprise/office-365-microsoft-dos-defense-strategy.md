@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Uma visão geral da estratégia de defesa da Microsoft para ataques de negação de serviço (DoS).
-ms.openlocfilehash: f3359bb39e01c6b090c30e9f7ce88d69dc3be17e
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, você pode encontrar uma visão geral da estratégia de defesa da Microsoft para ataques de negação de serviço (DoS).
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 242ec7a6fed574a0e5aa767ab31c28fc33b28e88
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998748"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605533"
 ---
 # <a name="microsoft-365-denial-of-service-defense-strategy"></a>Estratégia de defesa de negação de serviço da Microsoft 365
 

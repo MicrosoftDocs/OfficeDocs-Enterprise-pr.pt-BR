@@ -9,20 +9,22 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection: M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
-description: Saiba como os aplicativos integrados do O365 são registrados e administrados no Azure AD
-ms.openlocfilehash: 0cb3ac73230e0ddce62366af9019a12ea2b04d09
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba como registrar e administrar aplicativos integrados do Office 365 no Azure AD, permitindo autorizações de aplicativo no nível de administrador global.
+ms.openlocfilehash: 66b552848e53b8a93ccffdef11e17c897f30e44f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998086"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606357"
 ---
 # <a name="integrated-apps-and-azure-ad-for-microsoft-365-administrators"></a>Aplicativos integrados e o Azure AD para administradores do Microsoft 365
 

@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Uma explicação sobre corrupção de dados no Microsoft 365 e esforços de prevenção e recuperação da Microsoft.
-ms.openlocfilehash: 674f2a3a026c5706f5c3a23db6e2d968ed815656
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom: seo-marvel-apr2020
+description: Este artigo explica a corrupção de dados no Microsoft 365 e os esforços feitos pela Microsoft para impedir e recuperar dados.
+ms.openlocfilehash: dc8e865a69e110fa0a68e6cd9d9f4d6b45d43d71
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998445"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606627"
 ---
 # <a name="dealing-with-data-corruption-in-microsoft-365"></a>Lidando com corrupção de dados no Microsoft 365
 

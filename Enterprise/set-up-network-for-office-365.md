@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 'Resumo: consulte estes artigos para entender a rede para o Microsoft 365.'
-ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Encontre links para artigos com informações para ajudá-lo a configurar sua rede para o Microsoft 365, incluindo uma visão geral da conectividade de rede e uma lista de pontos de extremidade.
+ms.openlocfilehash: 2c5966dc169a189a4f5040d4b5673859a38e6640
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592145"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605203"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurar sua rede para o Microsoft 365
 

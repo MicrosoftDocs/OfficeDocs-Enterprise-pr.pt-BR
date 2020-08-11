@@ -22,17 +22,18 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: O suporte terminou para servidores do Office 2007 e aplicativos cliente e contratos de suporte personalizado não estão disponíveis. Use este artigo para começar a planejar sua atualização agora.
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: Este artigo fornece recursos para ajudá-lo a atualizar de clientes e servidores do Office 2007, já que o suporte para o Office 2007 terminou.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906224"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605867"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Recursos para ajudá-lo a atualizar de clientes e servidores do Office 2007
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Se você estiver usando produtos e serviços do Office 2007, o suporte para esses aplicativos terminou. Enquanto você planeja sua atualização, esse é um excelente momento para mudar para a nuvem da Microsoft, começando com o Microsoft 365. Use este artigo como ponto de partida para revisar as opções e planejar a atualização.
       
@@ -51,7 +52,7 @@ O suporte terminou para produtos e serviços do Office 2007. Os seguintes roteir
    
 Quando o suporte termina para um produto da Microsoft, não há novas atualizações de segurança, atualizações não relacionadas à segurança, opções de suporte assistido gratuito ou pago (incluindo contratos de suporte personalizado) ou atualizações de conteúdo técnico online. Quer você seja uma organização corporativa ou um usuário doméstico individual, você tem várias opções para considerar:
 
-## <a name="im-a-home-user-what-do-i-do"></a>Sou um usuário doméstico. What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>Sou um usuário doméstico. O que eu faço?
 
 Se você estiver usando produtos e aplicativos do Office 2007 em casa, confira [estas informações](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
@@ -61,6 +62,6 @@ Se você estiver usando produtos e aplicativos do Office 2007 em casa, confira [
   
 [Política de ciclo de vida da Microsoft](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes](plan-upgrade-previous-versions-office.md)
+[Planejar a atualização de servidores e clientes do Office 2007 ou Office 2010](plan-upgrade-previous-versions-office.md)
   
 

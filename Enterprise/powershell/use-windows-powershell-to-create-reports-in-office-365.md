@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Resumo: Use o PowerShell para Microsoft 365 para criar relatórios que você não pode produzir no centro de administração do Microsoft 365.'
-ms.openlocfilehash: 855f6529445b95dd949fb672f978a82f1afd6149
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: d2d03d6ac170fef95352a2aabf6cd27176202a1e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229797"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605313"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>Usar o PowerShell para criar relatórios para o Microsoft 365
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Há muitos relatórios diferentes disponíveis no centro de administração do Microsoft 365. No entanto, esses relatórios não apresentam todas as informações e, às vezes, você precisa de mais. É quando você precisa do PowerShell para o Microsoft 365
   
@@ -59,7 +61,7 @@ Estes artigos descrevem como usar o PowerShell para a Microsoft 365 para obter i
     
   - [Exibir relatórios do Exchange Online com o PowerShell](https://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
     
-## <a name="see-also"></a>Confira também
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   

@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Suporte de aplicativo cliente Microsoft 365 para logon único.
-ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, saiba quais plataformas, clientes e módulos do PowerShell suportam logon único para o Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d0f757c28695c46e6a960828914fff34c7fab5e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998509"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605643"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Suporte ao aplicativo cliente Microsoft 365 — logon único
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 O logon único (SSO) adiciona segurança e conveniência quando os usuários entram em aplicativos no Azure Active Directory (Azure AD). Com o logon único, os usuários entram uma vez com uma conta para acessar dispositivos que ingressaram no domínio, recursos da empresa, aplicativos de software como um serviço (SaaS) e aplicativos da Web.
 
@@ -66,6 +67,6 @@ As versões mais recentes dos seguintes clientes suportam o logon único:
 > <sup>3</sup> o suporte para o whiteboard no Android estará disponível em breve. <br>
 > <sup>4</sup> suporte para o Outlook, Teams e portal da empresa no MacOS disponível em breve. <br>
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

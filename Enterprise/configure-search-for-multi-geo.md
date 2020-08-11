@@ -7,18 +7,18 @@ manager: arnek
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-f1.keywords:
-- NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Saiba como configurar a pesquisa em um ambiente multigeográfico.
-ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+f1.keywords:
+- NOCSH
+description: Saiba como configurar a pesquisa em um ambiente multigeográfico. Somente alguns clientes, como o OneDrive for Business, podem retornar resultados em um ambiente multigeográfico.
+ms.openlocfilehash: 94d8b9de0fc7eeb6b7fda20275686de62eaa9346
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433562"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605767"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar a Pesquisa do Microsoft 365 Multi-Geo
 
@@ -88,12 +88,12 @@ Alguns recursos de pesquisa que talvez você conheça funcionam diferente em um 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">A pesquisa multigeográfica não dá suporte a bucketing dinâmico para refinadores numéricos.</td>
-<td align="left">Use o <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parâmetro "Discretizar"</a> para refinadores numéricos.</td>
+<td align="left">Use o <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parâmetro "discretizar"</a> para refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">IDs do documento</td>
 <td align="left">Se você estiver desenvolvendo um aplicativo orientado por pesquisa que depende de IDs de documento, observe que as IDs de documento em um ambiente multigeográfico não são exclusivas entre localizações geográficas, elas são exclusivas por localização geográfica.</td>
-<td align="left">Adicionar uma coluna que identifique a localização geográfica. Use essa coluna para ter exclusividade. Essa coluna é denominada "GeoLocationSource".</td>
+<td align="left">Adicionar uma coluna que identifique a localização geográfica. Use essa coluna para ter exclusividade. Essa coluna é chamada de "geolocalização".</td>
 </tr>
 <tr class="odd">
 <td align="left">Número de resultados</td>

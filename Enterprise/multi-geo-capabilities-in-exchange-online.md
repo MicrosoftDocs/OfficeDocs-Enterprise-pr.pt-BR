@@ -9,15 +9,15 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Saiba mais sobre os recursos multigeográficos no Exchange Online.
-ms.openlocfilehash: 0c311c9a396fa6c9be7a839d19ff059c7ff287fd
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Saiba mais sobre recursos multigeográfico no Exchange Online, como limitações de recurso e posicionamento de caixa de correio.
+ms.openlocfilehash: 8d9432fdade9d10581d386c2ab01e96f1b2cdda6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433842"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606807"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Recursos multigeográficos no Exchange Online
 

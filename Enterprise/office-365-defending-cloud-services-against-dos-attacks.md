@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Como a Microsoft defende seus serviços em nuvem contra ataques de negação de serviço (DoS).
-ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
-ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
+description: Neste artigo, saiba como a Microsoft defende seus serviços em nuvem contra ataques de negação de serviço (DoS).
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1eb4f7544d978cdbc1e3673bd1badefde7bc3dd6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529084"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606637"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Defendendo os serviços de nuvem da Microsoft 365 contra ataques de negação de serviço
 

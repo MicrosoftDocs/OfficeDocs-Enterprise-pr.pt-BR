@@ -1,5 +1,5 @@
 ---
-title: Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
+title: Usar a CDN (rede de distribuição de conteúdo) do Office 365 com o SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Descreve como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online para todos os seus usuários, independentemente de onde eles estão localizados ou como eles acessam o conteúdo.
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: Saiba como usar a CDN (rede de distribuição de conteúdo) do Office 365 para acelerar a entrega de seus ativos do SharePoint Online.
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316020"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606117"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Usar a Rede de Distribuição de Conteúdo (CDN) do Office 365 com o SharePoint Online
 
@@ -304,7 +306,7 @@ O valor de _path_ é o caminho relativo para a biblioteca ou pasta que contém o
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ O modificador curinga**/** * só pode ser usado no início do caminho e corresponderá a todos os segmentos de URL na URL especificada.
++ O modificador curinga * **/** só pode ser usado no início do caminho e corresponderá a todos os segmentos de URL na URL especificada.
 + O caminho pode apontar para uma biblioteca de documentos, pasta ou site. Por exemplo, o caminho _*/site1_ corresponderá a todas as bibliotecas de documentos no site.
 
 Você pode adicionar uma origem com um caminho relativo específico. Não é possível adicionar uma origem usando o caminho completo.
@@ -587,7 +589,7 @@ O valor de _path_ é o caminho relativo para a biblioteca ou pasta que contém o
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ O modificador curinga**/** * só pode ser usado no início do caminho e corresponderá a todos os segmentos de URL na URL especificada.
++ O modificador curinga * **/** só pode ser usado no início do caminho e corresponderá a todos os segmentos de URL na URL especificada.
 + O caminho pode apontar para uma biblioteca de documentos, pasta ou site. Por exemplo, o caminho _*/site1_ corresponderá a todas as bibliotecas de documentos no site.
 
 Você pode adicionar uma origem com um caminho relativo específico. Não é possível adicionar uma origem usando o caminho completo.
@@ -786,7 +788,7 @@ Use o adicionar comando [spo cdn origem ](https://pnp.github.io/office365-cli/cm
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Em `path` que é o caminho relativo para a pasta que contém os ativos. Você pode usar caracteres curinga, além de caminhos relativos.
+Em que `path` é o caminho relativo para a pasta que contém os ativos. Você pode usar caracteres curinga, além de caminhos relativos.
 
 Para incluir todos os ativos da **Galeria de páginas mestras** de todos os sites como uma origem pública, execute:
 
@@ -879,7 +881,7 @@ Para usar os ativos que você adicionou a uma origem, basta atualizar os links p
 + Para cada link com um ativo em uma origem, substitua o caminho com o caminho para o arquivo na origem da CDN. Você pode usar caminhos relativos.
 + Salve a página ou o conteúdo.
 
-Por exemplo, considere a imagem _/site/SiteAssets/images/Image.png_, que você copiou para a pasta da biblioteca de documentos _/site/CDN_origins/Public/_. Para usar o ativo da CDN, substitua o caminho original para o local do arquivo de imagem com o caminho para a origem para tornar a nova URL _/site/CDN_origins/Public/Image.png_.
+Por exemplo, considere a imagem _/site/SiteAssets/images/image.png_, que você copiou para a pasta da biblioteca de documentos _/site/CDN_origins/Public/_. Para usar o ativo da CDN, substitua o caminho original para o local do arquivo de imagem com o caminho para a origem para tornar a nova URL _/site/CDN_origins/public/image.png_.
 
 Se você quiser usar a URL completa para o ativo em vez de um caminho relativo, construa o link da seguinte maneira:
 
@@ -894,7 +896,7 @@ Para saber mais sobre como verificar se os ativos estão sendo servidos da CDN, 
 
 O **recurso de publicação** no SharePoint Online reconfigura automaticamente as URLs de ativos armazenados em origens públicas para seus equivalentes de CDN, para que os ativos sejam servidos do serviço CDN, e não do SharePoint.
 
-Se sua origem estiver em um site com o recurso de publicação habilitado e os ativos que você deseja descarregar para a CDN estiverem em uma das seguintes categorias, o SharePoint reescreverá automaticamente as URLs dos ativos na origem, desde que o ativo não tenha sido excluído por uma CDN  política.
+Se sua origem estiver em um site com o recurso de publicação habilitado e os ativos que você deseja descarregar para a CDN estiverem em uma das seguintes categorias, o SharePoint reescreverá automaticamente as URLs dos ativos na origem, desde que o ativo não tenha sido excluído por uma política de CDN.
 
 Mostramos a seguir uma visão geral dos links reescritos automaticamente pelo recurso de Publicação do SharePoint:
 
@@ -957,14 +959,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Permissões de nível de item não são suportadas para ativos em origens privadas
 
-É importante observar que o SharePoint Online não suporta permissões no nível do item para ativos em origens privadas. Por exemplo, para um arquivo localizado em `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`, os usuários têm acesso efetivo ao arquivo de acordo com as seguintes condições:
+É importante observar que o SharePoint Online não suporta permissões no nível do item para ativos em origens privadas. Por exemplo, para um arquivo localizado em `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` , os usuários têm acesso efetivo ao arquivo de acordo com as seguintes condições:
 
 |Usuário  |Permissões  |Acesso efetivo  |
 |---------|---------|---------|
-|Usuário 1     |Tem acesso à Pasta1         |Pode acessar o image1. jpg da CDN         |
-|Usuário 2     |Não tem acesso à Pasta1         |Não é possível acessar image1. jpg da CDN         |
-|Usuário 3     |Não tem acesso à Pasta1, mas recebeu permissão explícita para acessar o image1. jpg no SharePoint Online         |Pode acessar o Asset image1. jpg diretamente do SharePoint Online, mas não da CDN         |
-|Usuário 4     |Tem acesso à Pasta1, mas teve o acesso explicitamente negado a image1. jpg no SharePoint Online         |Não é possível acessar o ativo do SharePoint Online, mas pode acessar o ativo da CDN apesar de ter sido negado o acesso ao arquivo no SharePoint Online         |
+|Usuário 1     |Tem acesso à Pasta1         |Pode acessar image1.jpg da CDN         |
+|Usuário 2     |Não tem acesso à Pasta1         |Não é possível acessar image1.jpg da CDN         |
+|Usuário 3     |Não tem acesso à Pasta1, mas recebeu permissão explícita para acessar image1.jpg no SharePoint Online         |Pode acessar o image1.jpg de ativos diretamente do SharePoint Online, mas não da CDN         |
+|Usuário 4     |Tem acesso à Pasta1, mas teve acesso explicitamente negado ao image1.jpg no SharePoint Online         |Não é possível acessar o ativo do SharePoint Online, mas pode acessar o ativo da CDN apesar de ter sido negado o acesso ao arquivo no SharePoint Online         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Solucionando problemas da CDN do Office 365
@@ -977,7 +979,7 @@ Depois de adicionar links aos ativos da CDN a uma página, você pode confirmar 
 Você também pode usar as ferramentas de desenvolvedor do navegador para exibir a URL de cada ativo em uma página ou usar uma ferramenta de rastreamento de rede de terceiros.
 
 > [!NOTE]
-> Se você usar uma ferramenta de rede como o Fiddler para testar seus ativos fora da renderização do ativo de uma página do SharePoint, você deve adicionar manualmente o cabeçalho referenciador "refer `https://yourdomain.sharepoint.com`:" à solicitação GET, onde a URL é a URL raiz do seu locatário do SharePoint Online.
+> Se você usar uma ferramenta de rede como o Fiddler para testar seus ativos fora da renderização do ativo de uma página do SharePoint, você deve adicionar manualmente o cabeçalho referenciador "refer: `https://yourdomain.sharepoint.com` " à solicitação GET, onde a URL é a URL raiz do seu locatário do SharePoint Online.
 
 Você não pode testar URLs de CDN diretamente em um navegador da Web, pois é necessário ter um referenciador proveniente do SharePoint Online. No entanto, se você adicionar a URL de ativo da CDN a uma página do SharePoint e, em seguida, abrir a página em um navegador, verá o ativo da CDN renderizado na página.
 

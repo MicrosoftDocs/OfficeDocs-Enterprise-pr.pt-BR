@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Os aplicativos do Office para Mac oferecem uma experiência de aplicativo nativo na plataforma macOS. Cada aplicativo foi projetado para funcionar em vários cenários, incluindo Estados quando não há acesso à rede disponível. Quando um computador está conectado a uma rede, os aplicativos se conectam automaticamente a uma série de serviços baseados na Web para fornecer funcionalidade aprimorada. Este artigo descreve quais pontos de extremidade e URLs os aplicativos tentam alcançar e os serviços fornecidos. Essas informações são úteis para solucionar problemas de configuração de rede e definir uma política para servidores proxy de rede. Os detalhes neste artigo destinam-se a complementar a URL do Office 365 e o artigo de intervalos de endereços.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Este artigo descreve quais pontos de extremidade e URLs os aplicativos do Office para Mac tentam alcançar e os serviços fornecidos.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774946"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606717"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Solicitações de rede do Office para Mac
 
@@ -61,7 +63,7 @@ Os pontos de extremidade de rede a seguir são usados para baixar o programa de 
   
 Os pontos de extremidade de rede a seguir são contatados na primeira inicialização de um aplicativo do Office. Esses pontos de extremidade fornecem funcionalidade aprimorada do Office para os usuários, e as URLs são contatadas independentemente do tipo de licença (incluindo instalações de licença de volume).
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Configuração de "vôo"-permite a iluminação e a experimentação do recurso.  <br/> |
 |```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |CEP  <br/> |Teste de configuração de rede de "vôo"  <br/> |
@@ -100,7 +102,7 @@ Os pontos de extremidade de rede a seguir são contatados ao entrar no armazenam
     
 - **OrgID: conta da organização** – normalmente usada para cenários comerciais 
     
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |CEP  <br/> |Serviço de autorização do Windows  <br/> |
 |```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |CEP  <br/> |Serviço de login 365 da Microsoft (OrgID)  <br/> |
@@ -117,7 +119,7 @@ Os pontos de extremidade de rede a seguir são contatados ao entrar no armazenam
   
 Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo. Especificamente, isso não se aplica a instalações de licença de volume.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://ols.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |Serviço de Licenciamento do Office  <br/> |
    
@@ -125,7 +127,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 
   
 Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |PLANILHA  <br/> |O que há de novo conteúdo de página JSON.  <br/> |
    
@@ -133,17 +135,17 @@ Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Mic
   
 Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://entity.osi.office.net/```  <br/> |Rar  <br/> |CS  <br/> |Serviço Web do pesquisador  <br/> |
 |```https://cdn.entity.osi.office.net/```  <br/> |Rar  <br/> |CS  <br/> |Conteúdo estático do pesquisador  <br/> |
 |```https://www.bing.com/```  <br/> |Rar  <br/> |CS  <br/> |Provedor de conteúdo do pesquisador  <br/> |
    
- **Pesquisa inteligente**
+ **Pesquisa Inteligente**
   
 Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Serviço Web do insights  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |Biblioteca JQuery  <br/> |
@@ -155,7 +157,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 
   
 Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Serviço Web do PowerPoint designer  <br/> |
    
@@ -163,7 +165,7 @@ Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Mic
   
 Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Microsoft 365.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |Serviço Web do início rápido do PowerPoint  <br/> |
    
@@ -171,7 +173,7 @@ Os pontos de extremidade de rede a seguir aplicam-se apenas à assinatura do Mic
   
 Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Enviar um serviço Smiley  <br/> |
    
@@ -179,7 +181,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 
   
 Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |CS  <br/> |Contatar o serviço de suporte  <br/> |
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |CS  <br/> |Serviço de suporte no aplicativo  <br/> |
@@ -188,7 +190,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 
   
 Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://wordcs.officeapps.live.com/```  <br/> |Rar  <br/> |CS  <br/> |Serviço de conversão de documentos do Word (PDF)  <br/> |
    
@@ -196,7 +198,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 
   
 Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 365 e às ativações de licença de varejo/volume quando os suplementos de aplicativo do Office são confiáveis.
   
-|**URL**|**Apps**|**Tipo**|**Descrição**|
+|**URL**|**Aplicativos**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|:-----|
 |```https://store.office.com/```  <br/> |WXPO  <br/> |CS  <br/> |Configuração da loja de aplicativos do Office  <br/> |
 |```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |Rar  <br/> |PLANILHA  <br/> |Recursos do aplicativo da Wikipédia  <br/> |
@@ -222,7 +224,7 @@ Os pontos de extremidade de rede a seguir se aplicam à assinatura do Microsoft 
 |```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |Rar  <br/> |PLANILHA  <br/> |Quadro de área restrita da Wikipédia  <br/> |
 |```https://*.virtualearth.net/```  <br/> |X  <br/> |PLANILHA  <br/> |Modelos de mapa  <br/> |
    
- **Links seguros**
+ **Links Seguros**
   
 O ponto de extremidade de rede a seguir se aplica a todos os aplicativos do Office somente para a assinatura do Microsoft 365.
   

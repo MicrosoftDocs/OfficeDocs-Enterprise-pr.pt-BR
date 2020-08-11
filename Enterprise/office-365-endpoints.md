@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: ''
-description: 'Resumo: Confira estes artigos para os pontos de extremidade de Internet das diferentes nuvens Microsoft 365.'
-ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Para endereços IP de destino e URLs para o tráfego do Microsoft 365, use esta lista de artigos para os pontos de extremidade da Internet das diferentes nuvens da Microsoft 365.
+ms.openlocfilehash: 1ef9d3a97beb14a1d51827d145f6fdc644c49f3c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592195"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606617"
 ---
 # <a name="microsoft-365-endpoints"></a>Pontos de extremidade do Microsoft 365
 

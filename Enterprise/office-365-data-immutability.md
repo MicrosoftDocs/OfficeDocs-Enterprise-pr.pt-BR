@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Define e explica a imutabilidade dos dados no Microsoft 365.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba como a Microsoft 365 preserva dados no formato detectável para lidar com conformidade normativa, requisitos de governança interna e riscos de litígio.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998455"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605633"
 ---
 # <a name="immutability-in-microsoft-365"></a>Imutabilidade no Microsoft 365
 

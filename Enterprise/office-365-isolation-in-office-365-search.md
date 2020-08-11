@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: uma explicação do isolamento de locatário na pesquisa do Microsoft 365.'
-ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, encontre uma explicação sobre como o isolamento de locatário funciona para separar dados de locatários na pesquisa do Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b887088799c83422a6bc5797a76dde73a58e2f29
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998251"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605583"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Isolamento de locatário no Microsoft 365 Search
 

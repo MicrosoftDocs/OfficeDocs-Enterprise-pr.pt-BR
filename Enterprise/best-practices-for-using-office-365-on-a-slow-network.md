@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: Não seria ótimo se sua conexão com a Internet fosse sempre rápida e nunca para baixo? Talvez esse dia venha. Mas, nesse meio tempo, há coisas práticas que você pode fazer para contornar uma rede do balky e ainda obter o trabalho diário concluído.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: Este artigo orienta você pelas práticas recomendadas que você pode adotar para usar o Office 365 em uma rede lenta.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844952"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605777"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Práticas recomendadas para usar o Office 365 em uma rede lenta
 
@@ -182,7 +183,7 @@ A Microsoft aprimora continuamente o desempenho geral do Office 365 monitorando 
   
 ## <a name="see-also"></a>Confira também
 
-[Planejamento de rede e ajuste de desempenho para Office 365](network-planning-and-performance.md)
+[Planejamento de rede e ajuste de desempenho para o Office 365](network-planning-and-performance.md)
   
 [Princípios de conectividade de rede do Office 365](office-365-network-connectivity-principles.md)
   

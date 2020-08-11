@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
-description: O repositório de vídeo do Office 365 e os serviços de streaming facilitam o armazenamento e o fluxo de vídeo em sua organização. Há muitas informações importantes sobre o vídeo do Office 365; essas perguntas frequentes de rede são projetadas para responder às perguntas mais comuns sobre planejamento de largura de banda, criptografia e como o serviço aproveita as redes de distribuição de conteúdo (CDNs).
-ms.openlocfilehash: 21c7327878bc76bc3bbe92d004a26a4704ef8c3d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
+description: Encontre respostas para algumas das perguntas mais frequentes sobre planejamento de largura de banda, criptografia & como o serviço aproveita as redes de distribuição de conteúdo (CDNs).
+ms.openlocfilehash: 938876075bf849a94f52de9285e83cd442fe2006
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841968"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605473"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Perguntas frequentes sobre o sistema de rede de vídeo do Office 365
 

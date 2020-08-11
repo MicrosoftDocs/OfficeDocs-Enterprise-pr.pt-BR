@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Resumo: uma visão geral dos controles de acesso administrativo e categorização de dados do Microsoft 365.'
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: Este artigo fornece uma visão geral dos controles de acesso administrativo e da categorização de dados no Microsoft 365.
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774966"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606707"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Controles de acesso administrativo no Microsoft 365 
 
@@ -57,7 +58,7 @@ Os dados do cliente são todos os dados fornecidos por ou em nome de um cliente 
 - Mensagens instantâneas
 - Itens de calendário
 - Documentos
-- Contacts
+- Contatos
 - Informações de identificação do usuário final (EUII) (dados exclusivos de um usuário ou que são vinculados a um usuário individual, mas não incluem conteúdo do cliente)
 
 ### <a name="other-types-of-data"></a>Outros tipos de dados

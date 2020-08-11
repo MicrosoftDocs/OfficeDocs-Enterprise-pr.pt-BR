@@ -14,17 +14,19 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Aprenda a otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online.
-ms.openlocfilehash: ffa4937f734a803b34af277fb697bc991f0d0d3c
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Saiba como usar o diagnóstico de página para otimizar o desempenho de Web Parts em páginas de site modernas do SharePoint Online.
+ms.openlocfilehash: 14ad6152ba039a33b599f5b9467daef7665b7178
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571014"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606867"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Otimizar o desempenho de Web Parts em páginas de site moderno do SharePoint Online
 

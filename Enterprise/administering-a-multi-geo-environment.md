@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Saiba como administrar o SharePoint e os serviços do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Os administradores podem aprender a administrar o SharePoint e os serviços do OneDrive em um ambiente multigeográfico.
+ms.openlocfilehash: 166aa61b6ef3158c8ff479fd1a93252ef1bc50d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548893"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606107"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Administrar um ambiente multigeográfico
 
@@ -36,7 +36,7 @@ A BCS, o Repositório Seguro e os Aplicativos têm instâncias geográficas em c
 
 ## <a name="ediscovery"></a>Descoberta eletrônica 
 
-Por padrão, um Administrador ou Gerente de Descoberta Eletrônica de um locatário multigeográfico só poderá realizar a descoberta eletrônica na localização central desse locatário. O administrador global do Microsoft 365 deve atribuir permissões ao eDiscovery Manager para permitir que outras pessoas executem o eDiscovery e atribuam o parâmetro "Região" no Filtro de segurança de conformidade aplicável para especificar a região de execução do eDiscovery como localização por satélite, caso contrário, nenhum eDiscovery será executado pela localização por satélite. Para configurar o Filtro de segurança de conformidade de uma região, consulte [Configurar o eDiscovery Multigeográfico do Microsoft 365](multi-geo-ediscovery-configuration.md).
+Por padrão, um Administrador ou Gerente de Descoberta Eletrônica de um locatário multigeográfico só poderá realizar a descoberta eletrônica na localização central desse locatário. O administrador global do Office 365 deve atribuir permissões de gerente de Descoberta Eletrônica para permitir que outras pessoas possam realizá-la e atribuir o parâmetro "Região" no Filtro de Segurança e Conformidade deles, para especificar a região como uma localização no satélite para a realização da Descoberta. Caso contrário, a Descoberta Eletrônica não será realizada para nenhuma localização no satélite. Para configurar o Filtro de Segurança de Conformidade para uma Região, consulte [Configurar a Descoberta Eletrônica Multigeográfica do Office 365](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Caixas de correio do Exchange
 

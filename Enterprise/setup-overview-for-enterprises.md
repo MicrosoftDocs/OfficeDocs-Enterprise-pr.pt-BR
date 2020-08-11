@@ -16,15 +16,17 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Estas etapas de visão geral foram projetadas para ajudá-lo a configurar sua rede, criar suas identidades, implantar o Microsoft 365 aplicativos para empresas, migrar seus dados e ajudar as pessoas de sua organização a começar a usar o Microsoft 365.
-ms.openlocfilehash: 274cd4ae285ae97825b4d46a125cd9eeecf83312
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+description: Estas etapas de visão geral foram projetadas para ajudá-lo a configurar sua rede, criar suas identidades, implantar aplicativos da Microsoft 365 e migrar seus dados.
+ms.openlocfilehash: aa1e4a364843ab6c502e037d464517b643dddbdc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735939"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605123"
 ---
 # <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Implantar o Microsoft 365 Enterprise para a sua organização
 

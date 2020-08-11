@@ -15,13 +15,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Uma explicação da exclusão de dados no SharePoint Online.
-ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba como a exclusão de dados funciona no SharePoint Online, como onde o conteúdo excluído é armazenado e por quanto tempo.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 424cfcc1bcad53ff3e12278367614d048043e4bb
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997811"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606287"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Exclusão de dados do SharePoint Online no Microsoft 365
 

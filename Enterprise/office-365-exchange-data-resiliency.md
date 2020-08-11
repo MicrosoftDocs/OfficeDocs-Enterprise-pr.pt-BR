@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Uma explicação sobre os vários aspectos da resiliência de dados no Exchange Online e no Microsoft 365.
-ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, encontre uma explicação dos vários aspectos da resiliência de dados no Exchange Online e no Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 18d8179f37cb97316b71a43cccfc631a5cc550da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998732"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606607"
 ---
 # <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Resiliência de dados do Exchange Online no Microsoft 365
 
-## <a name="introduction"></a>Introdução
 Há dois tipos de danos que podem afetar um banco de dados do Exchange: corrupção física, que normalmente é causado por problemas de hardware (em particular, hardware de armazenamento) e danos lógicos, que ocorre devido a outros fatores. Geralmente, há dois tipos de corrupção lógica que podem ocorrer em um banco de dados do Exchange: 
 - **Corrupção lógica do banco** de dados-o checksum da página do banco de dados corresponde, mas os dados na página estão errados de forma lógica. Isso pode ocorrer quando o mecanismo de banco de dados (o mecanismo de armazenamento extensível (ESE) tenta gravar uma página de banco de dados e, embora o sistema operacional retorne uma mensagem de êxito, os dados nunca são gravados no disco ou gravados no lugar errado. Isso é conhecido como *liberação perdida*. O ESE inclui vários recursos e proteções projetadas para impedir a corrupção física de um banco de dados e outros cenários de perda de dados. Para evitar que as liberações perdidas percam dados, o ESE inclui um mecanismo de detecção de liberação perdido no banco de dados, juntamente com um recurso (restauração de página única) para corrigi-lo. 
 - **Corrupção lógica de armazenamento** -os dados são adicionados, excluídos ou manipulados de forma que o usuário não espera. Esses casos normalmente são causados por aplicativos de terceiros. Ele normalmente é apenas um dano no sentido em que o usuário o considera assim. O repositório do Exchange considera a transação que produziu o dano lógico uma série de operações MAPI válidas. Os recursos de [bloqueio in-loco](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) no Exchange Online oferecem proteção contra corrupção lógica de armazenamento (porque impede que o conteúdo seja excluído permanentemente por um usuário ou um aplicativo). 

@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +22,13 @@ search.appverid:
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
-description: Os tempos limite de sessão são usados para equilibrar a segurança e a facilidade de acesso nos aplicativos cliente Microsoft 365.
-ms.openlocfilehash: d439d36a3a67914658098e757b916dcf110b1df4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba como os tempos limite de sessão são usados para equilibrar a segurança e a facilidade de acesso nos aplicativos cliente Microsoft 365.
+ms.openlocfilehash: 72146ca49e07bf3641982bc880897456699d0877
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998153"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605213"
 ---
 # <a name="session-timeouts-for-microsoft-365"></a>Tempos limite de sessão para o Microsoft 365
 

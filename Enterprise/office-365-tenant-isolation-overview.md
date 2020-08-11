@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Um resumo de como a Microsoft impõe o isolamento de locatário para o Microsoft 365.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Este artigo contém um resumo de como a Microsoft impõe o isolamento de locatário em serviços de nuvem, como o Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998640"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606537"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Isolamento de locatário no Microsoft 365
 
@@ -30,8 +31,8 @@ Com base nos investimentos e na experiência significativos coletados da [comput
 
 As duas metas principais para manter o isolamento de locatário em um ambiente de vários locatários são:
 
-1.  Impedir o vazamento ou o acesso não autorizado ao conteúdo do cliente nos locatários; e
-2.  Impedir que as ações de um locatário afetem adversamente o serviço para outro locatário
+1.    Impedir o vazamento ou o acesso não autorizado ao conteúdo do cliente nos locatários; e
+2.    Impedir que as ações de um locatário afetem adversamente o serviço para outro locatário
 
 Várias formas de proteção foram implementadas em todo o Microsoft 365 para impedir que os clientes comprometam serviços ou aplicativos da Microsoft 365 ou obtenham acesso não autorizado às informações de outros locatários ou ao próprio sistema Microsoft 365, incluindo:
 

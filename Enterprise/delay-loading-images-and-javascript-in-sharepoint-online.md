@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Este artigo descreve como você pode diminuir o tempo de carregamento das páginas do SharePoint online usando o JavaScript para atrasar o carregamento de imagens e aguardando o carregamento de JavaScript não essencial até que a página seja carregada.
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Saiba como diminuir o tempo de carregamento das páginas do SharePoint online usando o JavaScript para atrasar o carregamento de imagens e JavaScript não essencial.
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009346"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605747"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Atraso no carregamento de imagens e JavaScript no SharePoint Online
 
@@ -34,7 +36,7 @@ As imagens podem afetar negativamente as velocidades de carga de página no Shar
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Melhorar o tempo de carregamento da página atrasando o carregamento de imagens nas páginas do SharePoint online usando o JavaScript
 
-Você pode usar o JavaScript para impedir que um navegador da Web busque imagens. Isso aumenta a renderização geral do documento. Para fazer isso, remova o valor do atributo src da marca \<img\> e substitua-o pelo caminho de um arquivo em um atributo de dados, como: data-src. Por exemplo:
+Você pode usar o JavaScript para impedir que um navegador da Web busque imagens. Isso aumenta a renderização geral do documento. Para fazer isso, remova o valor do atributo src da \<img\> marca e substitua-o pelo caminho de um arquivo em um atributo de dados, como: data-src. Por exemplo:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Para o SharePoint Online, você precisa anexar a função a seguir ao evento Scroll na marca DIV \<\> do espaço de trabalho do #s4. Isso ocorre porque os eventos Window são substituídos a fim de garantir que a faixa de opções permaneça anexada à parte superior da página.
+Para o SharePoint Online, você precisa anexar a função a seguir ao evento Scroll na marca #s4-Workspace \<div\> . Isso ocorre porque os eventos Window são substituídos a fim de garantir que a faixa de opções permaneça anexada à parte superior da página.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Salve o arquivo de texto como um arquivo JavaScript com a extensão. js, por exemplo, Atrasarcarregamentodeimagens. js.
+Salve o arquivo de texto como um arquivo JavaScript com a extensão. js, por exemplo delayLoadImages.js.
   
-Após ter concluído a gravação de Atrasarcarregamentodeimagens. js, você pode adicionar o conteúdo do arquivo a uma página mestra no SharePoint Online. Para fazer isso, adicione um link de script ao cabeçalho na página mestra. Assim que estiver em uma página mestra, o JavaScript será aplicado a todas as páginas em seu site do SharePoint Online que usam esse layout de página mestra. Como alternativa, se você pretende usá-la somente em uma página do seu site, use a Web Part do editor de scripts para incorporar o JavaScript à página. Confira estes tópicos para obter mais informações:
+Após concluir a gravação delayLoadImages.js, você pode adicionar o conteúdo do arquivo a uma página mestra no SharePoint Online. Para fazer isso, adicione um link de script ao cabeçalho na página mestra. Assim que estiver em uma página mestra, o JavaScript será aplicado a todas as páginas em seu site do SharePoint Online que usam esse layout de página mestra. Como alternativa, se você pretende usá-la somente em uma página do seu site, use a Web Part do editor de scripts para incorporar o JavaScript à página. Confira estes tópicos para obter mais informações:
   
 - [Como: aplicar uma página mestra a um site no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [Tutorial: criar um layout de página no SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exemplo: referenciar o arquivo JavaScript Atrasarcarregamentodeimagens. js a partir de uma página mestra no SharePoint Online
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Exemplo: fazendo referência ao arquivo JavaScript delayLoadImages.js a partir de uma página mestra no SharePoint Online
   
 Para que isso funcione, você também precisa fazer referência ao jQuery na página mestra. No exemplo a seguir, você pode ver na carga inicial da página que há apenas uma imagem carregada, mas há vários outros na página.
   

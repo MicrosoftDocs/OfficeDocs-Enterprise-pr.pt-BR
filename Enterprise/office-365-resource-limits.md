@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: informações sobre os limites de recursos para os vários aplicativos no Microsoft 365.'
-ms.openlocfilehash: c3f10be1e64cb5d355d319a603cc0c1d2f238dc7
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, você pode encontrar informações sobre os limites de recursos para os vários aplicativos no Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4d2e7987620891ddeac2c4fa08aaeb203f001f57
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997848"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606297"
 ---
 # <a name="resource-limits"></a>Limites de recurso
 

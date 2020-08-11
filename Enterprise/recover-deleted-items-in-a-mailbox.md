@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
-description: 'Este artigo é para administradores. Um usuário excluiu permanentemente itens da caixa de correio do Outlook? O usuário deseja refazê-los, mas não pode recuperá-los. Você pode ser capaz de recuperar os itens removidos se eles não foram removidos permanentemente da caixa de correio do usuário. '
-ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: Este artigo contém informações para administradores para ajudá-los a recuperar os itens removidos se eles não tiverem sido removidos permanentemente da caixa de correio do usuário.
+ms.openlocfilehash: 04249494ca777ba09df7bf6495b8ac931e83bab7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998305"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606177"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Recuperar itens excluídos na caixa de correio do usuário – Ajuda para Administradores
 

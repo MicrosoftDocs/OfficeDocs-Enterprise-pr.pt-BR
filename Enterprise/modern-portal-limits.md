@@ -13,16 +13,18 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Saiba mais sobre as recomendações de desempenho para sites modernos no SharePoint Online.
-ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Saiba mais sobre as recomendações de desempenho para sites modernos no SharePoint Online, como limitar chamadas para os pontos de extremidade externos e do SharePoint.
+ms.openlocfilehash: 1ec6dfb4b32a8915528adce168badf3645c26e48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844782"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606877"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>Limites do site de portal moderno do SharePoint Online
 
@@ -46,7 +48,7 @@ Muitas das diretrizes neste artigo se concentram em minimizar e otimizar chamada
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Limites e recomendações do site de portal moderno
 
-|**Limite**|**Valor máximo recomendado**|**Anotações**|
+|**Limite**|**Valor máximo recomendado**|**Observações**|
 |:-----|:-----|:-----|:-----|
 |Páginas e itens de notícias  <br/> |5.000 por site  <br/> |Recomendamos limitar o número de páginas e itens de notícias em um site de portal moderno para abaixo de 5.000.  <br/> |
 |Web Parts em uma página  <br/> |20 por página  <br/> |Recomendamos usar o total de 20 ou menos Web Parts por página, incluindo Web Parts da Microsoft e Web Parts personalizadas. <br/> Para obter mais informações, consulte [otimizar o desempenho da Web Part em páginas do site moderno do SharePoint Online](modern-web-part-optimization.md).  <br/> |

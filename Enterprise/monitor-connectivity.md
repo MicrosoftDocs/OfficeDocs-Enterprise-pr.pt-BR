@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
-description: Depois de implantar o Microsoft 365, você pode manter a conectividade do Microsoft 365 usando algumas das ferramentas e técnicas abaixo. Convém entender as diretrizes de integridade e continuidade de serviço oficiais, bem como nossas práticas recomendadas para usar o Microsoft 365 em uma rede lenta.
-ms.openlocfilehash: aa47ff76f70e48285c6ca5f21ffdf30f1db52521
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Neste artigo, você aprenderá sobre as ferramentas e técnicas que você pode usar para monitorar e manter a conectividade do Microsoft 365.
+ms.openlocfilehash: 791352910cf82bf4d43543166cb4b1e974f9a238
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571004"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606857"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Monitorar a conectividade Microsoft 365
 
@@ -41,7 +43,7 @@ Depois de implantar o Microsoft 365, você pode manter a conectividade do Micros
 
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>Confira também
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Configurar os serviços e aplicativos do Microsoft 365 Enterprise](configure-services-and-applications.md)
   

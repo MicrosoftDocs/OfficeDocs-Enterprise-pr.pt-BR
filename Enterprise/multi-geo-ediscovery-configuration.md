@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: Saiba como configurar o eDiscovery no Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 7257e5e9a5a7154d574743e3e515e49e9dc714b2
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Saiba como usar o parâmetro Region para configurar a descoberta eletrônica para uso em locais de satélite no Microsoft 365 multigeo.
+ms.openlocfilehash: dec73aef93951bd86f2b84c4eba637bac725603a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433822"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606797"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Configuração do Microsoft 365 Multi-Geo eDiscovery
 

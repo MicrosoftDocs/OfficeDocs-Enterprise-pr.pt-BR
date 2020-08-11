@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Aprenda a excluir uma localização por satélite no Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 28fe99111e6f6c7567f32302c38993cea133ee63
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Aprenda a excluir uma localização por satélite no Microsoft 365 Multi-Geo. Quando um local de satélite é excluído, todos os dados do usuário também são excluídos permanentemente.
+ms.openlocfilehash: 0093f8597164a860e619085da5e95bb33cf451e8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433582"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606027"
 ---
 # <a name="delete-a-satellite-location-in-microsoft-365-multi-geo"></a>Exclua uma localização por satélite no Microsoft 365 Multi-Geo.
 

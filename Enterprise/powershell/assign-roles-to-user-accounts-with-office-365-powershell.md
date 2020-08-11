@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Resumo: Use o PowerShell para Microsoft 365 para atribuir funções a contas de usuário.'
-ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Neste artigo, saiba como usar o PowerShell para a Microsoft 365 com rapidez e facilidade para atribuir funções a contas de usuário.
+ms.openlocfilehash: a3e1936dfa685c78f88e4f4333192f9a07de3cec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230867"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606437"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Atribuir funções a contas de usuário do Microsoft 365 com o PowerShell
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Você pode atribuir funções de forma rápida e fácil às contas de usuário usando o PowerShell para o Microsoft 365.
 

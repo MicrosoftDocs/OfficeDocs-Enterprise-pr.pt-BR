@@ -14,17 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Entenda a resiliência de dados no Microsoft Microsoft 365.
-ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, Aprenda sobre o design e os princípios de resiliência e recuperação de dados no Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7f70b464cf6fe9bd6cb9a236320878fd6adb9db4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998465"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606647"
 ---
 # <a name="data-resiliency-in-microsoft-365"></a>Resiliência de dados no Microsoft 365
-
-## <a name="introduction"></a>Introdução
 
 Dada a natureza complexa da computação em nuvem, a Microsoft está atento a que não é um caso de coisas erradas, mas sim quando. Projetamos nossos serviços em nuvem para maximizar a confiabilidade e minimizar os efeitos negativos sobre os clientes quando as coisas entram erradas. Mudamos além da estratégia tradicional de depender de uma infraestrutura física complexa, e criamos redundância diretamente em nossos serviços de nuvem. Usamos uma combinação de infra-estrutura física menos complexa e software mais inteligente que cria resiliência de dados em nossos serviços e oferece alta disponibilidade para nossos clientes. 
 

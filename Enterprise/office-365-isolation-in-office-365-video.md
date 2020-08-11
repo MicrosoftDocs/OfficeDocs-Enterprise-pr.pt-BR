@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: uma explicação do isolamento de locatário no Office 365 video.'
-ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, encontre uma explicação sobre como o isolamento de locatário mantém os vídeos armazenados de cada locatário separados no vídeo do Office 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dc341241308a9e54dae2894587ef0fb6b5db0148
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998694"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605573"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Isolamento de locatário no Vídeo do Office 365
 

@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
-description: 'Resumo: sites da Internet que usam o SharePoint Server 2013 benefícios hospedados nos serviços de infraestrutura do Azure. Este artigo fornece recursos para projetar e implementar esta solução.'
-ms.openlocfilehash: fa01df6903a9cbc2ec6163514f27a6bd2fd603aa
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Este artigo fornece recursos para projetar e implementar sites da Internet do SharePoint Server 2013 hospedados nos serviços de infraestrutura do Azure.
+ms.openlocfilehash: d663ca0c663d5fd3e8e13670bdec4bcb80613e51
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998113"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606347"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Sites da Internet no Microsoft Azure usando o SharePoint Server 2013
 
@@ -43,7 +45,7 @@ O Microsoft Azure oferece uma opção atraente para hospedar sites da Internet c
 
 As ilustrações e artigos técnicos a seguir fornecem informações sobre como projetar e implementar sites da Internet no Azure usando o SharePoint Server 2013.
   
-|**Resource**|**Mais informações**|
+|**Recurso**|**Mais informações**|
 |:-----|:-----|
 |**Sites da Internet do SharePoint Server 2013 no Azure** <br/> [![Imagem de sites da Internet em Azure usando SharePoint](media/MS-AZ-SPInternetSites.jpg)          ](https://go.microsoft.com/fwlink/p/?LinkId=392552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552) \| [          ](https://go.microsoft.com/fwlink/p/?LinkId=392551) [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)   <br/> |Este modelo de arquitetura descreve as principais atividades de design e as opções de arquitetura recomendadas para sites da Internet no Azure.  <br/> |
 |**Exemplo de design: sites da Internet no Azure para SharePoint Server 2013** <br/> [![Imagem da amostra de design: sites das Internet no Microsoft Azure para SharePoint 2013](media/MS-AZ-InternetSitesDesignSample.jpg)](https://go.microsoft.com/fwlink/p/?LinkId=392549) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548) <br/> |Use este exemplo de design como ponto de partida para sua própria arquitetura.  <br/> |

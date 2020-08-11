@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Como as exclusões de dados suaves e difíceis são tratadas no Exchange Online.
-ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba como as exclusões de dados suaves e difíceis para caixas de correio e itens em caixas de correio são tratadas no Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d7e96bb6bdb46cc81be6a684cb0f3cc1db354d9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998315"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606577"
 ---
 # <a name="exchange-online-data-deletion-in-microsoft-365"></a>Exclusão de dados do Exchange Online no Microsoft 365
 

@@ -1,5 +1,5 @@
 ---
-title: Recuperação de desastres do SharePoint Server 2013 no Microsoft Azure
+title: Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,17 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: 'Resumo: usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm do SharePoint local. Este artigo descreve como criar e implementar esta solução.'
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Este artigo descreve como usar o Azure para criar um ambiente de recuperação de desastres para seu farm do SharePoint local.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998163"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606127"
 ---
-# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de desastres do SharePoint Server 2013 no Microsoft Azure
+# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Recuperação de Desastre do SharePoint Server 2013 no Microsoft Azure
 
  Usando o Azure, você pode criar um ambiente de recuperação de desastres para seu farm local do SharePoint. Este artigo descreve como criar e implementar esta solução.
 

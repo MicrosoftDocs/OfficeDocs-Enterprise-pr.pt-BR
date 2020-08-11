@@ -7,7 +7,7 @@ ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -22,13 +22,14 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: O suporte está terminando em breve para aplicativos clientes e servidores do Office 2010, e acordos de suporte personalizado já não estão disponíveis. Use este artigo para começar a planejar sua atualização agora mesmo.
-ms.openlocfilehash: 50273a76873df8315c898ad622c82d44eea3972e
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+description: Comece a planejar a atualização dos servidores do Office 2010 e aplicativos cliente, já que o suporte está terminando em breve, e os acordos de suporte personalizados não estão disponíveis.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47e3239ee68e80cb03f8942fd9ef23645128da04
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502616"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603623"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Recursos para ajudá-lo a atualizar clientes e servidores do Office 2010
 

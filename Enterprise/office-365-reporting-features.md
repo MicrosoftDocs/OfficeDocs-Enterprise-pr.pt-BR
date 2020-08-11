@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Uma explicação dos recursos de relatório no Microsoft 365.
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba mais sobre vários recursos de relatório no Microsoft 365, incluindo o Active Directory do Azure e o Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997781"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606307"
 ---
-# <a name="microsoft-365-reporting-features"></a>Recursos de relatório do Microsoft 365 
+# <a name="microsoft-365-reporting-features"></a>Recursos de relatório do Microsoft 365
 
 Os recursos de relatório no Microsoft 365 oferecem vários relatórios de auditoria para o Azure Active Directory (Azure AD), o Exchange Online, o gerenciamento de dispositivos, a análise de supervisão e a prevenção de perda de dados (DLP). Esses relatórios são diferentes e separados dos relatórios de atividades do Microsoft 365.
 

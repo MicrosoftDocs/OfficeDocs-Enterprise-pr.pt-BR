@@ -14,17 +14,18 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Suporte ao aplicativo cliente Microsoft 365 para autenticação moderna.
-ms.openlocfilehash: ed573cdf0cbd8f685f2807127335f5abc940cace
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, saiba quais plataformas, clientes e módulos do PowerShell suportam a autenticação moderna para o Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 29a579111d04cef444d1f8ad306b940a93517fe6
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998489"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606657"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Suporte ao aplicativo cliente Microsoft 365-autenticação moderna
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 A autenticação moderna permite o logon baseado na biblioteca de autenticação do Active Directory (ADAL) para aplicativos clientes do Office em diferentes plataformas. Isso permite que os recursos de entrada, como a autenticação multifator (MFA), o cartão inteligente e a autenticação baseada em certificado.
 
@@ -65,6 +66,6 @@ As versões mais recentes dos seguintes clientes suportam a autenticação moder
 > <sup>1</sup> suporte para whiteboard e Skype for Business no aplicativo Web disponível em breve. <br>
 > <sup>2</sup> o suporte para o whiteboard no Android estará disponível em breve.
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

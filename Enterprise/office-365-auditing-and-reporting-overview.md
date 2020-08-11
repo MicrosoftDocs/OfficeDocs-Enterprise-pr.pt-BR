@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Uma visão geral dos recursos de auditoria e relatórios no Microsoft 365 e no Service Assurance.
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Uma visão geral dos recursos de auditoria e relatórios no Office 365, no Microsoft 365 e no serviço Assurance.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774956"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606677"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Auditoria e relatórios nos serviços em nuvem da Microsoft
 
@@ -58,6 +59,6 @@ Os principais recursos incluem uma área de conformidade que oferece aos adminis
 
 - [Recursos de pesquisa e descoberta eletrônica](office-365-ediscovery-and-search-features.md)
 - [Recursos de relatório do Microsoft 365](office-365-reporting-features.md)
-- [API de atividade de gerenciamento do Microsoft 365](office-365-management-activity-api.md)
-- [Migrações de caixa de correio do Microsoft 365](office-365-mailbox-migrations.md)
+- [API da atividade de gerenciamento do Microsoft 365](office-365-management-activity-api.md)
+- [Migrações de caixas de correio do Microsoft 365](office-365-mailbox-migrations.md)
 - [Log interno para engenharia do Microsoft 365](office-365-internal-logging.md)

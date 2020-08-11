@@ -14,22 +14,24 @@ ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Se você estiver usando o Office 2007 ou o Office 2010, é hora de planejar sua atualização. Não fique preso com aplicativos e servidores desatualizados e não suportados. Use estes recursos para começar a usar seu plano.
-ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.custom:
+- seo-marvel-apr2020
+description: Este artigo contém recursos para usuários que usam o Office 2007 ou o Office 2010 para ajudá-los a planejar a atualização.
+ms.openlocfilehash: 8ea43c708c84ae81f61bb2acedd8bf60027070d4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735729"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606247"
 ---
-# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar sua atualização do Office 2007 ou do Office 2010 servidores e clientes
+# <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planejar a atualização de servidores e clientes do Office 2007 ou Office 2010
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Se sua organização estiver usando versões mais antigas dos produtos e servidores do Office, esta é uma boa hora para começar a planejar a atualização. Os produtos e serviços do Office 2007 atingiram o [fim do suporte](upgrade-from-office-2007-servers-and-products.md). 
 
-- O Office 2010 e o Exchange 2010 atingirão o fim do suporte em **13 de outubro de 2020**. 
-- O SharePoint 2010 e o Project Server 2010 atingirão o fim do suporte em **13 de abril de 2021**. 
+- O encerramento do suporte para o Office 2010 e o Exchange 2010 será no dia **13 de outubro de 2020**. 
+- O encerramento do suporte para o SharePoint 2010 e o Project Server 2010 será no dia **13 de abril de 2021**. 
 
 Use os recursos deste artigo para começar.
 
@@ -84,7 +86,7 @@ Se você quiser ajuda para planejar sua atualização, considere uma ou mais das
 
 - Se você fizer parte de uma organização menor ou se preferir lidar com a atualização do Office da sua organização, confira [atualizar seus usuários do Microsoft 365 for Business para o cliente do Office mais recente](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
-## <a name="im-a-home-user-what-do-i-do"></a>Sou um usuário doméstico. What do I do?
+## <a name="im-a-home-user-what-do-i-do"></a>Sou um usuário doméstico. O que eu faço?
 
 Se você estiver usando o Office 2007 ou o Office 2010 em casa, considere as seguintes opções de atualização:
 

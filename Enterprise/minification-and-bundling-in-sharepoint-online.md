@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: Este artigo descreve como usar as técnicas de agrupamento e minificação com o Web Essentials para reduzir o número de solicitações HTTP e reduzir o tempo que leva para carregar páginas no SharePoint Online.
-ms.openlocfilehash: 44f9e6151c22c3715b56a164bd0c9cacedcf2580
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Saiba como usar as técnicas de agrupamento e minificação com o Web Essentials para reduzir as solicitações HTTP e o tempo necessário para carregar páginas no SharePoint Online.
+ms.openlocfilehash: 3b840b7da953103448515c51f79ba15cb356ae38
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004766"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605653"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minificação e agrupamento no SharePoint Online
 
@@ -39,7 +41,7 @@ Para arquivos JavaScript e CSS, você também pode usar uma abordagem chamada mi
 Você pode usar software de terceiros, como o Web Essentials, para agrupar arquivos CSS e JavaScript.
   
 > [!IMPORTANT]
-> O Web Essentials é um projeto de terceiros, de código aberto, baseado na Comunidade. O software é uma extensão do Visual Studio 2012 e do Visual Studio 2013 e não tem suporte da Microsoft. Para baixar o Web Essentials, visite o site [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)em. 
+> O Web Essentials é um projeto de terceiros, de código aberto, baseado na Comunidade. O software é uma extensão do Visual Studio 2012 e do Visual Studio 2013 e não tem suporte da Microsoft. Para baixar o Web Essentials, visite o site em [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
   
 O Web Essentials oferece duas formas de agrupamento:
   

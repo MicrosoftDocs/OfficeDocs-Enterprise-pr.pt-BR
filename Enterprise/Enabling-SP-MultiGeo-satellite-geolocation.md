@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Ativando as funcionalidades multigeográficas do SharePoint na sua localização geográfica por satélite.
-ms.openlocfilehash: 2bf914c6df06f6e1cdfc8c95743f45a53823073c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Este artigo fornece informações para administradores globais ou do SharePoint sobre a habilitação de vários geografias do SharePoint em locais geográficos satélite.
+ms.openlocfilehash: dc2cd3eeb4c7e74d8dbfee1070338e0e243b0519
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433482"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605847"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>Ativando as funcionalidades multigeográficas do SharePoint em sua localização geográfica por satélite
 
@@ -38,11 +38,11 @@ Estas instruções permitirão que você habilite o SharePoint em seu local de s
 
 Para definir uma localização geográfica no modo SPO, conecte-se à localização geográfica que você deseja definir no modo SPO:
 
-1.  Abra seu Shell de Gerenciamento do SharePoint Online 
-2.  Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
-3.  Set-SPOMultiGeoExperience</br></br>
+1.    Abra seu Shell de Gerenciamento do SharePoint Online 
+2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
+3.    Set-SPOMultiGeoExperience</br></br>
 ![Set-SPOMultiGeoExperience](media/Set-SPO-MultiGeo.jpg)
-4.  Essa operação normalmente leva cerca de uma hora enquanto executamos vários retornos de publicação no serviço e recarimbamos seu locatário. Após pelo menos 1 hora, execute um Get-SPOMultiGeoExperience.  Isso mostrará se esta localização geográfica está no modo SPO.</br></br>
+4.    Essa operação normalmente leva cerca de uma hora enquanto executamos vários retornos de publicação no serviço e recarimbamos seu locatário. Após pelo menos 1 hora, execute um Get-SPOMultiGeoExperience.  Isso mostrará se esta localização geográfica está no modo SPO.</br></br>
 ![Set-SPOMultiGeoExperience](media/Get-SPO-MultiGeo.jpg)
 
  

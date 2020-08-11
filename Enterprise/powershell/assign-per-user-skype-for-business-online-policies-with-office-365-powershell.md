@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Resumo: Use o PowerShell para Microsoft 365 para atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.'
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229837"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606457"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Atribuir políticas do Skype for Business online por usuário com o PowerShell para o Microsoft 365
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 O uso do PowerShell para Microsoft 365 é uma maneira eficiente de atribuir configurações de comunicação por usuário com as políticas do Skype for Business online.
   
-## <a name="before-you-begin"></a>Antes de começar
+## <a name="prepare-to-run-the-powershell-commands"></a>Preparar para executar os comandos do PowerShell
 
 Use estas instruções para configurar a execução dos comandos (pule as etapas que você já concluiu):
   
@@ -138,7 +138,7 @@ Isso encontrará 500 usuários por vez que não têm uma política de cliente. E
   
 ## <a name="see-also"></a>Confira também
 
-[Gerenciar o Skype for Business online com o PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
+[Gerenciar o Skype for Business Online com o Windows PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
 [Gerenciar o Microsoft 365 com o PowerShell](manage-office-365-with-office-365-powershell.md)
   

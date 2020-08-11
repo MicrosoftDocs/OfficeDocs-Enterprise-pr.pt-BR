@@ -14,13 +14,14 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: Entender o suporte ao aplicativo cliente Microsoft 365 para acesso condicional
-ms.openlocfilehash: 6081af2ad3bca69978a10baabeae0a13d783f0ae
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Neste artigo, saiba quais plataformas, clientes e módulos do PowerShell suportam acesso condicional para o Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 77fe8411109bf77287674d8c6fa1607a0689f46f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998499"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606688"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Suporte ao aplicativo cliente Microsoft 365 — acesso condicional
 
@@ -64,6 +65,6 @@ As versões mais recentes dos seguintes clientes suportam acesso condicional:
 > [!NOTE]
 > <sup>1</sup> suporte para onedrive no MacOS disponível em breve.
 
-## <a name="see-also"></a>Também consulte
+## <a name="see-also"></a>Confira também
 
 [Visão geral do Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

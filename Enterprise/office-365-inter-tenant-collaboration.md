@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Saiba como o Microsoft 365 Collaboration funciona em locatários e organizações.
-ms.openlocfilehash: 197f12f7c102da30582eb2c4f4447d895ca2768d
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba como o Microsoft 365 Collaboration funciona em locatários e organizações, permitindo que diferentes organizações trabalhem em conjunto com segurança.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e68df7c7b4d3574951957f576ffe7c896c0d13da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998721"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606557"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Colaboração entre locatários do Microsoft 365
 

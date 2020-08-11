@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Resumo: um breve resumo sobre os controles de acesso corporativo do Yammer no ambiente de produção.'
-ms.openlocfilehash: 0da479eb36359ec6b795a8e4323441edc4678f1a
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Este artigo contém um breve resumo sobre os controles de acesso corporativo do Yammer no ambiente de produção.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a6157715836b046fa98fbdaf8427f7708b771081
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775110"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606487"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Controles de acesso corporativo do Yammer 
 

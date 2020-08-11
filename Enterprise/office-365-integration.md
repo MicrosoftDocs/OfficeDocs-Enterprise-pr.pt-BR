@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 search.appverid:
@@ -20,13 +22,13 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
-description: Saiba como integrar o Microsoft 365 com os serviços de diretório existentes.
-ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
-ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+description: Neste artigo, saiba como integrar o Microsoft 365 com os serviços de diretório existentes e ambientes locais.
+ms.openlocfilehash: 9eadad2f7dd4c0843b522658c361a0950f61509b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46571054"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606567"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Integração do Microsoft 365 com ambientes locais
 

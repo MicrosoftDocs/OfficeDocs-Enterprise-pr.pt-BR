@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
-description: Em 11 de abril de 2017, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para a Microsoft 365, Office 365 ou Exchange 2016, agora é hora de iniciar o planejamento.
-ms.openlocfilehash: 7228d123a8f4fe21c3d92753fe3f60a7d2e4f67b
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.custom: seo-marvel-apr2020
+description: Saiba mais sobre suas opções depois que o Exchange Server 2007 atingir o fim do suporte e iniciar o planejamento de migração para a Microsoft 365, Office 365 ou Exchange 2016.
+ms.openlocfilehash: c77d3de47ea917730874253c286565971d80ea48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052431"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606397"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Roteiro de fim do suporte do Exchange 2007
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Em **11 de abril de 2017**, o Exchange Server 2007 alcançou o fim do suporte. Se você ainda não começou sua migração do Exchange 2007 para a Microsoft 365, Office 365 ou Exchange 2016, agora é hora de iniciar o planejamento. 
   
@@ -52,7 +53,7 @@ Agora que o Exchange 2007 atingiu o fim do suporte, é altamente recomendável e
     
 As seções a seguir exploram cada opção em mais detalhes.
   
-### <a name="migrate-to-microsoft-365"></a>Migrar para o Microsoft 365
+### <a name="migrate-to-microsoft-365"></a>Migre para o Microsoft 365
 
 Migrar seu email para a Microsoft 365 é a opção mais simples e fácil de ajudá-lo a retirar sua implantação do Exchange 2007. Com uma migração para o Microsoft 365, você pode fazer um único salto da tecnologia de 10 anos de idade para recursos de ponta, como:
   

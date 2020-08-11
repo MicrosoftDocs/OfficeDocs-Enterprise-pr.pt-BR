@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: Obtenha acesso aos recursos para planejar sua implantação do Microsoft 365 Enterprise.
-ms.openlocfilehash: 4b779365fc1dbad05e1eacbba1e346530952d372
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Este artigo fornece listas de verificação e outros recursos para planejar sua implantação do Microsoft 365 Enterprise.
+ms.openlocfilehash: 0f3fb9a70f9f5035f2f1a0f3a90ce1a50ac3c6b8
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774466"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606387"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Plano para o Microsoft 365 Enterprise
 
@@ -45,18 +47,18 @@ Para planejar o Microsoft 365 por conta própria, percorra as decisões de plane
 
 - Seu locatário do Microsoft 365
 
-  Inclui o planejamento de suas conexões de rede para a Internet, suas identidades do Microsoft 365 e integração com aplicativos, no local, o Azure e outros elementos. Inicie [aqui](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+  Inclui o planejamento de suas conexões de rede para a Internet, suas identidades do Microsoft 365 e integração com aplicativos, no local, o Azure e outros elementos. Vá para [assinaturas, licenças, contas e locatários para ofertas de nuvem da Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) para obter mais informações.
 
 - Suporte para seus clientes
 
-  Inclui autenticação baseada em certificado, gerenciamento de dispositivos móveis, opções de autenticação e colaboração entre locatários. Inicie [aqui](office-365-client-support-certificate-based-authentication.md).
+  Inclui autenticação baseada em certificado, gerenciamento de dispositivos móveis, opções de autenticação e colaboração entre locatários. Vá para [autenticação baseada em certificado](office-365-client-support-certificate-based-authentication.md) para obter mais informações.
 
 - Suporte para autenticação moderna híbrida
 
-  Inclui o planejamento da autenticação moderna ao usar configurações híbridas dos principais aplicativos de produtividade Microsoft 365. Inicie [aqui](hybrid-modern-auth-overview.md).
+  Inclui o planejamento da autenticação moderna ao usar configurações híbridas dos principais aplicativos de produtividade Microsoft 365. Vá para a [visão geral da autenticação moderna híbrida e pré-requisitos](hybrid-modern-auth-overview.md) para obter mais informações.
 
 - Clientes e servidores do Office mais antigos
 
-  Inclui informações de migração para os produtos de cliente e servidor do Office 2007 e do Office 2010. Inicie [aqui](plan-upgrade-previous-versions-office.md).
+  Inclui informações de migração para os produtos de cliente e servidor do Office 2007 e do Office 2010. Vá para [planejar sua atualização](plan-upgrade-previous-versions-office.md) para obter mais informações.
 
 Você também pode entrar em sua assinatura do Microsoft 365 e usar os [guias de configuração dos serviços do microsoft 365 e do Office 365](setup-guides-for-office-365.md).

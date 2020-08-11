@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: O ExpressRoute para Office 365 oferece um caminho de roteamento alternativo para alcançar muitos serviços do Office 365 sem precisar de todo o tráfego para saída na Internet. Embora a conexão com a Internet com o Office 365 ainda seja necessária, as rotas específicas que a Microsoft anuncia por meio do BGP para a sua rede tornam o circuito direto do ExpressRoute preferencial, a menos que haja outras configurações na sua rede. As três áreas comuns que você pode querer configurar para gerenciar esse roteamento incluem filtragem de prefixo, segurança e conformidade.
-ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+description: Saiba como gerenciar o ExpressRoute para o Office 365, incluindo áreas comuns para configurar a filtragem de prefixo, segurança e conformidade.
+ms.openlocfilehash: f62731b9f2fcfcb47504d2f73e9b8874980c4c7e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798792"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606327"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Gerenciar o ExpressRoute para conectividade do Office 365
 
@@ -47,7 +49,7 @@ Há vários motivos para evitar o uso das [URLs e intervalos de endereços IP do
 
 |**Opção**|**Complexidade**|**Controle de alterações**|
 |:-----|:-----|:-----|
-|Aceitar todas as rotas da Microsoft  <br/> |**Baixo:** O cliente depende dos controles da Microsoft para garantir que todas as rotas estejam devidamente de propriedade.  <br/> |Nenhuma  <br/> |
+|Aceitar todas as rotas da Microsoft  <br/> |**Baixo:** O cliente depende dos controles da Microsoft para garantir que todas as rotas estejam devidamente de propriedade.  <br/> |Nenhum  <br/> |
 |Filtrar sub-redes de propriedade da Microsoft  <br/> |**Médio:** O cliente implementa listas de filtro de prefixo resumido para permitir somente rotas de propriedade da Microsoft.  <br/> |Os clientes devem garantir que as atualizações não frequentes sejam refletidas nos filtros de rota.  <br/> |
 |Filtrar intervalos IP do Office 365  <br/> [!CAUTION] Não recomendado |**Alta:** O cliente filtra rotas com base em prefixos IP do Office 365 definidos.  <br/> |Os clientes devem implementar um processo robusto de gerenciamento de alterações para as atualizações mensais.  <br/> [!CAUTION] Essa solução requer alterações significativas em andamento. As alterações não implementadas no momento provavelmente resultarão em uma interrupção de serviço.   |
 
@@ -70,7 +72,7 @@ Para controles adicionados, você pode usar a filtragem de nível de FQDN dentro
 
 |**Opção**|**Complexidade**|**Controle de alterações**|
 |:-----|:-----|:-----|
-|Sem restrições  <br/> |**Baixo:** O cliente permite acesso de saída irrestrito à Microsoft.  <br/> |Nenhuma  <br/> |
+|Sem restrições  <br/> |**Baixo:** O cliente permite acesso de saída irrestrito à Microsoft.  <br/> |Nenhum  <br/> |
 |Restrições de porta  <br/> |**Baixo:** O cliente restringe o acesso de saída para a Microsoft pelas portas esperadas.  <br/> |Não frequentes.  <br/> |
 |Restrições de FQDN  <br/> |**Alta:** O cliente restringe o acesso de saída para o Office 365 com base nos FQDNs publicados.  <br/> |Alterações mensais.  <br/> |
 
@@ -102,7 +104,7 @@ Não confiamos no caminho de roteamento que você usa para qualquer um dos nosso
   
 Aqui está um link curto que você pode usar para voltar: [https://aka.ms/manageexpressroute365](https://aka.ms/manageexpressroute365)
   
-## <a name="related-topics"></a>Tópicos Relacionados
+## <a name="related-topics"></a>Tópicos relacionados
 
 [Redes de distribuição de conteúdo](content-delivery-networks.md)
   

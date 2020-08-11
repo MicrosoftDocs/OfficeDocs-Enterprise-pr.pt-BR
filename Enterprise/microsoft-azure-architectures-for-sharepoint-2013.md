@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Architecture
+ms.custom:
+- Ent_Architecture
+- seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Resumo: as soluções do SharePoint 2013 podem ser hospedadas em máquinas virtuais do Microsoft Azure. Saiba quais tipos de soluções são adequados e como configurar o Microsoft Azure para hospedar um.'
-ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Saiba quais tipos de soluções do SharePoint 2013 podem ser hospedados em máquinas virtuais do Microsoft Azure e como configurar o Azure para o host um.
+ms.openlocfilehash: f76d5020ab4695f48edca956d6593040c42dcc70
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997888"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605683"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquiteturas do Microsoft Azure para o SharePoint 2013
 
@@ -217,7 +219,7 @@ Este diagrama mostra o farm do SharePoint implementado nos serviços de infraest
   
 ## <a name="see-also"></a>Confira também
 
-[Adoção da nuvem e de soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
+[Adoção da nuvem e soluções híbridas](cloud-adoption-and-hybrid-solutions.yml)
   
 [Sites da Internet no Microsoft Azure usando o SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   

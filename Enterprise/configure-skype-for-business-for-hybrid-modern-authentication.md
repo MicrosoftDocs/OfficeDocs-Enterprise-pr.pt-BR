@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras, está disponível para o Skype for Business Server local e o Exchange Server local e o Skype-Domain híbridas do Skype for Business.
-ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: Saiba como configurar o Skype for Business no local para usar a protocolo de autenticação moderna (HMA), oferecendo uma autenticação e autorização de usuário mais segura.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e82325281341d35454161f03873acc30898ad536
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052504"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605757"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Como configurar o Skype for Business no local para usar a autenticação moderna híbrida
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 A autenticação moderna é um método de gerenciamento de identidades que oferece autenticação e autorização de usuário mais seguras, está disponível para o Skype for Business Server local e o Exchange Server local e o Skype-Domain híbridas do Skype for Business.
   
@@ -73,7 +74,7 @@ Como você pode ver, há quatro lugares diferentes para ativar MA! Para obter a 
   
 Consulte o [tópico sobre capacidade de suporte para o Skype for Business com ma](https://technet.microsoft.com/library/mt803262.aspx) para topologias suportadas.
   
- **Importante** Verifique se você atendeu a todos os pré-requisitos antes de começar. Você encontrará essas informações [aqui](hybrid-modern-auth-overview.md).
+ **Importante** Verifique se você atendeu a todos os pré-requisitos antes de começar. Você encontrará essas informações na [visão geral da autenticação moderna híbrida e nos pré-requisitos](hybrid-modern-auth-overview.md).
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Coletar todas as informações específicas da HMA necessárias
 

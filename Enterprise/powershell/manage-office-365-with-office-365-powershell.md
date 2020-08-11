@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: 'Resumo: saiba como usar o PowerShell para gerenciar usuários e licenças do Microsoft 365, Skype for Business Online, SharePoint Online, Exchange Online e o centro de conformidade de & de segurança.'
-ms.openlocfilehash: 741ec15a78db9393e11ba6d06720457e20741581
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Saiba como gerenciar usuários e licenças do Microsoft 365 e aplicativos da Microsoft 365 com o PowerShell.
+ms.openlocfilehash: ed20ec5bbe05ab0be382b87c04ba2dbc9428b4cc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230507"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605927"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>Gerenciar o Microsoft 365 com o PowerShell
 
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 O PowerShell para Microsoft 365 é uma poderosa ferramenta de gerenciamento que complementa o centro de administração do Microsoft 365. Por exemplo, você pode usar a automação do PowerShell para gerenciar mais rapidamente várias contas de usuário e licenças e criar relatórios. Saiba como usar o PowerShell para usuários e licenças do Microsoft 365, Skype for Business Online, SharePoint Online, Exchange Online e o centro de conformidade de & de segurança.
   

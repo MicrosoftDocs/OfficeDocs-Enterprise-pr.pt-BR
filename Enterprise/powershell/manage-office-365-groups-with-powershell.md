@@ -7,8 +7,11 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-f1.keywords: CSH
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -17,17 +20,17 @@ search.appverid:
 - BSA160
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
-description: Saiba como realizar tarefas comuns de gerenciamento para os grupos do Microsoft 365 no Microsoft PowerShell.
-ms.openlocfilehash: 25a0a3c90082c016c37820f12caddd1dc1f09704
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Neste artigo, saiba como realizar tarefas comuns de gerenciamento para os grupos do Microsoft 365 no PowerShell.
+ms.openlocfilehash: 899205fbf53821758f848fd4e1c75f25fd16e223
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230597"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605947"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Gerenciar os grupos do Microsoft 365 com o PowerShell
  
-*Este artigo se aplica ao Microsoft 365 Enterprise e ao Office 365 Enterprise.*
+*Este artigo se aplica tanto ao Microsoft 365 Enterprise quanto ao Office 365 Enterprise.*
 
 Este artigo fornece as etapas para realizar tarefas comuns de gerenciamento para grupos no Microsoft PowerShell. Ele também lista os cmdlets do PowerShell para grupos. Para obter informações sobre como gerenciar sites do SharePoint, confira [gerenciar sites do SharePoint online usando o PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell).
 
