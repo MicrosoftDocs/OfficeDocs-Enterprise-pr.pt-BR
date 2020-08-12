@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Aprenda a configurar o Microsoft 365 Multi-Geo.
-ms.openlocfilehash: 518bc6dc5bf72e5196a46df8ee7b2e80b7b1838a
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: Neste artigo, aprenda como adicionar localização por satélite e configurar seu locatário para o Microsoft 365 Multi-Geo.
+ms.openlocfilehash: 53a339c9bc709920adb55992d44be2f6280fffcd
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433812"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606787"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configuração do locatário do Microsoft 365 Multi-Geo
 
@@ -74,7 +76,7 @@ Há dois tipos de objetos de usuário no Azure Active Directory: usuários somen
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Sincronizar o Local de Dados Preferencial do usuário usando o Azure AD Connect 
 
-Se os usuários de sua empresa estiverem sincronizados de um sistema local do Active Directory para o Azure AD, seu PreferredDataLocation deve ser preenchido no AD e sincronizado com o Azure AD.
+Se os usuários da sua empresa estiverem sincronizados a partir de um sistema local do Active Directory para o Azure AD, o PreferredDataLocation do usuário deve ser preenchido no AD e sincronizado com o Azure AD.
 
 Siga o processo na [Sincronização do Azure Active Directory Connect: configure o local preferencial de dados para os recursos do Microsoft 365](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) para configurar a sincronização do local preferencial de dados dos serviços de domínio do Active Directory (AD DS) local para o Azure AD.
 

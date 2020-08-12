@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: A URL do serviço Web e endereço IP do Office 365 ajudam a identificar e diferenciar melhor o tráfego de rede do Office 365, tornando mais fácil para você avaliar, configurar e manter-se atualizado com as alterações.
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Aprenda como usar o endereço IP e o serviço URL da Web do Office 365 para ajudá-lo a identificar e diferenciar melhor o tráfego de rede do Office 365.
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843594"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605623"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>URL do serviço Web e endereço IP do Office 365
 
@@ -247,7 +249,7 @@ As alterações mais importantes em dados de pontos de extremidade são novos en
 
 O parâmetro necessário para o método da web de alterações é:
 
-- **Version=\<YYYYMMDDNN>** — Parâmetro de rota de URL obrigatório. Este valor é a versão que você tem implementada atualmente. O serviço da Web retornará as alterações desde essa versão. O formato é _YYYYMMDDNN_, em que _NN_ é um número natural incrementado, se houver várias versões que precisem ser publicadas em um único dia, com _00_ representando a primeira atualização de um determinado dia. O serviço da web requer que o parâmetro de _versão_ contenha exatamente 10 dígitos.
+- **Version=\<YYYYMMDDNN>** — Parâmetro de rota URL obrigatório. Este valor é a versão que você tem implementada atualmente. O serviço da Web retornará as alterações desde essa versão. O formato é _YYYYMMDDNN_, em que _NN_ é um número natural incrementado, se houver várias versões que precisem ser publicadas em um único dia, com _00_ representando a primeira atualização de um determinado dia. O serviço da web requer que o parâmetro de _versão_ contenha exatamente 10 dígitos.
 
 O método da Web de alterações é limitado por taxa da mesma forma que o método da web de pontos de extremidade. Se você receber um código de resposta HTTP 429, espere 1 hora antes de repetir sua solicitação ou para gerar um novo GUID para a solicitação.
 

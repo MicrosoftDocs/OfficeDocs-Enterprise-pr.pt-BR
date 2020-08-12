@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Saiba mais sobre a experiência do usuário do SharePoint e do OneDrive em um ambiente multigeográfico.
-ms.openlocfilehash: 55c3f431474715ce03cc313a5d8d208d76b60b78
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: Saiba mais sobre a experiência do usuário do SharePoint, OneDrive e Exchange em um ambiente multigeográfico para o Microsoft 365.
+ms.openlocfilehash: e33c5d0d699d3d1343f7ba9cb2b0c1b20c4d4366
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433792"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606777"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Experiência do usuário em um ambiente multigeográfico
 
