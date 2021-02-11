@@ -41,7 +41,16 @@
       "searchScope": ["Office 365 Enterprise"],
       "feedback_system": "None",
       "hide_comments": true,
-      "hideEdit": true
+      "hideEdit": true,
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
       
     "fileMetadata": {},
