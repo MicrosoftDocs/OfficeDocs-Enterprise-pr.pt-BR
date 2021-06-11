@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -19,7 +20,10 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf"
         ],
         "exclude": [
           "**/obj/**",
@@ -29,9 +33,30 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "ocv-translation-feedback": true,   
+      "layout": "Conceptual",      
+      "breadcrumb_path": "/office365/enterprise/breadcrumb/toc.json",
+      "extendBreadcrumb": "true",
+      "bilingual_type": "hover over",
+      "searchScope": ["Office 365 Enterprise"],
+      "feedback_system": "None",
+      "hide_comments": true,
+      "hideEdit": true,
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
+    },
+      
     "fileMetadata": {},
     "template": [],
+    "markdownEngineName": "markdig",
     "dest": "OfficeDocs-Enterprise"
   }
 }
