@@ -34,26 +34,28 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "ocv-translation-feedback": true,   
-      "layout": "Conceptual",      
+      "ocv-translation-feedback": true,
+      "layout": "Conceptual",
       "breadcrumb_path": "/office365/enterprise/breadcrumb/toc.json",
       "extendBreadcrumb": "true",
       "bilingual_type": "hover over",
-      "searchScope": ["Office 365 Enterprise"],
+      "searchScope": [
+        "Office 365 Enterprise"
+      ],
       "feedback_system": "None",
       "hide_comments": true,
       "hideEdit": true,
-      "contributors_to_exclude": [ 
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+      "contributors_to_exclude": [
+        "rjagiewich",
+        "traya1",
+        "rmca14",
+        "claydetels19",
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ]
+      ],
+      "recommendations": true
     },
-      
     "fileMetadata": {},
     "template": [],
     "markdownEngineName": "markdig",
